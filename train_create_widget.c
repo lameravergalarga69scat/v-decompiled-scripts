@@ -8,7 +8,6 @@
 	bool bLocal_6 = 0;
 	int iLocal_7 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	Local_1 = { 613f, 6438f, 31f };
@@ -17,7 +16,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		func_1();
+		__LIB_31__.func_722();
 	}
 	VEHICLE::SET_RANDOM_TRAINS(false);
 	VEHICLE::DELETE_ALL_TRAINS();
@@ -64,15 +63,9 @@ void __EntryFunction__()//Position - 0x0
 			}
 			if (bLocal_6)
 			{
-				func_1();
+				__LIB_31__.func_722();
 			}
 		}
 	}
-}
-
-void func_1()//Position - 0x1A7
-{
-	VEHICLE::SET_RANDOM_TRAINS(true);
-	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

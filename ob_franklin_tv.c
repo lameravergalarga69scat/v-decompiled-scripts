@@ -340,7 +340,6 @@
 	var uScriptParam_8 = 0;
 	var uScriptParam_9 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -378,11 +377,11 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_56();
 	}
-	if (func_49() == 1)
+	if (__LIB_18__.func_173() == 1)
 	{
 		bLocal_49 = true;
 	}
-	if ((func_46(9) || (func_45() && !func_44())) || AUDIO::IS_MOBILE_PHONE_CALL_ONGOING())
+	if ((__LIB_6__.func_854(9) || (__LIB_0__.func_569() && !__LIB_0__.func_568())) || AUDIO::IS_MOBILE_PHONE_CALL_ONGOING())
 	{
 		func_56();
 	}
@@ -403,14 +402,12 @@ void __EntryFunction__()//Position - 0x0
 							iLocal_303 = 1;
 						}
 						break;
-					
 					case 1:
 						if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 						{
 							func_1();
 						}
 						break;
-					
 					case 2:
 						break;
 					}
@@ -429,17 +426,16 @@ void func_1()//Position - 0x1D4
 	float fVar1;
 	float fVar2;
 	float fVar3;
-	
 	Var0 = { 1.5f, 1.5f, 1.5f };
 	fVar1 = 0f;
 	switch (iLocal_304)
 	{
 		case 0:
-			if ((func_35(Local_305, Var0) && !func_34()) && !func_33("FAM_WEAPDIS" /* GXT: A weapon cannot be equipped when in a safehouse. */))
+			if ((__LIB_35__.func_45(Local_305, Var0) && !__LIB_0__.func_198()) && !__LIB_0__.func_1("FAM_WEAPDIS" /* GXT: A weapon cannot be equipped when in a safehouse. */))
 			{
 				if (PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), Local_306, 90f) || iLocal_309)
 				{
-					func_32("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */);
+					__LIB_0__.func_187("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */);
 					if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("FRANKLIN_SAFEHOUSE_ACTIVITIES_SCENE"))
 					{
 						AUDIO::START_AUDIO_SCENE("FRANKLIN_SAFEHOUSE_ACTIVITIES_SCENE");
@@ -448,17 +444,16 @@ void func_1()//Position - 0x1D4
 				}
 			}
 			break;
-		
 		case 1:
-			if (func_31(1, 0, 1))
+			if (__LIB_0__.func_398(1, 0, 1))
 			{
-				if (func_35(Local_305, Var0) && OBJECT::DOES_OBJECT_OF_TYPE_EXIST_AT_COORDS(Local_305, 3f, joaat("prop_cs_remote_01"), false))
+				if (__LIB_35__.func_45(Local_305, Var0) && OBJECT::DOES_OBJECT_OF_TYPE_EXIST_AT_COORDS(Local_305, 3f, joaat("prop_cs_remote_01"), false))
 				{
 					if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 					{
 						if ((!PLAYER::IS_PLAYER_FREE_AIMING(PLAYER::PLAYER_ID()) && !PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID())) && PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 						{
-							if (func_33("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */))
+							if (__LIB_0__.func_1("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */))
 							{
 								HUD::CLEAR_HELP(true);
 							}
@@ -474,7 +469,7 @@ void func_1()//Position - 0x1D4
 							}
 							iLocal_51 = 1;
 							WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
-							func_21(1, 1, 1, 0, 0, 0, 0);
+							__LIB_7__.func_279(1, 1, 1, 0, 0, 0, 0);
 							func_20();
 							iLocal_304 = 2;
 						}
@@ -482,7 +477,7 @@ void func_1()//Position - 0x1D4
 				}
 				else
 				{
-					if (func_33("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */))
+					if (__LIB_0__.func_1("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -491,9 +486,8 @@ void func_1()//Position - 0x1D4
 				}
 			}
 			break;
-		
 		case 2:
-			func_19();
+			__LIB_0__.func_186();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			iLocal_311 = PED::CREATE_SYNCHRONIZED_SCENE(Local_315, Local_316, 2);
@@ -532,17 +526,16 @@ void func_1()//Position - 0x1D4
 			}
 			iLocal_304 = 3;
 			break;
-		
 		case 3:
-			func_19();
+			__LIB_0__.func_186();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (!Global_32020[1 /*11*/].f_2)
 			{
 				if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_311) > 0.691f)
 				{
-					func_16();
-					func_12(1, 0, 1, 0, 0);
+					__LIB_8__.func_825();
+					__LIB_20__.func_680(1, 0, 1, 0, 0);
 				}
 			}
 			if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_311) > 0.9f)
@@ -551,7 +544,7 @@ void func_1()//Position - 0x1D4
 				TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_311, sLocal_314, "base", 8f, -8f, 64, 0, 1000f, 0);
 				ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(func_18(), iLocal_311, "base_remote", sLocal_314, 8f, -8f, 64, 1000f);
 				PED::SET_SYNCHRONIZED_SCENE_LOOPED(iLocal_311, true);
-				func_32("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */);
+				__LIB_0__.func_187("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */);
 				if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("TV_FRANKLINS_HOUSE_VINEWOOD"))
 				{
 					AUDIO::START_AUDIO_SCENE("TV_FRANKLINS_HOUSE_VINEWOOD");
@@ -559,24 +552,23 @@ void func_1()//Position - 0x1D4
 				iLocal_304 = 5;
 			}
 			break;
-		
 		case 5:
-			func_19();
+			__LIB_0__.func_186();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (!func_8())
 			{
-				if (!func_33("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
+				if (!__LIB_0__.func_1("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */))
 				{
-					func_32("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */);
+					__LIB_0__.func_187("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */);
 				}
-				func_7(0, 1);
+				__LIB_30__.func_527(0, 1);
 				if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 				{
 					iLocal_311 = PED::CREATE_SYNCHRONIZED_SCENE(Local_315, Local_316, 2);
 					TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_311, sLocal_314, "exit", 8f, -8f, 0, 0, 1000f, 0);
 					ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(func_18(), iLocal_311, "exit_remote", sLocal_314, 8f, -8f, 0, 1000f);
-					if (func_6(iLocal_313))
+					if (__LIB_30__.func_500(iLocal_313))
 					{
 						CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_313, iLocal_311, "exit_cam", sLocal_314);
 					}
@@ -586,7 +578,7 @@ void func_1()//Position - 0x1D4
 					}
 					iLocal_304 = 7;
 				}
-				else if (func_5(0))
+				else if (__LIB_30__.func_516(0))
 				{
 					iLocal_311 = PED::CREATE_SYNCHRONIZED_SCENE(Local_315, Local_316, 2);
 					TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_311, sLocal_314, "idle_a", 8f, -8f, 0, 0, 1000f, 0);
@@ -606,9 +598,8 @@ void func_1()//Position - 0x1D4
 				iLocal_304 = 7;
 			}
 			break;
-		
 		case 6:
-			func_19();
+			__LIB_0__.func_186();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_311))
@@ -639,9 +630,8 @@ void func_1()//Position - 0x1D4
 				iLocal_304 = 5;
 			}
 			break;
-		
 		case 7:
-			func_19();
+			__LIB_0__.func_186();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (AUDIO::IS_AUDIO_SCENE_ACTIVE("TV_FRANKLINS_HOUSE_VINEWOOD"))
@@ -669,14 +659,13 @@ void func_1()//Position - 0x1D4
 				}
 			}
 			break;
-		
 		case 8:
 			if (STATS::STAT_GET_INT(joaat("NUM_SH_TV_WATCHED"), &iLocal_312, -1))
 			{
 				STATS::STAT_SET_INT(joaat("NUM_SH_TV_WATCHED"), iLocal_312 + 1, true);
 			}
 			BRAIN::REACTIVATE_NAMED_WORLD_BRAINS_WAITING_TILL_OUT_OF_RANGE("chop");
-			if (func_6(iLocal_313))
+			if (__LIB_30__.func_500(iLocal_313))
 			{
 				CAM::STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP(false, 0f, 3, 0);
 			}
@@ -686,29 +675,16 @@ void func_1()//Position - 0x1D4
 			iLocal_309 = 1;
 			if (Global_32020[1 /*11*/].f_2)
 			{
-				func_2(1);
+				__LIB_29__.func_818(1);
 			}
 			if (AUDIO::IS_AUDIO_SCENE_ACTIVE("TV_FRANKLINS_HOUSE_VINEWOOD"))
 			{
 				AUDIO::STOP_AUDIO_SCENE("TV_FRANKLINS_HOUSE_VINEWOOD");
 			}
 			Global_32005 = 0;
-			func_21(0, 1, 1, 0, 0, 0, 0);
+			__LIB_7__.func_279(0, 1, 1, 0, 0, 0, 0);
 			iLocal_304 = 0;
 			break;
-	}
-}
-
-void func_2(int iParam0)//Position - 0x894
-{
-	if (iParam0 != -1)
-	{
-		Global_32020[iParam0 /*11*/].f_5 = 0;
-		if (Global_32020[iParam0 /*11*/].f_2 && Global_32020[iParam0 /*11*/].f_7 == 0)
-		{
-			Global_32020[iParam0 /*11*/].f_7 = 1;
-		}
-		Global_32020[iParam0 /*11*/].f_8 = 0;
 	}
 }
 
@@ -718,149 +694,12 @@ void func_3()//Position - 0x8DC
 	int iVar1;
 	var uVar2;
 	var uVar3;
-	
 	if (!iLocal_307)
 	{
-		func_4(&iVar0, &iVar1, &uVar2, &uVar3, 0);
+		__LIB_0__.func_471(&iVar0, &iVar1, &uVar2, &uVar3, 0);
 		if (((iVar0 < -64 || iVar0 > 64) || iVar1 < -64) || iVar1 > 64)
 		{
 			iLocal_307 = 1;
-		}
-	}
-}
-
-void func_4(var uParam0, var uParam1, var uParam2, var uParam3, bool bParam4)//Position - 0x927
-{
-	*uParam0 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
-	*uParam1 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
-	*uParam2 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
-	*uParam3 = SYSTEM::FLOOR((PAD::GET_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
-	if (bParam4)
-	{
-		if (IntToFloat(*uParam0) == 0f && IntToFloat(*uParam1) == 0f)
-		{
-			*uParam0 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) * 127f));
-			*uParam1 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) * 127f));
-		}
-		if (IntToFloat(*uParam2) == 0f && IntToFloat(*uParam3) == 0f)
-		{
-			*uParam2 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 220 /*INPUT_SCRIPT_RIGHT_AXIS_X*/) * 127f));
-			*uParam3 = SYSTEM::FLOOR((PAD::GET_DISABLED_CONTROL_NORMAL(2 /*FRONTEND_CONTROL*/, 221 /*INPUT_SCRIPT_RIGHT_AXIS_Y*/) * 127f));
-		}
-	}
-}
-
-int func_5(int iParam0)//Position - 0x9FC
-{
-	int iVar0;
-	int iVar1;
-	
-	iVar0 = 64;
-	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/) - 127);
-	if (iParam0 || SYSTEM::TIMERA() > 300)
-	{
-		if (iVar1 > (0 + iVar0) || iVar1 < (0 - iVar0))
-		{
-			SYSTEM::SETTIMERA(0);
-			return 1;
-		}
-	}
-	return 0;
-}
-
-int func_6(int iParam0)//Position - 0xA48
-{
-	if (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4 && CAM::DOES_CAM_EXIST(iParam0))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-void func_7(bool bParam0, bool bParam1)//Position - 0xA69
-{
-	int iVar0;
-	int iVar1;
-	float fVar2;
-	
-	iVar0 = 64;
-	if (bParam0)
-	{
-		if (func_5(0))
-		{
-			if (!iLocal_36)
-			{
-				if (AUDIO::REQUEST_AMBIENT_AUDIO_BANK("SAFEHOUSE_MICHAEL_SIT_SOFA", false, -1))
-				{
-					AUDIO::PLAY_SOUND_FRONTEND(-1, "MICHAEL_SOFA_TV_CHANGE_CHANNEL_MASTER", 0, true);
-				}
-				if (GRAPHICS::GET_TV_CHANNEL() == 0)
-				{
-					GRAPHICS::SET_TV_CHANNEL(1);
-				}
-				else
-				{
-					GRAPHICS::SET_TV_CHANNEL(0);
-				}
-				iLocal_36 = 1;
-			}
-		}
-		else if (iLocal_36)
-		{
-			iLocal_36 = 0;
-		}
-	}
-	if (bParam1)
-	{
-		iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/) - 127);
-		if (!iLocal_37)
-		{
-			if (iVar1 > (0 + iVar0))
-			{
-				fVar2 = GRAPHICS::GET_TV_VOLUME();
-				fVar2 = (fVar2 - 0.5f);
-				if (fVar2 < -36f)
-				{
-					fVar2 = -36f;
-				}
-				GRAPHICS::SET_TV_VOLUME(fVar2);
-				iLocal_38 = MISC::GET_GAME_TIMER();
-				iLocal_37 = 1;
-			}
-			if (iVar1 < (0 - iVar0))
-			{
-				fVar2 = GRAPHICS::GET_TV_VOLUME();
-				fVar2 = (fVar2 + 0.5f);
-				if (fVar2 > 0f)
-				{
-					fVar2 = 0f;
-				}
-				GRAPHICS::SET_TV_VOLUME(fVar2);
-				iLocal_38 = MISC::GET_GAME_TIMER();
-				iLocal_37 = 1;
-			}
-			if (iVar1 < (0 + iVar0) && iVar1 > (0 - iVar0))
-			{
-				iLocal_39 = 1;
-			}
-			else if (iLocal_39)
-			{
-				if (AUDIO::REQUEST_AMBIENT_AUDIO_BANK("SAFEHOUSE_MICHAEL_SIT_SOFA", false, -1))
-				{
-					if (fVar2 != -36f && fVar2 != 0f)
-					{
-						AUDIO::PLAY_SOUND_FRONTEND(-1, "MICHAEL_SOFA_REMOTE_CLICK_VOLUME_MASTER", 0, true);
-					}
-					iLocal_39 = 0;
-				}
-			}
-		}
-		if (iLocal_37)
-		{
-			if (iVar1 == 0 || MISC::GET_GAME_TIMER() > iLocal_38 + 24)
-			{
-				iLocal_37 = 0;
-			}
 		}
 	}
 }
@@ -869,7 +708,7 @@ int func_8()//Position - 0xBB4
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/))
 	{
-		if ((((((func_33(func_11()) || func_33("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */)) || func_33("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */)) || func_33("TV_HLP2" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~ */)) || func_33("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || func_33("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || func_33("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */))
+		if ((((((__LIB_0__.func_1(__LIB_30__.func_529()) || __LIB_0__.func_1("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */)) || __LIB_0__.func_1("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */)) || __LIB_0__.func_1("TV_HLP2" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~ */)) || __LIB_0__.func_1("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || __LIB_0__.func_1("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || __LIB_0__.func_1("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -894,7 +733,7 @@ void func_9()//Position - 0xC4E
 	iLocal_311 = PED::CREATE_SYNCHRONIZED_SCENE(Local_315, Local_316, 2);
 	TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_311, sLocal_314, "exit", 8f, -8f, 0, 0, 1000f, 0);
 	ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(func_18(), iLocal_311, "exit_remote", sLocal_314, 8f, -8f, 0, 1000f);
-	if (func_6(iLocal_313))
+	if (__LIB_30__.func_500(iLocal_313))
 	{
 		CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_313, iLocal_311, "exit_cam", sLocal_314);
 	}
@@ -916,219 +755,11 @@ void func_10()//Position - 0xCF2
 	}
 }
 
-char* func_11()//Position - 0xD10
-{
-	char* sVar0;
-	
-	switch (iLocal_55)
-	{
-		case joaat("prop_bong_01"):
-			if (bLocal_49)
-			{
-				sVar0 = "SA_BONG2" /* GXT: Press ~INPUT_CONTEXT~ to take a hit from the bong. */;
-			}
-			else
-			{
-				sVar0 = "SA_BONG" /* GXT: Press ~INPUT_CONTEXT~ to take a hit from Jimmy's bong. */;
-			}
-			break;
-		
-		case joaat("prop_cigar_03"):
-			sVar0 = "SA_CIGAR" /* GXT: Press ~INPUT_CONTEXT~ to smoke a cigar. */;
-			break;
-		
-		case joaat("prop_cs_beer_bot_01"):
-			sVar0 = "SA_BEER" /* GXT: Press ~INPUT_CONTEXT~ to drink a beer. */;
-			break;
-		
-		case joaat("p_cs_joint_01"):
-			sVar0 = "SA_SPLFF" /* GXT: Press ~INPUT_CONTEXT~ to smoke a joint. */;
-			break;
-		
-		case joaat("p_tumbler_02_s1"):
-			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
-			break;
-		
-		case joaat("p_tumbler_cs2_s"):
-			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
-			break;
-		
-		case joaat("p_tumbler_cs2_s_trev"):
-			sVar0 = "SA_WHSKY" /* GXT: Press ~INPUT_CONTEXT~ to drink whiskey. */;
-			break;
-		
-		case joaat("prop_rolled_sock_02"):
-			sVar0 = "SA_GAS" /* GXT: Press ~INPUT_CONTEXT~ to huff gas. */;
-			break;
-		
-		case joaat("prop_mr_raspberry_01"):
-			sVar0 = "SA_MRJAM" /* GXT: Press ~INPUT_CONTEXT~ to play with Mr. Raspberry Jam. */;
-			break;
-		
-		case joaat("prop_radio_01"):
-			sVar0 = "SA_BEER" /* GXT: Press ~INPUT_CONTEXT~ to drink a beer. */;
-			break;
-		
-		case joaat("p_w_grass_gls_s"):
-			sVar0 = "SA_WHEAT" /* GXT: Press ~INPUT_CONTEXT~ to drink green juice. */;
-			break;
-		
-		case joaat("p_wine_glass_s"):
-			sVar0 = "SA_WINE" /* GXT: Press ~INPUT_CONTEXT~ to drink some wine. */;
-			break;
-		
-		default:
-			sVar0 = "";
-			break;
-	}
-	return sVar0;
-}
-
-void func_12(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//Position - 0xDEC
-{
-	if (iParam0 != -1)
-	{
-		if (!func_15(iParam0))
-		{
-			return;
-		}
-		Global_32020[iParam0 /*11*/].f_5 = 1;
-		Global_32020[iParam0 /*11*/] = iParam1;
-		Global_32020[iParam0 /*11*/].f_1 = iParam2;
-		Global_32020[iParam0 /*11*/].f_9 = bParam4;
-		Global_32020[iParam0 /*11*/].f_7 = iParam3;
-		if (func_14(iParam0))
-		{
-			GRAPHICS::SET_TV_CHANNEL(-1);
-			GRAPHICS::SET_TV_CHANNEL_PLAYLIST(iParam1, func_13(iParam2), bParam4);
-			GRAPHICS::SET_TV_CHANNEL(iParam1);
-		}
-	}
-	StringCopy(&Global_32098, SCRIPT::GET_THIS_SCRIPT_NAME(), 24);
-}
-
-char* func_13(int iParam0)//Position - 0xE66
-{
-	char* sVar0;
-	
-	switch (iParam0)
-	{
-		case 1:
-			sVar0 = "PL_STD_CNT";
-			break;
-		
-		case 2:
-			sVar0 = "PL_STD_WZL";
-			break;
-		
-		case 3:
-			sVar0 = "PL_LO_CNT";
-			break;
-		
-		case 4:
-			sVar0 = "PL_LO_WZL";
-			break;
-		
-		case 7:
-			sVar0 = "PL_SP_WORKOUT";
-			break;
-		
-		case 8:
-			sVar0 = "PL_SP_INV";
-			break;
-		
-		case 9:
-			sVar0 = "PL_SP_INV_EXP";
-			break;
-		
-		case 5:
-			sVar0 = "PL_LO_RS";
-			break;
-		
-		case 6:
-			sVar0 = "PL_LO_RS_CUTSCENE";
-			break;
-		
-		case 10:
-			sVar0 = "PL_SP_PLSH1_INTRO";
-			break;
-		
-		case 11:
-			sVar0 = "PL_LES1_FAME_OR_SHAME";
-			break;
-		
-		case 12:
-			sVar0 = "PL_STD_WZL_FOS_EP2";
-			break;
-		
-		case 13:
-			sVar0 = "PL_MP_WEAZEL";
-			break;
-		
-		case 14:
-			sVar0 = "PL_MP_CCTV";
-			break;
-	}
-	return sVar0;
-}
-
-int func_14(int iParam0)//Position - 0xF49
-{
-	if (iParam0 != -1)
-	{
-		if (Global_32020[iParam0 /*11*/].f_2)
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-int func_15(int iParam0)//Position - 0xF68
-{
-	if (iParam0 != -1)
-	{
-		if (Global_32020[iParam0 /*11*/].f_6)
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-void func_16()//Position - 0xF87
-{
-	GRAPHICS::SET_TV_CHANNEL_PLAYLIST(0, func_13(1), false);
-	if (func_17(22))
-	{
-		GRAPHICS::SET_TV_CHANNEL_PLAYLIST(1, func_13(12), false);
-	}
-	else
-	{
-		GRAPHICS::SET_TV_CHANNEL_PLAYLIST(1, func_13(2), false);
-	}
-}
-
-int func_17(int iParam0)//Position - 0xFBD
-{
-	if (iParam0 == 94 || iParam0 == -1)
-	{
-		return 0;
-	}
-	return Global_113386.f_9085.f_330[iParam0 /*6*/];
-}
-
 int func_18()//Position - 0xFE9
 {
 	int iVar0;
-	
 	iVar0 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(Local_305, 3f, joaat("prop_cs_remote_01"), false, false, true);
 	return iVar0;
-}
-
-void func_19()//Position - 0x1007
-{
-	Global_23011.f_6 = 1;
 }
 
 void func_20()//Position - 0x1015
@@ -1143,400 +774,6 @@ void func_20()//Position - 0x1015
 	}
 }
 
-void func_21(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6)//Position - 0x1038
-{
-	if (bParam0)
-	{
-		PLAYER::SPECIAL_ABILITY_DEACTIVATE_FAST(PLAYER::PLAYER_ID(), 0);
-		PLAYER::SET_ALL_RANDOM_PEDS_FLEE(PLAYER::PLAYER_ID(), true);
-		PLAYER::SET_POLICE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), true);
-		func_30(1);
-		HUD::THEFEED_FLUSH_QUEUE();
-		HUD::THEFEED_PAUSE();
-		if (Global_20266.f_1 > 3 && !bParam6)
-		{
-			if (AUDIO::IS_MOBILE_PHONE_CALL_ONGOING())
-			{
-				AUDIO::STOP_SCRIPTED_CONVERSATION(false);
-			}
-			if (!func_29())
-			{
-				Global_20266.f_1 = 3;
-			}
-			Global_21605 = 5;
-		}
-		func_28(1, bParam3, iParam2, 0);
-		Global_63160 = 1;
-		Global_75488 = 1;
-		Global_78317 = 1;
-	}
-	else
-	{
-		func_30(0);
-		HUD::THEFEED_RESUME();
-		Global_63160 = 0;
-		if (bParam1)
-		{
-			GRAPHICS::CASCADE_SHADOWS_INIT_SESSION();
-		}
-		PLAYER::SET_ALL_RANDOM_PEDS_FLEE(PLAYER::PLAYER_ID(), false);
-		PLAYER::SET_POLICE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
-		func_28(0, bParam3, iParam2, 0);
-		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-		{
-			if (((((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !func_26(PLAYER::PLAYER_ID())) && !func_23(PLAYER::PLAYER_ID(), 0)) && !func_22()) && !bParam4) && !bParam5)
-			{
-				ENTITY::SET_ENTITY_INVINCIBLE(PLAYER::PLAYER_PED_ID(), false);
-			}
-		}
-		else if (((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !func_26(PLAYER::PLAYER_ID())) && !bParam4) && !bParam5)
-		{
-			ENTITY::SET_ENTITY_INVINCIBLE(PLAYER::PLAYER_PED_ID(), false);
-		}
-		Global_78317 = 0;
-	}
-}
-
-bool func_22()//Position - 0x117B
-{
-	return BitTest(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_36.f_18, 14);
-}
-
-bool func_23(int iParam0, int iParam1)//Position - 0x1195
-{
-	bool bVar0;
-	
-	if (iParam0 == PLAYER::PLAYER_ID())
-	{
-		bVar0 = func_24(-1, 0) == 8;
-	}
-	else
-	{
-		bVar0 = Global_1853348[iParam0 /*834*/].f_205 == 8;
-	}
-	if (iParam1 == 1)
-	{
-		if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
-		{
-			bVar0 = PLAYER::GET_PLAYER_TEAM(iParam0) == 8;
-		}
-	}
-	return bVar0;
-}
-
-int func_24(int iParam0, bool bParam1)//Position - 0x11E0
-{
-	int iVar0;
-	int iVar1;
-	
-	iVar1 = iParam0;
-	if (iVar1 == -1)
-	{
-		iVar1 = func_25();
-	}
-	if (Global_1575038[iVar1] == 1)
-	{
-		if (bParam1)
-		{
-		}
-		iVar0 = 8;
-	}
-	else
-	{
-		iVar0 = Global_1574912[iVar1];
-		if (bParam1)
-		{
-		}
-	}
-	return iVar0;
-}
-
-int func_25()//Position - 0x1221
-{
-	return Global_1574918;
-}
-
-int func_26(int iParam0)//Position - 0x122D
-{
-	if (func_23(iParam0, 0))
-	{
-		return 1;
-	}
-	if (func_27())
-	{
-		if (iParam0 == PLAYER::PLAYER_ID())
-		{
-			return 1;
-		}
-	}
-	if (BitTest(Global_2689235[iParam0 /*453*/].f_197, 2))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-bool func_27()//Position - 0x126C
-{
-	return BitTest(Global_2621446, 3);
-}
-
-int func_28(bool bParam0, bool bParam1, var uParam2, bool bParam3)//Position - 0x127A
-{
-	int iVar0;
-	
-	iVar0 = 0;
-	if (MISC::IS_PC_VERSION())
-	{
-		if (CUTSCENE::IS_MULTIHEAD_FADE_UP() != bParam0 && uParam2)
-		{
-			CUTSCENE::SET_CUTSCENE_MULTIHEAD_FADE(bParam0, bParam1, true, bParam3);
-			iVar0 = 1;
-		}
-	}
-	return iVar0;
-}
-
-int func_29()//Position - 0x12AD
-{
-	if (Global_20266.f_1 == 1 || Global_20266.f_1 == 0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-void func_30(int iParam0)//Position - 0x12D4
-{
-	if (iParam0 == 1)
-	{
-		MISC::SET_BIT(&Global_8136, 13);
-	}
-	else
-	{
-		MISC::CLEAR_BIT(&Global_8136, 13);
-	}
-}
-
-int func_31(bool bParam0, bool bParam1, bool bParam2)//Position - 0x12F7
-{
-	int iVar0;
-	
-	if (MISC::IS_MINIGAME_IN_PROGRESS())
-	{
-		return 0;
-	}
-	if (bParam0)
-	{
-		if (ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
-		{
-			return 0;
-		}
-	}
-	iVar0 = 0;
-	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
-	{
-		if (!PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
-		{
-			return 0;
-		}
-		iVar0 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
-		if (bParam0)
-		{
-			if (ENTITY::IS_ENTITY_DEAD(iVar0, false))
-			{
-				return 0;
-			}
-		}
-		if (bParam2)
-		{
-			if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
-			{
-				if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, -1, false) != PLAYER::PLAYER_PED_ID())
-				{
-					return 0;
-				}
-			}
-		}
-		if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
-		{
-			if (ENTITY::GET_ENTITY_UPRIGHT_VALUE(iVar0) < 0.95f || ENTITY::GET_ENTITY_UPRIGHT_VALUE(iVar0) > 1.011f)
-			{
-				return 0;
-			}
-		}
-	}
-	else if (bParam1)
-	{
-		return 0;
-	}
-	if (!PLAYER::IS_PLAYER_READY_FOR_CUTSCENE(PLAYER::PLAYER_ID()))
-	{
-		return 0;
-	}
-	if (!PLAYER::CAN_PLAYER_START_MISSION(PLAYER::PLAYER_ID()))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-void func_32(char* sParam0)//Position - 0x13DC
-{
-	HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP(sParam0);
-	HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, true, true, -1);
-}
-
-bool func_33(char* sParam0)//Position - 0x13F2
-{
-	HUD::BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(sParam0);
-	return HUD::END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(0);
-}
-
-int func_34()//Position - 0x1405
-{
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		return Global_97919.f_44 == 1;
-	}
-	return 0;
-}
-
-int func_35(struct<3> Param0, float fParam1, var uParam2, var uParam3)//Position - 0x1421
-{
-	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
-	{
-		if ((!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !FIRE::IS_ENTITY_ON_FIRE(PLAYER::PLAYER_PED_ID())) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
-		{
-			if (!FIRE::IS_EXPLOSION_IN_SPHERE(-1, Param0, 2f))
-			{
-				if ((((CAM::IS_GAMEPLAY_CAM_RENDERING() && !CUTSCENE::IS_CUTSCENE_PLAYING()) && !CAM::IS_CINEMATIC_CAM_RENDERING()) && !func_39(0)) && !func_38())
-				{
-					if ((Global_97369 && Global_97370) || func_37())
-					{
-						return 0;
-					}
-					if (func_36(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Param0, fParam1, 0))
-					{
-						return 1;
-					}
-				}
-			}
-		}
-	}
-	return 0;
-}
-
-int func_36(struct<3> Param0, struct<3> Param1, float fParam2, bool bParam3)//Position - 0x14D4
-{
-	if (fParam2 < 0f)
-	{
-		fParam2 = 0f;
-	}
-	if (!bParam3)
-	{
-		if (MISC::ABSF((Param0.f_0 - Param1.f_0)) <= fParam2)
-		{
-			if (MISC::ABSF((Param0.f_1 - Param1.f_1)) <= fParam2)
-			{
-				if (MISC::ABSF((Param0.f_2 - Param1.f_2)) <= fParam2)
-				{
-					return 1;
-				}
-			}
-		}
-	}
-	else if (MISC::ABSF((Param0.f_0 - Param1.f_0)) <= fParam2)
-	{
-		if (MISC::ABSF((Param0.f_1 - Param1.f_1)) <= fParam2)
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-int func_37()//Position - 0x154F
-{
-	if (Global_43052 == 15)
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_38()//Position - 0x1564
-{
-	int iVar0;
-	int iVar1;
-	var uVar2[32];
-	
-	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
-	{
-		iVar0 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar2, -1);
-	}
-	iVar1 = 0;
-	while (iVar1 < iVar0)
-	{
-		if (!PED::IS_PED_INJURED(uVar2[iVar1]))
-		{
-			if (bLocal_50)
-			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_Zero"))
-				{
-					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
-					{
-						return 1;
-					}
-				}
-			}
-			if (!bLocal_50 && !bLocal_49)
-			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == joaat("Player_One"))
-				{
-					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(uVar2[iVar1], true), true) < 3f)
-					{
-						return 1;
-					}
-				}
-			}
-		}
-		iVar1++;
-	}
-	return 0;
-}
-
-int func_39(int iParam0)//Position - 0x1628
-{
-	if (iParam0 == 1)
-	{
-		if (Global_20266.f_1 > 3)
-		{
-			if (BitTest(Global_8136, 14))
-			{
-				return 1;
-			}
-			else
-			{
-				return 0;
-			}
-		}
-		else
-		{
-			return 0;
-		}
-	}
-	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
-	{
-		return 1;
-	}
-	if (Global_20266.f_1 > 3)
-	{
-		return 1;
-	}
-	return 0;
-}
-
 int func_40()//Position - 0x167F
 {
 	if (func_42() && func_41())
@@ -1549,7 +786,6 @@ int func_40()//Position - 0x167F
 int func_41()//Position - 0x169C
 {
 	int iVar0;
-	
 	iVar0 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(Local_305, 10f, joaat("prop_cs_remote_01"), false, false, true);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -1581,277 +817,9 @@ int func_43()//Position - 0x16EC
 	return 0;
 }
 
-int func_44()//Position - 0x170B
-{
-	if (MISC::IS_PC_VERSION())
-	{
-		if (MISC::GET_CITY_DENSITY() == 1f)
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-int func_45()//Position - 0x1728
-{
-	if (Global_97363 != -1)
-	{
-		return BitTest(Global_91229[Global_97363 /*34*/].f_15, 20);
-	}
-	return 0;
-}
-
-int func_46(int iParam0)//Position - 0x174B
-{
-	if (Global_43052 == 15)
-	{
-		return 0;
-	}
-	if (func_47(iParam0))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-bool func_47(int iParam0)//Position - 0x176D
-{
-	return func_48(iParam0, Global_43052);
-}
-
-int func_48(int iParam0, int iParam1)//Position - 0x177E
-{
-	if (iParam1 == 15)
-	{
-		return 1;
-	}
-	if (iParam0 == 15)
-	{
-		return 0;
-	}
-	switch (iParam0)
-	{
-		case 16:
-			switch (iParam1)
-			{
-				case 9:
-				case 10:
-				case 7:
-				case 13:
-				case 14:
-					return 0;
-					break;
-			}
-			return 1;
-			break;
-		
-		case 0:
-			switch (iParam1)
-			{
-				case 5:
-				case 17:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 2:
-		case 3:
-			switch (iParam1)
-			{
-				case 5:
-				case 6:
-				case 8:
-				case 17:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 4:
-			if (iParam1 == 17)
-			{
-				return 1;
-			}
-			break;
-		
-		case 5:
-			break;
-		
-		case 6:
-		case 8:
-			if (iParam1 == 5)
-			{
-				return 1;
-			}
-			break;
-		
-		case 7:
-			if (iParam1 == 6)
-			{
-				return 1;
-			}
-			break;
-		
-		case 9:
-			if (iParam1 == 5)
-			{
-				return 1;
-			}
-			break;
-		
-		case 10:
-			switch (iParam1)
-			{
-				case 5:
-				case 6:
-				case 17:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 11:
-			if (iParam1 == 5)
-			{
-				return 1;
-			}
-			break;
-		
-		case 17:
-			switch (iParam1)
-			{
-				case 17:
-				case 12:
-				case 5:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 18:
-		case 12:
-			switch (iParam1)
-			{
-				case 5:
-				case 6:
-				case 8:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 13:
-			switch (iParam1)
-			{
-				case 5:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 14:
-			switch (iParam1)
-			{
-				case 5:
-					return 1;
-					break;
-			}
-			break;
-	}
-	return 0;
-}
-
-int func_49()//Position - 0x195F
-{
-	func_50();
-	return Global_113386.f_2363.f_539.f_4321;
-}
-
-void func_50()//Position - 0x1978
-{
-	int iVar0;
-	
-	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
-	{
-		if (func_54(Global_113386.f_2363.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
-		{
-			iVar0 = func_53(PLAYER::PLAYER_PED_ID());
-			if (func_52(iVar0) && (!func_51(14) || Global_112337))
-			{
-				if (Global_113386.f_2363.f_539.f_4321 != iVar0 && func_52(Global_113386.f_2363.f_539.f_4321))
-				{
-					Global_113386.f_2363.f_539.f_4322 = Global_113386.f_2363.f_539.f_4321;
-				}
-				Global_113386.f_2363.f_539.f_4323 = iVar0;
-				Global_113386.f_2363.f_539.f_4321 = iVar0;
-				return;
-			}
-		}
-		else
-		{
-			if (Global_113386.f_2363.f_539.f_4321 != 145)
-			{
-				Global_113386.f_2363.f_539.f_4323 = Global_113386.f_2363.f_539.f_4321;
-			}
-			return;
-		}
-	}
-	Global_113386.f_2363.f_539.f_4321 = 145;
-}
-
-bool func_51(int iParam0)//Position - 0x1A75
-{
-	return Global_43052 == iParam0;
-}
-
-bool func_52(int iParam0)//Position - 0x1A83
-{
-	return iParam0 < 3;
-}
-
-int func_53(int iParam0)//Position - 0x1A8F
-{
-	int iVar0;
-	int iVar1;
-	
-	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		iVar1 = ENTITY::GET_ENTITY_MODEL(iParam0);
-		iVar0 = 0;
-		while (iVar0 <= 2)
-		{
-			if (func_54(iVar0) == iVar1)
-			{
-				return iVar0;
-			}
-			iVar0++;
-		}
-	}
-	return 145;
-}
-
-int func_54(int iParam0)//Position - 0x1ACC
-{
-	if (func_52(iParam0))
-	{
-		return func_55(iParam0);
-	}
-	else if (iParam0 != 145)
-	{
-	}
-	return 0;
-}
-
-var func_55(int iParam0)//Position - 0x1AF1
-{
-	return Global_1998[iParam0 /*29*/];
-}
-
 void func_56()//Position - 0x1B00
 {
-	if ((((((func_33(func_11()) || func_33("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */)) || func_33("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */)) || func_33("TV_HLP2" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~ */)) || func_33("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || func_33("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || func_33("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */))
+	if ((((((__LIB_0__.func_1(__LIB_30__.func_529()) || __LIB_0__.func_1("TV_HLP0" /* GXT: Press ~INPUT_CONTEXT~ to sit on the couch. */)) || __LIB_0__.func_1("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */)) || __LIB_0__.func_1("TV_HLP2" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_NEXT_CAMERA~ to change view.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~ */)) || __LIB_0__.func_1("TV_HLP3" /* GXT: Press ~INPUT_CONTEXT~ to watch the TV.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || __LIB_0__.func_1("TV_HLP4" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_CONTEXT~ to stop watching.~n~Press ~INPUT_SCRIPT_RLEFT~ to smoke.~n~Press ~INPUT_SCRIPT_RUP~ to stand up.~n~ */)) || __LIB_0__.func_1("TV_HLP7" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change the channel.~n~Use ~INPUT_SCRIPT_LEFT_AXIS_Y~ to change the volume.~n~Press ~INPUT_SCRIPT_RUP~ to stop watching.~n~ */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -1879,23 +847,7 @@ void func_56()//Position - 0x1B00
 	{
 		BRAIN::REACTIVATE_NAMED_WORLD_BRAINS_WAITING_TILL_OUT_OF_RANGE("chop");
 	}
-	func_57();
+	__LIB_39__.func_499();
 	SCRIPT::TERMINATE_THIS_THREAD();
-}
-
-void func_57()//Position - 0x1BD5
-{
-	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
-	{
-		if ((!PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()) && func_31(1, 0, 1)) && iLocal_51)
-		{
-			func_21(0, 1, 1, 0, 0, 0, 0);
-			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
-			{
-				TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
-			}
-			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
-		}
-	}
 }
 

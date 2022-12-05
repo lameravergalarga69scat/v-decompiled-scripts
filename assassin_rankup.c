@@ -45,7 +45,6 @@
 	var uLocal_43 = 0;
 	var uLocal_44 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -81,25 +80,10 @@ void __EntryFunction__()//Position - 0x0
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
 			Global_113386.f_19963++;
-			func_1();
+			__LIB_26__.func_224();
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
 		SYSTEM::WAIT(0);
 	}
-}
-
-void func_1()//Position - 0xAD
-{
-	func_2(&(Global_113386.f_19963.f_1), 2048);
-}
-
-void func_2(var uParam0, int iParam1)//Position - 0xC5
-{
-	func_3(uParam0, iParam1);
-}
-
-void func_3(var uParam0, var uParam1)//Position - 0xD5
-{
-	*uParam0 = (*uParam0 || uParam1);
 }
 

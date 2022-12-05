@@ -2,11 +2,9 @@
 	int iLocal_0 = 0;
 	int iLocal_1 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
-	
 	iLocal_0 = -1;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	STREAMING::REQUEST_IPL("prologue06_int");
@@ -88,23 +86,19 @@ void __EntryFunction__()//Position - 0x0
 			switch (iLocal_0)
 			{
 				case 0:
-					func_1(0.5f, 0.4f, "NG_INST_TT_1", 0);
+					__LIB_9__.func_595(0.5f, 0.4f, "NG_INST_TT_1", 0);
 					break;
-				
 				case 1:
-					func_1(0.5f, 0.4f, "NG_INST_TT_2", 0);
+					__LIB_9__.func_595(0.5f, 0.4f, "NG_INST_TT_2", 0);
 					break;
-				
 				case 2:
-					func_1(0.5f, 0.4f, "NG_INST_TT_3", 0);
+					__LIB_9__.func_595(0.5f, 0.4f, "NG_INST_TT_3", 0);
 					break;
-				
 				case 3:
-					func_1(0.5f, 0.4f, "NG_INST_TT_4", 0);
+					__LIB_9__.func_595(0.5f, 0.4f, "NG_INST_TT_4", 0);
 					break;
-				
 				case 4:
-					func_1(0.5f, 0.4f, "NG_INST_TT_5", 0);
+					__LIB_9__.func_595(0.5f, 0.4f, "NG_INST_TT_5", 0);
 					break;
 				}
 		}
@@ -116,11 +110,5 @@ void __EntryFunction__()//Position - 0x0
 		}
 		SYSTEM::WAIT(0);
 	}
-}
-
-void func_1(float fParam0, float fParam1, char* sParam2, int iParam3)//Position - 0x2F8
-{
-	HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT(sParam2);
-	HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fParam0, fParam1, iParam3);
 }
 

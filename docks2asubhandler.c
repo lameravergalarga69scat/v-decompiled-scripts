@@ -4,11 +4,9 @@
 	var uLocal_2 = 0;
 	struct<2> ScriptParam_0 = { 0, 0 } ;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	float fVar0;
-	
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(19))
 	{
 		func_1();

@@ -12,7 +12,6 @@
 	int iLocal_10 = 0;
 	int iLocal_11 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;

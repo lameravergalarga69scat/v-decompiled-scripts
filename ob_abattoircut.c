@@ -4,7 +4,6 @@
 	int iLocal_2 = 0;
 	int iScriptParam_0 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
@@ -35,10 +34,8 @@ void __EntryFunction__()//Position - 0x0
 							}
 						}
 						break;
-					
 					case 1:
 						break;
-					
 					case 2:
 						break;
 				}
@@ -57,20 +54,8 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0xAF
 {
-	func_2("ob_abattoir Terminated >>>>>>>>>>>>>>>>>\n");
+	__LIB_30__.func_882("ob_abattoir Terminated >>>>>>>>>>>>>>>>>\n");
 	STREAMING::REMOVE_ANIM_DICT("MISSMIC2");
 	SCRIPT::TERMINATE_THIS_THREAD();
-}
-
-void func_2(char* sParam0)//Position - 0xC8
-{
-	func_3(sParam0);
-}
-
-void func_3(char* sParam0)//Position - 0xD6
-{
-	if (MISC::ARE_STRINGS_EQUAL(sParam0, sParam0))
-	{
-	}
 }
 

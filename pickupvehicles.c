@@ -33,7 +33,6 @@
 	int iLocal_31 = 0;
 	int iLocal_32 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -52,14 +51,14 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_21 = 0f;
 	fLocal_25 = -0.0375f;
 	fLocal_26 = 0.17f;
-	func_4(21);
+	__LIB_0__.func_513(21);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(18))
 	{
 		if (PLAYER::GET_CAUSE_OF_MOST_RECENT_FORCE_CLEANUP() == 16)
 		{
-			func_3(21);
+			__LIB_0__.func_512(21);
 		}
-		func_2();
+		__LIB_0__.func_199();
 	}
 	while (true)
 	{
@@ -94,7 +93,7 @@ void __EntryFunction__()//Position - 0x0
 								}
 								if (ENTITY::DOES_ENTITY_EXIST(iLocal_29))
 								{
-									if (func_1(&iLocal_30, 1000))
+									if (__LIB_17__.func_372(&iLocal_30, 1000))
 									{
 										if (VEHICLE::IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER(iLocal_28, iLocal_29))
 										{
@@ -126,68 +125,5 @@ void __EntryFunction__()//Position - 0x0
 			}
 		}
 	}
-}
-
-int func_1(var uParam0, int iParam1)//Position - 0x18E
-{
-	int iVar0;
-	
-	iVar0 = MISC::GET_GAME_TIMER();
-	if ((iVar0 - *uParam0) > iParam1)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-void func_2()//Position - 0x1AC
-{
-	SCRIPT::TERMINATE_THIS_THREAD();
-}
-
-int func_3(int iParam0)//Position - 0x1B8
-{
-	int iVar0;
-	bool bVar1;
-	
-	if (iParam0 <= 31)
-	{
-		iVar0 = 9;
-		bVar1 = iParam0;
-	}
-	else
-	{
-		iVar0 = 10;
-		bVar1 = (iParam0 - 32);
-	}
-	if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
-	{
-		MISC::CLEAR_BIT(&(Global_113386.f_9085.f_99.f_219[iVar0]), bVar1);
-		return 1;
-	}
-	return 0;
-}
-
-int func_4(int iParam0)//Position - 0x20F
-{
-	int iVar0;
-	bool bVar1;
-	
-	if (iParam0 <= 31)
-	{
-		iVar0 = 9;
-		bVar1 = iParam0;
-	}
-	else
-	{
-		iVar0 = 10;
-		bVar1 = (iParam0 - 32);
-	}
-	if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
-	{
-		return 0;
-	}
-	MISC::SET_BIT(&(Global_113386.f_9085.f_99.f_219[iVar0]), bVar1);
-	return 1;
 }
 

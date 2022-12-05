@@ -9,7 +9,6 @@
 	float fLocal_7 = 0f;
 	float fLocal_8 = 0f;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	bLocal_0 = true;
@@ -24,7 +23,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		func_1();
+		__LIB_31__.func_722();
 	}
 	while (true)
 	{
@@ -45,11 +44,5 @@ void __EntryFunction__()//Position - 0x0
 			PED::SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME(fLocal_7, fLocal_8);
 		}
 	}
-}
-
-void func_1()//Position - 0x7C
-{
-	VEHICLE::SET_RANDOM_TRAINS(true);
-	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

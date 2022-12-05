@@ -45,11 +45,9 @@
 	var uLocal_43 = 0;
 	var uLocal_44 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
-	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
 	iLocal_4 = 134;
@@ -80,16 +78,6 @@ void __EntryFunction__()//Position - 0x0
 		ENTITY::SET_ENTITY_COORDS(iVar0, 2119.1587f, 4813.5225f, 40.2223f, true, false, false, true);
 		ENTITY::SET_ENTITY_HEADING(iVar0, 225.2837f);
 	}
-	func_1(19, 0);
-}
-
-void func_1(int iParam0, int iParam1)//Position - 0xB1
-{
-	if (iParam0 == 235 || iParam0 == 0)
-	{
-		return;
-	}
-	Global_113386.f_8613[iParam0] = 1;
-	Global_113386.f_8613.f_236[iParam0] = (MISC::GET_GAME_TIMER() + iParam1);
+	__LIB_0__.func_71(19, 0);
 }
 

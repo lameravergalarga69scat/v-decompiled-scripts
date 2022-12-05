@@ -3,7 +3,6 @@
 	int iLocal_1 = 0;
 	int iLocal_2 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
@@ -51,59 +50,18 @@ void __EntryFunction__()//Position - 0x0
 				MISC::SET_BIT(&(Global_113386.f_10016.f_25), 1);
 				if (MISC::HAS_GAME_INSTALLED_THIS_SESSION() || MISC::IS_PC_VERSION())
 				{
-					func_4(1, 1);
-					func_2();
+					__LIB_0__.func_540(1, 1);
+					__LIB_0__.func_533();
 				}
 				else
 				{
-					func_1();
+					__LIB_12__.func_254();
 				}
 			}
 		}
 		SYSTEM::WAIT(0);
 	}
 	func_10();
-}
-
-void func_1()//Position - 0x13B
-{
-	Global_100480 = 1;
-}
-
-int func_2()//Position - 0x148
-{
-	if (func_3(0))
-	{
-		return 0;
-	}
-	if (Global_100480.f_8)
-	{
-		if (Global_100480.f_10 > 0)
-		{
-			return 0;
-		}
-	}
-	else if (Global_100480.f_10 > 1)
-	{
-		return 0;
-	}
-	Global_100480.f_10++;
-	return 1;
-}
-
-int func_3(bool bParam0)//Position - 0x193
-{
-	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
-	{
-		return 1;
-	}
-	return BitTest(Global_78567, 0);
-}
-
-void func_4(int iParam0, int iParam1)//Position - 0x1BB
-{
-	Global_100480.f_7 = iParam0;
-	Global_100480.f_8 = iParam1;
 }
 
 void func_5(char* sParam0)//Position - 0x1D3
@@ -136,18 +94,7 @@ void func_7()//Position - 0x24B
 	HUD::HIDE_LOADING_ON_FADE_THIS_FRAME();
 	PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(7);
-	func_8();
-}
-
-void func_8()//Position - 0x268
-{
-	RECORDING::REPLAY_PREVENT_RECORDING_THIS_FRAME();
-	func_9();
-}
-
-void func_9()//Position - 0x278
-{
-	Global_23011.f_134 = 1;
+	__LIB_6__.func_842();
 }
 
 void func_10()//Position - 0x286

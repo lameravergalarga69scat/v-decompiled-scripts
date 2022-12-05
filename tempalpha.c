@@ -94,7 +94,6 @@
 	int iLocal_92 = 0;
 	int iLocal_93 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;

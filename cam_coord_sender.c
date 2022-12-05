@@ -18,7 +18,6 @@
 	var uLocal_16 = 0;
 	int iLocal_17 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;

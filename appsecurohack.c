@@ -21,7 +21,6 @@
 	var uLocal_19 = 0;
 	int iLocal_20 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -55,11 +54,10 @@ void __EntryFunction__()//Position - 0x0
 						func_6();
 					}
 					break;
-				
 				case 8:
-					if (func_5(2, Global_20234, 0))
+					if (__LIB_9__.func_596(2, Global_20234, 0))
 					{
-						func_4();
+						__LIB_9__.func_601();
 						Global_20244 = 1;
 						if (Global_20266.f_1 > 3)
 						{
@@ -67,81 +65,24 @@ void __EntryFunction__()//Position - 0x0
 						}
 					}
 					break;
-				
 				default:
 					break;
 			}
-			if (func_3())
+			if (__LIB_9__.func_600())
 			{
-				func_2();
+				__LIB_0__.func_199();
 			}
 		}
 		else
 		{
 			Global_20268 = 6;
-			func_2();
+			__LIB_0__.func_199();
 		}
-		if (func_1())
+		if (__LIB_9__.func_594())
 		{
-			func_2();
+			__LIB_0__.func_199();
 		}
 	}
-}
-
-int func_1()//Position - 0xC9
-{
-	if (((Global_20266.f_1 == 1 || Global_20266.f_1 == 3) || Global_20266.f_1 == 0) || Global_20210 == 1)
-	{
-		Global_20253 = 1;
-		return 1;
-	}
-	return 0;
-}
-
-void func_2()//Position - 0x10C
-{
-	SCRIPT::TERMINATE_THIS_THREAD();
-}
-
-int func_3()//Position - 0x118
-{
-	if (Global_8742 == 1 || Global_20266.f_1 < 7)
-	{
-		Global_20253 = 1;
-		return 1;
-	}
-	return 0;
-}
-
-void func_4()//Position - 0x141
-{
-	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
-	{
-		AUDIO::PLAY_SOUND_FRONTEND(-1, "Menu_Back", &Global_20255, true);
-	}
-}
-
-int func_5(int iParam0, int iParam1, int iParam2)//Position - 0x161
-{
-	if (PAD::IS_CONTROL_JUST_PRESSED(iParam0, iParam1) || (iParam2 == 1 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(iParam0, iParam1)))
-	{
-		if (MISC::IS_PC_VERSION())
-		{
-			if (MISC::UPDATE_ONSCREEN_KEYBOARD() == 0 || (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING() && PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/)))
-			{
-				return 0;
-			}
-		}
-		if (HUD::IS_PAUSE_MENU_ACTIVE() || HUD::IS_WARNING_MESSAGE_ACTIVE())
-		{
-			return 0;
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	return 0;
 }
 
 void func_6()//Position - 0x1D3
@@ -157,70 +98,21 @@ void func_7()//Position - 0x1E7
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4541517);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4541516);
-	func_9("");
-	func_9(&Global_4541518);
+	__LIB_0__.func_478("");
+	__LIB_0__.func_478(&Global_4541518);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(27);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (!BitTest(Global_4718592.f_21, 30))
 	{
-		func_8(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
+		__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
 	}
-}
-
-void func_8(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10, char* sParam11)//Position - 0x262
-{
-	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, sParam1);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam2));
-	if (fParam3 != -1f)
-	{
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam3));
-	}
-	if (fParam4 != -1f)
-	{
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam4));
-	}
-	if (fParam5 != -1f)
-	{
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam5));
-	}
-	if (fParam6 != -1f)
-	{
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam6));
-	}
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam7))
-	{
-		func_9(sParam7);
-	}
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam8))
-	{
-		func_9(sParam8);
-	}
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam9))
-	{
-		func_9(sParam9);
-	}
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam10))
-	{
-		func_9(sParam10);
-	}
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam11))
-	{
-		func_9(sParam11);
-	}
-	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-}
-
-void func_9(char* sParam0)//Position - 0x315
-{
-	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
-	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
 void func_10()//Position - 0x327
 {
 	func_7();
-	func_8(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
+	__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
 }
 

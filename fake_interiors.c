@@ -33,7 +33,6 @@
 	int iLocal_31 = 0;
 	var uLocal_32 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -65,9 +64,9 @@ void __EntryFunction__()//Position - 0x0
 		{
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
-		if (func_23(PLAYER::PLAYER_ID()) && ENTITY::DOES_ENTITY_EXIST(func_22()))
+		if (__LIB_6__.func_948(PLAYER::PLAYER_ID()) && ENTITY::DOES_ENTITY_EXIST(__LIB_0__.func_727()))
 		{
-			iLocal_31 = func_22();
+			iLocal_31 = __LIB_0__.func_727();
 		}
 		else
 		{
@@ -86,7 +85,6 @@ void func_1()//Position - 0xB1
 	struct<3> Var1;
 	bool bVar2;
 	int iVar3;
-	
 	func_21();
 	if (iLocal_29 != -1 && func_20(iLocal_29))
 	{
@@ -149,17 +147,16 @@ void func_1()//Position - 0xB1
 int func_2()//Position - 0x1E7
 {
 	int iVar0;
-	
-	if (func_7(PLAYER::PLAYER_ID()))
+	if (__LIB_18__.func_255(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
-	if (func_5(PLAYER::PLAYER_ID(), 1))
+	if (__LIB_1__.func_113(PLAYER::PLAYER_ID(), 1))
 	{
-		iVar0 = func_4();
-		if (iVar0 != func_3())
+		iVar0 = __LIB_0__.func_582();
+		if (iVar0 != __LIB_0__.func_160())
 		{
-			if (func_7(iVar0))
+			if (__LIB_18__.func_255(iVar0))
 			{
 				return 1;
 			}
@@ -168,96 +165,24 @@ int func_2()//Position - 0x1E7
 	return 0;
 }
 
-int func_3()//Position - 0x227
-{
-	return -1;
-}
-
-var func_4()//Position - 0x230
-{
-	return Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10;
-}
-
-bool func_5(int iParam0, bool bParam1)//Position - 0x245
-{
-	if (!bParam1)
-	{
-		if (func_6(iParam0))
-		{
-			return 0;
-		}
-	}
-	return Global_1892703[iParam0 /*599*/].f_10 != func_3();
-}
-
-int func_6(int iParam0)//Position - 0x270
-{
-	if (iParam0 != func_3())
-	{
-		if (Global_1892703[iParam0 /*599*/].f_10 != func_3())
-		{
-			return Global_1892703[iParam0 /*599*/].f_10 == iParam0;
-		}
-	}
-	return 0;
-}
-
-int func_7(int iParam0)//Position - 0x2A5
-{
-	int iVar0;
-	
-	if (func_9(iParam0))
-	{
-		iVar0 = func_8(iParam0);
-		if ((iVar0 == 3 || iVar0 == 4) || iVar0 == 5)
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-int func_8(int iParam0)//Position - 0x2DE
-{
-	if (iParam0 != func_3())
-	{
-		return Global_1853348[iParam0 /*834*/].f_267.f_278;
-	}
-	return 0;
-}
-
-int func_9(int iParam0)//Position - 0x302
-{
-	if (iParam0 != func_3())
-	{
-		return Global_1853348[iParam0 /*834*/].f_267.f_278 != 0;
-	}
-	return 0;
-}
-
 void func_10(int iParam0)//Position - 0x328
 {
 	struct<3> Var0;
-	
 	Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
 	HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
 	switch (iParam0)
 	{
 		case 0:
 			break;
-		
 		case 1:
 			break;
-		
 		case 2:
 			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
 			HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
 			break;
-		
 		case 3:
 			HUD::SET_RADAR_AS_EXTERIOR_THIS_FRAME();
 			break;
-		
 		case 4:
 			HUD::SET_RADAR_AS_EXTERIOR_THIS_FRAME();
 			break;
@@ -267,13 +192,11 @@ void func_10(int iParam0)//Position - 0x328
 int func_11(int iParam0)//Position - 0x396
 {
 	struct<3> Var0;
-	
 	switch (iParam0)
 	{
 		case 0:
 			return 0;
 			break;
-		
 		case 1:
 			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
 			if (Var0.f_2 < 9.7796f)
@@ -289,7 +212,6 @@ int func_11(int iParam0)//Position - 0x396
 				return 2;
 			}
 			break;
-		
 		case 2:
 			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
 			if (Var0.f_2 < 178.9f)
@@ -305,11 +227,9 @@ int func_11(int iParam0)//Position - 0x396
 				return 2;
 			}
 			break;
-		
 		case 3:
 			return 0;
 			break;
-		
 		case 4:
 			return 0;
 			break;
@@ -324,19 +244,15 @@ int func_12(int iParam0)//Position - 0x46B
 		case 0:
 			return 0;
 			break;
-		
 		case 1:
 			return 0;
 			break;
-		
 		case 2:
 			return 0;
 			break;
-		
 		case 3:
 			return 0;
 			break;
-		
 		case 4:
 			return 0;
 			break;
@@ -351,19 +267,15 @@ char* func_13(int iParam0)//Position - 0x4BC
 		case 0:
 			return "V_FakeBoatPO1SH2A";
 			break;
-		
 		case 1:
 			return "V_FakeWarehousePO103";
 			break;
-		
 		case 2:
 			return "V_FakeKortzCenter";
 			break;
-		
 		case 3:
 			return "V_FakePrison";
 			break;
-		
 		case 4:
 			return "V_FakeMilitaryBase";
 			break;
@@ -383,77 +295,61 @@ float func_14(int iParam0, int iParam1)//Position - 0x518
 					break;
 			}
 			break;
-		
 		case 1:
 			switch (iParam1)
 			{
 				case 0:
 					return 32.6875f;
 					break;
-				
 				case 1:
 					return 13.1875f;
 					break;
-				
 				case 2:
 					return 16.25f;
 					break;
-				
 				case 3:
 					return 21.75f;
 					break;
 			}
 			break;
-		
 		case 2:
 			switch (iParam1)
 			{
 				case 0:
 					return 95f;
 					break;
-				
 				case 1:
 					return 78.75f;
 					break;
-				
 				case 2:
 					return 70.6875f;
 					break;
-				
 				case 3:
 					return 64.4375f;
 					break;
-				
 				case 4:
 					return 32.375f;
 					break;
-				
 				case 5:
 					return 19f;
 					break;
-				
 				case 6:
 					return 19f;
 					break;
-				
 				case 7:
 					return 19.78125f;
 					break;
-				
 				case 8:
 					return 32.0625f;
 					break;
-				
 				case 9:
 					return 35.8125f;
 					break;
-				
 				case 10:
 					return 30.5f;
 					break;
 			}
 			break;
-		
 		case 3:
 			switch (iParam1)
 			{
@@ -462,7 +358,6 @@ float func_14(int iParam0, int iParam1)//Position - 0x518
 					break;
 			}
 			break;
-		
 		case 4:
 			switch (iParam1)
 			{
@@ -487,77 +382,61 @@ Vector3 func_15(int iParam0, int iParam1)//Position - 0x6AA
 					break;
 			}
 			break;
-		
 		case 1:
 			switch (iParam1)
 			{
 				case 0:
 					return 34.278374f, -2654.2437f, 20.942299f;
 					break;
-				
 				case 1:
 					return 13.931628f, -2654.5605f, 14.44239f;
 					break;
-				
 				case 2:
 					return 55.595722f, -2667.4985f, 10.822453f;
 					break;
-				
 				case 3:
 					return 34.586597f, -2746.3875f, 10.950064f;
 					break;
 			}
 			break;
-		
 		case 2:
 			switch (iParam1)
 			{
 				case 0:
 					return -2169.1704f, 256.7264f, 203.40813f;
 					break;
-				
 				case 1:
 					return -2216.3938f, 329.4761f, 201.36168f;
 					break;
-				
 				case 2:
 					return -2345.3528f, 350.78818f, 189.65222f;
 					break;
-				
 				case 3:
 					return -2288.0972f, 388.99094f, 200.9045f;
 					break;
-				
 				case 4:
 					return -2310.2632f, 406.638f, 200.90408f;
 					break;
-				
 				case 5:
 					return -2169.2214f, 260.5679f, 202.42944f;
 					break;
-				
 				case 6:
 					return -2258.7776f, 166.9506f, 202.83177f;
 					break;
-				
 				case 7:
 					return -2236.9731f, 285.59576f, 203.03947f;
 					break;
-				
 				case 8:
 					return -2211.3618f, 303.67413f, 214.93228f;
 					break;
-				
 				case 9:
 					return -2282.0981f, 383.09036f, 201.0395f;
 					break;
-				
 				case 10:
 					return -2277.9302f, 356.44424f, 201.10155f;
 					break;
 			}
 			break;
-		
 		case 3:
 			switch (iParam1)
 			{
@@ -566,7 +445,6 @@ Vector3 func_15(int iParam0, int iParam1)//Position - 0x6AA
 					break;
 			}
 			break;
-		
 		case 4:
 			switch (iParam1)
 			{
@@ -591,77 +469,61 @@ Vector3 func_16(int iParam0, int iParam1)//Position - 0x8F3
 					break;
 			}
 			break;
-		
 		case 1:
 			switch (iParam1)
 			{
 				case 0:
 					return 34.15308f, -2747.0674f, 1.137565f;
 					break;
-				
 				case 1:
 					return 13.957768f, -2700.626f, 5.046232f;
 					break;
-				
 				case 2:
 					return 55.61185f, -2687.6814f, 5.005801f;
 					break;
-				
 				case 3:
 					return 34.56926f, -2759.479f, -0.030933f;
 					break;
 			}
 			break;
-		
 		case 2:
 			switch (iParam1)
 			{
 				case 0:
 					return -2317.3801f, 191.63188f, 165.40373f;
 					break;
-				
 				case 1:
 					return -2357.9949f, 264.02972f, 162.79884f;
 					break;
-				
 				case 2:
 					return -2261.4329f, 387.3963f, 154.35222f;
 					break;
-				
 				case 3:
 					return -2326.399f, 408.3378f, 140.31822f;
 					break;
-				
 				case 4:
 					return -2304.6167f, 460.21268f, 140.21474f;
 					break;
-				
 				case 5:
 					return -2150.825f, 216.41681f, 162.80118f;
 					break;
-				
 				case 6:
 					return -2172.7651f, 203.5957f, 167.41351f;
 					break;
-				
 				case 7:
 					return -2191.0364f, 305.96097f, 159.62502f;
 					break;
-				
 				case 8:
 					return -2227.613f, 340.05872f, 165.13574f;
 					break;
-				
 				case 9:
 					return -2244.4097f, 399.57635f, 137.5101f;
 					break;
-				
 				case 10:
 					return -2243.2615f, 371.4072f, 137.2722f;
 					break;
 			}
 			break;
-		
 		case 3:
 			switch (iParam1)
 			{
@@ -670,7 +532,6 @@ Vector3 func_16(int iParam0, int iParam1)//Position - 0x8F3
 					break;
 			}
 			break;
-		
 		case 4:
 			switch (iParam1)
 			{
@@ -690,19 +551,15 @@ int func_17(int iParam0)//Position - 0xB3C
 		case 0:
 			return 1;
 			break;
-		
 		case 1:
 			return 4;
 			break;
-		
 		case 2:
 			return 11;
 			break;
-		
 		case 3:
 			return 1;
 			break;
-		
 		case 4:
 			return 1;
 			break;
@@ -717,19 +574,15 @@ int func_18(int iParam0)//Position - 0xB8E
 		case 0:
 			return 10000;
 			break;
-		
 		case 1:
 			return 10000;
 			break;
-		
 		case 2:
 			return 250000;
 			break;
-		
 		case 3:
 			return 9000000;
 			break;
-		
 		case 4:
 			return 2250000;
 			break;
@@ -744,19 +597,15 @@ Vector3 func_19(int iParam0)//Position - 0xBEC
 		case 0:
 			return 1240f, -2970f, 12.2f;
 			break;
-		
 		case 1:
 			return 40f, -2720f, 12f;
 			break;
-		
 		case 2:
 			return -2250f, 300f, 182.2f;
 			break;
-		
 		case 3:
 			return 1700f, 2580f, 80f;
 			break;
-		
 		case 4:
 			return -2250f, 3100f, 80f;
 			break;
@@ -770,16 +619,12 @@ int func_20(int iParam0)//Position - 0xC86
 	{
 		case 0:
 			break;
-		
 		case 1:
 			break;
-		
 		case 2:
 			break;
-		
 		case 3:
 			break;
-		
 		case 4:
 			break;
 	}
@@ -789,7 +634,6 @@ int func_20(int iParam0)//Position - 0xC86
 void func_21()//Position - 0xCC3
 {
 	struct<3> Var0;
-	
 	iLocal_28++;
 	if (iLocal_28 > 4)
 	{
@@ -810,89 +654,5 @@ void func_21()//Position - 0xCC3
 			}
 		}
 	}
-}
-
-var func_22()//Position - 0xD1D
-{
-	return Global_2621446.f_2;
-}
-
-int func_23(int iParam0)//Position - 0xD2B
-{
-	if (func_25(iParam0, 0))
-	{
-		return 1;
-	}
-	if (func_24())
-	{
-		if (iParam0 == PLAYER::PLAYER_ID())
-		{
-			return 1;
-		}
-	}
-	if (BitTest(Global_2689235[iParam0 /*453*/].f_197, 2))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-bool func_24()//Position - 0xD6A
-{
-	return BitTest(Global_2621446, 3);
-}
-
-bool func_25(int iParam0, int iParam1)//Position - 0xD78
-{
-	bool bVar0;
-	
-	if (iParam0 == PLAYER::PLAYER_ID())
-	{
-		bVar0 = func_26(-1, 0) == 8;
-	}
-	else
-	{
-		bVar0 = Global_1853348[iParam0 /*834*/].f_205 == 8;
-	}
-	if (iParam1 == 1)
-	{
-		if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
-		{
-			bVar0 = PLAYER::GET_PLAYER_TEAM(iParam0) == 8;
-		}
-	}
-	return bVar0;
-}
-
-int func_26(int iParam0, bool bParam1)//Position - 0xDC3
-{
-	int iVar0;
-	int iVar1;
-	
-	iVar1 = iParam0;
-	if (iVar1 == -1)
-	{
-		iVar1 = func_27();
-	}
-	if (Global_1575038[iVar1] == 1)
-	{
-		if (bParam1)
-		{
-		}
-		iVar0 = 8;
-	}
-	else
-	{
-		iVar0 = Global_1574912[iVar1];
-		if (bParam1)
-		{
-		}
-	}
-	return iVar0;
-}
-
-int func_27()//Position - 0xE04
-{
-	return Global_1574918;
 }
 

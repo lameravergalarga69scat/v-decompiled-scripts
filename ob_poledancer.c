@@ -9,7 +9,6 @@
 	int iLocal_7 = 0;
 	int iLocal_8 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	sLocal_4 = "Poledance_01";
@@ -38,7 +37,6 @@ void __EntryFunction__()//Position - 0x0
 							iLocal_0 = 2;
 						}
 						break;
-					
 					case 2:
 						func_3();
 						if (func_2())
@@ -47,7 +45,6 @@ void __EntryFunction__()//Position - 0x0
 							iLocal_0 = 3;
 						}
 						break;
-					
 					case 3:
 						if (!PED::IS_PED_INJURED(iLocal_1))
 						{
@@ -90,7 +87,6 @@ void func_1()//Position - 0xDC
 int func_2()//Position - 0x10D
 {
 	struct<3> Var0;
-	
 	Var0 = { 2f, 2f, 0.5f };
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{

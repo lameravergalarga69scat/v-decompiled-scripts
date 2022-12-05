@@ -118,7 +118,6 @@
 	var uScriptParam_2 = 0;
 	var uScriptParam_3 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
@@ -126,7 +125,6 @@ void __EntryFunction__()//Position - 0x0
 	int iVar2;
 	var uVar3;
 	var uVar4;
-	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
 	iLocal_4 = 134;
@@ -235,7 +233,7 @@ void __EntryFunction__()//Position - 0x0
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("MENU_SHIFT_DEPTH");
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-							func_134();
+							__LIB_34__.func_998();
 						}
 						else
 						{
@@ -284,10 +282,9 @@ void __EntryFunction__()//Position - 0x0
 								Global_1643950.f_3 = 0;
 								func_145(-1, &Global_1647601);
 								func_144(&Global_1647601);
-								func_134();
+								__LIB_34__.func_998();
 								iVar1 = 0;
 								break;
-							
 							case 1:
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "CANCEL", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 								GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("MENU_SHIFT_DEPTH");
@@ -300,7 +297,7 @@ void __EntryFunction__()//Position - 0x0
 								func_141(-1, &Global_1646672);
 								func_140(&Global_1646672);
 								func_139(&Global_1646672);
-								func_134();
+								__LIB_34__.func_998();
 								Global_1643950.f_7 = 0;
 								break;
 							}
@@ -325,13 +322,10 @@ void __EntryFunction__()//Position - 0x0
 				}
 			}
 			break;
-		
 		case 0:
 			break;
-		
 		case 1:
 			break;
-		
 		case 2:
 			break;
 	}
@@ -372,33 +366,32 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 	int iVar9;
 	int iVar10;
 	int iVar11;
-	
-	if (!func_14(uParam2) || (func_14(uParam2) && func_13(uParam2, 250, 0)))
+	if (!__LIB_0__.func_649(uParam2) || (__LIB_0__.func_649(uParam2) && __LIB_2__.func_47(uParam2, 250, 0)))
 	{
 		iVar0 = 1;
 	}
-	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || func_12(187, &(Global_1648034.f_1060), 1)) && iVar0)
+	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || __LIB_4__.func_751(187, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		func_11(uParam2);
-		func_10(uParam2, 0, 0);
+		__LIB_0__.func_579(uParam2);
+		__LIB_0__.func_580(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 0);
 	}
-	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || func_12(188, &(Global_1648034.f_1060), 1)) && iVar0)
+	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || __LIB_4__.func_751(188, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		func_11(uParam2);
-		func_10(uParam2, 0, 0);
+		__LIB_0__.func_579(uParam2);
+		__LIB_0__.func_580(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 1);
 	}
-	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 241 /*INPUT_CURSOR_SCROLL_UP*/)) || func_12(189, &(Global_1648034.f_1060), 1)) && iVar0)
+	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 241 /*INPUT_CURSOR_SCROLL_UP*/)) || __LIB_4__.func_751(189, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		func_11(uParam2);
-		func_10(uParam2, 0, 0);
+		__LIB_0__.func_579(uParam2);
+		__LIB_0__.func_580(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 2);
 	}
-	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 242 /*INPUT_CURSOR_SCROLL_DOWN*/)) || func_12(190, &(Global_1648034.f_1060), 1)) && iVar0)
+	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 242 /*INPUT_CURSOR_SCROLL_DOWN*/)) || __LIB_4__.func_751(190, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		func_11(uParam2);
-		func_10(uParam2, 0, 0);
+		__LIB_0__.func_579(uParam2);
+		__LIB_0__.func_580(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 3);
 	}
 	if (BitTest(uParam0->f_464, 1))
@@ -412,7 +405,7 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 				uParam1->f_5 = 0;
 				uParam1->f_1 = 0;
 				uParam1->f_3 = 0;
-				if (func_9() == 0 || func_8() == 0)
+				if (__LIB_0__.func_3() == 0 || __LIB_0__.func_63() == 0)
 				{
 				}
 				else if (uParam1->f_6 > 16)
@@ -431,9 +424,8 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 				func_145(uParam1->f_6, &Global_1647601);
 				func_144(&Global_1647601);
 				uParam0->f_469 = 1;
-				func_5(&(uParam0->f_465), 0, 0);
+				__LIB_0__.func_495(&(uParam0->f_465), 0, 0);
 				break;
-			
 			case 1:
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_LEFT_RIGHT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 				uParam1->f_3 = (uParam1->f_3 - 1);
@@ -476,9 +468,8 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 				func_145(uParam1->f_6, &Global_1647601);
 				func_144(&Global_1647601);
 				uParam0->f_469 = 1;
-				func_5(&(uParam0->f_465), 0, 0);
+				__LIB_0__.func_495(&(uParam0->f_465), 0, 0);
 				break;
-			
 			case 1:
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_LEFT_RIGHT", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 				uParam1->f_3++;
@@ -612,7 +603,7 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 	}
 	if (uParam0->f_469 == 1)
 	{
-		if (func_4(&(uParam0->f_465), 500, 0))
+		if (__LIB_2__.func_173(&(uParam0->f_465), 500, 0))
 		{
 			switch (uParam1->f_7)
 			{
@@ -637,7 +628,7 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 					{
 						func_1();
 						func_3(1);
-						func_134();
+						__LIB_34__.func_998();
 						uParam0->f_470 = 1;
 					}
 					break;
@@ -651,58 +642,14 @@ void func_3(bool bParam0)//Position - 0xB61
 	HUD::PAUSE_MENU_SET_BUSY_SPINNER(bParam0, 6, 0);
 }
 
-int func_4(var uParam0, int iParam1, bool bParam2)//Position - 0xB71
-{
-	if (iParam1 == -1)
-	{
-		return 1;
-	}
-	func_10(uParam0, bParam2, 0);
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !bParam2)
-	{
-		if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), *uParam0)) >= iParam1)
-		{
-			func_11(uParam0);
-			return 1;
-		}
-	}
-	else if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(MISC::GET_GAME_TIMER(), *uParam0)) >= iParam1)
-	{
-		func_11(uParam0);
-		return 1;
-	}
-	return 0;
-}
-
-void func_5(var uParam0, bool bParam1, bool bParam2)//Position - 0xBDB
-{
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !bParam1)
-	{
-		if (!bParam2)
-		{
-			*uParam0 = NETWORK::GET_NETWORK_TIME();
-		}
-		else
-		{
-			*uParam0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-		}
-	}
-	else
-	{
-		*uParam0 = MISC::GET_GAME_TIMER();
-	}
-	uParam0->f_1 = 1;
-}
-
 int func_6(var uParam0, bool bParam1)//Position - 0xC18
 {
 	int iVar0;
 	int iVar1;
-	
 	iVar1 = uParam0;
 	if (iVar1 == -1)
 	{
-		iVar1 = func_7();
+		iVar1 = __LIB_0__.func_5();
 	}
 	if (Global_1575038[iVar1] == 1)
 	{
@@ -721,155 +668,6 @@ int func_6(var uParam0, bool bParam1)//Position - 0xC18
 	return iVar0;
 }
 
-int func_7()//Position - 0xC59
-{
-	return Global_1574918;
-}
-
-int func_8()//Position - 0xC65
-{
-	return Global_31960;
-}
-
-int func_9()//Position - 0xC70
-{
-	return Global_31959;
-}
-
-void func_10(var uParam0, bool bParam1, bool bParam2)//Position - 0xC7B
-{
-	if (uParam0->f_1 == 0)
-	{
-		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !bParam1)
-		{
-			if (!bParam2)
-			{
-				*uParam0 = NETWORK::GET_NETWORK_TIME();
-			}
-			else
-			{
-				*uParam0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-			}
-		}
-		else
-		{
-			*uParam0 = MISC::GET_GAME_TIMER();
-		}
-		uParam0->f_1 = 1;
-	}
-}
-
-void func_11(var uParam0)//Position - 0xCC0
-{
-	uParam0->f_1 = 0;
-}
-
-int func_12(int iParam0, var uParam1, int iParam2)//Position - 0xCCD
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	
-	iVar0 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 195 /*INPUT_FRONTEND_AXIS_X*/) - 127);
-	iVar1 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 196 /*INPUT_FRONTEND_AXIS_Y*/) - 127);
-	iVar2 = (PAD::GET_CONTROL_VALUE(2 /*FRONTEND_CONTROL*/, 197 /*INPUT_FRONTEND_RIGHT_AXIS_X*/) - 127);
-	switch (iParam0)
-	{
-		case 189:
-			if (iVar0 < -30)
-			{
-				if (*uParam1 < MISC::GET_GAME_TIMER() || iParam2 == 0)
-				{
-					*uParam1 = MISC::GET_GAME_TIMER() + 250;
-					return 1;
-				}
-			}
-			break;
-		
-		case 190:
-			if (iVar0 > 30)
-			{
-				if (*uParam1 < MISC::GET_GAME_TIMER() || iParam2 == 0)
-				{
-					*uParam1 = MISC::GET_GAME_TIMER() + 250;
-					return 1;
-				}
-			}
-			break;
-		
-		case 188:
-			if (iVar1 < -30)
-			{
-				if (*uParam1 < MISC::GET_GAME_TIMER() || iParam2 == 0)
-				{
-					*uParam1 = MISC::GET_GAME_TIMER() + 250;
-					return 1;
-				}
-			}
-			break;
-		
-		case 187:
-			if (iVar1 > 30)
-			{
-				if (*uParam1 < MISC::GET_GAME_TIMER() || iParam2 == 0)
-				{
-					*uParam1 = MISC::GET_GAME_TIMER() + 250;
-					return 1;
-				}
-			}
-			break;
-		
-		case 194:
-			if (iVar2 > 30)
-			{
-				if (*uParam1 < MISC::GET_GAME_TIMER() || iParam2 == 0)
-				{
-					*uParam1 = MISC::GET_GAME_TIMER() + 250;
-					return 1;
-				}
-			}
-			break;
-		
-		case 193:
-			if (iVar2 < -30)
-			{
-				if (*uParam1 < MISC::GET_GAME_TIMER() || iParam2 == 0)
-				{
-					*uParam1 = MISC::GET_GAME_TIMER() + 250;
-					return 1;
-				}
-			}
-			break;
-	}
-	return 0;
-}
-
-int func_13(var uParam0, int iParam1, bool bParam2)//Position - 0xE30
-{
-	if (iParam1 == -1)
-	{
-		return 1;
-	}
-	func_10(uParam0, bParam2, 0);
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !bParam2)
-	{
-		if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), *uParam0)) >= iParam1)
-		{
-			return 1;
-		}
-	}
-	else if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(MISC::GET_GAME_TIMER(), *uParam0)) >= iParam1)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-bool func_14(var uParam0)//Position - 0xE8E
-{
-	return uParam0->f_1;
-}
-
 void func_15(var uParam0)//Position - 0xE9A
 {
 	int iVar0;
@@ -877,7 +675,6 @@ void func_15(var uParam0)//Position - 0xE9A
 	int iVar2;
 	int iVar3;
 	int iVar4;
-	
 	iVar3 = 0;
 	if (GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED("MPTShirtAwards2"))
 	{
@@ -944,38 +741,32 @@ void func_15(var uParam0)//Position - 0xE9A
 						iLocal_111 += 12;
 					}
 					break;
-				
 				case 1:
 					iLocal_110 = 2;
 					iLocal_111 = 7;
 					iLocal_110 = 2;
 					iLocal_111 = 9;
 					break;
-				
 				case 2:
 					iLocal_110 = 2;
 					iLocal_111 = 4;
 					break;
-				
 				case 3:
 					iLocal_110 = 0;
 					iLocal_111 = 8;
 					break;
-				
 				case 4:
 					iLocal_110 = 0;
 					iLocal_111 = 12;
 					break;
-				
 				case 5:
 					iLocal_110 = 1;
 					iLocal_111 = 11;
 					iLocal_110 = 2;
 					iLocal_111 = 2;
 					break;
-				
 				case 6:
-					if ((func_122() || func_121()) || MISC::IS_PC_VERSION())
+					if ((__LIB_0__.func_53() || __LIB_0__.func_52()) || MISC::IS_PC_VERSION())
 					{
 						iLocal_110 = 1;
 						iLocal_111 = 8;
@@ -986,7 +777,6 @@ void func_15(var uParam0)//Position - 0xE9A
 						iLocal_111 = 7;
 					}
 					break;
-				
 				case 8:
 					iLocal_110 = 0;
 					iLocal_111 = 8;
@@ -1011,32 +801,26 @@ void func_15(var uParam0)//Position - 0xE9A
 						iLocal_111 = (iLocal_111 - 1);
 					}
 					break;
-				
 				case 7:
 					iLocal_110 = 0;
 					iLocal_111 = 11;
 					break;
-				
 				case 9:
 					iLocal_110 = 3;
 					iLocal_111 = 4;
 					break;
-				
 				case 10:
 					iLocal_110 = 0;
 					iLocal_111 = 11;
 					break;
-				
 				case 11:
 					iLocal_110 = 2;
 					iLocal_111 = 12;
 					break;
-				
 				case 12:
 					iLocal_110 = 0;
 					iLocal_111 = 6;
 					break;
-				
 				case 13:
 					iLocal_110 = 2;
 					iLocal_111 = 2;
@@ -1066,7 +850,6 @@ void func_15(var uParam0)//Position - 0xE9A
 						iLocal_111 += 12;
 					}
 					break;
-				
 				case 14:
 					iLocal_110 = 1;
 					iLocal_111 = 12;
@@ -1083,12 +866,10 @@ void func_15(var uParam0)//Position - 0xE9A
 						iLocal_111 = (iLocal_111 - 1);
 					}
 					break;
-				
 				case 15:
 					iLocal_110 = 1;
 					iLocal_111 = 7;
 					break;
-				
 				case 16:
 					iLocal_110 = 4;
 					iLocal_111 = 1;
@@ -1113,7 +894,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(19, 8, iVar4, &Global_1646672);
 							func_114(24, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 1:
 							func_114(40, 8, iVar4, &Global_1646672);
 							func_114(41, 8, iVar4, &Global_1646672);
@@ -1128,7 +908,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(54, 8, iVar4, &Global_1646672);
 							func_101(14, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 2:
 							func_101(15, 8, iVar4, &Global_1646672);
 							func_101(16, 8, iVar4, &Global_1646672);
@@ -1143,7 +922,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(49, 8, iVar4, &Global_1646672);
 							func_114(15, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 3:
 							func_114(60, 8, iVar4, &Global_1646672);
 							func_114(19, 8, iVar4, &Global_1646672);
@@ -1152,7 +930,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(11, 8, iVar4, &Global_1646672);
 							func_114(14, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 4:
 							func_114(10, 8, iVar4, &Global_1646672);
 							func_114(17, 8, iVar4, &Global_1646672);
@@ -1165,7 +942,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(63, 8, iVar4, &Global_1646672);
 							func_101(23, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 5:
 							func_114(9, 8, iVar4, &Global_1646672);
 							func_114(56, 8, iVar4, &Global_1646672);
@@ -1180,7 +956,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(59, 8, iVar4, &Global_1646672);
 							func_114(1, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 6:
 							func_114(120, 8, iVar4, &Global_1646672);
 							func_85(12, 8, iVar4, &Global_1646672);
@@ -1195,7 +970,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(125, 8, iVar4, &Global_1646672);
 							func_101(144, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 7:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1212,7 +986,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_85(11, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 8:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1241,7 +1014,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								}
 							}
 							break;
-						
 						case 9:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1259,7 +1031,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_114(75, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 10:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1276,7 +1047,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_114(87, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 11:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1294,7 +1064,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(73, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 12:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1309,7 +1078,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								}
 							}
 							break;
-						
 						case 13:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1327,7 +1095,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(105, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 14:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1345,7 +1112,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(116, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 15:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1363,7 +1129,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(136, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 16:
 							func_79(4, 8, iVar4, &Global_1646672);
 							func_79(2, 8, iVar4, &Global_1646672);
@@ -1380,7 +1145,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 1:
 					switch (uParam0->f_6)
 					{
@@ -1398,7 +1162,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(63, 8, iVar4, &Global_1646672);
 							func_67(1, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 1:
 							func_114(39, 8, iVar4, &Global_1646672);
 							func_101(11, 8, iVar4, &Global_1646672);
@@ -1413,7 +1176,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_101(5, 8, iVar4, &Global_1646672);
 							func_114(32, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 2:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1431,7 +1193,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(148, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 5:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1449,7 +1210,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_114(131, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 6:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1460,13 +1220,12 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(147, 8, iVar4, &Global_1646672);
 								func_114(132, 8, iVar4, &Global_1646672);
 								func_85(21, 8, iVar4, &Global_1646672);
-								if ((func_122() || func_121()) || MISC::IS_PC_VERSION())
+								if ((__LIB_0__.func_53() || __LIB_0__.func_52()) || MISC::IS_PC_VERSION())
 								{
 									func_85(20, 8, iVar4, &Global_1646672);
 								}
 							}
 							break;
-						
 						case 9:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1484,7 +1243,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(33, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 11:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1502,7 +1260,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(80, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 13:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1529,7 +1286,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								}
 							}
 							break;
-						
 						case 14:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1556,7 +1312,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								}
 							}
 							break;
-						
 						case 15:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1569,7 +1324,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_114(119, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 16:
 							func_79(60, 8, iVar4, &Global_1646672);
 							func_79(12, 8, iVar4, &Global_1646672);
@@ -1586,7 +1340,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 2:
 					switch (uParam0->f_6)
 					{
@@ -1604,7 +1357,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(23, 8, iVar4, &Global_1646672);
 							func_114(0, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 1:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1619,7 +1371,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_114(130, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 2:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1629,14 +1380,12 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(26, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 5:
 							if (!Global_1646672.f_1[0])
 							{
 								func_114(133, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 9:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1654,7 +1403,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(45, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 11:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1672,7 +1420,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(88, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 13:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1686,7 +1433,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								}
 							}
 							break;
-						
 						case 16:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1695,7 +1441,7 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_79(87, 8, iVar4, &Global_1646672);
 								func_79(89, 8, iVar4, &Global_1646672);
 								iVar2 = 0;
-								if (func_66(3608, -1))
+								if (__LIB_0__.func_137(3608, -1))
 								{
 									iVar2 = 1;
 								}
@@ -1716,7 +1462,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 3:
 					switch (uParam0->f_6)
 					{
@@ -1734,13 +1479,11 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(42, 8, iVar4, &Global_1646672);
 							func_114(36, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 1:
 							if (!Global_1646672.f_1[0])
 							{
 							}
 							break;
-						
 						case 9:
 							if (!Global_1646672.f_1[0])
 							{
@@ -1750,7 +1493,6 @@ void func_15(var uParam0)//Position - 0xE9A
 								func_101(49, 8, iVar4, &Global_1646672);
 							}
 							break;
-						
 						case 16:
 							func_59(8);
 							iVar2 = 0;
@@ -1759,20 +1501,19 @@ void func_15(var uParam0)//Position - 0xE9A
 								iVar2 = 1;
 							}
 							func_62("CLO_HST_A_9" /* GXT: Showroom T-Shirt */, "CLO_HST_AD_9" /* GXT: Complete the Showroom platinum Award.~n~Store 30 vehicles. */, "Showroom", "MPTShirtAwards2", 1, iVar2, -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_0" /* GXT: Chrome Rims - Sport */, "CHR_HST_AD_0" /* GXT: Complete the Captured platinum Award to gain access to the Sport Chrome Rims for free.~n~Win 50 Captures. */, "SportMod", "MPAwardMods", func_49(126, 5, 0), func_48(126, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_1" /* GXT: Chrome Rims - Lowrider */, "CHR_HST_AD_1" /* GXT: Complete The Postman platinum Award to gain access to the Lowrider Chrome Rims for free.~n~Drop off 100 packages in Captures. */, "LowriderMod", "MPAwardMods", func_49(127, 5, 0), func_48(127, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_2" /* GXT: Chrome Rims - Offroad */, "CHR_HST_AD_2" /* GXT: Complete the No You Don't platinum Award to gain access to the Offroad Chrome Rims for free.~n~Kill 100 package carriers in Captures. */, "OffroadMod", "MPAwardMods", func_49(129, 5, 0), func_48(129, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_3" /* GXT: Chrome Rims - High End */, "CHR_HST_AD_3" /* GXT: Complete The Big Time platinum Award to gain access to the High End Chrome Rims for free.~n~Complete 50 Heist Finales. */, "HighendMod", "MPAwardMods", func_49(120, 5, 0), func_48(120, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_4" /* GXT: Chrome Rims - Tuner */, "CHR_HST_AD_4" /* GXT: Complete the Be Prepared platinum Award to gain access to the Tuner Chrome Rims for free.~n~Complete 50 Heist Setups. */, "TunerMod", "MPAwardMods", func_49(121, 5, 0), func_48(121, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_5" /* GXT: Chrome Rims - Bike */, "CHR_HST_AD_5" /* GXT: Complete the Lights Out platinum Award to gain access to the Bike Chrome Rims for free.~n~Get 100 kills while wearing Night Vision. */, "BikeMod", "MPAwardMods", func_49(131, 5, 0), func_48(131, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_6" /* GXT: Chrome Rims - SUV */, "CHR_HST_AD_6" /* GXT: Complete the Still Standing platinum Award to gain access to the SUV Chrome Rims for free.~n~Win 50 LTS matches. */, "SUVMod", "MPAwardMods", func_49(135, 5, 0), func_48(135, -1), -1, 1, &Global_1646672, 152, 144);
-							func_62("CHR_HST_A_7" /* GXT: Chrome Rims - Muscle */, "CHR_HST_AD_7" /* GXT: Complete the One and Only platinum Award to gain access to the Muscle Chrome Rims for free.~n~Be the last player alive in an LTS 50 times. */, "MuscleMod", "MPAwardMods", func_49(136, 5, 0), func_48(136, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_0" /* GXT: Chrome Rims - Sport */, "CHR_HST_AD_0" /* GXT: Complete the Captured platinum Award to gain access to the Sport Chrome Rims for free.~n~Win 50 Captures. */, "SportMod", "MPAwardMods", __LIB_0__.func_238(126, 5, 0), __LIB_1__.func_596(126, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_1" /* GXT: Chrome Rims - Lowrider */, "CHR_HST_AD_1" /* GXT: Complete The Postman platinum Award to gain access to the Lowrider Chrome Rims for free.~n~Drop off 100 packages in Captures. */, "LowriderMod", "MPAwardMods", __LIB_0__.func_238(127, 5, 0), __LIB_1__.func_596(127, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_2" /* GXT: Chrome Rims - Offroad */, "CHR_HST_AD_2" /* GXT: Complete the No You Don't platinum Award to gain access to the Offroad Chrome Rims for free.~n~Kill 100 package carriers in Captures. */, "OffroadMod", "MPAwardMods", __LIB_0__.func_238(129, 5, 0), __LIB_1__.func_596(129, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_3" /* GXT: Chrome Rims - High End */, "CHR_HST_AD_3" /* GXT: Complete The Big Time platinum Award to gain access to the High End Chrome Rims for free.~n~Complete 50 Heist Finales. */, "HighendMod", "MPAwardMods", __LIB_0__.func_238(120, 5, 0), __LIB_1__.func_596(120, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_4" /* GXT: Chrome Rims - Tuner */, "CHR_HST_AD_4" /* GXT: Complete the Be Prepared platinum Award to gain access to the Tuner Chrome Rims for free.~n~Complete 50 Heist Setups. */, "TunerMod", "MPAwardMods", __LIB_0__.func_238(121, 5, 0), __LIB_1__.func_596(121, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_5" /* GXT: Chrome Rims - Bike */, "CHR_HST_AD_5" /* GXT: Complete the Lights Out platinum Award to gain access to the Bike Chrome Rims for free.~n~Get 100 kills while wearing Night Vision. */, "BikeMod", "MPAwardMods", __LIB_0__.func_238(131, 5, 0), __LIB_1__.func_596(131, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_6" /* GXT: Chrome Rims - SUV */, "CHR_HST_AD_6" /* GXT: Complete the Still Standing platinum Award to gain access to the SUV Chrome Rims for free.~n~Win 50 LTS matches. */, "SUVMod", "MPAwardMods", __LIB_0__.func_238(135, 5, 0), __LIB_1__.func_596(135, -1), -1, 1, &Global_1646672, 152, 144);
+							func_62("CHR_HST_A_7" /* GXT: Chrome Rims - Muscle */, "CHR_HST_AD_7" /* GXT: Complete the One and Only platinum Award to gain access to the Muscle Chrome Rims for free.~n~Be the last player alive in an LTS 50 times. */, "MuscleMod", "MPAwardMods", __LIB_0__.func_238(136, 5, 0), __LIB_1__.func_596(136, -1), -1, 1, &Global_1646672, 152, 144);
 							func_59(34);
 							func_62("CLO_S1M_DEC_25" /* GXT: White Benny's T-Shirt */, "CLO_S1M_D_24_25" /* GXT: Complete all the Lowriders Lamar missions. */, "BennyTshirt01", "MPTShirtAwards4", 8, iVar2, -1, 1, &Global_1646672, 152, 144);
 							break;
 					}
 					break;
-				
 				case 4:
 					switch (uParam0->f_6)
 					{
@@ -1790,17 +1531,16 @@ void func_15(var uParam0)//Position - 0xE9A
 							func_114(61, 8, iVar4, &Global_1646672);
 							func_67(3, 8, iVar4, &Global_1646672);
 							break;
-						
 						case 16:
 							if (!Global_1646672.f_1[0])
 							{
-								if (func_47(2934, -1, 0) == 1)
+								if (__LIB_1__.func_556(2934, -1, 0) == 1)
 								{
 									iVar2 = 8;
 								}
 								else
 								{
-									iVar2 = func_42(0);
+									iVar2 = __LIB_18__.func_323(0);
 									if (iVar2 > 0)
 									{
 										iVar2 = (iVar2 - 1);
@@ -1811,7 +1551,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 5:
 					switch (uParam0->f_6)
 					{
@@ -1831,7 +1570,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 6:
 					switch (uParam0->f_6)
 					{
@@ -1851,7 +1589,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 7:
 					switch (uParam0->f_6)
 					{
@@ -1874,7 +1611,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 8:
 					switch (uParam0->f_6)
 					{
@@ -1897,7 +1633,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 9:
 					switch (uParam0->f_6)
 					{
@@ -1923,7 +1658,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 10:
 					switch (uParam0->f_6)
 					{
@@ -1931,7 +1665,7 @@ void func_15(var uParam0)//Position - 0xE9A
 							if (!Global_1646672.f_1[0])
 							{
 								func_85(21, 8, iVar4, &Global_1646672);
-								if ((func_122() || func_121()) || MISC::IS_PC_VERSION())
+								if ((__LIB_0__.func_53() || __LIB_0__.func_52()) || MISC::IS_PC_VERSION())
 								{
 									func_85(20, 8, iVar4, &Global_1646672);
 								}
@@ -1949,7 +1683,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 11:
 					switch (uParam0->f_6)
 					{
@@ -1987,7 +1720,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 12:
 					switch (uParam0->f_6)
 					{
@@ -2010,7 +1742,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 13:
 					switch (uParam0->f_6)
 					{
@@ -2033,7 +1764,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 14:
 					switch (uParam0->f_6)
 					{
@@ -2056,7 +1786,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 15:
 					switch (uParam0->f_6)
 					{
@@ -2079,7 +1808,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 16:
 					switch (uParam0->f_6)
 					{
@@ -2099,7 +1827,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 17:
 					switch (uParam0->f_6)
 					{
@@ -2119,7 +1846,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 18:
 					switch (uParam0->f_6)
 					{
@@ -2139,7 +1865,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 19:
 					switch (uParam0->f_6)
 					{
@@ -2165,7 +1890,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 20:
 					switch (uParam0->f_6)
 					{
@@ -2188,7 +1912,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 21:
 					switch (uParam0->f_6)
 					{
@@ -2223,7 +1946,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 22:
 					switch (uParam0->f_6)
 					{
@@ -2246,7 +1968,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 23:
 					switch (uParam0->f_6)
 					{
@@ -2279,7 +2000,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 24:
 					switch (uParam0->f_6)
 					{
@@ -2302,7 +2022,6 @@ void func_15(var uParam0)//Position - 0xE9A
 							break;
 					}
 					break;
-				
 				case 25:
 					switch (uParam0->f_6)
 					{
@@ -2349,7 +2068,6 @@ void func_16(var uParam0, int iParam1)//Position - 0x3E22
 {
 	int iVar0;
 	int iVar1;
-	
 	if (iParam1 == 1)
 	{
 		*uParam0 = 0;
@@ -2384,11 +2102,11 @@ void func_16(var uParam0, int iParam1)//Position - 0x3E22
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 				if (uParam0->f_424)
 				{
-					func_22(&(uParam0->f_20[iVar0 /*16*/]));
+					__LIB_0__.func_478(&(uParam0->f_20[iVar0 /*16*/]));
 				}
 				else
 				{
-					func_21(&(uParam0->f_20[iVar0 /*16*/]));
+					__LIB_0__.func_514(&(uParam0->f_20[iVar0 /*16*/]));
 				}
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_328[iVar0]);
@@ -2403,7 +2121,7 @@ void func_16(var uParam0, int iParam1)//Position - 0x3E22
 			*uParam0 = 1;
 			iVar0++;
 		}
-		func_20(0);
+		__LIB_29__.func_936(0);
 	}
 	func_17(uParam0, func_19(uParam0));
 }
@@ -2437,26 +2155,6 @@ void func_18(var uParam0)//Position - 0x3F95
 int func_19(var uParam0)//Position - 0x3FA3
 {
 	return uParam0->f_429;
-}
-
-void func_20(int iParam0)//Position - 0x3FB0
-{
-	if (GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("DISPLAY_DATA_SLOT"))
-	{
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
-		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	}
-}
-
-void func_21(char* sParam0)//Position - 0x3FCD
-{
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(sParam0);
-}
-
-void func_22(char* sParam0)//Position - 0x3FDB
-{
-	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
-	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
 void func_23(var uParam0)//Position - 0x3FED
@@ -2496,7 +2194,6 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 	int iVar1;
 	int iVar2;
 	struct<4> Var3;
-	
 	if (iParam1 == 1)
 	{
 		*uParam0 = 0;
@@ -2519,15 +2216,12 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					case 107:
 						iVar2 = 100;
 						break;
-					
 					case 108:
 						iVar2 = 200;
 						break;
-					
 					case 109:
 						iVar2 = 400;
 						break;
-					
 					case 110:
 						iVar2 = 800;
 						break;
@@ -2543,15 +2237,15 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-					func_22(&(uParam0->f_14[iVar0 /*8*/]));
-					func_22(&(uParam0->f_111[iVar0 /*8*/]));
-					func_21(&(uParam0->f_331[iVar0 /*8*/]));
-					func_21(&(uParam0->f_234[iVar0 /*8*/]));
+					__LIB_0__.func_478(&(uParam0->f_14[iVar0 /*8*/]));
+					__LIB_0__.func_478(&(uParam0->f_111[iVar0 /*8*/]));
+					__LIB_0__.func_514(&(uParam0->f_331[iVar0 /*8*/]));
+					__LIB_0__.func_514(&(uParam0->f_234[iVar0 /*8*/]));
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_428[iVar0]);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
-					if (func_37(&Var3))
+					if (__LIB_0__.func_786(&Var3))
 					{
-						func_22("HUD_AWDPROG_S" /* GXT: Progress */);
+						__LIB_0__.func_478("HUD_AWDPROG_S" /* GXT: Progress */);
 					}
 					else
 					{
@@ -2561,7 +2255,7 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					}
 					if (uParam0->f_221[iVar0] >= uParam0->f_208[iVar0])
 					{
-						func_22("TR_COMPLETE" /* GXT: Completed */);
+						__LIB_0__.func_478("TR_COMPLETE" /* GXT: Completed */);
 					}
 					else
 					{
@@ -2572,14 +2266,14 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					}
 					if (iVar2 >= 0)
 					{
-						func_22("HUD_AWDAWARD" /* GXT: Award */);
+						__LIB_0__.func_478("HUD_AWDAWARD" /* GXT: Award */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 					}
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				iVar0++;
 			}
-			func_20(1);
+			__LIB_29__.func_936(1);
 			*uParam0 = 1;
 		}
 	}
@@ -2627,19 +2321,19 @@ void func_33(var uParam0, int iParam1)//Position - 0x42A5
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_DESCRIPTION");
 		if (uParam0->f_456 < 0)
 		{
-			func_22("");
-			func_22("");
+			__LIB_0__.func_478("");
+			__LIB_0__.func_478("");
 		}
 		else if (uParam0->f_456 < 12)
 		{
-			func_22(&(uParam0->f_14[uParam0->f_456 /*8*/]));
+			__LIB_0__.func_478(&(uParam0->f_14[uParam0->f_456 /*8*/]));
 			if (uParam0->f_208[uParam0->f_456] > -1)
 			{
 				func_34(&(uParam0->f_111[uParam0->f_456 /*8*/]), uParam0->f_208[uParam0->f_456]);
 			}
 			else
 			{
-				func_22(&(uParam0->f_111[uParam0->f_456 /*8*/]));
+				__LIB_0__.func_478(&(uParam0->f_111[uParam0->f_456 /*8*/]));
 			}
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -2665,19 +2359,6 @@ int func_36(var uParam0)//Position - 0x4377
 	return uParam0->f_463;
 }
 
-int func_37(char* sParam0)//Position - 0x4384
-{
-	if (MISC::IS_STRING_NULL(sParam0))
-	{
-		return 1;
-	}
-	else if (MISC::ARE_STRINGS_EQUAL(sParam0, "") || MISC::ARE_STRINGS_EQUAL(sParam0, "0"))
-	{
-		return 1;
-	}
-	return 0;
-}
-
 char* func_38(int iParam0)//Position - 0x43BE
 {
 	switch (iParam0)
@@ -2685,15 +2366,12 @@ char* func_38(int iParam0)//Position - 0x43BE
 		case 107:
 			return "HUD_MED_BRON" /* GXT: Bronze */;
 			break;
-		
 		case 108:
 			return "HUD_MED_SILV" /* GXT: Silver */;
 			break;
-		
 		case 109:
 			return "HUD_MED_GOLD" /* GXT: Gold */;
 			break;
-		
 		case 110:
 			return "HUD_MED_PLAT" /* GXT: Platinum */;
 			break;
@@ -2704,7 +2382,6 @@ char* func_38(int iParam0)//Position - 0x43BE
 int func_39(var uParam0)//Position - 0x4411
 {
 	int iVar0;
-	
 	iVar0 = 0;
 	while (iVar0 <= 11)
 	{
@@ -2734,3503 +2411,13 @@ int func_41(var uParam0)//Position - 0x447B
 	return uParam0->f_460;
 }
 
-int func_42(int iParam0)//Position - 0x4488
-{
-	int iVar0;
-	
-	if (Global_1941273[iParam0 /*8*/] == -1)
-	{
-		iVar0 = func_47(func_46(iParam0), -1, 0);
-		if (iVar0 == -1)
-		{
-			func_43(iParam0, 0);
-			iVar0 = 0;
-		}
-		Global_1941273[iParam0 /*8*/] = iVar0;
-	}
-	return Global_1941273[iParam0 /*8*/];
-}
-
-void func_43(int iParam0, int iParam1)//Position - 0x44CC
-{
-	Global_1941273[iParam0 /*8*/] = iParam1;
-	func_44(func_46(iParam0), iParam1, -1, 1, 0);
-}
-
-void func_44(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)//Position - 0x44ED
-{
-	int iVar0;
-	
-	if (bParam4)
-	{
-	}
-	iVar0 = Global_2826809[iParam0 /*3*/][func_45(iParam2)];
-	if (iVar0 != 0)
-	{
-		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
-	}
-}
-
-int func_45(int iParam0)//Position - 0x451D
-{
-	int iVar0;
-	int iVar1;
-	
-	iVar0 = iParam0;
-	if (iVar0 == -1)
-	{
-		iVar1 = func_7();
-		if (iVar1 > -1)
-		{
-			Global_2826521 = 0;
-			iVar0 = iVar1;
-		}
-		else
-		{
-			iVar0 = 0;
-			Global_2826521 = 1;
-		}
-	}
-	return iVar0;
-}
-
-int func_46(int iParam0)//Position - 0x4551
-{
-	switch (iParam0)
-	{
-		case 0:
-			return 11353;
-		
-		default:
-	}
-	return 11353;
-}
-
-int func_47(int iParam0, int iParam1, int iParam2)//Position - 0x456F
-{
-	int iVar0;
-	var uVar1;
-	
-	if (iParam0 != 13122)
-	{
-		if (iParam2 == 0)
-		{
-		}
-		iVar0 = Global_2826809[iParam0 /*3*/][func_45(iParam1)];
-		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
-		{
-			return uVar1;
-		}
-	}
-	return 0;
-}
-
-int func_48(int iParam0, int iParam1)//Position - 0x45AC
-{
-	int iVar0;
-	var uVar1;
-	
-	iVar0 = Global_2868734[iParam0 /*3*/][func_45(iParam1)];
-	if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
-	{
-		return uVar1;
-	}
-	return 0;
-}
-
-int func_49(int iParam0, int iParam1, int iParam2)//Position - 0x45D8
-{
-	if (iParam2 == 0)
-	{
-	}
-	switch (iParam0)
-	{
-		case 53:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 39:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 51:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 52:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 60:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 30;
-				
-				case 4:
-					return 60;
-				
-				case 5:
-					return 120;
-				
-				default:
-			}
-			break;
-		
-		case 61:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 20;
-				
-				case 5:
-					return 30;
-				
-				default:
-			}
-			break;
-		
-		case 62:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 2;
-				
-				case 3:
-					return 3;
-				
-				case 4:
-					return 4;
-				
-				case 5:
-					return 5;
-				
-				default:
-			}
-			break;
-		
-		case 63:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 2;
-				
-				case 3:
-					return 3;
-				
-				case 4:
-					return 4;
-				
-				case 5:
-					return 5;
-				
-				default:
-			}
-			break;
-		
-		case 16:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1;
-				
-				case 3:
-					return 2;
-				
-				case 4:
-					return 3;
-				
-				case 5:
-					return 4;
-				
-				default:
-			}
-			break;
-		
-		case 0:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1;
-				
-				case 3:
-					return 2;
-				
-				case 4:
-					return 3;
-				
-				case 5:
-					return 4;
-				
-				default:
-			}
-			break;
-		
-		case 12:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 11:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 19:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 15:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 17:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 21:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 14:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 20;
-				
-				default:
-			}
-			break;
-		
-		case 1:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 2:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 3:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 4:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 5:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 6:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 7:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 8:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 9:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 10:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 20:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 22:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 23:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 24:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 25:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 26:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 27:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 28:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 29:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 30:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 31:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 32:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 33:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 34:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 35:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 36:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 37:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 38:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 40:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 41:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 42:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 43:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 44:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 100;
-				
-				case 4:
-					return 200;
-				
-				case 5:
-					return 500;
-				
-				default:
-			}
-			break;
-		
-		case 45:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 47:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 49:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1000;
-				
-				case 3:
-					return 10000;
-				
-				case 4:
-					return 25000;
-				
-				case 5:
-					return 50000;
-				
-				default:
-			}
-			break;
-		
-		case 48:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 3;
-				
-				case 3:
-					return 5;
-				
-				case 4:
-					return 7;
-				
-				case 5:
-					return 10;
-				
-				default:
-			}
-			break;
-		
-		case 54:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 55:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 56:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 250;
-				
-				case 4:
-					return 500;
-				
-				case 5:
-					return 1000;
-				
-				default:
-			}
-			break;
-		
-		case 57:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 58:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 59:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 46:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 126:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 127:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 128:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 129:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 130:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 120:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 121:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 122:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 123:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 124:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 125:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 131:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 132:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 133:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 134:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 135:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 136:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 137:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 138:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 67:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 139:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_25335 /* Tunable: -2140343856 */;
-				
-				case 3:
-					return Global_262145.f_25336 /* Tunable: -1167118619 */;
-				
-				case 4:
-					return Global_262145.f_25337 /* Tunable: -132305813 */;
-				
-				case 5:
-					return Global_262145.f_25338 /* Tunable: 1249433112 */;
-				
-				default:
-			}
-			break;
-		
-		case 140:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_25335 /* Tunable: -2140343856 */;
-				
-				case 3:
-					return Global_262145.f_25336 /* Tunable: -1167118619 */;
-				
-				case 4:
-					return Global_262145.f_25337 /* Tunable: -132305813 */;
-				
-				case 5:
-					return Global_262145.f_25338 /* Tunable: 1249433112 */;
-				
-				default:
-			}
-			break;
-		
-		case 141:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_25335 /* Tunable: -2140343856 */;
-				
-				case 3:
-					return Global_262145.f_25336 /* Tunable: -1167118619 */;
-				
-				case 4:
-					return Global_262145.f_25337 /* Tunable: -132305813 */;
-				
-				case 5:
-					return Global_262145.f_25338 /* Tunable: 1249433112 */;
-				
-				default:
-			}
-			break;
-		
-		case 142:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_25335 /* Tunable: -2140343856 */;
-				
-				case 3:
-					return Global_262145.f_25336 /* Tunable: -1167118619 */;
-				
-				case 4:
-					return Global_262145.f_25337 /* Tunable: -132305813 */;
-				
-				case 5:
-					return Global_262145.f_25338 /* Tunable: 1249433112 */;
-				
-				default:
-			}
-			break;
-		
-		case 143:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 70:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1;
-				
-				case 3:
-					return 3;
-				
-				case 4:
-					return 5;
-				
-				case 5:
-					return 10;
-				
-				default:
-			}
-			break;
-		
-		case 71:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1;
-				
-				case 3:
-					return 3;
-				
-				case 4:
-					return 5;
-				
-				case 5:
-					return 10;
-				
-				default:
-			}
-			break;
-		
-		case 72:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 73:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 74:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 75:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1;
-				
-				case 3:
-					return 3;
-				
-				case 4:
-					return 5;
-				
-				case 5:
-					return 10;
-				
-				default:
-			}
-			break;
-		
-		case 76:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1;
-				
-				case 3:
-					return 3;
-				
-				case 4:
-					return 5;
-				
-				case 5:
-					return 10;
-				
-				default:
-			}
-			break;
-		
-		case 77:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1;
-				
-				case 3:
-					return 3;
-				
-				case 4:
-					return 5;
-				
-				case 5:
-					return 10;
-				
-				default:
-			}
-			break;
-		
-		case 78:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 79:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 80:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 81:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 82:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 20;
-				
-				case 4:
-					return 30;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 83:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 100000;
-				
-				case 3:
-					return 250000;
-				
-				case 4:
-					return 500000;
-				
-				case 5:
-					return 1000000;
-				
-				default:
-			}
-			break;
-		
-		case 84:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 85:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1000;
-				
-				case 3:
-					return 3000;
-				
-				case 4:
-					return 15000;
-				
-				case 5:
-					return 55000;
-				
-				default:
-			}
-			break;
-		
-		case 86:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 87:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 88:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 20;
-				
-				case 5:
-					return 40;
-				
-				default:
-			}
-			break;
-		
-		case 89:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 20;
-				
-				default:
-			}
-			break;
-		
-		case 90:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 25000;
-				
-				case 3:
-					return 50000;
-				
-				case 4:
-					return 75000;
-				
-				case 5:
-					return 100000;
-				
-				default:
-			}
-			break;
-		
-		case 91:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 20;
-				
-				case 4:
-					return 30;
-				
-				case 5:
-					return 40;
-				
-				default:
-			}
-			break;
-		
-		case 92:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_28672 /* Tunable: 1609911012 */;
-				
-				case 3:
-					return Global_262145.f_28673 /* Tunable: -68365255 */;
-				
-				case 4:
-					return Global_262145.f_28674 /* Tunable: 1302605276 */;
-				
-				case 5:
-					return Global_262145.f_28675 /* Tunable: 1897527067 */;
-				
-				default:
-			}
-			break;
-		
-		case 93:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_28839 /* Tunable: -115509788 */;
-				
-				case 3:
-					return Global_262145.f_28840 /* Tunable: -1829268 */;
-				
-				case 4:
-					return Global_262145.f_28841 /* Tunable: 1440688049 */;
-				
-				case 5:
-					return Global_262145.f_28842 /* Tunable: 1927470758 */;
-				
-				default:
-			}
-			break;
-		
-		case 94:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_28873 /* Tunable: -544066833 */;
-				
-				case 3:
-					return Global_262145.f_28874 /* Tunable: -2047978964 */;
-				
-				case 4:
-					return Global_262145.f_28875 /* Tunable: 1531249671 */;
-				
-				case 5:
-					return Global_262145.f_28876 /* Tunable: -1453293483 */;
-				
-				default:
-			}
-			break;
-		
-		case 95:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_28877 /* Tunable: 598612790 */;
-				
-				case 3:
-					return Global_262145.f_28878 /* Tunable: 1078233149 */;
-				
-				case 4:
-					return Global_262145.f_28879 /* Tunable: 1551564012 */;
-				
-				case 5:
-					return Global_262145.f_28880 /* Tunable: -693952313 */;
-				
-				default:
-			}
-			break;
-		
-		case 96:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_28568 /* Tunable: 212778777 */;
-				
-				case 3:
-					return Global_262145.f_28569 /* Tunable: 1730590555 */;
-				
-				case 4:
-					return Global_262145.f_28570 /* Tunable: 599275937 */;
-				
-				case 5:
-					return Global_262145.f_28571 /* Tunable: 790883802 */;
-				
-				default:
-			}
-			break;
-		
-		case 97:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return Global_262145.f_28843 /* Tunable: 1179057810 */;
-				
-				case 3:
-					return Global_262145.f_28844 /* Tunable: -1060787570 */;
-				
-				case 4:
-					return Global_262145.f_28845 /* Tunable: -672936783 */;
-				
-				case 5:
-					return Global_262145.f_28846 /* Tunable: -193315003 */;
-				
-				default:
-			}
-			break;
-		
-		case 99:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 15;
-				
-				case 4:
-					return 30;
-				
-				case 5:
-					return 60;
-				
-				default:
-			}
-			break;
-		
-		case 100:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 20;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 101:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 50000;
-				
-				case 3:
-					return 250000;
-				
-				case 4:
-					return 750000;
-				
-				case 5:
-					return 1000000;
-				
-				default:
-			}
-			break;
-		
-		case 102:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 15;
-				
-				case 4:
-					return 30;
-				
-				case 5:
-					return 60;
-				
-				default:
-			}
-			break;
-		
-		case 103:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 15;
-				
-				case 4:
-					return 30;
-				
-				case 5:
-					return 60;
-				
-				default:
-			}
-			break;
-		
-		case 104:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 15;
-				
-				case 4:
-					return 30;
-				
-				case 5:
-					return 60;
-				
-				default:
-			}
-			break;
-		
-		case 105:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 1000000;
-				
-				case 3:
-					return 5000000;
-				
-				case 4:
-					return 10000000;
-				
-				case 5:
-					return 20000000;
-				
-				default:
-			}
-			break;
-		
-		case 106:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 20;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 107:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 108:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 109:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 110:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 112:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 114:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 20;
-				
-				case 5:
-					return 40;
-				
-				default:
-			}
-			break;
-		
-		case 115:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 116:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 20;
-				
-				case 5:
-					return 30;
-				
-				default:
-			}
-			break;
-		
-		case 111:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 30;
-				
-				case 3:
-					return 60;
-				
-				case 4:
-					return 120;
-				
-				case 5:
-					return 240;
-				
-				default:
-			}
-			break;
-		
-		case 113:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 117:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 15;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 118:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 15;
-				
-				case 4:
-					return 25;
-				
-				case 5:
-					return 50;
-				
-				default:
-			}
-			break;
-		
-		case 119:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 15;
-				
-				case 4:
-					return 30;
-				
-				case 5:
-					return 60;
-				
-				default:
-			}
-			break;
-	}
-	return 999;
-}
-
 int func_50(int iParam0)//Position - 0x70A9
 {
 	bool bVar0;
-	
-	bVar0 = func_58(386, -1) == false;
+	bVar0 = __LIB_0__.func_228(386, -1) == false;
 	if (bVar0)
 	{
-		if (func_51(func_56(func_57(iParam0, bVar0), 3), -1))
+		if (__LIB_24__.func_976(__LIB_0__.func_240(__LIB_30__.func_14(iParam0, bVar0), 3), -1))
 		{
 			return 1;
 		}
@@ -6239,682 +2426,11 @@ int func_50(int iParam0)//Position - 0x70A9
 			return 0;
 		}
 	}
-	if (func_51(func_56(func_57(iParam0, bVar0), 4), -1))
+	if (__LIB_24__.func_976(__LIB_0__.func_240(__LIB_30__.func_14(iParam0, bVar0), 4), -1))
 	{
 		return 1;
 	}
 	return 0;
-}
-
-int func_51(int iParam0, int iParam1)//Position - 0x7102
-{
-	var uVar0;
-	int iVar1;
-	
-	if (func_54(iParam0) == 13122)
-	{
-		return 0;
-	}
-	uVar0 = func_53(iParam0, iParam1);
-	iVar1 = iParam0;
-	return BitTest(uVar0, func_52(iVar1));
-}
-
-int func_52(int iParam0)//Position - 0x7131
-{
-	return (iParam0 % 32);
-}
-
-int func_53(var uParam0, int iParam1)//Position - 0x713E
-{
-	int iVar0;
-	
-	iVar0 = func_47(func_54(uParam0), iParam1, 0);
-	return iVar0;
-}
-
-int func_54(var uParam0)//Position - 0x7157
-{
-	int iVar0;
-	int iVar1;
-	
-	iVar0 = uParam0;
-	iVar1 = func_55(iVar0);
-	if ((func_9() == 0 || func_8() == 0) || (func_9() == 999 && func_8() == 999))
-	{
-		switch (iVar1)
-		{
-			case 0:
-				return 1039;
-				break;
-			
-			case 1:
-				return 1040;
-				break;
-			
-			case 2:
-				return 1041;
-				break;
-			
-			case 3:
-				return 1042;
-				break;
-			
-			case 4:
-				return 1043;
-				break;
-			
-			case 5:
-				return 1503;
-				break;
-			
-			case 6:
-				return 1758;
-				break;
-			
-			case 7:
-				return 1952;
-				break;
-			
-			case 8:
-				return 1953;
-				break;
-			
-			case 9:
-				return 1954;
-				break;
-			
-			case 10:
-				return 1955;
-				break;
-			
-			case 11:
-				return 1956;
-				break;
-			
-			case 12:
-				return 1957;
-				break;
-			
-			case 13:
-				return 2424;
-				break;
-			
-			case 14:
-				return 2444;
-				break;
-			
-			case 15:
-				return 2447;
-				break;
-			
-			case 16:
-				return 2450;
-				break;
-			
-			case 17:
-				return 2614;
-				break;
-			
-			case 18:
-				return 2617;
-				break;
-			
-			case 19:
-				return 2620;
-				break;
-			
-			case 20:
-				return 3786;
-				break;
-			
-			case 21:
-				return 3789;
-				break;
-			
-			case 22:
-				return 3864;
-				break;
-			
-			case 23:
-				return 3867;
-				break;
-			
-			case 24:
-				return 3870;
-				break;
-			
-			case 25:
-				return 3873;
-				break;
-			
-			case 26:
-				return 5364;
-				break;
-			
-			case 27:
-				return 5367;
-				break;
-			
-			case 28:
-				return 5469;
-				break;
-			
-			case 29:
-				return 5472;
-				break;
-			
-			case 30:
-				return 6431;
-				break;
-			
-			case 31:
-				return 6434;
-				break;
-			
-			case 32:
-				return 7255;
-				break;
-			
-			case 33:
-				return 7258;
-				break;
-			
-			case 34:
-				return 7261;
-				break;
-			
-			case 35:
-				return 7970;
-				break;
-			
-			case 36:
-				return 7973;
-				break;
-			
-			case 37:
-				return 7976;
-				break;
-			
-			case 38:
-				return 7979;
-				break;
-			
-			case 39:
-				return 8501;
-				break;
-			
-			case 40:
-				return 8504;
-				break;
-			
-			case 41:
-				return 8507;
-				break;
-			
-			case 42:
-				return 8510;
-				break;
-			
-			case 43:
-				return 8906;
-				break;
-			
-			case 44:
-				return 8909;
-				break;
-			
-			case 45:
-				return 8912;
-				break;
-			
-			case 46:
-				return 10287;
-				break;
-			
-			case 47:
-				return 10290;
-				break;
-			
-			case 48:
-				return 10413;
-				break;
-			
-			case 49:
-				return 10416;
-				break;
-		}
-	}
-	return 13122;
-}
-
-int func_55(int iParam0)//Position - 0x7496
-{
-	return (iParam0 / 32);
-}
-
-int func_56(int iParam0, int iParam1)//Position - 0x74A3
-{
-	int iVar0;
-	
-	iVar0 = FILES::GET_TATTOO_SHOP_DLC_ITEM_INDEX(iParam1, -1, iParam0);
-	if (iVar0 != -1)
-	{
-		return (129 + iVar0);
-	}
-	return -1;
-}
-
-int func_57(int iParam0, bool bParam1)//Position - 0x74C5
-{
-	switch (iParam0)
-	{
-		case 0:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_004");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_004");
-			}
-			break;
-		
-		case 1:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_005");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_005");
-			}
-			break;
-		
-		case 2:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_006");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_006");
-			}
-			break;
-		
-		case 3:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_007");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_007");
-			}
-			break;
-		
-		case 4:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_008");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_008");
-			}
-			break;
-		
-		case 5:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_009");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_009");
-			}
-			break;
-		
-		case 6:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_010");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_010");
-			}
-			break;
-		
-		case 7:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_011");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_011");
-			}
-			break;
-		
-		case 8:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_012");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_012");
-			}
-			break;
-		
-		case 9:
-			if (bParam1)
-			{
-				return joaat("MP_Award_M_Tshirt_013");
-			}
-			else
-			{
-				return joaat("MP_Award_F_Tshirt_013");
-			}
-			break;
-		
-		case 10:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_000");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_000");
-			}
-			break;
-		
-		case 11:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_001");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_001");
-			}
-			break;
-		
-		case 12:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_002");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_002");
-			}
-			break;
-		
-		case 13:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_003");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_003");
-			}
-			break;
-		
-		case 14:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_004");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_004");
-			}
-			break;
-		
-		case 15:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_005");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_005");
-			}
-			break;
-		
-		case 16:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_006");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_006");
-			}
-			break;
-		
-		case 17:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_007");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_007");
-			}
-			break;
-		
-		case 18:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_008");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_008");
-			}
-			break;
-		
-		case 19:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_009");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_009");
-			}
-			break;
-		
-		case 20:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_010");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_010");
-			}
-			break;
-		
-		case 21:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_011");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_011");
-			}
-			break;
-		
-		case 22:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_012");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_012");
-			}
-			break;
-		
-		case 23:
-			if (bParam1)
-			{
-				return joaat("FM_Hip_M_Retro_013");
-			}
-			else
-			{
-				return joaat("FM_Hip_F_Retro_013");
-			}
-			break;
-		
-		case 24:
-			if (bParam1)
-			{
-				return joaat("FM_Rstar_M_Tshirt_000");
-			}
-			else
-			{
-				return joaat("FM_Rstar_F_Tshirt_000");
-			}
-			break;
-		
-		case 25:
-			if (bParam1)
-			{
-				return joaat("FM_Rstar_M_Tshirt_001");
-			}
-			else
-			{
-				return joaat("FM_Rstar_F_Tshirt_001");
-			}
-			break;
-		
-		case 26:
-			if (bParam1)
-			{
-				return joaat("FM_Rstar_M_Tshirt_002");
-			}
-			else
-			{
-				return joaat("FM_Rstar_F_Tshirt_002");
-			}
-			break;
-		
-		case 27:
-			if (bParam1)
-			{
-				return joaat("FM_Ind_M_Award_000");
-			}
-			else
-			{
-				return joaat("FM_Ind_F_Award_000");
-			}
-			break;
-		
-		case 28:
-			if (bParam1)
-			{
-				return joaat("MP_Fli_M_Tshirt_000");
-			}
-			else
-			{
-				return joaat("MP_Fli_F_Tshirt_000");
-			}
-			break;
-		
-		case 29:
-			if (bParam1)
-			{
-				return joaat("FM_LTS_M_Tshirt_000");
-			}
-			else
-			{
-				return joaat("FM_LTS_F_Tshirt_000");
-			}
-			break;
-		
-		case 30:
-			if (bParam1)
-			{
-				return joaat("MP_FM_OGA_000_m");
-			}
-			else
-			{
-				return joaat("MP_FM_OGA_000_f");
-			}
-			break;
-		
-		case 31:
-			if (bParam1)
-			{
-				return joaat("MP_FM_OGA_001_m");
-			}
-			else
-			{
-				return joaat("MP_FM_OGA_001_f");
-			}
-			break;
-		
-		case 32:
-			if (bParam1)
-			{
-				return joaat("MP_FM_OGA_002_m");
-			}
-			else
-			{
-				return joaat("MP_FM_OGA_002_f");
-			}
-			break;
-		
-		case 33:
-			if (bParam1)
-			{
-				return joaat("MP_FM_OGA_003_m");
-			}
-			else
-			{
-				return joaat("MP_FM_OGA_003_f");
-			}
-			break;
-		
-		case 34:
-			if (bParam1)
-			{
-				return joaat("MP_Elite_M_Tshirt");
-			}
-			else
-			{
-				return joaat("MP_Elite_F_Tshirt");
-			}
-			break;
-		
-		case 35:
-			if (bParam1)
-			{
-				return joaat("MP_Elite_M_Tshirt_1");
-			}
-			else
-			{
-				return joaat("MP_Elite_F_Tshirt_1");
-			}
-			break;
-	}
-	return 0;
-}
-
-int func_58(int iParam0, int iParam1)//Position - 0x7978
-{
-	if (iParam1 == -1)
-	{
-		iParam1 = func_7();
-	}
-	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
 
 void func_59(int iParam0)//Position - 0x7994
@@ -6928,7 +2444,6 @@ void func_59(int iParam0)//Position - 0x7994
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	
 	switch (iParam0)
 	{
 		case 0:
@@ -6938,7 +2453,6 @@ void func_59(int iParam0)//Position - 0x7994
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 130;
 			break;
-		
 		case 1:
 			sVar0 = "CLO_HST_A_1" /* GXT: For Hire T-Shirt */;
 			sVar1 = "CLO_HST_AD_1" /* GXT: Complete the For Hire platinum Award.~n~Be a Heist crew member 25 times. */;
@@ -6946,7 +2460,6 @@ void func_59(int iParam0)//Position - 0x7994
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 122;
 			break;
-		
 		case 2:
 			sVar0 = "CLO_HST_A_2" /* GXT: Gimme That T-Shirt */;
 			sVar1 = "CLO_HST_AD_3" /* GXT: Complete the Gimme That platinum Award.~n~Collect 100 packages in any Capture mode. */;
@@ -6954,7 +2467,6 @@ void func_59(int iParam0)//Position - 0x7994
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 128;
 			break;
-		
 		case 5:
 			sVar0 = "CLO_HST_A_5" /* GXT: Decorated T-Shirt */;
 			sVar1 = "CLO_HST_AD_6" /* GXT: Complete the Decorated platinum Award.~n~Win 25 platinum medals during Heist Setups and Heist Finales. */;
@@ -6962,7 +2474,6 @@ void func_59(int iParam0)//Position - 0x7994
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 125;
 			break;
-		
 		case 7:
 			sVar0 = "CLO_HST_A_7" /* GXT: One Man Army T-Shirt */;
 			sVar1 = "CLO_HST_AD_8" /* GXT: Complete the One Man Army platinum Award.~n~Kill the entire opposing team yourself in LTS matches 25 times. */;
@@ -6970,7 +2481,6 @@ void func_59(int iParam0)//Position - 0x7994
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 137;
 			break;
-		
 		case 6:
 			sVar0 = "CLO_HST_A_6" /* GXT: Psycho Killer T-Shirt */;
 			sVar1 = "CLO_HST_AD_7" /* GXT: Complete the Psycho Killer platinum Award.~n~Kill 100 players with Psychopath Mental State. */;
@@ -6978,7 +2488,6 @@ void func_59(int iParam0)//Position - 0x7994
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 133;
 			break;
-		
 		case 8:
 			sVar0 = "CLO_HST_A_8" /* GXT: Shot Caller T-Shirt */;
 			sVar1 = "CLO_HST_AD_2" /* GXT: Complete the Shot Caller platinum Award.~n~Be the Heist leader 25 times. */;
@@ -6986,7 +2495,6 @@ void func_59(int iParam0)//Position - 0x7994
 			sVar3 = "MPTShirtAwards2";
 			iVar4 = 123;
 			break;
-		
 		case 34:
 			sVar0 = "CLO_HSTM_U_3_0" /* GXT: Elite Challenge T-Shirt */;
 			sVar1 = "CLO_HST_AD_10" /* GXT: Complete the Elite Heist Challenges. */;
@@ -6995,14 +2503,14 @@ void func_59(int iParam0)//Position - 0x7994
 			break;
 	}
 	iVar6 = 5;
-	if (func_61(iVar4, 9) != 1)
+	if (__LIB_23__.func_798(iVar4, 9) != 1)
 	{
 		iVar5 = 1;
 	}
 	if (iParam0 != 34)
 	{
-		iVar7 = func_49(iVar4, iVar6, 9);
-		iVar8 = func_48(iVar4, -1);
+		iVar7 = __LIB_0__.func_238(iVar4, iVar6, 9);
+		iVar8 = __LIB_1__.func_596(iVar4, -1);
 	}
 	else
 	{
@@ -7015,390 +2523,32 @@ void func_59(int iParam0)//Position - 0x7994
 int func_60()//Position - 0x7B13
 {
 	int iVar0;
-	
-	if (func_66(3765, -1))
+	if (__LIB_0__.func_137(3765, -1))
 	{
 		iVar0++;
 	}
-	if (func_66(3766, -1))
+	if (__LIB_0__.func_137(3766, -1))
 	{
 		iVar0++;
 	}
-	if (func_66(3767, -1))
+	if (__LIB_0__.func_137(3767, -1))
 	{
 		iVar0++;
 	}
-	if (func_66(3768, -1))
+	if (__LIB_0__.func_137(3768, -1))
 	{
 		iVar0++;
 	}
-	if (func_66(3769, -1))
+	if (__LIB_0__.func_137(3769, -1))
 	{
 		iVar0++;
 	}
 	return iVar0;
 }
 
-int func_61(int iParam0, int iParam1)//Position - 0x7B72
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 53:
-			return 1;
-		
-		case 39:
-			return 1;
-		
-		case 51:
-			return 1;
-		
-		case 52:
-			return 1;
-		
-		case 60:
-			return 1;
-		
-		case 61:
-			return 1;
-		
-		case 62:
-			return 1;
-		
-		case 63:
-			return 1;
-		
-		case 16:
-			return 1;
-		
-		case 0:
-			return 1;
-		
-		case 12:
-			return 1;
-		
-		case 11:
-			return 1;
-		
-		case 19:
-			return 1;
-		
-		case 20:
-			return 1;
-		
-		case 15:
-			return 1;
-		
-		case 17:
-			return 1;
-		
-		case 21:
-			return 1;
-		
-		case 14:
-			return 1;
-		
-		case 22:
-			return 1;
-		
-		case 1:
-			return 1;
-		
-		case 2:
-			return 1;
-		
-		case 3:
-			return 1;
-		
-		case 4:
-			return 1;
-		
-		case 5:
-			return 1;
-		
-		case 6:
-			return 1;
-		
-		case 7:
-			return 1;
-		
-		case 8:
-			return 1;
-		
-		case 9:
-			return 1;
-		
-		case 10:
-			return 1;
-		
-		case 23:
-			return 1;
-		
-		case 24:
-			return 1;
-		
-		case 25:
-			return 1;
-		
-		case 26:
-			return 1;
-		
-		case 27:
-			return 1;
-		
-		case 28:
-			return 1;
-		
-		case 29:
-			return 1;
-		
-		case 30:
-			return 1;
-		
-		case 31:
-			return 1;
-		
-		case 32:
-			return 1;
-		
-		case 33:
-			return 1;
-		
-		case 34:
-			return 1;
-		
-		case 35:
-			return 1;
-		
-		case 36:
-			return 1;
-		
-		case 37:
-			return 1;
-		
-		case 38:
-			return 1;
-		
-		case 40:
-			return 1;
-		
-		case 41:
-			return 1;
-		
-		case 42:
-			return 1;
-		
-		case 43:
-			return 1;
-		
-		case 44:
-			return 1;
-		
-		case 45:
-			return 1;
-		
-		case 46:
-			return 1;
-		
-		case 47:
-			return 1;
-		
-		case 48:
-			return 1;
-		
-		case 49:
-			return 1;
-		
-		case 54:
-			return 1;
-		
-		case 55:
-			return 1;
-		
-		case 56:
-			return 1;
-		
-		case 57:
-			return 1;
-		
-		case 58:
-			return 1;
-		
-		case 59:
-			return 1;
-		
-		case 126:
-			return 1;
-		
-		case 127:
-			return 1;
-		
-		case 128:
-			return 1;
-		
-		case 129:
-			return 1;
-		
-		case 130:
-			return 1;
-		
-		case 67:
-			return 1;
-		
-		case 120:
-			return 1;
-		
-		case 121:
-			return 1;
-		
-		case 122:
-			return 1;
-		
-		case 123:
-			return 1;
-		
-		case 124:
-			return 1;
-		
-		case 125:
-			return 1;
-		
-		case 131:
-			return 1;
-		
-		case 132:
-			return 1;
-		
-		case 133:
-			return 1;
-		
-		case 134:
-			return 1;
-		
-		case 135:
-			return 1;
-		
-		case 136:
-			return 1;
-		
-		case 137:
-			return 1;
-		
-		case 138:
-			return 1;
-		
-		case 139:
-			return 1;
-		
-		case 140:
-			return 1;
-		
-		case 141:
-			return 1;
-		
-		case 142:
-			return 1;
-		
-		case 143:
-			return 1;
-		
-		case 70:
-			return 1;
-		
-		case 71:
-			return 1;
-		
-		case 72:
-			return 1;
-		
-		case 73:
-			return 1;
-		
-		case 74:
-			return 1;
-		
-		case 75:
-			return 1;
-		
-		case 76:
-			return 1;
-		
-		case 77:
-			return 1;
-		
-		case 78:
-			return 1;
-		
-		case 79:
-			return 1;
-		
-		case 80:
-			return 1;
-		
-		case 81:
-			return 1;
-		
-		case 82:
-			return 1;
-		
-		case 83:
-			return 1;
-		
-		case 84:
-			return 1;
-		
-		case 85:
-			return 1;
-		
-		case 86:
-			return 1;
-		
-		case 87:
-			return 1;
-		
-		case 88:
-		case 89:
-		case 90:
-		case 91:
-		case 92:
-		case 93:
-		case 94:
-		case 95:
-		case 96:
-		case 97:
-		case 99:
-		case 100:
-		case 101:
-		case 102:
-		case 103:
-		case 104:
-		case 105:
-		case 106:
-		case 107:
-		case 108:
-		case 109:
-		case 110:
-		case 112:
-		case 114:
-		case 115:
-		case 116:
-		case 111:
-		case 113:
-		case 117:
-		case 118:
-		case 119:
-			return 1;
-			break;
-	}
-	return 0;
-}
-
 void func_62(char* sParam0, char* sParam1, char* sParam2, char* sParam3, int iParam4, int iParam5, int iParam6, int iParam7, var uParam8, int iParam9, int iParam10)//Position - 0x805B
 {
 	int iVar0;
-	
 	iVar0 = 0;
 	while (iVar0 <= 11)
 	{
@@ -7438,33 +2588,20 @@ int func_65(int iParam0)//Position - 0x8134
 		case 2:
 			return 107;
 			break;
-		
 		case 3:
 			return 108;
 			break;
-		
 		case 4:
 			return 109;
 			break;
-		
 		case 5:
 			return 110;
 			break;
-		
 		default:
 			return 0;
 			break;
 	}
 	return 0;
-}
-
-bool func_66(int iParam0, int iParam1)//Position - 0x8183
-{
-	if (iParam1 == -1)
-	{
-		iParam1 = func_7();
-	}
-	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
 
 void func_67(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x819F
@@ -7481,37 +2618,29 @@ void func_67(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x8
 	int iVar9;
 	int iVar10;
 	int iVar11;
-	
 	switch (iParam1)
 	{
 		case 0:
 			iParam1 = 0;
 			break;
-		
 		case 1:
 			iParam1 = 1;
 			break;
-		
 		case 2:
 			iParam1 = 2;
 			break;
-		
 		case 3:
 			iParam1 = 3;
 			break;
-		
 		case 4:
 			iParam1 = 4;
 			break;
-		
 		case 5:
 			iParam1 = 5;
 			break;
-		
 		case 6:
 			iParam1 = func_78(iParam0, iParam2);
 			break;
-		
 		case 7:
 		case 8:
 			iParam1 = func_76(iParam0, iParam2);
@@ -7522,20 +2651,20 @@ void func_67(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x8
 	{
 		if (iParam1 != 1)
 		{
-			if (func_75(iParam0, iParam2) != 1)
+			if (__LIB_23__.func_796(iParam0, iParam2) != 1)
 			{
 				iParam1 = 1;
 			}
 		}
 	}
-	sVar1 = func_74(iParam0, iParam2, 0);
+	sVar1 = __LIB_30__.func_370(iParam0, iParam2, 0);
 	sVar2 = func_73(iParam0, iParam1, iParam2, 0);
-	sVar3 = func_72(iParam0, iParam2);
-	sVar4 = func_71(iParam0, iParam2);
-	iVar5 = func_70(iParam0, iVar0, iParam2);
-	iVar6 = func_69(iParam0);
+	sVar3 = __LIB_30__.func_369(iParam0, iParam2);
+	sVar4 = __LIB_30__.func_368(iParam0, iParam2);
+	iVar5 = __LIB_30__.func_367(iParam0, iVar0, iParam2);
+	iVar6 = __LIB_13__.func_148(iParam0);
 	iVar7 = func_68(iParam1);
-	iVar8 = func_70(iParam0, iVar7, iParam2);
+	iVar8 = __LIB_30__.func_367(iParam0, iVar7, iParam2);
 	iVar9 = (iVar5 - iVar8);
 	iVar10 = (iVar6 - iVar8);
 	iVar11 = SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(iVar10) / SYSTEM::TO_FLOAT(iVar9)) * 100f));
@@ -7545,207 +2674,28 @@ void func_67(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x8
 int func_68(int iParam0)//Position - 0x82DB
 {
 	int iVar0;
-	
 	switch (iParam0)
 	{
 		case 0:
 			iVar0 = 0;
 			break;
-		
 		case 1:
 			iVar0 = 0;
 			break;
-		
 		case 2:
 			iVar0 = 1;
 			break;
-		
 		case 3:
 			iVar0 = 2;
 			break;
-		
 		case 4:
 			iVar0 = 3;
 			break;
-		
 		case 5:
 			iVar0 = 4;
 			break;
 	}
 	return iVar0;
-}
-
-int func_69(int iParam0)//Position - 0x8334
-{
-	var uVar0;
-	int iVar1;
-	var uVar2;
-	
-	uVar0 = Global_1659575[iParam0];
-	iVar1 = uVar0;
-	if (STATS::STAT_GET_INT(iVar1, &uVar2, -1))
-	{
-		return uVar2;
-	}
-	return 0;
-}
-
-int func_70(int iParam0, int iParam1, int iParam2)//Position - 0x835C
-{
-	if (iParam2 == 0)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 1:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 5;
-				
-				case 3:
-					return 10;
-				
-				case 4:
-					return 15;
-				
-				case 5:
-					return 25;
-				
-				default:
-			}
-			break;
-		
-		case 2:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-		
-		case 3:
-			switch (iParam1)
-			{
-				case 0:
-					return 0;
-				
-				case 1:
-					return 0;
-				
-				case 2:
-					return 10;
-				
-				case 3:
-					return 25;
-				
-				case 4:
-					return 50;
-				
-				case 5:
-					return 100;
-				
-				default:
-			}
-			break;
-	}
-	return 999;
-}
-
-char* func_71(int iParam0, int iParam1)//Position - 0x84B2
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return "MPAWARDS5";
-		
-		case 1:
-			return "MPAWARDS5";
-		
-		case 2:
-			return "MPAWARDS5";
-		
-		case 3:
-			return "MPAWARDS6";
-		
-		default:
-	}
-	return "";
-}
-
-char* func_72(int iParam0, int iParam1)//Position - 0x8500
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return "RaceCreator";
-		
-		case 1:
-			return "DeathmatchCreator";
-		
-		case 2:
-			return "PlayedCreation";
-		
-		case 3:
-			return "CreatorsScore";
-		
-		default:
-	}
-	return "";
 }
 
 char* func_73(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x854E
@@ -7756,124 +2706,60 @@ char* func_73(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	if (bParam3)
 	{
 	}
-	if (func_70(iParam0, iParam1, iParam2) == 1)
+	if (__LIB_30__.func_367(iParam0, iParam1, iParam2) == 1)
 	{
 	}
 	switch (iParam0)
 	{
 		case 0:
 			return "AWS_686";
-		
 		case 1:
 			return "AWS_688";
-		
 		case 2:
 			return "AWS_689";
-		
 		case 3:
 			return "AWS_690";
-		
 		default:
 	}
 	return "";
-}
-
-char* func_74(int iParam0, int iParam1, bool bParam2)//Position - 0x85AF
-{
-	if (bParam2)
-	{
-	}
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return "AWT_686";
-		
-		case 1:
-			return "AWT_688";
-		
-		case 2:
-			return "AWT_689";
-		
-		case 3:
-			return "AWT_690";
-		
-		default:
-	}
-	return "";
-}
-
-int func_75(int iParam0, int iParam1)//Position - 0x8602
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return 1;
-		
-		case 1:
-			return 1;
-		
-		case 2:
-			return 1;
-		
-		case 3:
-			return 1;
-		
-		default:
-	}
-	return 0;
 }
 
 int func_76(int iParam0, int iParam1)//Position - 0x8641
 {
-	if (func_77(func_69(iParam0), func_70(iParam0, 5, iParam1)))
+	if (__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 5, iParam1)))
 	{
 		return 5;
 	}
-	if (func_77(func_69(iParam0), func_70(iParam0, 4, iParam1)))
+	if (__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 4, iParam1)))
 	{
 		return 5;
 	}
-	if (func_77(func_69(iParam0), func_70(iParam0, 3, iParam1)))
+	if (__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 3, iParam1)))
 	{
 		return 4;
 	}
-	if (func_77(func_69(iParam0), func_70(iParam0, 2, iParam1)))
+	if (__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 2, iParam1)))
 	{
 		return 3;
 	}
 	return 2;
 }
 
-int func_77(int iParam0, int iParam1)//Position - 0x86B2
-{
-	if (iParam1 <= iParam0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
 int func_78(int iParam0, int iParam1)//Position - 0x86C6
 {
-	if (!func_77(func_69(iParam0), func_70(iParam0, 5, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 5, iParam1)))
 	{
 		return 0;
 	}
-	if (!func_77(func_69(iParam0), func_70(iParam0, 4, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 4, iParam1)))
 	{
 		return 2;
 	}
-	if (!func_77(func_69(iParam0), func_70(iParam0, 3, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 3, iParam1)))
 	{
 		return 3;
 	}
-	if (!func_77(func_69(iParam0), func_70(iParam0, 2, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_13__.func_148(iParam0), __LIB_30__.func_367(iParam0, 2, iParam1)))
 	{
 		return 4;
 	}
@@ -7891,19 +2777,17 @@ void func_79(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x8
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	
 	switch (iParam1)
 	{
 		case 6:
 		case 8:
-			if (func_51(iParam0, -1))
+			if (__LIB_24__.func_976(iParam0, -1))
 			{
 				iParam1 = 0;
 			}
 			break;
-		
 		case 7:
-			if (func_51(iParam0, -1) == 0)
+			if (__LIB_24__.func_976(iParam0, -1) == 0)
 			{
 				iParam1 = 5;
 			}
@@ -7932,21 +2816,21 @@ void func_79(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x8
 	{
 		iParam1 = 5;
 	}
-	sVar2 = func_83(iParam0, iVar0);
+	sVar2 = __LIB_11__.func_380(iParam0, iVar0);
 	sVar3 = func_82(iParam0, iVar0);
-	sVar4 = func_81(iParam0, iVar0);
-	sVar5 = func_80(iParam0, iVar0);
-	iVar6 = func_49(iVar1, iParam1, 0);
-	iVar7 = func_48(iVar1, -1);
+	sVar4 = __LIB_11__.func_378(iParam0, iVar0);
+	sVar5 = __LIB_11__.func_377(iParam0, iVar0);
+	iVar6 = __LIB_0__.func_238(iVar1, iParam1, 0);
+	iVar7 = __LIB_1__.func_596(iVar1, -1);
 	if (iVar1 == 64)
 	{
 		iVar6 = 1;
 		iVar7 = 0;
 	}
 	iVar8 = -1;
-	if (func_51(iParam0, -1))
+	if (__LIB_24__.func_976(iParam0, -1))
 	{
-		iVar7 = func_49(func_84(iParam0), iParam1, 0);
+		iVar7 = __LIB_0__.func_238(func_84(iParam0), iParam1, 0);
 		if (iVar1 == 64)
 		{
 			iVar7 = 1;
@@ -7956,376 +2840,9 @@ void func_79(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x8
 	func_62(sVar2, sVar3, sVar4, sVar5, iVar6, iVar7, iVar8, iParam1, uParam3, 152, 144);
 }
 
-char* func_80(int iParam0, int iParam1)//Position - 0x8865
-{
-	char* sVar0;
-	
-	sVar0 = "MPTATTOOS";
-	if (iParam0 == iParam0)
-	{
-	}
-	if (iParam1 == iParam1)
-	{
-	}
-	switch (iParam0)
-	{
-		case 56:
-			return "MPTattoos3";
-			break;
-		
-		case 89:
-			return "MPTSHIRTAWARDS";
-			break;
-		
-		case 88:
-			return "MPTSHIRTAWARDS";
-			break;
-		
-		case 87:
-			return "MPTSHIRTAWARDS";
-			break;
-		
-		case 57:
-			return "MPTattoos2";
-			break;
-		
-		case 58:
-			return "MPTattoos2";
-			break;
-		
-		case 59:
-			return "MPTattoos2";
-			break;
-		
-		case 60:
-			return "MPTattoos2";
-			break;
-		
-		case 12:
-		case 55:
-		case 49:
-		case 48:
-		case 46:
-		case 45:
-		case 34:
-		case 65:
-		case 25:
-			return "MPTattoos3";
-			break;
-	}
-	return sVar0;
-}
-
-char* func_81(int iParam0, int iParam1)//Position - 0x894A
-{
-	char* sVar0;
-	
-	sVar0 = "";
-	if (iParam0 == iParam0)
-	{
-	}
-	if (iParam1 == iParam1)
-	{
-	}
-	switch (iParam0)
-	{
-		case 56:
-			return "TATTOO_WIN_PARLEY";
-			break;
-		
-		case 57:
-			return "TATTOO_HOLD_UP_SHOPS_10";
-			break;
-		
-		case 58:
-			return "TATTOO_HOLD_UP_SHOPS_25";
-			break;
-		
-		case 59:
-			return "TATTOO_HOLD_UP_SHOPS_50";
-			break;
-		
-		case 60:
-			return "TATTOO_HOLD_UP_SHOPS_100";
-			break;
-		
-		case 0:
-			return "HeadBanger";
-			break;
-		
-		case 1:
-			return "theslayer";
-			break;
-		
-		case 2:
-			return "clearout";
-			break;
-		
-		case 4:
-			return "thehustler";
-			break;
-		
-		case 3:
-			return "armoredvantakedowns";
-			break;
-		
-		case 54:
-			return "wineverymodeonce";
-			break;
-		
-		case 5:
-			return "killplayerbountyhead";
-			break;
-		
-		case 6:
-			return "holdworldrecord";
-			break;
-		
-		case 55:
-			return "MP_FM_Tat_Award_008";
-			break;
-		
-		case 7:
-			return "getrevengekills";
-			break;
-		
-		case 8:
-			return "kill3otherracers";
-			break;
-		
-		case 9:
-			return "reachrank1";
-			break;
-		
-		case 10:
-			return "reachrank2";
-			break;
-		
-		case 11:
-			return "reachrank3";
-			break;
-		
-		case 13:
-			return "HeadBanger";
-			break;
-		
-		case 14:
-			return "HeadBanger";
-			break;
-		
-		case 15:
-			return "HeadBanger";
-			break;
-		
-		case 16:
-			return "HeadBanger";
-			break;
-		
-		case 89:
-			return "RockstarVerifiied";
-			break;
-		
-		case 87:
-			return "ReachHordeModeWave";
-			break;
-		
-		case 12:
-			return "TATTOO_RACES_WON";
-			break;
-	}
-	switch (iParam0)
-	{
-		case 17:
-			return "Headbanger";
-			break;
-		
-		case 18:
-			return "Headbanger";
-			break;
-		
-		case 19:
-			return "Headbanger";
-			break;
-		
-		case 20:
-			return "Headbanger";
-			break;
-		
-		case 21:
-			return "Headbanger";
-			break;
-		
-		case 22:
-			return "Headbanger";
-			break;
-		
-		case 23:
-			return "Headbanger";
-			break;
-		
-		case 24:
-			return "Headbanger";
-			break;
-		
-		case 25:
-			return "MP_FM_Tat_002";
-			break;
-		
-		case 26:
-			return "Headbanger";
-			break;
-		
-		case 27:
-			return "Headbanger";
-			break;
-		
-		case 28:
-			return "Headbanger";
-			break;
-		
-		case 61:
-			return "Headbanger";
-			break;
-		
-		case 62:
-			return "Headbanger";
-			break;
-		
-		case 63:
-			return "Headbanger";
-			break;
-		
-		case 64:
-			return "Headbanger";
-			break;
-		
-		case 65:
-			return "MP_FM_Tat_019";
-			break;
-		
-		case 29:
-			return "Headbanger";
-			break;
-		
-		case 30:
-			return "Headbanger";
-			break;
-		
-		case 31:
-			return "Headbanger";
-			break;
-		
-		case 66:
-			return "Headbanger";
-			break;
-		
-		case 32:
-			return "Headbanger";
-			break;
-		
-		case 33:
-			return "Headbanger";
-			break;
-		
-		case 34:
-			return "MP_FM_Tat_023";
-			break;
-		
-		case 35:
-			return "Headbanger";
-			break;
-		
-		case 36:
-			return "Headbanger";
-			break;
-		
-		case 37:
-			return "Headbanger";
-			break;
-		
-		case 38:
-			return "Headbanger";
-			break;
-		
-		case 39:
-			return "Headbanger";
-			break;
-		
-		case 40:
-			return "Headbanger";
-			break;
-		
-		case 67:
-			return "Headbanger";
-			break;
-		
-		case 41:
-			return "Headbanger";
-			break;
-		
-		case 68:
-			return "Headbanger";
-			break;
-		
-		case 42:
-			return "Headbanger";
-			break;
-		
-		case 43:
-			return "Headbanger";
-			break;
-		
-		case 44:
-			return "Headbanger";
-			break;
-		
-		case 45:
-			return "MP_FM_Tat_036";
-			break;
-		
-		case 46:
-			return "MP_FM_Tat_037";
-			break;
-		
-		case 47:
-			return "Headbanger";
-			break;
-		
-		case 48:
-			return "MP_FM_Tat_039";
-			break;
-		
-		case 49:
-			return "MP_FM_Tat_040";
-			break;
-		
-		case 50:
-			return "Headbanger";
-			break;
-		
-		case 51:
-			return "Headbanger";
-			break;
-		
-		case 52:
-			return "Headbanger";
-			break;
-		
-		case 53:
-			return "Headbanger";
-			break;
-		
-		case 69:
-			return "Headbanger";
-			break;
-	}
-	return sVar0;
-}
-
 char* func_82(int iParam0, int iParam1)//Position - 0x8DF6
 {
 	char* sVar0;
-	
 	sVar0 = "";
 	if (iParam0 == iParam0)
 	{
@@ -8338,87 +2855,66 @@ char* func_82(int iParam0, int iParam1)//Position - 0x8DF6
 		case 7:
 			return "TAT_FM_REVENKIL_D" /* GXT: Complete The Equalizer platinum Award. ~n~Get 50 Revenge kills in Deathmatch. */;
 			break;
-		
 		case 6:
 			return "TAT_FM_RECHOLD_d" /* GXT: Complete The Record Holder platinum Award. ~n~Hold a World Record in a Rockstar Race. */;
 			break;
-		
 		case 8:
 			return "TAT_FM_KIL3RACE_D" /* GXT: Complete the Road Rage platinum Award. ~n~Kill at least 3 other racers in a GTA Race and win. */;
 			break;
-		
 		case 5:
 			return "TAT_FM_KILb_D" /* GXT: Complete The Bounty Hunter platinum Award. ~n~Kill 25 Bounty Targets. */;
 			break;
-		
 		case 0:
 			return "TAT_FM_HEADBANG_D" /* GXT: Complete the Head Banger platinum Award. ~n~Get 500 player headshots. */;
 			break;
-		
 		case 12:
 			return "TAT_RACE50_D" /* GXT: Complete The Champion platinum Award. ~n~Win 50 Races. */;
 			break;
-		
 		case 2:
 			return "TAT_CLEAROUT_D" /* GXT: Complete the Clear Out platinum Award. ~n~Clear 5 Gang Attacks in one day, in a single session. */;
 			break;
-		
 		case 9:
 			return "TAT_FM_RANK1_D" /* GXT: Complete The Widow Maker silver Award. ~n~Get 250 player kills. */;
 			break;
-		
 		case 10:
 			return "TAT_FM_RANK2_D" /* GXT: Complete The Widow Maker gold Award. ~n~Get 500 player kills. */;
 			break;
-		
 		case 11:
 			return "TAT_FM_RANK3_D" /* GXT: Complete The Widow Maker platinum Award. ~n~Get 1000 player kills. */;
 			break;
-		
 		case 4:
 			return "TAT_FM_HUST_D" /* GXT: Complete The Hustler platinum Award. ~n~Earn $50,000 winnings from betting. */;
 			break;
-		
 		case 1:
 			return "TAT_FM_SLAY_D" /* GXT: Complete The Slayer platinum Award. ~n~Win 50 Deathmatches. */;
 			break;
-		
 		case 54:
 			return "TAT_FM_EVERMODE1_D" /* GXT: Complete the All Rounder platinum Award. ~n~Win every game mode. */;
 			break;
-		
 		case 3:
 			return "TAT_FM_ARVANTAKE_D" /* GXT: Complete the Full Metal Jacket platinum Award. ~n~Rob 25 Armored Trucks. */;
 			break;
-		
 		case 56:
 			return "TAT_CHEATER_D" /* GXT: Complete The Car Bomber platinum Award. ~n~Kill 25 players using vehicle explosives. */;
 			break;
-		
 		case 13:
 			return "TAT_CRANKA_D" /* GXT: Reached Crew Rank 26. */;
 			break;
-		
 		case 14:
 			return "TAT_CRANKB_D" /* GXT: Reached Crew Rank 45. */;
 			break;
-		
 		case 15:
 			return "TAT_CRANKC_D" /* GXT: Reached Crew Rank 18. */;
 			break;
-		
 		case 16:
 			return "TAT_CRANKD_D" /* GXT: Reached Crew Rank 52. */;
 			break;
-		
 		case 89:
 			return "TAT_FM_ROCKSTAR_D" /* GXT: Create a Race, Deathmatch, Capture, or Last Team Standing and get it verified by Rockstar Games. */;
 			break;
-		
 		case 87:
 			return "TAT_FM_REDSKULL_D" /* GXT: Complete The Survivor platinum Award. ~n~Complete a Survival. */;
 			break;
-		
 		case 55:
 			return "TAT_FM_MODDED_D" /* GXT: Complete the Suped Up platinum Award. ~n~Apply each type of mod to a single vehicle. */;
 			break;
@@ -8428,511 +2924,152 @@ char* func_82(int iParam0, int iParam1)//Position - 0x8DF6
 		case 17:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 18:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 19:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 20:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 21:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 22:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 23:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 24:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 25:
 			return "TAT_FM_TAT9D" /* GXT: Complete the Death Toll platinum Award. ~n~Get 500 kills in Deathmatch. */;
 			break;
-		
 		case 26:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 27:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 28:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 61:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 62:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 63:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 64:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 65:
 			return "TAT_FM_TAT17D" /* GXT: Complete the Bloodiest Of The Bunch platinum Award. ~n~Get the most kills in a 4 player Survival. */;
 			break;
-		
 		case 29:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 30:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 31:
 			return "TAT_RANK10_D" /* GXT: Reach Rank 10 To Unlock Tattoo. */;
 			break;
-		
 		case 66:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 32:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 33:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 34:
 			return "TAT_FM_TAT24D" /* GXT: Complete the Lapping It Up platinum Award. ~n~Get 25 Private Dances. */;
 			break;
-		
 		case 35:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 36:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 37:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 38:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 39:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 40:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 67:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 41:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 68:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 42:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 43:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 44:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 45:
 			return "TAT_FM_TAT37D" /* GXT: Complete the Pistol Whipped platinum Award. ~n~Get 500 Pistol kills. */;
 			break;
-		
 		case 46:
 			return "TAT_FM_TAT38D" /* GXT: Complete the Team Carrier platinum Award. ~n~Earn 50 MVPs in Team Deathmatch. */;
 			break;
-		
 		case 47:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 48:
 			return "TAT_FM_TAT40D" /* GXT: Complete the Scoping Out platinum Award. ~n~Get 100 Sniper kills. */;
 			break;
-		
 		case 49:
 			return "TAT_FM_TAT41D" /* GXT: Complete the Killstreaker platinum Award. ~n~Earn a 10 plus killstreak in Deathmatch. */;
 			break;
-		
 		case 50:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 51:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 52:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 53:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 69:
 			return "TAT_RANK20_D" /* GXT: Reach Rank 20 To Unlock Tattoo. */;
 			break;
-		
 		case 57:
 			return "TAT_HOLDUP1V_D" /* GXT: Complete the Armed Robber bronze Award. ~n~Hold up 5 stores. */;
 			break;
-		
 		case 58:
 			return "TAT_HOLDUP5V_D" /* GXT: Complete the Armed Robber silver Award. ~n~Hold up 10 stores. */;
 			break;
-		
 		case 59:
 			return "TAT_HOLDUP10V_D" /* GXT: Complete the Armed Robber gold Award. ~n~Hold up 15 stores. */;
 			break;
-		
 		case 60:
 			return "TAT_HOLDUP20V_D" /* GXT: Complete the Armed Robber platinum Award. ~n~Hold up 20 stores. */;
-			break;
-	}
-	return sVar0;
-}
-
-char* func_83(int iParam0, int iParam1)//Position - 0x92A2
-{
-	char* sVar0;
-	
-	sVar0 = "";
-	if (iParam0 == iParam0)
-	{
-	}
-	if (iParam1 == iParam1)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return "TAT_FM_HEADBANG" /* GXT: Skull */;
-			break;
-		
-		case 2:
-			return "TAT_CLEAROUT" /* GXT: Grim Reaper Smoking Gun */;
-			break;
-		
-		case 9:
-			return "TAT_FM_RANK1" /* GXT: Blank Scroll */;
-			break;
-		
-		case 10:
-			return "TAT_FM_RANK2" /* GXT: Embellished Scroll */;
-			break;
-		
-		case 11:
-			return "TAT_FM_RANK3" /* GXT: Seven Deadly Sins */;
-			break;
-		
-		case 4:
-			return "TAT_FM_HUST" /* GXT: Hustler */;
-			break;
-		
-		case 1:
-			return "TAT_FM_SLAY" /* GXT: Burning Heart */;
-			break;
-		
-		case 54:
-			return "TAT_FM_EVERMODE1" /* GXT: Angel */;
-			break;
-		
-		case 3:
-			return "TAT_FM_ARVANTAKE" /* GXT: Blackjack */;
-			break;
-		
-		case 7:
-			return "TAT_FM_REVENKIL" /* GXT: Dragon and Dagger */;
-			break;
-		
-		case 5:
-			return "TAT_FM_KILb" /* GXT: Skull and Sword */;
-			break;
-		
-		case 8:
-			return "TAT_FM_KIL3RACE" /* GXT: Ride or Die */;
-			break;
-		
-		case 6:
-			return "TAT_FM_RECHOLD" /* GXT: Racing Blonde */;
-			break;
-		
-		case 12:
-			return "TAT_RACE50" /* GXT: Racing Brunette */;
-			break;
-		
-		case 13:
-			return "TAT_CRANKA" /* GXT: Crew Rank 1 */;
-			break;
-		
-		case 14:
-			return "TAT_CRANKB" /* GXT: Crew Rank 2 */;
-			break;
-		
-		case 15:
-			return "TAT_CRANKC" /* GXT: Crew Rank 3 */;
-			break;
-		
-		case 16:
-			return "TAT_CRANKD" /* GXT: Crew Rank 4 */;
-			break;
-		
-		case 87:
-			return "TAT_FM_REDSKULL" /* GXT: Red Skull T-Shirt */;
-			break;
-		
-		case 88:
-			return "TAT_FM_BELLE" /* GXT: Los Santos Belle T-Shirt */;
-			break;
-		
-		case 89:
-			return "TAT_FM_ROCKSTAR" /* GXT: Rockstar T-Shirt */;
-			break;
-		
-		case 55:
-			return "TAT_FM_MODDED" /* GXT: Los Santos Customs */;
-			break;
-		
-		case 17:
-			return "TAT_FM_TAT1" /* GXT: Tattoo 1 */;
-			break;
-		
-		case 18:
-			return "TAT_FM_TAT2" /* GXT: Tattoo 2 */;
-			break;
-		
-		case 19:
-			return "TAT_FM_TAT3" /* GXT: Tattoo 3 */;
-			break;
-		
-		case 20:
-			return "TAT_FM_TAT4" /* GXT: Tattoo 4 */;
-			break;
-		
-		case 21:
-			return "TAT_FM_TAT5" /* GXT: Tattoo 5 */;
-			break;
-		
-		case 22:
-			return "TAT_FM_TAT6" /* GXT: Tattoo 6 */;
-			break;
-		
-		case 56:
-			return "TAT_CHEATER" /* GXT: Trust No One */;
-			break;
-	}
-	switch (iParam0)
-	{
-		case 23:
-			return "TAT_FM_TAT7" /* GXT: Tattoo 7 */;
-			break;
-		
-		case 24:
-			return "TAT_FM_TAT8" /* GXT: Tattoo 8 */;
-			break;
-		
-		case 25:
-			return "TAT_FM_TAT9" /* GXT: Melting Skull */;
-			break;
-		
-		case 26:
-			return "TAT_FM_TAT10" /* GXT: Tattoo 10 */;
-			break;
-		
-		case 27:
-			return "TAT_FM_TAT11" /* GXT: Tattoo 11 */;
-			break;
-		
-		case 28:
-			return "TAT_FM_TAT12" /* GXT: Tattoo 12 */;
-			break;
-		
-		case 61:
-			return "TAT_FM_TAT13" /* GXT: Tattoo 13 */;
-			break;
-		
-		case 62:
-			return "TAT_FM_TAT14" /* GXT: Tattoo 14 */;
-			break;
-		
-		case 63:
-			return "TAT_FM_TAT15" /* GXT: Tattoo 1 */;
-			break;
-		
-		case 64:
-			return "TAT_FM_TAT16" /* GXT: Tattoo 16 */;
-			break;
-		
-		case 65:
-			return "TAT_FM_TAT38" /* GXT: The Wages of Sin */;
-			break;
-		
-		case 29:
-			return "TAT_FM_TAT18" /* GXT: Tattoo 19 */;
-			break;
-		
-		case 30:
-			return "TAT_FM_TAT19";
-			break;
-		
-		case 31:
-			return "TAT_FM_TAT20" /* GXT: Tattoo 20 */;
-			break;
-		
-		case 66:
-			return "TAT_FM_TAT21" /* GXT: Tattoo 21 */;
-			break;
-		
-		case 32:
-			return "TAT_FM_TAT22" /* GXT: Tattoo 22 */;
-			break;
-		
-		case 33:
-			return "TAT_FM_TAT23" /* GXT: Tattoo 23 */;
-			break;
-		
-		case 34:
-			return "TAT_FM_TAT24" /* GXT: Hottie */;
-			break;
-		
-		case 35:
-			return "TAT_FM_TAT25" /* GXT: Tattoo 25 */;
-			break;
-		
-		case 36:
-			return "TAT_FM_TAT26" /* GXT: Tattoo 26 */;
-			break;
-		
-		case 37:
-			return "TAT_FM_TAT27" /* GXT: Tattoo 27 */;
-			break;
-		
-		case 38:
-			return "TAT_FM_TAT28" /* GXT: Tattoo 28 */;
-			break;
-		
-		case 39:
-			return "TAT_FM_TAT29" /* GXT: Tattoo 29 */;
-			break;
-		
-		case 40:
-			return "TAT_FM_TAT30" /* GXT: Tattoo 30 */;
-			break;
-		
-		case 67:
-			return "TAT_FM_TAT31" /* GXT: Tattoo 31 */;
-			break;
-		
-		case 41:
-			return "TAT_FM_TAT32" /* GXT: Tattoo 32 */;
-			break;
-		
-		case 68:
-			return "TAT_FM_TAT33" /* GXT: Tattoo 33 */;
-			break;
-		
-		case 42:
-			return "TAT_FM_TAT34" /* GXT: Tattoo 34 */;
-			break;
-		
-		case 43:
-			return "TAT_FM_TAT35" /* GXT: Tattoo 35 */;
-			break;
-		
-		case 44:
-			return "TAT_FM_TAT36" /* GXT: Tattoo 36 */;
-			break;
-		
-		case 45:
-			return "TAT_FM_TAT37" /* GXT: Way Of The Gun */;
-			break;
-		
-		case 46:
-			return "TAT_FM_TAT41" /* GXT: Grim Reaper */;
-			break;
-		
-		case 47:
-			return "TAT_FM_TAT39" /* GXT: Tattoo 39 */;
-			break;
-		
-		case 48:
-			return "TAT_FM_TAT40" /* GXT: Broken Skull */;
-			break;
-		
-		case 49:
-			return "TAT_FM_TAT17" /* GXT: Flaming Skull */;
-			break;
-		
-		case 50:
-			return "TAT_FM_TAT42" /* GXT: Tattoo 42 */;
-			break;
-		
-		case 51:
-			return "TAT_FM_TAT43" /* GXT: Tattoo 43 */;
-			break;
-		
-		case 52:
-			return "TAT_FM_TAT44" /* GXT: Tattoo 44 */;
-			break;
-		
-		case 53:
-			return "TAT_FM_TAT45" /* GXT: Tattoo 45 */;
-			break;
-		
-		case 69:
-			return "TAT_FM_TAT46" /* GXT: Tattoo 46 */;
-			break;
-		
-		case 57:
-			return "TAT_HOLDUP1V" /* GXT: Clown */;
-			break;
-		
-		case 58:
-			return "TAT_HOLDUP5V" /* GXT: Clown and Gun */;
-			break;
-		
-		case 59:
-			return "TAT_HOLDUP10V" /* GXT: Clown Dual Wield */;
-			break;
-		
-		case 60:
-			return "TAT_HOLDUP20V" /* GXT: Clown Dual Wield Dollars */;
 			break;
 	}
 	return sVar0;
@@ -8944,64 +3081,44 @@ int func_84(int iParam0)//Position - 0x975E
 	{
 		case 4:
 			return 49;
-		
 		case 7:
 			return 59;
-		
 		case 0:
 			return 9;
-		
 		case 5:
 			return 55;
-		
 		case 1:
 			return 40;
-		
 		case 57:
 			return 14;
-		
 		case 58:
 			return 14;
-		
 		case 59:
 			return 14;
-		
 		case 60:
 			return 14;
-		
 		case 12:
 			return 21;
-		
 		case 56:
 			return 24;
-		
 		case 25:
 			return 44;
-		
 		case 34:
 			return 15;
-		
 		case 45:
 			return 1;
-		
 		case 48:
 			return 2;
-		
 		case 46:
 			return 42;
-		
 		case 9:
 			return 56;
-		
 		case 10:
 			return 56;
-		
 		case 11:
 			return 56;
-		
 		case 87:
 			return 48;
-		
 		default:
 	}
 	return 64;
@@ -9023,64 +3140,56 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 	int iVar11;
 	int iVar12;
 	var uVar13;
-	
 	switch (iParam1)
 	{
 		case 0:
 			iParam1 = 0;
 			break;
-		
 		case 1:
 			iParam1 = 1;
 			break;
-		
 		case 2:
 			iParam1 = 2;
 			break;
-		
 		case 3:
 			iParam1 = 3;
 			break;
-		
 		case 4:
 			iParam1 = 4;
 			break;
-		
 		case 5:
 			iParam1 = 5;
 			break;
-		
 		case 6:
 			iParam1 = func_100(iParam0);
 			break;
-		
 		case 7:
 		case 8:
-			iParam1 = func_99();
+			iParam1 = __LIB_2__.func_720();
 			break;
 	}
 	if (iParam1 != 0)
 	{
 		if (iParam1 != 1)
 		{
-			if (func_98(iParam0, iParam2) != 1)
+			if (__LIB_23__.func_797(iParam0, iParam2) != 1)
 			{
 				iParam1 = 1;
 			}
 		}
 	}
-	iVar1 = func_99();
-	sVar2 = func_96(iParam0, iParam2, 0);
+	iVar1 = __LIB_2__.func_720();
+	sVar2 = __LIB_34__.func_990(iParam0, iParam2, 0);
 	sVar3 = func_95(iParam0, iParam1, iParam2, 0);
-	sVar4 = func_94(iParam0, iParam2);
-	sVar5 = func_93(iParam0, iParam2);
-	iVar6 = func_91(iParam0, iVar1, iParam2);
+	sVar4 = __LIB_30__.func_373(iParam0, iParam2);
+	sVar5 = __LIB_30__.func_372(iParam0, iParam2);
+	iVar6 = __LIB_37__.func_443(iParam0, iVar1, iParam2);
 	iVar7 = func_88(iParam0, iVar1, iParam2);
 	iVar8 = func_68(iParam1);
-	iVar9 = func_91(iParam0, iVar8, iParam2);
+	iVar9 = __LIB_37__.func_443(iParam0, iVar8, iParam2);
 	iVar10 = (iVar6 - iVar9);
 	iVar11 = (iVar7 - iVar9);
-	if (func_87(iParam0))
+	if (__LIB_9__.func_783(iParam0))
 	{
 		iVar12 = 100;
 		switch (iParam0)
@@ -9089,27 +3198,22 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 				iVar7 = 26;
 				iVar6 = 26;
 				break;
-			
 			case 18:
 				iVar7 = 26;
 				iVar6 = 26;
 				break;
-			
 			case 19:
 				iVar7 = 26;
 				iVar6 = 26;
 				break;
-			
 			case 20:
 				iVar7 = 26;
 				iVar6 = 26;
 				break;
-			
 			case 21:
 				iVar7 = 26;
 				iVar6 = 26;
 				break;
-			
 			case 1:
 			case 2:
 			case 3:
@@ -9132,7 +3236,7 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 		{
 			case 17:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("MPPLY_HEISTFLOWORDERPROGRESS"));
+				uVar13 = __LIB_0__.func_714(joaat("MPPLY_HEISTFLOWORDERPROGRESS"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9158,10 +3262,9 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 				iVar6 = 26;
 				iVar10 = 26;
 				break;
-			
 			case 18:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("MPPLY_HEISTTEAMPROGRESSBITSET"));
+				uVar13 = __LIB_0__.func_714(joaat("MPPLY_HEISTTEAMPROGRESSBITSET"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9187,10 +3290,9 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 				iVar6 = 26;
 				iVar10 = 26;
 				break;
-			
 			case 19:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("MPPLY_HEISTNODEATHPROGREITSET"));
+				uVar13 = __LIB_0__.func_714(joaat("MPPLY_HEISTNODEATHPROGREITSET"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9216,10 +3318,9 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 				iVar6 = 26;
 				iVar10 = 26;
 				break;
-			
 			case 20:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("MPPLY_HEIST_1STPERSON_PROG"));
+				uVar13 = __LIB_0__.func_714(joaat("MPPLY_HEIST_1STPERSON_PROG"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9245,10 +3346,9 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 				iVar6 = 26;
 				iVar10 = 26;
 				break;
-			
 			case 21:
 				iVar11 = 0;
-				uVar13 = func_86(joaat("MPPLY_HEISTMEMBERPROGRESSBITSET"));
+				uVar13 = __LIB_0__.func_714(joaat("MPPLY_HEISTMEMBERPROGRESSBITSET"));
 				bVar0 = false;
 				while (bVar0 < 28)
 				{
@@ -9274,7 +3374,6 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 				iVar6 = 26;
 				iVar10 = 26;
 				break;
-			
 			case 3:
 			case 4:
 			case 5:
@@ -9283,41 +3382,13 @@ void func_85(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x9
 			case 9:
 			case 10:
 			case 11:
-				iVar10 = func_91(iParam0, iVar8, iParam2);
+				iVar10 = __LIB_37__.func_443(iParam0, iVar8, iParam2);
 				iVar11 = func_88(iParam0, iVar1, iParam2);
 				break;
 		}
 		iVar12 = SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(iVar11) / SYSTEM::TO_FLOAT(iVar10)) * 100f));
 	}
 	func_62(sVar2, sVar3, sVar4, sVar5, iVar6, iVar7, iVar12, iParam1, uParam3, 152, 144);
-}
-
-int func_86(int iParam0)//Position - 0x9C97
-{
-	int iVar0;
-	var uVar1;
-	
-	iVar0 = iParam0;
-	if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
-	{
-		return uVar1;
-	}
-	return 0;
-}
-
-int func_87(int iParam0)//Position - 0x9CB5
-{
-	var uVar0;
-	int iVar1;
-	var uVar2;
-	
-	uVar0 = Global_1659583[iParam0];
-	iVar1 = uVar0;
-	if (STATS::STAT_GET_BOOL(iVar1, &uVar2, -1))
-	{
-		return uVar2;
-	}
-	return 0;
 }
 
 int func_88(int iParam0, int iParam1, int iParam2)//Position - 0x9CDD
@@ -9328,38 +3399,30 @@ int func_88(int iParam0, int iParam1, int iParam2)//Position - 0x9CDD
 	if (iParam2 == 0)
 	{
 	}
-	if (func_87(iParam0))
+	if (__LIB_9__.func_783(iParam0))
 	{
 	}
 	switch (iParam0)
 	{
 		case 3:
 			return func_89(iParam0);
-		
 		case 4:
 			return func_89(iParam0);
-		
 		case 5:
 			return func_89(iParam0);
-		
 		case 7:
 			return func_89(iParam0);
-		
 		case 8:
 			return func_89(iParam0);
-		
 		case 9:
 			return func_89(iParam0);
-		
 		case 10:
 			return func_89(iParam0);
-		
 		case 11:
 			return func_89(iParam0);
-		
 		default:
 	}
-	if (func_87(iParam0) == 1)
+	if (__LIB_9__.func_783(iParam0) == 1)
 	{
 		return 1;
 	}
@@ -9371,8 +3434,7 @@ int func_89(int iParam0)//Position - 0x9D8B
 	int iVar0;
 	var uVar1;
 	bool bVar2;
-	
-	uVar1 = func_86(func_90(iParam0));
+	uVar1 = __LIB_0__.func_714(__LIB_17__.func_164(iParam0));
 	bVar2 = false;
 	while (bVar2 < 29)
 	{
@@ -9385,236 +3447,6 @@ int func_89(int iParam0)//Position - 0x9D8B
 	return iVar0;
 }
 
-int func_90(int iParam0)//Position - 0x9DC2
-{
-	switch (iParam0)
-	{
-		case 3:
-			return joaat("MPPLY_GANGOPS_ALLINORDER");
-		
-		case 4:
-			return joaat("MPPLY_GANGOPS_LOYALTY");
-		
-		case 7:
-			return joaat("MPPLY_GANGOPS_LOYALTY2");
-		
-		case 8:
-			return joaat("MPPLY_GANGOPS_LOYALTY3");
-		
-		case 5:
-			return joaat("MPPLY_GANGOPS_CRIMMASMD");
-		
-		case 9:
-			return joaat("MPPLY_GANGOPS_CRIMMASMD2");
-		
-		case 10:
-			return joaat("MPPLY_GANGOPS_CRIMMASMD3");
-		
-		case 11:
-			return joaat("MPPLY_GANGOPS_SUPPORT");
-		
-		default:
-	}
-	return joaat("MPPLY_GANGOPS_ALLINORDER");
-}
-
-int func_91(int iParam0, int iParam1, int iParam2)//Position - 0x9E46
-{
-	if (iParam1 == 5)
-	{
-	}
-	if (iParam2 == 0)
-	{
-	}
-	if (func_87(iParam0))
-	{
-	}
-	switch (iParam0)
-	{
-		case 3:
-			return func_92();
-		
-		case 4:
-			return func_92();
-		
-		case 5:
-			return func_92();
-		
-		case 7:
-			return func_92();
-		
-		case 8:
-			return func_92();
-		
-		case 9:
-			return func_92();
-		
-		case 10:
-			return func_92();
-		
-		case 11:
-			return func_92();
-		
-		default:
-	}
-	return 1;
-}
-
-int func_92()//Position - 0x9ED3
-{
-	return 29;
-}
-
-char* func_93(int iParam0, int iParam1)//Position - 0x9EDD
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 12:
-			return "MpAwardHeists";
-		
-		case 13:
-			return "MpAwardHeists";
-		
-		case 14:
-			return "MpAwardHeists";
-		
-		case 15:
-			return "MpAwardHeists";
-		
-		case 16:
-			return "MpAwardHeists";
-		
-		case 17:
-			return "MpAwardHeists";
-		
-		case 18:
-			return "MpAwardHeists";
-		
-		case 19:
-			return "MpAwardHeists";
-		
-		case 20:
-			return "MPAwardHeists";
-		
-		case 21:
-			return "MPAwardHeists";
-		
-		case 1:
-			return "MPAwardHeists2";
-		
-		case 2:
-			return "MPAwardHeists2";
-		
-		case 6:
-			return "MPAwardHeists2";
-		
-		case 3:
-			return "MPAwardHeists2";
-		
-		case 4:
-			return "MPAwardHeists2";
-		
-		case 5:
-			return "MPAwardHeists2";
-		
-		case 7:
-			return "MPAwardHeists2";
-		
-		case 8:
-			return "MPAwardHeists2";
-		
-		case 9:
-			return "MPAwardHeists2";
-		
-		case 10:
-			return "MPAwardHeists2";
-		
-		case 11:
-			return "MPAwardHeists2";
-		
-		default:
-	}
-	return "MPAwardHeists";
-}
-
-char* func_94(int iParam0, int iParam1)//Position - 0xA008
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 12:
-			return "HeadForHeists";
-		
-		case 13:
-			return "GoToJail";
-		
-		case 14:
-			return "LabReport";
-		
-		case 15:
-			return "ProductPlacement";
-		
-		case 16:
-			return "SmoothSailing";
-		
-		case 17:
-			return "AllInOrder";
-		
-		case 18:
-			return "Loyalty";
-		
-		case 19:
-			return "CriminalMastermind";
-		
-		case 20:
-			return "AnotherPerspective";
-		
-		case 21:
-			return "SupportingRole";
-		
-		case 1:
-			return "IAAFinale";
-		
-		case 2:
-			return "SubmarineFinale";
-		
-		case 6:
-			return "MissleSiloFinale";
-		
-		case 3:
-			return "AllInOrderII";
-		
-		case 4:
-			return "LoyaltyIV";
-		
-		case 5:
-			return "CriminalMastermindIV";
-		
-		case 7:
-			return "LoyaltyII";
-		
-		case 8:
-			return "LoyaltyIII";
-		
-		case 9:
-			return "CriminalMastermindII";
-		
-		case 10:
-			return "CriminalMastermindIII";
-		
-		case 11:
-			return "SupportingRoleII";
-		
-		default:
-	}
-	return "";
-}
-
 char* func_95(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0xA133
 {
 	if (iParam2 == 9)
@@ -9623,262 +3455,61 @@ char* func_95(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	if (bParam3)
 	{
 	}
-	if (func_91(iParam0, iParam1, iParam2) == 1)
+	if (__LIB_37__.func_443(iParam0, iParam1, iParam2) == 1)
 	{
 	}
 	switch (iParam0)
 	{
 		case 12:
 			return "AWS_775" /* GXT: Learn the ropes in this two man bank Heist. It will help prepare you for the bigger Heists that Lester may pass your way. Complete The Fleeca Job Heist Finale. */;
-		
 		case 13:
 			return "AWS_767" /* GXT: Most Los Santos citizens plan to stay out of jail, but this Heist sends you straight to Bolingbroke Penitentiary. Complete The Prison Break Heist Finale. */;
-		
 		case 14:
 			return "AWS_768" /* GXT: The research facility is heavily protected so you'll need some serious muscle to pull this off. Complete The Humane Labs Raid Heist Finale. */;
-		
 		case 15:
 			return "AWS_776" /* GXT: This Heist is all about redistribution of assets and it looks like you'll need to get your hands dirty. Complete Series A Funding Heist Finale. */;
-		
 		case 16:
 			return "AWS_780" /* GXT: Prove your ability to pull off the classic bank job. Crack the vault, grab the cash and get out of there. Complete The Pacific Standard Job Heist Finale. */;
-		
 		case 17:
 			return "AWS_777" /* GXT: See all the Heists through from beginning to end and earn a handsome cash bonus. Complete all 5 Heists in order including all Setups and Finales. */;
-		
 		case 18:
 			return "AWS_778" /* GXT: Trusting a stranger as back up on a Heist could go disastrously wrong. Find a loyal crew and pull off all 5 Heists back to back with the same team of players. */;
-		
 		case 19:
 			return "AWS_779" /* GXT: Only professionals need apply. This is the ultimate challenge. Complete all 5 Heists in full on hard difficulty, in order, with the same team and without losing a single life. */;
-		
 		case 20:
 			return "AWS_785" /* GXT: Complete all Heist setups and Finales in first person mode. The leader must lock the camera option to first person when setting up the Heist. */;
-		
 		case 21:
 			return "AWS_786" /* GXT: Leave the logistics to the leader. Get your hands dirty and get paid for it. Complete all Heist Setups and Finales as a member. */;
-		
 		case 1:
 			return "AWD_GANGOP0d" /* GXT: Complete Act I of The Doomsday Heist for the first time. */;
-		
 		case 2:
 			return "AWD_GANGOP1d" /* GXT: Complete Act II of The Doomsday Heist for the first time. */;
-		
 		case 6:
 			return "AWD_GANGOP2d" /* GXT: Complete Act III of The Doomsday Heist for the first time. */;
-		
 		case 3:
 			return "AWD_GANGOP3d" /* GXT: Complete The Doomsday Heist in order. */;
-		
 		case 4:
 			return "AWD_GANGOP7d" /* GXT: Complete The Doomsday Heist in order with the same team of 4 players. */;
-		
 		case 5:
 			return "AWD_GANGOP9d" /* GXT: Complete The Doomsday Heist in order, with the same team of 4 players, on hard difficulty, without losing any lives on Setups and Finales. */;
-		
 		case 7:
 			return "AWD_GANGOP4d" /* GXT: Complete The Doomsday Heist in order with the same team of 2 players. */;
-		
 		case 8:
 			return "AWD_GANGOP6d" /* GXT: Complete The Doomsday Heist in order with the same team of 3 players. */;
-		
 		case 9:
 			return "AWD_GANGOP5d" /* GXT: Complete The Doomsday Heist in order, with the same team of 2 players, on hard difficulty, without losing any lives on Setups and Finales. */;
-		
 		case 10:
 			return "AWD_GANGOP8d" /* GXT: Complete The Doomsday Heist in order, with the same team of 3 players, on hard difficulty, without losing any lives on Setups and Finales. */;
-		
 		case 11:
 			return "AWD_GANGO10d" /* GXT: Complete all acts of The Doomsday Heist as a crew member, ending with completion of the Act III finale. */;
-		
 		default:
 	}
 	return "";
-}
-
-char* func_96(int iParam0, int iParam1, bool bParam2)//Position - 0xA271
-{
-	if (bParam2)
-	{
-	}
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 12:
-			return "AWT_775" /* GXT: Head For Heists */;
-		
-		case 13:
-			return "AWT_767" /* GXT: Go To Jail */;
-		
-		case 14:
-			return "AWT_768" /* GXT: Lab Report */;
-		
-		case 15:
-			return "AWT_776" /* GXT: Product Placement */;
-		
-		case 16:
-			return "AWT_780" /* GXT: Smooth Sailing */;
-		
-		case 17:
-			return "AWT_777" /* GXT: All In Order */;
-		
-		case 18:
-			return "AWT_778" /* GXT: Loyalty */;
-		
-		case 19:
-			return "AWT_779" /* GXT: Criminal Mastermind */;
-		
-		case 20:
-			return "AWT_785" /* GXT: Another Perspective */;
-		
-		case 21:
-			return "AWT_786" /* GXT: Supporting Role */;
-		
-		case 1:
-		case 2:
-		case 6:
-		case 3:
-		case 4:
-		case 5:
-		case 7:
-		case 8:
-		case 9:
-		case 10:
-		case 11:
-			return func_97(iParam0);
-		
-		default:
-	}
-	return "";
-}
-
-char* func_97(int iParam0)//Position - 0xA35D
-{
-	switch (iParam0)
-	{
-		case 1:
-			return "AWD_GANGOPF0" /* GXT: Act I */;
-		
-		case 2:
-			return "AWD_GANGOPF1" /* GXT: Act II */;
-		
-		case 6:
-			return "AWD_GANGOPF2" /* GXT: Act III */;
-		
-		case 3:
-			return "AWD_GANGOPA" /* GXT: All In Order II */;
-		
-		case 4:
-			return "AWD_GANGOPL4" /* GXT: Loyalty IV */;
-		
-		case 7:
-			return "AWD_GANGOPL2" /* GXT: Loyalty II */;
-		
-		case 8:
-			return "AWD_GANGOPL3" /* GXT: Loyalty III */;
-		
-		case 5:
-			return "AWD_GANGOPM4" /* GXT: Criminal Mastermind IV */;
-		
-		case 9:
-			return "AWD_GANGOPM2" /* GXT: Criminal Mastermind II */;
-		
-		case 10:
-			return "AWD_GANGOPM3" /* GXT: Criminal Mastermind III */;
-		
-		case 11:
-			return "AWD_GANGOPSR" /* GXT: Supporting Role II */;
-		
-		default:
-	}
-	return "";
-}
-
-int func_98(int iParam0, int iParam1)//Position - 0xA3FF
-{
-	if (iParam1 == 0)
-	{
-	}
-	switch (iParam0)
-	{
-		case 12:
-			return 1;
-		
-		case 13:
-			return 1;
-		
-		case 14:
-			return 1;
-		
-		case 15:
-			return 1;
-		
-		case 16:
-			return 1;
-		
-		case 17:
-			return 1;
-		
-		case 18:
-			return 1;
-		
-		case 19:
-			return 1;
-		
-		case 20:
-			return 1;
-		
-		case 21:
-			return 1;
-		
-		case 1:
-			return 1;
-		
-		case 2:
-			return 1;
-		
-		case 6:
-			return 1;
-		
-		case 3:
-			return 1;
-		
-		case 4:
-			return 1;
-		
-		case 5:
-			return 1;
-		
-		case 7:
-			return 1;
-		
-		case 8:
-			return 1;
-		
-		case 9:
-			return 1;
-		
-		case 10:
-			return 1;
-		
-		case 11:
-			return 1;
-		
-		default:
-	}
-	return 0;
-}
-
-int func_99()//Position - 0xA4E7
-{
-	return 5;
 }
 
 int func_100(int iParam0)//Position - 0xA4F0
 {
-	if (func_87(iParam0))
+	if (__LIB_9__.func_783(iParam0))
 	{
 		return 5;
 	}
@@ -9900,59 +3531,51 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 	int iVar10;
 	int iVar11;
 	int iVar12;
-	
 	switch (iParam1)
 	{
 		case 0:
 			iParam1 = 0;
 			break;
-		
 		case 1:
 			iParam1 = 1;
 			break;
-		
 		case 2:
 			iParam1 = 2;
 			break;
-		
 		case 3:
 			iParam1 = 3;
 			break;
-		
 		case 4:
 			iParam1 = 4;
 			break;
-		
 		case 5:
 			iParam1 = 5;
 			break;
-		
 		case 6:
 			iParam1 = func_113(iParam0);
 			break;
-		
 		case 7:
 		case 8:
-			iParam1 = func_112();
+			iParam1 = __LIB_2__.func_720();
 			break;
 	}
 	if (iParam1 != 0)
 	{
 		if (iParam1 != 1)
 		{
-			if (func_111(iParam0, iParam2) != 1)
+			if (__LIB_23__.func_799(iParam0, iParam2) != 1)
 			{
 				iParam1 = 1;
 			}
 		}
 	}
-	iVar0 = func_112();
-	sVar1 = func_110(iParam0, iParam2, 0);
+	iVar0 = __LIB_2__.func_720();
+	sVar1 = __LIB_30__.func_377(iParam0, iParam2, 0);
 	sVar2 = func_109(iParam0, iParam1, iParam2, 0);
-	sVar3 = func_108(iParam0, iParam2);
-	sVar4 = func_107(iParam0, iParam2);
+	sVar3 = __LIB_30__.func_376(iParam0, iParam2);
+	sVar4 = __LIB_30__.func_375(iParam0, iParam2);
 	iVar5 = func_106(iParam0, iVar0, iParam2);
-	if (func_105(iParam0, -1) == 1)
+	if (__LIB_1__.func_595(iParam0, -1) == 1)
 	{
 		iVar6 = 1;
 	}
@@ -9967,7 +3590,7 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 	switch (iParam0)
 	{
 		case 15:
-			iVar6 = func_47(1153, -1, 0);
+			iVar6 = __LIB_1__.func_556(1153, -1, 0);
 			if (iVar6 > 25)
 			{
 				iVar6 = 25;
@@ -9975,9 +3598,8 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 			iVar10 = 25;
 			iVar11 = iVar6;
 			break;
-		
 		case 16:
-			iVar6 = func_47(1152, -1, 0);
+			iVar6 = __LIB_1__.func_556(1152, -1, 0);
 			if (iVar6 > 25)
 			{
 				iVar6 = 25;
@@ -9985,9 +3607,8 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 			iVar10 = 25;
 			iVar11 = iVar6;
 			break;
-		
 		case 12:
-			iVar6 = func_47(1088, -1, 0);
+			iVar6 = __LIB_1__.func_556(1088, -1, 0);
 			if (iVar6 > 25)
 			{
 				iVar6 = 25;
@@ -9995,20 +3616,19 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 			iVar10 = 25;
 			iVar11 = iVar6;
 			break;
-		
 		case 25:
-			if (func_105(iParam0, -1))
+			if (__LIB_1__.func_595(iParam0, -1))
 			{
-				iVar6 = func_47(2117, -1, 0) * 7;
-				iVar7 = func_47(2116, -1, 0);
+				iVar6 = __LIB_1__.func_556(2117, -1, 0) * 7;
+				iVar7 = __LIB_1__.func_556(2116, -1, 0);
 				iVar6 = 7;
 				iVar10 = 7;
 				iVar11 = iVar6;
 			}
 			else
 			{
-				iVar6 = func_47(2117, -1, 0) * 7;
-				iVar7 = func_47(2116, -1, 0);
+				iVar6 = __LIB_1__.func_556(2117, -1, 0) * 7;
+				iVar7 = __LIB_1__.func_556(2116, -1, 0);
 				iVar6 = (iVar6 + iVar7);
 				if (iVar6 > 7)
 				{
@@ -10018,20 +3638,19 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 				iVar11 = iVar6;
 			}
 			break;
-		
 		case 26:
-			if (func_105(iParam0, -1))
+			if (__LIB_1__.func_595(iParam0, -1))
 			{
-				iVar6 = func_47(2117, -1, 0) * 7;
-				iVar7 = func_47(2116, -1, 0);
+				iVar6 = __LIB_1__.func_556(2117, -1, 0) * 7;
+				iVar7 = __LIB_1__.func_556(2116, -1, 0);
 				iVar6 = 28;
 				iVar10 = 28;
 				iVar11 = iVar6;
 			}
 			else
 			{
-				iVar6 = func_47(2117, -1, 0) * 7;
-				iVar7 = func_47(2116, -1, 0);
+				iVar6 = __LIB_1__.func_556(2117, -1, 0) * 7;
+				iVar7 = __LIB_1__.func_556(2116, -1, 0);
 				iVar6 = (iVar6 + iVar7);
 				if (iVar6 > 28)
 				{
@@ -10041,9 +3660,8 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 				iVar11 = iVar6;
 			}
 			break;
-		
 		case 146:
-			if (func_105(iParam0, -1))
+			if (__LIB_1__.func_595(iParam0, -1))
 			{
 				iVar6 = 43;
 				iVar10 = 43;
@@ -10051,14 +3669,13 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 			}
 			else
 			{
-				iVar6 = func_103();
+				iVar6 = __LIB_34__.func_991();
 				iVar10 = 43;
 				iVar11 = iVar6;
 			}
 			break;
-		
 		case 151:
-			if (func_105(iParam0, -1))
+			if (__LIB_1__.func_595(iParam0, -1))
 			{
 				iVar6 = 4;
 				iVar10 = 4;
@@ -10066,14 +3683,13 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 			}
 			else
 			{
-				iVar6 = func_47(7254, -1, 0);
+				iVar6 = __LIB_1__.func_556(7254, -1, 0);
 				iVar10 = 4;
 				iVar11 = iVar6;
 			}
 			break;
-		
 		case 150:
-			if (func_105(iParam0, -1))
+			if (__LIB_1__.func_595(iParam0, -1))
 			{
 				iVar6 = 100;
 				iVar10 = 100;
@@ -10081,14 +3697,13 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 			}
 			else
 			{
-				iVar6 = func_47(7238, -1, 0);
+				iVar6 = __LIB_1__.func_556(7238, -1, 0);
 				iVar10 = 100;
 				iVar11 = iVar6;
 			}
 			break;
-		
 		case 59:
-			if (func_105(iParam0, -1))
+			if (__LIB_1__.func_595(iParam0, -1))
 			{
 				iVar6 = 6;
 				iVar10 = 6;
@@ -10102,7 +3717,7 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 			}
 			break;
 	}
-	if (func_105(iParam0, -1))
+	if (__LIB_1__.func_595(iParam0, -1))
 	{
 		iVar12 = 100;
 	}
@@ -10116,8 +3731,7 @@ void func_101(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 int func_102()//Position - 0xA869
 {
 	int iVar0;
-	
-	iVar0 = func_47(8283, -1, 0);
+	iVar0 = __LIB_1__.func_556(8283, -1, 0);
 	if (BitTest(iVar0, 19))
 	{
 		return 6;
@@ -10145,196 +3759,6 @@ int func_102()//Position - 0xA869
 	return 0;
 }
 
-int func_103()//Position - 0xA8CF
-{
-	int iVar0;
-	int iVar1;
-	
-	iVar0 = 0;
-	while (iVar0 <= 49)
-	{
-		if (func_104(iVar0) != 0)
-		{
-			iVar1++;
-		}
-		iVar0++;
-	}
-	return iVar1;
-}
-
-int func_104(int iParam0)//Position - 0xA8FC
-{
-	switch (iParam0)
-	{
-		case default:
-			break;
-		
-		case 0:
-			return func_47(11014, -1, 0);
-		
-		case 1:
-			return func_47(11015, -1, 0);
-		
-		case 2:
-			return func_47(11016, -1, 0);
-		
-		case 3:
-			return func_47(11017, -1, 0);
-		
-		case 4:
-			return func_47(11018, -1, 0);
-		
-		case 5:
-			return func_47(11019, -1, 0);
-		
-		case 6:
-			return func_47(11020, -1, 0);
-		
-		case 7:
-			return func_47(11021, -1, 0);
-		
-		case 8:
-			return func_47(11022, -1, 0);
-		
-		case 9:
-			return func_47(11023, -1, 0);
-		
-		case 10:
-			return func_47(11024, -1, 0);
-		
-		case 11:
-			return func_47(11025, -1, 0);
-		
-		case 12:
-			return func_47(11026, -1, 0);
-		
-		case 13:
-			return func_47(11027, -1, 0);
-		
-		case 14:
-			return func_47(11028, -1, 0);
-		
-		case 15:
-			return func_47(11029, -1, 0);
-		
-		case 16:
-			return func_47(11030, -1, 0);
-		
-		case 17:
-			return func_47(11031, -1, 0);
-		
-		case 18:
-			return func_47(11032, -1, 0);
-		
-		case 19:
-			return func_47(11033, -1, 0);
-		
-		case 20:
-			return func_47(11034, -1, 0);
-		
-		case 21:
-			return func_47(11035, -1, 0);
-		
-		case 22:
-			return func_47(11036, -1, 0);
-		
-		case 23:
-			return func_47(11037, -1, 0);
-		
-		case 24:
-			return func_47(11038, -1, 0);
-		
-		case 25:
-			return func_47(11039, -1, 0);
-		
-		case 26:
-			return func_47(11040, -1, 0);
-		
-		case 27:
-			return func_47(11041, -1, 0);
-		
-		case 28:
-			return func_47(11042, -1, 0);
-		
-		case 29:
-			return func_47(11043, -1, 0);
-		
-		case 30:
-			return func_47(11044, -1, 0);
-		
-		case 31:
-			return func_47(11045, -1, 0);
-		
-		case 32:
-			return func_47(11046, -1, 0);
-		
-		case 33:
-			return func_47(11047, -1, 0);
-		
-		case 34:
-			return func_47(11048, -1, 0);
-		
-		case 35:
-			return func_47(11049, -1, 0);
-		
-		case 36:
-			return func_47(11050, -1, 0);
-		
-		case 37:
-			return func_47(11051, -1, 0);
-		
-		case 38:
-			return func_47(11052, -1, 0);
-		
-		case 39:
-			return func_47(11053, -1, 0);
-		
-		case 40:
-			return func_47(11054, -1, 0);
-		
-		case 41:
-			return func_47(11055, -1, 0);
-		
-		case 42:
-			return func_47(11056, -1, 0);
-		
-		case 43:
-			return func_47(11057, -1, 0);
-		
-		case 44:
-			return func_47(11058, -1, 0);
-		
-		case 45:
-			return func_47(11059, -1, 0);
-		
-		case 46:
-			return func_47(11060, -1, 0);
-		
-		case 47:
-			return func_47(11061, -1, 0);
-		
-		case 48:
-			return func_47(11062, -1, 0);
-		
-		case 49:
-			return func_47(11063, -1, 0);
-	}
-	return 0;
-}
-
-int func_105(int iParam0, int iParam1)//Position - 0xAC93
-{
-	int iVar0;
-	var uVar1;
-	
-	iVar0 = Global_2869167[iParam0 /*3*/][func_45(iParam1)];
-	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
-	{
-		return uVar1;
-	}
-	return 0;
-}
-
 int func_106(int iParam0, int iParam1, int iParam2)//Position - 0xACBF
 {
 	if (iParam1 == 5)
@@ -10348,878 +3772,32 @@ int func_106(int iParam0, int iParam1, int iParam2)//Position - 0xACBF
 		case 15:
 			return 25;
 			break;
-		
 		case 16:
 			return 25;
 			break;
-		
 		case 12:
 			return 25;
 			break;
-		
 		case 25:
 			return 7;
 			break;
-		
 		case 26:
 			return 28;
 			break;
-		
 		case 146:
 			return 43;
 			break;
-		
 		case 151:
 			return 4;
 			break;
-		
 		case 150:
 			return 100;
 			break;
-		
 		case 59:
 			return 6;
 			break;
 	}
 	return 1;
-}
-
-char* func_107(int iParam0, int iParam1)//Position - 0xAD56
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return "MPAwards2";
-		
-		case 2:
-			return "MPAwards5";
-		
-		case 3:
-			return "MPAwards5";
-		
-		case 4:
-			return "MPAwards5";
-		
-		case 5:
-			return "MPAwards5";
-		
-		case 6:
-			return "MPAwards5";
-		
-		case 7:
-			return "MPAwards5";
-		
-		case 8:
-			return "MPAwards5";
-		
-		case 10:
-			return "MPAwards5";
-		
-		case 11:
-			return "MPAwards5";
-		
-		case 12:
-			return "MPAwards5";
-		
-		case 13:
-			return "MPAwards5";
-		
-		case 14:
-			return "MPAwards5";
-		
-		case 15:
-			return "MPAwards5";
-		
-		case 16:
-			return "MPAwards5";
-		
-		case 17:
-			return "MPAwards5";
-		
-		case 18:
-			return "MPAwards5";
-		
-		case 20:
-			return "MPAwards5";
-		
-		case 21:
-			return "MPAwards5";
-		
-		case 22:
-			return "MPAWARDS5";
-		
-		case 23:
-			return "MPAwards4";
-		
-		case 25:
-			return "MPAwardHeists";
-		
-		case 26:
-			return "MPAwardHeists";
-		
-		case 27:
-			return "MPAWARDS6";
-		
-		case 144:
-			return "MPAwardHeists";
-		
-		case 143:
-			return "MPAwardHeists";
-		
-		case 146:
-			return "MPAwardHeists";
-		
-		case 147:
-			return "MPAwardHeists";
-		
-		case 148:
-			return "MPAwardHeists";
-		
-		case 149:
-			return "MPAwardNightclub";
-		
-		case 150:
-			return "MPAwardNightclub";
-		
-		case 151:
-			return "MPAwardNightclub";
-		
-		case 30:
-			return "MPAwardsArena";
-		
-		case 31:
-			return "MPAwardsArena";
-		
-		case 32:
-			return "MPAwardsArena";
-		
-		case 33:
-			return "MPAwardsArena";
-		
-		case 34:
-			return "MPAwardsArena";
-		
-		case 35:
-			return "MPAwardsArena";
-		
-		case 36:
-			return "MPAwardsArena";
-		
-		case 37:
-			return "MPAwardsArena";
-		
-		case 38:
-			return "MPAwardsArena";
-		
-		case 39:
-			return "MPAwardsArena";
-		
-		case 40:
-			return "MPAwardsArena";
-		
-		case 41:
-			return "MPAwardsArena";
-		
-		case 42:
-			return "MPAwardsArena";
-		
-		case 43:
-			return "MPAwardsArena";
-		
-		case 44:
-			return "MPAwardsArena";
-		
-		case 45:
-			return "MPAwardsArena";
-		
-		case 46:
-			return "MPAwardsArena";
-		
-		case 47:
-			return "MPAwardsArena";
-		
-		case 48:
-			return "MPAwardsArena";
-		
-		case 49:
-			return "MPAwardsArena";
-		
-		case 50:
-			return "MPAwardsArena";
-		
-		case 51:
-			return "MPAwardsArena";
-		
-		case 52:
-			return "MPAwardsArena";
-		
-		case 53:
-			return "MPAwardCasino";
-		
-		case 54:
-			return "MPAwardCasino";
-		
-		case 55:
-			return "MPAwardCasino";
-		
-		case 56:
-			return "MPAwardCasino";
-		
-		case 57:
-			return "MPAwardCasino";
-		
-		case 58:
-			return "MPAwardCasino";
-		
-		case 59:
-			return "MPAwardCasino";
-		
-		case 62:
-			return "MPAwardCasino";
-		
-		case 60:
-			return "MPAwardCasino";
-		
-		case 61:
-			return "MPAwardCasino";
-		
-		case 63:
-			return "MPAwardCasinoHeist";
-		
-		case 64:
-			return "MPAwardCasinoHeist";
-		
-		case 65:
-			return "MPAwardCasinoHeist";
-		
-		case 66:
-			return "MPAwardCasinoHeist";
-		
-		case 67:
-			return "MPAwardCasinoHeist";
-		
-		case 68:
-			return "MPAwardCasinoHeist";
-		
-		case 69:
-			return "MPAwardCasinoHeist";
-		
-		case 70:
-			return "MPAwardCasinoHeist";
-		
-		case 71:
-			return "MPAwardCasinoHeist";
-		
-		case 72:
-			return "MPAwardCasinoHeist";
-		
-		case 73:
-			return "MPAwardCasinoHeist";
-		
-		case 74:
-			return "MPAwardCasinoHeist";
-		
-		case 75:
-			return "MPAwardCasinoHeist";
-		
-		case 76:
-			return "MPAwardCasinoHeist";
-		
-		case 77:
-			return "MPAwardCasinoHeist";
-		
-		case 78:
-			return "MPAwardCasinoHeist";
-		
-		case 79:
-			return "MPAwardCasinoHeist";
-		
-		case 80:
-			return "MPAwardCasinoHeist";
-		
-		case 81:
-			return "MPAwardCasinoHeist";
-		
-		case 82:
-			return "MPAwardCasinoHeist";
-		
-		case 83:
-			return "MPAwardCasinoHeist";
-		
-		case 84:
-			return "MPAwardCasinoHeist";
-		
-		case 85:
-			return "MPAwardCasinoHeist";
-		
-		case 86:
-			return "MPAwardCasinoHeist";
-		
-		case 87:
-			return "MPAwardCasinoHeist";
-		
-		case 88:
-			return "MPAwardCasinoHeist";
-		
-		case 89:
-			return "MPAwardSummer2020";
-		
-		case 90:
-			return "MPAwardSummer2020";
-		
-		case 93:
-			return "MPAwardSummer2020";
-		
-		case 92:
-			return "MPAwardSummer2020";
-		
-		case 91:
-			return "MPAwardSummer2020";
-		
-		case 94:
-			return "MPAwardSummer2020";
-		
-		case 95:
-			return "MPAwardIslandHeist";
-		
-		case 96:
-			return "MPAwardIslandHeist";
-		
-		case 97:
-			return "MPAwardIslandHeist";
-		
-		case 98:
-			return "MPAwardIslandHeist";
-		
-		case 99:
-			return "MPAwardIslandHeist";
-		
-		case 100:
-			return "MPAwardIslandHeist";
-		
-		case 101:
-			return "MPAwardIslandHeist";
-		
-		case 102:
-			return "MPAwardIslandHeist";
-		
-		case 103:
-			return "MPAwardIslandHeist";
-		
-		case 104:
-			return "MPAwardIslandHeist";
-		
-		case 105:
-			return "MPAwardIslandHeist";
-		
-		case 106:
-			return "MPAwardIslandHeist";
-		
-		case 107:
-			return "MPAwardIslandHeist";
-		
-		case 108:
-			return "MPAwardIslandHeist";
-		
-		case 109:
-			return "MPAwardIslandHeist";
-		
-		case 110:
-			return "MPAwardIslandHeist";
-		
-		case 111:
-			return "MPAwardIslandHeist";
-		
-		case 112:
-			return "MPAwardIslandHeist";
-		
-		case 113:
-		case 114:
-		case 115:
-		case 116:
-		case 117:
-		case 118:
-		case 119:
-		case 120:
-		case 121:
-		case 122:
-		case 123:
-		case 124:
-		case 125:
-		case 126:
-			return "MPAwardTunerPack";
-			break;
-		
-		case 127:
-		case 128:
-		case 129:
-		case 130:
-		case 131:
-		case 132:
-		case 133:
-		case 134:
-		case 135:
-		case 136:
-		case 137:
-		case 138:
-		case 139:
-		case 140:
-		case 141:
-		case 142:
-			return "MPAwardsFixer";
-			break;
-	}
-	return "";
-}
-
-char* func_108(int iParam0, int iParam1)//Position - 0xB3FB
-{
-	if (iParam1 == 9)
-	{
-		iParam1 = 9;
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return "Buyeverygun";
-		
-		case 2:
-			return "HoleInOne";
-		
-		case 3:
-			return "TargetGridGranny";
-		
-		case 4:
-			return "TennisFiveSets";
-		
-		case 5:
-			return "TennisStraightSets";
-		
-		case 6:
-			return "ClearAllGangHideouts";
-		
-		case 7:
-			return "SixDartCheckout";
-		
-		case 8:
-			return "WinEveryGameModeOnce";
-		
-		case 10:
-			return "WinEveryTypeOfRace";
-		
-		case 11:
-			return "HoldaRaceWorldRecord";
-		
-		case 12:
-			return "Wear25DifferentItemsOfClothing";
-		
-		case 13:
-			return "FullyModACar";
-		
-		case 14:
-			return "WinACustomClassRace";
-		
-		case 15:
-			return "Play25DifferentDeathmatches";
-		
-		case 16:
-			return "Play25DifferentRaces";
-		
-		case 17:
-			return "MostKillsInGangAttack";
-		
-		case 18:
-			return "MostKillsInSurvival";
-		
-		case 20:
-			return "Kill3InARaceAndWin";
-		
-		case 21:
-			return "GetATattooOnEachBodyPart";
-		
-		case 22:
-			return "10KillStreakDeathmatch";
-		
-		case 23:
-			return "Unirider";
-		
-		case 25:
-			return "goaloriented";
-		
-		case 26:
-			return "overachiever";
-		
-		case 27:
-			return "joyrider";
-		
-		case 144:
-			return "CantTouchThis";
-		
-		case 143:
-			return "FairPlay";
-		
-		case 146:
-			return "JackOfAllTrades";
-		
-		case 147:
-			return "ItTakesTwo";
-		
-		case 148:
-			return "Showroom";
-		
-		case 149:
-			return "Coordinated";
-		
-		case 150:
-			return "HotSpot";
-		
-		case 151:
-			return "Clubber";
-		
-		case 30:
-			return "BEGINNER";
-		
-		case 31:
-			return "FIELDFILLER";
-		
-		case 32:
-			return "ArmchairRracer";
-		
-		case 33:
-			return "LEARNER";
-		
-		case 34:
-			return "SUNDAYDRIVER";
-		
-		case 35:
-			return "THEROOKIE";
-		
-		case 36:
-			return "BUMPANDRUN";
-		
-		case 37:
-			return "GEARHEAD";
-		
-		case 38:
-			return "DOORSLAMMER";
-		
-		case 39:
-			return "HOTLAP";
-		
-		case 40:
-			return "ARENAAMATEUR";
-		
-		case 41:
-			return "PAINTTRADER";
-		
-		case 42:
-			return "SHUNTER";
-		
-		case 43:
-			return "JOCK";
-		
-		case 44:
-			return "WARRIOR";
-		
-		case 45:
-			return "TBONE";
-		
-		case 46:
-			return "MAYHEM";
-		
-		case 47:
-			return "WRECKER";
-		
-		case 48:
-			return "CRASHCOURSE";
-		
-		case 49:
-			return "ARENALEGEND";
-		
-		case 50:
-			return "PEGASUS";
-		
-		case 51:
-			return "contactsport";
-		
-		case 52:
-			return "UNSTOPPABLE";
-		
-		case 53:
-			return "LooseCheng";
-		
-		case 54:
-			return "HouseKeeping";
-		
-		case 55:
-			return "StrongArmTactics";
-		
-		case 56:
-			return "PlayToWin";
-		
-		case 57:
-			return "BadBeat";
-		
-		case 58:
-			return "CashingOut";
-		
-		case 59:
-			return "StraightFlush";
-		
-		case 62:
-			return "LuckyLucky";
-		
-		case 60:
-			return "TopPair";
-		
-		case 61:
-			return "FullHouse";
-		
-		case 63:
-			return "SCOPEOUT";
-		
-		case 64:
-			return "ALLCREWEDUP";
-		
-		case 65:
-			return "MOVINGON";
-		
-		case 66:
-			return "AfterParty";
-		
-		case 67:
-			return "GUNMAN";
-		
-		case 68:
-			return "SmashAndGrab";
-		
-		case 69:
-			return "HiddenInPlainSight";
-		
-		case 70:
-			return "Undetected";
-		
-		case 71:
-			return "AllRounder";
-		
-		case 72:
-			return "EliteThief";
-		
-		case 73:
-			return "Professional";
-		
-		case 74:
-			return "SupportAct";
-		
-		case 75:
-			return "Shafted";
-		
-		case 76:
-			return "Collector";
-		
-		case 77:
-			return "Deadeye";
-		
-		case 78:
-			return "PistolAtDawn";
-		
-		case 79:
-			return "BeatTheTraffic";
-		
-		case 80:
-			return "AllWheels";
-		
-		case 81:
-			return "FEELINGROGGY";
-		
-		case 82:
-			return "ApeEscape";
-		
-		case 83:
-			return "MonkeyMind";
-		
-		case 84:
-			return "AquaticApe";
-		
-		case 85:
-			return "KeepingTheFaith";
-		
-		case 86:
-			return "TrueLove";
-		
-		case 87:
-			return "Nemesis" /* GXT: Nemesis */;
-		
-		case 88:
-			return "Friendzoned";
-		
-		case 89:
-			return "KingOfQub3d";
-		
-		case 90:
-			return "Qubism";
-		
-		case 93:
-			return "CrankItTo11";
-		
-		case 92:
-			return "GodofQub3d";
-		
-		case 91:
-			return "Qubits";
-		
-		case 94:
-			return "1111";
-		
-		case 95:
-			return "Inandout";
-		
-		case 96:
-			return "EasyAccess";
-		
-		case 97:
-			return "ItsaSteal";
-		
-		case 98:
-			return "MaximumDistruption";
-		
-		case 99:
-			return "TheIslandHeist";
-		
-		case 100:
-			return "GoingAlone";
-		
-		case 101:
-			return "Teamwork";
-		
-		case 102:
-			return "TravelPlans";
-		
-		case 103:
-			return "ProfessionalThief";
-		
-		case 104:
-			return "CatBurglar";
-		
-		case 105:
-			return "OneOfThem";
-		
-		case 106:
-			return "GoforGold";
-		
-		case 107:
-			return "Elitist";
-		
-		case 108:
-			return "Blowhard";
-		
-		case 109:
-			return "HelpingOut";
-		
-		case 110:
-			return "Courier";
-		
-		case 111:
-			return "PartyVibes";
-		
-		case 112:
-			return "HelpingHand";
-		
-		case 113:
-			return "LSCarMeet";
-		
-		case 114:
-			return "ProCarExporter";
-		
-		case 115:
-			return "TheUnionDepositoryContract";
-		
-		case 116:
-			return "TheSuperdollarDeal";
-		
-		case 117:
-			return "TheBankContract";
-		
-		case 118:
-			return "TheECUJob";
-		
-		case 119:
-			return "ThePrisionContract";
-		
-		case 120:
-			return "TheAgencyDeal";
-		
-		case 121:
-			return "TheLostContract";
-		
-		case 122:
-			return "TheDataContract";
-		
-		case 123:
-			return "StraighttoVideo";
-		
-		case 124:
-			return "MonkeyseeMonkeydo";
-		
-		case 125:
-			return "Trainedtokill";
-		
-		case 126:
-			return "TheDirector";
-		
-		case 127:
-			return "OnCourse";
-		
-		case 128:
-			return "TheNighClubLeak";
-		
-		case 129:
-			return "TheCountryClubLeak";
-		
-		case 130:
-			return "TheSouthCentralLeak";
-		
-		case 131:
-			return "StudioTime";
-		
-		case 132:
-			return "DontFuckWithDre";
-		
-		case 133:
-			return "Backup";
-		
-		case 134:
-			return "SeedCapitalFranklin";
-		
-		case 135:
-			return "FireitUpFranklin";
-		
-		case 136:
-			return "OGKushFranklin";
-		
-		case 137:
-			return "ContractKiller";
-		
-		case 138:
-			return "ADogsBestFriend";
-		
-		case 139:
-			return "SoundCheck";
-		
-		case 140:
-			return "SeedCapitaLamar";
-		
-		case 141:
-			return "FireItUpLamar";
-		
-		case 142:
-			return "OGKushLamar";
-			break;
-	}
-	return "";
 }
 
 char* func_109(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0xBB79
@@ -11237,64 +3815,44 @@ char* func_109(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 	{
 		case 0:
 			return "AWS_521";
-		
 		case 2:
 			return "AWS_660";
-		
 		case 3:
 			return "AWS_667";
-		
 		case 4:
 			return "AWS_670";
-		
 		case 5:
 			return "AWS_671";
-		
 		case 6:
 			return "AWS_691";
-		
 		case 7:
 			return "AWS_697";
-		
 		case 8:
 			return "AWS_701";
-		
 		case 10:
 			return "AWS_705";
-		
 		case 11:
 			return "AWS_706";
-		
 		case 12:
 			return "AWS_709";
-		
 		case 13:
 			return "AWS_711";
-		
 		case 14:
 			return "AWS_712";
-		
 		case 15:
 			return "AWS_714";
-		
 		case 16:
 			return "AWS_715";
-		
 		case 17:
 			return "AWS_718";
-		
 		case 18:
 			return "AWS_719";
-		
 		case 20:
 			return "AWS_725";
-		
 		case 21:
 			return "AWS_727";
-		
 		case 22:
 			return "AWS_717";
-		
 		case 23:
 			if (MISC::SHOULD_USE_METRIC_MEASUREMENTS())
 			{
@@ -11305,1224 +3863,261 @@ char* func_109(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 				return "AWS_729";
 			}
 			break;
-		
 		case 25:
 			return "AWS_783";
-		
 		case 26:
 			return "AWS_784";
-		
 		case 27:
 			return "AWS_771";
-		
 		case 144:
 			return "AWS_751" /* GXT: Take your time and complete a Heist Finale without taking any damage. Be cautious but don't be a coward, your team still need you. */;
-		
 		case 148:
 			return "AWS_763" /* GXT: Every car enthusiast would love to have 30 modded rides at their fingertips. Fill out three of the large Garages that Los Santos has to offer. */;
-		
 		case 143:
 			return "AWS_754" /* GXT: Good karma may come your way if you share more of your profits with your Heist crew members. Split a Finale take evenly between 4 players. */;
-		
 		case 146:
 			return "AWS_765" /* GXT: Versatility is the key. Perform every possible role in The Prison Break, The Humane Labs Raid, Series A Funding and The Pacific Standard Job Heists. */;
-		
 		case 147:
 			return "AWS_756" /* GXT: You can't do this alone. Activate a two person key switch. */;
-		
 		case 149:
 			return "AWS_793";
-		
 		case 150:
 			return "AWS_794";
-		
 		case 151:
 			return "AWS_795";
-		
 		case 30:
 			return "AWS_796";
-		
 		case 31:
 			return "AWS_797";
-		
 		case 32:
 			return "AWS_798";
-		
 		case 33:
 			return "AWS_799";
-		
 		case 34:
 			return "AWS_800";
-		
 		case 35:
 			return "AWS_801";
-		
 		case 36:
 			return "AWS_802";
-		
 		case 37:
 			return "AWS_803";
-		
 		case 38:
 			return "AWS_804";
-		
 		case 39:
 			return "AWS_805";
-		
 		case 40:
 			return "AWS_806";
-		
 		case 41:
 			return "AWS_807";
-		
 		case 42:
 			return "AWS_808";
-		
 		case 43:
 			return "AWS_809";
-		
 		case 44:
 			return "AWS_810";
-		
 		case 45:
 			return "AWS_811";
-		
 		case 46:
 			return "AWS_812";
-		
 		case 47:
 			return "AWS_813";
-		
 		case 48:
 			return "AWS_814";
-		
 		case 49:
 			return "AWS_815";
-		
 		case 50:
 			return "AWS_816";
-		
 		case 51:
 			return "AWS_819";
-		
 		case 52:
 			return "AWS_820";
-		
 		case 53:
 			return "AWS_836" /* GXT: Complete Loose Cheng for the first time and earn $50,000. */;
-		
 		case 54:
 			return "AWS_837" /* GXT: Complete House Keeping for the first time and earn $50,000. */;
-		
 		case 55:
 			return "AWS_838" /* GXT: Complete Strong Arm Tactics for the first time and earn $50,000. */;
-		
 		case 56:
 			return "AWS_839" /* GXT: Complete Play to Win for the first time and earn $50,000. */;
-		
 		case 57:
 			return "AWS_840" /* GXT: Complete Bad Beat for the first time and earn $50,000. */;
-		
 		case 58:
 			return "AWS_841" /* GXT: Complete Cashing Out for the first time and earn $100,000. */;
-		
 		case 59:
 			return "AWS_842" /* GXT: Complete all Casino Story Missions in order and earn $500,000. */;
-		
 		case 62:
 			return "AWS_846" /* GXT: Complete a Casino Story Mission without losing a life and earn $50,000. */;
-		
 		case 60:
 			return "AWS_843" /* GXT: Complete all Casino Story Missions as a Crew member and earn $100,000. */;
-		
 		case 61:
 			return "AWS_844" /* GXT: Complete all Casino Story Missions as Leader to earn $100,000 and a bonus item. */;
-		
 		case 63:
 			return "AWS_857" /* GXT: Scope all entrances and exits for The Diamond Casino Heist. */;
-		
 		case 64:
 			return "AWS_858" /* GXT: Unlock all possible crew members for The Diamond Casino Heist. */;
-		
 		case 65:
 			return "AWS_859" /* GXT: Stop a mall cop being fired again during The Diamond Casino Heist. */;
-		
 		case 66:
 			return "AWS_860" /* GXT: Use someone famous to get into the Casino back area. */;
-		
 		case 67:
 			return "AWS_861" /* GXT: Find and help break out an old accomplice for The Diamond Casino Heist. */;
-		
 		case 68:
 			return "AWS_862" /* GXT: Complete the Aggressive approach to The Diamond Casino Heist and earn $100000. */;
-		
 		case 69:
 			return "AWS_863" /* GXT: Complete The Big Con approach to The Diamond Casino Heist without breaking your disguise inside the Casino and earn $150000. */;
-		
 		case 70:
 			return "AWS_864" /* GXT: Complete the Silent & Sneaky approach to The Diamond Casino Heist without ever being detected and earn $200000. */;
-		
 		case 71:
 			return "AWS_865" /* GXT: Complete the Aggressive, The Big Con and Silent & Sneaky approaches to The Diamond Casino Heist and earn $300000. */;
-		
 		case 72:
 			return "AWS_866" /* GXT: Complete the elite challenges for the Aggressive, The Big Con and Silent & Sneaky approaches to The Diamond Casino Heist and earn $350000. */;
-		
 		case 73:
 			return "AWS_867" /* GXT: Complete The Diamond Casino Heist on Hard and without losing a life and earn $250,000. */;
-		
 		case 74:
 			return "AWS_868" /* GXT: Complete The Diamond Casino Heist as a crew member. */;
-		
 		case 75:
 			return "AWS_869" /* GXT: Use the elevator shaft to reach the staff lobby during The Diamond Casino Heist. */;
-		
 		case 76:
 			return "AWS_870" /* GXT: Steal all variations of loot from the vault during The Diamond Casino Heist. */;
-		
 		case 77:
 			return "AWS_871" /* GXT: Get over 90% accuracy for an entire playthrough of Badlands Revenge II. */;
-		
 		case 78:
 			return "AWS_872" /* GXT: Complete Badlands Revenge II using only pistols. */;
-		
 		case 79:
 			return "AWS_873" /* GXT: Complete the full race without crashing in Race And Chase. */;
-		
 		case 80:
 			return "AWS_874" /* GXT: Complete Race And Chase with all vehicle types. */;
-		
 		case 81:
 			return "AWS_875" /* GXT: Complete The Wizard's Ruin adventure as Grog. */;
-		
 		case 82:
 			return "AWS_876" /* GXT: Survive any stage without taking any damage in Space Monkey 3: Bananas Gone Bad. */;
-		
 		case 83:
 			return "AWS_877" /* GXT: Complete Space Monkey 3: Bananas Gone Bad without the use of any powerups or pickups. */;
-		
 		case 84:
 			return "AWS_878" /* GXT: Complete the underwater level in Monkey Paradise. */;
-		
 		case 85:
 			return "AWS_879" /* GXT: Complete a level of Defender of the Faith by only pressing right. */;
-		
 		case 86:
 			return "AWS_880" /* GXT: Get a true love rating on The Love Professor. */;
-		
 		case 87:
 			return "AWS_881" /* GXT: Find your nemesis using The Love Professor Cabinet. */;
-		
 		case 88:
 			return "AWS_882" /* GXT: The friendzone doesn't exist but perhaps you can find yourself in it using The Love Professor. */;
-		
 		case 89:
 			return "AWS_886" /* GXT: Get first place on the QUB3D leaderboard. */;
-		
 		case 90:
 			return "AWS_887" /* GXT: Reach level 20 in QUB3D without using special abilities. */;
-		
 		case 93:
 			return "AWS_888" /* GXT: Get the highest score in Axe of Fury. */;
-		
 		case 92:
 			return "AWS_889" /* GXT: Get a score of 19000 in a single play of QUB3D. */;
-		
 		case 91:
 			return "AWS_890" /* GXT: Reach level 20 without removing any blocks from play. */;
-		
 		case 94:
 			return "AWS_891" /* GXT: Get the highest score in Axe of Fury 11 times. */;
-		
 		case 95:
 			return "AWS_917" /* GXT: Scope out all infiltration and escape points on Cayo Perico. */;
-		
 		case 96:
 			return "AWS_918" /* GXT: Scope out all entry points into El Rubio's compound on Cayo Perico. */;
-		
 		case 97:
 			return "AWS_919" /* GXT: Scope out all the secondary target locations in a single playthrough of The Cayo Perico Heist. */;
-		
 		case 98:
 			return "AWS_920" /* GXT: Complete all three disruption prep missions in a single playthrough of The Cayo Perico Heist. */;
-		
 		case 99:
 			return "AWS_921" /* GXT: Complete The Cayo Perico Heist for the first time to earn $200,000. */;
-		
 		case 100:
 			return "AWS_922" /* GXT: Complete The Cayo Perico Heist with one player to earn $100,000. */;
-		
 		case 101:
 			return "AWS_923" /* GXT: Complete The Cayo Perico Heist with four players to earn $100,000. */;
-		
 		case 102:
 			return "AWS_924" /* GXT: Approach The Cayo Perico Heist using all of the different vehicles to earn $250,000. */;
-		
 		case 103:
 			return "AWS_925" /* GXT: Steal all variations of the primary target during The Cayo Perico Heist to earn $150,000. */;
-		
 		case 104:
 			return "AWS_926" /* GXT: Complete The Cayo Perico Heist without ever alerting the guards to earn $200,000. */;
-		
 		case 105:
 			return "AWS_927" /* GXT: Enter the compound using a stolen disguise during The Cayo Perico Heist. */;
-		
 		case 106:
 			return "AWS_928" /* GXT: Steal El Rubio's prized weapon during The Cayo Perico Heist. */;
-		
 		case 107:
 			return "AWS_929" /* GXT: Complete the elite challenge for The Cayo Perico Heist to earn $200,000. */;
-		
 		case 108:
 			return "AWS_930" /* GXT: Complete The Cayo Perico Heist on Hard and without losing a life to earn $200,000. */;
-		
 		case 109:
 			return "AWS_931" /* GXT: Complete all Palms Trax requests sent by Tom Connors. */;
-		
 		case 110:
 			return "AWS_932" /* GXT: Complete all Keinemusik's requests sent by English Dave. */;
-		
 		case 111:
 			return "AWS_933" /* GXT: Revisit the Cayo Perico beach party after completing The Cayo Perico Heist. */;
-		
 		case 112:
 			return "AWS_934" /* GXT: Complete all Moodymann's requests sent by Tom Connors. */;
-		
 		case 113:
 			return "AWS_944" /* GXT: Visit The LS Car Meet for the first time. */;
-		
 		case 114:
 			return "AWS_951" /* GXT: Deliver all 10 Exotic Exports Vehicles to the Docks in a single day. */;
-		
 		case 115:
 			return "AWS_953" /* GXT: Complete The Union Depository Contract as leader to earn $75,000. */;
-		
 		case 116:
 			return "AWS_954" /* GXT: Complete The Superdollar Deal as leader to earn $75,000. */;
-		
 		case 117:
 			return "AWS_955" /* GXT: Complete The Bank Contract as leader to earn $75,000. */;
-		
 		case 118:
 			return "AWS_956" /* GXT: Complete The E.C.U. Job as leader to earn $75,000. */;
-		
 		case 119:
 			return "AWS_957" /* GXT: Complete The Prison Contract as leader to earn $75,000. */;
-		
 		case 120:
 			return "AWS_958" /* GXT: Complete The Agency Deal as leader to earn $75,000. */;
-		
 		case 121:
 			return "AWS_959" /* GXT: Complete The Lost Contract as leader to earn $75,000. */;
-		
 		case 122:
 			return "AWS_960" /* GXT: Complete The Data Contract as leader to earn $75,000. */;
-		
 		case 123:
 			return "AWS_963" /* GXT: Complete all levels using only the pistol in Camhedz. */;
-		
 		case 124:
 			return "AWS_964" /* GXT: Kill all costumed weirdos across all scenes in Camhedz. */;
-		
 		case 125:
 			return "AWS_965" /* GXT: Get an average of 60% accuracy across all scenes in Camhedz. */;
-		
 		case 126:
 			return "AWS_966" /* GXT: Get a 5-star rating on each of the scenes in Camhedz. */;
-		
 		case 127:
 			return "AWS_968" /* GXT: Meet Dr. Dre at the Los Santos Golf Club as leader to earn $50,000. */;
-		
 		case 128:
 			return "AWS_969" /* GXT: Locate this copy of Dr. Dre's stolen music as leader to earn $100,000. */;
-		
 		case 129:
 			return "AWS_970" /* GXT: Locate this copy of Dr. Dre's stolen music as leader to earn $100,000. */;
-		
 		case 130:
 			return "AWS_971" /* GXT: Locate this copy of Dr. Dre's stolen music as leader to earn $100,000. */;
-		
 		case 131:
 			return "AWS_972" /* GXT: Help Dr. Dre at Record A Studios as leader to earn $100,000. */;
-		
 		case 132:
 			return "AWS_973" /* GXT: Track down the thief who stole Dr. Dre's music as leader to earn $250,000. */;
-		
 		case 133:
 			return "AWS_974" /* GXT: Complete all of Dr. Dre's Story missions as a member of an Organization or Motorcycle Club to earn $100,000. */;
-		
 		case 134:
 			return "AWS_975" /* GXT: Complete Seed Capital as Franklin to earn $100,000. */;
-		
 		case 135:
 			return "AWS_977" /* GXT: Complete Fire It Up as Franklin to earn $100,000. */;
-		
 		case 136:
 			return "AWS_984" /* GXT: Complete OG Kush as Franklin to earn $100,000. */;
-		
 		case 137:
 			return "AWS_980" /* GXT: Complete every Payphone Hit with the Assassination Bonus. */;
-		
 		case 138:
 			return "AWS_981" /* GXT: Pet Chop. */;
-		
 		case 139:
 			return "AWS_982" /* GXT: Visit Record A Studios. */;
-		
 		case 140:
 			return "AWS_976" /* GXT: Complete Seed Capital as Lamar to earn $100,000. */;
-		
 		case 141:
 			return "AWS_986" /* GXT: Complete Fire It Up as Lamar to earn $100,000. */;
-		
 		case 142:
 			return "AWS_985" /* GXT: Complete OG Kush as Lamar to earn $100,000. */;
 	}
 	return "";
 }
 
-char* func_110(int iParam0, int iParam1, bool bParam2)//Position - 0xC310
-{
-	if (bParam2)
-	{
-	}
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return "AWT_521";
-		
-		case 2:
-			return "AWT_660";
-		
-		case 3:
-			return "AWT_667";
-		
-		case 4:
-			return "AWT_670";
-		
-		case 5:
-			return "AWT_671";
-		
-		case 6:
-			return "AWT_691";
-		
-		case 7:
-			return "AWT_697";
-		
-		case 8:
-			return "AWT_701";
-		
-		case 10:
-			return "AWT_705";
-		
-		case 11:
-			return "AWT_706";
-		
-		case 12:
-			return "AWT_709";
-		
-		case 13:
-			return "AWT_711";
-		
-		case 14:
-			return "AWT_712";
-		
-		case 15:
-			return "AWT_714";
-		
-		case 16:
-			return "AWT_715";
-		
-		case 17:
-			return "AWT_718";
-		
-		case 18:
-			return "AWT_719";
-		
-		case 20:
-			return "AWT_725";
-		
-		case 21:
-			return "AWT_727";
-		
-		case 22:
-			return "AWT_717";
-		
-		case 23:
-			return "AWT_729";
-		
-		case 25:
-			return "AWT_783";
-		
-		case 26:
-			return "AWT_784";
-		
-		case 144:
-			return "AWT_751" /* GXT: Can't Touch This */;
-		
-		case 143:
-			return "AWT_754" /* GXT: Four Way */;
-		
-		case 146:
-			return "AWT_765" /* GXT: Jack Of All Trades */;
-		
-		case 148:
-			return "AWT_763" /* GXT: Showroom */;
-		
-		case 147:
-			return "AWT_756" /* GXT: It Takes Two */;
-			break;
-		
-		case 149:
-			return "AWT_793";
-		
-		case 150:
-			return "AWT_794";
-		
-		case 151:
-			return "AWT_795";
-		
-		case 30:
-			return "AWT_796";
-		
-		case 31:
-			return "AWT_797";
-		
-		case 32:
-			return "AWT_798";
-		
-		case 33:
-			return "AWT_799";
-		
-		case 34:
-			return "AWT_800";
-		
-		case 35:
-			return "AWT_801";
-		
-		case 36:
-			return "AWT_802";
-		
-		case 37:
-			return "AWT_803";
-		
-		case 38:
-			return "AWT_804";
-		
-		case 39:
-			return "AWT_805";
-		
-		case 40:
-			return "AWT_806";
-		
-		case 41:
-			return "AWT_807";
-		
-		case 42:
-			return "AWT_808";
-		
-		case 43:
-			return "AWT_809";
-		
-		case 44:
-			return "AWT_810";
-		
-		case 45:
-			return "AWT_811";
-		
-		case 46:
-			return "AWT_812";
-		
-		case 47:
-			return "AWT_813";
-		
-		case 48:
-			return "AWT_814";
-		
-		case 49:
-			return "AWT_815";
-		
-		case 50:
-			return "AWT_816";
-		
-		case 51:
-			return "AWT_819";
-		
-		case 52:
-			return "AWT_820";
-		
-		case 53:
-			return "AWT_836" /* GXT: Loose Cheng */;
-		
-		case 54:
-			return "AWT_837" /* GXT: House Keeping */;
-		
-		case 55:
-			return "AWT_838" /* GXT: Strong Arm Tactics */;
-		
-		case 56:
-			return "AWT_839" /* GXT: Play to Win */;
-		
-		case 57:
-			return "AWT_840" /* GXT: Bad Beat */;
-		
-		case 58:
-			return "AWT_841" /* GXT: Cashing Out */;
-		
-		case 59:
-			return "AWT_842" /* GXT: Straight */;
-		
-		case 62:
-			return "AWT_846" /* GXT: Lucky Lucky */;
-		
-		case 60:
-			return "AWT_843" /* GXT: Top Pair */;
-		
-		case 61:
-			return "AWT_844" /* GXT: Full House */;
-		
-		case 63:
-			return "AWT_857" /* GXT: Scope Out */;
-		
-		case 64:
-			return "AWT_858" /* GXT: All Crewed Up */;
-		
-		case 65:
-			return "AWT_859" /* GXT: Moving On */;
-		
-		case 66:
-			return "AWT_860" /* GXT: After Party */;
-		
-		case 67:
-			return "AWT_861" /* GXT: Gunman */;
-		
-		case 68:
-			return "AWT_862" /* GXT: Smash & Grab */;
-		
-		case 69:
-			return "AWT_863" /* GXT: Hidden In Plain Sight */;
-		
-		case 70:
-			return "AWT_864" /* GXT: Undetected */;
-		
-		case 71:
-			return "AWT_865" /* GXT: All Rounder */;
-		
-		case 72:
-			return "AWT_866" /* GXT: Elite Thief */;
-		
-		case 73:
-			return "AWT_867" /* GXT: Professional */;
-		
-		case 74:
-			return "AWT_868" /* GXT: Support Act */;
-		
-		case 75:
-			return "AWT_869" /* GXT: Shafted */;
-		
-		case 76:
-			return "AWT_870" /* GXT: Collector */;
-		
-		case 77:
-			return "AWT_871" /* GXT: Dead Eye */;
-		
-		case 78:
-			return "AWT_872" /* GXT: Pistols At Dawn */;
-		
-		case 79:
-			return "AWT_873" /* GXT: Beat The Traffic */;
-		
-		case 80:
-			return "AWT_874" /* GXT: All Wheels */;
-		
-		case 81:
-			return "AWT_875" /* GXT: Feelin' Groggy */;
-		
-		case 82:
-			return "AWT_876" /* GXT: Ape Escape */;
-		
-		case 83:
-			return "AWT_877" /* GXT: Monkey Mind */;
-		
-		case 84:
-			return "AWT_878" /* GXT: Aquatic Ape */;
-		
-		case 85:
-			return "AWT_879" /* GXT: Keeping The Faith */;
-		
-		case 86:
-			return "AWT_880" /* GXT: True Love */;
-		
-		case 87:
-			return "AWT_881" /* GXT: Nemesis */;
-		
-		case 88:
-			return "AWT_882" /* GXT: Friendzoned */;
-		
-		case 89:
-			return "AWT_886" /* GXT: King Of QUB3D */;
-		
-		case 90:
-			return "AWT_887" /* GXT: Qubism */;
-		
-		case 93:
-			return "AWT_888" /* GXT: Crank It To 11 */;
-		
-		case 92:
-			return "AWT_889" /* GXT: God of QUB3D */;
-		
-		case 91:
-			return "AWT_890" /* GXT: Qubits */;
-		
-		case 94:
-			return "AWT_891" /* GXT: 11 11 */;
-		
-		case 95:
-			return "AWT_917" /* GXT: In And Out */;
-		
-		case 96:
-			return "AWT_918" /* GXT: Easy Access */;
-		
-		case 97:
-			return "AWT_919" /* GXT: Its A Steal */;
-		
-		case 98:
-			return "AWT_920" /* GXT: Maximum Disruption */;
-		
-		case 99:
-			return "AWT_921" /* GXT: The Cayo Perico Heist */;
-		
-		case 100:
-			return "AWT_922" /* GXT: Going Alone */;
-		
-		case 101:
-			return "AWT_923" /* GXT: Teamwork */;
-		
-		case 102:
-			return "AWT_924" /* GXT: Travel Plans */;
-		
-		case 103:
-			return "AWT_925" /* GXT: Professional Thief */;
-		
-		case 104:
-			return "AWT_926" /* GXT: Cat Burglar */;
-		
-		case 105:
-			return "AWT_927" /* GXT: One Of Them */;
-		
-		case 106:
-			return "AWT_928" /* GXT: Go For Gold */;
-		
-		case 107:
-			return "AWT_929" /* GXT: Elitist */;
-		
-		case 108:
-			return "AWT_930" /* GXT: Blow Hard */;
-		
-		case 109:
-			return "AWT_931" /* GXT: Helping Out */;
-		
-		case 110:
-			return "AWT_932" /* GXT: Courier */;
-		
-		case 111:
-			return "AWT_933" /* GXT: Party Vibes */;
-		
-		case 112:
-			return "AWT_934" /* GXT: Helping Hand */;
-		
-		case 113:
-			return "AWT_944" /* GXT: LS Car Meet */;
-		
-		case 114:
-			return "AWT_951" /* GXT: Pro Car Exporter */;
-		
-		case 115:
-			return "AWT_953" /* GXT: The Union Depository Contract */;
-		
-		case 116:
-			return "AWT_954" /* GXT: The Superdollar Deal */;
-		
-		case 117:
-			return "AWT_955" /* GXT: The Bank Contract */;
-		
-		case 118:
-			return "AWT_956" /* GXT: The E.C.U. Job */;
-		
-		case 119:
-			return "AWT_957" /* GXT: The Prison Contract */;
-		
-		case 120:
-			return "AWT_958" /* GXT: The Agency Deal */;
-		
-		case 121:
-			return "AWT_959" /* GXT: The Lost Contract */;
-		
-		case 122:
-			return "AWT_960" /* GXT: The Data Contract */;
-		
-		case 123:
-			return "AWT_963" /* GXT: Straight To Video */;
-		
-		case 124:
-			return "AWT_964" /* GXT: Monkey See Monkey Do */;
-		
-		case 125:
-			return "AWT_965" /* GXT: Trained To Kill */;
-		
-		case 126:
-			return "AWT_966" /* GXT: The Director */;
-		
-		case 127:
-			return "AWT_968" /* GXT: On Course */;
-		
-		case 128:
-			return "AWT_969" /* GXT: Nightlife Leak */;
-		
-		case 129:
-			return "AWT_970" /* GXT: High Society Leak */;
-		
-		case 130:
-			return "AWT_971" /* GXT: South Central Leak */;
-		
-		case 131:
-			return "AWT_972" /* GXT: Studio Time */;
-		
-		case 132:
-			return "AWT_973" /* GXT: Don't Fuck With Dre */;
-		
-		case 133:
-			return "AWT_974" /* GXT: Backup */;
-		
-		case 134:
-			return "AWT_975" /* GXT: Seed Capital - Franklin */;
-		
-		case 135:
-			return "AWT_977" /* GXT: Fire It Up - Franklin */;
-		
-		case 136:
-			return "AWT_984" /* GXT: OG Kush  - Franklin */;
-		
-		case 137:
-			return "AWT_980" /* GXT: Contract Killer */;
-		
-		case 138:
-			return "AWT_981" /* GXT: A Dog's Best Friend */;
-		
-		case 139:
-			return "AWT_982" /* GXT: Sound Check */;
-		
-		case 140:
-			return "AWT_976" /* GXT: Seed Capital - Lamar */;
-		
-		case 141:
-			return "AWT_986" /* GXT: Fire It Up - Lamar */;
-		
-		case 142:
-			return "AWT_985" /* GXT: OG Kush  - Lamar */;
-	}
-	return "";
-}
-
-int func_111(int iParam0, int iParam1)//Position - 0xCA82
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 0:
-			return 1;
-		
-		case 2:
-			return 1;
-		
-		case 3:
-			return 1;
-		
-		case 4:
-			return 1;
-		
-		case 5:
-			return 1;
-		
-		case 6:
-			return 1;
-		
-		case 7:
-			return 1;
-		
-		case 8:
-			return 1;
-		
-		case 10:
-			return 1;
-		
-		case 11:
-			return 1;
-		
-		case 12:
-			return 1;
-		
-		case 13:
-			return 1;
-		
-		case 14:
-			return 1;
-		
-		case 15:
-			return 1;
-		
-		case 16:
-			return 1;
-		
-		case 17:
-			return 1;
-		
-		case 18:
-			return 1;
-		
-		case 20:
-			return 1;
-		
-		case 21:
-			return 1;
-		
-		case 22:
-			return 1;
-		
-		case 23:
-			return 1;
-		
-		case 25:
-			return 1;
-		
-		case 26:
-			return 1;
-		
-		case 27:
-			return 1;
-		
-		case 144:
-			return 1;
-		
-		case 143:
-			return 1;
-		
-		case 146:
-			return 1;
-		
-		case 148:
-			return 1;
-		
-		case 147:
-			return 1;
-		
-		case 149:
-			return 1;
-		
-		case 150:
-			return 1;
-		
-		case 151:
-			return 1;
-		
-		case 30:
-			return 1;
-		
-		case 31:
-			return 1;
-		
-		case 32:
-			return 1;
-		
-		case 33:
-			return 1;
-		
-		case 34:
-			return 1;
-		
-		case 35:
-			return 1;
-		
-		case 36:
-			return 1;
-		
-		case 37:
-			return 1;
-		
-		case 38:
-			return 1;
-		
-		case 39:
-			return 1;
-		
-		case 40:
-			return 1;
-		
-		case 41:
-			return 1;
-		
-		case 42:
-			return 1;
-		
-		case 43:
-			return 1;
-		
-		case 44:
-			return 1;
-		
-		case 45:
-			return 1;
-		
-		case 46:
-			return 1;
-		
-		case 47:
-			return 1;
-		
-		case 48:
-			return 1;
-		
-		case 49:
-			return 1;
-		
-		case 50:
-			return 1;
-		
-		case 51:
-			return 1;
-		
-		case 52:
-			return 1;
-		
-		case 53:
-			return 1;
-		
-		case 54:
-			return 1;
-		
-		case 55:
-			return 1;
-		
-		case 56:
-			return 1;
-		
-		case 57:
-			return 1;
-		
-		case 58:
-			return 1;
-		
-		case 59:
-			return 1;
-		
-		case 62:
-			return 1;
-		
-		case 60:
-			return 1;
-		
-		case 61:
-			return 1;
-		
-		case 63:
-			return 1;
-		
-		case 64:
-			return 1;
-		
-		case 65:
-			return 1;
-		
-		case 66:
-			return 1;
-		
-		case 67:
-			return 1;
-		
-		case 68:
-			return 1;
-		
-		case 69:
-			return 1;
-		
-		case 70:
-			return 1;
-		
-		case 71:
-			return 1;
-		
-		case 72:
-			return 1;
-		
-		case 73:
-			return 1;
-		
-		case 74:
-			return 1;
-		
-		case 75:
-			return 1;
-		
-		case 76:
-			return 1;
-		
-		case 77:
-			return 1;
-		
-		case 78:
-			return 1;
-		
-		case 79:
-			return 1;
-		
-		case 80:
-			return 1;
-		
-		case 81:
-			return 1;
-		
-		case 82:
-			return 1;
-		
-		case 83:
-			return 1;
-		
-		case 84:
-			return 1;
-		
-		case 85:
-			return 1;
-		
-		case 86:
-			return 1;
-		
-		case 87:
-			return 1;
-		
-		case 88:
-			return 1;
-		
-		case 89:
-			return 1;
-		
-		case 90:
-			return 1;
-		
-		case 93:
-			return 1;
-		
-		case 92:
-			return 1;
-		
-		case 91:
-			return 1;
-		
-		case 94:
-			return 1;
-		
-		case 95:
-			return 1;
-		
-		case 96:
-			return 1;
-		
-		case 97:
-			return 1;
-		
-		case 98:
-			return 1;
-		
-		case 99:
-			return 1;
-		
-		case 100:
-			return 1;
-		
-		case 101:
-			return 1;
-		
-		case 102:
-			return 1;
-		
-		case 103:
-			return 1;
-		
-		case 104:
-			return 1;
-		
-		case 105:
-			return 1;
-		
-		case 106:
-			return 1;
-		
-		case 107:
-			return 1;
-		
-		case 108:
-			return 1;
-		
-		case 109:
-			return 1;
-		
-		case 110:
-			return 1;
-		
-		case 111:
-			return 1;
-		
-		case 112:
-			return 1;
-		
-		case 113:
-		case 114:
-		case 115:
-		case 116:
-		case 117:
-		case 118:
-		case 119:
-		case 120:
-		case 121:
-		case 122:
-		case 123:
-		case 124:
-		case 125:
-		case 126:
-		case 127:
-		case 128:
-		case 129:
-		case 130:
-		case 131:
-		case 132:
-		case 133:
-		case 134:
-		case 135:
-		case 136:
-		case 137:
-		case 138:
-		case 139:
-		case 140:
-		case 141:
-		case 142:
-			return 1;
-			break;
-	}
-	return 0;
-}
-
-int func_112()//Position - 0xCFD2
-{
-	return 5;
-}
-
 int func_113(int iParam0)//Position - 0xCFDB
 {
-	if (func_105(iParam0, -1))
+	if (__LIB_1__.func_595(iParam0, -1))
 	{
 		return 5;
 	}
@@ -12543,37 +4138,29 @@ void func_114(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 	int iVar9;
 	int iVar10;
 	int iVar11;
-	
 	switch (iParam1)
 	{
 		case 0:
 			iParam1 = 0;
 			break;
-		
 		case 1:
 			iParam1 = 1;
 			break;
-		
 		case 2:
 			iParam1 = 2;
 			break;
-		
 		case 3:
 			iParam1 = 3;
 			break;
-		
 		case 4:
 			iParam1 = 4;
 			break;
-		
 		case 5:
 			iParam1 = 5;
 			break;
-		
 		case 6:
 			iParam1 = func_120(iParam0, iParam2);
 			break;
-		
 		case 7:
 		case 8:
 			iParam1 = func_119(iParam0, iParam2);
@@ -12584,833 +4171,24 @@ void func_114(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x
 	{
 		if (iParam1 != 1)
 		{
-			if (func_61(iParam0, iParam2) != 1)
+			if (__LIB_23__.func_798(iParam0, iParam2) != 1)
 			{
 				iParam1 = 1;
 			}
 		}
 	}
-	sVar1 = func_118(iParam0, iParam2);
+	sVar1 = __LIB_1__.func_620(iParam0, iParam2);
 	sVar2 = func_117(iParam0, iParam1, iParam2);
-	sVar3 = func_116(iParam0, iParam1, iParam2);
-	sVar4 = func_115(iParam0, iParam1, iParam2);
-	iVar5 = func_49(iParam0, iVar0, iParam2);
-	iVar6 = func_48(iParam0, -1);
+	sVar3 = __LIB_1__.func_618(iParam0, iParam1, iParam2);
+	sVar4 = __LIB_1__.func_617(iParam0, iParam1, iParam2);
+	iVar5 = __LIB_0__.func_238(iParam0, iVar0, iParam2);
+	iVar6 = __LIB_1__.func_596(iParam0, -1);
 	iVar7 = func_68(iParam1);
-	iVar8 = func_49(iParam0, iVar7, iParam2);
+	iVar8 = __LIB_0__.func_238(iParam0, iVar7, iParam2);
 	iVar9 = (iVar5 - iVar8);
 	iVar10 = (iVar6 - iVar8);
 	iVar11 = SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(iVar10) / SYSTEM::TO_FLOAT(iVar9)) * 100f));
 	func_62(sVar1, sVar2, sVar3, sVar4, iVar5, iVar6, iVar11, iParam1, uParam3, 152, iParam0);
-}
-
-char* func_115(int iParam0, int iParam1, int iParam2)//Position - 0xD132
-{
-	switch (iParam0)
-	{
-		case 53:
-			return "MPAwards5";
-		
-		case 39:
-			return "MPAwards5";
-		
-		case 51:
-			return "MPAwards5";
-		
-		case 52:
-			return "MPAwards5";
-		
-		case 16:
-			return "MPAwards2";
-		
-		case 60:
-			return "MPAwards4";
-		
-		case 61:
-			return "MPAwards4";
-		
-		case 62:
-			return "MPAwards4";
-		
-		case 63:
-			return "MPAwards4";
-		
-		case 0:
-			switch (iParam2)
-			{
-				case 9:
-					switch (iParam1)
-					{
-						case 0:
-							return "MPAwards1";
-						
-						case 1:
-							return "MPAwards1";
-						
-						case 2:
-							return "MPAwards1";
-						
-						case 3:
-							return "MPAwards1";
-						
-						case 4:
-							return "MPAwards1";
-						
-						case 5:
-							return "MPAwards1";
-						
-						default:
-					}
-					break;
-			}
-			break;
-		
-		case 12:
-			return "MPAwards3";
-		
-		case 11:
-			return "MPAwards4";
-		
-		case 20:
-			return "MPAwards5";
-		
-		case 19:
-			return "MPAwards2";
-		
-		case 15:
-			return "MPAwards4";
-		
-		case 17:
-			return "MPAwards2";
-		
-		case 21:
-			return "MPAwards2";
-		
-		case 14:
-			return "MPAwards4";
-		
-		case 22:
-			return "MPAwards1";
-		
-		case 1:
-			return "MPAwards5";
-		
-		case 2:
-			return "MPAwards5";
-		
-		case 3:
-			return "MPAwards5";
-		
-		case 4:
-			return "MPAwards5";
-		
-		case 5:
-			return "MPAwards4";
-		
-		case 6:
-			return "MPAwards5";
-		
-		case 7:
-			return "MPAwards4";
-		
-		case 8:
-			return "MPAwards5";
-		
-		case 9:
-			return "MPAwards4";
-		
-		case 10:
-			return "MPAwards2";
-		
-		case 23:
-			return "MPAwards1";
-		
-		case 24:
-			return "MPAwards1";
-		
-		case 25:
-			return "MPAwards1";
-		
-		case 26:
-			return "MPAwards1";
-		
-		case 27:
-			return "MPAwards1";
-		
-		case 28:
-			return "MPAwards1";
-		
-		case 29:
-			return "MPAwards5";
-		
-		case 30:
-			return "MPAWARDS5";
-		
-		case 31:
-			return "MPAWARDS5";
-		
-		case 32:
-			return "MPAWARDS5";
-		
-		case 33:
-			return "MPAWARDS5";
-		
-		case 34:
-			return "MPAWARDS5";
-		
-		case 35:
-			return "MPAWARDS5";
-		
-		case 36:
-			return "MPAWARDS5";
-		
-		case 37:
-			return "MPAWARDS5";
-		
-		case 38:
-			return "MPAWARDS5";
-		
-		case 40:
-			return "MPAWARDS5";
-		
-		case 41:
-			return "MPAWARDS5";
-		
-		case 42:
-			return "MPAWARDS5";
-		
-		case 43:
-			return "MPAWARDS5";
-		
-		case 44:
-			return "MPAWARDS5";
-		
-		case 45:
-			return "MPAWARDS5";
-		
-		case 46:
-			return "MPAWARDS5";
-		
-		case 47:
-			return "MPAWARDS5";
-		
-		case 48:
-			return "MPAWARDS5";
-		
-		case 49:
-			return "MPAWARDS5";
-		
-		case 54:
-			return "MPAWARDS5";
-		
-		case 55:
-			return "MPAWARDS5";
-		
-		case 56:
-			return "MPAWARDS5";
-		
-		case 57:
-			return "MPAWARDS5";
-		
-		case 58:
-			return "MPAWARDS5";
-		
-		case 59:
-			return "MPAWARDS5";
-		
-		case 126:
-			return "MPAwardHeists";
-		
-		case 127:
-			return "MPAwardHeists";
-		
-		case 128:
-			return "MPAwardHeists";
-		
-		case 129:
-			return "MPAwardHeists";
-		
-		case 130:
-			return "MPAwardHeists";
-		
-		case 67:
-			return "MPAwardHeists";
-		
-		case 120:
-			return "MPAwardHeists";
-		
-		case 121:
-			return "MPAwardHeists";
-		
-		case 122:
-			return "MPAwardHeists";
-		
-		case 123:
-			return "MPAwardHeists";
-		
-		case 124:
-			return "MPAwardHeists";
-		
-		case 125:
-			return "MPAwardHeists";
-		
-		case 131:
-			return "MPAwardHeists";
-		
-		case 132:
-			return "MPAwardHeists";
-		
-		case 133:
-			return "MPAwardHeists";
-		
-		case 134:
-			return "MPAwardHeists";
-		
-		case 135:
-			return "MPAwardHeists";
-		
-		case 136:
-			return "MPAwardHeists";
-		
-		case 137:
-			return "MPAwardHeists";
-		
-		case 138:
-			return "MPAwardHeists";
-		
-		case 139:
-			return "MPAwardNightclub";
-		
-		case 140:
-			return "MPAwardNightclub";
-		
-		case 141:
-			return "MPAwardNightclub";
-		
-		case 142:
-			return "MPAwardNightclub";
-		
-		case 143:
-			return "MPAwardNightclub";
-		
-		case 70:
-			return "MPAwardsArena";
-		
-		case 71:
-			return "MPAwardsArena";
-		
-		case 72:
-			return "MPAwardsArena";
-		
-		case 73:
-			return "MPAwardsArena";
-		
-		case 74:
-			return "MPAwardsArena";
-		
-		case 75:
-			return "MPAwardsArena";
-		
-		case 76:
-			return "MPAwardsArena";
-		
-		case 77:
-			return "MPAwardsArena";
-		
-		case 78:
-			return "MPAwardsArena";
-		
-		case 79:
-			return "MPAwardsArena";
-		
-		case 80:
-			return "MPAwardsArena";
-		
-		case 81:
-			return "MPAwardsArena";
-		
-		case 82:
-			return "MPAwardsArena";
-		
-		case 83:
-			return "MPAwardsArena";
-		
-		case 84:
-			return "MPAwardsArena";
-		
-		case 85:
-			return "MPAwardsArena";
-		
-		case 86:
-			return "MPAwardsArena";
-		
-		case 87:
-			return "MPAwardCasino";
-		
-		case 88:
-		case 89:
-		case 90:
-		case 91:
-		case 92:
-		case 93:
-		case 94:
-		case 95:
-		case 96:
-		case 97:
-			return "MPAwardCasinoHeist";
-			break;
-		
-		case 99:
-		case 100:
-		case 101:
-		case 102:
-		case 103:
-		case 104:
-		case 105:
-		case 106:
-			return "MPAwardIslandHeist";
-			break;
-		
-		case 107:
-		case 108:
-		case 109:
-		case 110:
-		case 112:
-		case 114:
-		case 115:
-		case 116:
-		case 111:
-		case 113:
-			return "MPAwardTunerPack";
-			break;
-		
-		case 117:
-		case 118:
-		case 119:
-			return "MPAwardsFixer";
-			break;
-	}
-	return "";
-}
-
-char* func_116(int iParam0, int iParam1, int iParam2)//Position - 0xD7A7
-{
-	if (iParam2 == 9)
-	{
-	}
-	if (iParam1 == 5)
-	{
-	}
-	switch (iParam0)
-	{
-		case 53:
-			return "ShootDownPoliceHeli";
-		
-		case 39:
-			return "ComeFromBehind";
-		
-		case 60:
-			return "TheFugitive";
-		
-		case 61:
-			return "NoClaimsBonus";
-		
-		case 62:
-			return "swallow";
-		
-		case 63:
-			return "Spinderella";
-		
-		case 16:
-			return "Timeinheli";
-		
-		case 0:
-			return "HangingOutInCars";
-		
-		case 51:
-			return "WinRallyAsDriver";
-		
-		case 52:
-			return "WinRallyAsNavigator";
-		
-		case 12:
-			return "Killenemiesindriveby";
-		
-		case 11:
-			return "JackVehicles";
-		
-		case 20:
-			return "Jump40m";
-		
-		case 19:
-			return "Timesavoiding5stars";
-		
-		case 15:
-			return "GetLapDances";
-		
-		case 17:
-			return "Delivercars";
-		
-		case 21:
-			return "racesWon_generic";
-		
-		case 14:
-			return "HoldUpShops";
-		
-		case 22:
-			return "ArmWrestlingVictories";
-		
-		case 1:
-			return "KillPistol";
-		
-		case 2:
-			return "KillSniperrifle";
-		
-		case 3:
-			return "KillGrenades";
-		
-		case 4:
-			return "KillShotgun";
-		
-		case 5:
-			return "KillSMG";
-		
-		case 6:
-			return "KillRocketLauncher";
-		
-		case 7:
-			return "KillStickyBombs";
-		
-		case 8:
-			return "KillMeleeWeapons";
-		
-		case 9:
-			return "Headshots" /* GXT: Headshot kills */;
-		
-		case 10:
-			return "BlowupVehicles";
-		
-		case 23:
-			return "Winatdarts";
-		
-		case 24:
-			return "Blowupenemiesusingcarbombs";
-		
-		case 25:
-			return "KilledpeoplewithanAssaultRifle";
-		
-		case 26:
-			return "KilledpeoplewithaMachineGun";
-		
-		case 27:
-			return "Gethaircuts";
-		
-		case 28:
-			return "Parachute1min";
-		
-		case 29:
-			return "ParachuteJumps20m";
-		
-		case 30:
-			return "Birdie";
-		
-		case 31:
-			return "GolfWin";
-		
-		case 32:
-			return "TargetGridWin";
-		
-		case 33:
-			return "RandomTargetsWin";
-		
-		case 34:
-			return "CoveredTargetsWin";
-		
-		case 35:
-			return "TennisMatchesWon";
-		
-		case 36:
-			return "TennisServiceAce";
-		
-		case 37:
-			return "GTARacesWon";
-		
-		case 38:
-			return "FastestLap";
-		
-		case 40:
-			return "DeathmatchWin";
-		
-		case 41:
-			return "TeamDeathmatchWin";
-		
-		case 42:
-			return "TeamDeathmatchMVP";
-		
-		case 43:
-			return "KillStreak";
-		
-		case 44:
-			return "TotalKills";
-		
-		case 45:
-			return "HatTrickKiller";
-		
-		case 46:
-			return "StolenKill";
-		
-		case 47:
-			return "Land2mFromTarget";
-		
-		case 48:
-			return "ReachHordeModeWave";
-		
-		case 49:
-			return "EarnCashFromBetting";
-		
-		case 54:
-			return "RaceToPointWinner";
-		
-		case 55:
-			return "BountyHunter";
-		
-		case 56:
-			return "OverallKills";
-		
-		case 57:
-			return "WinASeaRace";
-		
-		case 58:
-			return "WinAPlaneRace";
-		
-		case 59:
-			return "GetRevengeKillDeathmatch";
-		
-		case 126:
-			return "Captured";
-		
-		case 127:
-			return "ThePostman";
-		
-		case 128:
-			return "GimmeThat";
-		
-		case 129:
-			return "NoYouDont";
-		
-		case 130:
-			return "DeathDefying";
-		
-		case 67:
-			return "dailyduty";
-		
-		case 120:
-			return "TheBigTime";
-		
-		case 121:
-			return "BePrepared";
-		
-		case 122:
-			return "ForHire";
-		
-		case 123:
-			return "ShotCaller";
-		
-		case 124:
-			return "LiveALittle";
-		
-		case 125:
-			return "Decorated";
-		
-		case 131:
-			return "LightsOut";
-		
-		case 132:
-			return "InControl";
-		
-		case 133:
-			return "PsychoKiller";
-		
-		case 134:
-			return "CalmDown";
-		
-		case 135:
-			return "StillStanding";
-		
-		case 136:
-			return "OneAndOnly";
-		
-		case 137:
-			return "OneManArmy";
-		
-		case 138:
-			return "MovingDay";
-		
-		case 139:
-			return "Solomun";
-		
-		case 140:
-			return "TaleOfUs";
-		
-		case 141:
-			return "Dixon";
-		
-		case 142:
-			return "TheBlackMadonna";
-		
-		case 143:
-			return "ClubDrunk";
-		
-		case 70:
-			return "watchyourstep";
-		
-		case 71:
-			return "TOWEROFFENSE";
-		
-		case 72:
-			return "READYFORWAR";
-		
-		case 73:
-			return "THROUGHTHELENS";
-		
-		case 74:
-			return "SPINNER";
-		
-		case 75:
-			return "YOUMEANBOOBYTRAP";
-		
-		case 76:
-			return "MASTERBANDITO";
-		
-		case 77:
-			return "SITTINGDUCK";
-		
-		case 78:
-			return "CROWDPARTICIPATION";
-		
-		case 79:
-			return "KILLORBEKILLED";
-		
-		case 80:
-			return "MASSIVESHUNT";
-		
-		case 81:
-			return "YOUREOUTTAHERE";
-		
-		case 82:
-			return "WEVEGOTONE";
-		
-		case 83:
-			return "ARENAWAGEWORKER";
-		
-		case 84:
-			return "TIMESERVED";
-		
-		case 85:
-			return "TOPSCORE";
-		
-		case 86:
-			return "CAREERWINNER";
-		
-		case 87:
-			return "HighRoller";
-		
-		case 88:
-			return "Preparation";
-		
-		case 89:
-			return "AsleepOnTheJob";
-		
-		case 90:
-			return "DailyCashGrab";
-		
-		case 91:
-			return "Bigbrother";
-		
-		case 92:
-			return "Sharpshooter";
-		
-		case 93:
-			return "RaceChampion";
-		
-		case 94:
-			return "PlatinumSword";
-		
-		case 95:
-			return "CoinPurse";
-		
-		case 96:
-			return "Astrochimp";
-		
-		case 97:
-			return "Masterful";
-		
-		case 99:
-			return "sunset";
-		
-		case 100:
-			return "TreasureHunter";
-		
-		case 101:
-			return "WreckDiving";
-		
-		case 102:
-			return "Keinmusik";
-		
-		case 103:
-			return "PalmsTrax";
-		
-		case 104:
-			return "Moodymann";
-		
-		case 105:
-			return "FillYourBags";
-		
-		case 106:
-			return "Prepped";
-		
-		case 107:
-			return "LSCarMeetMember";
-		
-		case 108:
-			return "SprintRacer";
-		
-		case 109:
-			return "StreetRacer";
-		
-		case 110:
-			return "PursuitRacer";
-		
-		case 112:
-			return "SpecialDelivery";
-		
-		case 114:
-			return "Groundwork";
-		
-		case 115:
-			return "ContractualCriminal";
-		
-		case 116:
-			return "FacesofDeath";
-		
-		case 111:
-			return "TriedandTested";
-		
-		case 113:
-			return "CarExporter";
-		
-		case 117:
-			return "ContracualObligations";
-		
-		case 118:
-			return "ColdCaller";
-		
-		case 119:
-			return "Producer";
-			break;
-			break;
-	}
-	return "";
 }
 
 char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
@@ -13425,40 +4203,28 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 	{
 		case 53:
 			return "AWS_721";
-		
 		case 60:
 			return "AWS_728";
-		
 		case 61:
 			return "AWS_730";
-		
 		case 62:
 			return "AWS_731";
-		
 		case 63:
 			return "AWS_732";
-		
 		case 16:
 			return "AWS_550";
-		
 		case 0:
 			return "AWS_282";
-		
 		case 51:
 			return "AWS_707";
-		
 		case 52:
 			return "AWS_708";
-		
 		case 12:
 			return "AWS_581";
-		
 		case 11:
 			return "AWS_582";
-		
 		case 19:
 			return "AWS_534";
-		
 		case 20:
 			if (MISC::SHOULD_USE_METRIC_MEASUREMENTS())
 			{
@@ -13469,73 +4235,50 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_509";
 			}
 			break;
-		
 		case 39:
 			return "AWS_678";
-		
 		case 15:
 			return "AWS_559";
-		
 		case 17:
 			return "AWS_535";
-		
 		case 21:
 			return "AWS_586";
-		
 		case 14:
 			return "AWS_566";
-		
 		case 22:
 			return "AWS_589";
-		
 		case 1:
 			return "AWS_506";
-		
 		case 2:
 			return "AWS_585";
-		
 		case 3:
 			return "AWS_541";
-		
 		case 4:
 			return "AWS_584";
-		
 		case 5:
 			return "AWS_540";
-		
 		case 6:
 			return "AWS_539";
-		
 		case 7:
 			return "AWS_538";
-		
 		case 8:
 			return "AWS_537";
-		
 		case 9:
 			return "AWS_536";
-		
 		case 10:
 			return "AWS_583";
-		
 		case 23:
 			return "AWS_610";
-		
 		case 24:
 			return "AWS_611";
-		
 		case 25:
 			return "AWS_631";
-		
 		case 26:
 			return "AWS_632";
-		
 		case 27:
 			return "AWS_639";
-		
 		case 28:
 			return "AWS_640";
-		
 		case 29:
 			if (MISC::SHOULD_USE_METRIC_MEASUREMENTS())
 			{
@@ -13546,142 +4289,96 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_699";
 			}
 			break;
-		
 		case 30:
 			return "AWS_661";
-		
 		case 31:
 			return "AWS_662";
-		
 		case 32:
 			return "AWS_663";
-		
 		case 33:
 			return "AWS_665";
-		
 		case 34:
 			return "AWS_666";
-		
 		case 35:
 			return "AWS_668";
-		
 		case 36:
 			return "AWS_669";
-		
 		case 37:
 			return "AWS_675";
-		
 		case 38:
 			return "AWS_676";
-		
 		case 40:
 			return "AWS_679";
-		
 		case 41:
 			return "AWS_681";
-		
 		case 42:
 			return "AWS_682";
-		
 		case 43:
 			return "AWS_677";
-		
 		case 44:
 			return "AWS_683";
-		
 		case 45:
 			return "AWS_684";
-		
 		case 46:
 			return "AWS_685";
-		
 		case 47:
 			return "AWS_692";
-		
 		case 48:
 			return "AWS_696";
-		
 		case 49:
 			return "AWS_693";
-		
 		case 54:
 			return "AWS_710";
-		
 		case 55:
 			return "AWS_703";
-		
 		case 56:
 			return "AWS_704";
-		
 		case 57:
 			return "AWS_722";
-		
 		case 58:
 			return "AWS_723";
-		
 		case 59:
 			return "AWS_716";
-		
 		case 126:
 			return "AWS_740" /* GXT: This mode is all about teamwork, whether you choose to attack or defend, everyone has a part to play. Get a team together and win Captures. */;
-		
 		case 127:
 			return "AWS_741" /* GXT: Watch your back when transporting a package or vehicle. The opposition will be after you. Drop off packages in any Capture mode. */;
-		
 		case 128:
 			return "AWS_742" /* GXT: In order to win at Capture, someone has to get the goods. Pick up a package or vehicle in any Capture mode. */;
-		
 		case 129:
 			return "AWS_743" /* GXT: Don't let the enemy get the merchandise back to their base. A strategic ambush could turn the match in your favor. Kill package carriers. */;
-		
 		case 130:
 			return "AWS_744" /* GXT: Whether you choose a stealthy approach or a full on assault, assert your dominance by winning Capture without dying. */;
-		
 		case 67:
 			return "AWS_782";
-		
 		case 120:
 			return "AWS_745" /* GXT: Pulling off a Heist is the ultimate Job. With the right team and some cooperation you will reap the rewards. Successfully complete Heist Finales. */;
-		
 		case 121:
 			return "AWS_746" /* GXT: Every Heist requires planning. Help with the Heist Setups in the run up to the final showdown. */;
-		
 		case 122:
 			return "AWS_747" /* GXT: Leaders need to hire a solid crew. Crew members get paid for Heist Setups and can negotiate a share of the profits in the Finale. Be a Heist crew member. */;
-		
 		case 123:
 			return "AWS_748" /* GXT: The Heist leader needs to stump up the cash to cover the costs, on the plus side, they have full control of the rewards. Be the Heist leader. */;
-		
 		case 124:
 			return "AWS_749";
-		
 		case 125:
 			return "AWS_752" /* GXT: If something is worth doing, it is worth doing right. Earn platinum medals for your performance during a Heist. The Bonus RP may come in handy. */;
-		
 		case 131:
 			return "AWS_755" /* GXT: This new kit will give you the advantage over your enemies. Get kills while wearing Night Vision. */;
-		
 		case 132:
 			return "AWS_757" /* GXT: Shoot, aim, shout at the crowd to keep them under control. If an alarm is raised or the police are called, you have failed. */;
-		
 		case 133:
 			return "AWS_758" /* GXT: Psychopaths are marked as red blips on the Radar in Freemode. Kill them for an RP reward and a sense of satisfaction. */;
-		
 		case 134:
 			return "AWS_759" /* GXT: Becoming Unstable encourages others to play rough with you. Try to stay calm for an easier life. Return your Mental State to Normal. */;
-		
 		case 135:
 			return "AWS_760" /* GXT: No respawns in this mode. You will have to cheer on your teammates if you are out of the game. Win Last Team Standings. */;
-		
 		case 136:
 			return "AWS_761" /* GXT: The true definition of Last Man Standing. Be the last player alive at the end of the match. */;
-		
 		case 137:
 			return "AWS_762" /* GXT: Sometimes you have to take matters into your own hands. Wipe out an entire enemy team yourself in LTS. */;
-		
 		case 138:
 			return "AWS_764" /* GXT: Staying in the same place for too long can become dull.  Either move up the property ladder or downscale for some cash. Trade in your property. */;
-		
 		case 139:
 			if (iParam1 == 5)
 			{
@@ -13700,7 +4397,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_788_1";
 			}
 			break;
-		
 		case 140:
 			if (iParam1 == 5)
 			{
@@ -13719,7 +4415,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_789_1";
 			}
 			break;
-		
 		case 141:
 			if (iParam1 == 5)
 			{
@@ -13738,7 +4433,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_790_1";
 			}
 			break;
-		
 		case 142:
 			if (iParam1 == 5)
 			{
@@ -13757,61 +4451,42 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_791_1";
 			}
 			break;
-		
 		case 143:
 			return "AWS_792";
-		
 		case 70:
 			return "AWS_817";
-		
 		case 71:
 			return "AWS_818";
-		
 		case 72:
 			return "AWS_821";
-		
 		case 73:
 			return "AWS_822";
-		
 		case 74:
 			return "AWS_823";
-		
 		case 75:
 			return "AWS_824";
-		
 		case 76:
 			return "AWS_825";
-		
 		case 77:
 			return "AWS_826";
-		
 		case 78:
 			return "AWS_827";
-		
 		case 79:
 			return "AWS_828";
-		
 		case 80:
 			return "AWS_829";
-		
 		case 81:
 			return "AWS_830";
-		
 		case 82:
 			return "AWS_831";
-		
 		case 83:
 			return "AWS_832";
-		
 		case 84:
 			return "AWS_833";
-		
 		case 85:
 			return "AWS_834";
-		
 		case 86:
 			return "AWS_835";
-		
 		case 87:
 			if (iParam1 == 5)
 			{
@@ -13830,7 +4505,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_845_1" /* GXT: Complete 5 Casino Work missions for Agatha and earn $10,000. */;
 			}
 			break;
-		
 		case 88:
 			if (iParam1 == 5)
 			{
@@ -13849,7 +4523,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_847_1" /* GXT: Complete 5 prep missions as part of The Diamond Casino Heist. */;
 			}
 			break;
-		
 		case 89:
 			if (iParam1 == 5)
 			{
@@ -13868,7 +4541,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_848_1" /* GXT: Use the Drone to tranquilize 5 guards during The Diamond Casino Heist. */;
 			}
 			break;
-		
 		case 90:
 			if (iParam1 == 5)
 			{
@@ -13887,7 +4559,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_849_1" /* GXT: Steal a total of $25000 from the Daily Vault during The Diamond Casino Heist. */;
 			}
 			break;
-		
 		case 91:
 			if (iParam1 == 5)
 			{
@@ -13906,7 +4577,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_850_1" /* GXT: Destroy 10 security cameras during The Diamond Casino Heist. */;
 			}
 			break;
-		
 		case 92:
 			if (iParam1 == 5)
 			{
@@ -13925,7 +4595,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_851_1" /* GXT: Kill 5 flying critters across all levels of Badlands Revenge II. */;
 			}
 			break;
-		
 		case 93:
 			if (iParam1 == 5)
 			{
@@ -13944,7 +4613,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_852_1" /* GXT: Win 5 races against an opponent in Race And Chase. */;
 			}
 			break;
-		
 		case 94:
 			if (iParam1 == 5)
 			{
@@ -13963,7 +4631,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_853_1" /* GXT: Score at least 250000 during a single play of The Wizard's Ruin. */;
 			}
 			break;
-		
 		case 95:
 			if (iParam1 == 5)
 			{
@@ -13982,7 +4649,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_854_1" /* GXT: Collect 200000 treasures during a single play of The Wizard's Ruin. */;
 			}
 			break;
-		
 		case 96:
 			if (iParam1 == 5)
 			{
@@ -14001,7 +4667,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_855_1" /* GXT: Score over 1500000 points in a single game of Space Monkey 3: Bananas Gone Bad. */;
 			}
 			break;
-		
 		case 97:
 			if (iParam1 == 5)
 			{
@@ -14020,7 +4685,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_856_1" /* GXT: Score over 5000 points in a single play of Penetrator. */;
 			}
 			break;
-		
 		case 99:
 			if (iParam1 == 5)
 			{
@@ -14039,7 +4703,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_936a" /* GXT: Dance to Keinemusik's set at the Cayo Perico beach party for 5 minutes. */;
 			}
 			break;
-		
 		case 100:
 			if (iParam1 == 5)
 			{
@@ -14058,7 +4721,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_937a" /* GXT: Steal the loot from 5 treasure chests found on Cayo Perico. */;
 			}
 			break;
-		
 		case 101:
 			if (iParam1 == 5)
 			{
@@ -14077,7 +4739,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_938a" /* GXT: Steal a total of $50,000 from hidden caches found around the San Andreas coast. */;
 			}
 			break;
-		
 		case 102:
 			if (iParam1 == 5)
 			{
@@ -14096,7 +4757,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_939a" /* GXT: Dance to Keinemusik's set in The Music Locker for 5 minutes. */;
 			}
 			break;
-		
 		case 103:
 			if (iParam1 == 5)
 			{
@@ -14115,7 +4775,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_940a" /* GXT: Dance to Palms Trax set in The Music Locker for 5 minutes. */;
 			}
 			break;
-		
 		case 104:
 			if (iParam1 == 5)
 			{
@@ -14134,7 +4793,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_941a" /* GXT: Dance to Moodymann's set in The Music Locker for 5 minutes. */;
 			}
 			break;
-		
 		case 105:
 			if (iParam1 == 5)
 			{
@@ -14153,7 +4811,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_942a" /* GXT: Steal a total of $1,000,000 in secondary targets during The Cayo Perico Heist. */;
 			}
 			break;
-		
 		case 106:
 			if (iParam1 == 5)
 			{
@@ -14172,7 +4829,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_943a" /* GXT: Complete 5 prep missions as part of The Cayo Perico Heist. */;
 			}
 			break;
-		
 		case 107:
 			if (iParam1 == 5)
 			{
@@ -14191,7 +4847,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_945a" /* GXT: Reach LS Car Meet Reputation Level 5. */;
 			}
 			break;
-		
 		case 108:
 			if (iParam1 == 5)
 			{
@@ -14210,7 +4865,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_967a" /* GXT: Win 5 Sprints. */;
 			}
 			break;
-		
 		case 109:
 			if (iParam1 == 5)
 			{
@@ -14229,7 +4883,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_946a" /* GXT: Win 5 races in the Street Race Series. */;
 			}
 			break;
-		
 		case 110:
 			if (iParam1 == 5)
 			{
@@ -14248,7 +4901,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_947a" /* GXT: Win 5 races in the Pursuit Series. */;
 			}
 			break;
-		
 		case 112:
 			if (iParam1 == 5)
 			{
@@ -14267,7 +4919,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_949a" /* GXT: Successfully mod and deliver 5 customer vehicles from your Auto Shop. */;
 			}
 			break;
-		
 		case 114:
 			if (iParam1 == 5)
 			{
@@ -14286,7 +4937,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_952a" /* GXT: Complete 5 Planning Work missions as leader as part of the Contracts for KDJ and Sessanta. */;
 			}
 			break;
-		
 		case 115:
 			if (iParam1 == 5)
 			{
@@ -14305,7 +4955,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_961a" /* GXT: Complete 5 Contracts for KDJ and Sessanta. */;
 			}
 			break;
-		
 		case 116:
 			if (iParam1 == 5)
 			{
@@ -14324,7 +4973,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_962a" /* GXT: Carry out over 5 headshots across all scenes in Camhedz. */;
 			}
 			break;
-		
 		case 111:
 			if (iParam1 == 5)
 			{
@@ -14343,7 +4991,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_948a" /* GXT: Drive one of the test rides for 30 minutes inside the Test Track. */;
 			}
 			break;
-		
 		case 113:
 			if (iParam1 == 5)
 			{
@@ -14362,7 +5009,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_950a" /* GXT: Deliver 10 Exotic Exports Vehicles to the Docks for Sessanta's partner. */;
 			}
 			break;
-		
 		case 117:
 			if (iParam1 == 5)
 			{
@@ -14381,7 +5027,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_978a" /* GXT: Complete 5 Security Contracts. */;
 			}
 			break;
-		
 		case 118:
 			if (iParam1 == 5)
 			{
@@ -14400,7 +5045,6 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 				return "AWS_979a" /* GXT: Complete 5 Payphone Hits. */;
 			}
 			break;
-		
 		case 119:
 			return "AWS_983" /* GXT: Watch Dr. Dre working in Record A Studios. */;
 			break;
@@ -14408,457 +5052,21 @@ char* func_117(int iParam0, int iParam1, int iParam2)//Position - 0xDEA8
 	return "";
 }
 
-char* func_118(int iParam0, int iParam1)//Position - 0xECC7
-{
-	if (iParam1 == 9)
-	{
-	}
-	switch (iParam0)
-	{
-		case 53:
-			return "AWT_721";
-		
-		case 39:
-			return "AWT_678";
-		
-		case 51:
-			return "AWT_707";
-		
-		case 52:
-			return "AWT_708";
-		
-		case 60:
-			return "AWT_728";
-		
-		case 61:
-			return "AWT_730";
-		
-		case 62:
-			return "AWT_731";
-		
-		case 63:
-			return "AWT_732";
-		
-		case 16:
-			return "AWT_550";
-		
-		case 0:
-			return "AWT_282";
-		
-		case 12:
-			return "AWT_581";
-		
-		case 11:
-			return "AWT_582";
-		
-		case 19:
-			return "AWT_534";
-		
-		case 20:
-			if (MISC::SHOULD_USE_METRIC_MEASUREMENTS())
-			{
-				return "AWT_509";
-			}
-			else
-			{
-				return "AWT_509";
-			}
-			break;
-		
-		case 15:
-			return "AWT_559";
-		
-		case 17:
-			return "AWT_535";
-		
-		case 21:
-			return "AWT_586";
-		
-		case 14:
-			return "AWT_566";
-		
-		case 22:
-			return "AWT_589";
-		
-		case 1:
-			return "AWT_506";
-		
-		case 2:
-			return "AWT_585";
-		
-		case 3:
-			return "AWT_541";
-		
-		case 4:
-			return "AWT_584";
-		
-		case 5:
-			return "AWT_540";
-		
-		case 6:
-			return "AWT_539";
-		
-		case 7:
-			return "AWT_538";
-		
-		case 8:
-			return "AWT_537";
-		
-		case 9:
-			return "AWT_536";
-		
-		case 10:
-			return "AWT_583";
-		
-		case 23:
-			return "AWT_610";
-		
-		case 24:
-			return "AWT_611";
-		
-		case 25:
-			return "AWT_631";
-		
-		case 26:
-			return "AWT_632";
-		
-		case 27:
-			return "AWT_639";
-		
-		case 28:
-			return "AWT_640";
-		
-		case 29:
-			return "AWT_699";
-		
-		case 30:
-			return "AWT_661";
-		
-		case 31:
-			return "AWT_662";
-		
-		case 32:
-			return "AWT_663";
-		
-		case 33:
-			return "AWT_665";
-		
-		case 34:
-			return "AWT_666";
-		
-		case 35:
-			return "AWT_668";
-		
-		case 36:
-			return "AWT_669";
-		
-		case 37:
-			return "AWT_675";
-		
-		case 38:
-			return "AWT_676";
-		
-		case 40:
-			return "AWT_679";
-		
-		case 41:
-			return "AWT_681";
-		
-		case 42:
-			return "AWT_682";
-		
-		case 43:
-			return "AWT_677";
-		
-		case 44:
-			return "AWT_683";
-		
-		case 45:
-			return "AWT_684";
-		
-		case 46:
-			return "AWT_685";
-		
-		case 47:
-			return "AWT_692";
-		
-		case 48:
-			return "AWT_696";
-		
-		case 49:
-			return "AWT_693";
-		
-		case 54:
-			return "AWT_710";
-		
-		case 55:
-			return "AWT_703";
-		
-		case 56:
-			return "AWT_704";
-		
-		case 57:
-			return "AWT_722";
-		
-		case 58:
-			return "AWT_723";
-		
-		case 59:
-			return "AWT_716";
-		
-		case 126:
-			return "AWT_740" /* GXT: Captured */;
-		
-		case 127:
-			return "AWT_741" /* GXT: The Postman */;
-		
-		case 128:
-			return "AWT_742" /* GXT: Gimme That */;
-		
-		case 129:
-			return "AWT_743" /* GXT: No You Don't */;
-		
-		case 130:
-			return "AWT_744" /* GXT: Death Defying */;
-		
-		case 67:
-			return "AWT_782";
-		
-		case 120:
-			return "AWT_745" /* GXT: The Big Time */;
-		
-		case 121:
-			return "AWT_746" /* GXT: Be Prepared */;
-		
-		case 122:
-			return "AWT_747" /* GXT: For Hire */;
-		
-		case 123:
-			return "AWT_748" /* GXT: Shot Caller */;
-		
-		case 124:
-			return "AWT_749";
-		
-		case 125:
-			return "AWT_752" /* GXT: Decorated */;
-		
-		case 131:
-			return "AWT_755" /* GXT: Lights Out */;
-		
-		case 132:
-			return "AWT_757" /* GXT: In Control */;
-		
-		case 133:
-			return "AWT_758" /* GXT: Psycho Killer */;
-		
-		case 134:
-			return "AWT_759" /* GXT: Calm Down */;
-		
-		case 135:
-			return "AWT_760" /* GXT: Still Standing */;
-		
-		case 136:
-			return "AWT_761" /* GXT: One and Only */;
-		
-		case 137:
-			return "AWT_762" /* GXT: One Man Army */;
-		
-		case 138:
-			return "AWT_764" /* GXT: Moving Day */;
-		
-		case 139:
-			return "AWT_788";
-		
-		case 140:
-			return "AWT_789";
-		
-		case 141:
-			return "AWT_790";
-		
-		case 142:
-			return "AWT_791";
-		
-		case 143:
-			return "AWT_792";
-		
-		case 70:
-			return "AWT_817";
-		
-		case 71:
-			return "AWT_818";
-		
-		case 72:
-			return "AWT_821";
-		
-		case 73:
-			return "AWT_822";
-		
-		case 74:
-			return "AWT_823";
-		
-		case 75:
-			return "AWT_824";
-		
-		case 76:
-			return "AWT_825";
-		
-		case 77:
-			return "AWT_826";
-		
-		case 78:
-			return "AWT_827";
-		
-		case 79:
-			return "AWT_828";
-		
-		case 80:
-			return "AWT_829";
-		
-		case 81:
-			return "AWT_830";
-		
-		case 82:
-			return "AWT_831";
-		
-		case 83:
-			return "AWT_832";
-		
-		case 84:
-			return "AWT_833";
-		
-		case 85:
-			return "AWT_834";
-		
-		case 86:
-			return "AWT_835";
-		
-		case 87:
-			return "AWT_845" /* GXT: High Roller */;
-		
-		case 88:
-			return "AWT_847" /* GXT: Preparation */;
-		
-		case 89:
-			return "AWT_848" /* GXT: Asleep On The Job */;
-		
-		case 90:
-			return "AWT_849" /* GXT: Daily Cash Grab */;
-		
-		case 91:
-			return "AWT_850" /* GXT: Big Brother */;
-		
-		case 92:
-			return "AWT_851" /* GXT: Sharpshooter */;
-		
-		case 93:
-			return "AWT_852" /* GXT: Race Champion */;
-		
-		case 94:
-			return "AWT_853" /* GXT: Platinum Sword */;
-		
-		case 95:
-			return "AWT_854" /* GXT: Coin Purse */;
-		
-		case 96:
-			return "AWT_855" /* GXT: Astrochimp */;
-		
-		case 97:
-			return "AWT_856" /* GXT: Masterful */;
-		
-		case 99:
-			return "AWT_936" /* GXT: Sun Set */;
-		
-		case 100:
-			return "AWT_937" /* GXT: Treasure Hunter */;
-		
-		case 101:
-			return "AWT_938" /* GXT: Wreck Diving */;
-		
-		case 102:
-			return "AWT_939" /* GXT: Keinemusik */;
-		
-		case 103:
-			return "AWT_940" /* GXT: Palms Trax */;
-		
-		case 104:
-			return "AWT_941" /* GXT: Moodymann */;
-		
-		case 105:
-			return "AWT_942" /* GXT: Fill Your Bags */;
-		
-		case 106:
-			return "AWT_943" /* GXT: Prepped */;
-		
-		case 107:
-			return "AWT_945" /* GXT: LS Car Meet Member */;
-			break;
-		
-		case 108:
-			return "AWT_967" /* GXT: Sprint Racer */;
-			break;
-		
-		case 109:
-			return "AWT_946" /* GXT: Street Racer */;
-			break;
-		
-		case 110:
-			return "AWT_947" /* GXT: Pursuit Racer */;
-			break;
-		
-		case 112:
-			return "AWT_949" /* GXT: Special Delivery */;
-			break;
-		
-		case 114:
-			return "AWT_952" /* GXT: Groundwork */;
-			break;
-		
-		case 115:
-			return "AWT_961" /* GXT: Contractual Criminal */;
-			break;
-		
-		case 116:
-			return "AWT_962" /* GXT: Faces Of Death */;
-			break;
-		
-		case 111:
-			return "AWT_948" /* GXT: Tried and Tested */;
-			break;
-		
-		case 113:
-			return "AWT_950" /* GXT: Car Exporter */;
-			break;
-		
-		case 117:
-			return "AWT_978" /* GXT: Contractual Obligations */;
-			break;
-		
-		case 118:
-			return "AWT_979" /* GXT: Cold Caller */;
-			break;
-		
-		case 119:
-			return "AWT_983" /* GXT: Producer */;
-			break;
-	}
-	return "";
-}
-
 int func_119(int iParam0, int iParam1)//Position - 0xF3F7
 {
-	if (func_77(func_48(iParam0, -1), func_49(iParam0, 5, iParam1)))
+	if (__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 5, iParam1)))
 	{
 		return 5;
 	}
-	if (func_77(func_48(iParam0, -1), func_49(iParam0, 4, iParam1)))
+	if (__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 4, iParam1)))
 	{
 		return 5;
 	}
-	if (func_77(func_48(iParam0, -1), func_49(iParam0, 3, iParam1)))
+	if (__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 3, iParam1)))
 	{
 		return 4;
 	}
-	if (func_77(func_48(iParam0, -1), func_49(iParam0, 2, iParam1)))
+	if (__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 2, iParam1)))
 	{
 		return 3;
 	}
@@ -14867,33 +5075,23 @@ int func_119(int iParam0, int iParam1)//Position - 0xF3F7
 
 int func_120(int iParam0, int iParam1)//Position - 0xF46C
 {
-	if (!func_77(func_48(iParam0, -1), func_49(iParam0, 2, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 2, iParam1)))
 	{
 		return 0;
 	}
-	if (!func_77(func_48(iParam0, -1), func_49(iParam0, 3, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 3, iParam1)))
 	{
 		return 2;
 	}
-	if (!func_77(func_48(iParam0, -1), func_49(iParam0, 4, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 4, iParam1)))
 	{
 		return 3;
 	}
-	if (!func_77(func_48(iParam0, -1), func_49(iParam0, 5, iParam1)))
+	if (!__LIB_1__.func_632(__LIB_1__.func_596(iParam0, -1), __LIB_0__.func_238(iParam0, 5, iParam1)))
 	{
 		return 4;
 	}
 	return 5;
-}
-
-bool func_121()//Position - 0xF4E5
-{
-	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
-}
-
-bool func_122()//Position - 0xF4FB
-{
-	return (MISC::IS_DURANGO_VERSION() || MISC::IS_SCARLETT_VERSION());
 }
 
 void func_123(var uParam0, var uParam1)//Position - 0xF511
@@ -14904,7 +5102,6 @@ void func_123(var uParam0, var uParam1)//Position - 0xF511
 	bool bVar3;
 	int iVar4;
 	int iVar5;
-	
 	iVar0 = 12;
 	iVar1 = uParam0->f_455;
 	switch (uParam1->f_5)
@@ -14912,7 +5109,6 @@ void func_123(var uParam0, var uParam1)//Position - 0xF511
 		case 0:
 			iVar1 = iVar1;
 			break;
-		
 		default:
 			if (uParam1->f_5 < iLocal_110)
 			{
@@ -14924,14 +5120,14 @@ void func_123(var uParam0, var uParam1)//Position - 0xF511
 			}
 			break;
 	}
-	if (func_131(Global_1646672.f_473[uParam0->f_455]) || func_130(Global_1646672.f_486[uParam0->f_455]))
+	if (__LIB_30__.func_379(Global_1646672.f_473[uParam0->f_455]) || func_130(Global_1646672.f_486[uParam0->f_455]))
 	{
 		bVar2 = false;
 		bVar3 = false;
-		if (func_131(Global_1646672.f_473[uParam0->f_455]))
+		if (__LIB_30__.func_379(Global_1646672.f_473[uParam0->f_455]))
 		{
 			bVar2 = func_129(Global_1646672.f_473[uParam0->f_455]);
-			bVar3 = func_105(Global_1646672.f_473[uParam0->f_455], -1);
+			bVar3 = __LIB_1__.func_595(Global_1646672.f_473[uParam0->f_455], -1);
 		}
 		if (func_130(Global_1646672.f_486[uParam0->f_455]))
 		{
@@ -14955,95 +5151,16 @@ void func_123(var uParam0, var uParam1)//Position - 0xF511
 	}
 	iVar4 = uParam1->f_5 + 1;
 	iVar5 = iLocal_110 + 1;
-	func_124(0, iVar4, iVar5, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
-}
-
-void func_124(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4)//Position - 0xF66A
-{
-	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_SCROLL");
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam3))
-	{
-		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
-		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
-		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam2);
-		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	}
-	else
-	{
-		func_22("");
-	}
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam4);
-	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
+	__LIB_30__.func_378(0, iVar4, iVar5, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 bool func_125(var uParam0)//Position - 0xF6C7
 {
 	var uVar0;
 	int iVar1;
-	
-	uVar0 = func_126(uParam0);
+	uVar0 = __LIB_7__.func_71(uParam0);
 	iVar1 = uParam0;
-	return BitTest(uVar0, func_52(iVar1));
-}
-
-int func_126(var uParam0)//Position - 0xF6E4
-{
-	switch (func_127(uParam0))
-	{
-		case 758:
-			return Global_1659717[func_45(-1)];
-		
-		case 759:
-			return Global_1659723[func_45(-1)];
-		
-		case 760:
-			return Global_1659729[func_45(-1)];
-		
-		case 761:
-			return Global_1659735[func_45(-1)];
-		
-		case 8735:
-			return Global_1659741[func_45(-1)];
-		
-		default:
-	}
-	return 0;
-}
-
-int func_127(var uParam0)//Position - 0xF75C
-{
-	int iVar0;
-	int iVar1;
-	
-	iVar0 = uParam0;
-	iVar1 = func_55(iVar0);
-	switch (iVar1)
-	{
-		case 0:
-			return 758;
-			break;
-		
-		case 1:
-			return 759;
-			break;
-		
-		case 2:
-			return 760;
-			break;
-		
-		case 3:
-			return 761;
-			break;
-		
-		case 4:
-			return 8735;
-			break;
-	}
-	return 13122;
+	return BitTest(uVar0, __LIB_0__.func_158(iVar1));
 }
 
 int func_128(int iParam0)//Position - 0xF7C5
@@ -15053,11 +5170,9 @@ int func_128(int iParam0)//Position - 0xF7C5
 		case 117:
 			return 13;
 			break;
-		
 		case 118:
 			return 14;
 			break;
-		
 		case 119:
 			return 18;
 			break;
@@ -15072,63 +5187,48 @@ int func_129(int iParam0)//Position - 0xF7FF
 		case 127:
 			return 0;
 			break;
-		
 		case 128:
 			return 1;
 			break;
-		
 		case 129:
 			return 2;
 			break;
-		
 		case 130:
 			return 3;
 			break;
-		
 		case 131:
 			return 4;
 			break;
-		
 		case 132:
 			return 5;
 			break;
-		
 		case 133:
 			return 6;
 			break;
-		
 		case 134:
 			return 7;
 			break;
-		
 		case 135:
 			return 8;
 			break;
-		
 		case 136:
 			return 9;
 			break;
-		
 		case 140:
 			return 10;
 			break;
-		
 		case 141:
 			return 11;
 			break;
-		
 		case 142:
 			return 12;
 			break;
-		
 		case 137:
 			return 15;
 			break;
-		
 		case 138:
 			return 16;
 			break;
-		
 		case 139:
 			return 17;
 			break;
@@ -15149,37 +5249,10 @@ int func_130(int iParam0)//Position - 0xF8E7
 	return 0;
 }
 
-int func_131(int iParam0)//Position - 0xF910
-{
-	switch (iParam0)
-	{
-		case 127:
-		case 128:
-		case 129:
-		case 130:
-		case 131:
-		case 132:
-		case 133:
-		case 134:
-		case 135:
-		case 136:
-		case 137:
-		case 138:
-		case 139:
-		case 140:
-		case 142:
-		case 141:
-			return 1;
-			break;
-	}
-	return 0;
-}
-
 int func_132(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0xF987
 {
 	int iVar0;
 	int iVar1;
-	
 	iVar0 = (*uParam0 + *uParam1 * 4);
 	switch (iParam3)
 	{
@@ -15205,7 +5278,6 @@ int func_132(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0xF
 				}
 			}
 			break;
-		
 		case 187:
 			if (iParam2 == iLocal_110)
 			{
@@ -15228,10 +5300,8 @@ int func_132(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0xF
 				}
 			}
 			break;
-		
 		case 189:
 			break;
-		
 		case 190:
 			if (iParam2 == iLocal_110)
 			{
@@ -15281,46 +5351,15 @@ void func_133(var uParam0, var uParam1)//Position - 0xFAF1
 	}
 }
 
-void func_134()//Position - 0xFB12
-{
-	func_124(0, -1, -1, 0, 0);
-}
-
 void func_135()//Position - 0xFB23
 {
 	func_136();
-	func_124(0, -1, -1, 0, 0);
+	__LIB_30__.func_378(0, -1, -1, 0, 0);
 }
 
 void func_136()//Position - 0xFB38
 {
-	func_137(0);
-}
-
-void func_137(bool bParam0)//Position - 0xFB45
-{
-	if (bParam0)
-	{
-		func_138(0, 3, 0, 2, 0, 0);
-	}
-	else
-	{
-		func_138(0, 2, 0, 2, 1, 0);
-	}
-}
-
-void func_138(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)//Position - 0xFB69
-{
-	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("INIT_COLUMN_SCROLL");
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam4);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam5);
-	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
+	__LIB_34__.func_999(0);
 }
 
 void func_139(var uParam0)//Position - 0xFBAC
@@ -15348,7 +5387,6 @@ void func_142(var uParam0)//Position - 0xFBDE
 void func_143(var uParam0)//Position - 0xFBF2
 {
 	struct<499> Var0;
-	
 	Var0.f_1 = 12;
 	Var0.f_14 = 12;
 	Var0.f_111 = 12;
@@ -15382,7 +5420,6 @@ void func_146(var uParam0)//Position - 0xFC78
 void func_147(var uParam0)//Position - 0xFC8C
 {
 	struct<430> Var0;
-	
 	Var0.f_1 = 18;
 	Var0.f_20 = 18;
 	Var0.f_309 = 18;

@@ -484,7 +484,6 @@
 	float fLocal_482 = 0f;
 	int iLocal_483 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -560,8 +559,8 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::WAIT(0);
 	func_90();
 	func_89();
-	func_85();
-	while (iLocal_446 && func_81(4, 0))
+	__LIB_26__.func_563();
+	while (iLocal_446 && __LIB_39__.func_523(4, 0))
 	{
 		SYSTEM::WAIT(0);
 		switch (iLocal_267)
@@ -572,21 +571,18 @@ void __EntryFunction__()//Position - 0x0
 					iLocal_267 = 1;
 				}
 				break;
-			
 			case 1:
 				if (func_79())
 				{
 					iLocal_267 = 2;
 				}
 				break;
-			
 			case 2:
 				if (func_2())
 				{
 					iLocal_267 = 3;
 				}
 				break;
-			
 			case 3:
 				func_1();
 				break;
@@ -606,7 +602,6 @@ int func_2()//Position - 0x1D4
 	int iVar1;
 	int iVar2;
 	float fVar3;
-	
 	iVar1 = -1;
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -627,7 +622,7 @@ int func_2()//Position - 0x1D4
 					{
 						if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
 						{
-							func_68(&uLocal_434, 0, 0);
+							__LIB_9__.func_981(&uLocal_434, 0, 0);
 							iLocal_483 = iVar1;
 						}
 						return 0;
@@ -637,14 +632,14 @@ int func_2()//Position - 0x1D4
 			}
 			if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
 			{
-				func_68(&uLocal_434, 0, 0);
+				__LIB_9__.func_981(&uLocal_434, 0, 0);
 				iLocal_483 = iVar1;
 			}
 			return 1;
 		}
 		if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
 		{
-			func_68(&uLocal_434, 0, 0);
+			__LIB_9__.func_981(&uLocal_434, 0, 0);
 			iLocal_483 = iVar1;
 		}
 		return 0;
@@ -653,14 +648,14 @@ int func_2()//Position - 0x1D4
 	{
 		if (iLocal_483 != iVar1 || iVar1 < -1)
 		{
-			func_68(&uLocal_434, 0, 0);
+			__LIB_9__.func_981(&uLocal_434, 0, 0);
 			iLocal_483 = iVar1;
 			return 0;
 		}
 		fVar3 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iLocal_447[iVar1], false), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false));
 		if (fVar3 < (150f * 150f) || CAM::IS_GAMEPLAY_HINT_ACTIVE())
 		{
-			func_37(&uLocal_434, iLocal_447[iVar1], &Local_464, 0, 1, 1, 1);
+			__LIB_40__.func_938(&uLocal_434, iLocal_447[iVar1], &Local_464, 0, 1, 1, 1);
 			if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
 			{
 				iLocal_483 = iVar1;
@@ -676,19 +671,18 @@ int func_3(char* sParam0, int* iParam1, int iParam2)//Position - 0x317
 	struct<2> Var0;
 	float fVar1;
 	float fVar2;
-	
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 	{
 		return 0;
 	}
 	Var0 = { *sParam0 };
-	if (func_36())
+	if (__LIB_12__.func_114())
 	{
 		return 0;
 	}
-	if (!func_35(iParam1))
+	if (!__LIB_0__.func_516(iParam1))
 	{
-		func_34(iParam1);
+		__LIB_18__.func_364(iParam1);
 		return 0;
 	}
 	if (iLocal_472 >= iLocal_471)
@@ -696,7 +690,7 @@ int func_3(char* sParam0, int* iParam1, int iParam2)//Position - 0x317
 		return 0;
 	}
 	fVar1 = (10f + ((SYSTEM::TO_FLOAT(iLocal_472) / SYSTEM::TO_FLOAT(iLocal_471)) * 10f));
-	if (!func_31(iParam1, fVar1))
+	if (!__LIB_34__.func_808(iParam1, fVar1))
 	{
 		return 0;
 	}
@@ -712,7 +706,7 @@ int func_3(char* sParam0, int* iParam1, int iParam2)//Position - 0x317
 		{
 			if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
 			{
-				func_68(&uLocal_434, 0, 0);
+				__LIB_9__.func_981(&uLocal_434, 0, 0);
 			}
 			*iParam2 = -1;
 		}
@@ -722,1780 +716,18 @@ int func_3(char* sParam0, int* iParam1, int iParam2)//Position - 0x317
 	{
 		StringIntConCat(&Var0, iLocal_470, 16);
 	}
-	func_30(&uLocal_269, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
-	if (func_7(&uLocal_269, "PRSAUD", &Var0, 3, 0, 0, 0))
+	__LIB_0__.func_203(&uLocal_269, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
+	if (__LIB_37__.func_799(&uLocal_269, "PRSAUD", &Var0, 3, 0, 0, 0))
 	{
 		if (iLocal_470 > 0)
 		{
 			iLocal_470++;
 		}
-		func_4(iParam1);
+		__LIB_6__.func_892(iParam1);
 		iLocal_472++;
 		return 1;
 	}
 	return 0;
-}
-
-void func_4(int* iParam0)//Position - 0x44F
-{
-	func_5(iParam0, 0f);
-}
-
-void func_5(int* iParam0, float fParam1)//Position - 0x45E
-{
-	iParam0->f_1 = (func_6(BitTest(*iParam0, 4)) - fParam1);
-	MISC::SET_BIT(iParam0, 1);
-	MISC::CLEAR_BIT(iParam0, 2);
-	iParam0->f_2 = 0f;
-}
-
-float func_6(bool bParam0)//Position - 0x489
-{
-	float fVar0;
-	float fVar1;
-	int iVar2;
-	float fVar3;
-	float fVar4;
-	
-	if (bParam0)
-	{
-		fVar0 = SYSTEM::TO_FLOAT(MISC::GET_GAME_TIMER());
-		fVar1 = (fVar0 / 1000f);
-		return fVar1;
-	}
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		iVar2 = NETWORK::GET_NETWORK_TIME();
-		fVar3 = SYSTEM::TO_FLOAT(iVar2);
-		fVar4 = (fVar3 / 1000f);
-		return fVar4;
-	}
-	return (SYSTEM::TO_FLOAT(MISC::GET_GAME_TIMER()) / 1000f);
-}
-
-bool func_7(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0x4E1
-{
-	func_29(uParam0, 145, sParam1, iParam4, iParam5, iParam6);
-	if (iParam3 > 7)
-	{
-		if (iParam3 < 12)
-		{
-			iParam3 = 7;
-		}
-	}
-	Global_21612 = 0;
-	Global_21614 = 0;
-	Global_21619 = 0;
-	Global_22596 = 0;
-	Global_22598 = 0;
-	Global_22602 = 0;
-	Global_2883585 = 0;
-	return func_8(sParam2, iParam3, 0);
-}
-
-int func_8(char* sParam0, int iParam1, bool bParam2)//Position - 0x52F
-{
-	Global_21606 = 0;
-	if (Global_21605 == 0 || Global_21607 == 2)
-	{
-		if (Global_21605 != 0)
-		{
-			if (iParam1 > Global_21607)
-			{
-				if (Global_21612 == 0)
-				{
-					AUDIO::STOP_SCRIPTED_CONVERSATION(false);
-					Global_20266.f_1 = 3;
-					Global_21605 = 0;
-					Global_21606 = 1;
-					Global_21658 = 0;
-					Global_21601 = 0;
-					Global_21602 = 0;
-					Global_21616 = 0;
-					Global_21615 = 0;
-					Global_20265 = 0;
-				}
-				else
-				{
-					func_28();
-					return 0;
-				}
-			}
-			else
-			{
-				return 0;
-			}
-		}
-		if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
-		{
-			return 0;
-		}
-		if (func_27(8, -1))
-		{
-			return 0;
-		}
-		Global_21681 = { Global_21675 };
-		func_26();
-		Global_20894 = { Global_21059 };
-		Global_21611 = Global_21612;
-		Global_21618 = Global_21619;
-		Global_2883586 = Global_2883585;
-		Global_21620 = { Global_21636 };
-		Global_21613 = Global_21614;
-		Global_22595 = Global_22596;
-		Global_22603 = { Global_22609 };
-		Global_22597 = Global_22598;
-		Global_22599 = Global_22600;
-		Global_22601 = Global_22602;
-		Global_21224.f_370 = Global_22594;
-		Global_21224.f_368 = Global_22592;
-		Global_21224.f_369 = Global_22593;
-		Global_21601 = Global_21602;
-		if (Global_21611)
-		{
-			MISC::CLEAR_BIT(&Global_8136, 20);
-			MISC::CLEAR_BIT(&Global_8137, 17);
-			MISC::CLEAR_BIT(&Global_8138, 0);
-			if (bParam2)
-			{
-				func_18();
-				if (Global_8941[Global_20266 /*2811*/][0 /*281*/].f_259 == 2)
-				{
-					if (iParam1 == 13)
-					{
-					}
-					else
-					{
-						return 0;
-					}
-				}
-				if (Global_20266.f_1 > 3)
-				{
-					return 0;
-				}
-			}
-			if (Global_20232 == 1)
-			{
-				return 0;
-			}
-			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
-			{
-				if (PED::IS_PED_IN_MELEE_COMBAT(PLAYER::PLAYER_PED_ID()))
-				{
-					return 0;
-				}
-				if (func_17())
-				{
-					return 0;
-				}
-				if (TASK::IS_PED_SPRINTING(PLAYER::PLAYER_PED_ID()))
-				{
-					return 0;
-				}
-				if (PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID()))
-				{
-					return 0;
-				}
-				if (PED::IS_PED_IN_PARACHUTE_FREE_FALL(PLAYER::PLAYER_PED_ID()))
-				{
-					return 0;
-				}
-				if (WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("GADGET_PARACHUTE")))
-				{
-					return 0;
-				}
-				if (!Global_78319)
-				{
-					if (ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()))
-					{
-						return 0;
-					}
-					if (PLAYER::IS_PLAYER_CLIMBING(PLAYER::PLAYER_ID()))
-					{
-						return 0;
-					}
-					if (PED::IS_PED_PLANTING_BOMB(PLAYER::PLAYER_PED_ID()))
-					{
-						return 0;
-					}
-					if (PLAYER::IS_SPECIAL_ABILITY_ACTIVE(PLAYER::PLAYER_ID(), 0))
-					{
-						return 0;
-					}
-				}
-			}
-			if (func_16())
-			{
-				return 0;
-			}
-			else
-			{
-				switch (Global_20266.f_1)
-				{
-					case 7:
-						return 0;
-						break;
-					
-					case 8:
-						return 0;
-						break;
-					
-					case 9:
-						break;
-					
-					case 10:
-						break;
-					
-					default:
-						break;
-				}
-				if (BitTest(Global_8136, 9))
-				{
-					return 0;
-				}
-			}
-			func_15();
-			Global_21615 = bParam2;
-		}
-		Global_21607 = iParam1;
-		StringCopy(&Global_21224, sParam0, 24);
-		Global_20471 = 0;
-		func_14();
-		func_9();
-		return 1;
-	}
-	if (Global_21605 == 5)
-	{
-		return 0;
-	}
-	if (iParam1 < Global_21607 || iParam1 == Global_21607)
-	{
-		return 0;
-	}
-	if (iParam1 == 2)
-	{
-	}
-	else
-	{
-		func_28();
-	}
-	return 0;
-}
-
-void func_9()//Position - 0x7FD
-{
-	if (!func_10())
-	{
-		return;
-	}
-	if (Global_21611)
-	{
-		MemCopy(&(Global_1973149.f_1), {Global_21224}, 4);
-		Global_1973149 = Global_7451;
-		Global_1973149.f_6 = Global_21615;
-	}
-}
-
-int func_10()//Position - 0x834
-{
-	if (!Global_262145.f_28866 /* Tunable: 1028571554 */)
-	{
-		return 0;
-	}
-	if (!Global_78319)
-	{
-		return 0;
-	}
-	if (PLAYER::PLAYER_ID() == func_13())
-	{
-		return 0;
-	}
-	if (func_11(PLAYER::PLAYER_ID()))
-	{
-		return 0;
-	}
-	if (BitTest(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_1, 7))
-	{
-		return 0;
-	}
-	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
-	{
-		return 0;
-	}
-	return 1;
-}
-
-bool func_11(int iParam0)//Position - 0x897
-{
-	return func_12(iParam0, 20);
-}
-
-var func_12(int iParam0, int iParam1)//Position - 0x8A7
-{
-	return BitTest(Global_1892703[iParam0 /*599*/].f_10.f_4, iParam1);
-}
-
-int func_13()//Position - 0x8BF
-{
-	return -1;
-}
-
-void func_14()//Position - 0x8C8
-{
-	int iVar0;
-	
-	iVar0 = 0;
-	while (iVar0 <= 69)
-	{
-		StringCopy(&(Global_20473[iVar0 /*6*/]), "", 24);
-		iVar0++;
-	}
-	AUDIO::STOP_SCRIPTED_CONVERSATION(false);
-	Global_21605 = 1;
-}
-
-void func_15()//Position - 0x8F9
-{
-	Global_21658 = Global_21657;
-	Global_21652 = Global_21653;
-	Global_21699 = { Global_21687 };
-	Global_21705 = { Global_21693 };
-	Global_21660 = Global_21659;
-	Global_21729 = { Global_21711 };
-	Global_21735 = { Global_21717 };
-	Global_21741 = { Global_21723 };
-	Global_21747 = { Global_21753 };
-	Global_7451 = Global_7452;
-	Global_7453 = Global_7454;
-	Global_21616 = Global_21617;
-	Global_21618 = Global_21619;
-	Global_21620 = { Global_21636 };
-	Global_21609 = Global_21610;
-	Global_22621 = 0;
-	Global_21654 = 0;
-	Global_21655 = 0;
-	MISC::CLEAR_BIT(&Global_8137, 16);
-}
-
-int func_16()//Position - 0x98E
-{
-	if (Global_20266.f_1 == 1 || Global_20266.f_1 == 0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_17()//Position - 0x9B5
-{
-	int iVar0;
-	int iVar1;
-	
-	if (Global_78319)
-	{
-		iVar0 = 0;
-		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true);
-		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
-		{
-			if ((iVar1 == joaat("WEAPON_SNIPERRIFLE") || iVar1 == joaat("WEAPON_HEAVYSNIPER")) || iVar1 == joaat("WEAPON_REMOTESNIPER"))
-			{
-				iVar0 = 1;
-			}
-		}
-		if (CAM::IS_AIM_CAM_ACTIVE() && iVar0 == 1)
-		{
-			return 1;
-		}
-		else
-		{
-			return 0;
-		}
-	}
-	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
-	{
-		if (PED::GET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 78, true))
-		{
-			return 1;
-		}
-		else
-		{
-			return 0;
-		}
-	}
-	return 1;
-}
-
-void func_18()//Position - 0xA4E
-{
-	if (func_25(14))
-	{
-		if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
-		{
-			if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == Global_113386.f_28050[0 /*29*/])
-			{
-				Global_20266 = 0;
-			}
-			else if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == Global_113386.f_28050[1 /*29*/])
-			{
-				Global_20266 = 1;
-			}
-			else if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == Global_113386.f_28050[2 /*29*/])
-			{
-				Global_20266 = 2;
-			}
-			else
-			{
-				Global_20266 = 0;
-			}
-		}
-	}
-	else
-	{
-		Global_20266 = func_19();
-		if (Global_20266 == 145)
-		{
-			Global_20266 = 3;
-		}
-		if (Global_78319)
-		{
-			Global_20266 = 3;
-		}
-		if (Global_20266 > 3)
-		{
-			Global_20266 = 3;
-		}
-	}
-}
-
-var func_19()//Position - 0xAF0
-{
-	func_20();
-	return Global_113386.f_2363.f_539.f_4321;
-}
-
-void func_20()//Position - 0xB09
-{
-	int iVar0;
-	
-	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
-	{
-		if (func_23(Global_113386.f_2363.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
-		{
-			iVar0 = func_22(PLAYER::PLAYER_PED_ID());
-			if (func_21(iVar0) && (!func_25(14) || Global_112337))
-			{
-				if (Global_113386.f_2363.f_539.f_4321 != iVar0 && func_21(Global_113386.f_2363.f_539.f_4321))
-				{
-					Global_113386.f_2363.f_539.f_4322 = Global_113386.f_2363.f_539.f_4321;
-				}
-				Global_113386.f_2363.f_539.f_4323 = iVar0;
-				Global_113386.f_2363.f_539.f_4321 = iVar0;
-				return;
-			}
-		}
-		else
-		{
-			if (Global_113386.f_2363.f_539.f_4321 != 145)
-			{
-				Global_113386.f_2363.f_539.f_4323 = Global_113386.f_2363.f_539.f_4321;
-			}
-			return;
-		}
-	}
-	Global_113386.f_2363.f_539.f_4321 = 145;
-}
-
-bool func_21(int iParam0)//Position - 0xC06
-{
-	return iParam0 < 3;
-}
-
-int func_22(int iParam0)//Position - 0xC12
-{
-	int iVar0;
-	int iVar1;
-	
-	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		iVar1 = ENTITY::GET_ENTITY_MODEL(iParam0);
-		iVar0 = 0;
-		while (iVar0 <= 2)
-		{
-			if (func_23(iVar0) == iVar1)
-			{
-				return iVar0;
-			}
-			iVar0++;
-		}
-	}
-	return 145;
-}
-
-int func_23(int iParam0)//Position - 0xC4F
-{
-	if (func_21(iParam0))
-	{
-		return func_24(iParam0);
-	}
-	else if (iParam0 != 145)
-	{
-	}
-	return 0;
-}
-
-var func_24(int iParam0)//Position - 0xC74
-{
-	return Global_1998[iParam0 /*29*/];
-}
-
-bool func_25(int iParam0)//Position - 0xC83
-{
-	return Global_43052 == iParam0;
-}
-
-void func_26()//Position - 0xC91
-{
-	int iVar0;
-	
-	iVar0 = 0;
-	while (iVar0 <= 15)
-	{
-		Global_20894[iVar0 /*10*/] = 0;
-		StringCopy(&(Global_20894[iVar0 /*10*/].f_1), "", 24);
-		Global_20894[iVar0 /*10*/].f_7 = 0;
-		Global_20894[iVar0 /*10*/].f_8 = 0;
-		iVar0++;
-	}
-	Global_20894.f_161 = -99;
-	Global_20894.f_162 = { 0f, 0f, 0f };
-}
-
-bool func_27(int iParam0, int iParam1)//Position - 0xCE8
-{
-	switch (iParam0)
-	{
-		case 5:
-			if (iParam1 > -1)
-			{
-				return Global_1648034.f_203[iParam1];
-			}
-			break;
-	}
-	return BitTest(Global_1648034.f_1048, iParam0);
-}
-
-void func_28()//Position - 0xD20
-{
-	AUDIO::RESTART_SCRIPTED_CONVERSATION();
-	Global_22616 = 0;
-	if ((AUDIO::IS_MOBILE_PHONE_CALL_ONGOING() || Global_20266.f_1 == 9) || Global_20265 == 1)
-	{
-		AUDIO::STOP_SCRIPTED_CONVERSATION(false);
-		Global_21605 = 6;
-		Global_20266.f_1 = 3;
-		return;
-	}
-	if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
-	{
-		AUDIO::STOP_SCRIPTED_CONVERSATION(true);
-		Global_21605 = 6;
-		return;
-	}
-}
-
-void func_29(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, var uParam5)//Position - 0xD77
-{
-	Global_21059 = { *uParam0 };
-	Global_7452 = iParam1;
-	StringCopy(&Global_21675, sParam2, 24);
-	Global_22594 = uParam5;
-	if (iParam3 == 0)
-	{
-		Global_22592 = 1;
-		Global_22590 = 0;
-	}
-	else
-	{
-		Global_22592 = 0;
-		Global_22590 = 1;
-	}
-	if (iParam4 == 0)
-	{
-		Global_22593 = 1;
-		Global_22591 = 0;
-	}
-	else
-	{
-		Global_22593 = 0;
-		Global_22591 = 1;
-	}
-}
-
-void func_30(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5)//Position - 0xDCD
-{
-	if ((uParam0[iParam1 /*10*/])->f_7 == 1)
-	{
-	}
-	(*uParam0)[iParam1 /*10*/] = iParam2;
-	StringCopy(&((uParam0[iParam1 /*10*/])->f_1), sParam3, 24);
-	(uParam0[iParam1 /*10*/])->f_7 = 1;
-	(uParam0[iParam1 /*10*/])->f_8 = iParam4;
-	(uParam0[iParam1 /*10*/])->f_9 = iParam5;
-	if (!Global_78319)
-	{
-		if (!PED::IS_PED_INJURED(iParam2))
-		{
-			if ((uParam0[iParam1 /*10*/])->f_8 == 0)
-			{
-				PED::SET_PED_CAN_PLAY_AMBIENT_ANIMS(iParam2, false);
-			}
-			else
-			{
-				PED::SET_PED_CAN_PLAY_AMBIENT_ANIMS(iParam2, true);
-			}
-		}
-		if (!PED::IS_PED_INJURED(iParam2))
-		{
-			if ((uParam0[iParam1 /*10*/])->f_9 == 0)
-			{
-				PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(iParam2, false);
-			}
-			else
-			{
-				PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(iParam2, true);
-			}
-		}
-	}
-}
-
-int func_31(int* iParam0, float fParam1)//Position - 0xE68
-{
-	if (func_35(iParam0))
-	{
-		if (func_32(iParam0) > fParam1)
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-float func_32(var uParam0)//Position - 0xE8A
-{
-	if (func_35(uParam0))
-	{
-		if (func_33(uParam0))
-		{
-			return uParam0->f_2;
-		}
-		else
-		{
-			return (func_6(BitTest(*uParam0, 4)) - uParam0->f_1);
-		}
-	}
-	return uParam0->f_1;
-}
-
-bool func_33(var uParam0)//Position - 0xEC6
-{
-	return BitTest(*uParam0, 2);
-}
-
-void func_34(int* iParam0)//Position - 0xED3
-{
-	if (!func_35(iParam0))
-	{
-		func_4(iParam0);
-	}
-}
-
-bool func_35(var uParam0)//Position - 0xEEB
-{
-	return BitTest(*uParam0, 1);
-}
-
-int func_36()//Position - 0xEF8
-{
-	if (!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() || STREAMING::GET_PLAYER_SWITCH_TYPE() == 3)
-	{
-		return 0;
-	}
-	if (STREAMING::GET_PLAYER_SWITCH_STATE() > 8)
-	{
-		if (STREAMING::GET_PLAYER_SWITCH_STATE() != 11)
-		{
-			return 0;
-		}
-		if (STREAMING::GET_PLAYER_SWITCH_STATE() == 11)
-		{
-			if (STREAMING::GET_PLAYER_SWITCH_INTERP_OUT_DURATION() > 0)
-			{
-				if (STREAMING::GET_PLAYER_SWITCH_INTERP_OUT_CURRENT_TIME() > 100)
-				{
-					return 0;
-				}
-			}
-		}
-	}
-	return 1;
-}
-
-void func_37(var uParam0, int iParam1, char* sParam2, int iParam3, bool bParam4, int iParam5, bool bParam6)//Position - 0xF4D
-{
-	func_38(uParam0, iParam1, sParam2, iParam3, bParam4, iParam5, bParam6);
-}
-
-void func_38(var uParam0, int iParam1, char* sParam2, int iParam3, bool bParam4, var uParam5, bool bParam6)//Position - 0xF67
-{
-	func_39(uParam0, iParam1, 0f, 0f, 0f, sParam2, iParam3, bParam4, uParam5, bParam6);
-}
-
-void func_39(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iParam4, bool bParam5, var uParam6, bool bParam7)//Position - 0xF84
-{
-	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-	{
-		func_68(uParam0, 0, 0);
-	}
-	uParam0->f_6 = 2;
-	func_40(uParam0, iParam1, Param2, sParam3, iParam4, bParam5, uParam6, bParam7);
-}
-
-void func_40(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iParam4, bool bParam5, var uParam6, bool bParam7)//Position - 0xFBC
-{
-	int iVar0;
-	int iVar1;
-	
-	if (uParam0->f_1 && CAM::IS_GAMEPLAY_HINT_ACTIVE())
-	{
-		if (MISC::GET_GAME_TIMER() >= (uParam0->f_8 + uParam0->f_9))
-		{
-			uParam0->f_1 = 0;
-		}
-	}
-	iVar0 = sParam3;
-	if (MISC::IS_STRING_NULL(iVar0))
-	{
-		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-		{
-			iVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
-		}
-		else
-		{
-			iVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
-		}
-	}
-	if (func_67(iVar0))
-	{
-		func_66();
-	}
-	if (func_65(iParam1) && ENTITY::IS_ENTITY_VISIBLE(iParam1))
-	{
-		iVar1 = 0;
-		if (ENTITY::IS_ENTITY_A_PED(iParam1))
-		{
-			PED::REQUEST_PED_VISIBILITY_TRACKING(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam1));
-			PED::REQUEST_PED_VEHICLE_VISIBILITY_TRACKING(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam1), true);
-			if (PED::IS_TRACKED_PED_VISIBLE(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam1)))
-			{
-				iVar1 = 1;
-			}
-		}
-		else if (ENTITY::IS_ENTITY_A_VEHICLE(iParam1))
-		{
-			VEHICLE::TRACK_VEHICLE_VISIBILITY(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iParam1));
-			if (VEHICLE::IS_VEHICLE_VISIBLE(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iParam1)))
-			{
-				iVar1 = 1;
-			}
-		}
-		else if (ENTITY::IS_ENTITY_AN_OBJECT(iParam1))
-		{
-			OBJECT::TRACK_OBJECT_VISIBILITY(ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iParam1));
-			if (OBJECT::IS_OBJECT_VISIBLE(ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iParam1)))
-			{
-				iVar1 = 1;
-			}
-		}
-		if (!CAM::IS_GAMEPLAY_HINT_ACTIVE())
-		{
-			if (func_60(uParam0, bParam5, bParam7, 0))
-			{
-				func_56(uParam0, iParam1, Param2, iParam4);
-			}
-			if (*uParam0)
-			{
-				*uParam0 = 0;
-			}
-			else if (uParam0->f_6 == 2)
-			{
-				if (func_45(iVar0))
-				{
-					if ((MISC::IS_STRING_NULL(uParam0->f_3) && !MISC::IS_STRING_NULL(iVar0)) && PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
-					{
-						if ((iVar1 && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && uParam6)
-						{
-							if (!func_67(iVar0))
-							{
-								func_44(iVar0, -1);
-								uParam0->f_3 = iVar0;
-								if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
-								{
-									func_43(1);
-								}
-							}
-						}
-					}
-				}
-			}
-			else if (func_45(iVar0))
-			{
-				if (MISC::IS_STRING_NULL(uParam0->f_3) && !MISC::IS_STRING_NULL(iVar0))
-				{
-					if (((ENTITY::IS_ENTITY_ON_SCREEN(iParam1) && iVar1) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && uParam6)
-					{
-						if (!func_67(iVar0))
-						{
-							func_44(iVar0, -1);
-							uParam0->f_3 = iVar0;
-							if (MISC::ARE_STRINGS_EQUAL("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */, iVar0))
-							{
-								func_43(1);
-							}
-						}
-					}
-				}
-			}
-		}
-		else
-		{
-			if (!MISC::IS_STRING_NULL(sParam3))
-			{
-				if (func_67(sParam3))
-				{
-					HUD::CLEAR_HELP(true);
-				}
-			}
-			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-			{
-				if (PED::IS_PED_IN_ANY_BOAT(PLAYER::PLAYER_PED_ID()))
-				{
-					if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(3) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(3) == 4)
-					{
-						func_68(uParam0, iVar0, 1);
-					}
-				}
-				else if (PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID()))
-				{
-					if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(6) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(6) == 4)
-					{
-						func_68(uParam0, iVar0, 1);
-					}
-				}
-				else if (PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID()))
-				{
-					if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(4) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(4) == 4)
-					{
-						func_68(uParam0, iVar0, 1);
-					}
-				}
-				else if (PED::IS_PED_IN_ANY_SUB(PLAYER::PLAYER_PED_ID()))
-				{
-					if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(5) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(5) == 4)
-					{
-						func_68(uParam0, iVar0, 1);
-					}
-				}
-				else if (PED::IS_PED_ON_ANY_BIKE(PLAYER::PLAYER_PED_ID()))
-				{
-					if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(2) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(2) == 4)
-					{
-						func_68(uParam0, iVar0, 1);
-					}
-				}
-				else if (CAM::GET_FOLLOW_VEHICLE_CAM_VIEW_MODE() == 3 || CAM::GET_FOLLOW_VEHICLE_CAM_VIEW_MODE() == 4)
-				{
-					func_68(uParam0, iVar0, 1);
-				}
-			}
-			if (!func_60(uParam0, bParam5, bParam7, 0))
-			{
-				if ((!*uParam0 && !uParam0->f_1) && !func_42(uParam0))
-				{
-					func_41(uParam0);
-				}
-			}
-		}
-	}
-	else
-	{
-		func_68(uParam0, iVar0, 0);
-	}
-}
-
-void func_41(var uParam0)//Position - 0x1325
-{
-	if (func_65(PLAYER::PLAYER_PED_ID()))
-	{
-		TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());
-	}
-	if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
-	{
-		CAM::SET_CINEMATIC_BUTTON_ACTIVE(true);
-		CAM::STOP_GAMEPLAY_HINT(false);
-		AUDIO::STOP_AUDIO_SCENE("HINT_CAM_SCENE");
-		GRAPHICS::ANIMPOSTFX_STOP("FocusIn");
-		if (uParam0->f_11)
-		{
-			GRAPHICS::ANIMPOSTFX_PLAY("FocusOut", 0, false);
-			AUDIO::PLAY_SOUND_FRONTEND(-1, "FocusOut", "HintCamSounds", true);
-			uParam0->f_11 = 0;
-		}
-	}
-	uParam0->f_2 = -1;
-	*uParam0 = 1;
-}
-
-int func_42(var uParam0)//Position - 0x1389
-{
-	int iVar0;
-	
-	if (uParam0->f_2 > 0)
-	{
-		iVar0 = (uParam0->f_10 / 2);
-		if (uParam0->f_2 + iVar0) > MISC::GET_GAME_TIMER()
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-int func_43(bool bParam0)//Position - 0x13B4
-{
-	switch (Global_43052)
-	{
-		case 0:
-		case 3:
-			if (bParam0)
-			{
-				Global_113386.f_10049.f_100++;
-			}
-			return Global_113386.f_10049.f_100;
-			break;
-		
-		case 4:
-			if (bParam0)
-			{
-				Global_113386.f_10049.f_101++;
-			}
-			return Global_113386.f_10049.f_101;
-			break;
-		
-		case 5:
-		case 15:
-			if (bParam0)
-			{
-				Global_113386.f_10049.f_102++;
-			}
-			return Global_113386.f_10049.f_102;
-			break;
-		
-		default:
-			break;
-	}
-	return 3;
-}
-
-void func_44(char* sParam0, int iParam1)//Position - 0x145E
-{
-	HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP(sParam0);
-	HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, false, true, iParam1);
-}
-
-int func_45(char* sParam0)//Position - 0x1475
-{
-	if (!func_46(1, 1, 0))
-	{
-		if ((!MISC::IS_STRING_NULL_OR_EMPTY(sParam0) && func_67(sParam0)) || func_67("CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */))
-		{
-			HUD::CLEAR_HELP(true);
-		}
-		return 0;
-	}
-	switch (Global_43052)
-	{
-		case 0:
-		case 3:
-			if (func_43(0) < 3)
-			{
-				return 1;
-			}
-			break;
-		
-		case 4:
-			if (func_43(0) < 1)
-			{
-				return 1;
-			}
-			break;
-		
-		case 5:
-		case 15:
-			if (func_43(0) < 1)
-			{
-				return 1;
-			}
-			break;
-		
-		default:
-			break;
-	}
-	return 0;
-}
-
-int func_46(bool bParam0, bool bParam1, bool bParam2)//Position - 0x150D
-{
-	int iVar0;
-	int iVar1;
-	
-	if (bParam0)
-	{
-		if (!PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
-		{
-			return 0;
-		}
-	}
-	if (bParam2)
-	{
-		return 1;
-	}
-	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
-	{
-		return 0;
-	}
-	if (func_55(0))
-	{
-		return 0;
-	}
-	if (func_54())
-	{
-		return 0;
-	}
-	if (NETWORK::NETWORK_TEXT_CHAT_IS_TYPING())
-	{
-		return 0;
-	}
-	if (Global_75485)
-	{
-		return 0;
-	}
-	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("appinternet")) > 0)
-	{
-		return 0;
-	}
-	if (Global_60335)
-	{
-		return 0;
-	}
-	if (bParam1)
-	{
-		if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-		{
-			if (PED::IS_PED_IN_ANY_BOAT(PLAYER::PLAYER_PED_ID()))
-			{
-				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(3) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(3) == 4)
-				{
-					return 0;
-				}
-			}
-			else if (PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID()))
-			{
-				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(6) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(6) == 4)
-				{
-					return 0;
-				}
-			}
-			else if (PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID()))
-			{
-				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(4) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(4) == 4)
-				{
-					return 0;
-				}
-			}
-			else if (PED::IS_PED_IN_ANY_SUB(PLAYER::PLAYER_PED_ID()))
-			{
-				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(5) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(5) == 4)
-				{
-					return 0;
-				}
-			}
-			else if (PED::IS_PED_ON_ANY_BIKE(PLAYER::PLAYER_PED_ID()))
-			{
-				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(2) == 3 || CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(2) == 4)
-				{
-					return 0;
-				}
-			}
-			else if (CAM::GET_FOLLOW_VEHICLE_CAM_VIEW_MODE() == 3 || CAM::GET_FOLLOW_VEHICLE_CAM_VIEW_MODE() == 4)
-			{
-				return 0;
-			}
-			if (CAM::IS_GAMEPLAY_CAM_LOOKING_BEHIND())
-			{
-				return 0;
-			}
-		}
-	}
-	if ((func_53() || func_52(Global_4718592.f_168757)) || func_51())
-	{
-		if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
-		{
-			iVar0 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
-			iVar1 = func_50(PLAYER::PLAYER_PED_ID(), 0);
-			if (((VEHICLE::IS_TURRET_SEAT(iVar0, iVar1) || (ENTITY::GET_ENTITY_MODEL(iVar0) == joaat("apc") && iVar1 != -1)) || (ENTITY::GET_ENTITY_MODEL(iVar0) == joaat("akula") && iVar1 != -1)) || (((ENTITY::GET_ENTITY_MODEL(iVar0) == joaat("riot2") && iVar1 == 0) && func_49(iVar0, 10)) && VEHICLE::GET_VEHICLE_MOD(iVar0, 10) != -1))
-			{
-				return 0;
-			}
-		}
-	}
-	if (Global_1957727)
-	{
-		return 0;
-	}
-	if (func_47(PLAYER::PLAYER_ID()))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_47(int iParam0)//Position - 0x1766
-{
-	if (iParam0 != func_13())
-	{
-		if (func_48(iParam0, 1, 1))
-		{
-			return Global_2689235[iParam0 /*453*/].f_318.f_6 != -1;
-		}
-		else if ((Global_1575058 && iParam0 == PLAYER::PLAYER_ID()) && func_48(iParam0, 1, 0))
-		{
-			return Global_2689235[iParam0 /*453*/].f_318.f_6 != -1;
-		}
-	}
-	return 0;
-}
-
-int func_48(int iParam0, bool bParam1, bool bParam2)//Position - 0x17CC
-{
-	int iVar0;
-	
-	iVar0 = iParam0;
-	if (iVar0 != -1)
-	{
-		if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
-		{
-			if (bParam1)
-			{
-				if (!PLAYER::IS_PLAYER_PLAYING(iParam0))
-				{
-					return 0;
-				}
-			}
-			if (bParam2)
-			{
-				if (iVar0 == Global_2703735.f_3)
-				{
-					return Global_2703735.f_2;
-				}
-				else if (Global_2689235[iVar0 /*453*/] != 4)
-				{
-					return 0;
-				}
-			}
-			return 1;
-		}
-	}
-	return 0;
-}
-
-int func_49(int iParam0, int iParam1)//Position - 0x182C
-{
-	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
-	{
-		if (VEHICLE::GET_NUM_MOD_KITS(iParam0) > 0)
-		{
-			switch (iParam1)
-			{
-				case 17:
-				case 18:
-				case 19:
-				case 20:
-				case 21:
-				case 22:
-					return 1;
-					break;
-				
-				default:
-					if (VEHICLE::GET_NUM_VEHICLE_MODS(iParam0, iParam1) > 0)
-					{
-						return 1;
-					}
-					break;
-				}
-			}
-	}
-	return 0;
-}
-
-int func_50(int iParam0, bool bParam1)//Position - 0x188E
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-	
-	if (!PED::IS_PED_INJURED(iParam0))
-	{
-		if (PED::IS_PED_IN_ANY_VEHICLE(iParam0, bParam1))
-		{
-			iVar0 = PED::GET_VEHICLE_PED_IS_IN(iParam0, bParam1);
-			if (ENTITY::DOES_ENTITY_EXIST(iVar0))
-			{
-				iVar1 = VEHICLE::GET_VEHICLE_MODEL_NUMBER_OF_SEATS(ENTITY::GET_ENTITY_MODEL(iVar0));
-				if (iVar1 == 1)
-				{
-					iVar3 = -1;
-					return iVar3;
-				}
-				iVar2 = 0;
-				while (iVar2 < iVar1)
-				{
-					iVar3 = (iVar2 - 1);
-					if (!VEHICLE::IS_VEHICLE_SEAT_FREE(iVar0, iVar3, false))
-					{
-						if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, iVar3, false) == iParam0)
-						{
-							return iVar3;
-						}
-					}
-					iVar2++;
-				}
-			}
-		}
-	}
-	return iVar3;
-}
-
-var func_51()//Position - 0x1913
-{
-	return Global_2714762.f_19;
-}
-
-bool func_52(int iParam0)//Position - 0x1921
-{
-	return iParam0 == 51;
-}
-
-var func_53()//Position - 0x192E
-{
-	return Global_2714762.f_18;
-}
-
-bool func_54()//Position - 0x193C
-{
-	return MISC::GET_GAME_TIMER() <= Global_23150.f_6269 + 100;
-}
-
-int func_55(int iParam0)//Position - 0x1951
-{
-	if (iParam0 == 1)
-	{
-		if (Global_20266.f_1 > 3)
-		{
-			if (BitTest(Global_8136, 14))
-			{
-				return 1;
-			}
-			else
-			{
-				return 0;
-			}
-		}
-		else
-		{
-			return 0;
-		}
-	}
-	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
-	{
-		return 1;
-	}
-	if (Global_20266.f_1 > 3)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-void func_56(var uParam0, int iParam1, struct<3> Param2, int iParam3)//Position - 0x19A8
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-	int iVar4;
-	
-	if (Global_1581357 == 1)
-	{
-		return;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam1, false))
-	{
-		func_68(uParam0, 0, 0);
-	}
-	if (func_59(Param2, 0f, 0f, 0f, 0))
-	{
-		if (ENTITY::IS_ENTITY_A_PED(iParam1))
-		{
-			iVar0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam1);
-			if (!PED::IS_PED_IN_ANY_VEHICLE(iVar0, false))
-			{
-				if (PED::IS_PED_A_PLAYER(iVar0))
-				{
-					if (!func_57())
-					{
-						Param2 = { 0f, 0f, 1f };
-					}
-				}
-				else if (PED::IS_PED_MALE(iVar0))
-				{
-					Param2 = { 0f, 0f, 1f };
-				}
-			}
-		}
-	}
-	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
-	iVar1 = uParam0->f_9;
-	iVar2 = uParam0->f_10;
-	if (iParam3 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
-	{
-		if (iVar1 < 1500)
-		{
-			iVar1 = 1500;
-		}
-		if (iVar2 < 1500)
-		{
-			iVar2 = 1500;
-		}
-	}
-	CAM::SET_GAMEPLAY_ENTITY_HINT(iParam1, Param2, true, -1, iVar1, iVar2, iParam3);
-	iVar3 = 2048;
-	iVar4 = 3;
-	TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), iParam1, -1, iVar3, iVar4);
-	GRAPHICS::ANIMPOSTFX_PLAY("FocusIn", 0, false);
-	AUDIO::START_AUDIO_SCENE("HINT_CAM_SCENE");
-	AUDIO::PLAY_SOUND_FRONTEND(-1, "FocusIn", "HintCamSounds", true);
-	uParam0->f_11 = 1;
-	uParam0->f_8 = MISC::GET_GAME_TIMER();
-	uParam0->f_1 = 1;
-	*uParam0 = 0;
-}
-
-bool func_57()//Position - 0x1AB4
-{
-	return func_58(PLAYER::PLAYER_ID());
-}
-
-int func_58(int iParam0)//Position - 0x1AC4
-{
-	if (ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)) == joaat("MP_F_Freemode_01"))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-bool func_59(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x1AE3
-{
-	if (bParam2)
-	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
-	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
-}
-
-int func_60(var uParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 0x1B2A
-{
-	if (uParam0->f_1)
-	{
-		if (MISC::GET_GAME_TIMER() >= (uParam0->f_8 + uParam0->f_9))
-		{
-			uParam0->f_1 = 0;
-		}
-	}
-	switch (uParam0->f_5)
-	{
-		case 0:
-			uParam0->f_7 = 0;
-			if (uParam0->f_6 == 0)
-			{
-				if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-				{
-					if (func_64(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_4 = MISC::GET_GAME_TIMER();
-						uParam0->f_5 = 1;
-						uParam0->f_7 = 1;
-					}
-				}
-				else if (func_63(bParam1, bParam2, bParam3))
-				{
-					uParam0->f_4 = MISC::GET_GAME_TIMER();
-					uParam0->f_5 = 1;
-					uParam0->f_7 = 1;
-				}
-			}
-			else if (uParam0->f_6 == 1)
-			{
-				if (func_63(bParam1, bParam2, bParam3))
-				{
-					uParam0->f_4 = MISC::GET_GAME_TIMER();
-					uParam0->f_5 = 1;
-					uParam0->f_7 = 1;
-				}
-			}
-			else if (uParam0->f_6 == 2)
-			{
-				if (func_64(bParam1, bParam2, bParam3))
-				{
-					uParam0->f_4 = MISC::GET_GAME_TIMER();
-					uParam0->f_5 = 1;
-					uParam0->f_7 = 1;
-				}
-			}
-			if (func_42(uParam0))
-			{
-				uParam0->f_7 = 1;
-				uParam0->f_5 = 4;
-			}
-			break;
-		
-		case 1:
-			if ((MISC::GET_GAME_TIMER() - uParam0->f_4) <= 500)
-			{
-				if (uParam0->f_6 == 0)
-				{
-					if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-					{
-						if (!func_64(bParam1, bParam2, bParam3))
-						{
-							uParam0->f_4 = MISC::GET_GAME_TIMER();
-							uParam0->f_5 = 3;
-						}
-					}
-					else if (!func_63(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_4 = MISC::GET_GAME_TIMER();
-						uParam0->f_5 = 3;
-					}
-				}
-				else if (uParam0->f_6 == 1)
-				{
-					if (!func_63(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_4 = MISC::GET_GAME_TIMER();
-						uParam0->f_5 = 3;
-					}
-				}
-				else if (uParam0->f_6 == 2)
-				{
-					if (!func_64(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_4 = MISC::GET_GAME_TIMER();
-						uParam0->f_5 = 3;
-					}
-				}
-			}
-			else
-			{
-				uParam0->f_5 = 2;
-			}
-			break;
-		
-		case 2:
-			if (uParam0->f_6 == 0)
-			{
-				if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-				{
-					if (!func_64(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_5 = 0;
-					}
-				}
-				else if (!func_63(bParam1, bParam2, bParam3))
-				{
-					uParam0->f_5 = 0;
-				}
-			}
-			else if (uParam0->f_6 == 1)
-			{
-				if (!func_63(bParam1, bParam2, bParam3) || PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-				{
-					uParam0->f_5 = 0;
-				}
-			}
-			else if (uParam0->f_6 == 2)
-			{
-				if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true) || TASK::GET_IS_TASK_ACTIVE(PLAYER::PLAYER_PED_ID(), 2))
-				{
-					uParam0->f_5 = 0;
-				}
-				else if (!func_64(bParam1, bParam2, bParam3))
-				{
-					uParam0->f_5 = 0;
-				}
-			}
-			break;
-		
-		case 3:
-			if ((MISC::GET_GAME_TIMER() - uParam0->f_4) > 500)
-			{
-				if (uParam0->f_6 == 0)
-				{
-					if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
-					{
-						if (func_62(bParam1, bParam2, bParam3))
-						{
-							uParam0->f_5 = 0;
-						}
-					}
-					else if (func_61(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_5 = 0;
-					}
-				}
-				else if (uParam0->f_6 == 1)
-				{
-					if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true) || func_61(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_5 = 0;
-					}
-				}
-				else if (uParam0->f_6 == 2)
-				{
-					if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true) || TASK::GET_IS_TASK_ACTIVE(PLAYER::PLAYER_PED_ID(), 2))
-					{
-						uParam0->f_5 = 0;
-					}
-					else if (func_62(bParam1, bParam2, bParam3))
-					{
-						uParam0->f_5 = 0;
-					}
-				}
-			}
-			break;
-		
-		case 4:
-			if (!func_42(uParam0))
-			{
-				uParam0->f_5 = 0;
-			}
-			break;
-	}
-	if (!func_46(bParam1, bParam2, bParam3))
-	{
-		uParam0->f_5 = 0;
-		uParam0->f_7 = 0;
-	}
-	if (uParam0->f_7)
-	{
-		func_66();
-		return 1;
-	}
-	else
-	{
-		return 0;
-	}
-	return 0;
-}
-
-int func_61(bool bParam0, bool bParam1, bool bParam2)//Position - 0x1E96
-{
-	if (!func_46(bParam0, bParam1, bParam2))
-	{
-		return 0;
-	}
-	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
-	{
-		if (!PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID()))
-		{
-			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 140 /*INPUT_MELEE_ATTACK_LIGHT*/, true);
-			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/, true);
-			if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/))
-			{
-				return 1;
-			}
-		}
-	}
-	return 0;
-}
-
-int func_62(bool bParam0, bool bParam1, bool bParam2)//Position - 0x1EE8
-{
-	if (!func_46(bParam0, bParam1, bParam2))
-	{
-		return 0;
-	}
-	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
-	{
-		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/, true);
-		if (CAM::IS_FOLLOW_VEHICLE_CAM_ACTIVE())
-		{
-			if (PAD::IS_DISABLED_CONTROL_JUST_RELEASED(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/))
-			{
-				CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
-				return 1;
-			}
-		}
-	}
-	return 0;
-}
-
-int func_63(bool bParam0, bool bParam1, bool bParam2)//Position - 0x1F31
-{
-	if (!func_46(bParam0, bParam1, bParam2))
-	{
-		return 0;
-	}
-	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
-	{
-		if (!PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID()))
-		{
-			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 140 /*INPUT_MELEE_ATTACK_LIGHT*/, true);
-			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/, true);
-			if (PAD::IS_DISABLED_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/) && MISC::GET_GAME_TIMER() > Global_116)
-			{
-				return 1;
-			}
-		}
-	}
-	return 0;
-}
-
-int func_64(bool bParam0, bool bParam1, bool bParam2)//Position - 0x1F90
-{
-	if (!func_46(bParam0, bParam1, bParam2))
-	{
-		return 0;
-	}
-	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
-	{
-		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/, true);
-		if (CAM::IS_FOLLOW_VEHICLE_CAM_ACTIVE())
-		{
-			if (PAD::IS_DISABLED_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 80 /*INPUT_VEH_CIN_CAM*/) && MISC::GET_GAME_TIMER() > Global_116)
-			{
-				CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
-				return 1;
-			}
-		}
-	}
-	return 0;
-}
-
-int func_65(int iParam0)//Position - 0x1FE6
-{
-	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		if (ENTITY::IS_ENTITY_A_VEHICLE(iParam0))
-		{
-			if (VEHICLE::IS_VEHICLE_DRIVEABLE(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iParam0), false))
-			{
-				return 1;
-			}
-		}
-		else if (ENTITY::IS_ENTITY_A_PED(iParam0))
-		{
-			if (!PED::IS_PED_INJURED(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam0)))
-			{
-				return 1;
-			}
-		}
-		else if (ENTITY::IS_ENTITY_AN_OBJECT(iParam0))
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-void func_66()//Position - 0x2041
-{
-	MISC::SET_BIT(&Global_8137, 4);
-}
-
-bool func_67(char* sParam0)//Position - 0x2051
-{
-	HUD::BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(sParam0);
-	return HUD::END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED(0);
-}
-
-void func_68(var uParam0, int iParam1, bool bParam2)//Position - 0x2064
-{
-	char* sVar0;
-	
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		if (BitTest(Global_2815059.f_4660, 26))
-		{
-			return;
-		}
-	}
-	if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
-	{
-		CAM::STOP_GAMEPLAY_HINT(bParam2);
-		GRAPHICS::ANIMPOSTFX_STOP("FocusIn");
-		AUDIO::STOP_AUDIO_SCENE("HINT_CAM_SCENE");
-		if (uParam0->f_11)
-		{
-			GRAPHICS::ANIMPOSTFX_PLAY("FocusOut", 0, false);
-			AUDIO::PLAY_SOUND_FRONTEND(-1, "FocusOut", "HintCamSounds", true);
-			uParam0->f_11 = 0;
-		}
-	}
-	CAM::SET_CINEMATIC_BUTTON_ACTIVE(true);
-	uParam0->f_1 = 0;
-	*uParam0 = 0;
-	uParam0->f_2 = -1;
-	uParam0->f_8 = 0;
-	uParam0->f_5 = 0;
-	uParam0->f_6 = 0;
-	sVar0 = iParam1;
-	if (MISC::IS_STRING_NULL(sVar0))
-	{
-		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-		{
-			sVar0 = "CMN_HINT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus on the target. */;
-		}
-		else
-		{
-			sVar0 = "FM_IHELP_HNT" /* GXT: ~s~Press ~INPUT_VEH_CIN_CAM~ to toggle focus. */;
-		}
-	}
-	if (!MISC::IS_STRING_NULL(uParam0->f_3))
-	{
-		if (func_67(uParam0->f_3))
-		{
-			HUD::CLEAR_HELP(true);
-		}
-	}
-	if (!MISC::IS_STRING_NULL(sVar0))
-	{
-		if (func_67(sVar0))
-		{
-			HUD::CLEAR_HELP(true);
-		}
-	}
 }
 
 int func_69(int iParam0, int iParam1)//Position - 0x2137
@@ -2505,7 +737,6 @@ int func_69(int iParam0, int iParam1)//Position - 0x2137
 	float fVar2;
 	float fVar3;
 	float fVar4;
-	
 	switch (iLocal_480[iParam0])
 	{
 		case 0:
@@ -2538,7 +769,6 @@ int func_69(int iParam0, int iParam1)//Position - 0x2137
 				}
 			}
 			break;
-		
 		case 1:
 			if (!func_78(iLocal_447[iParam0], iLocal_450[iParam0], &(iLocal_480[iParam0]), -1, -2))
 			{
@@ -2650,7 +880,6 @@ int func_69(int iParam0, int iParam1)//Position - 0x2137
 				return 0;
 			}
 			break;
-		
 		case 2:
 			if (!func_78(iLocal_447[iParam0], iLocal_450[iParam0], &(iLocal_480[iParam0]), -1, -2))
 			{
@@ -2674,7 +903,6 @@ int func_69(int iParam0, int iParam1)//Position - 0x2137
 				return 0;
 			}
 			break;
-		
 		case 3:
 			if (!func_78(iLocal_447[iParam0], iLocal_450[iParam0], &(iLocal_480[iParam0]), -1, -2))
 			{
@@ -2691,7 +919,6 @@ int func_69(int iParam0, int iParam1)//Position - 0x2137
 				}
 			}
 			break;
-		
 		case 4:
 			if (PED::IS_PED_INJURED(iLocal_447[iParam0]))
 			{
@@ -2716,10 +943,8 @@ int func_69(int iParam0, int iParam1)//Position - 0x2137
 				return 0;
 			}
 			break;
-		
 		case -1:
 			break;
-		
 		case -2:
 			if (!PED::IS_PED_INJURED(iLocal_447[iParam0]))
 			{
@@ -2735,7 +960,6 @@ int func_69(int iParam0, int iParam1)//Position - 0x2137
 				return 0;
 			}
 			break;
-		
 		default:
 			break;
 	}
@@ -2747,7 +971,6 @@ void func_70(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 	float fVar0;
 	float fVar1;
 	float fVar2;
-	
 	if (!fParam4 < fParam3)
 	{
 		fParam4 = (fParam3 - 0.1f);
@@ -2775,7 +998,6 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 	float fVar8;
 	int iVar9;
 	int iVar10;
-	
 	if (iLocal_81 == 0)
 	{
 		if (*uParam2 < fParam3)
@@ -2795,7 +1017,7 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 	}
 	fVar5 = (fParam3 * fParam9);
 	fVar6 = (((fParam6 - fParam5) * 0.4f) + fParam5);
-	fVar2 = func_76(iParam0, iParam1);
+	fVar2 = __LIB_12__.func_35(iParam0, iParam1);
 	if (fVar2 < 0f)
 	{
 		fVar2 = (fVar2 * -1f);
@@ -2812,7 +1034,7 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 	fVar4 = fParam3;
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		if (func_74(iParam1, iParam0))
+		if (__LIB_11__.func_140(iParam1, iParam0))
 		{
 			if (PED::IS_PED_IN_ANY_VEHICLE(iParam1, false))
 			{
@@ -2829,9 +1051,9 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 		}
 		else if (fVar2 < fParam5)
 		{
-			if (func_73(iParam0, iParam1) < fParam5)
+			if (__LIB_12__.func_34(iParam0, iParam1) < fParam5)
 			{
-				fVar1 = func_72(iParam0, iParam1);
+				fVar1 = __LIB_12__.func_33(iParam0, iParam1);
 				fVar1 = (fVar1 + -15f);
 				if (fVar1 < 0f)
 				{
@@ -2936,134 +1158,6 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 	}
 }
 
-float func_72(int iParam0, int iParam1)//Position - 0x2A74
-{
-	struct<2> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	struct<3> Var3;
-	float fVar4;
-	int iVar5;
-	
-	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
-	{
-		Var0.f_0 = ENTITY::GET_ENTITY_FORWARD_X(iParam0);
-		Var0.f_1 = ENTITY::GET_ENTITY_FORWARD_Y(iParam0);
-	}
-	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
-	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
-		if (PED::IS_PED_IN_ANY_VEHICLE(iParam1, false))
-		{
-			iVar5 = PED::GET_VEHICLE_PED_IS_IN(iParam1, false);
-			Var3.f_0 = ENTITY::GET_ENTITY_FORWARD_X(iVar5);
-			Var3.f_1 = ENTITY::GET_ENTITY_FORWARD_Y(iVar5);
-		}
-		else
-		{
-			Var2 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
-			Var3 = { Var2 - Var1 };
-		}
-	}
-	fVar4 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var0.f_0, Var0.f_1, Var3.f_0, Var3.f_1);
-	return fVar4;
-}
-
-float func_73(int iParam0, int iParam1)//Position - 0x2B05
-{
-	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	float fVar3;
-	
-	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
-	{
-		Var0 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-	}
-	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
-	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
-	}
-	Var2 = { Var1 - Var0 };
-	Var2.f_2 = 0f;
-	fVar3 = SYSTEM::VMAG(Var2);
-	return fVar3;
-}
-
-int func_74(int iParam0, int iParam1)//Position - 0x2B57
-{
-	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	struct<3> Var3;
-	struct<3> Var4;
-	float fVar5;
-	
-	if (!PED::IS_PED_INJURED(iParam0))
-	{
-		if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
-		{
-			if (PED::IS_PED_IN_VEHICLE(iParam0, iParam1, false))
-			{
-				return 0;
-			}
-		}
-	}
-	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
-	{
-		Var0 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-	}
-	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam1, false))
-	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
-		Var2 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
-		Var4 = { Var2 - Var1 };
-	}
-	Var3 = { Var1 - Var0 };
-	Var3.f_2 = 0f;
-	Var4.f_2 = 0f;
-	fVar5 = func_75(Var3, Var4);
-	if (fVar5 < 0f)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-float func_75(struct<3> Param0, struct<3> Param1)//Position - 0x2BFA
-{
-	return (((Param0.f_0 * Param1.f_0) + (Param0.f_1 * Param1.f_1)) + (Param0.f_2 * Param1.f_2));
-}
-
-float func_76(int iParam0, int iParam1)//Position - 0x2C1B
-{
-	struct<2> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	struct<3> Var3;
-	float fVar4;
-	
-	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
-	{
-		Var0.f_0 = ENTITY::GET_ENTITY_FORWARD_X(iParam0);
-		Var0.f_1 = ENTITY::GET_ENTITY_FORWARD_Y(iParam0);
-		Var2 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-	}
-	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
-	{
-		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
-	}
-	Var1 = { Var3 - Var2 };
-	fVar4 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var1.f_0, Var1.f_1, Var0.f_0, Var0.f_1);
-	fVar4 = (fVar4 + -90f);
-	if (fVar4 < 0f)
-	{
-		fVar4 = (fVar4 * -1f);
-	}
-	Var1.f_2 = 0f;
-	return (SYSTEM::VMAG(Var1) * SYSTEM::SIN(fVar4));
-}
-
 int func_77(int iParam0, var uParam1)//Position - 0x2CAA
 {
 	if (*uParam1 < 0)
@@ -3083,14 +1177,14 @@ int func_78(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4)//Po
 	}
 	if (PED::IS_PED_INJURED(iParam0))
 	{
-		if (!func_7(&uLocal_269, "PRSAUD", &Local_474, 3, 0, 0, 0))
+		if (!__LIB_37__.func_799(&uLocal_269, "PRSAUD", &Local_474, 3, 0, 0, 0))
 		{
 			return 0;
 		}
 		else
 		{
 			*uParam2 = iParam3;
-			func_4(&iLocal_477);
+			__LIB_6__.func_892(&iLocal_477);
 			return 0;
 		}
 		Local_473 = { Local_473 };
@@ -3110,7 +1204,6 @@ int func_79()//Position - 0x2D41
 {
 	int iVar0;
 	int iVar1;
-	
 	iVar1 = -1;
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -3118,7 +1211,7 @@ int func_79()//Position - 0x2D41
 		func_69(iVar0, &iVar1);
 		iVar0++;
 	}
-	if (!func_36())
+	if (!__LIB_12__.func_114())
 	{
 		return 1;
 	}
@@ -3129,7 +1222,6 @@ int func_80()//Position - 0x2D74
 {
 	int iVar0;
 	int iVar1;
-	
 	iVar0 = PED::GET_VEHICLE_PED_IS_USING(PLAYER::PLAYER_PED_ID());
 	if (!ENTITY::IS_ENTITY_DEAD(iVar0, false))
 	{
@@ -3162,136 +1254,11 @@ int func_80()//Position - 0x2D74
 	return 0;
 }
 
-int func_81(int iParam0, int iParam1)//Position - 0x2E51
-{
-	struct<3> Var0;
-	float fVar1;
-	
-	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
-	{
-		if (STREAMING::GET_PLAYER_SWITCH_TYPE() != 3)
-		{
-			if (STREAMING::GET_PLAYER_SWITCH_STATE() <= 2 && STREAMING::GET_PLAYER_SWITCH_STATE() != 1)
-			{
-				return 1;
-			}
-		}
-	}
-	if (!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
-	{
-		if (func_25(14))
-		{
-			return 0;
-		}
-		if (MISC::GET_IS_PLAYER_IN_ANIMAL_FORM())
-		{
-			return 0;
-		}
-		if (!func_83(iParam0, func_84()))
-		{
-			return 0;
-		}
-		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
-		{
-			Var0 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
-			fVar1 = SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), Var0);
-			if (fVar1 > 250f)
-			{
-				if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
-				{
-					if (!ENTITY::IS_ENTITY_ON_SCREEN(iParam1))
-					{
-						return 0;
-					}
-				}
-				else if (!CAM::IS_SPHERE_VISIBLE(Var0, 1.5f))
-				{
-					return 0;
-				}
-			}
-		}
-		else if (iParam1 == func_82(Global_100162) && iParam1 != 0)
-		{
-			Global_100162 = 0;
-		}
-	}
-	return 1;
-}
-
-int func_82(var uParam0)//Position - 0x2F35
-{
-	return uParam0;
-}
-
-bool func_83(var uParam0, var uParam1)//Position - 0x2F3F
-{
-	return (uParam0 && uParam1) != 0;
-}
-
-int func_84()//Position - 0x2F4E
-{
-	func_20();
-	switch (Global_113386.f_2363.f_539.f_4321)
-	{
-		case 0:
-			return 1;
-			break;
-		
-		case 1:
-			return 2;
-			break;
-		
-		case 2:
-			return 4;
-			break;
-	}
-	return 0;
-}
-
-void func_85()//Position - 0x2F94
-{
-	if (!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
-	{
-		if (CAM::IS_SCREEN_FADED_OUT())
-		{
-			func_88();
-		}
-		return;
-	}
-	if (STREAMING::GET_PLAYER_SWITCH_TYPE() == 3)
-	{
-		func_88();
-		return;
-	}
-	func_86();
-	if (Global_100164 > 0)
-	{
-		return;
-	}
-	STREAMING::ALLOW_PLAYER_SWITCH_OUTRO();
-}
-
-void func_86()//Position - 0x2FD4
-{
-	func_87((Global_100164 - 1));
-}
-
-void func_87(int iParam0)//Position - 0x2FE6
-{
-	Global_100164 = iParam0;
-}
-
-void func_88()//Position - 0x2FF4
-{
-	func_87(0);
-}
-
 void func_89()//Position - 0x3001
 {
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
 	iVar1 = 0;
 	bVar2 = false;
 	while (!bVar2 && iVar1 < 400)
@@ -3379,10 +1346,9 @@ void func_90()//Position - 0x324F
 	var uVar3;
 	var uVar4;
 	float fVar5;
-	
 	iLocal_268 = Global_99844;
 	func_92(iLocal_268, &Local_456, &fLocal_457, &cVar0);
-	func_91(iLocal_268, &Local_458, &uVar1, &fLocal_462, &fLocal_463, &uVar2, &uVar3, &uVar4);
+	__LIB_12__.func_126(iLocal_268, &Local_458, &uVar1, &fLocal_462, &fLocal_463, &uVar2, &uVar3, &uVar4);
 	switch (iLocal_268)
 	{
 		case 281:
@@ -3411,7 +1377,6 @@ void func_90()//Position - 0x324F
 			iLocal_470 = 1;
 			fLocal_482 = 1f;
 			break;
-		
 		case 282:
 			Local_452[0 /*3*/] = { -21.211f, 7.393f, 0f };
 			fLocal_453[0] = 0.7266f;
@@ -3438,7 +1403,6 @@ void func_90()//Position - 0x324F
 			iLocal_470 = 1;
 			fLocal_482 = 1f;
 			break;
-		
 		case 283:
 			Local_452[0 /*3*/] = { -7.9514f, -28.1131f, 1.094f };
 			Local_452[1 /*3*/] = { -10.876f, -26.4702f, 1.1106f };
@@ -3468,7 +1432,6 @@ void func_90()//Position - 0x324F
 			iLocal_470 = 1;
 			fLocal_482 = 1f;
 			break;
-		
 		case 284:
 			Local_452[0 /*3*/] = { 12.7813f, 6.7387f, 0f };
 			fLocal_453[0] = -2.6961f;
@@ -3495,7 +1458,6 @@ void func_90()//Position - 0x324F
 			fLocal_482 = 0.95f;
 			fLocal_265 = 10f;
 			break;
-		
 		case 275:
 			Local_452[0 /*3*/] = { -9.151f, -1.3167f, 0.9699f };
 			Local_452[1 /*3*/] = { -10.4908f, 3.3092f, 0f };
@@ -3526,7 +1488,6 @@ void func_90()//Position - 0x324F
 			iLocal_470 = 1;
 			fLocal_482 = 1f;
 			break;
-		
 		case 276:
 			Local_452[0 /*3*/] = { 1.5168f, -20.0085f, 0.1667f };
 			Local_452[1 /*3*/] = { -4.9822f, -20.365f, 0.1911f };
@@ -3557,7 +1518,6 @@ void func_90()//Position - 0x324F
 			iLocal_470 = 1;
 			fLocal_482 = 1f;
 			break;
-		
 		case 277:
 			Local_452[0 /*3*/] = { -14.3569f, 0.1057f, 0f };
 			Local_452[1 /*3*/] = { -14.8079f, 6.2547f, 0f };
@@ -3588,7 +1548,6 @@ void func_90()//Position - 0x324F
 			iLocal_470 = 1;
 			fLocal_482 = 1f;
 			break;
-		
 		default:
 			fVar5 = ((fLocal_457 + 90f) + MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f));
 			Local_452[0 /*3*/] = { Vector(0f, SYSTEM::COS(fVar5), SYSTEM::SIN(fVar5)) * FtoV(MISC::GET_RANDOM_FLOAT_IN_RANGE(15f, 25f)) };
@@ -3619,145 +1578,9 @@ void func_90()//Position - 0x324F
 	}
 }
 
-int func_91(int iParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7)//Position - 0x3A67
-{
-	switch (iParam0)
-	{
-		case 231:
-			StringCopy(sParam1, "lkexcile2_chase", 16);
-			*uParam2 = 100;
-			*uParam3 = 6500f;
-			*uParam4 = 12700f;
-			*uParam5 = (5000f + 12700f);
-			*uParam6 = 1f;
-			*uParam7 = 1f;
-			return 1;
-			break;
-		
-		case 75:
-			StringCopy(sParam1, "scene_m_fbi2_", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 6200f;
-			*uParam5 = (5000f + 6200f);
-			*uParam6 = 0.4f;
-			*uParam7 = 0.8f;
-			return 1;
-			break;
-		
-		case 76:
-			StringCopy(sParam1, "scene_f_fra2_", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam5 = 8500f;
-			*uParam4 = 4750f;
-			*uParam6 = 0.4f;
-			*uParam7 = 0.7f;
-			return 1;
-			break;
-		
-		case 173:
-			StringCopy(sParam1, "scene_m_biking", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 2000f;
-			*uParam5 = 5000f;
-			*uParam6 = 1f;
-			*uParam7 = 1f;
-			return 1;
-			break;
-		
-		case 281:
-			StringCopy(sParam1, "scene_t_chaseA", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 2000f;
-			*uParam5 = 7500f;
-			*uParam6 = 1f;
-			*uParam7 = 1f;
-			return 1;
-			break;
-		
-		case 282:
-			StringCopy(sParam1, "scene_t_chaseB", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 1500f;
-			*uParam5 = 10000f;
-			*uParam6 = 0.5f;
-			*uParam7 = 0.75f;
-			return 1;
-			break;
-		
-		case 283:
-			StringCopy(sParam1, "scene_t_chaseC", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 1500f;
-			*uParam5 = 10000f;
-			*uParam6 = 0.9f;
-			*uParam7 = 1.1f;
-			return 1;
-			break;
-		
-		case 284:
-			StringCopy(sParam1, "scene_t_chaseD", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 2000f;
-			*uParam5 = 5000f;
-			*uParam6 = 1f;
-			*uParam7 = 1f;
-			return 1;
-			break;
-		
-		case 275:
-			StringCopy(sParam1, "scene_t_policeA", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 2000f;
-			*uParam5 = 10000f;
-			*uParam6 = 0.5f;
-			*uParam7 = 0.75f;
-			return 1;
-			break;
-		
-		case 276:
-			StringCopy(sParam1, "scene_t_policeB", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 2000f;
-			*uParam5 = 5000f;
-			*uParam6 = 1f;
-			*uParam7 = 1f;
-			return 1;
-			break;
-		
-		case 277:
-			StringCopy(sParam1, "scene_t_policeC", 16);
-			*uParam2 = 1;
-			*uParam3 = 1000f;
-			*uParam4 = 2000f;
-			*uParam5 = 5000f;
-			*uParam6 = 1f;
-			*uParam7 = 1f;
-			return 1;
-			break;
-	}
-	StringCopy(sParam1, "", 16);
-	*uParam2 = -1;
-	*uParam3 = -1f;
-	*uParam4 = -1f;
-	*uParam5 = -1f;
-	*uParam6 = 0f;
-	*uParam7 = 0f;
-	return 0;
-}
-
 int func_92(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x3D3E
 {
 	int iVar0;
-	
 	if (func_94(iParam0, uParam2, sParam3))
 	{
 		switch (iParam0)
@@ -3765,9 +1588,8 @@ int func_92(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x
 			case 0:
 				return 0;
 				break;
-			
 			case 1:
-				func_93(&iVar0);
+				__LIB_12__.func_128(&iVar0);
 				if (iVar0 < 5)
 				{
 					*uParam1 = { Global_95644[iVar0 /*9*/].f_3 };
@@ -3783,42 +1605,36 @@ int func_92(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x
 					return 1;
 				}
 				break;
-			
 			case 2:
 				*uParam1 = { Global_98552[0 /*109*/].f_4 };
 				*uParam2 = Global_98552[0 /*109*/].f_7;
 				StringCopy(sParam3, "", 32);
 				return 1;
 				break;
-			
 			case 3:
 				*uParam1 = { Global_98552[1 /*109*/].f_4 };
 				*uParam2 = Global_98552[1 /*109*/].f_7;
 				StringCopy(sParam3, "", 32);
 				return 1;
 				break;
-			
 			case 4:
 				*uParam1 = { Global_98552[2 /*109*/].f_4 };
 				*uParam2 = Global_98552[2 /*109*/].f_7;
 				StringCopy(sParam3, "", 32);
 				return 1;
 				break;
-			
 			case 5:
 				*uParam1 = { Global_113386.f_2363.f_539.f_2300[0 /*3*/] + Vector(-1f, 0f, 0f) };
 				*uParam2 = Global_113386.f_2363.f_539.f_2310[0];
 				StringCopy(sParam3, "", 32);
 				return 1;
 				break;
-			
 			case 6:
 				*uParam1 = { Global_113386.f_2363.f_539.f_2300[1 /*3*/] + Vector(-1f, 0f, 0f) };
 				*uParam2 = Global_113386.f_2363.f_539.f_2310[1];
 				StringCopy(sParam3, "", 32);
 				return 1;
 				break;
-			
 			case 7:
 				*uParam1 = { Global_113386.f_2363.f_539.f_2300[2 /*3*/] + Vector(-1f, 0f, 0f) };
 				*uParam2 = Global_113386.f_2363.f_539.f_2310[2];
@@ -3832,44 +1648,6 @@ int func_92(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x
 	return 0;
 }
 
-bool func_93(var uParam0)//Position - 0x3F31
-{
-	int iVar0;
-	struct<3> Var1;
-	float fVar2;
-	int iVar3;
-	struct<3> Var4;
-	float fVar5;
-	
-	iVar0 = Global_113386.f_2363.f_539.f_4323;
-	Var1 = { Global_113386.f_2363.f_539.f_2300[iVar0 /*3*/] };
-	if (func_59(Var1, 0f, 0f, 0f, 0))
-	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
-	}
-	*uParam0 = 5;
-	fVar2 = 9999999f;
-	iVar3 = 0;
-	while (iVar3 < 5)
-	{
-		if (BitTest(Global_113386.f_7229.f_11[iVar3], 0))
-		{
-			Var4 = { Global_95644[iVar3 /*9*/].f_3 };
-			fVar5 = SYSTEM::VDIST(Var1, Var4);
-			if (fVar5 > 150f)
-			{
-				if (fVar5 < fVar2)
-				{
-					*uParam0 = iVar3;
-					fVar2 = fVar5;
-				}
-			}
-		}
-		iVar3++;
-	}
-	return *uParam0 != 5;
-}
-
 int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 {
 	struct<3> Var0;
@@ -3880,15 +1658,13 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 	struct<3> Var5;
 	struct<3> Var6;
 	struct<3> Var7;
-	
 	switch (iParam0)
 	{
 		case 0:
 			return 0;
 			break;
-		
 		case 1:
-			func_93(&iVar1);
+			__LIB_12__.func_128(&iVar1);
 			if (iVar1 < 5)
 			{
 				*uParam1 = Global_95644[iVar1 /*9*/].f_6;
@@ -3902,43 +1678,36 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 2:
 			*uParam1 = Global_98552[0 /*109*/].f_7;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 3:
 			*uParam1 = Global_98552[1 /*109*/].f_7;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 4:
 			*uParam1 = Global_98552[2 /*109*/].f_7;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 5:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[0];
-			StringCopy(sParam2, func_98(Global_113386.f_2363.f_539.f_2314[0]), 32);
+			StringCopy(sParam2, __LIB_12__.func_129(Global_113386.f_2363.f_539.f_2314[0]), 32);
 			return 1;
 			break;
-		
 		case 6:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[1];
-			StringCopy(sParam2, func_98(Global_113386.f_2363.f_539.f_2314[1]), 32);
+			StringCopy(sParam2, __LIB_12__.func_129(Global_113386.f_2363.f_539.f_2314[1]), 32);
 			return 1;
 			break;
-		
 		case 7:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[2];
-			StringCopy(sParam2, func_98(Global_113386.f_2363.f_539.f_2314[2]), 32);
+			StringCopy(sParam2, __LIB_12__.func_129(Global_113386.f_2363.f_539.f_2314[2]), 32);
 			return 1;
 			break;
-		
 		case 11:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -3946,7 +1715,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 8:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -3954,15 +1722,12 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 9:
 			return func_94(8, uParam1, sParam2);
 			break;
-		
 		case 10:
 			return func_94(8, uParam1, sParam2);
 			break;
-		
 		case 13:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -3970,7 +1735,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 14:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -3978,7 +1742,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 15:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -3986,7 +1749,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 12:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -3994,7 +1756,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 16:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4002,7 +1763,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 17:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4010,7 +1770,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 18:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4018,7 +1777,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 19:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4026,7 +1784,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 20:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4034,13 +1791,11 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 21:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 22:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4048,7 +1803,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 74:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4056,11 +1810,9 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 23:
 			return func_94(208, uParam1, sParam2);
 			break;
-		
 		case 24:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4068,7 +1820,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 67:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4076,7 +1827,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 25:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4084,7 +1834,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 26:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4092,7 +1841,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 27:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4100,7 +1848,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 28:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4108,61 +1855,51 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 29:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 30:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 31:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 32:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 33:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 34:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 35:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 36:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 37:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 58:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4170,7 +1907,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 59:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4178,7 +1914,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 60:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4186,7 +1921,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 38:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4194,13 +1928,11 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 39:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 40:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4208,7 +1940,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 41:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4216,7 +1947,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 42:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4224,7 +1954,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 43:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4232,7 +1961,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 44:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4240,7 +1968,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 45:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4248,13 +1975,11 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 46:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 47:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4262,7 +1987,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 49:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4270,7 +1994,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 48:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4278,14 +2001,12 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 124:
 			Var0 = { -803.734f, 168.148f, 76.3542f };
 			*uParam1 = 105f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 50:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4293,7 +2014,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 51:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4301,7 +2021,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 52:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4309,7 +2028,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 66:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4317,13 +2035,11 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 53:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 54:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4331,7 +2047,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 55:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4339,7 +2054,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 56:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4347,7 +2061,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 57:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4355,7 +2068,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 61:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4363,7 +2075,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 62:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4371,7 +2082,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 63:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4379,13 +2089,11 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 68:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 69:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4393,7 +2101,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 64:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4401,7 +2108,6 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 65:
 			if (func_97(iParam0, &Var0, uParam1))
 			{
@@ -4409,188 +2115,157 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 70:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 71:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 72:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 73:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 0;
 			break;
-		
 		case 234:
 			*uParam1 = 122.69f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 316:
 			*uParam1 = -60.31f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 315:
 			*uParam1 = (41.654f - 180f);
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 75:
 			*uParam1 = -172.697f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 76:
 			*uParam1 = (181.8927f - 180f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 77:
 			*uParam1 = -158f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 78:
 			*uParam1 = -152f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 79:
 			*uParam1 = 20.353f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 80:
 			*uParam1 = (-48.53f + 180f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 81:
 			*uParam1 = -45f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 82:
 			*uParam1 = -113.748f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 83:
 			*uParam1 = -173.748f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 84:
 			*uParam1 = 32.7938f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 85:
 			*uParam1 = -56f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 86:
 			*uParam1 = 13f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 87:
 			*uParam1 = 166.32f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 88:
 			*uParam1 = 21f;
 			*uParam1 = -132f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 89:
 			*uParam1 = -84.8108f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 90:
 			*uParam1 = -90.5046f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 91:
 			*uParam1 = 105.0795f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 92:
 			*uParam1 = -54.347f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 93:
 			*uParam1 = 117f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 94:
 			*uParam1 = -36f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 95:
 			*uParam1 = 70f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 96:
 			*uParam1 = 34.621f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 97:
 			*uParam1 = -45f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 98:
 			*uParam1 = (-150.6148f + 0.0095f);
 			*uParam1 = (*uParam1 + 0.0004f);
@@ -4600,415 +2275,346 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 99:
 			*uParam1 = -57f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 100:
 			*uParam1 = 84.6073f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 101:
 			*uParam1 = 249.0753f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 102:
 			*uParam1 = 69f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 103:
 			*uParam1 = 143.4931f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 104:
 			*uParam1 = 123f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 105:
 			*uParam1 = 168f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 106:
 			*uParam1 = 63.4995f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 107:
 			*uParam1 = -159f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 108:
 			*uParam1 = -6f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 109:
 			*uParam1 = 99f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 110:
 			*uParam1 = 133f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 111:
 			*uParam1 = 33f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 112:
 			*uParam1 = -162.311f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 113:
 			*uParam1 = 172f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 135:
 			*uParam1 = -59.25f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 136:
 			*uParam1 = 82.254f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 137:
 			*uParam1 = -152.965f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 138:
 			*uParam1 = -10.099f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 139:
 			*uParam1 = 158.5974f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 140:
 			*uParam1 = 99.18f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 141:
 			*uParam1 = 218.4774f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 142:
 			*uParam1 = 125.6193f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 143:
 			*uParam1 = 142.373f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 144:
 			*uParam1 = -34.878f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 145:
 			*uParam1 = -172.419f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 146:
 			*uParam1 = -107.439f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 147:
 			*uParam1 = 157.311f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 148:
 			*uParam1 = -68.812f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 149:
 			*uParam1 = 4.693f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 150:
 			*uParam1 = 78.65f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 114:
 			*uParam1 = 8f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 115:
 			*uParam1 = 69f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 116:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 117:
 			*uParam1 = -74.7818f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 118:
 			*uParam1 = -48.36f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 119:
 			*uParam1 = 144.178f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 120:
 			*uParam1 = 288f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 121:
 			*uParam1 = 101.5f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 122:
 			*uParam1 = 99.72f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 123:
 			*uParam1 = 120f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 125:
 			*uParam1 = -3f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 126:
 			*uParam1 = -158.0894f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 127:
 			*uParam1 = -76.3681f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 128:
 			*uParam1 = (30f + 180f);
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 129:
 			*uParam1 = -80.6f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 130:
 			*uParam1 = -9.1673f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 131:
 			*uParam1 = -86.0894f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 132:
 			*uParam1 = -161.0894f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 133:
 			*uParam1 = (226.5579f - 270f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 134:
 			*uParam1 = -33.128f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 151:
 			*uParam1 = -6f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 152:
 			*uParam1 = 72f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 153:
 			*uParam1 = -176.25f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 154:
 			*uParam1 = -147.192f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 155:
 			*uParam1 = 59.082f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 156:
 			*uParam1 = 26.087f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 157:
 			*uParam1 = 37.27f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 158:
 			*uParam1 = -13.8153f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 159:
 			*uParam1 = -62.5f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 160:
 			*uParam1 = 119f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 161:
 			*uParam1 = 86.3776f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 162:
 			*uParam1 = 117f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 163:
 			*uParam1 = -164f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 164:
 			*uParam1 = 88f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 165:
 			*uParam1 = -144.622f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 166:
 			*uParam1 = -61.2262f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 167:
 			*uParam1 = -22.32f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 168:
 			if (func_95(0, 25, &uVar2, &fVar3))
 			{
@@ -5017,38 +2623,32 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 				return 1;
 			}
 			break;
-		
 		case 169:
 			*uParam1 = 112.841f;
 			StringCopy(sParam2, "v_michael", 32);
 			return 1;
 			break;
-		
 		case 170:
 			*uParam1 = (-103.8158f + 180f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 171:
 			*uParam1 = -28.0926f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 173:
 			*uParam1 = -0.0301f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 172:
 			*uParam1 = -30.185f;
 			*uParam1 = (*uParam1 + 0.003f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 174:
 			*uParam1 = 14.98f;
 			StringCopy(sParam2, "v_michael", 32);
@@ -5062,821 +2662,683 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 			StringCopy(sParam2, "v_franklins", 32);
 			return 1;
 			break;
-		
 		case 176:
 			*uParam1 = -147f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 177:
 			*uParam1 = -81f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 178:
 			*uParam1 = -95.4016f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 179:
 			*uParam1 = (-16.0627f + 180f);
 			StringCopy(sParam2, "v_franklins", 32);
 			return 1;
 			break;
-		
 		case 180:
 			*uParam1 = 129f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 181:
 			*uParam1 = -86.613f;
 			StringCopy(sParam2, "v_franklins", 32);
 			return 1;
 			break;
-		
 		case 182:
 			*uParam1 = -63f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 183:
 			*uParam1 = 111.688f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 184:
 			*uParam1 = 143.7974f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 185:
 			*uParam1 = 143.792f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 186:
 			*uParam1 = 4.6834f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 187:
 			*uParam1 = -108f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 188:
 			*uParam1 = 69f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 189:
 			*uParam1 = -172.2207f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 190:
 			*uParam1 = 0f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 191:
 			*uParam1 = -12.5158f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 196:
 			*uParam1 = -1.5f;
 			StringCopy(sParam2, "v_franklins", 32);
 			return 1;
 			break;
-		
 		case 197:
 			*uParam1 = 27f;
 			StringCopy(sParam2, "v_franklinshouse", 32);
 			return 1;
 			break;
-		
 		case 192:
 			*uParam1 = 107.981f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 193:
 			*uParam1 = 172.9187f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 194:
 			*uParam1 = -67.608f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 195:
 			*uParam1 = 74.1158f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 198:
 			*uParam1 = 1.0411f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 199:
 			*uParam1 = -152.203f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 200:
 			*uParam1 = (310.879f - 180f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 201:
 			*uParam1 = 130.879f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 202:
 			*uParam1 = 35.604f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 203:
 			*uParam1 = -93f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 204:
 			*uParam1 = -119.3944f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 205:
 			*uParam1 = 121.9322f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 206:
 			*uParam1 = -36f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 207:
 			*uParam1 = -95.588f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 208:
 			*uParam1 = 168f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 209:
 			*uParam1 = 230.78f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 210:
 			*uParam1 = 165.7751f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 211:
 			*uParam1 = -179f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 212:
 			*uParam1 = 1.2709f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 213:
 			*uParam1 = 84f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 214:
 			*uParam1 = -117.03f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 215:
 			*uParam1 = -49.0324f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 216:
 			*uParam1 = -45f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 217:
 			*uParam1 = 153f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 221:
 			*uParam1 = 84.96f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 222:
 			*uParam1 = -59.3848f;
 			StringCopy(sParam2, "v_chopshop", 32);
 			return 1;
 			break;
-		
 		case 223:
 			*uParam1 = 43.82f;
 			StringCopy(sParam2, "v_chopshop", 32);
 			return 1;
 			break;
-		
 		case 224:
 			return func_94(222, uParam1, sParam2);
 			break;
-		
 		case 226:
 			*uParam1 = 160f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 227:
 			*uParam1 = -14.749f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 228:
 			*uParam1 = -150f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 229:
 			*uParam1 = 96.0116f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 230:
 			*uParam1 = -43.6661f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 218:
 			*uParam1 = -70.4124f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 219:
 			*uParam1 = -12f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 220:
 			*uParam1 = -117.356f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 225:
 			*uParam1 = -83.8f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 231:
 			*uParam1 = 350.3382f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 232:
 			*uParam1 = 109.0206f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 233:
 			*uParam1 = 109.0206f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 235:
 			*uParam1 = -112f;
 			StringCopy(sParam2, "v_strip3", 32);
 			return 1;
 			break;
-		
 		case 236:
 			*uParam1 = 114f;
 			StringCopy(sParam2, "v_strip3", 32);
 			return 1;
 			break;
-		
 		case 237:
 			*uParam1 = 30f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 238:
 			*uParam1 = -164f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 239:
 			*uParam1 = -122f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 240:
 			*uParam1 = -4.124f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 241:
 			*uParam1 = 108f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 242:
 			*uParam1 = 13.7207f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 245:
 			*uParam1 = 27.746f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 243:
 			*uParam1 = 18f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 244:
 			*uParam1 = -51f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 246:
 			*uParam1 = -165f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 247:
 			*uParam1 = 133f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 248:
 			*uParam1 = 10.77f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 249:
 			*uParam1 = (138f - 180f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 250:
 			*uParam1 = 87f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 251:
 			*uParam1 = -42.8529f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 252:
 			*uParam1 = 2.6497f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 253:
 			*uParam1 = 135f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 254:
 			*uParam1 = -40f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 255:
 			*uParam1 = 30.24f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 264:
 			*uParam1 = -90f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 265:
 			*uParam1 = -144.274f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 266:
 			*uParam1 = 68.8227f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 267:
 			*uParam1 = 56.2037f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 268:
 			*uParam1 = 33f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 269:
 			*uParam1 = -106.6605f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 270:
 			*uParam1 = -102f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 271:
 			*uParam1 = 26.3597f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 272:
 			*uParam1 = -83.3175f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 273:
 			*uParam1 = -153f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 274:
 			*uParam1 = 9f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 275:
 			*uParam1 = (277.613f - 360f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 276:
 			*uParam1 = -4.7459f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 277:
 			*uParam1 = -98.56f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 278:
 			*uParam1 = -33.77f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 279:
 			*uParam1 = 155.68f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 280:
 			*uParam1 = -49.56f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 281:
 			*uParam1 = -5.8739f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 282:
 			*uParam1 = 70.1627f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 283:
 			*uParam1 = 158.979f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 284:
 			*uParam1 = -67.1851f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 285:
 			*uParam1 = 47.054f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 256:
 			*uParam1 = 120f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 257:
 			*uParam1 = 171.253f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 258:
 			*uParam1 = 10.247f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 259:
 			*uParam1 = -32.488f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 260:
 			*uParam1 = -29.093f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 261:
 			*uParam1 = 229.6085f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 286:
 			*uParam1 = -150f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 287:
 			*uParam1 = -81f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 288:
 			*uParam1 = 12f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 262:
 			*uParam1 = -90f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 263:
 			*uParam1 = -171f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 289:
 			*uParam1 = -11.5018f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 290:
 			*uParam1 = -129f;
 			StringCopy(sParam2, "v_strip3", 32);
 			return 1;
 			break;
-		
 		case 291:
 			*uParam1 = -147f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 292:
 			*uParam1 = 28.7271f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 293:
 			*uParam1 = 28.7271f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 294:
 			return func_94(293, uParam1, sParam2);
 			break;
-		
 		case 295:
 			return func_94(292, uParam1, sParam2);
 			break;
-		
 		case 299:
 			*uParam1 = 34.661f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 300:
 			return func_94(303, uParam1, sParam2);
 			break;
-		
 		case 301:
 			return func_94(303, uParam1, sParam2);
 			break;
-		
 		case 302:
 			return func_94(303, uParam1, sParam2);
 			break;
-		
 		case 303:
 			*uParam1 = 32f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 296:
 			*uParam1 = 116.742f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 297:
 			*uParam1 = 100.46f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 298:
 			*uParam1 = 102f;
 			StringCopy(sParam2, "v_Trevors", 32);
 			return 1;
 			break;
-		
 		case 304:
 			*uParam1 = -152.0894f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 305:
 			*uParam1 = 122.5269f;
 			StringCopy(sParam2, "v_methlab", 32);
 			return 1;
 			break;
-		
 		case 306:
 			Var4 = { -7.4998f, 7.4995f, -0.5258f };
 			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var4.f_0, -Var4.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 307:
 			Var5 = { 10.6345f, 0.7246f, 1.2508f };
 			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var5.f_0, -Var5.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 308:
 			Var6 = { -3.4271f, -13.6787f, -1.4107f };
 			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var6.f_0, -Var6.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 309:
 			Var7 = { -19.6582f, 7.896f, 0.1334f };
 			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var7.f_0, -Var7.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 310:
 			*uParam1 = -87.7215f;
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 311:
 			*uParam1 = -145f;
 			StringCopy(sParam2, "v_trailer", 32);
 			return 1;
 			break;
-		
 		case 312:
 			*uParam1 = ((103.2841f + 88.7571f) / 2f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 313:
 			*uParam1 = (-177f + 180f);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
-		
 		case 314:
 			*uParam1 = 327.7746f;
 			StringCopy(sParam2, "", 32);
@@ -5900,7 +3362,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					*uParam3 = -144f;
 					return 1;
 					break;
-				
 				case 1:
 					if (func_95(0, iParam1, uParam2, uParam3))
 					{
@@ -5909,7 +3370,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 						return 1;
 					}
 					break;
-				
 				case 2:
 					*uParam2 = { Vector(71.8356f, 180.5483f, -796.9911f) - Vector(71.1531f, 179.5117f, -812.0607f) };
 					*uParam3 = ((16f - 222.8314f) + 360f);
@@ -5918,7 +3378,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 			}
 			return 0;
 			break;
-		
 		case 1:
 			switch (iParam0)
 			{
@@ -5927,7 +3386,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					*uParam3 = 163.0716f;
 					return 1;
 					break;
-				
 				case 1:
 					if (func_95(0, iParam1, uParam2, uParam3))
 					{
@@ -5936,7 +3394,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 						return 1;
 					}
 					break;
-				
 				case 2:
 					if (func_95(0, iParam1, uParam2, uParam3))
 					{
@@ -5947,7 +3404,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 2:
 		case 3:
 			switch (iParam0)
@@ -5961,7 +3417,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 4:
 			switch (iParam0)
 			{
@@ -5974,7 +3429,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 18:
 			switch (iParam0)
 			{
@@ -5985,7 +3439,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 9:
 			switch (iParam0)
 			{
@@ -5996,7 +3449,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 5:
 			switch (iParam0)
 			{
@@ -6007,7 +3459,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 21:
 			switch (iParam0)
 			{
@@ -6021,7 +3472,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 6:
 			switch (iParam0)
 			{
@@ -6032,7 +3482,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 7:
 			switch (iParam0)
 			{
@@ -6043,7 +3492,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 8:
 			switch (iParam0)
 			{
@@ -6054,7 +3502,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 10:
 			switch (iParam0)
 			{
@@ -6065,7 +3512,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 11:
 			switch (iParam0)
 			{
@@ -6076,7 +3522,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 12:
 			switch (iParam0)
 			{
@@ -6088,7 +3533,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 13:
 			switch (iParam0)
 			{
@@ -6100,7 +3544,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 14:
 			switch (iParam0)
 			{
@@ -6112,7 +3555,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 15:
 			switch (iParam0)
 			{
@@ -6124,7 +3566,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 16:
 			switch (iParam0)
 			{
@@ -6135,7 +3576,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 17:
 			switch (iParam0)
 			{
@@ -6146,7 +3586,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 20:
 			switch (iParam0)
 			{
@@ -6157,7 +3596,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 22:
 			switch (iParam0)
 			{
@@ -6168,7 +3606,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 23:
 			switch (iParam0)
 			{
@@ -6180,7 +3617,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 24:
 			switch (iParam0)
 			{
@@ -6191,7 +3627,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 19:
 			switch (iParam0)
 			{
@@ -6202,7 +3637,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 25:
 			switch (iParam0)
 			{
@@ -6214,7 +3648,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 26:
 			switch (iParam0)
 			{
@@ -6225,7 +3658,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 32:
 			switch (iParam0)
 			{
@@ -6236,7 +3668,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 27:
 			switch (iParam0)
 			{
@@ -6247,7 +3678,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 41:
 			switch (iParam0)
 			{
@@ -6258,7 +3688,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 33:
 			switch (iParam0)
 			{
@@ -6272,7 +3701,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 38:
 			switch (iParam0)
 			{
@@ -6283,7 +3711,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 31:
 			switch (iParam0)
 			{
@@ -6294,7 +3721,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 34:
 			switch (iParam0)
 			{
@@ -6305,7 +3731,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 35:
 			switch (iParam0)
 			{
@@ -6316,7 +3741,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 37:
 			switch (iParam0)
 			{
@@ -6327,7 +3751,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 39:
 			switch (iParam0)
 			{
@@ -6338,7 +3761,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 40:
 			switch (iParam0)
 			{
@@ -6349,7 +3771,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 36:
 			switch (iParam0)
 			{
@@ -6360,7 +3781,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 28:
 			switch (iParam0)
 			{
@@ -6371,7 +3791,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 42:
 			switch (iParam0)
 			{
@@ -6382,7 +3801,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 43:
 			switch (iParam0)
 			{
@@ -6393,7 +3811,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 29:
 		case 30:
 		case 44:
@@ -6406,7 +3823,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 45:
 			switch (iParam0)
 			{
@@ -6417,11 +3833,9 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 46:
 			return func_95(iParam0, 26, uParam2, uParam3);
 			break;
-		
 		case 47:
 			switch (iParam0)
 			{
@@ -6433,7 +3847,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 48:
 		case 68:
 			switch (iParam0)
@@ -6445,7 +3858,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 49:
 			switch (iParam0)
 			{
@@ -6456,7 +3868,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 50:
 		case 69:
 			switch (iParam0)
@@ -6468,7 +3879,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 51:
 			switch (iParam0)
 			{
@@ -6479,7 +3889,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 52:
 		case 67:
 			switch (iParam0)
@@ -6491,7 +3900,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 53:
 			switch (iParam0)
 			{
@@ -6502,7 +3910,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 54:
 		case 70:
 			switch (iParam0)
@@ -6514,7 +3921,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 55:
 		case 71:
 			switch (iParam0)
@@ -6526,7 +3932,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 64:
 			switch (iParam0)
 			{
@@ -6537,7 +3942,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 56:
 			switch (iParam0)
 			{
@@ -6549,7 +3953,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 57:
 			switch (iParam0)
 			{
@@ -6561,7 +3964,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 58:
 			switch (iParam0)
 			{
@@ -6573,7 +3975,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 59:
 		case 72:
 			switch (iParam0)
@@ -6585,7 +3986,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 60:
 			if (func_95(iParam0, 59, uParam2, uParam3))
 			{
@@ -6594,7 +3994,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 				return 1;
 			}
 			break;
-		
 		case 61:
 		case 62:
 		case 63:
@@ -6607,7 +4006,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 65:
 			switch (iParam0)
 			{
@@ -6618,7 +4016,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 66:
 			switch (iParam0)
 			{
@@ -6629,7 +4026,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 73:
 			switch (iParam0)
 			{
@@ -6640,7 +4036,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 74:
 			switch (iParam0)
 			{
@@ -6652,7 +4047,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 75:
 		case 84:
 			switch (iParam0)
@@ -6664,7 +4058,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 76:
 		case 78:
 		case 85:
@@ -6677,7 +4070,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 77:
 			if (func_95(iParam0, 47, uParam2, uParam3))
 			{
@@ -6686,7 +4078,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 				return 1;
 			}
 			break;
-		
 		case 79:
 		case 86:
 			switch (iParam0)
@@ -6698,7 +4089,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 80:
 			switch (iParam0)
 			{
@@ -6709,7 +4099,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 81:
 			switch (iParam0)
 			{
@@ -6720,7 +4109,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 82:
 		case 83:
 			switch (iParam0)
@@ -6732,7 +4120,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 87:
 			switch (iParam0)
 			{
@@ -6743,7 +4130,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 88:
 			switch (iParam0)
 			{
@@ -6754,7 +4140,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 89:
 			switch (iParam0)
 			{
@@ -6765,7 +4150,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 90:
 			switch (iParam0)
 			{
@@ -6776,7 +4160,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 91:
 			switch (iParam0)
 			{
@@ -6787,7 +4170,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 92:
 			switch (iParam0)
 			{
@@ -6798,7 +4180,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 93:
 			switch (iParam0)
 			{
@@ -6809,7 +4190,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 94:
 			switch (iParam0)
 			{
@@ -6820,7 +4200,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 95:
 			switch (iParam0)
 			{
@@ -6831,7 +4210,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 96:
 		case 98:
 			switch (iParam0)
@@ -6843,7 +4221,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 97:
 			switch (iParam0)
 			{
@@ -6854,7 +4231,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 99:
 			switch (iParam0)
 			{
@@ -6863,7 +4239,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					*uParam3 = (84.7009f - 188.5817f);
 					return 1;
 					break;
-				
 				case 7:
 					*uParam2 = { Vector(30.6803f, -1455.8477f, -40.7478f) - Vector(30.116f, -1435.9974f, -14.3064f) };
 					*uParam3 = (90.6417f - 188.5817f);
@@ -6871,7 +4246,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 100:
 			switch (iParam0)
 			{
@@ -6882,7 +4256,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 101:
 			switch (iParam0)
 			{
@@ -6893,7 +4266,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 102:
 		case 103:
 			switch (iParam0)
@@ -6905,7 +4277,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 104:
 			switch (iParam0)
 			{
@@ -6916,7 +4287,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 105:
 			switch (iParam0)
 			{
@@ -6927,7 +4297,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 106:
 			switch (iParam0)
 			{
@@ -6938,7 +4307,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 107:
 			switch (iParam0)
 			{
@@ -6949,7 +4317,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 108:
 			switch (iParam0)
 			{
@@ -6960,7 +4327,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 109:
 			switch (iParam0)
 			{
@@ -6971,7 +4337,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 110:
 		case 111:
 			switch (iParam0)
@@ -6983,7 +4348,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 116:
 			switch (iParam0)
 			{
@@ -6995,7 +4359,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 117:
 			switch (iParam0)
 			{
@@ -7007,7 +4370,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 112:
 			switch (iParam0)
 			{
@@ -7018,7 +4380,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 113:
 			switch (iParam0)
 			{
@@ -7029,7 +4390,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 114:
 			switch (iParam0)
 			{
@@ -7040,7 +4400,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 115:
 			switch (iParam0)
 			{
@@ -7051,7 +4410,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 118:
 			switch (iParam0)
 			{
@@ -7062,7 +4420,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 119:
 			switch (iParam0)
 			{
@@ -7073,7 +4430,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 120:
 			switch (iParam0)
 			{
@@ -7084,7 +4440,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 121:
 			switch (iParam0)
 			{
@@ -7095,7 +4450,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 122:
 			switch (iParam0)
 			{
@@ -7106,7 +4460,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 123:
 			switch (iParam0)
 			{
@@ -7117,7 +4470,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 124:
 			switch (iParam0)
 			{
@@ -7129,7 +4481,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 125:
 			switch (iParam0)
 			{
@@ -7140,7 +4491,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 126:
 			switch (iParam0)
 			{
@@ -7151,7 +4501,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 127:
 			switch (iParam0)
 			{
@@ -7162,7 +4511,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 128:
 			switch (iParam0)
 			{
@@ -7179,7 +4527,7 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 						*uParam3 = (32f - 90.6729f);
 						return 1;
 					}
-					if (func_96())
+					if (__LIB_0__.func_502())
 					{
 						*uParam2 = { Vector(9.6327f, -1521.394f, -1158.133f) - Vector(9.6346f, -1517.601f, -1152.5707f) };
 						*uParam3 = (34.661f - 90.6729f);
@@ -7194,7 +4542,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 129:
 			switch (iParam0)
 			{
@@ -7205,7 +4552,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 130:
 			switch (iParam0)
 			{
@@ -7216,7 +4562,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 131:
 			switch (iParam0)
 			{
@@ -7230,7 +4575,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 132:
 			switch (iParam0)
 			{
@@ -7241,7 +4585,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 133:
 			switch (iParam0)
 			{
@@ -7252,7 +4595,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 134:
 			switch (iParam0)
 			{
@@ -7263,7 +4605,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 135:
 			switch (iParam0)
 			{
@@ -7274,7 +4615,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 136:
 			switch (iParam0)
 			{
@@ -7283,7 +4623,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					*uParam3 = 214.92f;
 					return 1;
 					break;
-				
 				case 14:
 					*uParam2 = { 4.617f, -1.1314f, 0f };
 					*uParam3 = 39.4085f;
@@ -7291,21 +4630,18 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 					break;
 			}
 			break;
-		
 		case 137:
 		case 138:
 			*uParam2 = { 0f, 0f, 0f };
 			*uParam3 = 0f;
 			return 0;
 			break;
-		
 		case 140:
 		case 141:
 			*uParam2 = { 0f, 0f, 0f };
 			*uParam3 = 0f;
 			return 0;
 			break;
-		
 		default:
 			*uParam2 = { MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), 0f };
 			*uParam3 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f);
@@ -7314,15 +4650,6 @@ int func_95(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x65
 	}
 	*uParam2 = { MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 10f), 0f };
 	*uParam3 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f);
-	return 0;
-}
-
-int func_96()//Position - 0x844F
-{
-	if (BitTest(MISC::GET_RANDOM_INT_IN_RANGE(0, 65535), 0))
-	{
-		return 1;
-	}
 	return 0;
 }
 
@@ -7335,448 +4662,341 @@ int func_97(int iParam0, var uParam1, var uParam2)//Position - 0x846D
 			*uParam2 = 111f;
 			return 1;
 			break;
-		
 		case 8:
 			*uParam1 = { -90.0089f, -1324.1947f, 28.3203f };
 			*uParam2 = 194.1887f;
 			return 1;
 			break;
-		
 		case 9:
 			return func_97(8, uParam1, uParam2);
 			break;
-		
 		case 10:
 			return func_97(8, uParam1, uParam2);
 			break;
-		
 		case 13:
 			*uParam1 = { -807.2979f, -48.4004f, 36.8173f };
 			*uParam2 = 201.6328f;
 			return 1;
 			break;
-		
 		case 14:
 			*uParam1 = { 1432.3402f, -1887.3832f, 70.5768f };
 			*uParam2 = 350.0509f;
 			return 1;
 			break;
-		
 		case 15:
 			*uParam1 = { 1666.204f, 1967.2504f, 143.3213f };
 			*uParam2 = 0.7896f;
 			return 1;
 			break;
-		
 		case 12:
 			*uParam1 = { -1440.22f, -127.02f, 50f };
 			*uParam2 = 42f;
 			return 1;
 			break;
-		
 		case 16:
 			*uParam1 = { 135.055f, -1759.6396f, 27.8957f };
 			*uParam2 = -129f;
 			return 1;
 			break;
-		
 		case 17:
 			*uParam1 = { 687.6992f, -1744.0299f, 28.3624f };
 			*uParam2 = 267.1409f;
 			return 1;
 			break;
-		
 		case 18:
 			*uParam1 = { 56.5117f, -744.6122f, 43.1356f };
 			*uParam2 = 340.0526f;
 			return 1;
 			break;
-		
 		case 19:
 			*uParam1 = { 506.485f, -1884.967f, 24.764f };
 			*uParam2 = 22.9566f;
 			return 1;
 			break;
-		
 		case 20:
 			*uParam1 = { 1555.9575f, 953.6136f, 77.2063f };
 			*uParam2 = 152.8118f;
 			return 1;
 			break;
-		
 		case 21:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 22:
 			*uParam1 = { 220.72f, -64.4177f, 68.2922f };
 			*uParam2 = (250.4535f - 360f);
 			return 1;
 			break;
-		
 		case 74:
 			*uParam1 = { 2048.07f, 3840.84f, 34.2238f };
 			*uParam2 = 119.603f;
 			return 1;
 			break;
-		
 		case 23:
 			*uParam1 = { -464.22f, -1592.98f, 38.73f };
 			*uParam2 = 168f;
 			return 1;
 			break;
-		
 		case 24:
 			*uParam1 = { (744.79f + 0.0186f), (-465.86f - 0.0114f), 36.6399f };
 			*uParam2 = 51.7279f;
 			return 1;
 			break;
-		
 		case 67:
 			*uParam1 = { -9f, 508.1f, 173.6278f };
 			*uParam2 = 151.2504f;
 			return 1;
 			break;
-		
 		case 25:
 			*uParam1 = { 72.2278f, -1464.6798f, 28.2915f };
 			*uParam2 = 156.8827f;
 			return 1;
 			break;
-		
 		case 27:
 			*uParam1 = { 763f, -906f, 24.2312f };
 			*uParam2 = 7.2736f;
 			return 1;
 			break;
-		
 		case 26:
 			*uParam1 = { 257.9167f, -1120.7855f, 28.3684f };
 			*uParam2 = 97.2736f;
 			return 1;
 			break;
-		
 		case 28:
 			*uParam1 = { 422.5858f, -978.6332f, 69.7073f };
 			*uParam2 = 4f;
 			return 1;
 			break;
-		
 		case 29:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 30:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 31:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 32:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 33:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 34:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 35:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 36:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 37:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 58:
 			*uParam1 = { 294.8521f, 882.9366f, 197.8527f };
 			*uParam2 = 162.693f;
 			return 1;
 			break;
-		
 		case 59:
 			*uParam1 = { -1771.8015f, 794.4316f, 138.4211f };
 			*uParam2 = 128.9946f;
 			return 1;
 			break;
-		
 		case 60:
 			*uParam1 = { 1495.5953f, -1848.8207f, 70.2075f };
 			*uParam2 = 32.2721f;
 			return 1;
 			break;
-		
 		case 38:
 			*uParam1 = { 2897.5544f, 4032.241f, 50.1419f };
 			*uParam2 = 192.8091f;
 			return 1;
 			break;
-		
 		case 39:
 			*uParam1 = { 1973.355f, 3818.204f, 32.005f };
 			*uParam2 = 32f;
 			return 1;
 			break;
-		
 		case 40:
 			*uParam1 = { 1973.355f, 3818.204f, 32.005f };
 			*uParam2 = 32f;
 			return 1;
 			break;
-		
 		case 41:
 			*uParam1 = { 1397f, 3725.8f, 33.0673f };
 			*uParam2 = -3.7534f;
 			return 1;
 			break;
-		
 		case 42:
 			*uParam1 = { Vector(4.0205f, -2975.3408f, 798.4536f) + Vector(1f, 0f, 0f) };
 			*uParam2 = 90f;
 			return 1;
 			break;
-		
 		case 43:
 			*uParam1 = { 709.0244f, -2916.4788f, 5.0589f };
 			*uParam2 = 355.326f;
 			return 1;
 			break;
-		
 		case 44:
 			*uParam1 = { 643.5248f, -2917.325f, 5.1337f };
 			*uParam2 = 334.1068f;
 			return 1;
 			break;
-		
 		case 45:
 			*uParam1 = { 595.2742f, -2819.1826f, 5.0559f };
 			*uParam2 = 46.8853f;
 			return 1;
 			break;
-		
 		case 46:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 47:
 			*uParam1 = { 314.4171f, 965.207f, 208.4024f };
 			*uParam2 = 165.9421f;
 			return 1;
 			break;
-		
 		case 49:
 			*uParam1 = { 3321.5369f, 4975.4546f, 25.9097f };
 			*uParam2 = 221.228f;
 			return 1;
 			break;
-		
 		case 48:
 			*uParam1 = { -111.1318f, 6316.479f, 30.4904f };
 			*uParam2 = (42f + 180f);
 			return 1;
 			break;
-		
 		case 50:
 			*uParam1 = { -731.3261f, 106.68f, 54.7169f };
 			*uParam2 = 98.9764f;
 			return 1;
 			break;
-		
 		case 51:
 			*uParam1 = { -1257.5f, -526.9999f, 30.2361f };
 			*uParam2 = 220.9554f;
 			return 1;
 			break;
-		
 		case 52:
 			*uParam1 = { 736.9869f, -2050.678f, 28.2718f };
 			*uParam2 = 83.9922f;
 			return 1;
 			break;
-		
 		case 66:
 			*uParam1 = { 262.5499f, -2540.1504f, 4.8433f };
 			*uParam2 = -64.1366f;
 			return 1;
 			break;
-		
 		case 53:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 55:
 			*uParam1 = { -315.7789f, 6201.355f, 30.4322f };
 			*uParam2 = 127.7547f;
 			return 1;
 			break;
-		
 		case 56:
 			*uParam1 = { 118.0988f, -1264.916f, 32.3637f };
 			*uParam2 = -63f;
 			return 1;
 			break;
-		
 		case 57:
 			*uParam1 = { 37.5988f, -1351.5203f, 28.2954f };
 			*uParam2 = 90.0339f;
 			return 1;
 			break;
-		
 		case 61:
 			*uParam1 = { -558.2693f, 261.1167f, 82.07f };
 			*uParam2 = 84.6231f;
 			return 1;
 			break;
-		
 		case 62:
 			*uParam1 = { -196.9999f, 507.9999f, 132.477f };
 			*uParam2 = 99.6049f;
 			return 1;
 			break;
-		
 		case 63:
 			*uParam1 = { 1312.01f, -1645.87f, 51.2f };
 			*uParam2 = 120f;
 			return 1;
 			break;
-		
 		case 68:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 69:
 			*uParam1 = { -818.7374f, 6.4824f, 41.2432f };
 			*uParam2 = 211.8223f;
 			return 1;
 			break;
-		
 		case 64:
 			*uParam1 = { 2091.2583f, 4714.852f, 40.1936f };
 			*uParam2 = 136.0867f;
 			return 1;
 			break;
-		
 		case 54:
 			*uParam1 = { 1762.59f, 3247.212f, 40.735f };
 			*uParam2 = 27.0648f;
 			return 1;
 			break;
-		
 		case 65:
 			*uParam1 = { 1764.013f, 3252.902f, 40.735f };
 			*uParam2 = 27.0648f;
 			return 1;
 			break;
-		
 		case 70:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 71:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 72:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		case 73:
 			*uParam1 = { 0f, 0f, 0f };
 			*uParam2 = 0f;
 			return 1;
 			break;
-		
 		default:
 			break;
 	}
 	return 0;
 }
 
-char* func_98(int iParam0)//Position - 0x8DDC
-{
-	switch (iParam0)
-	{
-		case joaat("v_chopshop"):
-			return "v_chopshop";
-			break;
-		
-		case joaat("v_franklins"):
-			return "v_franklins";
-			break;
-		
-		case joaat("v_franklinshouse"):
-			return "v_franklinshouse";
-			break;
-		
-		case joaat("v_methlab"):
-			return "v_methlab";
-			break;
-		
-		case joaat("v_michael"):
-			return "v_michael";
-			break;
-		
-		case joaat("v_strip3"):
-			return "v_strip3";
-			break;
-		
-		case joaat("v_trailer"):
-			return "v_trailer";
-			break;
-		
-		case joaat("v_trevors"):
-			return "v_Trevors";
-			break;
-	}
-	return "";
-}
-
 void func_99()//Position - 0x8E6E
 {
 	int iVar0;
-	
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -7796,7 +5016,7 @@ void func_99()//Position - 0x8E6E
 		}
 		iVar0++;
 	}
-	func_68(&uLocal_434, 0, 0);
+	__LIB_9__.func_981(&uLocal_434, 0, 0);
 	MISC::SET_GAME_PAUSED(false);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

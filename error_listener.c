@@ -64,7 +64,6 @@
 	float fLocal_62 = 0f;
 	var uLocal_63 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -96,7 +95,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (func_11())
+		if (__LIB_0__.func_114())
 		{
 			return;
 		}
@@ -115,7 +114,6 @@ void func_2()//Position - 0xAE
 	int iVar1;
 	struct<2> Var2;
 	var uVar3;
-	
 	iVar0 = 0;
 	while (iVar0 < SCRIPT::GET_NUMBER_OF_EVENTS(2))
 	{
@@ -139,9 +137,8 @@ void func_2()//Position - 0xAE
 void func_3(int iParam0)//Position - 0x116
 {
 	int iVar0;
-	
 	iVar0 = *iParam0;
-	if (((func_5() && func_4(iVar0)) && iVar0 != 248) && NETWORK::NETWORK_CAN_BAIL())
+	if (((__LIB_0__.func_706() && func_4(iVar0)) && iVar0 != 248) && NETWORK::NETWORK_CAN_BAIL())
 	{
 		NETWORK::NETWORK_BAIL(0, 1, 0);
 	}
@@ -150,11 +147,6 @@ void func_3(int iParam0)//Position - 0x116
 bool func_4(int iParam0)//Position - 0x14F
 {
 	return (((iParam0 == 249 || iParam0 == 250) || iParam0 == 251) || iParam0 == 248);
-}
-
-bool func_5()//Position - 0x17D
-{
-	return Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_192 != 0;
 }
 
 int func_6(int iParam0)//Position - 0x194
@@ -186,7 +178,6 @@ int func_7(int iParam0, var uParam1)//Position - 0x1C7
 void func_8(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0x215
 {
 	var uVar0;
-	
 	if (((iParam2 == 248 || iParam2 == 249) || iParam2 == 250) || iParam2 == 251)
 	{
 		if (SCRIPT::GET_EVENT_DATA(iParam0, iParam1, &uVar0, 1))
@@ -206,11 +197,6 @@ void func_9(var uParam0)//Position - 0x25A
 bool func_10(int iParam0)//Position - 0x270
 {
 	return func_4(iParam0);
-}
-
-int func_11()//Position - 0x27E
-{
-	return 0;
 }
 
 void func_12()//Position - 0x287

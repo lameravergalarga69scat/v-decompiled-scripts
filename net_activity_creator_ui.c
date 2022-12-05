@@ -113,7 +113,6 @@
 	var uLocal_111 = 0;
 	var uScriptParam_0 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;

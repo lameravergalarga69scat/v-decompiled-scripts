@@ -39,7 +39,6 @@
 	var uScriptParam_19 = -1;
 	var uScriptParam_20 = -1;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;

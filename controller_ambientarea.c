@@ -35,13 +35,11 @@
 	float fLocal_33 = 0f;
 	var uLocal_34 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
 	int iVar1;
 	struct<3> Var2;
-	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
 	iLocal_4 = 134;
@@ -63,7 +61,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_33 = 0.17f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(98))
 	{
-		func_15();
+		__LIB_0__.func_199();
 	}
 	func_14();
 	iVar0 = 0;
@@ -82,7 +80,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if (func_12(iVar0, Var2))
 				{
-					func_11(&(Global_32299[iVar0 /*7*/]), 2);
+					__LIB_0__.func_711(&(Global_32299[iVar0 /*7*/]), 2);
 					if (Global_32299[iVar0 /*7*/].f_5 != 0)
 					{
 						if (SCRIPT::IS_THREAD_ACTIVE(Global_32299[iVar0 /*7*/].f_5))
@@ -93,7 +91,7 @@ void __EntryFunction__()//Position - 0x0
 					}
 				}
 			}
-			else if (!func_10(Global_32299[iVar0 /*7*/], 4))
+			else if (!__LIB_0__.func_517(Global_32299[iVar0 /*7*/], 4))
 			{
 				if (func_5(&(Global_32299[iVar0 /*7*/]), Var2))
 				{
@@ -116,7 +114,6 @@ void func_1(int iParam0)//Position - 0x14A
 	int iVar1;
 	int iVar2;
 	bool bVar3;
-	
 	iVar2 = 1424;
 	bVar3 = true;
 	switch (iParam0)
@@ -125,26 +122,22 @@ void func_1(int iParam0)//Position - 0x14A
 			sVar0 = "re_ArmyBase";
 			iVar1 = joaat("re_armybase");
 			break;
-		
 		case 1:
 			iVar2 = 5050;
 			sVar0 = "golf_ai_foursome";
 			iVar1 = joaat("golf_ai_foursome");
 			bVar3 = false;
 			break;
-		
 		case 3:
 			sVar0 = "re_Prison";
 			iVar1 = joaat("re_prison");
 			break;
-		
 		case 2:
 			iVar2 = 5050;
 			sVar0 = "golf_ai_foursome_putting";
 			iVar1 = joaat("golf_ai_foursome_putting");
 			bVar3 = false;
 			break;
-		
 		case 4:
 			iVar2 = 2050;
 			sVar0 = "stripclub";
@@ -152,7 +145,7 @@ void func_1(int iParam0)//Position - 0x14A
 			bVar3 = false;
 			break;
 	}
-	if (!bVar3 && func_3())
+	if (!bVar3 && __LIB_20__.func_575())
 	{
 		return;
 	}
@@ -169,36 +162,17 @@ void func_1(int iParam0)//Position - 0x14A
 			SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(sVar0);
 			if (Global_32299[iParam0 /*7*/].f_5 != 0)
 			{
-				func_2(&(Global_32299[iParam0 /*7*/]), 2);
+				__LIB_0__.func_712(&(Global_32299[iParam0 /*7*/]), 2);
 			}
 		}
 	}
 }
 
-void func_2(var uParam0, int iParam1)//Position - 0x24F
-{
-	*uParam0 = (*uParam0 || iParam1);
-}
-
-int func_3()//Position - 0x260
-{
-	if (func_4() == 0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_4()//Position - 0x275
-{
-	return Global_31959;
-}
-
 int func_5(var uParam0, struct<3> Param1)//Position - 0x280
 {
-	if (!func_10(*uParam0, 1))
+	if (!__LIB_0__.func_517(*uParam0, 1))
 	{
-		if (func_9() && !func_6(6))
+		if (__LIB_9__.func_603() && !__LIB_6__.func_854(6))
 		{
 			return 0;
 		}
@@ -217,186 +191,6 @@ int func_5(var uParam0, struct<3> Param1)//Position - 0x280
 	return 1;
 }
 
-int func_6(int iParam0)//Position - 0x306
-{
-	if (Global_43052 == 15)
-	{
-		return 0;
-	}
-	if (func_7(iParam0))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-bool func_7(int iParam0)//Position - 0x328
-{
-	return func_8(iParam0, Global_43052);
-}
-
-int func_8(int iParam0, int iParam1)//Position - 0x339
-{
-	if (iParam1 == 15)
-	{
-		return 1;
-	}
-	if (iParam0 == 15)
-	{
-		return 0;
-	}
-	switch (iParam0)
-	{
-		case 16:
-			switch (iParam1)
-			{
-				case 9:
-				case 10:
-				case 7:
-				case 13:
-				case 14:
-					return 0;
-					break;
-			}
-			return 1;
-			break;
-		
-		case 0:
-			switch (iParam1)
-			{
-				case 5:
-				case 17:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 2:
-		case 3:
-			switch (iParam1)
-			{
-				case 5:
-				case 6:
-				case 8:
-				case 17:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 4:
-			if (iParam1 == 17)
-			{
-				return 1;
-			}
-			break;
-		
-		case 5:
-			break;
-		
-		case 6:
-		case 8:
-			if (iParam1 == 5)
-			{
-				return 1;
-			}
-			break;
-		
-		case 7:
-			if (iParam1 == 6)
-			{
-				return 1;
-			}
-			break;
-		
-		case 9:
-			if (iParam1 == 5)
-			{
-				return 1;
-			}
-			break;
-		
-		case 10:
-			switch (iParam1)
-			{
-				case 5:
-				case 6:
-				case 17:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 11:
-			if (iParam1 == 5)
-			{
-				return 1;
-			}
-			break;
-		
-		case 17:
-			switch (iParam1)
-			{
-				case 17:
-				case 12:
-				case 5:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 18:
-		case 12:
-			switch (iParam1)
-			{
-				case 5:
-				case 6:
-				case 8:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 13:
-			switch (iParam1)
-			{
-				case 5:
-					return 1;
-					break;
-			}
-			break;
-		
-		case 14:
-			switch (iParam1)
-			{
-				case 5:
-					return 1;
-					break;
-			}
-			break;
-	}
-	return 0;
-}
-
-int func_9()//Position - 0x51A
-{
-	if (Global_43052 == 15)
-	{
-		return 0;
-	}
-	return 1;
-}
-
-bool func_10(var uParam0, int iParam1)//Position - 0x52F
-{
-	return (uParam0 && iParam1) != 0;
-}
-
-void func_11(var uParam0, int iParam1)//Position - 0x53E
-{
-	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
-}
-
 int func_12(int iParam0, struct<3> Param1)//Position - 0x553
 {
 	Param1.f_2 = 0f;
@@ -404,13 +198,13 @@ int func_12(int iParam0, struct<3> Param1)//Position - 0x553
 	{
 		return 1;
 	}
-	if (func_10(Global_32299[iParam0 /*7*/], 4))
+	if (__LIB_0__.func_517(Global_32299[iParam0 /*7*/], 4))
 	{
 		return 1;
 	}
-	if (func_9() && !func_6(6))
+	if (__LIB_9__.func_603() && !__LIB_6__.func_854(6))
 	{
-		if (!func_10(Global_32299[iParam0 /*7*/], 1))
+		if (!__LIB_0__.func_517(Global_32299[iParam0 /*7*/], 1))
 		{
 			if (iParam0 == 1 || iParam0 == 2)
 			{
@@ -434,13 +228,12 @@ int func_12(int iParam0, struct<3> Param1)//Position - 0x553
 
 bool func_13(var uParam0)//Position - 0x5FE
 {
-	return func_10(*uParam0, 2);
+	return __LIB_0__.func_517(*uParam0, 2);
 }
 
 void func_14()//Position - 0x60E
 {
 	int iVar0;
-	
 	Global_32299[0 /*7*/].f_2 = { -2189.5447f, 3129.6125f, 0f };
 	Global_32299[0 /*7*/].f_1 = (1000f * 1000f);
 	Global_32299[0 /*7*/] = 0;
@@ -467,10 +260,5 @@ void func_14()//Position - 0x60E
 		Global_32299[iVar0 /*7*/].f_2.f_2 = 0f;
 		iVar0++;
 	}
-}
-
-void func_15()//Position - 0x74E
-{
-	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

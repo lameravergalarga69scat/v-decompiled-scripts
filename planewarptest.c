@@ -21,7 +21,6 @@
 	struct<3> Local_19[2];
 	float fLocal_20[2] = { 0f, 0f };
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;

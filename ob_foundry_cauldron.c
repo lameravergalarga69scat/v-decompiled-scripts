@@ -6,11 +6,9 @@
 	int iLocal_4 = 0;
 	int iScriptParam_0 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	int iVar0;
-	
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
 	{
 		func_1();
@@ -41,7 +39,6 @@ void __EntryFunction__()//Position - 0x0
 							}
 						}
 						break;
-					
 					case 1:
 						if (STREAMING::HAS_PTFX_ASSET_LOADED())
 						{
@@ -71,7 +68,6 @@ void __EntryFunction__()//Position - 0x0
 							}
 						}
 						break;
-					
 					case 2:
 						break;
 				}
@@ -98,19 +94,7 @@ void func_1()//Position - 0x135
 	{
 		ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&iLocal_4);
 	}
-	func_2("ob_foundry_cauldron Terminated >>>>>>>>>>>>>>>>>\n");
+	__LIB_30__.func_882("ob_foundry_cauldron Terminated >>>>>>>>>>>>>>>>>\n");
 	SCRIPT::TERMINATE_THIS_THREAD();
-}
-
-void func_2(char* sParam0)//Position - 0x167
-{
-	func_3(sParam0);
-}
-
-void func_3(char* sParam0)//Position - 0x175
-{
-	if (MISC::ARE_STRINGS_EQUAL(sParam0, sParam0))
-	{
-	}
 }
 

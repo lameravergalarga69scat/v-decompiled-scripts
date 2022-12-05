@@ -28,7 +28,6 @@
 	float fLocal_26 = 0f;
 	var uLocal_27 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -51,55 +50,23 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (PLAYER::GET_CAUSE_OF_MOST_RECENT_FORCE_CLEANUP() != 2)
 		{
-			func_4(19);
+			__LIB_0__.func_512(19);
 		}
 		func_3();
 	}
-	func_2(19);
+	__LIB_0__.func_513(19);
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
 	while (!AUDIO::LOAD_STREAM("CONSTRUCTION_SITE_STREAM", "FBI_HEIST_SOUNDSET"))
 	{
 		SYSTEM::WAIT(0);
 	}
 	AUDIO::PLAY_STREAM_FROM_POSITION(-147f, -1005f, 28f);
-	while (func_1(70))
+	while (__LIB_0__.func_368(70))
 	{
 		SYSTEM::WAIT(0);
 	}
-	func_4(19);
+	__LIB_0__.func_512(19);
 	func_3();
-}
-
-int func_1(int iParam0)//Position - 0xB6
-{
-	if (iParam0 == 146 || iParam0 == -1)
-	{
-		return 0;
-	}
-	return Global_113386.f_9085.f_99.f_58[iParam0];
-}
-
-int func_2(int iParam0)//Position - 0xE3
-{
-	int iVar0;
-	bool bVar1;
-	
-	if (iParam0 <= 31)
-	{
-		iVar0 = 9;
-		bVar1 = iParam0;
-	}
-	else
-	{
-		iVar0 = 10;
-		bVar1 = (iParam0 - 32);
-	}
-	if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
-	{
-		return 0;
-	}
-	MISC::SET_BIT(&(Global_113386.f_9085.f_99.f_219[iVar0]), bVar1);
-	return 1;
 }
 
 void func_3()//Position - 0x13A
@@ -107,28 +74,5 @@ void func_3()//Position - 0x13A
 	AUDIO::STOP_STREAM();
 	AUDIO::UNREGISTER_SCRIPT_WITH_AUDIO();
 	SCRIPT::TERMINATE_THIS_THREAD();
-}
-
-int func_4(int iParam0)//Position - 0x14E
-{
-	int iVar0;
-	bool bVar1;
-	
-	if (iParam0 <= 31)
-	{
-		iVar0 = 9;
-		bVar1 = iParam0;
-	}
-	else
-	{
-		iVar0 = 10;
-		bVar1 = (iParam0 - 32);
-	}
-	if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
-	{
-		MISC::CLEAR_BIT(&(Global_113386.f_9085.f_99.f_219[iVar0]), bVar1);
-		return 1;
-	}
-	return 0;
 }
 

@@ -24,7 +24,6 @@
 	var uScriptParam_21 = 0;
 	var uScriptParam_22 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("wp_partyboombox")) > 1)
@@ -54,7 +53,6 @@ void __EntryFunction__()//Position - 0x0
 					func_1();
 				}
 				break;
-			
 			case 1:
 				if (!STREAMING::IS_IPL_ACTIVE("ID2_21_G_Night"))
 				{
@@ -62,10 +60,8 @@ void __EntryFunction__()//Position - 0x0
 					iLocal_0 = 2;
 				}
 				break;
-			
 			case 2:
 				break;
-			
 			case 3:
 				if (!STREAMING::IS_NEW_LOAD_SCENE_ACTIVE() && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 				{

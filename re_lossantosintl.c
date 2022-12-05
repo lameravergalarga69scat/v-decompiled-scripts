@@ -78,7 +78,6 @@
 	int iLocal_76 = 0;
 	int iLocal_77 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -124,24 +123,20 @@ void __EntryFunction__()//Position - 0x0
 			case 0:
 				iLocal_76 = 1;
 				break;
-			
 			case 1:
-				func_11();
+				__LIB_0__.func_371();
 				iLocal_76 = 2;
 				break;
-			
 			case 2:
-				if (func_10())
+				if (__LIB_0__.func_109())
 				{
 					iLocal_76 = 3;
 				}
 				break;
-			
 			case 3:
-				func_9();
+				__LIB_0__.func_371();
 				iLocal_76 = 4;
 				break;
-			
 			case 4:
 				if (Global_97369)
 				{
@@ -149,7 +144,6 @@ void __EntryFunction__()//Position - 0x0
 				}
 				func_4();
 				break;
-			
 			case 5:
 				func_1();
 				func_12();
@@ -162,7 +156,6 @@ void __EntryFunction__()//Position - 0x0
 void func_1()//Position - 0x11A
 {
 	int iVar0;
-	
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -179,7 +172,7 @@ void func_1()//Position - 0x11A
 				{
 					func_3(1);
 				}
-				func_2(&(iLocal_49[iVar0]), &(iLocal_51[iVar0]));
+				__LIB_30__.func_904(&(iLocal_49[iVar0]), &(iLocal_51[iVar0]));
 				ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&(iLocal_49[iVar0]));
 				ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&(iLocal_51[iVar0]));
 			}
@@ -195,7 +188,7 @@ void func_1()//Position - 0x11A
 		}
 		else
 		{
-			func_2(&iLocal_50, &iLocal_52);
+			__LIB_30__.func_904(&iLocal_50, &iLocal_52);
 			ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_50);
 			ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_52);
 		}
@@ -209,23 +202,6 @@ void func_1()//Position - 0x11A
 		VEHICLE::REMOVE_VEHICLE_RECORDING(103, "AirplaneLandingRedux");
 		VEHICLE::REMOVE_VEHICLE_RECORDING(104, "AirplaneLandingRedux");
 		VEHICLE::REMOVE_VEHICLE_RECORDING(101, "EastWestFlight");
-	}
-}
-
-void func_2(int iParam0, var uParam1)//Position - 0x233
-{
-	if (((ENTITY::DOES_ENTITY_EXIST(*iParam0) && ENTITY::DOES_ENTITY_EXIST(*uParam1)) && !ENTITY::IS_ENTITY_DEAD(*iParam0, false)) && !ENTITY::IS_ENTITY_DEAD(*uParam1, false))
-	{
-		if (ENTITY::IS_ENTITY_IN_AIR(*iParam0))
-		{
-			if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(*iParam0))
-			{
-				if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
-				{
-					TASK::TASK_PLANE_MISSION(*uParam1, *iParam0, 0, 0, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 8, 50f, -1f, 30f, 1.4E-43f, 7E-44f, true);
-				}
-			}
-		}
 	}
 }
 
@@ -279,7 +255,6 @@ void func_3(bool bParam0)//Position - 0x2B4
 void func_4()//Position - 0x493
 {
 	int iVar0;
-	
 	switch (iLocal_66)
 	{
 		case 0:
@@ -301,7 +276,6 @@ void func_4()//Position - 0x493
 			}
 			iLocal_66 = 1;
 			break;
-		
 		case 1:
 			STREAMING::REQUEST_MODEL(joaat("jet"));
 			STREAMING::REQUEST_MODEL(iLocal_62);
@@ -312,7 +286,6 @@ void func_4()//Position - 0x493
 			VEHICLE::REQUEST_VEHICLE_RECORDING(104, "AirplaneLandingRedux");
 			iLocal_66 = 2;
 			break;
-		
 		case 2:
 			if (!bLocal_60)
 			{
@@ -348,7 +321,6 @@ void func_4()//Position - 0x493
 				}
 			}
 			break;
-		
 		case 3:
 			iLocal_49[0] = VEHICLE::CREATE_VEHICLE(joaat("jet"), Local_53[0 /*3*/], 0f, true, true, false);
 			ENTITY::SET_ENTITY_HEADING(iLocal_49[0], 240.3179f);
@@ -391,7 +363,6 @@ void func_4()//Position - 0x493
 			}
 			iLocal_66 = 4;
 			break;
-		
 		case 4:
 			if (iLocal_59)
 			{
@@ -448,7 +419,6 @@ void func_4()//Position - 0x493
 						}
 					}
 					break;
-				
 				case 1:
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_49[1]) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[1], false))
 					{
@@ -491,7 +461,6 @@ void func_4()//Position - 0x493
 						}
 					}
 					break;
-				
 				case 2:
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_49[1]) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[1], false))
 					{
@@ -501,7 +470,6 @@ void func_4()//Position - 0x493
 						}
 					}
 					break;
-				
 				case 3:
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_49[2]) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[2], false))
 					{
@@ -519,7 +487,6 @@ void func_4()//Position - 0x493
 						}
 					}
 					break;
-				
 				case 4:
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_49[2]) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[2], false))
 					{
@@ -558,7 +525,6 @@ void func_4()//Position - 0x493
 						}
 					}
 					break;
-				
 				case 5:
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_49[3]) && !ENTITY::IS_ENTITY_DEAD(iLocal_49[3], false))
 					{
@@ -593,7 +559,6 @@ void func_6(var uParam0, var uParam1)//Position - 0xBC7
 void func_7()//Position - 0xBF2
 {
 	struct<3> Var0;
-	
 	switch (iLocal_61)
 	{
 		case 0:
@@ -608,7 +573,6 @@ void func_7()//Position - 0xBF2
 				iLocal_61 = 1;
 			}
 			break;
-		
 		case 1:
 			if (ENTITY::DOES_ENTITY_EXIST(iLocal_50) && !ENTITY::IS_ENTITY_DEAD(iLocal_50, false))
 			{
@@ -622,7 +586,6 @@ void func_7()//Position - 0xBF2
 				}
 			}
 			break;
-		
 		case 2:
 			if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 			{
@@ -650,19 +613,6 @@ void func_8(var uParam0, var uParam1)//Position - 0xD31
 	ENTITY::FREEZE_ENTITY_POSITION(*uParam0, true);
 }
 
-void func_9()//Position - 0xD5C
-{
-}
-
-int func_10()//Position - 0xD64
-{
-	return 1;
-}
-
-void func_11()//Position - 0xD6D
-{
-}
-
 void func_12()//Position - 0xD75
 {
 	func_1();
@@ -676,7 +626,6 @@ void func_13()//Position - 0xD89
 	struct<3> Var1;
 	struct<3> Var2;
 	float fVar3;
-	
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_67))
 	{
 		if (ENTITY::IS_ENTITY_OCCLUDED(iLocal_67))

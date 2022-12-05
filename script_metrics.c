@@ -21,7 +21,6 @@
 	var uLocal_19 = 0;
 	char* sLocal_20 = NULL;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;

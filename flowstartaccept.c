@@ -23,7 +23,6 @@
 	int iLocal_21 = 0;
 	int iLocal_22 = 0;
 #endregion
-
 void __EntryFunction__()//Position - 0x0
 {
 	iLocal_2 = 1;
@@ -59,14 +58,14 @@ void __EntryFunction__()//Position - 0x0
 			SYSTEM::WAIT(0);
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_20, "SHOW_CENTERED_MP_MESSAGE");
-		func_5("INSTALL_COMP" /* GXT: Install Complete */);
+		__LIB_0__.func_478("INSTALL_COMP" /* GXT: Install Complete */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_21, "SET_DATA_SLOT_EMPTY");
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_21, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		func_4(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/, true));
-		func_5("HUD_CONTINUE" /* GXT: Continue */);
+		__LIB_0__.func_514(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/, true));
+		__LIB_0__.func_478("HUD_CONTINUE" /* GXT: Continue */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_21, "DRAW_INSTRUCTIONAL_BUTTONS");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
@@ -89,59 +88,12 @@ void __EntryFunction__()//Position - 0x0
 			SYSTEM::WAIT(0);
 		}
 		SCRIPT::SET_NO_LOADING_SCREEN(false);
-		func_3(1, 1);
-		func_1();
+		__LIB_0__.func_540(1, 1);
+		__LIB_0__.func_533();
 	}
 	Global_78588.f_1 = 0;
 	MISC::SET_BIT(&(Global_113386.f_10016.f_25), 0);
 	func_6();
-}
-
-int func_1()//Position - 0x17D
-{
-	if (func_2(0))
-	{
-		return 0;
-	}
-	if (Global_100480.f_8)
-	{
-		if (Global_100480.f_10 > 0)
-		{
-			return 0;
-		}
-	}
-	else if (Global_100480.f_10 > 1)
-	{
-		return 0;
-	}
-	Global_100480.f_10++;
-	return 1;
-}
-
-int func_2(bool bParam0)//Position - 0x1C8
-{
-	if (!bParam0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
-	{
-		return 1;
-	}
-	return BitTest(Global_78567, 0);
-}
-
-void func_3(int iParam0, int iParam1)//Position - 0x1F0
-{
-	Global_100480.f_7 = iParam0;
-	Global_100480.f_8 = iParam1;
-}
-
-void func_4(char* sParam0)//Position - 0x208
-{
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(sParam0);
-}
-
-void func_5(char* sParam0)//Position - 0x216
-{
-	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
-	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 }
 
 void func_6()//Position - 0x228
