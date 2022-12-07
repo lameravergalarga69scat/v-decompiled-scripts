@@ -1018,35 +1018,35 @@ void __EntryFunction__()//Position - 0x0
 	Var1.f_28 = 1;
 	iVar2 = 0;
 	fVar3 = 0f;
-	iVar4 = __LIB_2__.func_108(25);
-	iVar5 = __LIB_2__.func_108(17);
+	iVar4 = __LIB_2__::func_108(25);
+	iVar5 = __LIB_2__::func_108(17);
 	func_330(&Var0, iVar4, iVar5);
 	iVar6 = 0;
 	iVar7 = (1 - iVar6);
 	func_316(&Var0, &Var1, 1, iVar6, iVar7);
 	while (true)
 	{
-		__LIB_31__.func_573(&Var0);
+		__LIB_31__::func_573(&Var0);
 		func_314(&fVar3, &(Var0.f_189), &(Var0[iVar6 /*94*/]));
 		if (Global_97369)
 		{
-			__LIB_37__.func_718(&Var0);
+			__LIB_37__::func_718(&Var0);
 		}
-		if (__LIB_10__.func_843(&Var1) > 4 && __LIB_35__.func_434(&Var0, iVar6, &iVar2))
+		if (__LIB_10__::func_843(&Var1) > 4 && __LIB_35__::func_434(&Var0, iVar6, &iVar2))
 		{
-			__LIB_26__.func_529(2, 140);
-			__LIB_37__.func_718(&Var0);
+			__LIB_26__::func_529(2, 140);
+			__LIB_37__::func_718(&Var0);
 		}
-		__LIB_42__.func_800(&Var0, &Var1, &iVar2, iVar6, iVar7, &uVar8, 0);
-		__LIB_12__.func_958(&(Var0.f_281));
+		__LIB_42__::func_800(&Var0, &Var1, &iVar2, iVar6, iVar7, &uVar8, 0);
+		__LIB_12__::func_958(&(Var0.f_281));
 		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tennis")) > 0)
 		{
-			__LIB_26__.func_529(2, 140);
-			__LIB_37__.func_718(&Var0);
+			__LIB_26__::func_529(2, 140);
+			__LIB_37__::func_718(&Var0);
 		}
-		if (!__LIB_31__.func_580(2) == 49)
+		if (!__LIB_31__::func_580(2) == 49)
 		{
-			__LIB_37__.func_718(&Var0);
+			__LIB_37__::func_718(&Var0);
 		}
 		SYSTEM::WAIT(0);
 	}
@@ -1058,32 +1058,32 @@ void func_314(float fParam0, var uParam1, var uParam2)//Position - 0xC48B
 	char* sVar1;
 	float fVar2;
 	struct<8> Var3;
-	iVar0 = __LIB_18__.func_173();
-	sVar1 = __LIB_1__.func_6(iVar0 == 0, "DISMISS_MICHAEL", __LIB_1__.func_6(iVar0 == 2, "GENERIC_CURSE_HIGH", __LIB_1__.func_6(iVar0 == 1, "GENERIC_INSULT_MALE", "GENERIC_INSULT_MED")));
-	fVar2 = __LIB_0__.func_649(uParam1);
+	iVar0 = __LIB_18__::func_173();
+	sVar1 = __LIB_1__::func_6(iVar0 == 0, "DISMISS_MICHAEL", __LIB_1__::func_6(iVar0 == 2, "GENERIC_CURSE_HIGH", __LIB_1__::func_6(iVar0 == 1, "GENERIC_INSULT_MALE", "GENERIC_INSULT_MED")));
+	fVar2 = __LIB_0__::func_649(uParam1);
 	*fParam0 = (*fParam0 + MISC::GET_FRAME_TIME());
-	if ((((*fParam0 > (5f + MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 5f)) && __LIB_6__.func_144(uParam2) == 75) && !PED::IS_PED_INJURED(__LIB_30__.func_494(uParam2))) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) && __LIB_31__.func_499(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), uParam1->f_3[0 /*3*/] + FtoV((fVar2 * 0.5f)) * uParam1->f_52, uParam1->f_3[3 /*3*/] + FtoV((fVar2 * 0.5f)) * uParam1->f_52, (fVar2 * 1.5f)))
+	if ((((*fParam0 > (5f + MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 5f)) && __LIB_6__::func_144(uParam2) == 75) && !PED::IS_PED_INJURED(__LIB_30__::func_494(uParam2))) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) && __LIB_31__::func_499(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), uParam1->f_3[0 /*3*/] + FtoV((fVar2 * 0.5f)) * uParam1->f_52, uParam1->f_3[3 /*3*/] + FtoV((fVar2 * 0.5f)) * uParam1->f_52, (fVar2 * 1.5f)))
 	{
 		StringCopy(&Var3, "AMANDA_NORMAL", 32);
-		__LIB_37__.func_698(uParam2, sVar1, Var3, 9);
+		__LIB_37__::func_698(uParam2, sVar1, Var3, 9);
 		*fParam0 = 0f;
 	}
 }
 
 void func_316(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)//Position - 0xC59B
 {
-	__LIB_39__.func_653(&(uParam0->f_189), uParam0, 9);
-	__LIB_37__.func_719(uParam0[iParam3 /*94*/], iParam3, 4, uParam0->f_1658, uParam0->f_1661);
-	__LIB_37__.func_719(uParam0[iParam4 /*94*/], iParam4, 4, -uParam0->f_1658, -uParam0->f_1661);
-	__LIB_0__.func_579(&(uParam0->f_247));
+	__LIB_39__::func_653(&(uParam0->f_189), uParam0, 9);
+	__LIB_37__::func_719(uParam0[iParam3 /*94*/], iParam3, 4, uParam0->f_1658, uParam0->f_1661);
+	__LIB_37__::func_719(uParam0[iParam4 /*94*/], iParam4, 4, -uParam0->f_1658, -uParam0->f_1661);
+	__LIB_0__::func_579(&(uParam0->f_247));
 	StringCopy(&(uParam0->f_1670), "Idle1", 8);
 	uParam1->f_4 = 4;
 	uParam0->f_1657 = iParam2;
 	(uParam0[iParam3 /*94*/])->f_4.f_20 = 1;
 	(uParam0[iParam4 /*94*/])->f_4.f_20 = 1;
-	__LIB_31__.func_577(uParam0);
-	__LIB_31__.func_576(uParam0);
-	__LIB_31__.func_575(uParam0);
+	__LIB_31__::func_577(uParam0);
+	__LIB_31__::func_576(uParam0);
+	__LIB_31__::func_575(uParam0);
 }
 
 void func_330(var uParam0, int iParam1, int iParam2)//Position - 0x1057D
@@ -1106,11 +1106,11 @@ void func_332()//Position - 0x105EC
 	{
 		SYSTEM::START_NEW_SCRIPT("buddyDeathResponse", 1424);
 	}
-	if (Global_113386.f_9085 || __LIB_0__.func_2(0))
+	if (Global_113386.f_9085 || __LIB_0__::func_2(0))
 	{
-		if (!__LIB_0__.func_134())
+		if (!__LIB_0__::func_134())
 		{
-			iVar0 = __LIB_0__.func_323();
+			iVar0 = __LIB_0__::func_323();
 			if (iVar0 != -1)
 			{
 				if (!func_334(iVar0))
@@ -1123,7 +1123,7 @@ void func_332()//Position - 0x105EC
 		}
 		else
 		{
-			__LIB_26__.func_260();
+			__LIB_26__::func_260();
 		}
 	}
 }
@@ -1132,14 +1132,14 @@ int func_334(int iParam0)//Position - 0x1074C
 {
 	int iVar0;
 	int iVar1;
-	__LIB_26__.func_260();
+	__LIB_26__::func_260();
 	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 	{
 		PLAYER::START_FIRING_AMNESTY(5000);
 	}
 	iVar0 = Global_91193[iParam0 /*5*/];
 	iVar1 = Global_78588.f_109[iVar0 /*4*/];
-	__LIB_0__.func_322(iVar1, 1);
+	__LIB_0__::func_322(iVar1, 1);
 	PLAYER::SPECIAL_ABILITY_CHARGE_ON_MISSION_FAILED(PLAYER::PLAYER_ID(), 0);
 	PLAYER::SPECIAL_ABILITY_DEACTIVATE(PLAYER::PLAYER_ID(), 0);
 	func_335(&(Global_113386.f_2363.f_539), iVar1);
@@ -1198,7 +1198,7 @@ void func_335(var uParam0, int iParam1)//Position - 0x1085C
 			if (!func_337(Global_113386.f_18533[iVar0], &Var2, &fVar3))
 			{
 				Global_113386.f_18533[iVar0] = 318;
-				__LIB_0__.func_17(&(uParam0->f_2296[iVar0]));
+				__LIB_0__::func_17(&(uParam0->f_2296[iVar0]));
 				uParam0->f_2300[iVar0 /*3*/] = { 0f, 0f, 0f };
 				uParam0->f_2310[iVar0] = 0f;
 				uParam0->f_2314[iVar0] = 0;

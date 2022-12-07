@@ -117,7 +117,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_42 = 49;
 	iLocal_43 = 64;
 	fLocal_62 = ((0.05f + 0.275f) - 0.01f);
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_0__.func_154(PLAYER::PLAYER_ID(), 0, 1))
+	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_0__::func_154(PLAYER::PLAYER_ID(), 0, 1))
 	{
 		func_210(ScriptParam_89);
 	}
@@ -127,8 +127,8 @@ void __EntryFunction__()//Position - 0x0
 	}
 	while (true)
 	{
-		__LIB_0__.func_671();
-		if (__LIB_6__.func_949() || __LIB_25__.func_62(15))
+		__LIB_0__::func_671();
+		if (__LIB_6__::func_949() || __LIB_25__::func_62(15))
 		{
 			func_206();
 		}
@@ -136,26 +136,26 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_206();
 		}
-		switch (__LIB_9__.func_413(NETWORK::PARTICIPANT_ID_TO_INT()))
+		switch (__LIB_9__::func_413(NETWORK::PARTICIPANT_ID_TO_INT()))
 		{
 			case 0:
-				if (__LIB_1__.func_564() == 1)
+				if (__LIB_1__::func_564() == 1)
 				{
-					if (__LIB_2__.func_16(60000))
+					if (__LIB_2__::func_16(60000))
 					{
 						if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_2))
 						{
 							if (VEHICLE::IS_VEHICLE_DRIVEABLE(NETWORK::NET_TO_VEH(Local_83.f_2), false))
 							{
-								if (!__LIB_0__.func_109())
+								if (!__LIB_0__::func_109())
 								{
 									if (!BitTest(Local_83.f_1, 0))
 									{
-										__LIB_0__.func_151("PTD_HELP1" /* GXT: A Smuggler Plane ~HUD_COLOUR_RED~~BLIP_PLANE_DROP~ ~s~is flying around Los Santos. Bring the plane down before it leaves. */, -1);
+										__LIB_0__::func_151("PTD_HELP1" /* GXT: A Smuggler Plane ~HUD_COLOUR_RED~~BLIP_PLANE_DROP~ ~s~is flying around Los Santos. Bring the plane down before it leaves. */, -1);
 									}
 									else
 									{
-										__LIB_0__.func_151("PTD_HELP1H" /* GXT: A Smuggler Helicopter ~HUD_COLOUR_RED~~BLIP_HELICOPTER~ ~s~is flying around Los Santos. Bring the helicopter down before it leaves. */, -1);
+										__LIB_0__::func_151("PTD_HELP1H" /* GXT: A Smuggler Helicopter ~HUD_COLOUR_RED~~BLIP_HELICOPTER~ ~s~is flying around Los Santos. Bring the helicopter down before it leaves. */, -1);
 									}
 								}
 							}
@@ -163,24 +163,24 @@ void __EntryFunction__()//Position - 0x0
 					}
 					Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/] = 1;
 				}
-				else if (__LIB_1__.func_564() == 4)
+				else if (__LIB_1__::func_564() == 4)
 				{
 					Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/] = 3;
 				}
 				break;
 			case 1:
-				if (__LIB_1__.func_564() == 1)
+				if (__LIB_1__::func_564() == 1)
 				{
 					func_22();
 				}
-				else if (__LIB_1__.func_564() == 4)
+				else if (__LIB_1__::func_564() == 4)
 				{
 					Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/] = 3;
 				}
 				break;
 			case 3:
-				__LIB_1__.func_54(&(Local_83.f_24));
-				if (__LIB_1__.func_53(&(Local_83.f_24)))
+				__LIB_1__::func_54(&(Local_83.f_24));
+				if (__LIB_1__::func_53(&(Local_83.f_24)))
 				{
 					Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/] = 4;
 				}
@@ -193,7 +193,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 		{
-			switch (__LIB_1__.func_564())
+			switch (__LIB_1__::func_564())
 			{
 				case 0:
 					if (func_11())
@@ -229,7 +229,7 @@ int func_2()//Position - 0x221
 {
 	struct<14> Var0;
 	struct<14> Var1;
-	if (__LIB_2__.func_63(Local_83.f_2))
+	if (__LIB_2__::func_63(Local_83.f_2))
 	{
 		if (Local_83.f_22 > 0)
 		{
@@ -245,7 +245,7 @@ int func_2()//Position - 0x221
 					{
 						Var0.f_2 = 990698863;
 					}
-					__LIB_1__.func_226(Var0, __LIB_2__.func_31(1));
+					__LIB_1__::func_226(Var0, __LIB_2__::func_31(1));
 					MISC::SET_BIT(&(Local_83.f_1), 1);
 					return 1;
 				}
@@ -260,7 +260,7 @@ int func_2()//Position - 0x221
 			{
 				if (ENTITY::IS_ENTITY_DEAD(NETWORK::NET_TO_VEH(Local_83.f_2), false))
 				{
-					if (__LIB_2__.func_47(&(Local_83.f_26), 3000, 0))
+					if (__LIB_2__::func_47(&(Local_83.f_26), 3000, 0))
 					{
 						if (!BitTest(Local_83.f_1, 0))
 						{
@@ -270,7 +270,7 @@ int func_2()//Position - 0x221
 						{
 							Var1.f_2 = -208885833;
 						}
-						__LIB_1__.func_226(Var1, __LIB_2__.func_31(1));
+						__LIB_1__::func_226(Var1, __LIB_2__::func_31(1));
 						return 1;
 					}
 				}
@@ -316,7 +316,7 @@ void func_10()//Position - 0x4CA
 							Var0.f_2 = -1747140958;
 						}
 						Var0.f_10 = iVar1;
-						__LIB_1__.func_226(Var0, __LIB_2__.func_31(1));
+						__LIB_1__::func_226(Var0, __LIB_2__::func_31(1));
 						Local_83.f_0 = 4;
 						return;
 					}
@@ -336,7 +336,7 @@ void func_10()//Position - 0x4CA
 
 int func_11()//Position - 0x57C
 {
-	if (__LIB_0__.func_584(Local_83.f_4) && __LIB_0__.func_584(Local_83.f_5))
+	if (__LIB_0__::func_584(Local_83.f_4) && __LIB_0__::func_584(Local_83.f_5))
 	{
 		if (func_14() && func_12())
 		{
@@ -350,11 +350,11 @@ int func_11()//Position - 0x57C
 
 int func_12()//Position - 0x5C1
 {
-	if ((!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_3) && __LIB_0__.func_584(Local_83.f_5)) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_2))
+	if ((!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_3) && __LIB_0__::func_584(Local_83.f_5)) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_2))
 	{
-		if (__LIB_2__.func_63(Local_83.f_2))
+		if (__LIB_2__::func_63(Local_83.f_2))
 		{
-			if (__LIB_0__.func_668(&(Local_83.f_3), Local_83.f_2, 22, Local_83.f_5, -1, 1, 1, 1))
+			if (__LIB_0__::func_668(&(Local_83.f_3), Local_83.f_2, 22, Local_83.f_5, -1, 1, 1, 1))
 			{
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(NETWORK::NET_TO_PED(Local_83.f_3), true);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(NETWORK::NET_TO_PED(Local_83.f_3), Global_1837196);
@@ -375,9 +375,9 @@ int func_14()//Position - 0x6E3
 	int iVar0;
 	if (!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_83.f_2))
 	{
-		if (__LIB_0__.func_584(Local_83.f_4))
+		if (__LIB_0__::func_584(Local_83.f_4))
 		{
-			if (__LIB_18__.func_220(&(Local_83.f_2), Local_83.f_4, Local_83.f_6, __LIB_0__.func_670(Local_83.f_6, Local_83.f_9[0 /*3*/]), 1, 1, 1, 0, 1, 1, 0, 0, 0, 0))
+			if (__LIB_18__::func_220(&(Local_83.f_2), Local_83.f_4, Local_83.f_6, __LIB_0__::func_670(Local_83.f_6, Local_83.f_9[0 /*3*/]), 1, 1, 1, 0, 1, 1, 0, 0, 0, 0))
 			{
 				VEHICLE::SET_VEHICLE_DOORS_LOCKED(NETWORK::NET_TO_VEH(Local_83.f_2), 2);
 				ENTITY::FREEZE_ENTITY_POSITION(NETWORK::NET_TO_VEH(Local_83.f_2), false);
@@ -452,42 +452,42 @@ void func_23()//Position - 0xB61
 			{
 				if (PLAYER::PLAYER_ID() == NETWORK::NETWORK_GET_DESTROYER_OF_NETWORK_ID(Local_83.f_2, &uVar0))
 				{
-					__LIB_2__.func_281(2063, -1);
-					iVar1 = __LIB_1__.func_556(2063, -1, 0);
+					__LIB_2__::func_281(2063, -1);
+					iVar1 = __LIB_1__::func_556(2063, -1, 0);
 					iVar2 = iVar1;
 					if (iVar2 > Global_262145.f_8563 /* Tunable: PLANE_TAKEDOWN_RP_MAX_TIMES */)
 					{
 						iVar2 = Global_262145.f_8563 /* Tunable: PLANE_TAKEDOWN_RP_MAX_TIMES */;
 					}
 					iVar3 = (Global_262145.f_8561 /* Tunable: PLANE_TAKEDOWN_REWARDS_XP */ * iVar2);
-					__LIB_39__.func_771(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE" /* GXT: ~g~+~1~ ~a~:~s~ Killed Hostile */, joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETE_PLANE_TAKEDOWN"), iVar3, 1, -1, 0, 0, 0);
+					__LIB_39__::func_771(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE" /* GXT: ~g~+~1~ ~a~:~s~ Killed Hostile */, joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETE_PLANE_TAKEDOWN"), iVar3, 1, -1, 0, 0, 0);
 					if (iVar1 > Global_262145.f_8562 /* Tunable: PLANE_TAKEDOWN_CASH_MAX_TIMES */)
 					{
 						iVar1 = Global_262145.f_8562 /* Tunable: PLANE_TAKEDOWN_CASH_MAX_TIMES */;
 					}
 					iVar4 = (Global_262145.f_8560 /* Tunable: PLANE_TAKEDOWN_REWARDS_CASH */ * iVar1);
-					__LIB_25__.func_13(iVar4, 1, 1, 1092616192);
+					__LIB_25__::func_13(iVar4, 1, 1, 1092616192);
 					Global_2727753 = iVar4;
-					__LIB_39__.func_708(&iVar4, 1);
+					__LIB_39__::func_708(&iVar4, 1);
 					if (iVar4 > 0)
 					{
-						if (__LIB_0__.func_112())
+						if (__LIB_0__::func_112())
 						{
-							__LIB_35__.func_530(joaat("SERVICE_EARN_AMBIENT_JOB_PLANE_TAKEDOWN"), iVar4, &uVar6, 0, 0, 0);
+							__LIB_35__::func_530(joaat("SERVICE_EARN_AMBIENT_JOB_PLANE_TAKEDOWN"), iVar4, &uVar6, 0, 0, 0);
 						}
 						else
 						{
 							MONEY::NETWORK_EARN_FROM_AMBIENT_JOB(iVar4, "AM_PLANE_TAKEDOWN", &uVar5);
 						}
 					}
-					__LIB_5__.func_113(65, 1, -1);
-					if (__LIB_0__.func_502())
+					__LIB_5__::func_113(65, 1, -1);
+					if (__LIB_0__::func_502())
 					{
-						__LIB_37__.func_804(2, "PTD_PASS0" /* GXT: Well dun, frend. I hope u told 'em 2 run guns with TP Inc next time, b4 u blasted em out the skie */, 0, 0, -99);
+						__LIB_37__::func_804(2, "PTD_PASS0" /* GXT: Well dun, frend. I hope u told 'em 2 run guns with TP Inc next time, b4 u blasted em out the skie */, 0, 0, -99);
 					}
 					else
 					{
-						__LIB_37__.func_804(2, "PTD_PASS1" /* GXT: Nice work, buddy. Those engine noises, I hadn't been sleepin 4 weeks. But that coulda been the tina. Haha. Next time I'll get a trailer out the flight path. */, 0, 0, -99);
+						__LIB_37__::func_804(2, "PTD_PASS1" /* GXT: Nice work, buddy. Those engine noises, I hadn't been sleepin 4 weeks. But that coulda been the tina. Haha. Next time I'll get a trailer out the flight path. */, 0, 0, -99);
 					}
 					MISC::SET_BIT(&(Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_1), 0);
 				}
@@ -509,17 +509,17 @@ void func_23()//Position - 0xB61
 					func_27();
 					if (func_26())
 					{
-						if (__LIB_0__.func_682(Local_83.f_2) && __LIB_0__.func_682(Local_83.f_3))
+						if (__LIB_0__::func_682(Local_83.f_2) && __LIB_0__::func_682(Local_83.f_3))
 						{
 							NETWORK::NETWORK_EXPLODE_VEHICLE(NETWORK::NET_TO_VEH(Local_83.f_2), true, true, -1);
 							if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_83.f_2))
 							{
-								__LIB_1__.func_46(&(Local_83.f_2));
+								__LIB_1__::func_46(&(Local_83.f_2));
 							}
 							if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(Local_83.f_3))
 							{
 								PED::SET_PED_KEEP_TASK(NETWORK::NET_TO_PED(Local_83.f_3), true);
-								__LIB_1__.func_46(&(Local_83.f_3));
+								__LIB_1__::func_46(&(Local_83.f_3));
 							}
 						}
 					}
@@ -556,7 +556,7 @@ int func_26()//Position - 0xDBD
 void func_27()//Position - 0xE2E
 {
 	struct<3> Var0;
-	if (__LIB_2__.func_63(Local_83.f_2) && !__LIB_0__.func_680(Local_83.f_3))
+	if (__LIB_2__::func_63(Local_83.f_2) && !__LIB_0__::func_680(Local_83.f_3))
 	{
 		if (PED::IS_PED_IN_VEHICLE(NETWORK::NET_TO_PED(Local_83.f_3), NETWORK::NET_TO_VEH(Local_83.f_2), false))
 		{
@@ -625,7 +625,7 @@ void func_186()//Position - 0x56F9
 			HUD::SET_BLIP_COLOUR(iLocal_88, 1);
 			HUD::SET_BLIP_FLASH_TIMER(iLocal_88, 7000);
 			HUD::SET_BLIP_PRIORITY(iLocal_88, 6);
-			if (__LIB_0__.func_109())
+			if (__LIB_0__::func_109())
 			{
 				HUD::SET_BLIP_DISPLAY(iLocal_88, 0);
 			}
@@ -636,7 +636,7 @@ void func_186()//Position - 0x56F9
 			{
 				HUD::SET_BLIP_ROTATION(iLocal_88, SYSTEM::ROUND(ENTITY::GET_ENTITY_HEADING(NETWORK::NET_TO_VEH(Local_83.f_2))));
 			}
-			if (__LIB_0__.func_109() || __LIB_2__.func_17())
+			if (__LIB_0__::func_109() || __LIB_2__::func_17())
 			{
 				HUD::SET_BLIP_DISPLAY(iLocal_88, 0);
 			}
@@ -656,15 +656,15 @@ void func_206()//Position - 0x5D03
 	}
 	if (BitTest(Local_83.f_1, 1))
 	{
-		__LIB_37__.func_804(2, "PTD_FAIL" /* GXT: Sum1 just tried 2 sell me sum guns!  That means that the byrd landed, and u r no kind of friend at all! Remind me 2 eat u when I next c u */, 0, 0, -99);
+		__LIB_37__::func_804(2, "PTD_FAIL" /* GXT: Sum1 just tried 2 sell me sum guns!  That means that the byrd landed, and u r no kind of friend at all! Remind me 2 eat u when I next c u */, 0, 0, -99);
 	}
 	func_209();
-	if (__LIB_1__.func_564() == 4 && Local_83.f_4 != 0)
+	if (__LIB_1__::func_564() == 4 && Local_83.f_4 != 0)
 	{
 		VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_83.f_4, false);
 	}
-	__LIB_1__.func_103(15, 0);
-	__LIB_0__.func_199();
+	__LIB_1__::func_103(15, 0);
+	__LIB_0__::func_199();
 }
 
 void func_209()//Position - 0x5DC5
@@ -675,13 +675,13 @@ void func_209()//Position - 0x5DC5
 void func_210(struct<21> Param0)//Position - 0x5DD3
 {
 	int iVar0;
-	__LIB_0__.func_673(__LIB_6__.func_875(Param0.f_0), Param0);
+	__LIB_0__::func_673(__LIB_6__::func_875(Param0.f_0), Param0);
 	NETWORK::RESERVE_NETWORK_MISSION_PEDS(1);
 	NETWORK::RESERVE_NETWORK_MISSION_VEHICLES(1);
-	__LIB_1__.func_569(0, -1, 0);
+	__LIB_1__::func_569(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_83, 28, 0);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&Local_85, 97, 0);
-	if (!__LIB_0__.func_672())
+	if (!__LIB_0__::func_672())
 	{
 		func_206();
 	}
@@ -727,7 +727,7 @@ void func_210(struct<21> Param0)//Position - 0x5DD3
 			func_217();
 			func_211();
 		}
-		__LIB_1__.func_103(15, 1);
+		__LIB_1__::func_103(15, 1);
 		Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/] = 0;
 	}
 	else
@@ -747,7 +747,7 @@ void func_211()//Position - 0x5F20
 		Local_83.f_9[iVar0 /*3*/] = { func_213(iVar1) };
 		if (iVar0 > 0)
 		{
-			if (__LIB_0__.func_394(Local_83.f_9[iVar0 /*3*/], Local_83.f_9[(iVar0 - 1) /*3*/], 250f, 0))
+			if (__LIB_0__::func_394(Local_83.f_9[iVar0 /*3*/], Local_83.f_9[(iVar0 - 1) /*3*/], 250f, 0))
 			{
 				Local_83.f_9[iVar0 /*3*/] = { func_213(iVar1 + 1) };
 			}

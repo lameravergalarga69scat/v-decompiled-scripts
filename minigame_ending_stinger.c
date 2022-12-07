@@ -44,7 +44,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (!bVar1)
 		{
-			switch (__LIB_18__.func_168(PLAYER::PLAYER_PED_ID()))
+			switch (__LIB_18__::func_168(PLAYER::PLAYER_PED_ID()))
 			{
 				case 1:
 					if (AUDIO::LOAD_STREAM("MISSION_COMPLETE_FRANKLIN_SMALL", 0))

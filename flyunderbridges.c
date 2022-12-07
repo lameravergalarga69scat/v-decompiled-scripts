@@ -95,18 +95,18 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if ((__LIB_0__.func_39(13) || __LIB_0__.func_39(14)) || __LIB_0__.func_2(0))
+	if ((__LIB_0__::func_39(13) || __LIB_0__::func_39(14)) || __LIB_0__::func_2(0))
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	func_30();
 	func_29();
 	func_26();
-	__LIB_0__.func_371();
+	__LIB_0__::func_371();
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		__LIB_0__.func_371();
+		__LIB_0__::func_371();
 		func_17();
 		if (BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE())
 		{
@@ -270,8 +270,8 @@ void func_1()//Position - 0x53A
 			{
 				STATS::STAT_INCREMENT(joaat("SP_UNDER_THE_BRIDGE_COUNT"), 1f);
 			}
-			__LIB_26__.func_515(__LIB_18__.func_173(), 5, 3);
-			__LIB_0__.func_533();
+			__LIB_26__::func_515(__LIB_18__::func_173(), 5, 3);
+			__LIB_0__::func_533();
 		}
 		if (bLocal_31 < 32)
 		{
@@ -342,7 +342,7 @@ void func_17()//Position - 0xA32
 		case 0:
 			if (iLocal_29 && !bLocal_47)
 			{
-				if (!__LIB_0__.func_511())
+				if (!__LIB_0__::func_511())
 				{
 					iLocal_30 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("MIDSIZED_MESSAGE");
 					while (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_30))
@@ -352,22 +352,22 @@ void func_17()//Position - 0xA32
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_30, "SHOW_BRIDGES_KNIVES_PROGRESS");
 					if (bLocal_38)
 					{
-						__LIB_0__.func_478("FU_KNIFE" /* GXT: Knife Flight~s~ */);
+						__LIB_0__::func_478("FU_KNIFE" /* GXT: Knife Flight~s~ */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(15);
 					}
 					else
 					{
-						__LIB_0__.func_478("FU_TITLE" /* GXT: Under the Bridge~s~ */);
+						__LIB_0__::func_478("FU_TITLE" /* GXT: Under the Bridge~s~ */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(50);
 					}
-					__LIB_0__.func_478("FU_PASS" /* GXT: Success! */);
+					__LIB_0__::func_478("FU_PASS" /* GXT: Success! */);
 					if (bLocal_38)
 					{
-						__LIB_0__.func_478("FU_CHALL_KN" /* GXT: Flights completed */);
+						__LIB_0__::func_478("FU_CHALL_KN" /* GXT: Flights completed */);
 					}
 					else
 					{
-						__LIB_0__.func_478("FU_CHALLENGE" /* GXT: Bridges flown under */);
+						__LIB_0__::func_478("FU_CHALLENGE" /* GXT: Bridges flown under */);
 					}
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_30());
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -380,7 +380,7 @@ void func_17()//Position - 0xA32
 			}
 			break;
 		case 1:
-			if ((((((SYSTEM::TIMERB() > 3750 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__.func_511()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__.func_134()) || __LIB_30__.func_614())
+			if ((((((SYSTEM::TIMERB() > 3750 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_511()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_30__::func_614())
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_30, "SHARD_ANIM_OUT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -399,7 +399,7 @@ void func_17()//Position - 0xA32
 			}
 			break;
 		case 2:
-			if ((((((SYSTEM::TIMERB() > 500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__.func_511()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__.func_134()) || __LIB_30__.func_614())
+			if ((((((SYSTEM::TIMERB() > 500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_511()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_30__::func_614())
 			{
 				iLocal_28 = 3;
 			}
@@ -432,7 +432,7 @@ void func_18()//Position - 0xC08
 
 void func_19()//Position - 0xC1F
 {
-	if (!__LIB_0__.func_511())
+	if (!__LIB_0__::func_511())
 	{
 		if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_30))
 		{
@@ -447,7 +447,7 @@ void func_26()//Position - 0xD08
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (__LIB_0__.func_394(Local_46, Local_39[iVar0 /*3*/], 1056964608, 0))
+		if (__LIB_0__::func_394(Local_46, Local_39[iVar0 /*3*/], 1056964608, 0))
 		{
 			if (iVar0 == 65 || iVar0 == 66)
 			{
@@ -1050,18 +1050,18 @@ int func_30()//Position - 0x2D90
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	iVar2 = __LIB_34__.func_869();
-	iVar1 = __LIB_37__.func_600();
+	iVar2 = __LIB_34__::func_869();
+	iVar1 = __LIB_37__::func_600();
 	if ((iVar2 + iVar1) > 0)
 	{
-		__LIB_0__.func_4(32, (iVar2 + iVar1));
+		__LIB_0__::func_4(32, (iVar2 + iVar1));
 	}
 	if (bLocal_38)
 	{
 		iVar0 = iVar1;
 		if (iVar1 >= 8)
 		{
-			__LIB_24__.func_943(291, 0, 0);
+			__LIB_24__::func_943(291, 0, 0);
 		}
 	}
 	else
@@ -1077,7 +1077,7 @@ int func_30()//Position - 0x2D90
 		}
 		else if (iVar2 >= 25)
 		{
-			__LIB_24__.func_943(290, 0, 0);
+			__LIB_24__::func_943(290, 0, 0);
 			STATS::PRESENCE_EVENT_UPDATESTAT_INT(joaat("SP0_WATER_CANNON_DEATHS"), 50, 0);
 		}
 		else if (iVar2 >= 13)
@@ -1087,7 +1087,7 @@ int func_30()//Position - 0x2D90
 	}
 	if (iVar1 == 15 && iVar2 == 50)
 	{
-		__LIB_35__.func_525(32, 1);
+		__LIB_35__::func_525(32, 1);
 	}
 	return iVar0;
 }

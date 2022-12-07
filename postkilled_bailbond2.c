@@ -143,35 +143,35 @@ void __EntryFunction__()//Position - 0x0
 			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 			{
 				Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
-				if (__LIB_1__.func_197(iLocal_79[iVar1]))
+				if (__LIB_1__::func_197(iLocal_79[iVar1]))
 				{
 					if (SYSTEM::VDIST2(Var0, ENTITY::GET_ENTITY_COORDS(iLocal_79[iVar1], false)) >= IntToFloat((iVar3 * iVar3)) && ENTITY::IS_ENTITY_OCCLUDED(iLocal_79[iVar1]))
 					{
-						__LIB_0__.func_489(&(Local_89[iVar1 /*8*/]));
-						__LIB_0__.func_124(&(iLocal_79[iVar1]), 1, 0, 1);
+						__LIB_0__::func_489(&(Local_89[iVar1 /*8*/]));
+						__LIB_0__::func_124(&(iLocal_79[iVar1]), 1, 0, 1);
 					}
 					else
 					{
-						__LIB_0__.func_499(iLocal_79[iVar1], &(Local_89[iVar1 /*8*/]), -1, 0, 0, 0, -1082130432, 0, -1, -1, 1, 0);
+						__LIB_0__::func_499(iLocal_79[iVar1], &(Local_89[iVar1 /*8*/]), -1, 0, 0, 0, -1082130432, 0, -1, -1, 1, 0);
 					}
 				}
 				else if (ENTITY::DOES_ENTITY_EXIST(iLocal_79[iVar1]))
 				{
-					__LIB_0__.func_124(&(iLocal_79[iVar1]), 1, 0, 1);
+					__LIB_0__::func_124(&(iLocal_79[iVar1]), 1, 0, 1);
 				}
-				if (__LIB_1__.func_183(iLocal_79.f_5[iVar2]))
+				if (__LIB_1__::func_183(iLocal_79.f_5[iVar2]))
 				{
 					if (SYSTEM::VDIST2(Var0, Local_88[iVar2 /*3*/]) >= IntToFloat((iVar3 * iVar3)))
 					{
 						if (ENTITY::IS_ENTITY_OCCLUDED(iLocal_79.f_5[iVar2]) || PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_79.f_5[iVar2], false))
 						{
-							__LIB_0__.func_106(&(iLocal_79.f_5[iVar2]));
+							__LIB_0__::func_106(&(iLocal_79.f_5[iVar2]));
 						}
 					}
 				}
 				else if (ENTITY::DOES_ENTITY_EXIST(iLocal_79.f_5[iVar2]))
 				{
-					__LIB_0__.func_106(&(iLocal_79.f_5[iVar2]));
+					__LIB_0__::func_106(&(iLocal_79.f_5[iVar2]));
 				}
 				iVar1++;
 				if (iVar1 == iLocal_79)
@@ -222,7 +222,7 @@ int func_9()//Position - 0x5B7
 {
 	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("bailbond2")) == 0)
 	{
-		if (!__LIB_6__.func_763(4))
+		if (!__LIB_6__::func_763(4))
 		{
 			return 0;
 		}
@@ -239,7 +239,7 @@ int func_9()//Position - 0x5B7
 	{
 		return 0;
 	}
-	if (__LIB_18__.func_173() != 2)
+	if (__LIB_18__::func_173() != 2)
 	{
 		return 0;
 	}
@@ -255,7 +255,7 @@ void func_19()//Position - 0x99A
 	iVar0 = 0;
 	while (iVar0 <= (iLocal_79.f_5 - 1))
 	{
-		if (__LIB_1__.func_183(iLocal_79.f_5[iVar0]))
+		if (__LIB_1__::func_183(iLocal_79.f_5[iVar0]))
 		{
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_79.f_5[iVar0], true, true);
 			Local_88[iVar0 /*3*/] = { ENTITY::GET_ENTITY_COORDS(iLocal_79.f_5[iVar0], false) };
@@ -265,11 +265,11 @@ void func_19()//Position - 0x99A
 	iVar0 = 0;
 	while (iVar0 <= (iLocal_79 - 1))
 	{
-		if (__LIB_1__.func_197(iLocal_79[iVar0]))
+		if (__LIB_1__::func_197(iLocal_79[iVar0]))
 		{
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_79[iVar0], true, true);
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_79[iVar0], iLocal_90);
-			__LIB_0__.func_499(iLocal_79[iVar0], &(Local_89[iVar0 /*8*/]), -1, 0, 0, 0, -1082130432, 0, -1, -1, 1, 0);
+			__LIB_0__::func_499(iLocal_79[iVar0], &(Local_89[iVar0 /*8*/]), -1, 0, 0, 0, -1082130432, 0, -1, -1, 1, 0);
 		}
 		iVar0++;
 	}
@@ -283,14 +283,14 @@ void func_20()//Position - 0xA66
 	iVar0 = 0;
 	while (iVar0 <= (iLocal_79 - 1))
 	{
-		__LIB_0__.func_489(&(Local_89[iVar0 /*8*/]));
-		__LIB_0__.func_124(&(iLocal_79[iVar0]), 1, 0, 1);
+		__LIB_0__::func_489(&(Local_89[iVar0 /*8*/]));
+		__LIB_0__::func_124(&(iLocal_79[iVar0]), 1, 0, 1);
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 <= (iLocal_79.f_5 - 1))
 	{
-		__LIB_0__.func_106(&(iLocal_79.f_5[iVar0]));
+		__LIB_0__::func_106(&(iLocal_79.f_5[iVar0]));
 		iVar0++;
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();

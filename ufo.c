@@ -74,13 +74,13 @@ void __EntryFunction__()//Position - 0x0
 		switch (iLocal_18)
 		{
 			case 0:
-				if (CLOCK::GET_CLOCK_HOURS() == 3 && __LIB_31__.func_819())
+				if (CLOCK::GET_CLOCK_HOURS() == 3 && __LIB_31__::func_819())
 				{
 					iLocal_18 = 1;
 				}
 				break;
 			case 1:
-				__LIB_18__.func_191(152, 1, 0, 1, 0);
+				__LIB_18__::func_191(152, 1, 0, 1, 0);
 				iLocal_18 = 2;
 				if (!AUDIO::IS_AMBIENT_ZONE_ENABLED("AZ_SPECIAL_UFO_03"))
 				{
@@ -88,7 +88,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 2:
-				if (CLOCK::GET_CLOCK_HOURS() != 3 || !__LIB_31__.func_819())
+				if (CLOCK::GET_CLOCK_HOURS() != 3 || !__LIB_31__::func_819())
 				{
 					func_10();
 				}
@@ -99,7 +99,7 @@ void __EntryFunction__()//Position - 0x0
 
 void func_10()//Position - 0x4466
 {
-	__LIB_18__.func_191(152, 0, 1, 1, 0);
+	__LIB_18__::func_191(152, 0, 1, 1, 0);
 	if (AUDIO::IS_AMBIENT_ZONE_ENABLED("AZ_SPECIAL_UFO_03"))
 	{
 		AUDIO::SET_AMBIENT_ZONE_STATE("AZ_SPECIAL_UFO_03", false, true);

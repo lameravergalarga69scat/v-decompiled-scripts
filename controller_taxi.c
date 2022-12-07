@@ -327,16 +327,16 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_113 = 1;
 	bVar0 = false;
 	iVar1 = 0;
-	__LIB_7__.func_204(&(Global_113386.f_19097), 4);
-	__LIB_7__.func_204(&(Global_113386.f_19097), 256);
+	__LIB_7__::func_204(&(Global_113386.f_19097), 4);
+	__LIB_7__::func_204(&(Global_113386.f_19097), 256);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(82))
 	{
 		func_91();
 	}
-	__LIB_0__.func_513(16);
+	__LIB_0__::func_513(16);
 	while (true)
 	{
-		bVar0 = !__LIB_0__.func_573(0, 12);
+		bVar0 = !__LIB_0__::func_573(0, 12);
 		iVar2 = 0;
 		if (bVar0 && iVar1 != 1)
 		{
@@ -344,9 +344,9 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (iVar1 == 2)
 		{
-			if (__LIB_6__.func_854(9))
+			if (__LIB_6__::func_854(9))
 			{
-				__LIB_0__.func_735(&iLocal_114);
+				__LIB_0__::func_735(&iLocal_114);
 				iVar1 = 1;
 			}
 		}
@@ -355,55 +355,55 @@ void __EntryFunction__()//Position - 0x0
 			case 0:
 				if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 				{
-					iVar3 = __LIB_18__.func_168(PLAYER::PLAYER_PED_ID());
+					iVar3 = __LIB_18__::func_168(PLAYER::PLAYER_PED_ID());
 					if ((iVar3 == 0 || iVar3 == 2) || iVar3 == 1)
 					{
 						func_85();
-						if (!__LIB_0__.func_517(Global_113386.f_19097, 64))
+						if (!__LIB_0__::func_517(Global_113386.f_19097, 64))
 						{
-							__LIB_6__.func_896(&(Global_113386.f_19097), 64);
+							__LIB_6__::func_896(&(Global_113386.f_19097), 64);
 						}
-						__LIB_37__.func_666(&uLocal_120);
+						__LIB_37__::func_666(&uLocal_120);
 						iVar1 = 1;
-						__LIB_6__.func_892(&iLocal_114);
+						__LIB_6__::func_892(&iLocal_114);
 					}
 				}
 				iVar2 = 100;
 				break;
 			case 1:
-				if (__LIB_9__.func_987(1))
+				if (__LIB_9__::func_987(1))
 				{
 					iLocal_105 = MISC::GET_GAME_TIMER();
 				}
-				if (!__LIB_9__.func_603() && !Global_97369)
+				if (!__LIB_9__::func_603() && !Global_97369)
 				{
 					if (iVar1 != 2)
 					{
-						if ((!MISC::IS_MINIGAME_IN_PROGRESS() && !bVar0) && !__LIB_0__.func_39(5))
+						if ((!MISC::IS_MINIGAME_IN_PROGRESS() && !bVar0) && !__LIB_0__::func_39(5))
 						{
 							func_73();
-							if (__LIB_31__.func_360())
+							if (__LIB_31__::func_360())
 							{
 								if (!iLocal_109)
 								{
 									if (func_70() == 2)
 									{
-										if (!__LIB_0__.func_517(Global_113386.f_19097, 1))
+										if (!__LIB_0__::func_517(Global_113386.f_19097, 1))
 										{
-											switch (__LIB_11__.func_512("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */))
+											switch (__LIB_11__::func_512("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */))
 											{
 												case 2:
-													__LIB_18__.func_203("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */, 1, 0, 1000, 10000, 7, 0, 0, 0);
+													__LIB_18__::func_203("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 													break;
 												case 1:
-													__LIB_6__.func_896(&(Global_113386.f_19097), 1);
+													__LIB_6__::func_896(&(Global_113386.f_19097), 1);
 													break;
 												}
 										}
 									}
 									else
 									{
-										__LIB_7__.func_204(&(Global_113386.f_19097), 1);
+										__LIB_7__::func_204(&(Global_113386.f_19097), 1);
 									}
 									iLocal_109 = 1;
 								}
@@ -413,38 +413,38 @@ void __EntryFunction__()//Position - 0x0
 								}
 								else if (bLocal_110)
 								{
-									if (!__LIB_0__.func_517(Global_113386.f_19097, 16384))
+									if (!__LIB_0__::func_517(Global_113386.f_19097, 16384))
 									{
-										switch (__LIB_11__.func_512("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */))
+										switch (__LIB_11__::func_512("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */))
 										{
 											case 2:
-												__LIB_18__.func_203("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
+												__LIB_18__::func_203("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 												break;
 											case 1:
-												__LIB_6__.func_896(&(Global_113386.f_19097), 16384);
+												__LIB_6__::func_896(&(Global_113386.f_19097), 16384);
 												break;
 											}
 									}
 								}
-								else if (!__LIB_0__.func_517(Global_113386.f_19097, 16))
+								else if (!__LIB_0__::func_517(Global_113386.f_19097, 16))
 								{
 									if (!iLocal_112)
 									{
-										switch (__LIB_11__.func_512("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
+										switch (__LIB_11__::func_512("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 										{
 											case 2:
-												__LIB_18__.func_203("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
+												__LIB_18__::func_203("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 												break;
 											case 1:
 												iLocal_106 = MISC::GET_GAME_TIMER();
 												iLocal_112 = 1;
-												if (__LIB_0__.func_1("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
+												if (__LIB_0__::func_1("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 												{
 													Global_113386.f_19097.f_22[15]++;
 												}
 												if (Global_113386.f_19097.f_22[15] >= 5)
 												{
-													__LIB_6__.func_896(&(Global_113386.f_19097), 16);
+													__LIB_6__::func_896(&(Global_113386.f_19097), 16);
 												}
 												break;
 											}
@@ -459,26 +459,26 @@ void __EntryFunction__()//Position - 0x0
 									case 0:
 										if (func_70() == 0)
 										{
-											if (!__LIB_0__.func_736(&iLocal_114))
+											if (!__LIB_0__::func_736(&iLocal_114))
 											{
-												__LIB_18__.func_276(&iLocal_114);
+												__LIB_18__::func_276(&iLocal_114);
 											}
-											if (__LIB_0__.func_736(&iLocal_117))
+											if (__LIB_0__::func_736(&iLocal_117))
 											{
-												__LIB_0__.func_735(&iLocal_117);
+												__LIB_0__::func_735(&iLocal_117);
 											}
-											if (__LIB_7__.func_78(&iLocal_114) > 20f)
+											if (__LIB_7__::func_78(&iLocal_114) > 20f)
 											{
-												if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && __LIB_10__.func_888())
+												if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && __LIB_10__::func_888())
 												{
 													iLocal_103 = 9;
 													StringCopy(&Local_97, "Taxi_Procedural", 24);
-													__LIB_0__.func_203(&uLocal_120, 8, 0, "TaxiDispatch", 0, 1);
-													__LIB_35__.func_536(&uLocal_120, "OJTXAUD", "OJTX_PRO_OFF", 2, 0, 0, 0);
-													__LIB_6__.func_892(&iLocal_114);
+													__LIB_0__::func_203(&uLocal_120, 8, 0, "TaxiDispatch", 0, 1);
+													__LIB_35__::func_536(&uLocal_120, "OJTXAUD", "OJTX_PRO_OFF", 2, 0, 0, 0);
+													__LIB_6__::func_892(&iLocal_114);
 													iLocal_102 = 1;
 												}
-												else if (!__LIB_10__.func_888())
+												else if (!__LIB_10__::func_888())
 												{
 													if ((MISC::GET_GAME_TIMER() % 1000) < 50)
 													{
@@ -488,20 +488,20 @@ void __EntryFunction__()//Position - 0x0
 										}
 										break;
 									case 1:
-										if (!__LIB_0__.func_736(&iLocal_114))
+										if (!__LIB_0__::func_736(&iLocal_114))
 										{
-											__LIB_18__.func_276(&iLocal_114);
+											__LIB_18__::func_276(&iLocal_114);
 										}
-										if (__LIB_7__.func_78(&iLocal_114) >= 6f)
+										if (__LIB_7__::func_78(&iLocal_114) >= 6f)
 										{
-											switch (__LIB_11__.func_512("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */))
+											switch (__LIB_11__::func_512("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */))
 											{
 												case 2:
-													__LIB_18__.func_203("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
+													__LIB_18__::func_203("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 													break;
 												case 1:
 													iLocal_108 = 1;
-													__LIB_6__.func_892(&iLocal_114);
+													__LIB_6__::func_892(&iLocal_114);
 													iLocal_102 = 2;
 													break;
 											}
@@ -511,23 +511,23 @@ void __EntryFunction__()//Position - 0x0
 										}
 										break;
 									case 2:
-										if (!__LIB_0__.func_736(&iLocal_114))
+										if (!__LIB_0__::func_736(&iLocal_114))
 										{
-											__LIB_18__.func_276(&iLocal_114);
+											__LIB_18__::func_276(&iLocal_114);
 										}
-										if (__LIB_7__.func_78(&iLocal_114) > 15f)
+										if (__LIB_7__::func_78(&iLocal_114) > 15f)
 										{
-											if (!__LIB_0__.func_517(Global_113386.f_19097, 32))
+											if (!__LIB_0__::func_517(Global_113386.f_19097, 32))
 											{
-												__LIB_0__.func_151("TC_MISSEDJOB" /* GXT: ~s~The taxi job you were offered has expired. There is only a short time to accept before another driver takes the job. However, more jobs can be accessed by pressing ~INPUT_VEH_HORN~~s~ */, -1);
-												__LIB_6__.func_896(&(Global_113386.f_19097), 32);
+												__LIB_0__::func_151("TC_MISSEDJOB" /* GXT: ~s~The taxi job you were offered has expired. There is only a short time to accept before another driver takes the job. However, more jobs can be accessed by pressing ~INPUT_VEH_HORN~~s~ */, -1);
+												__LIB_6__::func_896(&(Global_113386.f_19097), 32);
 											}
-											fLocal_107 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(10f, 40f) + __LIB_7__.func_78(&iLocal_114));
+											fLocal_107 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(10f, 40f) + __LIB_7__::func_78(&iLocal_114));
 											iLocal_102 = 3;
 										}
 										else if (iLocal_108)
 										{
-											if (__LIB_7__.func_78(&iLocal_114) > 6f)
+											if (__LIB_7__::func_78(&iLocal_114) > 6f)
 											{
 												iLocal_108 = 0;
 												HUD::CLEAR_HELP(true);
@@ -535,13 +535,13 @@ void __EntryFunction__()//Position - 0x0
 										}
 										break;
 									case 3:
-										if (!__LIB_0__.func_736(&iLocal_114))
+										if (!__LIB_0__::func_736(&iLocal_114))
 										{
-											__LIB_18__.func_276(&iLocal_114);
+											__LIB_18__::func_276(&iLocal_114);
 										}
-										if (__LIB_7__.func_78(&iLocal_114) > fLocal_107)
+										if (__LIB_7__::func_78(&iLocal_114) > fLocal_107)
 										{
-											__LIB_0__.func_735(&iLocal_114);
+											__LIB_0__::func_735(&iLocal_114);
 											iLocal_102 = 0;
 										}
 										break;
@@ -553,7 +553,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (iLocal_102 == 0 || iLocal_102 == 3)
 										{
-											__LIB_37__.func_666(&uLocal_120);
+											__LIB_37__::func_666(&uLocal_120);
 											iLocal_103 = 9;
 											func_35(iLocal_103, &Local_97, &uLocal_120, 0);
 											iLocal_111 = 1;
@@ -563,33 +563,33 @@ void __EntryFunction__()//Position - 0x0
 										{
 											HUD::CLEAR_PRINTS();
 											HUD::CLEAR_HELP(true);
-											if (!__LIB_0__.func_517(Global_113386.f_19097, 128))
+											if (!__LIB_0__::func_517(Global_113386.f_19097, 128))
 											{
-												__LIB_6__.func_896(&(Global_113386.f_19097), 128);
+												__LIB_6__::func_896(&(Global_113386.f_19097), 128);
 											}
 											iVar1 = 4;
 										}
 										SCRIPT::REQUEST_SCRIPT(&Local_97);
-										__LIB_0__.func_735(&iLocal_114);
+										__LIB_0__::func_735(&iLocal_114);
 										iVar2 = 0;
 									}
 									else if (iVar4 == 2)
 									{
 										if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 										{
-											__LIB_0__.func_151("TXC_HEALTH_GONE" /* GXT: Taxi has too much damage to start a Taxi job. */, -1);
+											__LIB_0__::func_151("TXC_HEALTH_GONE" /* GXT: Taxi has too much damage to start a Taxi job. */, -1);
 										}
 									}
 									else if (iVar4 == 3)
 									{
 										if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 										{
-											if (!__LIB_0__.func_1("TXC_WANTED_WARN" /* GXT: Taxi jobs are not available while wanted. */))
+											if (!__LIB_0__::func_1("TXC_WANTED_WARN" /* GXT: Taxi jobs are not available while wanted. */))
 											{
-												if (!__LIB_0__.func_517(Global_113386.f_19097, 32768))
+												if (!__LIB_0__::func_517(Global_113386.f_19097, 32768))
 												{
-													__LIB_0__.func_151("TXC_WANTED_WARN" /* GXT: Taxi jobs are not available while wanted. */, -1);
-													__LIB_6__.func_896(&(Global_113386.f_19097), 32768);
+													__LIB_0__::func_151("TXC_WANTED_WARN" /* GXT: Taxi jobs are not available while wanted. */, -1);
+													__LIB_6__::func_896(&(Global_113386.f_19097), 32768);
 												}
 											}
 										}
@@ -598,40 +598,40 @@ void __EntryFunction__()//Position - 0x0
 							}
 							else
 							{
-								if (!__LIB_0__.func_736(&iLocal_117))
+								if (!__LIB_0__::func_736(&iLocal_117))
 								{
-									__LIB_18__.func_276(&iLocal_117);
+									__LIB_18__::func_276(&iLocal_117);
 								}
 								else
 								{
-									if (__LIB_7__.func_78(&iLocal_117) < 10f)
+									if (__LIB_7__::func_78(&iLocal_117) < 10f)
 									{
 										if ((MISC::GET_GAME_TIMER() % 1000) < 50)
 										{
 										}
 									}
-									if (__LIB_7__.func_78(&iLocal_117) > 10f && iLocal_102 != 0)
+									if (__LIB_7__::func_78(&iLocal_117) > 10f && iLocal_102 != 0)
 									{
 										iLocal_102 = 0;
 									}
 								}
-								if (__LIB_9__.func_610("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
+								if (__LIB_9__::func_610("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 								{
-									__LIB_19__.func_856("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1);
+									__LIB_19__::func_856("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1);
 								}
-								if (__LIB_9__.func_610("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */))
+								if (__LIB_9__::func_610("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */))
 								{
-									__LIB_19__.func_856("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */, 1);
+									__LIB_19__::func_856("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */, 1);
 								}
-								if (__LIB_9__.func_610("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */))
+								if (__LIB_9__::func_610("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */))
 								{
-									__LIB_19__.func_856("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */, 1);
+									__LIB_19__::func_856("TC_H_TOODAMAGED" /* GXT: This taxi is too damaged. Repair it, or get a taxi in better condition to be offered or ask for taxi jobs. */, 1);
 								}
-								if (__LIB_9__.func_610("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */))
+								if (__LIB_9__::func_610("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */))
 								{
-									__LIB_19__.func_856("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */, 1);
+									__LIB_19__::func_856("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */, 1);
 								}
-								if (((MISC::GET_GAME_TIMER() - iLocal_106) > 60000 && !__LIB_0__.func_1("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */)) && iLocal_112)
+								if (((MISC::GET_GAME_TIMER() - iLocal_106) > 60000 && !__LIB_0__::func_1("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */)) && iLocal_112)
 								{
 									iLocal_112 = 0;
 								}
@@ -640,7 +640,7 @@ void __EntryFunction__()//Position - 0x0
 									bLocal_110 = false;
 								}
 								iLocal_109 = 0;
-								__LIB_0__.func_735(&iLocal_114);
+								__LIB_0__::func_735(&iLocal_114);
 							}
 						}
 					}
@@ -657,7 +657,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (SCRIPT::HAS_SCRIPT_LOADED(&Local_97))
 				{
-					iVar5 = __LIB_26__.func_296(&iLocal_104, 2, 9, 0, 0);
+					iVar5 = __LIB_26__::func_296(&iLocal_104, 2, 9, 0, 0);
 					if (iVar5 == 1)
 					{
 						Global_112441 = 1;
@@ -678,51 +678,51 @@ void __EntryFunction__()//Position - 0x0
 					}
 					else
 					{
-						__LIB_31__.func_358("PROCESS_TAXI_DBG_SKIP = Scene is loading.", &iLocal_113, 1000);
+						__LIB_31__::func_358("PROCESS_TAXI_DBG_SKIP = Scene is loading.", &iLocal_113, 1000);
 					}
 				}
 				break;
 			case 5:
 				StringCopy(&Var6, "OJTX_PLRDE1", 24);
 				func_24(&Var6, 1);
-				__LIB_35__.func_536(&uLocal_120, "OJTXAUD", &Var6, 8, 0, 0, 0);
+				__LIB_35__::func_536(&uLocal_120, "OJTXAUD", &Var6, 8, 0, 0, 0);
 				iVar1 = 6;
 				break;
 			case 6:
-				if (!__LIB_0__.func_75())
+				if (!__LIB_0__::func_75())
 				{
-					__LIB_35__.func_536(&uLocal_120, "OJTXAUD", "OJTX_DIS_JOB", 8, 0, 0, 0);
+					__LIB_35__::func_536(&uLocal_120, "OJTXAUD", "OJTX_DIS_JOB", 8, 0, 0, 0);
 					iVar1 = 7;
 				}
 				break;
 			case 7:
-				if (!__LIB_0__.func_75())
+				if (!__LIB_0__::func_75())
 				{
 					StringCopy(&Var7, "OJTX_ACCEPT", 24);
 					func_24(&Var7, 1);
-					__LIB_37__.func_666(&uLocal_120);
-					__LIB_35__.func_536(&uLocal_120, "OJTXAUD", &Var7, 8, 0, 0, 0);
+					__LIB_37__::func_666(&uLocal_120);
+					__LIB_35__::func_536(&uLocal_120, "OJTXAUD", &Var7, 8, 0, 0, 0);
 					iVar1 = 8;
 				}
 				break;
 			case 8:
-				if (__LIB_31__.func_360())
+				if (__LIB_31__::func_360())
 				{
-					if (!__LIB_0__.func_75())
+					if (!__LIB_0__::func_75())
 					{
 						bLocal_110 = false;
-						if (__LIB_9__.func_610("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
+						if (__LIB_9__::func_610("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 						{
-							__LIB_19__.func_856("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1);
+							__LIB_19__::func_856("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1);
 						}
 						iLocal_96 = SYSTEM::START_NEW_SCRIPT(&Local_97, 51000);
 						SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_97);
-						if (!__LIB_0__.func_517(Global_113386.f_19097, 4))
+						if (!__LIB_0__::func_517(Global_113386.f_19097, 4))
 						{
-							__LIB_6__.func_896(&(Global_113386.f_19097), 4);
-							VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(__LIB_9__.func_486(), true);
+							__LIB_6__::func_896(&(Global_113386.f_19097), 4);
+							VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(__LIB_9__::func_486(), true);
 						}
-						__LIB_6__.func_896(&(Global_113386.f_19097), 256);
+						__LIB_6__::func_896(&(Global_113386.f_19097), 256);
 						StringCopy(&Local_97, "", 24);
 						iLocal_111 = 0;
 						iVar1 = 10;
@@ -731,14 +731,14 @@ void __EntryFunction__()//Position - 0x0
 				}
 				else
 				{
-					if (__LIB_0__.func_75())
+					if (__LIB_0__::func_75())
 					{
-						__LIB_0__.func_296();
+						__LIB_0__::func_296();
 					}
 					bLocal_110 = false;
 					iLocal_111 = 0;
 					SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_97);
-					__LIB_6__.func_896(&(Global_113386.f_19097), 256);
+					__LIB_6__::func_896(&(Global_113386.f_19097), 256);
 					StringCopy(&Local_97, "", 24);
 					iLocal_102 = 0;
 					iVar1 = 10;
@@ -747,38 +747,38 @@ void __EntryFunction__()//Position - 0x0
 			case 10:
 				if (!SCRIPT::IS_THREAD_ACTIVE(iLocal_96))
 				{
-					__LIB_7__.func_204(&(Global_113386.f_19097), 2048);
-					if (__LIB_0__.func_517(Global_113386.f_19097, 4))
+					__LIB_7__::func_204(&(Global_113386.f_19097), 2048);
+					if (__LIB_0__::func_517(Global_113386.f_19097, 4))
 					{
-						__LIB_7__.func_204(&(Global_113386.f_19097), 4);
-						VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(__LIB_9__.func_486(), false);
+						__LIB_7__::func_204(&(Global_113386.f_19097), 4);
+						VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(__LIB_9__::func_486(), false);
 					}
 					Global_112441 = 0;
 					iLocal_103 = -1;
 					iVar1 = 11;
 					iVar2 = 0;
 				}
-				else if (__LIB_0__.func_517(Global_113386.f_19097, 1024))
+				else if (__LIB_0__::func_517(Global_113386.f_19097, 1024))
 				{
-					__LIB_7__.func_204(&(Global_113386.f_19097), 1024);
-					__LIB_24__.func_943(__LIB_31__.func_352(iLocal_103), 0, 0);
+					__LIB_7__::func_204(&(Global_113386.f_19097), 1024);
+					__LIB_24__::func_943(__LIB_31__::func_352(iLocal_103), 0, 0);
 					bLocal_110 = true;
 					func_11(iLocal_103, bLocal_110);
-					__LIB_0__.func_540(1, 0);
-					__LIB_20__.func_174();
+					__LIB_0__::func_540(1, 0);
+					__LIB_20__::func_174();
 				}
 				break;
 			case 11:
-				if (__LIB_0__.func_517(Global_113386.f_19097, 256))
+				if (__LIB_0__::func_517(Global_113386.f_19097, 256))
 				{
-					__LIB_7__.func_204(&(Global_113386.f_19097), 256);
-					__LIB_10__.func_865(&iLocal_104);
+					__LIB_7__::func_204(&(Global_113386.f_19097), 256);
+					__LIB_10__::func_865(&iLocal_104);
 				}
 				iLocal_104 = -1;
-				if (!__LIB_0__.func_526())
+				if (!__LIB_0__::func_526())
 				{
-					__LIB_0__.func_540(0, 0);
-					__LIB_11__.func_683();
+					__LIB_0__::func_540(0, 0);
+					__LIB_11__::func_683();
 					StringCopy(&Local_97, "", 24);
 					if (iLocal_96 != 0)
 					{
@@ -788,8 +788,8 @@ void __EntryFunction__()//Position - 0x0
 							iLocal_96 = 0;
 						}
 					}
-					__LIB_0__.func_735(&iLocal_114);
-					__LIB_0__.func_518(0);
+					__LIB_0__::func_735(&iLocal_114);
+					__LIB_0__::func_518(0);
 					iLocal_102 = 0;
 					iVar1 = 1;
 					iVar2 = 0;
@@ -835,7 +835,7 @@ void func_12()//Position - 0xB8C
 void func_24(char* sParam0, bool bParam1)//Position - 0x130D
 {
 	int iVar0;
-	iVar0 = __LIB_18__.func_168(PLAYER::PLAYER_PED_ID());
+	iVar0 = __LIB_18__::func_168(PLAYER::PLAYER_PED_ID());
 	if (iVar0 == 0)
 	{
 		if (bParam1)
@@ -920,8 +920,8 @@ void func_35(int iParam0, char* sParam1, var uParam2, bool bParam3)//Position - 
 		StringCopy(&Var0, func_56(iParam0), 24);
 		cVar1 = { Var0 };
 		StringConCat(&cVar1, "_1", 24);
-		__LIB_37__.func_666(uParam2);
-		__LIB_35__.func_901(uParam2, "OJTXAUD", &Var0, &cVar1, 8, 0, 0);
+		__LIB_37__::func_666(uParam2);
+		__LIB_35__::func_901(uParam2, "OJTXAUD", &Var0, &cVar1, 8, 0, 0);
 	}
 }
 
@@ -975,7 +975,7 @@ int func_70()//Position - 0x28D3
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	if (!__LIB_31__.func_360())
+	if (!__LIB_31__::func_360())
 	{
 		return 1;
 	}
@@ -988,7 +988,7 @@ int func_70()//Position - 0x28D3
 		{
 			return 2;
 		}
-		if (!__LIB_31__.func_357(iVar0))
+		if (!__LIB_31__::func_357(iVar0))
 		{
 			return 2;
 		}
@@ -1002,25 +1002,25 @@ int func_70()//Position - 0x28D3
 
 void func_73()//Position - 0x2A52
 {
-	if (!__LIB_0__.func_517(Global_113386.f_19097, 8192))
+	if (!__LIB_0__::func_517(Global_113386.f_19097, 8192))
 	{
-		if (__LIB_31__.func_360())
+		if (__LIB_31__::func_360())
 		{
-			__LIB_6__.func_896(&(Global_113386.f_19097), 8192);
-			__LIB_31__.func_355();
+			__LIB_6__::func_896(&(Global_113386.f_19097), 8192);
+			__LIB_31__::func_355();
 		}
 	}
-	else if (!__LIB_31__.func_360())
+	else if (!__LIB_31__::func_360())
 	{
-		__LIB_7__.func_204(&(Global_113386.f_19097), 8192);
-		__LIB_31__.func_354();
+		__LIB_7__::func_204(&(Global_113386.f_19097), 8192);
+		__LIB_31__::func_354();
 	}
 }
 
 void func_85()//Position - 0x2E00
 {
 	int iVar0;
-	if (__LIB_0__.func_517(Global_113386.f_19097, 2048))
+	if (__LIB_0__::func_517(Global_113386.f_19097, 2048))
 	{
 		iVar0 = 0;
 		while (iVar0 <= (10 - 1))
@@ -1034,15 +1034,15 @@ void func_85()//Position - 0x2E00
 
 void func_91()//Position - 0x2F60
 {
-	if (__LIB_0__.func_517(Global_113386.f_19097, 4))
+	if (__LIB_0__::func_517(Global_113386.f_19097, 4))
 	{
-		__LIB_7__.func_204(&(Global_113386.f_19097), 4);
-		VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(__LIB_9__.func_486(), false);
+		__LIB_7__::func_204(&(Global_113386.f_19097), 4);
+		VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(__LIB_9__::func_486(), false);
 	}
-	if (__LIB_0__.func_517(Global_113386.f_19097, 256))
+	if (__LIB_0__::func_517(Global_113386.f_19097, 256))
 	{
-		__LIB_7__.func_204(&(Global_113386.f_19097), 256);
-		__LIB_10__.func_865(&iLocal_104);
+		__LIB_7__::func_204(&(Global_113386.f_19097), 256);
+		__LIB_10__::func_865(&iLocal_104);
 	}
 	if (iLocal_96 != 0)
 	{

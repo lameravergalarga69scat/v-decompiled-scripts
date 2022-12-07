@@ -50,12 +50,12 @@ void __EntryFunction__()//Position - 0x0
 				MISC::SET_BIT(&(Global_113386.f_10016.f_25), 1);
 				if (MISC::HAS_GAME_INSTALLED_THIS_SESSION() || MISC::IS_PC_VERSION())
 				{
-					__LIB_0__.func_540(1, 1);
-					__LIB_0__.func_533();
+					__LIB_0__::func_540(1, 1);
+					__LIB_0__::func_533();
 				}
 				else
 				{
-					__LIB_12__.func_254();
+					__LIB_12__::func_254();
 				}
 			}
 		}
@@ -94,7 +94,7 @@ void func_7()//Position - 0x24B
 	HUD::HIDE_LOADING_ON_FADE_THIS_FRAME();
 	PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 199 /*INPUT_FRONTEND_PAUSE*/, true);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(7);
-	__LIB_6__.func_842();
+	__LIB_6__::func_842();
 }
 
 void func_10()//Position - 0x286

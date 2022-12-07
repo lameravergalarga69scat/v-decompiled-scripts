@@ -464,19 +464,19 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_180();
 	}
-	if (!__LIB_0__.func_368(63))
+	if (!__LIB_0__::func_368(63))
 	{
 		func_180();
 	}
-	if (!__LIB_0__.func_369(5) && !__LIB_0__.func_369(6))
+	if (!__LIB_0__::func_369(5) && !__LIB_0__::func_369(6))
 	{
 		func_180();
 	}
-	if (__LIB_0__.func_369(6) && __LIB_6__.func_815(Local_345, 1, 0) == 5)
+	if (__LIB_0__::func_369(6) && __LIB_6__::func_815(Local_345, 1, 0) == 5)
 	{
 		func_180();
 	}
-	if (!__LIB_32__.func_759(1))
+	if (!__LIB_32__::func_759(1))
 	{
 		func_180();
 	}
@@ -488,18 +488,18 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_180();
 	}
-	if (__LIB_6__.func_854(0))
+	if (__LIB_6__::func_854(0))
 	{
 		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("sh_intro_f_hills")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("martin1")) == 0)
 		{
 			func_180();
 		}
 	}
-	if ((((__LIB_11__.func_330() == 206 || __LIB_11__.func_330() == 207) || __LIB_11__.func_330() == 204) || __LIB_11__.func_330() == 205) || __LIB_11__.func_330() == 203)
+	if ((((__LIB_11__::func_330() == 206 || __LIB_11__::func_330() == 207) || __LIB_11__::func_330() == 204) || __LIB_11__::func_330() == 205) || __LIB_11__::func_330() == 203)
 	{
 		iLocal_325 = 1;
 	}
-	else if (__LIB_11__.func_330() == 47)
+	else if (__LIB_11__::func_330() == 47)
 	{
 		iLocal_326 = 1;
 	}
@@ -558,14 +558,14 @@ void func_1()//Position - 0x2AC
 		func_128();
 		func_126();
 	}
-	__LIB_23__.func_158();
+	__LIB_23__::func_158();
 }
 
 int func_5()//Position - 0x1D44
 {
 	struct<3> Var0;
 	float fVar1;
-	if (__LIB_0__.func_76(iLocal_69, iLocal_361, 1) < (0.5f + 0.25f))
+	if (__LIB_0__::func_76(iLocal_69, iLocal_361, 1) < (0.5f + 0.25f))
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_361, true) };
 		if (MISC::GET_GROUND_Z_FOR_3D_COORD(Var0.f_0, Var0.f_1, (Var0.f_2 + 1f), &fVar1, false, false))
@@ -597,7 +597,7 @@ void func_18()//Position - 0x24A3
 	float fVar0;
 	if ((MISC::GET_GAME_TIMER() - iLocal_56) > iLocal_58)
 	{
-		fVar0 = __LIB_0__.func_529(iLocal_69, Local_323, 1);
+		fVar0 = __LIB_0__::func_529(iLocal_69, Local_323, 1);
 		if (fVar0 < 10f)
 		{
 			func_122("BARK_SEQ");
@@ -622,7 +622,7 @@ void func_18()//Position - 0x24A3
 		if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 1)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 		{
 			MISC::SET_BIT(&(Global_113386.f_10049.f_94), 1);
-			__LIB_0__.func_151("CHOP_H_HUNT" /* GXT: Chop will bark more often when he nears pickups. */, -1);
+			__LIB_0__::func_151("CHOP_H_HUNT" /* GXT: Chop will bark more often when he nears pickups. */, -1);
 		}
 	}
 }
@@ -643,7 +643,7 @@ int func_19()//Position - 0x256D
 
 void func_20()//Position - 0x25B4
 {
-	if (!__LIB_4__.func_465(iLocal_69, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")))
+	if (!__LIB_4__::func_465(iLocal_69, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")))
 	{
 		STREAMING::REQUEST_ANIM_DICT("creatures@rottweiler@indication@");
 		if (STREAMING::HAS_ANIM_DICT_LOADED("creatures@rottweiler@indication@"))
@@ -663,7 +663,7 @@ char* func_21()//Position - 0x2626
 {
 	char* sVar0;
 	struct<3> Var1;
-	if (__LIB_0__.func_121(iLocal_69))
+	if (__LIB_0__::func_121(iLocal_69))
 	{
 		Var1 = { ENTITY::GET_ENTITY_COORDS(iLocal_69, true) };
 		if ((Var1.f_2 + 1f) < Local_322.f_2)
@@ -832,7 +832,7 @@ void func_32()//Position - 0x29A8
 {
 	struct<3> Var0;
 	Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_69, true) };
-	__LIB_30__.func_913(Var0);
+	__LIB_30__::func_913(Var0);
 	func_122("WHINE");
 	func_108("CHOP_NONEAR", 0);
 	func_17();
@@ -997,7 +997,7 @@ int func_38()//Position - 0x2AFE
 void func_41()//Position - 0x2CD7
 {
 	struct<3> Var0;
-	if ((((((__LIB_11__.func_826() != 1 && (MISC::GET_GAME_TIMER() - iLocal_62) > 10000) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && iLocal_86 == 0) && iLocal_367 != joaat("WEAPON_BALL")) && PED::COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 100f) == 0) && PED::COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS(iLocal_69, ENTITY::GET_ENTITY_COORDS(iLocal_69, true), 100f) == 0)
+	if ((((((__LIB_11__::func_826() != 1 && (MISC::GET_GAME_TIMER() - iLocal_62) > 10000) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && iLocal_86 == 0) && iLocal_367 != joaat("WEAPON_BALL")) && PED::COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 100f) == 0) && PED::COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS(iLocal_69, ENTITY::GET_ENTITY_COORDS(iLocal_69, true), 100f) == 0)
 	{
 		STREAMING::REQUEST_PTFX_ASSET();
 		if (STREAMING::HAS_PTFX_ASSET_LOADED())
@@ -1007,7 +1007,7 @@ void func_41()//Position - 0x2CD7
 			{
 				if (MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Local_355, false) > 20f)
 				{
-					__LIB_0__.func_122(&iLocal_349, 0);
+					__LIB_0__::func_122(&iLocal_349, 0);
 					iLocal_349 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(Var0, 10f, joaat("prop_streetlight_01"), true, false, true);
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_349))
 					{
@@ -1032,9 +1032,9 @@ void func_44()//Position - 0x2E94
 	if (((!BitTest(Global_113386.f_10049.f_94, 7) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 	{
 		MISC::SET_BIT(&(Global_113386.f_10049.f_94), 7);
-		__LIB_0__.func_151("CHOP_H_BALL" /* GXT: When taking Chop for a walk, Franklin can play fetch using the ball in the weapon wheel. */, -1);
+		__LIB_0__::func_151("CHOP_H_BALL" /* GXT: When taking Chop for a walk, Franklin can play fetch using the ball in the weapon wheel. */, -1);
 	}
-	if (((__LIB_0__.func_121(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) && __LIB_0__.func_121(iLocal_69)) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, true))
+	if (((__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) && __LIB_0__::func_121(iLocal_69)) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, true))
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iLocal_367, true);
 		if (((((iLocal_367 == joaat("WEAPON_BALL") || iLocal_367 == joaat("WEAPON_GRENADE")) || iLocal_367 == joaat("WEAPON_SMOKEGRENADE")) || iLocal_367 == joaat("WEAPON_STICKYBOMB")) || iLocal_367 == joaat("WEAPON_MOLOTOV")) || iLocal_367 == joaat("WEAPON_FLARE"))
@@ -1043,7 +1043,7 @@ void func_44()//Position - 0x2E94
 			{
 				func_121(15, 1);
 			}
-			else if (((MISC::GET_GAME_TIMER() - iLocal_63) > 10000 && ENTITY::GET_ENTITY_SPEED(iLocal_69) < 1f) && __LIB_0__.func_76(PLAYER::PLAYER_PED_ID(), iLocal_69, 1) < 5f)
+			else if (((MISC::GET_GAME_TIMER() - iLocal_63) > 10000 && ENTITY::GET_ENTITY_SPEED(iLocal_69) < 1f) && __LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_69, 1) < 5f)
 			{
 				STREAMING::REQUEST_ANIM_DICT("creatures@rottweiler@amb@world_dog_barking@enter");
 				STREAMING::REQUEST_ANIM_DICT("creatures@rottweiler@amb@world_dog_barking@idle_a");
@@ -1068,9 +1068,9 @@ void func_44()//Position - 0x2E94
 
 void func_45()//Position - 0x3074
 {
-	if (__LIB_0__.func_300() && !__LIB_37__.func_312(4))
+	if (__LIB_0__::func_300() && !__LIB_37__::func_312(4))
 	{
-		if ((__LIB_0__.func_121(iLocal_69) && iLocal_86 == 0) && PED::IS_PED_IN_GROUP(iLocal_69))
+		if ((__LIB_0__::func_121(iLocal_69) && iLocal_86 == 0) && PED::IS_PED_IN_GROUP(iLocal_69))
 		{
 			PED::REMOVE_PED_FROM_GROUP(iLocal_69);
 		}
@@ -1097,7 +1097,7 @@ void func_53()//Position - 0x385F
 
 void func_54()//Position - 0x38A2
 {
-	if (__LIB_0__.func_121(PLAYER::PLAYER_PED_ID()))
+	if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 	{
 		if (iLocal_86 > 1 && iLocal_86 < 8)
 		{
@@ -1151,14 +1151,14 @@ void func_54()//Position - 0x38A2
 					}
 					else
 					{
-						if (!__LIB_0__.func_121(iLocal_78))
+						if (!__LIB_0__::func_121(iLocal_78))
 						{
 							iLocal_78 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 							func_79();
 							func_78();
 						}
 						STREAMING::REQUEST_ANIM_DICT(sLocal_371);
-						if (STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371) && __LIB_0__.func_121(iLocal_78))
+						if (STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371) && __LIB_0__::func_121(iLocal_78))
 						{
 							if (PED::IS_PED_IN_GROUP(iLocal_69))
 							{
@@ -1208,7 +1208,7 @@ void func_54()//Position - 0x38A2
 					if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 3)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 3);
-						__LIB_0__.func_151("CHOP_H_NOVEH" /* GXT: Chop can only get into suitable cars with an empty front passenger seat. */, -1);
+						__LIB_0__::func_151("CHOP_H_NOVEH" /* GXT: Chop can only get into suitable cars with an empty front passenger seat. */, -1);
 					}
 					func_121(3, 1);
 				}
@@ -1230,7 +1230,7 @@ void func_54()//Position - 0x38A2
 						}
 						else if (VEHICLE::GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(PED::GET_VEHICLE_PED_IS_ENTERING(PLAYER::PLAYER_PED_ID())) >= 1 && VEHICLE::IS_VEHICLE_SEAT_FREE(PED::GET_VEHICLE_PED_IS_ENTERING(PLAYER::PLAYER_PED_ID()), 0, false))
 						{
-							if (!__LIB_0__.func_75())
+							if (!__LIB_0__::func_75())
 							{
 								func_108("CHOP_RIDE", 0);
 							}
@@ -1266,7 +1266,7 @@ void func_54()//Position - 0x38A2
 			{
 				iLocal_86 = 15;
 			}
-			else if (__LIB_0__.func_121(iLocal_78) && func_70())
+			else if (__LIB_0__::func_121(iLocal_78) && func_70())
 			{
 				if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94))
 				{
@@ -1285,7 +1285,7 @@ void func_54()//Position - 0x38A2
 			else
 			{
 				STREAMING::REQUEST_ANIM_DICT(sLocal_371);
-				if (__LIB_0__.func_121(iLocal_78))
+				if (__LIB_0__::func_121(iLocal_78))
 				{
 					if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94) && VEHICLE::GET_VEHICLE_DOOR_ANGLE_RATIO(iLocal_78, iLocal_94) < 0.95f)
 					{
@@ -1294,7 +1294,7 @@ void func_54()//Position - 0x38A2
 					}
 					if (func_76() && MISC::GET_GAME_TIMER() >= iLocal_383 + 300)
 					{
-						if (!__LIB_4__.func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) && STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371))
+						if (!__LIB_4__::func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) && STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371))
 						{
 							func_72();
 							func_69(1, 1);
@@ -1326,7 +1326,7 @@ void func_54()//Position - 0x38A2
 					CAM::SET_USE_HI_DOF();
 				}
 				STREAMING::REQUEST_ANIM_DICT(sLocal_371);
-				if (((STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371) && PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_87)) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_87) > 0.99f) && __LIB_0__.func_121(iLocal_78))
+				if (((STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371) && PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_87)) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_87) > 0.99f) && __LIB_0__::func_121(iLocal_78))
 				{
 					func_69(0, 1);
 					func_75(0);
@@ -1343,7 +1343,7 @@ void func_54()//Position - 0x38A2
 			else
 			{
 				STREAMING::REQUEST_ANIM_DICT("misschop_vehicleenter_exit");
-				if (STREAMING::HAS_ANIM_DICT_LOADED("misschop_vehicleenter_exit") && __LIB_0__.func_121(iLocal_78))
+				if (STREAMING::HAS_ANIM_DICT_LOADED("misschop_vehicleenter_exit") && __LIB_0__::func_121(iLocal_78))
 				{
 					if ((!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94) && VEHICLE::GET_VEHICLE_DOOR_ANGLE_RATIO(iLocal_78, 1) > 0.1f) && !func_77())
 					{
@@ -1359,7 +1359,7 @@ void func_54()//Position - 0x38A2
 			{
 				func_68(2f, 0f, 0f, 1);
 			}
-			else if (__LIB_0__.func_121(iLocal_78) && func_70())
+			else if (__LIB_0__::func_121(iLocal_78) && func_70())
 			{
 				if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94))
 				{
@@ -1370,14 +1370,14 @@ void func_54()//Position - 0x38A2
 			break;
 		case 8:
 			func_72();
-			__LIB_0__.func_523(&iLocal_70);
-			__LIB_11__.func_813(1);
+			__LIB_0__::func_523(&iLocal_70);
+			__LIB_11__::func_813(1);
 			if (iLocal_54 == -1)
 			{
 				iLocal_54 = MISC::GET_GAME_TIMER();
 				iLocal_55 = 7000;
 			}
-			if (__LIB_0__.func_121(iLocal_78))
+			if (__LIB_0__::func_121(iLocal_78))
 			{
 				if (func_66())
 				{
@@ -1439,7 +1439,7 @@ void func_54()//Position - 0x38A2
 					if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 2)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 2);
-						__LIB_0__.func_151("CHOP_H_CAR" /* GXT: Chop will follow Franklin into suitable cars with an empty front passenger seat. */, -1);
+						__LIB_0__::func_151("CHOP_H_CAR" /* GXT: Chop will follow Franklin into suitable cars with an empty front passenger seat. */, -1);
 					}
 				}
 			}
@@ -1450,7 +1450,7 @@ void func_54()//Position - 0x38A2
 			break;
 		case 9:
 			func_72();
-			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !__LIB_4__.func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
+			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !__LIB_4__::func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 			{
 				TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 			}
@@ -1481,7 +1481,7 @@ void func_54()//Position - 0x38A2
 			{
 				func_68(2f, 0f, 0f, 1);
 			}
-			else if (__LIB_0__.func_121(iLocal_78) && func_70())
+			else if (__LIB_0__::func_121(iLocal_78) && func_70())
 			{
 				if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94))
 				{
@@ -1493,7 +1493,7 @@ void func_54()//Position - 0x38A2
 		case 12:
 			func_72();
 			STREAMING::REQUEST_ANIM_DICT(sLocal_371);
-			if ((!__LIB_4__.func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) && STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371)) && __LIB_0__.func_121(iLocal_78))
+			if ((!__LIB_4__::func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_PLAY_ANIM")) && STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371)) && __LIB_0__::func_121(iLocal_78))
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_69);
 				iLocal_87 = PED::CREATE_SYNCHRONIZED_SCENE(0f, 0f, 0f, 0f, 0f, 0f, 2);
@@ -1505,7 +1505,7 @@ void func_54()//Position - 0x38A2
 			break;
 		case 13:
 			func_72();
-			if ((PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && (MISC::GET_GAME_TIMER() - iLocal_373) > 1500) && !__LIB_4__.func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
+			if ((PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && (MISC::GET_GAME_TIMER() - iLocal_373) > 1500) && !__LIB_4__::func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 			{
 				TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 			}
@@ -1526,7 +1526,7 @@ void func_54()//Position - 0x38A2
 				if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 5)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 				{
 					MISC::SET_BIT(&(Global_113386.f_10049.f_94), 5);
-					__LIB_0__.func_151("CHOP_H_BIKE" /* GXT: Chop will follow bikes and other vehicles he cannot get inside. */, -1);
+					__LIB_0__::func_151("CHOP_H_BIKE" /* GXT: Chop will follow bikes and other vehicles he cannot get inside. */, -1);
 				}
 			}
 			break;
@@ -1540,7 +1540,7 @@ void func_54()//Position - 0x38A2
 				STREAMING::REMOVE_ANIM_DICT(sLocal_371);
 				iLocal_62 = MISC::GET_GAME_TIMER();
 				func_56();
-				__LIB_0__.func_106(&iLocal_78);
+				__LIB_0__::func_106(&iLocal_78);
 				iLocal_78 = 0;
 				iLocal_54 = -1;
 				TASK::CLEAR_PED_TASKS(iLocal_69);
@@ -1549,7 +1549,7 @@ void func_54()//Position - 0x38A2
 				PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 32, true);
 				func_121(2, 1);
 			}
-			else if (!__LIB_4__.func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
+			else if (!__LIB_4__::func_465(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_LEAVE_ANY_VEHICLE")))
 			{
 				TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
 			}
@@ -1559,7 +1559,7 @@ void func_54()//Position - 0x38A2
 
 void func_56()//Position - 0x42E7
 {
-	if (((iLocal_385 == 1 && __LIB_0__.func_121(VEHICLE::GET_LAST_DRIVEN_VEHICLE())) && VEHICLE::GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(VEHICLE::GET_LAST_DRIVEN_VEHICLE()) > 1) && !VEHICLE::IS_VEHICLE_DOOR_DAMAGED(VEHICLE::GET_LAST_DRIVEN_VEHICLE(), iLocal_94))
+	if (((iLocal_385 == 1 && __LIB_0__::func_121(VEHICLE::GET_LAST_DRIVEN_VEHICLE())) && VEHICLE::GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(VEHICLE::GET_LAST_DRIVEN_VEHICLE()) > 1) && !VEHICLE::IS_VEHICLE_DOOR_DAMAGED(VEHICLE::GET_LAST_DRIVEN_VEHICLE(), iLocal_94))
 	{
 		VEHICLE::SET_VEHICLE_DOOR_LATCHED(VEHICLE::GET_LAST_DRIVEN_VEHICLE(), iLocal_94, false, true, false);
 	}
@@ -1567,24 +1567,24 @@ void func_56()//Position - 0x42E7
 
 void func_57()//Position - 0x4330
 {
-	if ((!HUD::DOES_BLIP_EXIST(iLocal_70) && __LIB_0__.func_121(iLocal_69)) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, true))
+	if ((!HUD::DOES_BLIP_EXIST(iLocal_70) && __LIB_0__::func_121(iLocal_69)) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, true))
 	{
-		if (__LIB_0__.func_368(126))
+		if (__LIB_0__::func_368(126))
 		{
-			__LIB_10__.func_604(139, 0, 0);
+			__LIB_10__::func_604(139, 0, 0);
 		}
 		else
 		{
-			__LIB_10__.func_604(138, 0, 0);
+			__LIB_10__::func_604(138, 0, 0);
 		}
-		iLocal_70 = __LIB_6__.func_850(iLocal_69, 0, 145);
+		iLocal_70 = __LIB_6__::func_850(iLocal_69, 0, 145);
 		HUD::SET_BLIP_SPRITE(iLocal_70, 273);
 	}
 }
 
 void func_62()//Position - 0x458F
 {
-	if (__LIB_0__.func_121(iLocal_69) && __LIB_0__.func_121(iLocal_78))
+	if (__LIB_0__::func_121(iLocal_69) && __LIB_0__::func_121(iLocal_78))
 	{
 		if (iLocal_372 > -1)
 		{
@@ -1625,7 +1625,7 @@ void func_64()//Position - 0x46E8
 	if ((MISC::GET_GAME_TIMER() - iLocal_57) > 500)
 	{
 		iLocal_57 = MISC::GET_GAME_TIMER();
-		if (__LIB_0__.func_121(iLocal_69) && PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, false))
+		if (__LIB_0__::func_121(iLocal_69) && PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, false))
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_95);
 			TASK::TASK_PLAY_ANIM(0, sLocal_371, "bark", 4f, -4f, -1, 0, 0f, false, false, false);
@@ -1650,7 +1650,7 @@ void func_65()//Position - 0x476E
 		{
 			if (func_35())
 			{
-				if (__LIB_0__.func_121(iLocal_69))
+				if (__LIB_0__::func_121(iLocal_69))
 				{
 					if (PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, false))
 					{
@@ -1671,7 +1671,7 @@ int func_66()//Position - 0x47E9
 {
 	float fVar0;
 	struct<3> Var1;
-	if (__LIB_0__.func_121(iLocal_78))
+	if (__LIB_0__::func_121(iLocal_78))
 	{
 		if (ENTITY::IS_ENTITY_IN_WATER(iLocal_78))
 		{
@@ -1703,9 +1703,9 @@ int func_66()//Position - 0x47E9
 
 void func_68(struct<3> Param0, int iParam1)//Position - 0x487C
 {
-	if (__LIB_0__.func_121(PLAYER::PLAYER_PED_ID()) && __LIB_0__.func_121(iLocal_69))
+	if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && __LIB_0__::func_121(iLocal_69))
 	{
-		if (__LIB_0__.func_121(iLocal_78))
+		if (__LIB_0__::func_121(iLocal_78))
 		{
 			if ((iParam1 == 1 && !VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94)) && VEHICLE::GET_VEHICLE_DOOR_ANGLE_RATIO(iLocal_78, 1) < 0.9f)
 			{
@@ -1716,7 +1716,7 @@ void func_68(struct<3> Param0, int iParam1)//Position - 0x487C
 				PED::DETACH_SYNCHRONIZED_SCENE(iLocal_87);
 			}
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_69);
-			__LIB_10__.func_701(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_78, Param0), ENTITY::GET_ENTITY_HEADING(iLocal_69), 1, 0);
+			__LIB_10__::func_701(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_78, Param0), ENTITY::GET_ENTITY_HEADING(iLocal_69), 1, 0);
 			PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_69, false, false);
 			func_69(0, 0);
 			iLocal_86 = 15;
@@ -1728,7 +1728,7 @@ void func_68(struct<3> Param0, int iParam1)//Position - 0x487C
 				PED::DETACH_SYNCHRONIZED_SCENE(iLocal_87);
 			}
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_69);
-			__LIB_10__.func_701(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), (Param0.f_0 + 1f), Param0.f_1, Param0.f_2), ENTITY::GET_ENTITY_HEADING(iLocal_69), 1, 0);
+			__LIB_10__::func_701(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), (Param0.f_0 + 1f), Param0.f_1, Param0.f_2), ENTITY::GET_ENTITY_HEADING(iLocal_69), 1, 0);
 			PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_69, false, false);
 			func_69(0, 0);
 			iLocal_86 = 15;
@@ -1746,7 +1746,7 @@ void func_69(int iParam0, int iParam1)//Position - 0x4961
 	struct<3> Var5;
 	if (iParam0 == 1)
 	{
-		if (!CAM::DOES_CAM_EXIST(iLocal_380) && __LIB_0__.func_121(iLocal_78))
+		if (!CAM::DOES_CAM_EXIST(iLocal_380) && __LIB_0__::func_121(iLocal_78))
 		{
 			iVar2 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
 			if (iVar2 == 0)
@@ -1795,7 +1795,7 @@ void func_69(int iParam0, int iParam1)//Position - 0x4961
 
 int func_70()//Position - 0x4AEE
 {
-	if (__LIB_0__.func_121(iLocal_78))
+	if (__LIB_0__::func_121(iLocal_78))
 	{
 		if (((MISC::GET_GAME_TIMER() - iLocal_373) > 500 || VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94)) || func_77())
 		{
@@ -1819,7 +1819,7 @@ void func_72()//Position - 0x4B5A
 
 void func_74()//Position - 0x4B94
 {
-	if (!__LIB_4__.func_465(iLocal_69, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) && __LIB_0__.func_76(PLAYER::PLAYER_PED_ID(), iLocal_69, 1) > 1f)
+	if (!__LIB_4__::func_465(iLocal_69, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")) && __LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_69, 1) > 1f)
 	{
 		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true), 2f, 0f, 0f), 2f, 20000, 0.25f, 0, 40000f);
 	}
@@ -1832,7 +1832,7 @@ void func_75(int iParam0)//Position - 0x4BE2
 		CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 		CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 	}
-	__LIB_0__.func_523(&iLocal_70);
+	__LIB_0__::func_523(&iLocal_70);
 	ENTITY::SET_ENTITY_INVINCIBLE(iLocal_69, true);
 	PED::SET_PED_INTO_VEHICLE(iLocal_69, iLocal_78, 0);
 	TASK::TASK_PLAY_ANIM(iLocal_69, sLocal_371, "sit", 8f, -8f, -1, 1, 0f, false, false, false);
@@ -1842,18 +1842,18 @@ void func_75(int iParam0)//Position - 0x4BE2
 int func_76()//Position - 0x4C3A
 {
 	float fVar0;
-	if (__LIB_0__.func_121(iLocal_78) && __LIB_0__.func_121(iLocal_69))
+	if (__LIB_0__::func_121(iLocal_78) && __LIB_0__::func_121(iLocal_69))
 	{
 		if (iLocal_66 == -1)
 		{
-			fVar0 = __LIB_0__.func_76(iLocal_78, iLocal_69, 1);
+			fVar0 = __LIB_0__::func_76(iLocal_78, iLocal_69, 1);
 			iLocal_66 = SYSTEM::FLOOR((fVar0 * 1000f));
 			if (iLocal_66 < 5000)
 			{
 				iLocal_66 = 5000;
 			}
 		}
-		if (((__LIB_0__.func_529(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_78, 2f, 0f, 0f), 0) < 1f || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 71 /*INPUT_VEH_ACCELERATE*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 72 /*INPUT_VEH_BRAKE*/)) || (iLocal_65 > -1 && (MISC::GET_GAME_TIMER() - iLocal_65) > iLocal_66))
+		if (((__LIB_0__::func_529(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_78, 2f, 0f, 0f), 0) < 1f || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 71 /*INPUT_VEH_ACCELERATE*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 72 /*INPUT_VEH_BRAKE*/)) || (iLocal_65 > -1 && (MISC::GET_GAME_TIMER() - iLocal_65) > iLocal_66))
 		{
 			return 1;
 		}
@@ -1864,7 +1864,7 @@ int func_76()//Position - 0x4C3A
 int func_77()//Position - 0x4CCF
 {
 	int iVar0;
-	if (__LIB_0__.func_121(iLocal_78))
+	if (__LIB_0__::func_121(iLocal_78))
 	{
 		iVar0 = ENTITY::GET_ENTITY_MODEL(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), true));
 		if (((((((((((((((((((((((iVar0 == joaat("airbus") || iVar0 == joaat("barracks")) || iVar0 == joaat("barracks2")) || iVar0 == joaat("biff")) || iVar0 == joaat("bus")) || iVar0 == joaat("coach")) || iVar0 == joaat("hauler")) || iVar0 == joaat("mixer")) || iVar0 == joaat("mixer2")) || iVar0 == joaat("packer")) || iVar0 == joaat("pbus")) || iVar0 == joaat("phantom")) || iVar0 == joaat("pounder")) || iVar0 == joaat("riot")) || iVar0 == joaat("rubble")) || iVar0 == joaat("scrap")) || iVar0 == joaat("stockade")) || iVar0 == joaat("stockade3")) || iVar0 == joaat("tiptruck")) || iVar0 == joaat("tiptruck2")) || iVar0 == joaat("towtruck")) || iVar0 == joaat("towtruck2")) || iVar0 == MISC::GET_HASH_KEY("monster" /* GXT: The Liberator */)) || iVar0 == MISC::GET_HASH_KEY("marshall" /* GXT: Marshall */))
@@ -1878,7 +1878,7 @@ int func_77()//Position - 0x4CCF
 void func_78()//Position - 0x4E47
 {
 	int iVar0;
-	if (__LIB_0__.func_121(iLocal_78))
+	if (__LIB_0__::func_121(iLocal_78))
 	{
 		iVar0 = ENTITY::GET_ENTITY_MODEL(iLocal_78);
 		if (iVar0 == joaat("coach"))
@@ -1894,7 +1894,7 @@ void func_78()//Position - 0x4E47
 
 void func_79()//Position - 0x4E73
 {
-	if (__LIB_0__.func_121(iLocal_78))
+	if (__LIB_0__::func_121(iLocal_78))
 	{
 		iLocal_369 = VEHICLE::GET_VEHICLE_LAYOUT_HASH(iLocal_78);
 		switch (iLocal_369)
@@ -2012,15 +2012,15 @@ void func_83()//Position - 0x510D
 	{
 		if (func_96(iVar2))
 		{
-			Var0 = { __LIB_30__.func_615(iVar2, 1) };
-			if (!__LIB_0__.func_86(Var0))
+			Var0 = { __LIB_30__::func_615(iVar2, 1) };
+			if (!__LIB_0__::func_86(Var0))
 			{
 				fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_69, true), Var0, true);
 				if (fVar1 < fLocal_318[2] && fVar1 < fLocal_324)
 				{
 					iLocal_317[2] = iVar2;
 					fLocal_318[2] = fVar1;
-					Local_319[2 /*3*/] = { __LIB_30__.func_615(iVar2, 0) };
+					Local_319[2 /*3*/] = { __LIB_30__::func_615(iVar2, 0) };
 					Local_320[2 /*3*/] = { Var0 };
 				}
 			}
@@ -2033,15 +2033,15 @@ void func_83()//Position - 0x510D
 	{
 		if (func_93(iVar2))
 		{
-			Var0 = { __LIB_30__.func_616(iVar2, 1) };
-			if (!__LIB_0__.func_86(Var0))
+			Var0 = { __LIB_30__::func_616(iVar2, 1) };
+			if (!__LIB_0__::func_86(Var0))
 			{
 				fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_69, true), Var0, true);
 				if (fVar1 < fLocal_318[1] && fVar1 < fLocal_324)
 				{
 					iLocal_317[1] = iVar2;
 					fLocal_318[1] = fVar1;
-					Local_319[1 /*3*/] = { __LIB_30__.func_616(iVar2, 0) };
+					Local_319[1 /*3*/] = { __LIB_30__::func_616(iVar2, 0) };
 					Local_320[1 /*3*/] = { Var0 };
 				}
 			}
@@ -2054,15 +2054,15 @@ void func_83()//Position - 0x510D
 	{
 		if (func_91(iVar2))
 		{
-			Var0 = { __LIB_30__.func_617(iVar2, 1) };
-			if (!__LIB_0__.func_86(Var0))
+			Var0 = { __LIB_30__::func_617(iVar2, 1) };
+			if (!__LIB_0__::func_86(Var0))
 			{
 				fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_69, true), Var0, true);
 				if (fVar1 < fLocal_318[0] && fVar1 < fLocal_324)
 				{
 					iLocal_317[0] = iVar2;
 					fLocal_318[0] = fVar1;
-					Local_319[0 /*3*/] = { __LIB_30__.func_617(iVar2, 0) };
+					Local_319[0 /*3*/] = { __LIB_30__::func_617(iVar2, 0) };
 					Local_320[0 /*3*/] = { Var0 };
 				}
 			}
@@ -2077,15 +2077,15 @@ void func_83()//Position - 0x510D
 		{
 			if (!func_26(iVar2) && func_88(iVar2))
 			{
-				Var0 = { __LIB_29__.func_826(iVar2, 1) };
-				if (!__LIB_0__.func_86(Var0))
+				Var0 = { __LIB_29__::func_826(iVar2, 1) };
+				if (!__LIB_0__::func_86(Var0))
 				{
 					fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_69, true), Var0, true);
 					if (fVar1 < fLocal_318[3] && fVar1 < fLocal_324)
 					{
 						iLocal_317[3] = iVar2;
 						fLocal_318[3] = fVar1;
-						Local_319[3 /*3*/] = { __LIB_29__.func_826(iVar2, 0) };
+						Local_319[3 /*3*/] = { __LIB_29__::func_826(iVar2, 0) };
 						Local_320[3 /*3*/] = { Var0 };
 					}
 				}
@@ -2101,15 +2101,15 @@ void func_83()//Position - 0x510D
 		{
 			if (!func_25(iVar2) && func_85(iVar2))
 			{
-				Var0 = { __LIB_31__.func_127(iVar2, 1) };
-				if (!__LIB_0__.func_86(Var0))
+				Var0 = { __LIB_31__::func_127(iVar2, 1) };
+				if (!__LIB_0__::func_86(Var0))
 				{
 					fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iLocal_69, true), Var0, true);
 					if (fVar1 < fLocal_318[4] && fVar1 < fLocal_324)
 					{
 						iLocal_317[4] = iVar2;
 						fLocal_318[4] = fVar1;
-						Local_319[4 /*3*/] = { __LIB_31__.func_127(iVar2, 0) };
+						Local_319[4 /*3*/] = { __LIB_31__::func_127(iVar2, 0) };
 						Local_320[4 /*3*/] = { Var0 };
 					}
 				}
@@ -2273,7 +2273,7 @@ void func_100()//Position - 0x8BA2
 	if (PED::IS_PED_IN_GROUP(iLocal_69))
 	{
 		PED::SET_PED_NEVER_LEAVES_GROUP(iLocal_69, true);
-		PED::SET_GROUP_FORMATION_SPACING(__LIB_0__.func_399(), 1f, 0.9f, 3f);
+		PED::SET_GROUP_FORMATION_SPACING(__LIB_0__::func_399(), 1f, 0.9f, 3f);
 		PED::SET_PED_CAN_TELEPORT_TO_GROUP_LEADER(iLocal_69, PED::GET_PED_GROUP_INDEX(PLAYER::PLAYER_PED_ID()), true);
 	}
 }
@@ -2282,13 +2282,13 @@ void func_102()//Position - 0x8C00
 {
 	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false) && !ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()))
 	{
-		if (__LIB_8__.func_538(PLAYER::PLAYER_PED_ID(), iLocal_69) > 10f || __LIB_0__.func_1("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */))
+		if (__LIB_8__::func_538(PLAYER::PLAYER_PED_ID(), iLocal_69) > 10f || __LIB_0__::func_1("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */))
 		{
 			if ((MISC::GET_GAME_TIMER() - iLocal_342) > 4000 && PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 47 /*INPUT_DETONATE*/))
 			{
 				iLocal_342 = MISC::GET_GAME_TIMER();
-				__LIB_6__.func_834(PLAYER::PLAYER_PED_ID(), "CALL_CHOP", 3);
-				if (__LIB_0__.func_1("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */))
+				__LIB_6__::func_834(PLAYER::PLAYER_PED_ID(), "CALL_CHOP", 3);
+				if (__LIB_0__::func_1("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -2297,7 +2297,7 @@ void func_102()//Position - 0x8C00
 				}
 				else
 				{
-					__LIB_11__.func_813(0);
+					__LIB_11__::func_813(0);
 					if (iLocal_51 == 2)
 					{
 						func_121(2, 0);
@@ -2311,7 +2311,7 @@ void func_102()//Position - 0x8C00
 			if (((!BitTest(Global_113386.f_10049.f_94, 8) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 			{
 				MISC::SET_BIT(&(Global_113386.f_10049.f_94), 8);
-				__LIB_0__.func_151("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */, -1);
+				__LIB_0__::func_151("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */, -1);
 			}
 		}
 	}
@@ -2329,8 +2329,8 @@ int func_107()//Position - 0x8F27
 
 void func_108(char* sParam0, int iParam1)//Position - 0x8F62
 {
-	__LIB_0__.func_203(&uLocal_148, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
-	__LIB_10__.func_617(&uLocal_148, "CHOP_AU", sParam0, 3, iParam1, 0);
+	__LIB_0__::func_203(&uLocal_148, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
+	__LIB_10__::func_617(&uLocal_148, "CHOP_AU", sParam0, 3, iParam1, 0);
 }
 
 void func_112()//Position - 0x90B7
@@ -2368,13 +2368,13 @@ void func_115()//Position - 0x919B
 			iLocal_359 = 1;
 		}
 	}
-	else if (!__LIB_4__.func_465(iLocal_69, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
+	else if (!__LIB_4__::func_465(iLocal_69, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 	{
-		if (__LIB_11__.func_826() == 2)
+		if (__LIB_11__::func_826() == 2)
 		{
 			iVar1 = 15;
 		}
-		else if (__LIB_11__.func_826() == 0)
+		else if (__LIB_11__::func_826() == 0)
 		{
 			iVar1 = 10;
 		}
@@ -2409,7 +2409,7 @@ void func_115()//Position - 0x919B
 
 void func_116()//Position - 0x92BC
 {
-	if (((MISC::GET_GAME_TIMER() - iLocal_378) > 2000 && __LIB_0__.func_121(iLocal_69)) && MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(iLocal_69, true), 5f, true))
+	if (((MISC::GET_GAME_TIMER() - iLocal_378) > 2000 && __LIB_0__::func_121(iLocal_69)) && MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(iLocal_69, true), 5f, true))
 	{
 		func_122("WHINE");
 		iLocal_378 = MISC::GET_GAME_TIMER();
@@ -2418,7 +2418,7 @@ void func_116()//Position - 0x92BC
 
 void func_117()//Position - 0x92FE
 {
-	if (__LIB_11__.func_826() == 2 && (MISC::GET_GAME_TIMER() - iLocal_343) > iLocal_344)
+	if (__LIB_11__::func_826() == 2 && (MISC::GET_GAME_TIMER() - iLocal_343) > iLocal_344)
 	{
 		iLocal_343 = MISC::GET_GAME_TIMER();
 		iLocal_344 = MISC::GET_RANDOM_INT_IN_RANGE(10000, 15000);
@@ -2430,11 +2430,11 @@ int func_118(int iParam0, int iParam1)//Position - 0x933B
 {
 	struct<3> Var0;
 	struct<3> Var1;
-	if ((__LIB_0__.func_121(iLocal_69) && __LIB_0__.func_121(PLAYER::PLAYER_PED_ID())) && __LIB_11__.func_326(iParam0, Local_329, 30f))
+	if ((__LIB_0__::func_121(iLocal_69) && __LIB_0__::func_121(PLAYER::PLAYER_PED_ID())) && __LIB_11__::func_326(iParam0, Local_329, 30f))
 	{
 		if (iParam1 == 1)
 		{
-			if (__LIB_11__.func_325(&uLocal_96, ENTITY::GET_ENTITY_COORDS(iParam0, true)))
+			if (__LIB_11__::func_325(&uLocal_96, ENTITY::GET_ENTITY_COORDS(iParam0, true)))
 			{
 				Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_69, true) };
 				Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
@@ -2455,7 +2455,7 @@ int func_118(int iParam0, int iParam1)//Position - 0x933B
 void func_121(int iParam0, int iParam1)//Position - 0x94AF
 {
 	iLocal_86 = 0;
-	if (__LIB_0__.func_121(iLocal_69))
+	if (__LIB_0__::func_121(iLocal_69))
 	{
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_69, true);
 		WEAPON::CLEAR_PED_LAST_WEAPON_DAMAGE(iLocal_69);
@@ -2495,7 +2495,7 @@ int func_123()//Position - 0x953D
 		{
 			return 1;
 		}
-		if (__LIB_0__.func_529(PLAYER::PLAYER_PED_ID(), Local_329.f_5, 1) < 8f)
+		if (__LIB_0__::func_529(PLAYER::PLAYER_PED_ID(), Local_329.f_5, 1) < 8f)
 		{
 			func_108("CHOP_KENNEL", 0);
 			return 1;
@@ -2511,13 +2511,13 @@ void func_126()//Position - 0x9607
 		iLocal_382 = MISC::GET_GAME_TIMER();
 		if ((iLocal_51 == 2 || iLocal_51 == 5) || iLocal_51 == 15)
 		{
-			if (__LIB_11__.func_826() == 1)
+			if (__LIB_11__::func_826() == 1)
 			{
-				__LIB_0__.func_181(115, 1);
+				__LIB_0__::func_181(115, 1);
 			}
 			else
 			{
-				__LIB_0__.func_181(116, 1);
+				__LIB_0__::func_181(116, 1);
 			}
 		}
 	}
@@ -2530,7 +2530,7 @@ void func_128()//Position - 0x96B7
 		iLocal_379 = MISC::GET_GAME_TIMER();
 		if (iLocal_51 != 15 && MISC::GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_BALL"), 1.5f, &uLocal_362, &iLocal_361, false))
 		{
-			__LIB_11__.func_813(1);
+			__LIB_11__::func_813(1);
 		}
 	}
 }
@@ -2538,7 +2538,7 @@ void func_128()//Position - 0x96B7
 void func_129()//Position - 0x96FF
 {
 	int iVar0;
-	if (((((((((((func_144() && func_143()) && !__LIB_0__.func_190()) && iLocal_53 == 0) && iLocal_51 != 6) && func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !PED::IS_PED_IN_COMBAT(iLocal_69, 0)) && !func_81()) && !__LIB_0__.func_300()) && !__LIB_0__.func_77(0)) && !__LIB_0__.func_661())
+	if (((((((((((func_144() && func_143()) && !__LIB_0__::func_190()) && iLocal_53 == 0) && iLocal_51 != 6) && func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !PED::IS_PED_IN_COMBAT(iLocal_69, 0)) && !func_81()) && !__LIB_0__::func_300()) && !__LIB_0__::func_77(0)) && !__LIB_0__::func_661())
 	{
 		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/, true);
 		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 44 /*INPUT_COVER*/, true);
@@ -2547,11 +2547,11 @@ void func_129()//Position - 0x96FF
 		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
 		if (iLocal_328 == 0)
 		{
-			__LIB_20__.func_579(SYSTEM::FLOOR(Global_113386.f_20118.f_254), 100, "CHOP_H_HAPPY" /* GXT: Happiness */, 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+			__LIB_20__::func_579(SYSTEM::FLOOR(Global_113386.f_20118.f_254), 100, "CHOP_H_HAPPY" /* GXT: Happiness */, 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 		}
 		else
 		{
-			__LIB_20__.func_579(100, 100, "CHOP_H_HAPPY" /* GXT: Happiness */, 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
+			__LIB_20__::func_579(100, 100, "CHOP_H_HAPPY" /* GXT: Happiness */, 1, -1, 2, -1f, -1f, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 		}
 		if (func_137())
 		{
@@ -2631,7 +2631,7 @@ void func_129()//Position - 0x96FF
 						func_121(5, 1);
 					}
 				}
-				if (__LIB_11__.func_826() == 2 && iLocal_328 == 0)
+				if (__LIB_11__::func_826() == 2 && iLocal_328 == 0)
 				{
 					if (func_132() >= 1)
 					{
@@ -2736,7 +2736,7 @@ void func_129()//Position - 0x96FF
 			}
 			if (bLocal_327 == 0)
 			{
-				bLocal_327 = __LIB_23__.func_159();
+				bLocal_327 = __LIB_23__::func_159();
 			}
 			if (bLocal_327 == 1)
 			{
@@ -2747,7 +2747,7 @@ void func_129()//Position - 0x96FF
 				}
 				if ((((iLocal_51 == 1 || iLocal_51 == 17) || iLocal_51 == 18) || iLocal_51 == 3) || iLocal_51 == 4)
 				{
-					if ((__LIB_11__.func_826() == 2 && iLocal_328 == 0) && iVar0 > 0)
+					if ((__LIB_11__::func_826() == 2 && iLocal_328 == 0) && iVar0 > 0)
 					{
 						StringCopy(&Local_88, "CHOP_H_WAIT_H", 32);
 					}
@@ -2763,7 +2763,7 @@ void func_129()//Position - 0x96FF
 				}
 				else if (iLocal_51 == 2 || iLocal_51 == 15)
 				{
-					if ((__LIB_11__.func_826() == 2 && iLocal_328 == 0) && iVar0 > 0)
+					if ((__LIB_11__::func_826() == 2 && iLocal_328 == 0) && iVar0 > 0)
 					{
 						StringCopy(&Local_88, "CHOP_H_WALK_H", 32);
 					}
@@ -2777,26 +2777,26 @@ void func_129()//Position - 0x96FF
 						StringConCat(&Local_88, "_KM", 32);
 					}
 				}
-				__LIB_0__.func_187(&Local_88);
+				__LIB_0__::func_187(&Local_88);
 			}
 			else if (iLocal_51 == 2 || iLocal_51 == 15)
 			{
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0 /*PLAYER_CONTROL*/))
 				{
-					__LIB_0__.func_187("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */);
+					__LIB_0__::func_187("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */);
 				}
 				else
 				{
-					__LIB_0__.func_187("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */);
+					__LIB_0__::func_187("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */);
 				}
 			}
 			else if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0 /*PLAYER_CONTROL*/))
 			{
-				__LIB_0__.func_187("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */);
+				__LIB_0__::func_187("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */);
 			}
 			else
 			{
-				__LIB_0__.func_187("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */);
+				__LIB_0__::func_187("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */);
 			}
 		}
 	}
@@ -2888,7 +2888,7 @@ int func_137()//Position - 0x9EB2
 {
 	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 	{
-		if (((((((((((((((((((__LIB_0__.func_1("CHOP_H_WAIT_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */) || __LIB_0__.func_1("CHOP_H_WAIT_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */)) || __LIB_0__.func_1("CHOP_H_WALK_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || __LIB_0__.func_1("CHOP_H_WALK_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
+		if (((((((((((((((((((__LIB_0__::func_1("CHOP_H_WAIT_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */) || __LIB_0__::func_1("CHOP_H_WAIT_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */)) || __LIB_0__::func_1("CHOP_H_WALK_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || __LIB_0__::func_1("CHOP_H_WALK_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
 		{
 			return 1;
 		}
@@ -2897,7 +2897,7 @@ int func_137()//Position - 0x9EB2
 	{
 		if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 		{
-			if (((((((((((((((((((__LIB_0__.func_1("CHOP_H_WAIT_0_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */) || __LIB_0__.func_1("CHOP_H_WAIT_1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */)) || __LIB_0__.func_1("CHOP_H_WALK_0_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || __LIB_0__.func_1("CHOP_H_WALK_1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
+			if (((((((((((((((((((__LIB_0__::func_1("CHOP_H_WAIT_0_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */) || __LIB_0__::func_1("CHOP_H_WAIT_1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */)) || __LIB_0__::func_1("CHOP_H_WALK_0_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || __LIB_0__::func_1("CHOP_H_WALK_1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
 			{
 				return 1;
 			}
@@ -2912,7 +2912,7 @@ int func_143()//Position - 0xA3EA
 	{
 		return 0;
 	}
-	if (iLocal_51 == 13 || (iLocal_51 == 14 && __LIB_4__.func_465(iLocal_69, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"))))
+	if (iLocal_51 == 13 || (iLocal_51 == 14 && __LIB_4__::func_465(iLocal_69, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"))))
 	{
 		if (iLocal_357 == 0 && PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 228 /*INPUT_SCRIPT_LT*/))
 		{
@@ -2926,7 +2926,7 @@ int func_143()//Position - 0xA3EA
 
 int func_144()//Position - 0xA446
 {
-	if (__LIB_8__.func_538(PLAYER::PLAYER_PED_ID(), iLocal_69) < 10f)
+	if (__LIB_8__::func_538(PLAYER::PLAYER_PED_ID(), iLocal_69) < 10f)
 	{
 		if (iLocal_51 == 15 && iLocal_52 < 4)
 		{
@@ -2947,7 +2947,7 @@ int func_144()//Position - 0xA446
 	}
 	func_148(0);
 	func_147(0);
-	if (__LIB_0__.func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || (MISC::IS_PC_VERSION() && __LIB_0__.func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)))
+	if (__LIB_0__::func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || (MISC::IS_PC_VERSION() && __LIB_0__::func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -2956,7 +2956,7 @@ int func_144()//Position - 0xA446
 
 void func_145()//Position - 0xA4D6
 {
-	if ((((((((!BitTest(Global_113386.f_10049.f_94, 0) && !(__LIB_0__.func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || (MISC::IS_PC_VERSION() && __LIB_0__.func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)))) && !__LIB_0__.func_1("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */)) && !__LIB_0__.func_1("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */)) && !__LIB_0__.func_200()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !__LIB_0__.func_77(0)) && !__LIB_0__.func_190()) && !__LIB_0__.func_661())
+	if ((((((((!BitTest(Global_113386.f_10049.f_94, 0) && !(__LIB_0__::func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || (MISC::IS_PC_VERSION() && __LIB_0__::func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)))) && !__LIB_0__::func_1("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */)) && !__LIB_0__::func_1("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */)) && !__LIB_0__::func_200()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !__LIB_0__::func_77(0)) && !__LIB_0__::func_190()) && !__LIB_0__::func_661())
 	{
 		if ((iLocal_51 == 1 || iLocal_51 == 17) || iLocal_51 == 18)
 		{
@@ -2965,18 +2965,18 @@ void func_145()//Position - 0xA4D6
 				HUD::CLEAR_HELP(true);
 				if (PAD::IS_USING_KEYBOARD_AND_MOUSE(0 /*PLAYER_CONTROL*/))
 				{
-					__LIB_0__.func_187("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */);
+					__LIB_0__::func_187("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */);
 				}
 				else
 				{
-					__LIB_0__.func_187("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */);
+					__LIB_0__::func_187("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */);
 				}
 			}
 		}
 	}
-	if ((MISC::IS_PC_VERSION() && __LIB_0__.func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)) || __LIB_0__.func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */))
+	if ((MISC::IS_PC_VERSION() && __LIB_0__::func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */)) || __LIB_0__::func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */))
 	{
-		if ((((__LIB_0__.func_200() || STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) || __LIB_0__.func_77(0)) || __LIB_0__.func_190()) || __LIB_0__.func_661())
+		if ((((__LIB_0__::func_200() || STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) || __LIB_0__::func_77(0)) || __LIB_0__::func_190()) || __LIB_0__::func_661())
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -2987,13 +2987,13 @@ void func_147(int iParam0)//Position - 0xA61B
 {
 	if (iParam0 == 1)
 	{
-		if (__LIB_0__.func_121(iLocal_69))
+		if (__LIB_0__::func_121(iLocal_69))
 		{
 			TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_69, -1, 48, 2);
 			iLocal_73 = 1;
 		}
 	}
-	else if (iLocal_73 == 1 && __LIB_0__.func_121(PLAYER::PLAYER_PED_ID()))
+	else if (iLocal_73 == 1 && __LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 	{
 		TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());
 		iLocal_73 = 0;
@@ -3038,7 +3038,7 @@ void func_149()//Position - 0xA6EC
 	int iVar5;
 	if ((iLocal_51 != 6 && iLocal_86 == 0) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
 	{
-		if (((iLocal_51 == 2 || iLocal_51 == 5) || iLocal_51 == 15) || (iLocal_51 == 14 && !__LIB_4__.func_465(iLocal_69, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"))))
+		if (((iLocal_51 == 2 || iLocal_51 == 5) || iLocal_51 == 15) || (iLocal_51 == 14 && !__LIB_4__::func_465(iLocal_69, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"))))
 		{
 			if (PED::COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 100f) > 0 || PED::COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS(iLocal_69, ENTITY::GET_ENTITY_COORDS(iLocal_69, true), 100f) > 0)
 			{
@@ -3046,22 +3046,22 @@ void func_149()//Position - 0xA6EC
 				iVar0 = 0;
 				while (iVar0 < PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar1, -1))
 				{
-					if ((((!__LIB_0__.func_121(iVar2) && __LIB_0__.func_121(uVar1[iVar0])) && (PED::IS_PED_IN_COMBAT(uVar1[iVar0], PLAYER::PLAYER_PED_ID()) || PED::IS_PED_IN_COMBAT(uVar1[iVar0], iLocal_69))) && !PED::IS_PED_IN_ANY_VEHICLE(uVar1[iVar0], false)) && uVar1[iVar0] != iLocal_69)
+					if ((((!__LIB_0__::func_121(iVar2) && __LIB_0__::func_121(uVar1[iVar0])) && (PED::IS_PED_IN_COMBAT(uVar1[iVar0], PLAYER::PLAYER_PED_ID()) || PED::IS_PED_IN_COMBAT(uVar1[iVar0], iLocal_69))) && !PED::IS_PED_IN_ANY_VEHICLE(uVar1[iVar0], false)) && uVar1[iVar0] != iLocal_69)
 					{
 						iVar2 = uVar1[iVar0];
 					}
 					iVar0++;
 				}
-				if (__LIB_0__.func_121(iVar2))
+				if (__LIB_0__::func_121(iVar2))
 				{
 					TASK::TASK_COMBAT_PED(iLocal_69, iVar2, 0, 16);
 					func_108("CHOP_ATTACK2", 0);
 					if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 6)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 6);
-						__LIB_0__.func_151("CHOP_H_ATTACK" /* GXT: Chop will attack anyone who attacks Franklin. */, -1);
+						__LIB_0__::func_151("CHOP_H_ATTACK" /* GXT: Chop will attack anyone who attacks Franklin. */, -1);
 					}
-					__LIB_11__.func_813(0);
+					__LIB_11__::func_813(0);
 					func_121(6, 0);
 				}
 			}
@@ -3075,7 +3075,7 @@ void func_149()//Position - 0xA6EC
 						if (ENTITY::IS_ENTITY_A_PED(iVar4))
 						{
 							iVar5 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar4);
-							if (((!PED::IS_PED_INJURED(iVar5) && iVar5 != iLocal_69) && !PED::IS_PED_IN_ANY_VEHICLE(iVar5, false)) && __LIB_0__.func_76(PLAYER::PLAYER_PED_ID(), iVar5, 1) < 50f)
+							if (((!PED::IS_PED_INJURED(iVar5) && iVar5 != iLocal_69) && !PED::IS_PED_IN_ANY_VEHICLE(iVar5, false)) && __LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iVar5, 1) < 50f)
 							{
 								TASK::TASK_COMBAT_PED(iLocal_69, iVar5, 0, 16);
 								iLocal_374++;
@@ -3088,9 +3088,9 @@ void func_149()//Position - 0xA6EC
 								if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !BitTest(Global_113386.f_10049.f_94, 11)) && !func_19()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 								{
 									MISC::SET_BIT(&(Global_113386.f_10049.f_94), 11);
-									__LIB_0__.func_151("CHOP_H_AIM" /* GXT: Chop will attack anyone who Franklin targets. */, -1);
+									__LIB_0__::func_151("CHOP_H_AIM" /* GXT: Chop will attack anyone who Franklin targets. */, -1);
 								}
-								__LIB_11__.func_813(0);
+								__LIB_11__::func_813(0);
 								func_121(6, 0);
 							}
 						}
@@ -3131,11 +3131,11 @@ void func_151()//Position - 0xA9E7
 
 void func_152()//Position - 0xAA0F
 {
-	if (iLocal_360 != __LIB_23__.func_158() && __LIB_0__.func_121(iLocal_69))
+	if (iLocal_360 != __LIB_23__::func_158() && __LIB_0__::func_121(iLocal_69))
 	{
-		if (__LIB_23__.func_159())
+		if (__LIB_23__::func_159())
 		{
-			iLocal_360 = __LIB_23__.func_158();
+			iLocal_360 = __LIB_23__::func_158();
 			PED::SET_PED_COMPONENT_VARIATION(iLocal_69, 3, 0, iLocal_360, 0);
 		}
 		else if (iLocal_360 != 4)
@@ -3150,12 +3150,12 @@ void func_154()//Position - 0xAA74
 {
 	int iVar0;
 	Global_32106 = 0;
-	STREAMING::REQUEST_MODEL(__LIB_11__.func_813());
-	if (!STREAMING::HAS_MODEL_LOADED(__LIB_11__.func_813()))
+	STREAMING::REQUEST_MODEL(__LIB_11__::func_813());
+	if (!STREAMING::HAS_MODEL_LOADED(__LIB_11__::func_813()))
 	{
 		return;
 	}
-	if (__LIB_0__.func_369(6))
+	if (__LIB_0__::func_369(6))
 	{
 		Local_329.f_4 = 6;
 		Local_329 = { 18.1531f, 535.2469f, 169.6324f };
@@ -3171,13 +3171,13 @@ void func_154()//Position - 0xAA74
 		Local_358[5 /*3*/] = { 18.05178f, 535.63214f, 169.6277f };
 		Local_358[6 /*3*/] = { 18.92047f, 534.09375f, 169.6277f };
 		Local_358[7 /*3*/] = { 17.51333f, 533.4775f, 169.6277f };
-		__LIB_11__.func_329(&uLocal_96);
-		__LIB_11__.func_328(&uLocal_96, 12.41124f, 535.5469f, 169.6277f);
-		__LIB_11__.func_328(&uLocal_96, 19.04497f, 538.5729f, 169.6277f);
-		__LIB_11__.func_328(&uLocal_96, 25.00015f, 534.4414f, 169.6277f);
-		__LIB_11__.func_328(&uLocal_96, 28.0998f, 527.76385f, 169.42769f);
-		__LIB_11__.func_328(&uLocal_96, 17.75896f, 523.3129f, 169.22769f);
-		__LIB_11__.func_327(&uLocal_96);
+		__LIB_11__::func_329(&uLocal_96);
+		__LIB_11__::func_328(&uLocal_96, 12.41124f, 535.5469f, 169.6277f);
+		__LIB_11__::func_328(&uLocal_96, 19.04497f, 538.5729f, 169.6277f);
+		__LIB_11__::func_328(&uLocal_96, 25.00015f, 534.4414f, 169.6277f);
+		__LIB_11__::func_328(&uLocal_96, 28.0998f, 527.76385f, 169.42769f);
+		__LIB_11__::func_328(&uLocal_96, 17.75896f, 523.3129f, 169.22769f);
+		__LIB_11__::func_327(&uLocal_96);
 	}
 	else
 	{
@@ -3195,17 +3195,17 @@ void func_154()//Position - 0xAA74
 		Local_358[5 /*3*/] = { -14.55816f, -1423.0481f, 29.78372f };
 		Local_358[6 /*3*/] = { -16.13293f, -1424.4891f, 29.76139f };
 		Local_358[7 /*3*/] = { -16.25662f, -1423.325f, 29.81294f };
-		__LIB_11__.func_329(&uLocal_96);
-		__LIB_11__.func_328(&uLocal_96, -7.26821f, -1427.0648f, 29.67468f);
-		__LIB_11__.func_328(&uLocal_96, -7.39631f, -1418.8508f, 29.5858f);
-		__LIB_11__.func_328(&uLocal_96, -14.27201f, -1421.5902f, 29.76819f);
-		__LIB_11__.func_328(&uLocal_96, -22.85347f, -1423.1727f, 29.74042f);
-		__LIB_11__.func_328(&uLocal_96, -22.77974f, -1427.168f, 29.65953f);
-		__LIB_11__.func_327(&uLocal_96);
+		__LIB_11__::func_329(&uLocal_96);
+		__LIB_11__::func_328(&uLocal_96, -7.26821f, -1427.0648f, 29.67468f);
+		__LIB_11__::func_328(&uLocal_96, -7.39631f, -1418.8508f, 29.5858f);
+		__LIB_11__::func_328(&uLocal_96, -14.27201f, -1421.5902f, 29.76819f);
+		__LIB_11__::func_328(&uLocal_96, -22.85347f, -1423.1727f, 29.74042f);
+		__LIB_11__::func_328(&uLocal_96, -22.77974f, -1427.168f, 29.65953f);
+		__LIB_11__::func_327(&uLocal_96);
 	}
-	bLocal_327 = __LIB_23__.func_159();
+	bLocal_327 = __LIB_23__::func_159();
 	func_156();
-	if (__LIB_11__.func_826() == 2)
+	if (__LIB_11__::func_826() == 2)
 	{
 		MISC::CLEAR_AREA_OF_OBJECTS(Local_347, 2f, 2);
 		STREAMING::REQUEST_MODEL(joaat("prop_big_shit_02"));
@@ -3249,8 +3249,8 @@ void func_154()//Position - 0xAA74
 		iLocal_51 = 1;
 		iLocal_75 = 0;
 	}
-	iLocal_82 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(11.23f, 515.4f, 168f, 9f, 21f, 4f, __LIB_9__.func_257(113f), false, 7);
-	iLocal_83 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(24f, 528f, 168f, 5f, 5f, 4f, __LIB_9__.func_257(113f), false, 7);
+	iLocal_82 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(11.23f, 515.4f, 168f, 9f, 21f, 4f, __LIB_9__::func_257(113f), false, 7);
+	iLocal_83 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(24f, 528f, 168f, 5f, 5f, 4f, __LIB_9__::func_257(113f), false, 7);
 	Local_84[0 /*3*/] = { 444.1685f, 5569.016f, 780.1895f };
 	Local_84[1 /*3*/] = { 443.8968f, 5574.931f, 780.1895f };
 	Local_84[2 /*3*/] = { -739.1624f, 5596.7837f, 40.6594f };
@@ -3287,7 +3287,7 @@ void func_156()//Position - 0xAF8A
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_69, true, true);
 			TASK::CLEAR_PED_TASKS(iLocal_69);
 			func_152();
-			while (__LIB_0__.func_200())
+			while (__LIB_0__::func_200())
 			{
 				SYSTEM::WAIT(0);
 			}
@@ -3295,15 +3295,15 @@ void func_156()//Position - 0xAF8A
 	}
 	else if (iLocal_326 == 1)
 	{
-		if (__LIB_0__.func_121(PLAYER::PLAYER_PED_ID()))
+		if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 		{
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 			{
 				iLocal_78 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 				func_79();
 				func_78();
-				__LIB_23__.func_162(&iLocal_69, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 0, 1);
-				if (__LIB_0__.func_121(iLocal_69))
+				__LIB_23__::func_162(&iLocal_69, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 0, 1);
+				if (__LIB_0__::func_121(iLocal_69))
 				{
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_69, true);
 					PED::SET_PED_ALLOW_VEHICLES_OVERRIDE(iLocal_69, true);
@@ -3316,9 +3316,9 @@ void func_156()//Position - 0xAF8A
 					func_152();
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_69, false, false);
 				}
-				while (__LIB_0__.func_200())
+				while (__LIB_0__::func_200())
 				{
-					if (__LIB_0__.func_121(iLocal_69) && !__LIB_4__.func_465(iLocal_69, joaat("SCRIPT_TASK_PLAY_ANIM")))
+					if (__LIB_0__::func_121(iLocal_69) && !__LIB_4__::func_465(iLocal_69, joaat("SCRIPT_TASK_PLAY_ANIM")))
 					{
 						STREAMING::REQUEST_ANIM_DICT(sLocal_371);
 						if (STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371))
@@ -3333,9 +3333,9 @@ void func_156()//Position - 0xAF8A
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_69))
 	{
-		__LIB_23__.func_162(&iLocal_69, Local_329, Local_329.f_3, 1);
+		__LIB_23__::func_162(&iLocal_69, Local_329, Local_329.f_3, 1);
 	}
-	if (__LIB_0__.func_121(iLocal_69))
+	if (__LIB_0__::func_121(iLocal_69))
 	{
 		PED::ADD_RELATIONSHIP_GROUP("rel_group_chop", &iLocal_71);
 		iLocal_72 = 1;
@@ -3378,7 +3378,7 @@ void func_156()//Position - 0xAF8A
 		{
 			func_57();
 		}
-		__LIB_0__.func_203(&uLocal_148, 3, iLocal_69, "CHOP", 0, 1);
+		__LIB_0__::func_203(&uLocal_148, 3, iLocal_69, "CHOP", 0, 1);
 		PED::SET_PED_CAN_BE_TARGETTED(iLocal_69, false);
 		ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(iLocal_69, false, 0f);
 		PED::SET_ALLOW_LOCKON_TO_PED_IF_FRIENDLY(iLocal_69, false);
@@ -3394,7 +3394,7 @@ int func_158()//Position - 0xB36A
 	var uVar0[10];
 	int iVar1;
 	int iVar2;
-	if (__LIB_0__.func_121(Global_100162) && PED::IS_PED_MODEL(Global_100162, __LIB_11__.func_813()))
+	if (__LIB_0__::func_121(Global_100162) && PED::IS_PED_MODEL(Global_100162, __LIB_11__::func_813()))
 	{
 		iLocal_69 = Global_100162;
 		return 1;
@@ -3403,7 +3403,7 @@ int func_158()//Position - 0xB36A
 	iVar2 = 0;
 	while (iVar2 < iVar1)
 	{
-		if ((uVar0[iVar2] != 0 && __LIB_0__.func_121(uVar0[iVar2])) && ENTITY::GET_ENTITY_MODEL(uVar0[iVar2]) == __LIB_11__.func_813())
+		if ((uVar0[iVar2] != 0 && __LIB_0__::func_121(uVar0[iVar2])) && ENTITY::GET_ENTITY_MODEL(uVar0[iVar2]) == __LIB_11__::func_813())
 		{
 			iLocal_69 = uVar0[iVar2];
 			return 1;
@@ -3422,11 +3422,11 @@ int func_163()//Position - 0xB4FE
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iLocal_69))
 		{
-			if (__LIB_6__.func_854(0) && Global_31965 == 0)
+			if (__LIB_6__::func_854(0) && Global_31965 == 0)
 			{
 				return 1;
 			}
-			if (!__LIB_32__.func_759(1))
+			if (!__LIB_32__::func_759(1))
 			{
 				return 1;
 			}
@@ -3434,7 +3434,7 @@ int func_163()//Position - 0xB4FE
 			{
 				return 1;
 			}
-			if (((((((((((Global_78317 == 1 && Global_31965 == 0) && Global_8140 == 0) && Global_32214 == 0) && Global_32215 == 0) && Global_32216 == 0) && Global_60335 == 0) && !__LIB_0__.func_200()) && !__LIB_0__.func_300()) && Global_102575 == 0) && __LIB_0__.func_121(PLAYER::PLAYER_PED_ID())) && !__LIB_4__.func_234())
+			if (((((((((((Global_78317 == 1 && Global_31965 == 0) && Global_8140 == 0) && Global_32214 == 0) && Global_32215 == 0) && Global_32216 == 0) && Global_60335 == 0) && !__LIB_0__::func_200()) && !__LIB_0__::func_300()) && Global_102575 == 0) && __LIB_0__::func_121(PLAYER::PLAYER_PED_ID())) && !__LIB_4__::func_234())
 			{
 				return 1;
 			}
@@ -3450,13 +3450,13 @@ int func_163()//Position - 0xB4FE
 					if (!BitTest(Global_113386.f_10049.f_94, 9) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 					{
 						MISC::SET_BIT(&(Global_113386.f_10049.f_94), 9);
-						__LIB_0__.func_151("CHOP_H_DEAD" /* GXT: Franklin killed Chop. Chop will soon return to Franklin's safehouse, but he's not happy. */, -1);
+						__LIB_0__::func_151("CHOP_H_DEAD" /* GXT: Franklin killed Chop. Chop will soon return to Franklin's safehouse, but he's not happy. */, -1);
 					}
 				}
 				else if (!BitTest(Global_113386.f_10049.f_94, 12) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 				{
 					MISC::SET_BIT(&(Global_113386.f_10049.f_94), 12);
-					__LIB_0__.func_151("CHOP_H_DEAD2" /* GXT: Chop was killed. Chop will soon return to Franklin's safehouse. */, -1);
+					__LIB_0__::func_151("CHOP_H_DEAD2" /* GXT: Chop was killed. Chop will soon return to Franklin's safehouse. */, -1);
 				}
 				return 1;
 			}
@@ -3476,7 +3476,7 @@ int func_163()//Position - 0xB4FE
 					{
 						fVar0 = 100f;
 					}
-					if (__LIB_0__.func_76(PLAYER::PLAYER_PED_ID(), iLocal_69, 1) > fVar0)
+					if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_69, 1) > fVar0)
 					{
 						if ((!BitTest(Global_113386.f_10049.f_94, 4) && PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 						{
@@ -3486,7 +3486,7 @@ int func_163()//Position - 0xB4FE
 							else
 							{
 								MISC::SET_BIT(&(Global_113386.f_10049.f_94), 4);
-								__LIB_0__.func_151("CHOP_H_RANGE" /* GXT: Chop will stop following if left too far behind. */, -1);
+								__LIB_0__::func_151("CHOP_H_RANGE" /* GXT: Chop will stop following if left too far behind. */, -1);
 							}
 						}
 						return 1;
@@ -3524,7 +3524,7 @@ void func_164()//Position - 0xB79C
 {
 	if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 	{
-		if ((((((((((((((((((((((((((((((__LIB_0__.func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || __LIB_0__.func_1("CHOP_H_WAIT_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || __LIB_0__.func_1("CHOP_H_WAIT_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */)) || __LIB_0__.func_1("CHOP_H_WALK_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || __LIB_0__.func_1("CHOP_H_WALK_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_HUNT" /* GXT: Chop will bark more often when he nears pickups. */)) || __LIB_0__.func_1("CHOP_H_NOVEH" /* GXT: Chop can only get into suitable cars with an empty front passenger seat. */)) || __LIB_0__.func_1("CHOP_H_CAR" /* GXT: Chop will follow Franklin into suitable cars with an empty front passenger seat. */)) || __LIB_0__.func_1("CHOP_H_BIKE" /* GXT: Chop will follow bikes and other vehicles he cannot get inside. */)) || __LIB_0__.func_1("CHOP_H_ATTACK" /* GXT: Chop will attack anyone who attacks Franklin. */)) || __LIB_0__.func_1("CHOP_H_BALL" /* GXT: When taking Chop for a walk, Franklin can play fetch using the ball in the weapon wheel. */)) || __LIB_0__.func_1("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */)) || __LIB_0__.func_1("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */)) || __LIB_0__.func_1("CHOP_H_BEHAVE" /* GXT: Chop is unhappy so is misbehaving. Download the iFruit app for your personal smartphone device or tablet to train him. */)) || __LIB_0__.func_1("CHOP_H_BEHAVA" /* GXT: Chop is unhappy so is misbehaving. Use the iFruit app to train him. */)) || __LIB_0__.func_1("CHOP_H_AIM" /* GXT: Chop will attack anyone who Franklin targets. */))
+		if ((((((((((((((((((((((((((((((__LIB_0__::func_1("CHOP_H_INTRO" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || __LIB_0__::func_1("CHOP_H_WAIT_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || __LIB_0__::func_1("CHOP_H_WAIT_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_HOME" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop. */)) || __LIB_0__::func_1("CHOP_H_WALK_0" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups. */)) || __LIB_0__::func_1("CHOP_H_WALK_1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_H1" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H2" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H3" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H4" /* GXT: Press ~INPUT_SCRIPT_RB~ to dismiss Chop.~n~Press ~INPUT_SCRIPT_RT~ to make Chop hunt for pickups.~n~Press ~INPUT_SCRIPT_RLEFT~ to make Chop sit.~n~Press ~INPUT_SCRIPT_RRIGHT~ to make Chop give paw.~n~Press ~INPUT_SCRIPT_RDOWN~ to make Chop beg.~n~Press ~INPUT_SCRIPT_RUP~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_HUNT" /* GXT: Chop will bark more often when he nears pickups. */)) || __LIB_0__::func_1("CHOP_H_NOVEH" /* GXT: Chop can only get into suitable cars with an empty front passenger seat. */)) || __LIB_0__::func_1("CHOP_H_CAR" /* GXT: Chop will follow Franklin into suitable cars with an empty front passenger seat. */)) || __LIB_0__::func_1("CHOP_H_BIKE" /* GXT: Chop will follow bikes and other vehicles he cannot get inside. */)) || __LIB_0__::func_1("CHOP_H_ATTACK" /* GXT: Chop will attack anyone who attacks Franklin. */)) || __LIB_0__::func_1("CHOP_H_BALL" /* GXT: When taking Chop for a walk, Franklin can play fetch using the ball in the weapon wheel. */)) || __LIB_0__::func_1("CHOP_H_WHIS" /* GXT: Press ~INPUT_DETONATE~ to whistle to make Chop return to Franklin. */)) || __LIB_0__::func_1("CHOP_H_NOAPP" /* GXT: Press ~INPUT_SCRIPT_RB~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */)) || __LIB_0__::func_1("CHOP_H_BEHAVE" /* GXT: Chop is unhappy so is misbehaving. Download the iFruit app for your personal smartphone device or tablet to train him. */)) || __LIB_0__::func_1("CHOP_H_BEHAVA" /* GXT: Chop is unhappy so is misbehaving. Use the iFruit app to train him. */)) || __LIB_0__::func_1("CHOP_H_AIM" /* GXT: Chop will attack anyone who Franklin targets. */))
 		{
 			HUD::CLEAR_HELP(true);
 		}
@@ -3533,7 +3533,7 @@ void func_164()//Position - 0xB79C
 	{
 		if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 		{
-			if ((((((((((((((((((((__LIB_0__.func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || __LIB_0__.func_1("CHOP_H_WAIT_0_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || __LIB_0__.func_1("CHOP_H_WAIT_1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WAIT_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WAIT_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */)) || __LIB_0__.func_1("CHOP_H_WALK_0_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || __LIB_0__.func_1("CHOP_H_WALK_1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__.func_1("CHOP_H_WALK_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_WALK_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__.func_1("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
+			if ((((((((((((((((((((__LIB_0__::func_1("CHOP_H_INTRO_KM" /* GXT: Hold ~INPUT_AIM~ when unarmed to interact with Chop. */) || __LIB_0__::func_1("CHOP_H_WAIT_0_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || __LIB_0__::func_1("CHOP_H_WAIT_1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WAIT_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WAIT_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_HOME_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop. */)) || __LIB_0__::func_1("CHOP_H_WALK_0_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups. */)) || __LIB_0__::func_1("CHOP_H_WALK_1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~ */)) || __LIB_0__::func_1("CHOP_H_WALK_H1_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H2_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H3_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_WALK_H4_KM" /* GXT: Press ~INPUT_ATTACK~ to dismiss Chop.~n~Press ~INPUT_JUMP~ to make Chop hunt for pickups.~n~Press ~INPUT_COVER~ to make Chop sit.~n~Press ~INPUT_RELOAD~ to make Chop give paw.~n~Press ~INPUT_CONTEXT~ to make Chop beg.~n~Press ~INPUT_ENTER~ to pet Chop.~n~Chop won't perform tricks if he is unhappy. Use the iFruit app to increase his happiness. */)) || __LIB_0__::func_1("CHOP_H_NOAPP_KM" /* GXT: Press ~INPUT_ATTACK~ to take Chop for a walk.~n~You can teach Chop to perform tricks. Download the iFruit app for your personal smartphone device or tablet to train him. */))
 			{
 				HUD::CLEAR_HELP(true);
 			}
@@ -3556,27 +3556,27 @@ void func_180()//Position - 0xBF51
 		{
 			CAM::STOP_GAMEPLAY_HINT(false);
 		}
-		__LIB_0__.func_523(&iLocal_70);
-		if (__LIB_0__.func_368(63))
+		__LIB_0__::func_523(&iLocal_70);
+		if (__LIB_0__::func_368(63))
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
-				if (__LIB_0__.func_368(126))
+				if (__LIB_0__::func_368(126))
 				{
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 19.3f, 528.24f, 169.63f, true) > 50f)
 					{
-						__LIB_10__.func_604(139, 1, 0);
+						__LIB_10__::func_604(139, 1, 0);
 					}
 				}
 				else if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), -11.15f, -1425.56f, 29.67f, true) > 50f)
 				{
-					__LIB_10__.func_604(138, 1, 0);
+					__LIB_10__::func_604(138, 1, 0);
 				}
 			}
 		}
-		__LIB_11__.func_813(1);
-		__LIB_0__.func_122(&iLocal_346, 0);
-		__LIB_0__.func_122(&iLocal_349, 0);
+		__LIB_11__::func_813(1);
+		__LIB_0__::func_122(&iLocal_346, 0);
+		__LIB_0__::func_122(&iLocal_349, 0);
 		if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_77))
 		{
 			GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_77, false);
@@ -3586,7 +3586,7 @@ void func_180()//Position - 0xBF51
 		{
 			WEAPON::REMOVE_WEAPON_FROM_PED(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_BALL"));
 		}
-		if (__LIB_0__.func_121(PLAYER::PLAYER_PED_ID()) && !__LIB_0__.func_39(0))
+		if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && !__LIB_0__::func_39(0))
 		{
 			PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 32, true);
 		}
@@ -3594,11 +3594,11 @@ void func_180()//Position - 0xBF51
 		{
 			if (func_188())
 			{
-				__LIB_0__.func_0(&iLocal_69);
+				__LIB_0__::func_0(&iLocal_69);
 			}
 			else
 			{
-				if (!ENTITY::IS_ENTITY_DEAD(iLocal_69, false) && __LIB_0__.func_121(PLAYER::PLAYER_PED_ID()))
+				if (!ENTITY::IS_ENTITY_DEAD(iLocal_69, false) && __LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 				{
 					if (PED::IS_PED_IN_GROUP(iLocal_69))
 					{
@@ -3606,13 +3606,13 @@ void func_180()//Position - 0xBF51
 					}
 					if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_87) || PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, false))
 					{
-						if (__LIB_0__.func_121(iLocal_78))
+						if (__LIB_0__::func_121(iLocal_78))
 						{
 							bVar0 = false;
 							while (!bVar0)
 							{
 								SYSTEM::WAIT(0);
-								if (!func_186() || __LIB_6__.func_762(iLocal_78, 1093140480, 1, 1056964608, 0, 1, 0))
+								if (!func_186() || __LIB_6__::func_762(iLocal_78, 1093140480, 1, 1056964608, 0, 1, 0))
 								{
 									bVar0 = true;
 								}
@@ -3652,27 +3652,27 @@ void func_180()//Position - 0xBF51
 								}
 							}
 						}
-						else if (__LIB_18__.func_173() == 1)
+						else if (__LIB_18__::func_173() == 1)
 						{
 							if (iLocal_51 == 2 || iLocal_51 == 15)
 							{
 								TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_69);
-								__LIB_10__.func_701(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 1.75f, 0f, 0f), ENTITY::GET_ENTITY_HEADING(iLocal_69), 1, 1);
+								__LIB_10__::func_701(iLocal_69, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER::PLAYER_PED_ID(), 1.75f, 0f, 0f), ENTITY::GET_ENTITY_HEADING(iLocal_69), 1, 1);
 								PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_69, false, false);
 							}
 						}
 					}
-					if (__LIB_0__.func_121(iLocal_69))
+					if (__LIB_0__::func_121(iLocal_69))
 					{
 						PED::SET_PED_KEEP_TASK(iLocal_69, true);
 						TASK::TASK_SMART_FLEE_PED(iLocal_69, PLAYER::PLAYER_PED_ID(), 100f, -1, false, false);
 					}
 				}
-				__LIB_0__.func_124(&iLocal_69, 1, 0, 1);
+				__LIB_0__::func_124(&iLocal_69, 1, 0, 1);
 			}
 		}
 		func_56();
-		__LIB_0__.func_106(&iLocal_78);
+		__LIB_0__::func_106(&iLocal_78);
 		func_98(0);
 		STREAMING::REMOVE_ANIM_DICT("creatures@rottweiler@move");
 		STREAMING::REMOVE_ANIM_DICT("creatures@rottweiler@amb@world_dog_barking@enter");
@@ -3691,8 +3691,8 @@ void func_180()//Position - 0xBF51
 		STREAMING::REMOVE_ANIM_DICT("creatures@rottweiler@indication@");
 		STREAMING::REMOVE_ANIM_DICT("misschop_vehicleenter_exit");
 		STREAMING::REMOVE_ANIM_DICT("creatures@rottweiler@melee@streamed_taunts@");
-		__LIB_0__.func_202(&uLocal_148, 1);
-		__LIB_0__.func_202(&uLocal_148, 3);
+		__LIB_0__::func_202(&uLocal_148, 1);
+		__LIB_0__::func_202(&uLocal_148, 3);
 		func_164();
 		CAM::DESTROY_ALL_CAMS(false);
 		if (iLocal_82 > -1)
@@ -3714,7 +3714,7 @@ void func_180()//Position - 0xBF51
 
 int func_186()//Position - 0xC586
 {
-	if ((__LIB_0__.func_121(PLAYER::PLAYER_PED_ID()) && __LIB_0__.func_121(iLocal_78)) && __LIB_0__.func_121(iLocal_69))
+	if ((__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && __LIB_0__::func_121(iLocal_78)) && __LIB_0__::func_121(iLocal_69))
 	{
 		return 1;
 	}
@@ -3723,7 +3723,7 @@ int func_186()//Position - 0xC586
 
 int func_188()//Position - 0xC5F5
 {
-	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() && __LIB_0__.func_121(iLocal_69))
+	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() && __LIB_0__::func_121(iLocal_69))
 	{
 		if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_87) || PED::IS_PED_IN_ANY_VEHICLE(iLocal_69, false))
 		{
@@ -3739,22 +3739,22 @@ int func_188()//Position - 0xC5F5
 		Global_32108 = 0;
 		return 1;
 	}
-	if (__LIB_0__.func_121(iLocal_69))
+	if (__LIB_0__::func_121(iLocal_69))
 	{
 		if (iLocal_51 == 11 && ENTITY::IS_ENTITY_OCCLUDED(iLocal_69))
 		{
 			return 1;
 		}
-		if (__LIB_9__.func_991(ENTITY::GET_ENTITY_COORDS(iLocal_69, false), 1f, 1120403456))
+		if (__LIB_9__::func_991(ENTITY::GET_ENTITY_COORDS(iLocal_69, false), 1f, 1120403456))
 		{
 			return 0;
 		}
 	}
-	if (!__LIB_6__.func_854(0))
+	if (!__LIB_6__::func_854(0))
 	{
 		return 0;
 	}
-	if (__LIB_0__.func_39(6) || __LIB_0__.func_39(2))
+	if (__LIB_0__::func_39(6) || __LIB_0__::func_39(2))
 	{
 		return 0;
 	}

@@ -193,17 +193,17 @@ void __EntryFunction__()//Position - 0x0
 void func_1()//Position - 0xA5
 {
 	func_3(&uLocal_93);
-	__LIB_0__.func_199();
+	__LIB_0__::func_199();
 }
 
 void func_3(var uParam0)//Position - 0xC3
 {
 	int iVar0;
-	__LIB_6__.func_404(&(uParam0->f_43.f_5));
+	__LIB_6__::func_404(&(uParam0->f_43.f_5));
 	func_5(uParam0, 1);
 	if (uParam0->f_43.f_4 > 2)
 	{
-		__LIB_4__.func_82(-1);
+		__LIB_4__::func_82(-1);
 		iVar0 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(uParam0->f_43.f_1);
 		if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iVar0))
 		{
@@ -214,13 +214,13 @@ void func_3(var uParam0)//Position - 0xC3
 
 void func_5(var uParam0, int iParam1)//Position - 0x128
 {
-	if (((((((((((((((__LIB_0__.func_1("MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || __LIB_0__.func_1("MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__.func_1("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__.func_1("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_SEAT_PC" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_SEAT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_PSEAT_PC" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_PSEAT" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_SEAT_PC_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_SEAT_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_PSEAT_PC_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_PSEAT_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_SEAT_PC_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_SEAT_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_PSEAT_PC_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__.func_1("DJ_PSEAT_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */))
+	if (((((((((((((((__LIB_0__::func_1("MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || __LIB_0__::func_1("MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__::func_1("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_SEAT_PC" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_SEAT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_PSEAT_PC" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_PSEAT" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_SEAT_PC_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_SEAT_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_PSEAT_PC_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_PSEAT_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_SEAT_PC_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_SEAT_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_PSEAT_PC_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */)) || __LIB_0__::func_1("DJ_PSEAT_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
 	if (iParam1 && uParam0->f_43.f_5 != -1)
 	{
-		__LIB_6__.func_404(&(uParam0->f_43.f_5));
+		__LIB_6__::func_404(&(uParam0->f_43.f_5));
 		uParam0->f_43.f_5 = -1;
 	}
 }
@@ -244,7 +244,7 @@ void func_9(var uParam0)//Position - 0x2C9
 	switch (uParam0->f_43.f_4)
 	{
 		case 0:
-			__LIB_1__.func_846(&(uParam0->f_43), 11);
+			__LIB_1__::func_846(&(uParam0->f_43), 11);
 			func_65(uParam0, 1);
 			break;
 		case 1:
@@ -256,7 +256,7 @@ void func_9(var uParam0)//Position - 0x2C9
 			}
 			break;
 		case 2:
-			if (__LIB_9__.func_898(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_11__.func_87(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
+			if (__LIB_9__::func_898(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_11__::func_87(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
 			{
 				if ((func_60(uParam0) || func_56(uParam0)) || !func_55(uParam0))
 				{
@@ -270,12 +270,12 @@ void func_9(var uParam0)//Position - 0x2C9
 					{
 						if ((MISC::GET_GAME_TIMER() - uParam0->f_43.f_6) > 150)
 						{
-							__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
+							__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
 						}
 					}
 					else if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
-						__LIB_6__.func_404(&(uParam0->f_43.f_5));
+						__LIB_6__::func_404(&(uParam0->f_43.f_5));
 						func_51(uParam0);
 						func_65(uParam0, 3);
 					}
@@ -307,7 +307,7 @@ void func_9(var uParam0)//Position - 0x2C9
 				fVar5 = 0.15f;
 			}
 			TASK::TASK_GO_STRAIGHT_TO_COORD(PLAYER::PLAYER_PED_ID(), Var2, 1f, 500, fVar4, fVar5);
-			__LIB_4__.func_82(uParam0->f_43.f_2);
+			__LIB_4__::func_82(uParam0->f_43.f_2);
 			func_65(uParam0, 5);
 			break;
 		case 5:
@@ -317,20 +317,20 @@ void func_9(var uParam0)//Position - 0x2C9
 			iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"));
 			Var7 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(&sVar0, &sVar1, func_48(uParam0), func_47(uParam0), 0f, 2) };
 			fVar8 = Var7.f_2;
-			if ((iVar6 != 1 && iVar6 != 0) || __LIB_2__.func_336(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), fVar8, 5f))
+			if ((iVar6 != 1 && iVar6 != 0) || __LIB_2__::func_336(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), fVar8, 5f))
 			{
 				uParam0->f_43.f_1 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(func_48(uParam0), func_47(uParam0), 2, true, false, 1f, 0f, 1.12f);
 				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_43.f_1, &sVar0, &sVar1, 2f, -1000f, 13, 16, 1000f, 0);
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_43.f_1);
 				uParam0->f_43.f_8.f_4 = MISC::GET_GAME_TIMER();
-				__LIB_1__.func_845(&(uParam0->f_43), 8);
+				__LIB_1__::func_845(&(uParam0->f_43), 8);
 				func_65(uParam0, 6);
 			}
 			break;
 		case 6:
-			if (__LIB_0__.func_492(&(uParam0->f_43), 10) || __LIB_4__.func_415())
+			if (__LIB_0__::func_492(&(uParam0->f_43), 10) || __LIB_4__::func_415())
 			{
-				__LIB_1__.func_846(&(uParam0->f_43), 10);
+				__LIB_1__::func_846(&(uParam0->f_43), 10);
 				func_30(uParam0);
 			}
 			func_35(uParam0);
@@ -346,15 +346,15 @@ void func_9(var uParam0)//Position - 0x2C9
 					uParam0->f_43.f_1 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(func_48(uParam0), func_47(uParam0), 2, true, false, 1f, 0f, 1.12f);
 					NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_43.f_1, &sVar0, &sVar1, 4f, -1.5f, 13, 16, 1000f, 0);
 					NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_43.f_1);
-					__LIB_1__.func_845(&(uParam0->f_43), 8);
-					__LIB_1__.func_845(&(uParam0->f_43), 11);
+					__LIB_1__::func_845(&(uParam0->f_43), 8);
+					__LIB_1__::func_845(&(uParam0->f_43), 11);
 				}
 				else
 				{
-					__LIB_1__.func_846(&(uParam0->f_43), 8);
+					__LIB_1__::func_846(&(uParam0->f_43), 8);
 				}
 			}
-			else if (!__LIB_0__.func_492(&(uParam0->f_43), 8))
+			else if (!__LIB_0__::func_492(&(uParam0->f_43), 8))
 			{
 				func_65(uParam0, 8);
 			}
@@ -373,7 +373,7 @@ void func_9(var uParam0)//Position - 0x2C9
 					if ((PED::GET_SYNCHRONIZED_SCENE_PHASE(iVar10) >= 0.7f || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("breakout_finish"))) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("break_out")))
 					{
 						NETWORK::NETWORK_STOP_SYNCHRONISED_SCENE(uParam0->f_43.f_1);
-						__LIB_4__.func_82(-1);
+						__LIB_4__::func_82(-1);
 						func_5(uParam0, 1);
 						func_65(uParam0, 0);
 					}
@@ -381,7 +381,7 @@ void func_9(var uParam0)//Position - 0x2C9
 			}
 			else
 			{
-				__LIB_4__.func_82(-1);
+				__LIB_4__::func_82(-1);
 				func_5(uParam0, 1);
 				func_65(uParam0, 0);
 			}
@@ -468,8 +468,8 @@ int func_11(var uParam0)//Position - 0x894
 	{
 		return uParam0->f_43.f_8.f_1;
 	}
-	iVar0 = (uParam0->f_43.f_8.f_1 + 1 % __LIB_19__.func_962(uParam0->f_43.f_8));
-	if (__LIB_6__.func_925())
+	iVar0 = (uParam0->f_43.f_8.f_1 + 1 % __LIB_19__::func_962(uParam0->f_43.f_8));
+	if (__LIB_6__::func_925())
 	{
 		if (uParam0->f_43.f_8 == 1)
 		{
@@ -499,7 +499,7 @@ void func_16(var uParam0)//Position - 0x98D
 	{
 		Var0 = { PAD::GET_CONTROL_NORMAL(0 /*PLAYER_CONTROL*/, 218 /*INPUT_SCRIPT_LEFT_AXIS_X*/), PAD::GET_CONTROL_NORMAL(0 /*PLAYER_CONTROL*/, 219 /*INPUT_SCRIPT_LEFT_AXIS_Y*/), 0f };
 		fVar1 = SYSTEM::VMAG(Var0);
-		if ((uParam0->f_43.f_4 == 6 && !ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("block_interrupt"))) && !__LIB_0__.func_492(&(uParam0->f_43), 12))
+		if ((uParam0->f_43.f_4 == 6 && !ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("block_interrupt"))) && !__LIB_0__::func_492(&(uParam0->f_43), 12))
 		{
 			if ((fVar1 >= 0.35f && !Global_2789734) && !Global_2789737)
 			{
@@ -535,11 +535,11 @@ void func_16(var uParam0)//Position - 0x98D
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 143 /*INPUT_MELEE_BLOCK*/, true);
 			PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 200 /*INPUT_FRONTEND_PAUSE_ALTERNATE*/, true);
 			bVar2 = false;
-			if (((__LIB_11__.func_85(__LIB_3__.func_254()) && __LIB_9__.func_975()) && __LIB_2__.func_378(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_8__.func_981(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
+			if (((__LIB_11__::func_85(__LIB_3__::func_254()) && __LIB_9__::func_975()) && __LIB_2__::func_378(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_8__::func_981(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
 			{
 				bVar2 = true;
 			}
-			if (((((!HUD::IS_PAUSE_MENU_ACTIVE() && !__LIB_0__.func_492(&(uParam0->f_43), 0)) && !__LIB_0__.func_492(&(uParam0->f_43), 4)) && !__LIB_1__.func_156()) && !__LIB_6__.func_964(1)) && uParam0->f_43.f_8.f_2 != 3)
+			if (((((!HUD::IS_PAUSE_MENU_ACTIVE() && !__LIB_0__::func_492(&(uParam0->f_43), 0)) && !__LIB_0__::func_492(&(uParam0->f_43), 4)) && !__LIB_1__::func_156()) && !__LIB_6__::func_964(1)) && uParam0->f_43.f_8.f_2 != 3)
 			{
 				if (uParam0->f_43.f_5 == -1)
 				{
@@ -549,42 +549,42 @@ void func_16(var uParam0)//Position - 0x98D
 						{
 							if (bVar2)
 							{
-								if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 3)
+								if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 3)
 								{
-									__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+									__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
-								else if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 2)
+								else if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 2)
 								{
-									__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+									__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 								else
 								{
-									__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+									__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_PC" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 							}
 							else
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "MPOF_AC_PC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else if (bVar2)
 						{
-							if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 3)
+							if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 3)
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_BM" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
-							else if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 2)
+							else if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 2)
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT_TOU" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 							else
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_SEAT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else
 						{
-							__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+							__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "MPOF_AC_EXIT" /* GXT: Use ~INPUT_SCRIPT_LEFT_AXIS_X~ to change pose.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 					}
 					else if (uParam0->f_43.f_8 == 2)
@@ -593,42 +593,42 @@ void func_16(var uParam0)//Position - 0x98D
 						{
 							if (bVar2)
 							{
-								if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 3)
+								if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 3)
 								{
-									__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+									__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
-								else if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 2)
+								else if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 2)
 								{
-									__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+									__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 								else
 								{
-									__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+									__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_PC" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 							}
 							else
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else if (bVar2)
 						{
-							if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 3)
+							if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 3)
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_BM" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
-							else if (__LIB_8__.func_125(PLAYER::PLAYER_ID()) == 2)
+							else if (__LIB_8__::func_125(PLAYER::PLAYER_ID()) == 2)
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT_TOU" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 							else
 							{
-								__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "DJ_PSEAT" /* GXT: Press ~INPUT_FRONTEND_X~ to watch DJ live stream.~n~Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 						else
 						{
-							__LIB_7__.func_508(&(uParam0->f_43.f_5), 4, "MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
+							__LIB_7__::func_508(&(uParam0->f_43.f_5), 4, "MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 					}
 				}
@@ -646,7 +646,7 @@ void func_16(var uParam0)//Position - 0x98D
 					{
 						func_30(uParam0);
 					}
-					if (((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar3)) && __LIB_11__.func_85(__LIB_3__.func_254())) && __LIB_9__.func_975()) && __LIB_2__.func_378(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_8__.func_981(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
+					if (((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar3)) && __LIB_11__::func_85(__LIB_3__::func_254())) && __LIB_9__::func_975()) && __LIB_2__::func_378(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_8__::func_981(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
 					{
 						Global_2789737 = 1;
 						Global_2789734 = 1;
@@ -655,12 +655,12 @@ void func_16(var uParam0)//Position - 0x98D
 			}
 		}
 	}
-	__LIB_1__.func_846(&(uParam0->f_43), 9);
+	__LIB_1__::func_846(&(uParam0->f_43), 9);
 }
 
 bool func_28(var uParam0)//Position - 0x11B9
 {
-	return __LIB_0__.func_492(&(uParam0->f_43), 9);
+	return __LIB_0__::func_492(&(uParam0->f_43), 9);
 }
 
 void func_29(var uParam0)//Position - 0x11CB
@@ -675,7 +675,7 @@ void func_29(var uParam0)//Position - 0x11CB
 		uParam0->f_43.f_1 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(func_48(uParam0), func_47(uParam0), 2, true, false, 1f, 0f, 1.12f);
 		NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_43.f_1, &sVar0, &sVar1, 4f, -1.5f, 13, 16, 1000f, 0);
 		NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_43.f_1);
-		__LIB_1__.func_845(&(uParam0->f_43), 8);
+		__LIB_1__::func_845(&(uParam0->f_43), 8);
 		PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
 	}
 }
@@ -687,7 +687,7 @@ void func_30(var uParam0)//Position - 0x128C
 	func_50(uParam0, &sVar0);
 	NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_43.f_1, &sVar0, "exit", 4f, -4f, 13, 16, 1000f, 0);
 	NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_43.f_1);
-	__LIB_6__.func_404(&(uParam0->f_43.f_5));
+	__LIB_6__::func_404(&(uParam0->f_43.f_5));
 	func_65(uParam0, 8);
 }
 
@@ -698,7 +698,7 @@ void func_35(var uParam0)//Position - 0x13B3
 	{
 		case 4:
 		case 8:
-			__LIB_8__.func_611(1);
+			__LIB_8__::func_611(1);
 		case 6:
 			CAM::INVALIDATE_IDLE_CAM();
 			HUD::HUD_FORCE_WEAPON_WHEEL(false);
@@ -706,14 +706,14 @@ void func_35(var uParam0)//Position - 0x13B3
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(19);
 			HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
 			HUD::HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME();
-			__LIB_0__.func_184();
+			__LIB_0__::func_184();
 			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("WEAPON_UNARMED"))
 			{
 				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 			}
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
-			__LIB_4__.func_62(1);
-			__LIB_0__.func_186();
+			__LIB_4__::func_62(1);
+			__LIB_0__::func_186();
 			break;
 	}
 }
@@ -722,7 +722,7 @@ Vector3 func_47(var uParam0)//Position - 0x165B
 {
 	struct<3> Var0;
 	Var0 = { (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3 };
-	if (__LIB_6__.func_925() && uParam0->f_43.f_8 == 0)
+	if (__LIB_6__::func_925() && uParam0->f_43.f_8 == 0)
 	{
 		Var0.f_2 = (Var0.f_2 - 4f);
 	}
@@ -738,7 +738,7 @@ void func_49(var uParam0, char* sParam1)//Position - 0x16AF
 {
 	if (uParam0->f_43.f_8 == 1)
 	{
-		if (__LIB_6__.func_925())
+		if (__LIB_6__::func_925())
 		{
 			switch (uParam0->f_43.f_8.f_2)
 			{
@@ -908,7 +908,7 @@ void func_50(var uParam0, char* sParam1)//Position - 0x19D1
 			StringCopy(sParam1, "ANIM@AMB@FACILITY@BRIEFING_ROOM@SEATING", 64);
 			break;
 	}
-	if (__LIB_6__.func_925())
+	if (__LIB_6__::func_925())
 	{
 		StringConCat(sParam1, "@FEMALE", 64);
 	}
@@ -919,7 +919,7 @@ void func_50(var uParam0, char* sParam1)//Position - 0x19D1
 	switch (uParam0->f_43.f_8)
 	{
 		case 1:
-			if (__LIB_6__.func_925())
+			if (__LIB_6__::func_925())
 			{
 				switch (uParam0->f_43.f_8.f_1)
 				{
@@ -1007,7 +1007,7 @@ void func_50(var uParam0, char* sParam1)//Position - 0x19D1
 
 void func_51(var uParam0)//Position - 0x1BE9
 {
-	uParam0->f_43.f_8 = __LIB_11__.func_86((*uParam0)[uParam0->f_43.f_2 /*14*/]);
+	uParam0->f_43.f_8 = __LIB_11__::func_86((*uParam0)[uParam0->f_43.f_2 /*14*/]);
 	uParam0->f_43.f_8.f_1 = func_52(uParam0);
 	uParam0->f_43.f_8.f_2 = 3;
 	uParam0->f_43.f_8.f_3 = 3;
@@ -1026,11 +1026,11 @@ int func_52(var uParam0)//Position - 0x1C25
 			}
 			break;
 		default:
-			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, __LIB_19__.func_962(uParam0->f_43.f_8));
+			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, __LIB_19__::func_962(uParam0->f_43.f_8));
 	}
 	if (uParam0->f_43.f_8 == 1)
 	{
-		if (__LIB_6__.func_925())
+		if (__LIB_6__::func_925())
 		{
 			if (iVar0 == 0 || iVar0 == 4)
 			{
@@ -1047,7 +1047,7 @@ int func_52(var uParam0)//Position - 0x1C25
 
 bool func_55(var uParam0)//Position - 0x1DFD
 {
-	Stack.Push(!__LIB_0__.func_492(&(uParam0->f_43), 5));
+	Stack.Push(!__LIB_0__::func_492(&(uParam0->f_43), 5));
 	Stack.Push(uParam0[uParam0->f_43.f_2 /*14*/]);
 	Stack.Push(uParam0->f_43.f_2);
 	Call_Loc(uParam0->f_43.f_13);
@@ -1064,9 +1064,9 @@ int func_56(var uParam0)//Position - 0x1E2C
 		if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(iVar0)))
 		{
 			iVar1 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(iVar0));
-			if (iVar1 != PLAYER::PLAYER_ID() && __LIB_0__.func_154(iVar1, 1, 1))
+			if (iVar1 != PLAYER::PLAYER_ID() && __LIB_0__::func_154(iVar1, 1, 1))
 			{
-				if (__LIB_9__.func_898(PLAYER::GET_PLAYER_PED(iVar1), uParam0[uParam0->f_43.f_2 /*14*/]) || __LIB_2__.func_461(iVar1) == uParam0->f_43.f_2)
+				if (__LIB_9__::func_898(PLAYER::GET_PLAYER_PED(iVar1), uParam0[uParam0->f_43.f_2 /*14*/]) || __LIB_2__::func_461(iVar1) == uParam0->f_43.f_2)
 				{
 					return 1;
 				}
@@ -1089,7 +1089,7 @@ int func_57(var uParam0)//Position - 0x1EB5
 	iVar1 = 0;
 	while (iVar1 < 10)
 	{
-		if (((ENTITY::DOES_ENTITY_EXIST(uVar0[iVar1]) && !PED::IS_PED_INJURED(uVar0[iVar1])) && ENTITY::IS_ENTITY_VISIBLE(uVar0[iVar1])) && (__LIB_9__.func_898(uVar0[iVar1], uParam0[uParam0->f_43.f_2 /*14*/]) || SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(uVar0[iVar1], false), (uParam0[uParam0->f_43.f_2 /*14*/])->f_1 + (uParam0[uParam0->f_43.f_2 /*14*/])->f_1.f_3 / Vector(2f, 2f, 2f)) < 1f))
+		if (((ENTITY::DOES_ENTITY_EXIST(uVar0[iVar1]) && !PED::IS_PED_INJURED(uVar0[iVar1])) && ENTITY::IS_ENTITY_VISIBLE(uVar0[iVar1])) && (__LIB_9__::func_898(uVar0[iVar1], uParam0[uParam0->f_43.f_2 /*14*/]) || SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(uVar0[iVar1], false), (uParam0[uParam0->f_43.f_2 /*14*/])->f_1 + (uParam0[uParam0->f_43.f_2 /*14*/])->f_1.f_3 / Vector(2f, 2f, 2f)) < 1f))
 		{
 			return 1;
 		}
@@ -1100,7 +1100,7 @@ int func_57(var uParam0)//Position - 0x1EB5
 
 bool func_60(var uParam0)//Position - 0x1FE6
 {
-	if (__LIB_3__.func_139(PLAYER::PLAYER_ID()))
+	if (__LIB_3__::func_139(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
@@ -1113,7 +1113,7 @@ int func_64(var uParam0)//Position - 0x2099
 	iVar0 = 0;
 	while (iVar0 < 1)
 	{
-		if (__LIB_9__.func_898(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_11__.func_87(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
+		if (__LIB_9__::func_898(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_11__::func_87(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
 		{
 			return 1;
 		}
@@ -1139,22 +1139,22 @@ void func_67(var uParam0)//Position - 0x2127
 	else if (uParam0->f_43.f_4 > 4)
 	{
 		CAM::SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE(PLAYER::PLAYER_PED_ID());
-		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_9__.func_899());
+		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_9__::func_899());
 		uParam0->f_43.f_7 = MISC::GET_FRAME_COUNT();
 	}
 	else if ((MISC::GET_FRAME_COUNT() - uParam0->f_43.f_7) < 5)
 	{
-		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_9__.func_899());
+		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_9__::func_899());
 	}
 }
 
 void func_69(var uParam0)//Position - 0x218F
 {
-	__LIB_9__.func_889(&(uParam0->f_43), 4, __LIB_0__.func_661());
-	__LIB_9__.func_889(&(uParam0->f_43), 1, ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false));
-	__LIB_9__.func_889(&(uParam0->f_43), 3, PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true));
-	__LIB_9__.func_889(&(uParam0->f_43), 0, __LIB_0__.func_77(0));
-	__LIB_9__.func_889(&(uParam0->f_43), 2, TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()));
+	__LIB_9__::func_889(&(uParam0->f_43), 4, __LIB_0__::func_661());
+	__LIB_9__::func_889(&(uParam0->f_43), 1, ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false));
+	__LIB_9__::func_889(&(uParam0->f_43), 3, PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true));
+	__LIB_9__::func_889(&(uParam0->f_43), 0, __LIB_0__::func_77(0));
+	__LIB_9__::func_889(&(uParam0->f_43), 2, TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()));
 }
 
 int func_72()//Position - 0x2217
@@ -1163,15 +1163,15 @@ int func_72()//Position - 0x2217
 	{
 		return 1;
 	}
-	if (!__LIB_9__.func_976())
+	if (!__LIB_9__::func_976())
 	{
 		return 1;
 	}
-	if (__LIB_6__.func_949())
+	if (__LIB_6__::func_949())
 	{
 		return 1;
 	}
-	if (Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9 == __LIB_0__.func_160())
+	if (Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9 == __LIB_0__::func_160())
 	{
 		return 1;
 	}
@@ -1185,16 +1185,16 @@ bool func_82()//Position - 0x23D6
 
 int func_83()//Position - 0x23E7
 {
-	if (Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9 != __LIB_0__.func_160())
+	if (Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9 != __LIB_0__::func_160())
 	{
 		if (NETWORK::NETWORK_IS_SCRIPT_ACTIVE("arena_workshop_seats", Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, true, 0))
 		{
 			return 0;
 		}
 		NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9);
-		__LIB_1__.func_569(0, -1, 0);
+		__LIB_1__::func_569(0, -1, 0);
 		MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-		__LIB_0__.func_371();
+		__LIB_0__::func_371();
 		func_84();
 		return 1;
 	}
@@ -1203,14 +1203,14 @@ int func_83()//Position - 0x23E7
 
 void func_84()//Position - 0x245B
 {
-	__LIB_11__.func_228(0, &uLocal_93, 0, 2);
-	__LIB_11__.func_228(1, &uLocal_93, 1, 1);
-	__LIB_11__.func_228(2, &uLocal_93, 2, 2);
+	__LIB_11__::func_228(0, &uLocal_93, 0, 2);
+	__LIB_11__::func_228(1, &uLocal_93, 1, 1);
+	__LIB_11__::func_228(2, &uLocal_93, 2, 2);
 }
 
 void func_90(int iParam0, var uParam1, var uParam2)//Position - 0x25A2
 {
-	if (__LIB_6__.func_925())
+	if (__LIB_6__::func_925())
 	{
 		switch (iParam0)
 		{

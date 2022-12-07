@@ -76,8 +76,8 @@ void __EntryFunction__()//Position - 0x0
 	func_43(&uScriptParam_44);
 	while (true)
 	{
-		__LIB_0__.func_671();
-		if (__LIB_25__.func_6())
+		__LIB_0__::func_671();
+		if (__LIB_25__::func_6())
 		{
 		}
 		else
@@ -91,13 +91,13 @@ void __EntryFunction__()//Position - 0x0
 void func_1()//Position - 0x85
 {
 	func_3(&uLocal_37);
-	__LIB_0__.func_199();
+	__LIB_0__::func_199();
 }
 
 void func_3(var uParam0)//Position - 0xA3
 {
 	struct<7> Var0;
-	__LIB_7__.func_279(0, 1, 1, 0, 0, 0, 0);
+	__LIB_7__::func_279(0, 1, 1, 0, 0, 0, 0);
 	if (CAM::DOES_CAM_EXIST(uParam0->f_6))
 	{
 		CAM::DESTROY_CAM(uParam0->f_6, false);
@@ -118,14 +118,14 @@ int func_15(var uParam0)//Position - 0x3AE
 {
 	HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 	HUD::THEFEED_HIDE_THIS_FRAME();
-	__LIB_7__.func_167(1);
+	__LIB_7__::func_167(1);
 	HUD::DISABLE_FRONTEND_THIS_FRAME();
-	__LIB_8__.func_611(0);
+	__LIB_8__::func_611(0);
 	if (HUD::IS_PAUSE_MENU_ACTIVE())
 	{
 		HUD::SET_PAUSE_MENU_ACTIVE(false);
 	}
-	switch (__LIB_0__.func_348(uParam0))
+	switch (__LIB_0__::func_348(uParam0))
 	{
 		case 0:
 			func_18(uParam0);
@@ -148,7 +148,7 @@ void func_16(var uParam0)//Position - 0x40C
 		NETWORK::NETWORK_STOP_SYNCHRONISED_SCENE(uParam0->f_5);
 		CAM::RENDER_SCRIPT_CAMS(false, true, 3000, true, false, 0);
 		PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 1f, 2000, 0f, true, false);
-		__LIB_1__.func_0(uParam0, 2);
+		__LIB_1__::func_0(uParam0, 2);
 	}
 }
 
@@ -162,7 +162,7 @@ void func_18(var uParam0)//Position - 0x464
 		return;
 	}
 	CAM::DO_SCREEN_FADE_IN(800);
-	__LIB_1__.func_0(uParam0, 1);
+	__LIB_1__::func_0(uParam0, 1);
 	func_19(uParam0);
 }
 
@@ -183,7 +183,7 @@ void func_19(var uParam0)//Position - 0x499
 
 char* func_20()//Position - 0x545
 {
-	if (__LIB_6__.func_925())
+	if (__LIB_6__::func_925())
 	{
 		return "ANIM@SCRIPTED@HEIST@IG25_BEACH@HEELED@";
 	}
@@ -199,8 +199,8 @@ void func_43(var uParam0)//Position - 0x91B
 void func_44(var uParam0, struct<3> Param1, var uParam2)//Position - 0x939
 {
 	func_46(uParam0, Param1);
-	__LIB_0__.func_983(uParam0, uParam2);
-	__LIB_7__.func_279(1, 1, 1, 0, 0, 0, 0);
+	__LIB_0__::func_983(uParam0, uParam2);
+	__LIB_7__::func_279(1, 1, 1, 0, 0, 0, 0);
 	ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), Param1, true, false, false, true);
 	if (CAM::IS_SCREEN_FADED_OUT())
 	{

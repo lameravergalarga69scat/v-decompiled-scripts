@@ -239,7 +239,7 @@ void __EntryFunction__()//Position - 0x0
 			case 0:
 				break;
 			case 1:
-				__LIB_7__.func_279(1, 1, 1, 0, 0, 0, 0);
+				__LIB_7__::func_279(1, 1, 1, 0, 0, 0, 0);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
 				HUD::DISPLAY_RADAR(false);
 				HUD::DISPLAY_HUD(false);
@@ -271,49 +271,49 @@ void __EntryFunction__()//Position - 0x0
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_53, "SET_LETTER_TEXT");
-				__LIB_0__.func_478("HEADER_1");
-				__LIB_0__.func_478("HEADER_2");
-				Var0 = { __LIB_31__.func_112(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_111(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_110(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_109(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_108(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_37__.func_592(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
+				__LIB_0__::func_478("HEADER_1");
+				__LIB_0__::func_478("HEADER_2");
+				Var0 = { __LIB_31__::func_112(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_111(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_110(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_109(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_108(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_37__::func_592(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
 				Var0 = { func_33(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_105(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_104(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_103(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_37__.func_591(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_39__.func_585(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_102(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_35__.func_246(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
-				Var0 = { __LIB_31__.func_101(&uLocal_54) };
-				__LIB_0__.func_478(&Var0);
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_105(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_104(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_103(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_37__::func_591(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_39__::func_585(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_102(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_35__::func_246(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
+				Var0 = { __LIB_31__::func_101(&uLocal_54) };
+				__LIB_0__::func_478(&Var0);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-				while (!__LIB_39__.func_584(&uLocal_70, &iLocal_71, &uLocal_54))
+				while (!__LIB_39__::func_584(&uLocal_70, &iLocal_71, &uLocal_54))
 				{
 					func_43();
 					SYSTEM::WAIT(0);
 				}
-				__LIB_1__.func_899(&iLocal_72);
-				__LIB_31__.func_99(&iLocal_72, 0, 0, 0, 1);
-				__LIB_12__.func_133(&iLocal_72, "CONTINUE", 2, 201, 1, 1, 0);
-				__LIB_30__.func_646(&iLocal_72, 1);
-				__LIB_31__.func_98(&iLocal_72, 1);
+				__LIB_1__::func_899(&iLocal_72);
+				__LIB_31__::func_99(&iLocal_72, 0, 0, 0, 1);
+				__LIB_12__::func_133(&iLocal_72, "CONTINUE", 2, 201, 1, 1, 0);
+				__LIB_30__::func_646(&iLocal_72, 1);
+				__LIB_31__::func_98(&iLocal_72, 1);
 				if (CAM::IS_SCREEN_FADED_OUT())
 				{
 					if (!CAM::IS_SCREEN_FADING_IN())
@@ -337,14 +337,14 @@ void __EntryFunction__()//Position - 0x0
 			case 2:
 				GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
 				GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_53, 255, 255, 255, 255, 0);
-				__LIB_20__.func_627(&iLocal_72, 1128792064, 1, 0, 1, 1065353216);
+				__LIB_20__::func_627(&iLocal_72, 1128792064, 1, 0, 1, 1065353216);
 				if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 				{
 					iLocal_52 = 3;
 				}
 				break;
 			case 3:
-				__LIB_1__.func_899(&iLocal_72);
+				__LIB_1__::func_899(&iLocal_72);
 				CAM::DO_SCREEN_FADE_OUT(3000);
 				while (CAM::IS_SCREEN_FADING_OUT())
 				{
@@ -353,7 +353,7 @@ void __EntryFunction__()//Position - 0x0
 					SYSTEM::WAIT(0);
 				}
 				GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_53);
-				__LIB_7__.func_279(0, 1, 1, 0, 0, 0, 0);
+				__LIB_7__::func_279(0, 1, 1, 0, 0, 0, 0);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 				HUD::DISPLAY_RADAR(true);
 				HUD::DISPLAY_HUD(true);
@@ -373,7 +373,7 @@ struct<4> func_33(var uParam0)//Position - 0x12E6
 	struct<4> Var0;
 	int iVar1;
 	StringCopy(&Var0, "FAMILY_", 16);
-	if (__LIB_31__.func_106(8) && __LIB_31__.func_106(5))
+	if (__LIB_31__::func_106(8) && __LIB_31__::func_106(5))
 	{
 		StringCopy(&(uParam0->f_7), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
@@ -397,7 +397,7 @@ void func_43()//Position - 0x1758
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(6);
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(8);
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(9);
-	__LIB_8__.func_611(0);
+	__LIB_8__::func_611(0);
 }
 
 void func_60()//Position - 0x1BEC

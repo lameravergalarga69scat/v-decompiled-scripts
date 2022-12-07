@@ -304,15 +304,15 @@ void __EntryFunction__()//Position - 0x0
 	func_85();
 	func_71();
 	func_63();
-	__LIB_39__.func_590();
-	__LIB_35__.func_897();
+	__LIB_39__::func_590();
+	__LIB_35__::func_897();
 	func_36();
 	func_35();
 	func_23();
 	func_18();
 	func_14();
 	func_2();
-	__LIB_31__.func_135();
+	__LIB_31__::func_135();
 }
 
 void func_2()//Position - 0x627
@@ -351,14 +351,14 @@ void func_4(struct<3> Param0, struct<3> Param1, float fParam2, int iParam3, int 
 	Global_95644[iParam3 /*9*/].f_3 = { Param1 };
 	Global_95644[iParam3 /*9*/].f_6 = fParam2;
 	Global_95644[iParam3 /*9*/].f_7 = iParam4;
-	__LIB_10__.func_604(iParam4, 0, 0);
-	__LIB_11__.func_498(iParam4, 0);
-	__LIB_11__.func_499(iParam4, 1);
-	__LIB_11__.func_500(iParam4, 0, 0);
-	__LIB_24__.func_742(iParam4, 1);
-	__LIB_29__.func_871(iParam4, Global_95644[iParam3 /*9*/]);
-	__LIB_30__.func_825(iParam4, 2);
-	__LIB_30__.func_826(iParam4, 61);
+	__LIB_10__::func_604(iParam4, 0, 0);
+	__LIB_11__::func_498(iParam4, 0);
+	__LIB_11__::func_499(iParam4, 1);
+	__LIB_11__::func_500(iParam4, 0, 0);
+	__LIB_24__::func_742(iParam4, 1);
+	__LIB_29__::func_871(iParam4, Global_95644[iParam3 /*9*/]);
+	__LIB_30__::func_825(iParam4, 2);
+	__LIB_30__::func_826(iParam4, 61);
 }
 
 void func_13()//Position - 0xCDA
@@ -414,14 +414,14 @@ void func_16(struct<3> Param0, struct<3> Param1, float fParam2, int iParam3, int
 	Global_95580[iParam3 /*9*/].f_3 = { Param1 };
 	Global_95580[iParam3 /*9*/].f_6 = fParam2;
 	Global_95580[iParam3 /*9*/].f_7 = iParam4;
-	__LIB_10__.func_604(iParam4, 0, 0);
-	__LIB_11__.func_498(iParam4, 0);
-	__LIB_11__.func_499(iParam4, 1);
-	__LIB_11__.func_500(iParam4, 0, 0);
-	__LIB_24__.func_742(iParam4, 1);
-	__LIB_29__.func_871(iParam4, Global_95580[iParam3 /*9*/]);
-	__LIB_30__.func_825(iParam4, 3);
-	__LIB_30__.func_826(iParam4, 60);
+	__LIB_10__::func_604(iParam4, 0, 0);
+	__LIB_11__::func_498(iParam4, 0);
+	__LIB_11__::func_499(iParam4, 1);
+	__LIB_11__::func_500(iParam4, 0, 0);
+	__LIB_24__::func_742(iParam4, 1);
+	__LIB_29__::func_871(iParam4, Global_95580[iParam3 /*9*/]);
+	__LIB_30__::func_825(iParam4, 3);
+	__LIB_30__::func_826(iParam4, 60);
 }
 
 void func_17()//Position - 0xF6A
@@ -441,87 +441,87 @@ void func_17()//Position - 0xF6A
 
 void func_18()//Position - 0xFC5
 {
-	__LIB_11__.func_923(0, -14.704f, -1434.6957f, 30.1015f, 8f, -1);
-	__LIB_11__.func_923(1, -14.704f, -1434.6957f, 30.1015f, 50f, -1);
-	__LIB_11__.func_923(2, -14.704f, -1434.6957f, 30.1015f, 200f, -1);
-	__LIB_11__.func_923(3, -0.5478f, 524.7891f, 173.6276f, 200f, -1);
-	__LIB_11__.func_923(4, 488.3106f, -1313.8561f, 28.2581f, 10f, -1);
-	__LIB_11__.func_923(5, -2288.7183f, 360.4793f, 189.6015f, 250f, -1);
-	__LIB_11__.func_923(6, 144.9711f, -2201.7842f, 3.6866f, 250f, 7);
-	__LIB_11__.func_923(7, -3091.1616f, 346.42828f, 6.497835f, 68.5f, 16);
-	__LIB_11__.func_923(8, -1167.3473f, -696.0207f, 39.3576f, 250f, -1);
-	__LIB_11__.func_923(9, -11.1495f, -1425.5645f, 29.6737f, 250f, -1);
-	__LIB_11__.func_923(10, __LIB_11__.func_156(214, 0), 180f, -1);
-	__LIB_11__.func_923(11, __LIB_11__.func_156(214, 0), 500f, -1);
-	__LIB_11__.func_923(12, -802.8486f, 182.2674f, 71.6056f, 150f, -1);
-	__LIB_11__.func_923(13, -802.8486f, 182.2674f, 71.6056f, 250f, -1);
-	__LIB_11__.func_923(14, -2892.93f, 3192.37f, 11.66f, 410f, -1);
-	__LIB_11__.func_923(15, -429.5719f, 1109.4163f, 326.6815f, 200f, -1);
-	__LIB_11__.func_923(16, 446.7f, 5571.8f, 781.2f, 350f, 17);
-	__LIB_11__.func_923(17, -355.9662f, 5587.149f, 121.4823f, 350f, 18);
-	__LIB_11__.func_923(18, 39.4849f, 5578.1943f, 397.3495f, 350f, 19);
-	__LIB_11__.func_923(19, -741.4f, 5595.1f, 41.7f, 350f, -1);
-	__LIB_11__.func_923(20, Global_96387[0 /*15*/], 130f, -1);
-	__LIB_11__.func_923(21, Global_96387[1 /*15*/], 250f, -1);
-	__LIB_11__.func_923(22, Global_96387[1 /*15*/], 130f, -1);
-	__LIB_11__.func_923(23, 714.2042f, -964.4249f, 29.3953f, 14f, -1);
-	__LIB_11__.func_923(24, Global_96387[3 /*15*/], 130f, -1);
-	__LIB_11__.func_923(25, 2133.3525f, 4784.4575f, 40.0637f, 100f, 26);
-	__LIB_11__.func_923(26, 2116.4006f, 4790.865f, 40.2022f, 100f, -1);
-	__LIB_11__.func_923(27, __LIB_11__.func_156(68, 0), 100f, -1);
-	__LIB_11__.func_923(28, __LIB_11__.func_156(69, 0), 100f, -1);
-	__LIB_11__.func_923(31, __LIB_31__.func_130(0), 100f, 32);
-	__LIB_11__.func_923(32, __LIB_31__.func_130(1), 100f, 33);
-	__LIB_11__.func_923(33, __LIB_31__.func_130(4), 100f, 34);
-	__LIB_11__.func_923(34, __LIB_31__.func_130(4), 100f, 35);
-	__LIB_11__.func_923(35, __LIB_31__.func_130(5), 100f, 36);
-	__LIB_11__.func_923(36, __LIB_31__.func_130(2), 100f, 37);
-	__LIB_11__.func_923(37, __LIB_31__.func_130(6), 100f, -1);
-	__LIB_11__.func_923(38, __LIB_11__.func_156(76, 0), 100f, -1);
-	__LIB_11__.func_923(39, __LIB_11__.func_156(91, 0), 100f, -1);
-	__LIB_11__.func_923(40, __LIB_11__.func_156(92, 0), 100f, -1);
-	__LIB_11__.func_923(41, __LIB_11__.func_156(93, 0), 100f, -1);
-	__LIB_11__.func_923(42, __LIB_11__.func_156(95, 0), 100f, -1);
-	__LIB_11__.func_923(43, __LIB_11__.func_156(94, 0), 100f, -1);
-	__LIB_11__.func_923(44, __LIB_11__.func_156(96, 0), 100f, 45);
-	__LIB_11__.func_923(45, __LIB_11__.func_156(97, 0), 100f, -1);
-	__LIB_11__.func_923(46, __LIB_11__.func_156(107, 0), 100f, 47);
-	__LIB_11__.func_923(47, __LIB_11__.func_156(108, 0), 100f, 48);
-	__LIB_11__.func_923(48, __LIB_11__.func_156(109, 0), 100f, -1);
-	__LIB_11__.func_923(49, __LIB_11__.func_156(110, 0), 100f, -1);
-	__LIB_11__.func_923(50, __LIB_11__.func_156(111, 0), 100f, -1);
-	__LIB_11__.func_923(51, __LIB_29__.func_783(0), 100f, 52);
-	__LIB_11__.func_923(52, __LIB_29__.func_783(1), 100f, 53);
-	__LIB_11__.func_923(53, __LIB_29__.func_783(2), 100f, 54);
-	__LIB_11__.func_923(54, __LIB_29__.func_783(3), 100f, 55);
-	__LIB_11__.func_923(55, __LIB_29__.func_783(4), 100f, 56);
-	__LIB_11__.func_923(56, __LIB_29__.func_783(5), 100f, 57);
-	__LIB_11__.func_923(57, __LIB_29__.func_783(6), 100f, 58);
-	__LIB_11__.func_923(58, __LIB_29__.func_783(7), 100f, 59);
-	__LIB_11__.func_923(59, __LIB_29__.func_783(8), 100f, 60);
-	__LIB_11__.func_923(60, __LIB_29__.func_783(9), 100f, 61);
-	__LIB_11__.func_923(61, __LIB_29__.func_783(10), 100f, 62);
-	__LIB_11__.func_923(62, __LIB_29__.func_783(11), 100f, 63);
-	__LIB_11__.func_923(63, __LIB_29__.func_783(12), 100f, -1);
-	__LIB_11__.func_923(64, -897f, -2708f, 13f, 100f, -1);
-	__LIB_11__.func_923(65, -1114.4f, 306.75f, 63.94f, 45f, -1);
-	__LIB_11__.func_923(66, 408.56f, -1625.22f, 28.29f, 100f, -1);
-	__LIB_11__.func_923(67, __LIB_11__.func_156(228, 0), 100f, -1);
-	__LIB_11__.func_923(68, -837.5345f, -161.5902f, 36.7688f, 410f, 16);
-	__LIB_11__.func_923(69, 237.6055f, -36.664f, 68.7304f, 410f, 16);
-	__LIB_11__.func_923(70, -2194.1335f, 1046.2905f, 192.1094f, 410f, 16);
-	__LIB_11__.func_923(71, __LIB_11__.func_156(164, 0), 100f, -1);
-	__LIB_11__.func_923(72, -60.9565f, -1098.4097f, 25.4024f, 260f, -1);
-	__LIB_11__.func_923(73, 1391.9122f, -2070.7922f, 50.9982f, 260f, -1);
-	__LIB_11__.func_923(74, -45.2546f, -1097.5496f, 25.4223f, 175f, 0);
-	__LIB_11__.func_923(75, 0f, 0f, 0f, 0f, -1);
+	__LIB_11__::func_923(0, -14.704f, -1434.6957f, 30.1015f, 8f, -1);
+	__LIB_11__::func_923(1, -14.704f, -1434.6957f, 30.1015f, 50f, -1);
+	__LIB_11__::func_923(2, -14.704f, -1434.6957f, 30.1015f, 200f, -1);
+	__LIB_11__::func_923(3, -0.5478f, 524.7891f, 173.6276f, 200f, -1);
+	__LIB_11__::func_923(4, 488.3106f, -1313.8561f, 28.2581f, 10f, -1);
+	__LIB_11__::func_923(5, -2288.7183f, 360.4793f, 189.6015f, 250f, -1);
+	__LIB_11__::func_923(6, 144.9711f, -2201.7842f, 3.6866f, 250f, 7);
+	__LIB_11__::func_923(7, -3091.1616f, 346.42828f, 6.497835f, 68.5f, 16);
+	__LIB_11__::func_923(8, -1167.3473f, -696.0207f, 39.3576f, 250f, -1);
+	__LIB_11__::func_923(9, -11.1495f, -1425.5645f, 29.6737f, 250f, -1);
+	__LIB_11__::func_923(10, __LIB_11__::func_156(214, 0), 180f, -1);
+	__LIB_11__::func_923(11, __LIB_11__::func_156(214, 0), 500f, -1);
+	__LIB_11__::func_923(12, -802.8486f, 182.2674f, 71.6056f, 150f, -1);
+	__LIB_11__::func_923(13, -802.8486f, 182.2674f, 71.6056f, 250f, -1);
+	__LIB_11__::func_923(14, -2892.93f, 3192.37f, 11.66f, 410f, -1);
+	__LIB_11__::func_923(15, -429.5719f, 1109.4163f, 326.6815f, 200f, -1);
+	__LIB_11__::func_923(16, 446.7f, 5571.8f, 781.2f, 350f, 17);
+	__LIB_11__::func_923(17, -355.9662f, 5587.149f, 121.4823f, 350f, 18);
+	__LIB_11__::func_923(18, 39.4849f, 5578.1943f, 397.3495f, 350f, 19);
+	__LIB_11__::func_923(19, -741.4f, 5595.1f, 41.7f, 350f, -1);
+	__LIB_11__::func_923(20, Global_96387[0 /*15*/], 130f, -1);
+	__LIB_11__::func_923(21, Global_96387[1 /*15*/], 250f, -1);
+	__LIB_11__::func_923(22, Global_96387[1 /*15*/], 130f, -1);
+	__LIB_11__::func_923(23, 714.2042f, -964.4249f, 29.3953f, 14f, -1);
+	__LIB_11__::func_923(24, Global_96387[3 /*15*/], 130f, -1);
+	__LIB_11__::func_923(25, 2133.3525f, 4784.4575f, 40.0637f, 100f, 26);
+	__LIB_11__::func_923(26, 2116.4006f, 4790.865f, 40.2022f, 100f, -1);
+	__LIB_11__::func_923(27, __LIB_11__::func_156(68, 0), 100f, -1);
+	__LIB_11__::func_923(28, __LIB_11__::func_156(69, 0), 100f, -1);
+	__LIB_11__::func_923(31, __LIB_31__::func_130(0), 100f, 32);
+	__LIB_11__::func_923(32, __LIB_31__::func_130(1), 100f, 33);
+	__LIB_11__::func_923(33, __LIB_31__::func_130(4), 100f, 34);
+	__LIB_11__::func_923(34, __LIB_31__::func_130(4), 100f, 35);
+	__LIB_11__::func_923(35, __LIB_31__::func_130(5), 100f, 36);
+	__LIB_11__::func_923(36, __LIB_31__::func_130(2), 100f, 37);
+	__LIB_11__::func_923(37, __LIB_31__::func_130(6), 100f, -1);
+	__LIB_11__::func_923(38, __LIB_11__::func_156(76, 0), 100f, -1);
+	__LIB_11__::func_923(39, __LIB_11__::func_156(91, 0), 100f, -1);
+	__LIB_11__::func_923(40, __LIB_11__::func_156(92, 0), 100f, -1);
+	__LIB_11__::func_923(41, __LIB_11__::func_156(93, 0), 100f, -1);
+	__LIB_11__::func_923(42, __LIB_11__::func_156(95, 0), 100f, -1);
+	__LIB_11__::func_923(43, __LIB_11__::func_156(94, 0), 100f, -1);
+	__LIB_11__::func_923(44, __LIB_11__::func_156(96, 0), 100f, 45);
+	__LIB_11__::func_923(45, __LIB_11__::func_156(97, 0), 100f, -1);
+	__LIB_11__::func_923(46, __LIB_11__::func_156(107, 0), 100f, 47);
+	__LIB_11__::func_923(47, __LIB_11__::func_156(108, 0), 100f, 48);
+	__LIB_11__::func_923(48, __LIB_11__::func_156(109, 0), 100f, -1);
+	__LIB_11__::func_923(49, __LIB_11__::func_156(110, 0), 100f, -1);
+	__LIB_11__::func_923(50, __LIB_11__::func_156(111, 0), 100f, -1);
+	__LIB_11__::func_923(51, __LIB_29__::func_783(0), 100f, 52);
+	__LIB_11__::func_923(52, __LIB_29__::func_783(1), 100f, 53);
+	__LIB_11__::func_923(53, __LIB_29__::func_783(2), 100f, 54);
+	__LIB_11__::func_923(54, __LIB_29__::func_783(3), 100f, 55);
+	__LIB_11__::func_923(55, __LIB_29__::func_783(4), 100f, 56);
+	__LIB_11__::func_923(56, __LIB_29__::func_783(5), 100f, 57);
+	__LIB_11__::func_923(57, __LIB_29__::func_783(6), 100f, 58);
+	__LIB_11__::func_923(58, __LIB_29__::func_783(7), 100f, 59);
+	__LIB_11__::func_923(59, __LIB_29__::func_783(8), 100f, 60);
+	__LIB_11__::func_923(60, __LIB_29__::func_783(9), 100f, 61);
+	__LIB_11__::func_923(61, __LIB_29__::func_783(10), 100f, 62);
+	__LIB_11__::func_923(62, __LIB_29__::func_783(11), 100f, 63);
+	__LIB_11__::func_923(63, __LIB_29__::func_783(12), 100f, -1);
+	__LIB_11__::func_923(64, -897f, -2708f, 13f, 100f, -1);
+	__LIB_11__::func_923(65, -1114.4f, 306.75f, 63.94f, 45f, -1);
+	__LIB_11__::func_923(66, 408.56f, -1625.22f, 28.29f, 100f, -1);
+	__LIB_11__::func_923(67, __LIB_11__::func_156(228, 0), 100f, -1);
+	__LIB_11__::func_923(68, -837.5345f, -161.5902f, 36.7688f, 410f, 16);
+	__LIB_11__::func_923(69, 237.6055f, -36.664f, 68.7304f, 410f, 16);
+	__LIB_11__::func_923(70, -2194.1335f, 1046.2905f, 192.1094f, 410f, 16);
+	__LIB_11__::func_923(71, __LIB_11__::func_156(164, 0), 100f, -1);
+	__LIB_11__::func_923(72, -60.9565f, -1098.4097f, 25.4024f, 260f, -1);
+	__LIB_11__::func_923(73, 1391.9122f, -2070.7922f, 50.9982f, 260f, -1);
+	__LIB_11__::func_923(74, -45.2546f, -1097.5496f, 25.4223f, 175f, 0);
+	__LIB_11__::func_923(75, 0f, 0f, 0f, 0f, -1);
 }
 
 void func_23()//Position - 0x189F
 {
 	func_33();
 	func_30();
-	__LIB_40__.func_651();
+	__LIB_40__::func_651();
 }
 
 void func_30()//Position - 0x1C01
@@ -880,15 +880,15 @@ void func_66()//Position - 0x3635
 
 void func_67(int iParam0, struct<3> Param1, int iParam2, struct<3> Param3, int iParam4, struct<3> Param5, int iParam6, char* sParam7)//Position - 0x40EA
 {
-	__LIB_10__.func_604(iParam0, 0, 0);
-	__LIB_11__.func_498(iParam0, 1);
-	__LIB_11__.func_499(iParam0, 1);
-	__LIB_11__.func_500(iParam0, 1, 0);
-	__LIB_30__.func_825(iParam0, 4);
+	__LIB_10__::func_604(iParam0, 0, 0);
+	__LIB_11__::func_498(iParam0, 1);
+	__LIB_11__::func_499(iParam0, 1);
+	__LIB_11__::func_500(iParam0, 1, 0);
+	__LIB_30__::func_825(iParam0, 4);
 	func_69(iParam0, Param1, iParam2, Param3, iParam4, Param5, iParam6);
 	if (!MISC::ARE_STRINGS_EQUAL(sParam7, ""))
 	{
-		__LIB_29__.func_872(iParam0, sParam7);
+		__LIB_29__::func_872(iParam0, sParam7);
 	}
 }
 
@@ -918,19 +918,19 @@ void func_69(int iParam0, struct<3> Param1, var uParam2, struct<3> Param3, var u
 
 void func_70(int iParam0, struct<3> Param1, char* sParam2, int iParam3)//Position - 0x4257
 {
-	__LIB_10__.func_604(iParam0, 0, 0);
-	__LIB_11__.func_498(iParam0, 1);
-	__LIB_11__.func_499(iParam0, 1);
-	__LIB_11__.func_500(iParam0, 1, 0);
-	__LIB_29__.func_871(iParam0, Param1);
-	__LIB_30__.func_825(iParam0, 4);
+	__LIB_10__::func_604(iParam0, 0, 0);
+	__LIB_11__::func_498(iParam0, 1);
+	__LIB_11__::func_499(iParam0, 1);
+	__LIB_11__::func_500(iParam0, 1, 0);
+	__LIB_29__::func_871(iParam0, Param1);
+	__LIB_30__::func_825(iParam0, 4);
 	if (!MISC::ARE_STRINGS_EQUAL(sParam2, ""))
 	{
-		__LIB_29__.func_872(iParam0, sParam2);
+		__LIB_29__::func_872(iParam0, sParam2);
 	}
 	if (iParam3 != 32)
 	{
-		__LIB_30__.func_826(iParam0, iParam3);
+		__LIB_30__::func_826(iParam0, iParam3);
 	}
 }
 
@@ -971,47 +971,47 @@ void func_71()//Position - 0x42B2
 	func_84(103, -2869.9915f, 9.2297f, 10.6083f, "", 122, 1, 5, 1);
 	func_84(105, 2133.3525f, 4784.4575f, 40.0637f, "", 251, 0, 4, 1);
 	func_84(106, 2151.1934f, 4797.4414f, 40.1541f, "", 147, 0, 4, 1);
-	func_84(107, __LIB_31__.func_132(0), "", 126, 0, 7, 1);
-	func_84(108, __LIB_31__.func_132(1), "", 126, 0, 7, 1);
-	func_84(109, __LIB_31__.func_132(2), "", 126, 0, 7, 1);
+	func_84(107, __LIB_31__::func_132(0), "", 126, 0, 7, 1);
+	func_84(108, __LIB_31__::func_132(1), "", 126, 0, 7, 1);
+	func_84(109, __LIB_31__::func_132(2), "", 126, 0, 7, 1);
 	func_84(110, -790.906f, 186.293f, 71.8351f, "", 197, 0, 1, 1);
 	func_84(111, 2862.152f, 5945.49f, 357.119f, "", 197, 0, 1, 1);
 	func_84(138, -11.1495f, -1425.5645f, 29.6737f, "", 273, 0, 2, 1);
 	func_84(139, 18.1531f, 535.2469f, 170.6324f, "", 273, 0, 2, 1);
-	func_84(70, __LIB_31__.func_130(0), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
-	func_84(71, __LIB_31__.func_130(1), "B_OFFT" /* GXT: Offroad Truck Race */, 127, 0, 7, 1);
-	func_84(73, __LIB_31__.func_130(3), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
-	func_84(74, __LIB_31__.func_130(4), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
-	func_84(75, __LIB_31__.func_130(5), "B_OFFT" /* GXT: Offroad Truck Race */, 127, 0, 7, 1);
-	func_84(72, __LIB_31__.func_130(2), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
-	func_84(125, __LIB_29__.func_783(0), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(126, __LIB_29__.func_783(1), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(127, __LIB_29__.func_783(2), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(128, __LIB_29__.func_783(3), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(129, __LIB_29__.func_783(4), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(130, __LIB_29__.func_783(5), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(131, __LIB_29__.func_783(6), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(132, __LIB_29__.func_783(7), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(133, __LIB_29__.func_783(8), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(134, __LIB_29__.func_783(9), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(135, __LIB_29__.func_783(10), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(136, __LIB_29__.func_783(11), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_84(137, __LIB_29__.func_783(12), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
-	func_72(140, __LIB_30__.func_723(0), "", 9, 0, 375, 7);
-	func_72(141, __LIB_30__.func_723(1), "", 9, 0, 375, 7);
-	func_72(142, __LIB_30__.func_723(2), "", 9, 0, 375, 7);
-	func_72(143, __LIB_30__.func_723(3), "", 9, 0, 375, 7);
-	func_72(144, __LIB_30__.func_723(4), "", 9, 0, 375, 7);
-	func_72(145, __LIB_30__.func_723(5), "", 9, 0, 375, 7);
-	func_72(146, __LIB_30__.func_723(6), "", 9, 0, 375, 7);
-	func_72(147, __LIB_30__.func_723(7), "", 9, 0, 375, 7);
-	func_72(148, __LIB_30__.func_723(8), "", 9, 0, 375, 7);
-	func_72(149, __LIB_30__.func_723(9), "", 9, 0, 375, 7);
-	func_72(151, __LIB_30__.func_723(10), "", 9, 0, 375, 7);
-	func_72(152, __LIB_30__.func_723(11), "", 9, 0, 375, 7);
-	func_72(153, __LIB_30__.func_723(12), "", 9, 0, 375, 7);
-	func_72(154, __LIB_30__.func_723(13), "", 9, 0, 375, 7);
-	func_72(155, __LIB_30__.func_723(14), "", 9, 0, 375, 7);
+	func_84(70, __LIB_31__::func_130(0), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
+	func_84(71, __LIB_31__::func_130(1), "B_OFFT" /* GXT: Offroad Truck Race */, 127, 0, 7, 1);
+	func_84(73, __LIB_31__::func_130(3), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
+	func_84(74, __LIB_31__::func_130(4), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
+	func_84(75, __LIB_31__::func_130(5), "B_OFFT" /* GXT: Offroad Truck Race */, 127, 0, 7, 1);
+	func_84(72, __LIB_31__::func_130(2), "B_OFFM" /* GXT: Offroad Moto/ATV Race */, 127, 0, 7, 1);
+	func_84(125, __LIB_29__::func_783(0), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(126, __LIB_29__::func_783(1), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(127, __LIB_29__::func_783(2), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(128, __LIB_29__::func_783(3), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(129, __LIB_29__::func_783(4), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(130, __LIB_29__::func_783(5), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(131, __LIB_29__::func_783(6), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(132, __LIB_29__::func_783(7), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(133, __LIB_29__::func_783(8), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(134, __LIB_29__::func_783(9), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(135, __LIB_29__::func_783(10), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(136, __LIB_29__::func_783(11), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_84(137, __LIB_29__::func_783(12), "B_BJMP" /* GXT: Parachute Jump */, 94, 0, 7, 1);
+	func_72(140, __LIB_30__::func_723(0), "", 9, 0, 375, 7);
+	func_72(141, __LIB_30__::func_723(1), "", 9, 0, 375, 7);
+	func_72(142, __LIB_30__::func_723(2), "", 9, 0, 375, 7);
+	func_72(143, __LIB_30__::func_723(3), "", 9, 0, 375, 7);
+	func_72(144, __LIB_30__::func_723(4), "", 9, 0, 375, 7);
+	func_72(145, __LIB_30__::func_723(5), "", 9, 0, 375, 7);
+	func_72(146, __LIB_30__::func_723(6), "", 9, 0, 375, 7);
+	func_72(147, __LIB_30__::func_723(7), "", 9, 0, 375, 7);
+	func_72(148, __LIB_30__::func_723(8), "", 9, 0, 375, 7);
+	func_72(149, __LIB_30__::func_723(9), "", 9, 0, 375, 7);
+	func_72(151, __LIB_30__::func_723(10), "", 9, 0, 375, 7);
+	func_72(152, __LIB_30__::func_723(11), "", 9, 0, 375, 7);
+	func_72(153, __LIB_30__::func_723(12), "", 9, 0, 375, 7);
+	func_72(154, __LIB_30__::func_723(13), "", 9, 0, 375, 7);
+	func_72(155, __LIB_30__::func_723(14), "", 9, 0, 375, 7);
 	func_84(117, -1390.4315f, -583.671f, 29.2231f, "", 93, 1, 7, 1);
 	func_84(118, -259.5521f, 6288.3364f, 30.4584f, "", 93, 1, 7, 1);
 	func_84(119, 984.4781f, -109.0157f, 73.333f, "", 93, 1, 7, 1);
@@ -1035,45 +1035,45 @@ void func_71()//Position - 0x42B2
 
 void func_72(int iParam0, struct<3> Param1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0x4C34
 {
-	__LIB_29__.func_871(iParam0, Param1);
-	__LIB_30__.func_825(iParam0, iParam3);
-	__LIB_10__.func_604(iParam0, 0, 0);
-	__LIB_20__.func_576(iParam0);
+	__LIB_29__::func_871(iParam0, Param1);
+	__LIB_30__::func_825(iParam0, iParam3);
+	__LIB_10__::func_604(iParam0, 0, 0);
+	__LIB_20__::func_576(iParam0);
 	func_76(iParam0, iParam4);
-	__LIB_29__.func_816(iParam0, 1);
+	__LIB_29__::func_816(iParam0, 1);
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 	{
-		__LIB_29__.func_872(iParam0, sParam2);
+		__LIB_29__::func_872(iParam0, sParam2);
 	}
 	if (iParam5 != 32)
 	{
-		__LIB_30__.func_826(iParam0, iParam5);
+		__LIB_30__::func_826(iParam0, iParam5);
 	}
 	if (iParam6 != 7)
 	{
 		if (BitTest(iParam6, 0))
 		{
-			__LIB_35__.func_162(iParam0, 1, 0, 0);
+			__LIB_35__::func_162(iParam0, 1, 0, 0);
 			if (BitTest(iParam6, 1))
 			{
-				__LIB_35__.func_162(iParam0, 1, 1, 1);
+				__LIB_35__::func_162(iParam0, 1, 1, 1);
 			}
 			else if (BitTest(iParam6, 2))
 			{
-				__LIB_35__.func_162(iParam0, 1, 2, 1);
+				__LIB_35__::func_162(iParam0, 1, 2, 1);
 			}
 		}
 		else if (BitTest(iParam6, 1))
 		{
-			__LIB_35__.func_162(iParam0, 1, 1, 0);
+			__LIB_35__::func_162(iParam0, 1, 1, 0);
 			if (BitTest(iParam6, 2))
 			{
-				__LIB_35__.func_162(iParam0, 1, 2, 1);
+				__LIB_35__::func_162(iParam0, 1, 2, 1);
 			}
 		}
 		else if (BitTest(iParam6, 2))
 		{
-			__LIB_35__.func_162(iParam0, 1, 2, 0);
+			__LIB_35__::func_162(iParam0, 1, 2, 0);
 		}
 	}
 }
@@ -1108,9 +1108,9 @@ void func_80(int iParam0, struct<3> Param1, char* sParam2, int iParam3, bool bPa
 	{
 	}
 	func_84(iParam0, Param1, sParam2, iParam3, bParam4, iParam5, 1);
-	if (((Global_113386.f_2352[iVar2 /*2*/] >= 1 || __LIB_0__.func_368(108) == 1) || __LIB_30__.func_823((iVar0 + iVar2), 0)) || BitTest(Global_113386.f_18574[(iVar1 + iVar2) /*6*/], 3))
+	if (((Global_113386.f_2352[iVar2 /*2*/] >= 1 || __LIB_0__::func_368(108) == 1) || __LIB_30__::func_823((iVar0 + iVar2), 0)) || BitTest(Global_113386.f_18574[(iVar1 + iVar2) /*6*/], 3))
 	{
-		__LIB_11__.func_504(iParam0, 1);
+		__LIB_11__::func_504(iParam0, 1);
 	}
 }
 

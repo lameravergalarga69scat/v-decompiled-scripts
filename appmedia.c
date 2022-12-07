@@ -73,9 +73,9 @@ void __EntryFunction__()//Position - 0x0
 						}
 						break;
 					case 8:
-						if ((__LIB_9__.func_596(2, Global_20234, 0) && iLocal_31 == 0) && iLocal_32 == 0)
+						if ((__LIB_9__::func_596(2, Global_20234, 0) && iLocal_31 == 0) && iLocal_32 == 0)
 						{
-							__LIB_9__.func_601();
+							__LIB_9__::func_601();
 							Global_20244 = 1;
 							if (Global_20266.f_1 > 3)
 							{
@@ -89,7 +89,7 @@ void __EntryFunction__()//Position - 0x0
 					default:
 						break;
 				}
-				if (__LIB_9__.func_600())
+				if (__LIB_9__::func_600())
 				{
 					func_11();
 				}
@@ -112,7 +112,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_2();
 		}
-		if (__LIB_9__.func_594())
+		if (__LIB_9__::func_594())
 		{
 			func_11();
 		}
@@ -140,7 +140,7 @@ void func_2()//Position - 0x157
 void func_3()//Position - 0x199
 {
 	int iVar0;
-	__LIB_2__.func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
 	iLocal_21 = GRAPHICS::GET_MAXIMUM_NUMBER_OF_PHOTOS();
 	iLocal_22 = 0;
 	iVar0 = 0;
@@ -148,25 +148,25 @@ void func_3()//Position - 0x199
 	{
 		if (GRAPHICS::DOES_THIS_PHOTO_SLOT_CONTAIN_A_VALID_PHOTO(iLocal_22))
 		{
-			__LIB_3__.func_637(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(iVar0), SYSTEM::TO_FLOAT(0), -1f, -1f, &(Local_27[iLocal_22 /*6*/]), 0, 0, 0, 0);
+			__LIB_3__::func_637(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(iVar0), SYSTEM::TO_FLOAT(0), -1f, -1f, &(Local_27[iLocal_22 /*6*/]), 0, 0, 0, 0);
 			iLocal_26[iVar0] = iLocal_22;
 			iVar0++;
 		}
 		iLocal_22++;
 	}
-	__LIB_2__.func_41(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-	__LIB_9__.func_619(Global_20247, "SET_HEADER", "CELL_MSMENU_1", 0, 0, 0, 0);
+	__LIB_2__::func_41(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_9__::func_619(Global_20247, "SET_HEADER", "CELL_MSMENU_1", 0, 0, 0, 0);
 	if (Global_20254)
 	{
-		__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
-		__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
+		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 	}
 	else
 	{
-		__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
-		__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
+		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
+		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
 	}
-	__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
+	__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 	MISC::CLEAR_BIT(&Global_8136, 17);
 }
 
@@ -250,7 +250,7 @@ void func_9()//Position - 0x536
 		if ((iLocal_33 == 0 && iLocal_34 == 0) && iLocal_35 == 0)
 		{
 			iLocal_31 = 0;
-			__LIB_0__.func_187("CELL_MSHELP_2");
+			__LIB_0__::func_187("CELL_MSHELP_2");
 		}
 		MOBILE::SET_MOBILE_PHONE_ROTATION(Local_30, 0);
 	}
@@ -258,22 +258,22 @@ void func_9()//Position - 0x536
 	{
 		iLocal_31 = 0;
 		iLocal_32 = 0;
-		__LIB_2__.func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-		__LIB_3__.func_637(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_MSMENU_3", 0, 0, 0, 0);
+		__LIB_2__::func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
+		__LIB_3__::func_637(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_MSMENU_3", 0, 0, 0, 0);
 		if (Global_20254)
 		{
-			__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
-			__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
+			__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+			__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 		}
 		else
 		{
-			__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
-			__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
+			__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
+			__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
 		}
-		__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
+		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 		MISC::CLEAR_BIT(&Global_8136, 17);
-		__LIB_2__.func_41(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-		__LIB_9__.func_619(Global_20247, "SET_HEADER", &(Local_27[iLocal_23 /*6*/]), 0, 0, 0, 0);
+		__LIB_2__::func_41(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
+		__LIB_9__::func_619(Global_20247, "SET_HEADER", &(Local_27[iLocal_23 /*6*/]), 0, 0, 0, 0);
 	}
 }
 
@@ -308,26 +308,26 @@ void func_16()//Position - 0x82D
 	}
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
-		if (__LIB_9__.func_596(2, 181, 0))
+		if (__LIB_9__::func_596(2, 181, 0))
 		{
-			__LIB_19__.func_917();
+			__LIB_19__::func_917();
 		}
-		if (__LIB_9__.func_596(2, 180, 0))
+		if (__LIB_9__::func_596(2, 180, 0))
 		{
-			__LIB_19__.func_854();
+			__LIB_19__::func_854();
 		}
 	}
 	if (iLocal_28 == 0)
 	{
-		if (__LIB_9__.func_596(2, Global_20242, 0))
+		if (__LIB_9__::func_596(2, Global_20242, 0))
 		{
-			__LIB_19__.func_917();
+			__LIB_19__::func_917();
 			iLocal_28 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
-		if (__LIB_9__.func_596(2, Global_20243, 0))
+		if (__LIB_9__::func_596(2, Global_20243, 0))
 		{
-			__LIB_19__.func_854();
+			__LIB_19__::func_854();
 			iLocal_28 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
@@ -339,10 +339,10 @@ void func_22()//Position - 0x9A5
 	int iVar0;
 	if (Global_20244 == 0)
 	{
-		if (__LIB_9__.func_596(2, Global_20235, 0))
+		if (__LIB_9__::func_596(2, Global_20235, 0))
 		{
 			MISC::CLEAR_BIT(&Global_8137, 15);
-			__LIB_19__.func_847();
+			__LIB_19__::func_847();
 			Global_20244 = 1;
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "GET_CURRENT_SELECTION");
 			iLocal_20 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
@@ -358,21 +358,21 @@ void func_22()//Position - 0x9A5
 				{
 					if (Global_22640 == 0)
 					{
-						__LIB_2__.func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-						__LIB_3__.func_637(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_MSMENU_2", 0, 0, 0, 0);
-						__LIB_2__.func_41(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
-						__LIB_9__.func_619(Global_20247, "SET_HEADER", &(Local_27[iLocal_23 /*6*/]), 0, 0, 0, 0);
+						__LIB_2__::func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
+						__LIB_3__::func_637(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(18), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(0), -1f, -1f, "CELL_MSMENU_2", 0, 0, 0, 0);
+						__LIB_2__::func_41(Global_20247, "DISPLAY_VIEW", 18f, -1082130432, -1082130432, -1082130432, -1082130432);
+						__LIB_9__::func_619(Global_20247, "SET_HEADER", &(Local_27[iLocal_23 /*6*/]), 0, 0, 0, 0);
 						if (Global_20254)
 						{
-							__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
-							__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
+							__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, "CELL_205" /* GXT: SELECT */, 0, 0, 0, 0);
+							__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 4f, -1f, -1f, "CELL_206" /* GXT: BACK */, 0, 0, 0, 0);
 						}
 						else
 						{
-							__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
-							__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
+							__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
+							__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
 						}
-						__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
+						__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 						MISC::CLEAR_BIT(&Global_8136, 17);
 						Global_22644 = iLocal_23;
 						Global_22640 = 12;
@@ -400,7 +400,7 @@ void func_23()//Position - 0xB25
 
 void func_26()//Position - 0xB92
 {
-	if ((MISC::IS_XBOX360_VERSION() || __LIB_0__.func_53()) || MISC::IS_PC_VERSION())
+	if ((MISC::IS_XBOX360_VERSION() || __LIB_0__::func_53()) || MISC::IS_PC_VERSION())
 	{
 		GRAPHICS::CLEAR_STATUS_OF_SORTED_LIST_OPERATION();
 		if (GRAPHICS::QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS(0))

@@ -109,7 +109,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_62 = ((0.05f + 0.275f) - 0.01f);
 	iLocal_64 = 4;
 	iLocal_65 = 12;
-	if (__LIB_0__.func_3() == 2)
+	if (__LIB_0__::func_3() == 2)
 	{
 		while (true)
 		{
@@ -152,7 +152,7 @@ void __EntryFunction__()//Position - 0x0
 						}
 					}
 				}
-				if (__LIB_8__.func_682(201))
+				if (__LIB_8__::func_682(201))
 				{
 					if (iVar5 == 0)
 					{
@@ -171,14 +171,14 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (iVar5 == 0)
 				{
-					if (__LIB_8__.func_682(189) || __LIB_8__.func_682(190))
+					if (__LIB_8__::func_682(189) || __LIB_8__::func_682(190))
 					{
 						iVar0 = 1;
 					}
 				}
-				if (__LIB_8__.func_682(202))
+				if (__LIB_8__::func_682(202))
 				{
-					__LIB_34__.func_998();
+					__LIB_34__::func_998();
 					if (iVar5 == 1)
 					{
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("MENU_SHIFT_DEPTH");
@@ -251,33 +251,33 @@ void func_1(var uParam0, var uParam1, var uParam2)//Position - 0x30C
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	if (!__LIB_0__.func_649(uParam2) || (__LIB_0__.func_649(uParam2) && __LIB_2__.func_47(uParam2, 250, 0)))
+	if (!__LIB_0__::func_649(uParam2) || (__LIB_0__::func_649(uParam2) && __LIB_2__::func_47(uParam2, 250, 0)))
 	{
 		iVar0 = 1;
 	}
-	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || __LIB_4__.func_751(187, &(Global_1648034.f_1060), 1)) && iVar0)
+	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || __LIB_4__::func_751(187, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		__LIB_0__.func_579(uParam2);
-		__LIB_0__.func_580(uParam2, 0, 0);
+		__LIB_0__::func_579(uParam2);
+		__LIB_0__::func_580(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_285), 0);
 	}
-	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || __LIB_4__.func_751(188, &(Global_1648034.f_1060), 1)) && iVar0)
+	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || __LIB_4__::func_751(188, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		__LIB_0__.func_579(uParam2);
-		__LIB_0__.func_580(uParam2, 0, 0);
+		__LIB_0__::func_579(uParam2);
+		__LIB_0__::func_580(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_285), 1);
 	}
-	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 241 /*INPUT_CURSOR_SCROLL_UP*/)) || __LIB_4__.func_751(189, &(Global_1648034.f_1060), 1)) && iVar0)
+	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 241 /*INPUT_CURSOR_SCROLL_UP*/)) || __LIB_4__::func_751(189, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		__LIB_0__.func_579(uParam2);
-		__LIB_0__.func_580(uParam2, 0, 0);
+		__LIB_0__::func_579(uParam2);
+		__LIB_0__::func_580(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_285), 2);
 	}
-	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 242 /*INPUT_CURSOR_SCROLL_DOWN*/)) || __LIB_4__.func_751(190, &(Global_1648034.f_1060), 1)) && iVar0)
+	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 242 /*INPUT_CURSOR_SCROLL_DOWN*/)) || __LIB_4__::func_751(190, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
 		MISC::SET_BIT(&(uParam0->f_285), 3);
-		__LIB_0__.func_579(uParam2);
-		__LIB_0__.func_580(uParam2, 0, 0);
+		__LIB_0__::func_579(uParam2);
+		__LIB_0__::func_580(uParam2, 0, 0);
 	}
 	if (BitTest(uParam0->f_285, 1))
 	{
@@ -453,9 +453,9 @@ void func_9(var uParam0, var uParam1)//Position - 0x9B2
 {
 	if ((GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED("MPWeaponsCommon") && GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED("MPWeaponsGang0")) && GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED("MPWeaponsGang1"))
 	{
-		if (__LIB_0__.func_191(8, -1) == 0)
+		if (__LIB_0__::func_191(8, -1) == 0)
 		{
-			*uParam1 = __LIB_0__.func_5();
+			*uParam1 = __LIB_0__::func_5();
 		}
 		func_149();
 		switch (uParam1->f_5)
@@ -509,7 +509,7 @@ void func_9(var uParam0, var uParam1)//Position - 0x9B2
 				}
 				break;
 		}
-		func_10(uParam0, __LIB_31__.func_466(uParam0));
+		func_10(uParam0, __LIB_31__::func_466(uParam0));
 	}
 }
 
@@ -541,9 +541,9 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 			{
 				if (uParam0->f_85[iVar0] != 0)
 				{
-					if (__LIB_4__.func_214(uParam0->f_85[iVar0]))
+					if (__LIB_4__::func_214(uParam0->f_85[iVar0]))
 					{
-						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_12__.func_605(uParam0->f_85[iVar0]), -1))
+						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_12__::func_605(uParam0->f_85[iVar0]), -1))
 						{
 							bVar2 = true;
 						}
@@ -565,14 +565,14 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 				iVar1 = 0;
 				while (iVar1 <= 35)
 				{
-					iVar4 = __LIB_6__.func_851(uParam0->f_85[iVar0], iVar1);
+					iVar4 = __LIB_6__::func_851(uParam0->f_85[iVar0], iVar1);
 					if (!bVar3)
 					{
 						func_67(iVar4, uParam0->f_85[iVar0], 0, 0, 0);
 						func_63(iVar4, uParam0->f_85[iVar0], 0);
 						func_57(iVar4, uParam0->f_85[iVar0], 0);
 					}
-					if (MISC::ARE_STRINGS_EQUAL(__LIB_13__.func_215(iVar4, uParam0->f_85[iVar0]), "WCT_CLIP1" /* GXT: Default Clip */))
+					if (MISC::ARE_STRINGS_EQUAL(__LIB_13__::func_215(iVar4, uParam0->f_85[iVar0]), "WCT_CLIP1" /* GXT: Default Clip */))
 					{
 						func_67(iVar4, uParam0->f_85[iVar0], 1, 0, 0);
 						if (!bVar3)
@@ -581,7 +581,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 							func_57(iVar4, uParam0->f_85[iVar0], 1);
 						}
 					}
-					if (MISC::ARE_STRINGS_EQUAL(__LIB_13__.func_215(iVar4, uParam0->f_85[iVar0]), "WCT_SCOPE_LRG" /* GXT: Scope */))
+					if (MISC::ARE_STRINGS_EQUAL(__LIB_13__::func_215(iVar4, uParam0->f_85[iVar0]), "WCT_SCOPE_LRG" /* GXT: Scope */))
 					{
 						func_67(iVar4, uParam0->f_85[iVar0], 1, 0, 0);
 						if (!bVar3)
@@ -619,9 +619,9 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 			{
 				if (bVar3)
 				{
-					if (__LIB_4__.func_214(uParam0->f_85[iVar0]))
+					if (__LIB_4__::func_214(uParam0->f_85[iVar0]))
 					{
-						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_12__.func_605(uParam0->f_85[iVar0]), -1))
+						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_12__::func_605(uParam0->f_85[iVar0]), -1))
 						{
 							bVar2 = true;
 						}
@@ -638,9 +638,9 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 					{
 						bVar2 = false;
 					}
-					if (((bVar2 || (uParam0->f_85[iVar0] == joaat("WEAPON_PISTOL") && WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_PISTOL"), false))) || func_43(uParam0->f_85[iVar0])) || __LIB_40__.func_670(uParam0->f_85[iVar0], uParam0->f_276))
+					if (((bVar2 || (uParam0->f_85[iVar0] == joaat("WEAPON_PISTOL") && WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_PISTOL"), false))) || func_43(uParam0->f_85[iVar0])) || __LIB_40__::func_670(uParam0->f_85[iVar0], uParam0->f_276))
 					{
-						if (__LIB_4__.func_214(uParam0->f_85[iVar0]))
+						if (__LIB_4__::func_214(uParam0->f_85[iVar0]))
 						{
 							if (bVar2)
 							{
@@ -666,7 +666,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 					iVar8 += 4;
 				}
 			}
-			if (uParam0->f_1[iVar0] == 0 || MISC::ARE_STRINGS_EQUAL(__LIB_7__.func_318(uParam0->f_85[iVar0], 0), __LIB_7__.func_318(0, 0)))
+			if (uParam0->f_1[iVar0] == 0 || MISC::ARE_STRINGS_EQUAL(__LIB_7__::func_318(uParam0->f_85[iVar0], 0), __LIB_7__::func_318(0, 0)))
 			{
 				iVar8 = 0;
 			}
@@ -744,8 +744,8 @@ void func_14(var uParam0, int iParam1)//Position - 0x10D4
 				iVar1 = 0;
 			}
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__.func_478(&(uParam0->f_11[uParam0->f_277 /*4*/]));
-			__LIB_0__.func_478(&(uParam0->f_48[uParam0->f_277 /*4*/]));
+			__LIB_0__::func_478(&(uParam0->f_11[uParam0->f_277 /*4*/]));
+			__LIB_0__::func_478(&(uParam0->f_48[uParam0->f_277 /*4*/]));
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_95[uParam0->f_277]);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_105[uParam0->f_277]);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(uParam0->f_135[uParam0->f_277]);
@@ -761,33 +761,33 @@ void func_14(var uParam0, int iParam1)//Position - 0x10D4
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_125[uParam0->f_277]);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_175[uParam0->f_277]);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_235[uParam0->f_277]);
-			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_13__.func_982(uParam0->f_85[uParam0->f_277]));
+			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_13__::func_982(uParam0->f_85[uParam0->f_277]));
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			if (func_15(uParam0->f_85[uParam0->f_277]))
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478(&Var0);
+				__LIB_0__::func_478(&Var0);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478(&Var0);
+				__LIB_0__::func_478(&Var0);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478(&Var0);
+				__LIB_0__::func_478(&Var0);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478(&Var0);
+				__LIB_0__::func_478(&Var0);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(8);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478(&Var0);
+				__LIB_0__::func_478(&Var0);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
@@ -795,32 +795,32 @@ void func_14(var uParam0, int iParam1)//Position - 0x10D4
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478("PM_ACCURACY" /* GXT: Accuracy */);
+				__LIB_0__::func_478("PM_ACCURACY" /* GXT: Accuracy */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478("PM_RANGE" /* GXT: Range */);
+				__LIB_0__::func_478("PM_RANGE" /* GXT: Range */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478("PM_CLIPSIZE" /* GXT: Clip Size */);
+				__LIB_0__::func_478("PM_CLIPSIZE" /* GXT: Clip Size */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478("PM_KD_RATIO" /* GXT: K/D Ratio */);
+				__LIB_0__::func_478("PM_KD_RATIO" /* GXT: K/D Ratio */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(7);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478("PM_HEADSHOTS" /* GXT: Headshots */);
+				__LIB_0__::func_478("PM_HEADSHOTS" /* GXT: Headshots */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(8);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__.func_478("PM_MY_ACCURACY" /* GXT: My Accuracy */);
+				__LIB_0__::func_478("PM_MY_ACCURACY" /* GXT: My Accuracy */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
@@ -928,11 +928,11 @@ int func_43(int iParam0)//Position - 0x32DC
 	}
 	if (bVar0)
 	{
-		iVar1 = __LIB_0__.func_846(PLAYER::PLAYER_ID());
-		iVar2 = __LIB_13__.func_982(iParam0);
+		iVar1 = __LIB_0__::func_846(PLAYER::PLAYER_ID());
+		iVar2 = __LIB_13__::func_982(iParam0);
 		if (iVar1 >= iVar2)
 		{
-			if (__LIB_0__.func_534(iVar3, -1, 0) > 0)
+			if (__LIB_0__::func_534(iVar3, -1, 0) > 0)
 			{
 				return 1;
 			}
@@ -2058,19 +2058,19 @@ int func_51(int iParam0, int iParam1, int iParam2)//Position - 0x4601
 {
 	var uVar0;
 	int iVar1;
-	if (__LIB_0__.func_703())
+	if (__LIB_0__::func_703())
 	{
 		return 0;
 	}
 	uVar0 = func_54(iParam0, iParam1, iParam2);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
-	return BitTest(uVar0, __LIB_0__.func_158(iVar1));
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
+	return BitTest(uVar0, __LIB_0__::func_158(iVar1));
 }
 
 var func_54(int iParam0, int iParam1, int iParam2)//Position - 0x694D
 {
 	var uVar0;
-	uVar0 = __LIB_0__.func_534(__LIB_21__.func_722(iParam0, iParam1), iParam2, 0);
+	uVar0 = __LIB_0__::func_534(__LIB_21__::func_722(iParam0, iParam1), iParam2, 0);
 	return uVar0;
 }
 
@@ -2094,25 +2094,25 @@ void func_58(int iParam0, int iParam1, bool bParam2)//Position - 0x72F8
 	int iVar0;
 	int iVar1;
 	iVar0 = func_61(iParam0, iParam1, -1);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
 	if (iVar1 > -1)
 	{
 		if (bParam2)
 		{
-			MISC::SET_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::SET_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
 		else
 		{
-			MISC::CLEAR_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::CLEAR_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
-		__LIB_0__.func_427(__LIB_7__.func_903(iParam0, iParam1), iVar0, -1, 1, 0);
+		__LIB_0__::func_427(__LIB_7__::func_903(iParam0, iParam1), iVar0, -1, 1, 0);
 	}
 }
 
 var func_61(int iParam0, int iParam1, int iParam2)//Position - 0x74F3
 {
 	var uVar0;
-	uVar0 = __LIB_0__.func_534(__LIB_7__.func_903(iParam0, iParam1), iParam2, 0);
+	uVar0 = __LIB_0__::func_534(__LIB_7__::func_903(iParam0, iParam1), iParam2, 0);
 	return uVar0;
 }
 
@@ -2120,13 +2120,13 @@ int func_62(int iParam0, int iParam1, int iParam2)//Position - 0x750E
 {
 	var uVar0;
 	int iVar1;
-	if (__LIB_0__.func_703())
+	if (__LIB_0__::func_703())
 	{
 		return 0;
 	}
 	uVar0 = func_61(iParam0, iParam1, iParam2);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
-	return BitTest(uVar0, __LIB_0__.func_158(iVar1));
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
+	return BitTest(uVar0, __LIB_0__::func_158(iVar1));
 }
 
 void func_63(int iParam0, int iParam1, bool bParam2)//Position - 0x7540
@@ -2149,25 +2149,25 @@ void func_64(int iParam0, int iParam1, bool bParam2)//Position - 0x757B
 	int iVar0;
 	int iVar1;
 	iVar0 = func_66(iParam0, iParam1, -1);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
 	if (iVar1 > -1)
 	{
 		if (bParam2)
 		{
-			MISC::SET_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::SET_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
 		else
 		{
-			MISC::CLEAR_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::CLEAR_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
-		__LIB_0__.func_427(__LIB_7__.func_905(iParam0, iParam1), iVar0, -1, 1, 0);
+		__LIB_0__::func_427(__LIB_7__::func_905(iParam0, iParam1), iVar0, -1, 1, 0);
 	}
 }
 
 var func_66(int iParam0, int iParam1, int iParam2)//Position - 0x7743
 {
 	var uVar0;
-	uVar0 = __LIB_0__.func_534(__LIB_7__.func_905(iParam0, iParam1), iParam2, 0);
+	uVar0 = __LIB_0__::func_534(__LIB_7__::func_905(iParam0, iParam1), iParam2, 0);
 	return uVar0;
 }
 
@@ -2181,10 +2181,10 @@ void func_67(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 		}
 		if (bParam3)
 		{
-			if (__LIB_27__.func_750(iParam0, iParam1) == 0)
+			if (__LIB_27__::func_750(iParam0, iParam1) == 0)
 			{
-				__LIB_19__.func_765(16, __LIB_13__.func_215(iParam0, 0), func_79(iParam0, 0), __LIB_13__.func_998(iParam1), __LIB_13__.func_997(iParam1), -1, 0, 0, 0, -1, 0);
-				__LIB_27__.func_581(iParam0, iParam1, 1);
+				__LIB_19__::func_765(16, __LIB_13__::func_215(iParam0, 0), func_79(iParam0, 0), __LIB_13__::func_998(iParam1), __LIB_13__::func_997(iParam1), -1, 0, 0, 0, -1, 0);
+				__LIB_27__::func_581(iParam0, iParam1, 1);
 			}
 		}
 		if (bParam4)
@@ -2218,25 +2218,25 @@ void func_69(int iParam0, int iParam1, bool bParam2)//Position - 0x7822
 	int iVar0;
 	int iVar1;
 	iVar0 = func_71(iParam0, iParam1, -1);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
 	if (iVar1 > -1)
 	{
 		if (bParam2)
 		{
-			MISC::SET_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::SET_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
 		else
 		{
-			MISC::CLEAR_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::CLEAR_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
-		__LIB_0__.func_427(__LIB_21__.func_733(iParam0, iParam1), iVar0, -1, 1, 0);
+		__LIB_0__::func_427(__LIB_21__::func_733(iParam0, iParam1), iVar0, -1, 1, 0);
 	}
 }
 
 var func_71(int iParam0, int iParam1, int iParam2)//Position - 0x79ED
 {
 	var uVar0;
-	uVar0 = __LIB_0__.func_534(__LIB_21__.func_733(iParam0, iParam1), iParam2, 0);
+	uVar0 = __LIB_0__::func_534(__LIB_21__::func_733(iParam0, iParam1), iParam2, 0);
 	return uVar0;
 }
 
@@ -2244,13 +2244,13 @@ int func_72(int iParam0, int iParam1, int iParam2)//Position - 0x7A08
 {
 	var uVar0;
 	int iVar1;
-	if (__LIB_0__.func_703())
+	if (__LIB_0__::func_703())
 	{
 		return 0;
 	}
 	uVar0 = func_71(iParam0, iParam1, iParam2);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
-	return BitTest(uVar0, __LIB_0__.func_158(iVar1));
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
+	return BitTest(uVar0, __LIB_0__::func_158(iVar1));
 }
 
 char* func_79(int iParam0, int iParam1)//Position - 0x801B
@@ -2546,7 +2546,7 @@ char* func_79(int iParam0, int iParam1)//Position - 0x801B
 		default:
 			if (iParam1 != 0)
 			{
-				iVar0 = __LIB_0__.func_260(iParam1, &uVar2);
+				iVar0 = __LIB_0__::func_260(iParam1, &uVar2);
 				if (iVar0 != -1)
 				{
 					iVar1 = 0;
@@ -2556,7 +2556,7 @@ char* func_79(int iParam0, int iParam1)//Position - 0x801B
 						{
 							if (Var3.f_3 == iParam0)
 							{
-								return __LIB_1__.func_192(&(Var3.f_14));
+								return __LIB_1__::func_192(&(Var3.f_14));
 							}
 						}
 						iVar1++;
@@ -2573,18 +2573,18 @@ void func_82(int iParam0, int iParam1, bool bParam2)//Position - 0x86A1
 	int iVar0;
 	int iVar1;
 	iVar0 = func_54(iParam0, iParam1, -1);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
 	if (iVar1 > -1)
 	{
 		if (bParam2)
 		{
-			MISC::SET_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::SET_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
 		else
 		{
-			MISC::CLEAR_BIT(&iVar0, __LIB_0__.func_158(iVar1));
+			MISC::CLEAR_BIT(&iVar0, __LIB_0__::func_158(iVar1));
 		}
-		__LIB_0__.func_427(__LIB_21__.func_722(iParam0, iParam1), iVar0, -1, 1, 0);
+		__LIB_0__::func_427(__LIB_21__::func_722(iParam0, iParam1), iVar0, -1, 1, 0);
 	}
 }
 
@@ -2595,19 +2595,19 @@ int func_85(int iParam0, int iParam1, int iParam2)//Position - 0x9334
 	if (iParam2 == 0)
 	{
 	}
-	if (__LIB_0__.func_703())
+	if (__LIB_0__::func_703())
 	{
 		return 0;
 	}
 	uVar0 = func_86(iParam0, iParam1);
-	iVar1 = __LIB_7__.func_250(iParam0);
-	return BitTest(uVar0, __LIB_0__.func_158(iVar1));
+	iVar1 = __LIB_7__::func_250(iParam0);
+	return BitTest(uVar0, __LIB_0__::func_158(iVar1));
 }
 
 var func_86(int iParam0, int iParam1)//Position - 0x9368
 {
 	var uVar0;
-	uVar0 = __LIB_0__.func_534(__LIB_19__.func_777(iParam0), iParam1, 0);
+	uVar0 = __LIB_0__::func_534(__LIB_19__::func_777(iParam0), iParam1, 0);
 	return uVar0;
 }
 
@@ -2618,30 +2618,30 @@ int func_88(int iParam0, int iParam1, int iParam2)//Position - 0x9412
 	if (iParam2 == 0)
 	{
 	}
-	if (__LIB_0__.func_703())
+	if (__LIB_0__::func_703())
 	{
 		return 0;
 	}
-	if (__LIB_6__.func_781() == 0)
+	if (__LIB_6__::func_781() == 0)
 	{
 		return 0;
 	}
 	if (iParam0 != joaat("GADGET_PARACHUTE") && iParam0 != joaat("WEAPON_RAILGUN"))
 	{
-		if (__LIB_0__.func_421(__LIB_4__.func_201(iParam0), -1))
+		if (__LIB_0__::func_421(__LIB_4__::func_201(iParam0), -1))
 		{
 			return 0;
 		}
 	}
 	uVar0 = func_89(iParam0, iParam1);
-	iVar1 = __LIB_7__.func_250(iParam0);
-	return BitTest(uVar0, __LIB_0__.func_158(iVar1));
+	iVar1 = __LIB_7__::func_250(iParam0);
+	return BitTest(uVar0, __LIB_0__::func_158(iVar1));
 }
 
 var func_89(int iParam0, var uParam1)//Position - 0x947C
 {
 	var uVar0;
-	uVar0 = __LIB_0__.func_534(__LIB_7__.func_902(iParam0), uParam1, 0);
+	uVar0 = __LIB_0__::func_534(__LIB_7__::func_902(iParam0), uParam1, 0);
 	return uVar0;
 }
 
@@ -2649,13 +2649,13 @@ int func_92(int iParam0, int iParam1, int iParam2)//Position - 0x9AA6
 {
 	var uVar0;
 	int iVar1;
-	if (__LIB_0__.func_703())
+	if (__LIB_0__::func_703())
 	{
 		return 0;
 	}
 	uVar0 = func_66(iParam0, iParam1, iParam2);
-	iVar1 = __LIB_7__.func_783(iParam0, iParam1);
-	return BitTest(uVar0, __LIB_0__.func_158(iVar1));
+	iVar1 = __LIB_7__::func_783(iParam0, iParam1);
+	return BitTest(uVar0, __LIB_0__::func_158(iVar1));
 }
 
 void func_96(var uParam0, var uParam1)//Position - 0x9BFC
@@ -2672,7 +2672,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	{
 		func_107(joaat("WEAPON_BULLPUPSHOTGUN"), uParam0, *uParam1, 0);
 	}
-	if (__LIB_6__.func_790(1, 0))
+	if (__LIB_6__::func_790(1, 0))
 	{
 		if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_SAWNOFFSHOTGUN")) && iLocal_66[2] == uParam1->f_5)
 		{
@@ -2731,7 +2731,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	{
 		func_107(joaat("WEAPON_MARKSMANRIFLE"), uParam0, *uParam1, 0);
 	}
-	if (__LIB_0__.func_116() || Global_262145.f_20269 /* Tunable: ENABLE_RETURNING_CONTENT_WEAPON */)
+	if (__LIB_0__::func_116() || Global_262145.f_20269 /* Tunable: ENABLE_RETURNING_CONTENT_WEAPON */)
 	{
 		if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_HATCHET")) && iLocal_66[22] == uParam1->f_5)
 		{
@@ -2864,14 +2864,14 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION")) && iLocal_66[49] == uParam1->f_5)
 	{
-		if (Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && (__LIB_12__.func_599() || Global_1963965))
+		if (Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && (__LIB_12__::func_599() || Global_1963965))
 		{
 			func_107(joaat("WEAPON_DOUBLEACTION"), uParam0, *uParam1, 0);
 		}
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STONE_HATCHET")) && iLocal_66[50] == uParam1->f_5)
 	{
-		if (Global_262145.f_24171 /* Tunable: -585985361 */ && __LIB_4__.func_199())
+		if (Global_262145.f_24171 /* Tunable: -585985361 */ && __LIB_4__::func_199())
 		{
 			func_107(joaat("WEAPON_STONE_HATCHET"), uParam0, *uParam1, 0);
 		}
@@ -2884,7 +2884,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	{
 		func_107(joaat("WEAPON_RAYMINIGUN"), uParam0, *uParam1, 0);
 	}
-	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((__LIB_0__.func_137(25007, -1) || __LIB_0__.func_137(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756 /* Tunable: ENABLE_AW_RAYGUN */)) && iLocal_66[53] == uParam1->f_5)
+	if ((WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((__LIB_0__::func_137(25007, -1) || __LIB_0__::func_137(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756 /* Tunable: ENABLE_AW_RAYGUN */)) && iLocal_66[53] == uParam1->f_5)
 	{
 		func_107(joaat("WEAPON_RAYPISTOL"), uParam0, *uParam1, 0);
 	}
@@ -2894,7 +2894,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER")) && iLocal_66[55] == uParam1->f_5)
 	{
-		if (Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && (__LIB_24__.func_71() || Global_1963971))
+		if (Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && (__LIB_24__::func_71() || Global_1963971))
 		{
 			func_107(joaat("WEAPON_NAVYREVOLVER"), uParam0, *uParam1, 0);
 		}
@@ -2905,14 +2905,14 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_COMBATSHOTGUN")) && iLocal_66[57] == uParam1->f_5)
 	{
-		if (__LIB_0__.func_137(30632, -1))
+		if (__LIB_0__::func_137(30632, -1))
 		{
 			func_107(joaat("WEAPON_COMBATSHOTGUN"), uParam0, *uParam1, 0);
 		}
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_GADGETPISTOL")) && iLocal_66[58] == uParam1->f_5)
 	{
-		if (__LIB_0__.func_425(106, -1))
+		if (__LIB_0__::func_425(106, -1))
 		{
 			func_107(joaat("WEAPON_GADGETPISTOL"), uParam0, *uParam1, 0);
 		}
@@ -2931,7 +2931,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_TACTICALRIFLE")) && iLocal_66[62] == uParam1->f_5)
 	{
-		if (((Global_262145.f_32775 /* Tunable: UNLOCK_SERVICE_CARBINE_FOR_PURCHASE */ || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || __LIB_0__.func_421(__LIB_4__.func_201(joaat("WEAPON_TACTICALRIFLE")), -1)) || __LIB_7__.func_784(joaat("WEAPON_TACTICALRIFLE")))
+		if (((Global_262145.f_32775 /* Tunable: UNLOCK_SERVICE_CARBINE_FOR_PURCHASE */ || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || __LIB_0__::func_421(__LIB_4__::func_201(joaat("WEAPON_TACTICALRIFLE")), -1)) || __LIB_7__::func_784(joaat("WEAPON_TACTICALRIFLE")))
 		{
 			func_107(joaat("WEAPON_TACTICALRIFLE"), uParam0, *uParam1, 0);
 		}
@@ -2959,7 +2959,7 @@ void func_107(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 	int iVar12;
 	bool bVar13;
 	iParam3 = iParam3;
-	StringCopy(&Var0, __LIB_7__.func_318(iParam0, 0), 16);
+	StringCopy(&Var0, __LIB_7__::func_318(iParam0, 0), 16);
 	if (((iParam0 == joaat("WEAPON_DOUBLEACTION") || iParam0 == joaat("WEAPON_COMPACTRIFLE")) || iParam0 == joaat("WEAPON_COMPACTLAUNCHER")) || iParam0 == joaat("WEAPON_MARKSMANRIFLE"))
 	{
 		StringCopy(&cVar1, func_137(iParam0, 1), 16);
@@ -2981,9 +2981,9 @@ void func_107(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 	{
 		if (uParam1->f_1[iVar12] == 0 && WEAPON::IS_WEAPON_VALID(iParam0))
 		{
-			if (__LIB_4__.func_214(iParam0))
+			if (__LIB_4__::func_214(iParam0))
 			{
-				if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_12__.func_605(iParam0), -1))
+				if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_12__::func_605(iParam0), -1))
 				{
 					bVar13 = true;
 				}
@@ -3006,7 +3006,7 @@ void func_107(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			iVar11 = 0;
 			while (iVar11 <= 35)
 			{
-				iVar10 = __LIB_6__.func_851(iParam0, iVar11);
+				iVar10 = __LIB_6__::func_851(iParam0, iVar11);
 				if (iVar10 != 0)
 				{
 					if (func_51(iVar10, iParam0, iParam2) && bVar13)
@@ -3426,186 +3426,186 @@ float func_130(int iParam0, int iParam1)//Position - 0xB31A
 	{
 		case joaat("WEAPON_PISTOL"):
 		case joaat("WEAPON_PISTOL_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(251, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(252, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(251, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(252, iParam1, 0)));
 		case joaat("WEAPON_COMBATPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(261, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(262, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(261, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(262, iParam1, 0)));
 		case joaat("WEAPON_APPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(281, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(282, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(281, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(282, iParam1, 0)));
 		case joaat("WEAPON_MICROSMG"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(291, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(292, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(291, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(292, iParam1, 0)));
 		case joaat("WEAPON_SMG"):
 		case joaat("WEAPON_SMG_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(301, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(302, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(301, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(302, iParam1, 0)));
 		case joaat("WEAPON_ASSAULTRIFLE"):
 		case joaat("WEAPON_ASSAULTRIFLE_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(321, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(322, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(321, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(322, iParam1, 0)));
 		case joaat("WEAPON_CARBINERIFLE"):
 		case joaat("WEAPON_CARBINERIFLE_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(330, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(331, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(330, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(331, iParam1, 0)));
 		case joaat("WEAPON_ADVANCEDRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(339, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(340, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(339, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(340, iParam1, 0)));
 		case joaat("WEAPON_MG"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(348, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(349, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(348, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(349, iParam1, 0)));
 		case joaat("WEAPON_COMBATMG"):
 		case joaat("WEAPON_COMBATMG_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(357, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(358, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(357, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(358, iParam1, 0)));
 		case joaat("WEAPON_PUMPSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(375, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(376, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(375, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(376, iParam1, 0)));
 		case joaat("WEAPON_SAWNOFFSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(384, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(385, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(384, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(385, iParam1, 0)));
 		case joaat("WEAPON_ASSAULTSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(403, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(404, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(403, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(404, iParam1, 0)));
 		case joaat("WEAPON_SNIPERRIFLE"):
 		case joaat("WEAPON_HEAVYSNIPER_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(422, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(423, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(422, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(423, iParam1, 0)));
 		case joaat("WEAPON_HEAVYSNIPER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(431, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(432, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(431, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(432, iParam1, 0)));
 		case joaat("WEAPON_GRENADELAUNCHER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(442, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(443, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(442, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(443, iParam1, 0)));
 		case joaat("WEAPON_RPG"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(449, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(450, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(449, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(450, iParam1, 0)));
 		case joaat("WEAPON_MINIGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(456, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(457, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(456, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(457, iParam1, 0)));
 		case joaat("WEAPON_GRENADE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(465, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(466, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(465, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(466, iParam1, 0)));
 		case joaat("WEAPON_SMOKEGRENADE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(473, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(474, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(473, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(474, iParam1, 0)));
 		case joaat("WEAPON_STICKYBOMB"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(482, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(483, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(482, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(483, iParam1, 0)));
 		case joaat("WEAPON_MOLOTOV"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(490, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(491, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(490, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(491, iParam1, 0)));
 		case joaat("WEAPON_STUNGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(412, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(413, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(412, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(413, iParam1, 0)));
 		case joaat("WEAPON_KNIFE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(194, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(196, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(194, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(196, iParam1, 0)));
 		case joaat("WEAPON_NIGHTSTICK"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(202, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(204, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(202, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(204, iParam1, 0)));
 		case joaat("WEAPON_HAMMER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(230, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(232, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(230, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(232, iParam1, 0)));
 		case joaat("WEAPON_BAT"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(237, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(239, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(237, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(239, iParam1, 0)));
 		case joaat("WEAPON_CROWBAR"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(209, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(211, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(209, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(211, iParam1, 0)));
 		case joaat("WEAPON_GOLFCLUB"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(244, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(246, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(244, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(246, iParam1, 0)));
 		case joaat("WEAPON_PISTOL50"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(271, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(272, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(271, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(272, iParam1, 0)));
 		case joaat("WEAPON_ASSAULTSMG"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(311, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(312, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(311, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(312, iParam1, 0)));
 		case joaat("WEAPON_BULLPUPSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(394, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(395, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(394, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(395, iParam1, 0)));
 		case joaat("WEAPON_ASSAULTMG"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(366, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(367, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(366, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(367, iParam1, 0)));
 		case joaat("WEAPON_ASSAULTSNIPER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(321, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(322, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(321, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(322, iParam1, 0)));
 		case joaat("WEAPON_HEAVYRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(431, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(432, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(431, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(432, iParam1, 0)));
 		case joaat("WEAPON_PROGRAMMABLEAR"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(321, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(322, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(321, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(322, iParam1, 0)));
 		case joaat("WEAPON_BOTTLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(1731, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(1732, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(1731, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(1732, iParam1, 0)));
 		case joaat("WEAPON_SNSPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(1741, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(1742, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(1741, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(1742, iParam1, 0)));
 		case joaat("WEAPON_SPECIALCARBINE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(10878, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(10879, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(10878, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(10879, iParam1, 0)));
 		case joaat("WEAPON_BULLPUPRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(10888, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(10889, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(10888, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(10889, iParam1, 0)));
 		case joaat("WEAPON_HEAVYPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(10868, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(10869, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(10868, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(10869, iParam1, 0)));
 		case joaat("WEAPON_DAGGER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11155, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11156, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11155, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11156, iParam1, 0)));
 		case joaat("WEAPON_VINTAGEPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11165, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11166, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11165, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11166, iParam1, 0)));
 		case joaat("WEAPON_GUSENBERG"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(10898, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(10899, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(10898, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(10899, iParam1, 0)));
 		case joaat("WEAPON_MUSKET"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11185, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11186, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11185, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11186, iParam1, 0)));
 		case joaat("WEAPON_FIREWORK"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11175, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11176, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11175, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11176, iParam1, 0)));
 		case joaat("WEAPON_HEAVYSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11263, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11264, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11263, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11264, iParam1, 0)));
 		case joaat("WEAPON_MARKSMANRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11273, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11274, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11273, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11274, iParam1, 0)));
 		case joaat("WEAPON_HOMINGLAUNCHER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11299, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11300, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11299, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11300, iParam1, 0)));
 		case joaat("WEAPON_PROXMINE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11291, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11292, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11291, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11292, iParam1, 0)));
 		case joaat("WEAPON_COMBATPDW"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11307, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11308, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11307, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11308, iParam1, 0)));
 		case joaat("WEAPON_MARKSMANPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11324, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11325, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11324, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11325, iParam1, 0)));
 		case joaat("WEAPON_KNUCKLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11317, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11318, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11317, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11318, iParam1, 0)));
 		case joaat("WEAPON_MACHETE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11334, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11335, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11334, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11335, iParam1, 0)));
 		case joaat("WEAPON_MACHINEPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11342, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11343, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11342, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11343, iParam1, 0)));
 		case joaat("WEAPON_FLASHLIGHT"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11380, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11381, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11380, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11381, iParam1, 0)));
 		case joaat("WEAPON_SWITCHBLADE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11408, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11409, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11408, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11409, iParam1, 0)));
 		case joaat("WEAPON_REVOLVER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11398, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11399, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11398, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11399, iParam1, 0)));
 		case joaat("WEAPON_DBSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11370, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11371, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11370, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11371, iParam1, 0)));
 		case joaat("WEAPON_COMPACTRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11360, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11361, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11360, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11361, iParam1, 0)));
 		case joaat("WEAPON_HATCHET"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11283, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11284, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11283, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11284, iParam1, 0)));
 		case joaat("WEAPON_AUTOSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11449, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11450, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11449, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11450, iParam1, 0)));
 		case joaat("WEAPON_BATTLEAXE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11459, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11460, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11459, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11460, iParam1, 0)));
 		case joaat("WEAPON_COMPACTLAUNCHER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11465, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11466, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11465, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11466, iParam1, 0)));
 		case joaat("WEAPON_MINISMG"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11475, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11476, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11475, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11476, iParam1, 0)));
 		case joaat("WEAPON_PIPEBOMB"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11485, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11486, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11485, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11486, iParam1, 0)));
 		case joaat("WEAPON_POOLCUE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11493, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11494, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11493, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11494, iParam1, 0)));
 		case joaat("WEAPON_WRENCH"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(223, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(225, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(223, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(225, iParam1, 0)));
 		case joaat("WEAPON_BULLPUPRIFLE_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11957, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11958, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11957, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11958, iParam1, 0)));
 		case joaat("WEAPON_MARKSMANRIFLE_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11977, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11978, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11977, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11978, iParam1, 0)));
 		case joaat("WEAPON_PUMPSHOTGUN_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11967, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11968, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11967, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11968, iParam1, 0)));
 		case joaat("WEAPON_REVOLVER_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11987, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11988, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11987, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11988, iParam1, 0)));
 		case joaat("WEAPON_SNSPISTOL_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12007, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12008, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12007, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12008, iParam1, 0)));
 		case joaat("WEAPON_SPECIALCARBINE_MK2"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12017, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12018, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12017, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12018, iParam1, 0)));
 		case joaat("WEAPON_DOUBLEACTION"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(11997, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(11998, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(11997, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(11998, iParam1, 0)));
 		case joaat("WEAPON_STONE_HATCHET"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12220, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12221, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12220, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12221, iParam1, 0)));
 		case joaat("WEAPON_RAYPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12377, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12378, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12377, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12378, iParam1, 0)));
 		case joaat("WEAPON_RAYCARBINE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12387, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12388, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12387, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12388, iParam1, 0)));
 		case joaat("WEAPON_RAYMINIGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12397, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12398, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12397, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12398, iParam1, 0)));
 		case joaat("WEAPON_NAVYREVOLVER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12828, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12829, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12828, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12829, iParam1, 0)));
 		case joaat("WEAPON_CERAMICPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12818, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12819, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12818, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12819, iParam1, 0)));
 		case joaat("WEAPON_MILITARYRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12988, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12989, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12988, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12989, iParam1, 0)));
 		case joaat("WEAPON_COMBATSHOTGUN"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12968, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12969, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12968, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12969, iParam1, 0)));
 		case joaat("WEAPON_GADGETPISTOL"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(12978, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(12979, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(12978, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(12979, iParam1, 0)));
 		case joaat("WEAPON_EMPLAUNCHER"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(13019, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(13020, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(13019, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(13020, iParam1, 0)));
 		case joaat("WEAPON_STUNGUN_MP"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(13041, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(13042, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(13041, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(13042, iParam1, 0)));
 		case joaat("WEAPON_PRECISIONRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(13112, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(13113, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(13112, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(13113, iParam1, 0)));
 		case joaat("WEAPON_TACTICALRIFLE"):
-			return (SYSTEM::TO_FLOAT(__LIB_0__.func_534(13102, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__.func_534(13103, iParam1, 0)));
+			return (SYSTEM::TO_FLOAT(__LIB_0__::func_534(13102, iParam1, 0)) / SYSTEM::TO_FLOAT(__LIB_0__::func_534(13103, iParam1, 0)));
 		default:
 	}
 	return 0f;
@@ -3616,135 +3616,135 @@ int func_131(int iParam0, int iParam1)//Position - 0xC050
 	switch (iParam0)
 	{
 		case joaat("WEAPON_PISTOL"):
-			return __LIB_0__.func_534(255, iParam1, 0);
+			return __LIB_0__::func_534(255, iParam1, 0);
 		case joaat("WEAPON_COMBATPISTOL"):
-			return __LIB_0__.func_534(265, iParam1, 0);
+			return __LIB_0__::func_534(265, iParam1, 0);
 		case joaat("WEAPON_APPISTOL"):
-			return __LIB_0__.func_534(285, iParam1, 0);
+			return __LIB_0__::func_534(285, iParam1, 0);
 		case joaat("WEAPON_MICROSMG"):
-			return __LIB_0__.func_534(295, iParam1, 0);
+			return __LIB_0__::func_534(295, iParam1, 0);
 		case joaat("WEAPON_SMG"):
-			return __LIB_0__.func_534(305, iParam1, 0);
+			return __LIB_0__::func_534(305, iParam1, 0);
 		case joaat("WEAPON_ASSAULTRIFLE"):
-			return __LIB_0__.func_534(325, iParam1, 0);
+			return __LIB_0__::func_534(325, iParam1, 0);
 		case joaat("WEAPON_CARBINERIFLE"):
-			return __LIB_0__.func_534(334, iParam1, 0);
+			return __LIB_0__::func_534(334, iParam1, 0);
 		case joaat("WEAPON_ADVANCEDRIFLE"):
-			return __LIB_0__.func_534(343, iParam1, 0);
+			return __LIB_0__::func_534(343, iParam1, 0);
 		case joaat("WEAPON_MG"):
-			return __LIB_0__.func_534(352, iParam1, 0);
+			return __LIB_0__::func_534(352, iParam1, 0);
 		case joaat("WEAPON_COMBATMG"):
-			return __LIB_0__.func_534(361, iParam1, 0);
+			return __LIB_0__::func_534(361, iParam1, 0);
 		case joaat("WEAPON_PUMPSHOTGUN"):
-			return __LIB_0__.func_534(379, iParam1, 0);
+			return __LIB_0__::func_534(379, iParam1, 0);
 		case joaat("WEAPON_SAWNOFFSHOTGUN"):
-			return __LIB_0__.func_534(388, iParam1, 0);
+			return __LIB_0__::func_534(388, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSHOTGUN"):
-			return __LIB_0__.func_534(407, iParam1, 0);
+			return __LIB_0__::func_534(407, iParam1, 0);
 		case joaat("WEAPON_SNIPERRIFLE"):
-			return __LIB_0__.func_534(426, iParam1, 0);
+			return __LIB_0__::func_534(426, iParam1, 0);
 		case joaat("WEAPON_HEAVYSNIPER"):
-			return __LIB_0__.func_534(435, iParam1, 0);
+			return __LIB_0__::func_534(435, iParam1, 0);
 		case joaat("WEAPON_MINIGUN"):
-			return __LIB_0__.func_534(460, iParam1, 0);
+			return __LIB_0__::func_534(460, iParam1, 0);
 		case joaat("WEAPON_PISTOL50"):
-			return __LIB_0__.func_534(275, iParam1, 0);
+			return __LIB_0__::func_534(275, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSMG"):
-			return __LIB_0__.func_534(315, iParam1, 0);
+			return __LIB_0__::func_534(315, iParam1, 0);
 		case joaat("WEAPON_HEAVYRIFLE"):
-			return __LIB_0__.func_534(435, iParam1, 0);
+			return __LIB_0__::func_534(435, iParam1, 0);
 		case joaat("WEAPON_BULLPUPSHOTGUN"):
-			return __LIB_0__.func_534(398, iParam1, 0);
+			return __LIB_0__::func_534(398, iParam1, 0);
 		case joaat("WEAPON_ASSAULTMG"):
-			return __LIB_0__.func_534(370, iParam1, 0);
+			return __LIB_0__::func_534(370, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSNIPER"):
-			return __LIB_0__.func_534(325, iParam1, 0);
+			return __LIB_0__::func_534(325, iParam1, 0);
 		case joaat("WEAPON_PROGRAMMABLEAR"):
-			return __LIB_0__.func_534(325, iParam1, 0);
+			return __LIB_0__::func_534(325, iParam1, 0);
 		case joaat("WEAPON_RUBBERGUN"):
-			return __LIB_0__.func_534(325, iParam1, 0);
+			return __LIB_0__::func_534(325, iParam1, 0);
 		case joaat("WEAPON_SNSPISTOL"):
-			return __LIB_0__.func_534(1745, iParam1, 0);
+			return __LIB_0__::func_534(1745, iParam1, 0);
 		case joaat("WEAPON_SPECIALCARBINE"):
-			return __LIB_0__.func_534(10882, iParam1, 0);
+			return __LIB_0__::func_534(10882, iParam1, 0);
 		case joaat("WEAPON_BULLPUPRIFLE"):
-			return __LIB_0__.func_534(10892, iParam1, 0);
+			return __LIB_0__::func_534(10892, iParam1, 0);
 		case joaat("WEAPON_HEAVYPISTOL"):
-			return __LIB_0__.func_534(10872, iParam1, 0);
+			return __LIB_0__::func_534(10872, iParam1, 0);
 		case joaat("WEAPON_VINTAGEPISTOL"):
-			return __LIB_0__.func_534(11169, iParam1, 0);
+			return __LIB_0__::func_534(11169, iParam1, 0);
 		case joaat("WEAPON_GUSENBERG"):
-			return __LIB_0__.func_534(10902, iParam1, 0);
+			return __LIB_0__::func_534(10902, iParam1, 0);
 		case joaat("WEAPON_MUSKET"):
-			return __LIB_0__.func_534(11189, iParam1, 0);
+			return __LIB_0__::func_534(11189, iParam1, 0);
 		case joaat("WEAPON_FIREWORK"):
-			return __LIB_0__.func_534(11179, iParam1, 0);
+			return __LIB_0__::func_534(11179, iParam1, 0);
 		case joaat("WEAPON_HEAVYSHOTGUN"):
-			return __LIB_0__.func_534(11267, iParam1, 0);
+			return __LIB_0__::func_534(11267, iParam1, 0);
 		case joaat("WEAPON_MARKSMANRIFLE"):
-			return __LIB_0__.func_534(11277, iParam1, 0);
+			return __LIB_0__::func_534(11277, iParam1, 0);
 		case joaat("WEAPON_COMBATPDW"):
-			return __LIB_0__.func_534(11311, iParam1, 0);
+			return __LIB_0__::func_534(11311, iParam1, 0);
 		case joaat("WEAPON_MARKSMANPISTOL"):
-			return __LIB_0__.func_534(11328, iParam1, 0);
+			return __LIB_0__::func_534(11328, iParam1, 0);
 		case joaat("WEAPON_MACHINEPISTOL"):
-			return __LIB_0__.func_534(11346, iParam1, 0);
+			return __LIB_0__::func_534(11346, iParam1, 0);
 		case joaat("WEAPON_REVOLVER"):
-			return __LIB_0__.func_534(11402, iParam1, 0);
+			return __LIB_0__::func_534(11402, iParam1, 0);
 		case joaat("WEAPON_DBSHOTGUN"):
-			return __LIB_0__.func_534(11374, iParam1, 0);
+			return __LIB_0__::func_534(11374, iParam1, 0);
 		case joaat("WEAPON_COMPACTRIFLE"):
-			return __LIB_0__.func_534(11364, iParam1, 0);
+			return __LIB_0__::func_534(11364, iParam1, 0);
 		case joaat("WEAPON_AUTOSHOTGUN"):
-			return __LIB_0__.func_534(11453, iParam1, 0);
+			return __LIB_0__::func_534(11453, iParam1, 0);
 		case joaat("WEAPON_MINISMG"):
-			return __LIB_0__.func_534(11479, iParam1, 0);
+			return __LIB_0__::func_534(11479, iParam1, 0);
 		case joaat("WEAPON_PISTOL_MK2"):
-			return __LIB_0__.func_534(255, iParam1, 0);
+			return __LIB_0__::func_534(255, iParam1, 0);
 		case joaat("WEAPON_SMG_MK2"):
-			return __LIB_0__.func_534(305, iParam1, 0);
+			return __LIB_0__::func_534(305, iParam1, 0);
 		case joaat("WEAPON_HEAVYSNIPER_MK2"):
-			return __LIB_0__.func_534(435, iParam1, 0);
+			return __LIB_0__::func_534(435, iParam1, 0);
 		case joaat("WEAPON_COMBATMG_MK2"):
-			return __LIB_0__.func_534(361, iParam1, 0);
+			return __LIB_0__::func_534(361, iParam1, 0);
 		case joaat("WEAPON_ASSAULTRIFLE_MK2"):
-			return __LIB_0__.func_534(325, iParam1, 0);
+			return __LIB_0__::func_534(325, iParam1, 0);
 		case joaat("WEAPON_CARBINERIFLE_MK2"):
-			return __LIB_0__.func_534(334, iParam1, 0);
+			return __LIB_0__::func_534(334, iParam1, 0);
 		case joaat("WEAPON_BULLPUPRIFLE_MK2"):
-			return __LIB_0__.func_534(11961, iParam1, 0);
+			return __LIB_0__::func_534(11961, iParam1, 0);
 		case joaat("WEAPON_MARKSMANRIFLE_MK2"):
-			return __LIB_0__.func_534(11981, iParam1, 0);
+			return __LIB_0__::func_534(11981, iParam1, 0);
 		case joaat("WEAPON_PUMPSHOTGUN_MK2"):
-			return __LIB_0__.func_534(11971, iParam1, 0);
+			return __LIB_0__::func_534(11971, iParam1, 0);
 		case joaat("WEAPON_REVOLVER_MK2"):
-			return __LIB_0__.func_534(11991, iParam1, 0);
+			return __LIB_0__::func_534(11991, iParam1, 0);
 		case joaat("WEAPON_SNSPISTOL_MK2"):
-			return __LIB_0__.func_534(12011, iParam1, 0);
+			return __LIB_0__::func_534(12011, iParam1, 0);
 		case joaat("WEAPON_SPECIALCARBINE_MK2"):
-			return __LIB_0__.func_534(12021, iParam1, 0);
+			return __LIB_0__::func_534(12021, iParam1, 0);
 		case joaat("WEAPON_DOUBLEACTION"):
-			return __LIB_0__.func_534(12001, iParam1, 0);
+			return __LIB_0__::func_534(12001, iParam1, 0);
 		case joaat("WEAPON_RAYPISTOL"):
-			return __LIB_0__.func_534(12381, iParam1, 0);
+			return __LIB_0__::func_534(12381, iParam1, 0);
 		case joaat("WEAPON_RAYCARBINE"):
-			return __LIB_0__.func_534(12391, iParam1, 0);
+			return __LIB_0__::func_534(12391, iParam1, 0);
 		case joaat("WEAPON_RAYMINIGUN"):
-			return __LIB_0__.func_534(12401, iParam1, 0);
+			return __LIB_0__::func_534(12401, iParam1, 0);
 		case joaat("WEAPON_MILITARYRIFLE"):
-			return __LIB_0__.func_534(12992, iParam1, 0);
+			return __LIB_0__::func_534(12992, iParam1, 0);
 		case joaat("WEAPON_COMBATSHOTGUN"):
-			return __LIB_0__.func_534(12972, iParam1, 0);
+			return __LIB_0__::func_534(12972, iParam1, 0);
 		case joaat("WEAPON_GADGETPISTOL"):
-			return __LIB_0__.func_534(12982, iParam1, 0);
+			return __LIB_0__::func_534(12982, iParam1, 0);
 		case joaat("WEAPON_EMPLAUNCHER"):
-			return __LIB_0__.func_534(13023, iParam1, 0);
+			return __LIB_0__::func_534(13023, iParam1, 0);
 		case joaat("WEAPON_STUNGUN_MP"):
-			return __LIB_0__.func_534(13045, iParam1, 0);
+			return __LIB_0__::func_534(13045, iParam1, 0);
 		case joaat("WEAPON_PRECISIONRIFLE"):
-			return __LIB_0__.func_534(13116, iParam1, 0);
+			return __LIB_0__::func_534(13116, iParam1, 0);
 		case joaat("WEAPON_TACTICALRIFLE"):
-			return __LIB_0__.func_534(13106, iParam1, 0);
+			return __LIB_0__::func_534(13106, iParam1, 0);
 		default:
 	}
 	return 0;
@@ -3755,195 +3755,195 @@ int func_132(int iParam0, int iParam1)//Position - 0xC531
 	switch (iParam0)
 	{
 		case joaat("WEAPON_PISTOL"):
-			return __LIB_0__.func_534(252, iParam1, 0);
+			return __LIB_0__::func_534(252, iParam1, 0);
 		case joaat("WEAPON_COMBATPISTOL"):
-			return __LIB_0__.func_534(262, iParam1, 0);
+			return __LIB_0__::func_534(262, iParam1, 0);
 		case joaat("WEAPON_APPISTOL"):
-			return __LIB_0__.func_534(282, iParam1, 0);
+			return __LIB_0__::func_534(282, iParam1, 0);
 		case joaat("WEAPON_MICROSMG"):
-			return __LIB_0__.func_534(292, iParam1, 0);
+			return __LIB_0__::func_534(292, iParam1, 0);
 		case joaat("WEAPON_SMG"):
-			return __LIB_0__.func_534(302, iParam1, 0);
+			return __LIB_0__::func_534(302, iParam1, 0);
 		case joaat("WEAPON_ASSAULTRIFLE"):
-			return __LIB_0__.func_534(322, iParam1, 0);
+			return __LIB_0__::func_534(322, iParam1, 0);
 		case joaat("WEAPON_CARBINERIFLE"):
-			return __LIB_0__.func_534(331, iParam1, 0);
+			return __LIB_0__::func_534(331, iParam1, 0);
 		case joaat("WEAPON_ADVANCEDRIFLE"):
-			return __LIB_0__.func_534(340, iParam1, 0);
+			return __LIB_0__::func_534(340, iParam1, 0);
 		case joaat("WEAPON_MG"):
-			return __LIB_0__.func_534(349, iParam1, 0);
+			return __LIB_0__::func_534(349, iParam1, 0);
 		case joaat("WEAPON_COMBATMG"):
-			return __LIB_0__.func_534(358, iParam1, 0);
+			return __LIB_0__::func_534(358, iParam1, 0);
 		case joaat("WEAPON_PUMPSHOTGUN"):
-			return __LIB_0__.func_534(376, iParam1, 0);
+			return __LIB_0__::func_534(376, iParam1, 0);
 		case joaat("WEAPON_SAWNOFFSHOTGUN"):
-			return __LIB_0__.func_534(385, iParam1, 0);
+			return __LIB_0__::func_534(385, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSHOTGUN"):
-			return __LIB_0__.func_534(404, iParam1, 0);
+			return __LIB_0__::func_534(404, iParam1, 0);
 		case joaat("WEAPON_SNIPERRIFLE"):
-			return __LIB_0__.func_534(423, iParam1, 0);
+			return __LIB_0__::func_534(423, iParam1, 0);
 		case joaat("WEAPON_HEAVYSNIPER"):
-			return __LIB_0__.func_534(432, iParam1, 0);
+			return __LIB_0__::func_534(432, iParam1, 0);
 		case joaat("WEAPON_GRENADELAUNCHER"):
-			return __LIB_0__.func_534(443, iParam1, 0);
+			return __LIB_0__::func_534(443, iParam1, 0);
 		case joaat("WEAPON_RPG"):
-			return __LIB_0__.func_534(450, iParam1, 0);
+			return __LIB_0__::func_534(450, iParam1, 0);
 		case joaat("WEAPON_MINIGUN"):
-			return __LIB_0__.func_534(457, iParam1, 0);
+			return __LIB_0__::func_534(457, iParam1, 0);
 		case joaat("WEAPON_GRENADE"):
-			return __LIB_0__.func_534(466, iParam1, 0);
+			return __LIB_0__::func_534(466, iParam1, 0);
 		case joaat("WEAPON_SMOKEGRENADE"):
-			return __LIB_0__.func_534(474, iParam1, 0);
+			return __LIB_0__::func_534(474, iParam1, 0);
 		case joaat("WEAPON_STICKYBOMB"):
-			return __LIB_0__.func_534(483, iParam1, 0);
+			return __LIB_0__::func_534(483, iParam1, 0);
 		case joaat("WEAPON_MOLOTOV"):
-			return __LIB_0__.func_534(491, iParam1, 0);
+			return __LIB_0__::func_534(491, iParam1, 0);
 		case joaat("WEAPON_STUNGUN"):
-			return __LIB_0__.func_534(413, iParam1, 0);
+			return __LIB_0__::func_534(413, iParam1, 0);
 		case joaat("WEAPON_KNIFE"):
-			return __LIB_0__.func_534(196, iParam1, 0);
+			return __LIB_0__::func_534(196, iParam1, 0);
 		case joaat("WEAPON_NIGHTSTICK"):
-			return __LIB_0__.func_534(204, iParam1, 0);
+			return __LIB_0__::func_534(204, iParam1, 0);
 		case joaat("WEAPON_HAMMER"):
-			return __LIB_0__.func_534(232, iParam1, 0);
+			return __LIB_0__::func_534(232, iParam1, 0);
 		case joaat("WEAPON_BAT"):
-			return __LIB_0__.func_534(239, iParam1, 0);
+			return __LIB_0__::func_534(239, iParam1, 0);
 		case joaat("WEAPON_CROWBAR"):
-			return __LIB_0__.func_534(211, iParam1, 0);
+			return __LIB_0__::func_534(211, iParam1, 0);
 		case joaat("WEAPON_GOLFCLUB"):
-			return __LIB_0__.func_534(246, iParam1, 0);
+			return __LIB_0__::func_534(246, iParam1, 0);
 		case joaat("WEAPON_PISTOL50"):
-			return __LIB_0__.func_534(272, iParam1, 0);
+			return __LIB_0__::func_534(272, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSMG"):
-			return __LIB_0__.func_534(312, iParam1, 0);
+			return __LIB_0__::func_534(312, iParam1, 0);
 		case joaat("WEAPON_HEAVYRIFLE"):
-			return __LIB_0__.func_534(432, iParam1, 0);
+			return __LIB_0__::func_534(432, iParam1, 0);
 		case joaat("WEAPON_BULLPUPSHOTGUN"):
-			return __LIB_0__.func_534(395, iParam1, 0);
+			return __LIB_0__::func_534(395, iParam1, 0);
 		case joaat("WEAPON_ASSAULTMG"):
-			return __LIB_0__.func_534(367, iParam1, 0);
+			return __LIB_0__::func_534(367, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSNIPER"):
-			return __LIB_0__.func_534(322, iParam1, 0);
+			return __LIB_0__::func_534(322, iParam1, 0);
 		case joaat("WEAPON_PROGRAMMABLEAR"):
-			return __LIB_0__.func_534(322, iParam1, 0);
+			return __LIB_0__::func_534(322, iParam1, 0);
 		case joaat("WEAPON_RUBBERGUN"):
-			return __LIB_0__.func_534(322, iParam1, 0);
+			return __LIB_0__::func_534(322, iParam1, 0);
 		case joaat("WEAPON_BOTTLE"):
-			return __LIB_0__.func_534(1732, iParam1, 0);
+			return __LIB_0__::func_534(1732, iParam1, 0);
 		case joaat("WEAPON_SNSPISTOL"):
-			return __LIB_0__.func_534(1742, iParam1, 0);
+			return __LIB_0__::func_534(1742, iParam1, 0);
 		case joaat("WEAPON_SPECIALCARBINE"):
-			return __LIB_0__.func_534(10879, iParam1, 0);
+			return __LIB_0__::func_534(10879, iParam1, 0);
 		case joaat("WEAPON_BULLPUPRIFLE"):
-			return __LIB_0__.func_534(10889, iParam1, 0);
+			return __LIB_0__::func_534(10889, iParam1, 0);
 		case joaat("WEAPON_HEAVYPISTOL"):
-			return __LIB_0__.func_534(10869, iParam1, 0);
+			return __LIB_0__::func_534(10869, iParam1, 0);
 		case joaat("WEAPON_DAGGER"):
-			return __LIB_0__.func_534(11156, iParam1, 0);
+			return __LIB_0__::func_534(11156, iParam1, 0);
 		case joaat("WEAPON_VINTAGEPISTOL"):
-			return __LIB_0__.func_534(11166, iParam1, 0);
+			return __LIB_0__::func_534(11166, iParam1, 0);
 		case joaat("WEAPON_GUSENBERG"):
-			return __LIB_0__.func_534(10899, iParam1, 0);
+			return __LIB_0__::func_534(10899, iParam1, 0);
 		case joaat("WEAPON_MUSKET"):
-			return __LIB_0__.func_534(11186, iParam1, 0);
+			return __LIB_0__::func_534(11186, iParam1, 0);
 		case joaat("WEAPON_FIREWORK"):
-			return __LIB_0__.func_534(11176, iParam1, 0);
+			return __LIB_0__::func_534(11176, iParam1, 0);
 		case joaat("WEAPON_HEAVYSHOTGUN"):
-			return __LIB_0__.func_534(11264, iParam1, 0);
+			return __LIB_0__::func_534(11264, iParam1, 0);
 		case joaat("WEAPON_MARKSMANRIFLE"):
-			return __LIB_0__.func_534(11274, iParam1, 0);
+			return __LIB_0__::func_534(11274, iParam1, 0);
 		case joaat("WEAPON_PROXMINE"):
-			return __LIB_0__.func_534(11292, iParam1, 0);
+			return __LIB_0__::func_534(11292, iParam1, 0);
 		case joaat("WEAPON_HOMINGLAUNCHER"):
-			return __LIB_0__.func_534(11300, iParam1, 0);
+			return __LIB_0__::func_534(11300, iParam1, 0);
 		case joaat("WEAPON_COMBATPDW"):
-			return __LIB_0__.func_534(11308, iParam1, 0);
+			return __LIB_0__::func_534(11308, iParam1, 0);
 		case joaat("WEAPON_MARKSMANPISTOL"):
-			return __LIB_0__.func_534(11325, iParam1, 0);
+			return __LIB_0__::func_534(11325, iParam1, 0);
 		case joaat("WEAPON_KNUCKLE"):
-			return __LIB_0__.func_534(11318, iParam1, 0);
+			return __LIB_0__::func_534(11318, iParam1, 0);
 		case joaat("WEAPON_MACHETE"):
-			return __LIB_0__.func_534(11335, iParam1, 0);
+			return __LIB_0__::func_534(11335, iParam1, 0);
 		case joaat("WEAPON_MACHINEPISTOL"):
-			return __LIB_0__.func_534(11343, iParam1, 0);
+			return __LIB_0__::func_534(11343, iParam1, 0);
 		case joaat("WEAPON_FLASHLIGHT"):
-			return __LIB_0__.func_534(11381, iParam1, 0);
+			return __LIB_0__::func_534(11381, iParam1, 0);
 		case joaat("WEAPON_SWITCHBLADE"):
-			return __LIB_0__.func_534(11409, iParam1, 0);
+			return __LIB_0__::func_534(11409, iParam1, 0);
 		case joaat("WEAPON_REVOLVER"):
-			return __LIB_0__.func_534(11399, iParam1, 0);
+			return __LIB_0__::func_534(11399, iParam1, 0);
 		case joaat("WEAPON_DBSHOTGUN"):
-			return __LIB_0__.func_534(11371, iParam1, 0);
+			return __LIB_0__::func_534(11371, iParam1, 0);
 		case joaat("WEAPON_COMPACTRIFLE"):
-			return __LIB_0__.func_534(11361, iParam1, 0);
+			return __LIB_0__::func_534(11361, iParam1, 0);
 		case joaat("WEAPON_HATCHET"):
-			return __LIB_0__.func_534(11284, iParam1, 0);
+			return __LIB_0__::func_534(11284, iParam1, 0);
 		case joaat("WEAPON_AUTOSHOTGUN"):
-			return __LIB_0__.func_534(11450, iParam1, 0);
+			return __LIB_0__::func_534(11450, iParam1, 0);
 		case joaat("WEAPON_BATTLEAXE"):
-			return __LIB_0__.func_534(11460, iParam1, 0);
+			return __LIB_0__::func_534(11460, iParam1, 0);
 		case joaat("WEAPON_COMPACTLAUNCHER"):
-			return __LIB_0__.func_534(11466, iParam1, 0);
+			return __LIB_0__::func_534(11466, iParam1, 0);
 		case joaat("WEAPON_MINISMG"):
-			return __LIB_0__.func_534(11476, iParam1, 0);
+			return __LIB_0__::func_534(11476, iParam1, 0);
 		case joaat("WEAPON_PIPEBOMB"):
-			return __LIB_0__.func_534(11486, iParam1, 0);
+			return __LIB_0__::func_534(11486, iParam1, 0);
 		case joaat("WEAPON_POOLCUE"):
-			return __LIB_0__.func_534(11494, iParam1, 0);
+			return __LIB_0__::func_534(11494, iParam1, 0);
 		case joaat("WEAPON_WRENCH"):
-			return __LIB_0__.func_534(225, iParam1, 0);
+			return __LIB_0__::func_534(225, iParam1, 0);
 		case joaat("WEAPON_PISTOL_MK2"):
-			return __LIB_0__.func_534(252, iParam1, 0);
+			return __LIB_0__::func_534(252, iParam1, 0);
 		case joaat("WEAPON_SMG_MK2"):
-			return __LIB_0__.func_534(302, iParam1, 0);
+			return __LIB_0__::func_534(302, iParam1, 0);
 		case joaat("WEAPON_HEAVYSNIPER_MK2"):
-			return __LIB_0__.func_534(432, iParam1, 0);
+			return __LIB_0__::func_534(432, iParam1, 0);
 		case joaat("WEAPON_COMBATMG_MK2"):
-			return __LIB_0__.func_534(358, iParam1, 0);
+			return __LIB_0__::func_534(358, iParam1, 0);
 		case joaat("WEAPON_ASSAULTRIFLE_MK2"):
-			return __LIB_0__.func_534(322, iParam1, 0);
+			return __LIB_0__::func_534(322, iParam1, 0);
 		case joaat("WEAPON_CARBINERIFLE_MK2"):
-			return __LIB_0__.func_534(331, iParam1, 0);
+			return __LIB_0__::func_534(331, iParam1, 0);
 		case joaat("WEAPON_BULLPUPRIFLE_MK2"):
-			return __LIB_0__.func_534(11958, iParam1, 0);
+			return __LIB_0__::func_534(11958, iParam1, 0);
 		case joaat("WEAPON_MARKSMANRIFLE_MK2"):
-			return __LIB_0__.func_534(11978, iParam1, 0);
+			return __LIB_0__::func_534(11978, iParam1, 0);
 		case joaat("WEAPON_PUMPSHOTGUN_MK2"):
-			return __LIB_0__.func_534(11968, iParam1, 0);
+			return __LIB_0__::func_534(11968, iParam1, 0);
 		case joaat("WEAPON_REVOLVER_MK2"):
-			return __LIB_0__.func_534(11988, iParam1, 0);
+			return __LIB_0__::func_534(11988, iParam1, 0);
 		case joaat("WEAPON_SNSPISTOL_MK2"):
-			return __LIB_0__.func_534(12008, iParam1, 0);
+			return __LIB_0__::func_534(12008, iParam1, 0);
 		case joaat("WEAPON_SPECIALCARBINE_MK2"):
-			return __LIB_0__.func_534(12018, iParam1, 0);
+			return __LIB_0__::func_534(12018, iParam1, 0);
 		case joaat("WEAPON_DOUBLEACTION"):
-			return __LIB_0__.func_534(11998, iParam1, 0);
+			return __LIB_0__::func_534(11998, iParam1, 0);
 		case joaat("WEAPON_STONE_HATCHET"):
-			return __LIB_0__.func_534(12221, iParam1, 0);
+			return __LIB_0__::func_534(12221, iParam1, 0);
 		case joaat("WEAPON_RAYPISTOL"):
-			return __LIB_0__.func_534(12378, iParam1, 0);
+			return __LIB_0__::func_534(12378, iParam1, 0);
 		case joaat("WEAPON_RAYCARBINE"):
-			return __LIB_0__.func_534(12388, iParam1, 0);
+			return __LIB_0__::func_534(12388, iParam1, 0);
 		case joaat("WEAPON_RAYMINIGUN"):
-			return __LIB_0__.func_534(12398, iParam1, 0);
+			return __LIB_0__::func_534(12398, iParam1, 0);
 		case joaat("WEAPON_NAVYREVOLVER"):
-			return __LIB_0__.func_534(12829, iParam1, 0);
+			return __LIB_0__::func_534(12829, iParam1, 0);
 		case joaat("WEAPON_CERAMICPISTOL"):
-			return __LIB_0__.func_534(12819, iParam1, 0);
+			return __LIB_0__::func_534(12819, iParam1, 0);
 		case joaat("WEAPON_GADGETPISTOL"):
-			return __LIB_0__.func_534(12979, iParam1, 0);
+			return __LIB_0__::func_534(12979, iParam1, 0);
 		case joaat("WEAPON_MILITARYRIFLE"):
-			return __LIB_0__.func_534(12989, iParam1, 0);
+			return __LIB_0__::func_534(12989, iParam1, 0);
 		case joaat("WEAPON_COMBATSHOTGUN"):
-			return __LIB_0__.func_534(12969, iParam1, 0);
+			return __LIB_0__::func_534(12969, iParam1, 0);
 		case joaat("WEAPON_EMPLAUNCHER"):
-			return __LIB_0__.func_534(13020, iParam1, 0);
+			return __LIB_0__::func_534(13020, iParam1, 0);
 		case joaat("WEAPON_STUNGUN_MP"):
-			return __LIB_0__.func_534(13042, iParam1, 0);
+			return __LIB_0__::func_534(13042, iParam1, 0);
 		case joaat("WEAPON_PRECISIONRIFLE"):
-			return __LIB_0__.func_534(13113, iParam1, 0);
+			return __LIB_0__::func_534(13113, iParam1, 0);
 		case joaat("WEAPON_TACTICALRIFLE"):
-			return __LIB_0__.func_534(13103, iParam1, 0);
+			return __LIB_0__::func_534(13103, iParam1, 0);
 		default:
 	}
 	return 0;
@@ -3954,195 +3954,195 @@ int func_133(int iParam0, int iParam1)//Position - 0xCC45
 	switch (iParam0)
 	{
 		case joaat("WEAPON_PISTOL"):
-			return __LIB_0__.func_534(251, iParam1, 0);
+			return __LIB_0__::func_534(251, iParam1, 0);
 		case joaat("WEAPON_COMBATPISTOL"):
-			return __LIB_0__.func_534(261, iParam1, 0);
+			return __LIB_0__::func_534(261, iParam1, 0);
 		case joaat("WEAPON_APPISTOL"):
-			return __LIB_0__.func_534(281, iParam1, 0);
+			return __LIB_0__::func_534(281, iParam1, 0);
 		case joaat("WEAPON_MICROSMG"):
-			return __LIB_0__.func_534(291, iParam1, 0);
+			return __LIB_0__::func_534(291, iParam1, 0);
 		case joaat("WEAPON_SMG"):
-			return __LIB_0__.func_534(301, iParam1, 0);
+			return __LIB_0__::func_534(301, iParam1, 0);
 		case joaat("WEAPON_ASSAULTRIFLE"):
-			return __LIB_0__.func_534(321, iParam1, 0);
+			return __LIB_0__::func_534(321, iParam1, 0);
 		case joaat("WEAPON_CARBINERIFLE"):
-			return __LIB_0__.func_534(330, iParam1, 0);
+			return __LIB_0__::func_534(330, iParam1, 0);
 		case joaat("WEAPON_ADVANCEDRIFLE"):
-			return __LIB_0__.func_534(339, iParam1, 0);
+			return __LIB_0__::func_534(339, iParam1, 0);
 		case joaat("WEAPON_MG"):
-			return __LIB_0__.func_534(348, iParam1, 0);
+			return __LIB_0__::func_534(348, iParam1, 0);
 		case joaat("WEAPON_COMBATMG"):
-			return __LIB_0__.func_534(357, iParam1, 0);
+			return __LIB_0__::func_534(357, iParam1, 0);
 		case joaat("WEAPON_PUMPSHOTGUN"):
-			return __LIB_0__.func_534(375, iParam1, 0);
+			return __LIB_0__::func_534(375, iParam1, 0);
 		case joaat("WEAPON_SAWNOFFSHOTGUN"):
-			return __LIB_0__.func_534(384, iParam1, 0);
+			return __LIB_0__::func_534(384, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSHOTGUN"):
-			return __LIB_0__.func_534(403, iParam1, 0);
+			return __LIB_0__::func_534(403, iParam1, 0);
 		case joaat("WEAPON_SNIPERRIFLE"):
-			return __LIB_0__.func_534(422, iParam1, 0);
+			return __LIB_0__::func_534(422, iParam1, 0);
 		case joaat("WEAPON_HEAVYSNIPER"):
-			return __LIB_0__.func_534(431, iParam1, 0);
+			return __LIB_0__::func_534(431, iParam1, 0);
 		case joaat("WEAPON_GRENADELAUNCHER"):
-			return __LIB_0__.func_534(442, iParam1, 0);
+			return __LIB_0__::func_534(442, iParam1, 0);
 		case joaat("WEAPON_RPG"):
-			return __LIB_0__.func_534(449, iParam1, 0);
+			return __LIB_0__::func_534(449, iParam1, 0);
 		case joaat("WEAPON_MINIGUN"):
-			return __LIB_0__.func_534(456, iParam1, 0);
+			return __LIB_0__::func_534(456, iParam1, 0);
 		case joaat("WEAPON_GRENADE"):
-			return __LIB_0__.func_534(465, iParam1, 0);
+			return __LIB_0__::func_534(465, iParam1, 0);
 		case joaat("WEAPON_SMOKEGRENADE"):
-			return __LIB_0__.func_534(473, iParam1, 0);
+			return __LIB_0__::func_534(473, iParam1, 0);
 		case joaat("WEAPON_STICKYBOMB"):
-			return __LIB_0__.func_534(482, iParam1, 0);
+			return __LIB_0__::func_534(482, iParam1, 0);
 		case joaat("WEAPON_MOLOTOV"):
-			return __LIB_0__.func_534(490, iParam1, 0);
+			return __LIB_0__::func_534(490, iParam1, 0);
 		case joaat("WEAPON_STUNGUN"):
-			return __LIB_0__.func_534(412, iParam1, 0);
+			return __LIB_0__::func_534(412, iParam1, 0);
 		case joaat("WEAPON_KNIFE"):
-			return __LIB_0__.func_534(194, iParam1, 0);
+			return __LIB_0__::func_534(194, iParam1, 0);
 		case joaat("WEAPON_NIGHTSTICK"):
-			return __LIB_0__.func_534(202, iParam1, 0);
+			return __LIB_0__::func_534(202, iParam1, 0);
 		case joaat("WEAPON_HAMMER"):
-			return __LIB_0__.func_534(230, iParam1, 0);
+			return __LIB_0__::func_534(230, iParam1, 0);
 		case joaat("WEAPON_BAT"):
-			return __LIB_0__.func_534(237, iParam1, 0);
+			return __LIB_0__::func_534(237, iParam1, 0);
 		case joaat("WEAPON_CROWBAR"):
-			return __LIB_0__.func_534(209, iParam1, 0);
+			return __LIB_0__::func_534(209, iParam1, 0);
 		case joaat("WEAPON_GOLFCLUB"):
-			return __LIB_0__.func_534(244, iParam1, 0);
+			return __LIB_0__::func_534(244, iParam1, 0);
 		case joaat("WEAPON_PISTOL50"):
-			return __LIB_0__.func_534(271, iParam1, 0);
+			return __LIB_0__::func_534(271, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSMG"):
-			return __LIB_0__.func_534(311, iParam1, 0);
+			return __LIB_0__::func_534(311, iParam1, 0);
 		case joaat("WEAPON_HEAVYRIFLE"):
-			return __LIB_0__.func_534(431, iParam1, 0);
+			return __LIB_0__::func_534(431, iParam1, 0);
 		case joaat("WEAPON_BULLPUPSHOTGUN"):
-			return __LIB_0__.func_534(394, iParam1, 0);
+			return __LIB_0__::func_534(394, iParam1, 0);
 		case joaat("WEAPON_ASSAULTMG"):
-			return __LIB_0__.func_534(366, iParam1, 0);
+			return __LIB_0__::func_534(366, iParam1, 0);
 		case joaat("WEAPON_ASSAULTSNIPER"):
-			return __LIB_0__.func_534(321, iParam1, 0);
+			return __LIB_0__::func_534(321, iParam1, 0);
 		case joaat("WEAPON_PROGRAMMABLEAR"):
-			return __LIB_0__.func_534(321, iParam1, 0);
+			return __LIB_0__::func_534(321, iParam1, 0);
 		case joaat("WEAPON_RUBBERGUN"):
-			return __LIB_0__.func_534(321, iParam1, 0);
+			return __LIB_0__::func_534(321, iParam1, 0);
 		case joaat("WEAPON_BOTTLE"):
-			return __LIB_0__.func_534(1731, iParam1, 0);
+			return __LIB_0__::func_534(1731, iParam1, 0);
 		case joaat("WEAPON_SNSPISTOL"):
-			return __LIB_0__.func_534(1741, iParam1, 0);
+			return __LIB_0__::func_534(1741, iParam1, 0);
 		case joaat("WEAPON_SPECIALCARBINE"):
-			return __LIB_0__.func_534(10878, iParam1, 0);
+			return __LIB_0__::func_534(10878, iParam1, 0);
 		case joaat("WEAPON_BULLPUPRIFLE"):
-			return __LIB_0__.func_534(10888, iParam1, 0);
+			return __LIB_0__::func_534(10888, iParam1, 0);
 		case joaat("WEAPON_HEAVYPISTOL"):
-			return __LIB_0__.func_534(10868, iParam1, 0);
+			return __LIB_0__::func_534(10868, iParam1, 0);
 		case joaat("WEAPON_DAGGER"):
-			return __LIB_0__.func_534(11155, iParam1, 0);
+			return __LIB_0__::func_534(11155, iParam1, 0);
 		case joaat("WEAPON_VINTAGEPISTOL"):
-			return __LIB_0__.func_534(11165, iParam1, 0);
+			return __LIB_0__::func_534(11165, iParam1, 0);
 		case joaat("WEAPON_GUSENBERG"):
-			return __LIB_0__.func_534(10898, iParam1, 0);
+			return __LIB_0__::func_534(10898, iParam1, 0);
 		case joaat("WEAPON_MUSKET"):
-			return __LIB_0__.func_534(11185, iParam1, 0);
+			return __LIB_0__::func_534(11185, iParam1, 0);
 		case joaat("WEAPON_FIREWORK"):
-			return __LIB_0__.func_534(11175, iParam1, 0);
+			return __LIB_0__::func_534(11175, iParam1, 0);
 		case joaat("WEAPON_HEAVYSHOTGUN"):
-			return __LIB_0__.func_534(11263, iParam1, 0);
+			return __LIB_0__::func_534(11263, iParam1, 0);
 		case joaat("WEAPON_MARKSMANRIFLE"):
-			return __LIB_0__.func_534(11273, iParam1, 0);
+			return __LIB_0__::func_534(11273, iParam1, 0);
 		case joaat("WEAPON_PROXMINE"):
-			return __LIB_0__.func_534(11291, iParam1, 0);
+			return __LIB_0__::func_534(11291, iParam1, 0);
 		case joaat("WEAPON_HOMINGLAUNCHER"):
-			return __LIB_0__.func_534(11299, iParam1, 0);
+			return __LIB_0__::func_534(11299, iParam1, 0);
 		case joaat("WEAPON_COMBATPDW"):
-			return __LIB_0__.func_534(11307, iParam1, 0);
+			return __LIB_0__::func_534(11307, iParam1, 0);
 		case joaat("WEAPON_MARKSMANPISTOL"):
-			return __LIB_0__.func_534(11324, iParam1, 0);
+			return __LIB_0__::func_534(11324, iParam1, 0);
 		case joaat("WEAPON_KNUCKLE"):
-			return __LIB_0__.func_534(11317, iParam1, 0);
+			return __LIB_0__::func_534(11317, iParam1, 0);
 		case joaat("WEAPON_MACHETE"):
-			return __LIB_0__.func_534(11334, iParam1, 0);
+			return __LIB_0__::func_534(11334, iParam1, 0);
 		case joaat("WEAPON_MACHINEPISTOL"):
-			return __LIB_0__.func_534(11342, iParam1, 0);
+			return __LIB_0__::func_534(11342, iParam1, 0);
 		case joaat("WEAPON_FLASHLIGHT"):
-			return __LIB_0__.func_534(11380, iParam1, 0);
+			return __LIB_0__::func_534(11380, iParam1, 0);
 		case joaat("WEAPON_SWITCHBLADE"):
-			return __LIB_0__.func_534(11408, iParam1, 0);
+			return __LIB_0__::func_534(11408, iParam1, 0);
 		case joaat("WEAPON_REVOLVER"):
-			return __LIB_0__.func_534(11398, iParam1, 0);
+			return __LIB_0__::func_534(11398, iParam1, 0);
 		case joaat("WEAPON_DBSHOTGUN"):
-			return __LIB_0__.func_534(11370, iParam1, 0);
+			return __LIB_0__::func_534(11370, iParam1, 0);
 		case joaat("WEAPON_COMPACTRIFLE"):
-			return __LIB_0__.func_534(11360, iParam1, 0);
+			return __LIB_0__::func_534(11360, iParam1, 0);
 		case joaat("WEAPON_HATCHET"):
-			return __LIB_0__.func_534(11283, iParam1, 0);
+			return __LIB_0__::func_534(11283, iParam1, 0);
 		case joaat("WEAPON_AUTOSHOTGUN"):
-			return __LIB_0__.func_534(11449, iParam1, 0);
+			return __LIB_0__::func_534(11449, iParam1, 0);
 		case joaat("WEAPON_BATTLEAXE"):
-			return __LIB_0__.func_534(11459, iParam1, 0);
+			return __LIB_0__::func_534(11459, iParam1, 0);
 		case joaat("WEAPON_COMPACTLAUNCHER"):
-			return __LIB_0__.func_534(11465, iParam1, 0);
+			return __LIB_0__::func_534(11465, iParam1, 0);
 		case joaat("WEAPON_MINISMG"):
-			return __LIB_0__.func_534(11475, iParam1, 0);
+			return __LIB_0__::func_534(11475, iParam1, 0);
 		case joaat("WEAPON_PIPEBOMB"):
-			return __LIB_0__.func_534(11485, iParam1, 0);
+			return __LIB_0__::func_534(11485, iParam1, 0);
 		case joaat("WEAPON_POOLCUE"):
-			return __LIB_0__.func_534(11493, iParam1, 0);
+			return __LIB_0__::func_534(11493, iParam1, 0);
 		case joaat("WEAPON_WRENCH"):
-			return __LIB_0__.func_534(223, iParam1, 0);
+			return __LIB_0__::func_534(223, iParam1, 0);
 		case joaat("WEAPON_PISTOL_MK2"):
-			return __LIB_0__.func_534(251, iParam1, 0);
+			return __LIB_0__::func_534(251, iParam1, 0);
 		case joaat("WEAPON_SMG_MK2"):
-			return __LIB_0__.func_534(301, iParam1, 0);
+			return __LIB_0__::func_534(301, iParam1, 0);
 		case joaat("WEAPON_HEAVYSNIPER_MK2"):
-			return __LIB_0__.func_534(431, iParam1, 0);
+			return __LIB_0__::func_534(431, iParam1, 0);
 		case joaat("WEAPON_COMBATMG_MK2"):
-			return __LIB_0__.func_534(357, iParam1, 0);
+			return __LIB_0__::func_534(357, iParam1, 0);
 		case joaat("WEAPON_ASSAULTRIFLE_MK2"):
-			return __LIB_0__.func_534(321, iParam1, 0);
+			return __LIB_0__::func_534(321, iParam1, 0);
 		case joaat("WEAPON_CARBINERIFLE_MK2"):
-			return __LIB_0__.func_534(330, iParam1, 0);
+			return __LIB_0__::func_534(330, iParam1, 0);
 		case joaat("WEAPON_BULLPUPRIFLE_MK2"):
-			return __LIB_0__.func_534(11957, iParam1, 0);
+			return __LIB_0__::func_534(11957, iParam1, 0);
 		case joaat("WEAPON_MARKSMANRIFLE_MK2"):
-			return __LIB_0__.func_534(11977, iParam1, 0);
+			return __LIB_0__::func_534(11977, iParam1, 0);
 		case joaat("WEAPON_PUMPSHOTGUN_MK2"):
-			return __LIB_0__.func_534(11967, iParam1, 0);
+			return __LIB_0__::func_534(11967, iParam1, 0);
 		case joaat("WEAPON_REVOLVER_MK2"):
-			return __LIB_0__.func_534(11987, iParam1, 0);
+			return __LIB_0__::func_534(11987, iParam1, 0);
 		case joaat("WEAPON_SNSPISTOL_MK2"):
-			return __LIB_0__.func_534(12007, iParam1, 0);
+			return __LIB_0__::func_534(12007, iParam1, 0);
 		case joaat("WEAPON_SPECIALCARBINE_MK2"):
-			return __LIB_0__.func_534(12017, iParam1, 0);
+			return __LIB_0__::func_534(12017, iParam1, 0);
 		case joaat("WEAPON_DOUBLEACTION"):
-			return __LIB_0__.func_534(11997, iParam1, 0);
+			return __LIB_0__::func_534(11997, iParam1, 0);
 		case joaat("WEAPON_STONE_HATCHET"):
-			return __LIB_0__.func_534(12220, iParam1, 0);
+			return __LIB_0__::func_534(12220, iParam1, 0);
 		case joaat("WEAPON_RAYPISTOL"):
-			return __LIB_0__.func_534(12377, iParam1, 0);
+			return __LIB_0__::func_534(12377, iParam1, 0);
 		case joaat("WEAPON_RAYCARBINE"):
-			return __LIB_0__.func_534(12387, iParam1, 0);
+			return __LIB_0__::func_534(12387, iParam1, 0);
 		case joaat("WEAPON_RAYMINIGUN"):
-			return __LIB_0__.func_534(12397, iParam1, 0);
+			return __LIB_0__::func_534(12397, iParam1, 0);
 		case joaat("WEAPON_NAVYREVOLVER"):
-			return __LIB_0__.func_534(12828, iParam1, 0);
+			return __LIB_0__::func_534(12828, iParam1, 0);
 		case joaat("WEAPON_CERAMICPISTOL"):
-			return __LIB_0__.func_534(12818, iParam1, 0);
+			return __LIB_0__::func_534(12818, iParam1, 0);
 		case joaat("WEAPON_GADGETPISTOL"):
-			return __LIB_0__.func_534(12978, iParam1, 0);
+			return __LIB_0__::func_534(12978, iParam1, 0);
 		case joaat("WEAPON_MILITARYRIFLE"):
-			return __LIB_0__.func_534(12988, iParam1, 0);
+			return __LIB_0__::func_534(12988, iParam1, 0);
 		case joaat("WEAPON_COMBATSHOTGUN"):
-			return __LIB_0__.func_534(12968, iParam1, 0);
+			return __LIB_0__::func_534(12968, iParam1, 0);
 		case joaat("WEAPON_EMPLAUNCHER"):
-			return __LIB_0__.func_534(12968, iParam1, 0);
+			return __LIB_0__::func_534(12968, iParam1, 0);
 		case joaat("WEAPON_STUNGUN_MP"):
-			return __LIB_0__.func_534(13041, iParam1, 0);
+			return __LIB_0__::func_534(13041, iParam1, 0);
 		case joaat("WEAPON_PRECISIONRIFLE"):
-			return __LIB_0__.func_534(13112, iParam1, 0);
+			return __LIB_0__::func_534(13112, iParam1, 0);
 		case joaat("WEAPON_TACTICALRIFLE"):
-			return __LIB_0__.func_534(13102, iParam1, 0);
+			return __LIB_0__::func_534(13102, iParam1, 0);
 		default:
 	}
 	return 0;
@@ -4423,13 +4423,13 @@ float func_134(int iParam0)//Position - 0xD359
 			iVar1 = 13115;
 			break;
 	}
-	if ((__LIB_2__.func_179(iParam0) || iParam0 == joaat("WEAPON_FLASHLIGHT")) || __LIB_2__.func_178(iParam0))
+	if ((__LIB_2__::func_179(iParam0) || iParam0 == joaat("WEAPON_FLASHLIGHT")) || __LIB_2__::func_178(iParam0))
 	{
 	}
 	else
 	{
-		fVar2 = SYSTEM::TO_FLOAT(__LIB_0__.func_534(iVar0, -1, 0));
-		fVar3 = SYSTEM::TO_FLOAT(__LIB_0__.func_534(iVar1, -1, 0));
+		fVar2 = SYSTEM::TO_FLOAT(__LIB_0__::func_534(iVar0, -1, 0));
+		fVar3 = SYSTEM::TO_FLOAT(__LIB_0__::func_534(iVar1, -1, 0));
 		if (fVar2 > 0f)
 		{
 			fVar4 = (fVar3 / fVar2);
@@ -4452,7 +4452,7 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 	struct<16> Var1;
 	struct<16> Var2;
 	struct<16> Var3;
-	if (__LIB_26__.func_747(iParam0) && !bParam1)
+	if (__LIB_26__::func_747(iParam0) && !bParam1)
 	{
 		switch (iParam0)
 		{
@@ -4665,7 +4665,7 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			return "WTD_REVOLVER" /* GXT: A handgun with enough stopping power to drop a crazed rhino, and heavy enough to beat it to death if you're out of ammo. Part of Executives and Other Criminals. */;
 			break;
 		case joaat("WEAPON_DOUBLEACTION"):
-			if (__LIB_9__.func_936(joaat("MPPLY_HEADSHOTCHLENGECOMPLETED")) || bParam1)
+			if (__LIB_9__::func_936(joaat("MPPLY_HEADSHOTCHLENGECOMPLETED")) || bParam1)
 			{
 				return "WTD_REV_DA" /* GXT: Because sometimes revenge is a dish best served six times, in quick succession, right between the eyes. Part of The Doomsday Heist. */;
 			}
@@ -4686,9 +4686,9 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 					return "WCD_MK1_LOCK" /* GXT: Revert to the stock variant to customize this weapon. */;
 				}
 			}
-			if (__LIB_0__.func_260(iParam0, &Var0) != -1)
+			if (__LIB_0__::func_260(iParam0, &Var0) != -1)
 			{
-				return __LIB_1__.func_192(&(Var0.f_15));
+				return __LIB_1__::func_192(&(Var0.f_15));
 			}
 			break;
 		case joaat("WEAPON_MARKSMANRIFLE"):
@@ -4699,9 +4699,9 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 					return "WCD_MK1_LOCK" /* GXT: Revert to the stock variant to customize this weapon. */;
 				}
 			}
-			if (__LIB_0__.func_260(iParam0, &Var1) != -1)
+			if (__LIB_0__::func_260(iParam0, &Var1) != -1)
 			{
-				return __LIB_1__.func_192(&(Var1.f_15));
+				return __LIB_1__::func_192(&(Var1.f_15));
 			}
 			break;
 		case joaat("WEAPON_BULLPUPRIFLE"):
@@ -4712,9 +4712,9 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 					return "WCD_MK1_LOCK" /* GXT: Revert to the stock variant to customize this weapon. */;
 				}
 			}
-			if (__LIB_0__.func_260(iParam0, &Var2) != -1)
+			if (__LIB_0__::func_260(iParam0, &Var2) != -1)
 			{
-				return __LIB_1__.func_192(&(Var2.f_15));
+				return __LIB_1__::func_192(&(Var2.f_15));
 			}
 			break;
 		case joaat("WEAPON_RAYPISTOL"):
@@ -4742,9 +4742,9 @@ char* func_137(int iParam0, bool bParam1)//Position - 0xD97F
 			return "WTD_CMBSHGN" /* GXT: There's only one semi-automatic shotgun with a fire rate that sets the LSFD alarm bells ringing, and you're looking at it. */;
 			break;
 		default:
-			if (__LIB_0__.func_260(iParam0, &Var3) != -1)
+			if (__LIB_0__::func_260(iParam0, &Var3) != -1)
 			{
-				return __LIB_1__.func_192(&(Var3.f_15));
+				return __LIB_1__::func_192(&(Var3.f_15));
 			}
 			break;
 	}
@@ -4770,7 +4770,7 @@ void func_147(var uParam0, var uParam1)//Position - 0xE0F6
 	}
 	iVar2 = uParam1->f_5 + 1;
 	iVar3 = iLocal_64 + 1;
-	__LIB_30__.func_378(0, iVar2, iVar3, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
+	__LIB_30__::func_378(0, iVar2, iVar3, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 void func_149()//Position - 0xE1E1
@@ -4804,7 +4804,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[1] = -1;
 	}
-	if (__LIB_6__.func_790(1, 0))
+	if (__LIB_6__::func_790(1, 0))
 	{
 		if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_SAWNOFFSHOTGUN")))
 		{
@@ -4924,7 +4924,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[16] = -1;
 	}
-	if (__LIB_0__.func_116() || Global_262145.f_20269 /* Tunable: ENABLE_RETURNING_CONTENT_WEAPON */)
+	if (__LIB_0__::func_116() || Global_262145.f_20269 /* Tunable: ENABLE_RETURNING_CONTENT_WEAPON */)
 	{
 		if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_HATCHET")))
 		{
@@ -5224,7 +5224,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[48] = -1;
 	}
-	if ((Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION"))) && (__LIB_12__.func_599() || Global_1963965))
+	if ((Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION"))) && (__LIB_12__::func_599() || Global_1963965))
 	{
 		iLocal_66[49] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5233,7 +5233,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[49] = -1;
 	}
-	if ((Global_262145.f_24171 /* Tunable: -585985361 */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STONE_HATCHET"))) && __LIB_4__.func_199())
+	if ((Global_262145.f_24171 /* Tunable: -585985361 */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STONE_HATCHET"))) && __LIB_4__::func_199())
 	{
 		iLocal_66[50] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5260,7 +5260,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[52] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((__LIB_0__.func_137(25007, -1) || __LIB_0__.func_137(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756 /* Tunable: ENABLE_AW_RAYGUN */))
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_RAYPISTOL")) && (((__LIB_0__::func_137(25007, -1) || __LIB_0__::func_137(25002, -1)) || func_88(joaat("WEAPON_RAYPISTOL"), -1, 0)) || Global_262145.f_25756 /* Tunable: ENABLE_AW_RAYGUN */))
 	{
 		iLocal_66[53] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5278,7 +5278,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[54] = -1;
 	}
-	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_24__.func_71() || Global_1963971))
+	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_24__::func_71() || Global_1963971))
 	{
 		iLocal_66[55] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5296,7 +5296,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[56] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_COMBATSHOTGUN")) && __LIB_0__.func_137(30632, -1))
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_COMBATSHOTGUN")) && __LIB_0__::func_137(30632, -1))
 	{
 		iLocal_66[57] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5305,7 +5305,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[57] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_GADGETPISTOL")) && __LIB_0__.func_425(106, -1))
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_GADGETPISTOL")) && __LIB_0__::func_425(106, -1))
 	{
 		iLocal_66[58] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5314,7 +5314,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[58] = -1;
 	}
-	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_24__.func_71() || Global_1963971))
+	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_24__::func_71() || Global_1963971))
 	{
 		iLocal_66[55] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5350,7 +5350,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[61] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_TACTICALRIFLE")) && (((Global_262145.f_32775 /* Tunable: UNLOCK_SERVICE_CARBINE_FOR_PURCHASE */ || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || __LIB_0__.func_421(__LIB_4__.func_201(joaat("WEAPON_TACTICALRIFLE")), -1)) || __LIB_7__.func_784(joaat("WEAPON_TACTICALRIFLE"))))
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_TACTICALRIFLE")) && (((Global_262145.f_32775 /* Tunable: UNLOCK_SERVICE_CARBINE_FOR_PURCHASE */ || func_88(joaat("WEAPON_TACTICALRIFLE"), -1, 0)) || __LIB_0__::func_421(__LIB_4__::func_201(joaat("WEAPON_TACTICALRIFLE")), -1)) || __LIB_7__::func_784(joaat("WEAPON_TACTICALRIFLE"))))
 	{
 		iLocal_66[62] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -5394,12 +5394,12 @@ void func_151()//Position - 0xEE17
 {
 	func_149();
 	func_152();
-	__LIB_30__.func_378(0, 1, iLocal_64 + 1, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
+	__LIB_30__::func_378(0, 1, iLocal_64 + 1, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 void func_152()//Position - 0xEE36
 {
-	__LIB_34__.func_999(1);
+	__LIB_34__::func_999(1);
 }
 
 void func_155(var uParam0)//Position - 0xEEAA

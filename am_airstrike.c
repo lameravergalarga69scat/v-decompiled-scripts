@@ -274,14 +274,14 @@ void __EntryFunction__()//Position - 0x0
 	}
 	while (true)
 	{
-		__LIB_0__.func_671();
-		if (__LIB_6__.func_949())
+		__LIB_0__::func_671();
+		if (__LIB_6__::func_949())
 		{
 			func_103();
 		}
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			__LIB_0__.func_371();
+			__LIB_0__::func_371();
 			switch (func_101(NETWORK::PARTICIPANT_ID_TO_INT()))
 			{
 				case 0:
@@ -327,7 +327,7 @@ void func_1()//Position - 0x129
 			func_53();
 			break;
 		case 1:
-			__LIB_0__.func_371();
+			__LIB_0__::func_371();
 			break;
 	}
 	if (Local_238.f_2.f_2 == 3 && iLocal_57 == 0)
@@ -341,16 +341,16 @@ void func_1()//Position - 0x129
 	}
 	if (Local_238.f_50 >= 10)
 	{
-		if (!__LIB_0__.func_649(&uLocal_65))
+		if (!__LIB_0__::func_649(&uLocal_65))
 		{
-			__LIB_0__.func_580(&uLocal_65, 0, 0);
+			__LIB_0__::func_580(&uLocal_65, 0, 0);
 		}
-		else if (__LIB_2__.func_47(&uLocal_65, 10000, 0))
+		else if (__LIB_2__::func_47(&uLocal_65, 10000, 0))
 		{
 			Local_238.f_0 = 3;
 		}
 	}
-	if (__LIB_0__.func_674())
+	if (__LIB_0__::func_674())
 	{
 		Local_238.f_0 = 3;
 	}
@@ -360,9 +360,9 @@ void func_1()//Position - 0x129
 		{
 			if (!Local_238.f_56)
 			{
-				if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() || __LIB_0__.func_1("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */)) || __LIB_0__.func_1("AIRSTRIKE_2" /* GXT: JET RANGE */)) || __LIB_0__.func_1("AIRSTRIKE_4" /* GXT: Throw a flare to mark an area for the airstrike to hit. If you do not mark an area with a flare before the jet arrives it will leave without deploying any bombs. You cannot throw flares while piloting an air vehicle. */))
+				if (((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() || __LIB_0__::func_1("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */)) || __LIB_0__::func_1("AIRSTRIKE_2" /* GXT: JET RANGE */)) || __LIB_0__::func_1("AIRSTRIKE_4" /* GXT: Throw a flare to mark an area for the airstrike to hit. If you do not mark an area with a flare before the jet arrives it will leave without deploying any bombs. You cannot throw flares while piloting an air vehicle. */))
 				{
-					__LIB_0__.func_151("AIRSTRIKE_3" /* GXT: If you throw a flare in an interior the jet will not be able to see it and will not deploy any bombs. */, -1);
+					__LIB_0__::func_151("AIRSTRIKE_3" /* GXT: If you throw a flare in an interior the jet will not be able to see it and will not deploy any bombs. */, -1);
 					Local_238.f_56 = 1;
 				}
 			}
@@ -370,12 +370,12 @@ void func_1()//Position - 0x129
 	}
 	if (bLocal_52)
 	{
-		if (!__LIB_0__.func_674(PLAYER::PLAYER_ID(), 1, 0))
+		if (!__LIB_0__::func_674(PLAYER::PLAYER_ID(), 1, 0))
 		{
 			Local_238.f_0 = 3;
 		}
 	}
-	else if (__LIB_0__.func_674(PLAYER::PLAYER_ID(), 1, 0) || __LIB_1__.func_41())
+	else if (__LIB_0__::func_674(PLAYER::PLAYER_ID(), 1, 0) || __LIB_1__::func_41())
 	{
 		Local_238.f_0 = 3;
 	}
@@ -383,7 +383,7 @@ void func_1()//Position - 0x129
 	{
 		Local_238.f_0 = 3;
 	}
-	if (Global_2788199.f_224 || __LIB_0__.func_665(PLAYER::PLAYER_ID()))
+	if (Global_2788199.f_224 || __LIB_0__::func_665(PLAYER::PLAYER_ID()))
 	{
 		Local_238.f_0 = 3;
 	}
@@ -402,9 +402,9 @@ void func_13()//Position - 0x42B
 		iVar0 = 0;
 		iVar3 = 300;
 	}
-	if (__LIB_0__.func_86(Local_61))
+	if (__LIB_0__::func_86(Local_61))
 	{
-		if (__LIB_2__.func_63(Local_238.f_2))
+		if (__LIB_2__::func_63(Local_238.f_2))
 		{
 			Local_61 = { ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_VEH(Local_238.f_2), true) };
 			Local_61.f_2 = (Local_61.f_2 - 5f);
@@ -413,7 +413,7 @@ void func_13()//Position - 0x42B
 	switch (Local_238.f_50)
 	{
 		case 0:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -424,26 +424,26 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), PLAYER::PLAYER_PED_ID(), true, false, -1f, iVar0, true, true, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					iLocal_57 = 1;
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
-					if (__LIB_10__.func_888())
+					if (__LIB_10__::func_888())
 					{
-						if (__LIB_4__.func_977())
+						if (__LIB_4__::func_977())
 						{
-							__LIB_37__.func_799(&uLocal_69, "HS4FAUD", "HS4F_SAAIP1", 12, 0, 0, 0);
+							__LIB_37__::func_799(&uLocal_69, "HS4FAUD", "HS4F_SAAIP1", 12, 0, 0, 0);
 						}
 					}
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 750, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 750, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 1:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -454,18 +454,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 500, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 500, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 2:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -476,18 +476,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 500, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 500, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 3:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -498,18 +498,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 750, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 750, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 4:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -520,18 +520,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 500, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 500, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 5:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -542,18 +542,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 750, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 750, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 6:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -564,18 +564,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 500, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 500, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 7:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -586,18 +586,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 500, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 500, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 8:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -608,18 +608,18 @@ void func_13()//Position - 0x42B
 					MISC::GET_GROUND_Z_FOR_3D_COORD(Var2 + Vector(10f, 0f, 0f), &(Var2.f_2), false, false);
 					Var2.f_2 = (Var2.f_2 - 25f);
 					MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(Var1, Var2, iVar3, true, joaat("WEAPON_AIRSTRIKE_ROCKET"), NETWORK::NET_TO_PED(Local_238.f_2.f_3), true, false, -1f, iVar0, true, false, 0, false, 0, 0, 0);
-					__LIB_0__.func_580(&(Local_238.f_51), 0, 0);
+					__LIB_0__::func_580(&(Local_238.f_51), 0, 0);
 					MISC::SET_BIT(&uLocal_237, Local_238.f_50);
 				}
 			}
-			else if (__LIB_2__.func_47(&(Local_238.f_51), 500, 0))
+			else if (__LIB_2__::func_47(&(Local_238.f_51), 500, 0))
 			{
-				__LIB_0__.func_579(&(Local_238.f_51));
+				__LIB_0__::func_579(&(Local_238.f_51));
 				Local_238.f_50++;
 			}
 			break;
 		case 9:
-			if (!__LIB_0__.func_649(&(Local_238.f_51)))
+			if (!__LIB_0__::func_649(&(Local_238.f_51)))
 			{
 				if (!BitTest(uLocal_237, Local_238.f_50))
 				{
@@ -646,18 +646,18 @@ void func_45()//Position - 0x1818
 	struct<3> Var2;
 	int iVar3;
 	int iVar4;
-	if (__LIB_2__.func_63(Local_238.f_2))
+	if (__LIB_2__::func_63(Local_238.f_2))
 	{
 		iVar0 = NETWORK::NET_TO_VEH(Local_238.f_2);
 		Var2 = { ENTITY::GET_ENTITY_COORDS(iVar0, true) };
 	}
 	if (!iLocal_59)
 	{
-		if (!__LIB_0__.func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
+		if (!__LIB_0__::func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
 		{
 			Var1 = { Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2 };
 		}
-		else if (__LIB_0__.func_154(PLAYER::PLAYER_ID(), 1, 1))
+		else if (__LIB_0__::func_154(PLAYER::PLAYER_ID(), 1, 1))
 		{
 			Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 		}
@@ -666,7 +666,7 @@ void func_45()//Position - 0x1818
 	{
 		if (!iLocal_59)
 		{
-			if (__LIB_2__.func_63(Local_238.f_2))
+			if (__LIB_2__::func_63(Local_238.f_2))
 			{
 				if (!ENTITY::IS_ENTITY_AT_COORD(iVar0, Local_60, 75f, 75f, 1000f, false, true, 0))
 				{
@@ -697,7 +697,7 @@ void func_45()//Position - 0x1818
 		}
 		if (fLocal_62 >= 0f)
 		{
-			__LIB_18__.func_254(iVar3, "AIRSTRIKE_2" /* GXT: JET RANGE */, -1, iVar4, 2, 0, "AIRSTRIKE_6" /* GXT: ~1~ m */, 0, 0f, 0, 0, iVar4, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+			__LIB_18__::func_254(iVar3, "AIRSTRIKE_2" /* GXT: JET RANGE */, -1, iVar4, 2, 0, "AIRSTRIKE_6" /* GXT: ~1~ m */, 0, 0f, 0, 0, iVar4, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 		}
 	}
 }
@@ -715,7 +715,7 @@ void func_53()//Position - 0x1CA6
 			{
 				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) <= 0)
 				{
-					bVar1 = !__LIB_0__.func_300();
+					bVar1 = !__LIB_0__::func_300();
 					WEAPON::GIVE_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_FLARE"), 1, bVar1, bVar1);
 					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_FLARE"), bVar1);
 					iLocal_56 = 1;
@@ -727,19 +727,19 @@ void func_53()//Position - 0x1CA6
 				{
 					Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 				}
-				else if (__LIB_0__.func_78(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 0f, 0f, 0f, 0))
+				else if (__LIB_0__::func_78(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2, 0f, 0f, 0f, 0))
 				{
 					Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2 = { Var0 };
 				}
-				if (__LIB_0__.func_1("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */))
+				if (__LIB_0__::func_1("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */))
 				{
 					HUD::CLEAR_HELP(true);
 				}
 				if (!iLocal_55)
 				{
-					if (!__LIB_0__.func_680(Local_238.f_2.f_3))
+					if (!__LIB_0__::func_680(Local_238.f_2.f_3))
 					{
-						if (__LIB_2__.func_63(Local_238.f_2))
+						if (__LIB_2__::func_63(Local_238.f_2))
 						{
 							func_93();
 							TASK::CLEAR_PED_TASKS(NETWORK::NET_TO_PED(Local_238.f_2.f_3));
@@ -756,11 +756,11 @@ void func_53()//Position - 0x1CA6
 				{
 					if (func_92(PLAYER::PLAYER_PED_ID()))
 					{
-						__LIB_0__.func_151("AIRSTRIKE_4" /* GXT: Throw a flare to mark an area for the airstrike to hit. If you do not mark an area with a flare before the jet arrives it will leave without deploying any bombs. You cannot throw flares while piloting an air vehicle. */, -1);
+						__LIB_0__::func_151("AIRSTRIKE_4" /* GXT: Throw a flare to mark an area for the airstrike to hit. If you do not mark an area with a flare before the jet arrives it will leave without deploying any bombs. You cannot throw flares while piloting an air vehicle. */, -1);
 					}
 					else
 					{
-						__LIB_0__.func_151("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */, -1);
+						__LIB_0__::func_151("AIRSTRIKE_1" /* GXT: Throw a Flare to mark an area for the Airstrike to hit. If you do not mark an area with a Flare before the jet arrives it will leave without deploying any bombs. */, -1);
 					}
 					iLocal_54 = 1;
 				}
@@ -780,13 +780,13 @@ void func_54()//Position - 0x1E3B
 	switch (Local_238.f_2.f_2)
 	{
 		case 0:
-			__LIB_1__.func_49();
+			__LIB_1__::func_49();
 			break;
 		case 1:
-			__LIB_1__.func_49();
+			__LIB_1__::func_49();
 			break;
 		case 2:
-			if (__LIB_2__.func_63(Local_238.f_2))
+			if (__LIB_2__::func_63(Local_238.f_2))
 			{
 				iLocal_58 = 1;
 				iVar0 = NETWORK::NET_TO_VEH(Local_238.f_2);
@@ -803,7 +803,7 @@ void func_54()//Position - 0x1E3B
 				}
 				if (!iLocal_53)
 				{
-					if (!__LIB_0__.func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
+					if (!__LIB_0__::func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
 					{
 						Var3 = { Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2 };
 					}
@@ -821,23 +821,23 @@ void func_54()//Position - 0x1E3B
 				{
 					if (!Local_238.f_54)
 					{
-						if (!__LIB_0__.func_680(Local_238.f_2.f_3))
+						if (!__LIB_0__::func_680(Local_238.f_2.f_3))
 						{
-							if (!__LIB_0__.func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
+							if (!__LIB_0__::func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
 							{
-								if (MISC::GET_DISTANCE_BETWEEN_COORDS(__LIB_0__.func_85(PLAYER::PLAYER_ID()), ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_VEH(Local_238.f_2.f_3), true), false) <= 250f)
+								if (MISC::GET_DISTANCE_BETWEEN_COORDS(__LIB_0__::func_85(PLAYER::PLAYER_ID()), ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_VEH(Local_238.f_2.f_3), true), false) <= 250f)
 								{
 									if (MISC::GET_DISTANCE_BETWEEN_COORDS(Var3, ENTITY::GET_ENTITY_COORDS(iVar0, true), true) >= (60f * 2.5f))
 									{
-										if (__LIB_10__.func_888())
+										if (__LIB_10__::func_888())
 										{
-											if (__LIB_4__.func_977())
+											if (__LIB_4__::func_977())
 											{
-												__LIB_37__.func_799(&uLocal_69, "HS4FAUD", "HS4F_SAACI1", 12, 0, 0, 0);
+												__LIB_37__::func_799(&uLocal_69, "HS4FAUD", "HS4F_SAACI1", 12, 0, 0, 0);
 											}
 											else
 											{
-												__LIB_37__.func_801(&uLocal_69, "CT_AUD", "MPCT_ASarr", 12, 0, 0, 0);
+												__LIB_37__::func_801(&uLocal_69, "CT_AUD", "MPCT_ASarr", 12, 0, 0, 0);
 											}
 										}
 										iLocal_235 = 1;
@@ -851,15 +851,15 @@ void func_54()//Position - 0x1E3B
 				{
 					if (!Local_238.f_53)
 					{
-						if (!__LIB_0__.func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
+						if (!__LIB_0__::func_86(Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2))
 						{
 							if (func_57() == 2)
 							{
-								if (!__LIB_0__.func_649(&uLocal_63))
+								if (!__LIB_0__::func_649(&uLocal_63))
 								{
-									__LIB_0__.func_580(&uLocal_63, 0, 0);
+									__LIB_0__::func_580(&uLocal_63, 0, 0);
 								}
-								else if (__LIB_2__.func_47(&uLocal_63, 7500, 0))
+								else if (__LIB_2__::func_47(&uLocal_63, 7500, 0))
 								{
 									Local_238.f_53 = 1;
 								}
@@ -885,11 +885,11 @@ void func_54()//Position - 0x1E3B
 							Local_238.f_54 = 1;
 							if (!iLocal_236 && !BitTest(Global_44241, 10))
 							{
-								if (__LIB_10__.func_888())
+								if (__LIB_10__::func_888())
 								{
-									if (!__LIB_4__.func_977())
+									if (!__LIB_4__::func_977())
 									{
-										__LIB_37__.func_801(&uLocal_69, "CT_AUD", "MPCT_ASflr", 12, 0, 0, 0);
+										__LIB_37__::func_801(&uLocal_69, "CT_AUD", "MPCT_ASflr", 12, 0, 0, 0);
 									}
 								}
 								iLocal_236 = 1;
@@ -898,13 +898,13 @@ void func_54()//Position - 0x1E3B
 					}
 				}
 			}
-			if (!__LIB_2__.func_63(Local_238.f_2) || __LIB_0__.func_680(Local_238.f_2.f_3))
+			if (!__LIB_2__::func_63(Local_238.f_2) || __LIB_0__::func_680(Local_238.f_2.f_3))
 			{
 				func_55();
 			}
 			break;
 		case 3:
-			__LIB_1__.func_49();
+			__LIB_1__::func_49();
 			break;
 	}
 }
@@ -912,9 +912,9 @@ void func_54()//Position - 0x1E3B
 void func_55()//Position - 0x2179
 {
 	int iVar0;
-	if (!__LIB_0__.func_680(Local_238.f_2.f_3))
+	if (!__LIB_0__::func_680(Local_238.f_2.f_3))
 	{
-		if (__LIB_1__.func_47(Local_238.f_2.f_3))
+		if (__LIB_1__::func_47(Local_238.f_2.f_3))
 		{
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_238.f_2.f_3))
 			{
@@ -946,7 +946,7 @@ int func_57()//Position - 0x21E1
 
 char* func_60()//Position - 0x229D
 {
-	if (__LIB_0__.func_490())
+	if (__LIB_0__::func_490())
 	{
 		return "PA_AIRSTRIKE_BLIP" /* GXT: Bomber */;
 	}
@@ -967,14 +967,14 @@ void func_63()//Position - 0x22DA
 			}
 			break;
 		case 2:
-			if (!__LIB_2__.func_63(Local_238.f_2))
+			if (!__LIB_2__::func_63(Local_238.f_2))
 			{
-				if (__LIB_0__.func_680(Local_238.f_2.f_3))
+				if (__LIB_0__::func_680(Local_238.f_2.f_3))
 				{
 					func_91(3);
 				}
 			}
-			else if (__LIB_0__.func_680(Local_238.f_2.f_3))
+			else if (__LIB_0__::func_680(Local_238.f_2.f_3))
 			{
 				func_91(3);
 			}
@@ -986,13 +986,13 @@ void func_63()//Position - 0x22DA
 
 int func_64()//Position - 0x2355
 {
-	if (!__LIB_0__.func_649(&uLocal_67))
+	if (!__LIB_0__::func_649(&uLocal_67))
 	{
-		__LIB_0__.func_580(&uLocal_67, 0, 0);
+		__LIB_0__::func_580(&uLocal_67, 0, 0);
 	}
-	else if (__LIB_0__.func_584(Local_238.f_2.f_1) && __LIB_0__.func_584(Local_238.f_2.f_3.f_1))
+	else if (__LIB_0__::func_584(Local_238.f_2.f_1) && __LIB_0__::func_584(Local_238.f_2.f_3.f_1))
 	{
-		if (__LIB_2__.func_47(&uLocal_67, 3000, 0))
+		if (__LIB_2__::func_47(&uLocal_67, 3000, 0))
 		{
 			if (func_68() && func_65())
 			{
@@ -1005,11 +1005,11 @@ int func_64()//Position - 0x2355
 
 int func_65()//Position - 0x23B2
 {
-	if ((!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_238.f_2.f_3) && __LIB_0__.func_584(Local_238.f_2.f_3.f_1)) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_238.f_2))
+	if ((!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_238.f_2.f_3) && __LIB_0__::func_584(Local_238.f_2.f_3.f_1)) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_238.f_2))
 	{
-		if (__LIB_2__.func_63(Local_238.f_2))
+		if (__LIB_2__::func_63(Local_238.f_2))
 		{
-			if (__LIB_0__.func_668(&(Local_238.f_2.f_3), Local_238.f_2, 22, Local_238.f_2.f_3.f_1, -1, 1, 1, 1))
+			if (__LIB_0__::func_668(&(Local_238.f_2.f_3), Local_238.f_2, 22, Local_238.f_2.f_3.f_1, -1, 1, 1, 1))
 			{
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(NETWORK::NET_TO_PED(Local_238.f_2.f_3), true);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(NETWORK::NET_TO_PED(Local_238.f_2.f_3), Global_1837194);
@@ -1033,7 +1033,7 @@ void func_66()//Position - 0x2497
 {
 	if (!iLocal_50)
 	{
-		if (__LIB_2__.func_63(Local_238.f_2))
+		if (__LIB_2__::func_63(Local_238.f_2))
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_48);
 			TASK::TASK_PLANE_MISSION(0, NETWORK::NET_TO_VEH(Local_238.f_2), 0, 0, Local_60 + Vector((50f + 5f), 0f, 0f), 4, 60f, 15f, -1f, SYSTEM::CEIL((50f + 5f)), 2.8E-44f, true);
@@ -1050,14 +1050,14 @@ int func_68()//Position - 0x25AF
 	float fVar1;
 	if (!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_238.f_2))
 	{
-		if (__LIB_0__.func_584(Local_238.f_2.f_1))
+		if (__LIB_0__::func_584(Local_238.f_2.f_1))
 		{
 			if (AUDIO::LOAD_STREAM("AIRSTRIKE_FLYOVER", 0))
 			{
 				func_86(&Var0, &fVar1);
-				if (__LIB_24__.func_960(Var0, 6f, 1f, 1f, 5f, 1, 1, 1, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0))
+				if (__LIB_24__::func_960(Var0, 6f, 1f, 1f, 5f, 1, 1, 1, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0))
 				{
-					if (__LIB_18__.func_220(&(Local_238.f_2), Local_238.f_2.f_1, Var0, fVar1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0))
+					if (__LIB_18__::func_220(&(Local_238.f_2), Local_238.f_2.f_1, Var0, fVar1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0))
 					{
 						Local_238.f_2.f_14 = { Var0 * Vector(0f, -1f, -1f) };
 						VEHICLE::SET_VEHICLE_DOORS_LOCKED(NETWORK::NET_TO_VEH(Local_238.f_2), 2);
@@ -1083,13 +1083,13 @@ int func_68()//Position - 0x25AF
 void func_86(var uParam0, var uParam1)//Position - 0x2F52
 {
 	float fVar0;
-	*uParam0 = { __LIB_1__.func_49(Local_60 + Vector(200f, 0f, 0f), 600f, 600f, (200f / 2f)) };
+	*uParam0 = { __LIB_1__::func_49(Local_60 + Vector(200f, 0f, 0f), 600f, 600f, (200f / 2f)) };
 	fVar0 = PATHFIND::GET_APPROX_HEIGHT_FOR_AREA((*uParam0 - 600f), (uParam0->f_1 - 600f), (*uParam0 + 600f), (uParam0->f_1 + 600f));
 	if (uParam0->f_2 < fVar0)
 	{
 		uParam0->f_2 = fVar0;
 	}
-	*uParam1 = __LIB_0__.func_670(*uParam0, Local_60);
+	*uParam1 = __LIB_0__::func_670(*uParam0, Local_60);
 }
 
 void func_91(int iParam0)//Position - 0x3082
@@ -1122,7 +1122,7 @@ void func_93()//Position - 0x30D6
 {
 	if (!iLocal_51)
 	{
-		if (__LIB_2__.func_63(Local_238.f_2))
+		if (__LIB_2__::func_63(Local_238.f_2))
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_49);
 			TASK::TASK_PLANE_MISSION(0, NETWORK::NET_TO_VEH(Local_238.f_2), 0, 0, Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2 + Vector((50f + 5f), 0f, 0f), 4, 60f, 15f, -1f, SYSTEM::CEIL((50f + 5f)), 2.8E-44f, true);
@@ -1136,16 +1136,16 @@ void func_93()//Position - 0x30D6
 void func_97()//Position - 0x31E6
 {
 	char* sVar0;
-	if (!iLocal_234 && __LIB_10__.func_888())
+	if (!iLocal_234 && __LIB_10__::func_888())
 	{
-		if (!__LIB_0__.func_680(Local_238.f_2.f_3))
+		if (!__LIB_0__::func_680(Local_238.f_2.f_3))
 		{
 			sVar0 = "FM_Pilot_Air";
-			if (__LIB_4__.func_977())
+			if (__LIB_4__::func_977())
 			{
 				sVar0 = "HS4_AIRSTRIKE1";
 			}
-			__LIB_0__.func_203(&uLocal_69, 3, NETWORK::NET_TO_PED(Local_238.f_2.f_3), sVar0, 1, 1);
+			__LIB_0__::func_203(&uLocal_69, 3, NETWORK::NET_TO_PED(Local_238.f_2.f_3), sVar0, 1, 1);
 			iLocal_234 = 1;
 		}
 	}
@@ -1170,25 +1170,25 @@ void func_103()//Position - 0x3303
 {
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_238.f_2.f_3) && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_238.f_2))
 	{
-		if (__LIB_2__.func_63(Local_238.f_2) && !__LIB_0__.func_680(Local_238.f_2.f_3))
+		if (__LIB_2__::func_63(Local_238.f_2) && !__LIB_0__::func_680(Local_238.f_2.f_3))
 		{
 			TASK::TASK_PLANE_MISSION(NETWORK::NET_TO_PED(Local_238.f_2.f_3), NETWORK::NET_TO_VEH(Local_238.f_2), 0, PLAYER::PLAYER_PED_ID(), 1f, 1f, 1f, 8, 60f, 1000f, -1f, 5.6E-43f, 5.6E-43f, true);
 		}
 	}
-	__LIB_0__.func_683(__LIB_6__.func_900(1, 1), 11, __LIB_0__.func_160());
-	__LIB_0__.func_199();
+	__LIB_0__::func_683(__LIB_6__::func_900(1, 1), 11, __LIB_0__::func_160());
+	__LIB_0__::func_199();
 }
 
 void func_116(struct<21> Param0)//Position - 0x3563
 {
-	__LIB_0__.func_673(__LIB_6__.func_875(Param0.f_0), Param0);
+	__LIB_0__::func_673(__LIB_6__::func_875(Param0.f_0), Param0);
 	NETWORK::RESERVE_NETWORK_MISSION_PEDS(1);
 	NETWORK::RESERVE_NETWORK_MISSION_VEHICLES(1);
-	__LIB_1__.func_569(0, -1, 0);
+	__LIB_1__::func_569(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_238, 58, 0);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&Local_240, 11, 0);
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-	if (!__LIB_0__.func_672())
+	if (!__LIB_0__::func_672())
 	{
 		func_103();
 	}
@@ -1196,11 +1196,11 @@ void func_116(struct<21> Param0)//Position - 0x3563
 	{
 		Local_60 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
 	}
-	if (__LIB_0__.func_674(PLAYER::PLAYER_ID(), 1, 0))
+	if (__LIB_0__::func_674(PLAYER::PLAYER_ID(), 1, 0))
 	{
 		bLocal_52 = true;
 	}
-	__LIB_6__.func_898(64, 1);
+	__LIB_6__::func_898(64, 1);
 	Local_240[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/] = 0;
 }
 

@@ -91,11 +91,11 @@ void __EntryFunction__()//Position - 0x0
 		HUD::SET_TEXT_COLOUR(255, 255, 255, 255);
 		HUD::SET_TEXT_SCALE(0.75f, 0.9f);
 		HUD::SET_TEXT_WRAP(0f, 1f);
-		__LIB_9__.func_595(0.05f, 0.63f, "PLCHLD_MISS", 0);
+		__LIB_9__::func_595(0.05f, 0.63f, "PLCHLD_MISS", 0);
 		HUD::SET_TEXT_COLOUR(255, 255, 255, 255);
 		HUD::SET_TEXT_SCALE(0.4f, 0.45f);
 		HUD::SET_TEXT_WRAP(0f, 1f);
-		__LIB_9__.func_595(0.05f, 0.7f, "PLCHLD_PASS", 0);
+		__LIB_9__::func_595(0.05f, 0.7f, "PLCHLD_PASS", 0);
 		func_1();
 		SYSTEM::WAIT(0);
 	}
@@ -108,7 +108,7 @@ void func_1()//Position - 0x116
 	{
 		if ((ENTITY::IS_ENTITY_DEAD(iLocal_40, false) || ENTITY::GET_ENTITY_HEALTH(iLocal_40) <= 0) || VEHICLE::GET_VEHICLE_ENGINE_HEALTH(iLocal_40) <= 0f)
 		{
-			__LIB_0__.func_523(&iLocal_42);
+			__LIB_0__::func_523(&iLocal_42);
 			if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_40))
 			{
 				VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_40);
@@ -120,13 +120,13 @@ void func_1()//Position - 0x116
 			}
 			if (iLocal_47 == 1)
 			{
-				__LIB_0__.func_0(&iLocal_43);
-				__LIB_11__.func_32(&iLocal_40);
+				__LIB_0__::func_0(&iLocal_43);
+				__LIB_11__::func_32(&iLocal_40);
 			}
 			else
 			{
-				__LIB_0__.func_124(&iLocal_43, 1, 0, 1);
-				__LIB_0__.func_106(&iLocal_40);
+				__LIB_0__::func_124(&iLocal_43, 1, 0, 1);
+				__LIB_0__::func_106(&iLocal_40);
 			}
 		}
 		else if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_40))
@@ -165,18 +165,18 @@ void func_8(struct<3> Param0)//Position - 0x366
 
 void func_11()//Position - 0x494
 {
-	__LIB_0__.func_106(&iLocal_45);
+	__LIB_0__::func_106(&iLocal_45);
 	STREAMING::REQUEST_MODEL(iLocal_46);
 	while (!STREAMING::HAS_MODEL_LOADED(iLocal_46))
 	{
 		SYSTEM::WAIT(0);
 	}
-	if (__LIB_1__.func_183(iLocal_40))
+	if (__LIB_1__::func_183(iLocal_40))
 	{
 		iLocal_45 = VEHICLE::CREATE_VEHICLE(iLocal_46, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_40, 50f, 0f, 15f), 0f, true, true, false);
 		VEHICLE::SET_HELI_BLADES_FULL_SPEED(iLocal_45);
-		__LIB_20__.func_332(iLocal_45, iLocal_40);
-		if (__LIB_0__.func_121(PLAYER::PLAYER_PED_ID()))
+		__LIB_20__::func_332(iLocal_45, iLocal_40);
+		if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 		{
 			PED::SET_PED_INTO_VEHICLE(PLAYER::PLAYER_PED_ID(), iLocal_45, -1);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
@@ -189,10 +189,10 @@ void func_11()//Position - 0x494
 
 void func_14()//Position - 0x5B9
 {
-	__LIB_0__.func_523(&iLocal_42);
-	if (__LIB_1__.func_183(iLocal_40))
+	__LIB_0__::func_523(&iLocal_42);
+	if (__LIB_1__::func_183(iLocal_40))
 	{
-		iLocal_42 = __LIB_10__.func_727(iLocal_40, 1, 5);
+		iLocal_42 = __LIB_10__::func_727(iLocal_40, 1, 5);
 	}
 }
 
@@ -203,10 +203,10 @@ void func_16()//Position - 0x60F
 	{
 		SYSTEM::WAIT(0);
 	}
-	if (__LIB_1__.func_183(iLocal_40))
+	if (__LIB_1__::func_183(iLocal_40))
 	{
 		iLocal_43 = PED::CREATE_PED_INSIDE_VEHICLE(iLocal_40, 26, iLocal_44, -1, true, true);
-		if (__LIB_0__.func_121(iLocal_43))
+		if (__LIB_0__::func_121(iLocal_43))
 		{
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_43, true);
 			PED::SET_PED_CONFIG_FLAG(iLocal_43, 118, false);
@@ -214,7 +214,7 @@ void func_16()//Position - 0x60F
 			PED::SET_PED_CONFIG_FLAG(iLocal_43, 116, false);
 		}
 	}
-	if (__LIB_1__.func_183(iLocal_40))
+	if (__LIB_1__::func_183(iLocal_40))
 	{
 		VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(iLocal_40, 1, "Blimp_City", true);
 	}
@@ -224,13 +224,13 @@ void func_16()//Position - 0x60F
 void func_17()//Position - 0x68C
 {
 	struct<3> Var0;
-	if (__LIB_1__.func_183(iLocal_40) && VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_40))
+	if (__LIB_1__::func_183(iLocal_40) && VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_40))
 	{
 		VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_40);
 	}
-	__LIB_0__.func_523(&iLocal_42);
-	__LIB_0__.func_0(&iLocal_43);
-	__LIB_11__.func_32(&iLocal_40);
+	__LIB_0__::func_523(&iLocal_42);
+	__LIB_0__::func_0(&iLocal_43);
+	__LIB_11__::func_32(&iLocal_40);
 	STREAMING::REQUEST_MODEL(iLocal_41);
 	VEHICLE::REQUEST_VEHICLE_RECORDING(1, "Blimp_City");
 	while (!STREAMING::HAS_MODEL_LOADED(iLocal_41) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(1, "Blimp_City"))
@@ -244,15 +244,15 @@ void func_17()//Position - 0x68C
 
 void func_18()//Position - 0x722
 {
-	if (__LIB_1__.func_183(iLocal_40) && VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_40))
+	if (__LIB_1__::func_183(iLocal_40) && VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_40))
 	{
 		VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_40);
 	}
 	VEHICLE::REMOVE_VEHICLE_RECORDING(1, "Blimp_city");
-	__LIB_0__.func_523(&iLocal_42);
-	__LIB_0__.func_124(&iLocal_43, 1, 0, 1);
-	__LIB_0__.func_106(&iLocal_40);
-	__LIB_0__.func_106(&iLocal_45);
+	__LIB_0__::func_523(&iLocal_42);
+	__LIB_0__::func_124(&iLocal_43, 1, 0, 1);
+	__LIB_0__::func_106(&iLocal_40);
+	__LIB_0__::func_106(&iLocal_45);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_44);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_41);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_46);

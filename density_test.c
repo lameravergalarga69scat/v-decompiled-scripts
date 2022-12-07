@@ -23,7 +23,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_31__.func_722();
+		__LIB_31__::func_722();
 	}
 	while (true)
 	{

@@ -55,9 +55,9 @@ void __EntryFunction__()//Position - 0x0
 					}
 					break;
 				case 8:
-					if (__LIB_9__.func_596(2, Global_20234, 0))
+					if (__LIB_9__::func_596(2, Global_20234, 0))
 					{
-						__LIB_9__.func_601();
+						__LIB_9__::func_601();
 						Global_20244 = 1;
 						if (Global_20266.f_1 > 3)
 						{
@@ -68,19 +68,19 @@ void __EntryFunction__()//Position - 0x0
 				default:
 					break;
 			}
-			if (__LIB_9__.func_600())
+			if (__LIB_9__::func_600())
 			{
-				__LIB_0__.func_199();
+				__LIB_0__::func_199();
 			}
 		}
 		else
 		{
 			Global_20268 = 6;
-			__LIB_0__.func_199();
+			__LIB_0__::func_199();
 		}
-		if (__LIB_9__.func_594())
+		if (__LIB_9__::func_594())
 		{
-			__LIB_0__.func_199();
+			__LIB_0__::func_199();
 		}
 	}
 }
@@ -98,21 +98,21 @@ void func_7()//Position - 0x1E7
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4541517);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4541516);
-	__LIB_0__.func_478("");
-	__LIB_0__.func_478(&Global_4541518);
+	__LIB_0__::func_478("");
+	__LIB_0__::func_478(&Global_4541518);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(27);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (!BitTest(Global_4718592.f_21, 30))
 	{
-		__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
+		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
 	}
 }
 
 void func_10()//Position - 0x327
 {
 	func_7();
-	__LIB_3__.func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
+	__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 0f, 27f, -1f, -1f, 0, 0, 0, 0, 0);
 }
 

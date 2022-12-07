@@ -52,7 +52,7 @@ void __EntryFunction__()//Position - 0x0
 	func_24();
 	while (true)
 	{
-		if (__LIB_0__.func_39(13) || __LIB_0__.func_39(14))
+		if (__LIB_0__::func_39(13) || __LIB_0__::func_39(14))
 		{
 			if (bLocal_26)
 			{
@@ -73,7 +73,7 @@ void func_1()//Position - 0x87
 {
 	if (!iLocal_25)
 	{
-		if (__LIB_0__.func_368(75))
+		if (__LIB_0__::func_368(75))
 		{
 			func_10();
 			iLocal_25 = 1;
@@ -81,9 +81,9 @@ void func_1()//Position - 0x87
 	}
 	if (!iLocal_28)
 	{
-		if (__LIB_0__.func_368(75))
+		if (__LIB_0__::func_368(75))
 		{
-			if (__LIB_0__.func_116())
+			if (__LIB_0__::func_116())
 			{
 				func_6();
 				iLocal_28 = 1;
@@ -92,9 +92,9 @@ void func_1()//Position - 0x87
 	}
 	if (!iLocal_30)
 	{
-		if (__LIB_0__.func_176(62))
+		if (__LIB_0__::func_176(62))
 		{
-			if (__LIB_0__.func_116())
+			if (__LIB_0__::func_116())
 			{
 				func_2();
 				iLocal_30 = 1;
@@ -105,7 +105,7 @@ void func_1()//Position - 0x87
 
 void func_2()//Position - 0xE5
 {
-	if (__LIB_0__.func_116())
+	if (__LIB_0__::func_116())
 	{
 		func_3(0, joaat("PICKUP_WEAPON_HATCHET"), 156.24f, 0f, 71.2f, 1, 1);
 	}
@@ -142,7 +142,7 @@ Vector3 func_4(int iParam0)//Position - 0x168
 
 void func_6()//Position - 0x1C1
 {
-	if (__LIB_0__.func_116())
+	if (__LIB_0__::func_116())
 	{
 		func_7(0, joaat("PICKUP_WEAPON_RAILGUN"), 156.24f, 0f, 166.2f, 1, 1);
 	}
@@ -562,7 +562,7 @@ void func_26(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bPar
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	iLocal_23[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, __LIB_30__.func_615(iParam0, 0), Param2, iVar0, -1, 2, true, 0);
+	iLocal_23[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, __LIB_30__::func_615(iParam0, 0), Param2, iVar0, -1, 2, true, 0);
 	OBJECT::SET_PICKUP_REGENERATION_TIME(iLocal_23[iParam0], 600000);
 	if (bParam4)
 	{
@@ -691,7 +691,7 @@ void func_30(int iParam0, struct<3> Param1, bool bParam2, bool bParam3)//Positio
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	iLocal_22[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_HEALTH_STANDARD"), __LIB_30__.func_616(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
+	iLocal_22[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_HEALTH_STANDARD"), __LIB_30__::func_616(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
 	OBJECT::SET_PICKUP_REGENERATION_TIME(iLocal_22[iParam0], 600000);
 	if (bParam3)
 	{
@@ -920,7 +920,7 @@ void func_37(int iParam0, struct<3> Param1, bool bParam2, bool bParam3, bool bPa
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	iLocal_20[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_ARMOUR_STANDARD"), __LIB_30__.func_617(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
+	iLocal_20[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_ARMOUR_STANDARD"), __LIB_30__::func_617(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
 	OBJECT::SET_PICKUP_REGENERATION_TIME(iLocal_20[iParam0], 600000);
 	if (bParam3)
 	{

@@ -103,37 +103,37 @@ void func_2(int iParam0)//Position - 0x13C
 	{
 		if (iLocal_19 == 1)
 		{
-			switch (__LIB_18__.func_168(PLAYER::PLAYER_PED_ID()))
+			switch (__LIB_18__::func_168(PLAYER::PLAYER_PED_ID()))
 			{
 				case 2:
-					__LIB_5__.func_759(iParam0, "BUDDY_SEES_TREVOR_DEATH", "FRANKLIN_NORMAL", 3);
+					__LIB_5__::func_759(iParam0, "BUDDY_SEES_TREVOR_DEATH", "FRANKLIN_NORMAL", 3);
 					break;
 				case 0:
-					__LIB_5__.func_759(iParam0, "BUDDY_SEES_MICHAEL_DEATH", "FRANKLIN_NORMAL", 3);
+					__LIB_5__::func_759(iParam0, "BUDDY_SEES_MICHAEL_DEATH", "FRANKLIN_NORMAL", 3);
 					break;
 			}
 		}
 		else if (iLocal_19 == 2)
 		{
-			switch (__LIB_18__.func_168(PLAYER::PLAYER_PED_ID()))
+			switch (__LIB_18__::func_168(PLAYER::PLAYER_PED_ID()))
 			{
 				case 1:
-					__LIB_5__.func_759(iParam0, "BUDDY_SEES_FRANKLIN_DEATH", "TREVOR_NORMAL", 3);
+					__LIB_5__::func_759(iParam0, "BUDDY_SEES_FRANKLIN_DEATH", "TREVOR_NORMAL", 3);
 					break;
 				case 0:
-					__LIB_5__.func_759(iParam0, "BUDDY_SEES_MICHAEL_DEATH", "TREVOR_NORMAL", 3);
+					__LIB_5__::func_759(iParam0, "BUDDY_SEES_MICHAEL_DEATH", "TREVOR_NORMAL", 3);
 					break;
 			}
 		}
 		else if (iLocal_19 == 0)
 		{
-			switch (__LIB_18__.func_168(PLAYER::PLAYER_PED_ID()))
+			switch (__LIB_18__::func_168(PLAYER::PLAYER_PED_ID()))
 			{
 				case 2:
-					__LIB_5__.func_759(iParam0, "BUDDY_SEES_TREVOR_DEATH", "MICHAEL_NORMAL", 3);
+					__LIB_5__::func_759(iParam0, "BUDDY_SEES_TREVOR_DEATH", "MICHAEL_NORMAL", 3);
 					break;
 				case 1:
-					__LIB_5__.func_759(iParam0, "BUDDY_SEES_FRANKLIN_DEATH", "MICHAEL_NORMAL", 3);
+					__LIB_5__::func_759(iParam0, "BUDDY_SEES_FRANKLIN_DEATH", "MICHAEL_NORMAL", 3);
 					break;
 				}
 			}
@@ -156,10 +156,10 @@ int func_9(var uParam0)//Position - 0x4B9
 					{
 						if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(Global_97810[iLocal_18], true), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), true) < 10f)
 						{
-							iLocal_19 = __LIB_18__.func_168(Global_97810[iLocal_18]);
+							iLocal_19 = __LIB_18__::func_168(Global_97810[iLocal_18]);
 							if ((iLocal_19 == 0 || iLocal_19 == 2) || iLocal_19 == 1)
 							{
-								if (iLocal_19 != __LIB_18__.func_173())
+								if (iLocal_19 != __LIB_18__::func_173())
 								{
 									if (ENTITY::HAS_ENTITY_CLEAR_LOS_TO_ENTITY(Global_97810[iLocal_18], PLAYER::PLAYER_PED_ID(), 17))
 									{

@@ -319,7 +319,7 @@ void func_2()//Position - 0x43D
 		CAM::DESTROY_CAM(iLocal_19, false);
 	}
 	CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
-	__LIB_8__.func_770(0);
+	__LIB_8__::func_770(0);
 	MISC::SET_GAME_PAUSED(false);
 	HUD::CLEAR_HELP(true);
 	GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_18);

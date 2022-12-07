@@ -78,6 +78,6 @@ void __EntryFunction__()//Position - 0x0
 		ENTITY::SET_ENTITY_COORDS(iVar0, 2119.1587f, 4813.5225f, 40.2223f, true, false, false, true);
 		ENTITY::SET_ENTITY_HEADING(iVar0, 225.2837f);
 	}
-	__LIB_0__.func_71(19, 0);
+	__LIB_0__::func_71(19, 0);
 }
 

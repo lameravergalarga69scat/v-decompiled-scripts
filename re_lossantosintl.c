@@ -124,17 +124,17 @@ void __EntryFunction__()//Position - 0x0
 				iLocal_76 = 1;
 				break;
 			case 1:
-				__LIB_0__.func_371();
+				__LIB_0__::func_371();
 				iLocal_76 = 2;
 				break;
 			case 2:
-				if (__LIB_0__.func_109())
+				if (__LIB_0__::func_109())
 				{
 					iLocal_76 = 3;
 				}
 				break;
 			case 3:
-				__LIB_0__.func_371();
+				__LIB_0__::func_371();
 				iLocal_76 = 4;
 				break;
 			case 4:
@@ -172,7 +172,7 @@ void func_1()//Position - 0x11A
 				{
 					func_3(1);
 				}
-				__LIB_30__.func_904(&(iLocal_49[iVar0]), &(iLocal_51[iVar0]));
+				__LIB_30__::func_904(&(iLocal_49[iVar0]), &(iLocal_51[iVar0]));
 				ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&(iLocal_49[iVar0]));
 				ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&(iLocal_51[iVar0]));
 			}
@@ -188,7 +188,7 @@ void func_1()//Position - 0x11A
 		}
 		else
 		{
-			__LIB_30__.func_904(&iLocal_50, &iLocal_52);
+			__LIB_30__::func_904(&iLocal_50, &iLocal_52);
 			ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_50);
 			ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_52);
 		}

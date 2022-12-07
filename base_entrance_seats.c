@@ -197,24 +197,24 @@ void __EntryFunction__()//Position - 0x0
 	{
 		while (!func_59())
 		{
-			__LIB_42__.func_93(&uLocal_93);
+			__LIB_42__::func_93(&uLocal_93);
 			SYSTEM::WAIT(0);
 		}
 	}
-	__LIB_41__.func_643();
+	__LIB_41__::func_643();
 }
 
 int func_59()//Position - 0x1662
 {
-	if (!__LIB_10__.func_807(PLAYER::PLAYER_PED_ID()))
+	if (!__LIB_10__::func_807(PLAYER::PLAYER_PED_ID()))
 	{
 		return 1;
 	}
-	if (__LIB_6__.func_949())
+	if (__LIB_6__::func_949())
 	{
 		return 1;
 	}
-	if (Global_1853191 == __LIB_0__.func_160())
+	if (Global_1853191 == __LIB_0__::func_160())
 	{
 		return 1;
 	}
@@ -223,14 +223,14 @@ int func_59()//Position - 0x1662
 
 int func_70()//Position - 0x17F9
 {
-	if (Global_1853191 != __LIB_0__.func_160())
+	if (Global_1853191 != __LIB_0__::func_160())
 	{
 		if (NETWORK::NETWORK_IS_SCRIPT_ACTIVE("base_entrance_seats", Global_1853191, true, 0))
 		{
 			return 0;
 		}
 		NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, Global_1853191);
-		__LIB_1__.func_569(0, -1, 0);
+		__LIB_1__::func_569(0, -1, 0);
 		MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 		func_71();
 		return 1;
@@ -243,9 +243,9 @@ void func_71()//Position - 0x1845
 	int iVar0[2];
 	iVar0[0] = 0;
 	iVar0[1] = 1;
-	__LIB_20__.func_314(0, &uLocal_93, &iVar0);
+	__LIB_20__::func_314(0, &uLocal_93, &iVar0);
 	iVar0[0] = 2;
 	iVar0[1] = 3;
-	__LIB_20__.func_314(1, &uLocal_93, &iVar0);
+	__LIB_20__::func_314(1, &uLocal_93, &iVar0);
 }
 

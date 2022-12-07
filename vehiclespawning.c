@@ -75,8 +75,8 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		GRAPHICS::DISABLE_OCCLUSION_THIS_FRAME();
-		__LIB_0__.func_671();
-		if (__LIB_6__.func_949() || uLocal_42)
+		__LIB_0__::func_671();
+		if (__LIB_6__::func_949() || uLocal_42)
 		{
 			func_3();
 		}
@@ -152,21 +152,21 @@ void func_3()//Position - 0x18C
 		func_5(iVar0);
 		iVar0++;
 	}
-	__LIB_0__.func_199();
+	__LIB_0__::func_199();
 }
 
 void func_5(int iParam0)//Position - 0x1BD
 {
-	__LIB_1__.func_96(&(uLocal_35[iParam0]));
+	__LIB_1__::func_96(&(uLocal_35[iParam0]));
 	NETWORK::RESERVE_NETWORK_MISSION_VEHICLES((NETWORK::GET_NUM_RESERVED_MISSION_VEHICLES(false, 0) - 1));
 }
 
 void func_16()//Position - 0x348
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
-	__LIB_1__.func_569(0, -1, 0);
+	__LIB_1__::func_569(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&uLocal_35, 21, 0);
-	if (!__LIB_0__.func_672())
+	if (!__LIB_0__::func_672())
 	{
 		func_3();
 	}

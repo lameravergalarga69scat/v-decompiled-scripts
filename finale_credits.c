@@ -166,7 +166,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		PATHFIND::SET_AMBIENT_PED_RANGE_MULTIPLIER_THIS_FRAME(2f);
 		VEHICLE::SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME(2f);
-		__LIB_6__.func_842();
+		__LIB_6__::func_842();
 		switch (iLocal_28)
 		{
 			case 0:
@@ -436,8 +436,8 @@ void __EntryFunction__()//Position - 0x0
 						iLocal_29 = 35;
 						break;
 				}
-				__LIB_6__.func_842();
-				__LIB_0__.func_186();
+				__LIB_6__::func_842();
+				__LIB_0__::func_186();
 				if (iLocal_29 > 0)
 				{
 					ENTITY::SET_ENTITY_COORDS_WITHOUT_PLANTS_RESET(PLAYER::PLAYER_PED_ID(), CAM::GET_FINAL_RENDERED_CAM_COORD() + Vector(3f, 0f, 0f), true, false, false, true);
@@ -461,7 +461,7 @@ void __EntryFunction__()//Position - 0x0
 						iLocal_126 = 1;
 					}
 				}
-				if ((SYSTEM::TIMERA() > 40000 && iLocal_126) || __LIB_0__.func_404())
+				if ((SYSTEM::TIMERA() > 40000 && iLocal_126) || __LIB_0__::func_404())
 				{
 					AUDIO::START_AUDIO_SCENE("CAR_MOD_RADIO_MUTE_SCENE");
 					MISC::SET_CREDITS_FADE_OUT_WITH_SCREEN(true);
@@ -473,7 +473,7 @@ void __EntryFunction__()//Position - 0x0
 					while (SYSTEM::TIMERB() < 5000)
 					{
 						HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
-						__LIB_6__.func_842();
+						__LIB_6__::func_842();
 						SYSTEM::WAIT(0);
 					}
 					MISC::SET_WEATHER_TYPE_NOW("EXTRASUNNY");
@@ -1895,13 +1895,13 @@ void func_38()//Position - 0x4030
 	}
 	CLOCK::PAUSE_CLOCK(false);
 	MISC::SET_CREDITS_ACTIVE(false);
-	__LIB_40__.func_638(0, 0, 2000, 1);
+	__LIB_40__::func_638(0, 0, 2000, 1);
 	PLAYER::SET_MAX_WANTED_LEVEL(5);
 	MISC::SET_CREDITS_FADE_OUT_WITH_SCREEN(false);
 	MISC::SET_TIME_SCALE(1f);
 	Global_96884 = 0;
-	__LIB_0__.func_46(1, 0);
-	__LIB_6__.func_823(0, 0);
+	__LIB_0__::func_46(1, 0);
+	__LIB_6__::func_823(0, 0);
 	func_39();
 }
 

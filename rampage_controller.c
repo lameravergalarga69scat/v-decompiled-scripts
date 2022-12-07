@@ -62,15 +62,15 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_37();
 	}
-	if (!__LIB_0__.func_368(108))
+	if (!__LIB_0__::func_368(108))
 	{
 		func_37();
 	}
-	__LIB_0__.func_513(23);
+	__LIB_0__::func_513(23);
 	iVar0 = 0;
 	while (iVar0 < 5)
 	{
-		__LIB_24__.func_943((iLocal_29 + iVar0), 0, 0);
+		__LIB_24__::func_943((iLocal_29 + iVar0), 0, 0);
 		MISC::SET_BIT(&(Global_113386.f_18574[(iLocal_30 + iVar0) /*6*/]), 3);
 		iVar0++;
 	}
@@ -78,15 +78,15 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_0__.func_67(40))
+		if (!__LIB_0__::func_67(40))
 		{
-			switch (__LIB_11__.func_512("RAMP_NEW_ALL" /* GXT: All rampages are now unlocked. */))
+			switch (__LIB_11__::func_512("RAMP_NEW_ALL" /* GXT: All rampages are now unlocked. */))
 			{
 				case 2:
-					__LIB_18__.func_203("RAMP_NEW_ALL" /* GXT: All rampages are now unlocked. */, 1, 0, 2000, 10000, 4, 0, 0, 0);
+					__LIB_18__::func_203("RAMP_NEW_ALL" /* GXT: All rampages are now unlocked. */, 1, 0, 2000, 10000, 4, 0, 0, 0);
 					break;
 				case 1:
-					__LIB_0__.func_460(40);
+					__LIB_0__::func_460(40);
 					break;
 				}
 		}
@@ -108,7 +108,7 @@ void __EntryFunction__()//Position - 0x0
 
 bool func_1()//Position - 0x13C
 {
-	return (((__LIB_6__.func_854(9) || Global_31962) || __LIB_18__.func_173() != 2) || Global_112473[56 /*10*/].f_3);
+	return (((__LIB_6__::func_854(9) || Global_31962) || __LIB_18__::func_173() != 2) || Global_112473[56 /*10*/].f_3);
 }
 
 void func_19(bool bParam0)//Position - 0x913
@@ -119,13 +119,13 @@ void func_19(bool bParam0)//Position - 0x913
 	while (iVar0 < 5)
 	{
 		iVar1 = (iLocal_28 + iVar0);
-		__LIB_10__.func_604(iVar1, bParam0, 0);
-		__LIB_35__.func_162(iVar1, 1, 2, 0);
-		__LIB_24__.func_742(iVar1, 1);
-		__LIB_29__.func_873(iVar1, 44);
-		if (((Global_113386.f_2352[iVar0 /*2*/] >= 1 || __LIB_0__.func_368(108) == 1) || __LIB_30__.func_823((iLocal_29 + iVar0), 0)) || BitTest(Global_113386.f_18574[(iLocal_30 + iVar0) /*6*/], 3))
+		__LIB_10__::func_604(iVar1, bParam0, 0);
+		__LIB_35__::func_162(iVar1, 1, 2, 0);
+		__LIB_24__::func_742(iVar1, 1);
+		__LIB_29__::func_873(iVar1, 44);
+		if (((Global_113386.f_2352[iVar0 /*2*/] >= 1 || __LIB_0__::func_368(108) == 1) || __LIB_30__::func_823((iLocal_29 + iVar0), 0)) || BitTest(Global_113386.f_18574[(iLocal_30 + iVar0) /*6*/], 3))
 		{
-			__LIB_11__.func_504(iVar1, 1);
+			__LIB_11__::func_504(iVar1, 1);
 		}
 		iVar0++;
 	}

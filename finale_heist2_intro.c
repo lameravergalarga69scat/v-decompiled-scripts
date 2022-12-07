@@ -64,7 +64,7 @@ void __EntryFunction__()//Position - 0x0
 		func_20();
 	}
 	MISC::SET_MISSION_FLAG(true);
-	__LIB_11__.func_182(0);
+	__LIB_11__::func_182(0);
 	func_18();
 	SCRIPT::SCRIPT_THREAD_ITERATOR_RESET();
 	while (!bVar1)
@@ -76,15 +76,15 @@ void __EntryFunction__()//Position - 0x0
 		}
 	}
 	CUTSCENE::SET_SCRIPT_CAN_START_CUTSCENE(iVar0);
-	__LIB_12__.func_149();
-	__LIB_32__.func_742(96.7f, -1288.1f, 28.1f, 104.5f, -1301f, 30f, 2f, 118.3f, -1309.7f, 29f, 120f, 1, 1, 1, 0, 0);
+	__LIB_12__::func_149();
+	__LIB_32__::func_742(96.7f, -1288.1f, 28.1f, 104.5f, -1301f, 30f, 2f, 118.3f, -1309.7f, 29f, 120f, 1, 1, 1, 0, 0);
 	func_20();
 }
 
 void func_18()//Position - 0xC6C
 {
 	int iVar0;
-	iVar0 = __LIB_18__.func_173();
+	iVar0 = __LIB_18__::func_173();
 	switch (iVar0)
 	{
 		case 0:
@@ -105,8 +105,8 @@ void func_18()//Position - 0xC6C
 
 void func_20()//Position - 0xCDC
 {
-	__LIB_0__.func_503(24, 1);
-	__LIB_6__.func_823(1, 0);
+	__LIB_0__::func_503(24, 1);
+	__LIB_6__::func_823(1, 0);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

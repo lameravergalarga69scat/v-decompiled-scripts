@@ -39,7 +39,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_40__.func_747();
+		__LIB_40__::func_747();
 	}
 	iLocal_18 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("graphic_design");
 	while (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_18))
@@ -49,7 +49,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		GRAPHICS::DRAW_SCALEFORM_MOVIE(iLocal_18, 0.5f, 0.5f, 1f, 1f, 255, 255, 255, 0, 0);
-		__LIB_30__.func_934(iLocal_18);
+		__LIB_30__::func_934(iLocal_18);
 		SYSTEM::WAIT(0);
 	}
 }

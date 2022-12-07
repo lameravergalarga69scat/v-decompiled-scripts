@@ -216,13 +216,13 @@ void __EntryFunction__()//Position - 0x0
 		SYSTEM::WAIT(0);
 		if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{
-			if (!__LIB_18__.func_173() == 2)
+			if (!__LIB_18__::func_173() == 2)
 			{
 				func_32();
 			}
 			else if (!func_24())
 			{
-				__LIB_0__.func_503(101, 1);
+				__LIB_0__::func_503(101, 1);
 				STATS::STAT_SET_BOOL(joaat("SP_KILLED_AL"), true, true);
 				if (!BitTest(Global_113386.f_18574.f_382, 5))
 				{
@@ -257,7 +257,7 @@ void func_1()//Position - 0xF6
 		case 0:
 			if ((MISC::GET_GAME_TIMER() - iLocal_187) > 5000 && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iLocal_188, PLAYER::PLAYER_PED_ID(), true))
 			{
-				if (__LIB_37__.func_799(&uLocal_22, "NIGE3AU", "NIGEL3_REACT", 7, 0, 0, 0))
+				if (__LIB_37__::func_799(&uLocal_22, "NIGE3AU", "NIGEL3_REACT", 7, 0, 0, 0))
 				{
 					ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(iLocal_188);
 					iLocal_21 = 1;
@@ -265,14 +265,14 @@ void func_1()//Position - 0xF6
 			}
 			else if ((MISC::GET_GAME_TIMER() - iLocal_187) > 12000 && SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_188, true)) <= 900f)
 			{
-				if (__LIB_37__.func_799(&uLocal_22, "NIGE3AU", "NIGEL3_REACT", 7, 0, 0, 0))
+				if (__LIB_37__::func_799(&uLocal_22, "NIGE3AU", "NIGEL3_REACT", 7, 0, 0, 0))
 				{
 					iLocal_21 = 1;
 				}
 			}
 			break;
 		case 1:
-			if (!__LIB_0__.func_75())
+			if (!__LIB_0__::func_75())
 			{
 				iLocal_187 = MISC::GET_GAME_TIMER();
 				iLocal_21 = 0;
@@ -284,8 +284,8 @@ void func_1()//Position - 0xF6
 void func_20()//Position - 0x921
 {
 	iLocal_187 = MISC::GET_GAME_TIMER();
-	__LIB_0__.func_203(&uLocal_22, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
-	__LIB_0__.func_203(&uLocal_22, 5, iLocal_188, "DINAPOLI", 0, 1);
+	__LIB_0__::func_203(&uLocal_22, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
+	__LIB_0__::func_203(&uLocal_22, 5, iLocal_188, "DINAPOLI", 0, 1);
 	iLocal_20 = 1;
 }
 
@@ -340,7 +340,7 @@ int func_31()//Position - 0xC20
 
 void func_32()//Position - 0xCAE
 {
-	__LIB_0__.func_202(&uLocal_22, 1);
+	__LIB_0__::func_202(&uLocal_22, 1);
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_188))
 	{
 		ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_188);

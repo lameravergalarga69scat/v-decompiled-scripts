@@ -159,25 +159,25 @@ void __EntryFunction__()//Position - 0x0
 	Local_72[1 /*3*/] = { Local_67 };
 	while (true)
 	{
-		__LIB_0__.func_524(PLAYER::PLAYER_PED_ID());
+		__LIB_0__::func_524(PLAYER::PLAYER_PED_ID());
 		if (Global_31964 == 1)
 		{
 			func_12();
 		}
 		if (bLocal_73)
 		{
-			if (!__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[0 /*3*/], (290f + 50f), 1))
+			if (!__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[0 /*3*/], (290f + 50f), 1))
 			{
-				if (!__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[1 /*3*/], (290f + 50f), 1))
+				if (!__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[1 /*3*/], (290f + 50f), 1))
 				{
 					func_12();
 				}
 			}
 			if (iLocal_71 != 0)
 			{
-				if (!__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[0 /*3*/], (fLocal_78 + 50f), 1))
+				if (!__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[0 /*3*/], (fLocal_78 + 50f), 1))
 				{
-					if (!__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[1 /*3*/], (fLocal_78 + 50f), 1))
+					if (!__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[1 /*3*/], (fLocal_78 + 50f), 1))
 					{
 						AUDIO::SET_AMBIENT_ZONE_STATE_PERSISTENT("AZ_SPECIAL_UFO_01", false, true);
 						AUDIO::SET_AMBIENT_ZONE_STATE_PERSISTENT("AZ_SPECIAL_UFO_02", false, true);
@@ -195,7 +195,7 @@ void __EntryFunction__()//Position - 0x0
 				iVar0 = 0;
 				while (iVar0 < Local_72.f_0)
 				{
-					if (__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[iVar0 /*3*/], fLocal_78, 1))
+					if (__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[iVar0 /*3*/], fLocal_78, 1))
 					{
 						iLocal_70 = iVar0;
 						iLocal_71 = 1;
@@ -210,7 +210,7 @@ void __EntryFunction__()//Position - 0x0
 				iVar0 = 0;
 				while (iVar0 < Local_72.f_0)
 				{
-					if (__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[iVar0 /*3*/], fLocal_75, 1))
+					if (__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[iVar0 /*3*/], fLocal_75, 1))
 					{
 						iLocal_70 = iVar0;
 						iLocal_71 = 2;
@@ -231,7 +231,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 3:
-				if (__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[iLocal_70 /*3*/], fLocal_75, 1))
+				if (__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[iLocal_70 /*3*/], fLocal_75, 1))
 				{
 					iLocal_69 = (MISC::GET_GAME_TIMER() - iLocal_68);
 					if (iLocal_69 >= iLocal_79)
@@ -262,15 +262,15 @@ void __EntryFunction__()//Position - 0x0
 				func_6();
 				if (MISC::GET_GAME_TIMER() > (iLocal_81 + iLocal_82))
 				{
-					__LIB_2__.func_29(&iLocal_80);
+					__LIB_2__::func_29(&iLocal_80);
 				}
-				if (!__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[iLocal_70 /*3*/], fLocal_78, 1))
+				if (!__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[iLocal_70 /*3*/], fLocal_78, 1))
 				{
 					func_1();
 					iLocal_70 = -1;
 					iLocal_71 = 0;
-					__LIB_2__.func_29(&iLocal_90);
-					__LIB_2__.func_29(&iLocal_89);
+					__LIB_2__::func_29(&iLocal_90);
+					__LIB_2__::func_29(&iLocal_89);
 					AUDIO::SET_AMBIENT_ZONE_STATE_PERSISTENT("AZ_SPECIAL_UFO_01", false, true);
 					AUDIO::SET_AMBIENT_ZONE_STATE_PERSISTENT("AZ_SPECIAL_UFO_02", false, true);
 				}
@@ -283,12 +283,12 @@ void __EntryFunction__()//Position - 0x0
 void func_1()//Position - 0x3A3
 {
 	int iVar0;
-	if (__LIB_0__.func_524(PLAYER::PLAYER_PED_ID()))
+	if (__LIB_0__::func_524(PLAYER::PLAYER_PED_ID()))
 	{
 		if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 		{
 			iVar0 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
-			if (__LIB_1__.func_183(iVar0))
+			if (__LIB_1__::func_183(iVar0))
 			{
 				VEHICLE::SET_VEHICLE_ENGINE_ON(iVar0, true, false, false);
 			}
@@ -302,7 +302,7 @@ void func_5()//Position - 0x44B
 	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 	{
 		iVar0 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
-		if (__LIB_1__.func_183(iVar0))
+		if (__LIB_1__::func_183(iVar0))
 		{
 			VEHICLE::SET_VEHICLE_ENGINE_ON(iVar0, false, false, false);
 			ENTITY::APPLY_FORCE_TO_ENTITY(iVar0, 2, 0f, 0f, -fLocal_74, 0f, 1f, 0f, 0, false, true, true, false, true);
@@ -318,7 +318,7 @@ void func_6()//Position - 0x491
 		{
 			if (iLocal_89 != -1)
 			{
-				__LIB_2__.func_29(&iLocal_89);
+				__LIB_2__::func_29(&iLocal_89);
 				iLocal_87 = (MISC::GET_GAME_TIMER() + iLocal_86);
 			}
 			else
@@ -339,7 +339,7 @@ void func_7()//Position - 0x4DB
 		{
 			if (iLocal_90 != -1)
 			{
-				__LIB_2__.func_29(&iLocal_90);
+				__LIB_2__::func_29(&iLocal_90);
 				iLocal_88 = (MISC::GET_GAME_TIMER() + iLocal_85);
 			}
 			else
@@ -363,11 +363,11 @@ void func_8()//Position - 0x525
 	{
 		return;
 	}
-	if (!__LIB_0__.func_530(PLAYER::PLAYER_PED_ID(), Local_72[iLocal_70 /*3*/], fLocal_76, 1))
+	if (!__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), Local_72[iLocal_70 /*3*/], fLocal_76, 1))
 	{
 		return;
 	}
-	Var0 = { __LIB_0__.func_79(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) - Local_72[iLocal_70 /*3*/]) * Vector(fLocal_77, fLocal_77, fLocal_77) };
+	Var0 = { __LIB_0__::func_79(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) - Local_72[iLocal_70 /*3*/]) * Vector(fLocal_77, fLocal_77, fLocal_77) };
 	ENTITY::APPLY_FORCE_TO_ENTITY(PLAYER::PLAYER_PED_ID(), 2, Var0, 0f, 0f, 0f, 0, false, true, true, false, true);
 }
 
@@ -377,9 +377,9 @@ void func_12()//Position - 0x60E
 	{
 		STREAMING::REMOVE_IPL("ufo");
 	}
-	__LIB_2__.func_29(&iLocal_90);
-	__LIB_2__.func_29(&iLocal_89);
-	__LIB_2__.func_29(&iLocal_80);
+	__LIB_2__::func_29(&iLocal_90);
+	__LIB_2__::func_29(&iLocal_89);
+	__LIB_2__::func_29(&iLocal_80);
 	AUDIO::SET_AMBIENT_ZONE_STATE_PERSISTENT("AZ_SPECIAL_UFO_01", false, true);
 	AUDIO::SET_AMBIENT_ZONE_STATE_PERSISTENT("AZ_SPECIAL_UFO_02", false, true);
 	func_1();

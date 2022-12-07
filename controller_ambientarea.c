@@ -61,7 +61,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_33 = 0.17f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(98))
 	{
-		__LIB_0__.func_199();
+		__LIB_0__::func_199();
 	}
 	func_14();
 	iVar0 = 0;
@@ -80,7 +80,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if (func_12(iVar0, Var2))
 				{
-					__LIB_0__.func_711(&(Global_32299[iVar0 /*7*/]), 2);
+					__LIB_0__::func_711(&(Global_32299[iVar0 /*7*/]), 2);
 					if (Global_32299[iVar0 /*7*/].f_5 != 0)
 					{
 						if (SCRIPT::IS_THREAD_ACTIVE(Global_32299[iVar0 /*7*/].f_5))
@@ -91,7 +91,7 @@ void __EntryFunction__()//Position - 0x0
 					}
 				}
 			}
-			else if (!__LIB_0__.func_517(Global_32299[iVar0 /*7*/], 4))
+			else if (!__LIB_0__::func_517(Global_32299[iVar0 /*7*/], 4))
 			{
 				if (func_5(&(Global_32299[iVar0 /*7*/]), Var2))
 				{
@@ -145,7 +145,7 @@ void func_1(int iParam0)//Position - 0x14A
 			bVar3 = false;
 			break;
 	}
-	if (!bVar3 && __LIB_20__.func_575())
+	if (!bVar3 && __LIB_20__::func_575())
 	{
 		return;
 	}
@@ -162,7 +162,7 @@ void func_1(int iParam0)//Position - 0x14A
 			SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(sVar0);
 			if (Global_32299[iParam0 /*7*/].f_5 != 0)
 			{
-				__LIB_0__.func_712(&(Global_32299[iParam0 /*7*/]), 2);
+				__LIB_0__::func_712(&(Global_32299[iParam0 /*7*/]), 2);
 			}
 		}
 	}
@@ -170,9 +170,9 @@ void func_1(int iParam0)//Position - 0x14A
 
 int func_5(var uParam0, struct<3> Param1)//Position - 0x280
 {
-	if (!__LIB_0__.func_517(*uParam0, 1))
+	if (!__LIB_0__::func_517(*uParam0, 1))
 	{
-		if (__LIB_9__.func_603() && !__LIB_6__.func_854(6))
+		if (__LIB_9__::func_603() && !__LIB_6__::func_854(6))
 		{
 			return 0;
 		}
@@ -198,13 +198,13 @@ int func_12(int iParam0, struct<3> Param1)//Position - 0x553
 	{
 		return 1;
 	}
-	if (__LIB_0__.func_517(Global_32299[iParam0 /*7*/], 4))
+	if (__LIB_0__::func_517(Global_32299[iParam0 /*7*/], 4))
 	{
 		return 1;
 	}
-	if (__LIB_9__.func_603() && !__LIB_6__.func_854(6))
+	if (__LIB_9__::func_603() && !__LIB_6__::func_854(6))
 	{
-		if (!__LIB_0__.func_517(Global_32299[iParam0 /*7*/], 1))
+		if (!__LIB_0__::func_517(Global_32299[iParam0 /*7*/], 1))
 		{
 			if (iParam0 == 1 || iParam0 == 2)
 			{
@@ -228,7 +228,7 @@ int func_12(int iParam0, struct<3> Param1)//Position - 0x553
 
 bool func_13(var uParam0)//Position - 0x5FE
 {
-	return __LIB_0__.func_517(*uParam0, 2);
+	return __LIB_0__::func_517(*uParam0, 2);
 }
 
 void func_14()//Position - 0x60E

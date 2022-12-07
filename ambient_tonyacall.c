@@ -258,7 +258,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID());
-		if (__LIB_0__.func_573(0, 14))
+		if (__LIB_0__::func_573(0, 14))
 		{
 			func_33();
 		}
@@ -273,9 +273,9 @@ void __EntryFunction__()//Position - 0x0
 		switch (iLocal_37)
 		{
 			case 0:
-				if (__LIB_6__.func_866())
+				if (__LIB_6__::func_866())
 				{
-					if (__LIB_37__.func_799(&uLocal_53, "TOWAUD", "TONYA_HANG", 8, 0, 0, 0))
+					if (__LIB_37__::func_799(&uLocal_53, "TOWAUD", "TONYA_HANG", 8, 0, 0, 0))
 					{
 						iLocal_37 = 1;
 					}
@@ -326,7 +326,7 @@ int func_1()//Position - 0x1F5
 	{
 		Var1 = { 408.5002f, -1624.5825f, 29.2928f };
 	}
-	if ((SYSTEM::VDIST2(Var0, Var1) > 10000f || ENTITY::IS_ENTITY_DEAD(iLocal_38, false)) || __LIB_0__.func_575())
+	if ((SYSTEM::VDIST2(Var0, Var1) > 10000f || ENTITY::IS_ENTITY_DEAD(iLocal_38, false)) || __LIB_0__::func_575())
 	{
 		if (SYSTEM::VDIST2(Var0, Var1) > 10000f)
 		{
@@ -334,7 +334,7 @@ int func_1()//Position - 0x1F5
 		if (ENTITY::IS_ENTITY_DEAD(iLocal_38, false))
 		{
 		}
-		if (__LIB_0__.func_575())
+		if (__LIB_0__::func_575())
 		{
 		}
 		return 1;
@@ -381,12 +381,12 @@ int func_1()//Position - 0x1F5
 					iVar4 = (MISC::GET_RANDOM_INT_IN_RANGE(0, 65535) % 2);
 					if (iVar4 == 0)
 					{
-						if (__LIB_37__.func_799(&uLocal_53, "TOWAUD", "TONYA_CALL1", 8, 0, 0, 0))
+						if (__LIB_37__::func_799(&uLocal_53, "TOWAUD", "TONYA_CALL1", 8, 0, 0, 0))
 						{
 							iLocal_40 = 2;
 						}
 					}
-					else if (__LIB_37__.func_799(&uLocal_53, "TOWAUD", "TONYA_CALL2", 8, 0, 0, 0))
+					else if (__LIB_37__::func_799(&uLocal_53, "TOWAUD", "TONYA_CALL2", 8, 0, 0, 0))
 					{
 						iLocal_40 = 2;
 					}
@@ -396,7 +396,7 @@ int func_1()//Position - 0x1F5
 		case 2:
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_38, false))
 			{
-				if (!__LIB_0__.func_75())
+				if (!__LIB_0__::func_75())
 				{
 					TASK::CLEAR_SEQUENCE_TASK(&iVar2);
 					TASK::OPEN_SEQUENCE_TASK(&iVar2);
@@ -410,12 +410,12 @@ int func_1()//Position - 0x1F5
 			}
 			break;
 		case 3:
-			__LIB_0__.func_574();
+			__LIB_0__::func_574();
 			if (SYSTEM::VDIST2(Var0, Var1) < 25f)
 			{
 				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) != 4)
 				{
-					if (__LIB_37__.func_799(&uLocal_53, "TOWAUD", "TONYA_MESS", 8, 0, 0, 0))
+					if (__LIB_37__::func_799(&uLocal_53, "TOWAUD", "TONYA_MESS", 8, 0, 0, 0))
 					{
 						SYSTEM::SETTIMERA(0);
 						iLocal_40 = 4;
@@ -424,7 +424,7 @@ int func_1()//Position - 0x1F5
 			}
 			break;
 		case 4:
-			__LIB_0__.func_574();
+			__LIB_0__::func_574();
 			if (SYSTEM::TIMERA() > 10000)
 			{
 				iLocal_40 = 3;

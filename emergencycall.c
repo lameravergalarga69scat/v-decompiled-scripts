@@ -110,7 +110,7 @@ void __EntryFunction__()//Position - 0x0
 					func_8();
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						if ((__LIB_0__.func_292(PLAYER::PLAYER_ID(), 0) && __LIB_7__.func_133(PLAYER::PLAYER_ID()) == 5) && Global_1963926)
+						if ((__LIB_0__::func_292(PLAYER::PLAYER_ID(), 0) && __LIB_7__::func_133(PLAYER::PLAYER_ID()) == 5) && Global_1963926)
 						{
 							if (Global_1963927 == 0)
 							{
@@ -142,11 +142,11 @@ void __EntryFunction__()//Position - 0x0
 					}
 					else if (MISC::CREATE_INCIDENT(3, Local_45, 4, 3f, &iLocal_47, 0, 0))
 					{
-						if (Global_96938.f_358 == MISC::GET_HASH_KEY("AGENCY_PREP_1") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY("agency_prep1")) > 0 && __LIB_0__.func_2(0)))
+						if (Global_96938.f_358 == MISC::GET_HASH_KEY("AGENCY_PREP_1") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY("agency_prep1")) > 0 && __LIB_0__::func_2(0)))
 						{
 							Global_96938.f_358 = MISC::GET_HASH_KEY("AHP1_TRUCKCALLED");
 						}
-						else if (__LIB_0__.func_176(67) && !__LIB_0__.func_176(68))
+						else if (__LIB_0__::func_176(67) && !__LIB_0__::func_176(68))
 						{
 							Global_96868 = 1;
 						}
@@ -200,25 +200,25 @@ void func_9()//Position - 0x395
 			iLocal_46 = MISC::GET_GAME_TIMER();
 			break;
 		case 1:
-			while (!__LIB_10__.func_564())
+			while (!__LIB_10__::func_564())
 			{
 				SYSTEM::WAIT(0);
-				if (__LIB_11__.func_790() == 3)
+				if (__LIB_11__::func_790() == 3)
 				{
 					iLocal_43 = 3;
 				}
-				if (__LIB_11__.func_790() == 4)
+				if (__LIB_11__::func_790() == 4)
 				{
 					iLocal_43 = 4;
 				}
-				if (__LIB_11__.func_790() == 5)
+				if (__LIB_11__::func_790() == 5)
 				{
 					iLocal_43 = 2;
 				}
 				if (MISC::GET_GAME_TIMER() > iLocal_46 + 30000)
 				{
 					iLocal_46 = MISC::GET_GAME_TIMER();
-					__LIB_6__.func_849(0);
+					__LIB_6__::func_849(0);
 				}
 			}
 			if (iLocal_43 == 0)
@@ -276,7 +276,7 @@ void func_10(int iParam0, var* uParam1, var uParam2)//Position - 0x42E
 				{
 					fVar9 = (fVar9 - 360f);
 				}
-				if (__LIB_4__.func_230(fVar8, fVar10, 90f))
+				if (__LIB_4__::func_230(fVar8, fVar10, 90f))
 				{
 					*uParam2 = fVar10;
 				}

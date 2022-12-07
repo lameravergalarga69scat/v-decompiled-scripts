@@ -53,7 +53,7 @@ void __EntryFunction__()//Position - 0x0
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
 		func_3();
-		__LIB_0__.func_199();
+		__LIB_0__::func_199();
 	}
 	MISC::SET_MISSION_FLAG(true);
 	while (true)
@@ -61,11 +61,11 @@ void __EntryFunction__()//Position - 0x0
 		HUD::SET_TEXT_COLOUR(255, 255, 255, 255);
 		HUD::SET_TEXT_SCALE(0.75f, 0.9f);
 		HUD::SET_TEXT_WRAP(0f, 1f);
-		__LIB_9__.func_595(0.05f, 0.63f, "PLCHLD_MISS", 0);
+		__LIB_9__::func_595(0.05f, 0.63f, "PLCHLD_MISS", 0);
 		HUD::SET_TEXT_COLOUR(255, 255, 255, 255);
 		HUD::SET_TEXT_SCALE(0.4f, 0.45f);
 		HUD::SET_TEXT_WRAP(0f, 1f);
-		__LIB_9__.func_595(0.05f, 0.7f, "PLCHLD_PASS", 0);
+		__LIB_9__::func_595(0.05f, 0.7f, "PLCHLD_PASS", 0);
 		SYSTEM::WAIT(0);
 	}
 }
@@ -77,11 +77,11 @@ void func_3()//Position - 0xFC
 	{
 		SYSTEM::START_NEW_SCRIPT("buddyDeathResponse", 1424);
 	}
-	if (Global_113386.f_9085 || __LIB_0__.func_2(0))
+	if (Global_113386.f_9085 || __LIB_0__::func_2(0))
 	{
-		if (!__LIB_0__.func_134())
+		if (!__LIB_0__::func_134())
 		{
-			iVar0 = __LIB_0__.func_323();
+			iVar0 = __LIB_0__::func_323();
 			if (iVar0 != -1)
 			{
 				if (!func_12(iVar0))
@@ -94,7 +94,7 @@ void func_3()//Position - 0xFC
 		}
 		else
 		{
-			__LIB_26__.func_260();
+			__LIB_26__::func_260();
 		}
 	}
 }
@@ -103,14 +103,14 @@ int func_12(int iParam0)//Position - 0x3F3
 {
 	int iVar0;
 	int iVar1;
-	__LIB_26__.func_260();
+	__LIB_26__::func_260();
 	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 	{
 		PLAYER::START_FIRING_AMNESTY(5000);
 	}
 	iVar0 = Global_91193[iParam0 /*5*/];
 	iVar1 = Global_78588.f_109[iVar0 /*4*/];
-	__LIB_0__.func_322(iVar1, 1);
+	__LIB_0__::func_322(iVar1, 1);
 	PLAYER::SPECIAL_ABILITY_CHARGE_ON_MISSION_FAILED(PLAYER::PLAYER_ID(), 0);
 	PLAYER::SPECIAL_ABILITY_DEACTIVATE(PLAYER::PLAYER_ID(), 0);
 	func_13(&(Global_113386.f_2363.f_539), iVar1);
@@ -169,7 +169,7 @@ void func_13(var uParam0, int iParam1)//Position - 0x503
 			if (!func_15(Global_113386.f_18533[iVar0], &Var2, &fVar3))
 			{
 				Global_113386.f_18533[iVar0] = 318;
-				__LIB_0__.func_17(&(uParam0->f_2296[iVar0]));
+				__LIB_0__::func_17(&(uParam0->f_2296[iVar0]));
 				uParam0->f_2300[iVar0 /*3*/] = { 0f, 0f, 0f };
 				uParam0->f_2310[iVar0] = 0f;
 				uParam0->f_2314[iVar0] = 0;

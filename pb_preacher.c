@@ -104,7 +104,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_45 = { ScriptParam_52.f_1[0 /*3*/] };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(11))
 	{
-		__LIB_0__.func_199();
+		__LIB_0__::func_199();
 	}
 	while (true)
 	{
@@ -135,12 +135,12 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else
 			{
-				__LIB_0__.func_199();
+				__LIB_0__::func_199();
 			}
 		}
 		else
 		{
-			__LIB_0__.func_199();
+			__LIB_0__::func_199();
 		}
 	}
 }
@@ -212,7 +212,7 @@ int func_3(int iParam0)//Position - 0x2A7
 			return 1;
 			break;
 		case 1:
-			if (__LIB_0__.func_39(6) || __LIB_0__.func_39(7))
+			if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
 			{
 				return 1;
 			}
@@ -225,9 +225,9 @@ int func_3(int iParam0)//Position - 0x2A7
 			return 1;
 			break;
 		case 3:
-			if (__LIB_6__.func_763(5))
+			if (__LIB_6__::func_763(5))
 			{
-				if (__LIB_32__.func_573(4))
+				if (__LIB_32__::func_573(4))
 				{
 					return 1;
 				}

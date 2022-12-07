@@ -57,7 +57,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (!SCRIPT::IS_THREAD_ACTIVE(Global_43015))
 					{
-						__LIB_0__.func_56(&Global_43014);
+						__LIB_0__::func_56(&Global_43014);
 					}
 				}
 			}
@@ -74,7 +74,7 @@ void __EntryFunction__()//Position - 0x0
 					iVar4 = 0;
 					while (iVar4 < Global_43013)
 					{
-						if (__LIB_6__.func_763(Global_43019[iVar4 /*4*/].f_2))
+						if (__LIB_6__::func_763(Global_43019[iVar4 /*4*/].f_2))
 						{
 							iVar2[iVar4] = 0;
 						}
@@ -109,7 +109,7 @@ void __EntryFunction__()//Position - 0x0
 					}
 					if (iVar3 != -1)
 					{
-						if (!__LIB_6__.func_763(Global_43019[iVar3 /*4*/].f_2))
+						if (!__LIB_6__::func_763(Global_43019[iVar3 /*4*/].f_2))
 						{
 							iVar3 = -1;
 						}
@@ -134,11 +134,11 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (iVar1 == 15)
 			{
-				__LIB_0__.func_177(0);
+				__LIB_0__::func_177(0);
 			}
 			if (Global_43052 == 15)
 			{
-				__LIB_0__.func_177(1);
+				__LIB_0__::func_177(1);
 			}
 			Global_43018 = 0;
 			Global_38390 = 1;
@@ -148,11 +148,11 @@ void __EntryFunction__()//Position - 0x0
 			}
 			if (Global_43052 == 15 || Global_43052 == 6)
 			{
-				__LIB_11__.func_99(0);
+				__LIB_11__::func_99(0);
 			}
 			else
 			{
-				__LIB_11__.func_99(1);
+				__LIB_11__::func_99(1);
 			}
 			if (func_12(Global_43052))
 			{
@@ -170,7 +170,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		iVar1 = Global_43052;
 		iVar0 = Global_43013;
-		Global_111812 = __LIB_18__.func_240();
+		Global_111812 = __LIB_18__::func_240();
 		Global_32235 = CLOCK::GET_CLOCK_DAY_OF_WEEK();
 		SYSTEM::WAIT(0);
 	}
@@ -201,7 +201,7 @@ int func_12(int iParam0)//Position - 0x52D
 
 void func_18()//Position - 0xA5B
 {
-	__LIB_0__.func_56(&Global_43014);
+	__LIB_0__::func_56(&Global_43014);
 	Global_43018 = 0;
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

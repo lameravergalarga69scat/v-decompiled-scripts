@@ -81,7 +81,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_10();
 	}
-	while (!__LIB_0__.func_176(18))
+	while (!__LIB_0__::func_176(18))
 	{
 		func_1();
 		SYSTEM::WAIT(0);
@@ -94,7 +94,7 @@ void func_1()//Position - 0xA4
 	switch (iLocal_48)
 	{
 		case 0:
-			if (((!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false) && !MISC::IS_AUTO_SAVE_IN_PROGRESS()) && !__LIB_0__.func_526()) && !__LIB_0__.func_511())
+			if (((!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false) && !MISC::IS_AUTO_SAVE_IN_PROGRESS()) && !__LIB_0__::func_526()) && !__LIB_0__::func_511())
 			{
 				SCRIPT::REQUEST_SCRIPT("taxiService");
 				iLocal_48 = 1;
@@ -109,10 +109,10 @@ void func_1()//Position - 0xA4
 			}
 			break;
 		case 2:
-			switch (__LIB_11__.func_512("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */))
+			switch (__LIB_11__::func_512("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */))
 			{
 				case 2:
-					__LIB_18__.func_203("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */, 2, 0, 1000, 10000, 1, 0, 0, 0);
+					__LIB_18__::func_203("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */, 2, 0, 1000, 10000, 1, 0, 0, 0);
 					break;
 				case 1:
 					iLocal_48 = 3;
@@ -120,10 +120,10 @@ void func_1()//Position - 0xA4
 			}
 			break;
 		case 3:
-			switch (__LIB_11__.func_512("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */))
+			switch (__LIB_11__::func_512("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */))
 			{
 				case 2:
-					__LIB_18__.func_203("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */, 2, 0, 1000, 10000, 1, 0, 0, 0);
+					__LIB_18__::func_203("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */, 2, 0, 1000, 10000, 1, 0, 0, 0);
 					break;
 				case 1:
 					iLocal_48 = 4;
@@ -138,13 +138,13 @@ void func_1()//Position - 0xA4
 
 void func_10()//Position - 0x56D
 {
-	if (__LIB_9__.func_610("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */))
+	if (__LIB_9__::func_610("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */))
 	{
-		__LIB_19__.func_856("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */, 1);
+		__LIB_19__::func_856("AM_H_TAXI1" /* GXT: Use ~INPUT_CONTEXT~ to flag down passing taxis. */, 1);
 	}
-	if (__LIB_9__.func_610("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */))
+	if (__LIB_9__::func_610("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */))
 	{
-		__LIB_19__.func_856("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */, 1);
+		__LIB_19__::func_856("AM_H_TAXI2" /* GXT: Taxi pick ups can be requested through the phone. */, 1);
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

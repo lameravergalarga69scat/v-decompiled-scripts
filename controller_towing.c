@@ -313,7 +313,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_156();
 	}
-	__LIB_0__.func_513(15);
+	__LIB_0__::func_513(15);
 	bVar1 = false;
 	while (true)
 	{
@@ -395,10 +395,10 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 			case 0:
 				uLocal_263 = uLocal_263;
 				MISC::SET_RANDOM_SEED(((CLOCK::GET_CLOCK_SECONDS() * CLOCK::GET_CLOCK_MINUTES()) * CLOCK::GET_CLOCK_HOURS()));
-				__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 2048);
-				__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 4096);
-				__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 8192);
-				__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 16384);
+				__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 2048);
+				__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 4096);
+				__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 8192);
+				__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 16384);
 				if (Global_113386.f_19973.f_3 >= 5)
 				{
 					*iParam0 = 14;
@@ -441,7 +441,7 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 					*iParam3 = 0;
 					if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/) || PAD::IS_DISABLED_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/))
 					{
-						__LIB_0__.func_186();
+						__LIB_0__::func_186();
 						func_115();
 						Local_51.f_0 = iLocal_268;
 						Local_51.f_1 = iLocal_269;
@@ -450,15 +450,15 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 				}
 				break;
 			case 16:
-				__LIB_0__.func_186();
+				__LIB_0__::func_186();
 				*iParam3 = 0;
 				iVar4 = func_107();
-				__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 1073741824);
+				__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 1073741824);
 				if (iVar4 == 1)
 				{
 					if (!bParam4)
 					{
-						__LIB_42__.func_612(SCRIPT::GET_THIS_SCRIPT_NAME(), 0);
+						__LIB_42__::func_612(SCRIPT::GET_THIS_SCRIPT_NAME(), 0);
 					}
 					iLocal_70 = 1;
 					*iParam0 = 17;
@@ -473,32 +473,32 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 			case 17:
 				if (!SCRIPT::IS_THREAD_ACTIVE(iLocal_245))
 				{
-					if (__LIB_0__.func_517(Global_112037, 3))
+					if (__LIB_0__::func_517(Global_112037, 3))
 					{
 						*iParam0 = 18;
 					}
 					else
 					{
-						__LIB_10__.func_865(&iLocal_45);
-						__LIB_35__.func_897();
-						__LIB_7__.func_204(&Global_112037, 3);
+						__LIB_10__::func_865(&iLocal_45);
+						__LIB_35__::func_897();
+						__LIB_7__::func_204(&Global_112037, 3);
 						func_1();
 						func_23();
 						iLocal_269 = 0;
 						iLocal_268 = 0;
-						if (__LIB_0__.func_517(Global_113386.f_19973.f_1, 2048))
+						if (__LIB_0__::func_517(Global_113386.f_19973.f_1, 2048))
 						{
 							iLocal_249 = 0;
 						}
-						else if (__LIB_0__.func_517(Global_113386.f_19973.f_1, 4096))
+						else if (__LIB_0__::func_517(Global_113386.f_19973.f_1, 4096))
 						{
 							iLocal_249 = 10000;
 						}
-						else if (__LIB_0__.func_517(Global_113386.f_19973.f_1, 8192))
+						else if (__LIB_0__::func_517(Global_113386.f_19973.f_1, 8192))
 						{
 							iLocal_249 = 60000;
 						}
-						else if (__LIB_0__.func_517(Global_113386.f_19973.f_1, 16384))
+						else if (__LIB_0__::func_517(Global_113386.f_19973.f_1, 16384))
 						{
 							iLocal_249 = 120000;
 						}
@@ -506,10 +506,10 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 						{
 							iLocal_249 = 30000;
 						}
-						__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 2048);
-						__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 4096);
-						__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 8192);
-						__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 16384);
+						__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 2048);
+						__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 4096);
+						__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 8192);
+						__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 16384);
 						if (ENTITY::DOES_ENTITY_EXIST(iLocal_268) && !ENTITY::IS_ENTITY_DEAD(iLocal_268, false))
 						{
 							PED::REMOVE_PED_FROM_GROUP(iLocal_268);
@@ -580,8 +580,8 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 				}
 				else if (Global_100441 == 13)
 				{
-					__LIB_10__.func_865(&iLocal_45);
-					__LIB_35__.func_897();
+					__LIB_10__::func_865(&iLocal_45);
+					__LIB_35__::func_897();
 					bParam4 = false;
 					*uParam2 = MISC::GET_GAME_TIMER();
 					*iParam0 = 19;
@@ -600,10 +600,10 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 
 void func_23()//Position - 0x1004
 {
-	if (__LIB_0__.func_517(uLocal_247, 1))
+	if (__LIB_0__::func_517(uLocal_247, 1))
 	{
-		__LIB_7__.func_204(&uLocal_247, 1);
-		__LIB_10__.func_865(&iLocal_246);
+		__LIB_7__::func_204(&uLocal_247, 1);
+		__LIB_10__::func_865(&iLocal_246);
 	}
 	if (SCRIPT::IS_THREAD_ACTIVE(iLocal_245))
 	{
@@ -617,7 +617,7 @@ int func_107()//Position - 0x8A82
 	int iVar0;
 	if (SCRIPT::HAS_SCRIPT_LOADED("Towing"))
 	{
-		iVar0 = __LIB_26__.func_296(&iLocal_45, 6, 4, 0, 0);
+		iVar0 = __LIB_26__::func_296(&iLocal_45, 6, 4, 0, 0);
 		if (iVar0 == 1)
 		{
 			HUD::CLEAR_HELP(true);
@@ -635,7 +635,7 @@ int func_107()//Position - 0x8A82
 			ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_268);
 			STREAMING::REMOVE_ANIM_DICT("amb@world_human_smoking@male@male_a@base");
 			STREAMING::REMOVE_ANIM_DICT("oddjobs@towingcome_here");
-			__LIB_6__.func_896(&uLocal_247, 1);
+			__LIB_6__::func_896(&uLocal_247, 1);
 			return 1;
 		}
 		else if (iVar0 == 0)
@@ -651,7 +651,7 @@ void func_115()//Position - 0x8EDA
 	AUDIO::SET_FRONTEND_RADIO_ACTIVE(true);
 	SCRIPT::REQUEST_SCRIPT("Towing");
 	HUD::CLEAR_HELP(true);
-	__LIB_0__.func_735(&iLocal_58);
+	__LIB_0__::func_735(&iLocal_58);
 }
 
 void func_118()//Position - 0x8F1D
@@ -659,16 +659,16 @@ void func_118()//Position - 0x8F1D
 	switch (iLocal_70)
 	{
 		case 1:
-			if (!__LIB_0__.func_75())
+			if (!__LIB_0__::func_75())
 			{
-				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !__LIB_0__.func_736(&iLocal_58))
+				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !__LIB_0__::func_736(&iLocal_58))
 				{
 					AUDIO::SET_FRONTEND_RADIO_ACTIVE(false);
-					__LIB_6__.func_892(&iLocal_58);
+					__LIB_6__::func_892(&iLocal_58);
 				}
-				else if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && __LIB_0__.func_736(&iLocal_58))
+				else if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && __LIB_0__::func_736(&iLocal_58))
 				{
-					if (__LIB_7__.func_78(&iLocal_58) >= 2f)
+					if (__LIB_7__::func_78(&iLocal_58) >= 2f)
 					{
 						iLocal_70 = 0;
 					}
@@ -676,17 +676,17 @@ void func_118()//Position - 0x8F1D
 			}
 			break;
 		case 0:
-			if (!__LIB_0__.func_75())
+			if (!__LIB_0__::func_75())
 			{
-				__LIB_0__.func_203(&uLocal_80, 4, 0, "TOWDISPATCH", 0, 1);
-				if (__LIB_37__.func_799(&uLocal_80, "TOWAUD", "TOW_DISP_GEN", 9, 0, 0, 0))
+				__LIB_0__::func_203(&uLocal_80, 4, 0, "TOWDISPATCH", 0, 1);
+				if (__LIB_37__::func_799(&uLocal_80, "TOWAUD", "TOW_DISP_GEN", 9, 0, 0, 0))
 				{
 					iLocal_70 = 2;
 				}
 			}
 			break;
 		case 2:
-			if (!__LIB_0__.func_75())
+			if (!__LIB_0__::func_75())
 			{
 				iLocal_70 = 3;
 			}
@@ -696,28 +696,28 @@ void func_118()//Position - 0x8F1D
 			}
 			break;
 		case 3:
-			if (__LIB_7__.func_78(&iLocal_58) >= 6f)
+			if (__LIB_7__::func_78(&iLocal_58) >= 6f)
 			{
 				AUDIO::SET_FRONTEND_RADIO_ACTIVE(true);
-				__LIB_0__.func_151("TOW_JOBOFFRD" /* GXT: ~s~To accept towing jobs press ~INPUT_VEH_HORN~~s~ */, -1);
+				__LIB_0__::func_151("TOW_JOBOFFRD" /* GXT: ~s~To accept towing jobs press ~INPUT_VEH_HORN~~s~ */, -1);
 				iLocal_70 = 4;
 			}
 			break;
 		case 4:
-			if (__LIB_7__.func_78(&iLocal_58) > 30f)
+			if (__LIB_7__::func_78(&iLocal_58) > 30f)
 			{
-				if (!__LIB_0__.func_517(Global_113386.f_19973.f_1, 1024))
+				if (!__LIB_0__::func_517(Global_113386.f_19973.f_1, 1024))
 				{
-					__LIB_0__.func_151("TOW_MISSEDJOB" /* GXT: ~s~The towing job has expired. There is only a short time to accept before dispatch takes silence as a no. However, more jobs can be accessed by pressing ~INPUT_VEH_HORN~~s~ */, -1);
-					__LIB_6__.func_896(&(Global_113386.f_19973.f_1), 1024);
+					__LIB_0__::func_151("TOW_MISSEDJOB" /* GXT: ~s~The towing job has expired. There is only a short time to accept before dispatch takes silence as a no. However, more jobs can be accessed by pressing ~INPUT_VEH_HORN~~s~ */, -1);
+					__LIB_6__::func_896(&(Global_113386.f_19973.f_1), 1024);
 				}
 				iLocal_70 = 5;
 			}
 			break;
 		case 5:
-			if (__LIB_7__.func_78(&iLocal_58) > 60f)
+			if (__LIB_7__::func_78(&iLocal_58) > 60f)
 			{
-				__LIB_0__.func_735(&iLocal_58);
+				__LIB_0__::func_735(&iLocal_58);
 				iLocal_70 = 1;
 			}
 			break;
@@ -759,19 +759,19 @@ void func_146(var uParam0, int iParam1)//Position - 0x9A0F
 		{
 			if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/) || PAD::IS_DISABLED_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/))
 			{
-				if ((((((!__LIB_0__.func_75() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !__LIB_6__.func_854(0)) && !__LIB_0__.func_39(6)) && !__LIB_0__.func_39(7)) && !PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0) && __LIB_18__.func_173() == 1)
+				if ((((((!__LIB_0__::func_75() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !__LIB_6__::func_854(0)) && !__LIB_0__::func_39(6)) && !__LIB_0__::func_39(7)) && !PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0) && __LIB_18__::func_173() == 1)
 				{
-					__LIB_0__.func_203(&uLocal_80, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
-					__LIB_0__.func_203(&uLocal_80, 4, 0, "TOWDISPATCH", 0, 1);
-					if (__LIB_37__.func_799(&uLocal_80, "TOWAUD", "TOW_JOBS_AVL", 4, 0, 0, 0))
+					__LIB_0__::func_203(&uLocal_80, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
+					__LIB_0__::func_203(&uLocal_80, 4, 0, "TOWDISPATCH", 0, 1);
+					if (__LIB_37__::func_799(&uLocal_80, "TOWAUD", "TOW_JOBS_AVL", 4, 0, 0, 0))
 					{
-						if (!__LIB_0__.func_736(&iLocal_67))
+						if (!__LIB_0__::func_736(&iLocal_67))
 						{
-							__LIB_18__.func_276(&iLocal_67);
+							__LIB_18__::func_276(&iLocal_67);
 						}
 						else
 						{
-							__LIB_6__.func_892(&iLocal_67);
+							__LIB_6__::func_892(&iLocal_67);
 						}
 						iLocal_264 = 1;
 					}
@@ -781,11 +781,11 @@ void func_146(var uParam0, int iParam1)//Position - 0x9A0F
 	}
 	if (iLocal_264)
 	{
-		if (__LIB_0__.func_736(&iLocal_67))
+		if (__LIB_0__::func_736(&iLocal_67))
 		{
-			if (__LIB_7__.func_78(&iLocal_67) > 4f)
+			if (__LIB_7__::func_78(&iLocal_67) > 4f)
 			{
-				if (__LIB_37__.func_799(&uLocal_80, "TOWAUD", "TOW_NO_JOBS", 4, 0, 0, 0))
+				if (__LIB_37__::func_799(&uLocal_80, "TOWAUD", "TOW_NO_JOBS", 4, 0, 0, 0))
 				{
 					iLocal_264 = 0;
 				}
@@ -811,7 +811,7 @@ void func_148(int iParam0, struct<3> Param1, float fParam2, var uParam3)//Positi
 			{
 				return;
 			}
-			if (fVar0 < 25f && !__LIB_0__.func_517(Global_113386.f_19973.f_1, 1073741824))
+			if (fVar0 < 25f && !__LIB_0__::func_517(Global_113386.f_19973.f_1, 1073741824))
 			{
 				return;
 			}
@@ -844,7 +844,7 @@ void func_148(int iParam0, struct<3> Param1, float fParam2, var uParam3)//Positi
 		case 2:
 			if (STREAMING::HAS_MODEL_LOADED(joaat("towtruck")))
 			{
-				if (!CAM::IS_SPHERE_VISIBLE(Local_254, fLocal_255) || __LIB_0__.func_517(Global_113386.f_19973.f_1, 1073741824))
+				if (!CAM::IS_SPHERE_VISIBLE(Local_254, fLocal_255) || __LIB_0__::func_517(Global_113386.f_19973.f_1, 1073741824))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(iLocal_269))
 					{
@@ -913,13 +913,13 @@ int func_150(var uParam0, bool bParam1, bool bParam2)//Position - 0x9D93
 {
 	if (!bParam1)
 	{
-		if (__LIB_6__.func_854(9))
+		if (__LIB_6__::func_854(9))
 		{
 			iLocal_248 = MISC::GET_GAME_TIMER();
 			iLocal_249 = 10000;
 			return 0;
 		}
-		if (__LIB_8__.func_915(41))
+		if (__LIB_8__::func_915(41))
 		{
 			iLocal_248 = MISC::GET_GAME_TIMER();
 			iLocal_249 = 10000;
@@ -932,7 +932,7 @@ int func_150(var uParam0, bool bParam1, bool bParam2)//Position - 0x9D93
 		{
 			if (Global_113386.f_19973.f_3 >= 5)
 			{
-				__LIB_0__.func_151("TOW_WANTED" /* GXT: ~s~Towing jobs unavailable when Wanted. The towing job has ended.~s~ */, -1);
+				__LIB_0__::func_151("TOW_WANTED" /* GXT: ~s~Towing jobs unavailable when Wanted. The towing job has ended.~s~ */, -1);
 			}
 		}
 		iLocal_248 = MISC::GET_GAME_TIMER();
@@ -941,7 +941,7 @@ int func_150(var uParam0, bool bParam1, bool bParam2)//Position - 0x9D93
 	}
 	if (bParam2)
 	{
-		iLocal_266 = __LIB_18__.func_173();
+		iLocal_266 = __LIB_18__::func_173();
 		if (iLocal_266 != 1)
 		{
 			return 0;
@@ -956,11 +956,11 @@ int func_150(var uParam0, bool bParam1, bool bParam2)//Position - 0x9D93
 
 int func_152()//Position - 0x9E9A
 {
-	if (!__LIB_0__.func_39(0))
+	if (!__LIB_0__::func_39(0))
 	{
 		if (Global_113386.f_9085)
 		{
-			if (__LIB_0__.func_573(0, 14) && __LIB_10__.func_242(0) == 1)
+			if (__LIB_0__::func_573(0, 14) && __LIB_10__::func_242(0) == 1)
 			{
 				return 1;
 			}
@@ -980,9 +980,9 @@ int func_152()//Position - 0x9E9A
 void func_156()//Position - 0x9F92
 {
 	func_23();
-	__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 2048);
-	__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 4096);
-	__LIB_7__.func_204(&(Global_113386.f_19973.f_1), 8192);
+	__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 2048);
+	__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 4096);
+	__LIB_7__::func_204(&(Global_113386.f_19973.f_1), 8192);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

@@ -64,9 +64,9 @@ void __EntryFunction__()//Position - 0x0
 		{
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
-		if (__LIB_6__.func_948(PLAYER::PLAYER_ID()) && ENTITY::DOES_ENTITY_EXIST(__LIB_0__.func_727()))
+		if (__LIB_6__::func_948(PLAYER::PLAYER_ID()) && ENTITY::DOES_ENTITY_EXIST(__LIB_0__::func_727()))
 		{
-			iLocal_31 = __LIB_0__.func_727();
+			iLocal_31 = __LIB_0__::func_727();
 		}
 		else
 		{
@@ -147,16 +147,16 @@ void func_1()//Position - 0xB1
 int func_2()//Position - 0x1E7
 {
 	int iVar0;
-	if (__LIB_18__.func_255(PLAYER::PLAYER_ID()))
+	if (__LIB_18__::func_255(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
-	if (__LIB_1__.func_113(PLAYER::PLAYER_ID(), 1))
+	if (__LIB_1__::func_113(PLAYER::PLAYER_ID(), 1))
 	{
-		iVar0 = __LIB_0__.func_582();
-		if (iVar0 != __LIB_0__.func_160())
+		iVar0 = __LIB_0__::func_582();
+		if (iVar0 != __LIB_0__::func_160())
 		{
-			if (__LIB_18__.func_255(iVar0))
+			if (__LIB_18__::func_255(iVar0))
 			{
 				return 1;
 			}
