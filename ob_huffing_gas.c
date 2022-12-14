@@ -336,7 +336,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_102();
 	}
-	STREAMING::REQUEST_ANIM_DICT(__LIB_30__::func_506());
+	STREAMING::REQUEST_ANIM_DICT(__LIB_38__::func_727());
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -347,7 +347,7 @@ void __EntryFunction__()//Position - 0x0
 		switch (iLocal_276)
 		{
 			case 0:
-				if (__LIB_35__::func_41() && __LIB_35__::func_37())
+				if (__LIB_38__::func_768() && __LIB_38__::func_752())
 				{
 					iLocal_276 = 1;
 				}
@@ -401,7 +401,7 @@ void func_1()//Position - 0x108
 					fLocal_293 = 0f;
 					iLocal_296 = 1;
 				}
-				if (__LIB_30__::func_500(iLocal_280))
+				if (__LIB_38__::func_721(iLocal_280))
 				{
 					CAM::SET_CAM_MOTION_BLUR_STRENGTH(iLocal_280, fLocal_293);
 				}
@@ -450,7 +450,7 @@ void func_3()//Position - 0x210
 			if (fLocal_293 < fVar0)
 			{
 				fLocal_293 = (fLocal_293 + 0.075f);
-				if (__LIB_30__::func_500(iLocal_280))
+				if (__LIB_38__::func_721(iLocal_280))
 				{
 					CAM::SET_CAM_MOTION_BLUR_STRENGTH(iLocal_280, fLocal_293);
 				}
@@ -471,31 +471,31 @@ void func_4()//Position - 0x2B1
 	struct<3> Var1;
 	struct<3> Var2;
 	struct<3> Var3;
-	Var0 = { __LIB_30__::func_510() };
+	Var0 = { __LIB_38__::func_731() };
 	Var1 = { 1.2f, 1.2f, 1.2f };
 	switch (iLocal_277)
 	{
 		case 0:
-			if ((__LIB_35__::func_34(Var0, Var1) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_30__::func_514() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_30__::func_514() + 90f))
+			if ((__LIB_38__::func_744(Var0, Var1) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_38__::func_741() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_38__::func_741() + 90f))
 			{
-				__LIB_30__::func_504();
+				__LIB_38__::func_725();
 				if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("TREVOR_SAFEHOUSE_ACTIVITIES_SCENE"))
 				{
 					AUDIO::START_AUDIO_SCENE("TREVOR_SAFEHOUSE_ACTIVITIES_SCENE");
 				}
-				__LIB_0__::func_187(__LIB_30__::func_503());
+				__LIB_0__::func_190(__LIB_38__::func_724());
 				iLocal_277 = 1;
 			}
 			break;
 		case 1:
 			Var2 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-			if (__LIB_0__::func_398(1, 0, 1))
+			if (__LIB_0__::func_494(1, 0, 1))
 			{
-				if ((((__LIB_35__::func_34(Var0, Var1) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_30__::func_514() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_30__::func_514() + 90f)) && Var2.f_2 > 33f) && !PED::IS_PED_JUMPING(PLAYER::PLAYER_PED_ID()))
+				if ((((__LIB_38__::func_744(Var0, Var1) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_38__::func_741() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_38__::func_741() + 90f)) && Var2.f_2 > 33f) && !PED::IS_PED_JUMPING(PLAYER::PLAYER_PED_ID()))
 				{
 					if ((!PLAYER::IS_PLAYER_FREE_AIMING(PLAYER::PLAYER_ID()) && !PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID())) && PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
-						if (__LIB_0__::func_1(__LIB_30__::func_503()))
+						if (__LIB_0__::func_1(__LIB_38__::func_724()))
 						{
 							HUD::CLEAR_HELP(true);
 						}
@@ -514,14 +514,14 @@ void func_4()//Position - 0x2B1
 						{
 							ENTITY::FREEZE_ENTITY_POSITION(iLocal_41, false);
 						}
-						__LIB_7__::func_279(1, 1, 1, 0, 0, 0, 0);
+						__LIB_0__::func_532(1, 1, 1, 0, 0, 0, 0);
 						iLocal_278 = 1;
 						iLocal_277 = 2;
 					}
 				}
 				else
 				{
-					if (__LIB_0__::func_1(__LIB_30__::func_503()))
+					if (__LIB_0__::func_1(__LIB_38__::func_724()))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -530,12 +530,12 @@ void func_4()//Position - 0x2B1
 			}
 			break;
 		case 2:
-			__LIB_0__::func_186();
+			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
-			iLocal_281 = PED::CREATE_SYNCHRONIZED_SCENE(__LIB_30__::func_509(), __LIB_30__::func_508(), 2);
-			TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_281, __LIB_30__::func_506(), __LIB_30__::func_502(0), 1000f, -8f, 0, 0, 1000f, 0);
-			ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_41, iLocal_281, __LIB_30__::func_507(0), __LIB_30__::func_506(), 1000f, -8f, 0, 1000f);
+			iLocal_281 = PED::CREATE_SYNCHRONIZED_SCENE(__LIB_38__::func_730(), __LIB_38__::func_729(), 2);
+			TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_281, __LIB_38__::func_727(), __LIB_38__::func_723(0), 1000f, -8f, 0, 0, 1000f, 0);
+			ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_41, iLocal_281, __LIB_38__::func_728(0), __LIB_38__::func_727(), 1000f, -8f, 0, 1000f);
 			if (!PED::IS_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_281))
 			{
 				PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_281, true);
@@ -543,7 +543,7 @@ void func_4()//Position - 0x2B1
 			if (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4)
 			{
 				iLocal_280 = CAM::CREATE_CAM("DEFAULT_ANIMATED_CAMERA", true);
-				CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_280, iLocal_281, __LIB_37__::func_474(0), __LIB_30__::func_506());
+				CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_280, iLocal_281, __LIB_38__::func_769(0), __LIB_38__::func_727());
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 			}
 			else
@@ -553,7 +553,7 @@ void func_4()//Position - 0x2B1
 			iLocal_277 = 3;
 			break;
 		case 3:
-			__LIB_0__::func_186();
+			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_281) > 0.95f)
@@ -574,7 +574,7 @@ void func_4()//Position - 0x2B1
 			break;
 		case 4:
 			func_40(2500, 1);
-			__LIB_0__::func_186();
+			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (CAM::IS_SCREEN_FADED_OUT())
@@ -621,13 +621,13 @@ void func_4()//Position - 0x2B1
 				ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), Local_286, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), fLocal_287);
 				CLOCK::ADD_TO_CLOCK_TIME(6, 0, 0);
-				__LIB_32__::func_495(SYSTEM::TO_FLOAT(6));
+				__LIB_15__::func_979(SYSTEM::TO_FLOAT(6));
 				func_32(Local_286, 10f, 13);
 				iLocal_277 = 5;
 			}
 			break;
 		case 5:
-			__LIB_0__::func_186();
+			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_281))
@@ -635,7 +635,7 @@ void func_4()//Position - 0x2B1
 				GRAPHICS::SET_TIMECYCLE_MODIFIER("drug_wobbly");
 				GRAPHICS::SET_TIMECYCLE_MODIFIER_STRENGTH(1f);
 				fLocal_294 = 1f;
-				if (__LIB_0__::func_502())
+				if (__LIB_0__::func_680())
 				{
 					sLocal_284 = "ig_8_wake_up_front_player";
 					sLocal_285 = "ig_8_wake_up_front_cam";
@@ -668,7 +668,7 @@ void func_4()//Position - 0x2B1
 						break;
 				}
 				iLocal_281 = PED::CREATE_SYNCHRONIZED_SCENE(Var3.f_0, Var3.f_1, Var3.f_2, 0f, 0f, fLocal_287, 2);
-				TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_281, __LIB_30__::func_506(), sLocal_284, 1000f, -4f, 0, 0, 1000f, 0);
+				TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_281, __LIB_38__::func_727(), sLocal_284, 1000f, -4f, 0, 0, 1000f, 0);
 				if (PED::IS_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_281))
 				{
 					PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_281, false);
@@ -676,7 +676,7 @@ void func_4()//Position - 0x2B1
 				if (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4)
 				{
 					iLocal_280 = CAM::CREATE_CAM("DEFAULT_ANIMATED_CAMERA", true);
-					CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_280, iLocal_281, sLocal_285, __LIB_30__::func_506());
+					CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iLocal_280, iLocal_281, sLocal_285, __LIB_38__::func_727());
 					CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 				}
 				else
@@ -688,17 +688,17 @@ void func_4()//Position - 0x2B1
 			{
 				iLocal_288 = 1;
 				func_30(800, 1);
-				__LIB_42__::func_558();
+				__LIB_38__::func_754();
 				iLocal_277 = 6;
 			}
 			break;
 		case 6:
-			__LIB_0__::func_186();
+			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_281))
 			{
-				if (__LIB_30__::func_500(iLocal_280))
+				if (__LIB_38__::func_721(iLocal_280))
 				{
 					CAM::STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP(false, 0f, 3, 0);
 				}
@@ -721,7 +721,7 @@ void func_4()//Position - 0x2B1
 					STATS::STAT_SET_INT(joaat("NUM_SH_GAS_HUFFED"), iLocal_283 + 1, true);
 				}
 				iLocal_279 = 0;
-				__LIB_7__::func_279(0, 1, 1, 0, 0, 0, 0);
+				__LIB_0__::func_532(0, 1, 1, 0, 0, 0, 0);
 				iLocal_278 = 0;
 				iLocal_277 = 0;
 			}
@@ -822,15 +822,15 @@ int func_74()//Position - 0x2A63
 
 int func_76()//Position - 0x2B8C
 {
-	if (__LIB_6__::func_854(9))
+	if (__LIB_0__::func_540(9))
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_569() && !__LIB_0__::func_568())
+	if (__LIB_0__::func_767() && !__LIB_0__::func_766())
 	{
 		return 0;
 	}
-	if (!__LIB_40__::func_684())
+	if (!__LIB_38__::func_753())
 	{
 		return 0;
 	}
@@ -838,7 +838,7 @@ int func_76()//Position - 0x2B8C
 	{
 		return 0;
 	}
-	if (!__LIB_30__::func_519(0))
+	if (!__LIB_38__::func_745(0))
 	{
 		return 0;
 	}
@@ -846,7 +846,7 @@ int func_76()//Position - 0x2B8C
 	{
 		return 0;
 	}
-	if (__LIB_26__::func_421(PLAYER::PLAYER_PED_ID()))
+	if (__LIB_16__::func_370(PLAYER::PLAYER_PED_ID()))
 	{
 		return 0;
 	}
@@ -855,7 +855,7 @@ int func_76()//Position - 0x2B8C
 
 void func_102()//Position - 0x426B
 {
-	if (__LIB_0__::func_1(__LIB_30__::func_503()))
+	if (__LIB_0__::func_1(__LIB_38__::func_724()))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -865,13 +865,13 @@ void func_102()//Position - 0x426B
 	{
 		AUDIO::STOP_AUDIO_SCENE("TREVOR_SAFEHOUSE_ACTIVITIES_SCENE");
 	}
-	STREAMING::REMOVE_ANIM_DICT(__LIB_30__::func_506());
+	STREAMING::REMOVE_ANIM_DICT(__LIB_38__::func_727());
 	if (CAM::DOES_CAM_EXIST(iLocal_280))
 	{
 		CAM::SET_CAM_MOTION_BLUR_STRENGTH(iLocal_280, 0f);
 		CAM::DESTROY_CAM(iLocal_280, false);
 	}
-	__LIB_39__::func_496();
+	__LIB_38__::func_737();
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

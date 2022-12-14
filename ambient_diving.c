@@ -103,11 +103,11 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	__LIB_0__::func_513(27);
+	__LIB_0__::func_694(27);
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (__LIB_6__::func_854(0))
+		if (__LIB_0__::func_540(0))
 		{
 			if (!iLocal_67)
 			{
@@ -118,7 +118,7 @@ void __EntryFunction__()//Position - 0x0
 		else
 		{
 			iLocal_67 = 0;
-			__LIB_0__::func_524(PLAYER::PLAYER_PED_ID());
+			__LIB_0__::func_715(PLAYER::PLAYER_PED_ID());
 			switch (iLocal_49)
 			{
 				case 0:
@@ -142,21 +142,21 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0x116
 {
-	if (func_18(&Local_42, &Local_48) || __LIB_0__::func_368(110) == 1)
+	if (func_18(&Local_42, &Local_48) || __LIB_0__::func_425(110) == 1)
 	{
-		if (__LIB_0__::func_545())
+		if (__LIB_0__::func_739())
 		{
-			__LIB_0__::func_547(0);
+			__LIB_0__::func_741(0);
 		}
-		__LIB_24__::func_943(298, 0, 0);
-		if (!__LIB_0__::func_368(110))
+		__LIB_0__::func_716(298, 0, 0);
+		if (!__LIB_0__::func_425(110))
 		{
 			if (!bLocal_62)
 			{
-				bLocal_62 = __LIB_20__::func_646(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
+				bLocal_62 = __LIB_17__::func_18(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
 			}
 		}
-		__LIB_30__::func_536(2);
+		__LIB_38__::func_782(2);
 	}
 }
 
@@ -172,24 +172,24 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 	iVar0 = 0;
 	while (iVar0 < 1)
 	{
-		bVar1 = __LIB_0__::func_531(&(uParam0->f_1), uParam0->f_10);
+		bVar1 = __LIB_0__::func_727(&(uParam0->f_1), uParam0->f_10);
 		if (!(iParam1[uParam0->f_10 /*11*/])->f_10)
 		{
 			if (!bVar1)
 			{
 				if (!__LIB_0__::func_78((iParam1[uParam0->f_10 /*11*/])->f_6, 0f, 0f, 0f, 0))
 				{
-					__LIB_0__::func_533(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 0);
+					__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 0);
 				}
 				else
 				{
-					__LIB_0__::func_533(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
+					__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
 				}
 			}
 		}
 		else if (!bVar1)
 		{
-			__LIB_37__::func_800(uParam0, iParam1, Var2);
+			__LIB_39__::func_728(uParam0, iParam1, Var2);
 		}
 		uParam0->f_10++;
 		if (uParam0->f_10 >= *iParam1)
@@ -202,17 +202,17 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 	{
 		if (!Global_78579)
 		{
-			__LIB_31__::func_876(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 5, &iLocal_52, &iLocal_50, "DIVING_TITLE" /* GXT: Piece Collected~s~ */, "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
+			__LIB_32__::func_439(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 5, &iLocal_52, &iLocal_50, "DIVING_TITLE" /* GXT: Piece Collected~s~ */, "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
 		}
 		if (!__LIB_0__::func_67(44))
 		{
 			Var3 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-			if (__LIB_18__::func_206(&Local_42, &Local_48, Var3, &iVar4))
+			if (__LIB_32__::func_434(&Local_42, &Local_48, Var3, &iVar4))
 			{
 				if (MISC::GET_DISTANCE_BETWEEN_COORDS(func_23(iVar4), Var3, false) > 200f)
 				{
-					__LIB_18__::func_203("DIVING_HELP4" /* GXT: Return to a Dinghy to continue hunting for the submarine pieces. */, 1, 7500, -1, 10000, 7, 0, 0, 0);
-					__LIB_0__::func_460(44);
+					__LIB_0__::func_697("DIVING_HELP4" /* GXT: Return to a Dinghy to continue hunting for the submarine pieces. */, 1, 7500, -1, 10000, 7, 0, 0, 0);
+					__LIB_0__::func_592(44);
 				}
 			}
 		}
@@ -221,7 +221,7 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 	{
 		if (uParam0->f_1.f_4 >= uParam0->f_1.f_3)
 		{
-			bLocal_62 = __LIB_20__::func_646(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
+			bLocal_62 = __LIB_17__::func_18(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
 		}
 	}
 	if (!uParam0->f_12 && !uParam0->f_11)
@@ -339,12 +339,12 @@ void func_53()//Position - 0x1F3B
 			{
 				if (__LIB_0__::func_121(iLocal_64))
 				{
-					__LIB_1__::func_94();
+					__LIB_1__::func_443();
 					VEHICLE::SET_BOAT_ANCHOR(iLocal_64, false);
 					iLocal_66 = 1;
 					if (iLocal_49 == 2)
 					{
-						__LIB_30__::func_536(3);
+						__LIB_38__::func_782(3);
 					}
 				}
 			}
@@ -363,23 +363,23 @@ void func_53()//Position - 0x1F3B
 					func_57();
 					if (iLocal_49 == 2)
 					{
-						__LIB_30__::func_536(3);
+						__LIB_38__::func_782(3);
 					}
 				}
 			}
 			else
 			{
-				__LIB_1__::func_94();
+				__LIB_1__::func_443();
 				if (iLocal_49 == 2)
 				{
-					__LIB_30__::func_536(3);
+					__LIB_38__::func_782(3);
 				}
 			}
 			break;
 		case 1:
 			if (iLocal_49 == 2)
 			{
-				__LIB_30__::func_536(3);
+				__LIB_38__::func_782(3);
 			}
 			if (!func_60())
 			{
@@ -387,7 +387,7 @@ void func_53()//Position - 0x1F3B
 				{
 					if (!HUD::DOES_BLIP_EXIST(iLocal_65))
 					{
-						iLocal_65 = __LIB_6__::func_825(iLocal_64, 0, 0);
+						iLocal_65 = __LIB_0__::func_639(iLocal_64, 0, 0);
 					}
 					VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_64, false, true, false);
 					if (VEHICLE::IS_THIS_MODEL_A_BOAT(ENTITY::GET_ENTITY_MODEL(iLocal_64)))
@@ -406,7 +406,7 @@ void func_53()//Position - 0x1F3B
 
 void func_57()//Position - 0x212A
 {
-	__LIB_1__::func_94();
+	__LIB_1__::func_443();
 	if (__LIB_0__::func_121(iLocal_64))
 	{
 		if (VEHICLE::IS_THIS_MODEL_A_BOAT(ENTITY::GET_ENTITY_MODEL(iLocal_64)))
@@ -474,7 +474,7 @@ void func_62()//Position - 0x22A1
 	float fVar2;
 	int iVar3;
 	Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-	if (__LIB_18__::func_206(&Local_42, &Local_48, Var0, &iLocal_51))
+	if (__LIB_32__::func_434(&Local_42, &Local_48, Var0, &iLocal_51))
 	{
 		Var1 = { func_23(iLocal_51) };
 		fVar2 = MISC::GET_DISTANCE_BETWEEN_COORDS(Var1, Var0, false);
@@ -489,8 +489,8 @@ void func_62()//Position - 0x22A1
 			{
 				if (!__LIB_0__::func_67(41))
 				{
-					__LIB_18__::func_203("DIVING_HELP1" /* GXT: The nearest area where submarine pieces can be found is marked on the map when driving the Dinghy. */, 1, 0, -1, 10000, 7, 0, 0, 0);
-					__LIB_0__::func_460(41);
+					__LIB_0__::func_697("DIVING_HELP1" /* GXT: The nearest area where submarine pieces can be found is marked on the map when driving the Dinghy. */, 1, 0, -1, 10000, 7, 0, 0, 0);
+					__LIB_0__::func_592(41);
 				}
 				if (iLocal_51 != iLocal_54)
 				{
@@ -521,8 +521,8 @@ void func_62()//Position - 0x22A1
 			{
 				if (!__LIB_0__::func_67(42))
 				{
-					__LIB_18__::func_203("DIVING_HELP2" /* GXT: When inside the green marker areas, your sonar will be in range and you can use it to to help locate the missing submarine pieces. */, 1, 0, -1, 10000, 7, 0, 0, 0);
-					__LIB_0__::func_460(42);
+					__LIB_0__::func_697("DIVING_HELP2" /* GXT: When inside the green marker areas, your sonar will be in range and you can use it to to help locate the missing submarine pieces. */, 1, 0, -1, 10000, 7, 0, 0, 0);
+					__LIB_0__::func_592(42);
 				}
 			}
 			if (__LIB_0__::func_67(42))
@@ -531,8 +531,8 @@ void func_62()//Position - 0x22A1
 				{
 					if (ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_SWIMMING_UNDER_WATER(PLAYER::PLAYER_PED_ID()))
 					{
-						__LIB_18__::func_203("DIVING_HELP3" /* GXT: Dive underwater to search for the submarine pieces. */, 1, 2000, -1, 10000, 7, 0, 0, 0);
-						__LIB_0__::func_460(43);
+						__LIB_0__::func_697("DIVING_HELP3" /* GXT: Dive underwater to search for the submarine pieces. */, 1, 2000, -1, 10000, 7, 0, 0, 0);
+						__LIB_0__::func_592(43);
 					}
 				}
 			}
@@ -554,11 +554,11 @@ void func_62()//Position - 0x22A1
 					fLocal_59 = fVar2;
 					if (func_61())
 					{
-						fLocal_59 = __LIB_0__::func_301(fLocal_59, 20f, 200f);
+						fLocal_59 = __LIB_0__::func_331(fLocal_59, 20f, 200f);
 					}
 					else
 					{
-						fLocal_59 = __LIB_0__::func_301(fLocal_59, 10f, 200f);
+						fLocal_59 = __LIB_0__::func_331(fLocal_59, 10f, 200f);
 					}
 					fLocal_60 = (fLocal_59 * 0.025f);
 					iLocal_61 = 0;
@@ -574,7 +574,7 @@ void func_62()//Position - 0x22A1
 				else
 				{
 					fLocal_58 = (fLocal_58 + fLocal_60);
-					fLocal_58 = __LIB_0__::func_301(fLocal_58, 0f, fLocal_59);
+					fLocal_58 = __LIB_0__::func_331(fLocal_58, 0f, fLocal_59);
 					if (!HUD::DOES_BLIP_EXIST(iLocal_55))
 					{
 						iLocal_55 = HUD::ADD_BLIP_FOR_RADIUS(Var1, fLocal_58);
@@ -666,9 +666,9 @@ void func_65()//Position - 0x267E
 		iLocal_66 = 0;
 	}
 	func_69();
-	__LIB_0__::func_546(&Local_42, 5, joaat("prop_sub_chunk_01"), "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
-	__LIB_24__::func_944(&Local_42, joaat("NUM_HIDDEN_PACKAGES_4"), 845, 30);
-	__LIB_30__::func_536(1);
+	__LIB_0__::func_740(&Local_42, 5, joaat("prop_sub_chunk_01"), "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
+	__LIB_37__::func_693(&Local_42, joaat("NUM_HIDDEN_PACKAGES_4"), 845, 30);
+	__LIB_38__::func_782(1);
 	fLocal_57[0] = 0.25f;
 	fLocal_57[1] = 0.5f;
 	fLocal_57[2] = 0.75f;
@@ -733,16 +733,16 @@ void func_75(bool bParam0)//Position - 0x2D13
 	iVar0 = 0;
 	while (iVar0 < Local_48.f_0)
 	{
-		__LIB_0__::func_523(&(Local_48[iVar0 /*11*/].f_2));
-		__LIB_0__::func_539(&(Local_48[iVar0 /*11*/].f_1));
+		__LIB_0__::func_714(&(Local_48[iVar0 /*11*/].f_2));
+		__LIB_0__::func_733(&(Local_48[iVar0 /*11*/].f_1));
 		Local_48[iVar0 /*11*/].f_1 = 0;
 		iVar0++;
 	}
 	if (bParam0)
 	{
-		if (__LIB_0__::func_548(&(Local_42.f_1)) || __LIB_0__::func_368(110) == 1)
+		if (__LIB_0__::func_742(&(Local_42.f_1)) || __LIB_0__::func_425(110) == 1)
 		{
-			__LIB_0__::func_512(27);
+			__LIB_0__::func_693(27);
 		}
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_42.f_7);
 		SCRIPT::TERMINATE_THIS_THREAD();

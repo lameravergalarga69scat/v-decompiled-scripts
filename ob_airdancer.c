@@ -54,7 +54,7 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0x9F
 {
-	__LIB_30__::func_882("ob_airdancer Terminated >>>>>>>>>>>>>>>>>\n");
+	__LIB_38__::func_718("ob_airdancer Terminated >>>>>>>>>>>>>>>>>\n");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

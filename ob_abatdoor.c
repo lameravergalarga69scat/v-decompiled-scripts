@@ -82,7 +82,7 @@ void __EntryFunction__()//Position - 0x0
 						if (ENTITY::DOES_ENTITY_EXIST(iLocal_3))
 						{
 							Var1 = { ENTITY::GET_ENTITY_COORDS(iLocal_3, true) };
-							if (!__LIB_0__::func_394(Var1, Var0, 0.1f, 0))
+							if (!__LIB_0__::func_490(Var1, Var0, 0.1f, 0))
 							{
 								Var2 = { Var0 - Var1 };
 								ENTITY::SET_ENTITY_COORDS(iLocal_3, Var1 + __LIB_0__::func_79(Var2) * FtoV(MISC::GET_FRAME_TIME()) * Vector(fVar3, fVar3, fVar3), true, false, false, true);
@@ -117,7 +117,7 @@ void func_4()//Position - 0x2C7
 		OBJECT::DELETE_OBJECT(&iLocal_3);
 	}
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_abat_roller_1_col"));
-	__LIB_30__::func_882("ob_abatdoor Terminated >>>>>>>>>>>>>>>>>\n");
+	__LIB_38__::func_718("ob_abatdoor Terminated >>>>>>>>>>>>>>>>>\n");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

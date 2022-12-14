@@ -232,7 +232,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (__LIB_40__::func_704(1))
+		if (__LIB_39__::func_84(1))
 		{
 			func_30();
 		}
@@ -255,7 +255,7 @@ void func_1()//Position - 0xAB
 {
 	if ((MISC::GET_GAME_TIMER() - iLocal_202) > 5000)
 	{
-		if (__LIB_37__::func_799(&uLocal_37, "BARR4AU", "BARR4_AMB", 8, 0, 0, 0))
+		if (__LIB_0__::func_787(&uLocal_37, "BARR4AU", "BARR4_AMB", 8, 0, 0, 0))
 		{
 			func_30();
 		}
@@ -265,13 +265,13 @@ void func_1()//Position - 0xAB
 void func_25()//Position - 0x9C3
 {
 	iLocal_202 = MISC::GET_GAME_TIMER();
-	__LIB_0__::func_203(&uLocal_37, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
+	__LIB_0__::func_222(&uLocal_37, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 	iLocal_36 = 1;
 }
 
 void func_30()//Position - 0xB0B
 {
-	__LIB_0__::func_202(&uLocal_37, 1);
+	__LIB_0__::func_221(&uLocal_37, 1);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

@@ -6,7 +6,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(18))
 	{
-		__LIB_0__::func_199();
+		__LIB_0__::func_202();
 	}
 	while (true)
 	{

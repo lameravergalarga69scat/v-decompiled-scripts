@@ -43,13 +43,13 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_20 = "NULL";
 	while (true)
 	{
-		if (__LIB_6__::func_949() || Global_1957703 == 1)
+		if (__LIB_0__::func_959() || Global_1957703 == 1)
 		{
-			__LIB_0__::func_199();
+			__LIB_0__::func_202();
 		}
 		if (func_1(&uLocal_21, &Global_295821))
 		{
-			__LIB_0__::func_199();
+			__LIB_0__::func_202();
 		}
 		SYSTEM::WAIT(0);
 	}
@@ -83,7 +83,7 @@ int func_1(var uParam0, var uParam1)//Position - 0x6D
 		{
 			iVar5 = 2348;
 			iVar6 = (uParam0->f_4 + iVar4);
-			iVar7 = __LIB_1__::func_614(*uParam0);
+			iVar7 = __LIB_2__::func_192(*uParam0);
 			iVar2 = uParam0->f_4;
 			while (iVar2 <= iVar6)
 			{
@@ -8765,7 +8765,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			*uParam1 = 2f;
 			uParam1->f_1 = SYSTEM::TO_FLOAT(32);
 			uParam1->f_2 = 2;
-			uParam1->f_3 = __LIB_1__::func_527();
+			uParam1->f_3 = __LIB_2__::func_10();
 			uParam1->f_5 = joaat("MAX_NG_TRANSITION_SESSION_SIZE");
 			uParam1->f_4 = 1;
 			break;

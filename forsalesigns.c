@@ -243,11 +243,11 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	__LIB_0__::func_513(11);
+	__LIB_0__::func_694(11);
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (__LIB_0__::func_368(105) == 1)
+		if (__LIB_0__::func_425(105) == 1)
 		{
 			func_57();
 		}
@@ -279,7 +279,7 @@ void func_1()//Position - 0xD6
 				{
 					if ((MISC::GET_GAME_TIMER() - iLocal_43) > 8000)
 					{
-						if (__LIB_37__::func_799(&uLocal_45, "JOSH1AU", "JOSH1_AMB2", 7, 0, 0, 0))
+						if (__LIB_0__::func_787(&uLocal_45, "JOSH1AU", "JOSH1_AMB2", 7, 0, 0, 0))
 						{
 							iLocal_43 = MISC::GET_GAME_TIMER();
 						}
@@ -309,8 +309,8 @@ void func_1()//Position - 0xD6
 				func_19(bVar0);
 				ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&(Local_210[bVar0 /*11*/]));
 				bLocal_39 = true;
-				__LIB_0__::func_540(1, 0);
-				__LIB_0__::func_533();
+				__LIB_0__::func_734(1, 0);
+				__LIB_0__::func_210();
 			}
 			else
 			{
@@ -338,7 +338,7 @@ int func_2(int iParam0)//Position - 0x248
 	int iVar0;
 	if (!iParam0 == 2)
 	{
-		if (__LIB_18__::func_209(iParam0) < __LIB_0__::func_537(iParam0))
+		if (__LIB_12__::func_895(iParam0) < __LIB_0__::func_731(iParam0))
 		{
 			return 0;
 		}
@@ -346,9 +346,9 @@ int func_2(int iParam0)//Position - 0x248
 	else
 	{
 		iVar0 = 0;
-		while (iVar0 < __LIB_0__::func_537(iParam0))
+		while (iVar0 < __LIB_0__::func_731(iParam0))
 		{
-			if (!BitTest(Global_113386.f_10049.f_108, __LIB_0__::func_536(__LIB_0__::func_537(iParam0), iVar0)))
+			if (!BitTest(Global_113386.f_10049.f_108, __LIB_0__::func_730(__LIB_0__::func_731(iParam0), iVar0)))
 			{
 				return 0;
 			}
@@ -382,7 +382,7 @@ void func_9()//Position - 0x443
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FS_TITLE" /* GXT: Sign Destroyed~s~ */);
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("FS_DESTROY" /* GXT: ~1~/15 signs destroyed. */);
-				HUD::ADD_TEXT_COMPONENT_INTEGER(__LIB_18__::func_209(2));
+				HUD::ADD_TEXT_COMPONENT_INTEGER(__LIB_12__::func_895(2));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				SYSTEM::SETTIMERB(0);
@@ -397,7 +397,7 @@ void func_9()//Position - 0x443
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					iLocal_40++;
 				}
-				else if (!__LIB_0__::func_511())
+				else if (!__LIB_0__::func_691())
 				{
 					if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_41))
 					{
@@ -410,7 +410,7 @@ void func_9()//Position - 0x443
 				{
 					iLocal_40++;
 				}
-				else if (!__LIB_0__::func_511())
+				else if (!__LIB_0__::func_691())
 				{
 					if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_41))
 					{
@@ -435,7 +435,7 @@ void func_11(var uParam0, int iParam1, bool bParam2, float fParam3)//Position - 
 {
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		if (__LIB_0__::func_530(PLAYER::PLAYER_PED_ID(), uParam0->f_3, fParam3, 1) && !ENTITY::DOES_ENTITY_EXIST(*uParam0))
+		if (__LIB_0__::func_725(PLAYER::PLAYER_PED_ID(), uParam0->f_3, fParam3, 1) && !ENTITY::DOES_ENTITY_EXIST(*uParam0))
 		{
 			STREAMING::REQUEST_MODEL(iParam1);
 			while (!STREAMING::HAS_MODEL_LOADED(iParam1))
@@ -445,7 +445,7 @@ void func_11(var uParam0, int iParam1, bool bParam2, float fParam3)//Position - 
 			}
 			if (bParam2)
 			{
-				__LIB_0__::func_544(uParam0->f_3);
+				__LIB_0__::func_738(uParam0->f_3);
 			}
 			MISC::CLEAR_AREA(uParam0->f_3, 2.5f, false, false, false, false);
 			*uParam0 = OBJECT::CREATE_OBJECT(iParam1, uParam0->f_3, true, true, false);
@@ -471,9 +471,9 @@ void func_19(int iParam0)//Position - 0x79E
 {
 	if (iParam0 < 16)
 	{
-		__LIB_0__::func_521((875 + iParam0), 1, -1);
+		__LIB_0__::func_186((875 + iParam0), 1, -1);
 	}
-	__LIB_0__::func_180(joaat("NUM_DESTROYED_SIGNS_0"), 1);
+	__LIB_0__::func_182(joaat("NUM_DESTROYED_SIGNS_0"), 1);
 }
 
 int func_22(int iParam0)//Position - 0x807
@@ -544,7 +544,7 @@ int func_52()//Position - 0x14B8
 	{
 		if (__LIB_0__::func_121(uVar2[iVar1]))
 		{
-			if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == __LIB_2__::func_108(58))
+			if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == __LIB_2__::func_910(58))
 			{
 				iLocal_44 = uVar2[iVar1];
 				if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_44))
@@ -555,7 +555,7 @@ int func_52()//Position - 0x14B8
 				PED::SET_PED_CAN_BE_TARGETTED(iLocal_44, false);
 				PED::SET_PED_NAME_DEBUG(iLocal_44, "POSTJOSH");
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_44, joaat("PLAYER"));
-				__LIB_0__::func_203(&uLocal_45, 5, iLocal_44, "JOSH", 1, 1);
+				__LIB_0__::func_222(&uLocal_45, 5, iLocal_44, "JOSH", 1, 1);
 				return 1;
 			}
 		}
@@ -570,7 +570,7 @@ void func_57()//Position - 0x16A5
 	iVar0 = 0;
 	while (iVar0 < 15)
 	{
-		__LIB_0__::func_523(&(Local_210[iVar0 /*11*/].f_2));
+		__LIB_0__::func_714(&(Local_210[iVar0 /*11*/].f_2));
 		iVar0++;
 	}
 	iVar0 = 0;
@@ -580,15 +580,15 @@ void func_57()//Position - 0x16A5
 		iVar0++;
 	}
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_38);
-	if (func_2(2) || __LIB_0__::func_368(105) == 1)
+	if (func_2(2) || __LIB_0__::func_425(105) == 1)
 	{
-		__LIB_24__::func_943(88, 0, 0);
-		__LIB_0__::func_512(11);
-		__LIB_9__::func_306("JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */, 0);
-		__LIB_36__::func_409("JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */);
-		if (__LIB_0__::func_368(105) == 0)
+		__LIB_0__::func_716(88, 0, 0);
+		__LIB_0__::func_693(11);
+		__LIB_12__::func_518("JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */, 0);
+		__LIB_12__::func_565("JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */);
+		if (__LIB_0__::func_425(105) == 0)
 		{
-			__LIB_27__::func_930(joaat("TEXT_FORSALESIGNS_DONE"), 1, 4, 58, 30000, 10000, -1, 176, -1, 0, 1);
+			__LIB_28__::func_203(joaat("TEXT_FORSALESIGNS_DONE"), 1, 4, 58, 30000, 10000, -1, 176, -1, 0, 1);
 		}
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();

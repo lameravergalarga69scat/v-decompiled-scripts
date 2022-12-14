@@ -54,12 +54,12 @@ void __EntryFunction__()//Position - 0x0
 				case 7:
 					if (iLocal_21 == 1)
 					{
-						if (__LIB_9__::func_596(2, Global_20235, 0))
+						if (__LIB_13__::func_85(2, Global_20235, 0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "Lester_Laugh_Phone", "DLC_HEIST_HACKING_SNAKE_SOUNDS", true);
 							Global_20244 = 1;
 							func_10();
-							__LIB_26__::func_61();
+							__LIB_13__::func_554();
 							SYSTEM::SETTIMERA(0);
 							SYSTEM::SETTIMERB(0);
 						}
@@ -81,9 +81,9 @@ void __EntryFunction__()//Position - 0x0
 					}
 					break;
 				case 8:
-					if (__LIB_9__::func_596(2, Global_20234, 0))
+					if (__LIB_13__::func_85(2, Global_20234, 0))
 					{
-						__LIB_9__::func_601();
+						__LIB_13__::func_90();
 						Global_20244 = 1;
 						if (Global_20266.f_1 > 3)
 						{
@@ -94,7 +94,7 @@ void __EntryFunction__()//Position - 0x0
 				default:
 					break;
 			}
-			if (__LIB_9__::func_600())
+			if (__LIB_13__::func_89())
 			{
 				func_2();
 			}
@@ -104,7 +104,7 @@ void __EntryFunction__()//Position - 0x0
 			Global_20268 = 6;
 			func_2();
 		}
-		if (__LIB_9__::func_594())
+		if (__LIB_13__::func_83())
 		{
 			func_2();
 		}
@@ -121,15 +121,15 @@ void func_9()//Position - 0x38F
 {
 	if (Global_20254)
 	{
-		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
-		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213" /* GXT: NO */, 0, 0, 0, 0);
+		__LIB_2__::func_845(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
+		__LIB_2__::func_845(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213" /* GXT: NO */, 0, 0, 0, 0);
 	}
 	else
 	{
-		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, 0, 0, 0, 0, 0);
-		__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, 0, 0, 0, 0, 0);
+		__LIB_2__::func_845(Global_20247, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, 0, 0, 0, 0, 0);
+		__LIB_2__::func_845(Global_20247, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, 0, 0, 0, 0, 0);
 	}
-	__LIB_3__::func_637(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
+	__LIB_2__::func_845(Global_20247, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 	MISC::CLEAR_BIT(&Global_8136, 17);
 }
 
@@ -142,7 +142,7 @@ void func_10()//Position - 0x421
 		{
 			SYSTEM::WAIT(0);
 		}
-		__LIB_2__::func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 23f, -1082130432, -1082130432, -1082130432, -1082130432);
+		__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", 23f, -1082130432, -1082130432, -1082130432, -1082130432);
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(23);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -156,12 +156,12 @@ void func_10()//Position - 0x421
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(0f);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-		__LIB_2__::func_41(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+		__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 		iLocal_21 = 1;
 	}
 	else if (iLocal_21 == 1)
 	{
-		__LIB_2__::func_41(Global_20247, "SET_DATA_SLOT_EMPTY", 23f, -1082130432, -1082130432, -1082130432, -1082130432);
+		__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", 23f, -1082130432, -1082130432, -1082130432, -1082130432);
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(23);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -175,7 +175,7 @@ void func_10()//Position - 0x421
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(0f);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-		__LIB_2__::func_41(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+		__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 		iLocal_21 = 2;
 	}
 }

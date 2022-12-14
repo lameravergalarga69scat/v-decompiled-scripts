@@ -40,28 +40,28 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (BitTest(Global_1661006, 1))
 		{
-			__LIB_0__::func_199();
+			__LIB_0__::func_202();
 		}
 		else
 		{
 			NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
-			__LIB_1__::func_569(0, -1, 0);
+			__LIB_0__::func_895(0, -1, 0);
 			MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 			iLocal_20 = 1;
 		}
 	}
 	else if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
 	{
-		__LIB_0__::func_199();
+		__LIB_0__::func_202();
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
 		if (iLocal_20 == 1)
 		{
-			if (__LIB_6__::func_949())
+			if (__LIB_0__::func_959())
 			{
-				__LIB_0__::func_199();
+				__LIB_0__::func_202();
 			}
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_21))
@@ -90,12 +90,12 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else
 			{
-				__LIB_0__::func_199();
+				__LIB_0__::func_202();
 			}
 		}
 		else
 		{
-			__LIB_0__::func_199();
+			__LIB_0__::func_202();
 		}
 	}
 }
@@ -113,7 +113,7 @@ void func_1()//Position - 0x111
 	{
 		iVar0 = joaat("prop_cash_pile_01");
 		iVar3 = MISC::GET_RANDOM_INT_IN_RANGE(50, 101);
-		iVar3 = __LIB_2__::func_177(iVar3, 1);
+		iVar3 = __LIB_3__::func_103(iVar3, 1);
 	}
 	MISC::SET_BIT(&iVar2, 3);
 	MISC::SET_BIT(&iVar2, 4);
@@ -124,7 +124,7 @@ void func_1()//Position - 0x111
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		__LIB_33__::func_527(iVar1, OBJECT::GET_SAFE_PICKUP_COORDS(Local_19, 1.2f, 1.5f), iVar2, iVar3, iVar0, 0, 0);
+		__LIB_26__::func_597(iVar1, OBJECT::GET_SAFE_PICKUP_COORDS(Local_19, 1.2f, 1.5f), iVar2, iVar3, iVar0, 0, 0);
 	}
 	else
 	{

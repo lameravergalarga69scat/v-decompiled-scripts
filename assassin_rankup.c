@@ -80,7 +80,7 @@ void __EntryFunction__()//Position - 0x0
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
 			Global_113386.f_19963++;
-			__LIB_26__::func_224();
+			__LIB_14__::func_560();
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
 		SYSTEM::WAIT(0);

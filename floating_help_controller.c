@@ -21,13 +21,13 @@ void func_1()//Position - 0x1C
 			iVar1 = iVar0;
 			if (MISC::GET_GAME_TIMER() > Global_112038[iVar0 /*28*/].f_21 && Global_112038[iVar0 /*28*/].f_21 != -1)
 			{
-				if (__LIB_8__::func_241(iVar0))
+				if (__LIB_7__::func_261(iVar0))
 				{
 					HUD::CLEAR_FLOATING_HELP(iVar1, false);
 				}
-				__LIB_1__::func_130(iVar0);
+				__LIB_1__::func_487(iVar0);
 			}
-			else if (__LIB_8__::func_241(iVar0))
+			else if (__LIB_7__::func_261(iVar0))
 			{
 				if (Global_112038[iVar0 /*28*/].f_21 != -1)
 				{
@@ -68,7 +68,7 @@ void func_1()//Position - 0x1C
 			}
 			else if ((MISC::GET_GAME_TIMER() - Global_112038[iVar0 /*28*/].f_22) > 1000)
 			{
-				__LIB_1__::func_130(iVar0);
+				__LIB_1__::func_487(iVar0);
 			}
 		}
 		iVar0++;

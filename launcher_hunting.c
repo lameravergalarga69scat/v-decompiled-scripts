@@ -114,7 +114,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_45 = 64;
 	iLocal_49 = HUD::GET_STANDARD_BLIP_ENUM_ID();
 	iLocal_50 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
-	uLocal_52 = __LIB_11__::func_793(54);
+	uLocal_52 = __LIB_17__::func_26(54);
 	iLocal_53 = joaat("dune");
 	iLocal_54 = WEAPON::GET_WEAPONTYPE_MODEL(joaat("WEAPON_SNIPERRIFLE"));
 	iLocal_55 = WEAPON::GET_WEAPON_COMPONENT_TYPE_MODEL(joaat("COMPONENT_AT_SCOPE_LARGE"));
@@ -122,13 +122,13 @@ void __EntryFunction__()//Position - 0x0
 	Local_57 = { -683.8261f, 5840.8096f, 16.566f };
 	iLocal_59 = -1;
 	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
-	__LIB_29__::func_778();
+	__LIB_37__::func_582();
 	Var0.f_17 = 2;
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
 	Var1 = { 0f, 0f, 0f };
-	__LIB_29__::func_777(&Var0);
+	__LIB_37__::func_581(&Var0);
 	Var1 = { ScriptParam_60.f_1[0 /*3*/] };
 	iVar2[0] = 25;
 	iVar2[1] = 26;
@@ -145,21 +145,21 @@ void __EntryFunction__()//Position - 0x0
 		}
 		func_262(&Var0, 1);
 	}
-	if (!__LIB_37__::func_336(&iVar2, &Var0, Var1, 1f))
+	if (!__LIB_37__::func_631(&iVar2, &Var0, Var1, 1f))
 	{
-		__LIB_34__::func_838();
+		__LIB_37__::func_588();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	if (!func_250(Var0.f_0))
 	{
-		__LIB_34__::func_838();
+		__LIB_37__::func_588();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_329(Var0.f_0))
+	if (__LIB_37__::func_594(Var0.f_0))
 	{
-		__LIB_34__::func_838();
+		__LIB_37__::func_588();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -176,15 +176,15 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_41__::func_981(&Var0, 1))
+		if (!__LIB_37__::func_659(&Var0, 1))
 		{
 			func_262(&Var0, 1);
 		}
-		__LIB_37__::func_326(Var0.f_0);
-		__LIB_37__::func_333(&iLocal_59, &(Var0.f_9), Var1);
+		__LIB_37__::func_592(Var0.f_0);
+		__LIB_37__::func_623(&iLocal_59, &(Var0.f_9), Var1);
 		if (Var0.f_0 == 25)
 		{
-			__LIB_34__::func_845(&Var0, Var1, "HUNT1AU", "HUNT1_AMB", 3, "CLETUS", 5000, 1101004800);
+			__LIB_37__::func_622(&Var0, Var1, "HUNT1AU", "HUNT1_AMB", 3, "CLETUS", 5000, 1101004800);
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{
@@ -201,13 +201,13 @@ void __EntryFunction__()//Position - 0x0
 				PED::SET_PED_MAX_MOVE_BLEND_RATIO(PLAYER::PLAYER_PED_ID(), 3f);
 			}
 		}
-		if (__LIB_41__::func_980(&Var0, 0) && MISC::ABSF((Var1.f_2 - Var3.f_2)) < 2.5f)
+		if (__LIB_37__::func_646(&Var0, 0) && MISC::ABSF((Var1.f_2 - Var3.f_2)) < 2.5f)
 		{
-			if (!__LIB_42__::func_853(&Var0))
+			if (!__LIB_37__::func_669(&Var0))
 			{
 				func_262(&Var0, 1);
 			}
-			if (__LIB_29__::func_757(&Var0))
+			if (__LIB_37__::func_562(&Var0))
 			{
 				func_262(&Var0, 0);
 			}
@@ -264,7 +264,7 @@ int func_238(var uParam0)//Position - 0xE87B
 			iLocal_51 = 1;
 			break;
 		case 1:
-			if (!__LIB_10__::func_716(&iVar0) || !STREAMING::HAS_ANIM_DICT_LOADED("rcmhunting2"))
+			if (!__LIB_14__::func_824(&iVar0) || !STREAMING::HAS_ANIM_DICT_LOADED("rcmhunting2"))
 			{
 				return 0;
 			}
@@ -274,7 +274,7 @@ int func_238(var uParam0)//Position - 0xE87B
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (__LIB_37__::func_328(&(uParam0->f_28[0]), 54, -683.3276f, 5841.042f, 17.217f, 8.33f, "RC HUNTER 2", 1))
+				if (__LIB_37__::func_593(&(uParam0->f_28[0]), 54, -683.3276f, 5841.042f, 17.217f, 8.33f, "RC HUNTER 2", 1))
 				{
 					WEAPON::GIVE_WEAPON_TO_PED(uParam0->f_28[0], joaat("WEAPON_PUMPSHOTGUN"), 0, true, true);
 				}
@@ -325,7 +325,7 @@ int func_238(var uParam0)//Position - 0xE87B
 
 void func_239(int* iParam0, struct<3> Param1, float fParam2, int iParam3)//Position - 0xEAB0
 {
-	__LIB_20__::func_649(iParam0, iLocal_53, Param1, fParam2);
+	__LIB_17__::func_22(iParam0, iLocal_53, Param1, fParam2);
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
 		VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(*iParam0, 5f);
@@ -362,12 +362,12 @@ int func_246(var uParam0)//Position - 0xED55
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_11__::func_794(&(uParam0->f_48), "special_ped@cletus@base", "cletus_base", 0);
+			__LIB_17__::func_28(&(uParam0->f_48), "special_ped@cletus@base", "cletus_base", 0);
 			STREAMING::REQUEST_ANIM_DICT("special_ped@cletus@base");
 			iLocal_51 = 1;
 			break;
 		case 1:
-			if ((!__LIB_10__::func_716(&iVar0) || !__LIB_20__::func_273(&(uParam0->f_48))) || !STREAMING::HAS_ANIM_DICT_LOADED("special_ped@cletus@base"))
+			if ((!__LIB_14__::func_824(&iVar0) || !__LIB_14__::func_856(&(uParam0->f_48))) || !STREAMING::HAS_ANIM_DICT_LOADED("special_ped@cletus@base"))
 			{
 				return 0;
 			}
@@ -377,7 +377,7 @@ int func_246(var uParam0)//Position - 0xED55
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (__LIB_37__::func_328(&(uParam0->f_28[0]), 54, 1804.33f, 3931.33f, 33.83f, 91.63f, "RC HUNTER 1", 1))
+				if (__LIB_37__::func_593(&(uParam0->f_28[0]), 54, 1804.33f, 3931.33f, 33.83f, 91.63f, "RC HUNTER 1", 1))
 				{
 					WEAPON::GIVE_WEAPON_TO_PED(uParam0->f_28[0], joaat("WEAPON_SNIPERRIFLE"), 0, true, true);
 				}
@@ -458,7 +458,7 @@ int func_250(int iParam0)//Position - 0xF0C2
 	{
 		if (Global_100441 < 9)
 		{
-			__LIB_6__::func_773(iParam0, &sVar0);
+			__LIB_0__::func_432(iParam0, &sVar0);
 			if (MISC::ARE_STRINGS_EQUAL(&(Global_100441.f_3), sVar0))
 			{
 				__LIB_0__::func_135("STEP_3_COMMON_CanRCLaunch - Script denied as a replay for this RC is being configured. [TERMINATING]");
@@ -478,10 +478,10 @@ int func_250(int iParam0)//Position - 0xF0C2
 int func_251(int iParam0)//Position - 0xF17B
 {
 	var uVar0;
-	__LIB_6__::func_773(iParam0, &uVar0);
-	if (!__LIB_6__::func_763(4))
+	__LIB_0__::func_432(iParam0, &uVar0);
+	if (!__LIB_0__::func_215(4))
 	{
-		if (__LIB_34__::func_833(iParam0))
+		if (__LIB_0__::func_781(iParam0))
 		{
 		}
 		else
@@ -489,33 +489,33 @@ int func_251(int iParam0)//Position - 0xF17B
 			return 0;
 		}
 	}
-	if (__LIB_0__::func_569() && !__LIB_0__::func_568())
+	if (__LIB_0__::func_767() && !__LIB_0__::func_766())
 	{
 		return 0;
 	}
-	if (__LIB_29__::func_776(iParam0))
+	if (__LIB_37__::func_580(iParam0))
 	{
 		return 0;
 	}
 	if (iParam0 == -1)
 	{
-		iParam0 = __LIB_18__::func_205();
+		iParam0 = __LIB_0__::func_775();
 	}
 	if (iParam0 == -1)
 	{
 		return 0;
 	}
-	if (!__LIB_6__::func_865(iParam0))
+	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_29__::func_775(iParam0))
+		if (!__LIB_37__::func_579(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_29__::func_774(iParam0))
+		if (!__LIB_37__::func_578(iParam0))
 		{
 			return 0;
 		}
-		if (__LIB_0__::func_528(iParam0))
+		if (__LIB_0__::func_720(iParam0))
 		{
 			return 0;
 		}
@@ -557,7 +557,7 @@ int func_252(int iParam0)//Position - 0xF23C
 	}
 	else if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		__LIB_10__::func_605(iParam0, &sVar1);
+		__LIB_14__::func_623(iParam0, &sVar1);
 		iVar2 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(Global_95479[iParam0 /*10*/].f_3, &sVar1);
 		if (iVar2 != 0 && Global_100493.f_373 == iVar2)
 		{
@@ -572,18 +572,18 @@ void func_262(int iParam0, bool bParam1)//Position - 0xF5CB
 	if (bParam1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Cleaning up entities in Launcher");
-		__LIB_32__::func_757(iParam0, 0, 0, 0);
+		__LIB_14__::func_871(iParam0, 0, 0, 0);
 	}
 	if (iLocal_59 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_29__::func_764(&iLocal_59);
+		__LIB_37__::func_331(&iLocal_59);
 	}
 	if (bParam1)
 	{
-		__LIB_37__::func_326(*iParam0);
+		__LIB_37__::func_592(*iParam0);
 	}
-	__LIB_34__::func_838();
+	__LIB_37__::func_588();
 	__LIB_0__::func_135("SCRIPT TERMINATED");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

@@ -50,22 +50,22 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (PLAYER::GET_CAUSE_OF_MOST_RECENT_FORCE_CLEANUP() != 2)
 		{
-			__LIB_0__::func_512(19);
+			__LIB_0__::func_693(19);
 		}
 		func_3();
 	}
-	__LIB_0__::func_513(19);
+	__LIB_0__::func_694(19);
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
 	while (!AUDIO::LOAD_STREAM("CONSTRUCTION_SITE_STREAM", "FBI_HEIST_SOUNDSET"))
 	{
 		SYSTEM::WAIT(0);
 	}
 	AUDIO::PLAY_STREAM_FROM_POSITION(-147f, -1005f, 28f);
-	while (__LIB_0__::func_368(70))
+	while (__LIB_0__::func_425(70))
 	{
 		SYSTEM::WAIT(0);
 	}
-	__LIB_0__::func_512(19);
+	__LIB_0__::func_693(19);
 	func_3();
 }
 

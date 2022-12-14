@@ -819,14 +819,14 @@ int func_4()//Position - 0x17D8
 {
 	if (Global_2726960 == -15)
 	{
-		Global_2726960 = __LIB_13__::func_95();
-		__LIB_27__::func_73(&Global_2726960, 0, 0, 0, 1, 0, 0);
+		Global_2726960 = __LIB_11__::func_762();
+		__LIB_13__::func_726(&Global_2726960, 0, 0, 0, 1, 0, 0);
 		return 1;
 	}
-	if (__LIB_20__::func_682(__LIB_13__::func_95(), Global_2726960))
+	if (__LIB_11__::func_761(__LIB_11__::func_762(), Global_2726960))
 	{
-		Global_2726960 = __LIB_13__::func_95();
-		__LIB_27__::func_73(&Global_2726960, 0, 0, 0, 1, 0, 0);
+		Global_2726960 = __LIB_11__::func_762();
+		__LIB_13__::func_726(&Global_2726960, 0, 0, 0, 1, 0, 0);
 		return 1;
 	}
 	return 0;
@@ -851,7 +851,7 @@ void func_24(struct<3> Param0)//Position - 0x1F04
 	iVar1 = 0;
 	while (iVar1 <= (12 - 1))
 	{
-		if (__LIB_0__::func_394(Param0, Var0[iVar1 /*3*/], 1056964608, 0))
+		if (__LIB_0__::func_490(Param0, Var0[iVar1 /*3*/], 1056964608, 0))
 		{
 			iLocal_2 = iVar1;
 			return;

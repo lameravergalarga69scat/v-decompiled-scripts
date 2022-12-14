@@ -50,7 +50,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_28 = 0f;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	func_10();
-	__LIB_26__::func_61();
+	__LIB_13__::func_554();
 	SYSTEM::SETTIMERA(0);
 	SYSTEM::SETTIMERB(0);
 	while (true)
@@ -82,12 +82,12 @@ void __EntryFunction__()//Position - 0x0
 					}
 					break;
 				case 8:
-					if (__LIB_9__::func_596(2, Global_20234, 0))
+					if (__LIB_13__::func_85(2, Global_20234, 0))
 					{
-						__LIB_9__::func_601();
+						__LIB_13__::func_90();
 						Global_20244 = 1;
 						func_10();
-						__LIB_26__::func_61();
+						__LIB_13__::func_554();
 						if (Global_20266.f_1 > 3)
 						{
 							Global_20266.f_1 = 7;
@@ -97,7 +97,7 @@ void __EntryFunction__()//Position - 0x0
 				default:
 					break;
 			}
-			if (__LIB_9__::func_600())
+			if (__LIB_13__::func_89())
 			{
 				func_2();
 			}
@@ -107,7 +107,7 @@ void __EntryFunction__()//Position - 0x0
 			Global_20268 = 6;
 			func_2();
 		}
-		if (__LIB_9__::func_594())
+		if (__LIB_13__::func_83())
 		{
 			func_2();
 		}
@@ -116,11 +116,11 @@ void __EntryFunction__()//Position - 0x0
 
 void func_2()//Position - 0x187
 {
-	__LIB_17__::func_662(0, 0);
-	__LIB_17__::func_662(1, 0);
-	__LIB_17__::func_662(2, 0);
-	__LIB_17__::func_662(3, 0);
-	__LIB_17__::func_662(4, 0);
+	__LIB_25__::func_945(0, 0);
+	__LIB_25__::func_945(1, 0);
+	__LIB_25__::func_945(2, 0);
+	__LIB_25__::func_945(3, 0);
+	__LIB_25__::func_945(4, 0);
 	MISC::CLEAR_BIT(&Global_8137, 22);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
@@ -185,7 +185,7 @@ void func_10()//Position - 0x3DF
 			if (fLocal_21 == fLocal_21)
 			{
 			}
-			__LIB_2__::func_41(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+			__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 		}
 	}
 	else if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
@@ -274,7 +274,7 @@ void func_10()//Position - 0x3DF
 			if (fLocal_21 == fLocal_21)
 			{
 			}
-			__LIB_2__::func_41(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+			__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 23f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 			iVar0++;
 		}
 	}

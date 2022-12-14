@@ -51,14 +51,14 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_21 = 0f;
 	fLocal_25 = -0.0375f;
 	fLocal_26 = 0.17f;
-	__LIB_0__::func_513(21);
+	__LIB_0__::func_694(21);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(18))
 	{
 		if (PLAYER::GET_CAUSE_OF_MOST_RECENT_FORCE_CLEANUP() == 16)
 		{
-			__LIB_0__::func_512(21);
+			__LIB_0__::func_693(21);
 		}
-		__LIB_0__::func_199();
+		__LIB_0__::func_202();
 	}
 	while (true)
 	{
@@ -93,7 +93,7 @@ void __EntryFunction__()//Position - 0x0
 								}
 								if (ENTITY::DOES_ENTITY_EXIST(iLocal_29))
 								{
-									if (__LIB_17__::func_372(&iLocal_30, 1000))
+									if (__LIB_25__::func_513(&iLocal_30, 1000))
 									{
 										if (VEHICLE::IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER(iLocal_28, iLocal_29))
 										{

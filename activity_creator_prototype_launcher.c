@@ -139,11 +139,11 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_41 = 49;
 	iLocal_42 = 64;
 	fLocal_65 = ((0.05f + 0.275f) - 0.01f);
-	__LIB_25__::func_799();
+	__LIB_33__::func_26();
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		__LIB_0__::func_371();
+		__LIB_0__::func_467();
 	}
 }
 

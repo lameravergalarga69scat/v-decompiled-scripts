@@ -593,16 +593,16 @@ void __EntryFunction__()//Position - 0x0
 	}
 	else
 	{
-		__LIB_39__::func_889();
+		__LIB_33__::func_371();
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
 		if (func_66())
 		{
-			__LIB_39__::func_889();
+			__LIB_33__::func_371();
 		}
-		__LIB_38__::func_101(&uLocal_109);
+		__LIB_16__::func_254(&uLocal_109);
 	}
 }
 
@@ -612,23 +612,23 @@ int func_66()//Position - 0x1EE6
 	{
 		return 1;
 	}
-	if (!__LIB_2__::func_83(PLAYER::PLAYER_ID()))
+	if (!__LIB_2__::func_885(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
-	if (__LIB_7__::func_62(PLAYER::PLAYER_ID()) && CAM::IS_SCREEN_FADED_OUT())
+	if (__LIB_1__::func_548(PLAYER::PLAYER_ID()) && CAM::IS_SCREEN_FADED_OUT())
 	{
 		return 1;
 	}
-	if (__LIB_6__::func_25() != 0)
+	if (__LIB_0__::func_509() != 0)
 	{
 		return 1;
 	}
-	if (__LIB_6__::func_949())
+	if (__LIB_0__::func_959())
 	{
 		return 1;
 	}
-	if (!__LIB_4__::func_715())
+	if (!__LIB_0__::func_893())
 	{
 		return 1;
 	}
@@ -637,16 +637,16 @@ int func_66()//Position - 0x1EE6
 
 void func_100()//Position - 0x2E14
 {
-	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, __LIB_4__::func_673());
-	__LIB_1__::func_569(0, -1, 0);
-	__LIB_0__::func_371();
+	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, __LIB_7__::func_254());
+	__LIB_0__::func_895(0, -1, 0);
+	__LIB_0__::func_467();
 	func_101();
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 	}
 	else
 	{
-		__LIB_39__::func_889();
+		__LIB_33__::func_371();
 	}
 }
 
@@ -682,14 +682,14 @@ void func_102(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 	uParam1->f_16[iParam2 /*14*/].f_13 = iParam3;
 	uParam1->f_16[iParam2 /*14*/] = { Var0 };
 	uParam1->f_16[iParam2 /*14*/].f_3 = { 0f, 0f, fVar1 };
-	uParam1->f_16[iParam2 /*14*/].f_6.f_1 = { __LIB_0__::func_298(__LIB_9__::func_978(), __LIB_10__::func_615(iParam3, fVar1)) + Var0 };
-	uParam1->f_16[iParam2 /*14*/].f_6.f_4 = { __LIB_0__::func_298(__LIB_9__::func_977(), __LIB_10__::func_615(iParam3, fVar1)) + Var0 };
+	uParam1->f_16[iParam2 /*14*/].f_6.f_1 = { __LIB_0__::func_327(__LIB_13__::func_739(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
+	uParam1->f_16[iParam2 /*14*/].f_6.f_4 = { __LIB_0__::func_327(__LIB_13__::func_738(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
 	uParam1->f_16[iParam2 /*14*/].f_6 = 1.25f;
 }
 
 void func_107(int iParam0, var uParam1, var uParam2)//Position - 0x304D
 {
-	if (__LIB_6__::func_925())
+	if (__LIB_1__::func_394())
 	{
 		switch (iParam0)
 		{

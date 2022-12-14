@@ -299,9 +299,9 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_142();
 	}
-	if (__LIB_42__::func_567(Local_46, -1, 0, 0, 0))
+	if (__LIB_39__::func_371(Local_46, -1, 0, 0, 0))
 	{
-		__LIB_35__::func_176(-1);
+		__LIB_39__::func_334(-1);
 	}
 	else
 	{
@@ -310,11 +310,11 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if ((BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE() || iLocal_60) || (__LIB_35__::func_175() && ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_46, 500f, 500f, 500f, false, true, 0)))
+		if ((BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE() || iLocal_60) || (__LIB_39__::func_333() && ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_46, 500f, 500f, 500f, false, true, 0)))
 		{
-			if (!__LIB_35__::func_175())
+			if (!__LIB_39__::func_333())
 			{
-				if (__LIB_40__::func_735())
+				if (__LIB_39__::func_340())
 				{
 					func_142();
 				}
@@ -323,7 +323,7 @@ void __EntryFunction__()//Position - 0x0
 			switch (iLocal_44)
 			{
 				case 0:
-					if (__LIB_41__::func_467())
+					if (__LIB_39__::func_370())
 					{
 						func_142();
 					}
@@ -371,11 +371,11 @@ void func_1()//Position - 0x18C
 		MISC::ENABLE_DISPATCH_SERVICE(3, true);
 		if (bLocal_55)
 		{
-			__LIB_39__::func_549(18, 7, 0);
+			__LIB_39__::func_339(18, 7, 0);
 		}
 		else
 		{
-			__LIB_39__::func_549(18, 1, 0);
+			__LIB_39__::func_339(18, 1, 0);
 		}
 		iLocal_53 = 1;
 	}
@@ -410,9 +410,9 @@ void func_24()//Position - 0x863
 							iLocal_76 = MISC::GET_GAME_TIMER();
 							bLocal_61 = true;
 						}
-						if (!__LIB_35__::func_175())
+						if (!__LIB_39__::func_333())
 						{
-							__LIB_40__::func_733(1);
+							__LIB_39__::func_336(1);
 						}
 					}
 				}
@@ -468,8 +468,8 @@ void func_25()//Position - 0x9A9
 		SYSTEM::WAIT(0);
 	}
 	bLocal_55 = true;
-	__LIB_40__::func_739(-1, 0);
-	__LIB_20__::func_174();
+	__LIB_39__::func_369(-1, 0);
+	__LIB_14__::func_557();
 	iLocal_44 = 2;
 }
 
@@ -482,7 +482,7 @@ void func_67()//Position - 0x22F0
 		{
 			if (!HUD::DOES_BLIP_EXIST(iLocal_67))
 			{
-				iLocal_67 = __LIB_11__::func_324(iLocal_65);
+				iLocal_67 = __LIB_16__::func_321(iLocal_65);
 			}
 		}
 	}
@@ -522,12 +522,12 @@ void func_71()//Position - 0x239F
 		{
 			if ((func_95() && iLocal_73 != 2) || (iLocal_73 == 1 && PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID())))
 			{
-				__LIB_6__::func_771();
+				__LIB_0__::func_429();
 				SYSTEM::WAIT(0);
 				if (func_92())
 				{
-					__LIB_0__::func_203(&uLocal_77, 4, iLocal_63[iLocal_71], "DRUGFARMGOON", 0, 1);
-					__LIB_37__::func_799(&uLocal_77, "RECSHAU", "RECSH_BACK", 4, 0, 0, 0);
+					__LIB_0__::func_222(&uLocal_77, 4, iLocal_63[iLocal_71], "DRUGFARMGOON", 0, 1);
+					__LIB_0__::func_787(&uLocal_77, "RECSHAU", "RECSH_BACK", 4, 0, 0, 0);
 				}
 				iLocal_73 = 2;
 			}
@@ -542,8 +542,8 @@ void func_71()//Position - 0x239F
 							{
 								if (!__LIB_0__::func_75())
 								{
-									__LIB_0__::func_203(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
-									__LIB_37__::func_799(&uLocal_77, "RECSHAU", "RECSH_GOAW", 4, 0, 0, 0);
+									__LIB_0__::func_222(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
+									__LIB_0__::func_787(&uLocal_77, "RECSHAU", "RECSH_GOAW", 4, 0, 0, 0);
 								}
 								iVar0 = 0;
 								while (iVar0 < iLocal_63)
@@ -615,8 +615,8 @@ void func_71()//Position - 0x239F
 						{
 							if (!__LIB_0__::func_75())
 							{
-								__LIB_0__::func_203(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
-								__LIB_37__::func_799(&uLocal_77, "RECSHAU", "RECSH_GOAW", 4, 0, 0, 0);
+								__LIB_0__::func_222(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
+								__LIB_0__::func_787(&uLocal_77, "RECSHAU", "RECSH_GOAW", 4, 0, 0, 0);
 								iLocal_57 = 1;
 							}
 						}
@@ -627,8 +627,8 @@ void func_71()//Position - 0x239F
 						{
 							if (!__LIB_0__::func_75())
 							{
-								__LIB_0__::func_203(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
-								__LIB_37__::func_799(&uLocal_77, "RECSHAU", "RECSH_GOAW", 4, 0, 0, 0);
+								__LIB_0__::func_222(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
+								__LIB_0__::func_787(&uLocal_77, "RECSHAU", "RECSH_GOAW", 4, 0, 0, 0);
 								iLocal_58 = 1;
 							}
 						}
@@ -639,17 +639,17 @@ void func_71()//Position - 0x239F
 						{
 							if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_49, Local_50, fLocal_51, false, true, 0) || ENTITY::IS_ENTITY_AT_ENTITY(iLocal_63[iLocal_71], PLAYER::PLAYER_PED_ID(), 15f, 15f, 5f, false, true, 0))
 							{
-								__LIB_6__::func_771();
+								__LIB_0__::func_429();
 								SYSTEM::WAIT(0);
 								if (func_92())
 								{
-									__LIB_0__::func_203(&uLocal_77, 4, iLocal_63[iLocal_71], "DRUGFARMGOON", 0, 1);
-									__LIB_37__::func_799(&uLocal_77, "RECSHAU", "RECSH_BACK", 4, 0, 0, 0);
+									__LIB_0__::func_222(&uLocal_77, 4, iLocal_63[iLocal_71], "DRUGFARMGOON", 0, 1);
+									__LIB_0__::func_787(&uLocal_77, "RECSHAU", "RECSH_BACK", 4, 0, 0, 0);
 								}
 								else
 								{
-									__LIB_0__::func_203(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
-									__LIB_37__::func_799(&uLocal_77, "RECSHAU", "RECSH_FIRE", 4, 0, 0, 0);
+									__LIB_0__::func_222(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
+									__LIB_0__::func_787(&uLocal_77, "RECSHAU", "RECSH_FIRE", 4, 0, 0, 0);
 								}
 								iLocal_73 = 2;
 							}
@@ -751,7 +751,7 @@ void func_71()//Position - 0x239F
 								PED::SET_PED_KEEP_TASK(iLocal_63[iLocal_71], true);
 								if (!HUD::DOES_BLIP_EXIST(uLocal_68[iLocal_71]))
 								{
-									uLocal_68[iLocal_71] = __LIB_6__::func_850(iLocal_63[iLocal_71], 1, 145);
+									uLocal_68[iLocal_71] = __LIB_0__::func_666(iLocal_63[iLocal_71], 1, 145);
 								}
 							}
 						}
@@ -759,8 +759,8 @@ void func_71()//Position - 0x239F
 						{
 							if (!__LIB_0__::func_75())
 							{
-								__LIB_0__::func_203(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
-								__LIB_37__::func_799(&uLocal_77, "RECSHAU", "RECSH_STASH", 4, 0, 0, 0);
+								__LIB_0__::func_222(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
+								__LIB_0__::func_787(&uLocal_77, "RECSHAU", "RECSH_STASH", 4, 0, 0, 0);
 								iLocal_59 = 1;
 							}
 						}
@@ -895,7 +895,7 @@ void func_96()//Position - 0x3795
 				WEAPON::GIVE_WEAPON_TO_PED(iLocal_63[iLocal_71], joaat("WEAPON_ASSAULTRIFLE"), -1, true, true);
 			}
 			PED::SET_PED_CONFIG_FLAG(iLocal_63[iLocal_71], 42, true);
-			__LIB_0__::func_203(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
+			__LIB_0__::func_222(&uLocal_77, 3, iLocal_63[iLocal_71], "SalvadorGang", 0, 1);
 			iLocal_71++;
 		}
 		if (!PED::IS_PED_INJURED(iLocal_63[0]))
@@ -961,7 +961,7 @@ void func_96()//Position - 0x3795
 		PED::SET_PED_NAME_DEBUG(iLocal_63[4], "piDrugCult[4]");
 		TASK::TASK_GUARD_CURRENT_POSITION(iLocal_63[5], 0f, 3f, true);
 		PED::SET_PED_NAME_DEBUG(iLocal_63[5], "piDrugCult[5]");
-		iLocal_66 = __LIB_0__::func_392(Local_47, 0);
+		iLocal_66 = __LIB_0__::func_488(Local_47, 0);
 		HUD::SET_BLIP_SPRITE(iLocal_66, 140);
 		__LIB_0__::func_151("DRUG_BLIP_START" /* GXT: This is a Weed Farm - you can raid it and steal their takings. */, -1);
 		iLocal_44 = 1;
@@ -996,16 +996,16 @@ void func_142()//Position - 0x6EEA
 			MISC::ENABLE_DISPATCH_SERVICE(3, true);
 			if (bLocal_55)
 			{
-				__LIB_39__::func_549(18, 7, 0);
+				__LIB_39__::func_339(18, 7, 0);
 			}
 			else
 			{
-				__LIB_39__::func_549(18, 1, 0);
+				__LIB_39__::func_339(18, 1, 0);
 			}
 		}
 		PED::REMOVE_SCENARIO_BLOCKING_AREAS();
 	}
-	__LIB_41__::func_466(-1);
+	__LIB_39__::func_344(-1);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

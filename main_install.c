@@ -86,19 +86,19 @@ void __EntryFunction__()//Position - 0x0
 			switch (iLocal_0)
 			{
 				case 0:
-					__LIB_9__::func_595(0.5f, 0.4f, "NG_INST_TT_1", 0);
+					__LIB_13__::func_84(0.5f, 0.4f, "NG_INST_TT_1", 0);
 					break;
 				case 1:
-					__LIB_9__::func_595(0.5f, 0.4f, "NG_INST_TT_2", 0);
+					__LIB_13__::func_84(0.5f, 0.4f, "NG_INST_TT_2", 0);
 					break;
 				case 2:
-					__LIB_9__::func_595(0.5f, 0.4f, "NG_INST_TT_3", 0);
+					__LIB_13__::func_84(0.5f, 0.4f, "NG_INST_TT_3", 0);
 					break;
 				case 3:
-					__LIB_9__::func_595(0.5f, 0.4f, "NG_INST_TT_4", 0);
+					__LIB_13__::func_84(0.5f, 0.4f, "NG_INST_TT_4", 0);
 					break;
 				case 4:
-					__LIB_9__::func_595(0.5f, 0.4f, "NG_INST_TT_5", 0);
+					__LIB_13__::func_84(0.5f, 0.4f, "NG_INST_TT_5", 0);
 					break;
 				}
 		}

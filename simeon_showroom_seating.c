@@ -592,253 +592,27 @@ void __EntryFunction__()//Position - 0x0
 		while (!func_85())
 		{
 			SYSTEM::WAIT(0);
-			func_24(&uLocal_109);
+			__LIB_16__::func_254(&uLocal_109);
 		}
 	}
-	__LIB_39__::func_938();
-}
-
-void func_24(var uParam0)//Position - 0x9AC
-{
-	char* sVar0;
-	char* sVar1;
-	struct<3> Var2;
-	struct<3> Var3;
-	float fVar4;
-	float fVar5;
-	int iVar6;
-	struct<3> Var7;
-	float fVar8;
-	int iVar9;
-	int iVar10;
-	int iVar11;
-	__LIB_20__::func_187(uParam0);
-	__LIB_20__::func_319(uParam0);
-	switch (uParam0->f_13)
-	{
-		case 0:
-			__LIB_1__::func_846(&(uParam0->f_7), 11);
-			__LIB_10__::func_614(uParam0, 1);
-			break;
-		case 1:
-			Global_1946234 = 0;
-			if (__LIB_11__::func_250(uParam0))
-			{
-				uParam0->f_11 = MISC::GET_GAME_TIMER();
-				__LIB_10__::func_614(uParam0, 2);
-			}
-			break;
-		case 2:
-			if (__LIB_10__::func_613(PLAYER::PLAYER_PED_ID(), &(uParam0->f_16[uParam0->f_9 /*14*/])) && __LIB_10__::func_612(PLAYER::PLAYER_PED_ID(), uParam0->f_16[uParam0->f_9 /*14*/].f_3, uParam0->f_16[uParam0->f_9 /*14*/].f_13))
-			{
-				if ((((((((((((__LIB_10__::func_611(uParam0) || __LIB_35__::func_247(uParam0)) || __LIB_20__::func_318(uParam0)) || !__LIB_10__::func_610(uParam0)) || __LIB_6__::func_945(PLAYER::PLAYER_ID())) || PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) || PED::IS_PED_IN_COMBAT(PLAYER::PLAYER_PED_ID(), 0)) || PED::IS_PED_IN_MELEE_COMBAT(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_PERFORMING_MELEE_ACTION(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) || PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) || BitTest(Global_1946250.f_4, 2)) || __LIB_10__::func_609(uParam0->f_16[uParam0->f_9 /*14*/].f_13))
-				{
-					MISC::SET_BIT(&(Global_1946250.f_3), 16);
-					if (__LIB_35__::func_247(uParam0))
-					{
-						__LIB_7__::func_508(&(uParam0->f_6), 4, "POD_TOO_MANY" /* GXT: Too many players near activity. */, 0, 0, 0, 0);
-					}
-					else
-					{
-						__LIB_6__::func_404(&(uParam0->f_6));
-						__LIB_11__::func_267(uParam0);
-						__LIB_10__::func_614(uParam0, 1);
-					}
-				}
-				else
-				{
-					Global_1946234 = 1;
-					MISC::SET_BIT(&(Global_1946250.f_3), 16);
-					if (uParam0->f_6 == -1)
-					{
-						if ((MISC::GET_GAME_TIMER() - uParam0->f_11) > 150)
-						{
-							if (__LIB_10__::func_608(uParam0->f_9) && !Global_262145.f_27059 /* Tunable: VC_PENTHOUSE_DISABLE_DCTL */)
-							{
-								__LIB_7__::func_508(&(uParam0->f_6), 4, "MPTV_WALKOFF" /* GXT: Press ~INPUT_CONTEXT~ to sit down, watch TV or play "Don't Cross The Line". */, 0, 0, 0, 0);
-							}
-							else
-							{
-								__LIB_7__::func_508(&(uParam0->f_6), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
-							}
-						}
-					}
-					else if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/))
-					{
-						__LIB_6__::func_404(&(uParam0->f_6));
-						__LIB_26__::func_401(uParam0);
-						__LIB_10__::func_614(uParam0, 3);
-						if (uParam0->f_16[uParam0->f_9 /*14*/].f_13 == 4)
-						{
-							MISC::SET_BIT(&(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_4), 15);
-							__LIB_2__::func_8(157);
-						}
-					}
-				}
-			}
-			else
-			{
-				__LIB_11__::func_267(uParam0);
-				__LIB_10__::func_614(uParam0, 1);
-			}
-			break;
-		case 3:
-			__LIB_20__::func_186(uParam0, &sVar0);
-			STREAMING::REQUEST_ANIM_DICT(&sVar0);
-			if (STREAMING::HAS_ANIM_DICT_LOADED(&sVar0))
-			{
-				__LIB_10__::func_614(uParam0, 4);
-			}
-			break;
-		case 4:
-			__LIB_20__::func_186(uParam0, &sVar0);
-			__LIB_20__::func_185(uParam0, &sVar1);
-			if (uParam0->f_1.f_1 == 3)
-			{
-				if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 4)
-				{
-					if (!__LIB_0__::func_492(&(uParam0->f_7), 13))
-					{
-						CAM::SET_CAM_VIEW_MODE_FOR_CONTEXT(0, 1);
-						__LIB_1__::func_845(&(uParam0->f_7), 13);
-					}
-				}
-			}
-			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
-			Var2 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION(&sVar0, &sVar1, __LIB_10__::func_606(uParam0), __LIB_20__::func_184(uParam0), 0f, 2) };
-			Var3 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(&sVar0, &sVar1, __LIB_10__::func_606(uParam0), __LIB_20__::func_184(uParam0), 0f, 2) };
-			fVar4 = Var3.f_2;
-			fVar5 = 0.05f;
-			if (uParam0->f_1.f_1 == 1)
-			{
-				fVar5 = 0.15f;
-			}
-			TASK::TASK_GO_STRAIGHT_TO_COORD(PLAYER::PLAYER_PED_ID(), Var2, 1f, 500, fVar4, fVar5);
-			__LIB_4__::func_82(uParam0->f_9);
-			__LIB_10__::func_614(uParam0, 5);
-			break;
-		case 5:
-			__LIB_26__::func_408(uParam0);
-			__LIB_20__::func_186(uParam0, &sVar0);
-			__LIB_20__::func_185(uParam0, &sVar1);
-			iVar6 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"));
-			Var7 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(&sVar0, &sVar1, __LIB_10__::func_606(uParam0), __LIB_20__::func_184(uParam0), 0f, 2) };
-			fVar8 = Var7.f_2;
-			if ((iVar6 != 1 && iVar6 != 0) || __LIB_2__::func_336(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), fVar8, 5f))
-			{
-				if (uParam0->f_1.f_1 == 3)
-				{
-					if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 4)
-					{
-						if (!__LIB_0__::func_492(&(uParam0->f_7), 13))
-						{
-							CAM::SET_CAM_VIEW_MODE_FOR_CONTEXT(0, 1);
-							__LIB_1__::func_845(&(uParam0->f_7), 13);
-						}
-					}
-				}
-				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
-				uParam0->f_8 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(__LIB_10__::func_606(uParam0), __LIB_20__::func_184(uParam0), 2, true, false, 1f, 0f, 1.12f);
-				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_8, &sVar0, &sVar1, 2f, -1000f, 9, 0, 1000f, 0);
-				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_8);
-				uParam0->f_1 = MISC::GET_GAME_TIMER();
-				__LIB_1__::func_845(&(uParam0->f_7), 8);
-				__LIB_10__::func_614(uParam0, 6);
-			}
-			break;
-		case 6:
-			if (__LIB_0__::func_492(&(uParam0->f_7), 10) || __LIB_4__::func_415())
-			{
-				__LIB_1__::func_846(&(uParam0->f_7), 10);
-				__LIB_26__::func_290(uParam0);
-			}
-			__LIB_26__::func_408(uParam0);
-			__LIB_36__::func_11(uParam0);
-			iVar9 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(uParam0->f_8);
-			if (__LIB_0__::func_492(&(uParam0->f_7), 13))
-			{
-				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
-			}
-			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iVar9))
-			{
-				if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iVar9) >= 1f)
-				{
-					if (uParam0->f_1.f_1 == 3)
-					{
-						if (__LIB_0__::func_492(&(uParam0->f_7), 13))
-						{
-							if (CAM::GET_CAM_VIEW_MODE_FOR_CONTEXT(0) == 1)
-							{
-								CAM::SET_CAM_VIEW_MODE_FOR_CONTEXT(0, 1);
-								CAM::SET_CAM_VIEW_MODE_FOR_CONTEXT(0, 4);
-							}
-							__LIB_1__::func_846(&(uParam0->f_7), 13);
-						}
-					}
-					__LIB_32__::func_684(uParam0, 0);
-					__LIB_20__::func_186(uParam0, &sVar0);
-					__LIB_20__::func_185(uParam0, &sVar1);
-					uParam0->f_8 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(__LIB_10__::func_606(uParam0), __LIB_20__::func_184(uParam0), 2, true, false, 1f, 0f, 1.12f);
-					NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_8, &sVar0, &sVar1, 4f, -1.5f, 9, 0, 1000f, 0);
-					NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_8);
-					__LIB_1__::func_845(&(uParam0->f_7), 8);
-					__LIB_1__::func_845(&(uParam0->f_7), 11);
-				}
-				else
-				{
-					__LIB_1__::func_846(&(uParam0->f_7), 8);
-				}
-			}
-			else if (!__LIB_0__::func_492(&(uParam0->f_7), 8))
-			{
-				__LIB_10__::func_614(uParam0, 8);
-			}
-			break;
-		case 7:
-			NETWORK::NETWORK_STOP_SYNCHRONISED_SCENE(uParam0->f_8);
-			__LIB_10__::func_614(uParam0, 8);
-			break;
-		case 8:
-			iVar10 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(uParam0->f_8);
-			iVar11 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"));
-			if (iVar11 == 0 || iVar11 == 1)
-			{
-				if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iVar10))
-				{
-					if ((PED::GET_SYNCHRONIZED_SCENE_PHASE(iVar10) >= 0.7f || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("BREAKOUT_FINISH"))) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("BREAK_OUT")))
-					{
-						NETWORK::NETWORK_STOP_SYNCHRONISED_SCENE(uParam0->f_8);
-						__LIB_4__::func_82(-1);
-						__LIB_11__::func_267(uParam0);
-						__LIB_10__::func_614(uParam0, 0);
-					}
-				}
-			}
-			else
-			{
-				__LIB_4__::func_82(-1);
-				__LIB_11__::func_267(uParam0);
-				__LIB_10__::func_614(uParam0, 0);
-			}
-			break;
-	}
+	__LIB_33__::func_643();
 }
 
 int func_85()//Position - 0x270D
 {
-	if (!__LIB_2__::func_344(PLAYER::PLAYER_ID()))
+	if (!__LIB_3__::func_533(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
-	if (__LIB_7__::func_62(PLAYER::PLAYER_ID()) && CAM::IS_SCREEN_FADED_OUT())
+	if (__LIB_1__::func_548(PLAYER::PLAYER_ID()) && CAM::IS_SCREEN_FADED_OUT())
 	{
 		return 1;
 	}
-	if (__LIB_6__::func_949())
+	if (__LIB_0__::func_959())
 	{
 		return 1;
 	}
-	if (!__LIB_4__::func_715())
+	if (!__LIB_0__::func_893())
 	{
 		return 1;
 	}
@@ -852,9 +626,9 @@ int func_98()//Position - 0x293D
 		return 0;
 	}
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
-	__LIB_1__::func_569(0, -1, 0);
+	__LIB_0__::func_895(0, -1, 0);
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-	__LIB_0__::func_371();
+	__LIB_0__::func_467();
 	func_99();
 	return 1;
 }
@@ -877,8 +651,8 @@ void func_100(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 	uParam1->f_16[iParam2 /*14*/].f_13 = iParam3;
 	uParam1->f_16[iParam2 /*14*/] = { Var0 };
 	uParam1->f_16[iParam2 /*14*/].f_3 = { 0f, 0f, fVar1 };
-	uParam1->f_16[iParam2 /*14*/].f_6.f_1 = { __LIB_0__::func_298(func_104(), __LIB_10__::func_615(iParam3, fVar1)) + Var0 };
-	uParam1->f_16[iParam2 /*14*/].f_6.f_4 = { __LIB_0__::func_298(func_101(), __LIB_10__::func_615(iParam3, fVar1)) + Var0 };
+	uParam1->f_16[iParam2 /*14*/].f_6.f_1 = { __LIB_0__::func_327(func_104(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
+	uParam1->f_16[iParam2 /*14*/].f_6.f_4 = { __LIB_0__::func_327(func_101(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
 	uParam1->f_16[iParam2 /*14*/].f_6 = 1.25f;
 }
 

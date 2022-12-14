@@ -132,13 +132,13 @@ void __EntryFunction__()//Position - 0x0
 		}
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_0__::func_524(PLAYER::PLAYER_PED_ID()))
+	if (__LIB_0__::func_715(PLAYER::PLAYER_PED_ID()))
 	{
 	}
 	iVar4 = 0;
 	while (iVar4 == 0)
 	{
-		if ((((((__LIB_7__::func_268(PLAYER::PLAYER_ID(), 1, 0) || __LIB_1__::func_557()) || !__LIB_1__::func_386(PLAYER::PLAYER_ID())) || __LIB_1__::func_41()) || __LIB_4__::func_254(PLAYER::PLAYER_ID())) || __LIB_4__::func_954(PLAYER::PLAYER_ID())) || __LIB_1__::func_279(PLAYER::PLAYER_ID()))
+		if ((((((__LIB_1__::func_29(PLAYER::PLAYER_ID(), 1, 0) || __LIB_2__::func_81()) || !__LIB_1__::func_831(PLAYER::PLAYER_ID())) || __LIB_1__::func_381()) || __LIB_6__::func_200(PLAYER::PLAYER_ID())) || __LIB_8__::func_250(PLAYER::PLAYER_ID())) || __LIB_1__::func_708(PLAYER::PLAYER_ID()))
 		{
 			iVar4 = 0;
 		}
@@ -148,7 +148,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		SYSTEM::WAIT(0);
 	}
-	if (SYSTEM::VDIST2(Var3, __LIB_10__::func_979(157)) < SYSTEM::VDIST2(Var3, __LIB_10__::func_979(156)))
+	if (SYSTEM::VDIST2(Var3, __LIB_15__::func_504(157)) < SYSTEM::VDIST2(Var3, __LIB_15__::func_504(156)))
 	{
 		sVar2 = "carwash2";
 	}

@@ -24,7 +24,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				func_2(1, 0, -1029819160, 0, 1, "PM_PANE_AUD" /* GXT: Audio */);
 				func_2(1, 1, -1029819160, 1, 0, "PM_PANE_DIS" /* GXT: Display */);
-				__LIB_29__::func_936(1);
+				__LIB_37__::func_847(1);
 			}
 			if (ScriptParam_0.f_1 == -1029820160)
 			{
@@ -52,7 +52,7 @@ void func_2(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, ch
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		}
-		__LIB_0__::func_478(sParam5);
+		__LIB_0__::func_610(sParam5);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 }

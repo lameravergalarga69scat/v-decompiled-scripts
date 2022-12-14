@@ -104,10 +104,10 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_42 = 64;
 	Local_47 = { ScriptParam_54.f_1[0 /*3*/] };
 	iLocal_44 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
-	__LIB_0__::func_199();
+	__LIB_0__::func_202();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(11))
 	{
-		__LIB_0__::func_199();
+		__LIB_0__::func_202();
 	}
 	while (true)
 	{
@@ -148,12 +148,12 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else
 			{
-				__LIB_0__::func_199();
+				__LIB_0__::func_202();
 			}
 		}
 		else
 		{
-			__LIB_0__::func_199();
+			__LIB_0__::func_202();
 		}
 	}
 }
@@ -529,9 +529,9 @@ int func_8(int iParam0)//Position - 0x843
 			return 1;
 			break;
 		case 3:
-			if (__LIB_6__::func_763(5))
+			if (__LIB_0__::func_215(5))
 			{
-				if (__LIB_32__::func_573(4))
+				if (__LIB_0__::func_784(4))
 				{
 					return 1;
 				}

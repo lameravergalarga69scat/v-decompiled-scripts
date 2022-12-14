@@ -301,7 +301,7 @@ int func_7()//Position - 0x41E
 
 int func_8()//Position - 0x476
 {
-	if (__LIB_9__::func_603())
+	if (__LIB_13__::func_94())
 	{
 		if (__LIB_0__::func_39(14))
 		{
@@ -339,31 +339,31 @@ int func_8()//Position - 0x476
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_517(Global_112411, 256))
+	if (__LIB_0__::func_703(Global_112411, 256))
 	{
 		return 2;
 	}
-	if (__LIB_10__::func_833())
+	if (__LIB_15__::func_217())
 	{
 		return 2;
 	}
-	if (__LIB_10__::func_832())
+	if (__LIB_15__::func_216())
 	{
 		return 3;
 	}
-	if (__LIB_10__::func_831())
+	if (__LIB_15__::func_215())
 	{
 		return 3;
 	}
-	if (__LIB_0__::func_527())
+	if (__LIB_0__::func_719())
 	{
 		return 3;
 	}
-	if (__LIB_38__::func_103())
+	if (__LIB_16__::func_289())
 	{
 		return 3;
 	}
-	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() || __LIB_0__::func_200())
+	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() || __LIB_0__::func_217())
 	{
 		return 2;
 	}
@@ -501,11 +501,11 @@ void func_29(bool bParam0, int iParam1)//Position - 0xCE3
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((3 - iVar2));
-	__LIB_0__::func_478(sVar0);
-	__LIB_0__::func_478(sVar1);
+	__LIB_0__::func_610(sVar0);
+	__LIB_0__::func_610(sVar1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-	__LIB_0__::func_478("");
-	__LIB_0__::func_478("");
+	__LIB_0__::func_610("");
+	__LIB_0__::func_610("");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -572,10 +572,10 @@ void func_35()//Position - 0xF45
 	switch (Global_78568)
 	{
 		case 1:
-			Global_78569 = __LIB_41__::func_443(&Local_29, 1, 0, 1);
+			Global_78569 = __LIB_43__::func_567(&Local_29, 1, 0, 1);
 			break;
 		case 7:
-			Global_78569 = __LIB_41__::func_443(&Local_29, 0, 1, 1);
+			Global_78569 = __LIB_43__::func_567(&Local_29, 0, 1, 1);
 			break;
 		default:
 			break;
@@ -599,17 +599,17 @@ void func_46(int iParam0)//Position - 0x1637
 	func_77(2);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	__LIB_0__::func_478("MISSTA" /* GXT: Mission Stats */);
-	__LIB_0__::func_478(&Local_28);
+	__LIB_0__::func_610("MISSTA" /* GXT: Mission Stats */);
+	__LIB_0__::func_610(&Local_28);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar1 = -333;
 	iVar2 = -333;
 	iVar3 = 0;
 	iVar4 = 0;
 	iVar0 = 0;
-	while (iVar0 < __LIB_37__::func_492(iParam0, Global_78568))
+	while (iVar0 < __LIB_42__::func_644(iParam0, Global_78568))
 	{
-		iVar5 = __LIB_37__::func_491(iParam0, Global_78568, iVar0);
+		iVar5 = __LIB_42__::func_643(iParam0, Global_78568, iVar0);
 		iVar6 = 1;
 		switch (iVar5)
 		{
@@ -619,7 +619,7 @@ void func_46(int iParam0)//Position - 0x1637
 			case 70:
 			case 101:
 				iVar6 = 0;
-				iVar2 = __LIB_35__::func_66(iVar5);
+				iVar2 = __LIB_42__::func_642(iVar5);
 				if (iVar2 >= 2147483647)
 				{
 					iVar2 = 1;
@@ -631,7 +631,7 @@ void func_46(int iParam0)//Position - 0x1637
 			case 41:
 			case 54:
 				iVar6 = 0;
-				iVar1 = __LIB_35__::func_66(iVar5);
+				iVar1 = __LIB_42__::func_642(iVar5);
 				if (iVar1 >= 2147483647)
 				{
 					iVar1 = 50;
@@ -650,15 +650,15 @@ void func_46(int iParam0)//Position - 0x1637
 	}
 	func_52(iParam0, &iVar2);
 	func_48(iVar4, iVar3, 0, iVar1, iVar2);
-	__LIB_29__::func_936(2);
+	__LIB_37__::func_847(2);
 }
 
 float func_48(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)//Position - 0x1798
 {
 	float fVar0;
 	int iVar1;
-	fVar0 = __LIB_30__::func_295(iParam0, iParam1, 0);
-	iVar1 = __LIB_30__::func_603(fVar0);
+	fVar0 = __LIB_38__::func_378(iParam0, iParam1, 0);
+	iVar1 = __LIB_38__::func_377(fVar0);
 	if (bParam2)
 	{
 		fVar0 = 50f;
@@ -678,25 +678,25 @@ float func_48(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)/
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-		__LIB_0__::func_478("MTPHPER");
+		__LIB_0__::func_610("MTPHPER");
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_DESCRIPTION");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_30__::func_602(iVar1));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_38__::func_888(iVar1));
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-		switch (__LIB_30__::func_602(iVar1))
+		switch (__LIB_38__::func_888(iVar1))
 		{
 			case 109:
-				__LIB_0__::func_478("MTPHPER_G");
+				__LIB_0__::func_610("MTPHPER_G");
 				break;
 			case 108:
-				__LIB_0__::func_478("MTPHPER_S");
+				__LIB_0__::func_610("MTPHPER_S");
 				break;
 			case 107:
-				__LIB_0__::func_478("MTPHPER_B");
+				__LIB_0__::func_610("MTPHPER_B");
 				break;
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -769,7 +769,7 @@ int func_53(int iParam0, int iParam1, int iParam2)//Position - 0x19FA
 		return 1;
 	}
 	Var0 = { Global_63379[iParam0 /*13*/] };
-	iVar1 = func_63(iParam0);
+	iVar1 = __LIB_42__::func_641(iParam0);
 	switch (iParam0)
 	{
 		case 38:
@@ -795,8 +795,8 @@ int func_53(int iParam0, int iParam1, int iParam2)//Position - 0x19FA
 			iVar1 = -1;
 			break;
 	}
-	iVar2 = __LIB_35__::func_66(iParam0);
-	sVar3 = __LIB_30__::func_604(iParam0);
+	iVar2 = __LIB_42__::func_642(iParam0);
+	sVar3 = __LIB_38__::func_889(iParam0);
 	if (iVar2 == -1)
 	{
 		func_61(iVar2, iParam1, 0, sVar3, iParam0, iParam2);
@@ -882,7 +882,7 @@ void func_54(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_478(sParam3);
+		__LIB_0__::func_610(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1670,7 +1670,7 @@ void func_56(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_478(sParam3);
+		__LIB_0__::func_610(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1706,7 +1706,7 @@ void func_57(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_478(sParam4);
+		__LIB_0__::func_610(sParam4);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1737,7 +1737,7 @@ void func_58(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_478(sParam4);
+		__LIB_0__::func_610(sParam4);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1764,7 +1764,7 @@ void func_59(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4)/
 	}
 	else
 	{
-		__LIB_0__::func_478(sParam2);
+		__LIB_0__::func_610(sParam2);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1798,7 +1798,7 @@ void func_60(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_478(sParam3);
+		__LIB_0__::func_610(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1827,18 +1827,9 @@ void func_61(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_478(sParam3);
+		__LIB_0__::func_610(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-}
-
-int func_63(int iParam0)//Position - 0x434F
-{
-	if (__LIB_39__::func_453(iParam0, __LIB_29__::func_881(Global_63379[iParam0 /*13*/].f_4)))
-	{
-		return 1;
-	}
-	return 0;
 }
 
 void func_77(int iParam0)//Position - 0x4F30
@@ -1875,7 +1866,7 @@ struct<2> func_78(int iParam0, int iParam1)//Position - 0x4F55
 			}
 			break;
 		case 7:
-			Var0 = { __LIB_0__::func_339(iParam0) };
+			Var0 = { __LIB_0__::func_330(iParam0) };
 			break;
 		default:
 			break;
@@ -1890,7 +1881,7 @@ void func_81()//Position - 0x5470
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
-	__LIB_0__::func_478("");
+	__LIB_0__::func_610("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1965,12 +1956,12 @@ void func_83()//Position - 0x5540
 		iVar1 = Local_29[iVar0 /*2*/];
 		Local_28 = { func_78(iVar1, Global_78568) };
 		iVar7 = 0;
-		while (iVar7 < __LIB_37__::func_492(iVar1, Global_78568))
+		while (iVar7 < __LIB_42__::func_644(iVar1, Global_78568))
 		{
-			iVar4 = __LIB_37__::func_491(iVar1, Global_78568, iVar7);
+			iVar4 = __LIB_42__::func_643(iVar1, Global_78568, iVar7);
 			if (!Global_63379[iVar4 /*13*/].f_7)
 			{
-				if (func_63(iVar4) == 1)
+				if (__LIB_42__::func_641(iVar4) == 1)
 				{
 					iVar3++;
 				}
@@ -1981,7 +1972,7 @@ void func_83()//Position - 0x5540
 					case 85:
 					case 70:
 					case 101:
-						iVar8 = __LIB_35__::func_66(iVar4);
+						iVar8 = __LIB_42__::func_642(iVar4);
 						break;
 				}
 				iVar2++;
@@ -1989,16 +1980,16 @@ void func_83()//Position - 0x5540
 			iVar7++;
 		}
 		func_52(iVar1, &iVar8);
-		fVar5 = __LIB_30__::func_295(iVar3, iVar2, 0);
-		iVar6 = __LIB_30__::func_603(fVar5);
+		fVar5 = __LIB_38__::func_378(iVar3, iVar2, 0);
+		iVar6 = __LIB_38__::func_377(fVar5);
 		if (iVar8 > -1)
 		{
 			iVar6 = iVar8;
 		}
-		func_84(1, iVar0, 1076, iVar1, 1, &Local_28, __LIB_30__::func_602(iVar6));
+		func_84(1, iVar0, 1076, iVar1, 1, &Local_28, __LIB_38__::func_888(iVar6));
 		iVar0++;
 	}
-	__LIB_29__::func_936(1);
+	__LIB_37__::func_847(1);
 }
 
 void func_84(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, char* sParam5, int iParam6)//Position - 0x565E
@@ -2019,7 +2010,7 @@ void func_84(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, c
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		}
-		__LIB_0__::func_478(sParam5);
+		__LIB_0__::func_610(sParam5);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam6);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}

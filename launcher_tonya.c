@@ -287,7 +287,7 @@ void __EntryFunction__()//Position - 0x0
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
-	__LIB_29__::func_777(&Var0);
+	__LIB_37__::func_581(&Var0);
 	Local_52 = { ScriptParam_228.f_1[0 /*3*/] };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
 	{
@@ -305,7 +305,7 @@ void __EntryFunction__()//Position - 0x0
 	iVar1[0] = 58;
 	iVar1[1] = 59;
 	iVar1[2] = 62;
-	if (!__LIB_37__::func_336(&iVar1, &Var0, Local_52, 1f))
+	if (!__LIB_37__::func_631(&iVar1, &Var0, Local_52, 1f))
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -315,27 +315,27 @@ void __EntryFunction__()//Position - 0x0
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_329(Var0.f_0))
+	if (__LIB_37__::func_594(Var0.f_0))
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_8__::func_915(43))
+	if (__LIB_11__::func_283(43))
 	{
 		__LIB_0__::func_135("SP_MISSION_LAMAR is available... [TERMINATING]");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	else if (__LIB_8__::func_915(47))
+	else if (__LIB_11__::func_283(47))
 	{
 		__LIB_0__::func_135("SP_MISSION_MICHAEL_2 is available... [TERMINATING]");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	else if (__LIB_8__::func_915(40))
+	else if (__LIB_11__::func_283(40))
 	{
 		__LIB_0__::func_135("SP_MISSION_FRANKLIN_0 is available... [TERMINATING]");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	else if (__LIB_8__::func_915(41))
+	else if (__LIB_11__::func_283(41))
 	{
 		__LIB_0__::func_135("SP_MISSION_FRANKLIN_1 is available... [TERMINATING]");
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -353,40 +353,40 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_41__::func_981(&Var0, 1) || __LIB_37__::func_329(Var0.f_0))
+		if (!__LIB_37__::func_659(&Var0, 1) || __LIB_37__::func_594(Var0.f_0))
 		{
 			func_270(&Var0, 1);
 		}
-		if (__LIB_8__::func_915(43))
+		if (__LIB_11__::func_283(43))
 		{
 			__LIB_0__::func_135("SP_MISSION_LAMAR became available... [TERMINATING]");
 			func_270(&Var0, 1);
 		}
-		else if (__LIB_8__::func_915(47))
+		else if (__LIB_11__::func_283(47))
 		{
 			__LIB_0__::func_135("SP_MISSION_MICHAEL_2 became available... [TERMINATING]");
 			func_270(&Var0, 1);
 		}
-		else if (__LIB_8__::func_915(40))
+		else if (__LIB_11__::func_283(40))
 		{
 			__LIB_0__::func_135("SP_MISSION_FRANKLIN_0 became available... [TERMINATING]");
 			func_270(&Var0, 1);
 		}
-		else if (__LIB_8__::func_915(41))
+		else if (__LIB_11__::func_283(41))
 		{
 			__LIB_0__::func_135("SP_MISSION_FRANKLIN_1 became available... [TERMINATING]");
 			func_270(&Var0, 1);
 		}
-		__LIB_37__::func_326(Var0.f_0);
-		__LIB_37__::func_333(&iLocal_227, &(Var0.f_9), Local_52);
+		__LIB_37__::func_592(Var0.f_0);
+		__LIB_37__::func_623(&iLocal_227, &(Var0.f_9), Local_52);
 		func_186(&Var0);
-		if (__LIB_41__::func_978(&Var0, 0))
+		if (__LIB_37__::func_637(&Var0, 0))
 		{
-			if (!__LIB_42__::func_853(&Var0))
+			if (!__LIB_37__::func_669(&Var0))
 			{
 				func_270(&Var0, 1);
 			}
-			if (__LIB_29__::func_757(&Var0))
+			if (__LIB_37__::func_562(&Var0))
 			{
 				func_270(&Var0, 0);
 			}
@@ -397,7 +397,7 @@ void __EntryFunction__()//Position - 0x0
 void func_186(var uParam0)//Position - 0xC8DF
 {
 	float fVar0;
-	if (__LIB_0__::func_200() || STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
+	if (__LIB_0__::func_217() || STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 	{
 		AUDIO::STOP_SCRIPTED_CONVERSATION(false);
 		return;
@@ -430,10 +430,10 @@ void func_186(var uParam0)//Position - 0xC8DF
 				case 0:
 					if (!__LIB_0__::func_75())
 					{
-						__LIB_0__::func_203(&uLocal_58, 3, uParam0->f_28[0], "TONYA", 0, 1);
+						__LIB_0__::func_222(&uLocal_58, 3, uParam0->f_28[0], "TONYA", 0, 1);
 						if (*uParam0 == 58)
 						{
-							__LIB_35__::func_984(&uLocal_58, "TOWAUD", "TONYA_BECK_1", 4, 0, 0, 0);
+							__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_1", 4, 0, 0, 0);
 							if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 							{
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -449,7 +449,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 						}
 						else if (*uParam0 == 59)
 						{
-							__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_1", 4, 0, 0);
+							__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_1", 4, 0, 0);
 							if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 							{
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -465,7 +465,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 						}
 						else if (*uParam0 == 62)
 						{
-							__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_1", 4, 0, 0);
+							__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_1", 4, 0, 0);
 							if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 							{
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -479,13 +479,13 @@ void func_186(var uParam0)//Position - 0xC8DF
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
 							}
 						}
-						if (!__LIB_0__::func_736(&iLocal_223))
+						if (!__LIB_1__::func_13(&iLocal_223))
 						{
-							__LIB_18__::func_276(&iLocal_223);
+							__LIB_1__::func_362(&iLocal_223);
 						}
 						else
 						{
-							__LIB_6__::func_892(&iLocal_223);
+							__LIB_1__::func_31(&iLocal_223);
 						}
 						iLocal_57 = 1;
 						iLocal_226 = 0;
@@ -494,21 +494,21 @@ void func_186(var uParam0)//Position - 0xC8DF
 				case 1:
 					if (!__LIB_0__::func_75())
 					{
-						if (__LIB_0__::func_736(&iLocal_223))
+						if (__LIB_1__::func_13(&iLocal_223))
 						{
 							if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false) && !ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 							{
 								TASK::TASK_LOOK_AT_ENTITY(uParam0->f_28[0], PLAYER::PLAYER_PED_ID(), -1, 0, 4);
 							}
-							__LIB_6__::func_892(&iLocal_223);
+							__LIB_1__::func_31(&iLocal_223);
 							iLocal_57 = 2;
 						}
 					}
 					break;
 				case 2:
-					if (__LIB_0__::func_736(&iLocal_223))
+					if (__LIB_1__::func_13(&iLocal_223))
 					{
-						if (__LIB_7__::func_78(&iLocal_223) > MISC::GET_RANDOM_FLOAT_IN_RANGE(9f, 15f))
+						if (__LIB_2__::func_572(&iLocal_223) > MISC::GET_RANDOM_FLOAT_IN_RANGE(9f, 15f))
 						{
 							iLocal_226++;
 							switch (iLocal_226)
@@ -516,7 +516,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 1:
 									if (*uParam0 == 58)
 									{
-										__LIB_35__::func_984(&uLocal_58, "TOWAUD", "TONYA_BECK_2", 4, 0, 0, 0);
+										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_2", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -533,7 +533,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_2", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_2", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -550,7 +550,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_2", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_2", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -569,7 +569,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 2:
 									if (*uParam0 == 58)
 									{
-										__LIB_35__::func_984(&uLocal_58, "TOWAUD", "TONYA_BECK_3", 4, 0, 0, 0);
+										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_3", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -586,7 +586,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_3", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_3", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -603,7 +603,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_3", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_3", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -622,7 +622,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 3:
 									if (*uParam0 == 58)
 									{
-										__LIB_35__::func_984(&uLocal_58, "TOWAUD", "TONYA_BECK_4", 4, 0, 0, 0);
+										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_4", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -638,7 +638,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_4", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_4", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -654,7 +654,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_4", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_4", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -672,7 +672,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 4:
 									if (*uParam0 == 58)
 									{
-										__LIB_35__::func_984(&uLocal_58, "TOWAUD", "TONYA_BECK_5", 4, 0, 0, 0);
+										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_5", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -689,7 +689,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_5", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_5", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -706,7 +706,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_36__::func_30(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_5", 4, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_5", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -860,7 +860,7 @@ int func_259(int iParam0)//Position - 0xFFF7
 	{
 		if (Global_100441 < 9)
 		{
-			__LIB_6__::func_773(iParam0, &sVar0);
+			__LIB_0__::func_432(iParam0, &sVar0);
 			if (MISC::ARE_STRINGS_EQUAL(&(Global_100441.f_3), sVar0))
 			{
 				__LIB_0__::func_135("STEP_3_COMMON_CanRCLaunch - Script denied as a replay for this RC is being configured. [TERMINATING]");
@@ -880,10 +880,10 @@ int func_259(int iParam0)//Position - 0xFFF7
 int func_260(int iParam0)//Position - 0x100B4
 {
 	var uVar0;
-	__LIB_6__::func_773(iParam0, &uVar0);
-	if (!__LIB_6__::func_763(4))
+	__LIB_0__::func_432(iParam0, &uVar0);
+	if (!__LIB_0__::func_215(4))
 	{
-		if (__LIB_34__::func_833(iParam0))
+		if (__LIB_0__::func_781(iParam0))
 		{
 		}
 		else
@@ -891,33 +891,33 @@ int func_260(int iParam0)//Position - 0x100B4
 			return 0;
 		}
 	}
-	if (__LIB_0__::func_569() && !__LIB_0__::func_568())
+	if (__LIB_0__::func_767() && !__LIB_0__::func_766())
 	{
 		return 0;
 	}
-	if (__LIB_29__::func_776(iParam0))
+	if (__LIB_37__::func_580(iParam0))
 	{
 		return 0;
 	}
 	if (iParam0 == -1)
 	{
-		iParam0 = __LIB_18__::func_205();
+		iParam0 = __LIB_0__::func_775();
 	}
 	if (iParam0 == -1)
 	{
 		return 0;
 	}
-	if (!__LIB_6__::func_865(iParam0))
+	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_29__::func_775(iParam0))
+		if (!__LIB_37__::func_579(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_29__::func_774(iParam0))
+		if (!__LIB_37__::func_578(iParam0))
 		{
 			return 0;
 		}
-		if (__LIB_0__::func_528(iParam0))
+		if (__LIB_0__::func_720(iParam0))
 		{
 			return 0;
 		}
@@ -959,7 +959,7 @@ int func_261(int iParam0)//Position - 0x10175
 	}
 	else if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		__LIB_10__::func_605(iParam0, &sVar1);
+		__LIB_14__::func_623(iParam0, &sVar1);
 		iVar2 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(Global_95479[iParam0 /*10*/].f_3, &sVar1);
 		if (iVar2 != 0 && Global_100493.f_373 == iVar2)
 		{
@@ -971,11 +971,11 @@ int func_261(int iParam0)//Position - 0x10175
 
 void func_270(int iParam0, bool bParam1)//Position - 0x104EA
 {
-	__LIB_6__::func_771();
+	__LIB_0__::func_429();
 	if (bParam1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Cleaning up entities in Launcher");
-		__LIB_32__::func_757(iParam0, 0, 0, 0);
+		__LIB_14__::func_871(iParam0, 0, 0, 0);
 	}
 	STREAMING::REMOVE_ANIM_DICT("special_ped@tonya@intro");
 	STREAMING::REMOVE_ANIM_DICT("special_ped@tonya@base");
@@ -999,7 +999,7 @@ void func_270(int iParam0, bool bParam1)//Position - 0x104EA
 	if (iLocal_227 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_29__::func_764(&iLocal_227);
+		__LIB_37__::func_331(&iLocal_227);
 	}
 	if (iLocal_55)
 	{

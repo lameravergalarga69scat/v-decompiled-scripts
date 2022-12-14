@@ -140,7 +140,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_37(0);
 	}
-	if (__LIB_0__::func_517(Global_113386.f_20117, 16384))
+	if (__LIB_0__::func_703(Global_113386.f_20117, 16384))
 	{
 		func_37(0);
 	}
@@ -151,14 +151,14 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (ENTITY::IS_ENTITY_DEAD(iLocal_91, false) && !iLocal_95 == 7)
 			{
-				__LIB_0__::func_712(&(Global_113386.f_20117), 16384);
+				__LIB_0__::func_989(&(Global_113386.f_20117), 16384);
 				iLocal_95 = 7;
 			}
 		}
 		switch (iLocal_95)
 		{
 			case 0:
-				if ((BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE() && !__LIB_40__::func_738()) && !__LIB_40__::func_735())
+				if ((BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE() && !__LIB_39__::func_350()) && !__LIB_39__::func_340())
 				{
 					if (func_11())
 					{
@@ -191,7 +191,7 @@ void __EntryFunction__()//Position - 0x0
 			case 3:
 				Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_91, true) };
 				PED::SET_PED_LOD_MULTIPLIER(iLocal_91, 3f);
-				if (__LIB_8__::func_538(PLAYER::PLAYER_PED_ID(), iLocal_91) < 10f)
+				if (__LIB_9__::func_694(PLAYER::PLAYER_PED_ID(), iLocal_91) < 10f)
 				{
 					PED::SET_IK_TARGET(PLAYER::PLAYER_PED_ID(), 1, iLocal_91, 31086, 0f, 0f, 0f, 0, -1, -1);
 					PED::SET_IK_TARGET(iLocal_91, 1, PLAYER::PLAYER_PED_ID(), 31086, 0f, 0f, 0f, 0, -1, -1);
@@ -200,13 +200,13 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (!HUD::DOES_BLIP_EXIST(iLocal_96))
 					{
-						__LIB_37__::func_503(&iLocal_96, &iLocal_91, 0);
+						__LIB_39__::func_90(&iLocal_96, &iLocal_91, 0);
 						HUD::SET_BLIP_COLOUR(iLocal_96, 3);
 					}
 				}
 				else if (HUD::DOES_BLIP_EXIST(iLocal_96))
 				{
-					__LIB_10__::func_7(&iLocal_96);
+					__LIB_13__::func_808(&iLocal_96);
 				}
 				if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_97) > 0.9999999f)
 				{
@@ -217,7 +217,7 @@ void __EntryFunction__()//Position - 0x0
 					AUDIO::STOP_SYNCHRONIZED_AUDIO_EVENT(iLocal_97);
 					iLocal_95 = 4;
 				}
-				if (((((PED::IS_PED_INJURED(iLocal_91) || MISC::IS_BULLET_IN_AREA(Var0, 50f, true)) || MISC::IS_BULLET_IN_AREA(Var0, 50f, false)) || MISC::IS_PROJECTILE_IN_AREA(Var0, 20f, 20f, 20f, false)) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, Var0, 50f)) || (((PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_91) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_91)) && MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var0, true) < 25f) && __LIB_11__::func_747(iLocal_91, PLAYER::PLAYER_PED_ID(), 1126825984, 0)))
+				if (((((PED::IS_PED_INJURED(iLocal_91) || MISC::IS_BULLET_IN_AREA(Var0, 50f, true)) || MISC::IS_BULLET_IN_AREA(Var0, 50f, false)) || MISC::IS_PROJECTILE_IN_AREA(Var0, 20f, 20f, 20f, false)) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, Var0, 50f)) || (((PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), iLocal_91) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), iLocal_91)) && MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var0, true) < 25f) && __LIB_14__::func_736(iLocal_91, PLAYER::PLAYER_PED_ID(), 1126825984, 0)))
 				{
 					AUDIO::STOP_SYNCHRONIZED_AUDIO_EVENT(iLocal_97);
 					iLocal_95 = 4;
@@ -227,7 +227,7 @@ void __EntryFunction__()//Position - 0x0
 			case 4:
 				if (HUD::DOES_BLIP_EXIST(iLocal_96))
 				{
-					__LIB_10__::func_7(&iLocal_96);
+					__LIB_13__::func_808(&iLocal_96);
 				}
 				if (!PED::IS_PED_RAGDOLL(iLocal_91))
 				{
@@ -294,7 +294,7 @@ void func_37(bool bParam0)//Position - 0x27A4
 	}
 	if (HUD::DOES_BLIP_EXIST(iLocal_96))
 	{
-		__LIB_10__::func_7(&iLocal_96);
+		__LIB_13__::func_808(&iLocal_96);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_91))
 	{

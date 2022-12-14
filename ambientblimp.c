@@ -49,7 +49,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_26 = 0.17f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(82))
 	{
-		__LIB_0__::func_199();
+		__LIB_0__::func_202();
 	}
 	if (func_32())
 	{
@@ -68,7 +68,7 @@ void __EntryFunction__()//Position - 0x0
 			case 1:
 				if (func_1())
 				{
-					__LIB_0__::func_199();
+					__LIB_0__::func_202();
 				}
 				break;
 		}
@@ -78,14 +78,14 @@ void __EntryFunction__()//Position - 0x0
 
 int func_1()//Position - 0x9D
 {
-	switch (__LIB_11__::func_512("BLIMP_UNLOCK" /* GXT: The Blimp has now been unlocked. Call the Blimp contact on your cellphone to arrange for a Blimp to be delivered to the nearest available drop-off location. */))
+	switch (__LIB_13__::func_121("BLIMP_UNLOCK" /* GXT: The Blimp has now been unlocked. Call the Blimp contact on your cellphone to arrange for a Blimp to be delivered to the nearest available drop-off location. */))
 	{
 		case 2:
-			__LIB_18__::func_203("BLIMP_UNLOCK" /* GXT: The Blimp has now been unlocked. Call the Blimp contact on your cellphone to arrange for a Blimp to be delivered to the nearest available drop-off location. */, 1, 0, 1000, 10000, 7, 0, 0, 0);
+			__LIB_0__::func_697("BLIMP_UNLOCK" /* GXT: The Blimp has now been unlocked. Call the Blimp contact on your cellphone to arrange for a Blimp to be delivered to the nearest available drop-off location. */, 1, 0, 1000, 10000, 7, 0, 0, 0);
 			break;
 		case 1:
-			__LIB_0__::func_460(57);
-			__LIB_0__::func_533();
+			__LIB_0__::func_592(57);
+			__LIB_0__::func_210();
 			return 1;
 			break;
 		case 0:
@@ -100,10 +100,10 @@ int func_10()//Position - 0x50F
 	{
 		if ((PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 		{
-			if (__LIB_0__::func_176(0))
+			if (__LIB_0__::func_178(0))
 			{
-				__LIB_24__::func_951(48, 4, 0);
-				__LIB_0__::func_533();
+				__LIB_0__::func_712(48, 4, 0);
+				__LIB_0__::func_210();
 				return 1;
 			}
 		}
@@ -113,7 +113,7 @@ int func_10()//Position - 0x50F
 
 int func_32()//Position - 0xBBF
 {
-	if ((__LIB_0__::func_167(48, 0) == 1 && __LIB_0__::func_167(48, 1) == 1) && __LIB_0__::func_167(48, 2) == 1)
+	if ((__LIB_0__::func_169(48, 0) == 1 && __LIB_0__::func_169(48, 1) == 1) && __LIB_0__::func_169(48, 2) == 1)
 	{
 		if ((((__LIB_0__::func_115() || __LIB_0__::func_109()) || __LIB_0__::func_109()) || __LIB_0__::func_114()) || __LIB_0__::func_116())
 		{

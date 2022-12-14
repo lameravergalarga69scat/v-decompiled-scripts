@@ -257,8 +257,8 @@ void __EntryFunction__()//Position - 0x0
 	{
 		MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	}
-	__LIB_0__::func_203(&uLocal_45, 1, 0, "EMSDispatch", 0, 1);
-	__LIB_0__::func_371();
+	__LIB_0__::func_222(&uLocal_45, 1, 0, "EMSDispatch", 0, 1);
+	__LIB_0__::func_467();
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -290,7 +290,7 @@ void func_1()//Position - 0xF2
 {
 	if (Global_32193)
 	{
-		__LIB_30__::func_909(0);
+		__LIB_39__::func_408(0);
 	}
 	iLocal_43 = 0;
 	iLocal_44 = 0;
@@ -298,12 +298,12 @@ void func_1()//Position - 0xF2
 
 void func_3()//Position - 0x123
 {
-	if (__LIB_17__::func_252())
+	if (__LIB_25__::func_398())
 	{
 		MemCopy(&uLocal_210, {func_5()}, 6);
 		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY(&uLocal_210)) == 0)
 		{
-			__LIB_11__::func_144();
+			__LIB_15__::func_929();
 		}
 		else
 		{
@@ -326,7 +326,7 @@ void func_7()//Position - 0x191
 	switch (iLocal_44)
 	{
 		case 0:
-			if ((((((__LIB_0__::func_571(130) && __LIB_0__::func_396(PLAYER::PLAYER_ID()) != 192) && __LIB_0__::func_396(PLAYER::PLAYER_ID()) != 190) && __LIB_0__::func_396(PLAYER::PLAYER_ID()) != 191) && __LIB_0__::func_396(PLAYER::PLAYER_ID()) != 225) && __LIB_0__::func_396(PLAYER::PLAYER_ID()) != 226) && __LIB_0__::func_396(PLAYER::PLAYER_ID()) != 227)
+			if ((((((__LIB_0__::func_769(130) && __LIB_0__::func_492(PLAYER::PLAYER_ID()) != 192) && __LIB_0__::func_492(PLAYER::PLAYER_ID()) != 190) && __LIB_0__::func_492(PLAYER::PLAYER_ID()) != 191) && __LIB_0__::func_492(PLAYER::PLAYER_ID()) != 225) && __LIB_0__::func_492(PLAYER::PLAYER_ID()) != 226) && __LIB_0__::func_492(PLAYER::PLAYER_ID()) != 227)
 			{
 				if (Global_32193)
 				{
@@ -338,11 +338,11 @@ void func_7()//Position - 0x191
 				}
 				if (!Global_32018)
 				{
-					if (__LIB_20__::func_645())
+					if (__LIB_17__::func_14())
 					{
 						if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601" /* GXT: Which Service? */, "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
 						{
-							if (!__LIB_17__::func_252())
+							if (!__LIB_25__::func_398())
 							{
 								SCRIPT::REQUEST_SCRIPT("emergencycall");
 								while (!SCRIPT::HAS_SCRIPT_LOADED("emergencycall"))
@@ -356,7 +356,7 @@ void func_7()//Position - 0x191
 					}
 					else if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601" /* GXT: Which Service? */, "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
 					{
-						if (!__LIB_17__::func_252())
+						if (!__LIB_25__::func_398())
 						{
 							SCRIPT::REQUEST_SCRIPT("emergencycall");
 							while (!SCRIPT::HAS_SCRIPT_LOADED("emergencycall"))
@@ -373,7 +373,7 @@ void func_7()//Position - 0x191
 		case 1:
 			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("emergencycall")) == 0)
 			{
-				if (!__LIB_0__::func_571(130))
+				if (!__LIB_0__::func_769(130))
 				{
 					iLocal_43 = 1;
 				}
@@ -384,7 +384,7 @@ void func_7()//Position - 0x191
 
 bool func_8(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, char* sParam5, char* sParam6, char* sParam7, char* sParam8, int iParam9, int iParam10, int iParam11, bool bParam12)//Position - 0x2FA
 {
-	__LIB_0__::func_572(uParam0, iParam1, sParam2, iParam10, iParam11, 0);
+	__LIB_0__::func_770(uParam0, iParam1, sParam2, iParam10, iParam11, 0);
 	Global_21653 = 0;
 	Global_21612 = 1;
 	Global_21619 = 0;
@@ -409,20 +409,20 @@ bool func_8(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam4,
 	StringCopy(&Global_21723, sParam8, 24);
 	StringCopy(&Global_21753, sParam5, 24);
 	Global_2883585 = 1;
-	return __LIB_31__::func_878(sParam3, iParam4, bParam12);
+	return __LIB_0__::func_711(sParam3, iParam4, bParam12);
 }
 
 void func_36()//Position - 0xD54
 {
 	if (iLocal_216)
 	{
-		if (__LIB_17__::func_252())
+		if (__LIB_25__::func_398())
 		{
-			__LIB_11__::func_144();
+			__LIB_15__::func_929();
 		}
 		else
 		{
-			__LIB_11__::func_172();
+			__LIB_15__::func_999();
 		}
 		iLocal_216 = 0;
 	}

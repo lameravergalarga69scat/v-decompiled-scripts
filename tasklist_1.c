@@ -39,7 +39,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_17 = -1;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
 	{
-		__LIB_0__::func_199();
+		__LIB_0__::func_202();
 	}
 	while (true)
 	{
@@ -68,8 +68,8 @@ void __EntryFunction__()//Position - 0x0
 						Global_32010[iLocal_19] = 0;
 						iLocal_19++;
 					}
-					__LIB_41__::func_485(1, 1, 1, 1);
-					__LIB_30__::func_924("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
+					__LIB_43__::func_612(1, 1, 1, 1);
+					__LIB_39__::func_433("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
 					iLocal_21 = 1;
 				}
 				break;
@@ -95,7 +95,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (!Global_32014[iLocal_19])
 										{
-											if (MOBILE::CELL_CAM_IS_CHAR_VISIBLE_NO_FACE_CHECK(uLocal_20[iLocal_19]) && __LIB_11__::func_741())
+											if (MOBILE::CELL_CAM_IS_CHAR_VISIBLE_NO_FACE_CHECK(uLocal_20[iLocal_19]) && __LIB_16__::func_923())
 											{
 												Global_22724[1 /*42*/].f_27[2]++;
 												func_2("CL_C1A_J2" /* GXT: Photos taken of dead gang members ~1~/~1~ */, Global_22724[1 /*42*/].f_27[2], Global_22724[1 /*42*/].f_32[2], 2000, 1);
@@ -105,7 +105,7 @@ void __EntryFunction__()//Position - 0x0
 									}
 									if (Global_22724[1 /*42*/].f_27[1] >= Global_22724[1 /*42*/].f_32[1] && Global_22724[1 /*42*/].f_27[2] >= Global_22724[1 /*42*/].f_32[2])
 									{
-										__LIB_30__::func_924("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
+										__LIB_39__::func_433("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
 										Global_22724[1 /*42*/].f_8 = 1;
 										iLocal_21 = 2;
 									}
@@ -141,8 +141,8 @@ void __EntryFunction__()//Position - 0x0
 					Global_22724[2 /*42*/].f_37[3] = 0;
 					Global_22724[2 /*42*/].f_32[3] = -1;
 					Global_22724[2 /*42*/].f_27[3] = -1;
-					__LIB_41__::func_485(136, 2, 1, 1);
-					__LIB_30__::func_924("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
+					__LIB_43__::func_612(136, 2, 1, 1);
+					__LIB_39__::func_433("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
 					iLocal_22 = 1;
 				}
 				break;
@@ -158,7 +158,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if ((Global_22724[2 /*42*/].f_37[1] == 1 && Global_22724[2 /*42*/].f_37[2] == 1) && Global_22724[2 /*42*/].f_37[3] == 1)
 				{
-					__LIB_30__::func_924("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
+					__LIB_39__::func_433("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
 					Global_22724[2 /*42*/].f_8 = 1;
 					iLocal_22 = 2;
 				}

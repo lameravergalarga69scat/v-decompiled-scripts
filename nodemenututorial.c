@@ -79,7 +79,7 @@ void __EntryFunction__()//Position - 0x0
 	func_93();
 	while (true)
 	{
-		if (__LIB_6__::func_949())
+		if (__LIB_0__::func_959())
 		{
 			func_82();
 			return;
@@ -167,12 +167,12 @@ int func_6(int* iParam0)//Position - 0x144
 
 void func_7(int* iParam0, int iParam1)//Position - 0x177
 {
-	__LIB_1__::func_846(iParam0, iParam1);
+	__LIB_2__::func_487(iParam0, iParam1);
 }
 
 void func_9(int* iParam0, int iParam1)//Position - 0x197
 {
-	__LIB_1__::func_845(iParam0, iParam1);
+	__LIB_2__::func_486(iParam0, iParam1);
 }
 
 int func_11(int* iParam0)//Position - 0x1B7
@@ -193,7 +193,7 @@ bool func_12(int* iParam0)//Position - 0x1D2
 
 bool func_13(int* iParam0, int iParam1)//Position - 0x1EF
 {
-	return __LIB_0__::func_492(iParam0, iParam1);
+	return __LIB_0__::func_624(iParam0, iParam1);
 }
 
 int func_15(int* iParam0)//Position - 0x20D
@@ -270,12 +270,12 @@ void func_19(int* iParam0, var uParam1)//Position - 0x332
 {
 	int iVar0;
 	char* sVar1;
-	if (__LIB_0__::func_492(iParam0, 3))
+	if (__LIB_0__::func_624(iParam0, 3))
 	{
-		func_22(iParam0, __LIB_5__::func_950(uParam1));
+		func_22(iParam0, __LIB_9__::func_818(uParam1));
 		return;
 	}
-	iVar0 = __LIB_2__::func_340(uParam1);
+	iVar0 = __LIB_3__::func_530(uParam1);
 	if (iVar0 != 0)
 	{
 		Stack.Push(uParam1);
@@ -283,7 +283,7 @@ void func_19(int* iParam0, var uParam1)//Position - 0x332
 		Call_Loc(iVar0);
 		return;
 	}
-	sVar1 = __LIB_10__::func_843(uParam1);
+	sVar1 = __LIB_15__::func_243(uParam1);
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sVar1))
 	{
 		return;
@@ -394,7 +394,7 @@ int func_30(int* iParam0, int iParam1)//Position - 0x493
 
 int func_31(var uParam0)//Position - 0x4CB
 {
-	return __LIB_1__::func_294((func_33(uParam0) - 1), 0);
+	return __LIB_1__::func_723((func_33(uParam0) - 1), 0);
 }
 
 int func_33(var uParam0)//Position - 0x4F6
@@ -402,7 +402,7 @@ int func_33(var uParam0)//Position - 0x4F6
 	int iVar0;
 	struct<9> Var1;
 	int iVar2;
-	iVar0 = __LIB_0__::func_991(uParam0);
+	iVar0 = __LIB_1__::func_280(uParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -442,7 +442,7 @@ void func_36(int* iParam0, var* uParam1, bool bParam2, bool bParam3)//Position -
 	}
 	if (bParam2)
 	{
-		iVar0 = __LIB_0__::func_996(&(iParam0->f_6));
+		iVar0 = __LIB_1__::func_285(&(iParam0->f_6));
 		func_18(iParam0, iVar0);
 		func_77(iParam0);
 	}
@@ -473,7 +473,7 @@ void func_39(int* iParam0)//Position - 0x5DB
 void func_40(var uParam0, int iParam1, char* sParam2)//Position - 0x61B
 {
 	int iVar0;
-	iVar0 = __LIB_30__::func_494(uParam0);
+	iVar0 = __LIB_38__::func_713(uParam0);
 	if (iVar0 == 0)
 	{
 		return;
@@ -485,13 +485,13 @@ void func_40(var uParam0, int iParam1, char* sParam2)//Position - 0x61B
 
 bool func_42(var uParam0)//Position - 0x647
 {
-	return __LIB_30__::func_494(uParam0) != 0;
+	return __LIB_38__::func_713(uParam0) != 0;
 }
 
 void func_43(int* iParam0)//Position - 0x657
 {
 	func_45(iParam0);
-	if (__LIB_30__::func_495(&(iParam0->f_72)))
+	if (__LIB_38__::func_714(&(iParam0->f_72)))
 	{
 		func_19(iParam0, &(iParam0->f_72));
 	}
@@ -517,7 +517,7 @@ int func_46(var uParam0)//Position - 0x6A0
 
 void func_47(int* iParam0)//Position - 0x6B9
 {
-	if (!__LIB_29__::func_318(&(iParam0->f_72)))
+	if (!__LIB_36__::func_913(&(iParam0->f_72)))
 	{
 		if (func_50(&(iParam0->f_6), iParam0))
 		{
@@ -533,7 +533,7 @@ void func_47(int* iParam0)//Position - 0x6B9
 int func_48(var uParam0, int* iParam1)//Position - 0x6F5
 {
 	int iVar0;
-	iVar0 = __LIB_29__::func_201(uParam0);
+	iVar0 = __LIB_36__::func_744(uParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -585,7 +585,7 @@ void func_54(int* iParam0)//Position - 0x78C
 		func_7(iParam0, 5);
 		return;
 	}
-	if (!__LIB_26__::func_422(&(iParam0->f_3), &(iParam0->f_4), &(iParam0->f_5), 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0))
+	if (!__LIB_13__::func_113(&(iParam0->f_3), &(iParam0->f_4), &(iParam0->f_5), 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0))
 	{
 		return;
 	}
@@ -631,16 +631,16 @@ int func_64(int* iParam0, bool bParam1, bool bParam2)//Position - 0x1A00
 	{
 		func_65(iParam0);
 	}
-	if (__LIB_0__::func_492(&(iParam0->f_72.f_7), 1))
+	if (__LIB_0__::func_624(&(iParam0->f_72.f_7), 1))
 	{
 		func_9(iParam0, 2);
 	}
-	if (__LIB_0__::func_991(&(iParam0->f_72)) == 0)
+	if (__LIB_1__::func_280(&(iParam0->f_72)) == 0)
 	{
 		return 0;
 	}
 	func_36(iParam0, &(iParam0->f_72), 1, bParam2);
-	if (__LIB_0__::func_492(&(iParam0->f_72.f_7), 2))
+	if (__LIB_0__::func_624(&(iParam0->f_72.f_7), 2))
 	{
 		func_64(iParam0, 1, 1);
 	}
@@ -675,7 +675,7 @@ int func_67(int* iParam0)//Position - 0x1AD1
 
 int func_68(int* iParam0)//Position - 0x1B04
 {
-	if (!func_13(iParam0, 3) && !MISC::IS_STRING_NULL_OR_EMPTY(__LIB_5__::func_950(&(iParam0->f_72))))
+	if (!func_13(iParam0, 3) && !MISC::IS_STRING_NULL_OR_EMPTY(__LIB_9__::func_818(&(iParam0->f_72))))
 	{
 		func_9(iParam0, 3);
 		func_9(iParam0, 1);
@@ -791,7 +791,7 @@ void func_78(int* iParam0, int iParam1)//Position - 0x1CFC
 	{
 		Var3 = { func_29(iParam0) };
 		iVar1 = (iVar1 + iParam1);
-		iVar1 = __LIB_3__::func_681(iVar1, iVar2);
+		iVar1 = __LIB_4__::func_892(iVar1, iVar2);
 		if (!func_28(&(iParam0->f_6), iVar1, &Var3))
 		{
 			return;
@@ -872,7 +872,7 @@ void func_95(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 
 int func_96(int iParam0, var uParam1)//Position - 0x1FAA
 {
-	__LIB_3__::func_683(uParam1, iLocal_48);
+	__LIB_4__::func_894(uParam1, iLocal_48);
 	switch (iParam0)
 	{
 		case 0:
@@ -910,11 +910,11 @@ void func_101(var uParam0, int iParam1, bool bParam2)//Position - 0x204D
 {
 	if (bParam2)
 	{
-		__LIB_1__::func_845(&(uParam0->f_7), iParam1);
+		__LIB_2__::func_486(&(uParam0->f_7), iParam1);
 	}
 	else
 	{
-		__LIB_1__::func_846(&(uParam0->f_7), iParam1);
+		__LIB_2__::func_487(&(uParam0->f_7), iParam1);
 	}
 }
 
@@ -952,11 +952,11 @@ void func_105(int* iParam0, var* uParam1, int iParam2, bool bParam3)//Position -
 {
 	func_36(iParam0, uParam1, 0, bParam3);
 	func_18(iParam0, iParam2);
-	if (__LIB_0__::func_991(uParam1) == 0)
+	if (__LIB_1__::func_280(uParam1) == 0)
 	{
 		return;
 	}
-	if (__LIB_0__::func_492(&(iParam0->f_72.f_7), 2))
+	if (__LIB_0__::func_624(&(iParam0->f_72.f_7), 2))
 	{
 		func_64(iParam0, 0, 1);
 	}
@@ -974,8 +974,8 @@ void func_107(var uParam0, int iParam1)//Position - 0x217A
 
 void func_108()//Position - 0x2188
 {
-	__LIB_1__::func_193(1, 0);
-	__LIB_7__::func_49(1, -1);
+	__LIB_1__::func_602(1, 0);
+	__LIB_1__::func_895(1, -1);
 }
 
 void func_113(var uParam0, int iParam1)//Position - 0x2804
@@ -985,7 +985,7 @@ void func_113(var uParam0, int iParam1)//Position - 0x2804
 
 bool func_114()//Position - 0x2812
 {
-	return __LIB_7__::func_161(0, -1, 1);
+	return __LIB_3__::func_67(0, -1, 1);
 }
 
 void func_117(var uParam0, int iParam1)//Position - 0x29B9
@@ -997,18 +997,18 @@ struct<33> func_118()//Position - 0x29C7
 {
 	struct<33> Var0;
 	Var0.f_8 = -1;
-	__LIB_31__::func_621(&Var0, 14060/*func_170*/);
+	__LIB_40__::func_587(&Var0, 14060/*func_170*/);
 	func_122(&Var0, 11013/*func_124*/, 0);
-	__LIB_30__::func_496(&Var0, 10762/*func_120*/);
+	__LIB_38__::func_715(&Var0, 10762/*func_120*/);
 	return Var0;
 }
 
 int func_120(var uParam0)//Position - 0x2A0A
 {
-	__LIB_1__::func_344(202, "PIM_CEXI" /* GXT: Back */, -1);
+	__LIB_1__::func_791(202, "PIM_CEXI" /* GXT: Back */, -1);
 	if (func_69(uParam0))
 	{
-		__LIB_1__::func_344(201, "PIM_CSEL" /* GXT: Select */, -1);
+		__LIB_1__::func_791(201, "PIM_CSEL" /* GXT: Select */, -1);
 	}
 	return 1;
 }
@@ -1173,13 +1173,13 @@ void func_134(int* iParam0, bool bParam1, bool bParam2)//Position - 0x2CDC
 		func_9(iParam0, 2);
 		return;
 	}
-	iVar1 = __LIB_0__::func_348(&(iParam0->f_6));
-	bVar2 = __LIB_0__::func_492(&(iParam0->f_6.f_7), 2);
+	iVar1 = __LIB_0__::func_404(&(iParam0->f_6));
+	bVar2 = __LIB_0__::func_624(&(iParam0->f_6.f_7), 2);
 	if (func_13(iParam0, 4))
 	{
 		iVar1 = 0;
 	}
-	iVar3 = __LIB_15__::func_763(&(iParam0->f_6));
+	iVar3 = __LIB_22__::func_677(&(iParam0->f_6));
 	func_36(iParam0, &Var0, 0, 1);
 	if (func_30(iParam0, iVar1))
 	{
@@ -1198,7 +1198,7 @@ void func_134(int* iParam0, bool bParam1, bool bParam2)//Position - 0x2CDC
 	{
 		func_134(iParam0, 0, 1);
 	}
-	else if (__LIB_0__::func_492(&(iParam0->f_72.f_7), 2) && !bParam1)
+	else if (__LIB_0__::func_624(&(iParam0->f_72.f_7), 2) && !bParam1)
 	{
 		func_64(iParam0, 1, 1);
 		func_18(iParam0, iVar1);
@@ -1311,11 +1311,11 @@ int func_145(int* iParam0, int iParam1)//Position - 0x2F22
 	bool bVar0;
 	int iVar1;
 	int iVar2;
-	if (!__LIB_0__::func_492(&(iParam0->f_6.f_7), 2))
+	if (!__LIB_0__::func_624(&(iParam0->f_6.f_7), 2))
 	{
 		return 0;
 	}
-	bVar0 = __LIB_0__::func_492(&(iParam0->f_6.f_7), 7);
+	bVar0 = __LIB_0__::func_624(&(iParam0->f_6.f_7), 7);
 	if (bVar0)
 	{
 		iVar1 = func_147(iParam0);
@@ -1334,7 +1334,7 @@ int func_145(int* iParam0, int iParam1)//Position - 0x2F22
 int func_146(var uParam0)//Position - 0x2FA2
 {
 	struct<33> Var0;
-	if (!__LIB_0__::func_492(&(uParam0->f_6.f_7), 2))
+	if (!__LIB_0__::func_624(&(uParam0->f_6.f_7), 2))
 	{
 		return 0;
 	}
@@ -1348,7 +1348,7 @@ int func_146(var uParam0)//Position - 0x2FA2
 
 int func_147(var uParam0)//Position - 0x2FE0
 {
-	if (!__LIB_0__::func_492(&(uParam0->f_6.f_7), 2))
+	if (!__LIB_0__::func_624(&(uParam0->f_6.f_7), 2))
 	{
 		return 0;
 	}
@@ -1357,7 +1357,7 @@ int func_147(var uParam0)//Position - 0x2FE0
 
 var func_148(var uParam0)//Position - 0x3001
 {
-	return __LIB_0__::func_348(&(uParam0->f_6));
+	return __LIB_0__::func_404(&(uParam0->f_6));
 }
 
 void func_149(int* iParam0)//Position - 0x3011
@@ -1368,7 +1368,7 @@ void func_149(int* iParam0)//Position - 0x3011
 	}
 	PAD::SET_INPUT_EXCLUSIVE(2 /*FRONTEND_CONTROL*/, 239 /*INPUT_CURSOR_X*/);
 	PAD::SET_INPUT_EXCLUSIVE(2 /*FRONTEND_CONTROL*/, 240 /*INPUT_CURSOR_Y*/);
-	__LIB_7__::func_287(0, 0, 0, 1);
+	__LIB_3__::func_567(0, 0, 0, 1);
 	func_164();
 	func_161(iParam0);
 	func_157(iParam0);
@@ -1473,7 +1473,7 @@ void func_161(int* iParam0)//Position - 0x31D4
 	{
 		return;
 	}
-	if (!__LIB_30__::func_497())
+	if (!__LIB_38__::func_716())
 	{
 		return;
 	}
@@ -1481,7 +1481,7 @@ void func_161(int* iParam0)//Position - 0x31D4
 	{
 		return;
 	}
-	iVar0 = __LIB_3__::func_632(0.045f);
+	iVar0 = __LIB_4__::func_848(0.045f);
 	if (iVar0 > 0)
 	{
 		func_128(iParam0);
@@ -1504,7 +1504,7 @@ void func_164()//Position - 0x3321
 
 void func_170(var uParam0, int iParam1)//Position - 0x36EC
 {
-	__LIB_18__::func_477(iParam1, __LIB_0__::func_997(uParam0), 0, 1, 0, 0, 0);
+	__LIB_3__::func_572(iParam1, __LIB_1__::func_286(uParam0), 0, 1, 0, 0, 0);
 }
 
 void func_186(var uParam0, int iParam1)//Position - 0x466A
@@ -1514,7 +1514,7 @@ void func_186(var uParam0, int iParam1)//Position - 0x466A
 
 void func_187(char* sParam0)//Position - 0x4678
 {
-	__LIB_1__::func_342(sParam0, 0, 0);
+	__LIB_1__::func_789(sParam0, 0, 0);
 }
 
 void func_189(var uParam0, int iParam1)//Position - 0x46ED
@@ -1524,7 +1524,7 @@ void func_189(var uParam0, int iParam1)//Position - 0x46ED
 
 void func_190(var uParam0)//Position - 0x46FB
 {
-	__LIB_2__::func_183(uParam0, 1, 1);
+	__LIB_3__::func_110(uParam0, 1, 1);
 }
 
 void func_192(var uParam0, int iParam1)//Position - 0x4859
@@ -1539,11 +1539,11 @@ void func_223(var uParam0, int iParam1)//Position - 0x8246
 
 int func_224(int* iParam0)//Position - 0x8254
 {
-	__LIB_4__::func_222(-1);
-	__LIB_1__::func_193(1, 0);
+	__LIB_3__::func_564(-1);
+	__LIB_1__::func_602(1, 0);
 	func_241(iParam0);
 	func_237(iParam0);
-	__LIB_3__::func_630(0, 0, 0, 0, 0);
+	__LIB_4__::func_846(0, 0, 0, 0, 0);
 	func_232(iParam0);
 	func_225(iParam0);
 	func_18(iParam0, iParam0->f_1);
@@ -1554,15 +1554,15 @@ void func_225(int* iParam0)//Position - 0x8294
 {
 	if (func_13(iParam0, 3))
 	{
-		__LIB_1__::func_344(202, "PIMK2_CANCEL", -1);
-		__LIB_1__::func_344(201, "PIMK2_ACCEPT", -1);
+		__LIB_1__::func_791(202, "PIMK2_CANCEL", -1);
+		__LIB_1__::func_791(201, "PIMK2_ACCEPT", -1);
 		return;
 	}
 	if (func_13(iParam0, 5))
 	{
 		return;
 	}
-	if (!__LIB_29__::func_318(&(iParam0->f_72)))
+	if (!__LIB_36__::func_913(&(iParam0->f_72)))
 	{
 		func_229(iParam0);
 	}
@@ -1577,7 +1577,7 @@ void func_226(int* iParam0)//Position - 0x82E4
 void func_227(var uParam0, var uParam1)//Position - 0x82F8
 {
 	int iVar0;
-	iVar0 = __LIB_30__::func_498(uParam0);
+	iVar0 = __LIB_38__::func_717(uParam0);
 	if (iVar0 == 0)
 	{
 		return;
@@ -1594,7 +1594,7 @@ void func_229(int* iParam0)//Position - 0x8323
 void func_230(var uParam0, var uParam1)//Position - 0x8337
 {
 	int iVar0;
-	iVar0 = __LIB_31__::func_461(uParam0);
+	iVar0 = __LIB_40__::func_352(uParam0);
 	if (iVar0 == 0)
 	{
 		return;
@@ -1611,8 +1611,8 @@ void func_232(int* iParam0)//Position - 0x8362
 	struct<33> Var3;
 	int iVar4;
 	int iVar5;
-	__LIB_3__::func_685(iParam0, 0);
-	iVar0 = __LIB_0__::func_991(&(iParam0->f_6));
+	__LIB_4__::func_896(iParam0, 0);
+	iVar0 = __LIB_1__::func_280(&(iParam0->f_6));
 	if (iVar0 == 0)
 	{
 		return;
@@ -1641,8 +1641,8 @@ void func_232(int* iParam0)//Position - 0x8362
 			iVar1++;
 		}
 	}
-	iVar5 = __LIB_1__::func_294(0, (iVar2 - 1));
-	__LIB_3__::func_685(iParam0, iVar5);
+	iVar5 = __LIB_1__::func_723(0, (iVar2 - 1));
+	__LIB_4__::func_896(iParam0, iVar5);
 	func_25(iParam0, iParam0->f_1);
 	func_24(&(iParam0->f_72));
 }
@@ -1671,18 +1671,18 @@ void func_234(var uParam0, var uParam1)//Position - 0x842F
 
 void func_237(int* iParam0)//Position - 0x8498
 {
-	if (MISC::IS_STRING_NULL_OR_EMPTY(__LIB_1__::func_192(__LIB_0__::func_649(&(iParam0->f_6)))))
+	if (MISC::IS_STRING_NULL_OR_EMPTY(__LIB_1__::func_601(__LIB_0__::func_864(&(iParam0->f_6)))))
 	{
-		__LIB_1__::func_319(__LIB_0__::func_997(&(iParam0->f_6)));
+		__LIB_1__::func_767(__LIB_1__::func_286(&(iParam0->f_6)));
 		return;
 	}
-	__LIB_1__::func_319(__LIB_0__::func_649(&(iParam0->f_6)));
+	__LIB_1__::func_767(__LIB_0__::func_864(&(iParam0->f_6)));
 }
 
 void func_241(int* iParam0)//Position - 0x852F
 {
-	__LIB_1__::func_318(1, 1, 0, 0, 0);
-	__LIB_1__::func_317(1, 2, 1, 1, 1);
+	__LIB_1__::func_766(1, 1, 0, 0, 0);
+	__LIB_1__::func_765(1, 2, 1, 1, 1);
 	func_4(iParam0);
 }
 
@@ -1694,7 +1694,7 @@ void func_245(var uParam0)//Position - 0x86EF
 
 int func_246(int iParam0, var uParam1)//Position - 0x870E
 {
-	__LIB_3__::func_683(uParam1, iLocal_47);
+	__LIB_4__::func_894(uParam1, iLocal_47);
 	switch (iParam0)
 	{
 		case 0:

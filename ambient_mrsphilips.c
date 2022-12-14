@@ -116,11 +116,11 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	__LIB_0__::func_513(10);
+	__LIB_0__::func_694(10);
 	while (true)
 	{
 		PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID());
-		iVar0 = __LIB_18__::func_173();
+		iVar0 = __LIB_0__::func_683();
 		fVar1 = (CAM::REPLAY_GET_MAX_DISTANCE_ALLOWED_FROM_PLAYER() + 5f);
 		if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 1973.3237f, 3815.594f, 31.42936f) < (fVar1 * fVar1))
 		{
@@ -179,7 +179,7 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0x182
 {
-	if (__LIB_32__::func_573(2))
+	if (__LIB_0__::func_784(2))
 	{
 		if (func_3())
 		{
@@ -203,9 +203,9 @@ int func_3()//Position - 0x1B8
 {
 	struct<4> Var0;
 	char* sVar1;
-	while (!__LIB_0__::func_570(36))
+	while (!__LIB_32__::func_441(36))
 	{
-		if (__LIB_0__::func_567(36))
+		if (__LIB_32__::func_440(36))
 		{
 			__LIB_0__::func_135("LAUNCH_RC_MISSION - Script denied by RC Controller");
 			return 0;
@@ -213,15 +213,15 @@ int func_3()//Position - 0x1B8
 		SYSTEM::WAIT(0);
 	}
 	func_116();
-	__LIB_6__::func_773(36, &Var0);
+	__LIB_0__::func_432(36, &Var0);
 	MemCopy(&sVar1, {__LIB_0__::func_45(36)}, 4);
-	__LIB_6__::func_862(&sVar1, Var0.f_3, 0);
-	__LIB_6__::func_861(36);
-	if (!__LIB_0__::func_294())
+	__LIB_0__::func_772(&sVar1, Var0.f_3, 0);
+	__LIB_0__::func_771(36);
+	if (!__LIB_0__::func_323())
 	{
-		__LIB_42__::func_612("MrsPhilips2", 1);
+		__LIB_41__::func_29("MrsPhilips2", 1);
 	}
-	__LIB_35__::func_527(36, Var0.f_0);
+	__LIB_37__::func_597(36, Var0.f_0);
 	return 1;
 }
 
@@ -235,14 +235,9 @@ void func_116()//Position - 0xA176
 		SCRIPT::REQUEST_SCRIPT(sVar0);
 		SYSTEM::WAIT(0);
 	}
-	__LIB_6__::func_863(36);
+	__LIB_32__::func_445(36);
 	SYSTEM::START_NEW_SCRIPT(sVar0, 51000);
 	SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(sVar0);
-}
-
-void func_123(int iParam0, int iParam1, int iParam2)//Position - 0xA3BE
-{
-	__LIB_0__::func_562(iParam0, iParam1, iParam2, 0, 0, 1);
 }
 
 void func_159()//Position - 0xB475
@@ -257,8 +252,8 @@ void func_159()//Position - 0xB475
 		case 1:
 			if (!__LIB_0__::func_67(25) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 			{
-				__LIB_18__::func_203("MRSP_01_HELP" /* GXT: Find a van with the Deludamol pharmaceuticals logo. */, 1, 0, -1, 10000, 4, 0, 0, 0);
-				__LIB_0__::func_460(25);
+				__LIB_0__::func_697("MRSP_01_HELP" /* GXT: Find a van with the Deludamol pharmaceuticals logo. */, 1, 0, -1, 10000, 4, 0, 0, 0);
+				__LIB_0__::func_592(25);
 			}
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 			{
@@ -281,19 +276,19 @@ void func_165()//Position - 0xB87F
 
 void func_166(bool bParam0)//Position - 0xB891
 {
-	__LIB_6__::func_770(51, bParam0);
-	__LIB_6__::func_770(52, bParam0);
-	__LIB_6__::func_770(53, bParam0);
-	__LIB_6__::func_770(54, bParam0);
-	__LIB_6__::func_770(55, bParam0);
-	__LIB_6__::func_770(56, bParam0);
+	__LIB_0__::func_364(51, bParam0);
+	__LIB_0__::func_364(52, bParam0);
+	__LIB_0__::func_364(53, bParam0);
+	__LIB_0__::func_364(54, bParam0);
+	__LIB_0__::func_364(55, bParam0);
+	__LIB_0__::func_364(56, bParam0);
 }
 
 void func_170()//Position - 0xB981
 {
 	if (!__LIB_0__::func_39(4))
 	{
-		if (__LIB_0__::func_528(36))
+		if (__LIB_0__::func_720(36))
 		{
 			func_2(4);
 		}
@@ -307,9 +302,9 @@ void func_170()//Position - 0xB981
 void func_174()//Position - 0xBA43
 {
 	func_166(0);
-	if (__LIB_0__::func_528(36))
+	if (__LIB_0__::func_720(36))
 	{
-		__LIB_0__::func_512(10);
+		__LIB_0__::func_693(10);
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

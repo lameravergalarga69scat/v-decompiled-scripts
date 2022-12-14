@@ -138,7 +138,7 @@ void func_3(int iParam0)//Position - 0x116
 {
 	int iVar0;
 	iVar0 = *iParam0;
-	if (((__LIB_0__::func_706() && func_4(iVar0)) && iVar0 != 248) && NETWORK::NETWORK_CAN_BAIL())
+	if (((__LIB_0__::func_983() && func_4(iVar0)) && iVar0 != 248) && NETWORK::NETWORK_CAN_BAIL())
 	{
 		NETWORK::NETWORK_BAIL(0, 1, 0);
 	}

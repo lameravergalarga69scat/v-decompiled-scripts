@@ -314,7 +314,7 @@ void __EntryFunction__()//Position - 0x0
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_46, iLocal_49);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_46, false, false);
 					ENTITY::FREEZE_ENTITY_POSITION(iLocal_46, true);
-					__LIB_0__::func_203(&uLocal_51, 3, iLocal_46, "LESTER", 0, 1);
+					__LIB_0__::func_222(&uLocal_51, 3, iLocal_46, "LESTER", 0, 1);
 					iLocal_47 = OBJECT::CREATE_OBJECT(joaat("prop_cs_walking_stick"), 706.98737f, -967.09454f, 30.4f, false, false, false);
 					ENTITY::SET_ENTITY_COORDS(iLocal_47, 706.98737f, -967.09454f, 30.4f, true, false, false, true);
 					ENTITY::SET_ENTITY_ROTATION(iLocal_47, 90f, 0f, 160f, 2, true);
@@ -338,7 +338,7 @@ void __EntryFunction__()//Position - 0x0
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_46, false))
 			{
 				fVar2 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_46, true));
-				if (__LIB_18__::func_173() == 0)
+				if (__LIB_0__::func_683() == 0)
 				{
 					if (fVar2 < 4f)
 					{
@@ -346,7 +346,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if (!__LIB_0__::func_75())
 							{
-								if (__LIB_37__::func_799(&uLocal_51, "JHFAUD", "JHF_LEAVE", 3, 0, 0, 0))
+								if (__LIB_0__::func_787(&uLocal_51, "JHFAUD", "JHF_LEAVE", 3, 0, 0, 0))
 								{
 									iLocal_217 = MISC::GET_GAME_TIMER() + 25000;
 								}
@@ -358,7 +358,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (!Global_113381 == 1 && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 718.0749f, -976.0472f, 22.914824f, 718.05927f, -979.45496f, 27.119097f, 5.75f, false, true, 0))
 					{
-						__LIB_29__::func_825(7, 1);
+						__LIB_37__::func_690(7, 1);
 						Global_113377 = 0;
 						Global_113381 = 1;
 						BRAIN::REACTIVATE_ALL_WORLD_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE();
@@ -417,7 +417,7 @@ void func_30()//Position - 0xEE8
 
 void func_31()//Position - 0xF52
 {
-	__LIB_18__::func_110();
+	__LIB_26__::func_390();
 	GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_219);
 }
 

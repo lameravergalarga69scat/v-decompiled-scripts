@@ -49,7 +49,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_26 = 0.17f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(82))
 	{
-		__LIB_0__::func_199();
+		__LIB_0__::func_202();
 	}
 	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("controller_races")) > 1)
 	{
@@ -62,9 +62,9 @@ void __EntryFunction__()//Position - 0x0
 	func_30();
 	while (true)
 	{
-		if (__LIB_6__::func_854(9) || Global_97361)
+		if (__LIB_0__::func_540(9) || Global_97361)
 		{
-			__LIB_0__::func_199();
+			__LIB_0__::func_202();
 		}
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
@@ -72,7 +72,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				func_23();
 				func_19();
-				if (__LIB_18__::func_173() == 1)
+				if (__LIB_0__::func_683() == 1)
 				{
 					switch (iLocal_28)
 					{
@@ -94,7 +94,7 @@ void func_1()//Position - 0xE5
 	bool bVar0;
 	int iVar1;
 	float fVar2;
-	if (__LIB_29__::func_726(8))
+	if (__LIB_37__::func_495(8))
 	{
 		bVar0 = false;
 		while (bVar0 <= (5 - 1))
@@ -104,23 +104,23 @@ void func_1()//Position - 0xE5
 			{
 				if (BitTest(Global_113386.f_24979.f_3, bVar0))
 				{
-					fVar2 = SYSTEM::VDIST2(__LIB_0__::func_85(PLAYER::PLAYER_ID()), __LIB_11__::func_156(iVar1, 0));
+					fVar2 = SYSTEM::VDIST2(__LIB_0__::func_85(PLAYER::PLAYER_ID()), __LIB_15__::func_962(iVar1, 0));
 					if (fVar2 > 43681f)
 					{
-						if (!__LIB_10__::func_861(iVar1))
+						if (!__LIB_15__::func_276(iVar1))
 						{
 							if (!Global_113360[bVar0])
 							{
-								__LIB_20__::func_576(iVar1);
-								__LIB_10__::func_604(iVar1, 1, 1);
+								__LIB_16__::func_612(iVar1);
+								__LIB_14__::func_622(iVar1, 1, 1);
 								MISC::CLEAR_BIT(&(Global_113386.f_24979.f_3), bVar0);
 							}
 							else if ((MISC::GET_GAME_TIMER() - Global_113366[bVar0]) > 60000)
 							{
 								Global_113360[bVar0] = 0;
 								Global_113366[bVar0] = MISC::GET_GAME_TIMER();
-								__LIB_20__::func_576(iVar1);
-								__LIB_10__::func_604(iVar1, 1, 1);
+								__LIB_16__::func_612(iVar1);
+								__LIB_14__::func_622(iVar1, 1, 1);
 								MISC::CLEAR_BIT(&(Global_113386.f_24979.f_3), bVar0);
 							}
 						}
@@ -129,24 +129,24 @@ void func_1()//Position - 0xE5
 							MISC::CLEAR_BIT(&(Global_113386.f_24979.f_3), bVar0);
 						}
 					}
-					else if (__LIB_10__::func_861(iVar1))
+					else if (__LIB_15__::func_276(iVar1))
 					{
-						__LIB_10__::func_604(iVar1, 0, 1);
+						__LIB_14__::func_622(iVar1, 0, 1);
 					}
 				}
-				else if (!__LIB_10__::func_861(iVar1))
+				else if (!__LIB_15__::func_276(iVar1))
 				{
 					if (!Global_113360[bVar0])
 					{
-						__LIB_20__::func_576(iVar1);
-						__LIB_10__::func_604(iVar1, 1, 1);
+						__LIB_16__::func_612(iVar1);
+						__LIB_14__::func_622(iVar1, 1, 1);
 					}
 					else if ((MISC::GET_GAME_TIMER() - Global_113366[bVar0]) > 60000)
 					{
 						Global_113360[bVar0] = 0;
 						Global_113366[bVar0] = MISC::GET_GAME_TIMER();
-						__LIB_20__::func_576(iVar1);
-						__LIB_10__::func_604(iVar1, 1, 1);
+						__LIB_16__::func_612(iVar1);
+						__LIB_14__::func_622(iVar1, 1, 1);
 					}
 				}
 			}
@@ -183,7 +183,7 @@ void func_19()//Position - 0x7BE
 	bool bVar0;
 	int iVar1;
 	float fVar2;
-	if (__LIB_29__::func_726(7))
+	if (__LIB_37__::func_495(7))
 	{
 		bVar0 = false;
 		while (bVar0 <= (4 - 1))
@@ -191,52 +191,52 @@ void func_19()//Position - 0x7BE
 			iVar1 = func_22(bVar0);
 			if (BitTest(Global_113386.f_24976.f_2, bVar0))
 			{
-				fVar2 = SYSTEM::VDIST2(__LIB_0__::func_85(PLAYER::PLAYER_ID()), __LIB_11__::func_156(iVar1, 0));
+				fVar2 = SYSTEM::VDIST2(__LIB_0__::func_85(PLAYER::PLAYER_ID()), __LIB_15__::func_962(iVar1, 0));
 				if (fVar2 > 43681f)
 				{
-					if (!__LIB_10__::func_861(iVar1))
+					if (!__LIB_15__::func_276(iVar1))
 					{
 						if (!Global_113350[bVar0])
 						{
-							__LIB_20__::func_576(iVar1);
-							__LIB_10__::func_604(iVar1, 1, 1);
+							__LIB_16__::func_612(iVar1);
+							__LIB_14__::func_622(iVar1, 1, 1);
 							MISC::CLEAR_BIT(&(Global_113386.f_24976.f_2), bVar0);
 						}
 						else if ((MISC::GET_GAME_TIMER() - Global_113355[bVar0]) > 60000)
 						{
 							Global_113350[bVar0] = 0;
 							Global_113355[bVar0] = MISC::GET_GAME_TIMER();
-							__LIB_20__::func_576(iVar1);
-							__LIB_10__::func_604(iVar1, 1, 1);
+							__LIB_16__::func_612(iVar1);
+							__LIB_14__::func_622(iVar1, 1, 1);
 							MISC::CLEAR_BIT(&(Global_113386.f_24976.f_2), bVar0);
 						}
 					}
 				}
-				else if (__LIB_10__::func_861(iVar1))
+				else if (__LIB_15__::func_276(iVar1))
 				{
-					__LIB_10__::func_604(iVar1, 0, 1);
+					__LIB_14__::func_622(iVar1, 0, 1);
 				}
 			}
-			else if (!__LIB_10__::func_861(iVar1))
+			else if (!__LIB_15__::func_276(iVar1))
 			{
 				if (!Global_113350[bVar0])
 				{
-					__LIB_20__::func_576(iVar1);
-					__LIB_10__::func_604(iVar1, 1, 1);
+					__LIB_16__::func_612(iVar1);
+					__LIB_14__::func_622(iVar1, 1, 1);
 				}
 				else if ((MISC::GET_GAME_TIMER() - Global_113355[bVar0]) > 60000)
 				{
 					Global_113350[bVar0] = 0;
 					Global_113355[bVar0] = MISC::GET_GAME_TIMER();
-					__LIB_20__::func_576(iVar1);
-					__LIB_10__::func_604(iVar1, 1, 1);
+					__LIB_16__::func_612(iVar1);
+					__LIB_14__::func_622(iVar1, 1, 1);
 				}
 			}
 			else if (!Global_113386.f_24976)
 			{
 				if (iVar1 == 82)
 				{
-					__LIB_20__::func_574(82);
+					__LIB_16__::func_611(82);
 					__LIB_0__::func_71(65, 1000);
 					Global_113386.f_24976 = 1;
 				}
@@ -303,18 +303,18 @@ void func_24()//Position - 0xA5B
 	iVar0 = 0;
 	while (iVar0 <= (5 - 1))
 	{
-		__LIB_10__::func_604(func_10(iVar0), 0, 0);
+		__LIB_14__::func_622(func_10(iVar0), 0, 0);
 		iVar0++;
 	}
 }
 
 int func_25()//Position - 0xA83
 {
-	if (__LIB_6__::func_854(9))
+	if (__LIB_0__::func_540(9))
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_200())
+	if (__LIB_0__::func_217())
 	{
 		return 0;
 	}

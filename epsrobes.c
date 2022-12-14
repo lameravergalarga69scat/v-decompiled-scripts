@@ -258,15 +258,15 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_193();
 	}
-	__LIB_0__::func_513(8);
-	if (__LIB_0__::func_368(92) == 1)
+	__LIB_0__::func_694(8);
+	if (__LIB_0__::func_425(92) == 1)
 	{
 		func_193();
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (__LIB_0__::func_368(92) == 1)
+		if (__LIB_0__::func_425(92) == 1)
 		{
 			func_193();
 		}
@@ -305,7 +305,7 @@ void func_1()//Position - 0xDF
 				{
 					if ((MISC::GET_GAME_TIMER() - iLocal_220) > 8000)
 					{
-						if (__LIB_37__::func_799(&uLocal_54, "EPS5AUD", "EP5_FOLLOW", 7, 0, 0, 0))
+						if (__LIB_0__::func_787(&uLocal_54, "EPS5AUD", "EP5_FOLLOW", 7, 0, 0, 0))
 						{
 							iLocal_220 = MISC::GET_GAME_TIMER();
 						}
@@ -323,31 +323,31 @@ void func_1()//Position - 0xDF
 			iLocal_219 = 0;
 		}
 	}
-	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) && __LIB_32__::func_759(0))
+	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) && __LIB_17__::func_19(0))
 	{
 		switch (iLocal_222)
 		{
 			case 0:
-				if (__LIB_0__::func_368(91) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
+				if (__LIB_0__::func_425(91) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
 				{
-					__LIB_38__::func_127(4, 10, 1);
-					__LIB_39__::func_903(4, "EPSROBE_M1" /* GXT: Order confirmation:~n~Official Epsilonian robes/pajama set~n~~n~Allow 24 hours for delivery.~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
-					iLocal_225 = __LIB_13__::func_95();
-					__LIB_32__::func_437(&iLocal_225, 0, 0, 0, 1, 0, 0);
+					__LIB_17__::func_17(4, 10, 1);
+					__LIB_17__::func_29(4, "EPSROBE_M1" /* GXT: Order confirmation:~n~Official Epsilonian robes/pajama set~n~~n~Allow 24 hours for delivery.~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
+					iLocal_225 = __LIB_11__::func_762();
+					__LIB_13__::func_827(&iLocal_225, 0, 0, 0, 1, 0, 0);
 					Global_113386.f_10049.f_104 = CLOCK::GET_CLOCK_DAY_OF_MONTH();
 					iLocal_226 = (Global_113386.f_10049.f_104 + 2 % __LIB_0__::func_139(CLOCK::GET_CLOCK_MONTH(), CLOCK::GET_CLOCK_YEAR()));
 					Global_113386.f_10049.f_106 = iLocal_225;
 					iLocal_222 = 1;
-					__LIB_0__::func_533();
+					__LIB_0__::func_210();
 				}
-				else if (!__LIB_0__::func_368(91))
+				else if (!__LIB_0__::func_425(91))
 				{
 					if (iLocal_50 == 0)
 					{
 						if (func_147())
 						{
-							__LIB_0__::func_203(&uLocal_54, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
-							if (__LIB_37__::func_799(&uLocal_54, "EPS5AUD", "EP5_COST", 7, 0, 0, 0))
+							__LIB_0__::func_222(&uLocal_54, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
+							if (__LIB_0__::func_787(&uLocal_54, "EPS5AUD", "EP5_COST", 7, 0, 0, 0))
 							{
 								iLocal_50 = 1;
 							}
@@ -356,19 +356,19 @@ void func_1()//Position - 0xDF
 				}
 				break;
 			case 1:
-				iLocal_223 = __LIB_13__::func_95();
+				iLocal_223 = __LIB_11__::func_762();
 				iLocal_226 = (Global_113386.f_10049.f_104 + 2 % __LIB_0__::func_139(CLOCK::GET_CLOCK_MONTH(), CLOCK::GET_CLOCK_YEAR()));
-				if ((((__LIB_20__::func_682(iLocal_223, iLocal_225) || CLOCK::GET_CLOCK_DAY_OF_MONTH() == iLocal_226) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && INTERIOR::GET_ROOM_KEY_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) != MISC::GET_HASH_KEY("V_Michael_1_M_Ward")) && INTERIOR::GET_ROOM_KEY_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) != MISC::GET_HASH_KEY("V_Michael_1_Master"))
+				if ((((__LIB_11__::func_761(iLocal_223, iLocal_225) || CLOCK::GET_CLOCK_DAY_OF_MONTH() == iLocal_226) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && INTERIOR::GET_ROOM_KEY_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) != MISC::GET_HASH_KEY("V_Michael_1_M_Ward")) && INTERIOR::GET_ROOM_KEY_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) != MISC::GET_HASH_KEY("V_Michael_1_Master"))
 				{
 					if (CLOCK::GET_CLOCK_DAY_OF_MONTH() == iLocal_226)
 					{
 					}
-					__LIB_38__::func_127(4, 11, 1);
-					__LIB_39__::func_903(4, "EPSROBE_M2" /* GXT: Order delivered:~n~Official Epsilonian robes/pajama set~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
-					__LIB_11__::func_791(4);
-					__LIB_38__::func_82(__LIB_6__::func_757(0), 12, 8, 1);
-					func_138(__LIB_6__::func_757(0), 12, 8, 1, 1);
-					__LIB_0__::func_533();
+					__LIB_17__::func_17(4, 11, 1);
+					__LIB_17__::func_29(4, "EPSROBE_M2" /* GXT: Order delivered:~n~Official Epsilonian robes/pajama set~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
+					__LIB_17__::func_15(4);
+					__LIB_15__::func_948(__LIB_0__::func_154(0), 12, 8, 1);
+					func_138(__LIB_0__::func_154(0), 12, 8, 1, 1);
+					__LIB_0__::func_210();
 					iLocal_222 = 2;
 				}
 				break;
@@ -376,17 +376,17 @@ void func_1()//Position - 0xDF
 				if ((func_48(PLAYER::PLAYER_PED_ID(), 12, iLocal_47) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
 					__LIB_0__::func_151("EPSROBE_H2" /* GXT: Wear the robes for 10 cumulative days to quell your antithesis. */, -1);
-					iLocal_224 = __LIB_13__::func_95();
-					iLocal_225 = __LIB_13__::func_95();
-					__LIB_32__::func_437(&iLocal_225, 0, 0, 1, 0, 0, 0);
+					iLocal_224 = __LIB_11__::func_762();
+					iLocal_225 = __LIB_11__::func_762();
+					__LIB_13__::func_827(&iLocal_225, 0, 0, 1, 0, 0, 0);
 					fLocal_51 = MISC::GET_RANDOM_FLOAT_IN_RANGE(120000f, 240000f);
 					iLocal_52 = MISC::GET_GAME_TIMER();
-					__LIB_0__::func_533();
+					__LIB_0__::func_210();
 					iLocal_222 = 3;
 				}
 				break;
 			case 3:
-				if (!func_48(PLAYER::PLAYER_PED_ID(), 12, iLocal_47) && !__LIB_4__::func_234())
+				if (!func_48(PLAYER::PLAYER_PED_ID(), 12, iLocal_47) && !__LIB_6__::func_181())
 				{
 					iLocal_222 = 2;
 				}
@@ -397,18 +397,18 @@ void func_1()//Position - 0xDF
 				else if (!__LIB_0__::func_39(14))
 				{
 					func_41();
-					iLocal_223 = __LIB_13__::func_95();
-					if (__LIB_20__::func_682(iLocal_223, iLocal_225))
+					iLocal_223 = __LIB_11__::func_762();
+					if (__LIB_11__::func_761(iLocal_223, iLocal_225))
 					{
-						__LIB_26__::func_593(iLocal_223, iLocal_224, &uVar2, &uVar3, &iVar4, &iVar5, &uVar6, &uVar7);
+						__LIB_13__::func_826(iLocal_223, iLocal_224, &uVar2, &uVar3, &iVar4, &iVar5, &uVar6, &uVar7);
 						if (iVar5 > 0)
 						{
 							iVar4 = (iVar4 + (24 * iVar5));
 						}
 						Global_113386.f_10049.f_105 = (Global_113386.f_10049.f_105 + iVar4);
-						iLocal_224 = __LIB_13__::func_95();
-						iLocal_225 = __LIB_13__::func_95();
-						__LIB_32__::func_437(&iLocal_225, 0, 0, 1, 0, 0, 0);
+						iLocal_224 = __LIB_11__::func_762();
+						iLocal_225 = __LIB_11__::func_762();
+						__LIB_13__::func_827(&iLocal_225, 0, 0, 1, 0, 0, 0);
 						if ((Global_113386.f_10049.f_105 % 24) == 0)
 						{
 							iLocal_48 = 1;
@@ -435,7 +435,7 @@ void func_1()//Position - 0xDF
 								HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true);
 							}
 						}
-						__LIB_0__::func_533();
+						__LIB_0__::func_210();
 						iLocal_48 = 0;
 					}
 				}
@@ -445,13 +445,13 @@ void func_1()//Position - 0xDF
 				{
 					HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("EPSROBE_02" /* GXT: You have worn the robes for 10 days. */);
 					HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true);
-					__LIB_0__::func_533();
+					__LIB_0__::func_210();
 					SYSTEM::WAIT(8000);
-					while (!__LIB_37__::func_818(51, "EPSROBE_T" /* GXT: Kifflom, your robes clothe the nakedness of spectral ignorance! We have been following your progress with great interest. You shall be summoned. */, 1, 0, 0, 0, 0, 1, 0, 1))
+					while (!__LIB_3__::func_589(51, "EPSROBE_T" /* GXT: Kifflom, your robes clothe the nakedness of spectral ignorance! We have been following your progress with great interest. You shall be summoned. */, 1, 0, 0, 0, 0, 1, 0, 1))
 					{
 						SYSTEM::WAIT(0);
 					}
-					__LIB_24__::func_951(51, 0, 1);
+					__LIB_0__::func_712(51, 0, 1);
 					iLocal_221 = 2;
 				}
 				break;
@@ -461,13 +461,13 @@ void func_1()//Position - 0xDF
 
 void func_41()//Position - 0x1DBA
 {
-	if (((!__LIB_9__::func_603() && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false)) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(PLAYER::PLAYER_PED_ID()))
+	if (((!__LIB_13__::func_94() && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false)) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(PLAYER::PLAYER_PED_ID()))
 	{
 		if (iLocal_49 == 1)
 		{
 			if (TASK::IS_PED_WALKING(PLAYER::PLAYER_PED_ID()) || TASK::IS_PED_STILL(PLAYER::PLAYER_PED_ID()))
 			{
-				__LIB_6__::func_834(PLAYER::PLAYER_PED_ID(), "CULT_TALK", 4);
+				__LIB_0__::func_640(PLAYER::PLAYER_PED_ID(), "CULT_TALK", 4);
 				fLocal_51 = MISC::GET_RANDOM_FLOAT_IN_RANGE(120000f, 240000f);
 				iLocal_52 = MISC::GET_GAME_TIMER();
 				iLocal_49 = 0;
@@ -496,14 +496,14 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x20A0
 		return 0;
 	}
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	Global_78130[1 /*14*/] = { __LIB_35__::func_896(iVar0, iParam1, iParam2, -1) };
+	Global_78130[1 /*14*/] = { __LIB_13__::func_798(iVar0, iParam1, iParam2, -1) };
 	if (!BitTest(Global_78130[1 /*14*/].f_6, 0))
 	{
 		return 0;
 	}
 	if (iParam1 == 12)
 	{
-		uVar5 = { __LIB_18__::func_180(iVar0, iParam2) };
+		uVar5 = { __LIB_0__::func_459(iVar0, iParam2) };
 		iVar2 = 0;
 		while (iVar2 <= 14)
 		{
@@ -513,7 +513,7 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x20A0
 				{
 					if (iVar2 == 13)
 					{
-						uVar6 = { __LIB_18__::func_247(iVar0, uVar5[iVar2]) };
+						uVar6 = { __LIB_0__::func_466(iVar0, uVar5[iVar2]) };
 						iVar3 = 0;
 						while (iVar3 <= 8)
 						{
@@ -522,12 +522,12 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x20A0
 								iVar4 = 0;
 								while (iVar4 <= 19)
 								{
-									Global_78130[2 /*14*/] = { __LIB_35__::func_896(iVar0, 14, iVar4, -1) };
+									Global_78130[2 /*14*/] = { __LIB_13__::func_798(iVar0, 14, iVar4, -1) };
 									if (Global_78130[2 /*14*/].f_12 == iVar3)
 									{
 										if (func_48(iParam0, 14, iVar4))
 										{
-											if (!__LIB_24__::func_955(iVar0, iParam2, 14, iVar4, &uVar5, &(Global_78130[2 /*14*/])))
+											if (!__LIB_0__::func_551(iVar0, iParam2, 14, iVar4, &uVar5, &(Global_78130[2 /*14*/])))
 											{
 												return 0;
 											}
@@ -541,9 +541,9 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x20A0
 					}
 					else
 					{
-						iVar1 = __LIB_6__::func_795(iParam0, iVar2);
-						Global_78130[2 /*14*/] = { __LIB_35__::func_896(iVar0, iVar2, iVar1, -1) };
-						if (!__LIB_24__::func_955(iVar0, iParam2, iVar2, iVar1, &uVar5, &(Global_78130[2 /*14*/])))
+						iVar1 = __LIB_0__::func_350(iParam0, iVar2);
+						Global_78130[2 /*14*/] = { __LIB_13__::func_798(iVar0, iVar2, iVar1, -1) };
+						if (!__LIB_0__::func_551(iVar0, iParam2, iVar2, iVar1, &uVar5, &(Global_78130[2 /*14*/])))
 						{
 							return 0;
 						}
@@ -556,7 +556,7 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x20A0
 	}
 	else if (iParam1 == 13)
 	{
-		uVar8 = { __LIB_18__::func_247(iVar0, iParam2) };
+		uVar8 = { __LIB_0__::func_466(iVar0, iParam2) };
 		iVar7 = 0;
 		while (iVar7 <= 8)
 		{
@@ -590,7 +590,7 @@ int func_138(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 	var uVar3;
 	var uVar4;
 	int iVar5;
-	Global_78130[1 /*14*/] = { __LIB_35__::func_896(iParam0, iParam1, iParam2, -1) };
+	Global_78130[1 /*14*/] = { __LIB_13__::func_798(iParam0, iParam1, iParam2, -1) };
 	if (BitTest(Global_78130[1 /*14*/].f_6, 0) && !BitTest(Global_78130[1 /*14*/].f_6, 6))
 	{
 		if (bParam3)
@@ -608,7 +608,7 @@ int func_138(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 				}
 				if (iVar0 == 1)
 				{
-					uVar3 = { __LIB_18__::func_180(iParam0, iParam2) };
+					uVar3 = { __LIB_0__::func_459(iParam0, iParam2) };
 					iVar1 = 0;
 					while (iVar1 <= 14)
 					{
@@ -617,16 +617,16 @@ int func_138(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 							if (iVar1 != 13)
 							{
 								func_138(iParam0, iVar1, uVar3[iVar1], 1, 1);
-								__LIB_38__::func_82(iParam0, iVar1, uVar3[iVar1], 1);
+								__LIB_15__::func_948(iParam0, iVar1, uVar3[iVar1], 1);
 							}
 							else
 							{
-								uVar4 = { __LIB_18__::func_247(iParam0, uVar3[iVar1]) };
+								uVar4 = { __LIB_0__::func_466(iParam0, uVar3[iVar1]) };
 								iVar2 = 0;
 								while (iVar2 <= 8)
 								{
 									func_138(iParam0, 14, uVar4[iVar2], 1, 1);
-									__LIB_38__::func_82(iParam0, 14, uVar4[iVar2], 1);
+									__LIB_15__::func_948(iParam0, 14, uVar4[iVar2], 1);
 									iVar2++;
 								}
 							}
@@ -742,15 +742,15 @@ void func_187()//Position - 0x20065
 	iLocal_52 = MISC::GET_GAME_TIMER();
 	if (Global_113386.f_10049.f_105 < 240)
 	{
-		if (!__LIB_0__::func_368(91))
+		if (!__LIB_0__::func_425(91))
 		{
 			Global_113386.f_10049.f_105 = 0;
 			iLocal_50 = 0;
 			iLocal_222 = 0;
 		}
-		else if (!__LIB_38__::func_32(__LIB_6__::func_757(0), 12, 8))
+		else if (!__LIB_13__::func_829(__LIB_0__::func_154(0), 12, 8))
 		{
-			iLocal_223 = __LIB_13__::func_95();
+			iLocal_223 = __LIB_11__::func_762();
 			iLocal_225 = Global_113386.f_10049.f_106;
 			iLocal_226 = (Global_113386.f_10049.f_104 + 2 % __LIB_0__::func_139(CLOCK::GET_CLOCK_MONTH(), CLOCK::GET_CLOCK_YEAR()));
 			Global_113386.f_10049.f_105 = 0;
@@ -766,7 +766,7 @@ void func_187()//Position - 0x20065
 		else
 		{
 			iLocal_50 = 1;
-			iLocal_224 = __LIB_13__::func_95();
+			iLocal_224 = __LIB_11__::func_762();
 			iLocal_222 = 3;
 		}
 		iLocal_221 = 1;
@@ -791,7 +791,7 @@ int func_189()//Position - 0x20162
 	{
 		if (__LIB_0__::func_121(uVar2[iVar1]))
 		{
-			if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == __LIB_2__::func_108(60))
+			if (ENTITY::GET_ENTITY_MODEL(uVar2[iVar1]) == __LIB_2__::func_910(60))
 			{
 				iLocal_53 = uVar2[iVar1];
 				if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_53))
@@ -803,7 +803,7 @@ int func_189()//Position - 0x20162
 				PED::SET_PED_NAME_DEBUG(iLocal_53, "POSTMARNIE");
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_53, joaat("PLAYER"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_53, false);
-				__LIB_0__::func_203(&uLocal_54, 4, iLocal_53, "MARNIE", 1, 1);
+				__LIB_0__::func_222(&uLocal_54, 4, iLocal_53, "MARNIE", 1, 1);
 				return 1;
 			}
 		}
@@ -815,18 +815,18 @@ int func_189()//Position - 0x20162
 void func_193()//Position - 0x202BD
 {
 	int iVar0;
-	if (Global_113386.f_10049.f_105 >= 240 || __LIB_0__::func_368(92) == 1)
+	if (Global_113386.f_10049.f_105 >= 240 || __LIB_0__::func_425(92) == 1)
 	{
-		__LIB_27__::func_930(2106164812, 1, 1, 55, 85000, 10000, 14, 173, -1, 0, 1);
-		__LIB_0__::func_503(92, 1);
+		__LIB_28__::func_203(2106164812, 1, 1, 55, 85000, 10000, 14, 173, -1, 0, 1);
+		__LIB_0__::func_681(92, 1);
 		STATS::STAT_GET_INT(joaat("NUM_EPSILON_STEP"), &iVar0, -1);
 		if (iVar0 < 16)
 		{
 			STATS::STAT_SET_INT(joaat("NUM_EPSILON_STEP"), 16, true);
 			__LIB_0__::func_4(23, 16);
 		}
-		__LIB_0__::func_512(8);
-		__LIB_24__::func_943(77, 0, 0);
+		__LIB_0__::func_693(8);
+		__LIB_0__::func_716(77, 0, 0);
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

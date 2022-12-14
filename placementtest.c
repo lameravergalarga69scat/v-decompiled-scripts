@@ -109,9 +109,9 @@ void __EntryFunction__()//Position - 0x0
 
 int func_1(int iParam0, bool bParam1)//Position - 0xEF
 {
-	if (!__LIB_0__::func_516(&(iParam0->f_2)))
+	if (!__LIB_0__::func_702(&(iParam0->f_2)))
 	{
-		__LIB_6__::func_892(&(iParam0->f_2));
+		__LIB_1__::func_31(&(iParam0->f_2));
 	}
 	HUD::HIDE_HUD_COMPONENT_THIS_FRAME(14);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
@@ -127,9 +127,9 @@ int func_1(int iParam0, bool bParam1)//Position - 0xEF
 	{
 		return 1;
 	}
-	if (__LIB_5__::func_736(&(iParam0->f_2)) * 1000f) > SYSTEM::TO_FLOAT(iParam0->f_1)
+	if (__LIB_3__::func_108(&(iParam0->f_2)) * 1000f) > SYSTEM::TO_FLOAT(iParam0->f_1)
 	{
-		__LIB_1__::func_37(&(iParam0->f_2));
+		__LIB_1__::func_377(&(iParam0->f_2));
 		return 0;
 	}
 	return 1;
@@ -138,7 +138,7 @@ int func_1(int iParam0, bool bParam1)//Position - 0xEF
 void func_9(int iParam0)//Position - 0x273
 {
 	iParam0->f_1 = 300;
-	__LIB_6__::func_892(&(iParam0->f_2));
+	__LIB_1__::func_31(&(iParam0->f_2));
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SPLASH_TEXT_TRANSITION_OUT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(300);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -154,7 +154,7 @@ void func_11(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 {
 	iParam0->f_1 = -1;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SPLASH_TEXT_LABEL");
-	__LIB_0__::func_478(sParam1);
+	__LIB_0__::func_610(sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam4);

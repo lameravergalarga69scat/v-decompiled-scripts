@@ -131,36 +131,36 @@ void __EntryFunction__()//Position - 0x0
 	}
 	else
 	{
-		__LIB_7__::func_124();
+		__LIB_2__::func_861();
 	}
 	while (true)
 	{
-		__LIB_0__::func_671();
-		if (__LIB_6__::func_949() || NETWORK::NETWORK_IS_IN_TUTORIAL_SESSION())
+		__LIB_0__::func_933();
+		if (__LIB_0__::func_959() || NETWORK::NETWORK_IS_IN_TUTORIAL_SESSION())
 		{
-			__LIB_7__::func_124();
+			__LIB_2__::func_861();
 		}
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
 			if (func_28())
 			{
-				__LIB_7__::func_124();
+				__LIB_2__::func_861();
 			}
-			if (!__LIB_2__::func_233() || __LIB_1__::func_390(PLAYER::PLAYER_ID(), 0))
+			if (!__LIB_2__::func_868() || __LIB_1__::func_838(PLAYER::PLAYER_ID(), 0))
 			{
-				if ((((((((!Global_1836146 && !__LIB_9__::func_414(3)) && !__LIB_6__::func_768(PLAYER::PLAYER_ID(), 0)) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !__LIB_6__::func_948(PLAYER::PLAYER_ID())) && !__LIB_2__::func_302(__LIB_1__::func_182(PLAYER::PLAYER_ID()))) && !__LIB_2__::func_303(PLAYER::PLAYER_ID(), 146)) && !__LIB_8__::func_768(PLAYER::PLAYER_ID()))
+				if ((((((((!Global_1836146 && !__LIB_12__::func_746(3)) && !__LIB_0__::func_361(PLAYER::PLAYER_ID(), 0)) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !__LIB_0__::func_457(PLAYER::PLAYER_ID())) && !__LIB_3__::func_160(__LIB_1__::func_592(PLAYER::PLAYER_ID()))) && !__LIB_1__::func_386(PLAYER::PLAYER_ID(), 146)) && !__LIB_2__::func_939(PLAYER::PLAYER_ID()))
 				{
-					if (__LIB_0__::func_659(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 4, 100, 0))
+					if (__LIB_0__::func_875(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 4, 100, 0))
 					{
 						if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 						{
 							if (PED::IS_PED_IN_ANY_PLANE(PLAYER::PLAYER_PED_ID()) || PED::IS_PED_IN_ANY_HELI(PLAYER::PLAYER_PED_ID()))
 							{
-								if (!__LIB_0__::func_516(&(Local_96.f_1)))
+								if (!__LIB_0__::func_702(&(Local_96.f_1)))
 								{
-									__LIB_18__::func_364(&(Local_96.f_1));
+									__LIB_3__::func_128(&(Local_96.f_1));
 								}
-								else if (__LIB_5__::func_736(&(Local_96.f_1)) > 20f)
+								else if (__LIB_3__::func_108(&(Local_96.f_1)) > 20f)
 								{
 									if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) < 4)
 									{
@@ -181,9 +181,9 @@ void __EntryFunction__()//Position - 0x0
 								PLAYER::REPORT_POLICE_SPOTTED_PLAYER(PLAYER::PLAYER_ID());
 							}
 						}
-						else if (__LIB_0__::func_516(&(Local_96.f_1)))
+						else if (__LIB_0__::func_702(&(Local_96.f_1)))
 						{
-							__LIB_1__::func_37(&(Local_96.f_1));
+							__LIB_1__::func_377(&(Local_96.f_1));
 						}
 					}
 				}
@@ -191,7 +191,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		else
 		{
-			__LIB_7__::func_124();
+			__LIB_2__::func_861();
 		}
 	}
 }
@@ -219,11 +219,11 @@ int func_29()//Position - 0x139D
 	switch (Local_96.f_0)
 	{
 		case 0:
-			if (Global_1836146 || __LIB_9__::func_414(3))
+			if (Global_1836146 || __LIB_12__::func_746(3))
 			{
 				Local_96.f_4 = PED::ADD_SCENARIO_BLOCKING_AREA(1413.7028f, 2341.5168f, -232.3945f, 2016.2095f, 2998.893f, 161.0299f, false, true, true, true);
 			}
-			__LIB_6__::func_896(&(uLocal_95[NETWORK::PARTICIPANT_ID_TO_INT()]), 1);
+			__LIB_1__::func_330(&(uLocal_95[NETWORK::PARTICIPANT_ID_TO_INT()]), 1);
 			Local_96.f_0 = 1;
 			break;
 		case 1:
@@ -233,7 +233,7 @@ int func_29()//Position - 0x139D
 			}
 			break;
 		case 2:
-			if (Global_1836146 || __LIB_9__::func_414(3))
+			if (Global_1836146 || __LIB_12__::func_746(3))
 			{
 				PED::REMOVE_SCENARIO_BLOCKING_AREA(Local_96.f_4, false);
 			}
@@ -278,18 +278,18 @@ int func_33()//Position - 0x14B8
 
 void func_44(struct<21> Param0)//Position - 0x163A
 {
-	__LIB_0__::func_673(__LIB_6__::func_875(Param0.f_0), Param0);
-	__LIB_1__::func_569(0, -1, 0);
+	__LIB_0__::func_935(__LIB_1__::func_32(Param0.f_0), Param0);
+	__LIB_0__::func_895(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&iLocal_93, 2, 0);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&uLocal_95, 33, 0);
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-	if (!__LIB_0__::func_672())
+	if (!__LIB_0__::func_934())
 	{
-		__LIB_7__::func_124();
+		__LIB_2__::func_861();
 	}
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_7__::func_124();
+		__LIB_2__::func_861();
 	}
 }
 

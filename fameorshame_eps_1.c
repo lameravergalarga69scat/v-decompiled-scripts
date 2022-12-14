@@ -88,28 +88,28 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_38__::func_138();
+		__LIB_39__::func_642();
 	}
 	CAM::DO_SCREEN_FADE_OUT(0);
 	GRAPHICS::SET_DEBUG_LINES_AND_SPHERES_DRAWING_ACTIVE(true);
-	__LIB_8__::func_770(1);
+	__LIB_0__::func_671(1);
 	bLocal_64 = false;
 	CUTSCENE::REQUEST_CUTSCENE("fos_ep_1_p1", 8);
-	__LIB_36__::func_46(0);
-	__LIB_7__::func_279(1, 1, 1, 0, 0, 0, 0);
+	__LIB_39__::func_641(0);
+	__LIB_0__::func_532(1, 1, 1, 0, 0, 0, 0);
 	while (true)
 	{
 		VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 		PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0f);
-		__LIB_0__::func_524(PLAYER::PLAYER_PED_ID());
-		if (__LIB_26__::func_506())
+		__LIB_0__::func_715(PLAYER::PLAYER_PED_ID());
+		if (__LIB_33__::func_514())
 		{
-			__LIB_38__::func_138();
+			__LIB_39__::func_642();
 		}
 		if (bLocal_56)
 		{
 			HUD::SET_TEXT_SCALE(0.5f, 0.5f);
-			__LIB_2__::func_148(0.1f, 0.1f, "NUMBER", 1, 0);
+			__LIB_3__::func_42(0.1f, 0.1f, "NUMBER", 1, 0);
 		}
 		SYSTEM::WAIT(0);
 	}

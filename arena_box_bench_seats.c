@@ -172,19 +172,19 @@ void func_1()//Position - 0xC9
 {
 	func_3(&Local_93, &Local_112);
 	Global_2787910 = 0;
-	__LIB_0__::func_199();
+	__LIB_0__::func_202();
 }
 
 void func_3(var uParam0, var uParam1)//Position - 0xEF
 {
 	int iVar0;
-	if (__LIB_0__::func_492(&(uParam0->f_281), 15))
+	if (__LIB_0__::func_624(&(uParam0->f_281), 15))
 	{
 		func_33();
 		MISC::CLEAR_BIT(&Global_2787913, 8);
-		__LIB_1__::func_846(&(uParam0->f_281), 15);
+		__LIB_2__::func_487(&(uParam0->f_281), 15);
 	}
-	__LIB_6__::func_404(&(uParam0->f_281.f_6));
+	__LIB_3__::func_122(&(uParam0->f_281.f_6));
 	func_25(uParam0, 1);
 	if (uParam0->f_281.f_5 > 2)
 	{
@@ -195,14 +195,14 @@ void func_3(var uParam0, var uParam1)//Position - 0xEF
 				if (ENTITY::IS_ENTITY_ATTACHED_TO_ENTITY(NETWORK::NET_TO_OBJ(uParam1->f_14[uParam0->f_281.f_2]), PLAYER::PLAYER_PED_ID()))
 				{
 					ENTITY::DETACH_ENTITY(NETWORK::NET_TO_OBJ(uParam1->f_14[uParam0->f_281.f_2]), false, true);
-					__LIB_1__::func_96(&(uParam1->f_14[uParam0->f_281.f_2]));
+					__LIB_1__::func_445(&(uParam1->f_14[uParam0->f_281.f_2]));
 				}
 			}
 		}
-		if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID()))
+		if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID()))
 		{
-			__LIB_4__::func_82(-1);
-			__LIB_9__::func_890(-1);
+			__LIB_5__::func_848(-1);
+			__LIB_13__::func_590(-1);
 		}
 		Global_2787911 = 0;
 		MISC::CLEAR_BIT(&Global_2787913, 6);
@@ -211,11 +211,11 @@ void func_3(var uParam0, var uParam1)//Position - 0xEF
 		{
 			NETWORK::NETWORK_STOP_SYNCHRONISED_SCENE(uParam0->f_281.f_1);
 		}
-		if ((uParam0->f_281.f_9 == 1 && !STREAMING::IS_NEW_LOAD_SCENE_ACTIVE()) && __LIB_4__::func_715())
+		if ((uParam0->f_281.f_9 == 1 && !STREAMING::IS_NEW_LOAD_SCENE_ACTIVE()) && __LIB_0__::func_893())
 		{
-			__LIB_18__::func_465(PLAYER::PLAYER_ID(), 1, 0, 0);
+			__LIB_1__::func_376(PLAYER::PLAYER_ID(), 1, 0, 0);
 		}
-		__LIB_0__::func_801();
+		__LIB_1__::func_91();
 	}
 }
 
@@ -227,7 +227,7 @@ void func_25(var uParam0, int iParam1)//Position - 0xAB2
 	}
 	if (iParam1 && uParam0->f_281.f_6 != -1)
 	{
-		__LIB_6__::func_404(&(uParam0->f_281.f_6));
+		__LIB_3__::func_122(&(uParam0->f_281.f_6));
 		uParam0->f_281.f_6 = -1;
 	}
 }
@@ -242,7 +242,7 @@ int func_26()//Position - 0xAEC
 	{
 		return 0;
 	}
-	if ((((((((((((__LIB_0__::func_1("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || __LIB_0__::func_1("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT_PC" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_9__::func_761("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_9__::func_761("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_4__::func_66("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_4__::func_66("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_4__::func_66("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_4__::func_66("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_0__::func_1("ARENA_SEAT4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT_PC4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */))
+	if ((((((((((((__LIB_0__::func_1("MPOFSEAT_PCEXIT" /* GXT: Press ~INPUT_SCRIPT_RRIGHT~ to stand up. */) || __LIB_0__::func_1("MPOFSEAT_EXIT" /* GXT: Press ~INPUT_FRONTEND_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT_PC" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_13__::func_291("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_13__::func_291("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_5__::func_831("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_5__::func_831("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_0__::func_1("ARENA_SEAT4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT_PC4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */)) || __LIB_0__::func_1("ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */))
 	{
 		return 1;
 	}
@@ -267,7 +267,7 @@ void func_35()//Position - 0xD31
 	{
 		iVar1 = 0;
 		bVar2 = PLAYER::INT_TO_PLAYERINDEX(bVar0);
-		if (bVar2 != __LIB_0__::func_160() && NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(bVar2))
+		if (bVar2 != __LIB_0__::func_162() && NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(bVar2))
 		{
 			if (BitTest(Local_123[bVar2 /*2*/], 0))
 			{
@@ -333,7 +333,7 @@ void func_35()//Position - 0xD31
 							if (NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(Local_112.f_14[iVar5]))
 							{
 								Local_112.f_2[iVar5] = -1;
-								__LIB_1__::func_96(&(Local_112.f_14[iVar5]));
+								__LIB_1__::func_445(&(Local_112.f_14[iVar5]));
 								MISC::CLEAR_BIT(&(Local_112.f_13), bVar0);
 							}
 							else
@@ -370,7 +370,7 @@ void func_36(var uParam0, var uParam1)//Position - 0xECF
 			{
 				return;
 			}
-			if (__LIB_7__::func_692(NETWORK::GET_NUM_RESERVED_MISSION_OBJECTS(false, 1) + 1, 0, 1))
+			if (__LIB_2__::func_852(NETWORK::GET_NUM_RESERVED_MISSION_OBJECTS(false, 1) + 1, 0, 1))
 			{
 				if (!BitTest(uParam1->f_1, uParam0->f_281.f_4))
 				{
@@ -401,7 +401,7 @@ void func_36(var uParam0, var uParam1)//Position - 0xECF
 
 char* func_43()//Position - 0x1276
 {
-	if (__LIB_6__::func_925())
+	if (__LIB_1__::func_394())
 	{
 		return "anim@arena@amb@seat_drone_tablet@female@";
 	}
@@ -424,7 +424,7 @@ void func_46()//Position - 0x12BD
 				iVar0 = 0;
 				if (Local_112.f_2[iVar1] == -1)
 				{
-					if ((iVar1 <= 7 && __LIB_19__::func_946()) && __LIB_26__::func_76())
+					if ((iVar1 <= 7 && __LIB_13__::func_601()) && __LIB_33__::func_256())
 					{
 						ENTITY::CREATE_MODEL_HIDE(func_51(iVar1), 0.5f, joaat("xs_prop_x18_vip_greeenlight"), true);
 					}
@@ -455,7 +455,7 @@ void func_46()//Position - 0x12BD
 		if (!BitTest(Local_123[PLAYER::PLAYER_ID() /*2*/], 0))
 		{
 			MISC::SET_BIT(&(Local_123[PLAYER::PLAYER_ID() /*2*/]), 0);
-			if (__LIB_2__::func_828())
+			if (__LIB_4__::func_47())
 			{
 				MISC::SET_BIT(&(Local_123[PLAYER::PLAYER_ID() /*2*/].f_1), 0);
 			}
@@ -466,36 +466,36 @@ void func_46()//Position - 0x12BD
 		}
 		else if (BitTest(Local_112.f_13, PLAYER::PLAYER_ID()))
 		{
-			if (__LIB_3__::func_254() < 0)
+			if (__LIB_4__::func_473() < 0)
 			{
 				iVar2 = 0;
 				while (iVar2 < 10)
 				{
 					if (Local_112.f_2[iVar2] == PLAYER::PLAYER_ID())
 					{
-						__LIB_4__::func_82(iVar2);
+						__LIB_5__::func_848(iVar2);
 					}
 					iVar2++;
 				}
 			}
 		}
 	}
-	else if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID()))
+	else if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID()))
 	{
-		if (__LIB_2__::func_828())
+		if (__LIB_4__::func_47())
 		{
-			if (__LIB_2__::func_827() && CAM::IS_SCREEN_FADED_IN())
+			if (__LIB_4__::func_46() && CAM::IS_SCREEN_FADED_IN())
 			{
-				__LIB_9__::func_98(0);
+				__LIB_11__::func_965(0);
 			}
 		}
 		if (BitTest(Local_123[PLAYER::PLAYER_ID() /*2*/], 0))
 		{
-			if (!__LIB_2__::func_827() && __LIB_3__::func_254() < 0)
+			if (!__LIB_4__::func_46() && __LIB_4__::func_473() < 0)
 			{
-				if (__LIB_2__::func_828())
+				if (__LIB_4__::func_47())
 				{
-					__LIB_9__::func_98(0);
+					__LIB_11__::func_965(0);
 				}
 				MISC::CLEAR_BIT(&(Local_123[PLAYER::PLAYER_ID() /*2*/]), 0);
 				Local_123[PLAYER::PLAYER_ID() /*2*/].f_1 = 0;
@@ -562,7 +562,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 	switch (uParam0->f_281.f_5)
 	{
 		case 0:
-			__LIB_1__::func_846(&(uParam0->f_281), 11);
+			__LIB_2__::func_487(&(uParam0->f_281), 11);
 			func_132(uParam0, 1);
 			break;
 		case 1:
@@ -571,16 +571,16 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 				uParam0->f_281.f_7 = MISC::GET_GAME_TIMER();
 				func_132(uParam0, 2);
 			}
-			else if (__LIB_2__::func_828())
+			else if (__LIB_4__::func_47())
 			{
 				uParam0->f_281.f_7 = MISC::GET_GAME_TIMER();
 				func_132(uParam0, 2);
 			}
 			break;
 		case 2:
-			if ((__LIB_9__::func_898(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_281.f_2 /*14*/]) && func_129(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_281.f_2 /*14*/])->f_8.f_3)) && !__LIB_2__::func_828())
+			if ((__LIB_13__::func_598(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_281.f_2 /*14*/]) && func_129(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_281.f_2 /*14*/])->f_8.f_3)) && !__LIB_4__::func_47())
 			{
-				if ((((((func_128(uParam0) || Global_1931426) || func_126(uParam0)) || !func_125(uParam0)) || ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID())) || ((uParam0->f_281.f_2 <= 7 && __LIB_19__::func_946()) && __LIB_26__::func_76())) || (uParam0->f_281.f_2 < 10 && Global_262145.f_26630 /* Tunable: -1263858477 */))
+				if ((((((func_128(uParam0) || Global_1931426) || func_126(uParam0)) || !func_125(uParam0)) || ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID())) || ((uParam0->f_281.f_2 <= 7 && __LIB_13__::func_601()) && __LIB_33__::func_256())) || (uParam0->f_281.f_2 < 10 && Global_262145.f_26630 /* Tunable: -1263858477 */))
 				{
 					if (!Global_1931426 && ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID()))
 					{
@@ -589,7 +589,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 						{
 							if (uParam0->f_281.f_6 == -1)
 							{
-								__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_FULL" /* GXT: Unavailable. This seat is currently reserved for ~a~. */, 0, PLAYER::GET_PLAYER_NAME(iParam1->f_2[uParam0->f_281.f_2]), 0, 1);
+								__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_FULL" /* GXT: Unavailable. This seat is currently reserved for ~a~. */, 0, PLAYER::GET_PLAYER_NAME(iParam1->f_2[uParam0->f_281.f_2]), 0, 1);
 							}
 						}
 						else
@@ -598,11 +598,11 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 							func_132(uParam0, 1);
 						}
 					}
-					else if ((uParam0->f_281.f_2 <= 7 && __LIB_19__::func_946()) && __LIB_26__::func_76())
+					else if ((uParam0->f_281.f_2 <= 7 && __LIB_13__::func_601()) && __LIB_33__::func_256())
 					{
 						if (uParam0->f_281.f_6 == -1)
 						{
-							__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_NO" /* GXT: Unavailable. Weaponized tablets are reserved for players that are active in the match. */, 0, 0, 0, 0);
+							__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_NO" /* GXT: Unavailable. Weaponized tablets are reserved for players that are active in the match. */, 0, 0, 0, 0);
 						}
 					}
 					else
@@ -617,21 +617,21 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 					{
 						if (uParam0->f_281.f_2 <= 9)
 						{
-							__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "AR_SEAT_PRMPT" /* GXT: Press ~INPUT_CONTEXT~ to use the Spectator Tablet. */, 0, 0, 0, 0);
+							__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "AR_SEAT_PRMPT" /* GXT: Press ~INPUT_CONTEXT~ to use the Spectator Tablet. */, 0, 0, 0, 0);
 						}
 						else
 						{
-							__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
+							__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "MPJAC_SIT" /* GXT: Press ~INPUT_CONTEXT~ to sit down. */, 0, 0, 0, 0);
 						}
 					}
 				}
 				else if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 				{
-					__LIB_6__::func_404(&(uParam0->f_281.f_6));
+					__LIB_3__::func_122(&(uParam0->f_281.f_6));
 					func_121(uParam0);
 					if (uParam0->f_281.f_9 == 1)
 					{
-						__LIB_18__::func_465(PLAYER::PLAYER_ID(), 0, 256, 0);
+						__LIB_1__::func_376(PLAYER::PLAYER_ID(), 0, 256, 0);
 						func_132(uParam0, 4);
 					}
 					else
@@ -640,9 +640,9 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 					}
 				}
 			}
-			else if (__LIB_2__::func_828())
+			else if (__LIB_4__::func_47())
 			{
-				__LIB_6__::func_404(&(uParam0->f_281.f_6));
+				__LIB_3__::func_122(&(uParam0->f_281.f_6));
 				func_132(uParam0, 4);
 			}
 			else
@@ -652,30 +652,30 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 			}
 			break;
 		case 4:
-			if (__LIB_3__::func_254() >= 0)
+			if (__LIB_4__::func_473() >= 0)
 			{
-				if (__LIB_2__::func_828())
+				if (__LIB_4__::func_47())
 				{
-					uParam0->f_281.f_2 = __LIB_3__::func_254();
+					uParam0->f_281.f_2 = __LIB_4__::func_473();
 					if (ENTITY::IS_ENTITY_VISIBLE(PLAYER::PLAYER_PED_ID()))
 					{
 						NETWORK::NETWORK_FADE_OUT_ENTITY(PLAYER::PLAYER_PED_ID(), false, true);
 					}
-					__LIB_1__::func_845(&(uParam0->f_281), 14);
+					__LIB_2__::func_486(&(uParam0->f_281), 14);
 				}
 				func_121(uParam0);
 				func_132(uParam0, 3);
 			}
-			if (!__LIB_2__::func_828())
+			if (!__LIB_4__::func_47())
 			{
 				if ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID())
 				{
 					func_25(uParam0, 1);
 					if (uParam0->f_281.f_9 == 1)
 					{
-						__LIB_18__::func_465(PLAYER::PLAYER_ID(), 1, 0, 0);
+						__LIB_1__::func_376(PLAYER::PLAYER_ID(), 1, 0, 0);
 					}
-					__LIB_0__::func_801();
+					__LIB_1__::func_91();
 					func_132(uParam0, 1);
 				}
 			}
@@ -696,7 +696,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 			STREAMING::REQUEST_ANIM_DICT(&sVar0);
 			if (STREAMING::HAS_ANIM_DICT_LOADED(&sVar0))
 			{
-				__LIB_0__::func_802();
+				__LIB_1__::func_92();
 				func_132(uParam0, 5);
 			}
 			break;
@@ -705,14 +705,14 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 			func_117(uParam0, &sVar1, 0);
 			Var4 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION(&sVar0, &sVar1, func_116(uParam0), func_115(uParam0), 0f, 2) };
 			Var5 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(&sVar0, &sVar1, func_116(uParam0), func_115(uParam0), 0f, 2) };
-			if (__LIB_0__::func_492(&(uParam0->f_281), 14))
+			if (__LIB_0__::func_624(&(uParam0->f_281), 14))
 			{
 				bVar6 = true;
 				if (func_114() >= 0)
 				{
 					bVar6 = false;
 				}
-				if (__LIB_18__::func_333(Var4, Var5.f_2, 0, 0, 0, 0, 1, bVar6, 1, 0, 0) && Global_2787912)
+				if (__LIB_3__::func_72(Var4, Var5.f_2, 0, 0, 0, 0, 1, bVar6, 1, 0, 0) && Global_2787912)
 				{
 					func_132(uParam0, 6);
 				}
@@ -730,7 +730,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 					}
 				}
 				TASK::TASK_GO_STRAIGHT_TO_COORD(PLAYER::PLAYER_PED_ID(), Var4, 1f, 500, Var5.f_2, 0.05f);
-				__LIB_4__::func_82(uParam0->f_281.f_2);
+				__LIB_5__::func_848(uParam0->f_281.f_2);
 				func_132(uParam0, 6);
 			}
 			else if (!Global_2787912)
@@ -750,12 +750,12 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 			iVar7 = TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"));
 			Var8 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION(&sVar0, &sVar1, func_116(uParam0), func_115(uParam0), 0f, 2) };
 			fVar9 = Var8.f_2;
-			if (((iVar7 != 1 && iVar7 != 0) || __LIB_2__::func_336(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), fVar9, 5f)) || __LIB_0__::func_492(&(uParam0->f_281), 14))
+			if (((iVar7 != 1 && iVar7 != 0) || __LIB_3__::func_526(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), fVar9, 5f)) || __LIB_0__::func_624(&(uParam0->f_281), 14))
 			{
 				fVar10 = 1f;
 				fVar11 = 0f;
 				Var12 = { func_116(uParam0) };
-				if (__LIB_0__::func_492(&(uParam0->f_281), 14))
+				if (__LIB_0__::func_624(&(uParam0->f_281), 14))
 				{
 					fVar10 = 2f;
 					fVar11 = 0.9f;
@@ -764,7 +764,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_281.f_1, &sVar0, &sVar1, 2f, -1000f, 13, 16, 1000f, 0);
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_281.f_1);
 				uParam0->f_281.f_9.f_4 = MISC::GET_GAME_TIMER();
-				__LIB_1__::func_845(&(uParam0->f_281), 8);
+				__LIB_2__::func_486(&(uParam0->f_281), 8);
 				func_132(uParam0, 7);
 			}
 			break;
@@ -776,9 +776,9 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 					NETWORK::NETWORK_REQUEST_CONTROL_OF_NETWORK_ID(iParam1->f_14[uParam0->f_281.f_2]);
 				}
 			}
-			if (__LIB_0__::func_492(&(uParam0->f_281), 10))
+			if (__LIB_0__::func_624(&(uParam0->f_281), 10))
 			{
-				__LIB_1__::func_846(&(uParam0->f_281), 10);
+				__LIB_2__::func_487(&(uParam0->f_281), 10);
 				if (uParam0->f_281.f_2 >= 0 && uParam0->f_281.f_2 < 10)
 				{
 					AUDIO::PLAY_SOUND_FROM_ENTITY(iVar13, "Exit_Menu", NETWORK::NET_TO_OBJ(iParam1->f_14[uParam0->f_281.f_2]), "DLC_AW_Spectator_Tablet_Sounds", true, 0);
@@ -801,7 +801,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 							}
 						}
 					}
-					if (!__LIB_2__::func_827())
+					if (!__LIB_4__::func_46())
 					{
 						if (uParam0->f_281.f_9 == 1)
 						{
@@ -809,11 +809,11 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 							{
 								AUDIO::PLAY_SOUND_FROM_ENTITY(iVar14, "Enter_Menu", NETWORK::NET_TO_OBJ(iParam1->f_14[uParam0->f_281.f_2]), "DLC_AW_Spectator_Tablet_Sounds", true, 0);
 							}
-							__LIB_9__::func_890(uParam0->f_281.f_2);
+							__LIB_13__::func_590(uParam0->f_281.f_2);
 						}
 						else
 						{
-							__LIB_9__::func_890(uParam0->f_281.f_2 + 20);
+							__LIB_13__::func_590(uParam0->f_281.f_2 + 20);
 						}
 						Global_2787911 = 1;
 					}
@@ -827,8 +827,8 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 					uParam0->f_281.f_1 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(func_116(uParam0), func_115(uParam0), 2, true, false, 1f, 0f, 1f);
 					NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_281.f_1, &sVar0, &sVar1, 4f, -1.5f, 13, 16, 1000f, 0);
 					NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_281.f_1);
-					__LIB_1__::func_845(&(uParam0->f_281), 8);
-					__LIB_1__::func_845(&(uParam0->f_281), 11);
+					__LIB_2__::func_486(&(uParam0->f_281), 8);
+					__LIB_2__::func_486(&(uParam0->f_281), 11);
 				}
 				else
 				{
@@ -842,10 +842,10 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 							}
 						}
 					}
-					__LIB_1__::func_846(&(uParam0->f_281), 8);
+					__LIB_2__::func_487(&(uParam0->f_281), 8);
 				}
 			}
-			else if (!__LIB_0__::func_492(&(uParam0->f_281), 8) && uParam0->f_281.f_5 == 7)
+			else if (!__LIB_0__::func_624(&(uParam0->f_281), 8) && uParam0->f_281.f_5 == 7)
 			{
 				if (uParam0->f_281.f_9 == 1 && uParam0->f_281.f_2 >= 0)
 				{
@@ -855,7 +855,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 						{
 							ENTITY::DETACH_ENTITY(NETWORK::NET_TO_OBJ(iParam1->f_14[uParam0->f_281.f_2]), false, true);
 						}
-						__LIB_1__::func_96(&(iParam1->f_14[uParam0->f_281.f_2]));
+						__LIB_1__::func_445(&(iParam1->f_14[uParam0->f_281.f_2]));
 					}
 				}
 				func_132(uParam0, 9);
@@ -888,11 +888,11 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 			func_132(uParam0, 9);
 			break;
 		case 9:
-			if (__LIB_0__::func_492(&(uParam0->f_281), 15))
+			if (__LIB_0__::func_624(&(uParam0->f_281), 15))
 			{
 				func_33();
 				MISC::CLEAR_BIT(&Global_2787913, 8);
-				__LIB_1__::func_846(&(uParam0->f_281), 15);
+				__LIB_2__::func_487(&(uParam0->f_281), 15);
 			}
 			if (uParam0->f_281.f_9 == 1)
 			{
@@ -910,15 +910,15 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 					if ((PED::GET_SYNCHRONIZED_SCENE_PHASE(iVar17) >= 0.7f || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("breakout_finish"))) || ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("break_out")))
 					{
 						NETWORK::NETWORK_STOP_SYNCHRONISED_SCENE(uParam0->f_281.f_1);
-						if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID()))
+						if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID()))
 						{
-							__LIB_4__::func_82(-1);
-							__LIB_9__::func_890(-1);
+							__LIB_5__::func_848(-1);
+							__LIB_13__::func_590(-1);
 						}
 						Global_2787911 = 0;
 						MISC::CLEAR_BIT(&Global_2787913, 6);
 						func_25(uParam0, 1);
-						__LIB_1__::func_846(&(uParam0->f_281), 14);
+						__LIB_2__::func_487(&(uParam0->f_281), 14);
 						if (uParam0->f_281.f_9 == 1 && uParam0->f_281.f_2 >= 0)
 						{
 							if (NETWORK::NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID(iParam1->f_14[uParam0->f_281.f_2]) && NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(iParam1->f_14[uParam0->f_281.f_2]))
@@ -938,10 +938,10 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 						{
 							if (uParam0->f_281.f_9 == 1)
 							{
-								__LIB_18__::func_465(PLAYER::PLAYER_ID(), 1, 0, 0);
+								__LIB_1__::func_376(PLAYER::PLAYER_ID(), 1, 0, 0);
 							}
 						}
-						__LIB_0__::func_801();
+						__LIB_1__::func_91();
 						func_132(uParam0, 0);
 					}
 					else if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("detachtablet")))
@@ -969,26 +969,26 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 						{
 							ENTITY::DETACH_ENTITY(NETWORK::NET_TO_OBJ(iParam1->f_14[uParam0->f_281.f_2]), false, true);
 						}
-						__LIB_1__::func_96(&(iParam1->f_14[uParam0->f_281.f_2]));
+						__LIB_1__::func_445(&(iParam1->f_14[uParam0->f_281.f_2]));
 					}
 				}
-				if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID()))
+				if ((!BitTest(Global_1965531, 7) && !BitTest(Global_1965531, 3)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID()))
 				{
-					__LIB_4__::func_82(-1);
-					__LIB_9__::func_890(-1);
+					__LIB_5__::func_848(-1);
+					__LIB_13__::func_590(-1);
 				}
 				Global_2787911 = 0;
 				MISC::CLEAR_BIT(&Global_2787913, 6);
 				func_25(uParam0, 1);
-				__LIB_1__::func_846(&(uParam0->f_281), 14);
+				__LIB_2__::func_487(&(uParam0->f_281), 14);
 				if (!STREAMING::IS_NEW_LOAD_SCENE_ACTIVE())
 				{
 					if (uParam0->f_281.f_9 == 1)
 					{
-						__LIB_18__::func_465(PLAYER::PLAYER_ID(), 1, 0, 0);
+						__LIB_1__::func_376(PLAYER::PLAYER_ID(), 1, 0, 0);
 					}
 				}
-				__LIB_0__::func_801();
+				__LIB_1__::func_91();
 				func_132(uParam0, 0);
 			}
 			break;
@@ -1083,7 +1083,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	if ((BitTest(Global_1965531, 7) || BitTest(Global_1965531, 3)) || __LIB_4__::func_254(PLAYER::PLAYER_ID()))
+	if ((BitTest(Global_1965531, 7) || BitTest(Global_1965531, 3)) || __LIB_6__::func_200(PLAYER::PLAYER_ID()))
 	{
 		if (uParam0->f_281.f_5 == 7 && CAM::IS_SCREEN_FADED_OUT())
 		{
@@ -1091,7 +1091,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			func_132(uParam0, 9);
 		}
 	}
-	if (__LIB_0__::func_492(&(uParam0->f_281), 13))
+	if (__LIB_0__::func_624(&(uParam0->f_281), 13))
 	{
 		iVar0 = func_92(&(uParam0->f_281.f_17));
 		if (iVar0 == 1)
@@ -1101,7 +1101,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 				AUDIO::PLAY_SOUND_FROM_ENTITY(iVar1, "Select_Turret", NETWORK::NET_TO_OBJ(uParam1->f_14[uParam0->f_281.f_2]), "DLC_AW_Spectator_Tablet_Sounds", true, 0);
 			}
 			MISC::SET_BIT(&Global_1965531, 9);
-			__LIB_1__::func_846(&(uParam0->f_281), 13);
+			__LIB_2__::func_487(&(uParam0->f_281), 13);
 		}
 		else if (iVar0 == 2)
 		{
@@ -1110,7 +1110,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 				MISC::SET_BIT(&Global_2787913, 7);
 			}
 			AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
-			__LIB_1__::func_846(&(uParam0->f_281), 13);
+			__LIB_2__::func_487(&(uParam0->f_281), 13);
 		}
 	}
 	if (uParam0->f_281.f_5 == 7)
@@ -1122,49 +1122,49 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 		if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("block_interrupt")))
 		{
 			func_25(uParam0, 1);
-			if (__LIB_0__::func_492(&(uParam0->f_281), 15))
+			if (__LIB_0__::func_624(&(uParam0->f_281), 15))
 			{
 				func_33();
 				MISC::CLEAR_BIT(&Global_2787913, 8);
-				__LIB_1__::func_846(&(uParam0->f_281), 15);
+				__LIB_2__::func_487(&(uParam0->f_281), 15);
 			}
 		}
-		else if ((((((((((((((((((((((__LIB_0__::func_492(&(uParam0->f_281), 13) || !Global_1574965) || (!BitTest(Global_1965531, 23) && !func_91())) || Global_2789734) || Global_2789737) || BitTest(Global_1958711, 13)) || BitTest(Global_1965531, 14)) || BitTest(Global_1958711, 9)) || BitTest(Global_2787913, 0)) || BitTest(Global_1965531, 6)) || BitTest(Global_1965531, 7)) || BitTest(Global_1965531, 8)) || BitTest(Global_1965531, 9)) || BitTest(Global_1965531, 2)) || BitTest(Global_1965531, 3)) || BitTest(Global_1965531, 4)) || BitTest(Global_1965531, 5)) || __LIB_4__::func_254(PLAYER::PLAYER_ID())) || __LIB_2__::func_828()) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/)) || !CAM::IS_SCREEN_FADED_IN()) || func_88(PLAYER::PLAYER_ID())) || Global_2787934 != 0)
+		else if ((((((((((((((((((((((__LIB_0__::func_624(&(uParam0->f_281), 13) || !Global_1574965) || (!BitTest(Global_1965531, 23) && !func_91())) || Global_2789734) || Global_2789737) || BitTest(Global_1958711, 13)) || BitTest(Global_1965531, 14)) || BitTest(Global_1958711, 9)) || BitTest(Global_2787913, 0)) || BitTest(Global_1965531, 6)) || BitTest(Global_1965531, 7)) || BitTest(Global_1965531, 8)) || BitTest(Global_1965531, 9)) || BitTest(Global_1965531, 2)) || BitTest(Global_1965531, 3)) || BitTest(Global_1965531, 4)) || BitTest(Global_1965531, 5)) || __LIB_6__::func_200(PLAYER::PLAYER_ID())) || __LIB_4__::func_47()) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/)) || !CAM::IS_SCREEN_FADED_IN()) || __LIB_18__::func_660(PLAYER::PLAYER_ID())) || Global_2787934 != 0)
 		{
 			func_25(uParam0, 1);
 			if (!BitTest(Global_1965531, 23))
 			{
-				if (!__LIB_0__::func_492(&(uParam0->f_281), 15) && Global_2787934 == 0)
+				if (!__LIB_0__::func_624(&(uParam0->f_281), 15) && Global_2787934 == 0)
 				{
 					func_87("ARENA SPECTATOR BOX TABLETS");
 					MISC::SET_BIT(&Global_2787913, 8);
-					__LIB_1__::func_845(&(uParam0->f_281), 15);
+					__LIB_2__::func_486(&(uParam0->f_281), 15);
 				}
 			}
-			else if (__LIB_0__::func_492(&(uParam0->f_281), 15))
+			else if (__LIB_0__::func_624(&(uParam0->f_281), 15))
 			{
 				func_33();
 				MISC::CLEAR_BIT(&Global_2787913, 8);
-				__LIB_1__::func_846(&(uParam0->f_281), 15);
+				__LIB_2__::func_487(&(uParam0->f_281), 15);
 			}
 		}
-		else if (__LIB_9__::func_977(uParam0))
+		else if (func_86(uParam0))
 		{
 			func_25(uParam0, 1);
-			if (__LIB_0__::func_492(&(uParam0->f_281), 15))
+			if (__LIB_0__::func_624(&(uParam0->f_281), 15))
 			{
 				func_33();
 				MISC::CLEAR_BIT(&Global_2787913, 8);
-				__LIB_1__::func_846(&(uParam0->f_281), 15);
+				__LIB_2__::func_487(&(uParam0->f_281), 15);
 			}
 		}
 		else
 		{
-			if (!__LIB_0__::func_492(&(uParam0->f_281), 15))
+			if (!__LIB_0__::func_624(&(uParam0->f_281), 15))
 			{
 				func_87("ARENA SPECTATOR BOX TABLETS");
 				MISC::SET_BIT(&Global_2787913, 8);
-				__LIB_1__::func_845(&(uParam0->f_281), 15);
+				__LIB_2__::func_486(&(uParam0->f_281), 15);
 			}
 			PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2 /*FRONTEND_CONTROL*/);
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 24 /*INPUT_ATTACK*/, true);
@@ -1177,15 +1177,15 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 143 /*INPUT_MELEE_BLOCK*/, true);
 			PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 200 /*INPUT_FRONTEND_PAUSE_ALTERNATE*/, true);
 			bVar2 = false;
-			if (__LIB_9__::func_893())
+			if (__LIB_13__::func_593())
 			{
 				bVar2 = true;
 			}
-			if (__LIB_4__::func_66("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */))
+			if (__LIB_5__::func_831("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */))
 			{
 				MISC::CLEAR_BIT(&Global_2787913, 5);
 			}
-			if (__LIB_4__::func_66("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */))
+			if (__LIB_5__::func_831("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 			{
 				MISC::CLEAR_BIT(&Global_2787913, 4);
 			}
@@ -1195,11 +1195,11 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			}
 			if (BitTest(Global_2787913, 4) && uParam0->f_281.f_6 == -1)
 			{
-				__LIB_4__::func_67("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */, 2000);
+				__LIB_5__::func_832("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */, 2000);
 			}
 			if (BitTest(Global_2787913, 5) && uParam0->f_281.f_6 == -1)
 			{
-				__LIB_4__::func_67("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */, 2000);
+				__LIB_5__::func_832("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */, 2000);
 			}
 			if (BitTest(Global_2787913, 7) && uParam0->f_281.f_6 == -1)
 			{
@@ -1209,13 +1209,13 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			{
 				func_25(uParam0, 1);
 			}
-			if ((((((((!HUD::IS_PAUSE_MENU_ACTIVE() && !Global_1931426) && !__LIB_0__::func_492(&(uParam0->f_281), 0)) && !__LIB_0__::func_492(&(uParam0->f_281), 4)) && !__LIB_1__::func_156()) && !__LIB_6__::func_964(1)) && uParam0->f_281.f_9.f_2 != 3) && !HUD::IS_WARNING_MESSAGE_ACTIVE()) && !__LIB_0__::func_190())
+			if ((((((((!HUD::IS_PAUSE_MENU_ACTIVE() && !Global_1931426) && !__LIB_0__::func_624(&(uParam0->f_281), 0)) && !__LIB_0__::func_624(&(uParam0->f_281), 4)) && !__LIB_1__::func_512()) && !__LIB_2__::func_65(1)) && uParam0->f_281.f_9.f_2 != 3) && !HUD::IS_WARNING_MESSAGE_ACTIVE()) && !__LIB_0__::func_193())
 			{
 				if (bVar2)
 				{
-					if (__LIB_19__::func_946() && !__LIB_26__::func_76())
+					if (__LIB_13__::func_601() && !__LIB_33__::func_256())
 					{
-						if (((((__LIB_9__::func_761("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_4__::func_66("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_4__::func_66("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_9__::func_761("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_4__::func_66("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_4__::func_66("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
+						if (((((__LIB_13__::func_291("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_5__::func_831("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_13__::func_291("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_5__::func_831("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 						{
 							func_25(uParam0, 1);
 						}
@@ -1225,19 +1225,19 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 						func_25(uParam0, 1);
 					}
 				}
-				if ((((((!func_26() && !BitTest(Global_2787913, 4)) && !BitTest(Global_2787913, 5)) && !BitTest(Global_2787913, 7)) && !__LIB_4__::func_66("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */)) && !__LIB_4__::func_66("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */)) && !__LIB_0__::func_1("ARENA_VIP_ABIL" /* GXT: This option is currently unavailable. */))
+				if ((((((!func_26() && !BitTest(Global_2787913, 4)) && !BitTest(Global_2787913, 5)) && !BitTest(Global_2787913, 7)) && !__LIB_5__::func_831("ARENA_VIP_CASH1" /* GXT: You do not have enough money. It costs $~1~ to use Spectator Cam. */, Global_262145.f_26633 /* Tunable: -887378230 */)) && !__LIB_5__::func_831("ARENA_VIP_CASH2" /* GXT: You do not have enough money. It costs $~1~ to fly a Spectator Drone. */, Global_262145.f_26634 /* Tunable: -76677190 */)) && !__LIB_0__::func_1("ARENA_VIP_ABIL" /* GXT: This option is currently unavailable. */))
 				{
 					if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 					{
 						if (bVar2)
 						{
-							if (__LIB_19__::func_946() && !__LIB_26__::func_76())
+							if (__LIB_13__::func_601() && !__LIB_33__::func_256())
 							{
-								if ((__LIB_9__::func_761("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_4__::func_66("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_4__::func_66("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
+								if ((__LIB_13__::func_291("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_5__::func_831("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 								{
 									func_25(uParam0, 1);
 								}
-								__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_PC" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_PC" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 							else
 							{
@@ -1247,36 +1247,36 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 								}
 								if (!BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 								{
-									__LIB_9__::func_777("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */);
+									__LIB_13__::func_306("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */);
 								}
 								else if (BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 								{
-									__LIB_4__::func_67("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, -1);
+									__LIB_5__::func_832("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, -1);
 								}
 								else if (!BitTest(Global_2787913, 2) && BitTest(Global_2787913, 3))
 								{
-									__LIB_4__::func_67("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */, -1);
+									__LIB_5__::func_832("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */, -1);
 								}
 								else
 								{
-									__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_PC4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
+									__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_PC4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
 								}
 							}
 						}
 						else
 						{
-							__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
+							__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 					}
 					else if (bVar2)
 					{
-						if (__LIB_19__::func_946() && !__LIB_26__::func_76())
+						if (__LIB_13__::func_601() && !__LIB_33__::func_256())
 						{
-							if ((__LIB_9__::func_761("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_4__::func_66("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_4__::func_66("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
+							if ((__LIB_13__::func_291("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_5__::func_831("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 							{
 								func_25(uParam0, 1);
 							}
-							__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
+							__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to fly a Battle Drone.~n~Press ~INPUT_SCRIPT_RRIGHT~ to drive an RC Bandito.~n~Press ~INPUT_SCRIPT_RLEFT~ to use the Trap Cam.~n~Press ~INPUT_SCRIPT_RUP~ to use a Turret.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
 						}
 						else
 						{
@@ -1286,32 +1286,32 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 							}
 							if (!BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 							{
-								__LIB_9__::func_777("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */);
+								__LIB_13__::func_306("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */);
 							}
 							else if (BitTest(Global_2787913, 2) && !BitTest(Global_2787913, 3))
 							{
-								__LIB_4__::func_67("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, -1);
+								__LIB_5__::func_832("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, -1);
 							}
 							else if (!BitTest(Global_2787913, 2) && BitTest(Global_2787913, 3))
 							{
-								__LIB_4__::func_67("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */, -1);
+								__LIB_5__::func_832("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */, -1);
 							}
 							else
 							{
-								__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
+								__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT4" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
 							}
 						}
 					}
 					else
 					{
-						__LIB_7__::func_508(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
+						__LIB_5__::func_569(&(uParam0->f_281.f_6), 4, "ARENA_SEAT_EX" /* GXT: Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, 0, 0, 0, 0);
 					}
 				}
 				if (uParam0->f_281.f_5 == 7)
 				{
-					if (__LIB_19__::func_946() && !__LIB_26__::func_76())
+					if (__LIB_13__::func_601() && !__LIB_33__::func_256())
 					{
-						if (((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID()))
+						if (((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID()))
 						{
 							if (uParam0->f_281.f_2 >= 0 && uParam0->f_281.f_2 < 10)
 							{
@@ -1319,7 +1319,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 							}
 							func_100(uParam0);
 						}
-						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID())) && bVar2)
+						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID())) && bVar2)
 						{
 							if (func_77())
 							{
@@ -1339,7 +1339,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 							}
 						}
-						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID())) && bVar2)
+						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID())) && bVar2)
 						{
 							if (func_76())
 							{
@@ -1359,7 +1359,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 							}
 						}
-						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID())) && bVar2)
+						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID())) && bVar2)
 						{
 							if (func_73())
 							{
@@ -1379,18 +1379,18 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
 							}
 						}
-						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID())) && bVar2)
+						if ((((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID())) && bVar2)
 						{
 							if (func_72())
 							{
 								func_25(uParam0, 1);
-								if (__LIB_0__::func_492(&(uParam0->f_281), 15))
+								if (__LIB_0__::func_624(&(uParam0->f_281), 15))
 								{
 									func_33();
 									MISC::CLEAR_BIT(&Global_2787913, 8);
-									__LIB_1__::func_846(&(uParam0->f_281), 15);
+									__LIB_2__::func_487(&(uParam0->f_281), 15);
 								}
-								__LIB_1__::func_845(&(uParam0->f_281), 13);
+								__LIB_2__::func_486(&(uParam0->f_281), 13);
 							}
 							else
 							{
@@ -1423,8 +1423,8 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 								{
 									AUDIO::PLAY_SOUND_FROM_ENTITY(iVar8, "Select_Live_Stream", NETWORK::NET_TO_OBJ(uParam1->f_14[uParam0->f_281.f_2]), "DLC_AW_Spectator_Tablet_Sounds", true, 0);
 								}
-								__LIB_26__::func_77(73, -1);
-								__LIB_39__::func_500();
+								__LIB_33__::func_257(73, -1);
+								__LIB_13__::func_602();
 								func_63();
 							}
 							else if (!BitTest(Global_2787913, 5))
@@ -1437,12 +1437,12 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			}
 		}
 	}
-	__LIB_1__::func_846(&(uParam0->f_281), 9);
+	__LIB_2__::func_487(&(uParam0->f_281), 9);
 }
 
 void func_63()//Position - 0x3785
 {
-	__LIB_26__::func_59(1, 7986);
+	__LIB_13__::func_546(1, 7986);
 }
 
 int func_72()//Position - 0x3922
@@ -1476,7 +1476,7 @@ int func_73()//Position - 0x3992
 	bool bVar0;
 	int iVar1;
 	int iVar2;
-	if (!__LIB_19__::func_947())
+	if (!__LIB_13__::func_603())
 	{
 		return 0;
 	}
@@ -1553,14 +1553,14 @@ int func_77()//Position - 0x3AEA
 	return 0;
 }
 
+bool func_86(var uParam0)//Position - 0x3D4A
+{
+	return __LIB_0__::func_624(&(uParam0->f_281), 9);
+}
+
 void func_87(char* sParam0)//Position - 0x3D5D
 {
 	PAD::INIT_PC_SCRIPTED_CONTROLS(sParam0);
-}
-
-bool func_88(int iParam0)//Position - 0x3D6C
-{
-	return __LIB_9__::func_978(iParam0) != 0;
 }
 
 int func_91()//Position - 0x3DE8
@@ -1577,9 +1577,9 @@ int func_92(var uParam0)//Position - 0x3E46
 	int iVar0;
 	if (*uParam0 == 0)
 	{
-		*uParam0 = __LIB_19__::func_948(1, 0, 0, 1, 1);
+		*uParam0 = __LIB_29__::func_879(1, 0, 0, 1, 1);
 	}
-	iVar0 = __LIB_9__::func_897(*uParam0);
+	iVar0 = __LIB_13__::func_597(*uParam0);
 	if (iVar0 == 1)
 	{
 		*uParam0 = 0;
@@ -1587,7 +1587,7 @@ int func_92(var uParam0)//Position - 0x3E46
 	else if (iVar0 != 0)
 	{
 		*uParam0 = 0;
-		__LIB_21__::func_59(0, -1, -1);
+		__LIB_18__::func_643(0, -1, -1);
 	}
 	return iVar0;
 }
@@ -1599,9 +1599,9 @@ void func_100(var uParam0)//Position - 0x4020
 	func_119(uParam0, &sVar0);
 	NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), uParam0->f_281.f_1, &sVar0, "exit", 4f, -4f, 13, 16, 1000f, 0);
 	NETWORK::NETWORK_START_SYNCHRONISED_SCENE(uParam0->f_281.f_1);
-	__LIB_6__::func_404(&(uParam0->f_281.f_6));
+	__LIB_3__::func_122(&(uParam0->f_281.f_6));
 	MISC::SET_BIT(&Global_2787913, 6);
-	__LIB_1__::func_846(&(uParam0->f_281), 14);
+	__LIB_2__::func_487(&(uParam0->f_281), 14);
 	func_132(uParam0, 9);
 }
 
@@ -1742,7 +1742,7 @@ void func_119(var uParam0, char* sParam1)//Position - 0x4BAF
 			StringCopy(sParam1, "ANIM@ARENA@AMB@SEAT_DRONE_TABLET", 64);
 			break;
 	}
-	if (__LIB_6__::func_925())
+	if (__LIB_1__::func_394())
 	{
 		StringConCat(sParam1, "@FEMALE", 64);
 	}
@@ -1796,7 +1796,7 @@ int func_122(var uParam0)//Position - 0x4CF0
 	int iVar0;
 	if (uParam0->f_281.f_9 == 0)
 	{
-		if (__LIB_6__::func_925())
+		if (__LIB_1__::func_394())
 		{
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 3);
 			switch (iVar0)
@@ -1843,7 +1843,7 @@ int func_123(int iParam0)//Position - 0x4D68
 
 bool func_125(var uParam0)//Position - 0x4EB7
 {
-	Stack.Push(!__LIB_0__::func_492(&(uParam0->f_281), 5));
+	Stack.Push(!__LIB_0__::func_624(&(uParam0->f_281), 5));
 	Stack.Push(uParam0[uParam0->f_281.f_2 /*14*/]);
 	Stack.Push(uParam0->f_281.f_2);
 	Call_Loc(uParam0->f_281.f_14);
@@ -1860,9 +1860,9 @@ int func_126(var uParam0)//Position - 0x4EEA
 		if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(iVar0)))
 		{
 			iVar1 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(iVar0));
-			if (iVar1 != PLAYER::PLAYER_ID() && __LIB_0__::func_154(iVar1, 1, 1))
+			if (iVar1 != PLAYER::PLAYER_ID() && __LIB_0__::func_156(iVar1, 1, 1))
 			{
-				if (__LIB_9__::func_898(PLAYER::GET_PLAYER_PED(iVar1), uParam0[uParam0->f_281.f_2 /*14*/]) || __LIB_2__::func_461(iVar1) == uParam0->f_281.f_2)
+				if (__LIB_13__::func_598(PLAYER::GET_PLAYER_PED(iVar1), uParam0[uParam0->f_281.f_2 /*14*/]) || __LIB_3__::func_678(iVar1) == uParam0->f_281.f_2)
 				{
 					return 1;
 				}
@@ -1886,7 +1886,7 @@ int func_129(int iParam0, struct<3> Param1)//Position - 0x4FCE
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
-		if (__LIB_2__::func_336(ENTITY::GET_ENTITY_HEADING(iParam0), (Param1.f_2 - 180f), 90f))
+		if (__LIB_3__::func_526(ENTITY::GET_ENTITY_HEADING(iParam0), (Param1.f_2 - 180f), 90f))
 		{
 			return 1;
 		}
@@ -1900,7 +1900,7 @@ int func_131(var uParam0)//Position - 0x5025
 	iVar0 = 0;
 	while (iVar0 < 1)
 	{
-		if (__LIB_9__::func_898(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_281.f_2 /*14*/]) && func_129(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_281.f_2 /*14*/])->f_8.f_3))
+		if (__LIB_13__::func_598(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_281.f_2 /*14*/]) && func_129(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_281.f_2 /*14*/])->f_8.f_3))
 		{
 			return 1;
 		}
@@ -1923,13 +1923,13 @@ void func_133(var uParam0)//Position - 0x509F
 	int iVar0;
 	if (BitTest(Global_1965531, 7))
 	{
-		__LIB_8__::func_611(1);
+		__LIB_1__::func_33(1);
 	}
 	switch (uParam0->f_281.f_5)
 	{
 		case 5:
 		case 9:
-			__LIB_8__::func_611(1);
+			__LIB_1__::func_33(1);
 		case 7:
 			CAM::INVALIDATE_IDLE_CAM();
 			HUD::HUD_FORCE_WEAPON_WHEEL(false);
@@ -1939,15 +1939,15 @@ void func_133(var uParam0)//Position - 0x509F
 			HUD::HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME();
 			if (!__LIB_0__::func_94())
 			{
-				__LIB_0__::func_184();
+				__LIB_0__::func_187();
 			}
 			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) && iVar0 != joaat("WEAPON_UNARMED"))
 			{
 				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 			}
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
-			__LIB_4__::func_62(1);
-			__LIB_0__::func_186();
+			__LIB_3__::func_570(1);
+			__LIB_0__::func_189();
 			break;
 	}
 }
@@ -1960,27 +1960,27 @@ void func_145(var uParam0)//Position - 0x535E
 	else if (uParam0->f_281.f_5 > 5)
 	{
 		CAM::SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE(PLAYER::PLAYER_PED_ID());
-		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_9__::func_899());
+		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_13__::func_599());
 		uParam0->f_281.f_8 = MISC::GET_FRAME_COUNT();
 	}
 	else if ((MISC::GET_FRAME_COUNT() - uParam0->f_281.f_8) < 5)
 	{
-		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_9__::func_899());
+		PED::SET_PED_CAPSULE(PLAYER::PLAYER_PED_ID(), __LIB_13__::func_599());
 	}
 }
 
 void func_147(var uParam0)//Position - 0x53CA
 {
-	__LIB_9__::func_889(&(uParam0->f_281), 4, __LIB_0__::func_661());
-	__LIB_9__::func_889(&(uParam0->f_281), 1, ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false));
-	__LIB_9__::func_889(&(uParam0->f_281), 3, PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true));
-	__LIB_9__::func_889(&(uParam0->f_281), 0, __LIB_0__::func_77(0));
-	__LIB_9__::func_889(&(uParam0->f_281), 2, TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()));
+	__LIB_13__::func_555(&(uParam0->f_281), 4, __LIB_0__::func_877());
+	__LIB_13__::func_555(&(uParam0->f_281), 1, ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false));
+	__LIB_13__::func_555(&(uParam0->f_281), 3, PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true));
+	__LIB_13__::func_555(&(uParam0->f_281), 0, __LIB_0__::func_77(0));
+	__LIB_13__::func_555(&(uParam0->f_281), 2, TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()));
 }
 
 int func_150()//Position - 0x5457
 {
-	if ((((!__LIB_9__::func_900() && !__LIB_2__::func_828()) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 3)) && !__LIB_4__::func_254(PLAYER::PLAYER_ID()))
+	if ((((!__LIB_13__::func_600() && !__LIB_4__::func_47()) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 3)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
@@ -1988,7 +1988,7 @@ int func_150()//Position - 0x5457
 	{
 		return 1;
 	}
-	if (__LIB_6__::func_949())
+	if (__LIB_0__::func_959())
 	{
 		return 1;
 	}
@@ -2011,11 +2011,11 @@ int func_160()//Position - 0x5643
 		return 0;
 	}
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
-	__LIB_1__::func_569(0, -1, 0);
+	__LIB_0__::func_895(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_112, 25, 0);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&Local_123, 65, 0);
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-	__LIB_0__::func_371();
+	__LIB_0__::func_467();
 	func_161();
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 	{
@@ -2065,14 +2065,14 @@ void func_162(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 	(*uParam1)[iParam2 /*14*/] = iParam3;
 	(uParam1[iParam2 /*14*/])->f_8 = { Var0 };
 	(uParam1[iParam2 /*14*/])->f_8.f_3 = { 0f, 0f, fVar1 };
-	(uParam1[iParam2 /*14*/])->f_1 = { __LIB_0__::func_298(__LIB_9__::func_978(), (fVar1 - 180f)) + Var0 };
-	(uParam1[iParam2 /*14*/])->f_1.f_3 = { __LIB_0__::func_298(__LIB_9__::func_977(), (fVar1 - 180f)) + Var0 };
+	(uParam1[iParam2 /*14*/])->f_1 = { __LIB_0__::func_327(__LIB_13__::func_739(), (fVar1 - 180f)) + Var0 };
+	(uParam1[iParam2 /*14*/])->f_1.f_3 = { __LIB_0__::func_327(__LIB_13__::func_738(), (fVar1 - 180f)) + Var0 };
 	(uParam1[iParam2 /*14*/])->f_1.f_6 = 1.25f;
 }
 
 void func_166(int iParam0, var uParam1, var uParam2)//Position - 0x588C
 {
-	if (__LIB_6__::func_925())
+	if (__LIB_1__::func_394())
 	{
 		switch (iParam0)
 		{

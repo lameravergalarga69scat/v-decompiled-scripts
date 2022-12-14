@@ -128,10 +128,10 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::WAIT(0);
 	func_37();
 	func_33();
-	__LIB_26__::func_563();
-	while (iLocal_67 && __LIB_39__::func_523(3, 0))
+	__LIB_17__::func_501();
+	while (iLocal_67 && __LIB_39__::func_36(3, 0))
 	{
-		if (__LIB_35__::func_90())
+		if (__LIB_39__::func_56())
 		{
 			func_56();
 		}
@@ -152,7 +152,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 2:
-				__LIB_30__::func_708();
+				__LIB_39__::func_42();
 				break;
 		}
 	}
@@ -176,7 +176,7 @@ int func_2()//Position - 0x118
 				fVar2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.5f, 1f);
 				fVar3 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 0.5f);
 				VEHICLE::START_VEHICLE_HORN(iLocal_69[iVar0], SYSTEM::ROUND((fVar2 * 1000f)), 0, false);
-				__LIB_31__::func_356(&iLocal_87, fVar3);
+				__LIB_39__::func_43(&iLocal_87, fVar3);
 			}
 		}
 	}
@@ -209,7 +209,7 @@ float func_6(var uParam0)//Position - 0x257
 		}
 		else
 		{
-			return (uParam0->f_1 - __LIB_0__::func_484(BitTest(*uParam0, 4)));
+			return (uParam0->f_1 - __LIB_0__::func_616(BitTest(*uParam0, 4)));
 		}
 	}
 	return uParam0->f_1;
@@ -217,12 +217,12 @@ float func_6(var uParam0)//Position - 0x257
 
 bool func_7(var uParam0)//Position - 0x293
 {
-	return __LIB_0__::func_515(uParam0);
+	return __LIB_0__::func_701(uParam0);
 }
 
 bool func_9(int* iParam0)//Position - 0x2AE
 {
-	return __LIB_0__::func_516(iParam0);
+	return __LIB_0__::func_702(iParam0);
 }
 
 int func_11()//Position - 0x2C9
@@ -242,11 +242,11 @@ int func_11()//Position - 0x2C9
 				fVar2 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(0.5f, 1f) * 2f);
 				fVar3 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 0.5f) * 2f);
 				VEHICLE::START_VEHICLE_HORN(iLocal_69[iVar0], SYSTEM::ROUND((fVar2 * 1000f)), 0, false);
-				__LIB_31__::func_356(&iLocal_87, fVar3);
+				__LIB_39__::func_43(&iLocal_87, fVar3);
 			}
 		}
 	}
-	if (!__LIB_12__::func_114())
+	if (!__LIB_17__::func_677())
 	{
 		func_13();
 		func_12(&iLocal_87, MISC::GET_RANDOM_FLOAT_IN_RANGE(1.75f, 2.25f));
@@ -263,7 +263,7 @@ void func_12(int* iParam0, float fParam1)//Position - 0x38C
 {
 	if (!func_9(iParam0))
 	{
-		__LIB_31__::func_356(iParam0, fParam1);
+		__LIB_39__::func_43(iParam0, fParam1);
 	}
 }
 
@@ -576,7 +576,7 @@ void func_34(int iParam0)//Position - 0xF87
 	{
 		if (PED::GET_PED_DRAWABLE_VARIATION(iParam0, 3) == 1)
 		{
-			if (__LIB_0__::func_502())
+			if (__LIB_0__::func_680())
 			{
 				PED::SET_PED_COMPONENT_VARIATION(iParam0, 3, 0, PED::GET_PED_TEXTURE_VARIATION(iParam0, 3), 0);
 			}
@@ -1161,7 +1161,7 @@ int func_49(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x
 				return 0;
 				break;
 			case 1:
-				__LIB_12__::func_128(&iVar0);
+				__LIB_17__::func_690(&iVar0);
 				if (iVar0 < 5)
 				{
 					*uParam1 = { Global_95644[iVar0 /*9*/].f_3 };
@@ -1236,7 +1236,7 @@ int func_52(int iParam0, var uParam1, char* sParam2)//Position - 0x2B57
 			return 0;
 			break;
 		case 1:
-			__LIB_12__::func_128(&iVar1);
+			__LIB_17__::func_690(&iVar1);
 			if (iVar1 < 5)
 			{
 				*uParam1 = Global_95644[iVar1 /*9*/].f_6;
@@ -1267,17 +1267,17 @@ int func_52(int iParam0, var uParam1, char* sParam2)//Position - 0x2B57
 			break;
 		case 5:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[0];
-			StringCopy(sParam2, __LIB_12__::func_129(Global_113386.f_2363.f_539.f_2314[0]), 32);
+			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[0]), 32);
 			return 1;
 			break;
 		case 6:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[1];
-			StringCopy(sParam2, __LIB_12__::func_129(Global_113386.f_2363.f_539.f_2314[1]), 32);
+			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[1]), 32);
 			return 1;
 			break;
 		case 7:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[2];
-			StringCopy(sParam2, __LIB_12__::func_129(Global_113386.f_2363.f_539.f_2314[2]), 32);
+			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[2]), 32);
 			return 1;
 			break;
 		case 11:
@@ -4099,7 +4099,7 @@ int func_53(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x4F
 						*uParam3 = (32f - 90.6729f);
 						return 1;
 					}
-					if (__LIB_0__::func_502())
+					if (__LIB_0__::func_680())
 					{
 						*uParam2 = { Vector(9.6327f, -1521.394f, -1158.133f) - Vector(9.6346f, -1517.601f, -1152.5707f) };
 						*uParam3 = (34.661f - 90.6729f);
