@@ -257,7 +257,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_39__::func_78(2);
+		__LIB_38__::func_753(2);
 		func_61();
 	}
 	func_54();
@@ -307,7 +307,7 @@ void func_1()//Position - 0xBF
 							PED::SET_PED_COMBAT_RANGE(uLocal_221[iVar1], 0);
 							PED::SET_PED_ACCURACY(uLocal_221[iVar1], 5);
 							PED::SET_PED_TARGET_LOSS_RESPONSE(uLocal_221[iVar1], 1);
-							__LIB_15__::func_995(uLocal_221[iVar1], 20f, 5f, 90f, -80f, 80f);
+							__LIB_15__::func_997(uLocal_221[iVar1], 20f, 5f, 90f, -80f, 80f);
 							if (iLocal_45 == 0)
 							{
 								PED::SET_PED_COMBAT_MOVEMENT(uLocal_221[iVar1], 2);
@@ -395,13 +395,13 @@ void func_1()//Position - 0xBF
 			{
 				ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&(uLocal_221[iVar1]));
 			}
-			else if (__LIB_0__::func_724(uLocal_221[iVar1], __LIB_39__::func_73(__LIB_39__::func_76()), 1) > 100f && __LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), uLocal_221[iVar1], 1) > 300f)
+			else if (__LIB_0__::func_724(uLocal_221[iVar1], __LIB_38__::func_748(__LIB_38__::func_751()), 1) > 100f && __LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), uLocal_221[iVar1], 1) > 300f)
 			{
 				func_4();
 			}
-			else if (iLocal_219 && __LIB_0__::func_724(uLocal_221[iVar1], __LIB_39__::func_73(__LIB_39__::func_76()), 1) > 50f)
+			else if (iLocal_219 && __LIB_0__::func_724(uLocal_221[iVar1], __LIB_38__::func_748(__LIB_38__::func_751()), 1) > 50f)
 			{
-				if (__LIB_16__::func_851())
+				if (__LIB_16__::func_854())
 				{
 					if (!iLocal_218)
 					{
@@ -426,7 +426,7 @@ void func_1()//Position - 0xBF
 
 void func_4()//Position - 0x457
 {
-	__LIB_39__::func_78(2);
+	__LIB_38__::func_753(2);
 	func_61();
 }
 
@@ -490,7 +490,7 @@ void func_9()//Position - 0x6C1
 			switch (uLocal_222[iVar0])
 			{
 				case 0:
-					__LIB_39__::func_80(uLocal_221[iVar0], Local_37[iVar0 /*10*/].f_4);
+					__LIB_38__::func_755(uLocal_221[iVar0], Local_37[iVar0 /*10*/].f_4);
 					break;
 				case 1:
 					if (!__LIB_0__::func_798(uLocal_221[iVar0], joaat("SCRIPT_TASK_COMBAT"), 1))
@@ -511,7 +511,7 @@ void func_9()//Position - 0x6C1
 	switch (iLocal_211)
 	{
 		case 0:
-			if (__LIB_16__::func_852())
+			if (__LIB_16__::func_855())
 			{
 				iVar4 = func_36();
 				if (iVar4 != -1 && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(uLocal_221[iVar4]))
@@ -523,9 +523,9 @@ void func_9()//Position - 0x6C1
 			}
 			break;
 		case 1:
-			if (__LIB_16__::func_852())
+			if (__LIB_16__::func_855())
 			{
-				cVar5 = { __LIB_39__::func_83("START") };
+				cVar5 = { __LIB_38__::func_758("START") };
 				if (__LIB_0__::func_787(&uLocal_46, &cLocal_213, &cVar5, 8, 0, 0, 0))
 				{
 					StringCopy(&cVar5, "", 16);
@@ -534,7 +534,7 @@ void func_9()//Position - 0x6C1
 			}
 			break;
 		case 2:
-			if (__LIB_16__::func_852())
+			if (__LIB_16__::func_855())
 			{
 				iVar4 = func_36();
 				if (iVar4 != -1 && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(uLocal_221[iVar4]))
@@ -546,14 +546,14 @@ void func_9()//Position - 0x6C1
 			}
 			break;
 		case 3:
-			if ((__LIB_16__::func_852() && (MISC::GET_GAME_TIMER() - iLocal_212) > 3000) && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(PLAYER::PLAYER_PED_ID()))
+			if ((__LIB_16__::func_855() && (MISC::GET_GAME_TIMER() - iLocal_212) > 3000) && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(PLAYER::PLAYER_PED_ID()))
 			{
 				__LIB_0__::func_640(PLAYER::PLAYER_PED_ID(), "BLIND_RAGE", 10);
 				iLocal_211++;
 			}
 			break;
 		case 4:
-			if (__LIB_16__::func_852() && (MISC::GET_GAME_TIMER() - iLocal_212) > 1000)
+			if (__LIB_16__::func_855() && (MISC::GET_GAME_TIMER() - iLocal_212) > 1000)
 			{
 				iVar4 = func_36();
 				if (iVar4 != -1 && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(uLocal_221[iVar4]))
@@ -780,7 +780,7 @@ void func_45()//Position - 0x1A3D
 			switch (uLocal_222[iVar0])
 			{
 				case 0:
-					__LIB_39__::func_80(uLocal_221[iVar0], Local_37[iVar0 /*10*/].f_4);
+					__LIB_38__::func_755(uLocal_221[iVar0], Local_37[iVar0 /*10*/].f_4);
 					break;
 				case 1:
 					if (Local_37[iVar0 /*10*/].f_8 == -1)
@@ -882,7 +882,7 @@ void func_45()//Position - 0x1A3D
 	switch (iLocal_211)
 	{
 		case 0:
-			if (__LIB_16__::func_852())
+			if (__LIB_16__::func_855())
 			{
 				iVar12 = func_36();
 				if (iVar12 != -1 && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(uLocal_221[iVar12]))
@@ -894,9 +894,9 @@ void func_45()//Position - 0x1A3D
 			}
 			break;
 		case 1:
-			if (__LIB_16__::func_852())
+			if (__LIB_16__::func_855())
 			{
-				cVar13 = { __LIB_39__::func_83("START") };
+				cVar13 = { __LIB_38__::func_758("START") };
 				if (__LIB_0__::func_787(&uLocal_46, &cLocal_213, &cVar13, 8, 0, 0, 0))
 				{
 					StringCopy(&cVar13, "", 16);
@@ -905,7 +905,7 @@ void func_45()//Position - 0x1A3D
 			}
 			break;
 		case 2:
-			if (__LIB_16__::func_852())
+			if (__LIB_16__::func_855())
 			{
 				iVar12 = func_36();
 				if (iVar12 != -1 && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(uLocal_221[iVar12]))
@@ -917,14 +917,14 @@ void func_45()//Position - 0x1A3D
 			}
 			break;
 		case 3:
-			if ((__LIB_16__::func_852() && (MISC::GET_GAME_TIMER() - iLocal_212) > 3000) && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(PLAYER::PLAYER_PED_ID()))
+			if ((__LIB_16__::func_855() && (MISC::GET_GAME_TIMER() - iLocal_212) > 3000) && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(PLAYER::PLAYER_PED_ID()))
 			{
 				__LIB_0__::func_640(PLAYER::PLAYER_PED_ID(), "BLIND_RAGE", 10);
 				iLocal_211++;
 			}
 			break;
 		case 4:
-			if (__LIB_16__::func_852() && (MISC::GET_GAME_TIMER() - iLocal_212) > 1000)
+			if (__LIB_16__::func_855() && (MISC::GET_GAME_TIMER() - iLocal_212) > 1000)
 			{
 				iVar12 = func_36();
 				if (iVar12 != -1 && !AUDIO::IS_AMBIENT_SPEECH_PLAYING(uLocal_221[iVar12]))
@@ -949,7 +949,7 @@ void func_45()//Position - 0x1A3D
 
 void func_47()//Position - 0x2422
 {
-	__LIB_39__::func_78(1);
+	__LIB_38__::func_753(1);
 	func_61();
 }
 
@@ -972,7 +972,7 @@ void func_54()//Position - 0x25AF
 	MISC::ENABLE_DISPATCH_SERVICE(3, false);
 	PED::SET_CREATE_RANDOM_COPS(false);
 	iLocal_45 = func_58();
-	switch (__LIB_39__::func_76())
+	switch (__LIB_38__::func_751())
 	{
 		case 11:
 			iVar0 = 0;
@@ -987,12 +987,12 @@ void func_54()//Position - 0x25AF
 			iVar0 = 0;
 			break;
 	}
-	__LIB_39__::func_79(&(Local_37[0 /*10*/]), __LIB_39__::func_76(), 0);
-	__LIB_39__::func_79(&(Local_37[1 /*10*/]), __LIB_39__::func_76(), 1);
-	__LIB_39__::func_79(&(Local_37[2 /*10*/]), __LIB_39__::func_76(), 2);
-	__LIB_39__::func_79(&(Local_37[3 /*10*/]), __LIB_39__::func_76(), 3);
-	__LIB_39__::func_79(&(Local_37[4 /*10*/]), __LIB_39__::func_76(), 4);
-	__LIB_39__::func_79(&(Local_37[5 /*10*/]), __LIB_39__::func_76(), 5);
+	__LIB_38__::func_754(&(Local_37[0 /*10*/]), __LIB_38__::func_751(), 0);
+	__LIB_38__::func_754(&(Local_37[1 /*10*/]), __LIB_38__::func_751(), 1);
+	__LIB_38__::func_754(&(Local_37[2 /*10*/]), __LIB_38__::func_751(), 2);
+	__LIB_38__::func_754(&(Local_37[3 /*10*/]), __LIB_38__::func_751(), 3);
+	__LIB_38__::func_754(&(Local_37[4 /*10*/]), __LIB_38__::func_751(), 4);
+	__LIB_38__::func_754(&(Local_37[5 /*10*/]), __LIB_38__::func_751(), 5);
 	StringCopy(&(Local_37.f_61), func_56(iVar0), 16);
 	StringCopy(&(Local_37.f_65), func_55(iVar0), 16);
 	PED::ADD_RELATIONSHIP_GROUP("relGang", &iLocal_224);

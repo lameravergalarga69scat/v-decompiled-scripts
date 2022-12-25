@@ -2276,8 +2276,8 @@ void __EntryFunction__()//Position - 0x0
 	{
 		PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 32, false);
 	}
-	iLocal_1499 = __LIB_40__::func_367(Vector(28.3097f, -764.507f, 305.0073f) + Vector(2f, 2f, 2f), Vector(28.3097f, -764.507f, 305.0073f) - Vector(2f, 2f, 2f));
-	iLocal_1500 = __LIB_40__::func_367(Vector(28.5672f, -1067.1489f, 355.6028f) + Vector(2f, 2f, 2f), Vector(28.5672f, -1067.1489f, 355.6028f) - Vector(2f, 2f, 2f));
+	iLocal_1499 = __LIB_40__::func_43(Vector(28.3097f, -764.507f, 305.0073f) + Vector(2f, 2f, 2f), Vector(28.3097f, -764.507f, 305.0073f) - Vector(2f, 2f, 2f));
+	iLocal_1500 = __LIB_40__::func_43(Vector(28.5672f, -1067.1489f, 355.6028f) + Vector(2f, 2f, 2f), Vector(28.5672f, -1067.1489f, 355.6028f) - Vector(2f, 2f, 2f));
 	__LIB_14__::func_564();
 	iLocal_1332 = 3;
 	Local_1158 = { __LIB_14__::func_586(iLocal_1332) };
@@ -2341,7 +2341,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		__LIB_33__::func_281(&uLocal_1628);
+		__LIB_31__::func_752(&uLocal_1628);
 		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("M_ASS4" /* GXT: The Bus Assassination */, 0);
 		if (__LIB_14__::func_578(&uScriptParam_1915))
 		{
@@ -2349,8 +2349,8 @@ void __EntryFunction__()//Position - 0x0
 			{
 				func_554();
 				func_488(&Local_987);
-				__LIB_40__::func_368(iLocal_1499, Vector(28.3097f, -764.507f, 305.0073f) + Vector(2f, 2f, 2f), Vector(28.3097f, -764.507f, 305.0073f) - Vector(2f, 2f, 2f));
-				__LIB_40__::func_368(iLocal_1500, Vector(28.3097f, -764.507f, 305.0073f) + Vector(2f, 2f, 2f), Vector(28.3097f, -764.507f, 305.0073f) - Vector(2f, 2f, 2f));
+				__LIB_40__::func_44(iLocal_1499, Vector(28.3097f, -764.507f, 305.0073f) + Vector(2f, 2f, 2f), Vector(28.3097f, -764.507f, 305.0073f) - Vector(2f, 2f, 2f));
+				__LIB_40__::func_44(iLocal_1500, Vector(28.3097f, -764.507f, 305.0073f) + Vector(2f, 2f, 2f), Vector(28.3097f, -764.507f, 305.0073f) - Vector(2f, 2f, 2f));
 				func_486();
 				PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_1470[0], false);
 				PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_1470[1], false);
@@ -2750,7 +2750,7 @@ int func_172(var uParam0, int* iParam1)//Position - 0xBF03
 			}
 			break;
 		case 5:
-			if (__LIB_41__::func_273(uParam0, &uLocal_1628, 0))
+			if (__LIB_40__::func_951(uParam0, &uLocal_1628, 0))
 			{
 				iLocal_984 = 6;
 			}
@@ -2767,7 +2767,7 @@ int func_172(var uParam0, int* iParam1)//Position - 0xBF03
 					HUD::REMOVE_BLIP(&(iParam1->f_2));
 					__LIB_0__::func_229("ASS_BS_COPS", 7500, 1);
 				}
-				__LIB_16__::func_15(&(iParam1->f_2), 388.7943f, -681.7061f, 28.149f, 272.5919f);
+				__LIB_16__::func_17(&(iParam1->f_2), 388.7943f, -681.7061f, 28.149f, 272.5919f);
 				__LIB_14__::func_874(0, "assassin_bus_enter_bus", 0, 0, 0, 1);
 				__LIB_14__::func_590(iLocal_1466);
 				iLocal_984 = 7;
@@ -2779,7 +2779,7 @@ int func_172(var uParam0, int* iParam1)//Position - 0xBF03
 			if (HUD::DOES_BLIP_EXIST(iParam1->f_2))
 			{
 				func_375();
-				if (__LIB_33__::func_273(uParam0->f_6, fLocal_1442) && PLAYER::IS_PLAYER_READY_FOR_CUTSCENE(PLAYER::PLAYER_ID()))
+				if (__LIB_31__::func_744(uParam0->f_6, fLocal_1442) && PLAYER::IS_PLAYER_READY_FOR_CUTSCENE(PLAYER::PLAYER_ID()))
 				{
 					if (HUD::DOES_BLIP_EXIST(iParam1->f_2))
 					{
@@ -2919,7 +2919,7 @@ int func_174()//Position - 0xC3B7
 {
 	if (__LIB_0__::func_329())
 	{
-		if (!__LIB_16__::func_330(3))
+		if (!__LIB_16__::func_333(3))
 		{
 			return 1;
 		}
@@ -2937,7 +2937,7 @@ void func_182()//Position - 0xCB26
 			{
 				__LIB_1__::func_31(&iLocal_1496);
 			}
-			else if (__LIB_17__::func_336(&iLocal_1496, 10f))
+			else if (__LIB_17__::func_339(&iLocal_1496, 10f))
 			{
 				AUDIO::PLAY_POLICE_REPORT("SCRIPTED_SCANNER_REPORT_ASS_BUS_01", 0f);
 				iLocal_1412 = 1;
@@ -3701,7 +3701,7 @@ void func_229(var uParam0, int* iParam1)//Position - 0xE5C1
 	{
 		if (iLocal_1349 < 4)
 		{
-			if (((((__LIB_33__::func_278(*iParam1, 0, &uLocal_120, &uLocal_131, 0, 0, 0, 1, 1) || func_236(&uLocal_1418)) || iLocal_1428 >= 2) || PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0) || !VEHICLE::IS_VEHICLE_DRIVEABLE(iParam1->f_1, false)) || func_235(*iParam1, iParam1->f_8, 1097859072))
+			if (((((__LIB_31__::func_749(*iParam1, 0, &uLocal_120, &uLocal_131, 0, 0, 0, 1, 1) || func_236(&uLocal_1418)) || iLocal_1428 >= 2) || PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0) || !VEHICLE::IS_VEHICLE_DRIVEABLE(iParam1->f_1, false)) || func_235(*iParam1, iParam1->f_8, 1097859072))
 			{
 				if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0)
 				{
@@ -3893,7 +3893,7 @@ int func_236(var uParam0)//Position - 0xE95D
 	{
 		if (!PED::IS_PED_INJURED(iVar0))
 		{
-			if (__LIB_33__::func_278(iVar0, 0, &uLocal_120, &uLocal_131, 0, 0, 0, 1, 1) || func_237())
+			if (__LIB_31__::func_749(iVar0, 0, &uLocal_120, &uLocal_131, 0, 0, 0, 1, 1) || func_237())
 			{
 				return 1;
 			}
@@ -4132,7 +4132,7 @@ void func_282()//Position - 0x106C1
 	}
 	else if (ENTITY::DOES_ENTITY_EXIST(iLocal_1502))
 	{
-		if (__LIB_33__::func_278(iLocal_1502, 0, &uLocal_120, &uLocal_131, 0, 0, 0, 1, 1))
+		if (__LIB_31__::func_749(iLocal_1502, 0, &uLocal_120, &uLocal_131, 0, 0, 0, 1, 1))
 		{
 			if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_1502, joaat("SCRIPT_TASK_SMART_FLEE_PED")) != 1)
 			{
@@ -7359,7 +7359,7 @@ void func_460(var uParam0, var uParam1)//Position - 0x1E271
 	}
 	if (!__LIB_0__::func_78(uParam1->f_3, __LIB_0__::func_613(), 0))
 	{
-		__LIB_16__::func_15(&(uParam1->f_2), uParam1->f_3, uParam1->f_6);
+		__LIB_16__::func_17(&(uParam1->f_2), uParam1->f_3, uParam1->f_6);
 	}
 	if (uParam0->f_274 != 0 && uParam0->f_274 != 1)
 	{
@@ -7499,13 +7499,13 @@ void func_464(var uParam0, var uParam1, bool bParam2)//Position - 0x1E8BC
 		STREAMING::REQUEST_PTFX_ASSET();
 	}
 	__LIB_1__::func_298(&(uParam0->f_34));
-	__LIB_33__::func_275(&(uParam0->f_46), uParam1);
+	__LIB_31__::func_746(&(uParam0->f_46), uParam1);
 	if (bParam2)
 	{
 		__LIB_14__::func_532();
 		while (!__LIB_14__::func_531())
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
@@ -7513,7 +7513,7 @@ void func_464(var uParam0, var uParam1, bool bParam2)//Position - 0x1E8BC
 	{
 		while (((((((((!TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs_102") || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs01")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs02")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs03")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs04")) || !STREAMING::HAS_ANIM_DICT_LOADED("ODDJOBS@assassinate@old_lady")) || !VEHICLE::HAS_VEHICLE_ASSET_LOADED(uParam0->f_5)) || !VEHICLE::HAS_VEHICLE_ASSET_LOADED(uParam0->f_15)) || !STREAMING::HAS_PTFX_ASSET_LOADED()) || !STREAMING::HAS_CLIP_SET_LOADED("move_m@casual@d"))
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
@@ -7521,7 +7521,7 @@ void func_464(var uParam0, var uParam1, bool bParam2)//Position - 0x1E8BC
 	{
 		while (((((!TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_101") || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_102")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_103")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_104")) || !STREAMING::HAS_ANIM_DICT_LOADED("ODDJOBS@assassinate@vice@incar")) || !STREAMING::HAS_ANIM_DICT_LOADED("mini@hookers_spvanilla"))
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
@@ -7529,13 +7529,13 @@ void func_464(var uParam0, var uParam1, bool bParam2)//Position - 0x1E8BC
 	{
 		while (!STREAMING::HAS_PTFX_ASSET_LOADED())
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
-	while ((!HUD::HAS_ADDITIONAL_TEXT_LOADED(3) || !__LIB_1__::func_297(&(uParam0->f_34))) || !__LIB_38__::func_900(uParam1))
+	while ((!HUD::HAS_ADDITIONAL_TEXT_LOADED(3) || !__LIB_1__::func_297(&(uParam0->f_34))) || !__LIB_38__::func_575(uParam1))
 	{
-		__LIB_33__::func_281(uParam1);
+		__LIB_31__::func_752(uParam1);
 		SYSTEM::WAIT(0);
 	}
 	if (uParam0->f_274 == 1)
@@ -7924,7 +7924,7 @@ void func_544(var uParam0)//Position - 0x22789
 	PED::CLEAR_PED_NON_CREATION_AREA();
 	PED::STOP_ANY_PED_MODEL_BEING_SUPPRESSED();
 	AUDIO::STOP_STREAM();
-	__LIB_38__::func_901(uParam0, 0);
+	__LIB_38__::func_576(uParam0, 0);
 	PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

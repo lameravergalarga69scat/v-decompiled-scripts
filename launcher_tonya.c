@@ -287,7 +287,7 @@ void __EntryFunction__()//Position - 0x0
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
-	__LIB_37__::func_581(&Var0);
+	__LIB_37__::func_255(&Var0);
 	Local_52 = { ScriptParam_228.f_1[0 /*3*/] };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
 	{
@@ -305,7 +305,7 @@ void __EntryFunction__()//Position - 0x0
 	iVar1[0] = 58;
 	iVar1[1] = 59;
 	iVar1[2] = 62;
-	if (!__LIB_37__::func_631(&iVar1, &Var0, Local_52, 1f))
+	if (!__LIB_37__::func_305(&iVar1, &Var0, Local_52, 1f))
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -315,7 +315,7 @@ void __EntryFunction__()//Position - 0x0
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_594(Var0.f_0))
+	if (__LIB_37__::func_268(Var0.f_0))
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -353,7 +353,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_37__::func_659(&Var0, 1) || __LIB_37__::func_594(Var0.f_0))
+		if (!__LIB_37__::func_333(&Var0, 1) || __LIB_37__::func_268(Var0.f_0))
 		{
 			func_270(&Var0, 1);
 		}
@@ -377,16 +377,16 @@ void __EntryFunction__()//Position - 0x0
 			__LIB_0__::func_135("SP_MISSION_FRANKLIN_1 became available... [TERMINATING]");
 			func_270(&Var0, 1);
 		}
-		__LIB_37__::func_592(Var0.f_0);
-		__LIB_37__::func_623(&iLocal_227, &(Var0.f_9), Local_52);
+		__LIB_37__::func_266(Var0.f_0);
+		__LIB_37__::func_297(&iLocal_227, &(Var0.f_9), Local_52);
 		func_186(&Var0);
-		if (__LIB_37__::func_637(&Var0, 0))
+		if (__LIB_37__::func_311(&Var0, 0))
 		{
-			if (!__LIB_37__::func_669(&Var0))
+			if (!__LIB_37__::func_343(&Var0))
 			{
 				func_270(&Var0, 1);
 			}
-			if (__LIB_37__::func_562(&Var0))
+			if (__LIB_37__::func_236(&Var0))
 			{
 				func_270(&Var0, 0);
 			}
@@ -433,7 +433,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 						__LIB_0__::func_222(&uLocal_58, 3, uParam0->f_28[0], "TONYA", 0, 1);
 						if (*uParam0 == 58)
 						{
-							__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_1", 4, 0, 0, 0);
+							__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK_1", 4, 0, 0, 0);
 							if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 							{
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -449,7 +449,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 						}
 						else if (*uParam0 == 59)
 						{
-							__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_1", 4, 0, 0);
+							__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_1", 4, 0, 0);
 							if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 							{
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -465,7 +465,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 						}
 						else if (*uParam0 == 62)
 						{
-							__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_1", 4, 0, 0);
+							__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_1", 4, 0, 0);
 							if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 							{
 								TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -516,7 +516,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 1:
 									if (*uParam0 == 58)
 									{
-										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_2", 4, 0, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK_2", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -533,7 +533,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_2", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_2", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -550,7 +550,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_2", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_2", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -569,7 +569,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 2:
 									if (*uParam0 == 58)
 									{
-										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_3", 4, 0, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK_3", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -586,7 +586,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_3", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_3", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -603,7 +603,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_3", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_3", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -622,7 +622,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 3:
 									if (*uParam0 == 58)
 									{
-										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_4", 4, 0, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK_4", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -638,7 +638,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_4", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_4", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -654,7 +654,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_4", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_4", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -672,7 +672,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 								case 4:
 									if (*uParam0 == 58)
 									{
-										__LIB_16__::func_5(&uLocal_58, "TOWAUD", "TONYA_BECK_5", 4, 0, 0, 0);
+										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK_5", 4, 0, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -689,7 +689,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 59)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_5", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECK2", "TONYA_BECK2_5", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -706,7 +706,7 @@ void func_186(var uParam0)//Position - 0xC8DF
 									}
 									else if (*uParam0 == 62)
 									{
-										__LIB_16__::func_7(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_5", 4, 0, 0);
+										__LIB_16__::func_9(&uLocal_58, "TOWAUD", "TONYA_BECKON", "TONYA_BECKON_5", 4, 0, 0);
 										if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_28[0], false))
 										{
 											TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
@@ -895,7 +895,7 @@ int func_260(int iParam0)//Position - 0x100B4
 	{
 		return 0;
 	}
-	if (__LIB_37__::func_580(iParam0))
+	if (__LIB_37__::func_254(iParam0))
 	{
 		return 0;
 	}
@@ -909,11 +909,11 @@ int func_260(int iParam0)//Position - 0x100B4
 	}
 	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_37__::func_579(iParam0))
+		if (!__LIB_37__::func_253(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_37__::func_578(iParam0))
+		if (!__LIB_37__::func_252(iParam0))
 		{
 			return 0;
 		}
@@ -999,7 +999,7 @@ void func_270(int iParam0, bool bParam1)//Position - 0x104EA
 	if (iLocal_227 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_37__::func_331(&iLocal_227);
+		__LIB_37__::func_5(&iLocal_227);
 	}
 	if (iLocal_55)
 	{

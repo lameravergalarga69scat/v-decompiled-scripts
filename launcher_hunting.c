@@ -114,7 +114,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_45 = 64;
 	iLocal_49 = HUD::GET_STANDARD_BLIP_ENUM_ID();
 	iLocal_50 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
-	uLocal_52 = __LIB_17__::func_26(54);
+	uLocal_52 = __LIB_17__::func_29(54);
 	iLocal_53 = joaat("dune");
 	iLocal_54 = WEAPON::GET_WEAPONTYPE_MODEL(joaat("WEAPON_SNIPERRIFLE"));
 	iLocal_55 = WEAPON::GET_WEAPON_COMPONENT_TYPE_MODEL(joaat("COMPONENT_AT_SCOPE_LARGE"));
@@ -122,13 +122,13 @@ void __EntryFunction__()//Position - 0x0
 	Local_57 = { -683.8261f, 5840.8096f, 16.566f };
 	iLocal_59 = -1;
 	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
-	__LIB_37__::func_582();
+	__LIB_37__::func_256();
 	Var0.f_17 = 2;
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
 	Var1 = { 0f, 0f, 0f };
-	__LIB_37__::func_581(&Var0);
+	__LIB_37__::func_255(&Var0);
 	Var1 = { ScriptParam_60.f_1[0 /*3*/] };
 	iVar2[0] = 25;
 	iVar2[1] = 26;
@@ -145,21 +145,21 @@ void __EntryFunction__()//Position - 0x0
 		}
 		func_262(&Var0, 1);
 	}
-	if (!__LIB_37__::func_631(&iVar2, &Var0, Var1, 1f))
+	if (!__LIB_37__::func_305(&iVar2, &Var0, Var1, 1f))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	if (!func_250(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_594(Var0.f_0))
+	if (__LIB_37__::func_268(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -176,15 +176,15 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_37__::func_659(&Var0, 1))
+		if (!__LIB_37__::func_333(&Var0, 1))
 		{
 			func_262(&Var0, 1);
 		}
-		__LIB_37__::func_592(Var0.f_0);
-		__LIB_37__::func_623(&iLocal_59, &(Var0.f_9), Var1);
+		__LIB_37__::func_266(Var0.f_0);
+		__LIB_37__::func_297(&iLocal_59, &(Var0.f_9), Var1);
 		if (Var0.f_0 == 25)
 		{
-			__LIB_37__::func_622(&Var0, Var1, "HUNT1AU", "HUNT1_AMB", 3, "CLETUS", 5000, 1101004800);
+			__LIB_37__::func_296(&Var0, Var1, "HUNT1AU", "HUNT1_AMB", 3, "CLETUS", 5000, 1101004800);
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{
@@ -201,13 +201,13 @@ void __EntryFunction__()//Position - 0x0
 				PED::SET_PED_MAX_MOVE_BLEND_RATIO(PLAYER::PLAYER_PED_ID(), 3f);
 			}
 		}
-		if (__LIB_37__::func_646(&Var0, 0) && MISC::ABSF((Var1.f_2 - Var3.f_2)) < 2.5f)
+		if (__LIB_37__::func_320(&Var0, 0) && MISC::ABSF((Var1.f_2 - Var3.f_2)) < 2.5f)
 		{
-			if (!__LIB_37__::func_669(&Var0))
+			if (!__LIB_37__::func_343(&Var0))
 			{
 				func_262(&Var0, 1);
 			}
-			if (__LIB_37__::func_562(&Var0))
+			if (__LIB_37__::func_236(&Var0))
 			{
 				func_262(&Var0, 0);
 			}
@@ -274,7 +274,7 @@ int func_238(var uParam0)//Position - 0xE87B
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (__LIB_37__::func_593(&(uParam0->f_28[0]), 54, -683.3276f, 5841.042f, 17.217f, 8.33f, "RC HUNTER 2", 1))
+				if (__LIB_37__::func_267(&(uParam0->f_28[0]), 54, -683.3276f, 5841.042f, 17.217f, 8.33f, "RC HUNTER 2", 1))
 				{
 					WEAPON::GIVE_WEAPON_TO_PED(uParam0->f_28[0], joaat("WEAPON_PUMPSHOTGUN"), 0, true, true);
 				}
@@ -325,7 +325,7 @@ int func_238(var uParam0)//Position - 0xE87B
 
 void func_239(int* iParam0, struct<3> Param1, float fParam2, int iParam3)//Position - 0xEAB0
 {
-	__LIB_17__::func_22(iParam0, iLocal_53, Param1, fParam2);
+	__LIB_17__::func_25(iParam0, iLocal_53, Param1, fParam2);
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
 		VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(*iParam0, 5f);
@@ -362,7 +362,7 @@ int func_246(var uParam0)//Position - 0xED55
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "special_ped@cletus@base", "cletus_base", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "special_ped@cletus@base", "cletus_base", 0);
 			STREAMING::REQUEST_ANIM_DICT("special_ped@cletus@base");
 			iLocal_51 = 1;
 			break;
@@ -377,7 +377,7 @@ int func_246(var uParam0)//Position - 0xED55
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (__LIB_37__::func_593(&(uParam0->f_28[0]), 54, 1804.33f, 3931.33f, 33.83f, 91.63f, "RC HUNTER 1", 1))
+				if (__LIB_37__::func_267(&(uParam0->f_28[0]), 54, 1804.33f, 3931.33f, 33.83f, 91.63f, "RC HUNTER 1", 1))
 				{
 					WEAPON::GIVE_WEAPON_TO_PED(uParam0->f_28[0], joaat("WEAPON_SNIPERRIFLE"), 0, true, true);
 				}
@@ -493,7 +493,7 @@ int func_251(int iParam0)//Position - 0xF17B
 	{
 		return 0;
 	}
-	if (__LIB_37__::func_580(iParam0))
+	if (__LIB_37__::func_254(iParam0))
 	{
 		return 0;
 	}
@@ -507,11 +507,11 @@ int func_251(int iParam0)//Position - 0xF17B
 	}
 	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_37__::func_579(iParam0))
+		if (!__LIB_37__::func_253(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_37__::func_578(iParam0))
+		if (!__LIB_37__::func_252(iParam0))
 		{
 			return 0;
 		}
@@ -577,13 +577,13 @@ void func_262(int iParam0, bool bParam1)//Position - 0xF5CB
 	if (iLocal_59 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_37__::func_331(&iLocal_59);
+		__LIB_37__::func_5(&iLocal_59);
 	}
 	if (bParam1)
 	{
-		__LIB_37__::func_592(*iParam0);
+		__LIB_37__::func_266(*iParam0);
 	}
-	__LIB_37__::func_588();
+	__LIB_37__::func_262();
 	__LIB_0__::func_135("SCRIPT TERMINATED");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

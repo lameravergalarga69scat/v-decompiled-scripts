@@ -588,7 +588,7 @@ void func_57()//Position - 0x16A5
 		__LIB_12__::func_565("JOSH1_TXT" /* GXT: BTW buddy, Avery has a website with all his real estate listings around the city, you might find it useful - ~b~<u>www.lennyavery-realty.com</u>~w~ */);
 		if (__LIB_0__::func_425(105) == 0)
 		{
-			__LIB_28__::func_203(joaat("TEXT_FORSALESIGNS_DONE"), 1, 4, 58, 30000, 10000, -1, 176, -1, 0, 1);
+			__LIB_28__::func_213(joaat("TEXT_FORSALESIGNS_DONE"), 1, 4, 58, 30000, 10000, -1, 176, -1, 0, 1);
 		}
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();

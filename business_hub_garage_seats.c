@@ -281,11 +281,11 @@ void __EntryFunction__()//Position - 0x0
 	{
 		while (!func_72())
 		{
-			__LIB_44__::func_92(&uLocal_93);
+			__LIB_44__::func_108(&uLocal_93);
 			SYSTEM::WAIT(0);
 		}
 	}
-	__LIB_43__::func_579();
+	__LIB_43__::func_536();
 }
 
 int func_72()//Position - 0x221D
@@ -294,7 +294,7 @@ int func_72()//Position - 0x221D
 	{
 		return 1;
 	}
-	if (!__LIB_15__::func_801())
+	if (!__LIB_15__::func_802())
 	{
 		return 1;
 	}

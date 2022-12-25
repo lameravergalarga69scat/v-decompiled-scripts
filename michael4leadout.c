@@ -47,7 +47,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_11 = 12;
 	fLocal_14 = 0.001f;
 	iLocal_17 = -1;
-	__LIB_17__::func_854();
+	__LIB_17__::func_864();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
 	{
 		func_227();
@@ -64,29 +64,29 @@ void __EntryFunction__()//Position - 0x0
 						Global_78587 = 1;
 						iLocal_21 = 1;
 					}
-					__LIB_17__::func_854();
+					__LIB_17__::func_864();
 					break;
 				case 1:
 					if (!__LIB_0__::func_691())
 					{
 						Global_43601 = 1;
-						__LIB_17__::func_693(-1613.869f, -1054.958f, 12.0722f, -1082130432, 350, 1114636288, 0);
+						__LIB_17__::func_696(-1613.869f, -1054.958f, 12.0722f, -1082130432, 350, 1114636288, 0);
 						CUTSCENE::REQUEST_CUTSCENE("SOL_5_MCS_2_P5", 8);
-						__LIB_38__::func_276(0, 1);
+						__LIB_37__::func_951(0, 1);
 						func_106(PLAYER::PLAYER_PED_ID(), 12, 35, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
 						SYSTEM::WAIT(500);
 						iLocal_21 = 2;
 					}
-					__LIB_17__::func_854();
+					__LIB_17__::func_864();
 					break;
 				case 2:
-					if ((CUTSCENE::HAS_THIS_CUTSCENE_LOADED("SOL_5_MCS_2_P5") && __LIB_38__::func_275(0, 1)) && PED::HAVE_ALL_STREAMING_REQUESTS_COMPLETED(PLAYER::PLAYER_PED_ID()))
+					if ((CUTSCENE::HAS_THIS_CUTSCENE_LOADED("SOL_5_MCS_2_P5") && __LIB_37__::func_950(0, 1)) && PED::HAVE_ALL_STREAMING_REQUESTS_COMPLETED(PLAYER::PLAYER_PED_ID()))
 					{
 						CLOCK::SET_CLOCK_TIME(7, 5, 30);
 						MISC::SET_WEATHER_TYPE_NOW_PERSIST("EXTRASUNNY");
 						MISC::CLEAR_WEATHER_TYPE_PERSIST();
 						MISC::CLEAR_AREA(-1590.055f, -1037.0665f, 12.0186f, 4f, true, false, false, false);
-						__LIB_17__::func_806(&iLocal_22, 0, -1590.055f, -1037.0665f, 12.0186f, 24.5062f, 1, 1);
+						__LIB_17__::func_809(&iLocal_22, 0, -1590.055f, -1037.0665f, 12.0186f, 24.5062f, 1, 1);
 						__LIB_14__::func_775(iLocal_22, -1590.055f, -1037.0665f, 12.0186f, 24.5062f, 24, 0);
 						PED::CLEAR_PED_WETNESS(PLAYER::PLAYER_PED_ID());
 						PED::RESET_PED_VISIBLE_DAMAGE(PLAYER::PLAYER_PED_ID());
@@ -147,7 +147,7 @@ void __EntryFunction__()//Position - 0x0
 						__LIB_0__::func_210();
 						Global_43601 = 0;
 						__LIB_0__::func_50(30000);
-						__LIB_17__::func_625(0, 0);
+						__LIB_17__::func_628(0, 0);
 						iLocal_21 = 5;
 					}
 					break;

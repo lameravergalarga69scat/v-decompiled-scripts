@@ -89,7 +89,7 @@ void __EntryFunction__()//Position - 0x0
 	__LIB_0__::func_694(14);
 	func_50();
 	__LIB_0__::func_740(&Local_42, 0, joaat("prop_power_cell"), "SSHIP_COLLECT" /* GXT: ~1~/50 spaceship parts collected. */);
-	__LIB_37__::func_693(&Local_42, joaat("NUM_HIDDEN_PACKAGES_1"), 755, 50);
+	__LIB_37__::func_367(&Local_42, joaat("NUM_HIDDEN_PACKAGES_1"), 755, 50);
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -98,7 +98,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (!bLocal_51)
 			{
-				bLocal_51 = __LIB_28__::func_203(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
+				bLocal_51 = __LIB_28__::func_213(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
 			}
 			if (bLocal_51)
 			{
@@ -131,7 +131,7 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 				{
 					if (uParam0->f_10 == iLocal_49)
 					{
-						__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 1, 0, 2);
+						__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 1, 0, 2);
 						if (OBJECT::DOES_PICKUP_EXIST((iParam1[uParam0->f_10 /*11*/])->f_1))
 						{
 							INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME((iParam1[uParam0->f_10 /*11*/])->f_1, "GtaMloRoomTun5");
@@ -139,17 +139,17 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 					}
 					else if ((((uParam0->f_10 == 6 || uParam0->f_10 == 14) || uParam0->f_10 == 21) || uParam0->f_10 == 34) || uParam0->f_10 == 39)
 					{
-						__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
+						__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
 					}
 					else
 					{
-						__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
+						__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
 					}
 				}
 			}
 			else if (!bVar1)
 			{
-				__LIB_39__::func_728(uParam0, iParam1, Var2);
+				__LIB_39__::func_404(uParam0, iParam1, Var2);
 			}
 			uParam0->f_10++;
 			if (uParam0->f_10 >= *iParam1)
@@ -160,13 +160,13 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 		}
 		if (!Global_78579)
 		{
-			__LIB_32__::func_439(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 0, &iLocal_50, &iLocal_52, "SSHIP_TITLE" /* GXT: Part Collected~s~ */, "SSHIP_COLLECT" /* GXT: ~1~/50 spaceship parts collected. */);
+			__LIB_30__::func_870(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 0, &iLocal_50, &iLocal_52, "SSHIP_TITLE" /* GXT: Part Collected~s~ */, "SSHIP_COLLECT" /* GXT: ~1~/50 spaceship parts collected. */);
 		}
 		if (!bLocal_51)
 		{
 			if (uParam0->f_1.f_4 >= uParam0->f_1.f_3)
 			{
-				bLocal_51 = __LIB_28__::func_203(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
+				bLocal_51 = __LIB_28__::func_213(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
 			}
 		}
 		if (!uParam0->f_12 && !uParam0->f_11)
@@ -185,7 +185,7 @@ void func_50()//Position - 0x167B
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		Local_48[iVar0 /*11*/].f_3 = { __LIB_39__::func_727(iVar0, 0) };
+		Local_48[iVar0 /*11*/].f_3 = { __LIB_39__::func_403(iVar0, 0) };
 		Local_48[iVar0 /*11*/].f_10 = 0;
 		iVar0++;
 	}

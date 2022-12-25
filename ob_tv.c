@@ -108,7 +108,7 @@ void __EntryFunction__()//Position - 0x0
 		__LIB_0__::func_467();
 		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_69))
 		{
-			if ((iLocal_41 != -1 && (__LIB_0__::func_767() && !__LIB_0__::func_766())) && !__LIB_17__::func_249(iLocal_41))
+			if ((iLocal_41 != -1 && (__LIB_0__::func_767() && !__LIB_0__::func_766())) && !__LIB_17__::func_252(iLocal_41))
 			{
 				func_68();
 			}
@@ -193,7 +193,7 @@ void __EntryFunction__()//Position - 0x0
 							break;
 						case 2:
 							func_53();
-							if (!__LIB_17__::func_249(iLocal_41))
+							if (!__LIB_17__::func_252(iLocal_41))
 							{
 								__LIB_3__::func_422(&iLocal_40);
 								if (__LIB_0__::func_1("TV_HLP1" /* GXT: Press ~INPUT_CONTEXT~ to turn on the TV. */))
@@ -232,7 +232,7 @@ void __EntryFunction__()//Position - 0x0
 							{
 								GRAPHICS::ATTACH_TV_AUDIO_TO_ENTITY(iLocal_38);
 							}
-							if (!__LIB_17__::func_249(iLocal_41))
+							if (!__LIB_17__::func_252(iLocal_41))
 							{
 								if ((Global_32020[iLocal_41 /*11*/] == 3 || Global_32020[iLocal_41 /*11*/] == 2) || Global_32020[iLocal_41 /*11*/] == -1)
 								{
@@ -264,7 +264,7 @@ void __EntryFunction__()//Position - 0x0
 							{
 								iLocal_29 = 6;
 							}
-							if (Global_32020[iLocal_41 /*11*/].f_7 && __LIB_17__::func_249(iLocal_41))
+							if (Global_32020[iLocal_41 /*11*/].f_7 && __LIB_17__::func_252(iLocal_41))
 							{
 								Global_32020[iLocal_41 /*11*/].f_7 = 0;
 								iLocal_29 = 6;
@@ -443,9 +443,9 @@ void func_4()//Position - 0x643
 
 int func_15()//Position - 0x9CE
 {
-	if (!__LIB_17__::func_249(iLocal_41))
+	if (!__LIB_17__::func_252(iLocal_41))
 	{
-		if (((((((__LIB_37__::func_602(&iLocal_26) >= 1f && ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_68, 1f, 1f, 1.5f, false, true, 0)) && INTERIOR::GET_INTERIOR_FROM_ENTITY(iLocal_35) == INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())) && !__LIB_0__::func_194(8, -1)) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), Local_31, 90f)) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
+		if (((((((__LIB_37__::func_276(&iLocal_26) >= 1f && ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_68, 1f, 1f, 1.5f, false, true, 0)) && INTERIOR::GET_INTERIOR_FROM_ENTITY(iLocal_35) == INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID())) && !__LIB_0__::func_194(8, -1)) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false)) && PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), Local_31, 90f)) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 		{
 			if (iLocal_40 == -1)
 			{
@@ -525,7 +525,7 @@ void func_23(bool bParam0, bool bParam1)//Position - 0xD39
 	iVar0 = 64;
 	if (bParam0)
 	{
-		if (__LIB_38__::func_749(0))
+		if (__LIB_38__::func_424(0))
 		{
 			if (!iLocal_22)
 			{
@@ -732,7 +732,7 @@ int func_38(int iParam0)//Position - 0x13C5
 
 int func_44()//Position - 0x15F3
 {
-	if (__LIB_37__::func_602(&iLocal_26) < 1f)
+	if (__LIB_37__::func_276(&iLocal_26) < 1f)
 	{
 		__LIB_3__::func_422(&iLocal_40);
 		return 0;

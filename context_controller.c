@@ -429,7 +429,7 @@ void func_1()//Position - 0x457
 			__LIB_1__::func_752(0);
 			break;
 		case 2:
-			__LIB_16__::func_609(0);
+			__LIB_16__::func_612(0);
 			break;
 	}
 }

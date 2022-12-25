@@ -108,16 +108,16 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_45 = 64;
 	iLocal_49 = HUD::GET_STANDARD_BLIP_ENUM_ID();
 	iLocal_50 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
-	uLocal_52 = __LIB_17__::func_26(53);
+	uLocal_52 = __LIB_17__::func_29(53);
 	iLocal_53 = -1;
 	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
-	__LIB_37__::func_582();
+	__LIB_37__::func_256();
 	Var0.f_17 = 2;
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
 	Var1 = { 0f, 0f, 0f };
-	__LIB_37__::func_581(&Var0);
+	__LIB_37__::func_255(&Var0);
 	Var1 = { ScriptParam_55.f_1[0 /*3*/] };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
 	{
@@ -133,21 +133,21 @@ void __EntryFunction__()//Position - 0x0
 		func_261(&Var0, 1);
 	}
 	iVar2[0] = 24;
-	if (!__LIB_37__::func_631(&iVar2, &Var0, Var1, 1f))
+	if (!__LIB_37__::func_305(&iVar2, &Var0, Var1, 1f))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	if (!func_249(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_594(Var0.f_0))
+	if (__LIB_37__::func_268(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -174,7 +174,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_37__::func_644(&Var0, 1))
+		if (!__LIB_37__::func_318(&Var0, 1))
 		{
 			func_261(&Var0, 1);
 		}
@@ -189,23 +189,23 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (__LIB_0__::func_695(Var0.f_35[0]))
 		{
-			if (!__LIB_37__::func_652(-72.323f, -1258.643f, 28.648f, ENTITY::GET_ENTITY_COORDS(Var0.f_35[0], true), 1056964608))
+			if (!__LIB_37__::func_326(-72.323f, -1258.643f, 28.648f, ENTITY::GET_ENTITY_COORDS(Var0.f_35[0], true), 1056964608))
 			{
 				__LIB_0__::func_135("Player has moved HAO's vehicle [TERMINATING]");
-				__LIB_37__::func_621(&Var0);
+				__LIB_37__::func_295(&Var0);
 				func_261(&Var0, 1);
 			}
 		}
-		__LIB_37__::func_592(Var0.f_0);
-		__LIB_37__::func_623(&iLocal_53, &(Var0.f_9), Var1);
-		__LIB_37__::func_629(&Var0, Var1, "HAO1AU", "HAO1_HCO", 3, "HAO", 5000, 1101004800);
-		if (__LIB_37__::func_637(&Var0, 0))
+		__LIB_37__::func_266(Var0.f_0);
+		__LIB_37__::func_297(&iLocal_53, &(Var0.f_9), Var1);
+		__LIB_37__::func_303(&Var0, Var1, "HAO1AU", "HAO1_HCO", 3, "HAO", 5000, 1101004800);
+		if (__LIB_37__::func_311(&Var0, 0))
 		{
-			if (!__LIB_37__::func_651(&Var0))
+			if (!__LIB_37__::func_325(&Var0))
 			{
 				func_261(&Var0, 1);
 			}
-			if (__LIB_37__::func_562(&Var0))
+			if (__LIB_37__::func_236(&Var0))
 			{
 				func_261(&Var0, 0);
 			}
@@ -268,14 +268,14 @@ int func_239(var uParam0)//Position - 0xE88C
 			bVar4 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 53, -71.936844f, -1259.7f, 28.193594f, -177.55f, "HAO LAUNCHER RC - HAO", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 53, -71.936844f, -1259.7f, 28.193594f, -177.55f, "HAO LAUNCHER RC - HAO", 1))
 				{
 					bVar4 = false;
 				}
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[1], -72.3226f, -1258.6433f, 28.1915f, 90.8326f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[1], -72.3226f, -1258.6433f, 28.1915f, 90.8326f);
 				VEHICLE::SET_VEHICLE_COLOURS(uParam0->f_35[0], 38, 0);
 				VEHICLE::SET_VEHICLE_EXTRA_COLOURS(uParam0->f_35[0], 91, 0);
 				VEHICLE::SET_VEHICLE_MOD_KIT(uParam0->f_35[0], 0);
@@ -309,7 +309,7 @@ int func_239(var uParam0)//Position - 0xE88C
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[1]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[1]), iVar0[3], -91.07f, -1273.45f, 28.86f, 0.57f);
+				__LIB_17__::func_25(&(uParam0->f_35[1]), iVar0[3], -91.07f, -1273.45f, 28.86f, 0.57f);
 				VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(uParam0->f_35[1], 10);
 			}
 			if (__LIB_0__::func_121(uParam0->f_28[0]))
@@ -403,7 +403,7 @@ int func_250(int iParam0)//Position - 0xF0CE
 	{
 		return 0;
 	}
-	if (__LIB_37__::func_580(iParam0))
+	if (__LIB_37__::func_254(iParam0))
 	{
 		return 0;
 	}
@@ -417,11 +417,11 @@ int func_250(int iParam0)//Position - 0xF0CE
 	}
 	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_37__::func_579(iParam0))
+		if (!__LIB_37__::func_253(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_37__::func_578(iParam0))
+		if (!__LIB_37__::func_252(iParam0))
 		{
 			return 0;
 		}
@@ -487,14 +487,14 @@ void func_261(int iParam0, bool bParam1)//Position - 0xF51E
 	if (iLocal_53 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_37__::func_331(&iLocal_53);
+		__LIB_37__::func_5(&iLocal_53);
 	}
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_54, false);
 	if (bParam1)
 	{
-		__LIB_37__::func_592(*iParam0);
+		__LIB_37__::func_266(*iParam0);
 	}
-	__LIB_37__::func_588();
+	__LIB_37__::func_262();
 	__LIB_0__::func_135("SCRIPT TERMINATED");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

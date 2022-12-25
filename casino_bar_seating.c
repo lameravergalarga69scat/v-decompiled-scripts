@@ -593,16 +593,16 @@ void __EntryFunction__()//Position - 0x0
 	}
 	else
 	{
-		__LIB_33__::func_371();
+		__LIB_31__::func_854();
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
 		if (func_66())
 		{
-			__LIB_33__::func_371();
+			__LIB_31__::func_854();
 		}
-		__LIB_16__::func_254(&uLocal_109);
+		__LIB_16__::func_257(&uLocal_109);
 	}
 }
 
@@ -642,7 +642,7 @@ void func_98()//Position - 0x2DDB
 	}
 	else
 	{
-		__LIB_33__::func_371();
+		__LIB_31__::func_854();
 	}
 }
 

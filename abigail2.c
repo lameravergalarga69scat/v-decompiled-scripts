@@ -1142,7 +1142,7 @@ void func_238()//Position - 0x2748D
 		if ((MISC::GET_GAME_TIMER() - iLocal_242) > 1000)
 		{
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 140 /*INPUT_MELEE_ATTACK_LIGHT*/, true);
-			__LIB_17__::func_115(&uLocal_42, iLocal_61, "ABGAIL2_HINT", 0, 1, 1, 1);
+			__LIB_17__::func_118(&uLocal_42, iLocal_61, "ABGAIL2_HINT", 0, 1, 1, 1);
 		}
 	}
 	else
@@ -1366,7 +1366,7 @@ int func_277()//Position - 0x28BFF
 	}
 	if (__LIB_0__::func_121(iLocal_56))
 	{
-		if (__LIB_17__::func_123(iLocal_61, 1, 1116471296, 1126825984, 0, 0, 0, 0))
+		if (__LIB_17__::func_126(iLocal_61, 1, 1116471296, 1126825984, 0, 0, 0, 0))
 		{
 			return 1;
 		}
@@ -1646,7 +1646,7 @@ void func_361()//Position - 0x2C106
 
 void func_385(int iParam0)//Position - 0x2CD4F
 {
-	__LIB_17__::func_25(0, 0, 0);
+	__LIB_17__::func_28(0, 0, 0);
 	func_462(1, 1);
 	__LIB_0__::func_0(&iLocal_61);
 	__LIB_8__::func_397(&iLocal_56);
@@ -1687,7 +1687,7 @@ void func_391(struct<3> Param0, float fParam1, struct<3> Param2, float fParam3, 
 	int* iVar0;
 	if (__LIB_0__::func_86(Param0))
 	{
-		while (!__LIB_17__::func_806(&iVar0, 0, Param2, fParam3, 1, 0))
+		while (!__LIB_17__::func_809(&iVar0, 0, Param2, fParam3, 1, 0))
 		{
 			SYSTEM::WAIT(0);
 		}
@@ -1721,7 +1721,7 @@ void func_462(bool bParam0, bool bParam1)//Position - 0x364E6
 {
 	if (bParam0)
 	{
-		__LIB_17__::func_25(0, 1, 1);
+		__LIB_17__::func_28(0, 1, 1);
 	}
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{

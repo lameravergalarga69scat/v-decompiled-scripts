@@ -358,7 +358,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (!Global_113381 == 1 && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 718.0749f, -976.0472f, 22.914824f, 718.05927f, -979.45496f, 27.119097f, 5.75f, false, true, 0))
 					{
-						__LIB_37__::func_690(7, 1);
+						__LIB_37__::func_364(7, 1);
 						Global_113377 = 0;
 						Global_113381 = 1;
 						BRAIN::REACTIVATE_ALL_WORLD_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE();
@@ -417,7 +417,7 @@ void func_30()//Position - 0xEE8
 
 void func_31()//Position - 0xF52
 {
-	__LIB_26__::func_390();
+	__LIB_26__::func_400();
 	GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_219);
 }
 

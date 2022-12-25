@@ -114,7 +114,7 @@ void __EntryFunction__()//Position - 0x0
 		if (__LIB_14__::func_349(iVar0))
 		{
 			iVar1 = __LIB_15__::func_277(iVar0);
-			__LIB_37__::func_737(iVar1, __LIB_15__::func_278(iVar0));
+			__LIB_37__::func_411(iVar1, __LIB_15__::func_278(iVar0));
 		}
 		iVar0++;
 	}
@@ -528,12 +528,12 @@ void func_11()//Position - 0xAEE
 			{
 				if (HUD::DOES_BLIP_EXIST(Global_32338[iLocal_51[iVar3] /*23*/].f_19))
 				{
-					__LIB_16__::func_611(iLocal_51[iVar3]);
+					__LIB_16__::func_614(iLocal_51[iVar3]);
 				}
 			}
 			else if (HUD::DOES_BLIP_EXIST(Global_32338[iLocal_51[iVar3] /*23*/].f_19))
 			{
-				__LIB_16__::func_612(iLocal_51[iVar3]);
+				__LIB_16__::func_615(iLocal_51[iVar3]);
 			}
 		}
 		iVar3++;
@@ -608,7 +608,7 @@ void func_20(int iParam0, int iParam1)//Position - 0xEA4
 	iVar0 = __LIB_0__::func_683();
 	HUD::SET_BLIP_EXTENDED_HEIGHT_THRESHOLD(iParam0, true);
 	HUD::SET_BLIP_PRIORITY(iParam0, 2);
-	HUD::SET_BLIP_COLOUR(iParam0, __LIB_30__::func_364(iParam1));
+	HUD::SET_BLIP_COLOUR(iParam0, __LIB_30__::func_374(iParam1));
 	if (Global_32338[iParam1 /*23*/].f_16 == 4 || Global_32338[iParam1 /*23*/].f_16 == 8)
 	{
 		switch (iVar0)
@@ -1048,7 +1048,7 @@ int func_36()//Position - 0x1A07
 	if (iLocal_47 != iVar0)
 	{
 		iLocal_47 = iVar0;
-		if (iVar0 == 0 || __LIB_28__::func_482(iVar0))
+		if (iVar0 == 0 || __LIB_28__::func_492(iVar0))
 		{
 			bLocal_46 = true;
 		}
@@ -1138,9 +1138,9 @@ void func_45()//Position - 0x1B92
 		__LIB_14__::func_622(161, 1, 0);
 		__LIB_14__::func_622(160, 1, 0);
 		__LIB_14__::func_622(158, 1, 0);
-		__LIB_16__::func_612(158);
+		__LIB_16__::func_615(158);
 		__LIB_14__::func_622(159, 1, 0);
-		__LIB_16__::func_612(159);
+		__LIB_16__::func_615(159);
 	}
 }
 

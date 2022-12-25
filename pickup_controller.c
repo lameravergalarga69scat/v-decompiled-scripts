@@ -562,7 +562,7 @@ void func_26(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bPar
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	iLocal_23[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, __LIB_38__::func_904(iParam0, 0), Param2, iVar0, -1, 2, true, 0);
+	iLocal_23[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, __LIB_38__::func_579(iParam0, 0), Param2, iVar0, -1, 2, true, 0);
 	OBJECT::SET_PICKUP_REGENERATION_TIME(iLocal_23[iParam0], 600000);
 	if (bParam4)
 	{
@@ -691,7 +691,7 @@ void func_30(int iParam0, struct<3> Param1, bool bParam2, bool bParam3)//Positio
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	iLocal_22[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_HEALTH_STANDARD"), __LIB_38__::func_905(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
+	iLocal_22[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_HEALTH_STANDARD"), __LIB_38__::func_580(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
 	OBJECT::SET_PICKUP_REGENERATION_TIME(iLocal_22[iParam0], 600000);
 	if (bParam3)
 	{
@@ -920,7 +920,7 @@ void func_37(int iParam0, struct<3> Param1, bool bParam2, bool bParam3, bool bPa
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	iLocal_20[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_ARMOUR_STANDARD"), __LIB_38__::func_906(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
+	iLocal_20[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("PICKUP_ARMOUR_STANDARD"), __LIB_38__::func_581(iParam0, 0), Param1, iVar0, -1, 2, true, 0);
 	OBJECT::SET_PICKUP_REGENERATION_TIME(iLocal_20[iParam0], 600000);
 	if (bParam3)
 	{

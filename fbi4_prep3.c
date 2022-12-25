@@ -747,7 +747,7 @@ void func_23()//Position - 0x115A
 			func_38();
 			break;
 		case 3:
-			__LIB_33__::func_561(1, 1, 1);
+			__LIB_32__::func_45(1, 1, 1);
 			iLocal_80 = 1;
 			break;
 	}
@@ -851,7 +851,7 @@ void func_107()//Position - 0x8108
 		case 2:
 			if (__LIB_0__::func_695(Global_96938[0]))
 			{
-				if (__LIB_17__::func_511(1077936128, 1))
+				if (__LIB_17__::func_514(1077936128, 1))
 				{
 					func_108(0);
 				}
@@ -862,7 +862,7 @@ void func_107()//Position - 0x8108
 
 void func_108(bool bParam0)//Position - 0x8167
 {
-	__LIB_17__::func_524(iLocal_79);
+	__LIB_17__::func_527(iLocal_79);
 	iLocal_81 = iLocal_79;
 	if (!bParam0)
 	{
@@ -884,7 +884,7 @@ int func_111(int iParam0, bool bParam1)//Position - 0x8236
 			if (bParam1)
 			{
 				bLocal_82 = false;
-				__LIB_33__::func_561(1, 1, 1);
+				__LIB_32__::func_45(1, 1, 1);
 			}
 			else
 			{
@@ -910,7 +910,7 @@ int func_111(int iParam0, bool bParam1)//Position - 0x8236
 
 void func_114()//Position - 0x8363
 {
-	__LIB_17__::func_515(1);
+	__LIB_17__::func_518(1);
 	__LIB_0__::func_552(1);
 	if (__LIB_0__::func_692(PLAYER::PLAYER_PED_ID()))
 	{
@@ -928,7 +928,7 @@ void func_115(bool bParam0)//Position - 0x8397
 	}
 	__LIB_0__::func_429();
 	HUD::CLEAR_PRINTS();
-	__LIB_33__::func_562(1, 1, 1);
+	__LIB_32__::func_46(1, 1, 1);
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 	func_21();
 	__LIB_0__::func_467();
@@ -1024,7 +1024,7 @@ void func_124(int iParam0)//Position - 0x8499
 
 void func_125(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, int iParam6)//Position - 0x86F6
 {
-	__LIB_15__::func_948(iParam0, iParam1, iParam2, bParam3);
+	__LIB_15__::func_950(iParam0, iParam1, iParam2, bParam3);
 	func_197(iParam0, iParam1, iParam2, bParam4, 1);
 	if (bParam5)
 	{
@@ -1032,7 +1032,7 @@ void func_125(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	}
 	if (iParam6 == 1)
 	{
-		__LIB_15__::func_950(iParam0, iParam1, iParam2, 0);
+		__LIB_15__::func_952(iParam0, iParam1, iParam2, 0);
 	}
 }
 
@@ -1071,7 +1071,7 @@ int func_197(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 							if (iVar1 != 13)
 							{
 								func_197(iParam0, iVar1, uVar3[iVar1], 1, 1);
-								__LIB_15__::func_948(iParam0, iVar1, uVar3[iVar1], 1);
+								__LIB_15__::func_950(iParam0, iVar1, uVar3[iVar1], 1);
 							}
 							else
 							{
@@ -1080,7 +1080,7 @@ int func_197(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 								while (iVar2 <= 8)
 								{
 									func_197(iParam0, 14, uVar4[iVar2], 1, 1);
-									__LIB_15__::func_948(iParam0, 14, uVar4[iVar2], 1);
+									__LIB_15__::func_950(iParam0, 14, uVar4[iVar2], 1);
 									iVar2++;
 								}
 							}

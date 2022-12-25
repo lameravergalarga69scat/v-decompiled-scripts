@@ -30,7 +30,7 @@ void __EntryFunction__()//Position - 0x0
 	Global_4282954 = -1;
 	Global_4282955 = -1;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	__LIB_42__::func_603();
+	__LIB_42__::func_478();
 	iVar0 = 0;
 	while (iVar0 < 42)
 	{
@@ -151,7 +151,7 @@ void func_8(var uParam0, int iParam1)//Position - 0x1622
 	uParam0->f_146.f_1592 = { Var0 };
 	__LIB_3__::func_181(iParam1, 15, &Var0, 0);
 	uParam0->f_146.f_50 = { Var0 };
-	__LIB_38__::func_720(86, &(uParam0->f_146.f_53), &(uParam0->f_146.f_56), iParam1);
+	__LIB_38__::func_395(86, &(uParam0->f_146.f_53), &(uParam0->f_146.f_56), iParam1);
 	__LIB_3__::func_181(iParam1, 46, &Var0, 0);
 	uParam0->f_146.f_82[1 /*102*/] = { Var0 };
 	uParam0->f_146.f_82[1 /*102*/].f_3 = Var0.f_3.f_2;
@@ -469,7 +469,7 @@ void func_12(var uParam0, int iParam1)//Position - 0x5031
 	uParam0->f_38[0 /*27*/].f_16 = { Var0 };
 	uParam0->f_38[0 /*27*/].f_19 = { Var0.f_3 };
 	uParam0->f_38[0 /*27*/].f_22 = 2;
-	__LIB_38__::func_544(uParam0->f_38[0 /*27*/].f_16, uParam0->f_38[0 /*27*/].f_19, &Var0, uParam0->f_38[0 /*27*/].f_22);
+	__LIB_38__::func_219(uParam0->f_38[0 /*27*/].f_16, uParam0->f_38[0 /*27*/].f_19, &Var0, uParam0->f_38[0 /*27*/].f_22);
 	uParam0->f_38[0 /*27*/].f_12 = { Var0 };
 	uParam0->f_38[0 /*27*/].f_15 = Var0.f_3.f_2;
 	__LIB_3__::func_181(iParam1, 391, &Var0, 0);

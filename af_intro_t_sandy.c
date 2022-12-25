@@ -120,14 +120,14 @@ void __EntryFunction__()//Position - 0x0
 		func_34();
 	}
 	iLocal_37 = 0;
-	__LIB_16__::func_329(&uLocal_38);
-	__LIB_16__::func_328(&uLocal_38, 1701.7803f, 3225.1482f, 40.0202f);
-	__LIB_16__::func_328(&uLocal_38, 1678.909f, 3287.6023f, 39.9648f);
-	__LIB_16__::func_328(&uLocal_38, 1710.4376f, 3326.4993f, 40.1797f);
-	__LIB_16__::func_328(&uLocal_38, 1738.8787f, 3335.25f, 40.1493f);
-	__LIB_16__::func_328(&uLocal_38, 1768.3873f, 3312.1008f, 40.2875f);
-	__LIB_16__::func_328(&uLocal_38, 1819.2413f, 3225.4495f, 42.9019f);
-	__LIB_16__::func_327(&uLocal_38);
+	__LIB_16__::func_332(&uLocal_38);
+	__LIB_16__::func_331(&uLocal_38, 1701.7803f, 3225.1482f, 40.0202f);
+	__LIB_16__::func_331(&uLocal_38, 1678.909f, 3287.6023f, 39.9648f);
+	__LIB_16__::func_331(&uLocal_38, 1710.4376f, 3326.4993f, 40.1797f);
+	__LIB_16__::func_331(&uLocal_38, 1738.8787f, 3335.25f, 40.1493f);
+	__LIB_16__::func_331(&uLocal_38, 1768.3873f, 3312.1008f, 40.2875f);
+	__LIB_16__::func_331(&uLocal_38, 1819.2413f, 3225.4495f, 42.9019f);
+	__LIB_16__::func_330(&uLocal_38);
 	while (true)
 	{
 		switch (iLocal_37)
@@ -141,7 +141,7 @@ void __EntryFunction__()//Position - 0x0
 						Var1 = { 1749.71f, 3267.83f, 40.24f };
 						if (__LIB_0__::func_874(Var0, Var1, 75f))
 						{
-							if (__LIB_16__::func_325(&uLocal_38, Var0))
+							if (__LIB_16__::func_328(&uLocal_38, Var0))
 							{
 								if (Var0.f_2 > 39f && Var0.f_2 < 43f)
 								{
@@ -182,7 +182,7 @@ void __EntryFunction__()//Position - 0x0
 
 void func_2()//Position - 0x230
 {
-	__LIB_17__::func_110(joaat("TEXT_TREV_LOST_HANGER"));
+	__LIB_17__::func_113(joaat("TEXT_TREV_LOST_HANGER"));
 	__LIB_0__::func_697("SHI_T_SANDY_2" /* GXT: Planes you purchase from websites or that you land inside will be stored at ~HUD_COLOUR_TREVOR~~BLIP_HANGAR~~s~~n~Ground vehicles too large for a garage will also be stored here. */, 0, 0, -1, 10000, 7, 0, 0, 0);
 	SYSTEM::WAIT(0);
 	__LIB_0__::func_697("SHI_T_SANDY_3" /* GXT: Helicopters purchased from websites or that you land on the helipad will be stored at ~HUD_COLOUR_TREVOR~~BLIP_HELIPAD~ */, 0, 0, -1, 10000, 7, 0, 0, 0);

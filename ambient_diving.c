@@ -153,10 +153,10 @@ void func_1()//Position - 0x116
 		{
 			if (!bLocal_62)
 			{
-				bLocal_62 = __LIB_17__::func_18(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
+				bLocal_62 = __LIB_17__::func_21(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
 			}
 		}
-		__LIB_38__::func_782(2);
+		__LIB_38__::func_457(2);
 	}
 }
 
@@ -179,17 +179,17 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 			{
 				if (!__LIB_0__::func_78((iParam1[uParam0->f_10 /*11*/])->f_6, 0f, 0f, 0f, 0))
 				{
-					__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 0);
+					__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 0);
 				}
 				else
 				{
-					__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
+					__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
 				}
 			}
 		}
 		else if (!bVar1)
 		{
-			__LIB_39__::func_728(uParam0, iParam1, Var2);
+			__LIB_39__::func_404(uParam0, iParam1, Var2);
 		}
 		uParam0->f_10++;
 		if (uParam0->f_10 >= *iParam1)
@@ -202,12 +202,12 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 	{
 		if (!Global_78579)
 		{
-			__LIB_32__::func_439(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 5, &iLocal_52, &iLocal_50, "DIVING_TITLE" /* GXT: Piece Collected~s~ */, "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
+			__LIB_30__::func_870(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 5, &iLocal_52, &iLocal_50, "DIVING_TITLE" /* GXT: Piece Collected~s~ */, "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
 		}
 		if (!__LIB_0__::func_67(44))
 		{
 			Var3 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-			if (__LIB_32__::func_434(&Local_42, &Local_48, Var3, &iVar4))
+			if (__LIB_30__::func_865(&Local_42, &Local_48, Var3, &iVar4))
 			{
 				if (MISC::GET_DISTANCE_BETWEEN_COORDS(func_23(iVar4), Var3, false) > 200f)
 				{
@@ -221,7 +221,7 @@ int func_18(var uParam0, int iParam1)//Position - 0xB49
 	{
 		if (uParam0->f_1.f_4 >= uParam0->f_1.f_3)
 		{
-			bLocal_62 = __LIB_17__::func_18(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
+			bLocal_62 = __LIB_17__::func_21(joaat("CALL_SONAR_COLLECT_DONE"), 1, 1, 16, 3, 1000, 10000, joaat("TEXT_ABIGAIL_MISSED"), -1, 163, -1, 0);
 		}
 	}
 	if (!uParam0->f_12 && !uParam0->f_11)
@@ -344,7 +344,7 @@ void func_53()//Position - 0x1F3B
 					iLocal_66 = 1;
 					if (iLocal_49 == 2)
 					{
-						__LIB_38__::func_782(3);
+						__LIB_38__::func_457(3);
 					}
 				}
 			}
@@ -363,7 +363,7 @@ void func_53()//Position - 0x1F3B
 					func_57();
 					if (iLocal_49 == 2)
 					{
-						__LIB_38__::func_782(3);
+						__LIB_38__::func_457(3);
 					}
 				}
 			}
@@ -372,14 +372,14 @@ void func_53()//Position - 0x1F3B
 				__LIB_1__::func_443();
 				if (iLocal_49 == 2)
 				{
-					__LIB_38__::func_782(3);
+					__LIB_38__::func_457(3);
 				}
 			}
 			break;
 		case 1:
 			if (iLocal_49 == 2)
 			{
-				__LIB_38__::func_782(3);
+				__LIB_38__::func_457(3);
 			}
 			if (!func_60())
 			{
@@ -474,7 +474,7 @@ void func_62()//Position - 0x22A1
 	float fVar2;
 	int iVar3;
 	Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-	if (__LIB_32__::func_434(&Local_42, &Local_48, Var0, &iLocal_51))
+	if (__LIB_30__::func_865(&Local_42, &Local_48, Var0, &iLocal_51))
 	{
 		Var1 = { func_23(iLocal_51) };
 		fVar2 = MISC::GET_DISTANCE_BETWEEN_COORDS(Var1, Var0, false);
@@ -667,8 +667,8 @@ void func_65()//Position - 0x267E
 	}
 	func_69();
 	__LIB_0__::func_740(&Local_42, 5, joaat("prop_sub_chunk_01"), "DIVING_COLLECT" /* GXT: ~1~/30 submarine pieces collected. */);
-	__LIB_37__::func_693(&Local_42, joaat("NUM_HIDDEN_PACKAGES_4"), 845, 30);
-	__LIB_38__::func_782(1);
+	__LIB_37__::func_367(&Local_42, joaat("NUM_HIDDEN_PACKAGES_4"), 845, 30);
+	__LIB_38__::func_457(1);
 	fLocal_57[0] = 0.25f;
 	fLocal_57[1] = 0.5f;
 	fLocal_57[2] = 0.75f;

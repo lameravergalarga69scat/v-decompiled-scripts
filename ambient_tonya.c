@@ -395,9 +395,9 @@ int func_3(int iParam0)//Position - 0x1CA
 {
 	struct<4> Var0;
 	char* sVar1;
-	while (!__LIB_32__::func_441(iParam0))
+	while (!__LIB_30__::func_872(iParam0))
 	{
-		if (__LIB_32__::func_440(iParam0))
+		if (__LIB_30__::func_871(iParam0))
 		{
 			__LIB_0__::func_135("LAUNCH_RC_MISSION - Script denied by RC Controller");
 			return 0;
@@ -413,14 +413,14 @@ int func_3(int iParam0)//Position - 0x1CA
 	{
 		if (iParam0 == 60)
 		{
-			__LIB_41__::func_29("Tonya3", 1);
+			__LIB_40__::func_705("Tonya3", 1);
 		}
 		else
 		{
-			__LIB_41__::func_29("Tonya4", 1);
+			__LIB_40__::func_705("Tonya4", 1);
 		}
 	}
-	__LIB_37__::func_597(iParam0, Var0.f_0);
+	__LIB_37__::func_271(iParam0, Var0.f_0);
 	return 1;
 }
 
@@ -441,7 +441,7 @@ void func_115(int iParam0)//Position - 0xA171
 		SCRIPT::REQUEST_SCRIPT(sVar0);
 		SYSTEM::WAIT(0);
 	}
-	__LIB_32__::func_445(iParam0);
+	__LIB_30__::func_876(iParam0);
 	iLocal_248 = SYSTEM::START_NEW_SCRIPT(sVar0, 51000);
 	SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(sVar0);
 }
@@ -460,7 +460,7 @@ void func_160()//Position - 0xB4FC
 	switch (iLocal_80)
 	{
 		case 0:
-			if (!__LIB_16__::func_596())
+			if (!__LIB_16__::func_599())
 			{
 				if (__LIB_0__::func_769(103))
 				{
@@ -496,7 +496,7 @@ void func_160()//Position - 0xB4FC
 			{
 				if (!__LIB_0__::func_75())
 				{
-					if (!__LIB_16__::func_596())
+					if (!__LIB_16__::func_599())
 					{
 						if (bLocal_247)
 						{

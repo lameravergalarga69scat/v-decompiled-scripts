@@ -451,7 +451,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_53 = { -1102.9056f, 284.731f, 63.0602f };
 	fLocal_54 = 9.4866f;
 	iLocal_392 = joaat("felon2");
-	__LIB_17__::func_32("*** Now in Josh 4 loop ***");
+	__LIB_17__::func_35("*** Now in Josh 4 loop ***");
 	Local_386 = { ScriptParam_418 };
 	__LIB_14__::func_801(&Local_386);
 	MISC::SET_MISSION_FLAG(true);
@@ -464,16 +464,16 @@ void __EntryFunction__()//Position - 0x0
 	}
 	if (__LIB_0__::func_323())
 	{
-		__LIB_17__::func_32("*** Setting up initial scene for replay");
+		__LIB_17__::func_35("*** Setting up initial scene for replay");
 		__LIB_0__::func_427(Local_53, fLocal_54, 1, 0);
-		__LIB_17__::func_32("*** Replay setup started");
+		__LIB_17__::func_35("*** Replay setup started");
 		Global_78564 = 1;
 		iLocal_37 = 0;
 		while (!func_455(&Local_386))
 		{
 			SYSTEM::WAIT(0);
 		}
-		__LIB_17__::func_32("*** Josh 4 scene set up");
+		__LIB_17__::func_35("*** Josh 4 scene set up");
 		__LIB_14__::func_800(&Local_386, 0, 1);
 		Global_78564 = 0;
 	}
@@ -487,12 +487,12 @@ void __EntryFunction__()//Position - 0x0
 	}
 	iLocal_390 = Local_386.f_35[0];
 	iLocal_391 = Local_386.f_35[1];
-	__LIB_17__::func_32("*** About to set up positions...");
+	__LIB_17__::func_35("*** About to set up positions...");
 	func_452();
 	__LIB_0__::func_712(58, 2, 0);
 	if (__LIB_0__::func_323())
 	{
-		__LIB_17__::func_32("*** Creating replay vehicle and jumping to post-cutscene");
+		__LIB_17__::func_35("*** Creating replay vehicle and jumping to post-cutscene");
 		__LIB_14__::func_865(&iLocal_44, -1100.04f, 280.6f, 63.53f, 267.48f, 0, 0, 1, 1, 0, joaat("asterope"), 0, 145, 1);
 		AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_RESTART1");
 		func_328();
@@ -588,18 +588,18 @@ void func_2()//Position - 0x3D9
 		if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 		{
 			AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_COPS_LOST_RADIO");
-			__LIB_17__::func_32("Starting 'JOSH4_COPS_LOST_RADIO'");
+			__LIB_17__::func_35("Starting 'JOSH4_COPS_LOST_RADIO'");
 		}
 		else
 		{
 			AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_COPS_LOST");
-			__LIB_17__::func_32("Starting 'JOSH4_COPS_LOST'");
+			__LIB_17__::func_35("Starting 'JOSH4_COPS_LOST'");
 		}
 	}
 	else
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_COPS_LOST");
-		__LIB_17__::func_32("Player is somehow not alive when passing the mission - starting 'JOSH4_COPS_LOST'");
+		__LIB_17__::func_35("Player is somehow not alive when passing the mission - starting 'JOSH4_COPS_LOST'");
 	}
 	func_3(91, 1);
 	func_468();
@@ -1311,7 +1311,7 @@ void func_210()//Position - 0x26F71
 		if (__LIB_0__::func_724(PLAYER::PLAYER_PED_ID(), -1116.62f, 299.12f, 64.96f, 1) > 50f)
 		{
 			AUDIO::PLAY_POLICE_REPORT("SCRIPTED_SCANNER_REPORT_JOSH_4_01", 0f);
-			__LIB_17__::func_32("*** Played special Josh 4 police report ***");
+			__LIB_17__::func_35("*** Played special Josh 4 police report ***");
 			iLocal_414 = 1;
 		}
 	}
@@ -1382,7 +1382,7 @@ void func_234()//Position - 0x279CD
 					{
 						if (MISC::IS_POSITION_OCCUPIED(-1138.4213f, 298.03073f, 65.90032f, 4f, false, true, false, false, false, iLocal_391, false))
 						{
-							__LIB_17__::func_32("Back gate blocked");
+							__LIB_17__::func_35("Back gate blocked");
 							Local_55 = { -1130.35f, 307.92f, 65.19f };
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_389);
 							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_55, 2f, 20000, 1f, 1, 40000f);
@@ -1394,7 +1394,7 @@ void func_234()//Position - 0x279CD
 						}
 						else
 						{
-							__LIB_17__::func_32("Back gate clear");
+							__LIB_17__::func_35("Back gate clear");
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_389);
 							if (__LIB_0__::func_695(iLocal_391))
 							{
@@ -1411,7 +1411,7 @@ void func_234()//Position - 0x279CD
 					}
 					else
 					{
-						__LIB_17__::func_32("Josh car not ok - do Josh flee anyway");
+						__LIB_17__::func_35("Josh car not ok - do Josh flee anyway");
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_389);
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_55, 2f, 20000, 1f, 1, 40000f);
 						if (__LIB_0__::func_695(iLocal_391))
@@ -1456,11 +1456,11 @@ void func_234()//Position - 0x279CD
 							{
 								__LIB_2__::func_859(&uLocal_221, "JOSH4AU", "JOSH4COP3", 9, 0, 0, 0);
 							}
-							__LIB_17__::func_32("Doing Josh comment");
+							__LIB_17__::func_35("Doing Josh comment");
 						}
 						else
 						{
-							__LIB_17__::func_32("Too far away to do Josh comment");
+							__LIB_17__::func_35("Too far away to do Josh comment");
 						}
 						iLocal_406 = 1;
 					}
@@ -1502,7 +1502,7 @@ void func_234()//Position - 0x279CD
 				}
 				if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), Local_386.f_28[0], 1) > 350f)
 				{
-					__LIB_17__::func_32("Deleting Josh, setting as lost");
+					__LIB_17__::func_35("Deleting Josh, setting as lost");
 					__LIB_0__::func_0(&(Local_386.f_28[0]));
 					__LIB_8__::func_397(&iLocal_391);
 					iLocal_49 = 2;
@@ -1530,10 +1530,10 @@ void func_234()//Position - 0x279CD
 				if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_386.f_28[0], PLAYER::PLAYER_PED_ID(), true))
 				{
 					RECORDING::REPLAY_RECORD_BACK_FOR_TIME(2f, 2f, 0);
-					__LIB_17__::func_32("Player killed Josh!");
+					__LIB_17__::func_35("Player killed Josh!");
 					__LIB_0__::func_630(776);
 				}
-				__LIB_17__::func_32("Josh - DEAD!");
+				__LIB_17__::func_35("Josh - DEAD!");
 				if (__LIB_0__::func_75())
 				{
 					__LIB_0__::func_325();
@@ -1561,7 +1561,7 @@ void func_240()//Position - 0x28052
 			{
 				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_415[iLocal_393 /*7*/], Local_415[iLocal_393 /*7*/].f_3, Local_415[iLocal_393 /*7*/].f_6, false, true, 2))
 				{
-					__LIB_17__::func_31("Player detected inside flee direction trigger: ", iLocal_393);
+					__LIB_17__::func_34("Player detected inside flee direction trigger: ", iLocal_393);
 					STREAMING::REQUEST_MODEL(iLocal_43);
 					STREAMING::REQUEST_MODEL(iLocal_42);
 					Local_47 = { Local_416[iLocal_393 /*3*/] };
@@ -1587,15 +1587,15 @@ void func_240()//Position - 0x28052
 							Local_47.f_9 = 4;
 							break;
 					}
-					__LIB_17__::func_31("iFlee value is: ", iLocal_393);
-					__LIB_17__::func_32("Requesting flee recording: ");
-					__LIB_17__::func_31(Local_47.f_10, Local_47.f_9);
+					__LIB_17__::func_34("iFlee value is: ", iLocal_393);
+					__LIB_17__::func_35("Requesting flee recording: ");
+					__LIB_17__::func_34(Local_47.f_10, Local_47.f_9);
 					VEHICLE::REQUEST_VEHICLE_RECORDING(Local_47.f_9, Local_47.f_10);
 					while ((!VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(Local_47.f_9, Local_47.f_10) || !STREAMING::HAS_MODEL_LOADED(iLocal_43)) || !STREAMING::HAS_MODEL_LOADED(iLocal_42))
 					{
 						SYSTEM::WAIT(0);
 					}
-					__LIB_17__::func_32("Flee car has loaded!");
+					__LIB_17__::func_35("Flee car has loaded!");
 					Local_47.f_11 = 1;
 				}
 				iLocal_393++;
@@ -1611,7 +1611,7 @@ void func_240()//Position - 0x28052
 				WEAPON::GIVE_WEAPON_TO_PED(Local_47.f_8, joaat("WEAPON_PISTOL"), -1, false, true);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_47.f_8, true);
 				TASK::CLEAR_PED_TASKS(Local_47.f_8);
-				__LIB_17__::func_32("Flee car created!");
+				__LIB_17__::func_35("Flee car created!");
 				Local_47.f_11 = 2;
 			}
 			break;
@@ -1624,7 +1624,7 @@ void func_240()//Position - 0x28052
 					{
 						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_47.f_7, Local_47.f_9, Local_47.f_10, true);
 						VEHICLE::FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE(Local_47.f_7, true);
-						__LIB_17__::func_31("*** m_AI_FleeCar.iRecNum: ", Local_47.f_9);
+						__LIB_17__::func_34("*** m_AI_FleeCar.iRecNum: ", Local_47.f_9);
 						switch (Local_47.f_9)
 						{
 							case 0:
@@ -1643,7 +1643,7 @@ void func_240()//Position - 0x28052
 								VEHICLE::SET_PLAYBACK_SPEED(Local_47.f_7, 1.5f);
 								break;
 						}
-						__LIB_17__::func_32("Flee car playing!");
+						__LIB_17__::func_35("Flee car playing!");
 						Local_47.f_11 = 3;
 					}
 				}
@@ -1657,7 +1657,7 @@ void func_240()//Position - 0x28052
 					if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(Local_47.f_9, Local_47.f_10))
 					{
 						VEHICLE::REMOVE_VEHICLE_RECORDING(Local_47.f_9, Local_47.f_10);
-						__LIB_17__::func_32("Flee car recording finished!");
+						__LIB_17__::func_35("Flee car recording finished!");
 						Local_47.f_11 = 4;
 					}
 				}
@@ -1695,7 +1695,7 @@ void func_240()//Position - 0x28052
 				Local_47.f_11 = 5;
 				__LIB_0__::func_106(&(Local_47.f_7));
 			}
-			__LIB_17__::func_32("Flee car & ped released!");
+			__LIB_17__::func_35("Flee car & ped released!");
 			break;
 	}
 }
@@ -1724,7 +1724,7 @@ void func_242()//Position - 0x28437
 			}
 			if ((MISC::GET_GAME_TIMER() - iLocal_394) > 4000)
 			{
-				__LIB_17__::func_32("************************************** TIMEOUT - AIM next frame");
+				__LIB_17__::func_35("************************************** TIMEOUT - AIM next frame");
 				iLocal_48 = 1;
 				iLocal_394 = MISC::GET_GAME_TIMER();
 			}
@@ -1735,7 +1735,7 @@ void func_242()//Position - 0x28437
 				{
 					if (__LIB_0__::func_76(Local_386.f_28[iVar0], PLAYER::PLAYER_PED_ID(), 0) > 10f)
 					{
-						__LIB_17__::func_32("************************************** TOO FAR - AIM next frame");
+						__LIB_17__::func_35("************************************** TOO FAR - AIM next frame");
 						iLocal_48 = 1;
 						iLocal_394 = MISC::GET_GAME_TIMER();
 					}
@@ -1749,7 +1749,7 @@ void func_242()//Position - 0x28437
 		case 2:
 			if ((MISC::GET_GAME_TIMER() - iLocal_394) > 20000)
 			{
-				__LIB_17__::func_32("************************************** TIMEOUT - ARREST next frame");
+				__LIB_17__::func_35("************************************** TIMEOUT - ARREST next frame");
 				if (__LIB_0__::func_121(Local_386.f_28[1]))
 				{
 					TASK::CLEAR_PED_TASKS(Local_386.f_28[1]);
@@ -1766,7 +1766,7 @@ void func_242()//Position - 0x28437
 				{
 					if (__LIB_0__::func_76(Local_386.f_28[iVar0], PLAYER::PLAYER_PED_ID(), 0) > 12f)
 					{
-						__LIB_17__::func_32("************************************** TOO FAR - ATTACK next frame");
+						__LIB_17__::func_35("************************************** TOO FAR - ATTACK next frame");
 						iLocal_48 = 3;
 						iLocal_394 = MISC::GET_GAME_TIMER();
 					}
@@ -1782,13 +1782,13 @@ void func_242()//Position - 0x28437
 				{
 					if (__LIB_0__::func_76(Local_386.f_28[iVar0], PLAYER::PLAYER_PED_ID(), 0) > 12f)
 					{
-						__LIB_17__::func_32("************************************** TOO FAR - ATTACK next frame");
+						__LIB_17__::func_35("************************************** TOO FAR - ATTACK next frame");
 						iLocal_48 = 3;
 						iLocal_394 = MISC::GET_GAME_TIMER();
 					}
-					else if (__LIB_17__::func_123(Local_386.f_28[iVar0], 1, 1116471296, 1126825984, 0, 0, 0, 0))
+					else if (__LIB_17__::func_126(Local_386.f_28[iVar0], 1, 1116471296, 1126825984, 0, 0, 0, 0))
 					{
-						__LIB_17__::func_32("************************************** THREAT DURING ARREST - ATTACK next frame");
+						__LIB_17__::func_35("************************************** THREAT DURING ARREST - ATTACK next frame");
 						iLocal_48 = 3;
 						iLocal_394 = MISC::GET_GAME_TIMER();
 					}
@@ -1829,7 +1829,7 @@ void func_242()//Position - 0x28437
 				{
 					__LIB_2__::func_859(&uLocal_56, "JOSH4AU", "JOSH4COP2", 7, 0, 0, 0);
 				}
-				__LIB_17__::func_32("Doing cop fire warning");
+				__LIB_17__::func_35("Doing cop fire warning");
 				iLocal_399 = 1;
 				iLocal_411 = MISC::GET_GAME_TIMER();
 			}
@@ -1894,7 +1894,7 @@ void func_242()//Position - 0x28437
 		{
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 			{
-				__LIB_17__::func_32("************************************** VEHICLE - ATTACK now");
+				__LIB_17__::func_35("************************************** VEHICLE - ATTACK now");
 				iLocal_48 = 3;
 			}
 		}
@@ -1908,20 +1908,20 @@ void func_242()//Position - 0x28437
 					iVar2 = joaat("WEAPON_UNARMED");
 					if (!WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar2, true))
 					{
-						__LIB_17__::func_32("************************************** AIMED WEAPON - ATTACK now");
+						__LIB_17__::func_35("************************************** AIMED WEAPON - ATTACK now");
 						iLocal_48 = 3;
 					}
 				}
-				if (__LIB_17__::func_123(Local_386.f_28[iVar0], 1, 1116471296, 1126825984, 0, 0, 0, 0))
+				if (__LIB_17__::func_126(Local_386.f_28[iVar0], 1, 1116471296, 1126825984, 0, 0, 0, 0))
 				{
-					__LIB_17__::func_32("************************************** ATTACKED/THREATENED - ATTACK now");
+					__LIB_17__::func_35("************************************** ATTACKED/THREATENED - ATTACK now");
 					iLocal_48 = 3;
 				}
 				if (iLocal_48 != 4)
 				{
 					if (__LIB_0__::func_76(Local_386.f_28[iVar0], PLAYER::PLAYER_PED_ID(), 0) < 2.3f)
 					{
-						__LIB_17__::func_32("************************************** TOO CLOSE - ATTACK now");
+						__LIB_17__::func_35("************************************** TOO CLOSE - ATTACK now");
 						iLocal_48 = 3;
 					}
 				}
@@ -1997,7 +1997,7 @@ void func_264()//Position - 0x29404
 			if (CUTSCENE::GET_CUTSCENE_TIME() > 14000 && !iLocal_403)
 			{
 				AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_START");
-				__LIB_17__::func_32("Starting 'JOSH4_START'");
+				__LIB_17__::func_35("Starting 'JOSH4_START'");
 				iLocal_403 = 1;
 			}
 		}
@@ -2005,7 +2005,7 @@ void func_264()//Position - 0x29404
 	else if (!iLocal_404)
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_ACTION");
-		__LIB_17__::func_32("Starting 'JOSH4_ACTION'");
+		__LIB_17__::func_35("Starting 'JOSH4_ACTION'");
 		iLocal_404 = 1;
 	}
 	else if (!iLocal_405)
@@ -2015,7 +2015,7 @@ void func_264()//Position - 0x29404
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 			{
 				AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_VEHICLE");
-				__LIB_17__::func_32("Starting 'JOSH4_VEHICLE'");
+				__LIB_17__::func_35("Starting 'JOSH4_VEHICLE'");
 				iLocal_405 = 1;
 			}
 		}
@@ -2032,12 +2032,12 @@ void func_265()//Position - 0x29497
 	{
 		if (__LIB_0__::func_121(Local_386.f_28[1]))
 		{
-			__LIB_17__::func_32("Trying to set Cop 1 component variation (intro loop)");
+			__LIB_17__::func_35("Trying to set Cop 1 component variation (intro loop)");
 			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Cop_standing_idle", Local_386.f_28[1], 0);
 		}
 		if (__LIB_0__::func_121(Local_386.f_28[2]))
 		{
-			__LIB_17__::func_32("Trying to set Cop 2 component variation (intro loop)");
+			__LIB_17__::func_35("Trying to set Cop 2 component variation (intro loop)");
 			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Cop_with_notepad", Local_386.f_28[2], 0);
 		}
 	}
@@ -2151,7 +2151,7 @@ void func_265()//Position - 0x29497
 						if (!iLocal_403)
 						{
 							AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_START");
-							__LIB_17__::func_32("Starting 'JOSH4_START' via cutscene skip");
+							__LIB_17__::func_35("Starting 'JOSH4_START' via cutscene skip");
 							iLocal_403 = 1;
 						}
 					}
@@ -2167,7 +2167,7 @@ void func_265()//Position - 0x29497
 						if (!iLocal_403)
 						{
 							AUDIO::TRIGGER_MUSIC_EVENT("JOSH4_START");
-							__LIB_17__::func_32("Starting 'JOSH4_START' via cutscene skip");
+							__LIB_17__::func_35("Starting 'JOSH4_START' via cutscene skip");
 							iLocal_403 = 1;
 						}
 					}
@@ -2198,7 +2198,7 @@ void func_276()//Position - 0x29C1D
 	{
 		if (__LIB_0__::func_121(Local_386.f_28[0]))
 		{
-			__LIB_17__::func_32("Playing Josh's leadout");
+			__LIB_17__::func_35("Playing Josh's leadout");
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_389);
 			TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1, 2, 2);
 			TASK::TASK_PLAY_ANIM(0, "rcmjosh4", "josh_leadout_loop", 4f, -4f, -1, 262153, 0f, false, false, false);
@@ -2213,7 +2213,7 @@ void func_276()//Position - 0x29C1D
 		if (__LIB_0__::func_121(iLocal_387) && __LIB_0__::func_121(Local_386.f_28[1]))
 		{
 			WEAPON::GIVE_WEAPON_OBJECT_TO_PED(iLocal_387, Local_386.f_28[1]);
-			__LIB_17__::func_32("*** Gave idle cop gun");
+			__LIB_17__::func_35("*** Gave idle cop gun");
 		}
 	}
 	if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("FBI_Agent_1_Gun", 0))
@@ -2221,7 +2221,7 @@ void func_276()//Position - 0x29C1D
 		if (__LIB_0__::func_121(iLocal_388) && __LIB_0__::func_121(Local_386.f_28[2]))
 		{
 			WEAPON::GIVE_WEAPON_OBJECT_TO_PED(iLocal_388, Local_386.f_28[2]);
-			__LIB_17__::func_32("*** Gave notepad cop gun");
+			__LIB_17__::func_35("*** Gave notepad cop gun");
 		}
 	}
 	if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Cop_standing_idle", 0))
@@ -2236,7 +2236,7 @@ void func_276()//Position - 0x29C1D
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_389);
 			TASK::TASK_PERFORM_SEQUENCE(Local_386.f_28[1], iLocal_389);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_389);
-			__LIB_17__::func_32("*** Idle cop anim");
+			__LIB_17__::func_35("*** Idle cop anim");
 		}
 	}
 	if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Cop_with_notepad", 0))
@@ -2252,7 +2252,7 @@ void func_276()//Position - 0x29C1D
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_389);
 			TASK::TASK_PERFORM_SEQUENCE(Local_386.f_28[2], iLocal_389);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_389);
-			__LIB_17__::func_32("*** Notepad cop anim");
+			__LIB_17__::func_35("*** Notepad cop anim");
 		}
 	}
 }
@@ -2359,34 +2359,34 @@ void func_292()//Position - 0x2AADF
 	if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 	{
 		CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), "Trevor", 0, 0, 0);
-		__LIB_17__::func_32("*** Registered Trevor");
+		__LIB_17__::func_35("*** Registered Trevor");
 	}
 	if (__LIB_0__::func_121(Local_386.f_28[0]))
 	{
 		CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_386.f_28[0], "Josh", 0, 0, 0);
-		__LIB_17__::func_32("*** Registered Josh");
+		__LIB_17__::func_35("*** Registered Josh");
 	}
 	if (__LIB_0__::func_121(Local_386.f_28[1]))
 	{
 		iLocal_387 = WEAPON::CREATE_WEAPON_OBJECT(joaat("WEAPON_PISTOL"), -1, ENTITY::GET_ENTITY_COORDS(Local_386.f_28[1], true), true, 1f, 0, 0, 1);
 		CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_386.f_28[1], "Cop_standing_idle", 0, 0, 0);
-		__LIB_17__::func_32("*** Registered Cop standing");
+		__LIB_17__::func_35("*** Registered Cop standing");
 	}
 	if (__LIB_0__::func_121(Local_386.f_28[2]))
 	{
 		iLocal_388 = WEAPON::CREATE_WEAPON_OBJECT(joaat("WEAPON_PISTOL"), -1, ENTITY::GET_ENTITY_COORDS(Local_386.f_28[2], true), true, 1f, 0, 0, 1);
 		CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_386.f_28[2], "Cop_with_notepad", 0, 0, 0);
-		__LIB_17__::func_32("*** Registered Cop with notepad");
+		__LIB_17__::func_35("*** Registered Cop with notepad");
 	}
 	if (__LIB_0__::func_121(iLocal_387))
 	{
 		CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(iLocal_387, "Security_guard_pistol", 0, 0, 0);
-		__LIB_17__::func_32("*** Registered idle cop gun");
+		__LIB_17__::func_35("*** Registered idle cop gun");
 	}
 	if (__LIB_0__::func_121(iLocal_388))
 	{
 		CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(iLocal_388, "FBI_Agent_1_Gun", 0, 0, 0);
-		__LIB_17__::func_32("*** Registered notepad cop gun");
+		__LIB_17__::func_35("*** Registered notepad cop gun");
 	}
 	iLocal_403 = 0;
 	iLocal_404 = 0;
@@ -2480,7 +2480,7 @@ void func_300(int iParam0)//Position - 0x2AF6E
 	iLocal_399 = 0;
 	iLocal_48 = 0;
 	iLocal_49 = 0;
-	__LIB_17__::func_32("*** End of intro set up");
+	__LIB_17__::func_35("*** End of intro set up");
 }
 
 void func_302()//Position - 0x2B273
@@ -2490,12 +2490,12 @@ void func_302()//Position - 0x2B273
 	{
 		if (__LIB_0__::func_121(Local_386.f_28[1]))
 		{
-			__LIB_17__::func_32("Trying to set Cop 1 component variation (leadin loop)");
+			__LIB_17__::func_35("Trying to set Cop 1 component variation (leadin loop)");
 			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Cop_standing_idle", Local_386.f_28[1], 0);
 		}
 		if (__LIB_0__::func_121(Local_386.f_28[2]))
 		{
-			__LIB_17__::func_32("Trying to set Cop 2 component variation (leadin loop)");
+			__LIB_17__::func_35("Trying to set Cop 2 component variation (leadin loop)");
 			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Cop_with_notepad", Local_386.f_28[2], 0);
 		}
 	}
@@ -2504,7 +2504,7 @@ void func_302()//Position - 0x2B273
 		case 0:
 			if (!__LIB_0__::func_2(0) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1107.3529f, 281.62604f, 61.46451f, -1099.5205f, 282.50732f, 65.992226f, 16f, false, true, 0))
 			{
-				__LIB_17__::func_32("Doing setup for leadin");
+				__LIB_17__::func_35("Doing setup for leadin");
 				__LIB_0__::func_222(&uLocal_221, 4, Local_386.f_28[0], "JOSH", 0, 1);
 				__LIB_0__::func_222(&uLocal_221, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
 				STREAMING::REQUEST_ANIM_DICT("rcmjosh4");
@@ -2515,7 +2515,7 @@ void func_302()//Position - 0x2B273
 			}
 			else
 			{
-				__LIB_17__::func_32("Skipping setup for leadin (repeat play/wrong area)");
+				__LIB_17__::func_35("Skipping setup for leadin (repeat play/wrong area)");
 				func_299(1);
 			}
 			break;
@@ -2549,16 +2549,16 @@ void func_302()//Position - 0x2B273
 						if (ENTITY::IS_ENTITY_PLAYING_ANIM(Local_386.f_28[0], "rcmjosh4", "beckon_a_josh", 3) && !__LIB_0__::func_75())
 						{
 							TASK::TASK_PLAY_ANIM(Local_386.f_28[0], "rcmjosh4", "josh_4_leadin_josh", 2f, -8f, -1, 2, 0f, false, false, false);
-							__LIB_17__::func_32("Done Josh leadin anim");
+							__LIB_17__::func_35("Done Josh leadin anim");
 							if (__LIB_0__::func_692(Local_386.f_28[2]))
 							{
 								TASK::TASK_PLAY_ANIM(Local_386.f_28[2], "rcmjosh4", "josh_4_leadin_cop_a", 8f, -8f, -1, 2, 0f, false, false, false);
-								__LIB_17__::func_32("Done Notepad cop leadin anim");
+								__LIB_17__::func_35("Done Notepad cop leadin anim");
 							}
 							if (__LIB_0__::func_692(Local_386.f_28[1]))
 							{
 								TASK::TASK_PLAY_ANIM(Local_386.f_28[1], "rcmjosh4", "josh_4_leadin_cop_b", 8f, -8f, -1, 2, 0f, false, false, false);
-								__LIB_17__::func_32("Done Speaker cop leadin anim");
+								__LIB_17__::func_35("Done Speaker cop leadin anim");
 							}
 							CUTSCENE::REMOVE_CUTSCENE();
 							CUTSCENE::REQUEST_CUTSCENE_WITH_PLAYBACK_LIST("JOSH_4_INT_CONCAT", 2, 8);
@@ -2600,7 +2600,7 @@ void func_302()//Position - 0x2B273
 								{
 									__LIB_0__::func_638();
 								}
-								__LIB_17__::func_32("Player too close to Josh, starting cutscene early");
+								__LIB_17__::func_35("Player too close to Josh, starting cutscene early");
 								func_299(1);
 							}
 						}
@@ -2669,10 +2669,10 @@ void func_328()//Position - 0x2C2D3
 	iLocal_410 = 0;
 	if (__LIB_0__::func_323())
 	{
-		if (!__LIB_37__::func_648(0, 1))
+		if (!__LIB_37__::func_322(0, 1))
 		{
 		}
-		if (!__LIB_37__::func_647(1, 1))
+		if (!__LIB_37__::func_321(1, 1))
 		{
 		}
 		if (__LIB_0__::func_324())
@@ -2737,12 +2737,12 @@ void func_452()//Position - 0x38FE6
 	}
 	if (__LIB_0__::func_324())
 	{
-		if (__LIB_37__::func_648(0, 1))
+		if (__LIB_37__::func_322(0, 1))
 		{
-			__LIB_17__::func_32("*** Opened Josh gate for replay");
+			__LIB_17__::func_35("*** Opened Josh gate for replay");
 		}
 	}
-	__LIB_17__::func_32("*** Set up coords");
+	__LIB_17__::func_35("*** Set up coords");
 }
 
 int func_455(var uParam0)//Position - 0x39416
@@ -2770,7 +2770,7 @@ int func_455(var uParam0)//Position - 0x39416
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmjosh4", "beckon_a_josh", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmjosh4", "beckon_a_josh", 0);
 			iLocal_37 = 1;
 			break;
 		case 1:
@@ -2778,10 +2778,10 @@ int func_455(var uParam0)//Position - 0x39416
 			{
 				return 0;
 			}
-			if (!__LIB_37__::func_648(0, 1))
+			if (!__LIB_37__::func_322(0, 1))
 			{
 			}
-			if (!__LIB_37__::func_647(1, 1))
+			if (!__LIB_37__::func_321(1, 1))
 			{
 			}
 			iLocal_37 = 2;
@@ -2801,7 +2801,7 @@ int func_455(var uParam0)//Position - 0x39416
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[1]))
 			{
-				__LIB_17__::func_39(&(uParam0->f_28[1]), iVar0[2], -1102.92f, 290.12f, 64.28f, 40.46f, 6);
+				__LIB_17__::func_42(&(uParam0->f_28[1]), iVar0[2], -1102.92f, 290.12f, 64.28f, 40.46f, 6);
 				if (__LIB_0__::func_121(uParam0->f_28[1]))
 				{
 					PED::SET_PED_DEFAULT_COMPONENT_VARIATION(uParam0->f_28[1]);
@@ -2820,7 +2820,7 @@ int func_455(var uParam0)//Position - 0x39416
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[2]))
 			{
-				__LIB_17__::func_39(&(uParam0->f_28[2]), iVar0[2], -1102.73f, 290.91f, 64.28f, 92.06f, 6);
+				__LIB_17__::func_42(&(uParam0->f_28[2]), iVar0[2], -1102.73f, 290.91f, 64.28f, 92.06f, 6);
 				if (__LIB_0__::func_121(uParam0->f_28[2]))
 				{
 					PED::SET_PED_COMPONENT_VARIATION(uParam0->f_28[2], 0, 1, 1, 0);
@@ -2841,7 +2841,7 @@ int func_455(var uParam0)//Position - 0x39416
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[3], -1107.5f, 280.33f, 64.01f, 97.97f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[3], -1107.5f, 280.33f, 64.01f, 97.97f);
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[1]))
 			{
@@ -2899,7 +2899,7 @@ void func_456(int* iParam0, bool bParam1)//Position - 0x39810
 		Var0 = { -1139.759f, 291.483f, 66.327f };
 		fVar1 = 6.077003f;
 	}
-	__LIB_17__::func_22(iParam0, iLocal_39, Var0, fVar1);
+	__LIB_17__::func_25(iParam0, iLocal_39, Var0, fVar1);
 	VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(*iParam0, 4);
 	VEHICLE::SET_VEHICLE_DOORS_LOCKED(*iParam0, 3);
 	VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(*iParam0, false, 0);
@@ -2913,7 +2913,7 @@ void func_468()//Position - 0x39B8C
 	HUD::CLEAR_PRINTS();
 	if (__LIB_14__::func_843())
 	{
-		__LIB_17__::func_32("...Random Character Script was triggered so additional cleanup required");
+		__LIB_17__::func_35("...Random Character Script was triggered so additional cleanup required");
 	}
 	iVar0 = 1;
 	while (iVar0 <= (Local_386.f_28 - 1))

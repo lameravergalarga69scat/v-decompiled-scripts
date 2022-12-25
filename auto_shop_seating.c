@@ -592,10 +592,10 @@ void __EntryFunction__()//Position - 0x0
 		while (!func_85())
 		{
 			SYSTEM::WAIT(0);
-			__LIB_16__::func_254(&uLocal_109);
+			__LIB_16__::func_257(&uLocal_109);
 		}
 	}
-	__LIB_33__::func_643();
+	__LIB_32__::func_127();
 }
 
 int func_85()//Position - 0x270D
@@ -660,8 +660,8 @@ void func_101(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 	uParam1->f_16[iParam2 /*14*/].f_3 = { 0f, 0f, fVar1 };
 	if (iParam0 == 1)
 	{
-		uParam1->f_16[iParam2 /*14*/].f_6.f_1 = { __LIB_0__::func_327(__LIB_17__::func_827(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
-		uParam1->f_16[iParam2 /*14*/].f_6.f_4 = { __LIB_0__::func_327(__LIB_17__::func_826(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
+		uParam1->f_16[iParam2 /*14*/].f_6.f_1 = { __LIB_0__::func_327(__LIB_17__::func_831(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
+		uParam1->f_16[iParam2 /*14*/].f_6.f_4 = { __LIB_0__::func_327(__LIB_17__::func_830(), __LIB_14__::func_645(iParam3, fVar1)) + Var0 };
 	}
 	else
 	{

@@ -116,11 +116,11 @@ void __EntryFunction__()//Position - 0x0
 
 void func_2()//Position - 0x187
 {
-	__LIB_25__::func_945(0, 0);
-	__LIB_25__::func_945(1, 0);
-	__LIB_25__::func_945(2, 0);
-	__LIB_25__::func_945(3, 0);
-	__LIB_25__::func_945(4, 0);
+	__LIB_25__::func_955(0, 0);
+	__LIB_25__::func_955(1, 0);
+	__LIB_25__::func_955(2, 0);
+	__LIB_25__::func_955(3, 0);
+	__LIB_25__::func_955(4, 0);
 	MISC::CLEAR_BIT(&Global_8137, 22);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

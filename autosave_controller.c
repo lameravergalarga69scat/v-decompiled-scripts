@@ -288,7 +288,7 @@ void func_12(bool bParam0, bool bParam1, bool bParam2)//Position - 0x8BA
 	var uVar0;
 	var uVar1;
 	__LIB_15__::func_213();
-	__LIB_38__::func_368();
+	__LIB_38__::func_43();
 	func_56();
 	if (bParam2)
 	{
@@ -330,7 +330,7 @@ void func_13(int iParam0, bool bParam1)//Position - 0x95D
 	func_44(iParam0);
 	__LIB_15__::func_220(iParam0, 0);
 	__LIB_14__::func_624(iParam0);
-	__LIB_16__::func_896(iParam0);
+	__LIB_16__::func_899(iParam0);
 }
 
 void func_44(int iParam0)//Position - 0x50BF
@@ -411,7 +411,7 @@ void func_56()//Position - 0x5740
 	struct<4> Var3;
 	struct<3> Var4;
 	int iVar5;
-	__LIB_37__::func_256(PLAYER::PLAYER_PED_ID(), 1);
+	__LIB_36__::func_930(PLAYER::PLAYER_PED_ID(), 1);
 	func_58(PLAYER::PLAYER_PED_ID(), 0);
 	iVar0 = 0;
 	while (iVar0 < 9)
@@ -493,7 +493,7 @@ void func_58(int iParam0, int iParam1)//Position - 0x5A20
 			Global_100166[iVar0 /*65*/] = { Var2 };
 			if (iParam0 == PLAYER::PLAYER_PED_ID())
 			{
-				__LIB_15__::func_981();
+				__LIB_15__::func_983();
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{

@@ -1231,7 +1231,7 @@ void func_54()//Position - 0x19B9
 				}
 				if (BitTest(Local_83.f_0, 15))
 				{
-					__LIB_30__::func_236(12, 116);
+					__LIB_30__::func_246(12, 116);
 					Local_88[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2 = 6;
 					MISC::SET_BIT(&uLocal_91, 16);
 				}
@@ -1248,7 +1248,7 @@ void func_54()//Position - 0x19B9
 			MISC::CLEAR_BIT(&uLocal_91, 3);
 			MISC::CLEAR_BIT(&uLocal_91, 4);
 			iLocal_90 = 0;
-			__LIB_30__::func_236(12, 116);
+			__LIB_30__::func_246(12, 116);
 			if (HUD::DOES_BLIP_EXIST(Global_1931395))
 			{
 				HUD::REMOVE_BLIP(&Global_1931395);
@@ -1447,12 +1447,12 @@ int func_211()//Position - 0x749B
 {
 	if (!BitTest(uLocal_91, 17))
 	{
-		__LIB_43__::func_147(12, 116, "", 1, 0, 1, 0);
+		__LIB_43__::func_31(12, 116, "", 1, 0, 1, 0);
 		MISC::SET_BIT(&uLocal_91, 17);
 	}
 	else if (!BitTest(uLocal_91, 18))
 	{
-		if (__LIB_30__::func_147(12, 116))
+		if (__LIB_30__::func_157(12, 116))
 		{
 			MISC::SET_BIT(&uLocal_91, 18);
 		}
@@ -1493,7 +1493,7 @@ int func_224()//Position - 0x7CC7
 			{
 				MISC::SET_BIT(&uLocal_91, 19);
 			}
-			else if (!__LIB_23__::func_545() && !__LIB_3__::func_508())
+			else if (!__LIB_23__::func_555() && !__LIB_3__::func_508())
 			{
 				MISC::SET_BIT(&uLocal_91, 8);
 				MISC::CLEAR_BIT(&uLocal_91, 4);
@@ -1503,7 +1503,7 @@ int func_224()//Position - 0x7CC7
 		}
 		else if (!__LIB_3__::func_508())
 		{
-			if (__LIB_23__::func_545())
+			if (__LIB_23__::func_555())
 			{
 				return 1;
 			}
@@ -1541,7 +1541,7 @@ int func_230(int iParam0)//Position - 0x7E09
 		case 1:
 			iVar0 = func_331(iParam0);
 			func_330(iParam0);
-			if (__LIB_42__::func_965(&uLocal_110, iVar0, "FM_1AU", sLocal_275, 0, 0))
+			if (__LIB_42__::func_840(&uLocal_110, iVar0, "FM_1AU", sLocal_275, 0, 0))
 			{
 				MISC::CLEAR_BIT(&uLocal_91, 11);
 				iLocal_90++;
@@ -1937,7 +1937,7 @@ void func_380()//Position - 0xBD2B
 {
 	__LIB_3__::func_0();
 	__LIB_1__::func_460(11, 0);
-	__LIB_30__::func_236(12, 116);
+	__LIB_30__::func_246(12, 116);
 	MISC::CLEAR_BIT(&(Global_2703735.f_3447), 0);
 	MISC::CLEAR_BIT(&(Global_2703735.f_3447), 1);
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())

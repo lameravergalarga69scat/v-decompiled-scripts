@@ -88,7 +88,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_39__::func_642();
+		__LIB_39__::func_317();
 	}
 	CAM::DO_SCREEN_FADE_OUT(0);
 	GRAPHICS::SET_DEBUG_LINES_AND_SPHERES_DRAWING_ACTIVE(true);
@@ -100,7 +100,7 @@ void __EntryFunction__()//Position - 0x0
 		WEAPON::REMOVE_ALL_PED_WEAPONS(PLAYER::PLAYER_PED_ID(), true);
 	}
 	CUTSCENE::REQUEST_CUTSCENE("les_1b_mcs_2_p2_a1", 8);
-	__LIB_39__::func_641(1);
+	__LIB_39__::func_316(1);
 	while (ENTITY::IS_ENTITY_WAITING_FOR_WORLD_COLLISION(PLAYER::PLAYER_PED_ID()))
 	{
 		SYSTEM::WAIT(0);
@@ -112,9 +112,9 @@ void __EntryFunction__()//Position - 0x0
 		VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 		PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 		__LIB_0__::func_715(PLAYER::PLAYER_PED_ID());
-		if (__LIB_33__::func_514())
+		if (__LIB_31__::func_997())
 		{
-			__LIB_39__::func_642();
+			__LIB_39__::func_317();
 		}
 		SYSTEM::WAIT(0);
 	}

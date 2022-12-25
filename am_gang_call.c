@@ -337,7 +337,7 @@ void __EntryFunction__()//Position - 0x0
 				if (__LIB_1__::func_398(&(Local_63.f_54)))
 				{
 					iVar0 = 0;
-					while (iVar0 < __LIB_21__::func_601(iLocal_69))
+					while (iVar0 < __LIB_21__::func_611(iLocal_69))
 					{
 						func_493();
 						iVar0++;
@@ -399,7 +399,7 @@ void func_1()//Position - 0x235
 		{
 			iLocal_75 = 0;
 			iVar0 = 0;
-			while (iVar0 <= (__LIB_21__::func_601(iLocal_69) - 1))
+			while (iVar0 <= (__LIB_21__::func_611(iLocal_69) - 1))
 			{
 				func_2();
 				iVar0++;
@@ -433,12 +433,12 @@ void func_2()//Position - 0x271
 									MISC::SET_BIT(&(Local_63.f_2), 12);
 								}
 							}
-							if ((Local_63.f_42 == iLocal_75 && !BitTest(Local_63.f_2, 5)) || Local_63.f_48 == __LIB_21__::func_601(iLocal_69))
+							if ((Local_63.f_42 == iLocal_75 && !BitTest(Local_63.f_2, 5)) || Local_63.f_48 == __LIB_21__::func_611(iLocal_69))
 							{
 								Var1.f_2 = 199776836;
 								Var1.f_10 = iLocal_71;
 								Var1.f_11 = iLocal_70;
-								if (__LIB_21__::func_601(iLocal_69) > 1)
+								if (__LIB_21__::func_611(iLocal_69) > 1)
 								{
 									Var1.f_12 = PLAYER::INT_TO_PLAYERINDEX(1);
 								}
@@ -481,7 +481,7 @@ void func_2()//Position - 0x271
 	}
 	func_3(iLocal_75);
 	iLocal_75++;
-	if (iLocal_75 >= __LIB_21__::func_601(iLocal_69))
+	if (iLocal_75 >= __LIB_21__::func_611(iLocal_69))
 	{
 		iLocal_75 = 0;
 		if (BitTest(Local_63.f_1, 0))
@@ -524,7 +524,7 @@ void func_3(int iParam0)//Position - 0x48F
 					switch (Local_63.f_10[iParam0 /*7*/].f_1)
 					{
 						case 0:
-							if (__LIB_31__::func_738(iVar0, 3))
+							if (__LIB_35__::func_580(iVar0, 3))
 							{
 								bVar2 = true;
 							}
@@ -544,13 +544,13 @@ void func_3(int iParam0)//Position - 0x48F
 						{
 							if (!BitTest(Local_63.f_10[iParam0 /*7*/].f_2, 7))
 							{
-								if ((((TASK::GET_NAVMESH_ROUTE_RESULT(iVar0) == 2 || (Global_2689235[iLocal_71 /*453*/].f_244 != -1 && __LIB_0__::func_328(Global_2689235[iLocal_71 /*453*/].f_244) == 4)) || BitTest(Global_1853348[iLocal_71 /*834*/].f_833, 14)) || __LIB_20__::func_764(iLocal_71, 0)) || func_9(iLocal_71))
+								if ((((TASK::GET_NAVMESH_ROUTE_RESULT(iVar0) == 2 || (Global_2689235[iLocal_71 /*453*/].f_244 != -1 && __LIB_0__::func_328(Global_2689235[iLocal_71 /*453*/].f_244) == 4)) || BitTest(Global_1853348[iLocal_71 /*834*/].f_833, 14)) || __LIB_20__::func_774(iLocal_71, 0)) || func_9(iLocal_71))
 								{
 									Local_63.f_10[iParam0 /*7*/].f_3 = iLocal_74;
 									MISC::SET_BIT(&(Local_63.f_10[iParam0 /*7*/].f_2), 7);
 								}
 							}
-							else if ((((TASK::GET_NAVMESH_ROUTE_RESULT(iVar0) != 2 && Global_2689235[iLocal_71 /*453*/].f_244 == -1) && !BitTest(Global_1853348[iLocal_71 /*834*/].f_833, 14)) && !__LIB_20__::func_764(iLocal_71, 0)) && !func_9(iLocal_71))
+							else if ((((TASK::GET_NAVMESH_ROUTE_RESULT(iVar0) != 2 && Global_2689235[iLocal_71 /*453*/].f_244 == -1) && !BitTest(Global_1853348[iLocal_71 /*834*/].f_833, 14)) && !__LIB_20__::func_774(iLocal_71, 0)) && !func_9(iLocal_71))
 							{
 								MISC::CLEAR_BIT(&(Local_63.f_10[iParam0 /*7*/].f_2), 7);
 							}
@@ -562,7 +562,7 @@ void func_3(int iParam0)//Position - 0x48F
 									Local_63.f_39 = { __LIB_0__::func_85(iLocal_71) };
 									iVar1 = 0;
 									iVar1 = 0;
-									while (iVar1 < __LIB_21__::func_601(iLocal_69))
+									while (iVar1 < __LIB_21__::func_611(iLocal_69))
 									{
 										func_7(iVar1, 3);
 										iVar1++;
@@ -885,7 +885,7 @@ int func_22()//Position - 0xEF7
 					MISC::SET_BIT(&(Local_63.f_3), 7);
 					return 1;
 				}
-				if (__LIB_30__::func_908(iLocal_71, __LIB_0__::func_818(iLocal_70), 1))
+				if (__LIB_31__::func_627(iLocal_71, __LIB_0__::func_818(iLocal_70), 1))
 				{
 					MISC::SET_BIT(&(Local_63.f_3), 7);
 					return 1;
@@ -993,7 +993,7 @@ void func_46()//Position - 0x1715
 							func_49();
 						}
 						iVar0 = 0;
-						while (iVar0 < __LIB_21__::func_601(iLocal_69))
+						while (iVar0 < __LIB_21__::func_611(iLocal_69))
 						{
 							func_7(iVar0, 3);
 							iVar0++;
@@ -1092,7 +1092,7 @@ void func_50()//Position - 0x19C4
 	Var0.f_2 = -1296682161;
 	Var0.f_10 = iLocal_71;
 	Var0.f_11 = iLocal_70;
-	if (__LIB_21__::func_601(iLocal_69) > 1)
+	if (__LIB_21__::func_611(iLocal_69) > 1)
 	{
 		Var0.f_12 = PLAYER::INT_TO_PLAYERINDEX(1);
 	}
@@ -1334,7 +1334,7 @@ int func_66()//Position - 0x1E22
 			{
 				case 0:
 					iVar0 = 0;
-					while (iVar0 < __LIB_21__::func_601(iLocal_69))
+					while (iVar0 < __LIB_21__::func_611(iLocal_69))
 					{
 						if ((!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_63.f_10[iVar0 /*7*/]) && !BitTest(Local_63.f_10[iVar0 /*7*/].f_2, 1)) && !BitTest(Local_63.f_10[iVar0 /*7*/].f_2, 6))
 						{
@@ -1347,7 +1347,7 @@ int func_66()//Position - 0x1E22
 			if (iLocal_69 != 1)
 			{
 				iVar0 = 0;
-				while (iVar0 < __LIB_21__::func_601(iLocal_69))
+				while (iVar0 < __LIB_21__::func_611(iLocal_69))
 				{
 					if (!NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_63.f_10[iVar0 /*7*/]))
 					{
@@ -3195,7 +3195,7 @@ void func_134(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool bP
 			}
 			if (__LIB_1__::func_410(Global_2667225.f_489) && iVar8 < 4096)
 			{
-				Var19.f_2 = __LIB_30__::func_488(Param0);
+				Var19.f_2 = __LIB_30__::func_498(Param0);
 			}
 			uVar7 = __LIB_2__::func_993(Param0, 1, 0, 0, 0, 0);
 			Var19.f_4 = { Param0 };
@@ -3245,7 +3245,7 @@ void func_134(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool bP
 					{
 						if (!bVar21)
 						{
-							fVar2 = __LIB_30__::func_488(Param0);
+							fVar2 = __LIB_30__::func_498(Param0);
 							bVar21 = true;
 						}
 						if (fVar2 < Global_2667225.f_2491.f_6[iVar18 /*10*/].f_2)
@@ -4364,9 +4364,9 @@ int func_246()//Position - 0xBD18
 		}
 		else if (__LIB_0__::func_156(iLocal_71, 1, 1))
 		{
-			if (NETWORK::GET_NUM_RESERVED_MISSION_PEDS(false, 0) - NETWORK::GET_NUM_CREATED_MISSION_PEDS(false)) >= __LIB_21__::func_601(iLocal_69)
+			if (NETWORK::GET_NUM_RESERVED_MISSION_PEDS(false, 0) - NETWORK::GET_NUM_CREATED_MISSION_PEDS(false)) >= __LIB_21__::func_611(iLocal_69)
 			{
-				if (NETWORK::CAN_REGISTER_MISSION_PEDS(__LIB_21__::func_601(iLocal_69)))
+				if (NETWORK::CAN_REGISTER_MISSION_PEDS(__LIB_21__::func_611(iLocal_69)))
 				{
 					iVar0 = 0;
 					iVar1 = 0;
@@ -4381,7 +4381,7 @@ int func_246()//Position - 0xBD18
 							iVar5 = -1;
 							bVar4 = false;
 							iVar1 = 0;
-							while (iVar1 < __LIB_21__::func_601(iLocal_69))
+							while (iVar1 < __LIB_21__::func_611(iLocal_69))
 							{
 								if (iVar5 == -1)
 								{
@@ -4438,7 +4438,7 @@ int func_246()//Position - 0xBD18
 		iVar7 = 0;
 		bVar8 = false;
 		iVar6 = 0;
-		while (iVar6 < __LIB_21__::func_601(iLocal_69))
+		while (iVar6 < __LIB_21__::func_611(iLocal_69))
 		{
 			if (BitTest(Local_63.f_10[iVar6 /*7*/].f_2, 1) || BitTest(Local_63.f_10[iVar6 /*7*/].f_2, 6))
 			{
@@ -4478,7 +4478,7 @@ int func_246()//Position - 0xBD18
 		}
 		if (!bVar8 || NETWORK::GET_TIME_DIFFERENCE(iLocal_74, Local_63.f_8) > 5000)
 		{
-			if (iVar7 >= __LIB_21__::func_601(iLocal_69))
+			if (iVar7 >= __LIB_21__::func_611(iLocal_69))
 			{
 				MISC::SET_BIT(&(Local_63.f_2), 4);
 			}
@@ -4489,7 +4489,7 @@ int func_246()//Position - 0xBD18
 				iVar6++;
 			}
 			iVar6 = 0;
-			while (iVar6 < __LIB_21__::func_601(iLocal_69))
+			while (iVar6 < __LIB_21__::func_611(iLocal_69))
 			{
 				if (BitTest(Local_63.f_10[iVar6 /*7*/].f_2, 8))
 				{
@@ -4517,7 +4517,7 @@ int func_249()//Position - 0xC40A
 	}
 	else if (iLocal_69 == 0)
 	{
-		Local_63.f_49 = __LIB_23__::func_665(Local_63.f_36, 1);
+		Local_63.f_49 = __LIB_23__::func_675(Local_63.f_36, 1);
 		MISC::SET_BIT(&(Local_63.f_1), 6);
 		return 1;
 	}
@@ -4662,7 +4662,7 @@ int func_256()//Position - 0xC84C
 			return 1;
 		}
 	}
-	else if (NETWORK::GET_TIME_DIFFERENCE(iLocal_74, Local_63.f_5) > 60000/*func_310*/)
+	else if (NETWORK::GET_TIME_DIFFERENCE(iLocal_74, Local_63.f_5) > 60000/*__LIB_1__::func_747*/)
 	{
 		return 1;
 	}
@@ -4718,7 +4718,7 @@ void func_260()//Position - 0xC9C8
 {
 	if (!BitTest(Local_63.f_1, 10))
 	{
-		Local_63.f_45 = __LIB_21__::func_601(iLocal_69);
+		Local_63.f_45 = __LIB_21__::func_611(iLocal_69);
 		Local_63.f_46 = 0;
 		Local_63.f_47 = 0;
 		MISC::SET_BIT(&(Local_63.f_1), 10);
@@ -4869,7 +4869,7 @@ void func_263()//Position - 0xCA58
 			{
 				if (iLocal_69 == 0)
 				{
-					iLocal_253 = (__LIB_12__::func_845(2) * __LIB_21__::func_601(iLocal_69));
+					iLocal_253 = (__LIB_12__::func_845(2) * __LIB_21__::func_611(iLocal_69));
 					iVar1 = 3;
 				}
 				else
@@ -4909,7 +4909,7 @@ void func_263()//Position - 0xCA58
 			{
 				if (iLocal_69 == 0)
 				{
-					iLocal_253 = (__LIB_12__::func_845(2) * __LIB_21__::func_601(iLocal_69));
+					iLocal_253 = (__LIB_12__::func_845(2) * __LIB_21__::func_611(iLocal_69));
 					iVar2 = 3;
 				}
 				else
@@ -5004,7 +5004,7 @@ int func_383(char* sParam0, char* sParam1, int iParam2)//Position - 0x11455
 		if (!BitTest(iLocal_68, 0))
 		{
 			__LIB_0__::func_222(&uLocal_86, 3, 0, sParam1, 0, 1);
-			if (__LIB_43__::func_943(&uLocal_86, iParam2, "CT_AUD", sParam0, 0, 0))
+			if (__LIB_43__::func_935(&uLocal_86, iParam2, "CT_AUD", sParam0, 0, 0))
 			{
 				MISC::SET_BIT(&iLocal_68, 0);
 			}
@@ -5055,7 +5055,7 @@ void func_493()//Position - 0x1474A
 	}
 	func_494(iLocal_77);
 	iLocal_77++;
-	if (iLocal_77 >= __LIB_21__::func_601(iLocal_69))
+	if (iLocal_77 >= __LIB_21__::func_611(iLocal_69))
 	{
 		if ((!BitTest(iLocal_66, 4) && BitTest(Local_63.f_1, 8)) || BitTest(iLocal_66, 5))
 		{
@@ -5588,7 +5588,7 @@ void func_517()//Position - 0x15729
 		__LIB_0__::func_621(&iLocal_78);
 	}
 	iVar3 = 0;
-	while (iVar3 < __LIB_21__::func_601(iLocal_69))
+	while (iVar3 < __LIB_21__::func_611(iLocal_69))
 	{
 		iLocal_67[iVar3] = 0;
 		iVar3++;
@@ -5603,7 +5603,7 @@ void func_517()//Position - 0x15729
 		Local_63.f_4 = 0;
 		Local_63.f_2 = 0;
 		iVar3 = 0;
-		while (iVar3 < __LIB_21__::func_601(iLocal_69))
+		while (iVar3 < __LIB_21__::func_611(iLocal_69))
 		{
 			bVar2 = BitTest(Local_63.f_10[iVar3 /*7*/].f_2, 6);
 			Local_63.f_10[iVar3 /*7*/].f_2 = 0;
@@ -5680,7 +5680,7 @@ void func_522()//Position - 0x15988
 	bool bVar1;
 	iVar0 = 0;
 	iVar0 = 0;
-	while (iVar0 < __LIB_21__::func_601(iLocal_69))
+	while (iVar0 < __LIB_21__::func_611(iLocal_69))
 	{
 		bVar1 = false;
 		if (iLocal_69 == 0)
@@ -5709,7 +5709,7 @@ void func_524()//Position - 0x159E7
 	int iVar0;
 	int iVar1;
 	iVar0 = 0;
-	while (iVar0 < __LIB_21__::func_601(iLocal_69))
+	while (iVar0 < __LIB_21__::func_611(iLocal_69))
 	{
 		if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_63.f_10[iVar0 /*7*/]))
 		{
@@ -5896,7 +5896,7 @@ void func_533(var uParam0)//Position - 0x15FE9
 	switch (iLocal_69)
 	{
 		case 0:
-			__LIB_29__::func_137(&(Global_1837209[3]), uParam0);
+			__LIB_29__::func_147(&(Global_1837209[3]), uParam0);
 			break;
 		case 1:
 			func_534(uParam0);
@@ -6080,7 +6080,7 @@ void func_537()//Position - 0x1617B
 						{
 							if (__LIB_0__::func_156(iLocal_71, 0, 1))
 							{
-								__LIB_27__::func_487(-1, 1);
+								__LIB_27__::func_497(-1, 1);
 								if (Local_63.f_50)
 								{
 									if (!Local_63.f_51)

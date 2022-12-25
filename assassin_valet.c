@@ -7226,7 +7226,7 @@ void func_430()//Position - 0x18BB7
 				{
 					if (!__LIB_0__::func_75())
 					{
-						if (__LIB_16__::func_943(&iLocal_1109, 10f))
+						if (__LIB_16__::func_946(&iLocal_1109, 10f))
 						{
 							__LIB_0__::func_222(&uLocal_1116, 3, iLocal_948, "LESTER", 0, 1);
 							__LIB_2__::func_859(&uLocal_1116, "OJASAUD", "OJAS_FOLLOW", 9, 0, 0, 0);
@@ -8056,7 +8056,7 @@ void func_538()//Position - 0x21EF0
 	__LIB_0__::func_345(&uLocal_1281, 0, 0);
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 	{
-		__LIB_16__::func_323(PLAYER::PLAYER_PED_ID(), 1);
+		__LIB_16__::func_326(PLAYER::PLAYER_PED_ID(), 1);
 		PED::SET_PED_USING_ACTION_MODE(PLAYER::PLAYER_PED_ID(), false, -1, 0);
 	}
 	PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);

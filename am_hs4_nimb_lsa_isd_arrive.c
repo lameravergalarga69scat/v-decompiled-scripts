@@ -136,14 +136,14 @@ void __EntryFunction__()//Position - 0x0
 			func_55(ScriptParam_96);
 		}
 	}
-	__LIB_32__::func_553();
+	__LIB_30__::func_985();
 }
 
 void func_55(struct<7> Param0)//Position - 0x1315
 {
 	if (func_325(&Local_93))
 	{
-		__LIB_32__::func_553();
+		__LIB_30__::func_985();
 	}
 	func_56(Param0);
 }
@@ -264,7 +264,7 @@ int func_57(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4,
 				bVar3 = false;
 				if (!bParam2)
 				{
-					if (__LIB_16__::func_207(&Global_78200, *uParam0, bParam1))
+					if (__LIB_16__::func_210(&Global_78200, *uParam0, bParam1))
 					{
 						bVar3 = true;
 					}

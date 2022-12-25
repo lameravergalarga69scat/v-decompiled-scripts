@@ -701,7 +701,7 @@ int func_47(int iParam0, int iParam1)//Position - 0x1031
 	{
 		if (*iParam0 < 315)
 		{
-			Var0 = { __LIB_19__::func_91(*iParam0, iParam1) };
+			Var0 = { __LIB_19__::func_101(*iParam0, iParam1) };
 			if (Var0.f_1 == 99 || Var0.f_1 == iParam1)
 			{
 				if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Var0.f_0))
@@ -729,7 +729,7 @@ int func_49(int iParam0, int iParam1)//Position - 0x5A3F
 	{
 		if (*iParam0 < 315)
 		{
-			Var0 = { __LIB_19__::func_91(*iParam0, iParam1) };
+			Var0 = { __LIB_19__::func_101(*iParam0, iParam1) };
 			if (Var0.f_1 == 99 || Var0.f_1 == iParam1)
 			{
 				__LIB_6__::func_267(Var0, 0);
@@ -754,7 +754,7 @@ int func_51(int iParam0, int iParam1)//Position - 0x5B4A
 	{
 		if (*iParam0 < 315)
 		{
-			Var0 = { __LIB_19__::func_91(*iParam0, iParam1) };
+			Var0 = { __LIB_19__::func_101(*iParam0, iParam1) };
 			if (Var0.f_1 == 99 || Var0.f_1 == iParam1)
 			{
 				if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Var0.f_0))
@@ -880,7 +880,7 @@ void func_71(int iParam0)//Position - 0x6F24
 	iVar1 = 0;
 	while (iVar1 < 315)
 	{
-		Var0 = { __LIB_19__::func_91(iVar1, iParam0) };
+		Var0 = { __LIB_19__::func_101(iVar1, iParam0) };
 		if (Var0.f_1 == 99 || Var0.f_1 == iParam0)
 		{
 			if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Var0.f_0))

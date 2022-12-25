@@ -284,11 +284,11 @@ void __EntryFunction__()//Position - 0x0
 	}
 	if (__LIB_0__::func_715(PLAYER::GET_PLAYERS_LAST_VEHICLE()))
 	{
-		if (__LIB_39__::func_426(PLAYER::GET_PLAYERS_LAST_VEHICLE(), joaat("bagger")))
+		if (__LIB_39__::func_101(PLAYER::GET_PLAYERS_LAST_VEHICLE(), joaat("bagger")))
 		{
 			__LIB_14__::func_592(-1633.4298f, -1111.9984f, 11.022523f, -1661.2704f, -1142.6598f, 25.517223f, 12f, -1630.952f, -1107.5804f, 12.0215f, 51.9704f, 1, 1, 1, 0, 0);
 		}
-		else if (__LIB_39__::func_426(PLAYER::GET_PLAYERS_LAST_VEHICLE(), joaat("sandking")))
+		else if (__LIB_39__::func_101(PLAYER::GET_PLAYERS_LAST_VEHICLE(), joaat("sandking")))
 		{
 			__LIB_14__::func_592(-1633.4298f, -1111.9984f, 11.022523f, -1661.2704f, -1142.6598f, 25.517223f, 12f, -1636.3438f, -1106.241f, 12.0261f, 52.3427f, 1, 1, 1, 0, 0);
 		}
@@ -1525,7 +1525,7 @@ void func_187(bool bParam0)//Position - 0x22179
 	ENTITY::SET_ENTITY_VISIBLE(PLAYER::PLAYER_PED_ID(), true, false);
 	ENTITY::FREEZE_ENTITY_POSITION(PLAYER::PLAYER_PED_ID(), false);
 	ENTITY::SET_ENTITY_COLLISION(PLAYER::PLAYER_PED_ID(), true, false);
-	__LIB_15__::func_810(1, 1, 1, 1);
+	__LIB_15__::func_811(1, 1, 1, 1);
 	if (bParam0)
 	{
 		HUD::CLEAR_HELP(true);
@@ -1540,7 +1540,7 @@ void func_187(bool bParam0)//Position - 0x22179
 	if (bParam0)
 	{
 		__LIB_0__::func_84(500, 0);
-		__LIB_15__::func_811(__LIB_0__::func_683(), 1, 15);
+		__LIB_15__::func_812(__LIB_0__::func_683(), 1, 15);
 	}
 	__LIB_15__::func_239(&uLocal_41);
 	SCRIPT::TERMINATE_THIS_THREAD();

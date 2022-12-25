@@ -114,18 +114,18 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_50 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
 	Local_52 = { -1593.813f, 5221.2354f, 1.94482f };
 	Local_53 = { -1603.9861f, 5243.6235f, 4.940323f };
-	uLocal_54 = __LIB_17__::func_26(16);
+	uLocal_54 = __LIB_17__::func_29(16);
 	cLocal_55 = "rcmabigail";
 	iLocal_56 = -1;
 	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
-	__LIB_37__::func_582();
+	__LIB_37__::func_256();
 	Var0.f_17 = 2;
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
 	Var1 = { 0f, 0f, 0f };
 	Var2.f_1 = 16;
-	__LIB_37__::func_581(&Var0);
+	__LIB_37__::func_255(&Var0);
 	Var1 = { ScriptParam_58.f_1[0 /*3*/] };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(83))
 	{
@@ -142,21 +142,21 @@ void __EntryFunction__()//Position - 0x0
 	}
 	iVar3[0] = 0;
 	iVar3[1] = 1;
-	if (!__LIB_37__::func_631(&iVar3, &Var0, Var1, 1f))
+	if (!__LIB_37__::func_305(&iVar3, &Var0, Var1, 1f))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	if (!func_265(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_594(Var0.f_0))
+	if (__LIB_37__::func_268(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -179,32 +179,32 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_37__::func_659(&Var0, 1))
+		if (!__LIB_37__::func_333(&Var0, 1))
 		{
 			func_277(&Var0, 1);
 		}
-		__LIB_37__::func_592(Var0.f_0);
-		__LIB_37__::func_623(&iLocal_56, &(Var0.f_9), Var1);
+		__LIB_37__::func_266(Var0.f_0);
+		__LIB_37__::func_297(&iLocal_56, &(Var0.f_9), Var1);
 		switch (Var0.f_0)
 		{
 			case 0:
 				func_195(&Var2, &(Var0.f_28[0]), "SONAR_PRE");
 				break;
 			case 1:
-				__LIB_37__::func_629(&Var0, Var1, "SONARAU", "SONAR_CALL", 3, "ABIGAIL", 10000, 1101004800);
+				__LIB_37__::func_303(&Var0, Var1, "SONARAU", "SONAR_CALL", 3, "ABIGAIL", 10000, 1101004800);
 				break;
 		}
-		if (__LIB_37__::func_637(&Var0, 0))
+		if (__LIB_37__::func_311(&Var0, 0))
 		{
-			if (__LIB_37__::func_566(Var0.f_0))
+			if (__LIB_37__::func_240(Var0.f_0))
 			{
-				__LIB_37__::func_590(Var0.f_0, &iLocal_57);
+				__LIB_37__::func_264(Var0.f_0, &iLocal_57);
 			}
-			if (!__LIB_37__::func_669(&Var0))
+			if (!__LIB_37__::func_343(&Var0))
 			{
 				func_277(&Var0, 1);
 			}
-			if (__LIB_37__::func_562(&Var0))
+			if (__LIB_37__::func_236(&Var0))
 			{
 				func_277(&Var0, 0);
 			}
@@ -249,7 +249,7 @@ void func_195(int iParam0, var uParam1, char* sParam2)//Position - 0xCFEF
 				}
 				break;
 			case 4:
-				if (__LIB_16__::func_5(&(iParam0->f_1), "SONARAU", sParam2, 4, 0, 0, 0))
+				if (__LIB_16__::func_7(&(iParam0->f_1), "SONARAU", sParam2, 4, 0, 0, 0))
 				{
 					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_52, Local_53, 8f, false, true, 0))
 					{
@@ -351,7 +351,7 @@ int func_255(var uParam0)//Position - 0xF6AF
 				iVar1++;
 			}
 			STREAMING::REQUEST_ANIM_DICT(cLocal_55);
-			__LIB_17__::func_28(&(uParam0->f_48), cLocal_55, "base", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), cLocal_55, "base", 0);
 			iLocal_51 = 1;
 			break;
 		case 1:
@@ -365,14 +365,14 @@ int func_255(var uParam0)//Position - 0xF6AF
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 16, -1596.09f, 5218.102f, 3.045f, 125.5f, "RC ABIGAIL 2", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 16, -1596.09f, 5218.102f, 3.045f, 125.5f, "RC ABIGAIL 2", 1))
 				{
 					bVar2 = false;
 				}
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[1], -1584.0127f, 5158.5386f, 18.6057f, 210.5309f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[1], -1584.0127f, 5158.5386f, 18.6057f, 210.5309f);
 				VEHICLE::SET_VEHICLE_DOORS_LOCKED(uParam0->f_35[0], 3);
 				VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(uParam0->f_35[0], 1);
 				VEHICLE::SET_VEHICLE_DISABLE_TOWING(uParam0->f_35[0], true);
@@ -426,7 +426,7 @@ int func_263(var uParam0)//Position - 0xFADC
 			bVar1 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 16, -1607.918f, 5243.162f, 3.045f, 125.5f, "RC ABIGAIL 1", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 16, -1607.918f, 5243.162f, 3.045f, 125.5f, "RC ABIGAIL 1", 1))
 				{
 					bVar1 = false;
 				}
@@ -502,7 +502,7 @@ int func_266(int iParam0)//Position - 0xFCF1
 	{
 		return 0;
 	}
-	if (__LIB_37__::func_580(iParam0))
+	if (__LIB_37__::func_254(iParam0))
 	{
 		return 0;
 	}
@@ -516,11 +516,11 @@ int func_266(int iParam0)//Position - 0xFCF1
 	}
 	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_37__::func_579(iParam0))
+		if (!__LIB_37__::func_253(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_37__::func_578(iParam0))
+		if (!__LIB_37__::func_252(iParam0))
 		{
 			return 0;
 		}
@@ -591,7 +591,7 @@ void func_277(int iParam0, bool bParam1)//Position - 0x10143
 	if (iLocal_56 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_37__::func_331(&iLocal_56);
+		__LIB_37__::func_5(&iLocal_56);
 	}
 	switch (*iParam0)
 	{
@@ -602,12 +602,12 @@ void func_277(int iParam0, bool bParam1)//Position - 0x10143
 			sVar0 = "SONAR_CALL";
 			break;
 	}
-	__LIB_37__::func_595(sVar0);
+	__LIB_37__::func_269(sVar0);
 	if (bParam1)
 	{
-		__LIB_37__::func_592(*iParam0);
+		__LIB_37__::func_266(*iParam0);
 	}
-	__LIB_37__::func_588();
+	__LIB_37__::func_262();
 	__LIB_0__::func_135("SCRIPT TERMINATING: ");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

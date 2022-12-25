@@ -853,16 +853,16 @@ void func_51()//Position - 0x1E5A
 			{
 				if (PLAYER::PLAYER_ID() == NETWORK::NETWORK_GET_DESTROYER_OF_NETWORK_ID(Local_83.f_2, &uVar0))
 				{
-					__LIB_32__::func_531(2106, 1, -1);
-					__LIB_32__::func_537(68, 1, -1);
+					__LIB_30__::func_962(2106, 1, -1);
+					__LIB_30__::func_968(68, 1, -1);
 					func_148(0, PLAYER::PLAYER_PED_ID(), "XPT_KAIE" /* GXT: ~g~+~1~ ~a~:~s~ Killed Hostile */, joaat("XPTYPE_SKILL"), joaat("XPCATEGORY_COMPLETE_DESTROY_VEH"), Global_262145.f_8567 /* Tunable: DESTROYVEHXP */, 1, -1, 0, 0, 0);
 					if (__LIB_0__::func_680())
 					{
-						__LIB_32__::func_533(86, "DSV_PASS0" /* GXT: Oh shit! All of a sudden the price of molly's gone up.  That's tight work. */, 0, 0, -99);
+						__LIB_30__::func_964(86, "DSV_PASS0" /* GXT: Oh shit! All of a sudden the price of molly's gone up.  That's tight work. */, 0, 0, -99);
 					}
 					else
 					{
-						__LIB_32__::func_533(86, "DSV_PASS1" /* GXT: Haha. Them idiots had a note on that stash. They goin be paying that for a long time. You real, you know that. */, 0, 0, -99);
+						__LIB_30__::func_964(86, "DSV_PASS1" /* GXT: Haha. Them idiots had a note on that stash. They goin be paying that for a long time. You real, you know that. */, 0, 0, -99);
 					}
 					iVar1 = Global_262145.f_8568 /* Tunable: DESTROYVEHCASH */;
 					Global_2727753 = iVar1;
@@ -953,7 +953,7 @@ void func_52()//Position - 0x2042
 
 int func_148(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, char* sParam8, bool bParam9, int iParam10)//Position - 0x46B6
 {
-	return __LIB_43__::func_658(iParam0, iParam1, sParam2, iParam3, iParam4, iParam5, iParam6, iParam7, sParam8, bParam9, iParam10);
+	return __LIB_43__::func_615(iParam0, iParam1, sParam2, iParam3, iParam4, iParam5, iParam6, iParam7, sParam8, bParam9, iParam10);
 }
 
 void func_207()//Position - 0x66DF

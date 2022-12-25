@@ -537,7 +537,7 @@ void func_4()//Position - 0x29E
 		case 1:
 			if (__LIB_0__::func_223())
 			{
-				if (__LIB_16__::func_899())
+				if (__LIB_16__::func_902())
 				{
 				}
 				else
@@ -1432,7 +1432,7 @@ void func_112()//Position - 0x9C25
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_31[0], iLocal_44);
 				PED::SET_PED_ACCURACY(iLocal_31[0], 0);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_31[0], true);
-				__LIB_16__::func_878(iLocal_31[0], 595);
+				__LIB_16__::func_881(iLocal_31[0], 595);
 				__LIB_0__::func_609(iLocal_31[0], 0);
 			}
 			iLocal_55 = 0;
@@ -1446,7 +1446,7 @@ void func_112()//Position - 0x9C25
 						WEAPON::GIVE_WEAPON_TO_PED(iLocal_32[iLocal_55], joaat("WEAPON_ASSAULTRIFLE"), 2000, true, true);
 						PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_32[iLocal_55], iLocal_44);
 						PED::SET_PED_ACCURACY(iLocal_32[iLocal_55], 10);
-						__LIB_16__::func_878(iLocal_32[iLocal_55], 595);
+						__LIB_16__::func_881(iLocal_32[iLocal_55], 595);
 						__LIB_0__::func_609(iLocal_32[iLocal_55], 0);
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_32[iLocal_55], true);
 						iLocal_97[iLocal_55] = 1;
@@ -3011,12 +3011,12 @@ void func_248()//Position - 0x16584
 		}
 		if (iLocal_85 == 1)
 		{
-			if (!__LIB_16__::func_912(5))
+			if (!__LIB_16__::func_915(5))
 			{
-				__LIB_16__::func_904(5);
+				__LIB_16__::func_907(5);
 			}
 		}
-		else if (__LIB_16__::func_912(5))
+		else if (__LIB_16__::func_915(5))
 		{
 			func_249(5);
 		}
@@ -3049,14 +3049,14 @@ void func_266()//Position - 0x1723F
 {
 	if (iLocal_54 == 0)
 	{
-		__LIB_38__::func_189(1, 0);
-		__LIB_38__::func_189(2, 0);
-		__LIB_38__::func_189(7, 0);
-		__LIB_38__::func_189(8, 0);
-		__LIB_38__::func_189(9, 0);
-		__LIB_38__::func_189(10, 0);
-		__LIB_38__::func_189(4, 0);
-		__LIB_38__::func_189(12, 0);
+		__LIB_37__::func_864(1, 0);
+		__LIB_37__::func_864(2, 0);
+		__LIB_37__::func_864(7, 0);
+		__LIB_37__::func_864(8, 0);
+		__LIB_37__::func_864(9, 0);
+		__LIB_37__::func_864(10, 0);
+		__LIB_37__::func_864(4, 0);
+		__LIB_37__::func_864(12, 0);
 		PED::ADD_RELATIONSHIP_GROUP("MarineGroupHash", &iLocal_44);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_44, joaat("PLAYER"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("ARMY"), joaat("PLAYER"));
@@ -3261,7 +3261,7 @@ void func_276()//Position - 0x1777B
 						{
 							if (__LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED"))
 							{
-								if (__LIB_17__::func_770(iLocal_32[iLocal_64], 6))
+								if (__LIB_17__::func_773(iLocal_32[iLocal_64], 6))
 								{
 									iLocal_98 = 1;
 								}
@@ -3604,7 +3604,7 @@ void func_282()//Position - 0x18165
 
 void func_284()//Position - 0x181B0
 {
-	__LIB_16__::func_913(73);
+	__LIB_16__::func_916(73);
 	HUD::REQUEST_ADDITIONAL_TEXT("DOCKP2B", 0);
 	while (!HUD::HAS_ADDITIONAL_TEXT_LOADED(0))
 	{
@@ -3634,7 +3634,7 @@ void func_284()//Position - 0x181B0
 
 void func_286()//Position - 0x18424
 {
-	__LIB_16__::func_908();
+	__LIB_16__::func_911();
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("cargobob"), false);
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("buzzard"), false);
 	PLAYER::SET_POLICE_RADAR_BLIPS(true);
@@ -3644,14 +3644,14 @@ void func_286()//Position - 0x18424
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_50, false);
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_51, false);
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_52, false);
-	__LIB_38__::func_189(1, 1);
-	__LIB_38__::func_189(2, 1);
-	__LIB_38__::func_189(7, 1);
-	__LIB_38__::func_189(8, 1);
-	__LIB_38__::func_189(9, 1);
-	__LIB_38__::func_189(10, 1);
-	__LIB_38__::func_189(4, 1);
-	__LIB_38__::func_189(12, 1);
+	__LIB_37__::func_864(1, 1);
+	__LIB_37__::func_864(2, 1);
+	__LIB_37__::func_864(7, 1);
+	__LIB_37__::func_864(8, 1);
+	__LIB_37__::func_864(9, 1);
+	__LIB_37__::func_864(10, 1);
+	__LIB_37__::func_864(4, 1);
+	__LIB_37__::func_864(12, 1);
 	func_129();
 	if (TASK::DOES_SCENARIO_GROUP_EXIST("ARMY_GUARD"))
 	{

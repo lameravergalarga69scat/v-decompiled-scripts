@@ -249,8 +249,8 @@ int func_1(var uParam0)//Position - 0x188
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	__LIB_38__::func_849(0, iLocal_138, 0, 1);
-	__LIB_38__::func_866(1);
+	__LIB_38__::func_524(0, iLocal_138, 0, 1);
+	__LIB_38__::func_541(1);
 	iVar0 = 0;
 	switch (iLocal_138)
 	{
@@ -332,20 +332,20 @@ int func_1(var uParam0)//Position - 0x188
 	if (iVar0 > 16)
 	{
 		iLocal_139 = 1;
-		__LIB_37__::func_858(1, 2, 1, 1, 0, 0);
-		__LIB_38__::func_523(1, 0, iVar0, 0, 0);
+		__LIB_37__::func_532(1, 2, 1, 1, 0, 0);
+		__LIB_38__::func_198(1, 0, iVar0, 0, 0);
 		HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("RScrollUpDown"));
 	}
 	else
 	{
 		iLocal_139 = 0;
-		__LIB_38__::func_523(1, -1, -1, 0, 0);
+		__LIB_38__::func_198(1, -1, -1, 0, 0);
 		HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RScrollUpDown"));
 	}
 	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));
 	HUD::PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS(0);
-	__LIB_37__::func_847(1);
-	__LIB_38__::func_869(1);
+	__LIB_37__::func_521(1);
+	__LIB_38__::func_544(1);
 	*uParam0 = 1;
 	return 1;
 }
@@ -713,17 +713,17 @@ void func_45()//Position - 0x18E4
 	var uVar1;
 	var uVar2;
 	HUD::GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS(&uVar0, &uVar1, &uVar2);
-	__LIB_38__::func_866(0);
+	__LIB_38__::func_541(0);
 	iLocal_138 = 0;
-	__LIB_38__::func_865(0, 0, iLocal_132, 0, 1, "PM_UL_D0" /* GXT: General */, 0, 0, 0);
-	__LIB_38__::func_865(0, 1, iLocal_132, 1, 1, "PM_UL_D1" /* GXT: Progress */, 0, 0, 0);
-	__LIB_38__::func_865(0, 2, iLocal_132, 2, 1, "PM_UL_D2" /* GXT: Content */, 0, 0, 0);
-	__LIB_38__::func_869(0);
-	__LIB_42__::func_640(2);
-	__LIB_42__::func_640(3);
-	__LIB_42__::func_640(4);
-	__LIB_42__::func_640(5);
-	__LIB_37__::func_847(0);
+	__LIB_38__::func_540(0, 0, iLocal_132, 0, 1, "PM_UL_D0" /* GXT: General */, 0, 0, 0);
+	__LIB_38__::func_540(0, 1, iLocal_132, 1, 1, "PM_UL_D1" /* GXT: Progress */, 0, 0, 0);
+	__LIB_38__::func_540(0, 2, iLocal_132, 2, 1, "PM_UL_D2" /* GXT: Content */, 0, 0, 0);
+	__LIB_38__::func_544(0);
+	__LIB_42__::func_515(2);
+	__LIB_42__::func_515(3);
+	__LIB_42__::func_515(4);
+	__LIB_42__::func_515(5);
+	__LIB_37__::func_521(0);
 	func_1(&uLocal_140);
 	HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("RScrollUpDown"));
 	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(joaat("HIDE_ACCEPTBUTTON"));

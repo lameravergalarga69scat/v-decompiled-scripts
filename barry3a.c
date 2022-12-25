@@ -1974,7 +1974,7 @@ int func_375(int iParam0)//Position - 0x356FE
 		{
 			return 1;
 		}
-		else if (__LIB_17__::func_114(iParam0, 1126825984))
+		else if (__LIB_17__::func_117(iParam0, 1126825984))
 		{
 			return 1;
 		}

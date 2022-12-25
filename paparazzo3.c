@@ -335,7 +335,7 @@ void __EntryFunction__()//Position - 0x0
 void func_1()//Position - 0x1FA
 {
 	func_253();
-	if (!__LIB_17__::func_123(Local_43.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0))
+	if (!__LIB_17__::func_126(Local_43.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0))
 	{
 		switch (iLocal_42)
 		{
@@ -1105,7 +1105,7 @@ void func_254()//Position - 0x27FF7
 			{
 				if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 				{
-					__LIB_17__::func_161(sLocal_56, PLAYER::PLAYER_PED_ID(), 0, 2);
+					__LIB_17__::func_164(sLocal_56, PLAYER::PLAYER_PED_ID(), 0, 2);
 				}
 			}
 			if (__LIB_14__::func_740(1, 1093140480, 0))
@@ -1155,7 +1155,7 @@ void func_254()//Position - 0x27FF7
 				__LIB_14__::func_841();
 				CUTSCENE::START_CUTSCENE(0);
 				SYSTEM::WAIT(0);
-				if (__LIB_39__::func_366())
+				if (__LIB_39__::func_41())
 				{
 					__LIB_14__::func_592(-262.08163f, 292.33f, 90f, -254.652f, 292.335f, 93.5f, 5f, -257.08f, 285.27f, 90.43f, 12.52f, 1, 1, 1, 0, 0);
 				}
@@ -1257,7 +1257,7 @@ void func_254()//Position - 0x27FF7
 	{
 		__LIB_14__::func_870(1, 1, 1, 1);
 		__LIB_14__::func_800(&Local_43, 0, 1);
-		__LIB_38__::func_813(1);
+		__LIB_38__::func_488(1);
 	}
 }
 
@@ -1448,7 +1448,7 @@ void func_296()//Position - 0x2A4D9
 			break;
 		case 2:
 			func_295();
-			__LIB_38__::func_813(0);
+			__LIB_38__::func_488(0);
 			break;
 	}
 }
@@ -1529,10 +1529,10 @@ void func_307()//Position - 0x2AA6F
 		{
 			if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 			{
-				__LIB_17__::func_161(sLocal_56, PLAYER::PLAYER_PED_ID(), 0, 2);
+				__LIB_17__::func_164(sLocal_56, PLAYER::PLAYER_PED_ID(), 0, 2);
 			}
 		}
-		__LIB_38__::func_813(-1);
+		__LIB_38__::func_488(-1);
 	}
 }
 
@@ -1540,7 +1540,7 @@ void func_308()//Position - 0x2ABF8
 {
 	func_312(1, 1);
 	func_311();
-	__LIB_38__::func_813(1);
+	__LIB_38__::func_488(1);
 	__LIB_14__::func_659(PLAYER::PLAYER_PED_ID(), -258.8661f, 292.7882f, 90.5764f, 153.0393f, 0, 1);
 	__LIB_14__::func_879(1, 1, 1);
 }
@@ -1572,7 +1572,7 @@ void func_312(bool bParam0, bool bParam1)//Position - 0x2ADB6
 {
 	if (bParam0)
 	{
-		__LIB_17__::func_25(0, 1, 1);
+		__LIB_17__::func_28(0, 1, 1);
 	}
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
@@ -1610,7 +1610,7 @@ void func_318(char* sParam0)//Position - 0x2AF8C
 	if (iLocal_41 != 2)
 	{
 		sLocal_236 = sParam0;
-		__LIB_38__::func_813(2);
+		__LIB_38__::func_488(2);
 	}
 }
 

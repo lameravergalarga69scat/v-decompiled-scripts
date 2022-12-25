@@ -316,7 +316,7 @@ void __EntryFunction__()//Position - 0x0
 					if (NETWORK::FACEBOOK_CAN_POST_TO_FACEBOOK())
 					{
 						NETWORK::FACEBOOK_POST_COMPLETED_MILESTONE(0);
-						__LIB_33__::func_603(0);
+						__LIB_32__::func_87(0);
 					}
 				}
 				Global_113386.f_10194.f_3854 = 1;
@@ -335,7 +335,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				__LIB_0__::func_746(22, 1);
 			}
-			__LIB_17__::func_216(__LIB_0__::func_683(), 4, (MISC::GET_NUM_SUCCESSFUL_STUNT_JUMPS() - Global_113386.f_10049) * 2);
+			__LIB_17__::func_219(__LIB_0__::func_683(), 4, (MISC::GET_NUM_SUCCESSFUL_STUNT_JUMPS() - Global_113386.f_10049) * 2);
 			Global_113386.f_10049 = MISC::GET_NUM_SUCCESSFUL_STUNT_JUMPS();
 			if (Global_113386.f_10049 >= 50)
 			{
@@ -393,7 +393,7 @@ int func_33(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//P
 							if (iVar1 != 13)
 							{
 								func_33(iParam0, iVar1, uVar3[iVar1], 1, 1);
-								__LIB_15__::func_948(iParam0, iVar1, uVar3[iVar1], 1);
+								__LIB_15__::func_950(iParam0, iVar1, uVar3[iVar1], 1);
 							}
 							else
 							{
@@ -402,7 +402,7 @@ int func_33(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//P
 								while (iVar2 <= 8)
 								{
 									func_33(iParam0, 14, uVar4[iVar2], 1, 1);
-									__LIB_15__::func_948(iParam0, 14, uVar4[iVar2], 1);
+									__LIB_15__::func_950(iParam0, 14, uVar4[iVar2], 1);
 									iVar2++;
 								}
 							}
@@ -522,7 +522,7 @@ Vector3 func_126(int iParam0)//Position - 0x1F88B
 				iVar2 = Global_91229[iVar0 /*34*/].f_10;
 				if (iVar2 != 263)
 				{
-					return __LIB_15__::func_962(iVar2, 0);
+					return __LIB_15__::func_964(iVar2, 0);
 				}
 			}
 			break;
@@ -532,7 +532,7 @@ Vector3 func_126(int iParam0)//Position - 0x1F88B
 			iVar4 = func_134(iVar3, func_135(iParam0));
 			if (iVar4 != 263)
 			{
-				return __LIB_15__::func_962(iVar4, 0);
+				return __LIB_15__::func_964(iVar4, 0);
 			}
 			break;
 		case 7:

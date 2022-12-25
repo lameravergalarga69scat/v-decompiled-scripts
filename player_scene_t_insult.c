@@ -366,8 +366,8 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::WAIT(0);
 	func_48();
 	func_47();
-	__LIB_17__::func_501();
-	while (iLocal_232 && __LIB_39__::func_36(4, 0))
+	__LIB_17__::func_504();
+	while (iLocal_232 && __LIB_38__::func_711(4, 0))
 	{
 		SYSTEM::WAIT(0);
 		switch (iLocal_65)
@@ -391,7 +391,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 3:
-				__LIB_39__::func_48();
+				__LIB_38__::func_723();
 				break;
 		}
 	}
@@ -1010,7 +1010,7 @@ int func_36()//Position - 0x1AE1
 	int iVar5;
 	float fVar6;
 	float fVar7;
-	if (!__LIB_17__::func_677())
+	if (!__LIB_17__::func_680())
 	{
 		if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(Global_97771))
 		{
@@ -1198,7 +1198,7 @@ void func_48()//Position - 0x217F
 	int iVar3;
 	iLocal_66 = Global_99844;
 	func_51(iLocal_66, &Local_243, &fLocal_244, &cVar0);
-	__LIB_33__::func_604(iLocal_66, &sLocal_249, &cLocal_265, &cLocal_281, &uVar1, &uVar2);
+	__LIB_32__::func_88(iLocal_66, &sLocal_249, &cLocal_265, &cLocal_281, &uVar1, &uVar2);
 	StringCopy(&(Local_316[0 /*16*/]), "", 64);
 	StringCopy(&(Local_316[1 /*16*/]), "", 64);
 	iLocal_240[0] = 0;
@@ -1409,7 +1409,7 @@ int func_51(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x
 				return 0;
 				break;
 			case 1:
-				__LIB_17__::func_690(&iVar0);
+				__LIB_17__::func_693(&iVar0);
 				if (iVar0 < 5)
 				{
 					*uParam1 = { Global_95644[iVar0 /*9*/].f_3 };
@@ -1484,7 +1484,7 @@ int func_53(int iParam0, var uParam1, char* sParam2)//Position - 0x4439
 			return 0;
 			break;
 		case 1:
-			__LIB_17__::func_690(&iVar1);
+			__LIB_17__::func_693(&iVar1);
 			if (iVar1 < 5)
 			{
 				*uParam1 = Global_95644[iVar1 /*9*/].f_6;
@@ -1515,17 +1515,17 @@ int func_53(int iParam0, var uParam1, char* sParam2)//Position - 0x4439
 			break;
 		case 5:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[0];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[0]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[0]), 32);
 			return 1;
 			break;
 		case 6:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[1];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[1]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[1]), 32);
 			return 1;
 			break;
 		case 7:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[2];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[2]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[2]), 32);
 			return 1;
 			break;
 		case 11:

@@ -64,7 +64,7 @@ void __EntryFunction__()//Position - 0x0
 		func_20();
 	}
 	MISC::SET_MISSION_FLAG(true);
-	__LIB_16__::func_16(0);
+	__LIB_16__::func_18(0);
 	func_18();
 	SCRIPT::SCRIPT_THREAD_ITERATOR_RESET();
 	while (!bVar1)
@@ -76,7 +76,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 	}
 	CUTSCENE::SET_SCRIPT_CAN_START_CUTSCENE(iVar0);
-	__LIB_17__::func_714();
+	__LIB_17__::func_717();
 	__LIB_14__::func_592(96.7f, -1288.1f, 28.1f, 104.5f, -1301f, 30f, 2f, 118.3f, -1309.7f, 29f, 120f, 1, 1, 1, 0, 0);
 	func_20();
 }

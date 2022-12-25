@@ -2889,7 +2889,7 @@ int func_198()//Position - 0x6F21
 	{
 		return 0;
 	}
-	__LIB_29__::func_677(__LIB_0__::func_943(1, 1));
+	__LIB_29__::func_687(__LIB_0__::func_943(1, 1));
 	if (STREAMING::HAS_MODEL_LOADED(joaat("ind_prop_dlc_roller_car")) && STREAMING::HAS_MODEL_LOADED(joaat("ind_prop_dlc_roller_car_02")))
 	{
 		iVar0 = 0;

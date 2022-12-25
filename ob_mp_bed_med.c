@@ -406,7 +406,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_339 = { 0f, 0f, -3.96f };
 	Local_334 = { ScriptParam_342.f_1[0 /*3*/] };
 	Local_334 = { 349.9853f, -997.8344f, -99.1952f };
-	if ((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(18) || __LIB_18__::func_440()) || Global_2815059.f_1917)
+	if ((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(18) || __LIB_18__::func_450()) || Global_2815059.f_1917)
 	{
 		func_83();
 	}
@@ -533,9 +533,9 @@ void func_2()//Position - 0x30E
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_327);
 				iLocal_323 = 7;
 			}
-			else if (__LIB_38__::func_747(9))
+			else if (__LIB_38__::func_422(9))
 			{
-				if ((((__LIB_38__::func_744(Local_334, Var0) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_334)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_336, Local_337, 2f, false, true, 0)) && func_49()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
+				if ((((__LIB_38__::func_419(Local_334, Var0) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_334)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_336, Local_337, 2f, false, true, 0)) && func_49()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
 				{
 					if (iLocal_329 == -1)
 					{
@@ -549,7 +549,7 @@ void func_2()//Position - 0x30E
 			Local_340 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
 			if (__LIB_0__::func_494(1, 0, 1))
 			{
-				if ((((((__LIB_38__::func_744(Local_334, Var0) && Local_340.f_2 < (Local_334.f_2 + 1f)) && __LIB_38__::func_747(9)) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_334)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_336, Local_337, 2f, false, true, 0)) && func_49()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
+				if ((((((__LIB_38__::func_419(Local_334, Var0) && Local_340.f_2 < (Local_334.f_2 + 1f)) && __LIB_38__::func_422(9)) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_334)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_336, Local_337, 2f, false, true, 0)) && func_49()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
 				{
 					if (__LIB_3__::func_113(iLocal_329, 1))
 					{
@@ -727,7 +727,7 @@ void func_2()//Position - 0x30E
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_328))
 			{
 				MISC::SET_BIT(&uLocal_321, 0);
-				__LIB_38__::func_765(5);
+				__LIB_38__::func_440(5);
 				iLocal_323 = 9;
 			}
 			break;

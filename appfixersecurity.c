@@ -360,7 +360,7 @@ void func_33()//Position - 0x93F
 {
 	int iVar0;
 	int iVar1;
-	iVar0 = __LIB_25__::func_833(0);
+	iVar0 = __LIB_25__::func_843(0);
 	iVar1 = func_35();
 	func_34("", 1, 0, "", 1, 0, "", 1, 0, iVar0, iVar1);
 }
@@ -678,7 +678,7 @@ void func_48(int iParam0)//Position - 0xEB9
 	sVar6 = func_50(iParam0, 2);
 	bVar7 = func_49(iParam0, 2);
 	bVar8 = func_43(iParam0, 2);
-	iVar9 = __LIB_25__::func_833(0);
+	iVar9 = __LIB_25__::func_843(0);
 	iVar10 = func_35();
 	func_34(sVar0, bVar1, bVar2, sVar3, bVar4, bVar5, sVar6, bVar7, bVar8, iVar9, iVar10);
 }
@@ -1004,7 +1004,7 @@ void func_69()//Position - 0x13A5
 							func_278();
 							func_323(3);
 						}
-						else if (!__LIB_21__::func_636(PLAYER::PLAYER_ID()) && !BitTest(Global_1977048.f_1, 23))
+						else if (!__LIB_21__::func_646(PLAYER::PLAYER_ID()) && !BitTest(Global_1977048.f_1, 23))
 						{
 							func_323(2);
 						}
@@ -1071,7 +1071,7 @@ void func_71(int iParam0)//Position - 0x1613
 
 void func_72(int iParam0, int iParam1)//Position - 0x1621
 {
-	if (__LIB_28__::func_612())
+	if (__LIB_28__::func_622())
 	{
 		func_323(2);
 		return;
@@ -1204,7 +1204,7 @@ int func_75(int iParam0)//Position - 0x1835
 	int iVar5;
 	struct<3> Var6;
 	func_323(8);
-	iVar0 = __LIB_35__::func_692(iParam0);
+	iVar0 = __LIB_34__::func_355(iParam0);
 	if (iVar0 == -1)
 	{
 		return 0;
@@ -1243,7 +1243,7 @@ int func_75(int iParam0)//Position - 0x1835
 		__LIB_7__::func_153();
 		__LIB_13__::func_124();
 		Var6 = { 0f, 0f, 0f };
-		__LIB_31__::func_507(&(Global_2714762.f_781), 0, 0, Var6, &uVar4, Var6, 1, 0, &uVar4, &iVar5, iVar5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
+		__LIB_31__::func_676(&(Global_2714762.f_781), 0, 0, Var6, &uVar4, Var6, 1, 0, &uVar4, &iVar5, iVar5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
 		__LIB_2__::func_592(0, 0);
 		Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_95 = 8;
 		func_416(0, 0);
@@ -2033,7 +2033,7 @@ int func_281(bool bParam0)//Position - 0x97A2
 		}
 		return 0;
 	}
-	return __LIB_28__::func_615(PLAYER::PLAYER_ID());
+	return __LIB_28__::func_625(PLAYER::PLAYER_ID());
 }
 
 bool func_287(bool bParam0)//Position - 0x9862
@@ -2422,7 +2422,7 @@ char* func_307(int iParam0)//Position - 0x9EE0
 
 int func_308()//Position - 0x9F66
 {
-	if (func_279(0) && !__LIB_21__::func_636(PLAYER::PLAYER_ID()))
+	if (func_279(0) && !__LIB_21__::func_646(PLAYER::PLAYER_ID()))
 	{
 		return !BitTest(Global_1977048.f_1, 23);
 	}
@@ -2994,7 +2994,7 @@ void func_372()//Position - 0xB718
 		__LIB_0__::func_151(sLocal_140, -1);
 		sLocal_140 = "";
 	}
-	if (!BitTest(uLocal_129, 11) && __LIB_28__::func_612())
+	if (!BitTest(uLocal_129, 11) && __LIB_28__::func_622())
 	{
 		if (func_28() == 2)
 		{
@@ -3023,11 +3023,11 @@ void func_372()//Position - 0xB718
 		{
 			if (__LIB_1__::func_161(PLAYER::PLAYER_ID()))
 			{
-				if (!__LIB_28__::func_610(PLAYER::PLAYER_ID(), 3))
+				if (!__LIB_28__::func_620(PLAYER::PLAYER_ID(), 3))
 				{
 					__LIB_0__::func_151("FXRAP_FIN_WAIT3" /* GXT: Go to Franklin's office to continue this contract. */, -1);
 				}
-				else if (!__LIB_28__::func_610(PLAYER::PLAYER_ID(), 4))
+				else if (!__LIB_28__::func_620(PLAYER::PLAYER_ID(), 4))
 				{
 					__LIB_0__::func_151("FXRAP_FIN_WAIT5" /* GXT: Go to Franklin's office to complete this contract. */, -1);
 				}
@@ -3039,7 +3039,7 @@ void func_372()//Position - 0xB718
 				{
 					__LIB_0__::func_151("FXR_AP_FIN_WAIT" /* GXT: All three Data Leaks investigated. Franklin will be in touch soon. */, -1);
 				}
-				else if (!__LIB_28__::func_610(PLAYER::PLAYER_ID(), 3))
+				else if (!__LIB_28__::func_620(PLAYER::PLAYER_ID(), 3))
 				{
 					if (BitTest(Global_1977048, 26))
 					{
@@ -3050,7 +3050,7 @@ void func_372()//Position - 0xB718
 						__LIB_0__::func_151("FXRAP_FIN_WAIT2" /* GXT: Franklin will be in touch soon with information on Johnny Guns. */, -1);
 					}
 				}
-				else if (!__LIB_28__::func_610(PLAYER::PLAYER_ID(), 4))
+				else if (!__LIB_28__::func_620(PLAYER::PLAYER_ID(), 4))
 				{
 					if (BitTest(Global_1977048, 28))
 					{
@@ -3239,7 +3239,7 @@ void func_380()//Position - 0xBEAC
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 	__LIB_12__::func_942();
-	__LIB_18__::func_922();
+	__LIB_18__::func_932();
 	HUD::THEFEED_HIDE_THIS_FRAME();
 	__LIB_13__::func_66(2, 199, 1);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
@@ -3289,12 +3289,12 @@ void func_406()//Position - 0xC3CA
 	iLocal_150 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("FIXER_APP");
 	while (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_150))
 	{
-		__LIB_18__::func_922();
+		__LIB_18__::func_932();
 		SYSTEM::WAIT(0);
 	}
 	__LIB_0__::func_366(1);
 	__LIB_0__::func_671(1);
-	__LIB_18__::func_922();
+	__LIB_18__::func_932();
 	__LIB_0__::func_866();
 	HUD::THEFEED_PAUSE();
 	uLocal_145 = uLocal_145;

@@ -354,9 +354,9 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_39__::func_345(Local_53, 2, 0, 1, 0))
+	if (__LIB_39__::func_20(Local_53, 2, 0, 1, 0))
 	{
-		__LIB_39__::func_334(-1);
+		__LIB_39__::func_9(-1);
 	}
 	else
 	{
@@ -494,7 +494,7 @@ void func_2()//Position - 0x252
 			func_47();
 			func_33();
 			func_27(0);
-			if (__LIB_39__::func_351(iLocal_63))
+			if (__LIB_39__::func_26(iLocal_63))
 			{
 				iLocal_73 = 1;
 			}
@@ -1183,7 +1183,7 @@ int func_49()//Position - 0x1C08
 
 void func_50()//Position - 0x1FE4
 {
-	__LIB_39__::func_349(-1, 0);
+	__LIB_39__::func_24(-1, 0);
 	__LIB_14__::func_557();
 	func_229();
 }
@@ -1527,7 +1527,7 @@ void func_92()//Position - 0x3ACF
 				HUD::HIDE_HUD_COMPONENT_THIS_FRAME(2);
 				__LIB_0__::func_532(0, 1, 1, 0, 0, 0, 0);
 				iLocal_84 = __LIB_0__::func_683();
-				__LIB_15__::func_811(iLocal_84, 1, iLocal_265);
+				__LIB_15__::func_812(iLocal_84, 1, iLocal_265);
 				iLocal_263 = CAM::GET_FOLLOW_VEHICLE_CAM_ZOOM_LEVEL();
 				if (!iLocal_76)
 				{
@@ -1598,15 +1598,15 @@ void func_126()//Position - 0x5151
 						{
 							TASK::TASK_LOOK_AT_ENTITY(iLocal_58, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
 						}
-						if (!__LIB_39__::func_333())
+						if (!__LIB_39__::func_8())
 						{
-							if (__LIB_39__::func_340())
+							if (__LIB_39__::func_15())
 							{
 								func_229();
 							}
 							else
 							{
-								__LIB_39__::func_336(1);
+								__LIB_39__::func_11(1);
 							}
 						}
 					}
@@ -2086,12 +2086,12 @@ int func_172(int iParam0, var uParam1, var uParam2, var uParam3, bool bParam4, f
 			fVar5 = SYSTEM::VDIST(Var3, Var4);
 			if (!BitTest(uParam3, 3))
 			{
-				if (__LIB_39__::func_353(iParam0, iParam6))
+				if (__LIB_39__::func_28(iParam0, iParam6))
 				{
-					__LIB_38__::func_718("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
-					__LIB_38__::func_718("	aggroReason = EAggro_Attacked\n");
+					__LIB_38__::func_393("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
+					__LIB_38__::func_393("	aggroReason = EAggro_Attacked\n");
 					*uParam1 = 3;
-					__LIB_39__::func_352(iParam0);
+					__LIB_39__::func_27(iParam0);
 					return 1;
 				}
 			}
@@ -2102,18 +2102,18 @@ int func_172(int iParam0, var uParam1, var uParam2, var uParam3, bool bParam4, f
 				}
 				if (MISC::IS_BULLET_IN_AREA(Var4, fParam5, true))
 				{
-					__LIB_38__::func_718("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
-					__LIB_38__::func_718("	aggroReason = EAggro_ShotNear\n");
+					__LIB_38__::func_393("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
+					__LIB_38__::func_393("	aggroReason = EAggro_ShotNear\n");
 					*uParam1 = 1;
-					__LIB_39__::func_352(iParam0);
+					__LIB_39__::func_27(iParam0);
 					return 1;
 				}
 				if (MISC::IS_PROJECTILE_IN_AREA(Var4 - Vector((fParam5 / 2f), (fParam5 / 2f), (fParam5 / 2f)), Var4 + Vector((fParam5 / 2f), (fParam5 / 2f), (fParam5 / 2f)), false))
 				{
-					__LIB_38__::func_718("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
-					__LIB_38__::func_718("	aggroReason = EAggro_ShotNear\n");
+					__LIB_38__::func_393("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
+					__LIB_38__::func_393("	aggroReason = EAggro_ShotNear\n");
 					*uParam1 = 1;
-					__LIB_39__::func_352(iParam0);
+					__LIB_39__::func_27(iParam0);
 					return 1;
 				}
 			}
@@ -2136,18 +2136,18 @@ int func_172(int iParam0, var uParam1, var uParam2, var uParam3, bool bParam4, f
 						{
 							if (ENTITY::HAS_ENTITY_CLEAR_LOS_TO_ENTITY(iParam0, PLAYER::PLAYER_PED_ID(), 17))
 							{
-								__LIB_38__::func_718("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
-								__LIB_38__::func_718("	aggro Ped knows player is pointing gun\n");
-								__LIB_39__::func_354("		lockOnTimer = ", *uParam2);
-								__LIB_38__::func_718("\n");
-								__LIB_39__::func_354("		time since not LockedOn = ", (MISC::GET_GAME_TIMER() - iLocal_43));
-								__LIB_38__::func_718("\n");
+								__LIB_38__::func_393("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
+								__LIB_38__::func_393("	aggro Ped knows player is pointing gun\n");
+								__LIB_39__::func_29("		lockOnTimer = ", *uParam2);
+								__LIB_38__::func_393("\n");
+								__LIB_39__::func_29("		time since not LockedOn = ", (MISC::GET_GAME_TIMER() - iLocal_43));
+								__LIB_38__::func_393("\n");
 								bVar2 = true;
 								if (MISC::GET_GAME_TIMER() > (iLocal_43 + *uParam2))
 								{
-									__LIB_38__::func_718("			aggroReason = EAggro_HostileOrEnemy\n");
+									__LIB_38__::func_393("			aggroReason = EAggro_HostileOrEnemy\n");
 									*uParam1 = 2;
-									__LIB_39__::func_352(iParam0);
+									__LIB_39__::func_27(iParam0);
 									return 1;
 								}
 							}
@@ -2167,10 +2167,10 @@ int func_172(int iParam0, var uParam1, var uParam2, var uParam3, bool bParam4, f
 			{
 				if (PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 				{
-					__LIB_38__::func_718("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
-					__LIB_38__::func_718("			aggroReason = EAggro_Danger\n");
+					__LIB_38__::func_393("FUNC BOOL HAS_PLAYER_AGGROED_PED\n");
+					__LIB_38__::func_393("			aggroReason = EAggro_Danger\n");
 					*uParam1 = 0;
-					__LIB_39__::func_352(iParam0);
+					__LIB_39__::func_27(iParam0);
 					return 1;
 				}
 			}
@@ -2226,7 +2226,7 @@ void func_184()//Position - 0x89A4
 {
 	int iVar0;
 	int iVar1;
-	if (__LIB_39__::func_350())
+	if (__LIB_39__::func_25())
 	{
 		func_229();
 	}
@@ -2521,7 +2521,7 @@ void func_229()//Position - 0xA2BC
 		ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_63);
 	}
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(true);
-	if (__LIB_39__::func_333())
+	if (__LIB_39__::func_8())
 	{
 		func_241();
 	}
@@ -2530,7 +2530,7 @@ void func_229()//Position - 0xA2BC
 		__LIB_0__::func_56(&Global_32019);
 	}
 	GRAPHICS::SET_EXPOSURETWEAK(true);
-	__LIB_39__::func_344(-1);
+	__LIB_39__::func_19(-1);
 	SYSTEM::WAIT(0);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

@@ -43,7 +43,7 @@ void __EntryFunction__()//Position - 0x0
 		__LIB_0__::func_202();
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	__LIB_43__::func_93();
+	__LIB_42__::func_976();
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -155,7 +155,7 @@ void func_4(int iParam0, bool bParam1)//Position - 0x25C
 	{
 		return;
 	}
-	__LIB_43__::func_93();
+	__LIB_42__::func_976();
 	iVar0 = Global_97532;
 	iVar1 = Global_97531;
 	bVar2 = true;

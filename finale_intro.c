@@ -121,14 +121,14 @@ void func_6()//Position - 0x1F6
 			iVar0 = PLAYER::GET_PLAYERS_LAST_VEHICLE();
 			if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
-				if (!__LIB_0__::func_776(iVar0, 1, 1) && !__LIB_17__::func_805(1, 1, -1.3389f, 544.1759f, 172.7673f, -1f))
+				if (!__LIB_0__::func_776(iVar0, 1, 1) && !__LIB_17__::func_808(1, 1, -1.3389f, 544.1759f, 172.7673f, -1f))
 				{
-					__LIB_17__::func_806(&iLocal_30, 1, -1.3389f, 544.1759f, 172.7673f, 124.3018f, 1, 1);
+					__LIB_17__::func_809(&iLocal_30, 1, -1.3389f, 544.1759f, 172.7673f, 124.3018f, 1, 1);
 				}
 			}
-			else if (!__LIB_17__::func_805(1, 1, -1.3389f, 544.1759f, 172.7673f, -1f))
+			else if (!__LIB_17__::func_808(1, 1, -1.3389f, 544.1759f, 172.7673f, -1f))
 			{
-				__LIB_17__::func_806(&iLocal_30, 1, -1.3389f, 544.1759f, 172.7673f, 124.3018f, 1, 1);
+				__LIB_17__::func_809(&iLocal_30, 1, -1.3389f, 544.1759f, 172.7673f, 124.3018f, 1, 1);
 			}
 		}
 		if (!iLocal_28)
@@ -169,7 +169,7 @@ void func_112()//Position - 0xC0E8
 		CUTSCENE::REQUEST_CUTSCENE("CHOICE_INT", 8);
 		if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 		{
-			__LIB_17__::func_807("FRANKLIN", PLAYER::PLAYER_PED_ID(), 0, 2);
+			__LIB_17__::func_810("FRANKLIN", PLAYER::PLAYER_PED_ID(), 0, 2);
 		}
 		SYSTEM::WAIT(0);
 	}

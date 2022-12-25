@@ -293,7 +293,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_20();
 		}
-		if (__LIB_19__::func_196())
+		if (__LIB_19__::func_206())
 		{
 			func_20();
 		}
@@ -318,13 +318,13 @@ void __EntryFunction__()//Position - 0x0
 				Global_1922904 = 0;
 				Global_1922903 = 0;
 				iLocal_227 = 4;
-				if (!__LIB_19__::func_86())
+				if (!__LIB_19__::func_96())
 				{
 					__LIB_0__::func_130();
 				}
 				break;
 			case 4:
-				if (__LIB_16__::func_680(1))
+				if (__LIB_16__::func_683(1))
 				{
 					if (Global_4718592.f_2 == 5)
 					{
@@ -407,7 +407,7 @@ void __EntryFunction__()//Position - 0x0
 			Global_1574606 = 0;
 			func_20();
 		}
-		if (__LIB_19__::func_199())
+		if (__LIB_19__::func_209())
 		{
 			Global_1574606 = 0;
 			func_20();

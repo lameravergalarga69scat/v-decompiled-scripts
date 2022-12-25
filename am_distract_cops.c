@@ -353,11 +353,11 @@ void func_14()//Position - 0x516
 			}
 			if (__LIB_0__::func_680())
 			{
-				__LIB_32__::func_533(12, "DSC_PASS0" /* GXT: Good work. You'll get your money, and they got away with it. Everyone's a winner except small businesses, property owners, and emergency services in the area... */, 0, 0, -99);
+				__LIB_30__::func_964(12, "DSC_PASS0" /* GXT: Good work. You'll get your money, and they got away with it. Everyone's a winner except small businesses, property owners, and emergency services in the area... */, 0, 0, -99);
 			}
 			else
 			{
-				__LIB_32__::func_533(12, "DSC_PASS1" /* GXT: Mission accomplished. I got paid, I'm transferring your small cut to you. You probably don't want to know what they were up to, but rest assured it wasn't as bad as what you were doing to distract the cops. */, 0, 0, -99);
+				__LIB_30__::func_964(12, "DSC_PASS1" /* GXT: Mission accomplished. I got paid, I'm transferring your small cut to you. You probably don't want to know what they were up to, but rest assured it wasn't as bad as what you were doing to distract the cops. */, 0, 0, -99);
 			}
 			func_20(51, iVar0, "DSC_CASH" /* GXT: $~1~ */, "DSC_BIGM" /* GXT: Distract Cops */, 1, -1, -1082130432, 2, 0);
 			if (BitTest(uLocal_86, 4))
@@ -496,19 +496,19 @@ void func_143()//Position - 0x384A
 		switch (Local_83.f_16)
 		{
 			case 2:
-				__LIB_32__::func_531(2107, 1, -1);
+				__LIB_30__::func_962(2107, 1, -1);
 				break;
 			case 3:
-				__LIB_32__::func_531(2108, 1, -1);
+				__LIB_30__::func_962(2108, 1, -1);
 				break;
 			case 4:
-				__LIB_32__::func_531(2109, 1, -1);
+				__LIB_30__::func_962(2109, 1, -1);
 				break;
 			case 5:
-				__LIB_32__::func_531(2110, 1, -1);
+				__LIB_30__::func_962(2110, 1, -1);
 				break;
 		}
-		__LIB_43__::func_658(0, PLAYER::PLAYER_PED_ID(), "XPT_DSC" /* GXT: Distract Cops */, joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_DISTRACT_COPS"), (Global_262145.f_8566 /* Tunable: XP_REWARD_EVENT_DISTRACT_COPS */ * Local_83.f_16), 1, -1, 0, 0, 0);
+		__LIB_43__::func_615(0, PLAYER::PLAYER_PED_ID(), "XPT_DSC" /* GXT: Distract Cops */, joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_DISTRACT_COPS"), (Global_262145.f_8566 /* Tunable: XP_REWARD_EVENT_DISTRACT_COPS */ * Local_83.f_16), 1, -1, 0, 0, 0);
 		Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_2++;
 		__LIB_0__::func_794(&uLocal_88);
 	}
@@ -579,7 +579,7 @@ void func_204()//Position - 0x5A83
 {
 	if (BitTest(uLocal_86, 2))
 	{
-		__LIB_32__::func_534(1, 1, 0);
+		__LIB_30__::func_965(1, 1, 0);
 		MISC::CLEAR_BIT(&uLocal_86, 2);
 	}
 }
@@ -597,12 +597,12 @@ void func_226()//Position - 0x6018
 
 void func_228(struct<3> Param0, var uParam1, int iParam2, int iParam3)//Position - 0x608D
 {
-	__LIB_23__::func_539(Param0, 0f, 0f, 0f, uParam1, 0, iParam2, iParam3);
+	__LIB_23__::func_549(Param0, 0f, 0f, 0f, uParam1, 0, iParam2, iParam3);
 }
 
 void func_246(struct<3> Param0, float fParam1, int iParam2, int iParam3, int iParam4, int iParam5)//Position - 0x656C
 {
-	__LIB_32__::func_532(Param0, 0f, 0f, 0f, fParam1, 0, iParam2, iParam4, iParam3, iParam5);
+	__LIB_30__::func_963(Param0, 0f, 0f, 0f, fParam1, 0, iParam2, iParam4, iParam3, iParam5);
 }
 
 void func_251()//Position - 0x6658
@@ -655,7 +655,7 @@ void func_268()//Position - 0x6C44
 	}
 	if (BitTest(Local_83.f_1, 1))
 	{
-		__LIB_32__::func_533(12, "DSC_FAIL" /* GXT: Great. Thank you for your help. Now some horrible criminals are in jail for a crime they did commit and it's all your fault!! */, 0, 0, -99);
+		__LIB_30__::func_964(12, "DSC_FAIL" /* GXT: Great. Thank you for your help. Now some horrible criminals are in jail for a crime they did commit and it's all your fault!! */, 0, 0, -99);
 	}
 	func_204();
 	__LIB_1__::func_460(16, 0);

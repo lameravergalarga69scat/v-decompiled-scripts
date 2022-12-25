@@ -96,7 +96,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			AUDIO::TRIGGER_MUSIC_EVENT(Local_36.f_88);
 		}
-		__LIB_39__::func_78(2);
+		__LIB_38__::func_753(2);
 		func_37(&Local_36);
 	}
 	while (true)
@@ -140,7 +140,7 @@ void func_2()//Position - 0x101
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT(Local_36.f_88);
 	}
-	__LIB_39__::func_78(2);
+	__LIB_38__::func_753(2);
 	func_37(&Local_36);
 }
 
@@ -150,7 +150,7 @@ void func_3()//Position - 0x129
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT(Local_36.f_87);
 	}
-	__LIB_39__::func_78(1);
+	__LIB_38__::func_753(1);
 	func_37(&Local_36);
 }
 
@@ -190,7 +190,7 @@ void func_4()//Position - 0x151
 		Local_36.f_0 = 2;
 		Local_36.f_1 = 1;
 	}
-	if (MISC::GET_DISTANCE_BETWEEN_COORDS(__LIB_39__::func_73(Local_36.f_3), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), true) > 300f)
+	if (MISC::GET_DISTANCE_BETWEEN_COORDS(__LIB_38__::func_748(Local_36.f_3), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), true) > 300f)
 	{
 		Local_36.f_0 = 2;
 		Local_36.f_1 = 2;
@@ -699,7 +699,7 @@ void func_27()//Position - 0x12FC
 	switch (Local_36.f_51)
 	{
 		case 0:
-			func_31(&Local_36, __LIB_39__::func_76());
+			func_31(&Local_36, __LIB_38__::func_751());
 			func_30(&Local_36);
 			Local_36.f_51++;
 			break;
@@ -934,7 +934,7 @@ void func_33(var uParam0)//Position - 0x1C30
 
 int func_34()//Position - 0x1CB1
 {
-	return __LIB_39__::func_74(Global_112096.f_20, Global_112096.f_29);
+	return __LIB_38__::func_749(Global_112096.f_20, Global_112096.f_29);
 }
 
 void func_37(var uParam0)//Position - 0x1D11

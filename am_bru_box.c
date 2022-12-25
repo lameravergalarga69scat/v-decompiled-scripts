@@ -2026,7 +2026,7 @@ void func_72(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool bPa
 			}
 			if (__LIB_1__::func_410(Global_2667225.f_489) && iVar8 < 4096)
 			{
-				Var19.f_2 = __LIB_30__::func_488(Param0);
+				Var19.f_2 = __LIB_30__::func_498(Param0);
 			}
 			uVar7 = __LIB_2__::func_993(Param0, 1, 0, 0, 0, 0);
 			Var19.f_4 = { Param0 };
@@ -2076,7 +2076,7 @@ void func_72(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool bPa
 					{
 						if (!bVar21)
 						{
-							fVar2 = __LIB_30__::func_488(Param0);
+							fVar2 = __LIB_30__::func_498(Param0);
 							bVar21 = true;
 						}
 						if (fVar2 < Global_2667225.f_2491.f_6[iVar18 /*10*/].f_2)
@@ -3242,7 +3242,7 @@ void func_192()//Position - 0xA1E0
 
 void func_193()//Position - 0xA214
 {
-	__LIB_33__::func_489(1189, -1);
+	__LIB_31__::func_972(1189, -1);
 }
 
 int func_200()//Position - 0xB0EB
@@ -3259,7 +3259,7 @@ int func_200()//Position - 0xB0EB
 				{
 					HUD::REMOVE_BLIP(&iLocal_65);
 				}
-				if (!__LIB_27__::func_497(1))
+				if (!__LIB_27__::func_507(1))
 				{
 					__LIB_3__::func_452("ABB_BOXCT" /* GXT: ~s~Bull Shark Testosterone Collected. */, 0);
 				}
@@ -3342,7 +3342,7 @@ void func_226()//Position - 0xB715
 	}
 	if (BitTest(Local_60.f_1, 8))
 	{
-		__LIB_28__::func_483();
+		__LIB_28__::func_493();
 	}
 	__LIB_0__::func_202();
 }
@@ -3355,7 +3355,7 @@ void func_229()//Position - 0xB7C4
 		PLAYER::SET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER(PLAYER::PLAYER_ID(), 1f, true);
 		PLAYER::SET_PLAYER_WEAPON_DEFENSE_MODIFIER(PLAYER::PLAYER_ID(), 1f);
 		PLAYER::SET_PLAYER_MELEE_WEAPON_DEFENSE_MODIFIER(PLAYER::PLAYER_ID(), 1f);
-		__LIB_35__::func_722(1);
+		__LIB_34__::func_385(1);
 		MISC::CLEAR_BIT(&uLocal_63, 5);
 		MISC::CLEAR_BIT(&uLocal_63, 7);
 		MISC::CLEAR_BIT(&uLocal_63, 4);

@@ -354,8 +354,8 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::WAIT(0);
 	func_177();
 	func_46();
-	__LIB_17__::func_501();
-	while (iLocal_232 && __LIB_39__::func_36(1, 0))
+	__LIB_17__::func_504();
+	while (iLocal_232 && __LIB_38__::func_711(1, 0))
 	{
 		SYSTEM::WAIT(0);
 		switch (iLocal_65)
@@ -385,7 +385,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 4:
-				__LIB_39__::func_48();
+				__LIB_38__::func_723();
 				break;
 		}
 	}
@@ -1867,15 +1867,15 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 0:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 				case 1:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 				case 2:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -1944,7 +1944,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 0:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					*iParam4 |= 2560;
 					return 1;
 					break;
@@ -1955,7 +1955,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 0:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -1964,7 +1964,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 0:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -2124,7 +2124,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 0:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -2196,7 +2196,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 1:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -2205,7 +2205,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 1:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -2237,7 +2237,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 1:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					*iParam4 |= 2560;
 					return 1;
 					break;
@@ -2282,7 +2282,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 1:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -2291,7 +2291,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 1:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -2843,11 +2843,11 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 6:
-					__LIB_17__::func_298(iParam1, sParam2, "", sParam3, "", iParam5);
+					__LIB_17__::func_301(iParam1, sParam2, "", sParam3, "", iParam5);
 					return 0;
 					break;
 				case 7:
-					__LIB_17__::func_298(iParam1, sParam2, "", sParam3, "", iParam5);
+					__LIB_17__::func_301(iParam1, sParam2, "", sParam3, "", iParam5);
 					return 0;
 					break;
 			}
@@ -3153,7 +3153,7 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 12:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -3255,11 +3255,11 @@ int func_6(int iParam0, int iParam1, char* sParam2, char* sParam3, int iParam4, 
 			switch (iParam0)
 			{
 				case 13:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 				case 14:
-					__LIB_17__::func_348(iParam1, sParam2, sParam3, iParam5);
+					__LIB_17__::func_351(iParam1, sParam2, sParam3, iParam5);
 					return 1;
 					break;
 			}
@@ -3299,7 +3299,7 @@ int func_9()//Position - 0x3F6B
 {
 	float fVar0;
 	int iVar1;
-	if (!__LIB_17__::func_677())
+	if (!__LIB_17__::func_680())
 	{
 		if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(Global_97771))
 		{
@@ -3308,7 +3308,7 @@ int func_9()//Position - 0x3F6B
 			}
 			else if (!iLocal_303)
 			{
-				if (__LIB_39__::func_329(&uLocal_67, "PRSAUD", &Local_299, 3, 0, 0, 0, 0))
+				if (__LIB_39__::func_4(&uLocal_67, "PRSAUD", &Local_299, 3, 0, 0, 0, 0))
 				{
 					iLocal_303 = 1;
 				}
@@ -3349,12 +3349,12 @@ int func_35()//Position - 0x4957
 	int iVar1;
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(&Local_299) && !iLocal_303)
 	{
-		if (__LIB_39__::func_329(&uLocal_67, "PRSAUD", &Local_299, 3, 0, 0, 0, 0))
+		if (__LIB_39__::func_4(&uLocal_67, "PRSAUD", &Local_299, 3, 0, 0, 0, 0))
 		{
 			iLocal_303 = 1;
 		}
 	}
-	if (!__LIB_17__::func_677())
+	if (!__LIB_17__::func_680())
 	{
 		if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(Global_97771))
 		{
@@ -3501,11 +3501,11 @@ void func_46()//Position - 0x4F3C
 		{
 			if (iLocal_234[iVar0] != 145)
 			{
-				__LIB_29__::func_957(iLocal_234[iVar0]);
-				if (!__LIB_37__::func_521(iLocal_234[iVar0]))
+				__LIB_29__::func_967(iLocal_234[iVar0]);
+				if (!__LIB_37__::func_195(iLocal_234[iVar0]))
 				{
 					bVar2 = false;
-					__LIB_29__::func_957(iLocal_234[iVar0]);
+					__LIB_29__::func_967(iLocal_234[iVar0]);
 				}
 			}
 			if (iLocal_240[iVar0] != 0)
@@ -3609,11 +3609,11 @@ int func_47(var uParam0, int iParam1, int iParam2)//Position - 0x5224
 	{
 		case 77:
 		case 78:
-			__LIB_42__::func_654(*uParam0, 85);
+			__LIB_42__::func_529(*uParam0, 85);
 			return 1;
 			break;
 		case 163:
-			__LIB_42__::func_654(*uParam0, 86);
+			__LIB_42__::func_529(*uParam0, 86);
 			return 1;
 			break;
 		case 122:
@@ -3623,32 +3623,32 @@ int func_47(var uParam0, int iParam1, int iParam2)//Position - 0x5224
 		case 94:
 		case 98:
 		case 170:
-			__LIB_42__::func_654(*uParam0, 82);
+			__LIB_42__::func_529(*uParam0, 82);
 			return 1;
 			break;
 		case 151:
-			__LIB_42__::func_654(*uParam0, 80);
+			__LIB_42__::func_529(*uParam0, 80);
 			return 1;
 			break;
 		case 152:
-			__LIB_42__::func_654(*uParam0, 87);
+			__LIB_42__::func_529(*uParam0, 87);
 			return 1;
 			break;
 		case 155:
 		case 161:
-			__LIB_42__::func_654(*uParam0, 80);
+			__LIB_42__::func_529(*uParam0, 80);
 			return 1;
 			break;
 		case 99:
-			__LIB_42__::func_654(*uParam0, 34);
+			__LIB_42__::func_529(*uParam0, 34);
 			return 1;
 			break;
 		case 172:
-			__LIB_42__::func_654(*uParam0, 35);
+			__LIB_42__::func_529(*uParam0, 35);
 			return 1;
 			break;
 		case 100:
-			__LIB_42__::func_654(*uParam0, 36);
+			__LIB_42__::func_529(*uParam0, 36);
 			return 1;
 			break;
 		case 169:
@@ -3656,7 +3656,7 @@ int func_47(var uParam0, int iParam1, int iParam2)//Position - 0x5224
 			return 1;
 			break;
 		case 167:
-			__LIB_42__::func_654(*uParam0, 135);
+			__LIB_42__::func_529(*uParam0, 135);
 			return 1;
 			break;
 		case 101:
@@ -3738,7 +3738,7 @@ int func_47(var uParam0, int iParam1, int iParam2)//Position - 0x5224
 			break;
 		case 296:
 		case 297:
-			__LIB_42__::func_654(*uParam0, 159);
+			__LIB_42__::func_529(*uParam0, 159);
 			return 1;
 			break;
 		case 298:
@@ -3747,11 +3747,11 @@ int func_47(var uParam0, int iParam1, int iParam2)//Position - 0x5224
 			break;
 		case 299:
 		case 302:
-			__LIB_42__::func_654(*uParam0, 161);
+			__LIB_42__::func_529(*uParam0, 161);
 			return 1;
 			break;
 		case 301:
-			__LIB_42__::func_654(*uParam0, 160);
+			__LIB_42__::func_529(*uParam0, 160);
 			return 1;
 			break;
 		case 300:
@@ -3803,15 +3803,15 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 			switch (iParam1)
 			{
 				case 0:
-					__LIB_42__::func_654(iParam0, 131);
+					__LIB_42__::func_529(iParam0, 131);
 					return 1;
 					break;
 				case 1:
-					__LIB_42__::func_654(iParam0, 40);
+					__LIB_42__::func_529(iParam0, 40);
 					return 1;
 					break;
 				case 2:
-					__LIB_42__::func_654(iParam0, 85);
+					__LIB_42__::func_529(iParam0, 85);
 					return 1;
 					break;
 			}
@@ -3820,15 +3820,15 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 			switch (iParam1)
 			{
 				case 0:
-					__LIB_42__::func_654(iParam0, 131);
+					__LIB_42__::func_529(iParam0, 131);
 					return 1;
 					break;
 				case 1:
-					__LIB_42__::func_654(iParam0, 41);
+					__LIB_42__::func_529(iParam0, 41);
 					return 1;
 					break;
 				case 2:
-					__LIB_42__::func_654(iParam0, 81);
+					__LIB_42__::func_529(iParam0, 81);
 					return 1;
 					break;
 			}
@@ -3836,11 +3836,11 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 		case 5:
 		case 8:
 		case 10:
-			__LIB_42__::func_654(iParam0, 131);
+			__LIB_42__::func_529(iParam0, 131);
 			return 1;
 			break;
 		case 21:
-			__LIB_42__::func_654(iParam0, 133);
+			__LIB_42__::func_529(iParam0, 133);
 			return 1;
 			break;
 		case 18:
@@ -3850,14 +3850,14 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 		case 17:
 		case 11:
 		case 24:
-			__LIB_42__::func_654(iParam0, 131);
+			__LIB_42__::func_529(iParam0, 131);
 			return 1;
 			break;
 		case 7:
 		case 22:
 		case 23:
 		case 20:
-			__LIB_42__::func_654(iParam0, 132);
+			__LIB_42__::func_529(iParam0, 132);
 			return 1;
 			break;
 		case 12:
@@ -3867,24 +3867,24 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 			switch (iParam1)
 			{
 				case 0:
-					__LIB_42__::func_654(iParam0, 131);
+					__LIB_42__::func_529(iParam0, 131);
 					return 1;
 					break;
 				case 1:
-					__LIB_42__::func_654(iParam0, 40);
+					__LIB_42__::func_529(iParam0, 40);
 					return 1;
 					break;
 			}
 			break;
 		case 28:
-			__LIB_42__::func_654(iParam0, 37);
+			__LIB_42__::func_529(iParam0, 37);
 			return 1;
 			break;
 		case 43:
 		case 42:
 		case 34:
 		case 38:
-			__LIB_42__::func_654(iParam0, 42);
+			__LIB_42__::func_529(iParam0, 42);
 			return 1;
 			break;
 		case 29:
@@ -3892,52 +3892,52 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 		case 35:
 		case 44:
 		case 45:
-			__LIB_42__::func_654(iParam0, 40);
+			__LIB_42__::func_529(iParam0, 40);
 			return 1;
 			break;
 		case 39:
 		case 40:
-			__LIB_42__::func_654(iParam0, 38);
+			__LIB_42__::func_529(iParam0, 38);
 			return 1;
 			break;
 		case 31:
-			__LIB_42__::func_654(iParam0, 43);
+			__LIB_42__::func_529(iParam0, 43);
 			return 1;
 			break;
 		case 26:
 		case 46:
-			__LIB_42__::func_654(iParam0, 39);
+			__LIB_42__::func_529(iParam0, 39);
 			return 1;
 			break;
 		case 41:
 		case 37:
 		case 27:
 		case 36:
-			__LIB_42__::func_654(iParam0, 34);
+			__LIB_42__::func_529(iParam0, 34);
 			return 1;
 			break;
 		case 33:
 		case 32:
-			__LIB_42__::func_654(iParam0, 41);
+			__LIB_42__::func_529(iParam0, 41);
 			return 1;
 			break;
 		case 54:
 		case 70:
-			__LIB_42__::func_654(iParam0, 87);
+			__LIB_42__::func_529(iParam0, 87);
 			return 1;
 			break;
 		case 48:
 		case 68:
-			__LIB_42__::func_654(iParam0, 84);
+			__LIB_42__::func_529(iParam0, 84);
 			return 1;
 			break;
 		case 65:
 		case 64:
-			__LIB_42__::func_654(iParam0, 85);
+			__LIB_42__::func_529(iParam0, 85);
 			return 1;
 			break;
 		case 66:
-			__LIB_42__::func_654(iParam0, 86);
+			__LIB_42__::func_529(iParam0, 86);
 			return 1;
 			break;
 		case 49:
@@ -3945,7 +3945,7 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 		case 72:
 		case 60:
 		case 73:
-			__LIB_42__::func_654(iParam0, 80);
+			__LIB_42__::func_529(iParam0, 80);
 			return 1;
 			break;
 		case 47:
@@ -3953,11 +3953,11 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 			switch (iParam1)
 			{
 				case 2:
-					__LIB_42__::func_654(iParam0, 81);
+					__LIB_42__::func_529(iParam0, 81);
 					return 1;
 					break;
 				case 1:
-					__LIB_42__::func_654(iParam0, 40);
+					__LIB_42__::func_529(iParam0, 40);
 					return 1;
 					break;
 			}
@@ -3965,22 +3965,22 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 		case 51:
 		case 52:
 		case 67:
-			__LIB_42__::func_654(iParam0, 82);
+			__LIB_42__::func_529(iParam0, 82);
 			return 1;
 			break;
 		case 53:
-			__LIB_42__::func_654(iParam0, 83);
+			__LIB_42__::func_529(iParam0, 83);
 			return 1;
 			break;
 		case 61:
 		case 62:
 		case 55:
-			__LIB_42__::func_654(iParam0, 85);
+			__LIB_42__::func_529(iParam0, 85);
 			return 1;
 			break;
 		case 63:
 		case 71:
-			__LIB_42__::func_654(iParam0, 86);
+			__LIB_42__::func_529(iParam0, 86);
 			return 1;
 			break;
 		case 50:
@@ -3994,11 +3994,11 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 					return 1;
 					break;
 				case 1:
-					__LIB_42__::func_654(iParam0, 37);
+					__LIB_42__::func_529(iParam0, 37);
 					return 1;
 					break;
 				case 2:
-					__LIB_42__::func_654(iParam0, 79);
+					__LIB_42__::func_529(iParam0, 79);
 					return 1;
 					break;
 			}
@@ -4007,32 +4007,32 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 			switch (iParam1)
 			{
 				case 2:
-					__LIB_42__::func_654(iParam0, 81);
+					__LIB_42__::func_529(iParam0, 81);
 					return 1;
 					break;
 				case 1:
-					__LIB_42__::func_654(iParam0, 35);
+					__LIB_42__::func_529(iParam0, 35);
 					return 1;
 					break;
 				case 0:
-					__LIB_42__::func_654(iParam0, 131);
+					__LIB_42__::func_529(iParam0, 131);
 					return 1;
 					break;
 			}
 			break;
 		case 19:
-			__LIB_42__::func_654(iParam0, 134);
+			__LIB_42__::func_529(iParam0, 134);
 			return 1;
 			break;
 		case 25:
 			switch (iParam1)
 			{
 				case 0:
-					__LIB_42__::func_654(iParam0, 134);
+					__LIB_42__::func_529(iParam0, 134);
 					return 1;
 					break;
 				case 1:
-					__LIB_42__::func_654(iParam0, 42);
+					__LIB_42__::func_529(iParam0, 42);
 					return 1;
 					break;
 			}
@@ -4067,12 +4067,12 @@ int func_48(int iParam0, int iParam1, int iParam2)//Position - 0x5630
 		case 134:
 		case 128:
 		case 129:
-			__LIB_42__::func_654(iParam0, 159);
+			__LIB_42__::func_529(iParam0, 159);
 			return 1;
 			break;
 		case 127:
 		case 135:
-			__LIB_42__::func_654(iParam0, 161);
+			__LIB_42__::func_529(iParam0, 161);
 			return 1;
 			break;
 	}
@@ -4654,8 +4654,8 @@ void func_177()//Position - 0x25AAE
 	var uVar5;
 	iLocal_66 = Global_99844;
 	func_182(iLocal_66, &Local_245, &fLocal_246, &cVar0);
-	__LIB_33__::func_604(iLocal_66, &sLocal_249, &cLocal_265, &cLocal_281, &uVar1, &uVar2);
-	__LIB_17__::func_688(iLocal_66, &Local_305, &uVar3, &uLocal_309, &fLocal_310, &uVar4, &fLocal_311, &uVar5);
+	__LIB_32__::func_88(iLocal_66, &sLocal_249, &cLocal_265, &cLocal_281, &uVar1, &uVar2);
+	__LIB_17__::func_691(iLocal_66, &Local_305, &uVar3, &uLocal_309, &fLocal_310, &uVar4, &fLocal_311, &uVar5);
 	switch (iLocal_66)
 	{
 		case 86:
@@ -4708,7 +4708,7 @@ void func_177()//Position - 0x25AAE
 			StringCopy(&(Local_298[0 /*16*/]), "AROUND_THE_TABLE_SELFISH_Amanda", 64);
 			StringCopy(&(Local_297[1 /*16*/]), "AROUND_THE_TABLE_SELFISH_BASE_Tracy", 64);
 			StringCopy(&(Local_298[1 /*16*/]), "AROUND_THE_TABLE_SELFISH_Tracy", 64);
-			Local_299 = { __LIB_17__::func_673("MICS3_IG_12", 3) };
+			Local_299 = { __LIB_17__::func_676("MICS3_IG_12", 3) };
 			fLocal_302 = 0f;
 			break;
 		case 173:
@@ -4755,7 +4755,7 @@ int func_182(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0
 				return 0;
 				break;
 			case 1:
-				__LIB_17__::func_690(&iVar0);
+				__LIB_17__::func_693(&iVar0);
 				if (iVar0 < 5)
 				{
 					*uParam1 = { Global_95644[iVar0 /*9*/].f_3 };
@@ -4830,7 +4830,7 @@ int func_185(int iParam0, var uParam1, char* sParam2)//Position - 0x27CED
 			return 0;
 			break;
 		case 1:
-			__LIB_17__::func_690(&iVar1);
+			__LIB_17__::func_693(&iVar1);
 			if (iVar1 < 5)
 			{
 				*uParam1 = Global_95644[iVar1 /*9*/].f_6;
@@ -4861,17 +4861,17 @@ int func_185(int iParam0, var uParam1, char* sParam2)//Position - 0x27CED
 			break;
 		case 5:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[0];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[0]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[0]), 32);
 			return 1;
 			break;
 		case 6:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[1];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[1]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[1]), 32);
 			return 1;
 			break;
 		case 7:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[2];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[2]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[2]), 32);
 			return 1;
 			break;
 		case 11:
@@ -6865,7 +6865,7 @@ void func_188()//Position - 0x2AE44
 	{
 		if (iLocal_234[iVar0] != 145)
 		{
-			__LIB_38__::func_281(iLocal_234[iVar0]);
+			__LIB_37__::func_956(iLocal_234[iVar0]);
 		}
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(&Local_305) && iLocal_308[iVar0] > 0)
 		{

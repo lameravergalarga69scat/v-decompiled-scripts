@@ -1586,7 +1586,7 @@ void func_248()//Position - 0x27EA9
 						{
 							Local_272 = { 1649.793f, 11.7826f, 172.7745f };
 							fLocal_273 = 220.9923f;
-							__LIB_37__::func_501(Local_272, fLocal_273);
+							__LIB_37__::func_175(Local_272, fLocal_273);
 						}
 						func_250(1660.1857f, -7.492f, 172.774f, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1);
 						MISC::CLEAR_AREA_OF_PEDS(1660.1857f, -7.492f, 172.774f, 200f, 0);
@@ -2065,7 +2065,7 @@ void func_284()//Position - 0x29B44
 
 void func_285(int* iParam0, struct<3> Param1, float fParam2)//Position - 0x29E45
 {
-	__LIB_17__::func_39(iParam0, iLocal_79, Param1, fParam2, 26);
+	__LIB_17__::func_42(iParam0, iLocal_79, Param1, fParam2, 26);
 	PED::SET_PED_DEFAULT_COMPONENT_VARIATION(*iParam0);
 	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(*iParam0, false);
 	PED::SET_PED_NAME_DEBUG(*iParam0, "EXTREME LAUNCHER RC");

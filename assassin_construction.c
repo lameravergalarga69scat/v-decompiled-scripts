@@ -4246,7 +4246,7 @@ void func_221()//Position - 0xA070
 
 int func_222(struct<3> Param0)//Position - 0xA08D
 {
-	if ((((((__LIB_2__::func_485(iLocal_1187, Param0, 1) <= 1.65f && !ENTITY::IS_ENTITY_IN_AIR(iLocal_1187)) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && func_66(3f) == 0) && !__LIB_16__::func_922()) && !PED::IS_PED_JUMPING(iLocal_1187)) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_1187, false))
+	if ((((((__LIB_2__::func_485(iLocal_1187, Param0, 1) <= 1.65f && !ENTITY::IS_ENTITY_IN_AIR(iLocal_1187)) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && func_66(3f) == 0) && !__LIB_16__::func_925()) && !PED::IS_PED_JUMPING(iLocal_1187)) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_1187, false))
 	{
 		return 1;
 	}
@@ -6375,7 +6375,7 @@ void func_354()//Position - 0x1613D
 			if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_1211, 5f, 5f, 2f, true, true, 0))
 			{
 			}
-			if (__LIB_33__::func_273(Local_1211, 5f) && PLAYER::IS_PLAYER_READY_FOR_CUTSCENE(PLAYER::PLAYER_ID()))
+			if (__LIB_31__::func_744(Local_1211, 5f) && PLAYER::IS_PLAYER_READY_FOR_CUTSCENE(PLAYER::PLAYER_ID()))
 			{
 				if (HUD::DOES_BLIP_EXIST(iLocal_1108))
 				{
@@ -6921,7 +6921,7 @@ void func_379()//Position - 0x16F26
 
 void func_380()//Position - 0x17005
 {
-	iLocal_1427 = __LIB_16__::func_303(1);
+	iLocal_1427 = __LIB_16__::func_306(1);
 	if (iLocal_1427 != 0)
 	{
 		WEAPON::GIVE_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), iLocal_1427, 0, false, false);

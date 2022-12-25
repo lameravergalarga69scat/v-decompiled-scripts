@@ -120,12 +120,12 @@ void func_19(bool bParam0)//Position - 0x913
 	{
 		iVar1 = (iLocal_28 + iVar0);
 		__LIB_14__::func_622(iVar1, bParam0, 0);
-		__LIB_39__::func_261(iVar1, 1, 2, 0);
-		__LIB_30__::func_363(iVar1, 1);
-		__LIB_37__::func_738(iVar1, 44);
-		if (((Global_113386.f_2352[iVar0 /*2*/] >= 1 || __LIB_0__::func_425(108) == 1) || __LIB_17__::func_695((iLocal_29 + iVar0), 0)) || BitTest(Global_113386.f_18574[(iLocal_30 + iVar0) /*6*/], 3))
+		__LIB_38__::func_936(iVar1, 1, 2, 0);
+		__LIB_30__::func_373(iVar1, 1);
+		__LIB_37__::func_412(iVar1, 44);
+		if (((Global_113386.f_2352[iVar0 /*2*/] >= 1 || __LIB_0__::func_425(108) == 1) || __LIB_17__::func_698((iLocal_29 + iVar0), 0)) || BitTest(Global_113386.f_18574[(iLocal_30 + iVar0) /*6*/], 3))
 		{
-			__LIB_16__::func_588(iVar1, 1);
+			__LIB_16__::func_591(iVar1, 1);
 		}
 		iVar0++;
 	}

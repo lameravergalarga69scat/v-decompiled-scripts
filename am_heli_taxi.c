@@ -1213,12 +1213,12 @@ void func_1()//Position - 0x255
 				if (!func_341())
 				{
 					__LIB_12__::func_616(13);
-					__LIB_3__::func_79(__LIB_41__::func_47(13), 6, 2, 1);
+					__LIB_3__::func_79(__LIB_40__::func_723(13), 6, 2, 1);
 				}
 				else
 				{
 					__LIB_12__::func_616(44);
-					__LIB_3__::func_79(__LIB_41__::func_47(44), 6, 2, 1);
+					__LIB_3__::func_79(__LIB_40__::func_723(44), 6, 2, 1);
 				}
 				MISC::SET_BIT(&uLocal_131, 7);
 				Local_126.f_0 = 5;
@@ -1238,7 +1238,7 @@ void func_1()//Position - 0x255
 				if (!func_341())
 				{
 					__LIB_0__::func_222(&uLocal_846, 3, 0, "FM_MERRYWEATHER", 0, 1);
-					if (__LIB_42__::func_965(&uLocal_846, 85, "CT_AUD", "MPCT_9", 0, 0))
+					if (__LIB_42__::func_840(&uLocal_846, 85, "CT_AUD", "MPCT_9", 0, 0))
 					{
 						MISC::SET_BIT(&uLocal_131, 5);
 					}
@@ -1249,7 +1249,7 @@ void func_1()//Position - 0x255
 					if (func_7(1))
 					{
 						__LIB_0__::func_222(&uLocal_846, 3, 0, "EXECPA_MALE", 0, 1);
-						if (__LIB_42__::func_965(&uLocal_846, func_2(1), "EXCALAU", "EXCAL_HPROBM", 0, 0))
+						if (__LIB_42__::func_840(&uLocal_846, func_2(1), "EXCALAU", "EXCAL_HPROBM", 0, 0))
 						{
 							MISC::SET_BIT(&uLocal_131, 5);
 						}
@@ -1257,7 +1257,7 @@ void func_1()//Position - 0x255
 					else
 					{
 						__LIB_0__::func_222(&uLocal_846, 2, 0, "EXECPA_FEMALE", 0, 1);
-						if (__LIB_42__::func_965(&uLocal_846, func_2(1), "EXCALAU", "EXCAL_HPROBF", 0, 0))
+						if (__LIB_42__::func_840(&uLocal_846, func_2(1), "EXCALAU", "EXCAL_HPROBF", 0, 0))
 						{
 							MISC::SET_BIT(&uLocal_131, 5);
 						}
@@ -1372,11 +1372,11 @@ int func_152()//Position - 0x540E
 		{
 			if (!func_341())
 			{
-				__LIB_3__::func_79(__LIB_41__::func_47(13), 6, 3, 1);
+				__LIB_3__::func_79(__LIB_40__::func_723(13), 6, 3, 1);
 			}
 			else
 			{
-				__LIB_3__::func_79(__LIB_41__::func_47(44), 6, 3, 1);
+				__LIB_3__::func_79(__LIB_40__::func_723(44), 6, 3, 1);
 			}
 		}
 		return 1;
@@ -1697,7 +1697,7 @@ void func_159()//Position - 0x57C4
 					__LIB_0__::func_794(&uLocal_1029);
 					MISC::CLEAR_BIT(&(Local_126.f_1), 14);
 				}
-				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_861(0))
+				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_871(0))
 				{
 					if (!BitTest(Local_126.f_2, 4) && func_267())
 					{
@@ -1795,7 +1795,7 @@ void func_159()//Position - 0x57C4
 					}
 					Local_126.f_24 = 8;
 				}
-				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_861(0))
+				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_871(0))
 				{
 					MISC::CLEAR_BIT(&(Local_126.f_1), 9);
 					MISC::SET_BIT(&(Local_126.f_1), 12);
@@ -3087,13 +3087,13 @@ int func_248(int iParam0)//Position - 0xB228
 		iVar0 = 0;
 		while (iVar0 < 29)
 		{
-			if (__LIB_33__::func_122(iVar0, -1) == iParam0)
+			if (__LIB_31__::func_584(iVar0, -1) == iParam0)
 			{
 				return 1;
 			}
 			iVar0++;
 		}
-		if (iParam0 == __LIB_33__::func_122(99, -1))
+		if (iParam0 == __LIB_31__::func_584(99, -1))
 		{
 			return 1;
 		}
@@ -3105,7 +3105,7 @@ int func_256(int iParam0)//Position - 0xB9C1
 {
 	if (__LIB_0__::func_156(iParam0, 0, 1))
 	{
-		return __LIB_29__::func_862(__LIB_0__::func_85(iParam0));
+		return __LIB_29__::func_872(__LIB_0__::func_85(iParam0));
 	}
 	return -1;
 }
@@ -3193,7 +3193,7 @@ void func_264()//Position - 0xBC18
 		{
 			Local_126.f_10.f_2 = (Local_126.f_10.f_2 + 40f);
 		}
-		__LIB_25__::func_860(0);
+		__LIB_25__::func_870(0);
 		func_171(Local_126.f_10);
 	}
 }
@@ -3268,7 +3268,7 @@ void func_272()//Position - 0xBE69
 				{
 					Local_126.f_23 = 5;
 				}
-				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_861(0))
+				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_871(0))
 				{
 					Local_126.f_10 = { 0f, 0f, 0f };
 					MISC::CLEAR_BIT(&(Local_126.f_1), 10);
@@ -3299,7 +3299,7 @@ void func_272()//Position - 0xBE69
 						}
 					}
 				}
-				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_861(0))
+				else if (!HUD::IS_WAYPOINT_ACTIVE() || __LIB_25__::func_871(0))
 				{
 					Local_126.f_10 = { 0f, 0f, 0f };
 					MISC::CLEAR_BIT(&(Local_126.f_1), 10);
@@ -3510,7 +3510,7 @@ int func_283(int iParam0)//Position - 0xC87A
 			{
 				return 0;
 			}
-			if (__LIB_2__::func_821(iParam0) && !__LIB_37__::func_716(iParam0))
+			if (__LIB_2__::func_821(iParam0) && !__LIB_37__::func_390(iParam0))
 			{
 				return 0;
 			}
@@ -3544,7 +3544,7 @@ int func_297()//Position - 0xCAE0
 				{
 					if (func_300(bVar0) && func_298())
 					{
-						__LIB_25__::func_860(0);
+						__LIB_25__::func_870(0);
 						func_171(Local_126.f_6);
 						Local_126.f_13 = { 100000f, 100000f, 100000f };
 						return 1;
@@ -4651,7 +4651,7 @@ void func_424()//Position - 0x14B4C
 	__LIB_1__::func_765(1, 2, 1, 1, 1);
 	__LIB_1__::func_766(1, 1, 0, 0, 0);
 	iLocal_110 = 0;
-	Var0 = { __LIB_11__::func_616(__LIB_33__::func_122(5, -1)) };
+	Var0 = { __LIB_11__::func_616(__LIB_31__::func_584(5, -1)) };
 	sVar1 = __LIB_1__::func_601(&Var0);
 	bLocal_119 = func_383();
 	bLocal_120 = func_379();
@@ -4985,7 +4985,7 @@ int func_455()//Position - 0x16A20
 
 bool func_456()//Position - 0x16ABC
 {
-	return __LIB_33__::func_122(5, -1) > 0;
+	return __LIB_31__::func_584(5, -1) > 0;
 }
 
 void func_459()//Position - 0x16B7B
@@ -5551,7 +5551,7 @@ void func_497(bool bParam0)//Position - 0x1824C
 		func_461();
 	}
 	func_462();
-	__LIB_25__::func_860(0);
+	__LIB_25__::func_870(0);
 	if (func_277())
 	{
 		if (__LIB_3__::func_56("HTX_HELPN" /* GXT: ~s~The helicopter ~a~ ~s~will take you to the location of your waypoint.~n~Open up the Map screen from the Pause Menu ~INPUT_FRONTEND_PAUSE~ and press ~INPUT_FRONTEND_ACCEPT~ to place a waypoint. */, "GB_HELI_BLIP" /* GXT: ~BLIP_HELICOPTER~ */))

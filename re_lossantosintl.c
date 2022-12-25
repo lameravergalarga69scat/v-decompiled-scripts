@@ -172,7 +172,7 @@ void func_1()//Position - 0x11A
 				{
 					func_3(1);
 				}
-				__LIB_39__::func_394(&(iLocal_49[iVar0]), &(iLocal_51[iVar0]));
+				__LIB_39__::func_69(&(iLocal_49[iVar0]), &(iLocal_51[iVar0]));
 				ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&(iLocal_49[iVar0]));
 				ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&(iLocal_51[iVar0]));
 			}
@@ -188,7 +188,7 @@ void func_1()//Position - 0x11A
 		}
 		else
 		{
-			__LIB_39__::func_394(&iLocal_50, &iLocal_52);
+			__LIB_39__::func_69(&iLocal_50, &iLocal_52);
 			ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_50);
 			ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_52);
 		}

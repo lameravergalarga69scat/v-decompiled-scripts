@@ -514,9 +514,9 @@ char* func_11()//Position - 0x55B
 int func_12(int iParam0)//Position - 0x565
 {
 	int iVar0;
-	if (!__LIB_41__::func_258(PLAYER::PLAYER_ID(), iParam0, 0))
+	if (!__LIB_40__::func_936(PLAYER::PLAYER_ID(), iParam0, 0))
 	{
-		iVar0 = __LIB_33__::func_253(PLAYER::PLAYER_ID(), iParam0, 0);
+		iVar0 = __LIB_31__::func_723(PLAYER::PLAYER_ID(), iParam0, 0);
 		if (iVar0 == 7)
 		{
 			if (__LIB_1__::func_802(PLAYER::PLAYER_ID()))
@@ -662,7 +662,7 @@ void func_203(int iParam0, bool bParam1)//Position - 0x8BA1
 		}
 		func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, &Var1, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, &Var2);
 	}
-	else if (__LIB_36__::func_534())
+	else if (__LIB_36__::func_190())
 	{
 		func_198("HAPP_SELL_T" /* GXT: SELL CARGO */, "HAPP_SELL_C3" /* GXT: There is a short waiting period while Ron searches for Buyers before you can sell additional Cargo from the Hangar. */, "OR_OVRLY_OK" /* GXT: Ok */, "", 1, 0, -1, 0, -1, 0);
 	}
@@ -781,7 +781,7 @@ int func_215(int iParam0)//Position - 0x90F6
 	switch (iParam0)
 	{
 		case 8:
-			return !__LIB_33__::func_250(PLAYER::PLAYER_ID());
+			return !__LIB_31__::func_720(PLAYER::PLAYER_ID());
 		default:
 	}
 	return uLocal_297[func_217(iParam0)] > 0;
@@ -957,7 +957,7 @@ void func_226(int iParam0, bool bParam1)//Position - 0x9481
 		iVar0 = func_211();
 	}
 	Global_1944113.f_53 = 0;
-	__LIB_33__::func_251(iParam0, 0, iVar0);
+	__LIB_31__::func_721(iParam0, 0, iVar0);
 	__LIB_4__::func_796(1);
 	Global_1946108 = 1;
 	MISC::SET_BIT(&uLocal_109, 2);
@@ -975,7 +975,7 @@ bool func_246(bool bParam0)//Position - 0x9839
 	{
 		return 1;
 	}
-	while (!__LIB_33__::func_252(&iVar0, bParam0))
+	while (!__LIB_31__::func_722(&iVar0, bParam0))
 	{
 		func_325();
 		SYSTEM::WAIT(0);
@@ -1012,7 +1012,7 @@ void func_270()//Position - 0xA832
 
 void func_272()//Position - 0xA887
 {
-	if (iLocal_113 != __LIB_36__::func_538())
+	if (iLocal_113 != __LIB_36__::func_194())
 	{
 		if (!__LIB_0__::func_864(&uLocal_130))
 		{
@@ -1048,7 +1048,7 @@ void func_273()//Position - 0xA8C4
 
 void func_274()//Position - 0xA90F
 {
-	if (__LIB_36__::func_534())
+	if (__LIB_36__::func_190())
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_300, "UPDATE_SELL_COOLDOWN");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_276(Global_2789376.f_26, Global_2789376.f_28));
@@ -1150,7 +1150,7 @@ void func_279()//Position - 0xAA98
 	iVar4 = func_287();
 	iVar5 = func_286();
 	iVar6 = func_285();
-	iLocal_113 = __LIB_36__::func_538();
+	iLocal_113 = __LIB_36__::func_194();
 	iVar7 = 50;
 	iVar8 = (iLocal_113 * __LIB_13__::func_538(8));
 	fVar9 = func_283(iVar2, func_284());
@@ -1270,7 +1270,7 @@ void func_301()//Position - 0xAF61
 	while (iVar0 < 9)
 	{
 		iVar1 = func_212(iVar0);
-		uLocal_297[iVar0] = __LIB_36__::func_545(iVar1);
+		uLocal_297[iVar0] = __LIB_36__::func_201(iVar1);
 		iVar0++;
 	}
 }

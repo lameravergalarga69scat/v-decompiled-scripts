@@ -232,7 +232,7 @@ void func_7()//Position - 0x291
 			if (func_15())
 			{
 				func_60(3);
-				__LIB_26__::func_272(0);
+				__LIB_26__::func_282(0);
 			}
 			if (!__LIB_0__::func_939(Local_77.f_1))
 			{
@@ -803,7 +803,7 @@ void func_71()//Position - 0x2008
 	iVar1 = PLAYER::PLAYER_ID();
 	iVar3 = NETWORK::NET_TO_PED(Local_77.f_1.f_3[0 /*2*/]);
 	iVar4 = NETWORK::NET_TO_VEH(Local_77.f_1);
-	iVar5 = __LIB_30__::func_396(PLAYER::PLAYER_ID());
+	iVar5 = __LIB_30__::func_406(PLAYER::PLAYER_ID());
 	iVar6 = PLAYER::GET_PLAYER_PED(iVar5);
 	iLocal_75 = __LIB_0__::func_162();
 	iLocal_76++;
@@ -895,13 +895,13 @@ void func_84()//Position - 0x2360
 	Global_2703735.f_3690.f_5 = 0f;
 	Global_2703735.f_3690.f_6 = 0;
 	Global_2703735.f_3690.f_7 = 0;
-	__LIB_26__::func_383(0);
+	__LIB_26__::func_393(0);
 	__LIB_0__::func_202();
 }
 
 void func_96(struct<21> Param0)//Position - 0x253F
 {
-	__LIB_26__::func_383(0);
+	__LIB_26__::func_393(0);
 	__LIB_0__::func_935(32, Param0);
 	NETWORK::RESERVE_NETWORK_MISSION_PEDS(2);
 	NETWORK::RESERVE_NETWORK_MISSION_VEHICLES(1);

@@ -15,9 +15,9 @@ void __EntryFunction__()//Position - 0x0
 		case 1:
 			if (ScriptParam_0.f_1 == -1931845307)
 			{
-				__LIB_38__::func_824(1, 0, -1705870862, 25, 1, "PM_PANE_AUD" /* GXT: Audio */, 0, 0);
-				__LIB_38__::func_824(1, 1, -1705870862, 50, 1, "PM_PANE_DIS" /* GXT: Display */, 0, 0);
-				__LIB_37__::func_847(1);
+				__LIB_38__::func_499(1, 0, -1705870862, 25, 1, "PM_PANE_AUD" /* GXT: Audio */, 0, 0);
+				__LIB_38__::func_499(1, 1, -1705870862, 50, 1, "PM_PANE_DIS" /* GXT: Display */, 0, 0);
+				__LIB_37__::func_521(1);
 			}
 			if (ScriptParam_0.f_1 == -1705871862)
 			{

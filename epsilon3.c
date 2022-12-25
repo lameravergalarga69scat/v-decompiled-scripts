@@ -307,7 +307,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_81 = { ScriptParam_271 };
 	__LIB_14__::func_801(&Local_81);
 	MISC::SET_MISSION_FLAG(true);
-	iLocal_257 = __LIB_17__::func_30();
+	iLocal_257 = __LIB_17__::func_33();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(19))
 	{
 		__LIB_0__::func_135("Force cleanup [TERMINATING]");
@@ -336,7 +336,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (!CUTSCENE::IS_CUTSCENE_ACTIVE())
 		{
-			__LIB_17__::func_414("EP_3_RCM_ALT1", 1);
+			__LIB_17__::func_417("EP_3_RCM_ALT1", 1);
 		}
 	}
 	__LIB_0__::func_712(60, 0, 0);
@@ -518,9 +518,9 @@ void func_28()//Position - 0xBCE
 			{
 				if (AUDIO::TRIGGER_MUSIC_EVENT("EPS3_STOP"))
 				{
-					__LIB_17__::func_11(2, 0);
-					__LIB_17__::func_17(2, 0, 1);
-					__LIB_17__::func_29(2, "EPS_1STEMAIL" /* GXT: Brother,~n~~n~These are the vehicles that the higher beings require:~n~Pegassi Vacca ~nrt~<img src='img://Epsilon_Cars/Eps3Vacca' vspace='0' height='128' width='244'/>~nrt~~n~Benefactor Surano ~nrt~<img src='img://Epsilon_Cars/Eps3Surano' vspace='0' height='128' width='244'/>~nrt~~n~Declasse Tornado ~nrt~<img src='img://Epsilon_Cars/Eps3Tornado2' vspace='0' height='128' width='244'/>~nrt~~n~Enus Super Diamond ~nrt~<img src='img://Epsilon_Cars/Eps3SuperD' vspace='0' height='128' width='244'/>~nrt~~n~Dinka Double-T ~nrt~<img src='img://Epsilon_Cars/Eps3Carbon' vspace='0' height='128' width='244'/>~nrt~~n~~n~Make sure these vehicles are delivered in a condition befitting the level of divine understanding that our thesis holders have reached.  Carry out this small task for us and you will be rewarded with knowledge of infinitely greater value.  Kraff be praised! */, 1);
+					__LIB_17__::func_14(2, 0);
+					__LIB_17__::func_20(2, 0, 1);
+					__LIB_17__::func_32(2, "EPS_1STEMAIL" /* GXT: Brother,~n~~n~These are the vehicles that the higher beings require:~n~Pegassi Vacca ~nrt~<img src='img://Epsilon_Cars/Eps3Vacca' vspace='0' height='128' width='244'/>~nrt~~n~Benefactor Surano ~nrt~<img src='img://Epsilon_Cars/Eps3Surano' vspace='0' height='128' width='244'/>~nrt~~n~Declasse Tornado ~nrt~<img src='img://Epsilon_Cars/Eps3Tornado2' vspace='0' height='128' width='244'/>~nrt~~n~Enus Super Diamond ~nrt~<img src='img://Epsilon_Cars/Eps3SuperD' vspace='0' height='128' width='244'/>~nrt~~n~Dinka Double-T ~nrt~<img src='img://Epsilon_Cars/Eps3Carbon' vspace='0' height='128' width='244'/>~nrt~~n~~n~Make sure these vehicles are delivered in a condition befitting the level of divine understanding that our thesis holders have reached.  Carry out this small task for us and you will be rewarded with knowledge of infinitely greater value.  Kraff be praised! */, 1);
 					func_29();
 				}
 			}
@@ -1263,13 +1263,13 @@ void func_243()//Position - 0x28B4E
 				{
 					__LIB_0__::func_433(0, -1, 1);
 				}
-				__LIB_17__::func_414("EP_3_RCM_ALT1", 0);
+				__LIB_17__::func_417("EP_3_RCM_ALT1", 0);
 				HUD::REQUEST_ADDITIONAL_TEXT("EPS3", 0);
 				while (!CUTSCENE::HAS_CUTSCENE_LOADED() && !HUD::HAS_ADDITIONAL_TEXT_LOADED(0))
 				{
 					SYSTEM::WAIT(0);
 				}
-				__LIB_17__::func_415(0, 0, 0);
+				__LIB_17__::func_418(0, 0, 0);
 			}
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 			{
@@ -1330,7 +1330,7 @@ void func_243()//Position - 0x28B4E
 			}
 			if (CUTSCENE::HAS_CUTSCENE_FINISHED())
 			{
-				__LIB_17__::func_112(1, 1, 1, 1);
+				__LIB_17__::func_115(1, 1, 1, 1);
 				iLocal_84 = 3;
 			}
 			else if (!iLocal_259)
@@ -1349,9 +1349,9 @@ void func_243()//Position - 0x28B4E
 			__LIB_14__::func_806(250, 0);
 			if (CUTSCENE::IS_CUTSCENE_PLAYING())
 			{
-				__LIB_17__::func_416(1, 1, 1);
+				__LIB_17__::func_419(1, 1, 1);
 			}
-			__LIB_17__::func_112(1, 1, 1, 1);
+			__LIB_17__::func_115(1, 1, 1, 1);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 			if (__LIB_0__::func_121(Local_81.f_28[0]))
@@ -1385,7 +1385,7 @@ void func_258(struct<3> Param0, int iParam1, int iParam2, int iParam3, int iPara
 	iVar0 = PLAYER::GET_PLAYER_INDEX();
 	if (PLAYER::IS_PLAYER_PLAYING(iVar0))
 	{
-		__LIB_17__::func_111(0);
+		__LIB_17__::func_114(0);
 		if (bParam7)
 		{
 			PLAYER::REMOVE_PLAYER_HELMET(PLAYER::GET_PLAYER_INDEX(), true);
@@ -1634,7 +1634,7 @@ int func_319(var uParam0)//Position - 0x2B918
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmepsilonism3", "base_loop", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmepsilonism3", "base_loop", 0);
 			iLocal_77 = 1;
 			break;
 		case 1:

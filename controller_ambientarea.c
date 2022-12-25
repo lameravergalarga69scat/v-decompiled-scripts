@@ -145,7 +145,7 @@ void func_1(int iParam0)//Position - 0x14A
 			bVar3 = false;
 			break;
 	}
-	if (!bVar3 && __LIB_16__::func_610())
+	if (!bVar3 && __LIB_16__::func_613())
 	{
 		return;
 	}

@@ -630,7 +630,7 @@ void func_61(struct<21> Param0)//Position - 0x1A50
 				Global_2815059.f_4451 = 0;
 			}
 			VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_61.f_4, true);
-			Local_61.f_5 = __LIB_16__::func_818(1);
+			Local_61.f_5 = __LIB_16__::func_821(1);
 		}
 		__LIB_1__::func_460(9, 1);
 		AUDIO::START_AUDIO_SCENE("JOYRIDER_RADIO_SCENE");

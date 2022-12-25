@@ -16,7 +16,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_40__::func_811();
+		__LIB_40__::func_487();
 	}
 	VEHICLE::SET_RANDOM_TRAINS(false);
 	VEHICLE::DELETE_ALL_TRAINS();
@@ -63,7 +63,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 			if (bLocal_6)
 			{
-				__LIB_40__::func_811();
+				__LIB_40__::func_487();
 			}
 		}
 	}

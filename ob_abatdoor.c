@@ -117,7 +117,7 @@ void func_4()//Position - 0x2C7
 		OBJECT::DELETE_OBJECT(&iLocal_3);
 	}
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_abat_roller_1_col"));
-	__LIB_38__::func_718("ob_abatdoor Terminated >>>>>>>>>>>>>>>>>\n");
+	__LIB_38__::func_393("ob_abatdoor Terminated >>>>>>>>>>>>>>>>>\n");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

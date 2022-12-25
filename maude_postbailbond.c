@@ -165,7 +165,7 @@ void func_12(struct<3> Param0, struct<3> Param1)//Position - 0x42D
 		{
 			if (SYSTEM::VDIST2(Param1, Param0) < (35f * 35f))
 			{
-				__LIB_38__::func_809(&iLocal_42, "GENERIC_FRIGHTENED_HIGH", "MAUDE", 3);
+				__LIB_38__::func_484(&iLocal_42, "GENERIC_FRIGHTENED_HIGH", "MAUDE", 3);
 			}
 		}
 	}
@@ -277,7 +277,7 @@ int func_25(int iParam0, bool bParam1)//Position - 0x82A
 		{
 			return 1;
 		}
-		if (__LIB_37__::func_636(*iParam0, 1126825984))
+		if (__LIB_37__::func_310(*iParam0, 1126825984))
 		{
 			return 1;
 		}

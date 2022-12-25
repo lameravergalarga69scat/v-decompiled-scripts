@@ -63,7 +63,7 @@ void func_1()//Position - 0x5C
 					SYSTEM::WAIT(0);
 					HUD::DISPLAY_RADAR(false);
 					HUD::DISPLAY_HUD(false);
-					__LIB_43__::func_593();
+					__LIB_43__::func_550();
 					func_10(0, 1, 0);
 					iLocal_21 = 1;
 					__LIB_1__::func_33(0);
@@ -82,7 +82,7 @@ void func_1()//Position - 0x5C
 				}
 				break;
 			case 1:
-				__LIB_39__::func_777();
+				__LIB_39__::func_453();
 				HUD::DISPLAY_RADAR(true);
 				HUD::DISPLAY_HUD(true);
 				Global_8140 = 0;
@@ -108,7 +108,7 @@ void func_10(bool bParam0, bool bParam1, bool bParam2)//Position - 0x315
 	var uVar0;
 	var uVar1;
 	__LIB_15__::func_213();
-	__LIB_38__::func_368();
+	__LIB_38__::func_43();
 	func_57();
 	if (bParam2)
 	{
@@ -150,7 +150,7 @@ void func_11(int iParam0, bool bParam1)//Position - 0x3B8
 	func_49(iParam0);
 	__LIB_15__::func_220(iParam0, 0);
 	__LIB_14__::func_624(iParam0);
-	__LIB_16__::func_896(iParam0);
+	__LIB_16__::func_899(iParam0);
 }
 
 void func_49(int iParam0)//Position - 0x4CBA
@@ -231,7 +231,7 @@ void func_57()//Position - 0x51CB
 	struct<4> Var3;
 	struct<3> Var4;
 	int iVar5;
-	__LIB_37__::func_256(PLAYER::PLAYER_PED_ID(), 1);
+	__LIB_36__::func_930(PLAYER::PLAYER_PED_ID(), 1);
 	func_60(PLAYER::PLAYER_PED_ID(), 0);
 	iVar0 = 0;
 	while (iVar0 < 9)
@@ -313,7 +313,7 @@ void func_60(int iParam0, int iParam1)//Position - 0x5539
 			Global_100166[iVar0 /*65*/] = { Var2 };
 			if (iParam0 == PLAYER::PLAYER_PED_ID())
 			{
-				__LIB_15__::func_981();
+				__LIB_15__::func_983();
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{

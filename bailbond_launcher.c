@@ -322,7 +322,7 @@ void __EntryFunction__()//Position - 0x0
 								func_147(Local_43.f_4);
 								if (!__LIB_0__::func_323())
 								{
-									__LIB_41__::func_340(SCRIPT::GET_THIS_SCRIPT_NAME(), 1);
+									__LIB_41__::func_18(SCRIPT::GET_THIS_SCRIPT_NAME(), 1);
 								}
 								Global_113386.f_24986.f_2 = 2;
 							}
@@ -425,11 +425,11 @@ int func_4()//Position - 0x3FC
 	iVar0 = 79;
 	sVar1 = "BBONDS_DMAIL_K5" /* GXT: I can only assume it was you, Trevor, who sent that malefactor to hell early?~n~~a~ */;
 	sVar2 = "BBONDS_DMAIL_C5" /* GXT: Well, in any case, I regret to inform you that our partnership has come to an end.  I've decided to get out of this distasteful business and strike out in search of pursuits more savoury.  You'll always have a rare and special place in my heart.  Good luck and goodbye. */;
-	if (__LIB_17__::func_17(26, iVar0, 1))
+	if (__LIB_17__::func_20(26, iVar0, 1))
 	{
-		__LIB_17__::func_29(26, sVar1, 0);
-		__LIB_17__::func_10(26, sVar2);
-		__LIB_17__::func_16(26);
+		__LIB_17__::func_32(26, sVar1, 0);
+		__LIB_17__::func_13(26, sVar2);
+		__LIB_17__::func_19(26);
 		return 1;
 	}
 	return 0;
@@ -442,18 +442,18 @@ void func_28(int iParam0)//Position - 0x1E62
 	{
 		case 1:
 		case 2:
-			MISC::SET_BIT(&(Global_113386.f_24986), __LIB_18__::func_292(Local_43.f_4));
+			MISC::SET_BIT(&(Global_113386.f_24986), __LIB_18__::func_302(Local_43.f_4));
 			if (iParam0 == 1)
 			{
 				func_72(0);
 				iVar0 = 8;
-				MISC::SET_BIT(&(Global_113386.f_24986), __LIB_31__::func_538(Local_43.f_4));
+				MISC::SET_BIT(&(Global_113386.f_24986), __LIB_35__::func_414(Local_43.f_4));
 			}
 			else
 			{
 				func_72(1);
 				iVar0 = 4;
-				MISC::CLEAR_BIT(&(Global_113386.f_24986), __LIB_31__::func_538(Local_43.f_4));
+				MISC::CLEAR_BIT(&(Global_113386.f_24986), __LIB_35__::func_414(Local_43.f_4));
 				__LIB_14__::func_593(2, 95, 10000, 0, 0);
 				if (Global_94618 == 0)
 				{
@@ -466,7 +466,7 @@ void func_28(int iParam0)//Position - 0x1E62
 			__LIB_0__::func_56(&(Local_43.f_6));
 			if (func_36())
 			{
-				if (BitTest(Global_113386.f_24986, __LIB_31__::func_538(Local_43.f_4)))
+				if (BitTest(Global_113386.f_24986, __LIB_35__::func_414(Local_43.f_4)))
 				{
 					iLocal_212 = __LIB_11__::func_762();
 					__LIB_13__::func_827(&iLocal_212, 0, 0, iVar0, 0, 0, 0);
@@ -549,7 +549,7 @@ void func_30()//Position - 0x209D
 	Local_43.f_6 = -1;
 	iVar0 = Global_113386.f_24986.f_1;
 	iVar0 = (iVar0 - 1);
-	if (iVar0 >= 0 && BitTest(Global_113386.f_24986, __LIB_31__::func_538(iVar0)))
+	if (iVar0 >= 0 && BitTest(Global_113386.f_24986, __LIB_35__::func_414(iVar0)))
 	{
 		Local_43.f_5 = 1;
 	}
@@ -664,7 +664,7 @@ void func_74(int iParam0)//Position - 0x30DD
 				if (func_223(4, 62, 2, -1, 0))
 				{
 					iVar0 = func_75(iParam0);
-					if (__LIB_17__::func_17(26, iVar0, 0))
+					if (__LIB_17__::func_20(26, iVar0, 0))
 					{
 						MISC::SET_BIT(&(Global_113386.f_24986), 9);
 					}
@@ -806,11 +806,11 @@ int func_220(int iParam0, bool bParam1)//Position - 0xD7A8
 	iVar0 = __LIB_14__::func_710(iParam0);
 	sVar1 = func_222(iParam0, bParam1);
 	sVar2 = func_221(iParam0);
-	if (__LIB_17__::func_17(26, iVar0, 1))
+	if (__LIB_17__::func_20(26, iVar0, 1))
 	{
-		__LIB_17__::func_29(26, sVar1, 0);
-		__LIB_17__::func_10(26, sVar2);
-		__LIB_17__::func_16(26);
+		__LIB_17__::func_32(26, sVar1, 0);
+		__LIB_17__::func_13(26, sVar2);
+		__LIB_17__::func_19(26);
 		return 1;
 	}
 	return 0;
@@ -980,7 +980,7 @@ int func_223(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//P
 		{
 			return 0;
 		}
-		if (__LIB_16__::func_606(50f, 1) != -1)
+		if (__LIB_16__::func_609(50f, 1) != -1)
 		{
 			return 0;
 		}

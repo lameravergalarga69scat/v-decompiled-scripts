@@ -93,7 +93,7 @@ void __EntryFunction__()//Position - 0x0
 								}
 								if (ENTITY::DOES_ENTITY_EXIST(iLocal_29))
 								{
-									if (__LIB_25__::func_513(&iLocal_30, 1000))
+									if (__LIB_25__::func_523(&iLocal_30, 1000))
 									{
 										if (VEHICLE::IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER(iLocal_28, iLocal_29))
 										{

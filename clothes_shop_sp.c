@@ -326,21 +326,21 @@ void __EntryFunction__()//Position - 0x0
 	Local_102.f_507 = 1525604/*func_1420*/;
 	Local_102.f_508 = 1525443/*func_1419*/;
 	Local_102.f_509 = 1523069/*func_1416*/;
-	Local_102.f_511 = 1523029/*func_1415*/;
-	Local_102.f_512 = 1522989/*func_1414*/;
+	Local_102.f_511 = 1523029/*__LIB_16__::func_848*/;
+	Local_102.f_512 = 1522989/*__LIB_12__::func_460*/;
 	Local_102.f_510 = 1521845/*func_1412*/;
-	Local_102.f_513 = 1444827/*func_1356*/;
-	Local_102.f_514 = 1444109/*func_1354*/;
+	Local_102.f_513 = 1444827/*__LIB_12__::func_14*/;
+	Local_102.f_514 = 1444109/*__LIB_40__::func_688*/;
 	Local_102.f_515 = 1442756/*func_1349*/;
-	Local_102.f_516 = 1442748/*func_1348*/;
-	Local_102.f_517 = 1437943/*func_1343*/;
-	Local_102.f_518 = 1437728/*func_1342*/;
-	Local_102.f_519 = 1426623/*func_1330*/;
+	Local_102.f_516 = 1442748/*__LIB_0__::func_467*/;
+	Local_102.f_517 = 1437943/*__LIB_16__::func_225*/;
+	Local_102.f_518 = 1437728/*__LIB_40__::func_687*/;
+	Local_102.f_519 = 1426623/*__LIB_43__::func_612*/;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(66))
 	{
 		func_1320(&Local_102, 0);
 	}
-	__LIB_16__::func_504(&uLocal_80, Local_102.f_520, 0);
+	__LIB_16__::func_507(&uLocal_80, Local_102.f_520, 0);
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -354,7 +354,7 @@ void func_1(var uParam0)//Position - 0x15E
 	int iVar1;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		__LIB_16__::func_556(*uParam0);
+		__LIB_16__::func_559(*uParam0);
 		if (BitTest(Global_1835502.f_3, 4))
 		{
 			if (!iLocal_79)
@@ -365,7 +365,7 @@ void func_1(var uParam0)//Position - 0x15E
 					{
 						ENTITY::SET_ENTITY_CAN_BE_DAMAGED(uParam0->f_12, false);
 					}
-					__LIB_16__::func_555(*uParam0, 1);
+					__LIB_16__::func_558(*uParam0, 1);
 					iLocal_79 = 1;
 				}
 			}
@@ -379,71 +379,71 @@ void func_1(var uParam0)//Position - 0x15E
 					ENTITY::SET_ENTITY_CAN_BE_DAMAGED(uParam0->f_12, true);
 				}
 				iLocal_79 = 0;
-				__LIB_16__::func_555(*uParam0, 0);
+				__LIB_16__::func_558(*uParam0, 0);
 			}
 		}
 	}
-	__LIB_16__::func_503(&(uParam0->f_12));
+	__LIB_16__::func_506(&(uParam0->f_12));
 	if (__LIB_9__::func_354(1))
 	{
 		iLocal_78 = 1;
 	}
-	if (__LIB_15__::func_117(uParam0->f_520) && !__LIB_16__::func_568(uParam0, uParam0->f_520))
+	if (__LIB_15__::func_117(uParam0->f_520) && !__LIB_16__::func_571(uParam0, uParam0->f_520))
 	{
-		if (__LIB_16__::func_502(uParam0))
+		if (__LIB_16__::func_505(uParam0))
 		{
 			PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(2 /*FRONTEND_CONTROL*/);
 			PAD::ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(0 /*PLAYER_CONTROL*/);
-			__LIB_33__::func_441(uParam0);
+			__LIB_31__::func_924(uParam0);
 			if (*uParam0 != 21)
 			{
 				iVar0 = 0;
-				__LIB_16__::func_567(uParam0, &iVar0, 0, 0);
+				__LIB_16__::func_570(uParam0, &iVar0, 0, 0);
 			}
 			else if (uParam0->f_9)
 			{
-				__LIB_33__::func_440(uParam0);
+				__LIB_31__::func_923(uParam0);
 			}
-			__LIB_41__::func_335(uParam0, &(uParam0->f_116));
+			__LIB_41__::func_13(uParam0, &(uParam0->f_116));
 			if (uParam0->f_9)
 			{
 				if (!__LIB_14__::func_479(*uParam0))
 				{
-					__LIB_33__::func_439(uParam0, &(uParam0->f_116), 0);
+					__LIB_31__::func_922(uParam0, &(uParam0->f_116), 0);
 				}
 			}
 			func_1267(uParam0);
-			__LIB_16__::func_499(uParam0);
+			__LIB_16__::func_502(uParam0);
 			func_1239(uParam0);
-			__LIB_16__::func_493(uParam0);
-			__LIB_33__::func_436(uParam0);
-			__LIB_43__::func_712(uParam0);
-			__LIB_16__::func_492(uParam0);
-			__LIB_33__::func_435(uParam0->f_520, &(uParam0->f_12));
+			__LIB_16__::func_496(uParam0);
+			__LIB_31__::func_919(uParam0);
+			__LIB_43__::func_669(uParam0);
+			__LIB_16__::func_495(uParam0);
+			__LIB_31__::func_918(uParam0->f_520, &(uParam0->f_12));
 			switch (uParam0->f_11)
 			{
 				case 0:
 					func_1195(uParam0);
 					break;
 				case 1:
-					__LIB_16__::func_554(0);
-					__LIB_33__::func_433(uParam0);
+					__LIB_16__::func_557(0);
+					__LIB_31__::func_916(uParam0);
 					if (uParam0->f_11 == 2)
 					{
-						__LIB_43__::func_84(uParam0);
+						__LIB_42__::func_967(uParam0);
 					}
 					break;
 				case 2:
-					__LIB_43__::func_84(uParam0);
-					__LIB_16__::func_566(uParam0, &(uParam0->f_116));
+					__LIB_42__::func_967(uParam0);
+					__LIB_16__::func_569(uParam0, &(uParam0->f_116));
 					break;
 				case 3:
 					func_1144(uParam0);
-					__LIB_33__::func_429(uParam0);
+					__LIB_31__::func_912(uParam0);
 					break;
 				case 4:
 					func_158(uParam0);
-					__LIB_16__::func_566(uParam0, &(uParam0->f_116));
+					__LIB_16__::func_569(uParam0, &(uParam0->f_116));
 					break;
 				case 5:
 					uParam0->f_11 = 1;
@@ -461,7 +461,7 @@ void func_1(var uParam0)//Position - 0x15E
 	}
 	if (BitTest(uParam0->f_555, 14))
 	{
-		__LIB_16__::func_378(-1, "SHOPFLAG_bApplyTattoosAndPatches");
+		__LIB_16__::func_381(-1, "SHOPFLAG_bApplyTattoosAndPatches");
 		iVar1 = PLAYER::PLAYER_PED_ID();
 		if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_617.f_2) && !PED::IS_PED_INJURED(uParam0->f_617.f_2))
 		{
@@ -473,7 +473,7 @@ void func_1(var uParam0)//Position - 0x15E
 			{
 				if (BitTest(uParam0->f_555, 16))
 				{
-					__LIB_16__::func_378(uParam0->f_690, "SHOPFLAG_bDeclIsPreview");
+					__LIB_16__::func_381(uParam0->f_690, "SHOPFLAG_bDeclIsPreview");
 					func_147(&iVar1, uParam0->f_690, -1, 0);
 				}
 				else
@@ -483,14 +483,14 @@ void func_1(var uParam0)//Position - 0x15E
 			}
 			if (BitTest(uParam0->f_555, 15))
 			{
-				if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522)) && !Global_4538835)
+				if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522)) && !Global_4538835)
 				{
 				}
 				else if (((uParam0->f_522 != 1 && uParam0->f_116.f_1 != -1) && Global_4536478[uParam0->f_116.f_1] != 0) && !BitTest(uParam0->f_557, 0))
 				{
 					func_18(iVar1, uParam0->f_689, uParam0->f_688, BitTest(uParam0->f_555, 28), Global_4536478[uParam0->f_116.f_1]);
 				}
-				else if (__LIB_16__::func_376(uParam0->f_522))
+				else if (__LIB_16__::func_379(uParam0->f_522))
 				{
 				}
 				else
@@ -507,7 +507,7 @@ void func_1(var uParam0)//Position - 0x15E
 			{
 				if (BitTest(uParam0->f_555, 16))
 				{
-					__LIB_16__::func_378(uParam0->f_690, "NOT SHOPFLAG_bDeclIsPreview");
+					__LIB_16__::func_381(uParam0->f_690, "NOT SHOPFLAG_bDeclIsPreview");
 					func_147(&iVar1, uParam0->f_690, -1, 0);
 				}
 				else
@@ -522,7 +522,7 @@ void func_1(var uParam0)//Position - 0x15E
 		MISC::CLEAR_BIT(&(uParam0->f_555), 28);
 	}
 	MISC::CLEAR_BIT(&(uParam0->f_556), 7);
-	__LIB_33__::func_381(uParam0);
+	__LIB_31__::func_864(uParam0);
 }
 
 void func_18(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//Position - 0x4877
@@ -555,12 +555,12 @@ void func_18(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//P
 					return;
 				}
 			}
-			__LIB_28__::func_182(MISC::GET_HASH_KEY("torsoDecal"), iParam0);
+			__LIB_28__::func_192(MISC::GET_HASH_KEY("torsoDecal"), iParam0);
 			if (iParam1 == 11)
 			{
 				if (((((!__LIB_5__::func_175(iVar0, iParam2, 13) && !__LIB_5__::func_175(iVar0, iParam2, 14)) && !__LIB_5__::func_175(iVar0, iParam2, 15)) && !__LIB_5__::func_175(iVar0, iParam2, 16)) && !__LIB_5__::func_175(iVar0, iParam2, 71)) && !__LIB_5__::func_175(iVar0, iParam2, 72))
 				{
-					__LIB_28__::func_182(MISC::GET_HASH_KEY("crewLogo"), iParam0);
+					__LIB_28__::func_192(MISC::GET_HASH_KEY("crewLogo"), iParam0);
 				}
 			}
 			iVar2 = __LIB_5__::func_29(iVar0, iParam1, iParam2, iParam4);
@@ -568,11 +568,11 @@ void func_18(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//P
 			{
 				if (iParam3 == 1)
 				{
-					__LIB_24__::func_879(iParam0, iVar2, 0);
+					__LIB_24__::func_889(iParam0, iVar2, 0);
 				}
 				else
 				{
-					__LIB_24__::func_880(iVar2, 1, Global_78127);
+					__LIB_24__::func_890(iVar2, 1, Global_78127);
 				}
 			}
 		}
@@ -956,11 +956,11 @@ void func_130(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 	iVar5 = 0;
 	while (iVar5 < 127)
 	{
-		if (__LIB_19__::func_233(iVar5, iParam1))
+		if (__LIB_19__::func_243(iVar5, iParam1))
 		{
 			if (__LIB_0__::func_445(&Var0, iVar5, iVar1, *iParam0, -1))
 			{
-				if (__LIB_25__::func_110(*iParam0, &Var0, iVar5, Var0.f_4, Var0.f_8, bVar2, bVar3, bParam2, bVar4))
+				if (__LIB_25__::func_120(*iParam0, &Var0, iVar5, Var0.f_4, Var0.f_8, bVar2, bVar3, bParam2, bVar4))
 				{
 					if (!bParam3)
 					{
@@ -971,7 +971,7 @@ void func_130(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 		}
 		iVar5++;
 	}
-	if (__LIB_19__::func_233(123, -1))
+	if (__LIB_19__::func_243(123, -1))
 	{
 		if (PED::GET_PED_DECORATION_ZONE_FROM_HASHES(joaat("mpBeach_overlays"), joaat("FM_Hair_Fuzz")) != 7)
 		{
@@ -990,9 +990,9 @@ void func_130(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 			if (!FILES::IS_CONTENT_ITEM_LOCKED(Var8.f_0))
 			{
 				iVar9 = (129 + iVar6);
-				if (__LIB_19__::func_233(iVar9, iParam1))
+				if (__LIB_19__::func_243(iVar9, iParam1))
 				{
-					if (__LIB_25__::func_110(*iParam0, &(Var8.f_7), iVar9, Var8.f_2, Var8.f_6, bVar2, bVar3, bParam2, bVar4))
+					if (__LIB_25__::func_120(*iParam0, &(Var8.f_7), iVar9, Var8.f_2, Var8.f_6, bVar2, bVar3, bParam2, bVar4))
 					{
 						if (!bParam3)
 						{
@@ -1203,27 +1203,27 @@ int func_143(int iParam0, bool bParam1)//Position - 0x2D604
 				case 5:
 					if (!bParam1)
 					{
-						if (__LIB_19__::func_233(13, -1))
+						if (__LIB_19__::func_243(13, -1))
 						{
 							return 1;
 						}
-						else if (__LIB_19__::func_233(14, -1))
+						else if (__LIB_19__::func_243(14, -1))
 						{
 							return 1;
 						}
-						else if (__LIB_19__::func_233(15, -1))
+						else if (__LIB_19__::func_243(15, -1))
 						{
 							return 1;
 						}
-						else if (__LIB_19__::func_233(16, -1))
+						else if (__LIB_19__::func_243(16, -1))
 						{
 							return 1;
 						}
-						else if (__LIB_19__::func_233(71, -1))
+						else if (__LIB_19__::func_243(71, -1))
 						{
 							return 1;
 						}
-						else if (__LIB_19__::func_233(72, -1))
+						else if (__LIB_19__::func_243(72, -1))
 						{
 						}
 						else if (__LIB_0__::func_536(PLAYER::PLAYER_ID(), 1) && Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_76.f_21 != 0)
@@ -1520,11 +1520,11 @@ void func_147(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	iVar5 = 0;
 	while (iVar5 < 127)
 	{
-		if (__LIB_19__::func_233(iVar5, iParam2) || iVar5 == iParam1)
+		if (__LIB_19__::func_243(iVar5, iParam2) || iVar5 == iParam1)
 		{
 			if (__LIB_0__::func_445(&Var0, iVar5, iVar1, *iParam0, -1))
 			{
-				if (__LIB_25__::func_110(*iParam0, &Var0, iVar5, Var0.f_4, Var0.f_8, bVar2, bVar3, bParam3, bVar4))
+				if (__LIB_25__::func_120(*iParam0, &Var0, iVar5, Var0.f_4, Var0.f_8, bVar2, bVar3, bParam3, bVar4))
 				{
 					if (Var0.f_8 != joaat("crewLogo") || iVar5 == iParam1)
 					{
@@ -1535,7 +1535,7 @@ void func_147(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 		}
 		iVar5++;
 	}
-	if (__LIB_19__::func_233(123, -1))
+	if (__LIB_19__::func_243(123, -1))
 	{
 		if (PED::GET_PED_DECORATION_ZONE_FROM_HASHES(joaat("mpBeach_overlays"), joaat("FM_Hair_Fuzz")) != 7)
 		{
@@ -1551,9 +1551,9 @@ void func_147(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 			if (!FILES::IS_CONTENT_ITEM_LOCKED(Var8.f_0))
 			{
 				iVar9 = (129 + iVar6);
-				if (__LIB_19__::func_233(iVar9, iParam2))
+				if (__LIB_19__::func_243(iVar9, iParam2))
 				{
-					if (__LIB_25__::func_110(*iParam0, &(Var8.f_7), iVar9, Var8.f_2, Var8.f_6, bVar2, bVar3, bParam3, bVar4))
+					if (__LIB_25__::func_120(*iParam0, &(Var8.f_7), iVar9, Var8.f_2, Var8.f_6, bVar2, bVar3, bParam3, bVar4))
 					{
 						PED::ADD_PED_DECORATION_FROM_HASHES(*iParam0, Var8.f_2, Var8.f_3);
 						__LIB_0__::func_260(*iParam0, Var8.f_2, Var8.f_3);
@@ -1568,7 +1568,7 @@ void func_147(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 void func_149(var uParam0)//Position - 0x2E077
 {
 	func_1320(uParam0, 1);
-	__LIB_16__::func_508(uParam0);
+	__LIB_16__::func_511(uParam0);
 }
 
 void func_158(var uParam0)//Position - 0x2E6E8
@@ -1624,7 +1624,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 	{
 		NETWORK::SET_ENTITY_LOCALLY_VISIBLE(uParam0->f_12);
 	}
-	__LIB_33__::func_428(uParam0, &(uParam0->f_116), -1);
+	__LIB_31__::func_911(uParam0, &(uParam0->f_116), -1);
 	if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && uParam0->f_1) && ((uParam0->f_521 == 3 || uParam0->f_521 == 4) || uParam0->f_521 == 8)) && Global_4535615)
 	{
 		uParam0->f_116.f_31 = 8;
@@ -1639,7 +1639,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 			uParam0->f_116.f_19 = 1;
 			if (__LIB_3__::func_67("CLO_MNU", *uParam0, 1) && __LIB_14__::func_403(*uParam0, 0))
 			{
-				__LIB_33__::func_427(1);
+				__LIB_31__::func_910(1);
 				if (Global_78319)
 				{
 					func_1059(1);
@@ -1650,7 +1650,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 					Global_4538835 = 0;
 					Global_4538836 = 0;
 					Global_4539548 = 0;
-					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_184.f_12))
+					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_184.f_12))
 					{
 						if (*uParam0 == 51)
 						{
@@ -1667,13 +1667,13 @@ void func_158(var uParam0)//Position - 0x2E6E8
 						func_913(uParam0);
 						uParam0->f_116.f_1 = 0;
 					}
-					else if (__LIB_16__::func_447(&Global_4537616, 0))
+					else if (__LIB_16__::func_450(&Global_4537616, 0))
 					{
 						uParam0->f_522 = 0;
 						func_913(uParam0);
-						if (!__LIB_33__::func_407(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
+						if (!__LIB_31__::func_890(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
 						{
-							if (!__LIB_33__::func_406(&Global_4537616, 0, &(uParam0->f_116.f_1)))
+							if (!__LIB_31__::func_889(&Global_4537616, 0, &(uParam0->f_116.f_1)))
 							{
 								uParam0->f_116.f_1 = -1;
 							}
@@ -1683,7 +1683,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 					{
 						uParam0->f_522 = 1;
 						func_913(uParam0);
-						if (!__LIB_33__::func_406(&Global_4537616, 1, &(uParam0->f_116.f_1)))
+						if (!__LIB_31__::func_889(&Global_4537616, 1, &(uParam0->f_116.f_1)))
 						{
 							uParam0->f_116.f_1 = -1;
 						}
@@ -1694,7 +1694,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 						uParam0->f_116.f_1 = Global_2714762.f_785.f_33[2];
 						Global_2714762.f_785.f_40 = 0;
 						uParam0->f_116.f_17 = 1;
-						if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522))
+						if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522))
 						{
 							Global_4538835 = 0;
 							Global_4538836 = 0;
@@ -1709,7 +1709,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 					{
 						__LIB_2__::func_976();
 					}
-					if (iLocal_78 && !__LIB_16__::func_377(uParam0->f_522))
+					if (iLocal_78 && !__LIB_16__::func_380(uParam0->f_522))
 					{
 						func_962(&(uParam0->f_514), &(uParam0->f_511), &(uParam0->f_512), &(uParam0->f_518), &(uParam0->f_517), *uParam0, &(uParam0->f_184), &Global_4537616, uParam0->f_116, uParam0->f_522, 1, 1);
 					}
@@ -1717,7 +1717,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 			}
 			break;
 		case 1:
-			if ((__LIB_14__::func_404(1) && __LIB_33__::func_405(uParam0)) && func_894(uParam0))
+			if ((__LIB_14__::func_404(1) && __LIB_31__::func_888(uParam0)) && func_894(uParam0))
 			{
 				if (uParam0->f_7 && *uParam0 == 51)
 				{
@@ -1736,8 +1736,8 @@ void func_158(var uParam0)//Position - 0x2E6E8
 					}
 					AUDIO::START_AUDIO_SCENE("Ls_Car_Meet_Merch_Shop_Scene");
 				}
-				__LIB_16__::func_444(0, 1, uParam0->f_12, 0, 0, 0, 1, 0, 0, 0);
-				__LIB_16__::func_569(&(uParam0->f_116), 0);
+				__LIB_16__::func_447(0, 1, uParam0->f_12, 0, 0, 0, 1, 0, 0, 0);
+				__LIB_16__::func_572(&(uParam0->f_116), 0);
 				MISC::CLEAR_BIT(&(uParam0->f_556), 0);
 				MISC::CLEAR_BIT(&(uParam0->f_556), 1);
 				MISC::CLEAR_BIT(&(uParam0->f_556), 2);
@@ -1811,13 +1811,13 @@ void func_158(var uParam0)//Position - 0x2E6E8
 				{
 					PED::REMOVE_PED_HELMET(PLAYER::PLAYER_PED_ID(), true);
 				}
-				__LIB_16__::func_443(uParam0, 1148846080, 1);
+				__LIB_16__::func_446(uParam0, 1148846080, 1);
 				if (Global_78319)
 				{
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(uParam0->f_617.f_2, false, false);
 				}
-				__LIB_43__::func_81(uParam0);
-				__LIB_33__::func_403(uParam0);
+				__LIB_42__::func_964(uParam0);
+				__LIB_31__::func_886(uParam0);
 				func_365(uParam0);
 				if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_617.f_2) && !PED::IS_PED_INJURED(uParam0->f_617.f_2))
 				{
@@ -1847,11 +1847,11 @@ void func_158(var uParam0)//Position - 0x2E6E8
 			{
 				PATHFIND::UPDATE_NAVMESH_BLOCKING_OBJECT(uParam0->f_590, uParam0->f_184.f_31, 5f, 5f, 5f, uParam0->f_184.f_34, 7);
 			}
-			__LIB_43__::func_81(uParam0);
+			__LIB_42__::func_964(uParam0);
 			func_365(uParam0);
 			break;
 		case 6:
-			if (__LIB_33__::func_383(*uParam0))
+			if (__LIB_31__::func_866(*uParam0))
 			{
 				uParam0->f_116.f_25 = 1;
 			}
@@ -1907,7 +1907,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 				CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 				__LIB_1__::func_895(1, *uParam0);
 				__LIB_14__::func_423(*uParam0, 0);
-				__LIB_16__::func_380(uParam0);
+				__LIB_16__::func_383(uParam0);
 				__LIB_13__::func_610(1);
 				uParam0->f_535.f_19 = 0;
 				if (!Global_78319)
@@ -1921,10 +1921,10 @@ void func_158(var uParam0)//Position - 0x2E6E8
 				__LIB_15__::func_133(&(uParam0->f_116), 0, 1, 1, 1);
 				__LIB_14__::func_455();
 				__LIB_12__::func_428(PLAYER::PLAYER_PED_ID());
-				__LIB_33__::func_427(0);
+				__LIB_31__::func_910(0);
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 				{
-					__LIB_41__::func_316(PLAYER::PLAYER_PED_ID(), -1);
+					__LIB_40__::func_994(PLAYER::PLAYER_PED_ID(), -1);
 					if (NETWORK::NETWORK_PLAYER_IS_CHEATER() || NETWORK::NETWORK_PLAYER_IS_BADSPORT())
 					{
 						if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("MP_M_Freemode_01"))
@@ -2022,7 +2022,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 			}
 			break;
 		case 8:
-			if (__LIB_33__::func_383(*uParam0))
+			if (__LIB_31__::func_866(*uParam0))
 			{
 				uParam0->f_116.f_25 = 1;
 			}
@@ -2037,7 +2037,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 				func_356(PLAYER::PLAYER_PED_ID());
 				func_350(PLAYER::PLAYER_PED_ID(), 1);
 			}
-			else if (__LIB_16__::func_557(PLAYER::PLAYER_ID()) != 0)
+			else if (__LIB_16__::func_560(PLAYER::PLAYER_ID()) != 0)
 			{
 				func_176(0);
 				func_350(PLAYER::PLAYER_PED_ID(), 1);
@@ -2048,7 +2048,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 			__LIB_15__::func_133(&(uParam0->f_116), 0, 1, 1, 1);
 			__LIB_1__::func_895(1, *uParam0);
 			__LIB_14__::func_423(*uParam0, 0);
-			__LIB_16__::func_380(uParam0);
+			__LIB_16__::func_383(uParam0);
 			uParam0->f_535.f_19 = 0;
 			if (!Global_78319)
 			{
@@ -2060,10 +2060,10 @@ void func_158(var uParam0)//Position - 0x2E6E8
 			__LIB_13__::func_610(1);
 			__LIB_14__::func_455();
 			__LIB_12__::func_428(PLAYER::PLAYER_PED_ID());
-			__LIB_33__::func_427(0);
+			__LIB_31__::func_910(0);
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 			{
-				__LIB_41__::func_316(PLAYER::PLAYER_PED_ID(), -1);
+				__LIB_40__::func_994(PLAYER::PLAYER_PED_ID(), -1);
 				if (NETWORK::NETWORK_PLAYER_IS_CHEATER() || NETWORK::NETWORK_PLAYER_IS_BADSPORT())
 				{
 					if (ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()) == joaat("MP_M_Freemode_01"))
@@ -2164,7 +2164,7 @@ void func_158(var uParam0)//Position - 0x2E6E8
 		__LIB_15__::func_77(0, 1, 1);
 	}
 	__LIB_1__::func_33(0);
-	__LIB_16__::func_379(&(uParam0->f_535), 1);
+	__LIB_16__::func_382(&(uParam0->f_535), 1);
 }
 
 void func_176(int iParam0)//Position - 0x2F88B
@@ -2262,11 +2262,11 @@ void func_177(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 		iVar6 = 0;
 		while (iVar6 < 127)
 		{
-			if (__LIB_19__::func_233(iVar6, iVar0))
+			if (__LIB_19__::func_243(iVar6, iVar0))
 			{
 				if (__LIB_0__::func_445(&Var1, iVar6, iVar2, iParam0, -1))
 				{
-					if (__LIB_25__::func_110(iParam0, &Var1, iVar6, Var1.f_4, Var1.f_8, bVar3, bVar4, bParam1, bVar5))
+					if (__LIB_25__::func_120(iParam0, &Var1, iVar6, Var1.f_4, Var1.f_8, bVar3, bVar4, bParam1, bVar5))
 					{
 						PED::ADD_PED_DECORATION_FROM_HASHES(iParam0, Var1.f_4, Var1.f_5);
 					}
@@ -2274,7 +2274,7 @@ void func_177(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 			}
 			iVar6++;
 		}
-		if (__LIB_19__::func_233(123, iVar0))
+		if (__LIB_19__::func_243(123, iVar0))
 		{
 			if (PED::GET_PED_DECORATION_ZONE_FROM_HASHES(joaat("mpBeach_overlays"), joaat("FM_Hair_Fuzz")) != 7)
 			{
@@ -2290,9 +2290,9 @@ void func_177(int iParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 				if (!FILES::IS_CONTENT_ITEM_LOCKED(Var9.f_0))
 				{
 					iVar10 = (129 + iVar7);
-					if (__LIB_19__::func_233(iVar10, iVar0))
+					if (__LIB_19__::func_243(iVar10, iVar0))
 					{
-						if (__LIB_25__::func_110(iParam0, &(Var9.f_7), iVar10, Var9.f_2, Var9.f_6, bVar3, bVar4, bParam1, bVar5))
+						if (__LIB_25__::func_120(iParam0, &(Var9.f_7), iVar10, Var9.f_2, Var9.f_6, bVar3, bVar4, bParam1, bVar5))
 						{
 							if (!__LIB_5__::func_179(Var9.f_2, Var9.f_3, iVar10))
 							{
@@ -2402,7 +2402,7 @@ void func_208(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 	struct<5> Var12;
 	if (!PED::IS_PED_INJURED(iParam0) || iParam5)
 	{
-		bVar0 = __LIB_17__::func_104(iParam0);
+		bVar0 = __LIB_17__::func_107(iParam0);
 		iVar1 = ENTITY::GET_ENTITY_MODEL(iParam0);
 		iVar3 = 0;
 		while (iVar3 < 12)
@@ -2782,10 +2782,10 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 		Global_2883589 = uVar13;
 		if (iParam5 == 0)
 		{
-			iVar17 = __LIB_24__::func_881();
+			iVar17 = __LIB_24__::func_891();
 			if (iVar17 != -1)
 			{
-				__LIB_24__::func_880(iVar17, 0, iParam10);
+				__LIB_24__::func_890(iVar17, 0, iParam10);
 			}
 			func_18(iParam0, 11, uVar14[11], iParam6, 0);
 		}
@@ -3147,7 +3147,7 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 						}
 					}
 				}
-				__LIB_28__::func_183(iVar5, iParam2);
+				__LIB_28__::func_193(iVar5, iParam2);
 				if (!bParam13)
 				{
 					PED::SET_PED_COMPONENT_VARIATION(iParam0, 10, 0, 0, PED::GET_PED_PALETTE_VARIATION(iParam0, 10));
@@ -3241,7 +3241,7 @@ int func_211(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 			if (__LIB_0__::func_280(iVar5, iVar49, -1))
 			{
 				iVar50 = __LIB_0__::func_357(iVar5, iParam2, Global_78130[1 /*14*/].f_4);
-				__LIB_28__::func_183(iVar5, iVar50);
+				__LIB_28__::func_193(iVar5, iVar50);
 			}
 			if (iParam5 == 0)
 			{
@@ -3730,7 +3730,7 @@ void func_236(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar0;
 	int iVar1;
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	__LIB_28__::func_182(MISC::GET_HASH_KEY("hairOverlay"), iParam0);
+	__LIB_28__::func_192(MISC::GET_HASH_KEY("hairOverlay"), iParam0);
 	iVar1 = __LIB_0__::func_450(iVar0, iParam1);
 	if (iVar1 != -1)
 	{
@@ -3738,7 +3738,7 @@ void func_236(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 		{
 			iParam2 = Global_78127;
 		}
-		__LIB_24__::func_880(iVar1, 1, iParam2);
+		__LIB_24__::func_890(iVar1, 1, iParam2);
 	}
 	func_177(iParam0, bParam3, 0, -1);
 }
@@ -5259,7 +5259,7 @@ void func_350(int iParam0, int iParam1)//Position - 0x55467
 	int iVar3;
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		bVar0 = __LIB_17__::func_104(iParam0);
+		bVar0 = __LIB_17__::func_107(iParam0);
 		if (__LIB_0__::func_374(bVar0))
 		{
 			if (bVar0 == 2)
@@ -5276,11 +5276,11 @@ void func_350(int iParam0, int iParam1)//Position - 0x55467
 			Var2.f_26 = 12;
 			Var2.f_39 = 9;
 			Var2.f_49 = 9;
-			__LIB_33__::func_443(iParam0, &Var2, 1, -1);
+			__LIB_31__::func_926(iParam0, &Var2, 1, -1);
 			Global_100166[bVar0 /*65*/] = { Var2 };
 			if (iParam0 == PLAYER::PLAYER_PED_ID())
 			{
-				__LIB_37__::func_797();
+				__LIB_37__::func_471();
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
@@ -5323,7 +5323,7 @@ void func_356(int iParam0)//Position - 0x55DC8
 		}
 		else
 		{
-			__LIB_17__::func_333(iParam0);
+			__LIB_17__::func_336(iParam0);
 		}
 	}
 }
@@ -5429,12 +5429,12 @@ void func_360(var uParam0, bool bParam1, bool bParam2)//Position - 0x55EEE
 			{
 				if (Global_4538860.f_65 != -1)
 				{
-					__LIB_24__::func_880(Global_4538860.f_65, 1, Global_78127);
+					__LIB_24__::func_890(Global_4538860.f_65, 1, Global_78127);
 				}
 			}
 			else if (uParam0->f_686 != -1)
 			{
-				__LIB_24__::func_880(uParam0->f_686, 1, Global_78127);
+				__LIB_24__::func_890(uParam0->f_686, 1, Global_78127);
 			}
 			MISC::SET_BIT(&(uParam0->f_555), 14);
 			if (bParam2)
@@ -5517,7 +5517,7 @@ void func_360(var uParam0, bool bParam1, bool bParam2)//Position - 0x55EEE
 			}
 			if (bParam2)
 			{
-				__LIB_33__::func_382(iVar0, Global_4538860, -1);
+				__LIB_31__::func_865(iVar0, Global_4538860, -1);
 			}
 			iVar5 = FILES::GET_HASH_NAME_FOR_COMPONENT(iVar0, 1, PED::GET_PED_DRAWABLE_VARIATION(iVar0, 1), PED::GET_PED_TEXTURE_VARIATION(iVar0, 1));
 			iVar6 = FILES::GET_HASH_NAME_FOR_COMPONENT(iVar0, 8, PED::GET_PED_DRAWABLE_VARIATION(iVar0, 8), PED::GET_PED_TEXTURE_VARIATION(iVar0, 8));
@@ -5697,19 +5697,19 @@ void func_365(var uParam0)//Position - 0x565E0
 	{
 		func_913(uParam0);
 	}
-	bVar1 = __LIB_41__::func_327(uParam0);
+	bVar1 = __LIB_41__::func_5(uParam0);
 	__LIB_14__::func_405(&(uParam0->f_471), 300);
 	__LIB_0__::func_603(&uVar2, &iVar3, &uVar4, &uVar5, 0);
 	bVar6 = ((((iVar3 < -64 && uParam0->f_471.f_8) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/)) || (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) && uParam0->f_471.f_8)) && !bVar1);
 	bVar7 = ((((iVar3 > 64 && uParam0->f_471.f_9) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/)) || (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) && uParam0->f_471.f_9)) && !bVar1);
 	bVar8 = PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/);
 	bVar9 = ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/) && !bVar1) || __LIB_14__::func_189());
-	bVar10 = ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !__LIB_41__::func_326(uParam0->f_522)) && !bVar1);
-	bVar11 = ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !__LIB_41__::func_326(uParam0->f_522)) && !bVar1);
+	bVar10 = ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !__LIB_41__::func_4(uParam0->f_522)) && !bVar1);
+	bVar11 = ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !__LIB_41__::func_4(uParam0->f_522)) && !bVar1);
 	bVar12 = (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 204 /*INPUT_FRONTEND_Y*/) && !bVar1);
 	bVar13 = ((iVar3 < -64 || iVar3 > 64) && !bVar1);
 	bVar14 = (((((((!HUD::IS_PAUSE_MENU_ACTIVE() && uParam0->f_116.f_31 != 6) && !PLAYER::IS_SYSTEM_UI_BEING_DISPLAYED()) && (!HUD::IS_WARNING_MESSAGE_ACTIVE() || bVar1)) && !Global_100493.f_1458) && !uParam0->f_116.f_25) && !NETWORK::NETWORK_TEXT_CHAT_IS_TYPING()) && !BitTest(uParam0->f_556, 11));
-	if (__LIB_43__::func_953(uParam0, &bVar8, &bVar6, &bVar7))
+	if (__LIB_43__::func_945(uParam0, &bVar8, &bVar6, &bVar7))
 	{
 		return;
 	}
@@ -5741,7 +5741,7 @@ void func_365(var uParam0)//Position - 0x565E0
 	__LIB_14__::func_184();
 	if (*uParam0 == 51)
 	{
-		__LIB_16__::func_334();
+		__LIB_16__::func_337();
 		if (BitTest(uParam0->f_556, 12) && !BitTest(uParam0->f_556, 10))
 		{
 			bVar14 = false;
@@ -5767,9 +5767,9 @@ void func_365(var uParam0)//Position - 0x565E0
 		{
 			if (Global_4539961 == uParam0->f_116.f_1)
 			{
-				if (__LIB_33__::func_449(uParam0->f_522) && uParam0->f_522 == 78)
+				if (__LIB_31__::func_932(uParam0->f_522) && uParam0->f_522 == 78)
 				{
-					bVar8 = __LIB_43__::func_703(uParam0, &uVar16);
+					bVar8 = __LIB_43__::func_660(uParam0, &uVar16);
 				}
 				else
 				{
@@ -5796,7 +5796,7 @@ void func_365(var uParam0)//Position - 0x565E0
 				MISC::SET_BIT(&(uParam0->f_555), 21);
 				MISC::SET_BIT(&(uParam0->f_555), 25);
 				MISC::SET_BIT(&(uParam0->f_555), 26);
-				if (__LIB_16__::func_429(uParam0))
+				if (__LIB_16__::func_432(uParam0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 				}
@@ -5828,7 +5828,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					uParam0->f_557 = 0;
 					MISC::SET_BIT(&(uParam0->f_557), 0);
 					MISC::SET_BIT(&(uParam0->f_555), 25);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -5842,10 +5842,10 @@ void func_365(var uParam0)//Position - 0x565E0
 				{
 					if (bVar8)
 					{
-						__LIB_33__::func_399(PLAYER::PLAYER_PED_ID(), uParam0->f_116.f_2, 0, 0);
+						__LIB_31__::func_882(PLAYER::PLAYER_PED_ID(), uParam0->f_116.f_2, 0, 0);
 						MISC::CLEAR_BIT(&(uParam0->f_557), 1);
 						MISC::SET_BIT(&(uParam0->f_555), 25);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -5861,7 +5861,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						MISC::CLEAR_BIT(&(uParam0->f_557), 1);
 						MISC::SET_BIT(&(uParam0->f_555), 25);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "BACK", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -5880,7 +5880,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						MISC::CLEAR_BIT(&(uParam0->f_557), 5);
 						MISC::SET_BIT(&(uParam0->f_557), 3);
 						__LIB_1__::func_789("CSHOP_REMOVED", 4000, 0);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -5893,7 +5893,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						MISC::CLEAR_BIT(&(uParam0->f_557), 5);
 						MISC::SET_BIT(&(uParam0->f_555), 25);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "BACK", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -5913,7 +5913,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						Local_97.f_1 = 0;
 						if (!MISC::IS_STRING_NULL_OR_EMPTY(&Local_88))
 						{
-							__LIB_16__::func_524(uParam0->f_116.f_2, &Local_88, 0);
+							__LIB_16__::func_527(uParam0->f_116.f_2, &Local_88, 0);
 							MISC::SET_BIT(&(uParam0->f_555), 25);
 							if (BitTest(uParam0->f_557, 8))
 							{
@@ -5925,7 +5925,7 @@ void func_365(var uParam0)//Position - 0x565E0
 							}
 							MISC::CLEAR_BIT(&(uParam0->f_557), 6);
 							MISC::CLEAR_BIT(&(uParam0->f_557), 8);
-							if (__LIB_16__::func_429(uParam0))
+							if (__LIB_16__::func_432(uParam0))
 							{
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 							}
@@ -5942,7 +5942,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								__LIB_12__::func_410(uParam0->f_116.f_2, 0);
 							}
 							MISC::SET_BIT(&(uParam0->f_555), 25);
-							if (__LIB_16__::func_429(uParam0))
+							if (__LIB_16__::func_432(uParam0))
 							{
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "BACK", "HUD_AMMO_SHOP_SOUNDSET", true);
 							}
@@ -5964,7 +5964,7 @@ void func_365(var uParam0)//Position - 0x565E0
 							__LIB_12__::func_410(uParam0->f_116.f_2, 0);
 						}
 						MISC::SET_BIT(&(uParam0->f_555), 25);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "BACK", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -5983,7 +5983,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					}
 					else
 					{
-						__LIB_33__::func_399(PLAYER::PLAYER_PED_ID(), uParam0->f_116.f_2, 0, 0);
+						__LIB_31__::func_882(PLAYER::PLAYER_PED_ID(), uParam0->f_116.f_2, 0, 0);
 						MISC::SET_BIT(&(uParam0->f_555), 25);
 						MISC::SET_BIT(&(uParam0->f_557), 6);
 						MISC::SET_BIT(&(uParam0->f_557), 8);
@@ -5991,7 +5991,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						StringConCat(&Local_88, " ", 64);
 						StringIntConCat(&Local_88, uParam0->f_116.f_2, 64);
 					}
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6022,7 +6022,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					MISC::CLEAR_BIT(&(uParam0->f_557), 0);
 					MISC::SET_BIT(&(uParam0->f_555), 25);
 					MISC::SET_BIT(&(uParam0->f_555), 26);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "BACK", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6045,7 +6045,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						uParam0->f_471.f_24 = NETWORK::GET_NETWORK_TIME();
 					}
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6075,7 +6075,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						uParam0->f_471.f_24 = NETWORK::GET_NETWORK_TIME();
 					}
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6111,7 +6111,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						uParam0->f_471.f_24 = NETWORK::GET_NETWORK_TIME();
 					}
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6169,7 +6169,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						uParam0->f_471.f_24 = NETWORK::GET_NETWORK_TIME();
 					}
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6215,7 +6215,7 @@ void func_365(var uParam0)//Position - 0x565E0
 			{
 				if (uParam0->f_116.f_1 != -1)
 				{
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6231,32 +6231,32 @@ void func_365(var uParam0)//Position - 0x565E0
 		}
 		else if (bVar7 && !BitTest(uParam0->f_555, 17))
 		{
-			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522)) && !Global_4538835)
+			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522)) && !Global_4538835)
 			{
 				if (uParam0->f_116.f_1 != -1)
 				{
-					if (__LIB_33__::func_449(uParam0->f_522))
+					if (__LIB_31__::func_932(uParam0->f_522))
 					{
 						iVar23 = 24;
 						Global_4538836++;
-						Global_4538836 = __LIB_16__::func_333(Global_4538836, iVar23, (__LIB_16__::func_426(uParam0->f_522) + 12 - 1));
+						Global_4538836 = __LIB_16__::func_336(Global_4538836, iVar23, (__LIB_16__::func_429(uParam0->f_522) + 12 - 1));
 					}
 					else
 					{
 						Global_4538836++;
-						while (Global_4538836 < __LIB_16__::func_426(uParam0->f_522) && !BitTest(Global_4538837[(Global_4538836 / 32)], (Global_4538836 % 32)))
+						while (Global_4538836 < __LIB_16__::func_429(uParam0->f_522) && !BitTest(Global_4538837[(Global_4538836 / 32)], (Global_4538836 % 32)))
 						{
 							Global_4538836++;
 						}
-						if (Global_4538836 >= __LIB_16__::func_426(uParam0->f_522))
+						if (Global_4538836 >= __LIB_16__::func_429(uParam0->f_522))
 						{
 							Global_4538836 = 0;
 						}
-						while (Global_4538836 < __LIB_16__::func_426(uParam0->f_522) && !BitTest(Global_4538837[(Global_4538836 / 32)], (Global_4538836 % 32)))
+						while (Global_4538836 < __LIB_16__::func_429(uParam0->f_522) && !BitTest(Global_4538837[(Global_4538836 / 32)], (Global_4538836 % 32)))
 						{
 							Global_4538836++;
 						}
-						if (Global_4538836 >= __LIB_16__::func_426(uParam0->f_522))
+						if (Global_4538836 >= __LIB_16__::func_429(uParam0->f_522))
 						{
 							Global_4538836 = 0;
 						}
@@ -6278,7 +6278,7 @@ void func_365(var uParam0)//Position - 0x565E0
 				}
 				MISC::SET_BIT(&(uParam0->f_555), 30);
 				MISC::SET_BIT(&(uParam0->f_555), 25);
-				if (__LIB_16__::func_429(uParam0))
+				if (__LIB_16__::func_432(uParam0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 				}
@@ -6287,7 +6287,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_UP_DOWN", "HUD_FRONTEND_CLOTHESSHOP_SOUNDSET", true);
 				}
 			}
-			else if (__LIB_33__::func_397(&Global_4537616, uParam0->f_522, uParam0->f_116.f_1, &(uParam0->f_116.f_1), 1))
+			else if (__LIB_31__::func_880(&Global_4537616, uParam0->f_522, uParam0->f_116.f_1, &(uParam0->f_116.f_1), 1))
 			{
 				if (bVar13)
 				{
@@ -6306,7 +6306,7 @@ void func_365(var uParam0)//Position - 0x565E0
 				MISC::SET_BIT(&(uParam0->f_555), 21);
 				MISC::SET_BIT(&(uParam0->f_555), 25);
 				MISC::SET_BIT(&(uParam0->f_555), 29);
-				if (__LIB_16__::func_429(uParam0))
+				if (__LIB_16__::func_432(uParam0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 				}
@@ -6318,15 +6318,15 @@ void func_365(var uParam0)//Position - 0x565E0
 		}
 		else if (bVar6 && !BitTest(uParam0->f_555, 17))
 		{
-			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522)) && !Global_4538835)
+			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522)) && !Global_4538835)
 			{
 				if (uParam0->f_116.f_1 != -1)
 				{
-					if (__LIB_33__::func_449(uParam0->f_522))
+					if (__LIB_31__::func_932(uParam0->f_522))
 					{
 						iVar24 = 25;
 						Global_4538836 = (Global_4538836 - 1);
-						Global_4538836 = __LIB_16__::func_333(Global_4538836, iVar24, __LIB_16__::func_426(uParam0->f_522) + 12);
+						Global_4538836 = __LIB_16__::func_336(Global_4538836, iVar24, __LIB_16__::func_429(uParam0->f_522) + 12);
 					}
 					else
 					{
@@ -6337,7 +6337,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						}
 						if (Global_4538836 < 0)
 						{
-							Global_4538836 = (__LIB_16__::func_426(uParam0->f_522) - 1);
+							Global_4538836 = (__LIB_16__::func_429(uParam0->f_522) - 1);
 						}
 						while (Global_4538836 >= 0 && !BitTest(Global_4538837[(Global_4538836 / 32)], (Global_4538836 % 32)))
 						{
@@ -6365,7 +6365,7 @@ void func_365(var uParam0)//Position - 0x565E0
 				}
 				MISC::SET_BIT(&(uParam0->f_555), 30);
 				MISC::SET_BIT(&(uParam0->f_555), 25);
-				if (__LIB_16__::func_429(uParam0))
+				if (__LIB_16__::func_432(uParam0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 				}
@@ -6374,7 +6374,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_UP_DOWN", "HUD_FRONTEND_CLOTHESSHOP_SOUNDSET", true);
 				}
 			}
-			else if (__LIB_33__::func_396(&Global_4537616, uParam0->f_522, uParam0->f_116.f_1, &(uParam0->f_116.f_1), 1))
+			else if (__LIB_31__::func_879(&Global_4537616, uParam0->f_522, uParam0->f_116.f_1, &(uParam0->f_116.f_1), 1))
 			{
 				if (bVar13)
 				{
@@ -6393,7 +6393,7 @@ void func_365(var uParam0)//Position - 0x565E0
 				MISC::SET_BIT(&(uParam0->f_555), 21);
 				MISC::SET_BIT(&(uParam0->f_555), 25);
 				MISC::SET_BIT(&(uParam0->f_555), 29);
-				if (__LIB_16__::func_429(uParam0))
+				if (__LIB_16__::func_432(uParam0))
 				{
 					AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", true);
 				}
@@ -6414,14 +6414,14 @@ void func_365(var uParam0)//Position - 0x565E0
 					uParam0->f_522 = Global_4538470[uParam0->f_116.f_1];
 					uParam0->f_589 = 0;
 					func_962(&(uParam0->f_514), &(uParam0->f_511), &(uParam0->f_512), &(uParam0->f_518), &(uParam0->f_517), *uParam0, &(uParam0->f_184), &Global_4537616, uParam0->f_116, uParam0->f_522, 1, 1);
-					if (!__LIB_33__::func_407(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
+					if (!__LIB_31__::func_890(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
 					{
-						if (!__LIB_33__::func_406(&Global_4537616, uParam0->f_522, &(uParam0->f_116.f_1)))
+						if (!__LIB_31__::func_889(&Global_4537616, uParam0->f_522, &(uParam0->f_116.f_1)))
 						{
 							uParam0->f_116.f_1 = -1;
 						}
 					}
-					if (__LIB_16__::func_377(uParam0->f_522) && !Global_4538835)
+					if (__LIB_16__::func_380(uParam0->f_522) && !Global_4538835)
 					{
 						uParam0->f_116.f_1 = 0;
 						Global_4538836 = 0;
@@ -6435,7 +6435,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						uParam0->f_692 = 1;
 					}
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6445,7 +6445,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					}
 				}
 			}
-			else if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522)) && !Global_4538835)
+			else if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522)) && !Global_4538835)
 			{
 				if (uParam0->f_116.f_1 != -1)
 				{
@@ -6455,9 +6455,9 @@ void func_365(var uParam0)//Position - 0x565E0
 					}
 					Global_4538835 = 1;
 					func_962(&(uParam0->f_514), &(uParam0->f_511), &(uParam0->f_512), &(uParam0->f_518), &(uParam0->f_517), *uParam0, &(uParam0->f_184), &Global_4537616, uParam0->f_116, uParam0->f_522, 1, 1);
-					if (!__LIB_33__::func_407(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
+					if (!__LIB_31__::func_890(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
 					{
-						if (!__LIB_33__::func_406(&Global_4537616, uParam0->f_522, &(uParam0->f_116.f_1)))
+						if (!__LIB_31__::func_889(&Global_4537616, uParam0->f_522, &(uParam0->f_116.f_1)))
 						{
 							uParam0->f_116.f_1 = -1;
 						}
@@ -6466,7 +6466,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					MISC::SET_BIT(&(uParam0->f_555), 29);
 					MISC::SET_BIT(&(uParam0->f_555), 26);
 					MISC::SET_BIT(&(uParam0->f_555), 21);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6478,10 +6478,10 @@ void func_365(var uParam0)//Position - 0x565E0
 			}
 			else if (uParam0->f_522 == 3)
 			{
-				if (BitTest(uParam0->f_556, 1) && !__LIB_41__::func_324(uParam0))
+				if (BitTest(uParam0->f_556, 1) && !__LIB_41__::func_2(uParam0))
 				{
 					__LIB_1__::func_789("CSHOP_LOCK", 4000, 0);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6493,7 +6493,7 @@ void func_365(var uParam0)//Position - 0x565E0
 				else if (BitTest(uParam0->f_556, 0))
 				{
 					__LIB_1__::func_789("CSHOP_HAVE", 4000, 0);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6506,14 +6506,14 @@ void func_365(var uParam0)//Position - 0x565E0
 				{
 					if (uParam0->f_116.f_31 != 6)
 					{
-						__LIB_28__::func_182(MISC::GET_HASH_KEY("crewLogo"), iVar0);
+						__LIB_28__::func_192(MISC::GET_HASH_KEY("crewLogo"), iVar0);
 						uParam0->f_686 = -1;
 						MISC::SET_BIT(&(uParam0->f_555), 14);
 						MISC::CLEAR_BIT(&(uParam0->f_555), 15);
 						MISC::SET_BIT(&(uParam0->f_555), 25);
 						MISC::SET_BIT(&(uParam0->f_555), 29);
 						iLocal_99 = 0;
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_PURCHASE", "HUD_AMMO_SHOP_SOUNDSET", true);
@@ -6530,20 +6530,20 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						iVar25 = __LIB_1__::func_360(1496, -1, 0);
 					}
-					if (BitTest(iVar25, uParam0->f_116.f_1) || __LIB_43__::func_78(uParam0))
+					if (BitTest(iVar25, uParam0->f_116.f_1) || __LIB_42__::func_961(uParam0))
 					{
 						if (uParam0->f_116.f_31 != 6)
 						{
-							__LIB_28__::func_182(MISC::GET_HASH_KEY("crewLogo"), iVar0);
-							iVar26 = __LIB_33__::func_395(uParam0->f_586, iVar0, (uParam0->f_116.f_1 - 1));
-							__LIB_24__::func_880(iVar26, 1, -1);
+							__LIB_28__::func_192(MISC::GET_HASH_KEY("crewLogo"), iVar0);
+							iVar26 = __LIB_31__::func_878(uParam0->f_586, iVar0, (uParam0->f_116.f_1 - 1));
+							__LIB_24__::func_890(iVar26, 1, -1);
 							uParam0->f_686 = iVar26;
 							MISC::SET_BIT(&(uParam0->f_555), 14);
 							MISC::CLEAR_BIT(&(uParam0->f_555), 15);
 							MISC::SET_BIT(&(uParam0->f_555), 25);
 							MISC::SET_BIT(&(uParam0->f_555), 29);
 							iLocal_99 = 0;
-							if (__LIB_16__::func_429(uParam0))
+							if (__LIB_16__::func_432(uParam0))
 							{
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_PURCHASE", "HUD_AMMO_SHOP_SOUNDSET", true);
@@ -6566,7 +6566,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						{
 							__LIB_2__::func_820(0, 10, 3);
 						}
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -6578,7 +6578,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					else
 					{
 						__LIB_1__::func_789("CSHOP_INVALID", 4000, 0);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -6609,19 +6609,19 @@ void func_365(var uParam0)//Position - 0x565E0
 				{
 					bVar27 = true;
 				}
-				if (__LIB_16__::func_424(uParam0->f_561))
+				if (__LIB_16__::func_427(uParam0->f_561))
 				{
 					bVar27 = true;
 				}
-				if (!BitTest(uParam0->f_556, 6) && __LIB_41__::func_323(uParam0->f_561))
+				if (!BitTest(uParam0->f_556, 6) && __LIB_41__::func_1(uParam0->f_561))
 				{
 					bVar27 = true;
 				}
-				if (!BitTest(uParam0->f_556, 6) && __LIB_41__::func_322(uParam0->f_561))
+				if (!BitTest(uParam0->f_556, 6) && __LIB_41__::func_0(uParam0->f_561))
 				{
 					bVar27 = true;
 				}
-				if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_3__::func_538()) && Global_4537616.f_253[uParam0->f_116.f_1] == 0) && !__LIB_33__::func_392(Global_4537108[uParam0->f_116.f_1], -1, -1))
+				if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_3__::func_538()) && Global_4537616.f_253[uParam0->f_116.f_1] == 0) && !__LIB_31__::func_875(Global_4537108[uParam0->f_116.f_1], -1, -1))
 				{
 					iVar29 = 0;
 					if (Global_4537108[uParam0->f_116.f_1] != 0 && Global_4537616.f_126[uParam0->f_116.f_1] != 12)
@@ -6646,7 +6646,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					bVar30 = false;
 					if (Global_4537616.f_126[uParam0->f_116.f_1] == 12)
 					{
-						if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(uParam0->f_561)), 1))
+						if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(uParam0->f_561)), 1))
 						{
 							bVar30 = true;
 						}
@@ -6673,14 +6673,14 @@ void func_365(var uParam0)//Position - 0x565E0
 				Stack.Push(Global_4537616.f_126[uParam0->f_116.f_1]);
 				Stack.Push(Global_4537616[uParam0->f_116.f_1]);
 				Call_Loc(uParam0->f_511);
-				if (((StackVal || !StackVal) && Global_4537616.f_253[uParam0->f_116.f_1] == 0) && !__LIB_41__::func_324(uParam0))
+				if (((StackVal || !StackVal) && Global_4537616.f_253[uParam0->f_116.f_1] == 0) && !__LIB_41__::func_2(uParam0))
 				{
 					__LIB_1__::func_789("CSHOP_LOCK", 4000, 0);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						if (MISC::GET_RANDOM_INT_IN_RANGE(0, 2) == 0)
 						{
-							if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_419(0))
+							if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_422(0))
 							{
 								AUDIO::PLAY_PED_AMBIENT_SPEECH_NATIVE(uParam0->f_12, "SHOP_OUT_OF_STOCK", "SPEECH_PARAMS_FORCE", 1);
 							}
@@ -6692,10 +6692,10 @@ void func_365(var uParam0)//Position - 0x565E0
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_FRONTEND_CLOTHESSHOP_SOUNDSET", true);
 					}
 				}
-				else if ((BitTest(Global_78130[1 /*14*/].f_6, 7) && !BitTest(uParam0->f_555, 17)) && __LIB_16__::func_522())
+				else if ((BitTest(Global_78130[1 /*14*/].f_6, 7) && !BitTest(uParam0->f_555, 17)) && __LIB_16__::func_525())
 				{
 					__LIB_1__::func_789("CSHOP_DFULL", 4000, 0);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6710,7 +6710,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					func_794(uParam0);
 					iLocal_99 = 0;
 					MISC::CLEAR_BIT(&(uParam0->f_555), 21);
-					if (__LIB_16__::func_429(uParam0))
+					if (__LIB_16__::func_432(uParam0))
 					{
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 					}
@@ -6719,11 +6719,11 @@ void func_365(var uParam0)//Position - 0x565E0
 						AUDIO::PLAY_SOUND_FRONTEND(-1, "SELECT" /* GXT: Filter List */, "HUD_FRONTEND_CLOTHESSHOP_SOUNDSET", true);
 					}
 				}
-				else if (!__LIB_43__::func_77(uParam0, bVar27))
+				else if (!__LIB_42__::func_960(uParam0, bVar27))
 				{
-					if (__LIB_16__::func_418(uParam0))
+					if (__LIB_16__::func_421(uParam0))
 					{
-						uParam0->f_695 = __LIB_16__::func_417(uParam0);
+						uParam0->f_695 = __LIB_16__::func_420(uParam0);
 					}
 					if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
@@ -6743,7 +6743,7 @@ void func_365(var uParam0)//Position - 0x565E0
 							iLocal_99 = 0;
 							if (!BitTest(uParam0->f_556, 12))
 							{
-								if (__LIB_16__::func_429(uParam0))
+								if (__LIB_16__::func_432(uParam0))
 								{
 									AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 									AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_PURCHASE", "HUD_AMMO_SHOP_SOUNDSET", true);
@@ -6765,7 +6765,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								Call_Loc(uParam0->f_508);
 								iVar32 = StackVal;
 								iVar33 = __LIB_0__::func_357(uParam0->f_586, iVar32, PED::GET_PED_TEXTURE_VARIATION(PLAYER::PLAYER_PED_ID(), 8));
-								if (__LIB_28__::func_183(uParam0->f_586, iVar33))
+								if (__LIB_28__::func_193(uParam0->f_586, iVar33))
 								{
 									uParam0->f_686 = -1;
 									MISC::SET_BIT(&(uParam0->f_555), 14);
@@ -6777,11 +6777,11 @@ void func_365(var uParam0)//Position - 0x565E0
 					{
 						if (((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Global_4537616.f_126[uParam0->f_116.f_1] == 14) && Global_4537616[uParam0->f_116.f_1] == 0) && Global_4537616.f_253[uParam0->f_116.f_1] == 5)
 						{
-							bVar34 = !__LIB_16__::func_370(PLAYER::PLAYER_PED_ID());
+							bVar34 = !__LIB_16__::func_373(PLAYER::PLAYER_PED_ID());
 						}
 						else if (Global_4537616.f_253[uParam0->f_116.f_1] == 11)
 						{
-							bVar34 = !__LIB_16__::func_546(PLAYER::PLAYER_PED_ID(), &iVar35, -99);
+							bVar34 = !__LIB_16__::func_549(PLAYER::PLAYER_PED_ID(), &iVar35, -99);
 						}
 						else if (Global_4537616.f_253[uParam0->f_116.f_1] == 4)
 						{
@@ -6789,11 +6789,11 @@ void func_365(var uParam0)//Position - 0x565E0
 						}
 						else if (Global_4537616.f_253[uParam0->f_116.f_1] == 17)
 						{
-							bVar34 = !__LIB_16__::func_409(PLAYER::PLAYER_PED_ID());
+							bVar34 = !__LIB_16__::func_412(PLAYER::PLAYER_PED_ID());
 						}
 						else if (BitTest(uParam0->f_556, 4) && Global_4537616.f_126[uParam0->f_116.f_1] != 12)
 						{
-							bVar34 = __LIB_19__::func_233(Global_4536730[uParam0->f_116.f_1], -1);
+							bVar34 = __LIB_19__::func_243(Global_4536730[uParam0->f_116.f_1], -1);
 						}
 						else
 						{
@@ -6813,7 +6813,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								{
 									__LIB_2__::func_820(0, 10, 3);
 								}
-								if (__LIB_16__::func_429(uParam0))
+								if (__LIB_16__::func_432(uParam0))
 								{
 									AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 								}
@@ -6825,7 +6825,7 @@ void func_365(var uParam0)//Position - 0x565E0
 							else if (uParam0->f_116.f_24)
 							{
 								__LIB_1__::func_789("CSHOP_FAIL" /* GXT: Sorry - this item is unavailable. */, 4000, 0);
-								if (__LIB_16__::func_429(uParam0))
+								if (__LIB_16__::func_432(uParam0))
 								{
 									AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 								}
@@ -6843,7 +6843,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								{
 									func_360(uParam0, 1, 0);
 								}
-								if (BitTest(uParam0->f_556, 6) && ((((!BitTest(uParam0->f_556, 4) || Global_4537616.f_126[uParam0->f_116.f_1] == 12) || __LIB_2__::func_170(Global_4536730[uParam0->f_116.f_1], -1)) || __LIB_16__::func_403(MISC::GET_HASH_KEY(&(Global_100493.f_1384)))) || __LIB_33__::func_392(-1, Global_4536604[uParam0->f_116.f_1], Global_4536478[uParam0->f_116.f_1])))
+								if (BitTest(uParam0->f_556, 6) && ((((!BitTest(uParam0->f_556, 4) || Global_4537616.f_126[uParam0->f_116.f_1] == 12) || __LIB_2__::func_170(Global_4536730[uParam0->f_116.f_1], -1)) || __LIB_16__::func_406(MISC::GET_HASH_KEY(&(Global_100493.f_1384)))) || __LIB_31__::func_875(-1, Global_4536604[uParam0->f_116.f_1], Global_4536478[uParam0->f_116.f_1])))
 								{
 									if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 									{
@@ -6857,7 +6857,7 @@ void func_365(var uParam0)//Position - 0x565E0
 											Call_Loc(uParam0->f_510);
 											if (BitTest(uParam0->f_556, 4) && Global_4537616.f_126[uParam0->f_116.f_1] != 12)
 											{
-												__LIB_43__::func_75(Global_4536730[uParam0->f_116.f_1], 1, 0, 1, 0, -1);
+												__LIB_42__::func_958(Global_4536730[uParam0->f_116.f_1], 1, 0, 1, 0, -1);
 											}
 											if (!__LIB_1__::func_686(*uParam0, 3, 0))
 											{
@@ -6874,7 +6874,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								}
 								MISC::CLEAR_BIT(&(uParam0->f_555), 21);
 								StringCopy(&(uParam0->f_116.f_11), "CSHOP_SET", 16);
-								if (__LIB_16__::func_429(uParam0))
+								if (__LIB_16__::func_432(uParam0))
 								{
 									AUDIO::PLAY_SOUND_FRONTEND(-1, "WEAPON_SELECT_ARMOR", "HUD_AMMO_SHOP_SOUNDSET", true);
 								}
@@ -6888,7 +6888,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						{
 							uParam0->f_116.f_15 = 0;
 							__LIB_1__::func_789("CSHOP_HAVE", 4000, 0);
-							if (__LIB_16__::func_429(uParam0))
+							if (__LIB_16__::func_432(uParam0))
 							{
 								AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 							}
@@ -6908,7 +6908,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								Call_Loc(uParam0->f_508);
 								iVar36 = StackVal;
 								iVar37 = __LIB_0__::func_357(uParam0->f_586, iVar36, PED::GET_PED_TEXTURE_VARIATION(PLAYER::PLAYER_PED_ID(), 8));
-								if (__LIB_28__::func_183(uParam0->f_586, iVar37))
+								if (__LIB_28__::func_193(uParam0->f_586, iVar37))
 								{
 									uParam0->f_686 = -1;
 									MISC::SET_BIT(&(uParam0->f_555), 14);
@@ -6928,7 +6928,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						{
 							__LIB_2__::func_820(0, 10, 3);
 						}
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -6940,7 +6940,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					else if (uParam0->f_116.f_24)
 					{
 						__LIB_1__::func_789("CSHOP_FAIL" /* GXT: Sorry - this item is unavailable. */, 4000, 0);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -6952,7 +6952,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					else
 					{
 						__LIB_1__::func_789("CSHOP_INVALID", 4000, 0);
-						if (__LIB_16__::func_429(uParam0))
+						if (__LIB_16__::func_432(uParam0))
 						{
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_AMMO_SHOP_SOUNDSET", true);
 						}
@@ -6961,7 +6961,7 @@ void func_365(var uParam0)//Position - 0x565E0
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "ERROR", "HUD_FRONTEND_CLOTHESSHOP_SOUNDSET", true);
 						}
 					}
-					__LIB_16__::func_395(uParam0);
+					__LIB_16__::func_398(uParam0);
 				}
 			}
 		}
@@ -6970,7 +6970,7 @@ void func_365(var uParam0)//Position - 0x565E0
 	{
 		if (bVar9)
 		{
-			if (__LIB_16__::func_429(uParam0))
+			if (__LIB_16__::func_432(uParam0))
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "BACK", "HUD_AMMO_SHOP_SOUNDSET", true);
 			}
@@ -6978,7 +6978,7 @@ void func_365(var uParam0)//Position - 0x565E0
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "CANCEL", "HUD_FRONTEND_CLOTHESSHOP_SOUNDSET", true);
 			}
-			__LIB_16__::func_395(uParam0);
+			__LIB_16__::func_398(uParam0);
 			if (BitTest(uParam0->f_555, 17))
 			{
 				if (uParam0->f_116.f_21)
@@ -7008,7 +7008,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					func_350(PLAYER::PLAYER_PED_ID(), 1);
 				}
 			}
-			else if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522)) && Global_4538835)
+			else if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522)) && Global_4538835)
 			{
 				Global_4538835 = 0;
 				func_962(&(uParam0->f_514), &(uParam0->f_511), &(uParam0->f_512), &(uParam0->f_518), &(uParam0->f_517), *uParam0, &(uParam0->f_184), &Global_4537616, uParam0->f_116, uParam0->f_522, 1, 1);
@@ -7020,7 +7020,7 @@ void func_365(var uParam0)//Position - 0x565E0
 			{
 				if (Global_78319)
 				{
-					if (__LIB_3__::func_538() && __LIB_33__::func_383(*uParam0))
+					if (__LIB_3__::func_538() && __LIB_31__::func_866(*uParam0))
 					{
 						if (uParam0->f_522 == 64 || uParam0->f_522 == 65)
 						{
@@ -7059,7 +7059,7 @@ void func_365(var uParam0)//Position - 0x565E0
 	}
 	if (BitTest(uParam0->f_555, 13) && !BitTest(uParam0->f_555, 25))
 	{
-		__LIB_16__::func_394(&uVar38);
+		__LIB_16__::func_397(&uVar38);
 		if (MISC::GET_HASH_KEY(&uVar38) != MISC::GET_HASH_KEY("CSHOP_BUY"))
 		{
 			uParam0->f_116.f_31 = 6;
@@ -7094,11 +7094,11 @@ void func_365(var uParam0)//Position - 0x565E0
 					func_913(uParam0);
 				}
 			}
-			if ((BitTest(uParam0->f_555, 26) && uParam0->f_522 != 1) && ((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || !__LIB_16__::func_377(uParam0->f_522)) || Global_4538835))
+			if ((BitTest(uParam0->f_555, 26) && uParam0->f_522 != 1) && ((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || !__LIB_16__::func_380(uParam0->f_522)) || Global_4538835))
 			{
 				if (uParam0->f_522 == 3)
 				{
-					uVar39 = __LIB_33__::func_395(uParam0->f_586, iVar0, (uParam0->f_116.f_1 - 1));
+					uVar39 = __LIB_31__::func_878(uParam0->f_586, iVar0, (uParam0->f_116.f_1 - 1));
 					MISC::SET_BIT(&(uParam0->f_555), 14);
 					MISC::CLEAR_BIT(&(uParam0->f_555), 15);
 					MISC::SET_BIT(&(uParam0->f_555), 16);
@@ -7215,17 +7215,17 @@ void func_365(var uParam0)//Position - 0x565E0
 		{
 			if (uParam0->f_116.f_1 >= 0)
 			{
-				__LIB_16__::func_394(&uVar43);
+				__LIB_16__::func_397(&uVar43);
 				if (MISC::GET_HASH_KEY(&uVar43) == 0)
 				{
-					if (__LIB_16__::func_393(&Global_4537616, Global_4538470[uParam0->f_116.f_1]))
+					if (__LIB_16__::func_396(&Global_4537616, Global_4538470[uParam0->f_116.f_1]))
 					{
 						__LIB_1__::func_789("CSHOP_UNLOCK_M", 0, 0);
 					}
 				}
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Global_4538470[uParam0->f_116.f_1] == 5)
 				{
-					if (!__LIB_41__::func_326(uParam0->f_522))
+					if (!__LIB_41__::func_4(uParam0->f_522))
 					{
 						__LIB_1__::func_789("CSHOP_OUTFIT_MP", 0, 0);
 					}
@@ -7236,11 +7236,11 @@ void func_365(var uParam0)//Position - 0x565E0
 				}
 			}
 		}
-		else if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522)) && !Global_4538835)
+		else if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522)) && !Global_4538835)
 		{
 			if (uParam0->f_116.f_1 >= 0)
 			{
-				__LIB_16__::func_394(&uVar44);
+				__LIB_16__::func_397(&uVar44);
 				if (MISC::GET_HASH_KEY(&uVar44) == 0)
 				{
 					if (BitTest(Global_4538840[(uParam0->f_116.f_1 / 32)], (uParam0->f_116.f_1 % 32)))
@@ -7256,7 +7256,7 @@ void func_365(var uParam0)//Position - 0x565E0
 			{
 				if (!__LIB_1__::func_526())
 				{
-					__LIB_16__::func_394(&uVar45);
+					__LIB_16__::func_397(&uVar45);
 					if (MISC::GET_HASH_KEY(&uVar45) == 0 || MISC::GET_HASH_KEY(&uVar45) != MISC::GET_HASH_KEY("CSHOP_UNLOCK_C"))
 					{
 						__LIB_1__::func_789("CSHOP_UNLOCK_C", 0, 0);
@@ -7264,7 +7264,7 @@ void func_365(var uParam0)//Position - 0x565E0
 				}
 				else
 				{
-					__LIB_16__::func_394(&uVar46);
+					__LIB_16__::func_397(&uVar46);
 					if (MISC::GET_HASH_KEY(&uVar46) == 0 || MISC::GET_HASH_KEY(&uVar46) != MISC::GET_HASH_KEY("CSHOP_LCKCREW"))
 					{
 						__LIB_1__::func_789("CSHOP_LCKCREW", 0, 0);
@@ -7276,18 +7276,18 @@ void func_365(var uParam0)//Position - 0x565E0
 				__LIB_1__::func_789("CSHOP_CLOGO", 0, 0);
 			}
 		}
-		else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_424(uParam0->f_561))
+		else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_427(uParam0->f_561))
 		{
-			StringCopy(&Var49, __LIB_16__::func_392(uParam0->f_561), 16);
-			__LIB_16__::func_394(&uVar48);
+			StringCopy(&Var49, __LIB_16__::func_395(uParam0->f_561), 16);
+			__LIB_16__::func_397(&uVar48);
 			if (MISC::GET_HASH_KEY(&uVar48) == 0 || MISC::GET_HASH_KEY(&uVar48) != MISC::GET_HASH_KEY(&Var49))
 			{
 				__LIB_1__::func_789(&Var49, 0, 0);
 			}
 		}
-		else if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && uParam0->f_116.f_1 >= 0) && Global_4536982[uParam0->f_116.f_1] != 0) && __LIB_41__::func_322(uParam0->f_561))
+		else if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && uParam0->f_116.f_1 >= 0) && Global_4536982[uParam0->f_116.f_1] != 0) && __LIB_41__::func_0(uParam0->f_561))
 		{
-			__LIB_16__::func_394(&uVar50);
+			__LIB_16__::func_397(&uVar50);
 			if (MISC::GET_HASH_KEY(&uVar50) == 0 || MISC::GET_HASH_KEY(&uVar50) != MISC::GET_HASH_KEY("CCR_CLO_LOCK" /* GXT: Reach LS Car Meet reputation level ~1~ to unlock this item. */))
 			{
 				__LIB_1__::func_789("CCR_CLO_LOCK" /* GXT: Reach LS Car Meet reputation level ~1~ to unlock this item. */, 0, 0);
@@ -7296,7 +7296,7 @@ void func_365(var uParam0)//Position - 0x565E0
 		}
 		else if (((((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && uParam0->f_116.f_1 >= 0) && Global_4537108[uParam0->f_116.f_1] != 0) && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Global_4537108[uParam0->f_116.f_1], joaat("CREW_LOCK"), 0)) && !__LIB_1__::func_526()) && BitTest(uParam0->f_556, 1))
 		{
-			__LIB_16__::func_394(&uVar51);
+			__LIB_16__::func_397(&uVar51);
 			if (MISC::GET_HASH_KEY(&uVar51) == 0 || MISC::GET_HASH_KEY(&uVar51) != MISC::GET_HASH_KEY("CSHOP_UNLOCK_C"))
 			{
 				__LIB_1__::func_789("CSHOP_UNLOCK_C", 0, 0);
@@ -7409,13 +7409,13 @@ void func_365(var uParam0)//Position - 0x565E0
 				{
 					bVar53 = true;
 				}
-				__LIB_16__::func_394(&uVar52);
+				__LIB_16__::func_397(&uVar52);
 				if (MISC::GET_HASH_KEY(&uVar52) == 0)
 				{
 					bVar54 = false;
 					if (BitTest(uParam0->f_556, 4))
 					{
-						bVar54 = __LIB_19__::func_233(Global_4536730[uParam0->f_116.f_1], -1);
+						bVar54 = __LIB_19__::func_243(Global_4536730[uParam0->f_116.f_1], -1);
 					}
 					else
 					{
@@ -7427,9 +7427,9 @@ void func_365(var uParam0)//Position - 0x565E0
 					}
 					if (!bVar54)
 					{
-						if (__LIB_16__::func_391(&(uParam0->f_561), &sVar55))
+						if (__LIB_16__::func_394(&(uParam0->f_561), &sVar55))
 						{
-							if (__LIB_16__::func_390(&(uParam0->f_561)))
+							if (__LIB_16__::func_393(&(uParam0->f_561)))
 							{
 								__LIB_1__::func_789(&sVar55, 0, 0);
 							}
@@ -7446,7 +7446,7 @@ void func_365(var uParam0)//Position - 0x565E0
 						}
 						else if (BitTest(uParam0->f_556, 3) && !MISC::IS_STRING_NULL_OR_EMPTY(__LIB_13__::func_984(&(uParam0->f_561), 0)))
 						{
-							if (__LIB_16__::func_389(&(uParam0->f_561), &sVar55))
+							if (__LIB_16__::func_392(&(uParam0->f_561), &sVar55))
 							{
 								if (__LIB_13__::func_983(&(uParam0->f_561)))
 								{
@@ -7473,7 +7473,7 @@ void func_365(var uParam0)//Position - 0x565E0
 									__LIB_3__::func_542(&sVar55);
 									__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 								}
-								else if (__LIB_16__::func_388(&(uParam0->f_561)))
+								else if (__LIB_16__::func_391(&(uParam0->f_561)))
 								{
 									__LIB_1__::func_789("CSHOP_DESCDLC5", 0, 0);
 									__LIB_3__::func_542(&sVar55);
@@ -7537,7 +7537,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								}
 								__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 							}
-							else if (__LIB_16__::func_388(&(uParam0->f_561)))
+							else if (__LIB_16__::func_391(&(uParam0->f_561)))
 							{
 								if (bVar53)
 								{
@@ -7603,7 +7603,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					iVar57 = PED::GET_PED_TEXTURE_VARIATION(iVar0, 11);
 					if ((uParam0->f_586 == joaat("MP_M_Freemode_01") && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(FILES::GET_HASH_NAME_FOR_COMPONENT(iVar0, 11, iVar56, iVar57), joaat("LUXE_DRAW_0"), 0)) || (uParam0->f_586 == joaat("MP_F_Freemode_01") && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(FILES::GET_HASH_NAME_FOR_COMPONENT(iVar0, 11, iVar56, iVar57), joaat("LUXE2_DRAW_0"), 0)))
 					{
-						__LIB_16__::func_394(&uVar58);
+						__LIB_16__::func_397(&uVar58);
 						if (MISC::GET_HASH_KEY(&uVar58) == 0)
 						{
 							__LIB_1__::func_789("CSHOP_TS_LX1", 0, 0);
@@ -7611,7 +7611,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					}
 					else if ((uParam0->f_586 == joaat("MP_M_Freemode_01") && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(FILES::GET_HASH_NAME_FOR_COMPONENT(iVar0, 11, iVar56, iVar57), joaat("LUXE2_DRAW_0"), 0)) || (uParam0->f_586 == joaat("MP_F_Freemode_01") && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(FILES::GET_HASH_NAME_FOR_COMPONENT(iVar0, 11, iVar56, iVar57), joaat("LUXE2_DRAW_1"), 0)))
 					{
-						__LIB_16__::func_394(&uVar59);
+						__LIB_16__::func_397(&uVar59);
 						if (MISC::GET_HASH_KEY(&uVar59) == 0)
 						{
 							__LIB_1__::func_789("CSHOP_TS_LX2", 0, 0);
@@ -7623,16 +7623,16 @@ void func_365(var uParam0)//Position - 0x565E0
 			{
 				if (uParam0->f_116.f_1 >= 0 && !MISC::IS_STRING_NULL_OR_EMPTY(__LIB_13__::func_984(&(uParam0->f_561), 0)))
 				{
-					__LIB_16__::func_394(&uVar60);
+					__LIB_16__::func_397(&uVar60);
 					if (MISC::GET_HASH_KEY(&uVar60) == 0)
 					{
-						if (uParam0->f_116.f_1 >= 0 && __LIB_16__::func_391(&(uParam0->f_561), &cVar61))
+						if (uParam0->f_116.f_1 >= 0 && __LIB_16__::func_394(&(uParam0->f_561), &cVar61))
 						{
 							__LIB_1__::func_789("CSHOP_UNLOCK_N", 0, 0);
 						}
 						else if (BitTest(uParam0->f_556, 3))
 						{
-							if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(uParam0->f_561)), 1))
+							if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(uParam0->f_561)), 1))
 							{
 								if (__LIB_13__::func_983(&(uParam0->f_561)))
 								{
@@ -7649,7 +7649,7 @@ void func_365(var uParam0)//Position - 0x565E0
 									__LIB_1__::func_789("SHOP_UNLOCKCES4" /* GXT: This item has just been unlocked, it is part of the ~a~ Surprise. This item is permanently free as part of the Criminal Enterprise Starter Pack. */, 4000, 0);
 									__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 								}
-								else if (__LIB_16__::func_388(&(uParam0->f_561)))
+								else if (__LIB_16__::func_391(&(uParam0->f_561)))
 								{
 									__LIB_1__::func_789("SHOP_UNLOCKCES5" /* GXT: This item has just been unlocked, it is part of the ~a~ Event. This item is permanently free as part of the Criminal Enterprise Starter Pack. */, 4000, 0);
 									__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
@@ -7684,7 +7684,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								__LIB_1__::func_789("SHOP_UNLOCKDLC4" /* GXT: This item has just been unlocked, it is part of the ~a~ Surprise. */, 4000, 0);
 								__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 							}
-							else if (__LIB_16__::func_388(&(uParam0->f_561)))
+							else if (__LIB_16__::func_391(&(uParam0->f_561)))
 							{
 								__LIB_1__::func_789("SHOP_UNLOCKDLC5" /* GXT: This item has just been unlocked, it is part of the ~a~ Event. */, 4000, 0);
 								__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
@@ -7716,20 +7716,20 @@ void func_365(var uParam0)//Position - 0x565E0
 					}
 				}
 			}
-			else if (BitTest(uParam0->f_556, 1) && !__LIB_41__::func_324(uParam0))
+			else if (BitTest(uParam0->f_556, 1) && !__LIB_41__::func_2(uParam0))
 			{
 				if (uParam0->f_116.f_1 >= 0)
 				{
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_16__::func_394(&uVar62);
+						__LIB_16__::func_397(&uVar62);
 						if (MISC::GET_HASH_KEY(&uVar62) == 0)
 						{
-							if (__LIB_16__::func_387(ENTITY::GET_ENTITY_MODEL(iVar0), Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]))
+							if (__LIB_16__::func_390(ENTITY::GET_ENTITY_MODEL(iVar0), Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]))
 							{
 								__LIB_1__::func_789("CSHOP_UNLOCK_C", 0, 0);
 							}
-							else if (__LIB_16__::func_517(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]))
+							else if (__LIB_16__::func_520(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]))
 							{
 								if (!__LIB_1__::func_526())
 								{
@@ -7737,9 +7737,9 @@ void func_365(var uParam0)//Position - 0x565E0
 								}
 								else
 								{
-									iVar63 = __LIB_33__::func_445(PLAYER::PLAYER_ID());
-									iVar64 = __LIB_18__::func_407(iVar63, 0);
-									if (__LIB_16__::func_516(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1], &iVar65))
+									iVar63 = __LIB_31__::func_928(PLAYER::PLAYER_ID());
+									iVar64 = __LIB_18__::func_417(iVar63, 0);
+									if (__LIB_16__::func_519(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1], &iVar65))
 									{
 										if (iVar64 < iVar65)
 										{
@@ -7766,7 +7766,7 @@ void func_365(var uParam0)//Position - 0x565E0
 							}
 							else
 							{
-								iVar66 = __LIB_16__::func_543(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]);
+								iVar66 = __LIB_16__::func_546(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]);
 								if (iVar66 != 0)
 								{
 									__LIB_1__::func_789("CSHOP_UNLOCK", 0, 0);
@@ -7784,16 +7784,16 @@ void func_365(var uParam0)//Position - 0x565E0
 				{
 					bVar68 = true;
 				}
-				__LIB_16__::func_394(&uVar67);
+				__LIB_16__::func_397(&uVar67);
 				if (MISC::GET_HASH_KEY(&uVar67) == 0)
 				{
-					if (uParam0->f_116.f_1 >= 0 && __LIB_16__::func_391(&(uParam0->f_561), &sVar69))
+					if (uParam0->f_116.f_1 >= 0 && __LIB_16__::func_394(&(uParam0->f_561), &sVar69))
 					{
 						__LIB_1__::func_789(&sVar69, 0, 0);
 					}
 					else if ((BitTest(uParam0->f_556, 3) && uParam0->f_116.f_1 >= 0) && !MISC::IS_STRING_NULL_OR_EMPTY(__LIB_13__::func_984(&(uParam0->f_561), 0)))
 					{
-						if (__LIB_16__::func_389(&(uParam0->f_561), &sVar69))
+						if (__LIB_16__::func_392(&(uParam0->f_561), &sVar69))
 						{
 							if (__LIB_13__::func_983(&(uParam0->f_561)))
 							{
@@ -7813,7 +7813,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								__LIB_3__::func_542(&sVar69);
 								__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 							}
-							else if (__LIB_16__::func_388(&(uParam0->f_561)))
+							else if (__LIB_16__::func_391(&(uParam0->f_561)))
 							{
 								__LIB_1__::func_789("CSHOP_DESCDLC5", 0, 0);
 								__LIB_3__::func_542(&sVar69);
@@ -7841,7 +7841,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 1));
 							}
 						}
-						else if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(uParam0->f_561)), 1))
+						else if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(uParam0->f_561)), 1))
 						{
 							if (__LIB_13__::func_983(&(uParam0->f_561)))
 							{
@@ -7879,7 +7879,7 @@ void func_365(var uParam0)//Position - 0x565E0
 								}
 								__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 							}
-							else if (__LIB_16__::func_388(&(uParam0->f_561)))
+							else if (__LIB_16__::func_391(&(uParam0->f_561)))
 							{
 								if (bVar68)
 								{
@@ -7963,7 +7963,7 @@ void func_365(var uParam0)//Position - 0x565E0
 							}
 							__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 						}
-						else if (__LIB_16__::func_388(&(uParam0->f_561)))
+						else if (__LIB_16__::func_391(&(uParam0->f_561)))
 						{
 							if (bVar68)
 							{
@@ -8023,18 +8023,18 @@ void func_365(var uParam0)//Position - 0x565E0
 						}
 					}
 				}
-				if (__LIB_33__::func_444(*uParam0) != 0)
+				if (__LIB_31__::func_927(*uParam0) != 0)
 				{
-					__LIB_16__::func_384(&uVar70);
+					__LIB_16__::func_387(&uVar70);
 					if (MISC::GET_HASH_KEY(&uVar70) == 0)
 					{
 						__LIB_11__::func_617("CSHOP_DISC", 0, 0);
-						__LIB_16__::func_383(__LIB_33__::func_444(*uParam0));
+						__LIB_16__::func_386(__LIB_31__::func_927(*uParam0));
 					}
 				}
 				else if (BitTest(uParam0->f_556, 9))
 				{
-					__LIB_16__::func_384(&uVar71);
+					__LIB_16__::func_387(&uVar71);
 					if (MISC::GET_HASH_KEY(&uVar71) == 0)
 					{
 						__LIB_11__::func_617("CSHOP_SALE", 0, 0);
@@ -8042,9 +8042,9 @@ void func_365(var uParam0)//Position - 0x565E0
 				}
 			}
 		}
-		else if (uParam0->f_116.f_1 >= 0 && __LIB_16__::func_391(&(uParam0->f_561), &sVar72))
+		else if (uParam0->f_116.f_1 >= 0 && __LIB_16__::func_394(&(uParam0->f_561), &sVar72))
 		{
-			if (__LIB_16__::func_390(&(uParam0->f_561)))
+			if (__LIB_16__::func_393(&(uParam0->f_561)))
 			{
 				__LIB_1__::func_789(&sVar72, 0, 0);
 			}
@@ -8061,7 +8061,7 @@ void func_365(var uParam0)//Position - 0x565E0
 			{
 				bVar73 = true;
 			}
-			if (__LIB_16__::func_389(&(uParam0->f_561), &sVar72))
+			if (__LIB_16__::func_392(&(uParam0->f_561), &sVar72))
 			{
 				if (__LIB_13__::func_983(&(uParam0->f_561)))
 				{
@@ -8081,7 +8081,7 @@ void func_365(var uParam0)//Position - 0x565E0
 					__LIB_3__::func_542(&sVar72);
 					__LIB_3__::func_542(__LIB_13__::func_984(&(uParam0->f_561), 0));
 				}
-				else if (__LIB_16__::func_388(&(uParam0->f_561)))
+				else if (__LIB_16__::func_391(&(uParam0->f_561)))
 				{
 					__LIB_1__::func_789("CSHOP_DESCDLC5", 0, 0);
 					__LIB_3__::func_542(&sVar72);
@@ -8192,9 +8192,9 @@ void func_365(var uParam0)//Position - 0x565E0
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if ((((__LIB_41__::func_324(uParam0) && BitTest(uParam0->f_556, 1)) && (!__LIB_16__::func_377(uParam0->f_522) || Global_4538835)) && !BitTest(uParam0->f_555, 17)) && !Global_4537360[uParam0->f_116.f_1])
+		if ((((__LIB_41__::func_2(uParam0) && BitTest(uParam0->f_556, 1)) && (!__LIB_16__::func_380(uParam0->f_522) || Global_4538835)) && !BitTest(uParam0->f_555, 17)) && !Global_4537360[uParam0->f_116.f_1])
 		{
-			__LIB_41__::func_317(uParam0);
+			__LIB_40__::func_995(uParam0);
 		}
 	}
 	if (Global_78319 && uParam0->f_522 == 1)
@@ -8229,7 +8229,7 @@ void func_365(var uParam0)//Position - 0x565E0
 	}
 	else if (*uParam0 != 51 && __LIB_15__::func_107(&uLocal_80))
 	{
-		if (__LIB_33__::func_383(*uParam0))
+		if (__LIB_31__::func_866(*uParam0))
 		{
 			uParam0->f_116.f_25 = 1;
 		}
@@ -8292,7 +8292,7 @@ void func_365(var uParam0)//Position - 0x565E0
 		}
 		MISC::CLEAR_BIT(&(uParam0->f_555), 30);
 	}
-	__LIB_33__::func_384();
+	__LIB_31__::func_867();
 }
 
 void func_491(var uParam0, bool bParam1)//Position - 0x69835
@@ -8306,7 +8306,7 @@ void func_491(var uParam0, bool bParam1)//Position - 0x69835
 	}
 	if (!PED::IS_PED_INJURED(iVar0))
 	{
-		__LIB_33__::func_443(iVar0, &(uParam0->f_406), 1, -1);
+		__LIB_31__::func_926(iVar0, &(uParam0->f_406), 1, -1);
 		if (Global_78319)
 		{
 			if (__LIB_0__::func_970(PLAYER::PLAYER_ID()))
@@ -8314,9 +8314,9 @@ void func_491(var uParam0, bool bParam1)//Position - 0x69835
 			}
 			else
 			{
-				__LIB_33__::func_382(iVar0, uParam0->f_406, -1);
+				__LIB_31__::func_865(iVar0, uParam0->f_406, -1);
 			}
-			uParam0->f_686 = __LIB_24__::func_881();
+			uParam0->f_686 = __LIB_24__::func_891();
 		}
 		Global_4535613 = 1;
 	}
@@ -8405,7 +8405,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 		iVar4 = -99;
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			bVar7 = __LIB_17__::func_338();
+			bVar7 = __LIB_17__::func_341();
 			if (__LIB_0__::func_374(bVar7))
 			{
 				Global_100493.f_477[bVar7] = iVar1;
@@ -8430,36 +8430,36 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 				iVar11 = __LIB_5__::func_29(iVar9, 11, iVar10, Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2628[uParam0->f_116.f_1]);
 				if (iVar11 != -1)
 				{
-					__LIB_24__::func_879(iVar8, iVar11, 1);
+					__LIB_24__::func_889(iVar8, iVar11, 1);
 				}
 				if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2327[uParam0->f_116.f_1])
 				{
-					__LIB_24__::func_879(iVar8, 13, 1);
+					__LIB_24__::func_889(iVar8, 13, 1);
 				}
 				if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2349[uParam0->f_116.f_1])
 				{
-					__LIB_24__::func_879(iVar8, 14, 1);
+					__LIB_24__::func_889(iVar8, 14, 1);
 				}
 				if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2371[uParam0->f_116.f_1])
 				{
-					__LIB_24__::func_879(iVar8, 15, 1);
+					__LIB_24__::func_889(iVar8, 15, 1);
 				}
 				if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2393[uParam0->f_116.f_1])
 				{
-					__LIB_24__::func_879(iVar8, 16, 1);
+					__LIB_24__::func_889(iVar8, 16, 1);
 				}
 				if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2415[uParam0->f_116.f_1])
 				{
-					__LIB_24__::func_879(iVar8, 71, 1);
+					__LIB_24__::func_889(iVar8, 71, 1);
 				}
 				if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2437[uParam0->f_116.f_1])
 				{
-					__LIB_24__::func_879(iVar8, 72, 1);
+					__LIB_24__::func_889(iVar8, 72, 1);
 				}
 			}
 			else
 			{
-				__LIB_28__::func_182(MISC::GET_HASH_KEY("crewLogo"), iVar8);
+				__LIB_28__::func_192(MISC::GET_HASH_KEY("crewLogo"), iVar8);
 				func_546(iVar8, uParam0->f_116.f_1, 0, 0);
 				MISC::CLEAR_BIT(&(uParam0->f_555), 14);
 				MISC::CLEAR_BIT(&(uParam0->f_555), 15);
@@ -8469,9 +8469,9 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 			return 1;
 		}
 		iVar12 = 0;
-		if (__LIB_16__::func_387(iVar9, iVar1, iVar0))
+		if (__LIB_16__::func_390(iVar9, iVar1, iVar0))
 		{
-			if (__LIB_18__::func_455(2, __LIB_0__::func_5()))
+			if (__LIB_18__::func_465(2, __LIB_0__::func_5()))
 			{
 				Stack.Push(&iVar8);
 				Stack.Push(2);
@@ -8520,7 +8520,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 		}
 		if (Global_4537616.f_253[uParam0->f_116.f_1] == 11 && !bVar15)
 		{
-			iVar2 = __LIB_41__::func_319(iVar8, &(uParam0->f_509), BitTest(uParam0->f_555, 21));
+			iVar2 = __LIB_40__::func_997(iVar8, &(uParam0->f_509), BitTest(uParam0->f_555, 21));
 			iVar12 = 1;
 		}
 		else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -8540,7 +8540,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 			}
 			if (__LIB_0__::func_280(iVar9, iVar3, -1))
 			{
-				if (Global_4537616.f_253[uParam0->f_116.f_1] == 1 && __LIB_16__::func_519(iVar9, iVar3))
+				if (Global_4537616.f_253[uParam0->f_116.f_1] == 1 && __LIB_16__::func_522(iVar9, iVar3))
 				{
 					iVar3 = -99;
 					iVar4 = -99;
@@ -8621,7 +8621,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 			Stack.Push(14);
 			Stack.Push(6);
 			Call_Loc(uParam0->f_508);
-			if (__LIB_16__::func_518(StackVal, StackVal, StackVal, -1))
+			if (__LIB_16__::func_521(StackVal, StackVal, StackVal, -1))
 			{
 				Stack.Push(iVar8);
 				Stack.Push(14);
@@ -8646,7 +8646,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 			Stack.Push(14);
 			Stack.Push(7);
 			Call_Loc(uParam0->f_508);
-			if (__LIB_16__::func_518(StackVal, StackVal, StackVal, -1))
+			if (__LIB_16__::func_521(StackVal, StackVal, StackVal, -1))
 			{
 				Stack.Push(iVar8);
 				Stack.Push(14);
@@ -8686,18 +8686,18 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 		{
 			if ((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && iVar1 == 14) && iVar0 == 0)
 			{
-				__LIB_16__::func_559(iVar8, &(uParam0->f_509));
+				__LIB_16__::func_562(iVar8, &(uParam0->f_509));
 			}
 			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && iVar1 == 14) && iVar0 == 0)
 			{
-				__LIB_16__::func_558(iVar8, &(uParam0->f_509));
+				__LIB_16__::func_561(iVar8, &(uParam0->f_509));
 				Stack.Push(uParam0->f_586);
 				Stack.Push(1);
 				Stack.Push(iVar8);
 				Stack.Push(1);
 				Stack.Push(-1);
 				Call_Loc(uParam0->f_508);
-				if (__LIB_16__::func_357(StackVal, StackVal, StackVal, -1))
+				if (__LIB_16__::func_360(StackVal, StackVal, StackVal, -1))
 				{
 					Stack.Push(iVar8);
 					Stack.Push(1);
@@ -8852,7 +8852,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 									Call_Loc(uParam0->f_509);
 									if (iVar4 != -99)
 									{
-										if (__LIB_16__::func_356(iVar9, iVar4, 11, iVar3) && PED::GET_PED_DRAWABLE_VARIATION(iVar8, 10) == 0)
+										if (__LIB_16__::func_359(iVar9, iVar4, 11, iVar3) && PED::GET_PED_DRAWABLE_VARIATION(iVar8, 10) == 0)
 										{
 											PED::SET_PED_COMPONENT_VARIATION(iVar8, 10, iVar5, iVar6, 0);
 										}
@@ -8877,7 +8877,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 						{
 							bVar25 = false;
 							iVar26 = 0;
-							__LIB_16__::func_407(iVar8, &bVar25, &iVar26);
+							__LIB_16__::func_410(iVar8, &bVar25, &iVar26);
 							if ((!__LIB_0__::func_283(iVar8, -1) && !bVar25) && (!func_532(iVar8) || func_530(iVar8)))
 							{
 								Stack.Push(iVar8);
@@ -8896,7 +8896,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 								Stack.Push(0);
 								Call_Loc(uParam0->f_509);
 							}
-							else if (__LIB_16__::func_406(iVar8))
+							else if (__LIB_16__::func_409(iVar8))
 							{
 								Stack.Push(iVar8);
 								Stack.Push(1);
@@ -8933,7 +8933,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 								Stack.Push(-1);
 								Call_Loc(uParam0->f_508);
 								iVar28 = StackVal;
-								if (__LIB_16__::func_356(iVar9, iVar4, 8, iVar28) && PED::GET_PED_DRAWABLE_VARIATION(iVar8, 10) == 0)
+								if (__LIB_16__::func_359(iVar9, iVar4, 8, iVar28) && PED::GET_PED_DRAWABLE_VARIATION(iVar8, 10) == 0)
 								{
 									PED::SET_PED_COMPONENT_VARIATION(iVar8, 10, iVar5, iVar6, 0);
 								}
@@ -8959,7 +8959,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 				Call_Loc(uParam0->f_513);
 				Var29 = { StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal };
 			}
-			__LIB_16__::func_405(iVar8, iVar1, Var29.f_13, 1);
+			__LIB_16__::func_408(iVar8, iVar1, Var29.f_13, 1);
 			if (Global_78319)
 			{
 				if (iVar1 != 0)
@@ -9003,7 +9003,7 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 					}
 					if (Global_4536478[uParam0->f_116.f_1] != 0)
 					{
-						__LIB_41__::func_318(Global_4536730[uParam0->f_116.f_1], 1, -1);
+						__LIB_40__::func_996(Global_4536730[uParam0->f_116.f_1], 1, -1);
 					}
 				}
 				if (iVar1 == 14 && iVar0 == 0)
@@ -9020,9 +9020,9 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 			{
 				if (Global_78319)
 				{
-					if (__LIB_16__::func_517(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]))
+					if (__LIB_16__::func_520(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1]))
 					{
-						__LIB_16__::func_394(&uVar34);
+						__LIB_16__::func_397(&uVar34);
 						if (BitTest(uParam0->f_556, 1))
 						{
 							if ((MISC::GET_HASH_KEY(&uVar34) == MISC::GET_HASH_KEY("CSHOP_UNLOCK_C") || MISC::GET_HASH_KEY(&uVar34) == MISC::GET_HASH_KEY("CSHOP_LCKCREWR")) || MISC::GET_HASH_KEY(&uVar34) == MISC::GET_HASH_KEY("CSHOP_LCKCREWR_TUT"))
@@ -9035,9 +9035,9 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 							}
 							else
 							{
-								iVar35 = __LIB_33__::func_445(PLAYER::PLAYER_ID());
-								iVar36 = __LIB_18__::func_407(iVar35, 0);
-								if (__LIB_16__::func_516(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1], &iVar33))
+								iVar35 = __LIB_31__::func_928(PLAYER::PLAYER_ID());
+								iVar36 = __LIB_18__::func_417(iVar35, 0);
+								if (__LIB_16__::func_519(Global_4537616.f_126[uParam0->f_116.f_1], Global_4537616[uParam0->f_116.f_1], &iVar33))
 								{
 									if (iVar36 < iVar33)
 									{
@@ -9059,11 +9059,11 @@ int func_515(var uParam0, bool bParam1)//Position - 0x6BE9D
 			}
 			if (bParam1)
 			{
-				__LIB_16__::func_545(iVar1, iVar0, &Var29);
+				__LIB_16__::func_548(iVar1, iVar0, &Var29);
 			}
 			if ((iVar9 == joaat("MP_M_Freemode_01") && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(__LIB_0__::func_205(iVar9, iVar0, 14, 3), joaat("EAR_PIECE"), 1)) || (iVar9 == joaat("MP_F_Freemode_01") && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(__LIB_0__::func_205(iVar9, iVar0, 14, 4), joaat("EAR_PIECE"), 1)))
 			{
-				__LIB_16__::func_404(uParam0, iVar8);
+				__LIB_16__::func_407(uParam0, iVar8);
 			}
 			return 1;
 		}
@@ -9102,7 +9102,7 @@ void func_519(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 		iVar1++;
 	}
 	bVar2 = false;
-	if (__LIB_16__::func_375(iParam0, &Global_78200, iParam1, &iParam3))
+	if (__LIB_16__::func_378(iParam0, &Global_78200, iParam1, &iParam3))
 	{
 		iVar1 = 0;
 		while (iVar1 < 12)
@@ -9182,7 +9182,7 @@ int func_530(int iParam0)//Position - 0x74EDA
 	}
 	iVar0 = __LIB_0__::func_349(iParam0, PED::GET_PED_PROP_INDEX(iParam0, 0), PED::GET_PED_PROP_TEXTURE_INDEX(iParam0, 0), 0);
 	iVar1 = FILES::GET_HASH_NAME_FOR_PROP(iParam0, 0, PED::GET_PED_PROP_INDEX(iParam0, 0), PED::GET_PED_PROP_TEXTURE_INDEX(iParam0, 0));
-	if (__LIB_16__::func_355(ENTITY::GET_ENTITY_MODEL(iParam0), 14, iVar0, iVar1))
+	if (__LIB_16__::func_358(ENTITY::GET_ENTITY_MODEL(iParam0), 14, iVar0, iVar1))
 	{
 		return 1;
 	}
@@ -9309,13 +9309,13 @@ void func_546(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0
 						iVar10 = __LIB_0__::func_266(__LIB_1__::func_360(1759, -1, 0), __LIB_0__::func_276(iParam0));
 						if (iVar10 != -1)
 						{
-							__LIB_24__::func_880(iVar10, 0, -1);
+							__LIB_24__::func_890(iVar10, 0, -1);
 						}
 						iVar10 = __LIB_0__::func_266(Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2628[iParam1], __LIB_0__::func_276(iParam0));
 						if (iVar10 != -1)
 						{
 							__LIB_1__::func_354(1759, Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2628[iParam1], -1, 1, 0);
-							__LIB_24__::func_880(iVar10, 1, -1);
+							__LIB_24__::func_890(iVar10, 1, -1);
 						}
 						iVar11 = FILES::GET_HASH_NAME_FOR_COMPONENT(iParam0, 11, Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_1335[iParam1 /*13*/][11], Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_1609[iParam1 /*13*/][11]);
 						iVar12 = FILES::GET_HASH_NAME_FOR_COMPONENT(iParam0, 8, Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_1335[iParam1 /*13*/][8], Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_1609[iParam1 /*13*/][8]);
@@ -9325,7 +9325,7 @@ void func_546(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0
 							iVar10 = __LIB_5__::func_29(ENTITY::GET_ENTITY_MODEL(iParam0), 11, iVar13, 0);
 							if (iVar10 != -1)
 							{
-								__LIB_24__::func_880(iVar10, 1, -1);
+								__LIB_24__::func_890(iVar10, 1, -1);
 							}
 							else
 							{
@@ -9333,87 +9333,87 @@ void func_546(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0
 								iVar10 = __LIB_5__::func_29(ENTITY::GET_ENTITY_MODEL(iParam0), 8, iVar13, 0);
 								if (iVar10 != -1)
 								{
-									__LIB_24__::func_880(iVar10, 1, -1);
+									__LIB_24__::func_890(iVar10, 1, -1);
 								}
 							}
 						}
 						if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2327[iParam1])
 						{
-							__LIB_24__::func_880(13, 1, -1);
-							__LIB_19__::func_210(14, 0, -1);
-							__LIB_19__::func_210(15, 0, -1);
-							__LIB_19__::func_210(16, 0, -1);
-							__LIB_19__::func_210(71, 0, -1);
-							__LIB_19__::func_210(72, 0, -1);
+							__LIB_24__::func_890(13, 1, -1);
+							__LIB_19__::func_220(14, 0, -1);
+							__LIB_19__::func_220(15, 0, -1);
+							__LIB_19__::func_220(16, 0, -1);
+							__LIB_19__::func_220(71, 0, -1);
+							__LIB_19__::func_220(72, 0, -1);
 						}
 						else
 						{
-							__LIB_24__::func_880(13, 0, -1);
+							__LIB_24__::func_890(13, 0, -1);
 						}
 						if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2349[iParam1])
 						{
-							__LIB_19__::func_210(13, 0, -1);
-							__LIB_24__::func_880(14, 1, -1);
-							__LIB_19__::func_210(15, 0, -1);
-							__LIB_19__::func_210(16, 0, -1);
-							__LIB_19__::func_210(71, 0, -1);
-							__LIB_19__::func_210(72, 0, -1);
+							__LIB_19__::func_220(13, 0, -1);
+							__LIB_24__::func_890(14, 1, -1);
+							__LIB_19__::func_220(15, 0, -1);
+							__LIB_19__::func_220(16, 0, -1);
+							__LIB_19__::func_220(71, 0, -1);
+							__LIB_19__::func_220(72, 0, -1);
 						}
 						else
 						{
-							__LIB_24__::func_880(14, 0, -1);
+							__LIB_24__::func_890(14, 0, -1);
 						}
 						if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2371[iParam1])
 						{
-							__LIB_19__::func_210(13, 0, -1);
-							__LIB_19__::func_210(14, 0, -1);
-							__LIB_24__::func_880(15, 1, -1);
-							__LIB_19__::func_210(16, 0, -1);
-							__LIB_19__::func_210(71, 0, -1);
-							__LIB_19__::func_210(72, 0, -1);
+							__LIB_19__::func_220(13, 0, -1);
+							__LIB_19__::func_220(14, 0, -1);
+							__LIB_24__::func_890(15, 1, -1);
+							__LIB_19__::func_220(16, 0, -1);
+							__LIB_19__::func_220(71, 0, -1);
+							__LIB_19__::func_220(72, 0, -1);
 						}
 						else
 						{
-							__LIB_24__::func_880(15, 0, -1);
+							__LIB_24__::func_890(15, 0, -1);
 						}
 						if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2393[iParam1])
 						{
-							__LIB_19__::func_210(13, 0, -1);
-							__LIB_19__::func_210(14, 0, -1);
-							__LIB_19__::func_210(15, 0, -1);
-							__LIB_24__::func_880(16, 1, -1);
-							__LIB_19__::func_210(71, 0, -1);
-							__LIB_19__::func_210(72, 0, -1);
+							__LIB_19__::func_220(13, 0, -1);
+							__LIB_19__::func_220(14, 0, -1);
+							__LIB_19__::func_220(15, 0, -1);
+							__LIB_24__::func_890(16, 1, -1);
+							__LIB_19__::func_220(71, 0, -1);
+							__LIB_19__::func_220(72, 0, -1);
 						}
 						else
 						{
-							__LIB_24__::func_880(16, 0, -1);
+							__LIB_24__::func_890(16, 0, -1);
 						}
 						if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2415[iParam1])
 						{
-							__LIB_19__::func_210(13, 0, -1);
-							__LIB_19__::func_210(14, 0, -1);
-							__LIB_19__::func_210(15, 0, -1);
-							__LIB_19__::func_210(16, 0, -1);
-							__LIB_24__::func_880(71, 1, -1);
-							__LIB_19__::func_210(72, 0, -1);
+							__LIB_19__::func_220(13, 0, -1);
+							__LIB_19__::func_220(14, 0, -1);
+							__LIB_19__::func_220(15, 0, -1);
+							__LIB_19__::func_220(16, 0, -1);
+							__LIB_24__::func_890(71, 1, -1);
+							__LIB_19__::func_220(72, 0, -1);
 						}
 						else
 						{
-							__LIB_24__::func_880(71, 0, -1);
+							__LIB_24__::func_890(71, 0, -1);
 						}
 						if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_681.f_2437[iParam1])
 						{
-							__LIB_19__::func_210(13, 0, -1);
-							__LIB_19__::func_210(14, 0, -1);
-							__LIB_19__::func_210(15, 0, -1);
-							__LIB_19__::func_210(16, 0, -1);
-							__LIB_19__::func_210(71, 0, -1);
-							__LIB_24__::func_880(72, 1, -1);
+							__LIB_19__::func_220(13, 0, -1);
+							__LIB_19__::func_220(14, 0, -1);
+							__LIB_19__::func_220(15, 0, -1);
+							__LIB_19__::func_220(16, 0, -1);
+							__LIB_19__::func_220(71, 0, -1);
+							__LIB_24__::func_890(72, 1, -1);
 						}
 						else
 						{
-							__LIB_24__::func_880(72, 0, -1);
+							__LIB_24__::func_890(72, 0, -1);
 						}
 					}
 				}
@@ -9453,7 +9453,7 @@ void func_553(var uParam0)//Position - 0x778E6
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = 0;
-		bVar1 = __LIB_16__::func_546(PLAYER::PLAYER_PED_ID(), &iVar0, -99);
+		bVar1 = __LIB_16__::func_549(PLAYER::PLAYER_PED_ID(), &iVar0, -99);
 		if (BitTest(uParam0->f_555, 22) != bVar1)
 		{
 			if (bVar1)
@@ -9528,7 +9528,7 @@ int func_554(var uParam0)//Position - 0x77A18
 		iVar0 = Global_4537616[uParam0->f_116.f_1];
 		iVar1 = Global_4537616.f_126[uParam0->f_116.f_1];
 		uParam0->f_116.f_15 = 1;
-		if (__LIB_41__::func_321(uParam0, iVar1) || !BitTest(uParam0->f_556, 6))
+		if (__LIB_40__::func_999(uParam0, iVar1) || !BitTest(uParam0->f_556, 6))
 		{
 			Stack.Push(uParam0->f_586);
 			Stack.Push(iVar1);
@@ -9558,7 +9558,7 @@ int func_554(var uParam0)//Position - 0x77A18
 			}
 			Var2.f_7 = uParam0->f_695;
 			Var2.f_8 = { uParam0->f_561 };
-			__LIB_16__::func_416(Var2.f_8, Var2.f_7, 0, 1, 0, BitTest(uParam0->f_556, 9));
+			__LIB_16__::func_419(Var2.f_8, Var2.f_7, 0, 1, 0, BitTest(uParam0->f_556, 9));
 			if (Global_78319)
 			{
 				if (__LIB_3__::func_538())
@@ -9572,7 +9572,7 @@ int func_554(var uParam0)//Position - 0x77A18
 							iVar13 = __LIB_0__::func_276(PLAYER::PLAYER_PED_ID());
 							uParam0->f_116.f_24 = 0;
 							iVar16 = 0;
-							bVar17 = __LIB_43__::func_76(uParam0, iVar0, &(Var2.f_8), -1, &iVar16);
+							bVar17 = __LIB_42__::func_959(uParam0, iVar0, &(Var2.f_8), -1, &iVar16);
 							iVar5 = 0;
 							while (iVar5 < 8)
 							{
@@ -9643,7 +9643,7 @@ int func_554(var uParam0)//Position - 0x77A18
 													iVar7 = iVar6;
 												}
 												bVar8 = false;
-												if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
+												if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
 												{
 													bVar8 = true;
 												}
@@ -9665,7 +9665,7 @@ int func_554(var uParam0)//Position - 0x77A18
 													if (bVar17)
 													{
 													}
-													else if (__LIB_33__::func_391(1, MISC::GET_HASH_KEY(&sVar15), Var11.f_8, Var11.f_7, 14, uVar9[iVar6], -1, 1) && __LIB_33__::func_391(3, joaat("PM_CLOTHING_DESIGNER_FEE"), Var11.f_8, 10, 14, uVar9[iVar6], -1, 1))
+													else if (__LIB_31__::func_874(1, MISC::GET_HASH_KEY(&sVar15), Var11.f_8, Var11.f_7, 14, uVar9[iVar6], -1, 1) && __LIB_31__::func_874(3, joaat("PM_CLOTHING_DESIGNER_FEE"), Var11.f_8, 10, 14, uVar9[iVar6], -1, 1))
 													{
 													}
 													else
@@ -9728,7 +9728,7 @@ int func_554(var uParam0)//Position - 0x77A18
 											bVar18 = true;
 										}
 										bVar8 = false;
-										if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
+										if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
 										{
 											bVar8 = true;
 										}
@@ -9750,7 +9750,7 @@ int func_554(var uParam0)//Position - 0x77A18
 											if (bVar17)
 											{
 											}
-											else if (__LIB_33__::func_391(1, MISC::GET_HASH_KEY(&sVar15), Var11.f_8, Var11.f_7, iVar4, uVar10[iVar4], -1, 1) && __LIB_33__::func_391(3, joaat("PM_CLOTHING_DESIGNER_FEE"), Var11.f_8, 10, iVar4, uVar10[iVar4], -1, 1))
+											else if (__LIB_31__::func_874(1, MISC::GET_HASH_KEY(&sVar15), Var11.f_8, Var11.f_7, iVar4, uVar10[iVar4], -1, 1) && __LIB_31__::func_874(3, joaat("PM_CLOTHING_DESIGNER_FEE"), Var11.f_8, 10, iVar4, uVar10[iVar4], -1, 1))
 											{
 											}
 											else
@@ -9776,7 +9776,7 @@ int func_554(var uParam0)//Position - 0x77A18
 													Var11.f_7 = SYSTEM::FLOOR((IntToFloat(NETSHOPPING::NET_GAMESERVER_GET_PRICE(MISC::GET_HASH_KEY(&sVar15), joaat("CATEGORY_CLOTH"), true)) * 1.1f));
 													iVar16 = (iVar16 + Var11.f_7);
 												}
-												if (__LIB_33__::func_391(1, MISC::GET_HASH_KEY(&sVar15), Var11.f_8, Var11.f_7, 10, -99, Global_4536730[uParam0->f_116.f_1], 1) && __LIB_33__::func_391(3, joaat("PM_CLOTHING_DESIGNER_FEE"), Var11.f_8, 10, 10, -99, Global_4536730[uParam0->f_116.f_1], 1))
+												if (__LIB_31__::func_874(1, MISC::GET_HASH_KEY(&sVar15), Var11.f_8, Var11.f_7, 10, -99, Global_4536730[uParam0->f_116.f_1], 1) && __LIB_31__::func_874(3, joaat("PM_CLOTHING_DESIGNER_FEE"), Var11.f_8, 10, 10, -99, Global_4536730[uParam0->f_116.f_1], 1))
 												{
 												}
 												else
@@ -9793,12 +9793,12 @@ int func_554(var uParam0)//Position - 0x77A18
 							if (!uParam0->f_116.f_24)
 							{
 								bVar8 = false;
-								if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
+								if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
 								{
 									bVar8 = true;
 								}
 								bVar19 = false;
-								if (__LIB_16__::func_418(uParam0))
+								if (__LIB_16__::func_421(uParam0))
 								{
 									bVar19 = true;
 								}
@@ -9822,7 +9822,7 @@ int func_554(var uParam0)//Position - 0x77A18
 									{
 										iVar16 = (iVar16 + iVar20);
 									}
-									if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
+									if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
 									{
 										iVar20 = 0;
 										iVar16 = 0;
@@ -9832,7 +9832,7 @@ int func_554(var uParam0)//Position - 0x77A18
 									{
 										iVar21 = iVar16;
 									}
-									if (((iVar20 == 0 || __LIB_33__::func_391(4, joaat("SERVICE_SPEND_STYLIST_FEE"), Var2.f_8, iVar20, iVar1, iVar0, -1, 1)) && __LIB_33__::func_391(1, MISC::GET_HASH_KEY(&sVar15), Var2.f_8, iVar21, iVar1, iVar0, -1, 1)) && (((iVar21 == 0 || iVar20 != 0) || !bVar19) || __LIB_33__::func_391(3, joaat("PM_CLOTHING_BIN"), Var2.f_8, SYSTEM::FLOOR((SYSTEM::TO_FLOAT(2) * 100f)), iVar1, iVar0, -1, 0)))
+									if (((iVar20 == 0 || __LIB_31__::func_874(4, joaat("SERVICE_SPEND_STYLIST_FEE"), Var2.f_8, iVar20, iVar1, iVar0, -1, 1)) && __LIB_31__::func_874(1, MISC::GET_HASH_KEY(&sVar15), Var2.f_8, iVar21, iVar1, iVar0, -1, 1)) && (((iVar21 == 0 || iVar20 != 0) || !bVar19) || __LIB_31__::func_874(3, joaat("PM_CLOTHING_BIN"), Var2.f_8, SYSTEM::FLOOR((SYSTEM::TO_FLOAT(2) * 100f)), iVar1, iVar0, -1, 0)))
 									{
 										if (iVar20 == 0)
 										{
@@ -9846,7 +9846,7 @@ int func_554(var uParam0)//Position - 0x77A18
 							}
 							if (!uParam0->f_116.f_24)
 							{
-								__LIB_16__::func_413(iVar16);
+								__LIB_16__::func_416(iVar16);
 							}
 						}
 						else
@@ -9873,23 +9873,23 @@ int func_554(var uParam0)//Position - 0x77A18
 							}
 							__LIB_4__::func_886(&sVar22, Var2.f_8, uParam0->f_586, 1, iVar1, iVar23, -1, -1, 0, 0);
 							bVar24 = false;
-							if (__LIB_16__::func_418(uParam0))
+							if (__LIB_16__::func_421(uParam0))
 							{
 								bVar24 = true;
 							}
 							if (((!uParam0->f_116.f_24 && BitTest(Var2.f_6, 6)) && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Global_2883588, joaat("MULTI_DECAL"), 0)) && iVar1 != 12)
 							{
 								uParam0->f_116.f_24 = 1;
-								if (!NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&sVar22) || __LIB_33__::func_391(1, MISC::GET_HASH_KEY(&sVar22), Var2.f_8, 0, iVar1, iVar0, -1, 0))
+								if (!NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_IS_VALID(&sVar22) || __LIB_31__::func_874(1, MISC::GET_HASH_KEY(&sVar22), Var2.f_8, 0, iVar1, iVar0, -1, 0))
 								{
 									__LIB_4__::func_886(&sVar22, Var2.f_8, uParam0->f_586, 1, 100, 0, -1, -1, 0, 0);
-									if (__LIB_33__::func_391(1, MISC::GET_HASH_KEY(&sVar22), Var2.f_8, Var2.f_7, iVar1, iVar0, Global_4536730[uParam0->f_116.f_1], 0) && ((Var2.f_7 == 0 || !bVar24) || __LIB_33__::func_391(3, joaat("PM_CLOTHING_BIN"), Var2.f_8, SYSTEM::FLOOR((SYSTEM::TO_FLOAT(2) * 100f)), iVar1, iVar0, -1, 0)))
+									if (__LIB_31__::func_874(1, MISC::GET_HASH_KEY(&sVar22), Var2.f_8, Var2.f_7, iVar1, iVar0, Global_4536730[uParam0->f_116.f_1], 0) && ((Var2.f_7 == 0 || !bVar24) || __LIB_31__::func_874(3, joaat("PM_CLOTHING_BIN"), Var2.f_8, SYSTEM::FLOOR((SYSTEM::TO_FLOAT(2) * 100f)), iVar1, iVar0, -1, 0)))
 									{
 										uParam0->f_116.f_24 = 0;
 									}
 								}
 							}
-							else if (__LIB_33__::func_391(1, MISC::GET_HASH_KEY(&sVar22), Var2.f_8, Var2.f_7, iVar1, iVar0, -1, 0) && ((Var2.f_7 == 0 || !bVar24) || __LIB_33__::func_391(3, joaat("PM_CLOTHING_BIN"), Var2.f_8, SYSTEM::FLOOR((SYSTEM::TO_FLOAT(2) * 100f)), iVar1, iVar0, -1, 0)))
+							else if (__LIB_31__::func_874(1, MISC::GET_HASH_KEY(&sVar22), Var2.f_8, Var2.f_7, iVar1, iVar0, -1, 0) && ((Var2.f_7 == 0 || !bVar24) || __LIB_31__::func_874(3, joaat("PM_CLOTHING_BIN"), Var2.f_8, SYSTEM::FLOOR((SYSTEM::TO_FLOAT(2) * 100f)), iVar1, iVar0, -1, 0)))
 							{
 								uParam0->f_116.f_24 = 0;
 							}
@@ -9902,7 +9902,7 @@ int func_554(var uParam0)//Position - 0x77A18
 						{
 							uParam0->f_116.f_23 = 1;
 							MISC::SET_BIT(&(uParam0->f_555), 6);
-							if ((((__LIB_33__::func_390(*uParam0) || iVar1 == 12) || BitTest(Var2.f_6, 7)) || __LIB_16__::func_418(uParam0)) || (BitTest(uParam0->f_556, 10) && *uParam0 == 51))
+							if ((((__LIB_31__::func_873(*uParam0) || iVar1 == 12) || BitTest(Var2.f_6, 7)) || __LIB_16__::func_421(uParam0)) || (BitTest(uParam0->f_556, 10) && *uParam0 == 51))
 							{
 								uParam0->f_116.f_25 = 1;
 								uParam0->f_116.f_26 = 0;
@@ -9924,7 +9924,7 @@ int func_554(var uParam0)//Position - 0x77A18
 						}
 						else
 						{
-							__LIB_16__::func_412(uParam0);
+							__LIB_16__::func_415(uParam0);
 							uParam0->f_116.f_25 = 1;
 							uParam0->f_116.f_26 = 90;
 							return 0;
@@ -9947,17 +9947,17 @@ int func_554(var uParam0)//Position - 0x77A18
 					{
 						if (Global_4536730[uParam0->f_116.f_1] != -1)
 						{
-							__LIB_43__::func_75(Global_4536730[uParam0->f_116.f_1], 1, 0, 1, 0, -1);
-							__LIB_24__::func_880(Global_4536730[uParam0->f_116.f_1], 1, -1);
+							__LIB_42__::func_958(Global_4536730[uParam0->f_116.f_1], 1, 0, 1, 0, -1);
+							__LIB_24__::func_890(Global_4536730[uParam0->f_116.f_1], 1, -1);
 						}
 					}
 					if (__LIB_0__::func_233(uParam0->f_586, iVar1, iVar0, -1))
 					{
-						__LIB_42__::func_424(*uParam0, 1, 13, 0);
+						__LIB_42__::func_299(*uParam0, 1, 13, 0);
 					}
 					else
 					{
-						__LIB_42__::func_424(*uParam0, 1, 5, 0);
+						__LIB_42__::func_299(*uParam0, 1, 5, 0);
 					}
 					__LIB_2__::func_69(1088, -1);
 					__LIB_0__::func_186(2, 1, -1);
@@ -9967,22 +9967,22 @@ int func_554(var uParam0)//Position - 0x77A18
 					iVar26 = (iVar25 / 2500) + 1 * 2500;
 					if ((iVar25 + Var2.f_7) >= iVar26)
 					{
-						__LIB_16__::func_520(iVar26);
+						__LIB_16__::func_523(iVar26);
 					}
 					__LIB_1__::func_354(2062, (iVar25 + Var2.f_7), -1, 1, 0);
 					if (BitTest(Var2.f_6, 7))
 					{
 						__LIB_1__::func_746(2048, 1, -1);
 					}
-					if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
+					if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(Var2.f_8)), 1))
 					{
-						iVar27 = __LIB_16__::func_411(Var2.f_8);
+						iVar27 = __LIB_16__::func_414(Var2.f_8);
 						func_607(iVar27, 1);
 					}
 					uParam0->f_116.f_23 = 1;
 					uParam0->f_693 = 1;
 					MISC::SET_BIT(&(uParam0->f_555), 6);
-					__LIB_16__::func_412(uParam0);
+					__LIB_16__::func_415(uParam0);
 					return 1;
 				}
 				else
@@ -9993,17 +9993,17 @@ int func_554(var uParam0)//Position - 0x77A18
 			else
 			{
 				bVar28 = false;
-				if (Var2.f_5 == __LIB_17__::func_338() && !__LIB_16__::func_410(__LIB_17__::func_338()) >= Var2.f_7)
+				if (Var2.f_5 == __LIB_17__::func_341() && !__LIB_16__::func_413(__LIB_17__::func_341()) >= Var2.f_7)
 				{
-					bVar28 = __LIB_33__::func_448(iVar0, iVar1);
+					bVar28 = __LIB_31__::func_931(iVar0, iVar1);
 				}
-				if (__LIB_16__::func_410(__LIB_17__::func_338()) >= Var2.f_7 || bVar28)
+				if (__LIB_16__::func_413(__LIB_17__::func_341()) >= Var2.f_7 || bVar28)
 				{
-					if (__LIB_41__::func_321(uParam0, iVar1))
+					if (__LIB_40__::func_999(uParam0, iVar1))
 					{
-						bVar30 = __LIB_33__::func_447(uParam0, iVar1);
-						iVar31 = __LIB_33__::func_446(bVar30, iVar1, iVar0, &uVar29);
-						Stack.Push(__LIB_16__::func_509(bVar30));
+						bVar30 = __LIB_31__::func_930(uParam0, iVar1);
+						iVar31 = __LIB_31__::func_929(bVar30, iVar1, iVar0, &uVar29);
+						Stack.Push(__LIB_16__::func_512(bVar30));
 						Stack.Push(uVar29);
 						Stack.Push(iVar31);
 						Stack.Push(1);
@@ -10018,7 +10018,7 @@ int func_554(var uParam0)//Position - 0x77A18
 						{
 							Global_113386.f_2363.f_539.f_2403[bVar30] = iVar31;
 						}
-						if (__LIB_33__::func_447(uParam0, iVar1) == 145)
+						if (__LIB_31__::func_930(uParam0, iVar1) == 145)
 						{
 							MISC::SET_BIT(&(uParam0->f_555), 13);
 						}
@@ -10032,14 +10032,14 @@ int func_554(var uParam0)//Position - 0x77A18
 						Stack.Push(1);
 						Call_Loc(uParam0->f_510);
 					}
-					__LIB_16__::func_405(PLAYER::PLAYER_PED_ID(), iVar1, Var2.f_13, 1);
-					__LIB_16__::func_405(uParam0->f_617.f_2, iVar1, Var2.f_13, 1);
+					__LIB_16__::func_408(PLAYER::PLAYER_PED_ID(), iVar1, Var2.f_13, 1);
+					__LIB_16__::func_408(uParam0->f_617.f_2, iVar1, Var2.f_13, 1);
 					PED::SET_PED_SWEAT(PLAYER::PLAYER_PED_ID(), 0f);
 					if (!bVar28)
 					{
 						if (Var2.f_7 > 0)
 						{
-							__LIB_16__::func_573(__LIB_17__::func_338(), __LIB_13__::func_874(*uParam0), Var2.f_7);
+							__LIB_16__::func_576(__LIB_17__::func_341(), __LIB_13__::func_874(*uParam0), Var2.f_7);
 							if (MISC::GET_HASH_KEY(__LIB_3__::func_285(*uParam0)) == MISC::GET_HASH_KEY("v_clotheslo"))
 							{
 								__LIB_0__::func_183(112, 1);
@@ -10062,9 +10062,9 @@ int func_554(var uParam0)//Position - 0x77A18
 							iVar36 = (iVar35 / 2500) + 1 * 2500;
 							if ((iVar35 + Var2.f_7) >= iVar36)
 							{
-								__LIB_16__::func_520(iVar36);
+								__LIB_16__::func_523(iVar36);
 							}
-							switch (__LIB_17__::func_338())
+							switch (__LIB_17__::func_341())
 							{
 								case 0:
 									STATS::STAT_SET_INT(joaat("SP0_SP_MONEY_SPENT_ON_CLOTHES"), (iVar32 + Var2.f_7), true);
@@ -10084,20 +10084,20 @@ int func_554(var uParam0)//Position - 0x77A18
 						if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) > 0)
 						{
 							__LIB_0__::func_222(&(uParam0->f_236.f_5), 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
-							__LIB_33__::func_454(&(uParam0->f_236.f_5), "SOL5AUD", "SOL5_TAB", 7, 0, 0, 0);
+							__LIB_31__::func_937(&(uParam0->f_236.f_5), "SOL5AUD", "SOL5_TAB", 7, 0, 0, 0);
 							iLocal_76 = 1;
 						}
 					}
-					__LIB_33__::func_388();
+					__LIB_31__::func_871();
 					if (uParam0->f_520 == 21 && uParam0->f_184 == 0)
 					{
-						__LIB_42__::func_424(*uParam0, 1, 13, 0);
+						__LIB_42__::func_299(*uParam0, 1, 13, 0);
 					}
 					else
 					{
-						__LIB_42__::func_424(*uParam0, 1, 5, 0);
+						__LIB_42__::func_299(*uParam0, 1, 5, 0);
 					}
-					__LIB_16__::func_560(*uParam0, __LIB_17__::func_338(), 0);
+					__LIB_16__::func_563(*uParam0, __LIB_17__::func_341(), 0);
 					uParam0->f_116.f_23 = 1;
 					if (iVar1 == 14)
 					{
@@ -10119,7 +10119,7 @@ int func_554(var uParam0)//Position - 0x77A18
 						MISC::SET_BIT(&(uParam0->f_555), 6);
 					}
 					__LIB_0__::func_421(uParam0->f_586, iVar1, iVar0, 1);
-					__LIB_16__::func_412(uParam0);
+					__LIB_16__::func_415(uParam0);
 					return 1;
 				}
 				else
@@ -10337,15 +10337,15 @@ void func_794(var uParam0)//Position - 0xFD4A6
 		Stack.Push(-1);
 		Call_Loc(uParam0->f_513);
 		Var2 = { StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal };
-		__LIB_16__::func_545(iVar1, iVar0, &Var2);
+		__LIB_16__::func_548(iVar1, iVar0, &Var2);
 	}
-	if (__LIB_41__::func_321(uParam0, Global_4537616.f_126[uParam0->f_116.f_1]) || (uParam0->f_522 == 77 && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS()))
+	if (__LIB_40__::func_999(uParam0, Global_4537616.f_126[uParam0->f_116.f_1]) || (uParam0->f_522 == 77 && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS()))
 	{
 		func_360(uParam0, 1, 0);
 	}
 	else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Global_4537616.f_126[uParam0->f_116.f_1] == 12)
 	{
-		__LIB_28__::func_182(MISC::GET_HASH_KEY("crewLogo"), PLAYER::PLAYER_PED_ID());
+		__LIB_28__::func_192(MISC::GET_HASH_KEY("crewLogo"), PLAYER::PLAYER_PED_ID());
 		MISC::SET_BIT(&(uParam0->f_555), 15);
 		MISC::CLEAR_BIT(&(uParam0->f_555), 28);
 		uParam0->f_689 = 11;
@@ -10365,13 +10365,13 @@ void func_794(var uParam0)//Position - 0xFD4A6
 	{
 		__LIB_1__::func_354(1759, Global_4536478[uParam0->f_116.f_1], -1, 1, 0);
 	}
-	if (__LIB_41__::func_321(uParam0, Global_4537616.f_126[uParam0->f_116.f_1]) || (uParam0->f_522 == 77 && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS()))
+	if (__LIB_40__::func_999(uParam0, Global_4537616.f_126[uParam0->f_116.f_1]) || (uParam0->f_522 == 77 && !NETWORK::NETWORK_IS_GAME_IN_PROGRESS()))
 	{
 		func_515(uParam0, 0);
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		__LIB_0__::func_472(__LIB_17__::func_338(), 0);
+		__LIB_0__::func_472(__LIB_17__::func_341(), 0);
 	}
 	iVar4 = Global_4537616.f_126[uParam0->f_116.f_1];
 	iVar5 = Global_4537616[uParam0->f_116.f_1];
@@ -10384,21 +10384,21 @@ void func_794(var uParam0)//Position - 0xFD4A6
 		Call_Loc(uParam0->f_513);
 		Var6 = { StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal };
 	}
-	__LIB_16__::func_405(PLAYER::PLAYER_PED_ID(), iVar4, Var6.f_13, 1);
-	__LIB_16__::func_405(uParam0->f_617.f_2, iVar4, Var6.f_13, 1);
+	__LIB_16__::func_408(PLAYER::PLAYER_PED_ID(), iVar4, Var6.f_13, 1);
+	__LIB_16__::func_408(uParam0->f_617.f_2, iVar4, Var6.f_13, 1);
 	PED::SET_PED_SWEAT(PLAYER::PLAYER_PED_ID(), 0f);
 	if (iVar4 == 14)
 	{
-		__LIB_16__::func_428(PLAYER::PLAYER_PED_ID(), Var6.f_12, Var6.f_3, Var6.f_4);
+		__LIB_16__::func_431(PLAYER::PLAYER_PED_ID(), Var6.f_12, Var6.f_3, Var6.f_4);
 	}
 	else if (iVar4 == 12)
 	{
-		__LIB_33__::func_398(&(uParam0->f_513), PLAYER::PLAYER_PED_ID(), iVar5);
+		__LIB_31__::func_881(&(uParam0->f_513), PLAYER::PLAYER_PED_ID(), iVar5);
 	}
 	else
 	{
 		iVar7 = __LIB_0__::func_33(iVar4);
-		__LIB_16__::func_427(PLAYER::PLAYER_PED_ID(), iVar7, Var6.f_3, Var6.f_4, uParam0->f_406.f_26[iVar7]);
+		__LIB_16__::func_430(PLAYER::PLAYER_PED_ID(), iVar7, Var6.f_3, Var6.f_4, uParam0->f_406.f_26[iVar7]);
 	}
 	if (uParam0->f_116.f_21)
 	{
@@ -10427,7 +10427,7 @@ void func_856(var uParam0, int iParam1)//Position - 0x100637
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if ((((((uParam0->f_522 == 1 || uParam0->f_522 == 4) || uParam0->f_522 == 3) || uParam0->f_522 == 223) || uParam0->f_522 == 227) || uParam0->f_522 == 238) || (__LIB_16__::func_377(uParam0->f_522) && !Global_4538835))
+		if ((((((uParam0->f_522 == 1 || uParam0->f_522 == 4) || uParam0->f_522 == 3) || uParam0->f_522 == 223) || uParam0->f_522 == 227) || uParam0->f_522 == 238) || (__LIB_16__::func_380(uParam0->f_522) && !Global_4538835))
 		{
 			iVar0 = 0;
 		}
@@ -10456,9 +10456,9 @@ void func_856(var uParam0, int iParam1)//Position - 0x100637
 						}
 						else if (!bLocal_67 && !bLocal_68)
 						{
-							__LIB_16__::func_443(uParam0, 4f, 0);
+							__LIB_16__::func_446(uParam0, 4f, 0);
 							PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iParam1, true);
-							TASK::TASK_PLAY_ANIM(iParam1, uParam0->f_184.f_11, __LIB_43__::func_80(iParam1, uParam0), 4f, -4f, -1, 0, 0f, false, false, false);
+							TASK::TASK_PLAY_ANIM(iParam1, uParam0->f_184.f_11, __LIB_42__::func_963(iParam1, uParam0), 4f, -4f, -1, 0, 0f, false, false, false);
 							MISC::CLEAR_BIT(&(uParam0->f_555), 20);
 						}
 					}
@@ -10474,7 +10474,7 @@ int func_894(var uParam0)//Position - 0x103166
 	{
 		if (VEHICLE::IS_ANY_VEHICLE_NEAR_POINT(uParam0->f_184.f_31, 3f) && !Global_78319)
 		{
-			__LIB_16__::func_526(uParam0);
+			__LIB_16__::func_529(uParam0);
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_617.f_2))
 		{
@@ -10498,7 +10498,7 @@ int func_894(var uParam0)//Position - 0x103166
 						Stack.Push(__LIB_0__::func_5());
 						Stack.Push(0);
 						Call_Loc(uParam0->f_516);
-						PED::SET_FACIAL_IDLE_ANIM_OVERRIDE(uParam0->f_617.f_2, __LIB_16__::func_525(Global_1853348[PLAYER::PLAYER_ID() /*834*/]), 0);
+						PED::SET_FACIAL_IDLE_ANIM_OVERRIDE(uParam0->f_617.f_2, __LIB_16__::func_528(Global_1853348[PLAYER::PLAYER_ID() /*834*/]), 0);
 						PED::SET_PED_COMPONENT_VARIATION(uParam0->f_617.f_2, 1, PED::GET_PED_DRAWABLE_VARIATION(uParam0->f_617.f_2, 1), PED::GET_PED_TEXTURE_VARIATION(uParam0->f_617.f_2, 1), 0);
 					}
 					else
@@ -10516,11 +10516,11 @@ int func_894(var uParam0)//Position - 0x103166
 					PED::RESET_PED_VISIBLE_DAMAGE(uParam0->f_617.f_2);
 					if (uParam0->f_522 == 0)
 					{
-						if (__LIB_16__::func_447(&Global_4537616, 0))
+						if (__LIB_16__::func_450(&Global_4537616, 0))
 						{
-							if (!__LIB_33__::func_407(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
+							if (!__LIB_31__::func_890(&Global_4537616, &(uParam0->f_116.f_1), uParam0->f_522))
 							{
-								if (!__LIB_33__::func_406(&Global_4537616, uParam0->f_522, &(uParam0->f_116.f_1)))
+								if (!__LIB_31__::func_889(&Global_4537616, uParam0->f_522, &(uParam0->f_116.f_1)))
 								{
 									uParam0->f_116.f_1 = -1;
 								}
@@ -10610,7 +10610,7 @@ void func_913(var uParam0)//Position - 0x10449A
 	}
 	__LIB_1__::func_602(0, 0);
 	__LIB_8__::func_891(*uParam0, 0);
-	iVar26 = __LIB_33__::func_444(*uParam0);
+	iVar26 = __LIB_31__::func_927(*uParam0);
 	if (BitTest(uParam0->f_557, 0))
 	{
 		__LIB_1__::func_766(1, 0, 0, 0, 0);
@@ -10621,7 +10621,7 @@ void func_913(var uParam0)//Position - 0x10449A
 		{
 			if (__LIB_12__::func_583(iVar27, 0))
 			{
-				if (__LIB_16__::func_456(iVar27, &sVar28, 0))
+				if (__LIB_16__::func_459(iVar27, &sVar28, 0))
 				{
 					__LIB_3__::func_572(iVar27, "PIM_DNAME" /* GXT: ~a~ */, 1, 1, 0, 0, 0);
 					__LIB_13__::func_396(&sVar28, 0, 0, 0);
@@ -10651,7 +10651,7 @@ void func_913(var uParam0)//Position - 0x10449A
 		{
 			__LIB_1__::func_792(201, "ITEM_SAVE" /* GXT: Save */, -1, 0);
 			__LIB_1__::func_792(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
-			if (__LIB_12__::func_583(uParam0->f_116.f_2, 0) && !__LIB_41__::func_326(uParam0->f_522))
+			if (__LIB_12__::func_583(uParam0->f_116.f_2, 0) && !__LIB_41__::func_4(uParam0->f_522))
 			{
 				__LIB_1__::func_792(204, "ITEM_DEL" /* GXT: Delete */, -1, 0);
 				__LIB_1__::func_792(203, "ITEM_REN" /* GXT: Rename */, -1, 0);
@@ -10664,15 +10664,15 @@ void func_913(var uParam0)//Position - 0x10449A
 		}
 		return;
 	}
-	if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_377(uParam0->f_522)) && !Global_4538835)
+	if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_16__::func_380(uParam0->f_522)) && !Global_4538835)
 	{
 		__LIB_1__::func_766(1, 1, 0, 0, 0);
 		__LIB_1__::func_765(1, 2, 1, 1, 1);
-		__LIB_1__::func_767(__LIB_37__::func_144(uParam0->f_522, 1, 0, 0));
+		__LIB_1__::func_767(__LIB_36__::func_818(uParam0->f_522, 1, 0, 0));
 		iVar29 = -1;
-		iVar30 = (__LIB_16__::func_426(uParam0->f_522) - 1);
+		iVar30 = (__LIB_16__::func_429(uParam0->f_522) - 1);
 		iVar31 = 0;
-		if (__LIB_33__::func_449(uParam0->f_522))
+		if (__LIB_31__::func_932(uParam0->f_522))
 		{
 			iVar31 = 25;
 			iVar30 += 12;
@@ -10680,10 +10680,10 @@ void func_913(var uParam0)//Position - 0x10449A
 		iVar12 = iVar31;
 		while (iVar12 <= iVar30)
 		{
-			if (BitTest(Global_4538837[(iVar12 / 32)], (iVar12 % 32)) || __LIB_33__::func_449(uParam0->f_522))
+			if (BitTest(Global_4538837[(iVar12 / 32)], (iVar12 % 32)) || __LIB_31__::func_932(uParam0->f_522))
 			{
-				__LIB_16__::func_455(uParam0->f_522, iVar12, &Var10);
-				if (BitTest(Global_4538840[(iVar12 / 32)], (iVar12 % 32)) && !__LIB_33__::func_449(uParam0->f_522))
+				__LIB_16__::func_458(uParam0->f_522, iVar12, &Var10);
+				if (BitTest(Global_4538840[(iVar12 / 32)], (iVar12 % 32)) && !__LIB_31__::func_932(uParam0->f_522))
 				{
 					__LIB_3__::func_572(iVar12, &Var10, 1, 1, 0, 0, 0);
 					__LIB_14__::func_431(2, 0);
@@ -10693,7 +10693,7 @@ void func_913(var uParam0)//Position - 0x10449A
 					__LIB_3__::func_572(iVar12, &Var10, 1, 1, 0, 0, 0);
 					__LIB_14__::func_431(51, 0);
 				}
-				else if (__LIB_33__::func_449(uParam0->f_522) && __LIB_33__::func_411(iVar12))
+				else if (__LIB_31__::func_932(uParam0->f_522) && __LIB_31__::func_894(iVar12))
 				{
 					__LIB_3__::func_572(iVar12, &Var10, 0, 1, 0, 0, 0);
 					__LIB_3__::func_572(iVar12, "", 1, 1, 0, 0, 0);
@@ -10721,7 +10721,7 @@ void func_913(var uParam0)//Position - 0x10449A
 		}
 		__LIB_5__::func_393(uParam0->f_696);
 		__LIB_3__::func_110(uParam0->f_116.f_1, 1, 1);
-		if (__LIB_33__::func_449(uParam0->f_522))
+		if (__LIB_31__::func_932(uParam0->f_522))
 		{
 			if (Global_4538835)
 			{
@@ -10747,13 +10747,13 @@ void func_913(var uParam0)//Position - 0x10449A
 			__LIB_1__::func_792(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
 			__LIB_1__::func_792(202, "ITEM_BACK" /* GXT: Back */, -1, 0);
 		}
-		if (*uParam0 != 51 && !__LIB_33__::func_449(uParam0->f_522))
+		if (*uParam0 != 51 && !__LIB_31__::func_932(uParam0->f_522))
 		{
 			__LIB_14__::func_964(&uLocal_80);
 		}
 		__LIB_6__::func_170(21, "ITEM_MOV_CAM" /* GXT: Move Camera */, -1);
 		__LIB_1__::func_792(iLocal_98, "ITEM_ZOOM" /* GXT: Zoom */, -1, 0);
-		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_326(uParam0->f_522))
+		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_4(uParam0->f_522))
 		{
 			__LIB_1__::func_792(203, "ITEM_SAVED" /* GXT: Edit Saved Outfits */, -1, 0);
 		}
@@ -10769,7 +10769,7 @@ void func_913(var uParam0)//Position - 0x10449A
 			uParam0->f_522 = 5;
 			__LIB_1__::func_766(1, 1, 0, 0, 0);
 			__LIB_1__::func_765(1, 2, 1, 1, 1);
-			__LIB_1__::func_767(__LIB_37__::func_144(5, 1, 0, 0));
+			__LIB_1__::func_767(__LIB_36__::func_818(5, 1, 0, 0));
 			iVar32 = -1;
 			iVar33 = -1;
 			iVar34 = 0;
@@ -10777,7 +10777,7 @@ void func_913(var uParam0)//Position - 0x10449A
 			{
 				if (__LIB_12__::func_583(iVar34, 0))
 				{
-					if (__LIB_16__::func_456(iVar34, &sVar35, 0))
+					if (__LIB_16__::func_459(iVar34, &sVar35, 0))
 					{
 						__LIB_3__::func_572(iVar34, "PIM_DNAME" /* GXT: ~a~ */, 1, 1, 0, 0, 0);
 						__LIB_13__::func_396(&sVar35, 0, 0, 0);
@@ -10790,7 +10790,7 @@ void func_913(var uParam0)//Position - 0x10449A
 					{
 						iVar32 = iVar34;
 					}
-					if (iVar33 == -1 && __LIB_16__::func_335(PLAYER::PLAYER_PED_ID(), iVar34, 0))
+					if (iVar33 == -1 && __LIB_16__::func_338(PLAYER::PLAYER_PED_ID(), iVar34, 0))
 					{
 						__LIB_3__::func_572(iVar34, "", 1, 1, 0, 0, 0);
 						__LIB_14__::func_431(9, 0);
@@ -10832,7 +10832,7 @@ void func_913(var uParam0)//Position - 0x10449A
 			}
 			__LIB_6__::func_170(21, "ITEM_MOV_CAM" /* GXT: Move Camera */, -1);
 			__LIB_1__::func_792(iLocal_98, "ITEM_ZOOM" /* GXT: Zoom */, -1, 0);
-			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_326(uParam0->f_522))
+			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_4(uParam0->f_522))
 			{
 				__LIB_1__::func_792(203, "ITEM_SAVED" /* GXT: Edit Saved Outfits */, -1, 0);
 			}
@@ -10840,7 +10840,7 @@ void func_913(var uParam0)//Position - 0x10449A
 		case 1:
 			__LIB_1__::func_766(1, 0, 0, 0, 0);
 			__LIB_1__::func_765(1, 1, 1, 1, 1);
-			__LIB_1__::func_767(__LIB_37__::func_144(1, 1, 0, 0));
+			__LIB_1__::func_767(__LIB_36__::func_818(1, 1, 0, 0));
 			iVar12 = 0;
 			while (iVar12 < Global_4538470)
 			{
@@ -10852,9 +10852,9 @@ void func_913(var uParam0)//Position - 0x10449A
 			iVar12 = 0;
 			while (iVar12 < 273)
 			{
-				if (__LIB_16__::func_447(&Global_4537616, iVar12))
+				if (__LIB_16__::func_450(&Global_4537616, iVar12))
 				{
-					__LIB_41__::func_330(iVar12);
+					__LIB_41__::func_8(iVar12);
 				}
 				iVar12++;
 			}
@@ -10863,14 +10863,14 @@ void func_913(var uParam0)//Position - 0x10449A
 			{
 				if (Global_4538470[iVar12] != 0)
 				{
-					if (Global_4538470[iVar12] != 3 && __LIB_16__::func_393(&Global_4537616, Global_4538470[iVar12]))
+					if (Global_4538470[iVar12] != 3 && __LIB_16__::func_396(&Global_4537616, Global_4538470[iVar12]))
 					{
-						__LIB_3__::func_572(iVar13, __LIB_37__::func_144(Global_4538470[iVar12], 0, 0, 0), 1, 1, 0, 0, 0);
+						__LIB_3__::func_572(iVar13, __LIB_36__::func_818(Global_4538470[iVar12], 0, 0, 0), 1, 1, 0, 0, 0);
 						__LIB_14__::func_431(2, 0);
 					}
 					else
 					{
-						__LIB_3__::func_572(iVar13, __LIB_37__::func_144(Global_4538470[iVar12], 0, 0, 0), 0, 1, 0, 0, 0);
+						__LIB_3__::func_572(iVar13, __LIB_36__::func_818(Global_4538470[iVar12], 0, 0, 0), 0, 1, 0, 0, 0);
 					}
 					iVar13++;
 				}
@@ -10889,7 +10889,7 @@ void func_913(var uParam0)//Position - 0x10449A
 			}
 			__LIB_6__::func_170(21, "ITEM_MOV_CAM" /* GXT: Move Camera */, -1);
 			__LIB_1__::func_792(iLocal_98, "ITEM_ZOOM" /* GXT: Zoom */, -1, 0);
-			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_326(uParam0->f_522))
+			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_4(uParam0->f_522))
 			{
 				__LIB_1__::func_792(203, "ITEM_SAVED" /* GXT: Edit Saved Outfits */, -1, 0);
 			}
@@ -10898,7 +10898,7 @@ void func_913(var uParam0)//Position - 0x10449A
 			StringCopy(&(uParam0->f_561), "", 16);
 			__LIB_1__::func_766(1, 1, 0, 0, 0);
 			__LIB_1__::func_765(1, 2, 1, 1, 1);
-			__LIB_1__::func_767(__LIB_37__::func_144(3, 1, 0, 0));
+			__LIB_1__::func_767(__LIB_36__::func_818(3, 1, 0, 0));
 			MISC::CLEAR_BIT(&(uParam0->f_556), 1);
 			MISC::CLEAR_BIT(&(uParam0->f_556), 0);
 			MISC::CLEAR_BIT(&(uParam0->f_556), 2);
@@ -10920,18 +10920,18 @@ void func_913(var uParam0)//Position - 0x10449A
 				{
 					__LIB_3__::func_572(iVar12, "D_FMM_0_0" /* GXT: No Crew Emblem */, 0, 1, 0, 0, 0);
 					bVar0 = false;
-					iVar20 = __LIB_16__::func_563(uParam0->f_586, iVar18, 0);
-					if (iVar20 != -1 && __LIB_19__::func_233(iVar20, -1))
+					iVar20 = __LIB_16__::func_566(uParam0->f_586, iVar18, 0);
+					if (iVar20 != -1 && __LIB_19__::func_243(iVar20, -1))
 					{
 						bVar0 = true;
 					}
-					iVar20 = __LIB_16__::func_563(uParam0->f_586, iVar18, 1);
-					if (iVar20 != -1 && __LIB_19__::func_233(iVar20, -1))
+					iVar20 = __LIB_16__::func_566(uParam0->f_586, iVar18, 1);
+					if (iVar20 != -1 && __LIB_19__::func_243(iVar20, -1))
 					{
 						bVar0 = true;
 					}
-					iVar20 = __LIB_16__::func_563(uParam0->f_586, iVar18, 2);
-					if (iVar20 != -1 && __LIB_19__::func_233(iVar20, -1))
+					iVar20 = __LIB_16__::func_566(uParam0->f_586, iVar18, 2);
+					if (iVar20 != -1 && __LIB_19__::func_243(iVar20, -1))
 					{
 						bVar0 = true;
 					}
@@ -10961,16 +10961,16 @@ void func_913(var uParam0)//Position - 0x10449A
 				}
 				else
 				{
-					iVar20 = __LIB_16__::func_563(uParam0->f_586, iVar18, (iVar12 - 1));
+					iVar20 = __LIB_16__::func_566(uParam0->f_586, iVar18, (iVar12 - 1));
 					__LIB_0__::func_445(&Var19, iVar20, iVar21, PLAYER::PLAYER_PED_ID(), -1);
 					__LIB_4__::func_886(&sVar11, Var19, uParam0->f_586, 1, 100, 0, -1, -1, 0, 0);
-					__LIB_41__::func_320(*uParam0, &(Var19.f_7), &Var19, 0, -1, uParam0->f_586, -99, 0, 0, MISC::GET_HASH_KEY(&sVar11));
-					if (__LIB_16__::func_418(uParam0))
+					__LIB_40__::func_998(*uParam0, &(Var19.f_7), &Var19, 0, -1, uParam0->f_586, -99, 0, 0, MISC::GET_HASH_KEY(&sVar11));
+					if (__LIB_16__::func_421(uParam0))
 					{
-						__LIB_16__::func_415(&(Var19.f_7));
+						__LIB_16__::func_418(&(Var19.f_7));
 					}
 					__LIB_3__::func_572(iVar12, &Var19, 0, 1, 0, 0, 0);
-					if (__LIB_19__::func_233(iVar20, -1))
+					if (__LIB_19__::func_243(iVar20, -1))
 					{
 						if (iVar12 == uParam0->f_116.f_1)
 						{
@@ -10980,7 +10980,7 @@ void func_913(var uParam0)//Position - 0x10449A
 						__LIB_14__::func_431(9, 0);
 						MISC::SET_BIT(&iVar36, iVar12);
 					}
-					else if (BitTest(iVar36, iVar12) || __LIB_16__::func_403(MISC::GET_HASH_KEY(&Var19)))
+					else if (BitTest(iVar36, iVar12) || __LIB_16__::func_406(MISC::GET_HASH_KEY(&Var19)))
 					{
 						if (iVar12 == uParam0->f_116.f_1)
 						{
@@ -11030,7 +11030,7 @@ void func_913(var uParam0)//Position - 0x10449A
 			}
 			__LIB_6__::func_170(21, "ITEM_MOV_CAM" /* GXT: Move Camera */, -1);
 			__LIB_1__::func_792(iLocal_98, "ITEM_ZOOM" /* GXT: Zoom */, -1, 0);
-			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_326(uParam0->f_522))
+			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_4(uParam0->f_522))
 			{
 				__LIB_1__::func_792(203, "ITEM_SAVED" /* GXT: Edit Saved Outfits */, -1, 0);
 			}
@@ -11076,13 +11076,13 @@ void func_913(var uParam0)//Position - 0x10449A
 							Call_Loc(uParam0->f_513);
 							Var17 = { StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal, StackVal };
 						}
-						if (__LIB_16__::func_424(Var17.f_8))
+						if (__LIB_16__::func_427(Var17.f_8))
 						{
 							MISC::CLEAR_BIT(&(Var17.f_6), 1);
 						}
-						bVar4 = __LIB_41__::func_321(uParam0, iVar15);
+						bVar4 = __LIB_40__::func_999(uParam0, iVar15);
 						bVar8 = false;
-						if (__LIB_42__::func_423(Global_4537616.f_253[iVar12], &Var10))
+						if (__LIB_42__::func_298(Global_4537616.f_253[iVar12], &Var10))
 						{
 							Var17.f_8 = { Var10 };
 						}
@@ -11117,16 +11117,16 @@ void func_913(var uParam0)//Position - 0x10449A
 							MISC::SET_BIT(&(Var17.f_6), 1);
 							MISC::SET_BIT(&(Var17.f_6), 2);
 						}
-						if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && BitTest(Var17.f_6, 6)) && __LIB_33__::func_392(Global_2883588, -1, -1))
+						if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && BitTest(Var17.f_6, 6)) && __LIB_31__::func_875(Global_2883588, -1, -1))
 						{
 							MISC::SET_BIT(&(Var17.f_6), 1);
 							MISC::SET_BIT(&(Var17.f_6), 2);
 						}
-						if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && BitTest(Var17.f_6, 6)) && !__LIB_16__::func_452(Global_2883588))
+						if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && BitTest(Var17.f_6, 6)) && !__LIB_16__::func_455(Global_2883588))
 						{
 							MISC::CLEAR_BIT(&(Var17.f_6), 4);
 						}
-						if ((((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_3__::func_538()) && Global_4537616.f_253[iVar12] == 0) && !BitTest(Var17.f_6, 6)) && !__LIB_33__::func_449(uParam0->f_522))
+						if ((((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_3__::func_538()) && Global_4537616.f_253[iVar12] == 0) && !BitTest(Var17.f_6, 6)) && !__LIB_31__::func_932(uParam0->f_522))
 						{
 							iVar1 = 0;
 							__LIB_4__::func_886(&sVar11, Var17.f_8, uParam0->f_586, 1, iVar15, iVar1, -1, -1, 0, 0);
@@ -11135,13 +11135,13 @@ void func_913(var uParam0)//Position - 0x10449A
 								MISC::CLEAR_BIT(&(Var17.f_6), 1);
 							}
 						}
-						if (__LIB_33__::func_449(uParam0->f_522))
+						if (__LIB_31__::func_932(uParam0->f_522))
 						{
 							MISC::SET_BIT(&(Var17.f_6), 1);
 						}
 						if (!BitTest(Var17.f_6, 1) && Global_4536478[iVar12] == 0)
 						{
-							if (__LIB_16__::func_418(uParam0))
+							if (__LIB_16__::func_421(uParam0))
 							{
 								__LIB_3__::func_572(iVar12, &(Var17.f_8), 0, 1, 0, 0, 0);
 								__LIB_3__::func_572(iVar12, "", 1, 1, 0, 0, 0);
@@ -11176,7 +11176,7 @@ void func_913(var uParam0)//Position - 0x10449A
 									{
 										MISC::CLEAR_BIT(&(Var17.f_6), 2);
 										MISC::CLEAR_BIT(&(Var17.f_6), 4);
-										if (!__LIB_33__::func_386(Global_4536730[iVar12]))
+										if (!__LIB_31__::func_869(Global_4536730[iVar12]))
 										{
 											MISC::SET_BIT(&(Var17.f_6), 4);
 										}
@@ -11189,7 +11189,7 @@ void func_913(var uParam0)//Position - 0x10449A
 										{
 											MISC::SET_BIT(&(uParam0->f_556), 4);
 										}
-										if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_33__::func_392(Global_2883588, Global_4536604[iVar12], Global_4536478[iVar12]))
+										if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_31__::func_875(Global_2883588, Global_4536604[iVar12], Global_4536478[iVar12]))
 										{
 											MISC::SET_BIT(&(Var17.f_6), 1);
 											MISC::SET_BIT(&(Var17.f_6), 2);
@@ -11210,7 +11210,7 @@ void func_913(var uParam0)//Position - 0x10449A
 										{
 											Var17.f_7 = 0;
 										}
-										if (__LIB_16__::func_403(MISC::GET_HASH_KEY(&(Var17.f_8))))
+										if (__LIB_16__::func_406(MISC::GET_HASH_KEY(&(Var17.f_8))))
 										{
 											MISC::SET_BIT(&(Var17.f_6), 2);
 										}
@@ -11231,7 +11231,7 @@ void func_913(var uParam0)//Position - 0x10449A
 											}
 										}
 									}
-									if ((__LIB_3__::func_538() && Global_4537616.f_253[iVar12] == 0) && !__LIB_33__::func_392(Global_2883588, -1, -1))
+									if ((__LIB_3__::func_538() && Global_4537616.f_253[iVar12] == 0) && !__LIB_31__::func_875(Global_2883588, -1, -1))
 									{
 										iVar1 = 0;
 										if (BitTest(Var17.f_6, 6) && iVar15 != 12)
@@ -11270,15 +11270,15 @@ void func_913(var uParam0)//Position - 0x10449A
 											}
 										}
 									}
-									if (!BitTest(Var17.f_6, 2) && __LIB_41__::func_323(Var17.f_8))
+									if (!BitTest(Var17.f_6, 2) && __LIB_41__::func_1(Var17.f_8))
 									{
 										MISC::CLEAR_BIT(&(Var17.f_6), 1);
 									}
-									else if (__LIB_33__::func_394(Var17.f_8) != -1)
+									else if (__LIB_31__::func_877(Var17.f_8) != -1)
 									{
 										MISC::SET_BIT(&(Var17.f_6), 1);
 									}
-									if (!BitTest(Var17.f_6, 2) && __LIB_41__::func_322(Var17.f_8))
+									if (!BitTest(Var17.f_6, 2) && __LIB_41__::func_0(Var17.f_8))
 									{
 										MISC::CLEAR_BIT(&(Var17.f_6), 1);
 									}
@@ -11288,7 +11288,7 @@ void func_913(var uParam0)//Position - 0x10449A
 									}
 									if (!BitTest(Var17.f_6, 1))
 									{
-										if (__LIB_33__::func_409(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "DLC", iVar12, Global_2883588))
+										if (__LIB_31__::func_892(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "DLC", iVar12, Global_2883588))
 										{
 											if (iVar12 == uParam0->f_116.f_1)
 											{
@@ -11297,20 +11297,20 @@ void func_913(var uParam0)//Position - 0x10449A
 											__LIB_3__::func_572(iVar12, &(Var17.f_8), 1, !Global_4537360[iVar12], 0, 0, 0);
 											__LIB_14__::func_431(51, 0);
 											__LIB_3__::func_572(iVar12, "", 1, !Global_4537360[iVar12], 0, 0, 0);
-											__LIB_14__::func_431(__LIB_43__::func_82(uParam0), 0);
+											__LIB_14__::func_431(__LIB_42__::func_965(uParam0), 0);
 										}
-										else if (BitTest(Var17.f_6, 4) && __LIB_41__::func_324(uParam0))
+										else if (BitTest(Var17.f_6, 4) && __LIB_41__::func_2(uParam0))
 										{
 											__LIB_3__::func_572(iVar12, &(Var17.f_8), 1, !Global_4537360[iVar12], 0, 0, 0);
 											__LIB_14__::func_431(2, 0);
 											__LIB_3__::func_572(iVar12, "", 1, !Global_4537360[iVar12], 0, 0, 0);
-											__LIB_14__::func_431(__LIB_43__::func_82(uParam0), 0);
+											__LIB_14__::func_431(__LIB_42__::func_965(uParam0), 0);
 										}
 										else
 										{
 											__LIB_3__::func_572(iVar12, &(Var17.f_8), 0, !Global_4537360[iVar12], 0, 0, 0);
 											__LIB_3__::func_572(iVar12, "", 1, !Global_4537360[iVar12], 0, 0, 0);
-											__LIB_14__::func_431(__LIB_43__::func_82(uParam0), 0);
+											__LIB_14__::func_431(__LIB_42__::func_965(uParam0), 0);
 										}
 										if (iVar12 == uParam0->f_116.f_1)
 										{
@@ -11334,7 +11334,7 @@ void func_913(var uParam0)//Position - 0x10449A
 												MISC::SET_BIT(&(uParam0->f_556), 2);
 											}
 										}
-										else if (__LIB_33__::func_409(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "rebreather DLC", iVar12, Global_2883588))
+										else if (__LIB_31__::func_892(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "rebreather DLC", iVar12, Global_2883588))
 										{
 											__LIB_3__::func_572(iVar12, &(Var17.f_8), 3, !Global_4537360[iVar12], 0, 0, 0);
 											__LIB_14__::func_431(51, 0);
@@ -11361,7 +11361,7 @@ void func_913(var uParam0)//Position - 0x10449A
 											MISC::SET_BIT(&(uParam0->f_556), 2);
 										}
 									}
-									else if (__LIB_33__::func_409(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "DLC", iVar12, Global_2883588))
+									else if (__LIB_31__::func_892(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "DLC", iVar12, Global_2883588))
 									{
 										__LIB_3__::func_572(iVar12, &(Var17.f_8), 1, !Global_4537360[iVar12], 0, 0, 0);
 										__LIB_14__::func_431(51, 0);
@@ -11377,8 +11377,8 @@ void func_913(var uParam0)//Position - 0x10449A
 								}
 								else
 								{
-									iVar3 = __LIB_16__::func_543(iVar15, iVar14);
-									if (BitTest(Var17.f_6, 4) && (((iVar15 == 12 || iVar3 >= 4) || __LIB_16__::func_517(iVar15, iVar14)) || __LIB_16__::func_551(uParam0->f_586, iVar15, iVar14)))
+									iVar3 = __LIB_16__::func_546(iVar15, iVar14);
+									if (BitTest(Var17.f_6, 4) && (((iVar15 == 12 || iVar3 >= 4) || __LIB_16__::func_520(iVar15, iVar14)) || __LIB_16__::func_554(uParam0->f_586, iVar15, iVar14)))
 									{
 										__LIB_3__::func_572(iVar12, &(Var17.f_8), 1, !Global_4537360[iVar12], 0, 0, 0);
 										__LIB_14__::func_431(2, 0);
@@ -11387,7 +11387,7 @@ void func_913(var uParam0)//Position - 0x10449A
 											MISC::SET_BIT(&(uParam0->f_556), 2);
 										}
 									}
-									else if (__LIB_33__::func_409(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "disk", iVar12, -1))
+									else if (__LIB_31__::func_892(Var17.f_6, iVar15, iVar14, uParam0->f_522, Var17.f_12, &(Var17.f_8), "disk", iVar12, -1))
 									{
 										__LIB_3__::func_572(iVar12, &(Var17.f_8), 1, !Global_4537360[iVar12], 0, 0, 0);
 										__LIB_14__::func_431(51, 0);
@@ -11417,7 +11417,7 @@ void func_913(var uParam0)//Position - 0x10449A
 							}
 							if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && iVar15 == 12)
 							{
-								Var17.f_7 = __LIB_43__::func_704(uParam0, iVar14, &(Var17.f_8), iVar26);
+								Var17.f_7 = __LIB_43__::func_661(uParam0, iVar14, &(Var17.f_8), iVar26);
 								iVar2 = Var17.f_7;
 							}
 							else
@@ -11425,18 +11425,18 @@ void func_913(var uParam0)//Position - 0x10449A
 								iVar2 = Var17.f_7;
 								if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Global_4537616.f_253[iVar12] == 0)
 								{
-									__LIB_41__::func_320(*uParam0, &iVar2, &(Var17.f_8), BitTest(Var17.f_6, 6), -1, uParam0->f_586, iVar14, iVar15, __LIB_0__::func_40(Var17.f_13), MISC::GET_HASH_KEY(&sVar11));
+									__LIB_40__::func_998(*uParam0, &iVar2, &(Var17.f_8), BitTest(Var17.f_6, 6), -1, uParam0->f_586, iVar14, iVar15, __LIB_0__::func_40(Var17.f_13), MISC::GET_HASH_KEY(&sVar11));
 								}
 								else
 								{
-									__LIB_41__::func_320(*uParam0, &iVar2, &(Var17.f_8), BitTest(Var17.f_6, 6), -1, uParam0->f_586, iVar14, iVar15, __LIB_0__::func_40(Var17.f_13), -1);
+									__LIB_40__::func_998(*uParam0, &iVar2, &(Var17.f_8), BitTest(Var17.f_6, 6), -1, uParam0->f_586, iVar14, iVar15, __LIB_0__::func_40(Var17.f_13), -1);
 								}
-								if (__LIB_16__::func_418(uParam0))
+								if (__LIB_16__::func_421(uParam0))
 								{
-									__LIB_16__::func_415(&iVar2);
+									__LIB_16__::func_418(&iVar2);
 								}
 							}
-							if (__LIB_33__::func_449(uParam0->f_522))
+							if (__LIB_31__::func_932(uParam0->f_522))
 							{
 								iVar2 = 0;
 							}
@@ -11448,19 +11448,19 @@ void func_913(var uParam0)//Position - 0x10449A
 								iVar7 = 0;
 								if (iVar15 == 14 || iVar15 == 9)
 								{
-									if (__LIB_33__::func_446(0, iVar15, iVar14, &uVar16) != -99)
+									if (__LIB_31__::func_929(0, iVar15, iVar14, &uVar16) != -99)
 									{
-										if (Global_113386.f_2363.f_539.f_2395[0] == __LIB_33__::func_446(0, iVar15, iVar14, &uVar16))
+										if (Global_113386.f_2363.f_539.f_2395[0] == __LIB_31__::func_929(0, iVar15, iVar14, &uVar16))
 										{
 											iVar5 = 1;
 											iVar9++;
 										}
-										if (Global_113386.f_2363.f_539.f_2395[1] == __LIB_33__::func_446(1, iVar15, iVar14, &uVar16))
+										if (Global_113386.f_2363.f_539.f_2395[1] == __LIB_31__::func_929(1, iVar15, iVar14, &uVar16))
 										{
 											iVar6 = 1;
 											iVar9++;
 										}
-										if (Global_113386.f_2363.f_539.f_2395[2] == __LIB_33__::func_446(2, iVar15, iVar14, &uVar16))
+										if (Global_113386.f_2363.f_539.f_2395[2] == __LIB_31__::func_929(2, iVar15, iVar14, &uVar16))
 										{
 											iVar7 = 1;
 											iVar9++;
@@ -11469,17 +11469,17 @@ void func_913(var uParam0)//Position - 0x10449A
 								}
 								else if (iVar15 == 12)
 								{
-									if (Global_113386.f_2363.f_539.f_2403[0] == __LIB_33__::func_446(0, iVar15, iVar14, &uVar16))
+									if (Global_113386.f_2363.f_539.f_2403[0] == __LIB_31__::func_929(0, iVar15, iVar14, &uVar16))
 									{
 										iVar5 = 1;
 										iVar9++;
 									}
-									if (Global_113386.f_2363.f_539.f_2403[1] == __LIB_33__::func_446(1, iVar15, iVar14, &uVar16))
+									if (Global_113386.f_2363.f_539.f_2403[1] == __LIB_31__::func_929(1, iVar15, iVar14, &uVar16))
 									{
 										iVar6 = 1;
 										iVar9++;
 									}
-									if (Global_113386.f_2363.f_539.f_2403[2] == __LIB_33__::func_446(2, iVar15, iVar14, &uVar16))
+									if (Global_113386.f_2363.f_539.f_2403[2] == __LIB_31__::func_929(2, iVar15, iVar14, &uVar16))
 									{
 										iVar7 = 1;
 										iVar9++;
@@ -11542,7 +11542,7 @@ void func_913(var uParam0)//Position - 0x10449A
 							}
 							else if (BitTest(Var17.f_6, 7))
 							{
-								if (__LIB_16__::func_522())
+								if (__LIB_16__::func_525())
 								{
 									__LIB_3__::func_572(iVar12, "CSHOP_FULL", 0, !Global_4537360[iVar12], 0, 0, 0);
 								}
@@ -11560,17 +11560,17 @@ void func_913(var uParam0)//Position - 0x10449A
 										__LIB_13__::func_722(iVar2, 0);
 									}
 								}
-								else if (!__LIB_33__::func_449(uParam0->f_522))
+								else if (!__LIB_31__::func_932(uParam0->f_522))
 								{
 									__LIB_3__::func_572(iVar12, "ITEM_FREE" /* GXT: FREE */, 0, !Global_4537360[iVar12], 0, 0, 0);
 								}
 							}
-							else if (((((Global_4537616.f_253[iVar12] != 11 && Global_4537616.f_253[iVar12] != 4) && func_919(uParam0, iVar15, iVar14, &Var17, iVar12, iVar22, iVar23, iVar24, iVar25)) || (Global_4537616.f_253[iVar12] == 11 && !BitTest(uParam0->f_555, 22))) || (Global_4537616.f_253[iVar12] == 4 && !__LIB_1__::func_554(PLAYER::PLAYER_PED_ID()))) || (Global_4537616.f_253[iVar12] == 17 && !__LIB_16__::func_409(PLAYER::PLAYER_PED_ID())))
+							else if (((((Global_4537616.f_253[iVar12] != 11 && Global_4537616.f_253[iVar12] != 4) && func_919(uParam0, iVar15, iVar14, &Var17, iVar12, iVar22, iVar23, iVar24, iVar25)) || (Global_4537616.f_253[iVar12] == 11 && !BitTest(uParam0->f_555, 22))) || (Global_4537616.f_253[iVar12] == 4 && !__LIB_1__::func_554(PLAYER::PLAYER_PED_ID()))) || (Global_4537616.f_253[iVar12] == 17 && !__LIB_16__::func_412(PLAYER::PLAYER_PED_ID())))
 							{
 								iVar38 = 1;
 								if ((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && iVar15 == 14) && iVar14 == 0)
 								{
-									if (__LIB_16__::func_370(PLAYER::PLAYER_PED_ID()))
+									if (__LIB_16__::func_373(PLAYER::PLAYER_PED_ID()))
 									{
 										iVar38 = 0;
 									}
@@ -11591,21 +11591,21 @@ void func_913(var uParam0)//Position - 0x10449A
 								}
 								if (Global_4537616.f_253[iVar12] == 17)
 								{
-									if (__LIB_16__::func_409(PLAYER::PLAYER_PED_ID()))
+									if (__LIB_16__::func_412(PLAYER::PLAYER_PED_ID()))
 									{
 										iVar38 = 0;
 									}
 								}
 								if (Global_4537616.f_253[iVar12] == 15)
 								{
-									if (__LIB_16__::func_550(PLAYER::PLAYER_PED_ID()))
+									if (__LIB_16__::func_553(PLAYER::PLAYER_PED_ID()))
 									{
 										iVar38 = 0;
 									}
 								}
 								if (Global_4537616.f_253[iVar12] == 21)
 								{
-									if (__LIB_33__::func_408(PLAYER::PLAYER_PED_ID()))
+									if (__LIB_31__::func_891(PLAYER::PLAYER_PED_ID()))
 									{
 										iVar38 = 0;
 									}
@@ -11630,7 +11630,7 @@ void func_913(var uParam0)//Position - 0x10449A
 									__LIB_14__::func_431(4, 0);
 								}
 							}
-							else if (BitTest(Var17.f_6, 2) || __LIB_16__::func_403(MISC::GET_HASH_KEY(&(Var17.f_8))))
+							else if (BitTest(Var17.f_6, 2) || __LIB_16__::func_406(MISC::GET_HASH_KEY(&(Var17.f_8))))
 							{
 								if (iVar12 == uParam0->f_116.f_1)
 								{
@@ -11653,7 +11653,7 @@ void func_913(var uParam0)//Position - 0x10449A
 									__LIB_13__::func_722(iVar2, 0);
 								}
 							}
-							else if (!__LIB_33__::func_449(uParam0->f_522))
+							else if (!__LIB_31__::func_932(uParam0->f_522))
 							{
 								__LIB_3__::func_572(iVar12, "ITEM_FREE" /* GXT: FREE */, 0, !Global_4537360[iVar12], 0, 0, 0);
 							}
@@ -11682,13 +11682,13 @@ void func_913(var uParam0)//Position - 0x10449A
 					StringCopy(&(uParam0->f_116.f_11), "", 16);
 				}
 			}
-			if (Global_4537616.f_252 > 0 && !__LIB_33__::func_449(uParam0->f_522))
+			if (Global_4537616.f_252 > 0 && !__LIB_31__::func_932(uParam0->f_522))
 			{
 				if (BitTest(uParam0->f_556, 6))
 				{
 					__LIB_1__::func_792(201, "ITEM_SELECT" /* GXT: Select */, -1, 0);
 				}
-				else if (BitTest(uParam0->f_556, 1) && __LIB_41__::func_324(uParam0))
+				else if (BitTest(uParam0->f_556, 1) && __LIB_41__::func_2(uParam0))
 				{
 					__LIB_1__::func_792(201, "CSHOP_BUY_NOW", uParam0->f_695 * 2, 0);
 				}
@@ -11704,25 +11704,25 @@ void func_913(var uParam0)//Position - 0x10449A
 			}
 			__LIB_6__::func_170(21, "ITEM_MOV_CAM" /* GXT: Move Camera */, -1);
 			__LIB_1__::func_792(iLocal_98, "ITEM_ZOOM" /* GXT: Zoom */, -1, 0);
-			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_326(uParam0->f_522))
+			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_41__::func_4(uParam0->f_522))
 			{
 				__LIB_1__::func_792(203, "ITEM_SAVED" /* GXT: Edit Saved Outfits */, -1, 0);
 			}
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				if (__LIB_16__::func_377(uParam0->f_522))
+				if (__LIB_16__::func_380(uParam0->f_522))
 				{
-					__LIB_16__::func_448(uParam0->f_522, Global_4538836, &Var10);
+					__LIB_16__::func_451(uParam0->f_522, Global_4538836, &Var10);
 					__LIB_1__::func_767(&Var10);
 				}
 				else
 				{
-					__LIB_1__::func_767(__LIB_37__::func_144(uParam0->f_522, 1, MISC::GET_HASH_KEY(&(uParam0->f_184.f_7)), 0));
+					__LIB_1__::func_767(__LIB_36__::func_818(uParam0->f_522, 1, MISC::GET_HASH_KEY(&(uParam0->f_184.f_7)), 0));
 				}
 			}
 			else
 			{
-				__LIB_1__::func_767(__LIB_37__::func_144(uParam0->f_184.f_12, 1, MISC::GET_HASH_KEY(&(uParam0->f_184.f_7)), 0));
+				__LIB_1__::func_767(__LIB_36__::func_818(uParam0->f_184.f_12, 1, MISC::GET_HASH_KEY(&(uParam0->f_184.f_7)), 0));
 			}
 			break;
 	}
@@ -11747,39 +11747,39 @@ int func_919(var uParam0, int iParam1, int iParam2, var uParam3, int iParam4, in
 		}
 		else if (Global_4537616.f_253[iParam4] == 7)
 		{
-			return !__LIB_16__::func_533(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_536(uParam0->f_586, 7, iParam5, -1);
 		}
 		else if (Global_4537616.f_253[iParam4] == 14)
 		{
-			return !__LIB_16__::func_532(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_535(uParam0->f_586, 7, iParam5, -1);
 		}
 		else if (Global_4537616.f_253[iParam4] == 15)
 		{
-			return !__LIB_16__::func_359(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_362(uParam0->f_586, 7, iParam5, -1);
 		}
 		else if (Global_4537616.f_253[iParam4] == 18)
 		{
-			return !__LIB_16__::func_531(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_534(uParam0->f_586, 7, iParam5, -1);
 		}
 		else if (Global_4537616.f_253[iParam4] == 19)
 		{
-			return !__LIB_16__::func_530(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_533(uParam0->f_586, 7, iParam5, -1);
 		}
 		else if (Global_4537616.f_253[iParam4] == 20)
 		{
-			return !__LIB_16__::func_529(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_532(uParam0->f_586, 7, iParam5, -1);
 		}
 		else if (Global_4537616.f_253[iParam4] == 21)
 		{
-			return !__LIB_16__::func_527(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_530(uParam0->f_586, 7, iParam5, -1);
 		}
 		else if (Global_4537616.f_253[iParam4] == 22)
 		{
-			return (!__LIB_16__::func_518(uParam0->f_586, 14, iParam7, -1) && !__LIB_16__::func_518(uParam0->f_586, 14, iParam8, -1));
+			return (!__LIB_16__::func_521(uParam0->f_586, 14, iParam7, -1) && !__LIB_16__::func_521(uParam0->f_586, 14, iParam8, -1));
 		}
 		else if (Global_4537616.f_253[iParam4] == 23)
 		{
-			return !__LIB_16__::func_528(uParam0->f_586, 7, iParam5, -1);
+			return !__LIB_16__::func_531(uParam0->f_586, 7, iParam5, -1);
 		}
 	}
 	switch (iParam1)
@@ -12137,7 +12137,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 	int iVar17;
 	Var0.f_13 = 4;
 	Var0.f_26 = 4;
-	iVar1 = __LIB_16__::func_564(iParam5);
+	iVar1 = __LIB_16__::func_567(iParam5);
 	Global_4537614 = bParam11;
 	iVar2 = 0;
 	while (iVar2 < Global_4538017)
@@ -12163,14 +12163,14 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 		iVar3++;
 	}
 	Global_4536477 = 0;
-	iVar4 = __LIB_16__::func_480(ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()));
+	iVar4 = __LIB_16__::func_483(ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()));
 	if (bParam10 && NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar5 = 6;
 		iVar6 = 273;
 		if (((iParam5 != 51 && iParam5 != 55) && iParam5 != 56) && iParam5 != 57)
 		{
-			if (__LIB_33__::func_426(iVar1, iParam8, 5))
+			if (__LIB_31__::func_909(iVar1, iParam8, 5))
 			{
 				MISC::SET_BIT(&(Global_4538017.f_379[(5 / 32)]), (5 % 32));
 				if (Global_4539548)
@@ -12179,7 +12179,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 				}
 			}
 		}
-		if (__LIB_16__::func_475(iVar1) == iParam8)
+		if (__LIB_16__::func_478(iVar1) == iParam8)
 		{
 			iVar7 = FILES::SETUP_SHOP_PED_OUTFIT_QUERY(iVar4, false);
 			iVar8 = 0;
@@ -12187,9 +12187,9 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 			{
 				FILES::GET_SHOP_PED_QUERY_OUTFIT(iVar8, &Var10);
 				iVar9 = FILES::GET_SHOP_PED_OUTFIT_LOCATE(Var10.f_1);
-				if ((__LIB_33__::func_426(iVar1, iParam8, iVar9) && !FILES::IS_CONTENT_ITEM_LOCKED(Var10.f_0)) && (iVar9 != 261 || iVar1 == 7))
+				if ((__LIB_31__::func_909(iVar1, iParam8, iVar9) && !FILES::IS_CONTENT_ITEM_LOCKED(Var10.f_0)) && (iVar9 != 261 || iVar1 == 7))
 				{
-					if (!__LIB_16__::func_565(Var10.f_0, Var10.f_1, 2))
+					if (!__LIB_16__::func_568(Var10.f_0, Var10.f_1, 2))
 					{
 						MISC::SET_BIT(&(Global_4538017.f_379[(iVar9 / 32)]), (iVar9 % 32));
 						if (!__LIB_2__::func_97(Var10.f_1, 2, 1, 1, -1))
@@ -12211,11 +12211,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 			iVar9 = iVar5;
 			while (iVar9 <= iVar6)
 			{
-				if (__LIB_16__::func_454(iVar9))
+				if (__LIB_16__::func_457(iVar9))
 				{
 					if (iParam5 == 51)
 					{
-						if (__LIB_33__::func_426(iVar1, iParam8, iVar9))
+						if (__LIB_31__::func_909(iVar1, iParam8, iVar9))
 						{
 							MISC::SET_BIT(&(Global_4538017.f_379[(248 / 32)]), (248 % 32));
 						}
@@ -12228,7 +12228,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					}
 					else if (!bVar12)
 					{
-						if (__LIB_33__::func_426(iVar1, iParam8, iVar9))
+						if (__LIB_31__::func_909(iVar1, iParam8, iVar9))
 						{
 							MISC::SET_BIT(&(Global_4538017.f_379[(122 / 32)]), (122 % 32));
 							MISC::SET_BIT(&(Global_4538017.f_379[(171 / 32)]), (171 % 32));
@@ -12250,9 +12250,9 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 				{
 					bVar12 = false;
 					FILES::GET_SHOP_PED_QUERY_COMPONENT(iVar8, &Var11);
-					if (__LIB_33__::func_426(iVar1, iParam8, Var11.f_2))
+					if (__LIB_31__::func_909(iVar1, iParam8, Var11.f_2))
 					{
-						if (!__LIB_16__::func_565(Var11.f_0, Var11.f_1, 0) && !__LIB_16__::func_538(Var11.f_1))
+						if (!__LIB_16__::func_568(Var11.f_0, Var11.f_1, 0) && !__LIB_16__::func_541(Var11.f_1))
 						{
 							if (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var11.f_1, joaat("CASINO_ITEM"), 0))
 							{
@@ -12279,7 +12279,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							{
 								MISC::SET_BIT(&(Global_4538017.f_379[(iVar9 / 32)]), (iVar9 % 32));
 							}
-							else if (!__LIB_16__::func_452(Var11.f_1))
+							else if (!__LIB_16__::func_455(Var11.f_1))
 							{
 							}
 							else
@@ -12301,9 +12301,9 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 				{
 					bVar12 = false;
 					FILES::GET_SHOP_PED_QUERY_PROP(iVar8, &Var15);
-					if (__LIB_33__::func_426(iVar1, iParam8, Var15.f_2))
+					if (__LIB_31__::func_909(iVar1, iParam8, Var15.f_2))
 					{
-						if (!__LIB_16__::func_565(Var15.f_0, Var15.f_1, 1))
+						if (!__LIB_16__::func_568(Var15.f_0, Var15.f_1, 1))
 						{
 							if (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var15.f_1, joaat("CASINO_ITEM"), 1))
 							{
@@ -12340,71 +12340,71 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 			if (iVar4 == 3)
 			{
 				iVar9 = 122;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 				}
 				iVar9 = 171;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 169;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 172;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 17;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 11;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 170;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 181;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 184;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 205;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 213;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 16;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 220;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 14;
-				if (__LIB_16__::func_537(joaat("MP_M_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_M_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
@@ -12412,71 +12412,71 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 			else if (iVar4 == 4)
 			{
 				iVar9 = 122;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 				}
 				iVar9 = 171;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 169;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 172;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 17;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 173;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 11;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 170;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 181;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 184;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 205;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 213;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 16;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
 				iVar9 = 14;
-				if (__LIB_16__::func_537(joaat("MP_F_Freemode_01"), iVar9))
+				if (__LIB_16__::func_540(joaat("MP_F_Freemode_01"), iVar9))
 				{
 					MISC::SET_BIT(&(Global_4538017.f_390[(iVar9 / 32)]), (iVar9 % 32));
 				}
@@ -12500,18 +12500,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(178);
@@ -12525,7 +12525,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(179);
@@ -12539,7 +12539,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(180);
@@ -12557,7 +12557,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(3);
@@ -12571,7 +12571,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(4);
@@ -12585,7 +12585,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(5);
@@ -12599,7 +12599,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(6);
@@ -12613,7 +12613,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(7);
@@ -12627,7 +12627,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(8);
@@ -12641,7 +12641,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(9);
@@ -12655,7 +12655,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(10);
@@ -12669,7 +12669,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(11);
@@ -12683,7 +12683,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(13);
@@ -12697,7 +12697,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(14);
@@ -12711,7 +12711,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(15);
@@ -12725,7 +12725,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(12);
@@ -12739,7 +12739,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(145);
@@ -12753,7 +12753,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(146);
@@ -12767,7 +12767,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(136);
@@ -12781,7 +12781,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(138);
@@ -12799,7 +12799,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 100;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(162);
@@ -12813,7 +12813,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(163);
@@ -12827,7 +12827,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(164);
@@ -12841,7 +12841,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(165);
@@ -12855,7 +12855,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(166);
@@ -12869,7 +12869,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(167);
@@ -12883,7 +12883,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(168);
@@ -12897,7 +12897,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(169);
@@ -12911,7 +12911,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(170);
@@ -12925,7 +12925,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(171);
@@ -12939,7 +12939,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(172);
@@ -12953,7 +12953,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(173);
@@ -12967,7 +12967,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(174);
@@ -12981,7 +12981,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(175);
@@ -12995,7 +12995,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(176);
@@ -13009,7 +13009,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(177);
@@ -13023,7 +13023,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(54);
@@ -13037,7 +13037,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(55);
@@ -13051,7 +13051,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -13065,7 +13065,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -13079,7 +13079,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -13093,7 +13093,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -13107,7 +13107,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -13121,7 +13121,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(61);
@@ -13151,18 +13151,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -13176,7 +13176,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -13190,7 +13190,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -13204,7 +13204,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(111);
@@ -13218,7 +13218,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(22);
@@ -13232,7 +13232,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(24);
@@ -13250,7 +13250,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(100);
@@ -13264,7 +13264,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(101);
@@ -13278,7 +13278,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(99);
@@ -13292,7 +13292,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -13306,7 +13306,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -13320,7 +13320,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -13334,7 +13334,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -13348,7 +13348,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -13366,7 +13366,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(62);
@@ -13380,7 +13380,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(64);
@@ -13394,7 +13394,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(69);
@@ -13408,7 +13408,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(213);
@@ -13422,7 +13422,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(214);
@@ -13436,7 +13436,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(215);
@@ -13450,7 +13450,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(216);
@@ -13464,7 +13464,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(217);
@@ -13478,7 +13478,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(218);
@@ -13492,7 +13492,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(219);
@@ -13506,7 +13506,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(220);
@@ -13520,7 +13520,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(221);
@@ -13534,7 +13534,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(222);
@@ -13564,11 +13564,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_HAT" /* GXT: Press ~a~ to browse hats. */, 16);
-						__LIB_43__::func_710(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_667(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -13577,7 +13577,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 61;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(0);
@@ -13591,7 +13591,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(74);
@@ -13605,7 +13605,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(75);
@@ -13619,7 +13619,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(76);
@@ -13633,7 +13633,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(77);
@@ -13647,7 +13647,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -13661,7 +13661,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -13679,7 +13679,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 61;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(0);
@@ -13693,7 +13693,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(71);
@@ -13707,7 +13707,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(72);
@@ -13721,7 +13721,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(73);
@@ -13735,7 +13735,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(74);
@@ -13749,7 +13749,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(75);
@@ -13763,7 +13763,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(76);
@@ -13777,7 +13777,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(77);
@@ -13791,7 +13791,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -13805,7 +13805,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -13819,7 +13819,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -13833,7 +13833,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -13847,7 +13847,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -13861,7 +13861,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -13875,7 +13875,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -13889,7 +13889,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(85);
@@ -13903,7 +13903,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(86);
@@ -13933,11 +13933,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -13946,7 +13946,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(128);
@@ -13960,7 +13960,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(130);
@@ -13974,7 +13974,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(131);
@@ -13988,7 +13988,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(132);
@@ -14002,7 +14002,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(137);
@@ -14016,7 +14016,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(160);
@@ -14030,7 +14030,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(161);
@@ -14044,7 +14044,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(163);
@@ -14058,7 +14058,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(164);
@@ -14072,7 +14072,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(165);
@@ -14086,7 +14086,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(166);
@@ -14100,7 +14100,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(167);
@@ -14114,7 +14114,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(168);
@@ -14128,7 +14128,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(169);
@@ -14142,7 +14142,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(170);
@@ -14156,7 +14156,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(171);
@@ -14170,7 +14170,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(172);
@@ -14184,7 +14184,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(173);
@@ -14198,7 +14198,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(174);
@@ -14212,7 +14212,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(175);
@@ -14226,7 +14226,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(107);
@@ -14244,7 +14244,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(136);
@@ -14258,7 +14258,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(137);
@@ -14272,7 +14272,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(138);
@@ -14286,7 +14286,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(139);
@@ -14300,7 +14300,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(140);
@@ -14314,7 +14314,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(141);
@@ -14328,7 +14328,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(142);
@@ -14342,7 +14342,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(143);
@@ -14372,11 +14372,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -14387,7 +14387,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 101;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(178);
@@ -14401,7 +14401,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(179);
@@ -14415,7 +14415,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(180);
@@ -14429,7 +14429,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(181);
@@ -14443,7 +14443,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(182);
@@ -14457,7 +14457,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(187);
@@ -14471,7 +14471,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(24);
@@ -14485,7 +14485,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -14499,7 +14499,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -14513,7 +14513,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -14527,7 +14527,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -14541,7 +14541,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -14555,7 +14555,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -14569,7 +14569,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -14583,7 +14583,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -14597,7 +14597,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -14627,18 +14627,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -14652,7 +14652,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -14666,7 +14666,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -14680,7 +14680,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(109);
@@ -14698,7 +14698,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(94);
@@ -14712,7 +14712,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(96);
@@ -14726,7 +14726,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(98);
@@ -14740,7 +14740,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -14754,7 +14754,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -14768,7 +14768,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -14782,7 +14782,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -14796,7 +14796,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -14810,7 +14810,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -14824,7 +14824,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -14838,7 +14838,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -14856,7 +14856,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 16;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -14870,7 +14870,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -14884,7 +14884,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -14914,18 +14914,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_S" /* GXT: Press ~a~ to browse shorts. */, 16);
 								Var0.f_12 = 30;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -14939,7 +14939,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -14953,7 +14953,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -14967,7 +14967,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(62);
@@ -14981,7 +14981,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(63);
@@ -14995,7 +14995,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(64);
@@ -15009,7 +15009,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(70);
@@ -15023,7 +15023,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(96);
@@ -15037,7 +15037,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(97);
@@ -15051,7 +15051,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(98);
@@ -15065,7 +15065,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(99);
@@ -15079,7 +15079,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(100);
@@ -15093,7 +15093,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(101);
@@ -15107,7 +15107,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(102);
@@ -15121,7 +15121,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(103);
@@ -15135,7 +15135,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(104);
@@ -15149,7 +15149,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(105);
@@ -15163,7 +15163,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(106);
@@ -15177,7 +15177,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(107);
@@ -15191,7 +15191,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(108);
@@ -15205,7 +15205,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(109);
@@ -15219,7 +15219,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(110);
@@ -15233,7 +15233,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(111);
@@ -15251,7 +15251,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 30;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(1);
@@ -15265,7 +15265,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(2);
@@ -15279,7 +15279,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(3);
@@ -15293,7 +15293,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(113);
@@ -15307,7 +15307,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(114);
@@ -15321,7 +15321,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(115);
@@ -15335,7 +15335,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(116);
@@ -15353,7 +15353,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 43;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -15367,7 +15367,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -15381,7 +15381,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -15395,7 +15395,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -15409,7 +15409,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -15423,7 +15423,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -15437,7 +15437,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -15451,7 +15451,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -15481,18 +15481,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -15506,7 +15506,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -15520,7 +15520,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(102);
@@ -15538,7 +15538,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -15552,7 +15552,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(77);
@@ -15566,7 +15566,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -15580,7 +15580,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -15598,7 +15598,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 102;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(127);
@@ -15612,7 +15612,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(135);
@@ -15642,18 +15642,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
-						__LIB_43__::func_709(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_666(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
 								Var0.f_12 = 53;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -15667,7 +15667,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -15681,7 +15681,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -15695,7 +15695,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -15709,7 +15709,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -15727,7 +15727,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 110;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(4);
@@ -15741,7 +15741,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(5);
@@ -15755,7 +15755,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(9);
@@ -15769,7 +15769,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -15783,7 +15783,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -15797,7 +15797,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -15811,7 +15811,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -15825,7 +15825,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -15839,7 +15839,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -15853,7 +15853,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -15867,7 +15867,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -15881,7 +15881,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -15895,7 +15895,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -15909,7 +15909,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -15923,7 +15923,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(48);
@@ -15937,7 +15937,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -15951,7 +15951,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -15965,7 +15965,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -15983,7 +15983,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 44;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(1);
@@ -15997,7 +15997,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(4);
@@ -16011,7 +16011,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(5);
@@ -16025,7 +16025,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(6);
@@ -16039,7 +16039,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(7);
@@ -16069,18 +16069,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -16094,7 +16094,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(99);
@@ -16112,7 +16112,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -16126,7 +16126,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(85);
@@ -16144,7 +16144,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 102;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(121);
@@ -16158,7 +16158,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(122);
@@ -16172,7 +16172,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(126);
@@ -16186,7 +16186,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(128);
@@ -16200,7 +16200,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(129);
@@ -16214,7 +16214,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(131);
@@ -16228,7 +16228,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(132);
@@ -16258,18 +16258,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(104);
@@ -16287,7 +16287,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(87);
@@ -16305,7 +16305,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 102;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(120);
@@ -16319,7 +16319,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(123);
@@ -16333,7 +16333,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(125);
@@ -16347,7 +16347,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(130);
@@ -16361,7 +16361,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(133);
@@ -16375,7 +16375,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(134);
@@ -16405,18 +16405,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_POL" /* GXT: Press ~a~ to browse polo shirts. */, 16);
 								Var0.f_12 = 16;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -16430,7 +16430,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -16444,7 +16444,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -16458,7 +16458,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(21);
@@ -16472,7 +16472,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(23);
@@ -16490,7 +16490,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(103);
@@ -16504,7 +16504,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(104);
@@ -16518,7 +16518,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(102);
@@ -16532,7 +16532,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(105);
@@ -16546,7 +16546,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -16560,7 +16560,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -16578,7 +16578,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 11;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(1);
@@ -16592,7 +16592,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(3);
@@ -16606,7 +16606,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(4);
@@ -16620,7 +16620,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(5);
@@ -16634,7 +16634,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(6);
@@ -16648,7 +16648,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(7);
@@ -16662,7 +16662,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(8);
@@ -16676,7 +16676,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(9);
@@ -16690,7 +16690,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(10);
@@ -16704,7 +16704,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(11);
@@ -16718,7 +16718,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(12);
@@ -16732,7 +16732,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(13);
@@ -16746,7 +16746,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(14);
@@ -16760,7 +16760,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(15);
@@ -16790,18 +16790,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_POL" /* GXT: Press ~a~ to browse polo shirts. */, 16);
 								Var0.f_12 = 16;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -16815,7 +16815,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -16829,7 +16829,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(89);
@@ -16843,7 +16843,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(90);
@@ -16861,7 +16861,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(94);
@@ -16875,7 +16875,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(96);
@@ -16889,7 +16889,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(99);
@@ -16903,7 +16903,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(97);
@@ -16921,7 +16921,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 16;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -16935,7 +16935,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(63);
@@ -16949,7 +16949,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(67);
@@ -16963,7 +16963,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -16977,7 +16977,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(69);
@@ -17007,18 +17007,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_POL" /* GXT: Press ~a~ to browse polo shirts. */, 16);
 								Var0.f_12 = 16;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -17036,7 +17036,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(100);
@@ -17050,7 +17050,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(101);
@@ -17064,7 +17064,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(95);
@@ -17078,7 +17078,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(98);
@@ -17096,7 +17096,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 16;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -17110,7 +17110,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -17124,7 +17124,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -17138,7 +17138,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(62);
@@ -17152,7 +17152,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(64);
@@ -17166,7 +17166,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(66);
@@ -17198,7 +17198,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_DR" /* GXT: Press ~a~ to browse dresses. */, 16);
 						Var0.f_0 = 1;
 						Var0.f_11 = "clothingshirt";
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -17210,7 +17210,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(72);
@@ -17224,7 +17224,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(73);
@@ -17238,7 +17238,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(74);
@@ -17252,7 +17252,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(75);
@@ -17267,7 +17267,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								}
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(76);
@@ -17281,7 +17281,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(77);
@@ -17295,7 +17295,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -17327,7 +17327,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_BR" /* GXT: Press ~a~ to browse briefs. */, 16);
 						Var0.f_0 = 2;
 						Var0.f_11 = "clothingtrousers";
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_BR" /* GXT: Press ~a~ to browse briefs. */, 16);
@@ -17336,7 +17336,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(78);
@@ -17350,7 +17350,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(79);
@@ -17371,7 +17371,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(76);
@@ -17385,7 +17385,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(77);
@@ -17406,7 +17406,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(82);
@@ -17420,7 +17420,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(83);
@@ -17434,7 +17434,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(84);
@@ -17448,7 +17448,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(85);
@@ -17462,7 +17462,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(86);
@@ -17477,7 +17477,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								}
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(87);
@@ -17491,7 +17491,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -17505,7 +17505,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(89);
@@ -17519,7 +17519,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(90);
@@ -17549,12 +17549,12 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_708(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_665(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
 						Var0.f_12 = 79;
-						__LIB_33__::func_452(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_31__::func_935(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -17571,12 +17571,12 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_708(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_665(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
 						Var0.f_12 = 79;
-						__LIB_33__::func_452(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_31__::func_935(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -17593,18 +17593,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
-						__LIB_43__::func_709(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_666(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
 								Var0.f_12 = 53;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -17618,7 +17618,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -17632,7 +17632,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -17650,7 +17650,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 46;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(53);
@@ -17664,7 +17664,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(54);
@@ -17678,7 +17678,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(55);
@@ -17692,7 +17692,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -17706,7 +17706,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -17720,7 +17720,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -17734,7 +17734,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -17748,7 +17748,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -17762,7 +17762,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(61);
@@ -17776,7 +17776,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(62);
@@ -17790,7 +17790,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(63);
@@ -17808,7 +17808,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 44;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(2);
@@ -17822,7 +17822,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(3);
@@ -17869,7 +17869,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_OUT" /* GXT: Press ~a~ to browse outfits. */, 16);
-						__LIB_43__::func_707(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_664(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -17892,18 +17892,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_J" /* GXT: Press ~a~ to browse jeans. */, 16);
 								Var0.f_12 = 28;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -17917,7 +17917,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -17931,7 +17931,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -17949,7 +17949,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 28;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(90);
@@ -17963,7 +17963,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(91);
@@ -17977,7 +17977,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(92);
@@ -17991,7 +17991,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(93);
@@ -18005,7 +18005,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(96);
@@ -18019,7 +18019,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -18033,7 +18033,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -18047,7 +18047,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -18061,7 +18061,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -18075,7 +18075,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -18089,7 +18089,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -18103,7 +18103,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -18117,7 +18117,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -18131,7 +18131,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -18145,7 +18145,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -18159,7 +18159,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -18173,7 +18173,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -18187,7 +18187,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(85);
@@ -18201,7 +18201,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(86);
@@ -18215,7 +18215,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(87);
@@ -18233,7 +18233,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 28;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(1);
@@ -18247,7 +18247,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(2);
@@ -18261,7 +18261,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(3);
@@ -18291,18 +18291,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(101);
@@ -18316,7 +18316,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(106);
@@ -18336,7 +18336,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 24;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(99);
@@ -18350,7 +18350,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(100);
@@ -18364,7 +18364,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(101);
@@ -18378,7 +18378,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(102);
@@ -18392,7 +18392,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(103);
@@ -18406,7 +18406,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(104);
@@ -18420,7 +18420,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(105);
@@ -18434,7 +18434,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(116);
@@ -18470,7 +18470,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -18479,7 +18479,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(111);
@@ -18493,7 +18493,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(113);
@@ -18507,7 +18507,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(115);
@@ -18539,18 +18539,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_JK" /* GXT: Press ~a~ to browse jackets. */, 16);
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(176);
@@ -18568,7 +18568,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(209);
@@ -18582,7 +18582,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(210);
@@ -18596,7 +18596,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(211);
@@ -18610,7 +18610,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(212);
@@ -18624,7 +18624,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(213);
@@ -18638,7 +18638,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(214);
@@ -18652,7 +18652,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(215);
@@ -18666,7 +18666,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(216);
@@ -18680,7 +18680,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(217);
@@ -18694,7 +18694,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(218);
@@ -18708,7 +18708,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(219);
@@ -18722,7 +18722,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(220);
@@ -18736,7 +18736,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(221);
@@ -18750,7 +18750,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(222);
@@ -18771,7 +18771,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(48);
@@ -18785,7 +18785,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(49);
@@ -18799,7 +18799,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(50);
@@ -18813,7 +18813,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(51);
@@ -18827,7 +18827,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(52);
@@ -18841,7 +18841,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(53);
@@ -18855,7 +18855,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(54);
@@ -18869,7 +18869,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(55);
@@ -18883,7 +18883,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(56);
@@ -18897,7 +18897,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(57);
@@ -18911,7 +18911,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(58);
@@ -18925,7 +18925,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(59);
@@ -18939,7 +18939,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(60);
@@ -18953,7 +18953,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(61);
@@ -18967,7 +18967,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(62);
@@ -19000,11 +19000,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 0;
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_HAT" /* GXT: Press ~a~ to browse hats. */, 16);
 						Var0.f_11 = "";
-						__LIB_43__::func_710(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_667(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -19015,7 +19015,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 61;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(0);
@@ -19029,7 +19029,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(64);
@@ -19043,7 +19043,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(65);
@@ -19057,7 +19057,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(66);
@@ -19071,7 +19071,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(67);
@@ -19085,7 +19085,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -19099,7 +19099,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(70);
@@ -19113,7 +19113,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(71);
@@ -19127,7 +19127,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(72);
@@ -19141,7 +19141,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(73);
@@ -19155,7 +19155,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(74);
@@ -19175,7 +19175,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(144);
@@ -19189,7 +19189,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(145);
@@ -19203,7 +19203,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(146);
@@ -19217,7 +19217,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(147);
@@ -19231,7 +19231,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(148);
@@ -19245,7 +19245,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(149);
@@ -19259,7 +19259,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(150);
@@ -19273,7 +19273,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(151);
@@ -19287,7 +19287,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(152);
@@ -19301,7 +19301,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(153);
@@ -19315,7 +19315,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(154);
@@ -19345,18 +19345,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
-						__LIB_43__::func_709(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_666(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
 								Var0.f_12 = 110;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(21);
@@ -19370,7 +19370,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(22);
@@ -19384,7 +19384,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(23);
@@ -19398,7 +19398,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(24);
@@ -19412,7 +19412,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -19426,7 +19426,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -19440,7 +19440,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -19454,7 +19454,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -19468,7 +19468,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -19482,7 +19482,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(71);
@@ -19496,7 +19496,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(72);
@@ -19510,7 +19510,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(73);
@@ -19524,7 +19524,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(74);
@@ -19538,7 +19538,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(75);
@@ -19552,7 +19552,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(76);
@@ -19566,7 +19566,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(77);
@@ -19580,7 +19580,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -19594,7 +19594,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -19608,7 +19608,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -19622,7 +19622,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -19636,7 +19636,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -19650,7 +19650,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -19664,7 +19664,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -19678,7 +19678,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(85);
@@ -19692,7 +19692,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(86);
@@ -19710,7 +19710,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 110;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(1);
@@ -19724,7 +19724,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(2);
@@ -19738,7 +19738,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(3);
@@ -19752,7 +19752,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(6);
@@ -19766,7 +19766,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(7);
@@ -19780,7 +19780,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(8);
@@ -19794,7 +19794,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(10);
@@ -19808,7 +19808,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(11);
@@ -19822,7 +19822,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(19);
@@ -19836,7 +19836,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(21);
@@ -19850,7 +19850,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(22);
@@ -19864,7 +19864,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(23);
@@ -19878,7 +19878,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(65);
@@ -19892,7 +19892,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(66);
@@ -19906,7 +19906,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(67);
@@ -19920,7 +19920,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -19934,7 +19934,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(69);
@@ -19948,7 +19948,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(70);
@@ -19962,7 +19962,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(71);
@@ -19976,7 +19976,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(72);
@@ -19990,7 +19990,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(118);
@@ -20004,7 +20004,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(119);
@@ -20018,7 +20018,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(120);
@@ -20032,7 +20032,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(121);
@@ -20046,7 +20046,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(122);
@@ -20060,7 +20060,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(123);
@@ -20074,7 +20074,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(124);
@@ -20088,7 +20088,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(125);
@@ -20102,7 +20102,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(126);
@@ -20116,7 +20116,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(127);
@@ -20130,7 +20130,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(128);
@@ -20144,7 +20144,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(129);
@@ -20158,7 +20158,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(130);
@@ -20172,7 +20172,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(131);
@@ -20186,7 +20186,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(132);
@@ -20200,7 +20200,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(133);
@@ -20218,7 +20218,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 58;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -20232,7 +20232,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(69);
@@ -20246,7 +20246,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(70);
@@ -20260,7 +20260,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(71);
@@ -20274,7 +20274,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(72);
@@ -20288,7 +20288,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(73);
@@ -20302,7 +20302,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(74);
@@ -20316,7 +20316,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(75);
@@ -20330,7 +20330,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(76);
@@ -20344,7 +20344,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(77);
@@ -20358,7 +20358,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -20372,7 +20372,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -20386,7 +20386,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -20400,7 +20400,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -20414,7 +20414,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -20428,7 +20428,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -20458,18 +20458,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
 								Var0.f_12 = 43;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(23);
@@ -20483,7 +20483,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(24);
@@ -20497,7 +20497,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -20511,7 +20511,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -20525,7 +20525,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -20539,7 +20539,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -20553,7 +20553,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -20567,7 +20567,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -20581,7 +20581,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(85);
@@ -20595,7 +20595,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(86);
@@ -20609,7 +20609,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(87);
@@ -20627,7 +20627,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 28;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -20641,7 +20641,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(89);
@@ -20655,7 +20655,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(94);
@@ -20669,7 +20669,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(95);
@@ -20687,7 +20687,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 43;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -20701,7 +20701,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -20715,7 +20715,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -20745,18 +20745,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(103);
@@ -20770,7 +20770,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(105);
@@ -20784,7 +20784,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(108);
@@ -20798,7 +20798,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -20812,7 +20812,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -20826,7 +20826,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -20840,7 +20840,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -20854,7 +20854,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(48);
@@ -20868,7 +20868,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -20886,7 +20886,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -20900,7 +20900,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -20914,7 +20914,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(61);
@@ -20928,7 +20928,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(64);
@@ -20942,7 +20942,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(65);
@@ -20960,7 +20960,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(107);
@@ -20974,7 +20974,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(108);
@@ -20988,7 +20988,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(112);
@@ -21002,7 +21002,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(115);
@@ -21016,7 +21016,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(119);
@@ -21046,18 +21046,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(98);
@@ -21071,7 +21071,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(100);
@@ -21085,7 +21085,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -21099,7 +21099,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -21113,7 +21113,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -21127,7 +21127,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -21141,7 +21141,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(52);
@@ -21155,7 +21155,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(53);
@@ -21169,7 +21169,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(54);
@@ -21187,7 +21187,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -21201,7 +21201,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(62);
@@ -21215,7 +21215,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(67);
@@ -21229,7 +21229,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -21243,7 +21243,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(70);
@@ -21261,7 +21261,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(111);
@@ -21275,7 +21275,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(113);
@@ -21289,7 +21289,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(117);
@@ -21303,7 +21303,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(118);
@@ -21333,18 +21333,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(107);
@@ -21358,7 +21358,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(110);
@@ -21372,7 +21372,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(112);
@@ -21386,7 +21386,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -21400,7 +21400,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(55);
@@ -21414,7 +21414,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -21428,7 +21428,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -21442,7 +21442,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -21456,7 +21456,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -21474,7 +21474,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(86);
@@ -21488,7 +21488,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -21502,7 +21502,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -21516,7 +21516,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -21530,7 +21530,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(63);
@@ -21544,7 +21544,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(66);
@@ -21558,7 +21558,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(69);
@@ -21572,7 +21572,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(71);
@@ -21586,7 +21586,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(72);
@@ -21604,7 +21604,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(104);
@@ -21618,7 +21618,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(105);
@@ -21632,7 +21632,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(106);
@@ -21646,7 +21646,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(109);
@@ -21660,7 +21660,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(110);
@@ -21674,7 +21674,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(114);
@@ -21688,7 +21688,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(116);
@@ -21718,18 +21718,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_H" /* GXT: Press ~a~ to browse hoodies. */, 16);
 								Var0.f_12 = 13;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(113);
@@ -21743,7 +21743,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(120);
@@ -21757,7 +21757,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(121);
@@ -21771,7 +21771,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(122);
@@ -21785,7 +21785,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(123);
@@ -21799,7 +21799,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(124);
@@ -21813,7 +21813,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(125);
@@ -21827,7 +21827,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(126);
@@ -21841,7 +21841,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(127);
@@ -21855,7 +21855,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(128);
@@ -21873,7 +21873,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 13;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(267);
@@ -21887,7 +21887,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(134);
@@ -21901,7 +21901,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(129);
@@ -21915,7 +21915,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(126);
@@ -21929,7 +21929,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(127);
@@ -21943,7 +21943,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(274);
@@ -21957,7 +21957,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(275);
@@ -21971,7 +21971,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(276);
@@ -21985,7 +21985,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(277);
@@ -21999,7 +21999,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(278);
@@ -22013,7 +22013,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(279);
@@ -22027,7 +22027,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(280);
@@ -22041,7 +22041,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(281);
@@ -22055,7 +22055,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(282);
@@ -22073,7 +22073,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 13;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -22087,7 +22087,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(87);
@@ -22101,7 +22101,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -22115,7 +22115,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(89);
@@ -22129,7 +22129,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(90);
@@ -22143,7 +22143,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(91);
@@ -22157,7 +22157,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(92);
@@ -22171,7 +22171,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(93);
@@ -22185,7 +22185,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(94);
@@ -22215,11 +22215,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -22230,7 +22230,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -22244,7 +22244,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -22258,7 +22258,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -22272,7 +22272,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -22286,7 +22286,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -22300,7 +22300,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -22314,7 +22314,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -22328,7 +22328,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -22342,7 +22342,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -22356,7 +22356,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -22370,7 +22370,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -22384,7 +22384,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -22398,7 +22398,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -22412,7 +22412,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -22426,7 +22426,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -22456,18 +22456,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_T_S" /* GXT: Press ~a~ to browse tops and shorts. */, 16);
 								Var0.f_12 = 100;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -22481,7 +22481,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -22495,7 +22495,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(61);
@@ -22509,7 +22509,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(65);
@@ -22523,7 +22523,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(66);
@@ -22537,7 +22537,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(67);
@@ -22551,7 +22551,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -22565,7 +22565,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(69);
@@ -22581,7 +22581,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(90);
@@ -22595,7 +22595,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(91);
@@ -22612,7 +22612,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(172);
@@ -22626,7 +22626,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(173);
@@ -22645,7 +22645,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 100;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(92);
@@ -22659,7 +22659,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(154);
@@ -22673,7 +22673,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(155);
@@ -22687,7 +22687,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(156);
@@ -22701,7 +22701,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(157);
@@ -22715,7 +22715,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(158);
@@ -22729,7 +22729,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(309);
@@ -22743,7 +22743,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(310);
@@ -22757,7 +22757,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(311);
@@ -22771,7 +22771,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(312);
@@ -22785,7 +22785,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(313);
@@ -22799,7 +22799,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(316);
@@ -22813,7 +22813,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(288);
@@ -22827,7 +22827,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(289);
@@ -22841,7 +22841,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(290);
@@ -22855,7 +22855,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(292);
@@ -22869,7 +22869,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(293);
@@ -22883,7 +22883,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(294);
@@ -22897,7 +22897,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(97);
@@ -22911,7 +22911,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(98);
@@ -22925,7 +22925,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(99);
@@ -22939,7 +22939,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(100);
@@ -22953,7 +22953,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(101);
@@ -22967,7 +22967,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(104);
@@ -22981,7 +22981,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(105);
@@ -22995,7 +22995,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(106);
@@ -23009,7 +23009,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(107);
@@ -23023,7 +23023,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(108);
@@ -23037,7 +23037,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(109);
@@ -23051,7 +23051,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(110);
@@ -23065,7 +23065,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(52);
@@ -23097,18 +23097,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_GIL" /* GXT: Press ~a~ to browse gilets. */, 16);
 								Var0.f_12 = 105;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(70);
@@ -23122,7 +23122,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(71);
@@ -23136,7 +23136,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(72);
@@ -23150,7 +23150,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(73);
@@ -23164,7 +23164,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(74);
@@ -23178,7 +23178,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(75);
@@ -23196,7 +23196,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(139);
@@ -23210,7 +23210,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(140);
@@ -23224,7 +23224,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(141);
@@ -23238,7 +23238,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(142);
@@ -23252,7 +23252,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(143);
@@ -23266,7 +23266,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(144);
@@ -23298,18 +23298,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_S" /* GXT: Press ~a~ to browse shorts. */, 16);
 								Var0.f_12 = 30;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -23323,7 +23323,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -23337,7 +23337,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -23351,7 +23351,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -23365,7 +23365,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -23383,7 +23383,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 32;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -23397,7 +23397,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -23411,7 +23411,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -23425,7 +23425,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -23439,7 +23439,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -23453,7 +23453,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -23467,7 +23467,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -23481,7 +23481,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(48);
@@ -23495,7 +23495,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -23509,7 +23509,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -23523,7 +23523,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -23541,7 +23541,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 43;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -23555,7 +23555,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -23569,7 +23569,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -23583,7 +23583,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(48);
@@ -23613,12 +23613,12 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_708(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_665(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
 						Var0.f_12 = 79;
-						__LIB_33__::func_451(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_31__::func_934(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -23635,11 +23635,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -23648,7 +23648,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(108);
@@ -23662,7 +23662,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(109);
@@ -23676,7 +23676,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(110);
@@ -23690,7 +23690,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(112);
@@ -23704,7 +23704,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(114);
@@ -23718,7 +23718,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(116);
@@ -23732,7 +23732,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(118);
@@ -23746,7 +23746,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(119);
@@ -23760,7 +23760,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(120);
@@ -23774,7 +23774,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(121);
@@ -23788,7 +23788,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(122);
@@ -23820,7 +23820,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_OUT" /* GXT: Press ~a~ to browse outfits. */, 16);
-						__LIB_43__::func_707(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_664(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -23845,18 +23845,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 2;
 						Var0.f_11 = "clothingtrousers";
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SU" /* GXT: Press ~a~ to browse suits. */, 16);
 								Var0.f_12 = 99;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -23870,7 +23870,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -23884,7 +23884,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -23898,7 +23898,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -23912,7 +23912,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -23926,7 +23926,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -23940,7 +23940,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -23954,7 +23954,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(135);
@@ -23968,7 +23968,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(136);
@@ -23982,7 +23982,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(137);
@@ -23996,7 +23996,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(138);
@@ -24010,7 +24010,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(139);
@@ -24024,7 +24024,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(140);
@@ -24038,7 +24038,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(141);
@@ -24052,7 +24052,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(142);
@@ -24066,7 +24066,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(143);
@@ -24080,7 +24080,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(144);
@@ -24094,7 +24094,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(145);
@@ -24108,7 +24108,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(146);
@@ -24122,7 +24122,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(147);
@@ -24136,7 +24136,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(148);
@@ -24150,7 +24150,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(149);
@@ -24164,7 +24164,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(150);
@@ -24182,7 +24182,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 99;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(22);
@@ -24196,7 +24196,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(23);
@@ -24210,7 +24210,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(24);
@@ -24224,7 +24224,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -24238,7 +24238,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -24252,7 +24252,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -24266,7 +24266,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -24280,7 +24280,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -24294,7 +24294,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -24308,7 +24308,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -24322,7 +24322,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -24336,7 +24336,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -24350,7 +24350,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -24364,7 +24364,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -24378,7 +24378,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -24392,7 +24392,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -24410,7 +24410,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 99;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -24424,7 +24424,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -24438,7 +24438,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -24452,7 +24452,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -24466,7 +24466,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -24480,7 +24480,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -24510,18 +24510,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
-						__LIB_43__::func_709(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_666(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
 								Var0.f_12 = 58;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(1);
@@ -24535,7 +24535,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(2);
@@ -24549,7 +24549,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(3);
@@ -24563,7 +24563,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(4);
@@ -24577,7 +24577,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(5);
@@ -24591,7 +24591,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -24605,7 +24605,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -24619,7 +24619,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -24633,7 +24633,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -24647,7 +24647,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -24661,7 +24661,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -24675,7 +24675,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -24689,7 +24689,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -24703,7 +24703,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -24717,7 +24717,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(48);
@@ -24731,7 +24731,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -24745,7 +24745,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -24759,7 +24759,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -24773,7 +24773,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(52);
@@ -24787,7 +24787,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(53);
@@ -24801,7 +24801,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(54);
@@ -24815,7 +24815,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(55);
@@ -24829,7 +24829,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -24843,7 +24843,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -24857,7 +24857,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -24871,7 +24871,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -24885,7 +24885,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -24899,7 +24899,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(61);
@@ -24913,7 +24913,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(62);
@@ -24927,7 +24927,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(63);
@@ -24941,7 +24941,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(64);
@@ -24955,7 +24955,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(65);
@@ -24969,7 +24969,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(66);
@@ -24983,7 +24983,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(67);
@@ -24997,7 +24997,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(68);
@@ -25011,7 +25011,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(69);
@@ -25025,7 +25025,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(70);
@@ -25039,7 +25039,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(87);
@@ -25053,7 +25053,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -25067,7 +25067,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(89);
@@ -25081,7 +25081,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(90);
@@ -25095,7 +25095,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(91);
@@ -25109,7 +25109,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(92);
@@ -25123,7 +25123,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(93);
@@ -25137,7 +25137,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(94);
@@ -25151,7 +25151,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(95);
@@ -25165,7 +25165,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(96);
@@ -25179,7 +25179,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(97);
@@ -25193,7 +25193,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(98);
@@ -25211,7 +25211,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 58;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -25225,7 +25225,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -25239,7 +25239,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -25253,7 +25253,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -25267,7 +25267,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -25281,7 +25281,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -25295,7 +25295,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -25309,7 +25309,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -25323,7 +25323,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -25337,7 +25337,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(74);
@@ -25351,7 +25351,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(75);
@@ -25365,7 +25365,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(76);
@@ -25379,7 +25379,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(77);
@@ -25393,7 +25393,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(78);
@@ -25407,7 +25407,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(79);
@@ -25421,7 +25421,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(80);
@@ -25435,7 +25435,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -25449,7 +25449,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -25463,7 +25463,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -25477,7 +25477,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -25491,7 +25491,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(85);
@@ -25505,7 +25505,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(86);
@@ -25519,7 +25519,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(87);
@@ -25533,7 +25533,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(88);
@@ -25547,7 +25547,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(89);
@@ -25561,7 +25561,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(90);
@@ -25575,7 +25575,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(91);
@@ -25589,7 +25589,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(92);
@@ -25603,7 +25603,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(93);
@@ -25617,7 +25617,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(94);
@@ -25631,7 +25631,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(95);
@@ -25645,7 +25645,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(96);
@@ -25659,7 +25659,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(97);
@@ -25673,7 +25673,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(98);
@@ -25687,7 +25687,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(99);
@@ -25701,7 +25701,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(100);
@@ -25715,7 +25715,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(101);
@@ -25729,7 +25729,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(102);
@@ -25743,7 +25743,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(103);
@@ -25757,7 +25757,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(104);
@@ -25771,7 +25771,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(105);
@@ -25785,7 +25785,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(106);
@@ -25799,7 +25799,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(107);
@@ -25813,7 +25813,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(108);
@@ -25827,7 +25827,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(109);
@@ -25841,7 +25841,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(110);
@@ -25855,7 +25855,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(111);
@@ -25869,7 +25869,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(112);
@@ -25883,7 +25883,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(113);
@@ -25897,7 +25897,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(114);
@@ -25911,7 +25911,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(115);
@@ -25925,7 +25925,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(116);
@@ -25939,7 +25939,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(117);
@@ -25957,7 +25957,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 58;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(17);
@@ -25971,7 +25971,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(18);
@@ -25985,7 +25985,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(19);
@@ -25999,7 +25999,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(20);
@@ -26013,7 +26013,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(21);
@@ -26027,7 +26027,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(22);
@@ -26041,7 +26041,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(23);
@@ -26055,7 +26055,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(24);
@@ -26069,7 +26069,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -26083,7 +26083,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -26097,7 +26097,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -26111,7 +26111,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -26125,7 +26125,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -26139,7 +26139,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -26153,7 +26153,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -26167,7 +26167,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -26181,7 +26181,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -26195,7 +26195,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -26209,7 +26209,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -26223,7 +26223,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -26237,7 +26237,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -26251,7 +26251,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -26265,7 +26265,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -26279,7 +26279,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(48);
@@ -26293,7 +26293,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -26307,7 +26307,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -26321,7 +26321,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -26335,7 +26335,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(52);
@@ -26349,7 +26349,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(53);
@@ -26363,7 +26363,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(54);
@@ -26377,7 +26377,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(55);
@@ -26391,7 +26391,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -26405,7 +26405,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -26419,7 +26419,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -26433,7 +26433,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -26447,7 +26447,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -26461,7 +26461,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(61);
@@ -26475,7 +26475,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(62);
@@ -26489,7 +26489,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(63);
@@ -26503,7 +26503,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(64);
@@ -26517,7 +26517,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(65);
@@ -26531,7 +26531,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(66);
@@ -26545,7 +26545,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(67);
@@ -26575,18 +26575,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SW" /* GXT: Press ~a~ to browse sweaters. */, 16);
 								Var0.f_12 = 18;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(151);
@@ -26600,7 +26600,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(152);
@@ -26614,7 +26614,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(153);
@@ -26628,7 +26628,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(154);
@@ -26642,7 +26642,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(155);
@@ -26656,7 +26656,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(156);
@@ -26670,7 +26670,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(157);
@@ -26684,7 +26684,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(158);
@@ -26698,7 +26698,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(159);
@@ -26712,7 +26712,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(160);
@@ -26733,7 +26733,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(8);
@@ -26747,7 +26747,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(9);
@@ -26761,7 +26761,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(10);
@@ -26775,7 +26775,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(11);
@@ -26789,7 +26789,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(12);
@@ -26803,7 +26803,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(13);
@@ -26817,7 +26817,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(14);
@@ -26831,7 +26831,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(15);
@@ -26845,7 +26845,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(16);
@@ -26859,7 +26859,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(17);
@@ -26873,7 +26873,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(18);
@@ -26887,7 +26887,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(19);
@@ -26901,7 +26901,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(20);
@@ -26915,7 +26915,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(21);
@@ -26929,7 +26929,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(22);
@@ -26943,7 +26943,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(23);
@@ -26957,7 +26957,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(24);
@@ -26971,7 +26971,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(25);
@@ -26985,7 +26985,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(26);
@@ -26999,7 +26999,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(27);
@@ -27018,7 +27018,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 107;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(296);
@@ -27032,7 +27032,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(297);
@@ -27046,7 +27046,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(298);
@@ -27060,7 +27060,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(299);
@@ -27074,7 +27074,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(300);
@@ -27088,7 +27088,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(301);
@@ -27102,7 +27102,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(302);
@@ -27116,7 +27116,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(303);
@@ -27130,7 +27130,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(304);
@@ -27144,7 +27144,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(305);
@@ -27158,7 +27158,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(306);
@@ -27172,7 +27172,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(307);
@@ -27186,7 +27186,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(308);
@@ -27200,7 +27200,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -27214,7 +27214,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -27228,7 +27228,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -27242,7 +27242,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -27256,7 +27256,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -27270,7 +27270,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -27284,7 +27284,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(48);
@@ -27298,7 +27298,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -27312,7 +27312,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -27326,7 +27326,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -27340,7 +27340,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(52);
@@ -27354,7 +27354,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(53);
@@ -27368,7 +27368,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(54);
@@ -27382,7 +27382,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(55);
@@ -27396,7 +27396,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -27414,7 +27414,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 18;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(207);
@@ -27428,7 +27428,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(208);
@@ -27442,7 +27442,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(209);
@@ -27456,7 +27456,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(210);
@@ -27470,7 +27470,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(211);
@@ -27484,7 +27484,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(212);
@@ -27516,18 +27516,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 2;
 						Var0.f_11 = "clothingtrousers";
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SP" /* GXT: Press ~a~ to browse sportswear. */, 16);
 								Var0.f_12 = 106;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -27541,7 +27541,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -27555,7 +27555,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -27569,7 +27569,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -27581,7 +27581,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Stack.Push(0);
 								Stack.Push(-1);
 								Call_Loc(*uParam0);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(3);
 								Stack.Push(77);
 								Call_Loc(*uParam2);
@@ -27589,7 +27589,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(48);
@@ -27603,7 +27603,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(49);
@@ -27617,7 +27617,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(50);
@@ -27631,7 +27631,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(51);
@@ -27645,7 +27645,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(52);
@@ -27659,7 +27659,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(53);
@@ -27673,7 +27673,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(54);
@@ -27692,7 +27692,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 106;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -27706,7 +27706,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -27720,7 +27720,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -27734,7 +27734,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -27748,7 +27748,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -27762,7 +27762,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -27774,7 +27774,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Stack.Push(0);
 								Stack.Push(-1);
 								Call_Loc(*uParam0);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(3);
 								Stack.Push(41);
 								Call_Loc(*uParam2);
@@ -27782,7 +27782,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(15);
@@ -27796,7 +27796,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(16);
@@ -27810,7 +27810,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(17);
@@ -27824,7 +27824,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(18);
@@ -27838,7 +27838,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(19);
@@ -27852,7 +27852,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(20);
@@ -27866,7 +27866,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(21);
@@ -27885,7 +27885,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 106;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -27899,7 +27899,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(61);
@@ -27911,7 +27911,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Stack.Push(0);
 								Stack.Push(-1);
 								Call_Loc(*uParam0);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(3);
 								Stack.Push(54);
 								Call_Loc(*uParam2);
@@ -27919,7 +27919,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(19);
@@ -27933,7 +27933,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(20);
@@ -27947,7 +27947,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(21);
@@ -27961,7 +27961,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(22);
@@ -27975,7 +27975,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(23);
@@ -27989,7 +27989,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(24);
@@ -28003,7 +28003,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(25);
@@ -28017,7 +28017,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(26);
@@ -28031,7 +28031,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(27);
@@ -28045,7 +28045,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(28);
@@ -28059,7 +28059,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(2));
+									Stack.Push(__LIB_16__::func_512(2));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(29);
@@ -28092,18 +28092,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 0;
 						Var0.f_11 = "";
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_HAT" /* GXT: Press ~a~ to browse hats. */, 16);
-						__LIB_43__::func_710(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_667(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_JK" /* GXT: Press ~a~ to browse jackets. */, 16);
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(130);
@@ -28117,7 +28117,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(131);
@@ -28131,7 +28131,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(132);
@@ -28145,7 +28145,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(133);
@@ -28159,7 +28159,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(134);
@@ -28177,7 +28177,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(223);
@@ -28191,7 +28191,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(224);
@@ -28205,7 +28205,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(225);
@@ -28219,7 +28219,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(226);
@@ -28237,7 +28237,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 6;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(155);
@@ -28267,18 +28267,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SH" /* GXT: Press ~a~ to browse shirts. */, 16);
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(161);
@@ -28292,7 +28292,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(162);
@@ -28306,7 +28306,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(163);
@@ -28320,7 +28320,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(164);
@@ -28334,7 +28334,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(165);
@@ -28348,7 +28348,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(166);
@@ -28362,7 +28362,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(167);
@@ -28376,7 +28376,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(168);
@@ -28394,7 +28394,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(192);
@@ -28408,7 +28408,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(193);
@@ -28422,7 +28422,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(194);
@@ -28436,7 +28436,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(195);
@@ -28450,7 +28450,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(196);
@@ -28464,7 +28464,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(197);
@@ -28478,7 +28478,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(198);
@@ -28492,7 +28492,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(199);
@@ -28506,7 +28506,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(200);
@@ -28520,7 +28520,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(201);
@@ -28534,7 +28534,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(202);
@@ -28548,7 +28548,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(203);
@@ -28562,7 +28562,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(204);
@@ -28576,7 +28576,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(205);
@@ -28590,7 +28590,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(206);
@@ -28604,7 +28604,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(207);
@@ -28622,7 +28622,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 12;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(183);
@@ -28636,7 +28636,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(184);
@@ -28650,7 +28650,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(185);
@@ -28664,7 +28664,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(186);
@@ -28678,7 +28678,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(188);
@@ -28692,7 +28692,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(189);
@@ -28724,18 +28724,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 2;
 						Var0.f_11 = "clothingtrousers";
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_P" /* GXT: Press ~a~ to browse pants. */, 16);
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_SU" /* GXT: Press ~a~ to browse suits. */, 16);
 								Var0.f_12 = 99;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(16);
@@ -28749,7 +28749,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -28763,7 +28763,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -28777,7 +28777,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(45);
@@ -28791,7 +28791,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(46);
@@ -28805,7 +28805,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(47);
@@ -28826,7 +28826,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(29);
@@ -28840,7 +28840,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(30);
@@ -28854,7 +28854,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(31);
@@ -28868,7 +28868,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(32);
@@ -28882,7 +28882,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(33);
@@ -28896,7 +28896,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(34);
@@ -28910,7 +28910,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(35);
@@ -28924,7 +28924,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(36);
@@ -28938,7 +28938,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(37);
@@ -28952,7 +28952,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(38);
@@ -28966,7 +28966,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(39);
@@ -28980,7 +28980,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(40);
@@ -28994,7 +28994,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(41);
@@ -29008,7 +29008,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(42);
@@ -29022,7 +29022,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(43);
@@ -29041,7 +29041,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 23;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(11);
@@ -29055,7 +29055,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(243);
@@ -29069,7 +29069,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(244);
@@ -29083,7 +29083,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(245);
@@ -29097,7 +29097,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(246);
@@ -29111,7 +29111,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(247);
@@ -29125,7 +29125,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(248);
@@ -29139,7 +29139,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(249);
@@ -29153,7 +29153,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(250);
@@ -29167,7 +29167,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(251);
@@ -29181,7 +29181,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(252);
@@ -29195,7 +29195,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(253);
@@ -29209,7 +29209,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(254);
@@ -29223,7 +29223,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(255);
@@ -29237,7 +29237,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(256);
@@ -29251,7 +29251,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(257);
@@ -29265,7 +29265,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(258);
@@ -29283,7 +29283,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 99;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(14);
@@ -29297,7 +29297,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(223);
@@ -29311,7 +29311,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(224);
@@ -29325,7 +29325,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(225);
@@ -29339,7 +29339,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(226);
@@ -29353,7 +29353,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(227);
@@ -29367,7 +29367,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(228);
@@ -29381,7 +29381,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(229);
@@ -29395,7 +29395,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(230);
@@ -29409,7 +29409,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(231);
@@ -29423,7 +29423,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(232);
@@ -29437,7 +29437,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(233);
@@ -29451,7 +29451,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(234);
@@ -29465,7 +29465,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(235);
@@ -29479,7 +29479,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(236);
@@ -29493,7 +29493,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(237);
@@ -29507,7 +29507,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(238);
@@ -29521,7 +29521,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(239);
@@ -29535,7 +29535,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(240);
@@ -29565,18 +29565,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_LO" /* GXT: Press ~a~ to browse loungewear. */, 16);
 								Var0.f_12 = 108;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(93);
@@ -29590,7 +29590,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(94);
@@ -29604,7 +29604,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(95);
@@ -29618,7 +29618,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(96);
@@ -29634,7 +29634,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(73);
@@ -29648,7 +29648,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(74);
@@ -29662,7 +29662,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(75);
@@ -29676,7 +29676,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(76);
@@ -29690,7 +29690,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(0));
+									Stack.Push(__LIB_16__::func_512(0));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(77);
@@ -29709,7 +29709,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 108;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(2);
@@ -29723,7 +29723,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(147);
@@ -29737,7 +29737,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(148);
@@ -29751,7 +29751,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(149);
@@ -29765,7 +29765,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(150);
@@ -29779,7 +29779,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(152);
@@ -29793,7 +29793,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(153);
@@ -29807,7 +29807,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(283);
@@ -29821,7 +29821,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(284);
@@ -29835,7 +29835,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(285);
@@ -29849,7 +29849,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(286);
@@ -29863,7 +29863,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(287);
@@ -29877,7 +29877,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(291);
@@ -29893,7 +29893,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								{
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(73);
@@ -29907,7 +29907,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(74);
@@ -29921,7 +29921,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 									Call_Loc(*uParam0);
 									Stack.Push(&Global_4538017);
 									Stack.Push(iVar4);
-									Stack.Push(__LIB_16__::func_509(1));
+									Stack.Push(__LIB_16__::func_512(1));
 									Stack.Push(iParam9);
 									Stack.Push(0);
 									Stack.Push(75);
@@ -29960,7 +29960,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -29969,7 +29969,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 89;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(2);
@@ -29983,7 +29983,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(159);
@@ -29997,7 +29997,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(160);
@@ -30011,7 +30011,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(161);
@@ -30025,7 +30025,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(162);
@@ -30039,7 +30039,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(163);
@@ -30053,7 +30053,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(164);
@@ -30067,7 +30067,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(165);
@@ -30081,7 +30081,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(166);
@@ -30095,7 +30095,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(167);
@@ -30109,7 +30109,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(168);
@@ -30123,7 +30123,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(169);
@@ -30137,7 +30137,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(170);
@@ -30151,7 +30151,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(171);
@@ -30165,7 +30165,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(172);
@@ -30179,7 +30179,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(173);
@@ -30193,7 +30193,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(174);
@@ -30225,7 +30225,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_708(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_665(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -30242,7 +30242,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_OUT" /* GXT: Press ~a~ to browse outfits. */, 16);
-						__LIB_43__::func_707(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_664(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -30272,11 +30272,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						Stack.Push(__LIB_16__::func_509(0));
+						Stack.Push(__LIB_16__::func_512(0));
 						Stack.Push(12);
 						Stack.Push(20);
 						Call_Loc(*uParam1);
@@ -30290,12 +30290,12 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
 							Var0.f_12 = 24;
 						}
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(20);
@@ -30309,7 +30309,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(21);
@@ -30323,7 +30323,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(22);
@@ -30337,7 +30337,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -30351,7 +30351,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -30365,7 +30365,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -30379,7 +30379,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(114);
@@ -30393,7 +30393,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(115);
@@ -30407,7 +30407,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(116);
@@ -30421,7 +30421,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(117);
@@ -30437,7 +30437,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							case 1:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(13);
@@ -30451,7 +30451,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(14);
@@ -30465,7 +30465,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(15);
@@ -30479,7 +30479,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(261);
@@ -30493,7 +30493,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(262);
@@ -30507,7 +30507,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(263);
@@ -30521,7 +30521,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(268);
@@ -30535,7 +30535,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(269);
@@ -30549,7 +30549,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(270);
@@ -30563,7 +30563,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(271);
@@ -30579,7 +30579,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							case 2:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(17);
@@ -30593,7 +30593,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(18);
@@ -30607,7 +30607,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(19);
@@ -30621,7 +30621,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(156);
@@ -30635,7 +30635,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(158);
@@ -30649,7 +30649,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(81);
@@ -30663,7 +30663,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(82);
@@ -30677,7 +30677,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(83);
@@ -30691,7 +30691,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(84);
@@ -30721,12 +30721,12 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_708(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_665(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
 						Var0.f_12 = 87;
-						__LIB_33__::func_450(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_31__::func_933(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -30743,7 +30743,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
 						Var0.f_0 = 3;
 						Var0.f_11 = "clothingshoes";
-						__LIB_43__::func_709(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_666(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -30760,7 +30760,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_GEAR" /* GXT: Press ~a~ to browse gear. */, 16);
 						Var0.f_0 = 0;
 						Var0.f_11 = "";
-						__LIB_43__::func_706(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_663(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -30777,7 +30777,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 5;
 						Var0.f_11 = "clothingshirt";
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_OUT" /* GXT: Press ~a~ to browse outfits. */, 16);
-						__LIB_43__::func_707(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_664(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -30808,18 +30808,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
 						Var0.f_12 = 24;
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -30833,7 +30833,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -30847,7 +30847,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -30861,7 +30861,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(118);
@@ -30875,7 +30875,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(119);
@@ -30891,7 +30891,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							case 1:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(264);
@@ -30905,7 +30905,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(265);
@@ -30919,7 +30919,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(266);
@@ -30933,7 +30933,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(272);
@@ -30947,7 +30947,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(273);
@@ -30963,7 +30963,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							case 2:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(159);
@@ -30977,7 +30977,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(160);
@@ -30991,7 +30991,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(85);
@@ -31005,7 +31005,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(86);
@@ -31035,11 +31035,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_708(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_665(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						__LIB_33__::func_450(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_31__::func_933(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -31056,7 +31056,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_SHO" /* GXT: Press ~a~ to browse shoes. */, 16);
 						Var0.f_0 = 3;
 						Var0.f_11 = "clothingshoes";
-						__LIB_43__::func_709(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_666(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -31073,7 +31073,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_GEAR" /* GXT: Press ~a~ to browse gear. */, 16);
 						Var0.f_0 = 0;
 						Var0.f_11 = "";
-						__LIB_43__::func_706(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_663(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -31090,7 +31090,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 5;
 						Var0.f_11 = "clothingshirt";
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_OUT" /* GXT: Press ~a~ to browse outfits. */, 16);
-						__LIB_43__::func_707(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_664(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -31114,20 +31114,20 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_12 = 78;
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						if (__LIB_41__::func_331(&Var0, uParam0, iVar4, iParam9))
+						if (__LIB_41__::func_9(&Var0, uParam0, iVar4, iParam9))
 						{
 							break;
 						}
-						__LIB_43__::func_705(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_662(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(0);
@@ -31141,7 +31141,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -31155,7 +31155,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -31169,7 +31169,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -31183,7 +31183,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -31197,7 +31197,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -31211,7 +31211,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -31225,7 +31225,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -31239,7 +31239,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -31253,7 +31253,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -31267,7 +31267,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -31281,7 +31281,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -31295,7 +31295,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -31309,7 +31309,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -31323,7 +31323,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(44);
@@ -31337,7 +31337,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(9);
@@ -31351,7 +31351,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(10);
@@ -31365,7 +31365,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(11);
@@ -31379,7 +31379,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(12);
@@ -31393,7 +31393,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(13);
@@ -31407,7 +31407,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(14);
@@ -31423,7 +31423,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							case 1:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(0);
@@ -31437,7 +31437,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -31451,7 +31451,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(27);
@@ -31465,7 +31465,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(28);
@@ -31479,7 +31479,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(29);
@@ -31493,7 +31493,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(30);
@@ -31507,7 +31507,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(31);
@@ -31521,7 +31521,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(32);
@@ -31535,7 +31535,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(33);
@@ -31549,7 +31549,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(34);
@@ -31563,7 +31563,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(35);
@@ -31577,7 +31577,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -31591,7 +31591,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -31605,7 +31605,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -31619,7 +31619,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -31633,7 +31633,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(5);
@@ -31647,7 +31647,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(6);
@@ -31661,7 +31661,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(7);
@@ -31675,7 +31675,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(8);
@@ -31689,7 +31689,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(9);
@@ -31703,7 +31703,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(1));
+								Stack.Push(__LIB_16__::func_512(1));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(10);
@@ -31719,7 +31719,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 							case 2:
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(0);
@@ -31733,7 +31733,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(15);
@@ -31747,7 +31747,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(16);
@@ -31761,7 +31761,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(49);
@@ -31775,7 +31775,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(50);
@@ -31789,7 +31789,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(51);
@@ -31803,7 +31803,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(52);
@@ -31817,7 +31817,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(53);
@@ -31831,7 +31831,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(54);
@@ -31845,7 +31845,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(55);
@@ -31859,7 +31859,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(56);
@@ -31873,7 +31873,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(57);
@@ -31887,7 +31887,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(58);
@@ -31901,7 +31901,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(59);
@@ -31915,7 +31915,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(60);
@@ -31929,7 +31929,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(9);
@@ -31943,7 +31943,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(10);
@@ -31957,7 +31957,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(11);
@@ -31971,7 +31971,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(12);
@@ -31985,7 +31985,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(13);
@@ -31999,7 +31999,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(14);
@@ -32029,11 +32029,11 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_HAT" /* GXT: Press ~a~ to browse hats. */, 16);
-						__LIB_43__::func_710(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_667(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								break;
@@ -32058,18 +32058,18 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
 						StringCopy(&(Var0.f_7), "CSHOP_TRY_T" /* GXT: Press ~a~ to browse tops. */, 16);
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 					else
 					{
-						switch (__LIB_17__::func_338())
+						switch (__LIB_17__::func_341())
 						{
 							case 0:
 								StringCopy(&(Var0.f_7), "CSHOP_TRY_TS" /* GXT: Press ~a~ to browse t-shirts. */, 16);
 								Var0.f_12 = 11;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(36);
@@ -32083,7 +32083,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(37);
@@ -32097,7 +32097,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(38);
@@ -32111,7 +32111,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(39);
@@ -32125,7 +32125,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(40);
@@ -32139,7 +32139,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(41);
@@ -32153,7 +32153,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(42);
@@ -32167,7 +32167,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(0));
+								Stack.Push(__LIB_16__::func_512(0));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(43);
@@ -32187,7 +32187,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Var0.f_12 = 11;
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(18);
@@ -32201,7 +32201,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(20);
@@ -32215,7 +32215,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(21);
@@ -32229,7 +32229,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(22);
@@ -32243,7 +32243,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(23);
@@ -32257,7 +32257,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(24);
@@ -32271,7 +32271,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(25);
@@ -32285,7 +32285,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 								Call_Loc(*uParam0);
 								Stack.Push(&Global_4538017);
 								Stack.Push(iVar4);
-								Stack.Push(__LIB_16__::func_509(2));
+								Stack.Push(__LIB_16__::func_512(2));
 								Stack.Push(iParam9);
 								Stack.Push(0);
 								Stack.Push(26);
@@ -32321,7 +32321,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 1;
 						Var0.f_11 = "";
 						Var0.f_12 = 248;
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32338,7 +32338,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 						Var0.f_0 = 0;
 						Var0.f_11 = "";
 						Var0.f_12 = 78;
-						__LIB_43__::func_705(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_662(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32371,7 +32371,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32410,7 +32410,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					{
 						Var0.f_0 = 1;
 						Var0.f_11 = "";
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32426,7 +32426,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					{
 						Var0.f_0 = 0;
 						Var0.f_11 = "";
-						__LIB_43__::func_710(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_667(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32442,7 +32442,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					{
 						Var0.f_0 = 3;
 						Var0.f_11 = "clothingshoes";
-						__LIB_43__::func_709(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_666(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32458,7 +32458,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					{
 						Var0.f_0 = 5;
 						Var0.f_11 = "clothingshirt";
-						__LIB_43__::func_707(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_664(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32479,7 +32479,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					StringCopy(&(Var0.f_7), "CSHOP_TRY_GEAR" /* GXT: Press ~a~ to browse gear. */, 16);
 					Var0.f_0 = 0;
 					Var0.f_11 = "";
-					__LIB_43__::func_706(uParam0, &Global_4538017, iVar4, iParam9);
+					__LIB_43__::func_663(uParam0, &Global_4538017, iVar4, iParam9);
 				}
 				break;
 		}
@@ -32500,7 +32500,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					{
 						Var0.f_0 = 1;
 						Var0.f_11 = "";
-						__LIB_43__::func_711(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_668(uParam0, uParam4, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32516,7 +32516,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					Var0.f_11 = "clothingspecs";
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						__LIB_43__::func_954(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_946(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32532,7 +32532,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					{
 						Var0.f_0 = 0;
 						Var0.f_11 = "";
-						__LIB_43__::func_710(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_667(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
@@ -32548,19 +32548,19 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					{
 						Var0.f_0 = 0;
 						Var0.f_11 = "";
-						__LIB_43__::func_710(uParam0, &Global_4538017, iVar4, iParam9);
+						__LIB_43__::func_667(uParam0, &Global_4538017, iVar4, iParam9);
 					}
 				}
 				break;
 			}
 	}
-	iVar16 = __LIB_16__::func_459(iVar1);
+	iVar16 = __LIB_16__::func_462(iVar1);
 	__LIB_15__::func_119(iVar16, iParam5, &(Var0.f_1));
 	__LIB_15__::func_119(iVar16, iParam5, &(Var0.f_13[0 /*3*/]));
 	__LIB_15__::func_119(iVar16, iParam5, &(Var0.f_13[1 /*3*/]));
 	if (bParam10 == 1)
 	{
-		__LIB_33__::func_414(iParam5, iParam8, &(Var0.f_31), &(Var0.f_34));
+		__LIB_31__::func_897(iParam5, iParam8, &(Var0.f_31), &(Var0.f_34));
 	}
 	*uParam6 = { Var0 };
 	if (bParam10 == 1)
@@ -32569,7 +32569,7 @@ bool func_962(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 		{
 			if (__LIB_1__::func_394())
 			{
-				uParam6->f_11 = __LIB_16__::func_458(uParam6->f_11);
+				uParam6->f_11 = __LIB_16__::func_461(uParam6->f_11);
 			}
 		}
 	}
@@ -32617,7 +32617,7 @@ void func_963(var uParam0, int iParam1)//Position - 0x11A23C
 			{
 				if (((uParam0->f_126[iVar0] != 12 && Global_4537108[iVar0] != 0) && iVar0 != iVar1) && uParam0->f_253[iVar0] == 0)
 				{
-					__LIB_16__::func_457(uParam0, iVar0, iVar1);
+					__LIB_16__::func_460(uParam0, iVar0, iVar1);
 					iVar1 = (iVar1 - 1);
 				}
 				iVar0++;
@@ -32642,7 +32642,7 @@ void func_963(var uParam0, int iParam1)//Position - 0x11A23C
 					iVar0 = 1;
 					while (iVar0 <= 6)
 					{
-						__LIB_16__::func_457(uParam0, iVar0, (iVar2 - iVar0) + 1);
+						__LIB_16__::func_460(uParam0, iVar0, (iVar2 - iVar0) + 1);
 						iVar0++;
 					}
 				}
@@ -32656,7 +32656,7 @@ void func_965(var uParam0, int iParam1, int iParam2)//Position - 0x11A518
 	int iVar0;
 	if (iParam1 < iParam2)
 	{
-		iVar0 = __LIB_33__::func_412(uParam0, iParam1, iParam2);
+		iVar0 = __LIB_31__::func_895(uParam0, iParam1, iParam2);
 		func_965(uParam0, iParam1, (iVar0 - 1));
 		func_965(uParam0, iVar0 + 1, iParam2);
 	}
@@ -32667,7 +32667,7 @@ void func_967(var uParam0, int iParam1, int iParam2)//Position - 0x11A5A6
 	int iVar0;
 	if (iParam1 < iParam2)
 	{
-		iVar0 = __LIB_33__::func_413(uParam0, iParam1, iParam2);
+		iVar0 = __LIB_31__::func_896(uParam0, iParam1, iParam2);
 		func_967(uParam0, iParam1, (iVar0 - 1));
 		func_967(uParam0, iVar0 + 1, iParam2);
 	}
@@ -32721,16 +32721,16 @@ void func_1019(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 	bVar7 = true;
 	if (iVar0 == joaat("MP_M_Freemode_01"))
 	{
-		bVar7 = __LIB_16__::func_361(iVar0, 11, iVar4, 319);
+		bVar7 = __LIB_16__::func_364(iVar0, 11, iVar4, 319);
 	}
 	else if (iVar0 == joaat("MP_F_Freemode_01"))
 	{
-		bVar7 = __LIB_16__::func_361(iVar0, 11, iVar4, 319);
+		bVar7 = __LIB_16__::func_364(iVar0, 11, iVar4, 319);
 	}
 	if (__LIB_1__::func_783(PLAYER::PLAYER_ID()))
 	{
-		__LIB_43__::func_708(uParam0, &Global_4538017, iParam3, iParam4);
-		__LIB_43__::func_710(uParam0, &Global_4538017, iParam3, iParam4);
+		__LIB_43__::func_665(uParam0, &Global_4538017, iParam3, iParam4);
+		__LIB_43__::func_667(uParam0, &Global_4538017, iParam3, iParam4);
 	}
 	if (iVar0 == joaat("MP_M_Freemode_01"))
 	{
@@ -32853,11 +32853,11 @@ void func_1019(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 		Stack.Push(-1);
 		Call_Loc(*uParam0);
 		func_1023(uParam0, uParam1, uParam2, iParam3, iParam4);
-		__LIB_33__::func_424(uParam0, uParam2, iParam3, iParam4, bVar9);
-		__LIB_33__::func_423(uParam0, uParam2, iParam3, iParam4, bVar9);
-		__LIB_43__::func_83(uParam0, uParam2, iParam3, iParam4, 7, 0, 0, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, iVar6);
-		__LIB_43__::func_83(uParam0, uParam2, iParam3, iParam4, 14, 7, 0, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
-		__LIB_43__::func_83(uParam0, uParam2, iParam3, iParam4, 14, 6, 0, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
+		__LIB_31__::func_907(uParam0, uParam2, iParam3, iParam4, bVar9);
+		__LIB_31__::func_906(uParam0, uParam2, iParam3, iParam4, bVar9);
+		__LIB_42__::func_966(uParam0, uParam2, iParam3, iParam4, 7, 0, 0, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, iVar6);
+		__LIB_42__::func_966(uParam0, uParam2, iParam3, iParam4, 14, 7, 0, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
+		__LIB_42__::func_966(uParam0, uParam2, iParam3, iParam4, 14, 6, 0, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
 		bVar10 = false;
 		bVar11 = false;
 		if (FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(iVar8, joaat("TUX_JACKET"), 0))
@@ -33380,10 +33380,10 @@ void func_1019(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 				iVar15 = 1;
 			}
 		}
-		__LIB_43__::func_83(uParam0, uParam2, iParam3, iParam4, 7, 0, iVar15, iVar4, iVar5, 0, 1, bVar14, 0, 0, 1, 0, 0, 0, 0, 0, iVar6);
-		__LIB_43__::func_83(uParam0, uParam2, iParam3, iParam4, 14, 7, iVar15, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
-		__LIB_43__::func_83(uParam0, uParam2, iParam3, iParam4, 14, 6, iVar15, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
-		__LIB_43__::func_83(uParam0, uParam2, iParam3, iParam4, 14, 2, iVar15, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
+		__LIB_42__::func_966(uParam0, uParam2, iParam3, iParam4, 7, 0, iVar15, iVar4, iVar5, 0, 1, bVar14, 0, 0, 1, 0, 0, 0, 0, 0, iVar6);
+		__LIB_42__::func_966(uParam0, uParam2, iParam3, iParam4, 14, 7, iVar15, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
+		__LIB_42__::func_966(uParam0, uParam2, iParam3, iParam4, 14, 6, iVar15, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
+		__LIB_42__::func_966(uParam0, uParam2, iParam3, iParam4, 14, 2, iVar15, iVar4, iVar5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, -99);
 		iVar1 = 0;
 		while (iVar1 <= iVar2)
 		{
@@ -34463,7 +34463,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 		{
 			iVar10 = 1;
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 0, joaat("DLC_MP_LTS_M_UPPR_0_0"), &iVar7, &iVar8) && iVar8 != -1)
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 0, joaat("DLC_MP_LTS_M_UPPR_0_0"), &iVar7, &iVar8) && iVar8 != -1)
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34536,7 +34536,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 1, joaat("DLC_MP_LTS_M_UPPR_1_0"), &iVar7, &iVar8) && iVar8 != -1)
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 1, joaat("DLC_MP_LTS_M_UPPR_1_0"), &iVar7, &iVar8) && iVar8 != -1)
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34609,7 +34609,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 2, joaat("DLC_MP_HEIST_M_TORSO_0_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 2, joaat("DLC_MP_HEIST_M_TORSO_0_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34640,7 +34640,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 3, joaat("DLC_MP_HEIST_M_TORSO_11_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 3, joaat("DLC_MP_HEIST_M_TORSO_11_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34671,7 +34671,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 4, joaat("DLC_MP_HEIST_M_TORSO_22_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 4, joaat("DLC_MP_HEIST_M_TORSO_22_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34702,7 +34702,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 5, joaat("DLC_MP_HEIST_M_TORSO_33_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 5, joaat("DLC_MP_HEIST_M_TORSO_33_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34733,7 +34733,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 6, joaat("eShopEnum"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 6, joaat("eShopEnum"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34750,7 +34750,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 7, joaat("DLC_MP_HEIST_M_TORSO_55_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 7, joaat("DLC_MP_HEIST_M_TORSO_55_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -34767,7 +34767,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 8, joaat("DLC_MP_HEIST_M_TORSO_66_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 8, joaat("DLC_MP_HEIST_M_TORSO_66_0"), &iVar7, &iVar8))
 		{
 			iVar10 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -34859,7 +34859,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 9, joaat("DLC_MP_GR_M_TORSO_2_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 9, joaat("DLC_MP_GR_M_TORSO_2_0"), &iVar7, &iVar8))
 		{
 			iVar10 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -35147,7 +35147,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 10, joaat("DLC_MP_GR_M_TORSO_15_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 10, joaat("DLC_MP_GR_M_TORSO_15_0"), &iVar7, &iVar8))
 		{
 			iVar10 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -35435,7 +35435,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 11, joaat("DLC_MP_SUM_M_TORSO_1_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 11, joaat("DLC_MP_SUM_M_TORSO_1_0"), &iVar7, &iVar8))
 		{
 			iVar10 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -35572,7 +35572,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 		{
 			iVar13 = 1;
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 9, joaat("DLC_MP_VAL_F_UPPR0_0"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_0"), 1, 1, 1, -1))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 9, joaat("DLC_MP_VAL_F_UPPR0_0"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_0"), 1, 1, 1, -1))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35589,7 +35589,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 10, joaat("DLC_MP_VAL_F_UPPR0_1"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_1"), 1, 1, 1, -1))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 10, joaat("DLC_MP_VAL_F_UPPR0_1"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_1"), 1, 1, 1, -1))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35606,7 +35606,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 11, joaat("DLC_MP_VAL_F_UPPR0_2"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_2"), 1, 1, 1, -1))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 11, joaat("DLC_MP_VAL_F_UPPR0_2"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_2"), 1, 1, 1, -1))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35623,7 +35623,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 12, joaat("DLC_MP_VAL_F_UPPR0_3"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_3"), 1, 1, 1, -1))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 12, joaat("DLC_MP_VAL_F_UPPR0_3"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_3"), 1, 1, 1, -1))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35640,7 +35640,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 13, joaat("DLC_MP_VAL_F_UPPR0_4"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_4"), 1, 1, 1, -1))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 13, joaat("DLC_MP_VAL_F_UPPR0_4"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_4"), 1, 1, 1, -1))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35657,7 +35657,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 14, joaat("DLC_MP_VAL_F_UPPR0_5"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_5"), 1, 1, 1, -1))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 14, joaat("DLC_MP_VAL_F_UPPR0_5"), &iVar7, &iVar8) && __LIB_2__::func_97(joaat("DLC_MP_VAL_F_JBIB0_5"), 1, 1, 1, -1))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35674,7 +35674,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 0, joaat("DLC_MP_LTS_F_UPPR_0_0"), &iVar7, &iVar8) && iVar8 != -1)
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 0, joaat("DLC_MP_LTS_F_UPPR_0_0"), &iVar7, &iVar8) && iVar8 != -1)
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35747,7 +35747,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 1, joaat("DLC_MP_LTS_F_UPPR_1_0"), &iVar7, &iVar8) && iVar8 != -1)
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 1, joaat("DLC_MP_LTS_F_UPPR_1_0"), &iVar7, &iVar8) && iVar8 != -1)
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35820,7 +35820,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 2, joaat("DLC_MP_HEIST_F_TORSO_0_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 2, joaat("DLC_MP_HEIST_F_TORSO_0_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35851,7 +35851,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 3, joaat("DLC_MP_HEIST_F_TORSO_13_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 3, joaat("DLC_MP_HEIST_F_TORSO_13_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35882,7 +35882,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 4, joaat("DLC_MP_HEIST_F_TORSO_26_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 4, joaat("DLC_MP_HEIST_F_TORSO_26_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35913,7 +35913,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 5, joaat("DLC_MP_HEIST_F_TORSO_39_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 5, joaat("DLC_MP_HEIST_F_TORSO_39_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35944,7 +35944,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 6, joaat("DLC_MP_HEIST_F_TORSO_52_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 6, joaat("DLC_MP_HEIST_F_TORSO_52_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35961,7 +35961,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 7, joaat("DLC_MP_HEIST_F_TORSO_65_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 7, joaat("DLC_MP_HEIST_F_TORSO_65_0"), &iVar7, &iVar8))
 		{
 			Stack.Push(uParam2);
 			Stack.Push(iParam3);
@@ -35978,7 +35978,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 8, joaat("DLC_MP_HEIST_F_TORSO_78_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 8, joaat("DLC_MP_HEIST_F_TORSO_78_0"), &iVar7, &iVar8))
 		{
 			iVar12 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -36070,7 +36070,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 15, joaat("DLC_MP_GR_F_TORSO_2_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 15, joaat("DLC_MP_GR_F_TORSO_2_0"), &iVar7, &iVar8))
 		{
 			iVar12 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -36358,7 +36358,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 16, joaat("DLC_MP_GR_F_TORSO_18_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 16, joaat("DLC_MP_GR_F_TORSO_18_0"), &iVar7, &iVar8))
 		{
 			iVar12 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -36646,7 +36646,7 @@ void func_1023(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)/
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
 		}
-		if (__LIB_16__::func_362(iVar0, iParam3, iVar4, iVar9, 17, joaat("DLC_MP_SUM_F_TORSO_1_0"), &iVar7, &iVar8))
+		if (__LIB_16__::func_365(iVar0, iParam3, iVar4, iVar9, 17, joaat("DLC_MP_SUM_F_TORSO_1_0"), &iVar7, &iVar8))
 		{
 			iVar12 = 0;
 			if (iVar8 == -1 || iVar5)
@@ -36800,9 +36800,9 @@ void func_1059(bool bParam0)//Position - 0x14DA84
 	{
 		if (__LIB_0__::func_445(&Var0, iVar6, iVar1, PLAYER::PLAYER_PED_ID(), -1))
 		{
-			if (__LIB_19__::func_233(iVar6, -1))
+			if (__LIB_19__::func_243(iVar6, -1))
 			{
-				if (__LIB_25__::func_110(PLAYER::PLAYER_PED_ID(), &Var0, iVar6, Var0.f_4, Var0.f_8, bVar2, bVar3, bVar5, bVar4))
+				if (__LIB_25__::func_120(PLAYER::PLAYER_PED_ID(), &Var0, iVar6, Var0.f_4, Var0.f_8, bVar2, bVar3, bVar5, bVar4))
 				{
 					PED::ADD_PED_DECORATION_FROM_HASHES(PLAYER::PLAYER_PED_ID(), Var0.f_4, Var0.f_5);
 				}
@@ -36810,7 +36810,7 @@ void func_1059(bool bParam0)//Position - 0x14DA84
 		}
 		iVar6++;
 	}
-	if (__LIB_19__::func_233(123, -1))
+	if (__LIB_19__::func_243(123, -1))
 	{
 		if (PED::GET_PED_DECORATION_ZONE_FROM_HASHES(joaat("mpBeach_overlays"), joaat("FM_Hair_Fuzz")) != 7)
 		{
@@ -36826,9 +36826,9 @@ void func_1059(bool bParam0)//Position - 0x14DA84
 			if (!FILES::IS_CONTENT_ITEM_LOCKED(Var9.f_0))
 			{
 				iVar10 = (129 + iVar7);
-				if (__LIB_19__::func_233(iVar10, -1))
+				if (__LIB_19__::func_243(iVar10, -1))
 				{
-					if (__LIB_25__::func_110(PLAYER::PLAYER_PED_ID(), &(Var9.f_7), iVar10, Var9.f_2, Var9.f_6, bVar2, bVar3, bVar5, bVar4))
+					if (__LIB_25__::func_120(PLAYER::PLAYER_PED_ID(), &(Var9.f_7), iVar10, Var9.f_2, Var9.f_6, bVar2, bVar3, bVar5, bVar4))
 					{
 						PED::ADD_PED_DECORATION_FROM_HASHES(PLAYER::PLAYER_PED_ID(), Var9.f_2, Var9.f_3);
 						__LIB_0__::func_260(PLAYER::PLAYER_PED_ID(), Var9.f_2, Var9.f_3);
@@ -36915,7 +36915,7 @@ void func_1144(var uParam0)//Position - 0x150910
 			{
 				bVar8 = false;
 			}
-			else if (!__LIB_16__::func_553(*uParam0, 1, 0, -1))
+			else if (!__LIB_16__::func_556(*uParam0, 1, 0, -1))
 			{
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
@@ -37020,7 +37020,7 @@ void func_1144(var uParam0)//Position - 0x150910
 			{
 				bVar8 = false;
 			}
-			else if (!__LIB_16__::func_484() && __LIB_0__::func_540(0))
+			else if (!__LIB_16__::func_487() && __LIB_0__::func_540(0))
 			{
 				bVar8 = false;
 			}
@@ -37075,7 +37075,7 @@ void func_1144(var uParam0)//Position - 0x150910
 											{
 												if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 												{
-													if (__LIB_16__::func_483(uParam0->f_521, iVar1))
+													if (__LIB_16__::func_486(uParam0->f_521, iVar1))
 													{
 														bVar11 = true;
 													}
@@ -37203,7 +37203,7 @@ void func_1144(var uParam0)//Position - 0x150910
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
 					iVar12 = 0;
-					if (__LIB_16__::func_546(PLAYER::PLAYER_PED_ID(), &iVar12, -99))
+					if (__LIB_16__::func_549(PLAYER::PLAYER_PED_ID(), &iVar12, -99))
 					{
 						MISC::SET_BIT(&(uParam0->f_555), 22);
 					}
@@ -37226,12 +37226,12 @@ void func_1144(var uParam0)//Position - 0x150910
 					STREAMING::REQUEST_ANIM_DICT(uParam0->f_184.f_11);
 				}
 				MISC::CLEAR_BIT(&(uParam0->f_555), 23);
-				__LIB_33__::func_414(*uParam0, uParam0->f_116, &(uParam0->f_184.f_31), &(uParam0->f_184.f_34));
+				__LIB_31__::func_897(*uParam0, uParam0->f_116, &(uParam0->f_184.f_31), &(uParam0->f_184.f_34));
 				uParam0->f_11 = 4;
 				uParam0->f_116.f_31 = 0;
-				__LIB_16__::func_482(*uParam0);
+				__LIB_16__::func_485(*uParam0);
 				uParam0->f_687 = -1;
-				__LIB_16__::func_566(uParam0, &(uParam0->f_116));
+				__LIB_16__::func_569(uParam0, &(uParam0->f_116));
 			}
 		}
 	}
@@ -37354,9 +37354,9 @@ void func_1195(var uParam0)//Position - 0x153574
 	switch (uParam0->f_116.f_5)
 	{
 		case 0:
-			if (__LIB_33__::func_434(uParam0, uParam0->f_520))
+			if (__LIB_31__::func_917(uParam0, uParam0->f_520))
 			{
-				uParam0->f_521 = __LIB_16__::func_564(*uParam0);
+				uParam0->f_521 = __LIB_16__::func_567(*uParam0);
 				uParam0->f_116.f_5++;
 			}
 			else
@@ -37464,7 +37464,7 @@ void func_1195(var uParam0)//Position - 0x153574
 						if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 						{
 							__LIB_13__::func_836("Using net shop keeper..", -1);
-							__LIB_16__::func_503(&(uParam0->f_12));
+							__LIB_16__::func_506(&(uParam0->f_12));
 							if (!uParam0->f_12.f_27)
 							{
 								__LIB_13__::func_836("Waiting for shop keeper to be initialised", -1);
@@ -37491,13 +37491,13 @@ void func_1195(var uParam0)//Position - 0x153574
 							{
 								Local_66.f_2 = 1;
 							}
-							__LIB_16__::func_503(&(uParam0->f_12));
+							__LIB_16__::func_506(&(uParam0->f_12));
 						}
 						else
 						{
 							uParam0->f_12 = PED::CREATE_PED(iVar1, uParam0->f_12.f_3, uParam0->f_12.f_6, uParam0->f_12.f_15, false, false);
 						}
-						if (__LIB_16__::func_419(0))
+						if (__LIB_16__::func_422(0))
 						{
 							if (*uParam0 == 21)
 							{
@@ -37590,7 +37590,7 @@ void func_1195(var uParam0)//Position - 0x153574
 							PED::SET_PED_CONFIG_FLAG(uParam0->f_12, 185, true);
 							PED::SET_PED_CAN_EVASIVE_DIVE(uParam0->f_12, false);
 							PED::SET_TREAT_AS_AMBIENT_PED_FOR_DRIVER_LOCKON(uParam0->f_12, true);
-							if (__LIB_16__::func_490(*uParam0))
+							if (__LIB_16__::func_493(*uParam0))
 							{
 								PED::SET_PED_LEG_IK_MODE(uParam0->f_12, 0);
 								NETWORK::NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS(uParam0->f_12, true);
@@ -37606,7 +37606,7 @@ void func_1195(var uParam0)//Position - 0x153574
 							}
 						}
 					}
-					if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_419(0))
+					if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_422(0))
 					{
 						__LIB_0__::func_221(&(uParam0->f_236.f_5), __LIB_13__::func_103("D"));
 						__LIB_0__::func_222(&(uParam0->f_236.f_5), __LIB_13__::func_103("D"), uParam0->f_12, "ShopAssisstant", 0, 1);
@@ -37670,33 +37670,33 @@ void func_1195(var uParam0)//Position - 0x153574
 				}
 				if (*uParam0 != 21)
 				{
-					if (!__LIB_16__::func_489(uParam0))
+					if (!__LIB_16__::func_492(uParam0))
 					{
 						return;
 					}
 				}
-				__LIB_16__::func_488(uParam0);
+				__LIB_16__::func_491(uParam0);
 				if (*uParam0 != 21)
 				{
 					if (!Global_78319)
 					{
-						if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_419(0))
+						if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_422(0))
 						{
 							TASK::TASK_PERFORM_SEQUENCE(uParam0->f_12, uParam0->f_591);
 						}
 					}
 				}
-				else if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_419(0))
+				else if ((ENTITY::DOES_ENTITY_EXIST(uParam0->f_12) && !PED::IS_PED_INJURED(uParam0->f_12)) && __LIB_16__::func_422(0))
 				{
 					TASK::TASK_LOOK_AT_ENTITY(uParam0->f_12, PLAYER::PLAYER_PED_ID(), -1, 2048, 4);
 					TASK::TASK_START_SCENARIO_AT_POSITION(uParam0->f_12, "WORLD_HUMAN_AA_COFFEE", -1334.8792f, -1275.9761f, 4.963415f, 164.26341f, 0, false, true);
 				}
 			}
-			__LIB_16__::func_487();
-			__LIB_33__::func_455(*uParam0, 0, 0);
-			if (__LIB_16__::func_490(*uParam0))
+			__LIB_16__::func_490();
+			__LIB_31__::func_938(*uParam0, 0, 0);
+			if (__LIB_16__::func_493(*uParam0))
 			{
-				__LIB_16__::func_555(*uParam0, 1);
+				__LIB_16__::func_558(*uParam0, 1);
 			}
 			uParam0->f_609 = MISC::GET_RANDOM_INT_IN_RANGE(8000, 16000);
 			uParam0->f_693 = 0;
@@ -37737,7 +37737,7 @@ void func_1239(var uParam0)//Position - 0x157733
 		__LIB_13__::func_901(&(uParam0->f_236), -1, 1);
 		return;
 	}
-	if ((PED::IS_PED_INJURED(uParam0->f_12) || PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) || !__LIB_16__::func_419(0))
+	if ((PED::IS_PED_INJURED(uParam0->f_12) || PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) || !__LIB_16__::func_422(0))
 	{
 		return;
 	}
@@ -37749,15 +37749,15 @@ void func_1239(var uParam0)//Position - 0x157733
 			return;
 		}
 	}
-	if (__LIB_16__::func_539())
+	if (__LIB_16__::func_542())
 	{
 		if (*uParam0 != 21)
 		{
 			if ((uParam0->f_7 && BitTest(uParam0->f_555, 1)) && !__LIB_14__::func_458(*uParam0))
 			{
-				if (__LIB_16__::func_498(&(uParam0->f_236), uParam0->f_609))
+				if (__LIB_16__::func_501(&(uParam0->f_236), uParam0->f_609))
 				{
-					if (__LIB_16__::func_497(&(uParam0->f_236), 1))
+					if (__LIB_16__::func_500(&(uParam0->f_236), 1))
 					{
 						uParam0->f_609 = MISC::GET_RANDOM_INT_IN_RANGE(45000, 60000);
 					}
@@ -37783,7 +37783,7 @@ void func_1239(var uParam0)//Position - 0x157733
 							}
 							else
 							{
-								iVar0 = __LIB_16__::func_496(iLocal_101);
+								iVar0 = __LIB_16__::func_499(iLocal_101);
 								iLocal_101++;
 								if (!iLocal_101 < 4)
 								{
@@ -37808,11 +37808,11 @@ void func_1239(var uParam0)//Position - 0x157733
 		}
 		if (uParam0->f_7)
 		{
-			if (((uParam0->f_11 == 3 && !BitTest(uParam0->f_555, 1)) && __LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), uParam0->f_12, 1) < __LIB_16__::func_495(*uParam0)) && !__LIB_14__::func_458(*uParam0))
+			if (((uParam0->f_11 == 3 && !BitTest(uParam0->f_555, 1)) && __LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), uParam0->f_12, 1) < __LIB_16__::func_498(*uParam0)) && !__LIB_14__::func_458(*uParam0))
 			{
 				if (*uParam0 == 51)
 				{
-					iVar1 = __LIB_43__::func_86();
+					iVar1 = __LIB_42__::func_969();
 					__LIB_13__::func_901(&(uParam0->f_236), iVar1, 2);
 				}
 				else
@@ -37840,7 +37840,7 @@ void func_1239(var uParam0)//Position - 0x157733
 			MISC::SET_BIT(&(uParam0->f_559), 3);
 			if (*uParam0 == 51)
 			{
-				if (__LIB_16__::func_498(&(uParam0->f_236), uParam0->f_601))
+				if (__LIB_16__::func_501(&(uParam0->f_236), uParam0->f_601))
 				{
 					if (!BitTest(uParam0->f_559, 1))
 					{
@@ -37891,7 +37891,7 @@ void func_1239(var uParam0)//Position - 0x157733
 				}
 				if (*uParam0 != 21)
 				{
-					if (__LIB_16__::func_498(&(uParam0->f_236), uParam0->f_610))
+					if (__LIB_16__::func_501(&(uParam0->f_236), uParam0->f_610))
 					{
 						uParam0->f_610 = MISC::GET_RANDOM_INT_IN_RANGE(4000, 10000);
 						if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -37914,7 +37914,7 @@ void func_1239(var uParam0)//Position - 0x157733
 				}
 				if (*uParam0 != 21)
 				{
-					if (__LIB_16__::func_498(&(uParam0->f_236), uParam0->f_610))
+					if (__LIB_16__::func_501(&(uParam0->f_236), uParam0->f_610))
 					{
 						uParam0->f_610 = MISC::GET_RANDOM_INT_IN_RANGE(4000, 10000);
 						if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -38101,34 +38101,34 @@ void func_1239(var uParam0)//Position - 0x157733
 						switch (uParam0->f_236)
 						{
 							case 0:
-								if ((__LIB_17__::func_338() == 0 && (__LIB_0__::func_178(44) && Global_113386.f_668.f_68 < 5)) && *uParam0 == 16)
+								if ((__LIB_17__::func_341() == 0 && (__LIB_0__::func_178(44) && Global_113386.f_668.f_68 < 5)) && *uParam0 == 16)
 								{
 									__LIB_0__::func_221(&(uParam0->f_236.f_5), __LIB_13__::func_103("D"));
 									__LIB_0__::func_222(&(uParam0->f_236.f_5), __LIB_13__::func_103("D"), uParam0->f_12, "SHOPASSISTANT", 0, 1);
 									__LIB_0__::func_222(&(uParam0->f_236.f_5), 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 									if (Global_113386.f_668.f_68 == 0)
 									{
-										__LIB_33__::func_454(&(uParam0->f_236.f_5), "clothau", "cloth_mic1", 7, 0, 0, 0);
+										__LIB_31__::func_937(&(uParam0->f_236.f_5), "clothau", "cloth_mic1", 7, 0, 0, 0);
 										Global_113386.f_668.f_68++;
 									}
 									else if (Global_113386.f_668.f_68 == 1)
 									{
-										__LIB_33__::func_454(&(uParam0->f_236.f_5), "clothau", "cloth_mic2", 7, 0, 0, 0);
+										__LIB_31__::func_937(&(uParam0->f_236.f_5), "clothau", "cloth_mic2", 7, 0, 0, 0);
 										Global_113386.f_668.f_68++;
 									}
 									else if (Global_113386.f_668.f_68 == 2)
 									{
-										__LIB_33__::func_454(&(uParam0->f_236.f_5), "clothau", "cloth_mic3", 7, 0, 0, 0);
+										__LIB_31__::func_937(&(uParam0->f_236.f_5), "clothau", "cloth_mic3", 7, 0, 0, 0);
 										Global_113386.f_668.f_68++;
 									}
 									else if (Global_113386.f_668.f_68 == 3)
 									{
-										__LIB_33__::func_454(&(uParam0->f_236.f_5), "clothau", "cloth_mic4", 7, 0, 0, 0);
+										__LIB_31__::func_937(&(uParam0->f_236.f_5), "clothau", "cloth_mic4", 7, 0, 0, 0);
 										Global_113386.f_668.f_68++;
 									}
 									else if (Global_113386.f_668.f_68 == 4)
 									{
-										__LIB_33__::func_454(&(uParam0->f_236.f_5), "clothau", "cloth_mic5", 7, 0, 0, 0);
+										__LIB_31__::func_937(&(uParam0->f_236.f_5), "clothau", "cloth_mic5", 7, 0, 0, 0);
 										Global_113386.f_668.f_68++;
 									}
 									iLocal_76 = 1;
@@ -38450,17 +38450,17 @@ void func_1267(var uParam0)//Position - 0x159096
 						Call_Loc(uParam0->f_510);
 						if (Global_4538992.f_186[iVar0] != -1)
 						{
-							__LIB_43__::func_75(Global_4538992.f_186[iVar0], 1, 0, 1, 0, -1);
-							__LIB_24__::func_880(Global_4538992.f_186[iVar0], 1, -1);
+							__LIB_42__::func_958(Global_4538992.f_186[iVar0], 1, 0, 1, 0, -1);
+							__LIB_24__::func_890(Global_4538992.f_186[iVar0], 1, -1);
 						}
-						__LIB_16__::func_416(Global_4538992.f_219[iVar0 /*4*/], Global_4538992.f_93[iVar0], 0, 1, 0, BitTest(uParam0->f_556, 9));
+						__LIB_16__::func_419(Global_4538992.f_219[iVar0 /*4*/], Global_4538992.f_93[iVar0], 0, 1, 0, BitTest(uParam0->f_556, 9));
 						if (__LIB_0__::func_233(uParam0->f_586, Global_4538992.f_155[iVar0], Global_4538992.f_124[iVar0], -1))
 						{
-							__LIB_42__::func_424(*uParam0, 1, 13, 0);
+							__LIB_42__::func_299(*uParam0, 1, 13, 0);
 						}
 						else
 						{
-							__LIB_42__::func_424(*uParam0, 1, 5, 0);
+							__LIB_42__::func_299(*uParam0, 1, 5, 0);
 						}
 						__LIB_2__::func_69(1088, -1);
 						__LIB_0__::func_186(2, 1, -1);
@@ -38470,16 +38470,16 @@ void func_1267(var uParam0)//Position - 0x159096
 						iVar2 = (iVar1 / 2500) + 1 * 2500;
 						if ((iVar1 + Global_4538992.f_93[iVar0]) >= iVar2)
 						{
-							__LIB_16__::func_520(iVar2);
+							__LIB_16__::func_523(iVar2);
 						}
 						__LIB_1__::func_354(2062, (iVar1 + Global_4538992.f_93[iVar0]), -1, 1, 0);
 						if (MISC::ARE_STRINGS_EQUAL(&(Global_4538992.f_219[iVar0 /*4*/]), "CLO_HST_B_1_0" /* GXT: Rebreather */) || MISC::ARE_STRINGS_EQUAL(&(Global_4538992.f_219[iVar0 /*4*/]), "AMM_HST_B_1_0" /* GXT: Rebreather (~1~/~1~) */))
 						{
 							__LIB_1__::func_746(2048, 1, -1);
 						}
-						if (__LIB_16__::func_372(MISC::GET_HASH_KEY(&(Global_4538992.f_219[iVar0 /*4*/])), 1))
+						if (__LIB_16__::func_375(MISC::GET_HASH_KEY(&(Global_4538992.f_219[iVar0 /*4*/])), 1))
 						{
-							iVar3 = __LIB_16__::func_411(Global_4538992.f_219[iVar0 /*4*/]);
+							iVar3 = __LIB_16__::func_414(Global_4538992.f_219[iVar0 /*4*/]);
 							func_607(iVar3, 1);
 						}
 					}
@@ -38488,28 +38488,28 @@ void func_1267(var uParam0)//Position - 0x159096
 						iVar4 = __LIB_1__::func_360(1496, -1, 0);
 						MISC::SET_BIT(&iVar4, Global_4538992.f_186[iVar0]);
 						__LIB_1__::func_354(1496, iVar4, -1, 1, 0);
-						__LIB_42__::func_424(*uParam0, 1, 6, 0);
+						__LIB_42__::func_299(*uParam0, 1, 6, 0);
 						__LIB_2__::func_553(joaat("MPPLY_INGAMESTORE_MONEYSPENT"), Global_4538992.f_93[iVar0]);
 						iVar5 = __LIB_1__::func_360(2062, -1, 0);
 						iVar6 = (iVar5 / 2500) + 1 * 2500;
 						if ((iVar5 + Global_4538992.f_93[iVar0]) >= iVar6)
 						{
-							__LIB_16__::func_520(iVar6);
+							__LIB_16__::func_523(iVar6);
 						}
 						__LIB_1__::func_354(2062, (iVar5 + Global_4538992.f_93[iVar0]), -1, 1, 0);
 					}
 					iVar0++;
 				}
-				__LIB_33__::func_438();
+				__LIB_31__::func_921();
 				__LIB_1__::func_34(__LIB_3__::func_534());
 				MISC::SET_BIT(&(uParam0->f_555), 25);
 				MISC::SET_BIT(&(uParam0->f_555), 26);
 				uParam0->f_116.f_25 = 0;
 				uParam0->f_116.f_26 = 0;
-				__LIB_16__::func_412(uParam0);
+				__LIB_16__::func_415(uParam0);
 				break;
 			case 90:
-				__LIB_33__::func_438();
+				__LIB_31__::func_921();
 				__LIB_1__::func_34(__LIB_3__::func_534());
 				Global_4538860 = { Global_4538926 };
 				func_360(uParam0, 0, 1);
@@ -38525,14 +38525,14 @@ void func_1267(var uParam0)//Position - 0x159096
 					{
 						func_18(PLAYER::PLAYER_PED_ID(), uParam0->f_689, uParam0->f_688, 0, 0);
 					}
-					__LIB_16__::func_378(-1, "//Failed");
+					__LIB_16__::func_381(-1, "//Failed");
 				}
 				iVar7 = PLAYER::PLAYER_PED_ID();
 				func_130(&iVar7, -1, 0, 0);
 				MISC::SET_BIT(&(uParam0->f_555), 25);
 				MISC::SET_BIT(&(uParam0->f_555), 26);
 				MISC::CLEAR_BIT(&(uParam0->f_555), 17);
-				__LIB_16__::func_412(uParam0);
+				__LIB_16__::func_415(uParam0);
 				uParam0->f_116.f_25 = 0;
 				uParam0->f_116.f_26 = 0;
 				break;
@@ -38543,7 +38543,7 @@ void func_1267(var uParam0)//Position - 0x159096
 void func_1320(var uParam0, bool bParam1)//Position - 0x15BCD5
 {
 	int iVar0;
-	__LIB_16__::func_554(1);
+	__LIB_16__::func_557(1);
 	if (uParam0->f_116.f_19)
 	{
 		if (__LIB_10__::func_320())
@@ -38559,7 +38559,7 @@ void func_1320(var uParam0, bool bParam1)//Position - 0x15BCD5
 	{
 		__LIB_3__::func_122(&(uParam0->f_3));
 	}
-	__LIB_41__::func_336(uParam0, uParam0->f_520);
+	__LIB_41__::func_14(uParam0, uParam0->f_520);
 	__LIB_13__::func_862(&(uParam0->f_51));
 	if (uParam0->f_11 == 2)
 	{
@@ -38576,10 +38576,10 @@ void func_1320(var uParam0, bool bParam1)//Position - 0x15BCD5
 		__LIB_14__::func_455();
 		__LIB_12__::func_428(PLAYER::PLAYER_PED_ID());
 	}
-	if (__LIB_33__::func_383(*uParam0))
+	if (__LIB_31__::func_866(*uParam0))
 	{
 		__LIB_13__::func_836("Shopping basket not empty at cleanup!", -1);
-		__LIB_33__::func_438();
+		__LIB_31__::func_921();
 		__LIB_1__::func_34(__LIB_3__::func_534());
 		Global_4538860 = { Global_4538926 };
 		func_360(uParam0, 0, 1);
@@ -38603,7 +38603,7 @@ void func_1320(var uParam0, bool bParam1)//Position - 0x15BCD5
 	{
 		__LIB_13__::func_836("Shopping basket empty at cleanup!", -1);
 	}
-	__LIB_16__::func_378(-1, "CLEANUP_SHOP");
+	__LIB_16__::func_381(-1, "CLEANUP_SHOP");
 	if (uParam0->f_116.f_19)
 	{
 		__LIB_15__::func_133(&(uParam0->f_116), 0, 1, 1, 1);
@@ -38630,9 +38630,9 @@ void func_1320(var uParam0, bool bParam1)//Position - 0x15BCD5
 		}
 		__LIB_1__::func_895(1, *uParam0);
 		__LIB_14__::func_423(*uParam0, 0);
-		__LIB_16__::func_380(uParam0);
+		__LIB_16__::func_383(uParam0);
 		uParam0->f_535.f_19 = 0;
-		__LIB_16__::func_379(&(uParam0->f_535), 1);
+		__LIB_16__::func_382(&(uParam0->f_535), 1);
 		func_360(uParam0, 0, 0);
 		if (!Global_78319)
 		{
@@ -38643,7 +38643,7 @@ void func_1320(var uParam0, bool bParam1)//Position - 0x15BCD5
 				ENTITY::FREEZE_ENTITY_POSITION(PLAYER::PLAYER_PED_ID(), false);
 			}
 		}
-		__LIB_33__::func_427(0);
+		__LIB_31__::func_910(0);
 	}
 	if (!PED::IS_PED_INJURED(uParam0->f_12))
 	{
@@ -38734,7 +38734,7 @@ void func_1320(var uParam0, bool bParam1)//Position - 0x15BCD5
 	{
 		AUDIO::STOP_AUDIO_SCENE("Ls_Car_Meet_Merch_Shop_Scene");
 	}
-	__LIB_33__::func_442(uParam0);
+	__LIB_31__::func_925(uParam0);
 	__LIB_13__::func_617();
 	if ((uParam0->f_520 == 51 || uParam0->f_520 == 55) || uParam0->f_520 == 57)
 	{
@@ -38888,19 +38888,19 @@ void func_1351(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	int iVar4;
 	var uVar5;
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	if (!__LIB_43__::func_655(iVar0, iParam1, iParam3, iParam4, iParam5, 0))
+	if (!__LIB_43__::func_612(iVar0, iParam1, iParam3, iParam4, iParam5, 0))
 	{
 		bVar2 = false;
 		iVar3 = 0;
 		iVar4 = __LIB_0__::func_279(iVar0, iParam1, iParam2);
 		if (iVar4 != -99)
 		{
-			if (__LIB_43__::func_655(iVar0, iParam1, iVar4, iParam4, iParam5, 0))
+			if (__LIB_43__::func_612(iVar0, iParam1, iVar4, iParam4, iParam5, 0))
 			{
 				if (func_1416(iParam0, iParam1, iVar4, iParam9, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0))
 				{
 					bVar2 = true;
-					__LIB_16__::func_354(iParam1, iParam2, uParam6, uParam7, uParam8, iVar4);
+					__LIB_16__::func_357(iParam1, iParam2, uParam6, uParam7, uParam8, iVar4);
 				}
 			}
 		}
@@ -38911,14 +38911,14 @@ void func_1351(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			{
 				iVar3 = 320;
 			}
-			else if (!__LIB_39__::func_58(iVar0, iParam1, iVar3))
+			else if (!__LIB_38__::func_733(iVar0, iParam1, iVar3))
 			{
-				if (__LIB_43__::func_655(iVar0, iParam1, iVar3, iParam4, iParam5, 0))
+				if (__LIB_43__::func_612(iVar0, iParam1, iVar3, iParam4, iParam5, 0))
 				{
 					if (func_1416(iParam0, iParam1, iVar3, iParam9, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0))
 					{
 						bVar2 = true;
-						__LIB_16__::func_354(iParam1, iParam2, uParam6, uParam7, uParam8, iVar3);
+						__LIB_16__::func_357(iParam1, iParam2, uParam6, uParam7, uParam8, iVar3);
 					}
 				}
 			}
@@ -38928,7 +38928,7 @@ void func_1351(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 		{
 			uVar5 = { __LIB_0__::func_459(iVar0, 0) };
 			func_1416(iParam0, iParam1, uVar5[iParam1], 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-			__LIB_16__::func_354(iParam1, iParam2, uParam6, uParam7, uParam8, iVar3);
+			__LIB_16__::func_357(iParam1, iParam2, uParam6, uParam7, uParam8, iVar3);
 		}
 	}
 }
@@ -38968,7 +38968,7 @@ int func_1412(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)/
 							if (iVar1 != 13)
 							{
 								func_1412(iParam0, iVar1, uVar3[iVar1], 1, 1);
-								__LIB_16__::func_843(iParam0, iVar1, uVar3[iVar1], 1);
+								__LIB_16__::func_846(iParam0, iVar1, uVar3[iVar1], 1);
 							}
 							else
 							{
@@ -38977,7 +38977,7 @@ int func_1412(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)/
 								while (iVar2 <= 8)
 								{
 									func_1412(iParam0, 14, uVar4[iVar2], 1, 1);
-									__LIB_16__::func_843(iParam0, 14, uVar4[iVar2], 1);
+									__LIB_16__::func_846(iParam0, 14, uVar4[iVar2], 1);
 									iVar2++;
 								}
 							}
@@ -39218,7 +39218,7 @@ int func_1416(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 								iVar2 = 0;
 								while (iVar2 < 15)
 								{
-									iVar3 = __LIB_16__::func_222(iParam0, iVar10, 14, uVar12[iVar1], iVar2, 0);
+									iVar3 = __LIB_16__::func_225(iParam0, iVar10, 14, uVar12[iVar1], iVar2, 0);
 									if (iVar3 != -99)
 									{
 										func_1416(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -39249,7 +39249,7 @@ int func_1416(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							iVar2 = 0;
 							while (iVar2 < 15)
 							{
-								iVar3 = __LIB_16__::func_222(iParam0, iVar10, iVar0, uVar11[iVar0], iVar2, 0);
+								iVar3 = __LIB_16__::func_225(iParam0, iVar10, iVar0, uVar11[iVar0], iVar2, 0);
 								if (iVar3 != -99)
 								{
 									func_1416(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -39342,7 +39342,7 @@ int func_1416(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 				iVar2 = 0;
 				while (iVar2 < 15)
 				{
-					iVar3 = __LIB_16__::func_222(iParam0, iVar10, 14, uVar15[iVar1], iVar2, 0);
+					iVar3 = __LIB_16__::func_225(iParam0, iVar10, 14, uVar15[iVar1], iVar2, 0);
 					if (iVar3 != -99)
 					{
 						func_1416(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -39362,7 +39362,7 @@ int func_1416(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			iVar2 = 0;
 			while (iVar2 < 15)
 			{
-				iVar3 = __LIB_16__::func_222(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
+				iVar3 = __LIB_16__::func_225(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
 				if (iVar3 != -99)
 				{
 					func_1416(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -39386,7 +39386,7 @@ int func_1416(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			iVar2 = 0;
 			while (iVar2 < 15)
 			{
-				iVar3 = __LIB_16__::func_222(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
+				iVar3 = __LIB_16__::func_225(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
 				if (iVar3 != -99)
 				{
 					func_1416(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);

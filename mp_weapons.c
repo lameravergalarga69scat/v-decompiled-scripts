@@ -178,7 +178,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (__LIB_10__::func_437(202))
 				{
-					__LIB_38__::func_545();
+					__LIB_38__::func_220();
 					if (iVar5 == 1)
 					{
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("MENU_SHIFT_DEPTH");
@@ -509,7 +509,7 @@ void func_9(var uParam0, var uParam1)//Position - 0x9B2
 				}
 				break;
 		}
-		func_10(uParam0, __LIB_40__::func_357(uParam0));
+		func_10(uParam0, __LIB_40__::func_33(uParam0));
 	}
 }
 
@@ -543,7 +543,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 				{
 					if (__LIB_6__::func_163(uParam0->f_85[iVar0]))
 					{
-						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_18__::func_235(uParam0->f_85[iVar0]), -1))
+						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_18__::func_245(uParam0->f_85[iVar0]), -1))
 						{
 							bVar2 = true;
 						}
@@ -572,7 +572,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 						func_63(iVar4, uParam0->f_85[iVar0], 0);
 						func_57(iVar4, uParam0->f_85[iVar0], 0);
 					}
-					if (MISC::ARE_STRINGS_EQUAL(__LIB_19__::func_171(iVar4, uParam0->f_85[iVar0]), "WCT_CLIP1" /* GXT: Default Clip */))
+					if (MISC::ARE_STRINGS_EQUAL(__LIB_19__::func_181(iVar4, uParam0->f_85[iVar0]), "WCT_CLIP1" /* GXT: Default Clip */))
 					{
 						func_67(iVar4, uParam0->f_85[iVar0], 1, 0, 0);
 						if (!bVar3)
@@ -581,7 +581,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 							func_57(iVar4, uParam0->f_85[iVar0], 1);
 						}
 					}
-					if (MISC::ARE_STRINGS_EQUAL(__LIB_19__::func_171(iVar4, uParam0->f_85[iVar0]), "WCT_SCOPE_LRG" /* GXT: Scope */))
+					if (MISC::ARE_STRINGS_EQUAL(__LIB_19__::func_181(iVar4, uParam0->f_85[iVar0]), "WCT_SCOPE_LRG" /* GXT: Scope */))
 					{
 						func_67(iVar4, uParam0->f_85[iVar0], 1, 0, 0);
 						if (!bVar3)
@@ -621,7 +621,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 				{
 					if (__LIB_6__::func_163(uParam0->f_85[iVar0]))
 					{
-						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_18__::func_235(uParam0->f_85[iVar0]), -1))
+						if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_18__::func_245(uParam0->f_85[iVar0]), -1))
 						{
 							bVar2 = true;
 						}
@@ -638,7 +638,7 @@ void func_10(var uParam0, int iParam1)//Position - 0xBF1
 					{
 						bVar2 = false;
 					}
-					if (((bVar2 || (uParam0->f_85[iVar0] == joaat("WEAPON_PISTOL") && WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_PISTOL"), false))) || func_43(uParam0->f_85[iVar0])) || __LIB_38__::func_566(uParam0->f_85[iVar0], uParam0->f_276))
+					if (((bVar2 || (uParam0->f_85[iVar0] == joaat("WEAPON_PISTOL") && WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_PISTOL"), false))) || func_43(uParam0->f_85[iVar0])) || __LIB_38__::func_241(uParam0->f_85[iVar0], uParam0->f_276))
 					{
 						if (__LIB_6__::func_163(uParam0->f_85[iVar0]))
 						{
@@ -761,7 +761,7 @@ void func_14(var uParam0, int iParam1)//Position - 0x10D4
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_125[uParam0->f_277]);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_175[uParam0->f_277]);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_235[uParam0->f_277]);
-			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_20__::func_350(uParam0->f_85[uParam0->f_277]));
+			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_20__::func_360(uParam0->f_85[uParam0->f_277]));
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			if (func_15(uParam0->f_85[uParam0->f_277]))
 			{
@@ -929,7 +929,7 @@ int func_43(int iParam0)//Position - 0x32DC
 	if (bVar0)
 	{
 		iVar1 = __LIB_1__::func_136(PLAYER::PLAYER_ID());
-		iVar2 = __LIB_20__::func_350(iParam0);
+		iVar2 = __LIB_20__::func_360(iParam0);
 		if (iVar1 >= iVar2)
 		{
 			if (__LIB_0__::func_369(iVar3, -1, 0) > 0)
@@ -2070,7 +2070,7 @@ int func_51(int iParam0, int iParam1, int iParam2)//Position - 0x4601
 var func_54(int iParam0, int iParam1, int iParam2)//Position - 0x694D
 {
 	var uVar0;
-	uVar0 = __LIB_0__::func_369(__LIB_22__::func_335(iParam0, iParam1), iParam2, 0);
+	uVar0 = __LIB_0__::func_369(__LIB_22__::func_345(iParam0, iParam1), iParam2, 0);
 	return uVar0;
 }
 
@@ -2078,12 +2078,12 @@ void func_57(int iParam0, int iParam1, bool bParam2)//Position - 0x72BD
 {
 	if (bParam2)
 	{
-		if (!__LIB_42__::func_604(iParam0, iParam1, -1))
+		if (!__LIB_42__::func_479(iParam0, iParam1, -1))
 		{
 			func_58(iParam0, iParam1, 1);
 		}
 	}
-	else if (__LIB_42__::func_604(iParam0, iParam1, -1))
+	else if (__LIB_42__::func_479(iParam0, iParam1, -1))
 	{
 		func_58(iParam0, iParam1, 0);
 	}
@@ -2093,7 +2093,7 @@ void func_58(int iParam0, int iParam1, bool bParam2)//Position - 0x72F8
 {
 	int iVar0;
 	int iVar1;
-	iVar0 = __LIB_38__::func_547(iParam0, iParam1, -1);
+	iVar0 = __LIB_38__::func_222(iParam0, iParam1, -1);
 	iVar1 = __LIB_6__::func_350(iParam0, iParam1);
 	if (iVar1 > -1)
 	{
@@ -2161,10 +2161,10 @@ void func_67(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 		}
 		if (bParam3)
 		{
-			if (__LIB_24__::func_316(iParam0, iParam1) == 0)
+			if (__LIB_24__::func_326(iParam0, iParam1) == 0)
 			{
-				__LIB_12__::func_529(16, __LIB_19__::func_171(iParam0, 0), __LIB_22__::func_168(iParam0, 0), __LIB_20__::func_382(iParam1), __LIB_20__::func_381(iParam1), -1, 0, 0, 0, -1, 0);
-				__LIB_23__::func_501(iParam0, iParam1, 1);
+				__LIB_12__::func_529(16, __LIB_19__::func_181(iParam0, 0), __LIB_22__::func_178(iParam0, 0), __LIB_20__::func_392(iParam1), __LIB_20__::func_391(iParam1), -1, 0, 0, 0, -1, 0);
+				__LIB_23__::func_511(iParam0, iParam1, 1);
 			}
 		}
 		if (bParam4)
@@ -2209,14 +2209,14 @@ void func_69(int iParam0, int iParam1, bool bParam2)//Position - 0x7822
 		{
 			MISC::CLEAR_BIT(&iVar0, __LIB_0__::func_160(iVar1));
 		}
-		__LIB_0__::func_413(__LIB_22__::func_333(iParam0, iParam1), iVar0, -1, 1, 0);
+		__LIB_0__::func_413(__LIB_22__::func_343(iParam0, iParam1), iVar0, -1, 1, 0);
 	}
 }
 
 var func_71(int iParam0, int iParam1, int iParam2)//Position - 0x79ED
 {
 	var uVar0;
-	uVar0 = __LIB_0__::func_369(__LIB_22__::func_333(iParam0, iParam1), iParam2, 0);
+	uVar0 = __LIB_0__::func_369(__LIB_22__::func_343(iParam0, iParam1), iParam2, 0);
 	return uVar0;
 }
 
@@ -2249,7 +2249,7 @@ void func_82(int iParam0, int iParam1, bool bParam2)//Position - 0x86A1
 		{
 			MISC::CLEAR_BIT(&iVar0, __LIB_0__::func_160(iVar1));
 		}
-		__LIB_0__::func_413(__LIB_22__::func_335(iParam0, iParam1), iVar0, -1, 1, 0);
+		__LIB_0__::func_413(__LIB_22__::func_345(iParam0, iParam1), iVar0, -1, 1, 0);
 	}
 }
 
@@ -2272,7 +2272,7 @@ int func_85(int iParam0, int iParam1, int iParam2)//Position - 0x9334
 var func_86(int iParam0, int iParam1)//Position - 0x9368
 {
 	var uVar0;
-	uVar0 = __LIB_0__::func_369(__LIB_16__::func_234(iParam0), iParam1, 0);
+	uVar0 = __LIB_0__::func_369(__LIB_16__::func_237(iParam0), iParam1, 0);
 	return uVar0;
 }
 
@@ -2529,7 +2529,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION")) && iLocal_66[49] == uParam1->f_5)
 	{
-		if (Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && (__LIB_18__::func_230() || Global_1963965))
+		if (Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && (__LIB_18__::func_240() || Global_1963965))
 		{
 			func_107(joaat("WEAPON_DOUBLEACTION"), uParam0, *uParam1, 0);
 		}
@@ -2559,7 +2559,7 @@ void func_96(var uParam0, var uParam1)//Position - 0x9BFC
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER")) && iLocal_66[55] == uParam1->f_5)
 	{
-		if (Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && (__LIB_29__::func_141() || Global_1963971))
+		if (Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && (__LIB_29__::func_151() || Global_1963971))
 		{
 			func_107(joaat("WEAPON_NAVYREVOLVER"), uParam0, *uParam1, 0);
 		}
@@ -2627,11 +2627,11 @@ void func_107(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 	StringCopy(&Var0, __LIB_4__::func_960(iParam0, 0), 16);
 	if (((iParam0 == joaat("WEAPON_DOUBLEACTION") || iParam0 == joaat("WEAPON_COMPACTRIFLE")) || iParam0 == joaat("WEAPON_COMPACTLAUNCHER")) || iParam0 == joaat("WEAPON_MARKSMANRIFLE"))
 	{
-		StringCopy(&cVar1, __LIB_38__::func_549(iParam0, 1), 16);
+		StringCopy(&cVar1, __LIB_38__::func_224(iParam0, 1), 16);
 	}
 	else
 	{
-		StringCopy(&cVar1, __LIB_38__::func_549(iParam0, 0), 16);
+		StringCopy(&cVar1, __LIB_38__::func_224(iParam0, 0), 16);
 	}
 	fVar2 = func_134(iParam0);
 	uVar3 = func_133(iParam0, iParam2);
@@ -2648,7 +2648,7 @@ void func_107(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 		{
 			if (__LIB_6__::func_163(iParam0))
 			{
-				if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_18__::func_235(iParam0), -1))
+				if (func_92(joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), __LIB_18__::func_245(iParam0), -1))
 				{
 					bVar13 = true;
 				}
@@ -2684,7 +2684,7 @@ void func_107(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 							Var9.f_4 = (Var9.f_4 + Var8.f_4);
 						}
 					}
-					if (__LIB_42__::func_604(iVar10, iParam0, iParam2))
+					if (__LIB_42__::func_479(iVar10, iParam0, iParam2))
 					{
 						if (func_129(iVar10))
 						{
@@ -4130,7 +4130,7 @@ void func_147(var uParam0, var uParam1)//Position - 0xE0F6
 	}
 	iVar2 = uParam1->f_5 + 1;
 	iVar3 = iLocal_64 + 1;
-	__LIB_38__::func_523(0, iVar2, iVar3, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
+	__LIB_38__::func_198(0, iVar2, iVar3, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 void func_149()//Position - 0xE1E1
@@ -4584,7 +4584,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[48] = -1;
 	}
-	if ((Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION"))) && (__LIB_18__::func_230() || Global_1963965))
+	if ((Global_262145.f_23472 /* Tunable: ENABLE_TREASURE_HUNT */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_DOUBLEACTION"))) && (__LIB_18__::func_240() || Global_1963965))
 	{
 		iLocal_66[49] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -4638,7 +4638,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[54] = -1;
 	}
-	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_29__::func_141() || Global_1963971))
+	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_29__::func_151() || Global_1963971))
 	{
 		iLocal_66[55] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -4674,7 +4674,7 @@ void func_149()//Position - 0xE1E1
 	{
 		iLocal_66[58] = -1;
 	}
-	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_29__::func_141() || Global_1963971))
+	if ((Global_262145.f_28372 /* Tunable: ENABLE_SERIAL_KILLER */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_NAVYREVOLVER"))) && (__LIB_29__::func_151() || Global_1963971))
 	{
 		iLocal_66[55] = ((iLocal_65 / 9) + iLocal_64);
 		iLocal_65++;
@@ -4754,12 +4754,12 @@ void func_151()//Position - 0xEE17
 {
 	func_149();
 	func_152();
-	__LIB_38__::func_523(0, 1, iLocal_64 + 1, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
+	__LIB_38__::func_198(0, 1, iLocal_64 + 1, "HUD_PAGE" /* GXT: Page ~1~ of ~1~ */, 0);
 }
 
 void func_152()//Position - 0xEE36
 {
-	__LIB_38__::func_546(1);
+	__LIB_38__::func_221(1);
 }
 
 void func_155(var uParam0)//Position - 0xEEAA

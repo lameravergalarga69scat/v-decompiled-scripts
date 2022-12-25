@@ -287,7 +287,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		Global_78564 = 1;
 		iLocal_77 = 0;
-		while (!__LIB_37__::func_577(&Local_81))
+		while (!__LIB_37__::func_251(&Local_81))
 		{
 			SYSTEM::WAIT(0);
 		}
@@ -325,7 +325,7 @@ void func_1()//Position - 0x121
 			if (__LIB_0__::func_75())
 			{
 				__LIB_0__::func_429();
-				__LIB_16__::func_294();
+				__LIB_16__::func_297();
 			}
 			__LIB_0__::func_222(&uLocal_83, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 			__LIB_0__::func_222(&uLocal_83, 3, 0, "BARRY", 0, 1);

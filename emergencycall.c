@@ -203,15 +203,15 @@ void func_9()//Position - 0x395
 			while (!__LIB_14__::func_521())
 			{
 				SYSTEM::WAIT(0);
-				if (__LIB_17__::func_13() == 3)
+				if (__LIB_17__::func_16() == 3)
 				{
 					iLocal_43 = 3;
 				}
-				if (__LIB_17__::func_13() == 4)
+				if (__LIB_17__::func_16() == 4)
 				{
 					iLocal_43 = 4;
 				}
-				if (__LIB_17__::func_13() == 5)
+				if (__LIB_17__::func_16() == 5)
 				{
 					iLocal_43 = 2;
 				}

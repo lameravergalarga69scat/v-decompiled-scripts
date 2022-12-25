@@ -592,10 +592,10 @@ void __EntryFunction__()//Position - 0x0
 		while (!func_87())
 		{
 			SYSTEM::WAIT(0);
-			__LIB_42__::func_608(&uLocal_109);
+			__LIB_42__::func_483(&uLocal_109);
 		}
 	}
-	__LIB_33__::func_643();
+	__LIB_32__::func_127();
 }
 
 int func_87()//Position - 0x276C

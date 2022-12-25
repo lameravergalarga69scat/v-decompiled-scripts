@@ -2238,8 +2238,8 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_76();
 		}
-		__LIB_43__::func_952(&uLocal_93);
-		__LIB_16__::func_203(&uLocal_93);
+		__LIB_43__::func_944(&uLocal_93);
+		__LIB_16__::func_206(&uLocal_93);
 	}
 }
 
@@ -2263,7 +2263,7 @@ int func_66()//Position - 0x1EDA
 void func_76()//Position - 0x2049
 {
 	Global_1946234 = 0;
-	__LIB_16__::func_202(&uLocal_93);
+	__LIB_16__::func_205(&uLocal_93);
 	__LIB_0__::func_202();
 }
 

@@ -115,11 +115,11 @@ void func_6()//Position - 0x277
 	int iVar0;
 	fLocal_25 = fLocal_23;
 	fLocal_26 = fLocal_24;
-	__LIB_16__::func_298(255, 255, 255, 205);
+	__LIB_16__::func_301(255, 255, 255, 205);
 	func_9();
 	__LIB_13__::func_84(fLocal_25, fLocal_26, &(Global_1998[Global_22893[iLocal_21 /*9*/] /*29*/].f_3), 0);
 	fLocal_25 = (fLocal_25 + 0.07f);
-	__LIB_16__::func_298(255, 255, 255, 205);
+	__LIB_16__::func_301(255, 255, 255, 205);
 	if (Global_22893[iLocal_21 /*9*/].f_2.f_1 < 10)
 	{
 		__LIB_3__::func_46(fLocal_25, fLocal_26, "CELL_506" /* GXT: ~1~:0~1~ */, Global_22893[iLocal_21 /*9*/].f_2.f_2, Global_22893[iLocal_21 /*9*/].f_2.f_1);
@@ -129,10 +129,10 @@ void func_6()//Position - 0x277
 		__LIB_3__::func_46(fLocal_25, fLocal_26, "CELL_503" /* GXT: ~1~:~1~ */, Global_22893[iLocal_21 /*9*/].f_2.f_2, Global_22893[iLocal_21 /*9*/].f_2.f_1);
 	}
 	fLocal_25 = (fLocal_25 + 0.07f);
-	__LIB_16__::func_298(255, 255, 255, 205);
+	__LIB_16__::func_301(255, 255, 255, 205);
 	__LIB_3__::func_46(fLocal_25, fLocal_26, "CELL_505" /* GXT: ~1~/~1~ */, Global_22893[iLocal_21 /*9*/].f_2.f_3, Global_22893[iLocal_21 /*9*/].f_2.f_4);
 	fLocal_25 = fLocal_23;
-	__LIB_16__::func_298(255, 255, 255, 205);
+	__LIB_16__::func_301(255, 255, 255, 205);
 	fLocal_26 = (fLocal_26 + 0.02f);
 	if (Global_22724[Global_22893[iLocal_21 /*9*/].f_1 /*42*/].f_8 == 0)
 	{
@@ -144,7 +144,7 @@ void func_6()//Position - 0x277
 	iVar0 = 1;
 	while (iVar0 <= Global_22724[Global_22893[iLocal_21 /*9*/].f_1 /*42*/].f_9)
 	{
-		__LIB_16__::func_298(255, 255, 255, 255);
+		__LIB_16__::func_301(255, 255, 255, 255);
 		fLocal_26 = (fLocal_26 + 0.04f);
 		if (Global_22724[Global_22893[iLocal_21 /*9*/].f_1 /*42*/].f_32[iVar0] == -1)
 		{
@@ -239,14 +239,14 @@ void func_15()//Position - 0x6DC
 	iLocal_22 = iLocal_19;
 	while (iVar0 < iLocal_22)
 	{
-		__LIB_16__::func_298(255, 255, 255, 205);
+		__LIB_16__::func_301(255, 255, 255, 205);
 		if (iVar0 == iLocal_20)
 		{
 			func_9();
 		}
 		__LIB_13__::func_84(fLocal_25, fLocal_26, &(Global_1998[Global_22893[iLocal_18[iVar0] /*9*/] /*29*/].f_3), 0);
 		fLocal_25 = (fLocal_25 + 0.07f);
-		__LIB_16__::func_298(255, 255, 255, 205);
+		__LIB_16__::func_301(255, 255, 255, 205);
 		if (Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1 < 10)
 		{
 			__LIB_3__::func_46(fLocal_25, fLocal_26, "CELL_506" /* GXT: ~1~:0~1~ */, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_2, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1);
@@ -256,10 +256,10 @@ void func_15()//Position - 0x6DC
 			__LIB_3__::func_46(fLocal_25, fLocal_26, "CELL_503" /* GXT: ~1~:~1~ */, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_2, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_1);
 		}
 		fLocal_25 = (fLocal_25 + 0.07f);
-		__LIB_16__::func_298(255, 255, 255, 205);
+		__LIB_16__::func_301(255, 255, 255, 205);
 		__LIB_3__::func_46(fLocal_25, fLocal_26, "CELL_505" /* GXT: ~1~/~1~ */, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_3, Global_22893[iLocal_18[iVar0] /*9*/].f_2.f_4);
 		fLocal_25 = fLocal_23;
-		__LIB_16__::func_298(255, 255, 255, 205);
+		__LIB_16__::func_301(255, 255, 255, 205);
 		if (iVar0 == iLocal_20)
 		{
 			func_9();

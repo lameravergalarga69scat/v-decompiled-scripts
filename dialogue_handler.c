@@ -293,7 +293,7 @@ void func_2()//Position - 0x26D
 	}
 	else if (BitTest(Global_8136, 11))
 	{
-		__LIB_16__::func_293();
+		__LIB_16__::func_296();
 	}
 	Global_21611 = 0;
 	Global_21612 = 0;
@@ -420,7 +420,7 @@ void func_7()//Position - 0x4D6
 			{
 				if (Global_78319 == 0)
 				{
-					__LIB_16__::func_293();
+					__LIB_16__::func_296();
 				}
 			}
 		}
@@ -878,7 +878,7 @@ int func_25(var uParam0, int iParam1, char* sParam2, var uParam3, var uParam4, v
 	var uVar0;
 	var uVar1;
 	__LIB_0__::func_487(uParam0, iParam1, sParam2, iParam9, iParam10, 0);
-	__LIB_15__::func_997();
+	__LIB_15__::func_999();
 	if (iParam8 == 1)
 	{
 		Global_21617 = 1;
@@ -889,14 +889,14 @@ int func_25(var uParam0, int iParam1, char* sParam2, var uParam3, var uParam4, v
 	}
 	uVar0 = 10;
 	uVar1 = 10;
-	__LIB_30__::func_365(2, &uVar0, &uVar1, uParam3, uParam4, uParam5, uParam6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-	return __LIB_16__::func_607(&uVar0, &uVar1, iParam7, bParam11);
+	__LIB_30__::func_375(2, &uVar0, &uVar1, uParam3, uParam4, uParam5, uParam6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	return __LIB_16__::func_610(&uVar0, &uVar1, iParam7, bParam11);
 }
 
 int func_43(var uParam0, var uParam1, int iParam2, char* sParam3, var uParam4, var uParam5, int iParam6, int iParam7, int iParam8, int iParam9, bool bParam10)//Position - 0x2930
 {
 	__LIB_0__::func_487(uParam1, iParam2, sParam3, iParam8, iParam9, 0);
-	__LIB_15__::func_997();
+	__LIB_15__::func_999();
 	if (iParam7 == 1)
 	{
 		Global_21617 = 1;
@@ -905,8 +905,8 @@ int func_43(var uParam0, var uParam1, int iParam2, char* sParam3, var uParam4, v
 	{
 		Global_21617 = 0;
 	}
-	__LIB_15__::func_996(uParam0);
-	return __LIB_16__::func_607(uParam4, uParam5, iParam6, bParam10);
+	__LIB_15__::func_998(uParam0);
+	return __LIB_16__::func_610(uParam4, uParam5, iParam6, bParam10);
 }
 
 void func_47()//Position - 0x29B2
@@ -941,7 +941,7 @@ void func_52()//Position - 0x2D37
 				{
 					if (BitTest(Global_8136, 11))
 					{
-						__LIB_16__::func_293();
+						__LIB_16__::func_296();
 					}
 				}
 			}
@@ -1133,8 +1133,8 @@ void func_64()//Position - 0x32E8
 		MISC::CLEAR_BIT(&Global_8136, 27);
 		Global_21605 = 4;
 		Global_21662 = 0;
-		__LIB_16__::func_784();
-		__LIB_16__::func_783();
+		__LIB_16__::func_787();
+		__LIB_16__::func_786();
 		if (!Global_21618)
 		{
 			if (Global_22622 == 0)
@@ -1192,8 +1192,8 @@ void func_68()//Position - 0x3616
 					{
 						__LIB_13__::func_111();
 						Global_20265 = 2;
-						__LIB_16__::func_784();
-						__LIB_16__::func_783();
+						__LIB_16__::func_787();
+						__LIB_16__::func_786();
 					}
 				}
 			}
@@ -1206,8 +1206,8 @@ void func_68()//Position - 0x3616
 				{
 					__LIB_13__::func_111();
 					Global_20265 = 2;
-					__LIB_16__::func_784();
-					__LIB_16__::func_783();
+					__LIB_16__::func_787();
+					__LIB_16__::func_786();
 				}
 			}
 		}
@@ -1222,8 +1222,8 @@ void func_68()//Position - 0x3616
 		Global_21605 = 4;
 		__LIB_13__::func_550();
 		Global_21662 = 0;
-		__LIB_16__::func_784();
-		__LIB_16__::func_783();
+		__LIB_16__::func_787();
+		__LIB_16__::func_786();
 		if (!Global_21618)
 		{
 			if (Global_22622 == 0)
@@ -1244,7 +1244,7 @@ void func_68()//Position - 0x3616
 		{
 			if (Global_21618)
 			{
-				__LIB_16__::func_785();
+				__LIB_16__::func_788();
 				__LIB_0__::func_366(0);
 			}
 			else
@@ -1635,7 +1635,7 @@ void func_93()//Position - 0x41D2
 				iVar14 = 1;
 			}
 		}
-		else if (!__LIB_17__::func_14())
+		else if (!__LIB_17__::func_17())
 		{
 			iVar14 = 1;
 		}
@@ -2055,7 +2055,7 @@ void func_104()//Position - 0x4C11
 			iVar1 = 1;
 		}
 	}
-	else if (!__LIB_17__::func_14())
+	else if (!__LIB_17__::func_17())
 	{
 		iVar1 = 1;
 	}
@@ -2331,8 +2331,8 @@ void func_105()//Position - 0x4D76
 				if (!Global_22622 == 0)
 				{
 					Global_21662 = 0;
-					__LIB_16__::func_784();
-					__LIB_16__::func_783();
+					__LIB_16__::func_787();
+					__LIB_16__::func_786();
 					if (!Global_21618)
 					{
 						if (Global_22622 == 0)
@@ -2446,7 +2446,7 @@ void func_105()//Position - 0x4D76
 void func_107()//Position - 0x5216
 {
 	float fVar0;
-	fVar0 = __LIB_16__::func_296(Global_20219[Global_20211 /*3*/], Global_20212[Global_20211 /*3*/], Global_20226, Global_20197, 350f, 0);
+	fVar0 = __LIB_16__::func_299(Global_20219[Global_20211 /*3*/], Global_20212[Global_20211 /*3*/], Global_20226, Global_20197, 350f, 0);
 	if (fVar0 >= 1f)
 	{
 		if (Global_22619 == 0)

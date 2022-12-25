@@ -458,7 +458,7 @@ void func_2(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//P
 				{
 					if (!bParam4)
 					{
-						__LIB_41__::func_29(SCRIPT::GET_THIS_SCRIPT_NAME(), 0);
+						__LIB_40__::func_705(SCRIPT::GET_THIS_SCRIPT_NAME(), 0);
 					}
 					iLocal_70 = 1;
 					*iParam0 = 17;

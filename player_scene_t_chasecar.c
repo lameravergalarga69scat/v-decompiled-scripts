@@ -559,8 +559,8 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::WAIT(0);
 	func_90();
 	func_89();
-	__LIB_17__::func_501();
-	while (iLocal_446 && __LIB_39__::func_36(4, 0))
+	__LIB_17__::func_504();
+	while (iLocal_446 && __LIB_38__::func_711(4, 0))
 	{
 		SYSTEM::WAIT(0);
 		switch (iLocal_267)
@@ -676,7 +676,7 @@ int func_3(char* sParam0, int* iParam1, int iParam2)//Position - 0x317
 		return 0;
 	}
 	Var0 = { *sParam0 };
-	if (__LIB_17__::func_677())
+	if (__LIB_17__::func_680())
 	{
 		return 0;
 	}
@@ -690,7 +690,7 @@ int func_3(char* sParam0, int* iParam1, int iParam2)//Position - 0x317
 		return 0;
 	}
 	fVar1 = (10f + ((SYSTEM::TO_FLOAT(iLocal_472) / SYSTEM::TO_FLOAT(iLocal_471)) * 10f));
-	if (!__LIB_37__::func_437(iParam1, fVar1))
+	if (!__LIB_37__::func_111(iParam1, fVar1))
 	{
 		return 0;
 	}
@@ -1017,7 +1017,7 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 	}
 	fVar5 = (fParam3 * fParam9);
 	fVar6 = (((fParam6 - fParam5) * 0.4f) + fParam5);
-	fVar2 = __LIB_17__::func_495(iParam0, iParam1);
+	fVar2 = __LIB_17__::func_498(iParam0, iParam1);
 	if (fVar2 < 0f)
 	{
 		fVar2 = (fVar2 * -1f);
@@ -1034,7 +1034,7 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 	fVar4 = fParam3;
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		if (__LIB_15__::func_925(iParam1, iParam0))
+		if (__LIB_15__::func_927(iParam1, iParam0))
 		{
 			if (PED::IS_PED_IN_ANY_VEHICLE(iParam1, false))
 			{
@@ -1051,9 +1051,9 @@ void func_71(int iParam0, int iParam1, var uParam2, float fParam3, float fParam4
 		}
 		else if (fVar2 < fParam5)
 		{
-			if (__LIB_17__::func_494(iParam0, iParam1) < fParam5)
+			if (__LIB_17__::func_497(iParam0, iParam1) < fParam5)
 			{
-				fVar1 = __LIB_17__::func_493(iParam0, iParam1);
+				fVar1 = __LIB_17__::func_496(iParam0, iParam1);
 				fVar1 = (fVar1 + -15f);
 				if (fVar1 < 0f)
 				{
@@ -1211,7 +1211,7 @@ int func_79()//Position - 0x2D41
 		func_69(iVar0, &iVar1);
 		iVar0++;
 	}
-	if (!__LIB_17__::func_677())
+	if (!__LIB_17__::func_680())
 	{
 		return 1;
 	}
@@ -1348,7 +1348,7 @@ void func_90()//Position - 0x324F
 	float fVar5;
 	iLocal_268 = Global_99844;
 	func_92(iLocal_268, &Local_456, &fLocal_457, &cVar0);
-	__LIB_17__::func_688(iLocal_268, &Local_458, &uVar1, &fLocal_462, &fLocal_463, &uVar2, &uVar3, &uVar4);
+	__LIB_17__::func_691(iLocal_268, &Local_458, &uVar1, &fLocal_462, &fLocal_463, &uVar2, &uVar3, &uVar4);
 	switch (iLocal_268)
 	{
 		case 281:
@@ -1589,7 +1589,7 @@ int func_92(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x
 				return 0;
 				break;
 			case 1:
-				__LIB_17__::func_690(&iVar0);
+				__LIB_17__::func_693(&iVar0);
 				if (iVar0 < 5)
 				{
 					*uParam1 = { Global_95644[iVar0 /*9*/].f_3 };
@@ -1664,7 +1664,7 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 			return 0;
 			break;
 		case 1:
-			__LIB_17__::func_690(&iVar1);
+			__LIB_17__::func_693(&iVar1);
 			if (iVar1 < 5)
 			{
 				*uParam1 = Global_95644[iVar1 /*9*/].f_6;
@@ -1695,17 +1695,17 @@ int func_94(int iParam0, var uParam1, char* sParam2)//Position - 0x3FE9
 			break;
 		case 5:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[0];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[0]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[0]), 32);
 			return 1;
 			break;
 		case 6:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[1];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[1]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[1]), 32);
 			return 1;
 			break;
 		case 7:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[2];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[2]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[2]), 32);
 			return 1;
 			break;
 		case 11:

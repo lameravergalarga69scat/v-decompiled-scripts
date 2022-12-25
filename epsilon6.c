@@ -667,7 +667,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_127 = -1;
 	iLocal_625 = joaat("velum");
 	iLocal_626 = joaat("IG_TomEpsilon");
-	__LIB_17__::func_32("*** Epsilon 6 is now running");
+	__LIB_17__::func_35("*** Epsilon 6 is now running");
 	Local_53 = { ScriptParam_630 };
 	__LIB_14__::func_801(&Local_53);
 	__LIB_14__::func_800(&Local_53, 0, 1);
@@ -685,7 +685,7 @@ void __EntryFunction__()//Position - 0x0
 		if (!CUTSCENE::IS_CUTSCENE_ACTIVE())
 		{
 			CUTSCENE::REQUEST_CUTSCENE("ep_6_rcm", 8);
-			__LIB_17__::func_32("Requesting cutscene now");
+			__LIB_17__::func_35("Requesting cutscene now");
 		}
 	}
 	else if (__LIB_0__::func_344() == 0)
@@ -717,10 +717,10 @@ void __EntryFunction__()//Position - 0x0
 		PED::SET_PED_CONFIG_FLAG(Local_62.f_0, 132, true);
 	}
 	func_473();
-	__LIB_17__::func_32("*** Epsilon 6 is now in loop");
+	__LIB_17__::func_35("*** Epsilon 6 is now in loop");
 	if (__LIB_0__::func_323())
 	{
-		__LIB_17__::func_32("*** Replay detected! Skipping to appropriate stage!");
+		__LIB_17__::func_35("*** Replay detected! Skipping to appropriate stage!");
 		iVar0 = __LIB_0__::func_344();
 		if (Global_94618 == 1)
 		{
@@ -765,7 +765,7 @@ void __EntryFunction__()//Position - 0x0
 			if (TASK::IS_SCENARIO_GROUP_ENABLED("SANDY_PLANES"))
 			{
 				TASK::SET_SCENARIO_GROUP_ENABLED("SANDY_PLANES", false);
-				__LIB_17__::func_32("Disabled Sandy planes");
+				__LIB_17__::func_35("Disabled Sandy planes");
 			}
 		}
 		switch (iLocal_69)
@@ -802,14 +802,14 @@ void func_2()//Position - 0x384
 	switch (iLocal_70)
 	{
 		case 0:
-			__LIB_17__::func_32("*******************    MISSION FAILED    *********************");
+			__LIB_17__::func_35("*******************    MISSION FAILED    *********************");
 			HUD::CLEAR_PRINTS();
 			HUD::CLEAR_HELP(true);
 			if (((iLocal_128 != 8 && iLocal_128 != 5) && iLocal_128 != 10) && iLocal_128 != 11)
 			{
 				while (__LIB_0__::func_75())
 				{
-					__LIB_17__::func_32("*** Failed() kill conversation");
+					__LIB_17__::func_35("*** Failed() kill conversation");
 					__LIB_0__::func_325();
 					SYSTEM::WAIT(0);
 				}
@@ -896,7 +896,7 @@ void func_3(bool bParam0)//Position - 0x564
 {
 	if (bParam0)
 	{
-		__LIB_17__::func_32("DeleteEverything: Releasing entities");
+		__LIB_17__::func_35("DeleteEverything: Releasing entities");
 		__LIB_0__::func_124(&Local_61, 1, 0, 1);
 		__LIB_0__::func_106(&Local_54);
 		STREAMING::REMOVE_ANIM_DICT(Local_61.f_6);
@@ -913,10 +913,10 @@ void func_3(bool bParam0)//Position - 0x564
 	else
 	{
 		__LIB_8__::func_397(&Local_54);
-		__LIB_17__::func_32("Deleted Plane");
+		__LIB_17__::func_35("Deleted Plane");
 		if (ENTITY::DOES_ENTITY_EXIST(Local_54.f_0))
 		{
-			__LIB_17__::func_32("Plane still exists!!");
+			__LIB_17__::func_35("Plane still exists!!");
 		}
 		STREAMING::REMOVE_ANIM_DICT(Local_61.f_6);
 		__LIB_0__::func_0(&Local_61);
@@ -930,7 +930,7 @@ void func_23()//Position - 0xA77
 	switch (iLocal_70)
 	{
 		case 0:
-			__LIB_17__::func_32("*** Doing Wait for Jimmy init");
+			__LIB_17__::func_35("*** Doing Wait for Jimmy init");
 			__LIB_14__::func_874(3, "Wait For Jimmy stage", 0, 0, 0, 1);
 			if (iLocal_79 == 1)
 			{
@@ -959,10 +959,10 @@ void func_23()//Position - 0xA77
 			if (iLocal_127 != -1)
 			{
 				PATHFIND::REMOVE_NAVMESH_BLOCKING_OBJECT(iLocal_127);
-				__LIB_17__::func_32("Navmesh blocking object removed");
+				__LIB_17__::func_35("Navmesh blocking object removed");
 			}
 			iLocal_117 = (MISC::GET_GAME_TIMER() - 6000);
-			__LIB_17__::func_32("*** Going into Wait for Jimmy loop");
+			__LIB_17__::func_35("*** Going into Wait for Jimmy loop");
 			iLocal_70 = 1;
 			break;
 		case 1:
@@ -1018,14 +1018,14 @@ void func_23()//Position - 0xA77
 								{
 									VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_54.f_0, 501, "Eps6_Takeoff", true);
 									VEHICLE::FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE(Local_54.f_0, true);
-									__LIB_17__::func_32("Started vehicle recording on plane #2");
+									__LIB_17__::func_35("Started vehicle recording on plane #2");
 									iLocal_111++;
 									iLocal_112 = MISC::GET_GAME_TIMER();
 								}
 							}
 							else
 							{
-								__LIB_17__::func_32("Unpaused vehicle recording on plane");
+								__LIB_17__::func_35("Unpaused vehicle recording on plane");
 								VEHICLE::UNPAUSE_PLAYBACK_RECORDED_VEHICLE(Local_54.f_0);
 								VEHICLE::SET_HELI_BLADES_SPEED(Local_54.f_0, 1f);
 								iLocal_111++;
@@ -1040,7 +1040,7 @@ void func_23()//Position - 0xA77
 								{
 									if ((MISC::GET_GAME_TIMER() - iLocal_112) > 23000)
 									{
-										__LIB_17__::func_32(" Retracting Jimmy's landing gear");
+										__LIB_17__::func_35(" Retracting Jimmy's landing gear");
 										VEHICLE::CONTROL_LANDING_GEAR(Local_54.f_0, 1);
 										iLocal_113 = 1;
 									}
@@ -1081,14 +1081,14 @@ void func_23()//Position - 0xA77
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("*** Doing Wait for Jimmy cleanup");
+			__LIB_17__::func_35("*** Doing Wait for Jimmy cleanup");
 			if (!bLocal_80)
 			{
 				if (func_242())
 				{
 					if (VEHICLE::GET_LANDING_GEAR_STATE(Local_54.f_0) != 4 || VEHICLE::GET_LANDING_GEAR_STATE(Local_54.f_0) != 1)
 					{
-						__LIB_17__::func_32(" Retracting Jimmy's landing gear (cleanup)");
+						__LIB_17__::func_35(" Retracting Jimmy's landing gear (cleanup)");
 						VEHICLE::CONTROL_LANDING_GEAR(Local_54.f_0, 1);
 					}
 				}
@@ -1123,7 +1123,7 @@ void func_24()//Position - 0xE6D
 		STATS::STAT_SET_INT(joaat("NUM_EPSILON_STEP"), 17, true);
 		__LIB_0__::func_4(23, 17);
 	}
-	__LIB_17__::func_32("Doing cleanup now");
+	__LIB_17__::func_35("Doing cleanup now");
 	func_491();
 }
 
@@ -1832,22 +1832,22 @@ int func_242()//Position - 0x27EBB
 	{
 		if (VEHICLE::GET_LANDING_GEAR_STATE(Local_54.f_0) == 5)
 		{
-			__LIB_17__::func_32("Detected plane landing gear is broken");
+			__LIB_17__::func_35("Detected plane landing gear is broken");
 			return 0;
 		}
 		else if (VEHICLE::IS_VEHICLE_STUCK_ON_ROOF(Local_54.f_0))
 		{
-			__LIB_17__::func_32("Detected plane is stuck on roof");
+			__LIB_17__::func_35("Detected plane is stuck on roof");
 			return 0;
 		}
 		else if (VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0) <= 0f)
 		{
-			__LIB_17__::func_32("Detected plane engine health is <= 0");
+			__LIB_17__::func_35("Detected plane engine health is <= 0");
 			return 0;
 		}
 		else if (VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_54.f_0, 3, 30000))
 		{
-			__LIB_17__::func_32("Detected plane IS_VEHICLE_STUCK_TIMER_UP > JAMMED_TIME");
+			__LIB_17__::func_35("Detected plane IS_VEHICLE_STUCK_TIMER_UP > JAMMED_TIME");
 			return 0;
 		}
 		else
@@ -1855,7 +1855,7 @@ int func_242()//Position - 0x27EBB
 			return 1;
 		}
 	}
-	__LIB_17__::func_32("The plane is broken!");
+	__LIB_17__::func_35("The plane is broken!");
 	return 0;
 }
 
@@ -1863,7 +1863,7 @@ void func_243()//Position - 0x27F40
 {
 	if (__LIB_0__::func_121(Local_61.f_0))
 	{
-		if (__LIB_17__::func_123(Local_61.f_0, 0, 1116471296, 1126825984, 1, 0, 0, 0) || MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(Local_61.f_0, true), 3f, true))
+		if (__LIB_17__::func_126(Local_61.f_0, 0, 1116471296, 1126825984, 1, 0, 0, 0) || MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(Local_61.f_0, true), 3f, true))
 		{
 			if (iLocal_69 != 5 && iLocal_69 != 3)
 			{
@@ -1886,7 +1886,7 @@ void func_243()//Position - 0x27F40
 			}
 			func_245();
 		}
-		else if ((__LIB_17__::func_33(PLAYER::PLAYER_PED_ID(), Local_61.f_0, 1) || MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(Local_61.f_0, true), 3f, false)) || PED::IS_PED_BEING_JACKED(Local_61.f_0))
+		else if ((__LIB_17__::func_36(PLAYER::PLAYER_PED_ID(), Local_61.f_0, 1) || MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(Local_61.f_0, true), 3f, false)) || PED::IS_PED_BEING_JACKED(Local_61.f_0))
 		{
 			if (iLocal_69 != 5 && iLocal_69 != 3)
 			{
@@ -1989,7 +1989,7 @@ int func_269()//Position - 0x28BEE
 	{
 		if (MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(ENTITY::GET_ENTITY_COORDS(Local_54.f_0, false), joaat("WEAPON_STICKYBOMB"), 10f, false))
 		{
-			__LIB_17__::func_32("Sticky bomb in range of plane");
+			__LIB_17__::func_35("Sticky bomb in range of plane");
 			return 1;
 		}
 	}
@@ -2010,7 +2010,7 @@ void func_272()//Position - 0x28CF8
 			STREAMING::REQUEST_ANIM_DICT("rcm_epsilonism4");
 			while ((!STREAMING::HAS_MODEL_LOADED(iLocal_626) || !STREAMING::HAS_MODEL_LOADED(iLocal_625)) || !STREAMING::HAS_ANIM_DICT_LOADED("rcm_epsilonism4"))
 			{
-				__LIB_17__::func_32("WAITING FOR MS_INIT RESOURCES");
+				__LIB_17__::func_35("WAITING FOR MS_INIT RESOURCES");
 				SYSTEM::WAIT(0);
 			}
 			iLocal_81 = 0;
@@ -2038,7 +2038,7 @@ void func_272()//Position - 0x28CF8
 			STREAMING::REQUEST_MODEL(iLocal_626);
 			while (!STREAMING::HAS_MODEL_LOADED(iLocal_625) || !STREAMING::HAS_MODEL_LOADED(iLocal_626))
 			{
-				__LIB_17__::func_32("WAITING FOR MS_FLIGHT RESOURCES");
+				__LIB_17__::func_35("WAITING FOR MS_FLIGHT RESOURCES");
 				SYSTEM::WAIT(0);
 			}
 			iLocal_93 = 0;
@@ -2063,7 +2063,7 @@ void func_272()//Position - 0x28CF8
 			STREAMING::REQUEST_MODEL(iLocal_625);
 			while (!STREAMING::HAS_MODEL_LOADED(iLocal_625))
 			{
-				__LIB_17__::func_32("WAITING FOR MS_LANDING SKIP RESOURCES");
+				__LIB_17__::func_35("WAITING FOR MS_LANDING SKIP RESOURCES");
 				SYSTEM::WAIT(0);
 			}
 			iLocal_72 = 3;
@@ -2096,7 +2096,7 @@ void func_272()//Position - 0x28CF8
 						{
 							if (!__LIB_0__::func_324())
 							{
-								__LIB_17__::func_32("Doing plane boost");
+								__LIB_17__::func_35("Doing plane boost");
 								PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
 								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_54.f_0, 500, "Eps6_LandingSkip", true);
 							}
@@ -2110,10 +2110,10 @@ void func_272()//Position - 0x28CF8
 			STREAMING::REQUEST_ANIM_DICT(Local_61.f_6);
 			STREAMING::REQUEST_MODEL(iLocal_625);
 			STREAMING::REQUEST_MODEL(Local_59.f_1);
-			__LIB_29__::func_957(55);
-			while (((!STREAMING::HAS_MODEL_LOADED(iLocal_625) || !STREAMING::HAS_MODEL_LOADED(Local_59.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !__LIB_37__::func_521(55))
+			__LIB_29__::func_967(55);
+			while (((!STREAMING::HAS_MODEL_LOADED(iLocal_625) || !STREAMING::HAS_MODEL_LOADED(Local_59.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !__LIB_37__::func_195(55))
 			{
-				__LIB_17__::func_32("WAITING FOR MS_SEEJIMMY RESOURCES");
+				__LIB_17__::func_35("WAITING FOR MS_SEEJIMMY RESOURCES");
 				SYSTEM::WAIT(0);
 			}
 			func_295();
@@ -2131,7 +2131,7 @@ void func_272()//Position - 0x28CF8
 			if (iLocal_127 != -1)
 			{
 				PATHFIND::REMOVE_NAVMESH_BLOCKING_OBJECT(iLocal_127);
-				__LIB_17__::func_32("Navmesh blocking object removed");
+				__LIB_17__::func_35("Navmesh blocking object removed");
 				iLocal_127 = -1;
 			}
 			iLocal_120 = 5;
@@ -2145,24 +2145,24 @@ void func_272()//Position - 0x28CF8
 			STREAMING::REQUEST_MODEL(Local_54.f_1);
 			STREAMING::REQUEST_ANIM_DICT(Local_61.f_6);
 			VEHICLE::REQUEST_VEHICLE_RECORDING(501, "Eps6_Takeoff");
-			__LIB_29__::func_957(55);
+			__LIB_29__::func_967(55);
 			if (!__LIB_0__::func_324())
 			{
-				while (((((!STREAMING::HAS_MODEL_LOADED(Local_59.f_1) || !CUTSCENE::HAS_CUTSCENE_LOADED()) || !STREAMING::HAS_MODEL_LOADED(Local_54.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff")) || !__LIB_37__::func_521(55))
+				while (((((!STREAMING::HAS_MODEL_LOADED(Local_59.f_1) || !CUTSCENE::HAS_CUTSCENE_LOADED()) || !STREAMING::HAS_MODEL_LOADED(Local_54.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff")) || !__LIB_37__::func_195(55))
 				{
 					if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 					{
 						CUTSCENE::SET_CUTSCENE_PED_PROP_VARIATION("Jimmy_Boston", 1, 0, 0, 0);
 					}
-					__LIB_17__::func_32("WAITING FOR MS_ENDCUTSCENE RESOURCES");
+					__LIB_17__::func_35("WAITING FOR MS_ENDCUTSCENE RESOURCES");
 					SYSTEM::WAIT(0);
 				}
 			}
 			else
 			{
-				while ((((!STREAMING::HAS_MODEL_LOADED(Local_59.f_1) || !STREAMING::HAS_MODEL_LOADED(Local_54.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff")) || !__LIB_37__::func_521(55))
+				while ((((!STREAMING::HAS_MODEL_LOADED(Local_59.f_1) || !STREAMING::HAS_MODEL_LOADED(Local_54.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff")) || !__LIB_37__::func_195(55))
 				{
-					__LIB_17__::func_32("WAITING FOR MS_ENDCUTSCENE RESOURCES");
+					__LIB_17__::func_35("WAITING FOR MS_ENDCUTSCENE RESOURCES");
 					SYSTEM::WAIT(0);
 				}
 			}
@@ -2186,13 +2186,13 @@ void func_272()//Position - 0x28CF8
 			if (iLocal_127 != -1)
 			{
 				PATHFIND::REMOVE_NAVMESH_BLOCKING_OBJECT(iLocal_127);
-				__LIB_17__::func_32("Navmesh blocking object removed");
+				__LIB_17__::func_35("Navmesh blocking object removed");
 				iLocal_127 = -1;
 			}
 			if (iLocal_127 == -1)
 			{
 				iLocal_127 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(1687.9539f, 3277.7268f, 40.25f, 6f, 6f, 6f, 0f, false, 7);
-				__LIB_17__::func_32("Navmesh blocking object created");
+				__LIB_17__::func_35("Navmesh blocking object created");
 			}
 			break;
 		case 5:
@@ -2200,10 +2200,10 @@ void func_272()//Position - 0x28CF8
 			STREAMING::REQUEST_MODEL(Local_59.f_1);
 			STREAMING::REQUEST_MODEL(Local_54.f_1);
 			VEHICLE::REQUEST_VEHICLE_RECORDING(501, "Eps6_Takeoff");
-			__LIB_29__::func_957(55);
-			while ((((!STREAMING::HAS_MODEL_LOADED(Local_59.f_1) || !STREAMING::HAS_MODEL_LOADED(Local_54.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff")) || !__LIB_37__::func_521(55))
+			__LIB_29__::func_967(55);
+			while ((((!STREAMING::HAS_MODEL_LOADED(Local_59.f_1) || !STREAMING::HAS_MODEL_LOADED(Local_54.f_1)) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff")) || !__LIB_37__::func_195(55))
 			{
-				__LIB_17__::func_32("WAITING FOR MS_WAITFORJIMMY RESOURCES");
+				__LIB_17__::func_35("WAITING FOR MS_WAITFORJIMMY RESOURCES");
 				SYSTEM::WAIT(0);
 			}
 			__LIB_0__::func_714(&(Local_60.f_3));
@@ -2374,7 +2374,7 @@ void func_286()//Position - 0x298FD
 			VEHICLE::SET_VEHICLE_ENGINE_CAN_DEGRADE(Local_54.f_0, false);
 			VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(Local_54.f_0, true);
 			__LIB_0__::func_679(Local_54.f_0, 0);
-			__LIB_17__::func_32("Creating plane in init skip...");
+			__LIB_17__::func_35("Creating plane in init skip...");
 			break;
 		case 1:
 			if (ENTITY::DOES_ENTITY_EXIST(Local_54.f_0))
@@ -2398,7 +2398,7 @@ void func_286()//Position - 0x298FD
 			VEHICLE::SET_VEHICLE_ENGINE_CAN_DEGRADE(Local_54.f_0, false);
 			VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(Local_54.f_0, true);
 			__LIB_0__::func_679(Local_54.f_0, 0);
-			__LIB_17__::func_32("Creating plane in Flight skip...");
+			__LIB_17__::func_35("Creating plane in Flight skip...");
 			break;
 		case 2:
 			if (func_242())
@@ -2430,12 +2430,12 @@ void func_286()//Position - 0x298FD
 				}
 				VEHICLE::CONTROL_LANDING_GEAR(Local_54.f_0, 3);
 				ENTITY::FREEZE_ENTITY_POSITION(Local_54.f_0, true);
-				__LIB_17__::func_32("Creating plane for landing skip...");
+				__LIB_17__::func_35("Creating plane for landing skip...");
 			}
 			break;
 		case 3:
 		case 4:
-			__LIB_17__::func_32("Doing plane skip for SeeJimmy/EndCutscene");
+			__LIB_17__::func_35("Doing plane skip for SeeJimmy/EndCutscene");
 			if (__LIB_0__::func_695(Local_54.f_0))
 			{
 				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_54.f_0))
@@ -2460,7 +2460,7 @@ void func_286()//Position - 0x298FD
 			__LIB_0__::func_714(&(Local_54.f_2));
 			break;
 		case 5:
-			__LIB_17__::func_32("Doing plane skip for WaitForJimmy");
+			__LIB_17__::func_35("Doing plane skip for WaitForJimmy");
 			if (!bLocal_80)
 			{
 				if (__LIB_0__::func_695(Local_54.f_0))
@@ -2492,7 +2492,7 @@ void func_286()//Position - 0x298FD
 						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_54.f_0, 501, "Eps6_Takeoff", true);
 						VEHICLE::FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE(Local_54.f_0, true);
 						VEHICLE::PAUSE_PLAYBACK_RECORDED_VEHICLE(Local_54.f_0);
-						__LIB_17__::func_32("Started/paused vehicle recording on plane (skip)");
+						__LIB_17__::func_35("Started/paused vehicle recording on plane (skip)");
 					}
 				}
 			}
@@ -2550,7 +2550,7 @@ void func_288()//Position - 0x29D71
 			{
 				ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_126, Local_61.f_0, PED::GET_PED_BONE_INDEX(Local_61.f_0, 28422), 0f, 0f, 0f, 0f, 0f, 0f, true, false, false, false, 2, true, 0);
 			}
-			__LIB_38__::func_281(55);
+			__LIB_37__::func_956(55);
 			break;
 		case 5:
 			if (!bLocal_80)
@@ -2608,7 +2608,7 @@ void func_288()//Position - 0x29D71
 				__LIB_0__::func_714(&(Local_61.f_1));
 				__LIB_0__::func_0(&Local_61);
 			}
-			__LIB_38__::func_281(55);
+			__LIB_37__::func_956(55);
 			break;
 	}
 }
@@ -2618,7 +2618,7 @@ void func_295()//Position - 0x2A270
 	switch (iLocal_69)
 	{
 		case 0:
-			__LIB_17__::func_32("*** Moving/realigning player...");
+			__LIB_17__::func_35("*** Moving/realigning player...");
 			if (!__LIB_0__::func_324())
 			{
 				__LIB_14__::func_659(PLAYER::PLAYER_PED_ID(), -2914.707f, 3234.6392f, 9.7863f, 215.2149f, 0, 1);
@@ -2667,7 +2667,7 @@ void func_371()//Position - 0x31482
 	switch (iLocal_70)
 	{
 		case 0:
-			__LIB_17__::func_32("*** Doing End Cutscene init");
+			__LIB_17__::func_35("*** Doing End Cutscene init");
 			if (iLocal_79 == 1)
 			{
 				func_272();
@@ -2689,14 +2689,14 @@ void func_371()//Position - 0x31482
 				{
 					__LIB_0__::func_433(0, -1, 1);
 					CUTSCENE::REQUEST_CUTSCENE("ep_6_rcm", 8);
-					__LIB_17__::func_32("Requested cutscene for replay skip");
+					__LIB_17__::func_35("Requested cutscene for replay skip");
 					if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 					{
 						CUTSCENE::SET_CUTSCENE_PED_PROP_VARIATION("Jimmy_Boston", 1, 0, 0, 0);
 					}
 					while (!CUTSCENE::HAS_CUTSCENE_LOADED())
 					{
-						__LIB_17__::func_32("Waiting for cutscene to load in replay skip...");
+						__LIB_17__::func_35("Waiting for cutscene to load in replay skip...");
 						if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 						{
 							CUTSCENE::SET_CUTSCENE_PED_PROP_VARIATION("Jimmy_Boston", 1, 0, 0, 0);
@@ -2746,7 +2746,7 @@ void func_371()//Position - 0x31482
 				__LIB_0__::func_123(&iLocal_126);
 				__LIB_14__::func_614(1679.9167f, 3270.7346f, 39.34466f, 1697.9985f, 3281.1716f, 44.14951f, 7.75f, 1530.8623f, 3767.051f, 33.0489f, 304.28f, __LIB_13__::func_790(), 1, 1, 1, 0, 0);
 				func_386(1525.0846f, 3772.6855f, 33.5119f, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1);
-				__LIB_17__::func_32("*** Going into End Cutscene running state");
+				__LIB_17__::func_35("*** Going into End Cutscene running state");
 				iLocal_70 = 1;
 			}
 			func_243();
@@ -2793,7 +2793,7 @@ void func_371()//Position - 0x31482
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("*** Doing End Cutscene cleanup");
+			__LIB_17__::func_35("*** Doing End Cutscene cleanup");
 			if (__LIB_0__::func_695(Local_59.f_0))
 			{
 				VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_54.f_0, 3);
@@ -2815,7 +2815,7 @@ void func_381()//Position - 0x31B4C
 {
 	if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("ep_plane", 0))
 	{
-		__LIB_17__::func_32("Doing plane exit state");
+		__LIB_17__::func_35("Doing plane exit state");
 		if (func_242())
 		{
 			ENTITY::SET_ENTITY_COORDS(Local_54.f_0, 1684.78f, 3255.58f, 41.78f, true, false, false, true);
@@ -2836,7 +2836,7 @@ void func_381()//Position - 0x31B4C
 				VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_54.f_0, 501, "Eps6_Takeoff", true);
 				VEHICLE::FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE(Local_54.f_0, true);
 				VEHICLE::PAUSE_PLAYBACK_RECORDED_VEHICLE(Local_54.f_0);
-				__LIB_17__::func_32("Started/paused vehicle recording on plane");
+				__LIB_17__::func_35("Started/paused vehicle recording on plane");
 			}
 		}
 	}
@@ -2848,7 +2848,7 @@ void func_382()//Position - 0x31C18
 	{
 		if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Jimmy_Boston", 0))
 		{
-			__LIB_17__::func_32("Doing Jimmy exit state");
+			__LIB_17__::func_35("Doing Jimmy exit state");
 			if (__LIB_0__::func_121(Local_61.f_0) && func_242())
 			{
 				__LIB_14__::func_659(Local_61.f_0, 1682.13f, 3268.65f, 39.75f, 183.3768f, 0, 1);
@@ -2874,7 +2874,7 @@ int func_383()//Position - 0x31CCF
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 			TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), Local_61.f_0, -1, 0, 2);
-			__LIB_17__::func_32("Do Michael exit");
+			__LIB_17__::func_35("Do Michael exit");
 			__LIB_14__::func_659(Local_59.f_0, Local_59.f_3, Local_59.f_6, 1, 1);
 			if (__LIB_0__::func_695(Local_59.f_0))
 			{
@@ -2976,18 +2976,18 @@ void func_403()//Position - 0x32BC3
 	switch (iLocal_70)
 	{
 		case 0:
-			__LIB_17__::func_32("*** Doing See Jimmy init");
+			__LIB_17__::func_35("*** Doing See Jimmy init");
 			__LIB_14__::func_874(1, "See Jimmy stage", 0, 0, 0, 1);
 			if (__LIB_0__::func_75())
 			{
 				__LIB_0__::func_325();
 			}
-			__LIB_29__::func_957(55);
+			__LIB_29__::func_967(55);
 			STREAMING::REQUEST_ANIM_DICT(Local_61.f_6);
 			STREAMING::REQUEST_MODEL(Local_59.f_1);
 			STREAMING::REQUEST_MODEL(joaat("p_amb_phone_01"));
 			VEHICLE::REQUEST_VEHICLE_RECORDING(501, "Eps6_Takeoff");
-			while ((((!__LIB_37__::func_521(55) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !STREAMING::HAS_MODEL_LOADED(Local_59.f_1)) || !STREAMING::HAS_MODEL_LOADED(joaat("p_amb_phone_01"))) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff"))
+			while ((((!__LIB_37__::func_195(55) || !STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) || !STREAMING::HAS_MODEL_LOADED(Local_59.f_1)) || !STREAMING::HAS_MODEL_LOADED(joaat("p_amb_phone_01"))) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(501, "Eps6_Takeoff"))
 			{
 				SYSTEM::WAIT(0);
 			}
@@ -3024,21 +3024,21 @@ void func_403()//Position - 0x32BC3
 			}
 			if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 			{
-				__LIB_17__::func_32("Trying to set player component variation (init)");
+				__LIB_17__::func_35("Trying to set player component variation (init)");
 				if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 				{
-					__LIB_17__::func_161("Michael", PLAYER::PLAYER_PED_ID(), 0, 2);
+					__LIB_17__::func_164("Michael", PLAYER::PLAYER_PED_ID(), 0, 2);
 				}
 				CUTSCENE::SET_CUTSCENE_PED_PROP_VARIATION("Jimmy_Boston", 1, 0, 0, 0);
 			}
 			if (iLocal_127 == -1)
 			{
 				iLocal_127 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(1687.9539f, 3277.7268f, 40.25f, 6f, 6f, 6f, 0f, false, 7);
-				__LIB_17__::func_32("Navmesh blocking object created");
+				__LIB_17__::func_35("Navmesh blocking object created");
 			}
 			iLocal_109 = (MISC::GET_GAME_TIMER() - 10000);
 			iLocal_84 = 0;
-			__LIB_17__::func_32("*** Going into See Jimmy running state");
+			__LIB_17__::func_35("*** Going into See Jimmy running state");
 			iLocal_70 = 1;
 			break;
 		case 1:
@@ -3053,24 +3053,24 @@ void func_403()//Position - 0x32BC3
 					if (!CUTSCENE::HAS_CUTSCENE_LOADED())
 					{
 						CUTSCENE::REQUEST_CUTSCENE("ep_6_rcm", 8);
-						__LIB_17__::func_32("Requesting cutscene now");
+						__LIB_17__::func_35("Requesting cutscene now");
 					}
 				}
 				else if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), Local_61.f_0, 1) > 120f)
 				{
 					if (CUTSCENE::HAS_CUTSCENE_LOADED())
 					{
-						__LIB_17__::func_32("Player moved away - unloading midtro");
+						__LIB_17__::func_35("Player moved away - unloading midtro");
 						CUTSCENE::REMOVE_CUTSCENE();
 					}
 				}
 			}
 			if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 			{
-				__LIB_17__::func_32("Trying to set player component variation (running)");
+				__LIB_17__::func_35("Trying to set player component variation (running)");
 				if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 				{
-					__LIB_17__::func_161("Michael", PLAYER::PLAYER_PED_ID(), 0, 2);
+					__LIB_17__::func_164("Michael", PLAYER::PLAYER_PED_ID(), 0, 2);
 				}
 				CUTSCENE::SET_CUTSCENE_PED_PROP_VARIATION("Jimmy_Boston", 1, 0, 0, 0);
 			}
@@ -3126,7 +3126,7 @@ void func_403()//Position - 0x32BC3
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("*** Doing See Jimmy cleanup");
+			__LIB_17__::func_35("*** Doing See Jimmy cleanup");
 			iLocal_69 = 4;
 			iLocal_70 = 0;
 			break;
@@ -3141,14 +3141,14 @@ void func_405()//Position - 0x32F99
 		{
 			if (!STREAMING::STREAMVOL_HAS_LOADED(iLocal_124))
 			{
-				__LIB_17__::func_32("Loading streamvol");
+				__LIB_17__::func_35("Loading streamvol");
 				iLocal_124 = STREAMING::STREAMVOL_CREATE_FRUSTUM(1684.85f, 3276.16f, 39.93f, __LIB_3__::func_80(-2.1719f, 0f, -78.5672f), 50f, 12, 127);
 			}
 		}
 	}
 	else if (STREAMING::IS_STREAMVOL_ACTIVE())
 	{
-		__LIB_17__::func_32("Removing streamvol");
+		__LIB_17__::func_35("Removing streamvol");
 		STREAMING::STREAMVOL_DELETE(iLocal_124);
 	}
 }
@@ -3222,7 +3222,7 @@ void func_409()//Position - 0x3318A
 		{
 			if (!PED::IS_PED_HEADTRACKING_PED(Local_61.f_0, PLAYER::PLAYER_PED_ID()))
 			{
-				__LIB_17__::func_32("Jimmy headlooking");
+				__LIB_17__::func_35("Jimmy headlooking");
 				TASK::TASK_LOOK_AT_ENTITY(Local_61.f_0, PLAYER::PLAYER_PED_ID(), -1, 2096, 2);
 			}
 		}
@@ -3230,13 +3230,13 @@ void func_409()//Position - 0x3318A
 		{
 			if (!PED::IS_PED_HEADTRACKING_PED(Local_61.f_0, PLAYER::PLAYER_PED_ID()))
 			{
-				__LIB_17__::func_32("Jimmy headlooking (during conv)");
+				__LIB_17__::func_35("Jimmy headlooking (during conv)");
 				TASK::TASK_LOOK_AT_ENTITY(Local_61.f_0, PLAYER::PLAYER_PED_ID(), -1, 2096, 2);
 			}
 		}
 		else if (PED::IS_PED_HEADTRACKING_PED(Local_61.f_0, PLAYER::PLAYER_PED_ID()) && !__LIB_0__::func_75())
 		{
-			__LIB_17__::func_32("Clear Jimmy headlook");
+			__LIB_17__::func_35("Clear Jimmy headlook");
 			TASK::TASK_CLEAR_LOOK_AT(Local_61.f_0);
 		}
 	}
@@ -3263,21 +3263,21 @@ void func_412()//Position - 0x335DA
 	switch (iLocal_70)
 	{
 		case 0:
-			__LIB_17__::func_32("*** Doing Landing init");
+			__LIB_17__::func_35("*** Doing Landing init");
 			STREAMING::REMOVE_ANIM_DICT("gestures@m@standing@casual");
 			if (iLocal_79)
 			{
 				VEHICLE::REQUEST_VEHICLE_RECORDING(500, "Eps6_LandingSkip");
 			}
-			__LIB_17__::func_32("Landing resources loaded!");
+			__LIB_17__::func_35("Landing resources loaded!");
 			if (iLocal_79)
 			{
 				while (!VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(500, "Eps6_LandingSkip"))
 				{
-					__LIB_17__::func_32("WAITING FOR LANDING SKIP RECORDING");
+					__LIB_17__::func_35("WAITING FOR LANDING SKIP RECORDING");
 					SYSTEM::WAIT(0);
 				}
-				__LIB_17__::func_32("Landing skip loaded!");
+				__LIB_17__::func_35("Landing skip loaded!");
 			}
 			iLocal_120 = 5;
 			__LIB_0__::func_124(&Local_62, 1, 0, 1);
@@ -3307,7 +3307,7 @@ void func_412()//Position - 0x335DA
 				__LIB_14__::func_879(1, 1, 1);
 			}
 			func_446();
-			__LIB_17__::func_32("*** Going into Landing running state");
+			__LIB_17__::func_35("*** Going into Landing running state");
 			iLocal_70 = 1;
 			break;
 		case 1:
@@ -3326,7 +3326,7 @@ void func_412()//Position - 0x335DA
 					{
 						__LIB_14__::func_874(1, "Landing stage", 0, 0, 0, 1);
 						iLocal_97 = 1;
-						__LIB_17__::func_32("Landing checkpoint set");
+						__LIB_17__::func_35("Landing checkpoint set");
 					}
 				}
 				if (iLocal_98 == 0)
@@ -3334,18 +3334,18 @@ void func_412()//Position - 0x335DA
 					if (__LIB_0__::func_724(Local_54.f_0, Local_60, 1) < 350f)
 					{
 						STREAMING::REQUEST_MODEL(Local_59.f_1);
-						__LIB_29__::func_957(55);
+						__LIB_29__::func_967(55);
 						STREAMING::REQUEST_ANIM_DICT(Local_61.f_6);
 						STREAMING::REQUEST_MODEL(joaat("p_amb_phone_01"));
-						__LIB_17__::func_32("Requesting Jimmy resources...");
-						if (((STREAMING::HAS_MODEL_LOADED(Local_59.f_1) && __LIB_37__::func_521(55)) && STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) && STREAMING::HAS_MODEL_LOADED(joaat("p_amb_phone_01")))
+						__LIB_17__::func_35("Requesting Jimmy resources...");
+						if (((STREAMING::HAS_MODEL_LOADED(Local_59.f_1) && __LIB_37__::func_195(55)) && STREAMING::HAS_ANIM_DICT_LOADED(Local_61.f_6)) && STREAMING::HAS_MODEL_LOADED(joaat("p_amb_phone_01")))
 						{
 							func_288();
 							func_273();
 							__LIB_0__::func_222(&uLocal_459, 3, Local_61.f_0, "JIMMYBOSTON", 0, 1);
 							__LIB_0__::func_222(&uLocal_459, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 							iLocal_98 = 1;
-							__LIB_17__::func_32("Jimmy created");
+							__LIB_17__::func_35("Jimmy created");
 						}
 					}
 				}
@@ -3361,8 +3361,8 @@ void func_412()//Position - 0x335DA
 					{
 						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_54.f_0, Local_121, Local_122, 33.25f, false, true, 2))
 						{
-							__LIB_17__::func_32("Plane detected");
-							__LIB_17__::func_32("*** Entering Landing cleanup");
+							__LIB_17__::func_35("Plane detected");
+							__LIB_17__::func_35("*** Entering Landing cleanup");
 							iLocal_70 = 2;
 						}
 					}
@@ -3372,7 +3372,7 @@ void func_412()//Position - 0x335DA
 					if (!HUD::DOES_BLIP_EXIST(Local_54.f_2))
 					{
 						Local_54.f_2 = __LIB_14__::func_866(Local_54.f_0, 1, 5);
-						__LIB_17__::func_32("***** GET BACK IN PLANE");
+						__LIB_17__::func_35("***** GET BACK IN PLANE");
 						if (!iLocal_82)
 						{
 							__LIB_0__::func_229("EPS6_03", 7500, 1);
@@ -3385,7 +3385,7 @@ void func_412()//Position - 0x335DA
 					}
 					if (__LIB_0__::func_75())
 					{
-						if ((((__LIB_15__::func_963("EPS6_ARMY") || __LIB_15__::func_963("EPS6_LEAVE")) || __LIB_15__::func_963("EPS6_SAFE")) || __LIB_15__::func_963("EPS6_PUSHED")) || __LIB_15__::func_963("EPS6_FLIGHT"))
+						if ((((__LIB_15__::func_965("EPS6_ARMY") || __LIB_15__::func_965("EPS6_LEAVE")) || __LIB_15__::func_965("EPS6_SAFE")) || __LIB_15__::func_965("EPS6_PUSHED")) || __LIB_15__::func_965("EPS6_FLIGHT"))
 						{
 							__LIB_0__::func_325();
 						}
@@ -3437,8 +3437,8 @@ void func_412()//Position - 0x335DA
 					{
 						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_54.f_0, Local_121, Local_122, 33.25f, false, true, 2))
 						{
-							__LIB_17__::func_32("Plane detected");
-							__LIB_17__::func_32("*** Entering Landing cleanup");
+							__LIB_17__::func_35("Plane detected");
+							__LIB_17__::func_35("*** Entering Landing cleanup");
 							iLocal_70 = 2;
 						}
 					}
@@ -3490,10 +3490,10 @@ void func_412()//Position - 0x335DA
 						}
 						if (func_416() && !PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_54.f_0, false))
 						{
-							__LIB_17__::func_32("*** Finishing Landing cleanup");
-							__LIB_17__::func_31("*** Plane 'entity' health: ", ENTITY::GET_ENTITY_HEALTH(Local_54.f_0));
-							__LIB_17__::func_400("*** Plane engine health: ", VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0));
-							__LIB_17__::func_400("*** Plane petrol tank health: ", VEHICLE::GET_VEHICLE_PETROL_TANK_HEALTH(Local_54.f_0));
+							__LIB_17__::func_35("*** Finishing Landing cleanup");
+							__LIB_17__::func_34("*** Plane 'entity' health: ", ENTITY::GET_ENTITY_HEALTH(Local_54.f_0));
+							__LIB_17__::func_403("*** Plane engine health: ", VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0));
+							__LIB_17__::func_403("*** Plane petrol tank health: ", VEHICLE::GET_VEHICLE_PETROL_TANK_HEALTH(Local_54.f_0));
 							if ((ENTITY::GET_ENTITY_HEALTH(Local_54.f_0) == 1000 && VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0) == 1000f) && VEHICLE::GET_VEHICLE_PETROL_TANK_HEALTH(Local_54.f_0) == 1000f)
 							{
 								__LIB_0__::func_630(751);
@@ -3505,7 +3505,7 @@ void func_412()//Position - 0x335DA
 					}
 					if ((VEHICLE::GET_LANDING_GEAR_STATE(Local_54.f_0) == 1 || VEHICLE::GET_LANDING_GEAR_STATE(Local_54.f_0) == 4) || VEHICLE::GET_LANDING_GEAR_STATE(Local_54.f_0) == 5)
 					{
-						__LIB_17__::func_32("In the landing area and landing gear is retracting, locked up or broken");
+						__LIB_17__::func_35("In the landing area and landing gear is retracting, locked up or broken");
 						iLocal_128 = 4;
 						iLocal_70 = 0;
 						iLocal_69 = 6;
@@ -3514,7 +3514,7 @@ void func_412()//Position - 0x335DA
 				}
 				else
 				{
-					__LIB_17__::func_32("*** Plane out of delivery area, reverting back to Landing running state");
+					__LIB_17__::func_35("*** Plane out of delivery area, reverting back to Landing running state");
 					VEHICLE::SET_VEHICLE_ENGINE_ON(Local_54.f_0, true, false, false);
 					VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_54.f_0, 1);
 					iLocal_70 = 1;
@@ -3522,7 +3522,7 @@ void func_412()//Position - 0x335DA
 			}
 			else
 			{
-				__LIB_17__::func_32("Plane not OK in landing cleanup");
+				__LIB_17__::func_35("Plane not OK in landing cleanup");
 				iLocal_128 = 4;
 				iLocal_70 = 0;
 				iLocal_69 = 6;
@@ -3578,7 +3578,7 @@ void func_421()//Position - 0x33D92
 						iLocal_110 = MISC::GET_GAME_TIMER();
 						TASK::CLEAR_PED_TASKS(Local_61.f_0);
 						TASK::TASK_LOOK_AT_ENTITY(Local_61.f_0, PLAYER::PLAYER_PED_ID(), 10000, 48, 2);
-						__LIB_17__::func_32("*** Played diag EPS6_CLOSE");
+						__LIB_17__::func_35("*** Played diag EPS6_CLOSE");
 					}
 				}
 			}
@@ -3592,7 +3592,7 @@ void func_421()//Position - 0x33D92
 		}
 		else if (!ENTITY::IS_ENTITY_PLAYING_ANIM(Local_61.f_0, Local_61.f_6, Local_61.f_7, 3))
 		{
-			__LIB_17__::func_32("*** Retasking Jimmy to play anim from plane fear check");
+			__LIB_17__::func_35("*** Retasking Jimmy to play anim from plane fear check");
 			TASK::TASK_PLAY_ANIM(Local_61.f_0, Local_61.f_6, Local_61.f_7, 8f, -8f, -1, 49, 0f, false, false, false);
 		}
 		if (__LIB_0__::func_76(Local_61.f_0, Local_54.f_0, 1) < 12f)
@@ -3684,13 +3684,13 @@ void func_426()//Position - 0x34027
 		Var0 = { -2896.33f, 3201.92f, 10.01f };
 		if (__LIB_0__::func_75())
 		{
-			if (((__LIB_15__::func_963("EPS6_ARMY") || __LIB_15__::func_963("EPS6_LEAVE")) || __LIB_15__::func_963("EPS6_SAFE")) || __LIB_15__::func_963("EPS6_PUSHED"))
+			if (((__LIB_15__::func_965("EPS6_ARMY") || __LIB_15__::func_965("EPS6_LEAVE")) || __LIB_15__::func_965("EPS6_SAFE")) || __LIB_15__::func_965("EPS6_PUSHED"))
 			{
 				if (__LIB_0__::func_724(PLAYER::PLAYER_PED_ID(), Var0, 1) > 35f)
 				{
 					if (__LIB_0__::func_75())
 					{
-						__LIB_17__::func_32("*** Killing an intro conversation because player is too far away");
+						__LIB_17__::func_35("*** Killing an intro conversation because player is too far away");
 						__LIB_0__::func_325();
 					}
 				}
@@ -3859,7 +3859,7 @@ void func_427()//Position - 0x34112
 						__LIB_14__::func_535(&uLocal_129, "EPS6AUD", "EPS6_SPOT", "EPS6_SPOT_1", 8, 1, 0);
 						iLocal_116 = 0;
 						iLocal_103 = 1;
-						__LIB_17__::func_32("EPSILONIST: Play single line with subs");
+						__LIB_17__::func_35("EPSILONIST: Play single line with subs");
 						TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), Local_62.f_0, -1, 0, 2);
 						TASK::TASK_LOOK_AT_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
 						RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 10f, 1);
@@ -3870,7 +3870,7 @@ void func_427()//Position - 0x34112
 						__LIB_0__::func_429();
 						__LIB_14__::func_654(&uLocal_129, "EPS6AUD", "EPS6_SPOT", 8, 0, 0);
 						iLocal_116 = MISC::GET_GAME_TIMER();
-						__LIB_17__::func_32("EPSILONIST: Play full convo as add to buffer");
+						__LIB_17__::func_35("EPSILONIST: Play full convo as add to buffer");
 						TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), Local_62.f_0, -1, 0, 2);
 						TASK::TASK_LOOK_AT_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
 						RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 10f, 1);
@@ -3879,7 +3879,7 @@ void func_427()//Position - 0x34112
 					else if (__LIB_2__::func_859(&uLocal_129, "EPS6AUD", "EPS6_SPOT", 8, 0, 0, 0))
 					{
 						iLocal_116 = 0;
-						__LIB_17__::func_32("EPSILONIST: Play full convo normally");
+						__LIB_17__::func_35("EPSILONIST: Play full convo normally");
 						TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), Local_62.f_0, -1, 0, 2);
 						TASK::TASK_LOOK_AT_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
 						RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 10f, 1);
@@ -3906,7 +3906,7 @@ void func_427()//Position - 0x34112
 						func_267(3);
 					}
 				}
-				if (__LIB_17__::func_114(Local_62.f_0, 1126825984))
+				if (__LIB_17__::func_117(Local_62.f_0, 1126825984))
 				{
 					if (__LIB_0__::func_75())
 					{
@@ -3923,7 +3923,7 @@ void func_427()//Position - 0x34112
 							if (__LIB_14__::func_782(&uLocal_129, "EPS6AUD", "EPS6_SPOT", "EPS6_SPOT_3", 8, 0, 0))
 							{
 								iLocal_103 = 0;
-								__LIB_17__::func_32("EPSILONIST: Play rest of EPS6_SPOT");
+								__LIB_17__::func_35("EPSILONIST: Play rest of EPS6_SPOT");
 							}
 						}
 						else
@@ -3936,15 +3936,15 @@ void func_427()//Position - 0x34112
 				{
 					if (!__LIB_0__::func_75())
 					{
-						__LIB_17__::func_32("No conversation is ongoing at all...");
+						__LIB_17__::func_35("No conversation is ongoing at all...");
 					}
 					else
 					{
-						__LIB_17__::func_32("A conversation is playing!");
+						__LIB_17__::func_35("A conversation is playing!");
 					}
-					if (__LIB_15__::func_963("EPS6_SPOT"))
+					if (__LIB_15__::func_965("EPS6_SPOT"))
 					{
-						__LIB_17__::func_32("EPS6_SPOT is playing...");
+						__LIB_17__::func_35("EPS6_SPOT is playing...");
 						if (AUDIO::GET_CURRENT_SCRIPTED_CONVERSATION_LINE() >= 5)
 						{
 							__LIB_0__::func_714(&(Local_62.f_1));
@@ -3969,7 +3969,7 @@ void func_427()//Position - 0x34112
 					}
 					else
 					{
-						__LIB_17__::func_32("EPSILONIST: EPS6_SPOT not playing");
+						__LIB_17__::func_35("EPSILONIST: EPS6_SPOT not playing");
 						__LIB_0__::func_714(&(Local_62.f_1));
 						if (!HUD::DOES_BLIP_EXIST(Local_54.f_2))
 						{
@@ -3980,7 +3980,7 @@ void func_427()//Position - 0x34112
 				}
 				else
 				{
-					__LIB_17__::func_32("EPS6_SPOT delay timer...");
+					__LIB_17__::func_35("EPS6_SPOT delay timer...");
 				}
 				if (bLocal_96)
 				{
@@ -3996,7 +3996,7 @@ void func_427()//Position - 0x34112
 						if (__LIB_0__::func_75())
 						{
 							__LIB_0__::func_325();
-							__LIB_17__::func_32("Kill convo as player getting into plane (1)");
+							__LIB_17__::func_35("Kill convo as player getting into plane (1)");
 						}
 						while (!__LIB_2__::func_859(&uLocal_129, "EPS6AUD", "EPS6_LEAVE", 8, 0, 0, 0))
 						{
@@ -4011,7 +4011,7 @@ void func_427()//Position - 0x34112
 		case 3:
 			if (iLocal_74 == 0)
 			{
-				__LIB_17__::func_32("EPSILONIST: In EPS_HANDSUP");
+				__LIB_17__::func_35("EPSILONIST: In EPS_HANDSUP");
 				if (iLocal_102 == 0)
 				{
 					__LIB_0__::func_709(Local_62.f_0, "AIMED_AT_BY_PLAYER", "TOM", 4);
@@ -4036,7 +4036,7 @@ void func_427()//Position - 0x34112
 			}
 			else if (iLocal_74 == 1)
 			{
-				if (!__LIB_17__::func_114(Local_62.f_0, 1126825984))
+				if (!__LIB_17__::func_117(Local_62.f_0, 1126825984))
 				{
 					if (iLocal_107 == -1)
 					{
@@ -4070,7 +4070,7 @@ void func_427()//Position - 0x34112
 		case 5:
 			if (iLocal_74 == 0)
 			{
-				__LIB_17__::func_32("EPSILONIST: In EPS_WAIT");
+				__LIB_17__::func_35("EPSILONIST: In EPS_WAIT");
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), -1);
 				iLocal_74 = 1;
 			}
@@ -4082,7 +4082,7 @@ void func_427()//Position - 0x34112
 					{
 						RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 10f, 1);
 						__LIB_0__::func_382("EPS6_GETIN", 7500, 1);
-						__LIB_17__::func_32("Printed EPS6_GETIN from EPS_WAIT");
+						__LIB_17__::func_35("Printed EPS6_GETIN from EPS_WAIT");
 						iLocal_81 = 1;
 					}
 				}
@@ -4093,7 +4093,7 @@ void func_427()//Position - 0x34112
 						if (__LIB_0__::func_75())
 						{
 							__LIB_0__::func_325();
-							__LIB_17__::func_32("Kill convo as player getting into plane (2)");
+							__LIB_17__::func_35("Kill convo as player getting into plane (2)");
 						}
 						if (__LIB_2__::func_859(&uLocal_129, "EPS6AUD", "EPS6_LEAVE", 8, 0, 0, 0))
 						{
@@ -4110,7 +4110,7 @@ void func_427()//Position - 0x34112
 						func_267(3);
 					}
 				}
-				if (__LIB_17__::func_114(Local_62.f_0, 1126825984))
+				if (__LIB_17__::func_117(Local_62.f_0, 1126825984))
 				{
 					if (__LIB_0__::func_75())
 					{
@@ -4155,10 +4155,10 @@ void func_427()//Position - 0x34112
 				{
 					if (iLocal_81 == 0)
 					{
-						if ((!__LIB_15__::func_963("EPS6_SPOT") && !PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_54.f_0, true)) && !PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()))
+						if ((!__LIB_15__::func_965("EPS6_SPOT") && !PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_54.f_0, true)) && !PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()))
 						{
 							__LIB_0__::func_382("EPS6_GETIN", 7500, 1);
-							__LIB_17__::func_32("Printed EPS6_GETIN from EPS_SAFE");
+							__LIB_17__::func_35("Printed EPS6_GETIN from EPS_SAFE");
 							iLocal_81 = 1;
 						}
 					}
@@ -4171,7 +4171,7 @@ void func_427()//Position - 0x34112
 						func_267(3);
 					}
 				}
-				if (__LIB_17__::func_114(Local_62.f_0, 1126825984))
+				if (__LIB_17__::func_117(Local_62.f_0, 1126825984))
 				{
 					if (__LIB_0__::func_75())
 					{
@@ -4206,7 +4206,7 @@ void func_427()//Position - 0x34112
 		case 7:
 			if (iLocal_74 == 0)
 			{
-				__LIB_17__::func_32("EPSILONIST: Dead!?");
+				__LIB_17__::func_35("EPSILONIST: Dead!?");
 				__LIB_0__::func_714(&(Local_62.f_1));
 				iLocal_74 = 1;
 			}
@@ -4243,7 +4243,7 @@ int func_434()//Position - 0x34E62
 		{
 			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_54.f_0, PLAYER::PLAYER_PED_ID(), true))
 			{
-				__LIB_17__::func_32("Player damaged plane");
+				__LIB_17__::func_35("Player damaged plane");
 				ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_54.f_0);
 				return 1;
 			}
@@ -4305,14 +4305,14 @@ void func_441()//Position - 0x35053
 				{
 					TASK::TASK_PLAY_ANIM(Local_62.f_0, "rcmepsilonism6", "cultist_upperstatic", 8f, -8f, -1, 49, 0f, false, false, false);
 					iLocal_76 = 1;
-					__LIB_17__::func_32("Initialised Eps 6 Tom state machine");
+					__LIB_17__::func_35("Initialised Eps 6 Tom state machine");
 				}
 				break;
 			case 1:
 				if (!__LIB_6__::func_572(Local_62.f_0, joaat("SCRIPT_TASK_FOLLOW_NAV_MESH_TO_COORD")))
 				{
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_62.f_0, Local_78[iLocal_77 /*3*/], 1f, 20000, 0.25f, 0, 40000f);
-					__LIB_17__::func_32("Eps 6: Nav tasking Tom...");
+					__LIB_17__::func_35("Eps 6: Nav tasking Tom...");
 					iLocal_76 = 2;
 				}
 				break;
@@ -4320,7 +4320,7 @@ void func_441()//Position - 0x35053
 				if (__LIB_0__::func_724(Local_62.f_0, Local_78[iLocal_77 /*3*/], 1) <= 1.2f)
 				{
 					iLocal_76 = 3;
-					__LIB_17__::func_32("Eps 6: Tom at coord; do idle anim");
+					__LIB_17__::func_35("Eps 6: Tom at coord; do idle anim");
 				}
 				break;
 			case 3:
@@ -4328,7 +4328,7 @@ void func_441()//Position - 0x35053
 				TASK::TASK_PLAY_ANIM(Local_62.f_0, "rcmepsilonism6", "cultist_idle_a", 16f, -2f, -1, 131072, 0f, false, false, false);
 				PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(Local_62.f_0, false, false);
 				iLocal_76 = 4;
-				__LIB_17__::func_32("Eps 6: Done Tom idle anim");
+				__LIB_17__::func_35("Eps 6: Done Tom idle anim");
 				break;
 			case 4:
 				if (ENTITY::IS_ENTITY_PLAYING_ANIM(Local_62.f_0, "rcmepsilonism6", "cultist_idle_a", 3))
@@ -4346,7 +4346,7 @@ void func_441()//Position - 0x35053
 						TASK::TASK_PLAY_ANIM(Local_62.f_0, "rcmepsilonism6", "cultist_upperstatic", 16f, -8f, -1, 49, 0f, false, false, false);
 						PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(Local_62.f_0, false, false);
 						iLocal_76 = 1;
-						__LIB_17__::func_32("Eps 6: Tom idle anim >0.98");
+						__LIB_17__::func_35("Eps 6: Tom idle anim >0.98");
 					}
 				}
 				else
@@ -4361,7 +4361,7 @@ void func_441()//Position - 0x35053
 					}
 					TASK::TASK_PLAY_ANIM(Local_62.f_0, "rcmepsilonism6", "cultist_upperstatic", 8f, -8f, -1, 49, 0f, false, false, false);
 					iLocal_76 = 1;
-					__LIB_17__::func_32("Eps 6: Tom idle anim not playing");
+					__LIB_17__::func_35("Eps 6: Tom idle anim not playing");
 				}
 				break;
 			}
@@ -4374,12 +4374,12 @@ int func_442()//Position - 0x35278
 	{
 		if (__LIB_14__::func_858(Local_62.f_0, 0, 0, 0, 0))
 		{
-			__LIB_17__::func_32("Player shot near cultist");
+			__LIB_17__::func_35("Player shot near cultist");
 			return 1;
 		}
 		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), true))
 		{
-			__LIB_17__::func_32("Player damaged cultist");
+			__LIB_17__::func_35("Player damaged cultist");
 			return 1;
 		}
 	}
@@ -4387,7 +4387,7 @@ int func_442()//Position - 0x35278
 	{
 		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), true))
 		{
-			__LIB_17__::func_32("Player damaged cultist (while he wasn't alive, so dead?)");
+			__LIB_17__::func_35("Player damaged cultist (while he wasn't alive, so dead?)");
 			return 1;
 		}
 	}
@@ -4402,7 +4402,7 @@ void func_443()//Position - 0x352F3
 		{
 			if (!ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_62.f_0, PLAYER::PLAYER_PED_ID(), true))
 			{
-				__LIB_17__::func_32("EPSILONIST got scared by player, will never stop fleeing...");
+				__LIB_17__::func_35("EPSILONIST got scared by player, will never stop fleeing...");
 				func_267(6);
 				iLocal_128 = 10;
 				iLocal_70 = 0;
@@ -4411,7 +4411,7 @@ void func_443()//Position - 0x352F3
 			}
 			else
 			{
-				__LIB_17__::func_32("EPSILONIST got hurt by player - 2ND CHECK, NOT INJURED?");
+				__LIB_17__::func_35("EPSILONIST got hurt by player - 2ND CHECK, NOT INJURED?");
 				func_267(6);
 				iLocal_128 = 11;
 				iLocal_70 = 0;
@@ -4421,7 +4421,7 @@ void func_443()//Position - 0x352F3
 		}
 		else
 		{
-			__LIB_17__::func_32("EPSILONIST got hurt by player...");
+			__LIB_17__::func_35("EPSILONIST got hurt by player...");
 			iLocal_128 = 11;
 			iLocal_70 = 0;
 			iLocal_69 = 6;
@@ -4430,7 +4430,7 @@ void func_443()//Position - 0x352F3
 	}
 	else
 	{
-		__LIB_17__::func_32("EPSILONIST got killed by player...");
+		__LIB_17__::func_35("EPSILONIST got killed by player...");
 		iLocal_128 = 9;
 		iLocal_70 = 0;
 		iLocal_69 = 6;
@@ -4446,7 +4446,7 @@ void func_443()//Position - 0x352F3
 		{
 			if (ENTITY::IS_ENTITY_DEAD(Local_62.f_0, false))
 			{
-				__LIB_17__::func_32("EPSILONIST got killed by player - 2ND CHECK");
+				__LIB_17__::func_35("EPSILONIST got killed by player - 2ND CHECK");
 				iLocal_128 = 9;
 				iLocal_70 = 0;
 				iLocal_69 = 6;
@@ -4458,15 +4458,15 @@ void func_443()//Position - 0x352F3
 
 int func_444()//Position - 0x353E5
 {
-	if ((__LIB_17__::func_123(Local_62.f_0, 0, 1116471296, 1126825984, 0, 0, 0, 0) || __LIB_17__::func_33(PLAYER::PLAYER_PED_ID(), Local_62.f_0, 0)) || func_434())
+	if ((__LIB_17__::func_126(Local_62.f_0, 0, 1116471296, 1126825984, 0, 0, 0, 0) || __LIB_17__::func_36(PLAYER::PLAYER_PED_ID(), Local_62.f_0, 0)) || func_434())
 	{
-		if (__LIB_17__::func_123(Local_62.f_0, 0, 1116471296, 1126825984, 0, 0, 0, 0))
+		if (__LIB_17__::func_126(Local_62.f_0, 0, 1116471296, 1126825984, 0, 0, 0, 0))
 		{
-			__LIB_17__::func_32("Player threatened cultist");
+			__LIB_17__::func_35("Player threatened cultist");
 		}
-		if (__LIB_17__::func_33(PLAYER::PLAYER_PED_ID(), Local_62.f_0, 0))
+		if (__LIB_17__::func_36(PLAYER::PLAYER_PED_ID(), Local_62.f_0, 0))
 		{
-			__LIB_17__::func_32("Player bumped cultist with vehicle");
+			__LIB_17__::func_35("Player bumped cultist with vehicle");
 		}
 		iLocal_106 = 3;
 		if (__LIB_0__::func_692(Local_62.f_0))
@@ -4493,7 +4493,7 @@ void func_445()//Position - 0x35484
 				if (ENTITY::IS_ENTITY_TOUCHING_ENTITY(PLAYER::PLAYER_PED_ID(), Local_62.f_0) && PED::IS_PED_RAGDOLL(Local_62.f_0))
 				{
 					__LIB_0__::func_325();
-					__LIB_17__::func_32("Player knocked Tom over!");
+					__LIB_17__::func_35("Player knocked Tom over!");
 					iLocal_99 = 1;
 				}
 			}
@@ -4537,7 +4537,7 @@ int func_447()//Position - 0x3555F
 {
 	if (((((((((PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 59 /*INPUT_VEH_MOVE_LR*/) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 60 /*INPUT_VEH_MOVE_UD*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 107 /*INPUT_VEH_FLY_ROLL_LR*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 110 /*INPUT_VEH_FLY_PITCH_UD*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 113 /*INPUT_VEH_FLY_UNDERCARRIAGE*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 114 /*INPUT_VEH_FLY_ATTACK*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 88 /*INPUT_VEH_FLY_THROTTLE_DOWN*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 87 /*INPUT_VEH_FLY_THROTTLE_UP*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 89 /*INPUT_VEH_FLY_YAW_LEFT*/)) || PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 90 /*INPUT_VEH_FLY_YAW_RIGHT*/))
 	{
-		__LIB_17__::func_32("*** Player input detected");
+		__LIB_17__::func_35("*** Player input detected");
 		return 1;
 	}
 	return 0;
@@ -4548,7 +4548,7 @@ void func_448()//Position - 0x355F4
 	switch (iLocal_70)
 	{
 		case 0:
-			__LIB_17__::func_32("*** Doing Flight init");
+			__LIB_17__::func_35("*** Doing Flight init");
 			if (iLocal_79 == 1)
 			{
 				func_272();
@@ -4566,9 +4566,9 @@ void func_448()//Position - 0x355F4
 			}
 			if (func_242())
 			{
-				__LIB_17__::func_31("*** Plane 'entity' health: ", ENTITY::GET_ENTITY_HEALTH(Local_54.f_0));
-				__LIB_17__::func_400("*** Plane engine health: ", VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0));
-				__LIB_17__::func_400("*** Plane petrol tank health: ", VEHICLE::GET_VEHICLE_PETROL_TANK_HEALTH(Local_54.f_0));
+				__LIB_17__::func_34("*** Plane 'entity' health: ", ENTITY::GET_ENTITY_HEALTH(Local_54.f_0));
+				__LIB_17__::func_403("*** Plane engine health: ", VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0));
+				__LIB_17__::func_403("*** Plane petrol tank health: ", VEHICLE::GET_VEHICLE_PETROL_TANK_HEALTH(Local_54.f_0));
 			}
 			if (iLocal_123 == 0)
 			{
@@ -4577,7 +4577,7 @@ void func_448()//Position - 0x355F4
 			}
 			iLocal_84 = 0;
 			iLocal_71 = 0;
-			__LIB_17__::func_32("*** Going into Flight running state");
+			__LIB_17__::func_35("*** Going into Flight running state");
 			iLocal_70 = 1;
 			break;
 		case 1:
@@ -4616,7 +4616,7 @@ void func_448()//Position - 0x355F4
 					if (!HUD::DOES_BLIP_EXIST(Local_54.f_2))
 					{
 						Local_54.f_2 = __LIB_14__::func_866(Local_54.f_0, 1, 5);
-						__LIB_17__::func_32("***** GET BACK IN PLANE");
+						__LIB_17__::func_35("***** GET BACK IN PLANE");
 						if (!iLocal_82)
 						{
 							__LIB_0__::func_229("EPS6_03", 7500, 1);
@@ -4629,7 +4629,7 @@ void func_448()//Position - 0x355F4
 					}
 					if (__LIB_0__::func_75())
 					{
-						if ((((__LIB_15__::func_963("EPS6_ARMY") || __LIB_15__::func_963("EPS6_LEAVE")) || __LIB_15__::func_963("EPS6_SAFE")) || __LIB_15__::func_963("EPS6_PUSHED")) || __LIB_15__::func_963("EPS6_FLIGHT"))
+						if ((((__LIB_15__::func_965("EPS6_ARMY") || __LIB_15__::func_965("EPS6_LEAVE")) || __LIB_15__::func_965("EPS6_SAFE")) || __LIB_15__::func_965("EPS6_PUSHED")) || __LIB_15__::func_965("EPS6_FLIGHT"))
 						{
 							__LIB_0__::func_325();
 						}
@@ -4670,7 +4670,7 @@ void func_448()//Position - 0x355F4
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("*** Doing Flight cleanup");
+			__LIB_17__::func_35("*** Doing Flight cleanup");
 			iLocal_69 = 2;
 			iLocal_70 = 0;
 			break;
@@ -4690,10 +4690,10 @@ void func_449()//Position - 0x358D9
 					Var0 = { ENTITY::GET_ENTITY_COORDS(Local_54.f_0, true) };
 					if (Var0.f_2 > 15f)
 					{
-						__LIB_17__::func_32("vPlanePos.z is > 15.0");
+						__LIB_17__::func_35("vPlanePos.z is > 15.0");
 						iLocal_108 = MISC::GET_GAME_TIMER();
 						__LIB_0__::func_124(&Local_62, 1, 0, 1);
-						__LIB_17__::func_32("RELEASING CULTIST PED VIA JIMMY PHONECALL");
+						__LIB_17__::func_35("RELEASING CULTIST PED VIA JIMMY PHONECALL");
 						iLocal_71 = 1;
 					}
 				}
@@ -4727,7 +4727,7 @@ void func_451()//Position - 0x35A04
 	switch (iLocal_70)
 	{
 		case 0:
-			__LIB_17__::func_32("*** Doing Init initialisation");
+			__LIB_17__::func_35("*** Doing Init initialisation");
 			if (iLocal_79 == 1)
 			{
 				func_272();
@@ -4767,9 +4767,9 @@ void func_451()//Position - 0x35A04
 			}
 			if (func_242())
 			{
-				__LIB_17__::func_31("*** Plane 'entity' health: ", ENTITY::GET_ENTITY_HEALTH(Local_54.f_0));
-				__LIB_17__::func_400("*** Plane engine health: ", VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0));
-				__LIB_17__::func_400("*** Plane petrol tank health: ", VEHICLE::GET_VEHICLE_PETROL_TANK_HEALTH(Local_54.f_0));
+				__LIB_17__::func_34("*** Plane 'entity' health: ", ENTITY::GET_ENTITY_HEALTH(Local_54.f_0));
+				__LIB_17__::func_403("*** Plane engine health: ", VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_54.f_0));
+				__LIB_17__::func_403("*** Plane petrol tank health: ", VEHICLE::GET_VEHICLE_PETROL_TANK_HEALTH(Local_54.f_0));
 			}
 			if (__LIB_0__::func_323())
 			{
@@ -4780,14 +4780,14 @@ void func_451()//Position - 0x35A04
 				__LIB_14__::func_879(1, 1, 1);
 			}
 			RECORDING::REPLAY_RECORD_BACK_FOR_TIME(0f, 15f, 1);
-			__LIB_17__::func_32("*** Epsilon 6 initialised, now running");
+			__LIB_17__::func_35("*** Epsilon 6 initialised, now running");
 			bLocal_100 = false;
 			bLocal_96 = false;
 			iLocal_84 = 0;
 			iLocal_106 = 0;
 			__LIB_0__::func_229("EPS6_01", 7500, 1);
 			iLocal_115 = MISC::GET_GAME_TIMER();
-			__LIB_17__::func_32("*** Going into Init running state");
+			__LIB_17__::func_35("*** Going into Init running state");
 			iLocal_70 = 1;
 			break;
 		case 1:
@@ -4798,7 +4798,7 @@ void func_451()//Position - 0x35A04
 			func_426();
 			if (!__LIB_0__::func_695(Local_54.f_0))
 			{
-				__LIB_17__::func_32("*** FAILED: Plane destroyed");
+				__LIB_17__::func_35("*** FAILED: Plane destroyed");
 				iLocal_128 = 4;
 				iLocal_70 = 0;
 				iLocal_69 = 6;
@@ -4864,7 +4864,7 @@ void func_451()//Position - 0x35A04
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("*** Doing Init cleanup");
+			__LIB_17__::func_35("*** Doing Init cleanup");
 			__LIB_0__::func_714(&(Local_62.f_1));
 			__LIB_0__::func_714(&(Local_54.f_2));
 			iLocal_69 = 1;
@@ -4921,7 +4921,7 @@ void func_470(bool bParam0, bool bParam1)//Position - 0x36860
 {
 	if (bParam0)
 	{
-		__LIB_17__::func_25(0, 1, 1);
+		__LIB_17__::func_28(0, 1, 1);
 	}
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
@@ -5006,7 +5006,7 @@ int func_485(var uParam0)//Position - 0x36DB4
 				else
 				{
 					MISC::CLEAR_AREA_OF_VEHICLES(-2892.93f, 3192.37f, 11.66f, 11f, false, false, false, false, false, false, 0);
-					__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[0], -2892.93f, 3192.37f, 11.66f, -132.35f);
+					__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[0], -2892.93f, 3192.37f, 11.66f, -132.35f);
 				}
 			}
 			__LIB_0__::func_364(37, 0);
@@ -5034,7 +5034,7 @@ int func_485(var uParam0)//Position - 0x36DB4
 			{
 				bVar4 = false;
 			}
-			__LIB_17__::func_39(&(uParam0->f_28[0]), iVar0[1], -2881.7554f, 3188.1252f, 10.1136f, 254.1723f, 26);
+			__LIB_17__::func_42(&(uParam0->f_28[0]), iVar0[1], -2881.7554f, 3188.1252f, 10.1136f, 254.1723f, 26);
 			if (__LIB_0__::func_121(uParam0->f_28[0]) && __LIB_0__::func_692(PLAYER::PLAYER_PED_ID()))
 			{
 				iVar5 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID());
@@ -5075,7 +5075,7 @@ void func_491()//Position - 0x371D5
 {
 	if (__LIB_14__::func_843())
 	{
-		__LIB_17__::func_32("...Random Character Script was triggered so additional cleanup required");
+		__LIB_17__::func_35("...Random Character Script was triggered so additional cleanup required");
 	}
 	func_3(1);
 	__LIB_0__::func_345(&uLocal_37, 0, 0);

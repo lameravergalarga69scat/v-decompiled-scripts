@@ -1895,7 +1895,7 @@ void func_38()//Position - 0x4030
 	}
 	CLOCK::PAUSE_CLOCK(false);
 	MISC::SET_CREDITS_ACTIVE(false);
-	__LIB_38__::func_273(0, 0, 2000, 1);
+	__LIB_37__::func_948(0, 0, 2000, 1);
 	PLAYER::SET_MAX_WANTED_LEVEL(5);
 	MISC::SET_CREDITS_FADE_OUT_WITH_SCREEN(false);
 	MISC::SET_TIME_SCALE(1f);

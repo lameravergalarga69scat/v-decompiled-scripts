@@ -409,7 +409,7 @@ int func_23()//Position - 0x547
 			__LIB_1__::func_477(iVar0);
 			ENTITY::SET_PICK_UP_BY_CARGOBOB_DISABLED(iVar0, true);
 			Var1 = { func_105() };
-			__LIB_32__::func_480(iVar0, &Var1, 0, 1, 0);
+			__LIB_30__::func_911(iVar0, &Var1, 0, 1, 0);
 			if (DECORATOR::DECOR_IS_REGISTERED_AS_TYPE("MPBitset", 3))
 			{
 				if (DECORATOR::DECOR_EXIST_ON(iVar0, "MPBitset"))
@@ -698,11 +698,11 @@ int func_114(struct<3> Param0, struct<3> Param1, int iParam2, int iParam3, var u
 		__LIB_0__::func_854();
 		if (!uParam6->f_27 || (((((((__LIB_2__::func_971(Param0, 1, 1133903872) && !uParam6->f_28) && !Global_2815059.f_924) && !Global_2815059.f_913) && !Global_2815059.f_921) && !Global_2815059.f_925) && !Global_2815059.f_933) && !Global_2815059.f_945))
 		{
-			__LIB_23__::func_513(Param0, iParam2);
+			__LIB_23__::func_523(Param0, iParam2);
 		}
 		if (__LIB_12__::func_389(Param0))
 		{
-			__LIB_23__::func_513(Param0, iParam2);
+			__LIB_23__::func_523(Param0, iParam2);
 		}
 		Global_2667225.f_676 = 2;
 	}

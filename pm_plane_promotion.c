@@ -278,7 +278,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_39__::func_78(2);
+		__LIB_38__::func_753(2);
 		func_150();
 	}
 	func_145();
@@ -461,7 +461,7 @@ void func_1()//Position - 0xC8
 			{
 				iLocal_44++;
 			}
-			else if ((__LIB_16__::func_852() && (MISC::GET_GAME_TIMER() - iLocal_45) > 5000) && iLocal_245)
+			else if ((__LIB_16__::func_855() && (MISC::GET_GAME_TIMER() - iLocal_45) > 5000) && iLocal_245)
 			{
 				StringCopy(&cVar1, "RAND_", 16);
 				StringConCat(&cVar1, &cLocal_40, 16);
@@ -485,7 +485,7 @@ void func_1()//Position - 0xC8
 			}
 			break;
 		case 1:
-			if (__LIB_16__::func_852() && (MISC::GET_GAME_TIMER() - iLocal_45) > 1000)
+			if (__LIB_16__::func_855() && (MISC::GET_GAME_TIMER() - iLocal_45) > 1000)
 			{
 				if (__LIB_0__::func_787(&uLocal_72, &cLocal_37, "DONE", 8, 0, 0, 0))
 				{
@@ -499,13 +499,13 @@ void func_1()//Position - 0xC8
 
 void func_27()//Position - 0xEA6
 {
-	__LIB_39__::func_78(1);
+	__LIB_38__::func_753(1);
 	func_150();
 }
 
 int func_30(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, float fParam4, bool bParam5, int iParam6, char* sParam7, char* sParam8, char* sParam9, bool bParam10, int iParam11, bool bParam12, int iParam13)//Position - 0x107B
 {
-	return func_31(iParam0, Param1, __LIB_15__::func_994(), Param2, Param3, bParam5, 5, 0, 0, 0, iParam6, sParam7, __LIB_0__::func_591(), __LIB_0__::func_591(), __LIB_0__::func_591(), __LIB_0__::func_591(), sParam8, 0, bParam10, sParam9, 1, iParam11, bParam12, iParam13, __LIB_0__::func_591(), __LIB_0__::func_591(), __LIB_0__::func_591(), 1, fParam4);
+	return func_31(iParam0, Param1, __LIB_15__::func_996(), Param2, Param3, bParam5, 5, 0, 0, 0, iParam6, sParam7, __LIB_0__::func_591(), __LIB_0__::func_591(), __LIB_0__::func_591(), __LIB_0__::func_591(), sParam8, 0, bParam10, sParam9, 1, iParam11, bParam12, iParam13, __LIB_0__::func_591(), __LIB_0__::func_591(), __LIB_0__::func_591(), 1, fParam4);
 }
 
 int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, struct<3> Param4, bool bParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, char* sParam11, char* sParam12, char* sParam13, char* sParam14, char* sParam15, char* sParam16, bool bParam17, bool bParam18, char* sParam19, bool bParam20, int iParam21, bool bParam22, int iParam23, var uParam24, var uParam25, var uParam26, bool bParam27, float fParam28)//Position - 0x10D0
@@ -526,7 +526,7 @@ int func_31(int* iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3, 
 	__LIB_0__::func_590(iParam0);
 	__LIB_0__::func_589(iParam0);
 	__LIB_0__::func_496();
-	if (__LIB_15__::func_943(iParam0, iParam0->f_17[0], iParam0->f_17[1], iParam0->f_17[2], sParam12, sParam13, sParam14, sParam15, iParam0->f_8, bParam17, iParam10, 0, 0, uParam24, uParam25, uParam26, iParam6, bParam18))
+	if (__LIB_15__::func_945(iParam0, iParam0->f_17[0], iParam0->f_17[1], iParam0->f_17[2], sParam12, sParam13, sParam14, sParam15, iParam0->f_8, bParam17, iParam10, 0, 0, uParam24, uParam25, uParam26, iParam6, bParam18))
 	{
 		__LIB_0__::func_576(sParam12);
 		__LIB_0__::func_576(sParam13);
@@ -999,7 +999,7 @@ int func_76(var uParam0)//Position - 0x396E
 			}
 			if (!HUD::DOES_BLIP_EXIST(uParam0->f_5))
 			{
-				uParam0->f_5 = __LIB_23__::func_115(*uParam0, uParam0->f_3, 0);
+				uParam0->f_5 = __LIB_23__::func_125(*uParam0, uParam0->f_3, 0);
 			}
 		}
 	}
@@ -1008,7 +1008,7 @@ int func_76(var uParam0)//Position - 0x396E
 
 void func_143()//Position - 0xA7C5
 {
-	__LIB_39__::func_78(2);
+	__LIB_38__::func_753(2);
 	func_150();
 }
 
@@ -1018,7 +1018,7 @@ void func_145()//Position - 0xA7F8
 	float fVar1;
 	PATHFIND::SET_IGNORE_NO_GPS_FLAG(true);
 	HUD::REQUEST_ADDITIONAL_TEXT("PPROM", 0);
-	__LIB_15__::func_953(2, 1);
+	__LIB_15__::func_955(2, 1);
 	__LIB_0__::func_222(&uLocal_72, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 	Local_238[0 /*8*/] = { -1039.556f, -1071.2635f, 150f };
 	Local_238[0 /*8*/].f_3 = 200f;
@@ -1051,7 +1051,7 @@ void func_145()//Position - 0xA7F8
 		}
 		iVar0++;
 	}
-	switch (__LIB_39__::func_76())
+	switch (__LIB_38__::func_751())
 	{
 		case 6:
 			StringCopy(&cLocal_40, "DT", 16);

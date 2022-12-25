@@ -2074,7 +2074,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		__LIB_33__::func_281(&uLocal_1630);
+		__LIB_31__::func_752(&uLocal_1630);
 		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("M_ASS3" /* GXT: The Vice Assassination */, 0);
 		func_419(&iLocal_1461, 7f, 1);
 		if (__LIB_14__::func_578(&Local_1374))
@@ -6466,13 +6466,13 @@ void func_376(int iParam0, var uParam1, bool bParam2)//Position - 0x16967
 		STREAMING::REQUEST_PTFX_ASSET();
 	}
 	__LIB_1__::func_298(&(iParam0->f_34));
-	__LIB_33__::func_275(&(iParam0->f_46), uParam1);
+	__LIB_31__::func_746(&(iParam0->f_46), uParam1);
 	if (bParam2)
 	{
 		__LIB_14__::func_532();
 		while (!__LIB_14__::func_531())
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
@@ -6480,7 +6480,7 @@ void func_376(int iParam0, var uParam1, bool bParam2)//Position - 0x16967
 	{
 		while (((((((((!TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs_102") || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs01")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs02")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs03")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJASbs04")) || !STREAMING::HAS_ANIM_DICT_LOADED("ODDJOBS@assassinate@old_lady")) || !VEHICLE::HAS_VEHICLE_ASSET_LOADED(iParam0->f_5)) || !VEHICLE::HAS_VEHICLE_ASSET_LOADED(iParam0->f_15)) || !STREAMING::HAS_PTFX_ASSET_LOADED()) || !STREAMING::HAS_CLIP_SET_LOADED("move_m@casual@d"))
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
@@ -6488,7 +6488,7 @@ void func_376(int iParam0, var uParam1, bool bParam2)//Position - 0x16967
 	{
 		while (((((!TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_101") || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_102")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_103")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("OJAShk_104")) || !STREAMING::HAS_ANIM_DICT_LOADED("ODDJOBS@assassinate@vice@incar")) || !STREAMING::HAS_ANIM_DICT_LOADED("mini@hookers_spvanilla"))
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
@@ -6496,13 +6496,13 @@ void func_376(int iParam0, var uParam1, bool bParam2)//Position - 0x16967
 	{
 		while (!STREAMING::HAS_PTFX_ASSET_LOADED())
 		{
-			__LIB_33__::func_281(uParam1);
+			__LIB_31__::func_752(uParam1);
 			SYSTEM::WAIT(0);
 		}
 	}
-	while ((!HUD::HAS_ADDITIONAL_TEXT_LOADED(3) || !__LIB_1__::func_297(&(iParam0->f_34))) || !__LIB_38__::func_900(uParam1))
+	while ((!HUD::HAS_ADDITIONAL_TEXT_LOADED(3) || !__LIB_1__::func_297(&(iParam0->f_34))) || !__LIB_38__::func_575(uParam1))
 	{
-		__LIB_33__::func_281(uParam1);
+		__LIB_31__::func_752(uParam1);
 		SYSTEM::WAIT(0);
 	}
 	if (iParam0->f_274 == 1)
@@ -7019,7 +7019,7 @@ void func_497(var uParam0)//Position - 0x20544
 	PED::CLEAR_PED_NON_CREATION_AREA();
 	PED::STOP_ANY_PED_MODEL_BEING_SUPPRESSED();
 	AUDIO::STOP_STREAM();
-	__LIB_38__::func_901(uParam0, 0);
+	__LIB_38__::func_576(uParam0, 0);
 	PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

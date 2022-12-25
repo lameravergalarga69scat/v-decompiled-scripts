@@ -88,23 +88,23 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_39__::func_642();
+		__LIB_39__::func_317();
 	}
 	CAM::DO_SCREEN_FADE_OUT(0);
 	GRAPHICS::SET_DEBUG_LINES_AND_SPHERES_DRAWING_ACTIVE(true);
 	__LIB_0__::func_671(1);
 	bLocal_64 = false;
 	CUTSCENE::REQUEST_CUTSCENE("fos_ep_1_p1", 8);
-	__LIB_39__::func_641(0);
+	__LIB_39__::func_316(0);
 	__LIB_0__::func_532(1, 1, 1, 0, 0, 0, 0);
 	while (true)
 	{
 		VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 		PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 		__LIB_0__::func_715(PLAYER::PLAYER_PED_ID());
-		if (__LIB_33__::func_514())
+		if (__LIB_31__::func_997())
 		{
-			__LIB_39__::func_642();
+			__LIB_39__::func_317();
 		}
 		if (bLocal_56)
 		{

@@ -194,7 +194,7 @@ void __EntryFunction__()//Position - 0x0
 				iLocal_45 = 3;
 				break;
 			case 3:
-				if (((__LIB_37__::func_602(&iLocal_47) > ScriptParam_50.f_67 && ScriptParam_50.f_67 != -1f) || CAM::IS_SCREEN_FADED_OUT()) || Global_32104)
+				if (((__LIB_37__::func_276(&iLocal_47) > ScriptParam_50.f_67 && ScriptParam_50.f_67 != -1f) || CAM::IS_SCREEN_FADED_OUT()) || Global_32104)
 				{
 					func_19();
 				}

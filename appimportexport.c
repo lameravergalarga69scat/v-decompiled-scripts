@@ -803,7 +803,7 @@ void __EntryFunction__()//Position - 0x0
 	Global_75592 = 0;
 	if (__LIB_13__::func_170(PLAYER::PLAYER_ID()))
 	{
-		uLocal_553 = __LIB_37__::func_552(PLAYER::PLAYER_ID());
+		uLocal_553 = __LIB_37__::func_226(PLAYER::PLAYER_ID());
 	}
 	Global_1946220 = 0;
 	__LIB_1__::func_376(PLAYER::PLAYER_ID(), 0, 0, 0);
@@ -903,7 +903,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 2:
-				if (func_78(__LIB_36__::func_618(), 1))
+				if (func_78(__LIB_36__::func_290(), 1))
 				{
 					func_4();
 					while (__LIB_0__::func_334(PLAYER::PLAYER_ID()))
@@ -932,7 +932,7 @@ void func_4()//Position - 0x413
 	int iVar0;
 	var uVar1[4];
 	bool bVar2;
-	bVar2 = __LIB_36__::func_618();
+	bVar2 = __LIB_36__::func_290();
 	MISC::CLEAR_BIT(&(Global_1946250.f_4), 5);
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -947,11 +947,11 @@ void func_4()//Position - 0x413
 		}
 		iVar0++;
 	}
-	if (iLocal_557 == 0 || __LIB_36__::func_618())
+	if (iLocal_557 == 0 || __LIB_36__::func_290())
 	{
 		__LIB_4__::func_794(PLAYER::PLAYER_ID(), 1);
 	}
-	if (__LIB_33__::func_209(iLocal_557, func_76(bVar2), bVar2))
+	if (__LIB_31__::func_678(iLocal_557, func_76(bVar2), bVar2))
 	{
 		func_49(188, uVar1[0], uVar1[1], uVar1[2], uVar1[3], 0);
 		func_11(&uVar1);
@@ -1038,12 +1038,12 @@ void func_12(var uParam0)//Position - 0x659
 		if (iVar1 != 0)
 		{
 			func_26(iVar1);
-			__LIB_39__::func_653(iVar1);
+			__LIB_39__::func_328(iVar1);
 			func_17(iVar1);
 			iVar2 = (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_142.f_1 - 1);
 			if (iVar2 >= 0)
 			{
-				__LIB_27__::func_367(iVar2);
+				__LIB_27__::func_377(iVar2);
 			}
 		}
 		iVar0++;
@@ -1060,9 +1060,9 @@ void func_17(int iParam0)//Position - 0x7E3
 	iVar0 = 0;
 	while (iVar0 < 40)
 	{
-		if (__LIB_0__::func_253(__LIB_27__::func_369(iVar0), -1) == iParam0)
+		if (__LIB_0__::func_253(__LIB_27__::func_379(iVar0), -1) == iParam0)
 		{
-			__LIB_1__::func_379(__LIB_27__::func_369(iVar0), 0, -1);
+			__LIB_1__::func_379(__LIB_27__::func_379(iVar0), 0, -1);
 		}
 		else
 		{
@@ -1081,7 +1081,7 @@ void func_18()//Position - 0x821
 	iVar1 = 0;
 	while (iVar1 < 40)
 	{
-		iVar2[iVar1] = __LIB_0__::func_253(__LIB_27__::func_369(iVar1), -1);
+		iVar2[iVar1] = __LIB_0__::func_253(__LIB_27__::func_379(iVar1), -1);
 		if ((iVar2[iVar1] / 32) < iVar3)
 		{
 			if (!BitTest(iVar3[(iVar2[iVar1] / 32)], (iVar2[iVar1] % 32)))
@@ -1117,7 +1117,7 @@ void func_18()//Position - 0x821
 	iVar1 = 0;
 	while (iVar1 < 40)
 	{
-		__LIB_1__::func_379(__LIB_27__::func_369(iVar1), iVar2[iVar1], -1);
+		__LIB_1__::func_379(__LIB_27__::func_379(iVar1), iVar2[iVar1], -1);
 		iVar1++;
 	}
 }
@@ -1128,9 +1128,9 @@ void func_26(int iParam0)//Position - 0xC7C
 	iVar0 = 0;
 	while (iVar0 < 40)
 	{
-		if (__LIB_0__::func_369(__LIB_27__::func_368(iVar0), -1, 0) == iParam0)
+		if (__LIB_0__::func_369(__LIB_27__::func_378(iVar0), -1, 0) == iParam0)
 		{
-			__LIB_0__::func_413(__LIB_27__::func_368(iVar0), 0, -1, 1, 0);
+			__LIB_0__::func_413(__LIB_27__::func_378(iVar0), 0, -1, 1, 0);
 		}
 		else
 		{
@@ -1170,7 +1170,7 @@ bool func_28(int iParam0, int iParam1, var uParam2)//Position - 0xEAB
 					{
 						(*iParam1)[iVar0] = 0;
 					}
-					iVar1 = __LIB_39__::func_655((*iParam0)[iVar0]);
+					iVar1 = __LIB_39__::func_330((*iParam0)[iVar0]);
 					if (__LIB_13__::func_175(joaat("NET_SHOP_TTYPE_BASKET"), joaat("CATEGORY_WAREHOUSE_VEHICLE_INDEX"), iVar1, joaat("NET_SHOP_ACTION_UPDATE_WAREHOUSE_VEHICLE"), (*iParam1)[iVar0], 0, 0, 4, 0, 3))
 					{
 						*uParam2 = 1;
@@ -1270,9 +1270,9 @@ int func_78(bool bParam0, bool bParam1)//Position - 0x3020
 		iLocal_550 = 16;
 		return 0;
 	}
-	if (!__LIB_41__::func_258(PLAYER::PLAYER_ID(), 188, 0))
+	if (!__LIB_40__::func_936(PLAYER::PLAYER_ID(), 188, 0))
 	{
-		iLocal_550 = __LIB_33__::func_253(PLAYER::PLAYER_ID(), 188, 0);
+		iLocal_550 = __LIB_31__::func_723(PLAYER::PLAYER_ID(), 188, 0);
 		if (iLocal_550 == 16)
 		{
 			iLocal_550 = 19;
@@ -1454,7 +1454,7 @@ void func_263()//Position - 0xB310
 				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, func_310(iVar3), "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
 			}
-			else if (func_82() < __LIB_27__::func_365(iVar3))
+			else if (func_82() < __LIB_27__::func_375(iVar3))
 			{
 				func_317("AH_BUYER_T" /* GXT: EXPORT VEHICLES */, "AH_COL_PLAYERD" /* GXT: You need to have more Associates present in your warehouse in order to sell this vehicle collection. */, "OR_OVRLY_OK" /* GXT: Ok */, "", -1, -1);
 				bVar1 = false;
@@ -1702,7 +1702,7 @@ int func_265(int iParam0, bool bParam1)//Position - 0xBA12
 		if (iLocal_554[iVar0] != 0)
 		{
 			iVar2 = iLocal_554[iVar0];
-			iVar1 = (iVar1 + __LIB_36__::func_663(__LIB_13__::func_167(iVar2), iParam0, bParam1, 0, 0));
+			iVar1 = (iVar1 + __LIB_36__::func_335(__LIB_13__::func_167(iVar2), iParam0, bParam1, 0, 0));
 		}
 		iVar0++;
 	}
@@ -1983,7 +1983,7 @@ void func_289(bool bParam0)//Position - 0x14E38
 	}
 	else
 	{
-		__LIB_27__::func_364();
+		__LIB_27__::func_374();
 	}
 	__LIB_4__::func_792(0);
 	func_290(iLocal_556[0], iLocal_556[1], iLocal_556[2], iLocal_556[3], Global_1835008[0 /*103*/].f_101, Global_1835008[1 /*103*/].f_101, Global_1835008[2 /*103*/].f_101, Global_1835008[3 /*103*/].f_101, iLocal_557, bParam0);
@@ -2008,7 +2008,7 @@ void func_290(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	Var0.f_7[3] = uParam7;
 	Var0.f_12 = iParam8;
 	Var0.f_13 = bParam9;
-	iVar1 = __LIB_31__::func_957(1, 1);
+	iVar1 = __LIB_35__::func_710(1, 1);
 	if (!iVar1 == 0)
 	{
 		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 14, iVar1);
@@ -2102,7 +2102,7 @@ void func_304(int iParam0)//Position - 0x1542B
 	struct<2> Var0;
 	int iVar1;
 	Var0.f_1 = 4;
-	__LIB_30__::func_4(&Var0, iParam0);
+	__LIB_30__::func_14(&Var0, iParam0);
 	iVar1 = 0;
 	while (iVar1 < 4)
 	{
@@ -2141,7 +2141,7 @@ void func_308(bool bParam0, bool bParam1)//Position - 0x156DD
 char* func_310(int iParam0)//Position - 0x157AF
 {
 	int iVar0;
-	iVar0 = __LIB_27__::func_365(iParam0);
+	iVar0 = __LIB_27__::func_375(iParam0);
 	switch (iVar0)
 	{
 		case 2:
@@ -2160,7 +2160,7 @@ int func_311(int iParam0)//Position - 0x157F1
 	int iVar0;
 	struct<2> Var1;
 	Var1.f_1 = 4;
-	__LIB_30__::func_4(&Var1, iParam0);
+	__LIB_30__::func_14(&Var1, iParam0);
 	iVar0 = 0;
 	while (iVar0 < Var1.f_0)
 	{
@@ -2862,7 +2862,7 @@ void func_385(int iParam0)//Position - 0x17571
 	{
 		return;
 	}
-	iVar0 = __LIB_30__::func_3(iParam0, 1);
+	iVar0 = __LIB_30__::func_13(iParam0, 1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_559, "UPDATE_COLLECTION");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
@@ -2905,9 +2905,9 @@ void func_388(int iParam0, bool bParam1)//Position - 0x17744
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	iVar0 = __LIB_36__::func_663(__LIB_13__::func_167(iParam0), 6, 0, 0, 0);
-	iVar1 = __LIB_36__::func_663(__LIB_13__::func_167(iParam0), 19, 0, 0, 1);
-	iVar2 = __LIB_36__::func_663(__LIB_13__::func_167(iParam0), 6, 0, 1, 0);
+	iVar0 = __LIB_36__::func_335(__LIB_13__::func_167(iParam0), 6, 0, 0, 0);
+	iVar1 = __LIB_36__::func_335(__LIB_13__::func_167(iParam0), 19, 0, 0, 1);
+	iVar2 = __LIB_36__::func_335(__LIB_13__::func_167(iParam0), 6, 0, 1, 0);
 	iVar3 = 0;
 	if (iVar0 >= Global_262145.f_19457 /* Tunable: IMPEXP_SELL_BUYER1_OFFER_HARD */)
 	{

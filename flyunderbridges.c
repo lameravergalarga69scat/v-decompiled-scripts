@@ -270,7 +270,7 @@ void func_1()//Position - 0x53A
 			{
 				STATS::STAT_INCREMENT(joaat("SP_UNDER_THE_BRIDGE_COUNT"), 1f);
 			}
-			__LIB_17__::func_216(__LIB_0__::func_683(), 5, 3);
+			__LIB_17__::func_219(__LIB_0__::func_683(), 5, 3);
 			__LIB_0__::func_210();
 		}
 		if (bLocal_31 < 32)
@@ -380,7 +380,7 @@ void func_17()//Position - 0xA32
 			}
 			break;
 		case 1:
-			if ((((((SYSTEM::TIMERB() > 3750 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_903())
+			if ((((((SYSTEM::TIMERB() > 3750 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_578())
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_30, "SHARD_ANIM_OUT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -399,7 +399,7 @@ void func_17()//Position - 0xA32
 			}
 			break;
 		case 2:
-			if ((((((SYSTEM::TIMERB() > 500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_903())
+			if ((((((SYSTEM::TIMERB() > 500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_578())
 			{
 				iLocal_28 = 3;
 			}
@@ -1050,8 +1050,8 @@ int func_30()//Position - 0x2D90
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	iVar2 = __LIB_39__::func_749();
-	iVar1 = __LIB_42__::func_753();
+	iVar2 = __LIB_39__::func_425();
+	iVar1 = __LIB_42__::func_628();
 	if ((iVar2 + iVar1) > 0)
 	{
 		__LIB_0__::func_4(32, (iVar2 + iVar1));

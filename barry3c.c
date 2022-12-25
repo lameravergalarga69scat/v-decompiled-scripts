@@ -2778,7 +2778,7 @@ void func_383()//Position - 0x36288
 	__LIB_0__::func_106(&iLocal_114);
 	__LIB_0__::func_106(&(Local_97.f_4));
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("towtruck"), false);
-	__LIB_28__::func_216(0);
+	__LIB_28__::func_226(0);
 	__LIB_14__::func_871(&Local_79, 1, 0, 0);
 }
 
@@ -3200,7 +3200,7 @@ void func_455()//Position - 0x38302
 	PATHFIND::SET_GPS_DISABLED_ZONE(-1188.409f, -1233.0059f, 0f, -1165.7822f, -1214.3778f, 15f);
 	HUD::REQUEST_ADDITIONAL_TEXT("BARR3C", 0);
 	Local_112 = { -1152.43f, -1238.8237f, 5.9752f };
-	iLocal_80 = __LIB_37__::func_576();
+	iLocal_80 = __LIB_37__::func_250();
 	iLocal_113[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-1156.9f, -1274f, 0f, -1141.5f, -1239.6f, 8f, false, true, true, true);
 	iLocal_113[1] = PED::ADD_SCENARIO_BLOCKING_AREA(-1177f, -1292f, 0f, -1160f, -1273.3f, 8f, false, true, true, true);
 	Local_97.f_5 = joaat("emperor2");
@@ -3243,7 +3243,7 @@ void func_455()//Position - 0x38302
 	__LIB_0__::func_712(49, 1, 0);
 	iLocal_307 = 0;
 	PATHFIND::SET_GPS_DISABLED_ZONE(-1132.88f, -1262.01f, 0f, -1102.43f, -1196.58f, 15f);
-	__LIB_28__::func_216(1);
+	__LIB_28__::func_226(1);
 }
 
 void func_463()//Position - 0x388D3

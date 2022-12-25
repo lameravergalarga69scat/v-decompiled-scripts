@@ -335,7 +335,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_257 = 0.51f;
 	fLocal_258 = 0.55f;
 	fLocal_259 = 25f;
-	__LIB_43__::func_388();
+	__LIB_43__::func_269();
 	Global_1836384 = 1;
 }
 

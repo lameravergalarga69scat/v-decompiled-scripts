@@ -149,14 +149,14 @@ void __EntryFunction__()//Position - 0x0
 			func_55();
 		}
 	}
-	__LIB_32__::func_553();
+	__LIB_30__::func_985();
 }
 
 void func_55()//Position - 0x1311
 {
 	if (func_56(&Local_93))
 	{
-		__LIB_32__::func_553();
+		__LIB_30__::func_985();
 	}
 }
 

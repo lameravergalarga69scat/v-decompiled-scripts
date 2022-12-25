@@ -256,7 +256,7 @@ void func_9(var uParam0)//Position - 0x2C9
 			}
 			break;
 		case 2:
-			if (__LIB_13__::func_598(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_15__::func_800(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
+			if (__LIB_13__::func_598(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_15__::func_801(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
 			{
 				if ((func_60(uParam0) || func_56(uParam0)) || !func_55(uParam0))
 				{
@@ -535,7 +535,7 @@ void func_16(var uParam0)//Position - 0x98D
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 143 /*INPUT_MELEE_BLOCK*/, true);
 			PAD::DISABLE_CONTROL_ACTION(2 /*FRONTEND_CONTROL*/, 200 /*INPUT_FRONTEND_PAUSE_ALTERNATE*/, true);
 			bVar2 = false;
-			if (((__LIB_15__::func_798(__LIB_4__::func_473()) && __LIB_13__::func_736()) && __LIB_3__::func_595(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_11__::func_410(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
+			if (((__LIB_15__::func_799(__LIB_4__::func_473()) && __LIB_13__::func_736()) && __LIB_3__::func_595(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_11__::func_410(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
 			{
 				bVar2 = true;
 			}
@@ -646,7 +646,7 @@ void func_16(var uParam0)//Position - 0x98D
 					{
 						func_30(uParam0);
 					}
-					if (((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar3)) && __LIB_15__::func_798(__LIB_4__::func_473())) && __LIB_13__::func_736()) && __LIB_3__::func_595(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_11__::func_410(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
+					if (((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 203 /*INPUT_FRONTEND_X*/) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar3)) && __LIB_15__::func_799(__LIB_4__::func_473())) && __LIB_13__::func_736()) && __LIB_3__::func_595(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9, 4)) && __LIB_11__::func_410(Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_9))
 					{
 						Global_2789737 = 1;
 						Global_2789734 = 1;
@@ -1007,7 +1007,7 @@ void func_50(var uParam0, char* sParam1)//Position - 0x19D1
 
 void func_51(var uParam0)//Position - 0x1BE9
 {
-	uParam0->f_43.f_8 = __LIB_15__::func_799((*uParam0)[uParam0->f_43.f_2 /*14*/]);
+	uParam0->f_43.f_8 = __LIB_15__::func_800((*uParam0)[uParam0->f_43.f_2 /*14*/]);
 	uParam0->f_43.f_8.f_1 = func_52(uParam0);
 	uParam0->f_43.f_8.f_2 = 3;
 	uParam0->f_43.f_8.f_3 = 3;
@@ -1113,7 +1113,7 @@ int func_64(var uParam0)//Position - 0x2099
 	iVar0 = 0;
 	while (iVar0 < 1)
 	{
-		if (__LIB_13__::func_598(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_15__::func_800(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
+		if (__LIB_13__::func_598(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_43.f_2 /*14*/]) && __LIB_15__::func_801(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_43.f_2 /*14*/])->f_8.f_3, (*uParam0)[uParam0->f_43.f_2 /*14*/]))
 		{
 			return 1;
 		}
@@ -1216,8 +1216,8 @@ void func_85(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x2
 	(*uParam1)[iParam2 /*14*/] = iParam3;
 	(uParam1[iParam2 /*14*/])->f_8 = { Var0 };
 	(uParam1[iParam2 /*14*/])->f_8.f_3 = { 0f, 0f, fVar1 };
-	(uParam1[iParam2 /*14*/])->f_1 = { __LIB_0__::func_327(__LIB_13__::func_739(), __LIB_16__::func_145(iParam3, fVar1)) + Var0 };
-	(uParam1[iParam2 /*14*/])->f_1.f_3 = { __LIB_0__::func_327(__LIB_13__::func_738(), __LIB_16__::func_145(iParam3, fVar1)) + Var0 };
+	(uParam1[iParam2 /*14*/])->f_1 = { __LIB_0__::func_327(__LIB_13__::func_739(), __LIB_16__::func_148(iParam3, fVar1)) + Var0 };
+	(uParam1[iParam2 /*14*/])->f_1.f_3 = { __LIB_0__::func_327(__LIB_13__::func_738(), __LIB_16__::func_148(iParam3, fVar1)) + Var0 };
 	(uParam1[iParam2 /*14*/])->f_1.f_6 = 1.25f;
 }
 

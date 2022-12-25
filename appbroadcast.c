@@ -127,7 +127,7 @@ void func_3()//Position - 0x14A
 
 int func_16()//Position - 0x4E1
 {
-	if (!__LIB_1__::func_455(PLAYER::PLAYER_ID(), 1) && __LIB_17__::func_53())
+	if (!__LIB_1__::func_455(PLAYER::PLAYER_ID(), 1) && __LIB_17__::func_56())
 	{
 		return 1;
 	}

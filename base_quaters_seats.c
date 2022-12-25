@@ -884,8 +884,8 @@ int func_70()//Position - 0x17F9
 
 void func_71()//Position - 0x185B
 {
-	__LIB_41__::func_276(2, &uLocal_93, 0);
-	__LIB_41__::func_276(3, &uLocal_93, 1);
+	__LIB_40__::func_954(2, &uLocal_93, 0);
+	__LIB_40__::func_954(3, &uLocal_93, 1);
 	func_72(&uLocal_93, 6294/*func_73*/);
 }
 
@@ -902,7 +902,7 @@ bool func_73(var uParam0, var uParam1)//Position - 0x1896
 
 void func_81()//Position - 0x1A91
 {
-	__LIB_41__::func_277(2, &uLocal_93, 0);
-	__LIB_41__::func_277(3, &uLocal_93, 1);
+	__LIB_40__::func_955(2, &uLocal_93, 0);
+	__LIB_40__::func_955(3, &uLocal_93, 1);
 }
 

@@ -54,7 +54,7 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0xAF
 {
-	__LIB_38__::func_718("ob_abattoir Terminated >>>>>>>>>>>>>>>>>\n");
+	__LIB_38__::func_393("ob_abattoir Terminated >>>>>>>>>>>>>>>>>\n");
 	STREAMING::REMOVE_ANIM_DICT("MISSMIC2");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

@@ -404,7 +404,7 @@ void __EntryFunction__()//Position - 0x0
 					func_5();
 					func_4();
 				}
-				else if (__LIB_33__::func_513(0))
+				else if (__LIB_31__::func_996(0))
 				{
 					func_89(1);
 				}
@@ -807,7 +807,7 @@ int func_16(int iParam0, int iParam1, var uParam2, var uParam3, bool bParam4, bo
 		bVar1 = !__LIB_0__::func_703(*uParam2, 128);
 		if (bParam4)
 		{
-			if (__LIB_39__::func_645(iParam0, iParam1, 1, bParam6, bVar1, 1))
+			if (__LIB_39__::func_320(iParam0, iParam1, 1, bParam6, bVar1, 1))
 			{
 				*uParam3 = 32;
 				return 1;
@@ -815,7 +815,7 @@ int func_16(int iParam0, int iParam1, var uParam2, var uParam3, bool bParam4, bo
 		}
 		else if (!__LIB_0__::func_703(*uParam2, 16))
 		{
-			if (__LIB_39__::func_645(iParam0, iParam1, 0, bParam6, bVar1, bParam8))
+			if (__LIB_39__::func_320(iParam0, iParam1, 0, bParam6, bVar1, bParam8))
 			{
 				*uParam3 = 16;
 				return 1;
@@ -869,13 +869,13 @@ void func_27()//Position - 0x200E
 			}
 			if (bLocal_292)
 			{
-				if (!__LIB_40__::func_805())
+				if (!__LIB_40__::func_481())
 				{
 					bLocal_292 = false;
 					VEHICLE::SET_VEHICLE_SEARCHLIGHT(iLocal_289, false, false);
 				}
 			}
-			else if (__LIB_40__::func_805())
+			else if (__LIB_40__::func_481())
 			{
 				bLocal_292 = true;
 				VEHICLE::SET_VEHICLE_SEARCHLIGHT(iLocal_289, true, false);
@@ -1145,7 +1145,7 @@ void func_30()//Position - 0x256E
 			VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_263[iVar0], false, false, false);
 			if (iLocal_265[iVar0])
 			{
-				if (!__LIB_40__::func_805())
+				if (!__LIB_40__::func_481())
 				{
 					if (!ENTITY::IS_ENTITY_DEAD(iLocal_263[iVar0], false))
 					{
@@ -1154,7 +1154,7 @@ void func_30()//Position - 0x256E
 					}
 				}
 			}
-			else if (__LIB_40__::func_805())
+			else if (__LIB_40__::func_481())
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(iLocal_263[iVar0], false))
 				{
@@ -1271,7 +1271,7 @@ void func_34()//Position - 0x2A63
 			{
 				if (__LIB_0__::func_875(Var0, 4, 150, 0))
 				{
-					__LIB_15__::func_953(4, 1);
+					__LIB_15__::func_955(4, 1);
 					if (!__LIB_1__::func_13(&iLocal_78))
 					{
 						__LIB_1__::func_362(&iLocal_78);
@@ -1291,7 +1291,7 @@ void func_34()//Position - 0x2A63
 				}
 				else
 				{
-					__LIB_15__::func_953(4, 0);
+					__LIB_15__::func_955(4, 0);
 					if (__LIB_1__::func_13(&iLocal_78))
 					{
 						__LIB_1__::func_31(&iLocal_78);
@@ -1301,7 +1301,7 @@ void func_34()//Position - 0x2A63
 			}
 			else
 			{
-				__LIB_15__::func_953(4, 0);
+				__LIB_15__::func_955(4, 0);
 				if (__LIB_1__::func_13(&iLocal_78))
 				{
 					__LIB_1__::func_31(&iLocal_78);
@@ -1320,7 +1320,7 @@ void func_34()//Position - 0x2A63
 							PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(PLAYER::PLAYER_ID(), false);
 							bLocal_61 = true;
 							bLocal_58 = false;
-							__LIB_15__::func_953(4, 0);
+							__LIB_15__::func_955(4, 0);
 						}
 					}
 				}
@@ -1476,7 +1476,7 @@ void func_69()//Position - 0x397E
 		VEHICLE::SET_HELI_BLADES_FULL_SPEED(iLocal_289);
 		ENTITY::SET_ENTITY_VELOCITY(iLocal_289, 0f, 0f, 10f);
 		ENTITY::SET_ENTITY_LOD_DIST(iLocal_289, 500);
-		if (__LIB_40__::func_805())
+		if (__LIB_40__::func_481())
 		{
 			bLocal_292 = true;
 			VEHICLE::SET_VEHICLE_SEARCHLIGHT(iLocal_289, true, false);
@@ -1768,7 +1768,7 @@ void func_73()//Position - 0x484E
 	{
 		if ((ENTITY::DOES_ENTITY_EXIST(iLocal_264[iVar0]) && !ENTITY::IS_ENTITY_DEAD(iLocal_264[iVar0], false)) && !ENTITY::IS_ENTITY_DEAD(iLocal_263[iVar0], false))
 		{
-			if (__LIB_40__::func_805())
+			if (__LIB_40__::func_481())
 			{
 				iLocal_265[iVar0] = 1;
 				VEHICLE::SET_VEHICLE_SEARCHLIGHT(iLocal_263[iVar0], true, false);
@@ -1952,7 +1952,7 @@ void func_83()//Position - 0x4EA1
 void func_84()//Position - 0x4F55
 {
 	bLocal_294 = false;
-	if (__LIB_40__::func_805())
+	if (__LIB_40__::func_481())
 	{
 		iLocal_295 = (MISC::GET_RANDOM_INT_IN_RANGE(0, 65535) % 2);
 		if (iLocal_295 == 0)
@@ -2232,7 +2232,7 @@ void func_95()//Position - 0x5687
 		}
 		else
 		{
-			__LIB_39__::func_394(&iLocal_289, &iLocal_290);
+			__LIB_39__::func_69(&iLocal_289, &iLocal_290);
 			ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_289);
 		}
 	}

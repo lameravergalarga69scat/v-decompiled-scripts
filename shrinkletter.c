@@ -273,47 +273,47 @@ void __EntryFunction__()//Position - 0x0
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_53, "SET_LETTER_TEXT");
 				__LIB_0__::func_610("HEADER_1");
 				__LIB_0__::func_610("HEADER_2");
-				Var0 = { __LIB_39__::func_703(&uLocal_54) };
+				Var0 = { __LIB_39__::func_379(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_702(&uLocal_54) };
+				Var0 = { __LIB_39__::func_378(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_701(&uLocal_54) };
+				Var0 = { __LIB_39__::func_377(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_700(&uLocal_54) };
+				Var0 = { __LIB_39__::func_376(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_699(&uLocal_54) };
+				Var0 = { __LIB_39__::func_375(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_42__::func_748(&uLocal_54) };
+				Var0 = { __LIB_42__::func_623(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
 				Var0 = { func_33(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_696(&uLocal_54) };
+				Var0 = { __LIB_39__::func_372(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_695(&uLocal_54) };
+				Var0 = { __LIB_39__::func_371(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_694(&uLocal_54) };
+				Var0 = { __LIB_39__::func_370(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_705(&uLocal_54) };
+				Var0 = { __LIB_39__::func_381(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_706(&uLocal_54) };
+				Var0 = { __LIB_39__::func_382(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_693(&uLocal_54) };
+				Var0 = { __LIB_39__::func_369(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_704(&uLocal_54) };
+				Var0 = { __LIB_39__::func_380(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
-				Var0 = { __LIB_39__::func_692(&uLocal_54) };
+				Var0 = { __LIB_39__::func_368(&uLocal_54) };
 				__LIB_0__::func_610(&Var0);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-				while (!__LIB_42__::func_747(&uLocal_70, &iLocal_71, &uLocal_54))
+				while (!__LIB_42__::func_622(&uLocal_70, &iLocal_71, &uLocal_54))
 				{
 					func_43();
 					SYSTEM::WAIT(0);
 				}
 				__LIB_2__::func_540(&iLocal_72);
-				__LIB_38__::func_939(&iLocal_72, 0, 0, 0, 1);
-				__LIB_17__::func_694(&iLocal_72, "CONTINUE", 2, 201, 1, 1, 0);
-				__LIB_38__::func_936(&iLocal_72, 1);
-				__LIB_39__::func_690(&iLocal_72, 1);
+				__LIB_38__::func_614(&iLocal_72, 0, 0, 0, 1);
+				__LIB_17__::func_697(&iLocal_72, "CONTINUE", 2, 201, 1, 1, 0);
+				__LIB_38__::func_611(&iLocal_72, 1);
+				__LIB_39__::func_366(&iLocal_72, 1);
 				if (CAM::IS_SCREEN_FADED_OUT())
 				{
 					if (!CAM::IS_SCREEN_FADING_IN())
@@ -337,7 +337,7 @@ void __EntryFunction__()//Position - 0x0
 			case 2:
 				GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
 				GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_53, 255, 255, 255, 255, 0);
-				__LIB_16__::func_967(&iLocal_72, 1128792064, 1, 0, 1, 1065353216);
+				__LIB_16__::func_970(&iLocal_72, 1128792064, 1, 0, 1, 1065353216);
 				if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 				{
 					iLocal_52 = 3;
@@ -373,7 +373,7 @@ struct<4> func_33(var uParam0)//Position - 0x12E6
 	struct<4> Var0;
 	int iVar1;
 	StringCopy(&Var0, "FAMILY_", 16);
-	if (__LIB_39__::func_697(8) && __LIB_39__::func_697(5))
+	if (__LIB_39__::func_373(8) && __LIB_39__::func_373(5))
 	{
 		StringCopy(&(uParam0->f_7), "Y", 4);
 		StringConCat(&Var0, "Y", 16);

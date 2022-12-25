@@ -1161,7 +1161,7 @@ int func_69(int iParam0)//Position - 0x2A09
 	{
 		if (ENTITY::IS_ENTITY_A_VEHICLE(iParam0))
 		{
-			if (__LIB_19__::func_916(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iParam0), 0, 0))
+			if (__LIB_19__::func_926(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iParam0), 0, 0))
 			{
 				return 1;
 			}
@@ -2178,7 +2178,7 @@ int func_116()//Position - 0x4645
 			{
 				if (__LIB_0__::func_172(__LIB_0__::func_888(Global_1853193)) == 11)
 				{
-					if (__LIB_0__::func_172(__LIB_19__::func_209(Global_1853193)) == 11)
+					if (__LIB_0__::func_172(__LIB_19__::func_219(Global_1853193)) == 11)
 					{
 						if (__LIB_0__::func_394(Global_1853193) == 5)
 						{
@@ -2352,7 +2352,7 @@ void func_138()//Position - 0x4C8B
 	struct<3> Var0;
 	if (func_137())
 	{
-		if (__LIB_33__::func_135())
+		if (__LIB_31__::func_597())
 		{
 			if (PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
 			{
@@ -2430,7 +2430,7 @@ void func_166()//Position - 0x5B3A
 			{
 				if (func_165())
 				{
-					if ((func_168() && !__LIB_33__::func_135()) && __LIB_0__::func_1("MP_HTRUCK_T_2" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to use the Multi-Lock Missile Battery.~n~Press ~INPUT_CONTEXT~ to stand up. */))
+					if ((func_168() && !__LIB_31__::func_597()) && __LIB_0__::func_1("MP_HTRUCK_T_2" /* GXT: Press ~INPUT_CELLPHONE_SELECT~ to use the Multi-Lock Missile Battery.~n~Press ~INPUT_CONTEXT~ to stand up. */))
 					{
 						if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 176 /*INPUT_CELLPHONE_SELECT*/) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 176 /*INPUT_CELLPHONE_SELECT*/))
 						{
@@ -2788,7 +2788,7 @@ void func_194(bool bParam0)//Position - 0x63A3
 	}
 	if (!bParam0)
 	{
-		__LIB_29__::func_960(0);
+		__LIB_29__::func_970(0);
 		__LIB_0__::func_202();
 	}
 	else

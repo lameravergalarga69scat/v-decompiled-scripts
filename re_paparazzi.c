@@ -295,12 +295,12 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_280();
 	}
-	__LIB_39__::func_402(&uLocal_74, 3);
+	__LIB_39__::func_77(&uLocal_74, 3);
 	if (!Global_3)
 	{
-		if (__LIB_39__::func_371(Local_48, -1, 0, 0, 0))
+		if (__LIB_39__::func_46(Local_48, -1, 0, 0, 0))
 		{
-			__LIB_39__::func_334(-1);
+			__LIB_39__::func_9(-1);
 		}
 		else
 		{
@@ -319,10 +319,10 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		__LIB_39__::func_405(&uLocal_74);
-		if (!__LIB_39__::func_333())
+		__LIB_39__::func_80(&uLocal_74);
+		if (!__LIB_39__::func_8())
 		{
-			if (__LIB_39__::func_340())
+			if (__LIB_39__::func_15())
 			{
 				func_280();
 			}
@@ -358,7 +358,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			Local_54 = { ENTITY::GET_ENTITY_COORDS(iLocal_70, true) };
 		}
-		if (!__LIB_39__::func_333())
+		if (!__LIB_39__::func_8())
 		{
 			if (BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE())
 			{
@@ -370,7 +370,7 @@ void __EntryFunction__()//Position - 0x0
 							func_213();
 							iLocal_130++;
 						}
-						else if (__LIB_39__::func_370())
+						else if (__LIB_39__::func_45())
 						{
 							func_280();
 						}
@@ -386,7 +386,7 @@ void __EntryFunction__()//Position - 0x0
 						}
 						else if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 281.00742f, 192.48048f, 58.088165f, 228.82909f, 50.88667f, 111.61044f, 82.75f, false, true, 0))
 						{
-							__LIB_39__::func_336(1);
+							__LIB_39__::func_11(1);
 							iLocal_121 = __LIB_0__::func_666(iLocal_67, 0, 145);
 							func_188("MAG_2_ESCAPE_PAP_GET_CAR");
 							func_187(0);
@@ -434,7 +434,7 @@ void __EntryFunction__()//Position - 0x0
 				case 9:
 					break;
 				case 8:
-					if (__LIB_39__::func_372())
+					if (__LIB_39__::func_47())
 					{
 						if (ENTITY::DOES_ENTITY_EXIST(iLocal_67))
 						{
@@ -488,7 +488,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_109[iVar1 /*18*/], true), Local_52) < (30.5f * 30.5f) && SYSTEM::VDIST2(Local_53, Local_52) > (22.5f * 22.5f))
 					{
-						if (__LIB_39__::func_333())
+						if (__LIB_39__::func_8())
 						{
 							if (Local_139[4 /*10*/] != Local_109[iVar1 /*18*/])
 							{
@@ -1613,7 +1613,7 @@ void func_46(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, va
 		{
 			if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(iParam1, true), *uParam4, true) > 20f)
 			{
-				if (__LIB_39__::func_401(iParam0, iParam1, iLocal_119, ENTITY::GET_ENTITY_COORDS(iParam1, true), ENTITY::GET_ENTITY_ROTATION(iParam1, 2)))
+				if (__LIB_39__::func_76(iParam0, iParam1, iLocal_119, ENTITY::GET_ENTITY_COORDS(iParam1, true), ENTITY::GET_ENTITY_ROTATION(iParam1, 2)))
 				{
 					*uParam2 = { *uParam4 };
 					*uParam3 = *uParam5;
@@ -2442,7 +2442,7 @@ void func_82()//Position - 0x4EEF
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_67, false);
 		}
 	}
-	__LIB_39__::func_369(-1, 0);
+	__LIB_39__::func_44(-1, 0);
 	__LIB_14__::func_557();
 	AUDIO::UNLOCK_MISSION_NEWS_STORY(62);
 	func_280();
@@ -3313,7 +3313,7 @@ void func_159()//Position - 0x8AB3
 					PLAYER::SET_WANTED_LEVEL_MULTIPLIER(0.5f);
 					iLocal_130++;
 				}
-				if (!__LIB_39__::func_346())
+				if (!__LIB_39__::func_21())
 				{
 					func_168();
 				}
@@ -3544,7 +3544,7 @@ void func_159()//Position - 0x8AB3
 	}
 	if (__LIB_0__::func_683() == 2)
 	{
-		if ((__LIB_39__::func_347() && !__LIB_39__::func_346()) && iLocal_45 != 8)
+		if ((__LIB_39__::func_22() && !__LIB_39__::func_21()) && iLocal_45 != 8)
 		{
 			if (!PED::IS_PED_INJURED(iLocal_67))
 			{
@@ -3663,10 +3663,10 @@ void func_168()//Position - 0x96F3
 	{
 		if (!HUD::DOES_BLIP_EXIST(iLocal_125))
 		{
-			__LIB_39__::func_378();
-			iLocal_125 = __LIB_39__::func_403(-1034.6f, 4918.6f, 205.9f, 0);
+			__LIB_39__::func_53();
+			iLocal_125 = __LIB_39__::func_78(-1034.6f, 4918.6f, 205.9f, 0);
 			HUD::SET_BLIP_SPRITE(iLocal_125, 269);
-			__LIB_39__::func_379();
+			__LIB_39__::func_54();
 		}
 	}
 }
@@ -4954,17 +4954,17 @@ int func_220()//Position - 0xDF85
 {
 	if (!iLocal_73)
 	{
-		__LIB_39__::func_646(&uLocal_74, joaat("surano"));
-		__LIB_39__::func_646(&uLocal_74, joaat("prop_ld_test_01"));
-		__LIB_39__::func_646(&uLocal_74, joaat("A_F_Y_BevHills_03"));
-		__LIB_39__::func_646(&uLocal_74, joaat("A_M_Y_GenStreet_02"));
-		__LIB_39__::func_646(&uLocal_74, joaat("vader"));
-		__LIB_39__::func_646(&uLocal_74, joaat("cavalcade2"));
-		__LIB_39__::func_646(&uLocal_74, joaat("prop_pap_camera_01"));
-		__LIB_42__::func_712(&uLocal_74);
+		__LIB_39__::func_321(&uLocal_74, joaat("surano"));
+		__LIB_39__::func_321(&uLocal_74, joaat("prop_ld_test_01"));
+		__LIB_39__::func_321(&uLocal_74, joaat("A_F_Y_BevHills_03"));
+		__LIB_39__::func_321(&uLocal_74, joaat("A_M_Y_GenStreet_02"));
+		__LIB_39__::func_321(&uLocal_74, joaat("vader"));
+		__LIB_39__::func_321(&uLocal_74, joaat("cavalcade2"));
+		__LIB_39__::func_321(&uLocal_74, joaat("prop_pap_camera_01"));
+		__LIB_42__::func_587(&uLocal_74);
 		iLocal_73 = 1;
 	}
-	if (!__LIB_39__::func_407(&uLocal_74))
+	if (!__LIB_39__::func_82(&uLocal_74))
 	{
 		return 0;
 	}
@@ -4989,7 +4989,7 @@ void func_280()//Position - 0xFCBD
 	__LIB_14__::func_804(0);
 	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL(-90f, -1488f, -50f, 55f, -1470f, 50f, 1);
 	TASK::SET_SCENARIO_TYPE_ENABLED("WORLD_VEHICLE_DRIVE_SOLO", true);
-	__LIB_39__::func_647(&uLocal_74, 0);
+	__LIB_39__::func_322(&uLocal_74, 0);
 	STREAMING::REMOVE_ANIM_DICT("random@escape_paparazzi@standing@");
 	STREAMING::REMOVE_ANIM_DICT("random@paparazzi@pap_anims");
 	STREAMING::REMOVE_ANIM_DICT("random@paparazzi@peek");
@@ -4999,7 +4999,7 @@ void func_280()//Position - 0xFCBD
 	STREAMING::REMOVE_ANIM_DICT("veh@low@front_ps@idle_panic");
 	STREAMING::REMOVE_ANIM_DICT(sLocal_135);
 	AUDIO::RELEASE_SCRIPT_AUDIO_BANK();
-	if (__LIB_39__::func_333())
+	if (__LIB_39__::func_8())
 	{
 		PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);
 	}
@@ -5017,7 +5017,7 @@ void func_280()//Position - 0xFCBD
 			}
 		}
 	}
-	__LIB_39__::func_344(-1);
+	__LIB_39__::func_19(-1);
 	HUD::CLEAR_GPS_MULTI_ROUTE();
 	HUD::SET_GPS_MULTI_ROUTE_RENDER(false);
 	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(joaat("vader"), false);
@@ -5031,7 +5031,7 @@ void func_280()//Position - 0xFCBD
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("AC_STOP");
 	}
-	__LIB_39__::func_348();
+	__LIB_39__::func_23();
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

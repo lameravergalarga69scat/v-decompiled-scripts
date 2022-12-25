@@ -117,8 +117,8 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_29 = 140f;
 	fLocal_30 = 180f;
 	iLocal_33 = 3;
-	uLocal_81 = __LIB_17__::func_26(60);
-	uLocal_82 = __LIB_17__::func_26(14);
+	uLocal_81 = __LIB_17__::func_29(60);
+	uLocal_82 = __LIB_17__::func_29(14);
 	iLocal_87 = joaat("v_ilev_epsstoredoor");
 	Local_84 = { ScriptParam_94 };
 	__LIB_14__::func_801(&Local_84);
@@ -134,7 +134,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 				}
 			}
-			__LIB_38__::func_616(1);
+			__LIB_38__::func_291(1);
 		}
 		else
 		{
@@ -153,12 +153,12 @@ void __EntryFunction__()//Position - 0x0
 		Global_78564 = 0;
 	}
 	__LIB_14__::func_851("ep_2_rcm", 0);
-	__LIB_17__::func_133("EPS2", 0, 0, 0);
+	__LIB_17__::func_136("EPS2", 0, 0, 0);
 	while (true)
 	{
 		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("SF_AcTT", 0);
 		SYSTEM::WAIT(0);
-		__LIB_37__::func_527(Local_84.f_9, 0, 0, 0, 0, 0);
+		__LIB_37__::func_201(Local_84.f_9, 0, 0, 0, 0, 0);
 		switch (iLocal_85)
 		{
 			case 0:
@@ -202,7 +202,7 @@ void func_1()//Position - 0x151
 			{
 				if (!iLocal_91 && (MISC::GET_GAME_TIMER() - iLocal_88) > 15000)
 				{
-					if (__LIB_17__::func_27(1343538152, 6, 1, 60, 15000, 10000, -1, 0, -1, 0))
+					if (__LIB_17__::func_30(1343538152, 6, 1, 60, 15000, 10000, -1, 0, -1, 0))
 					{
 						iLocal_91 = 1;
 					}
@@ -217,8 +217,8 @@ void func_1()//Position - 0x151
 						}
 						if (MISC::ABSF(fVar1) <= 0.05f && !iLocal_93)
 						{
-							__LIB_16__::func_319(109, 6);
-							__LIB_16__::func_319(109, 1);
+							__LIB_16__::func_322(109, 6);
+							__LIB_16__::func_322(109, 1);
 							iLocal_92 = 1;
 							iLocal_93 = 1;
 							func_256();
@@ -259,8 +259,8 @@ void func_46()//Position - 0x4AFC
 				RECORDING::REPLAY_START_EVENT(1);
 				CUTSCENE::START_CUTSCENE(0);
 				SYSTEM::WAIT(0);
-				__LIB_16__::func_870(237.43327f, 359.0111f, 104.15104f, 245.55893f, 356.5846f, 108.070114f, 6.5f, 233.9369f, 359.3106f, 104.7277f, 255.3827f, 1, 1, 1, 0, 0);
-				__LIB_16__::func_870(241.85774f, 360.6711f, 104.23901f, 245.36505f, 372.3802f, 108.03018f, 10f, 233.9369f, 359.3106f, 104.7277f, 255.3827f, 1, 1, 1, 0, 0);
+				__LIB_16__::func_873(237.43327f, 359.0111f, 104.15104f, 245.55893f, 356.5846f, 108.070114f, 6.5f, 233.9369f, 359.3106f, 104.7277f, 255.3827f, 1, 1, 1, 0, 0);
+				__LIB_16__::func_873(241.85774f, 360.6711f, 104.23901f, 245.36505f, 372.3802f, 108.03018f, 10f, 233.9369f, 359.3106f, 104.7277f, 255.3827f, 1, 1, 1, 0, 0);
 				func_59(237f, 360f, 105f, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 				iLocal_86 = 1;
 			}
@@ -276,7 +276,7 @@ void func_46()//Position - 0x4AFC
 			}
 			if (CUTSCENE::HAS_CUTSCENE_FINISHED())
 			{
-				__LIB_16__::func_319(109, 0);
+				__LIB_16__::func_322(109, 0);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 				__LIB_14__::func_870(1, 1, 1, 1);
@@ -946,7 +946,7 @@ int func_240(var uParam0)//Position - 0x26883
 			iLocal_80 = 3;
 			break;
 		case 3:
-			__LIB_16__::func_319(109, 0);
+			__LIB_16__::func_322(109, 0);
 			__LIB_11__::func_816(11, 0);
 			return 1;
 			break;
@@ -960,8 +960,8 @@ void func_250()//Position - 0x29F4C
 	__LIB_14__::func_841();
 	if (!iLocal_91 && __LIB_14__::func_709(3) == -1)
 	{
-		__LIB_17__::func_11(3, 0);
-		iVar0 = __LIB_40__::func_945(3, 8, 1);
+		__LIB_17__::func_14(3, 0);
+		iVar0 = __LIB_40__::func_621(3, 8, 1);
 		func_252(iVar0, 3, 8, "EPS_EMAIL5K" /* GXT: Please visit our website at ~b~<u>www.epsilonprogram.com</u>~s~ and donate $5000. */);
 		iLocal_91 = 1;
 	}
@@ -972,7 +972,7 @@ void func_250()//Position - 0x29F4C
 		{
 		}
 	}
-	__LIB_16__::func_319(109, 1);
+	__LIB_16__::func_322(109, 1);
 	__LIB_11__::func_816(11, 1);
 	HUD::CLEAR_ADDITIONAL_TEXT(0, true);
 	Global_8141 = 0;
@@ -1010,7 +1010,7 @@ int func_252(int iParam0, int iParam1, int iParam2, char* sParam3)//Position - 0
 void func_256()//Position - 0x2A481
 {
 	int iVar0;
-	__LIB_15__::func_779(60, 0, 1);
+	__LIB_15__::func_780(60, 0, 1);
 	STATS::STAT_GET_INT(joaat("NUM_EPSILON_STEP"), &iVar0, -1);
 	if (iVar0 < 4)
 	{
@@ -1059,10 +1059,10 @@ void func_257(int iParam0, bool bParam1)//Position - 0x2A4BF
 			PLAYER::START_FIRING_AMNESTY(5000);
 		}
 	}
-	__LIB_37__::func_525(iVar0, 1, 0, 0);
+	__LIB_37__::func_199(iVar0, 1, 0, 0);
 	__LIB_0__::func_46(0, 0);
 	MemCopy(&sVar1, {__LIB_0__::func_330(iVar0)}, 4);
-	__LIB_0__::func_44(&sVar1, __LIB_16__::func_594());
+	__LIB_0__::func_44(&sVar1, __LIB_16__::func_597());
 	func_281();
 	if (BitTest(Global_113386.f_10016.f_25, 3))
 	{

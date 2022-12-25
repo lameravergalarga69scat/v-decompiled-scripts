@@ -98,7 +98,7 @@ void __EntryFunction__()//Position - 0x0
 	iVar2 = 0;
 	while (true)
 	{
-		if (__LIB_15__::func_931() == 309)
+		if (__LIB_15__::func_933() == 309)
 		{
 			bLocal_35 = true;
 		}
@@ -329,7 +329,7 @@ void func_31(int iParam0)//Position - 0x14D4
 							{
 								if (ENTITY::GET_ENTITY_MODEL(iLocal_29) != joaat("dune") && ENTITY::GET_ENTITY_MODEL(iLocal_29) != joaat("cuban800"))
 								{
-									__LIB_17__::func_221(iLocal_29, 2142.245f, 4823.463f, 40.2769f, 118.4428f, 24, 0);
+									__LIB_17__::func_224(iLocal_29, 2142.245f, 4823.463f, 40.2769f, 118.4428f, 24, 0);
 								}
 								else if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 								{
@@ -363,7 +363,7 @@ void func_31(int iParam0)//Position - 0x14D4
 					}
 					if (!*iParam0)
 					{
-						__LIB_41__::func_340("Traffick_Ground", 0);
+						__LIB_41__::func_18("Traffick_Ground", 0);
 					}
 					Var4 = -1;
 					Var4.f_8 = 4;
@@ -376,7 +376,7 @@ void func_31(int iParam0)//Position - 0x14D4
 					Var4.f_85 = 4;
 					Var4.f_90 = 6;
 					iLocal_30 = SYSTEM::START_NEW_SCRIPT_WITH_ARGS("Traffick_Ground", &Var4, 97, 51000);
-					__LIB_37__::func_600(16);
+					__LIB_37__::func_274(16);
 					SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED("Traffick_Ground");
 					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iLocal_44, true, false);
 					ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_44);
@@ -543,7 +543,7 @@ int func_166()//Position - 0xF0AA
 		{
 			return 0;
 		}
-		if (__LIB_15__::func_931() == 309)
+		if (__LIB_15__::func_933() == 309)
 		{
 			return 0;
 		}
@@ -704,7 +704,7 @@ void func_173(int iParam0)//Position - 0xF49E
 							{
 								if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_29, 2137.1204f, 4799.97f, 39.678535f, 2116.64f, 4790.417f, 45.452946f, 25f, false, true, 0))
 								{
-									__LIB_17__::func_221(iLocal_29, 2142.245f, 4823.463f, 40.2769f, 118.4428f, 24, 0);
+									__LIB_17__::func_224(iLocal_29, 2142.245f, 4823.463f, 40.2769f, 118.4428f, 24, 0);
 								}
 							}
 							else if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
@@ -738,10 +738,10 @@ void func_173(int iParam0)//Position - 0xF49E
 					}
 					if (!*iParam0)
 					{
-						__LIB_41__::func_340(SCRIPT::GET_THIS_SCRIPT_NAME(), 0);
+						__LIB_41__::func_18(SCRIPT::GET_THIS_SCRIPT_NAME(), 0);
 					}
 					iLocal_30 = SYSTEM::START_NEW_SCRIPT("Traffick_Air", 51000);
-					__LIB_37__::func_600(15);
+					__LIB_37__::func_274(15);
 					SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED("Traffick_Air");
 					ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_40);
 					if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
@@ -862,7 +862,7 @@ int func_175()//Position - 0xFA39
 	}
 	if (!iLocal_37)
 	{
-		if (__LIB_15__::func_931() == 309)
+		if (__LIB_15__::func_933() == 309)
 		{
 			return 1;
 		}
@@ -980,7 +980,7 @@ void func_191()//Position - 0x1050E
 	func_174(1);
 	func_165(1);
 	func_194();
-	__LIB_16__::func_613();
+	__LIB_16__::func_616();
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

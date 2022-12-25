@@ -1100,7 +1100,7 @@ int func_2()//Position - 0x277
 	{
 		if (Local_63.f_21 >= 0 || Local_63.f_21 <= 3)
 		{
-			__LIB_3__::func_79(__LIB_41__::func_47(9), 7, 3, 1);
+			__LIB_3__::func_79(__LIB_40__::func_723(9), 7, 3, 1);
 		}
 		return 1;
 	}
@@ -1349,7 +1349,7 @@ void func_34()//Position - 0x20AE
 	if ((Local_63.f_21 <= 2 || Local_63.f_20 == 2) || Local_63.f_20 == 3)
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-		if ((!WATER::GET_WATER_HEIGHT_NO_WAVES(Var0, &uVar1) || __LIB_32__::func_483()) || __LIB_1__::func_852())
+		if ((!WATER::GET_WATER_HEIGHT_NO_WAVES(Var0, &uVar1) || __LIB_30__::func_914()) || __LIB_1__::func_852())
 		{
 			Local_63.f_1 = 4;
 		}

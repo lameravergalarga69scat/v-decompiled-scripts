@@ -425,7 +425,7 @@ void func_27()//Position - 0x1453
 	{
 		return;
 	}
-	if ((__LIB_38__::func_569(PLAYER::PLAYER_ID()) && __LIB_37__::func_941(PLAYER::PLAYER_ID())) && __LIB_5__::func_477(PLAYER::PLAYER_ID(), 0))
+	if ((__LIB_38__::func_244(PLAYER::PLAYER_ID()) && __LIB_37__::func_615(PLAYER::PLAYER_ID())) && __LIB_5__::func_477(PLAYER::PLAYER_ID(), 0))
 	{
 		if (!__LIB_0__::func_137(28266, -1))
 		{
@@ -438,7 +438,7 @@ void func_27()//Position - 0x1453
 			}
 		}
 	}
-	if (__LIB_37__::func_941(PLAYER::PLAYER_ID()))
+	if (__LIB_37__::func_615(PLAYER::PLAYER_ID()))
 	{
 		iVar0 = 0;
 		iVar2 = 0;
@@ -451,13 +451,13 @@ void func_27()//Position - 0x1453
 				{
 					if (__LIB_10__::func_722(PLAYER::PLAYER_ID(), iVar1, 1))
 					{
-						if (__LIB_38__::func_569(iVar1) && __LIB_38__::func_568(iVar1))
+						if (__LIB_38__::func_244(iVar1) && __LIB_38__::func_243(iVar1))
 						{
 							iVar0++;
 						}
 						if (iVar0 > 0)
 						{
-							if (__LIB_28__::func_608())
+							if (__LIB_28__::func_618())
 							{
 								if (!BitTest(Global_1946250.f_10, 22) && !__LIB_13__::func_672("SS_HELP_JOIN" /* GXT: ~a~ has smoked Lamar's Special Strain to start a Short Trip. Remain seated on the couch to join them. */, PLAYER::GET_PLAYER_NAME(iVar1)))
 								{
@@ -593,8 +593,8 @@ void func_100()//Position - 0x2E8E
 	switch (Local_112.f_9)
 	{
 		case 0:
-			__LIB_38__::func_573(0);
-			__LIB_38__::func_572(0);
+			__LIB_38__::func_248(0);
+			__LIB_38__::func_247(0);
 			if (MISC::GET_RANDOM_INT_IN_RANGE(0, 2) == 0)
 			{
 				Local_112.f_40 = 0;
@@ -686,8 +686,8 @@ void func_100()//Position - 0x2E8E
 				if ((iVar0 == -1 || PED::GET_SYNCHRONIZED_SCENE_PHASE(iVar0) >= 0.99f) || func_349(PLAYER::PLAYER_ID()))
 				{
 					func_337(3, 4, 5, 6, 7);
-					__LIB_38__::func_572(1);
-					__LIB_38__::func_571(0);
+					__LIB_38__::func_247(1);
+					__LIB_38__::func_246(0);
 					func_356(5);
 				}
 			}
@@ -4680,7 +4680,7 @@ void func_309()//Position - 0x4EC25
 
 void func_310()//Position - 0x4EC91
 {
-	if (__LIB_37__::func_941(PLAYER::PLAYER_ID()) && func_311(0, 0))
+	if (__LIB_37__::func_615(PLAYER::PLAYER_ID()) && func_311(0, 0))
 	{
 		func_312();
 		Global_44211 = 0.9f;
@@ -4694,7 +4694,7 @@ void func_310()//Position - 0x4EC91
 		}
 		__LIB_3__::func_122(&(Local_112.f_4));
 		Local_112.f_4 = -1;
-		__LIB_38__::func_573(1);
+		__LIB_38__::func_248(1);
 		func_356(10);
 	}
 	else
@@ -4772,7 +4772,7 @@ void func_314(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 		iVar1++;
 	}
 	bVar2 = false;
-	if (__LIB_16__::func_375(iParam0, &Global_78200, iParam1, &iParam3))
+	if (__LIB_16__::func_378(iParam0, &Global_78200, iParam1, &iParam3))
 	{
 		iVar1 = 0;
 		while (iVar1 < 12)
@@ -4846,13 +4846,13 @@ void func_327()//Position - 0x56E79
 {
 	struct<2> Var0;
 	StringCopy(&Var0, "MS_SMOKE" /* GXT: Press ~INPUT_FRONTEND_X~ to smoke.~n~Press ~INPUT_FRONTEND_ACCEPT~ to smoke Special Strain.~n~Press ~INPUT_CONTEXT~ to stand up. */, 16);
-	if (!__LIB_37__::func_941(PLAYER::PLAYER_ID()))
+	if (!__LIB_37__::func_615(PLAYER::PLAYER_ID()))
 	{
 		StringConCat(&Var0, "_L", 16);
 	}
-	if (__LIB_38__::func_575(PLAYER::PLAYER_ID()))
+	if (__LIB_38__::func_250(PLAYER::PLAYER_ID()))
 	{
-		switch (__LIB_38__::func_570(PLAYER::PLAYER_ID()))
+		switch (__LIB_38__::func_245(PLAYER::PLAYER_ID()))
 		{
 			case 0:
 				StringConCat(&Var0, "_R_1", 16);
@@ -5609,7 +5609,7 @@ void func_362()//Position - 0x58340
 			if (!BitTest(Local_112.f_1, 1))
 			{
 				GRAPHICS::USE_PARTICLE_FX_ASSET("scr_sec");
-				if (__LIB_38__::func_574())
+				if (__LIB_38__::func_249())
 				{
 					__LIB_7__::func_43(PLAYER::PLAYER_PED_ID(), 0, 1, 1, -1);
 				}
@@ -5774,8 +5774,8 @@ void func_385(int iParam0, bool bParam1)//Position - 0x58D30
 		MISC::CLEAR_BIT(&(Global_1946250.f_6), 11);
 	}
 	func_101();
-	__LIB_38__::func_573(0);
-	__LIB_38__::func_572(0);
+	__LIB_38__::func_248(0);
+	__LIB_38__::func_247(0);
 	func_356(0);
 }
 

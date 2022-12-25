@@ -307,12 +307,12 @@ void func_1()//Position - 0xF8
 			}
 			break;
 		case 1:
-			if (__LIB_38__::func_425(&iLocal_208) > 5f)
+			if (__LIB_38__::func_100(&iLocal_208) > 5f)
 			{
 				if (!BitTest(Global_113386.f_10049.f_99, 3))
 				{
-					__LIB_17__::func_17(28, iLocal_83[20], 1);
-					__LIB_17__::func_16(28);
+					__LIB_17__::func_20(28, iLocal_83[20], 1);
+					__LIB_17__::func_19(28);
 					MISC::SET_BIT(&(Global_113386.f_10049.f_99), 3);
 					__LIB_0__::func_364(63, 1);
 					iLocal_221++;
@@ -320,7 +320,7 @@ void func_1()//Position - 0xF8
 			}
 			break;
 		case 2:
-			if (__LIB_17__::func_164(63))
+			if (__LIB_17__::func_167(63))
 			{
 				iLocal_221++;
 			}
@@ -362,7 +362,7 @@ void func_21()//Position - 0x18A6
 			}
 			break;
 		case 1:
-			if ((((((SYSTEM::TIMERB() > 7500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_903())
+			if ((((((SYSTEM::TIMERB() > 7500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_578())
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_211, "SHARD_ANIM_OUT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -381,7 +381,7 @@ void func_21()//Position - 0x18A6
 			}
 			break;
 		case 2:
-			if ((((((SYSTEM::TIMERB() > 500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_903())
+			if ((((((SYSTEM::TIMERB() > 500 || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_578())
 			{
 				iLocal_81 = 3;
 			}
@@ -457,12 +457,12 @@ int func_27()//Position - 0x1B29
 
 void func_30()//Position - 0x1BA8
 {
-	if (__LIB_16__::func_596() && !iLocal_216)
+	if (__LIB_16__::func_599() && !iLocal_216)
 	{
 		iLocal_216 = 1;
 		iLocal_79 = 7;
 	}
-	if (!__LIB_16__::func_596() && iLocal_216)
+	if (!__LIB_16__::func_599() && iLocal_216)
 	{
 		iLocal_216 = 0;
 	}
@@ -470,18 +470,18 @@ void func_30()//Position - 0x1BA8
 
 void func_32()//Position - 0x1BED
 {
-	if (__LIB_38__::func_425(&iLocal_205) > 3f)
+	if (__LIB_38__::func_100(&iLocal_205) > 3f)
 	{
 		__LIB_0__::func_366(0);
 		__LIB_0__::func_706(&iLocal_205, 0f);
-		__LIB_19__::func_923(&iLocal_205);
+		__LIB_19__::func_933(&iLocal_205);
 	}
-	if ((__LIB_38__::func_425(&iLocal_205) <= 3f && __LIB_0__::func_77(0)) && __LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
+	if ((__LIB_38__::func_100(&iLocal_205) <= 3f && __LIB_0__::func_77(0)) && __LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 	{
-		if ((PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 177 /*INPUT_CELLPHONE_CANCEL*/) || (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 24 /*INPUT_ATTACK*/) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))) || (__LIB_16__::func_596() && !iLocal_216))
+		if ((PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 177 /*INPUT_CELLPHONE_CANCEL*/) || (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 24 /*INPUT_ATTACK*/) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))) || (__LIB_16__::func_599() && !iLocal_216))
 		{
 			__LIB_0__::func_706(&iLocal_205, 0f);
-			__LIB_19__::func_923(&iLocal_205);
+			__LIB_19__::func_933(&iLocal_205);
 		}
 	}
 }
@@ -490,19 +490,19 @@ void func_42()//Position - 0x1E95
 {
 	if (iLocal_217)
 	{
-		if ((__LIB_38__::func_425(&iLocal_208) > 5f && func_45() >= 1) && !BitTest(Global_113386.f_10049.f_99, 1))
+		if ((__LIB_38__::func_100(&iLocal_208) > 5f && func_45() >= 1) && !BitTest(Global_113386.f_10049.f_99, 1))
 		{
 			switch (iLocal_224)
 			{
 				case 0:
-					__LIB_17__::func_17(28, iLocal_83[(20 - func_45())], 1);
+					__LIB_17__::func_20(28, iLocal_83[(20 - func_45())], 1);
 					iLocal_225 = 0;
 					iLocal_224++;
 					break;
 				case 1:
 					if (iLocal_225 < 10)
 					{
-						__LIB_17__::func_10(28, func_44(iLocal_225));
+						__LIB_17__::func_13(28, func_44(iLocal_225));
 						iLocal_225++;
 					}
 					else
@@ -511,12 +511,12 @@ void func_42()//Position - 0x1E95
 					}
 					break;
 				case 2:
-					__LIB_17__::func_16(28);
+					__LIB_17__::func_19(28);
 					iLocal_224++;
 					break;
 				case 3:
 					__LIB_0__::func_706(&iLocal_208, 0f);
-					__LIB_19__::func_923(&iLocal_208);
+					__LIB_19__::func_933(&iLocal_208);
 					iLocal_217 = 0;
 					iLocal_224 = 0;
 					__LIB_0__::func_210();
@@ -724,9 +724,9 @@ void func_46()//Position - 0x2710
 	switch (iLocal_79)
 	{
 		case 0:
-			if (__LIB_16__::func_923())
+			if (__LIB_16__::func_926())
 			{
-				if ((!__LIB_16__::func_798() && Global_4539953 == 0) && Global_4539954 == 0)
+				if ((!__LIB_16__::func_801() && Global_4539953 == 0) && Global_4539954 == 0)
 				{
 					iLocal_79 = 1;
 				}
@@ -754,7 +754,7 @@ void func_46()//Position - 0x2710
 		case 4:
 			if (!func_64(iLocal_213))
 			{
-				__LIB_20__::func_823(1);
+				__LIB_20__::func_833(1);
 				iLocal_79 = 5;
 			}
 			else
@@ -778,7 +778,7 @@ void func_46()//Position - 0x2710
 					{
 						if (__LIB_0__::func_77(0))
 						{
-							__LIB_16__::func_918(99);
+							__LIB_16__::func_921(99);
 							if (__LIB_0__::func_1("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */))
 							{
 								HUD::CLEAR_THIS_PRINT("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */);
@@ -788,8 +788,8 @@ void func_46()//Position - 0x2710
 					}
 					if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 176 /*INPUT_CELLPHONE_SELECT*/) || PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 178 /*INPUT_CELLPHONE_OPTION*/))
 					{
-						__LIB_20__::func_823(0);
-						__LIB_20__::func_854(99);
+						__LIB_20__::func_833(0);
+						__LIB_20__::func_864(99);
 						if (__LIB_0__::func_1("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */))
 						{
 							HUD::CLEAR_THIS_PRINT("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */);
@@ -799,11 +799,11 @@ void func_46()//Position - 0x2710
 					break;
 				case 1:
 					__LIB_0__::func_151("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */, -1);
-					if (__LIB_21__::func_278(99))
+					if (__LIB_21__::func_288(99))
 					{
 						iLocal_80 = 0;
-						__LIB_20__::func_823(0);
-						__LIB_20__::func_854(99);
+						__LIB_20__::func_833(0);
+						__LIB_20__::func_864(99);
 						if (__LIB_0__::func_1("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */))
 						{
 							HUD::CLEAR_THIS_PRINT("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */);
@@ -813,8 +813,8 @@ void func_46()//Position - 0x2710
 					if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 177 /*INPUT_CELLPHONE_CANCEL*/))
 					{
 						iLocal_80 = 0;
-						__LIB_20__::func_823(0);
-						__LIB_20__::func_854(99);
+						__LIB_20__::func_833(0);
+						__LIB_20__::func_864(99);
 						if (__LIB_0__::func_1("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */))
 						{
 							HUD::CLEAR_THIS_PRINT("PW_HELP_2" /* GXT: Use ~INPUT_CELLPHONE_SELECT~ to send the email to the LS Tourist Board. */);
@@ -829,8 +829,8 @@ void func_46()//Position - 0x2710
 			func_51(iLocal_82);
 			STATS::STAT_SET_INT(joaat("NUM_HIDDEN_PACKAGES_7"), func_27(), true);
 			bLocal_214 = true;
-			__LIB_20__::func_862(&iLocal_205);
-			__LIB_20__::func_862(&iLocal_208);
+			__LIB_20__::func_872(&iLocal_205);
+			__LIB_20__::func_872(&iLocal_208);
 			iLocal_217 = 1;
 			iLocal_79 = 7;
 			break;
@@ -839,7 +839,7 @@ void func_46()//Position - 0x2710
 			iLocal_79 = 8;
 			break;
 		case 8:
-			if (!__LIB_16__::func_923())
+			if (!__LIB_16__::func_926())
 			{
 				iLocal_79 = 0;
 			}
@@ -856,8 +856,8 @@ void func_47()//Position - 0x2952
 	iLocal_215 = 0;
 	Local_219 = { Local_218 };
 	Local_220 = { Local_218 };
-	__LIB_20__::func_823(0);
-	__LIB_20__::func_854(99);
+	__LIB_20__::func_833(0);
+	__LIB_20__::func_864(99);
 	if (__LIB_0__::func_1("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */))
 	{
 		HUD::CLEAR_THIS_PRINT("PW_HELP_1" /* GXT: Use ~INPUT_CELLPHONE_EXTRA_OPTION~ to email the photograph to the LS Tourist Board. */);
@@ -1493,7 +1493,7 @@ void func_82()//Position - 0x39A7
 		MISC::SET_BIT(&(Global_113386.f_10049.f_99), 2);
 	}
 	iLocal_221 = 0;
-	iLocal_216 = __LIB_16__::func_596();
+	iLocal_216 = __LIB_16__::func_599();
 	iLocal_83[0] = 249;
 	iLocal_83[1] = 250;
 	iLocal_83[2] = 251;

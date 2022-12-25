@@ -1359,7 +1359,7 @@ int func_246(bool bParam0)//Position - 0x279CA
 		{
 			return 1;
 		}
-		if (__LIB_37__::func_636(iLocal_58, 1126825984))
+		if (__LIB_37__::func_310(iLocal_58, 1126825984))
 		{
 			return 1;
 		}
@@ -1516,7 +1516,7 @@ void func_265()//Position - 0x28399
 				{
 					CAM::STOP_GAMEPLAY_HINT(false);
 				}
-				__LIB_17__::func_551(1, 1, 1, 1);
+				__LIB_17__::func_554(1, 1, 1, 1);
 				func_266();
 				iLocal_42 = 1;
 				iLocal_43 = 0;
@@ -1766,7 +1766,7 @@ void func_364()//Position - 0x30720
 		func_375(1, 1);
 		SYSTEM::WAIT(500);
 		__LIB_0__::func_433(0, -1, 1);
-		__LIB_33__::func_561(1, 1, 1);
+		__LIB_32__::func_45(1, 1, 1);
 		iLocal_42 = 1;
 		iLocal_43 = 2;
 		__LIB_0__::func_84(500, 1);
@@ -1804,7 +1804,7 @@ void func_364()//Position - 0x30720
 			SYSTEM::WAIT(0);
 		}
 		__LIB_0__::func_433(0, -1, 1);
-		__LIB_33__::func_561(1, 1, 1);
+		__LIB_32__::func_45(1, 1, 1);
 		iLocal_42 = 1;
 		iLocal_43 = 0;
 	}
@@ -1899,7 +1899,7 @@ void func_375(bool bParam0, bool bParam1)//Position - 0x30DDE
 {
 	if (bParam0)
 	{
-		__LIB_33__::func_562(0, 1, 1);
+		__LIB_32__::func_46(0, 1, 1);
 	}
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
@@ -1921,7 +1921,7 @@ void func_465()//Position - 0x37563
 	iLocal_53 = 0;
 	iLocal_46 = 0;
 	bLocal_45 = false;
-	__LIB_37__::func_511();
+	__LIB_37__::func_185();
 }
 
 void func_467()//Position - 0x3759D

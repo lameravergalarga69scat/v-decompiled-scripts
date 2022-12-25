@@ -136,7 +136,7 @@ void func_1()//Position - 0x78
 	{
 		if (Global_4539666[iLocal_21 /*12*/].f_11)
 		{
-			__LIB_42__::func_746(iLocal_21);
+			__LIB_42__::func_621(iLocal_21);
 			Global_4539666[iLocal_21 /*12*/].f_11 = 0;
 		}
 	}
@@ -144,7 +144,7 @@ void func_1()//Position - 0x78
 	{
 		func_17(Local_22.f_66);
 	}
-	if ((Local_22.f_66.f_2 == 1 && Global_4535592) && __LIB_39__::func_657(&Local_22))
+	if ((Local_22.f_66.f_2 == 1 && Global_4535592) && __LIB_39__::func_332(&Local_22))
 	{
 		bVar0 = true;
 	}
@@ -166,7 +166,7 @@ void func_1()//Position - 0x78
 	}
 	if (((__LIB_0__::func_112() && Local_22.f_66.f_2 == 1) && Local_22.f_66.f_13) && !Local_22.f_66.f_12)
 	{
-		if (MISC::GET_FRAME_COUNT() - Local_22.f_66.f_14) >= __LIB_39__::func_656(Local_22.f_66.f_5)
+		if (MISC::GET_FRAME_COUNT() - Local_22.f_66.f_14) >= __LIB_39__::func_331(Local_22.f_66.f_5)
 		{
 			iVar1 = 0;
 			if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
@@ -241,7 +241,7 @@ void func_17(int iParam0)//Position - 0x631
 	if (iVar1 || SCRIPT::GET_EVENT_DATA(1, iParam0, &Var0, 7))
 	{
 		Var4.f_66 = 2147483647;
-		iVar3 = __LIB_38__::func_89(Var0.f_0, &Var4);
+		iVar3 = __LIB_37__::func_763(Var0.f_0, &Var4);
 		if (iVar3 != -1)
 		{
 			Global_4534105[iVar3 /*85*/].f_66.f_8 = 0;
@@ -300,7 +300,7 @@ void func_17(int iParam0)//Position - 0x631
 				if (iVar3 != -1)
 				{
 					Global_4534105[iVar3 /*85*/].f_66.f_2 = 3;
-					if ((Global_4534105[iVar3 /*85*/].f_66.f_11 & 1 != 0 && Global_4534105[iVar3 /*85*/].f_66.f_9 < 2) && __LIB_38__::func_88(Var0.f_2))
+					if ((Global_4534105[iVar3 /*85*/].f_66.f_11 & 1 != 0 && Global_4534105[iVar3 /*85*/].f_66.f_9 < 2) && __LIB_37__::func_762(Var0.f_2))
 					{
 						if (__LIB_0__::func_947(iVar3))
 						{
@@ -315,11 +315,11 @@ void func_17(int iParam0)//Position - 0x631
 								Global_4535611 = Global_4534105[iVar3 /*85*/].f_66.f_6;
 								Global_4535612 = Var0.f_2;
 								Global_4535610 = Global_4534105[iVar3 /*85*/].f_66.f_1;
-								if (__LIB_38__::func_87(Global_4535609) && __LIB_0__::func_112())
+								if (__LIB_37__::func_761(Global_4535609) && __LIB_0__::func_112())
 								{
-									if (!__LIB_38__::func_86(Global_4534105[iVar3 /*85*/].f_66))
+									if (!__LIB_37__::func_760(Global_4534105[iVar3 /*85*/].f_66))
 									{
-										iVar7 = __LIB_38__::func_85();
+										iVar7 = __LIB_37__::func_759();
 										Global_4535466[iVar7 /*7*/] = Global_4534105[iVar3 /*85*/].f_66;
 										Global_4535466[iVar7 /*7*/].f_2 = Global_4535609;
 										Global_4535466[iVar7 /*7*/].f_3 = Global_4535611;
@@ -333,7 +333,7 @@ void func_17(int iParam0)//Position - 0x631
 								}
 							}
 						}
-						else if (__LIB_38__::func_169(&iVar3))
+						else if (__LIB_37__::func_844(&iVar3))
 						{
 							Global_4534105[iVar3 /*85*/].f_66.f_2 = 1;
 							Global_4534105[iVar3 /*85*/].f_66.f_9++;
@@ -344,11 +344,11 @@ void func_17(int iParam0)//Position - 0x631
 							Global_4535611 = Global_4534105[iVar3 /*85*/].f_66.f_6;
 							Global_4535612 = Var0.f_2;
 							Global_4535610 = Global_4534105[iVar3 /*85*/].f_66.f_1;
-							if (__LIB_38__::func_87(Global_4535609) && __LIB_0__::func_112())
+							if (__LIB_37__::func_761(Global_4535609) && __LIB_0__::func_112())
 							{
-								if (!__LIB_38__::func_86(Global_4534105[iVar3 /*85*/].f_66))
+								if (!__LIB_37__::func_760(Global_4534105[iVar3 /*85*/].f_66))
 								{
-									iVar8 = __LIB_38__::func_85();
+									iVar8 = __LIB_37__::func_759();
 									Global_4535466[iVar8 /*7*/] = Global_4534105[iVar3 /*85*/].f_66;
 									Global_4535466[iVar8 /*7*/].f_2 = Global_4535609;
 									Global_4535466[iVar8 /*7*/].f_3 = Global_4535611;
@@ -368,11 +368,11 @@ void func_17(int iParam0)//Position - 0x631
 						Global_4535611 = Global_4534105[iVar3 /*85*/].f_66.f_6;
 						Global_4535612 = Var0.f_2;
 						Global_4535610 = Global_4534105[iVar3 /*85*/].f_66.f_1;
-						if ((__LIB_38__::func_87(Global_4535609) && __LIB_0__::func_112()) && __LIB_38__::func_88(Var0.f_2))
+						if ((__LIB_37__::func_761(Global_4535609) && __LIB_0__::func_112()) && __LIB_37__::func_762(Var0.f_2))
 						{
-							if (!__LIB_38__::func_86(Global_4534105[iVar3 /*85*/].f_66))
+							if (!__LIB_37__::func_760(Global_4534105[iVar3 /*85*/].f_66))
 							{
-								iVar9 = __LIB_38__::func_85();
+								iVar9 = __LIB_37__::func_759();
 								Global_4535466[iVar9 /*7*/] = Global_4534105[iVar3 /*85*/].f_66;
 								Global_4535466[iVar9 /*7*/].f_2 = Global_4535609;
 								Global_4535466[iVar9 /*7*/].f_3 = Global_4535611;
@@ -442,7 +442,7 @@ void func_32(int iParam0, bool bParam1)//Position - 0x1E2B
 	Var3.f_7 = -1;
 	Var3.f_8 = -1;
 	Var3.f_9 = -1;
-	__LIB_37__::func_361(&Var3);
+	__LIB_37__::func_35(&Var3);
 	switch (Global_4534105[iParam0 /*85*/].f_66.f_4)
 	{
 		case joaat("SERVICE_SPEND_MOVE_YACHT"):
@@ -1180,7 +1180,7 @@ void func_50(struct<34> Param0)//Position - 0x42B3
 	{
 		__LIB_2__::func_861();
 	}
-	if (!__LIB_39__::func_660(Param0, Param0.f_33))
+	if (!__LIB_39__::func_335(Param0, Param0.f_33))
 	{
 		__LIB_1__::func_34(Param0.f_33);
 		__LIB_2__::func_861();

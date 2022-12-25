@@ -458,7 +458,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	__LIB_12__::func_849(2, 1);
 	iLocal_244 = Local_54.f_28[0];
-	uLocal_72 = __LIB_17__::func_122(0);
+	uLocal_72 = __LIB_17__::func_125(0);
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(0);
 	if (__LIB_0__::func_323() || __LIB_0__::func_2(0))
 	{
@@ -499,7 +499,7 @@ void __EntryFunction__()//Position - 0x0
 		__LIB_14__::func_863(Local_54.f_9, 1, 0, 0, 0, 0);
 		func_401();
 		func_383();
-		__LIB_17__::func_408();
+		__LIB_17__::func_411();
 		if (((iLocal_56 != 0 && iLocal_56 != 1) && iLocal_56 != 10) && iLocal_56 != 9)
 		{
 			if (iLocal_56 != 8)
@@ -571,7 +571,7 @@ void func_1()//Position - 0x3A1
 			{
 				if (__LIB_0__::func_75())
 				{
-					__LIB_17__::func_32("Killing conversation in fail state");
+					__LIB_17__::func_35("Killing conversation in fail state");
 					__LIB_0__::func_429();
 				}
 			}
@@ -579,12 +579,12 @@ void func_1()//Position - 0x3A1
 			{
 				if (__LIB_2__::func_859(&uLocal_78, "FAN1AU", "FAN1_AGGRO", 9, 0, 0, 0))
 				{
-					__LIB_17__::func_32("Playing aggro convo with subs");
+					__LIB_17__::func_35("Playing aggro convo with subs");
 				}
 			}
 			else
 			{
-				__LIB_17__::func_32("Convo already active when failing for scaring Mary Ann - playing without subs asap?");
+				__LIB_17__::func_35("Convo already active when failing for scaring Mary Ann - playing without subs asap?");
 				__LIB_0__::func_325();
 				__LIB_14__::func_654(&uLocal_78, "FAN1AU", "FAN1_AGGRO", 8, 0, 0);
 			}
@@ -640,7 +640,7 @@ void func_1()//Position - 0x3A1
 			{
 				func_5();
 				func_4(1);
-				__LIB_17__::func_116(0, uLocal_72);
+				__LIB_17__::func_119(0, uLocal_72);
 				func_457();
 			}
 			break;
@@ -688,7 +688,7 @@ void func_41()//Position - 0x1175
 	switch (iLocal_55)
 	{
 		case 0:
-			__LIB_17__::func_32("In setup for Lost Race");
+			__LIB_17__::func_35("In setup for Lost Race");
 			__LIB_0__::func_714(&iLocal_245);
 			__LIB_0__::func_714(&iLocal_357);
 			__LIB_0__::func_714(&iLocal_358);
@@ -699,12 +699,12 @@ void func_41()//Position - 0x1175
 				if (iVar0 == 1)
 				{
 					__LIB_2__::func_859(&uLocal_78, "FAN1AU", "FAN1_LOSE", 8, 0, 0, 0);
-					__LIB_17__::func_32("Doing 'FAN1_LOSE'");
+					__LIB_17__::func_35("Doing 'FAN1_LOSE'");
 				}
 				else
 				{
 					__LIB_2__::func_859(&uLocal_78, "FAN1AU", "FAN1_LOSE2", 8, 0, 0, 0);
-					__LIB_17__::func_32("Doing 'FAN1_LOSE2'");
+					__LIB_17__::func_35("Doing 'FAN1_LOSE2'");
 				}
 			}
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_77);
@@ -714,13 +714,13 @@ void func_41()//Position - 0x1175
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_77);
 			TASK::TASK_PERFORM_SEQUENCE(iLocal_244, iLocal_77);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_77);
-			__LIB_17__::func_32("Going into loop for Lost Race");
+			__LIB_17__::func_35("Going into loop for Lost Race");
 			iLocal_55 = 1;
 			break;
 		case 1:
 			if (!__LIB_0__::func_75())
 			{
-				__LIB_17__::func_32("No conversation going in Lost Race, failing properly now");
+				__LIB_17__::func_35("No conversation going in Lost Race, failing properly now");
 				AUDIO::TRIGGER_MUSIC_EVENT("RC6A_FAIL");
 				iLocal_58 = 5;
 				iLocal_55 = 0;
@@ -741,7 +741,7 @@ void func_43()//Position - 0x12B4
 	int iVar6;
 	if (iLocal_360 != 0)
 	{
-		__LIB_17__::func_32("Fade previous CP");
+		__LIB_17__::func_35("Fade previous CP");
 		iLocal_361 = (iLocal_361 - 25);
 		if (iLocal_361 > 0)
 		{
@@ -766,7 +766,7 @@ void func_43()//Position - 0x12B4
 			}
 			if (__LIB_0__::func_75())
 			{
-				__LIB_17__::func_32("stop scripted conversation at END_CUTSCENE");
+				__LIB_17__::func_35("stop scripted conversation at END_CUTSCENE");
 				__LIB_0__::func_429();
 			}
 			if (__LIB_0__::func_121(iLocal_244))
@@ -809,7 +809,7 @@ void func_43()//Position - 0x12B4
 				STREAMING::REQUEST_ANIM_DICT("rcmfanatic1out_of_breath");
 				while (!STREAMING::HAS_ANIM_DICT_LOADED("rcmfanatic1out_of_breath"))
 				{
-					__LIB_17__::func_32("Loading ANIMS");
+					__LIB_17__::func_35("Loading ANIMS");
 					SYSTEM::WAIT(0);
 				}
 				iLocal_310 = 0;
@@ -820,7 +820,7 @@ void func_43()//Position - 0x12B4
 				STREAMING::REQUEST_ANIM_DICT("rcmfanatic1out_of_breath");
 				while (!STREAMING::HAS_ANIM_DICT_LOADED("rcmfanatic1out_of_breath"))
 				{
-					__LIB_17__::func_32("Loading ANIMS");
+					__LIB_17__::func_35("Loading ANIMS");
 					SYSTEM::WAIT(0);
 				}
 			}
@@ -829,7 +829,7 @@ void func_43()//Position - 0x12B4
 				STREAMING::REQUEST_MODEL(iLocal_307);
 				while (!STREAMING::HAS_MODEL_LOADED(iLocal_307))
 				{
-					__LIB_17__::func_32("Loading MARYSBIKE MODEL");
+					__LIB_17__::func_35("Loading MARYSBIKE MODEL");
 					SYSTEM::WAIT(0);
 				}
 				iLocal_304 = VEHICLE::CREATE_VEHICLE(iLocal_307, Local_305, fLocal_306, true, true, false);
@@ -890,7 +890,7 @@ void func_43()//Position - 0x12B4
 							{
 								sLocal_311 = "FAN1_DONE_3";
 							}
-							if (__LIB_33__::func_542(&uLocal_78, "FAN1AU", "FAN1_DONE", "FAN1_DONE_1", "FAN1_DONE", sLocal_311, "FAN1_DONE", "FAN1_DONE_4", "FAN1_DONE", "FAN1_DONE_5", 7, 0, 0))
+							if (__LIB_32__::func_26(&uLocal_78, "FAN1AU", "FAN1_DONE", "FAN1_DONE_1", "FAN1_DONE", sLocal_311, "FAN1_DONE", "FAN1_DONE_4", "FAN1_DONE", "FAN1_DONE_5", 7, 0, 0))
 							{
 								iLocal_308 = 2;
 							}
@@ -918,7 +918,7 @@ void func_43()//Position - 0x12B4
 								{
 									sLocal_311 = "FAN1_DONE_3";
 								}
-								if (__LIB_33__::func_542(&uLocal_78, "FAN1AU", "FAN1_DONE", "FAN1_DONE_1", "FAN1_DONE", sLocal_311, "FAN1_DONE", "FAN1_DONE_4", "FAN1_DONE", "FAN1_DONE_5", 7, 0, 0))
+								if (__LIB_32__::func_26(&uLocal_78, "FAN1AU", "FAN1_DONE", "FAN1_DONE_1", "FAN1_DONE", sLocal_311, "FAN1_DONE", "FAN1_DONE_4", "FAN1_DONE", "FAN1_DONE_5", 7, 0, 0))
 								{
 									RECORDING::REPLAY_RECORD_BACK_FOR_TIME(10f, 10f, 1);
 									iLocal_308 = 2;
@@ -1168,7 +1168,7 @@ void func_45()//Position - 0x1EEB
 				__LIB_0__::func_151(Local_75.f_0, -1);
 				Local_75.f_1 = 1;
 			}
-			if (__LIB_33__::func_557(iLocal_244, 1126825984) || __LIB_9__::func_694(PLAYER::PLAYER_PED_ID(), iLocal_244) < 7f)
+			if (__LIB_32__::func_41(iLocal_244, 1126825984) || __LIB_9__::func_694(PLAYER::PLAYER_PED_ID(), iLocal_244) < 7f)
 			{
 				iLocal_57 = iLocal_56;
 				iLocal_55 = 0;
@@ -1197,10 +1197,10 @@ void func_57()//Position - 0x2411
 	{
 		if (__LIB_0__::func_75())
 		{
-			__LIB_17__::func_32("stop scripted conversation at CHECK_IF_MARY_ANN_IS_INJURED_KILLED_OR_SCARED 1");
+			__LIB_17__::func_35("stop scripted conversation at CHECK_IF_MARY_ANN_IS_INJURED_KILLED_OR_SCARED 1");
 			__LIB_0__::func_429();
 		}
-		__LIB_17__::func_32("Mary Ann killed");
+		__LIB_17__::func_35("Mary Ann killed");
 		AUDIO::TRIGGER_MUSIC_EVENT("RC6A_FAIL");
 		iLocal_58 = 0;
 		iLocal_55 = 0;
@@ -1212,10 +1212,10 @@ void func_57()//Position - 0x2411
 		{
 			if (__LIB_0__::func_75())
 			{
-				__LIB_17__::func_32("stop scripted conversation at CHECK_IF_MARY_ANN_IS_INJURED_KILLED_OR_SCARED 2");
+				__LIB_17__::func_35("stop scripted conversation at CHECK_IF_MARY_ANN_IS_INJURED_KILLED_OR_SCARED 2");
 				__LIB_0__::func_429();
 			}
-			__LIB_17__::func_32("Mary Ann injured by player");
+			__LIB_17__::func_35("Mary Ann injured by player");
 			AUDIO::TRIGGER_MUSIC_EVENT("RC6A_FAIL");
 			iLocal_58 = 1;
 			iLocal_55 = 0;
@@ -1225,10 +1225,10 @@ void func_57()//Position - 0x2411
 		{
 			if (__LIB_0__::func_75())
 			{
-				__LIB_17__::func_32("stop scripted conversation at CHECK_IF_MARY_ANN_IS_INJURED_KILLED_OR_SCARED 3");
+				__LIB_17__::func_35("stop scripted conversation at CHECK_IF_MARY_ANN_IS_INJURED_KILLED_OR_SCARED 3");
 				__LIB_0__::func_429();
 			}
-			__LIB_17__::func_32("Mary Ann injured by some form of weapon");
+			__LIB_17__::func_35("Mary Ann injured by some form of weapon");
 			AUDIO::TRIGGER_MUSIC_EVENT("RC6A_FAIL");
 			iLocal_58 = 1;
 			iLocal_55 = 0;
@@ -1237,7 +1237,7 @@ void func_57()//Position - 0x2411
 	}
 	if (iLocal_258 == 1)
 	{
-		__LIB_17__::func_32("Mary Ann scared");
+		__LIB_17__::func_35("Mary Ann scared");
 		if (__LIB_0__::func_121(iLocal_244))
 		{
 			TASK::CLEAR_PED_TASKS(iLocal_244);
@@ -1249,11 +1249,11 @@ void func_57()//Position - 0x2411
 	}
 	else if (__LIB_0__::func_121(iLocal_244))
 	{
-		if ((__LIB_14__::func_858(iLocal_244, 1, 0, 0, 0) || __LIB_38__::func_619(iLocal_244, 1, 1116471296, 1126825984, 0, 0, 0, 0)) || MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(iLocal_244, true), 10f, false))
+		if ((__LIB_14__::func_858(iLocal_244, 1, 0, 0, 0) || __LIB_38__::func_294(iLocal_244, 1, 1116471296, 1126825984, 0, 0, 0, 0)) || MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(iLocal_244, true), 10f, false))
 		{
 			if (__LIB_0__::func_75())
 			{
-				__LIB_17__::func_32("Killing any convo before scared convo");
+				__LIB_17__::func_35("Killing any convo before scared convo");
 				__LIB_0__::func_429();
 			}
 			iLocal_258 = 1;
@@ -1265,7 +1265,7 @@ void func_69()//Position - 0x2AEF
 {
 	if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
-		__LIB_17__::func_32("Stopping scripted convo at script_passed");
+		__LIB_17__::func_35("Stopping scripted convo at script_passed");
 		__LIB_0__::func_429();
 	}
 	if (iLocal_59 != 1)
@@ -2019,7 +2019,7 @@ void func_285()//Position - 0x29C65
 			TASK::TASK_SCRIPTED_ANIMATION(0, &Local_320, &Var0, &Var0, 0.125f, 0.125f);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_379);
 			TASK::TASK_PERFORM_SEQUENCE(PLAYER::PLAYER_PED_ID(), iLocal_379);
-			__LIB_17__::func_32("Starting out of breath anim loop");
+			__LIB_17__::func_35("Starting out of breath anim loop");
 			iLocal_63 = 1;
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_379);
 		}
@@ -2271,7 +2271,7 @@ void func_317()//Position - 0x2B4B3
 	switch (iLocal_55)
 	{
 		case 0:
-			__LIB_17__::func_32("SETUP PLAYER IN VEHICLE STATE");
+			__LIB_17__::func_35("SETUP PLAYER IN VEHICLE STATE");
 			if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 			{
 				AUDIO::PAUSE_SCRIPTED_CONVERSATION(false);
@@ -2289,11 +2289,11 @@ void func_317()//Position - 0x2B4B3
 			iLocal_370 = MISC::GET_GAME_TIMER();
 			if (__LIB_0__::func_75())
 			{
-				__LIB_17__::func_32("stop scripted conversation at STAGE_PLAYER_IN_VEHICLE");
+				__LIB_17__::func_35("stop scripted conversation at STAGE_PLAYER_IN_VEHICLE");
 				__LIB_0__::func_429();
 			}
 			iLocal_257 = 1;
-			__LIB_17__::func_32("STARTING PLAYER IN VEHICLE LOOP");
+			__LIB_17__::func_35("STARTING PLAYER IN VEHICLE LOOP");
 			iLocal_55 = 1;
 			break;
 		case 1:
@@ -2387,7 +2387,7 @@ void func_321()//Position - 0x2B75F
 	switch (iLocal_55)
 	{
 		case 0:
-			__LIB_17__::func_32("SETUP SPRINT_TO_FINISH");
+			__LIB_17__::func_35("SETUP SPRINT_TO_FINISH");
 			if (!HUD::DOES_BLIP_EXIST(iLocal_245))
 			{
 				iLocal_245 = __LIB_14__::func_661(iLocal_244, 1, 1, 5);
@@ -2395,7 +2395,7 @@ void func_321()//Position - 0x2B75F
 			}
 			iLocal_347 = 0;
 			iLocal_55 = 1;
-			__LIB_17__::func_32("GOING INTO SPRINT_TO_FINISH MAIN LOOP");
+			__LIB_17__::func_35("GOING INTO SPRINT_TO_FINISH MAIN LOOP");
 			break;
 		case 1:
 			PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0.5f);
@@ -2410,7 +2410,7 @@ void func_321()//Position - 0x2B75F
 					}
 				}
 			}
-			if (__LIB_15__::func_963(Local_292.f_0))
+			if (__LIB_15__::func_965(Local_292.f_0))
 			{
 				if (__LIB_9__::func_694(PLAYER::PLAYER_PED_ID(), iLocal_244) > 30f)
 				{
@@ -2452,7 +2452,7 @@ int func_322(char* sParam0, char* sParam1, bool bParam2, var uParam3)//Position 
 			if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 			{
 				*uParam3 = AUDIO::GET_CURRENT_SCRIPTED_CONVERSATION_LINE();
-				__LIB_17__::func_32("Stopping scripted convo at can Mary Ann say single line");
+				__LIB_17__::func_35("Stopping scripted convo at can Mary Ann say single line");
 				__LIB_0__::func_429();
 				HUD::CLEAR_PRINTS();
 			}
@@ -2479,7 +2479,7 @@ void func_324()//Position - 0x2B988
 		case 0:
 			if (func_327())
 			{
-				__LIB_17__::func_32("CPR scene resources loaded - progressing");
+				__LIB_17__::func_35("CPR scene resources loaded - progressing");
 				func_326(1);
 				iLocal_378 = 1;
 			}
@@ -2733,7 +2733,7 @@ void func_324()//Position - 0x2B988
 
 int func_325()//Position - 0x2C126
 {
-	if (((__LIB_38__::func_619(iLocal_328, 1, 1116471296, 1126825984, 0, 0, 0, 0) || __LIB_38__::func_619(iLocal_329, 1, 1116471296, 1126825984, 0, 0, 0, 0)) || __LIB_38__::func_619(iLocal_330, 1, 1116471296, 1126825984, 0, 0, 0, 0)) || __LIB_38__::func_619(iLocal_331, 1, 1116471296, 1126825984, 0, 0, 0, 0))
+	if (((__LIB_38__::func_294(iLocal_328, 1, 1116471296, 1126825984, 0, 0, 0, 0) || __LIB_38__::func_294(iLocal_329, 1, 1116471296, 1126825984, 0, 0, 0, 0)) || __LIB_38__::func_294(iLocal_330, 1, 1116471296, 1126825984, 0, 0, 0, 0)) || __LIB_38__::func_294(iLocal_331, 1, 1116471296, 1126825984, 0, 0, 0, 0))
 	{
 		return 1;
 	}
@@ -2869,7 +2869,7 @@ void func_328()//Position - 0x2C7C0
 						PED::SET_PED_CAN_RAGDOLL(iLocal_344, true);
 					}
 					STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_C_Rottweiler"));
-					__LIB_17__::func_32("Loaded and created dog - progressing");
+					__LIB_17__::func_35("Loaded and created dog - progressing");
 					iLocal_347 = 1;
 				}
 				break;
@@ -3018,7 +3018,7 @@ void func_335()//Position - 0x2CDF9
 	switch (iLocal_55)
 	{
 		case 0:
-			__LIB_17__::func_32("STEPS DOWN SETUP");
+			__LIB_17__::func_35("STEPS DOWN SETUP");
 			if (!HUD::DOES_BLIP_EXIST(iLocal_245))
 			{
 				iLocal_245 = __LIB_14__::func_661(iLocal_244, 1, 1, 5);
@@ -3035,7 +3035,7 @@ void func_335()//Position - 0x2CDF9
 			{
 				__LIB_0__::func_106(&(Local_322.f_2));
 			}
-			__LIB_17__::func_32("GOING INTO STEPS_DOWN MAIN LOOP");
+			__LIB_17__::func_35("GOING INTO STEPS_DOWN MAIN LOOP");
 			iLocal_55 = 1;
 			break;
 		case 1:
@@ -3075,7 +3075,7 @@ void func_337()//Position - 0x2CF19
 			{
 				if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 				{
-					__LIB_17__::func_32("Stopping scripted convo at check if player jumps off cliff");
+					__LIB_17__::func_35("Stopping scripted convo at check if player jumps off cliff");
 					__LIB_0__::func_325();
 					HUD::CLEAR_PRINTS();
 				}
@@ -3167,7 +3167,7 @@ void func_342()//Position - 0x2D107
 	switch (iLocal_55)
 	{
 		case 0:
-			__LIB_17__::func_32("SETUP ROAD_RUNNING_SECTION");
+			__LIB_17__::func_35("SETUP ROAD_RUNNING_SECTION");
 			if (!HUD::DOES_BLIP_EXIST(iLocal_245))
 			{
 				iLocal_245 = __LIB_14__::func_661(iLocal_244, 1, 1, 5);
@@ -3181,7 +3181,7 @@ void func_342()//Position - 0x2D107
 			iLocal_283 = MISC::GET_GAME_TIMER();
 			if (__LIB_0__::func_75())
 			{
-				__LIB_17__::func_32("stop scripted conversation at ROAD_RUNNING_SECTION");
+				__LIB_17__::func_35("stop scripted conversation at ROAD_RUNNING_SECTION");
 				__LIB_0__::func_325();
 			}
 			if (__LIB_0__::func_695(Local_324.f_2) && __LIB_0__::func_692(Local_324.f_0))
@@ -3192,7 +3192,7 @@ void func_342()//Position - 0x2D107
 				TASK::TASK_VEHICLE_MISSION_COORS_TARGET(Local_324.f_0, Local_324.f_2, Local_324.f_8, 4, Local_324.f_12, 786599, 3f, 3f, true);
 				ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_324.f_0, true, 1);
 			}
-			__LIB_17__::func_32("GOING INTO ROAD_RUNNING_SECTION LOOP");
+			__LIB_17__::func_35("GOING INTO ROAD_RUNNING_SECTION LOOP");
 			iLocal_323 = 1;
 			iLocal_55 = 1;
 			break;
@@ -3288,7 +3288,7 @@ void func_343()//Position - 0x2D3A9
 			case 0:
 				if (func_346())
 				{
-					__LIB_17__::func_32("Driveby scene resources loaded - progressing");
+					__LIB_17__::func_35("Driveby scene resources loaded - progressing");
 					iLocal_323 = 1;
 				}
 				break;
@@ -3329,7 +3329,7 @@ void func_343()//Position - 0x2D3A9
 								if (__LIB_2__::func_859(&uLocal_78, "FAN1AU", Local_289.f_0, 9, 0, 0, 0))
 								{
 									Local_289.f_2 = 1;
-									__LIB_17__::func_32("Doing Mary Ann's anim...");
+									__LIB_17__::func_35("Doing Mary Ann's anim...");
 									TASK::TASK_PLAY_ANIM(iLocal_244, "rcmfanatic1yell", "yell_d", 8f, -8f, -1, 48, 0f, false, false, false);
 									iLocal_323 = 4;
 									iLocal_243 = 0;
@@ -3343,7 +3343,7 @@ void func_343()//Position - 0x2D3A9
 						else if (__LIB_2__::func_859(&uLocal_78, "FAN1AU", Local_289.f_0, 9, 1, 0, 0))
 						{
 							Local_289.f_2 = 1;
-							__LIB_17__::func_32("Doing Mary Ann's anim...");
+							__LIB_17__::func_35("Doing Mary Ann's anim...");
 							TASK::TASK_PLAY_ANIM(iLocal_244, "rcmfanatic1yell", "yell_d", 8f, -8f, -1, 48, 0f, false, false, false);
 							iLocal_323 = 4;
 							iLocal_243 = 1;
@@ -3403,7 +3403,7 @@ void func_343()//Position - 0x2D3A9
 					__LIB_0__::func_124(&Local_324, 1, 0, 1);
 					if (__LIB_0__::func_692(Local_324.f_1))
 					{
-						__LIB_17__::func_32("*** Clearing driveby task and releasing");
+						__LIB_17__::func_35("*** Clearing driveby task and releasing");
 						TASK::CLEAR_PED_TASKS(Local_324.f_1);
 						__LIB_0__::func_124(&(Local_324.f_1), 1, 0, 1);
 					}
@@ -3431,7 +3431,7 @@ void func_348()//Position - 0x2D7E1
 	switch (iLocal_55)
 	{
 		case 0:
-			__LIB_17__::func_32("Setup START_RUNNING");
+			__LIB_17__::func_35("Setup START_RUNNING");
 			VEHICLE::REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA(-1835.5298f, -518.7238f, 25.116776f, -1822.431f, -513.8933f, 30.386765f, 0);
 			VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(-1835.5298f, -518.7238f, 25.116776f, -1822.431f, -513.8933f, 30.386765f, false, true);
 			if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("FANATIC_MIX_SCENE"))
@@ -3446,7 +3446,7 @@ void func_348()//Position - 0x2D7E1
 			{
 				if (AUDIO::TRIGGER_MUSIC_EVENT("RC6A_START"))
 				{
-					__LIB_17__::func_32("Starting music - start_running() init");
+					__LIB_17__::func_35("Starting music - start_running() init");
 					iLocal_62 = 1;
 				}
 			}
@@ -3471,13 +3471,13 @@ void func_348()//Position - 0x2D7E1
 			iLocal_247 = MISC::GET_GAME_TIMER();
 			if (TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fanatic1RollingStart"))
 			{
-				__LIB_17__::func_32("*** Using assisted movement...");
+				__LIB_17__::func_35("*** Using assisted movement...");
 				TASK::USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE("Fanatic1RollingStart", true, 2f, 0.7f);
 			}
 			iLocal_67 = 1;
 			iLocal_367 = MISC::GET_GAME_TIMER();
 			iLocal_368 = MISC::GET_GAME_TIMER();
-			__LIB_17__::func_32("GOING INTO START_RUNNING LOOP");
+			__LIB_17__::func_35("GOING INTO START_RUNNING LOOP");
 			RECORDING::REPLAY_RECORD_BACK_FOR_TIME(0f, 10f, 1);
 			iLocal_55 = 1;
 			break;
@@ -3498,7 +3498,7 @@ void func_348()//Position - 0x2D7E1
 					{
 						if (CAM::IS_SCREEN_FADED_OUT())
 						{
-							__LIB_17__::func_32("FADING IN NOW");
+							__LIB_17__::func_35("FADING IN NOW");
 							__LIB_0__::func_84(500, 0);
 							__LIB_14__::func_844(1, 0, 1, 1);
 						}
@@ -3507,7 +3507,7 @@ void func_348()//Position - 0x2D7E1
 				else
 				{
 					iLocal_67 = 0;
-					__LIB_17__::func_32("TURNING OFF ASSISTED ROUTE");
+					__LIB_17__::func_35("TURNING OFF ASSISTED ROUTE");
 					TASK::USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE("Fanatic1RollingStart", false, 1f, 0.5f);
 					TASK::REMOVE_WAYPOINT_RECORDING("Fanatic1RollingStart");
 				}
@@ -3516,7 +3516,7 @@ void func_348()//Position - 0x2D7E1
 			{
 				if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_244, joaat("SCRIPT_TASK_PERFORM_SEQUENCE")) != 1)
 				{
-					__LIB_17__::func_32("Re-set Mary Ann's task post-cutscene");
+					__LIB_17__::func_35("Re-set Mary Ann's task post-cutscene");
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_77);
 					TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
 					TASK::TASK_LOOK_AT_ENTITY(0, PLAYER::PLAYER_PED_ID(), -1, 0, 2);
@@ -3547,8 +3547,8 @@ void func_348()//Position - 0x2D7E1
 									if (Local_285.f_4 != -1)
 									{
 										Local_285.f_3 = 1;
-										__LIB_17__::func_32("*** startRunConversation interrupted!");
-										__LIB_17__::func_31("*** startRunConversation will restart on line: ", Local_285.f_4);
+										__LIB_17__::func_35("*** startRunConversation interrupted!");
+										__LIB_17__::func_34("*** startRunConversation will restart on line: ", Local_285.f_4);
 									}
 									iLocal_59 = 1;
 									iLocal_64 = 1;
@@ -3557,7 +3557,7 @@ void func_348()//Position - 0x2D7E1
 								}
 								else
 								{
-									__LIB_17__::func_32("*** Waiting for prior conversation to end before can play cheated line!");
+									__LIB_17__::func_35("*** Waiting for prior conversation to end before can play cheated line!");
 								}
 							}
 						}
@@ -3577,8 +3577,8 @@ void func_348()//Position - 0x2D7E1
 						if (Local_285.f_4 != -1)
 						{
 							Local_285.f_3 = 1;
-							__LIB_17__::func_32("*** startRunConversation interrupted!");
-							__LIB_17__::func_31("*** startRunConversation will restart on line: ", Local_285.f_4);
+							__LIB_17__::func_35("*** startRunConversation interrupted!");
+							__LIB_17__::func_34("*** startRunConversation will restart on line: ", Local_285.f_4);
 						}
 						iLocal_59 = 1;
 						iLocal_64 = 1;
@@ -3587,7 +3587,7 @@ void func_348()//Position - 0x2D7E1
 					}
 					else
 					{
-						__LIB_17__::func_32("*** Waiting for prior conversation to end before can play cheated line!");
+						__LIB_17__::func_35("*** Waiting for prior conversation to end before can play cheated line!");
 					}
 				}
 			}
@@ -3611,7 +3611,7 @@ void func_348()//Position - 0x2D7E1
 				if (Local_285.f_2 == 0 && (MISC::GET_GAME_TIMER() - iLocal_368) > 3500)
 				{
 					__LIB_2__::func_859(&uLocal_78, "FAN1AU", Local_285.f_0, 7, 0, 0, 0);
-					__LIB_17__::func_32("SETTING UP THE CONVERSATION");
+					__LIB_17__::func_35("SETTING UP THE CONVERSATION");
 					Local_285.f_2 = 1;
 					iLocal_281 = MISC::GET_GAME_TIMER();
 				}
@@ -3648,11 +3648,11 @@ void func_352()//Position - 0x2DE16
 	switch (iLocal_55)
 	{
 		case 0:
-			__LIB_17__::func_32("Intro Cutscene");
+			__LIB_17__::func_35("Intro Cutscene");
 			__LIB_14__::func_851("ef_1_rcm", 1);
 			if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 			{
-				__LIB_17__::func_32("Trying to set Mary Ann component variation");
+				__LIB_17__::func_35("Trying to set Mary Ann component variation");
 				CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Mary_Ann", iLocal_244, joaat("CS_MaryAnn"));
 			}
 			iLocal_313 = 0;
@@ -3666,12 +3666,12 @@ void func_352()//Position - 0x2DE16
 				if (__LIB_0__::func_121(iLocal_244))
 				{
 					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(iLocal_244, "Mary_Ann", 0, joaat("IG_MaryAnn"), 0);
-					__LIB_17__::func_32("Registered Mary Ann");
+					__LIB_17__::func_35("Registered Mary Ann");
 				}
 				if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 				{
 					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), "Michael", 0, 0, 0);
-					__LIB_17__::func_32("Registered Michael");
+					__LIB_17__::func_35("Registered Michael");
 				}
 				iLocal_340 = PED::ADD_SCENARIO_BLOCKING_AREA(-1926.6536f, -387.8897f, 46.7354f, -1897.3219f, -374.5802f, 51.0241f, false, true, true, true);
 				__LIB_14__::func_841();
@@ -3687,12 +3687,12 @@ void func_352()//Position - 0x2DE16
 				func_440();
 				MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1799.5134f, -467.64594f, 43.13879f, -1789.6028f, -476.66156f, 36.837288f, 7.5f, false, false, false, false, false, 0, 0);
 				bLocal_61 = false;
-				__LIB_17__::func_32("Going into cutscene main loop now");
+				__LIB_17__::func_35("Going into cutscene main loop now");
 				iLocal_55 = 1;
 			}
 			else
 			{
-				__LIB_17__::func_32("Waiting for cutscene to be OK to start...");
+				__LIB_17__::func_35("Waiting for cutscene to be OK to start...");
 			}
 			break;
 		case 1:
@@ -3704,7 +3704,7 @@ void func_352()//Position - 0x2DE16
 					{
 						if (AUDIO::TRIGGER_MUSIC_EVENT("RC6A_START"))
 						{
-							__LIB_17__::func_32("Starting music");
+							__LIB_17__::func_35("Starting music");
 							iLocal_62 = 1;
 						}
 					}
@@ -3713,8 +3713,8 @@ void func_352()//Position - 0x2DE16
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 				if (CUTSCENE::WAS_CUTSCENE_SKIPPED())
 				{
-					__LIB_17__::func_32("*** Cutscene skip detected");
-					__LIB_17__::func_32("*** Cam exit state pitch/heading on skip");
+					__LIB_17__::func_35("*** Cutscene skip detected");
+					__LIB_17__::func_35("*** Cam exit state pitch/heading on skip");
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 					if (__LIB_0__::func_121(iLocal_244))
@@ -3739,15 +3739,15 @@ void func_352()//Position - 0x2DE16
 					{
 						if (AUDIO::TRIGGER_MUSIC_EVENT("RC6A_START"))
 						{
-							__LIB_17__::func_32("Starting music");
+							__LIB_17__::func_35("Starting music");
 							iLocal_62 = 1;
 						}
 					}
 				}
 				if (CUTSCENE::WAS_CUTSCENE_SKIPPED())
 				{
-					__LIB_17__::func_32("*** Cutscene skip detected");
-					__LIB_17__::func_32("*** Cam exit state pitch/heading on skip");
+					__LIB_17__::func_35("*** Cutscene skip detected");
+					__LIB_17__::func_35("*** Cam exit state pitch/heading on skip");
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 					if (__LIB_0__::func_121(iLocal_244))
@@ -3759,7 +3759,7 @@ void func_352()//Position - 0x2DE16
 					{
 						if (AUDIO::TRIGGER_MUSIC_EVENT("RC6A_START"))
 						{
-							__LIB_17__::func_32("Starting music from skip");
+							__LIB_17__::func_35("Starting music from skip");
 							iLocal_62 = 1;
 						}
 					}
@@ -3787,8 +3787,8 @@ void func_353()//Position - 0x2E1B9
 	{
 		if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Mary_Ann", joaat("IG_MaryAnn")))
 		{
-			__LIB_17__::func_32("*** Forcing Mary Ann's move state");
-			__LIB_17__::func_32("SET MARY ANNS TASK");
+			__LIB_17__::func_35("*** Forcing Mary Ann's move state");
+			__LIB_17__::func_35("SET MARY ANNS TASK");
 			if (bLocal_61)
 			{
 				__LIB_14__::func_659(iLocal_244, -1867.64f, -446.01f, 45.16f, 229.3557f, 0, 1);
@@ -3812,7 +3812,7 @@ int func_355()//Position - 0x2E2D0
 	{
 		if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Michael", 0))
 		{
-			__LIB_17__::func_32("*** Forcing Michael's move state");
+			__LIB_17__::func_35("*** Forcing Michael's move state");
 			PED::FORCE_PED_MOTION_STATE(PLAYER::PLAYER_PED_ID(), joaat("MotionState_Run"), false, 1, false);
 			PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 2f, 5000, 0f, true, false);
 			return 1;
@@ -3835,7 +3835,7 @@ void func_363()//Position - 0x2E642
 					{
 						__LIB_0__::func_429();
 					}
-					__LIB_17__::func_32("Player too close to Mary Ann, starting cutscene early");
+					__LIB_17__::func_35("Player too close to Mary Ann, starting cutscene early");
 					iLocal_55 = 0;
 					iLocal_56 = 1;
 				}
@@ -3866,12 +3866,12 @@ void func_363()//Position - 0x2E642
 								__LIB_0__::func_222(&uLocal_78, 3, iLocal_244, "MARYANN", 0, 1);
 								__LIB_0__::func_222(&uLocal_78, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 								TASK::TASK_PLAY_ANIM_ADVANCED(iLocal_244, "rcmfanatic1", "ef_1_rcm_mary_ann_leadin", -1878.223f, -440.51813f, 46.03983f, 0f, 0f, 159.97f, 8f, -8f, -1, 262154, 0f, 2, 0);
-								__LIB_17__::func_32("Done Mary Ann leadin anim");
+								__LIB_17__::func_35("Done Mary Ann leadin anim");
 								iLocal_55 = 1;
 							}
 							else
 							{
-								__LIB_17__::func_32("Waiting to blend the lead-in...");
+								__LIB_17__::func_35("Waiting to blend the lead-in...");
 							}
 						}
 					}
@@ -3879,7 +3879,7 @@ void func_363()//Position - 0x2E642
 			}
 			else
 			{
-				__LIB_17__::func_32("Replay in progress or in wrong area - skipping to intro");
+				__LIB_17__::func_35("Replay in progress or in wrong area - skipping to intro");
 				iLocal_56 = 1;
 			}
 			break;
@@ -3906,13 +3906,13 @@ void func_363()//Position - 0x2E642
 					{
 						if (__LIB_2__::func_859(&uLocal_78, "FAN1AU", "FAN1_LDI", 8, 0, 0, 0))
 						{
-							__LIB_17__::func_32("Done Mary Ann leadin conv");
+							__LIB_17__::func_35("Done Mary Ann leadin conv");
 							iLocal_60 = 1;
 						}
 					}
 					else if (!__LIB_0__::func_75())
 					{
-						__LIB_17__::func_32("Mary Ann leadin conv over");
+						__LIB_17__::func_35("Mary Ann leadin conv over");
 						SYSTEM::WAIT(250);
 						iLocal_55 = 0;
 						iLocal_56 = 1;
@@ -3920,7 +3920,7 @@ void func_363()//Position - 0x2E642
 				}
 				else
 				{
-					__LIB_17__::func_32("Mary Ann not playing leadin anim anymore - skip to cutscene for safety");
+					__LIB_17__::func_35("Mary Ann not playing leadin anim anymore - skip to cutscene for safety");
 					iLocal_55 = 0;
 					iLocal_56 = 1;
 				}
@@ -3950,7 +3950,7 @@ void func_366()//Position - 0x2E940
 				{
 					if (func_367(Local_274.f_0))
 					{
-						__LIB_17__::func_31("Said OvertakeLines #", Local_274.f_1);
+						__LIB_17__::func_34("Said OvertakeLines #", Local_274.f_1);
 						Local_274.f_1++;
 						iLocal_277 = 0;
 						iLocal_278 = 1;
@@ -4020,7 +4020,7 @@ void func_368()//Position - 0x2EA20
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_244, iLocal_77);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_77);
 					PED::SET_PED_KEEP_TASK(iLocal_244, true);
-					__LIB_17__::func_32("Emergency retasked Mary Ann!");
+					__LIB_17__::func_35("Emergency retasked Mary Ann!");
 				}
 			}
 		}
@@ -4064,14 +4064,14 @@ void func_368()//Position - 0x2EA20
 				{
 					PED::SET_PED_STEERS_AROUND_PEDS(iLocal_244, true);
 					iLocal_255 = 1;
-					__LIB_17__::func_32("Set Mary Ann to steer round peds");
+					__LIB_17__::func_35("Set Mary Ann to steer round peds");
 				}
 			}
 			else if (iLocal_255 == 1)
 			{
 				PED::SET_PED_STEERS_AROUND_PEDS(iLocal_244, false);
 				iLocal_255 = 0;
-				__LIB_17__::func_32("Unset Mary Ann to steer round peds");
+				__LIB_17__::func_35("Unset Mary Ann to steer round peds");
 			}
 			func_369();
 		}
@@ -4093,7 +4093,7 @@ void func_369()//Position - 0x2EC45
 			{
 				if ((MISC::GET_GAME_TIMER() - iLocal_260) > 20000)
 				{
-					__LIB_17__::func_32("Mary Ann got stuck!");
+					__LIB_17__::func_35("Mary Ann got stuck!");
 					iLocal_259 = 2;
 				}
 			}
@@ -4136,7 +4136,7 @@ void func_370(int iParam0, int iParam1)//Position - 0x2ECDF
 				TASK::CLEAR_SEQUENCE_TASK(&iLocal_77);
 			}
 		}
-		__LIB_17__::func_32("Keep Running used");
+		__LIB_17__::func_35("Keep Running used");
 		PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(iLocal_244, false);
 		if (iParam1 == 1)
 		{
@@ -4283,7 +4283,7 @@ void func_373()//Position - 0x2EEB0
 		case 3:
 			if ((MISC::GET_GAME_TIMER() - iLocal_247) > iLocal_249)
 			{
-				__LIB_17__::func_32("*** SPRINT BOOST WAITING");
+				__LIB_17__::func_35("*** SPRINT BOOST WAITING");
 				iLocal_246 = 0;
 			}
 			break;
@@ -4434,7 +4434,7 @@ void func_378(int iParam0)//Position - 0x2F1F8
 					{
 						__LIB_0__::func_325();
 					}
-					__LIB_17__::func_32("MA Dialogue: Kill convo, switch to MA_OUT_OF_TALKING_RANGE, trying keep up line if possible");
+					__LIB_17__::func_35("MA Dialogue: Kill convo, switch to MA_OUT_OF_TALKING_RANGE, trying keep up line if possible");
 					iLocal_243 = 2;
 				}
 				break;
@@ -4445,7 +4445,7 @@ void func_378(int iParam0)//Position - 0x2F1F8
 					{
 						__LIB_0__::func_325();
 					}
-					__LIB_17__::func_32("MA Dialogue: Kill convo, switch to MA_WITHIN_TALKING_RANGE, trying you caught up line if possible");
+					__LIB_17__::func_35("MA Dialogue: Kill convo, switch to MA_WITHIN_TALKING_RANGE, trying you caught up line if possible");
 					iLocal_243 = 3;
 				}
 				break;
@@ -4462,7 +4462,7 @@ void func_379()//Position - 0x2F25E
 			if ((Local_295.f_2 || Local_298.f_2) && iLocal_56 == 2)
 			{
 				iLocal_243 = 1;
-				__LIB_17__::func_32("MA Dialogue: Now in MA_OUT_OF_TALKING_RANGE");
+				__LIB_17__::func_35("MA Dialogue: Now in MA_OUT_OF_TALKING_RANGE");
 			}
 			else if (iLocal_349 == 2)
 			{
@@ -4470,18 +4470,18 @@ void func_379()//Position - 0x2F25E
 				{
 					iLocal_262++;
 					iLocal_243 = 1;
-					__LIB_17__::func_32("MA Dialogue: Played keep up line, now in MA_OUT_OF_TALKING_RANGE");
+					__LIB_17__::func_35("MA Dialogue: Played keep up line, now in MA_OUT_OF_TALKING_RANGE");
 				}
 			}
 			else
 			{
 				iLocal_243 = 1;
-				__LIB_17__::func_32("MA Dialogue: Player in 1st place so no need for keep up line, now in MA_OUT_OF_TALKING_RANGE");
+				__LIB_17__::func_35("MA Dialogue: Player in 1st place so no need for keep up line, now in MA_OUT_OF_TALKING_RANGE");
 			}
 		}
 		else
 		{
-			__LIB_17__::func_32("MA Dialogue: Said all keep up lines, now in MA_OUT_OF_TALKING_RANGE");
+			__LIB_17__::func_35("MA Dialogue: Said all keep up lines, now in MA_OUT_OF_TALKING_RANGE");
 			iLocal_243 = 1;
 		}
 	}
@@ -4500,7 +4500,7 @@ void func_379()//Position - 0x2F25E
 					}
 				}
 				iLocal_243 = 0;
-				__LIB_17__::func_32("MA Dialogue: Now in MA_WITHIN_TALKING_RANGE");
+				__LIB_17__::func_35("MA Dialogue: Now in MA_WITHIN_TALKING_RANGE");
 			}
 			else if (iLocal_349 == 2)
 			{
@@ -4508,13 +4508,13 @@ void func_379()//Position - 0x2F25E
 				{
 					iLocal_264++;
 					iLocal_243 = 0;
-					__LIB_17__::func_32("MA Dialogue: Played catchup line, now in MA_WITHIN_TALKING_RANGE");
+					__LIB_17__::func_35("MA Dialogue: Played catchup line, now in MA_WITHIN_TALKING_RANGE");
 				}
 			}
 			else
 			{
 				iLocal_243 = 0;
-				__LIB_17__::func_32("MA Dialogue: Player in 1st place so no need for catchup line, now in MA_WITHIN_TALKING_RANGE");
+				__LIB_17__::func_35("MA Dialogue: Player in 1st place so no need for catchup line, now in MA_WITHIN_TALKING_RANGE");
 			}
 		}
 	}
@@ -4592,14 +4592,14 @@ void func_381()//Position - 0x2F4FA
 				{
 					if (uVar0[0] == iLocal_244)
 					{
-						__LIB_17__::func_32("Player touched Mary Ann!");
+						__LIB_17__::func_35("Player touched Mary Ann!");
 						if (!__LIB_0__::func_75())
 						{
 							if (Local_270.f_1 <= 3)
 							{
 								if (func_367(Local_270.f_0))
 								{
-									__LIB_17__::func_31("Saying MikePushMALine #", Local_270.f_1);
+									__LIB_17__::func_34("Saying MikePushMALine #", Local_270.f_1);
 									Local_270.f_1++;
 								}
 							}
@@ -4607,7 +4607,7 @@ void func_381()//Position - 0x2F4FA
 					}
 					else
 					{
-						__LIB_17__::func_32("Player touched a civ!");
+						__LIB_17__::func_35("Player touched a civ!");
 						if (!PED::IS_PED_IN_ANY_VEHICLE(uVar0[0], false))
 						{
 							if (!PED::IS_PED_RAGDOLL(uVar0[0]))
@@ -4623,7 +4623,7 @@ void func_381()//Position - 0x2F4FA
 								{
 									if (func_367(Local_272.f_0))
 									{
-										__LIB_17__::func_31("Said MikePushPedLine #", Local_272.f_1);
+										__LIB_17__::func_34("Said MikePushPedLine #", Local_272.f_1);
 										Local_272.f_1++;
 									}
 								}
@@ -4651,13 +4651,13 @@ void func_383()//Position - 0x2F687
 					iLocal_349 = 1;
 					if ((MISC::GET_GAME_TIMER() - iLocal_276) > 3000)
 					{
-						__LIB_17__::func_32("Trying an overtake line...");
+						__LIB_17__::func_35("Trying an overtake line...");
 						iLocal_277 = 1;
 						iLocal_276 = MISC::GET_GAME_TIMER();
 					}
 					else
 					{
-						__LIB_17__::func_31("Can't do overtake line, overtake timer is = ", (MISC::GET_GAME_TIMER() - iLocal_276));
+						__LIB_17__::func_34("Can't do overtake line, overtake timer is = ", (MISC::GET_GAME_TIMER() - iLocal_276));
 					}
 				}
 			}
@@ -4680,17 +4680,17 @@ void func_383()//Position - 0x2F687
 				iLocal_349 = 1;
 				if ((MISC::GET_GAME_TIMER() - iLocal_276) > 3000)
 				{
-					__LIB_17__::func_32("Trying an overtake line...");
+					__LIB_17__::func_35("Trying an overtake line...");
 					iLocal_277 = 1;
 					iLocal_276 = MISC::GET_GAME_TIMER();
 				}
 				else
 				{
-					__LIB_17__::func_31("Can't do overtake line, overtake timer is = ", (MISC::GET_GAME_TIMER() - iLocal_276));
+					__LIB_17__::func_34("Can't do overtake line, overtake timer is = ", (MISC::GET_GAME_TIMER() - iLocal_276));
 				}
 			}
 			__LIB_1__::func_910();
-			__LIB_33__::func_544((MISC::GET_GAME_TIMER() - iLocal_366), "", -1, -1, "", iLocal_349, 2, "", 0, 1, -1, -1, 0, 12, -1, -1, 0, 6, -1, 0, 0, 1, -1, 0, -1082130432, 1, 1);
+			__LIB_32__::func_28((MISC::GET_GAME_TIMER() - iLocal_366), "", -1, -1, "", iLocal_349, 2, "", 0, 1, -1, -1, 0, 12, -1, -1, 0, 6, -1, 0, 0, 1, -1, 0, -1082130432, 1, 1);
 		}
 	}
 }
@@ -4736,7 +4736,7 @@ void func_398()//Position - 0x3049D
 				__LIB_0__::func_714(&iLocal_358);
 				if (iLocal_359 != 0)
 				{
-					__LIB_17__::func_32("Create prev CP");
+					__LIB_17__::func_35("Create prev CP");
 					iLocal_361 = 180;
 					iVar0 = 1;
 					HUD::GET_HUD_COLOUR(iVar0, &iVar5, &iVar6, &iVar7, &iLocal_361);
@@ -4797,7 +4797,7 @@ void func_398()//Position - 0x3049D
 				{
 					if (iLocal_359 != 0)
 					{
-						__LIB_17__::func_32("Create prev CP");
+						__LIB_17__::func_35("Create prev CP");
 						iLocal_361 = 180;
 						iVar0 = 1;
 						HUD::GET_HUD_COLOUR(iVar0, &iVar5, &iVar6, &iVar7, &iLocal_361);
@@ -4809,7 +4809,7 @@ void func_398()//Position - 0x3049D
 					iLocal_308 = 1;
 					iLocal_55 = 0;
 					iLocal_56 = 8;
-					__LIB_17__::func_32("PLAYER_AT_FINISH_LINE");
+					__LIB_17__::func_35("PLAYER_AT_FINISH_LINE");
 				}
 			}
 		}
@@ -4955,7 +4955,7 @@ void func_402()//Position - 0x30AC7
 	{
 		if (__LIB_0__::func_724(iLocal_244, Local_356, 1) < 3f)
 		{
-			__LIB_17__::func_32("Detected Mary Ann won race");
+			__LIB_17__::func_35("Detected Mary Ann won race");
 			iLocal_58 = 5;
 			iLocal_55 = 0;
 			iLocal_56 = 9;
@@ -4980,7 +4980,7 @@ void func_403()//Position - 0x30B06
 			{
 				if (__LIB_0__::func_75())
 				{
-					__LIB_17__::func_32("stop scripted conversation at CHECK_IF_PLAYER_LEFT_THE_COURSE_OR_MARY_ANN");
+					__LIB_17__::func_35("stop scripted conversation at CHECK_IF_PLAYER_LEFT_THE_COURSE_OR_MARY_ANN");
 					__LIB_0__::func_325();
 				}
 				HUD::CLEAR_PRINTS();
@@ -5044,7 +5044,7 @@ void func_424(int iParam0)//Position - 0x3171A
 	GRAPHICS::DELETE_CHECKPOINT(iLocal_359);
 	if (__LIB_0__::func_75())
 	{
-		__LIB_17__::func_32("Stopping scripted convo at jump_to_stage");
+		__LIB_17__::func_35("Stopping scripted convo at jump_to_stage");
 		__LIB_0__::func_429();
 	}
 	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_76);
@@ -5093,7 +5093,7 @@ void func_424(int iParam0)//Position - 0x3171A
 			__LIB_14__::func_851("ef_1_rcm", 0);
 			if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 			{
-				__LIB_17__::func_32("Trying to set Mary Ann component variation");
+				__LIB_17__::func_35("Trying to set Mary Ann component variation");
 				CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Mary_Ann", iLocal_244, joaat("CS_MaryAnn"));
 			}
 			iLocal_364 = 0;
@@ -5257,17 +5257,17 @@ void func_424(int iParam0)//Position - 0x3171A
 	}
 	if (__LIB_0__::func_324())
 	{
-		__LIB_17__::func_32("JUMP_TO_STAGE: replay being set up");
+		__LIB_17__::func_35("JUMP_TO_STAGE: replay being set up");
 		__LIB_0__::func_433(0, -1, 1);
 		PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 2f, 5000, 0f, true, false);
 		PED::FORCE_PED_MOTION_STATE(PLAYER::PLAYER_PED_ID(), joaat("MotionState_Run"), true, 0, false);
 		WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 		SYSTEM::WAIT(1000);
-		__LIB_17__::func_398(1, 1, 1);
+		__LIB_17__::func_401(1, 1, 1);
 	}
 	else
 	{
-		__LIB_17__::func_32("JUMP_TO_STAGE: replay not being set up");
+		__LIB_17__::func_35("JUMP_TO_STAGE: replay not being set up");
 		if (iLocal_56 == 1)
 		{
 			while (!__LIB_14__::func_740(1, 1093140480, 0))
@@ -5276,7 +5276,7 @@ void func_424(int iParam0)//Position - 0x3171A
 				{
 					if (__LIB_0__::func_121(iLocal_244))
 					{
-						__LIB_17__::func_32("Trying to set Mary Ann component variation");
+						__LIB_17__::func_35("Trying to set Mary Ann component variation");
 						CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Mary_Ann", iLocal_244, joaat("CS_MaryAnn"));
 					}
 				}
@@ -5287,7 +5287,7 @@ void func_424(int iParam0)//Position - 0x3171A
 		else
 		{
 			SYSTEM::WAIT(1000);
-			__LIB_17__::func_398(1, 1, 1);
+			__LIB_17__::func_401(1, 1, 1);
 		}
 	}
 }
@@ -5383,7 +5383,7 @@ int func_428(int iParam0, int iParam1)//Position - 0x31FCB
 					{
 						return 1;
 					}
-					if (!__LIB_17__::func_397(PLAYER::PLAYER_PED_ID()))
+					if (!__LIB_17__::func_400(PLAYER::PLAYER_PED_ID()))
 					{
 						return 1;
 					}
@@ -5438,7 +5438,7 @@ int func_428(int iParam0, int iParam1)//Position - 0x31FCB
 					{
 						return 1;
 					}
-					if (!__LIB_17__::func_397(PLAYER::PLAYER_PED_ID()))
+					if (!__LIB_17__::func_400(PLAYER::PLAYER_PED_ID()))
 					{
 						return 1;
 					}
@@ -5534,7 +5534,7 @@ void func_434()//Position - 0x32764
 	STREAMING::REQUEST_MODEL(joaat("IG_MaryAnn"));
 	while ((((((((!STREAMING::HAS_ANIM_DICT_LOADED("rcmfanatic1") || !STREAMING::HAS_ANIM_DICT_LOADED("rcmfanatic1celebrate")) || !STREAMING::HAS_ANIM_DICT_LOADED("rcmfanatic1yell")) || !STREAMING::HAS_ANIM_DICT_LOADED("move_f@runner")) || !STREAMING::HAS_ANIM_SET_LOADED("FEMALE_FAST_RUNNER")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED(sLocal_348)) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fanatic1RollingStart")) || !HUD::HAS_ADDITIONAL_TEXT_LOADED(0)) || !STREAMING::HAS_MODEL_LOADED(joaat("IG_MaryAnn")))
 	{
-		__LIB_17__::func_32("Loading other assets");
+		__LIB_17__::func_35("Loading other assets");
 		SYSTEM::WAIT(0);
 	}
 }
@@ -5594,7 +5594,7 @@ void func_437(bool bParam0, bool bParam1)//Position - 0x32957
 {
 	if (bParam0)
 	{
-		__LIB_17__::func_399(0, 1, 1);
+		__LIB_17__::func_402(0, 1, 1);
 	}
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
@@ -5606,7 +5606,7 @@ void func_437(bool bParam0, bool bParam1)//Position - 0x32957
 void func_440()//Position - 0x32A13
 {
 	HUD::CLEAR_PRINTS();
-	__LIB_17__::func_32("IN INIT");
+	__LIB_17__::func_35("IN INIT");
 	sLocal_348 = "Fanatic1MaryAnn";
 	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1877.0222f, -439.5663f, 47.061394f, -1809.6149f, -493.49396f, 39.58508f, 12.75f, true, false, false, false, false, 0, 0);
 	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1816.8652f, -492.40805f, 42.83916f, -1792.1584f, -470.2095f, 38.512688f, 12.75f, true, false, false, false, false, 0, 0);
@@ -5709,7 +5709,7 @@ void func_440()//Position - 0x32A13
 	Local_74.f_0 = "FATIC1_7";
 	Local_73.f_0 = "FATIC1_6";
 	Local_75.f_0 = "FATIC1_H";
-	__LIB_17__::func_32("end of init");
+	__LIB_17__::func_35("end of init");
 }
 
 void func_441()//Position - 0x32F44
@@ -5728,7 +5728,7 @@ void func_441()//Position - 0x32F44
 			Var2 = { 0f, 0f, 0f };
 			TASK::WAYPOINT_RECORDING_GET_COORD(sLocal_348, iVar1, &Var2);
 			MISC::CLEAR_AREA_OF_VEHICLES(Var2, 4f, false, false, false, false, false, false, 0);
-			__LIB_17__::func_31("Clearing area around waypoint", iVar1);
+			__LIB_17__::func_34("Clearing area around waypoint", iVar1);
 			iVar1++;
 		}
 	}
@@ -5753,7 +5753,7 @@ int func_447(var uParam0)//Position - 0x3319B
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmfanatic1", "ef_1_rcm_mary_ann_streching_base", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmfanatic1", "ef_1_rcm_mary_ann_streching_base", 0);
 			uParam0->f_48.f_5 = { -1878.223f, -440.51813f, 46.03983f };
 			uParam0->f_48.f_8 = { 0f, 0f, 159.97f };
 			iLocal_52 = 1;
@@ -5803,7 +5803,7 @@ void func_457()//Position - 0x33531
 	__LIB_14__::func_841();
 	if (__LIB_14__::func_843())
 	{
-		__LIB_17__::func_32("...Random Character Script was triggered so additional cleanup required");
+		__LIB_17__::func_35("...Random Character Script was triggered so additional cleanup required");
 	}
 	if (__LIB_0__::func_121(iLocal_244))
 	{

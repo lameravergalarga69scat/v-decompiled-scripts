@@ -61,18 +61,18 @@ void __EntryFunction__()//Position - 0x0
 	func_40(13);
 	func_40(12);
 	Global_8141 = 1;
-	__LIB_17__::func_854();
-	if (!__LIB_16__::func_979(joaat("CALL_FIN_CHOICE_1A")))
+	__LIB_17__::func_864();
+	if (!__LIB_16__::func_982(joaat("CALL_FIN_CHOICE_1A")))
 	{
-		__LIB_17__::func_670(joaat("CALL_FIN_CHOICE_1A"), 2, 2, 2, 1, -1, 5);
+		__LIB_17__::func_673(joaat("CALL_FIN_CHOICE_1A"), 2, 2, 2, 1, -1, 5);
 	}
-	if (!__LIB_16__::func_979(joaat("CALL_FIN_CHOICE_2A")))
+	if (!__LIB_16__::func_982(joaat("CALL_FIN_CHOICE_2A")))
 	{
-		__LIB_17__::func_670(joaat("CALL_FIN_CHOICE_2A"), 2, 0, 0, 1, -1, 5);
+		__LIB_17__::func_673(joaat("CALL_FIN_CHOICE_2A"), 2, 0, 0, 1, -1, 5);
 	}
-	if (!__LIB_16__::func_979(joaat("CALL_FIN_CHOICE_3")))
+	if (!__LIB_16__::func_982(joaat("CALL_FIN_CHOICE_3")))
 	{
-		__LIB_17__::func_670(joaat("CALL_FIN_CHOICE_3"), 2, 12, 3, 1, -1, 5);
+		__LIB_17__::func_673(joaat("CALL_FIN_CHOICE_3"), 2, 12, 3, 1, -1, 5);
 	}
 	bVar0 = false;
 	while (__LIB_0__::func_178(23) && !__LIB_0__::func_425(134))
@@ -116,32 +116,32 @@ void __EntryFunction__()//Position - 0x0
 							{
 								PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 							}
-							switch (__LIB_17__::func_669())
+							switch (__LIB_17__::func_672())
 							{
 								case joaat("CALL_FIN_CHOICE_1A"):
-									if (!__LIB_16__::func_979(joaat("CALL_FIN_CHOICE_1B")))
+									if (!__LIB_16__::func_982(joaat("CALL_FIN_CHOICE_1B")))
 									{
-										__LIB_17__::func_523(joaat("CALL_FIN_CHOICE_1B"), 0, 1, 0, 1, 6000, 6000, -1, 0, -1, 68);
+										__LIB_17__::func_526(joaat("CALL_FIN_CHOICE_1B"), 0, 1, 0, 1, 6000, 6000, -1, 0, -1, 68);
 									}
 									break;
 								case joaat("CALL_FIN_CHOICE_1B"):
-									__LIB_17__::func_781(12, 0);
+									__LIB_17__::func_784(12, 0);
 									__LIB_0__::func_681(134, 1);
 									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 2, true);
 									break;
 								case joaat("CALL_FIN_CHOICE_2A"):
-									if (!__LIB_16__::func_979(joaat("CALL_FIN_CHOICE_2B")))
+									if (!__LIB_16__::func_982(joaat("CALL_FIN_CHOICE_2B")))
 									{
-										__LIB_17__::func_523(joaat("CALL_FIN_CHOICE_2B"), 0, 1, 2, 2, 6000, 6000, -1, 0, -1, 68);
+										__LIB_17__::func_526(joaat("CALL_FIN_CHOICE_2B"), 0, 1, 2, 2, 6000, 6000, -1, 0, -1, 68);
 									}
 									break;
 								case joaat("CALL_FIN_CHOICE_2B"):
-									__LIB_17__::func_781(12, 1);
+									__LIB_17__::func_784(12, 1);
 									__LIB_0__::func_681(134, 1);
 									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 1, true);
 									break;
 								case joaat("CALL_FIN_CHOICE_3"):
-									__LIB_17__::func_781(12, 2);
+									__LIB_17__::func_784(12, 2);
 									__LIB_0__::func_681(134, 1);
 									STATS::STAT_SET_INT(joaat("SP_FINAL_DECISION"), 3, true);
 									break;
@@ -181,7 +181,7 @@ int func_13()//Position - 0x75E
 		return 0;
 	}
 	MISC::SET_BIT(&Global_8137, 0);
-	if (__LIB_19__::func_571(0, 0, 1, 1))
+	if (__LIB_19__::func_581(0, 0, 1, 1))
 	{
 		return 1;
 	}
@@ -205,11 +205,11 @@ void func_41()//Position - 0x1724
 
 void func_43()//Position - 0x178A
 {
-	__LIB_17__::func_110(joaat("CALL_FIN_CHOICE_1A"));
-	__LIB_17__::func_110(joaat("CALL_FIN_CHOICE_1B"));
-	__LIB_17__::func_110(joaat("CALL_FIN_CHOICE_2A"));
-	__LIB_17__::func_110(joaat("CALL_FIN_CHOICE_2B"));
-	__LIB_17__::func_110(joaat("CALL_FIN_CHOICE_3"));
+	__LIB_17__::func_113(joaat("CALL_FIN_CHOICE_1A"));
+	__LIB_17__::func_113(joaat("CALL_FIN_CHOICE_1B"));
+	__LIB_17__::func_113(joaat("CALL_FIN_CHOICE_2A"));
+	__LIB_17__::func_113(joaat("CALL_FIN_CHOICE_2B"));
+	__LIB_17__::func_113(joaat("CALL_FIN_CHOICE_3"));
 	Global_8141 = 0;
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 	SCRIPT::TERMINATE_THIS_THREAD();

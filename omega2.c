@@ -470,7 +470,7 @@ void func_46()//Position - 0x1016
 					iLocal_51 = OBJECT::CREATE_OBJECT_NO_OFFSET(iLocal_54, Local_52, true, true, false);
 					ENTITY::SET_ENTITY_ROTATION(iLocal_51, Local_53, 2, false);
 				}
-				__LIB_16__::func_871(18, 0);
+				__LIB_16__::func_874(18, 0);
 				__LIB_12__::func_849(23, 0);
 				Global_32209 = uLocal_226;
 				iLocal_41 = 2;
@@ -478,7 +478,7 @@ void func_46()//Position - 0x1016
 			break;
 		case 2:
 			RECORDING::REPLAY_STOP_EVENT();
-			__LIB_38__::func_804(3);
+			__LIB_38__::func_479(3);
 			break;
 	}
 }
@@ -1105,7 +1105,7 @@ void func_219()//Position - 0x22337
 		}
 		else
 		{
-			__LIB_38__::func_804(2);
+			__LIB_38__::func_479(2);
 		}
 	}
 }
@@ -1115,22 +1115,22 @@ int func_221()//Position - 0x223F4
 	if (!__LIB_0__::func_121(Local_39.f_28[0]))
 	{
 		iLocal_42 = 1;
-		__LIB_38__::func_804(4);
+		__LIB_38__::func_479(4);
 		return 0;
 	}
 	else if (PED::IS_PED_INJURED(Local_39.f_28[0]) || PED::IS_PED_RAGDOLL(Local_39.f_28[0]))
 	{
 		iLocal_42 = 2;
-		__LIB_38__::func_804(4);
+		__LIB_38__::func_479(4);
 		return 0;
 	}
 	else if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 	{
-		if (__LIB_17__::func_123(Local_39.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0) || __LIB_17__::func_33(PLAYER::PLAYER_PED_ID(), Local_39.f_28[0], 1))
+		if (__LIB_17__::func_126(Local_39.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0) || __LIB_17__::func_36(PLAYER::PLAYER_PED_ID(), Local_39.f_28[0], 1))
 		{
 			TASK::TASK_SMART_FLEE_PED(Local_39.f_28[0], PLAYER::PLAYER_PED_ID(), 500f, -1, false, false);
 			iLocal_42 = 3;
-			__LIB_38__::func_804(4);
+			__LIB_38__::func_479(4);
 			return 0;
 		}
 	}
@@ -1196,7 +1196,7 @@ void func_250()//Position - 0x230EF
 			}
 			iLocal_44 = MISC::GET_GAME_TIMER() + 3500;
 			func_251();
-			__LIB_38__::func_804(1);
+			__LIB_38__::func_479(1);
 		}
 	}
 }
@@ -1233,7 +1233,7 @@ int func_271(var uParam0)//Position - 0x23DDE
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmrc_omega_2", "omega_idle_looking_around", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmrc_omega_2", "omega_idle_looking_around", 0);
 			iLocal_37 = 1;
 			break;
 		case 1:
@@ -1254,7 +1254,7 @@ int func_271(var uParam0)//Position - 0x23DDE
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[1], 2331.08f, 2573.53f, 46.13f, 358.61f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[1], 2331.08f, 2573.53f, 46.13f, 358.61f);
 			}
 			if (bVar2)
 			{

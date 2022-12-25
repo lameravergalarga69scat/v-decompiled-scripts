@@ -162,7 +162,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_950();
 		}
-		if (__LIB_36__::func_425(1))
+		if (__LIB_42__::func_51(1))
 		{
 			func_950();
 		}
@@ -671,7 +671,7 @@ void func_32()//Position - 0xE1C
 				{
 					if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 8))
 					{
-						__LIB_19__::func_471();
+						__LIB_19__::func_481();
 						MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 8);
 					}
 				}
@@ -711,10 +711,10 @@ void func_32()//Position - 0xE1C
 			}
 			if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 7))
 			{
-				__LIB_19__::func_573(-1, 0, 0, -1, 0, 0);
+				__LIB_19__::func_583(-1, 0, 0, -1, 0, 0);
 				MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 7);
 			}
-			__LIB_36__::func_423(&(Global_1637407.f_534), &Global_1637407, 28, &(Global_1637407.f_1), &(Global_1637407.f_117), -1, 0, 0);
+			__LIB_42__::func_49(&(Global_1637407.f_534), &Global_1637407, 28, &(Global_1637407.f_1), &(Global_1637407.f_117), -1, 0, 0);
 			break;
 		case 2:
 			if (!__LIB_1__::func_876(PLAYER::PLAYER_ID(), func_16(), 1))
@@ -827,7 +827,7 @@ void func_32()//Position - 0xE1C
 				}
 				func_82(0);
 			}
-			if (__LIB_32__::func_212(&uLocal_93, 1, 0))
+			if (__LIB_35__::func_505(&uLocal_93, 1, 0))
 			{
 				func_931(3);
 			}
@@ -856,11 +856,11 @@ void func_82(int iParam0)//Position - 0x25CD
 	{
 		if (iParam0 != __LIB_0__::func_162())
 		{
-			__LIB_30__::func_900(0, iParam0);
+			__LIB_34__::func_802(0, iParam0);
 		}
 		else
 		{
-			__LIB_30__::func_900(0, __LIB_0__::func_162());
+			__LIB_34__::func_802(0, __LIB_0__::func_162());
 		}
 		MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 6);
 	}
@@ -883,16 +883,16 @@ void func_86()//Position - 0x26E6
 			{
 				if (__LIB_1__::func_876(PLAYER::PLAYER_ID(), func_16(), 0))
 				{
-					__LIB_42__::func_75(164, 0, &Var0, 0);
+					__LIB_43__::func_273(164, 0, &Var0, 0);
 				}
 				else
 				{
-					__LIB_42__::func_75(164, 1, &Var0, 0);
+					__LIB_43__::func_273(164, 1, &Var0, 0);
 				}
 			}
 			else
 			{
-				__LIB_42__::func_75(164, 0, &Var0, 0);
+				__LIB_43__::func_273(164, 0, &Var0, 0);
 			}
 			MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 5);
 		}
@@ -900,17 +900,17 @@ void func_86()//Position - 0x26E6
 		{
 			if (__LIB_1__::func_876(PLAYER::PLAYER_ID(), func_16(), 1))
 			{
-				__LIB_42__::func_75(164, 1, &Var0, 0);
+				__LIB_43__::func_273(164, 1, &Var0, 0);
 			}
 			else
 			{
-				__LIB_42__::func_75(164, 0, &Var0, 0);
+				__LIB_43__::func_273(164, 0, &Var0, 0);
 			}
 			MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 5);
 		}
 		else if (BitTest(Local_118.f_2, 2) || BitTest(Local_118.f_2, 1))
 		{
-			__LIB_42__::func_75(164, 0, &Var0, 0);
+			__LIB_43__::func_273(164, 0, &Var0, 0);
 			MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 5);
 		}
 	}
@@ -924,20 +924,20 @@ void func_384()//Position - 0x32C26
 		{
 			if (__LIB_1__::func_876(PLAYER::PLAYER_ID(), func_16(), 1))
 			{
-				__LIB_32__::func_199(1, 7, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+				__LIB_35__::func_931(1, 7, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 			}
 			else
 			{
-				__LIB_32__::func_199(0, 7, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+				__LIB_35__::func_931(0, 7, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 			}
 		}
 		else if (BitTest(Local_118.f_2, 1))
 		{
-			__LIB_32__::func_199(0, 8, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+			__LIB_35__::func_931(0, 8, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 		}
 		else if (BitTest(Local_118.f_2, 2))
 		{
-			__LIB_32__::func_199(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+			__LIB_35__::func_931(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 		}
 		else if (BitTest(Local_118.f_2, 3))
 		{
@@ -947,30 +947,30 @@ void func_384()//Position - 0x32C26
 				{
 					if (__LIB_1__::func_876(PLAYER::PLAYER_ID(), func_16(), 0))
 					{
-						__LIB_32__::func_199(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+						__LIB_35__::func_931(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 					}
 					else
 					{
-						__LIB_32__::func_199(1, 1, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+						__LIB_35__::func_931(1, 1, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 					}
 				}
 				else
 				{
-					__LIB_32__::func_199(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+					__LIB_35__::func_931(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 				}
 			}
 			else
 			{
-				__LIB_32__::func_199(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+				__LIB_35__::func_931(0, 2, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 			}
 		}
 		else if (BitTest(Local_118.f_2, 4))
 		{
-			__LIB_32__::func_199(0, 7, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+			__LIB_35__::func_931(0, 7, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 		}
 		else
 		{
-			__LIB_32__::func_199(0, 0, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+			__LIB_35__::func_931(0, 0, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 		}
 		MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 7);
 	}
@@ -1004,7 +1004,7 @@ void func_704()//Position - 0x46D17
 
 int func_705()//Position - 0x46DC8
 {
-	if (((__LIB_30__::func_778(164) || __LIB_12__::func_495()) || !Global_2703735.f_4.f_10) || iLocal_91 == 0)
+	if (((__LIB_30__::func_788(164) || __LIB_12__::func_495()) || !Global_2703735.f_4.f_10) || iLocal_91 == 0)
 	{
 		return 1;
 	}
@@ -1070,10 +1070,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 0:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					func_738(86, "GB_HTB_BMT0" /* GXT: EXECUTIVE SEARCH */, "GB_HTB_BMS0" /* GXT: Find the VIP of ~a~~s~ and take them out */, __LIB_30__::func_905(func_16()), iLocal_92, 0, -1, -1, -1, 2, -1);
+					func_738(86, "GB_HTB_BMT0" /* GXT: EXECUTIVE SEARCH */, "GB_HTB_BMS0" /* GXT: Find the VIP of ~a~~s~ and take them out */, __LIB_34__::func_713(func_16()), iLocal_92, 0, -1, -1, -1, 2, -1);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1081,10 +1081,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 1:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(86, "GB_HTB_BMT0" /* GXT: EXECUTIVE SEARCH */, "GB_HTB_BMS1" /* GXT: Protect your VIP */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(86, "GB_HTB_BMT0" /* GXT: EXECUTIVE SEARCH */, "GB_HTB_BMS1" /* GXT: Protect your VIP */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1092,10 +1092,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 2:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(86, "GB_HTB_BMT0" /* GXT: EXECUTIVE SEARCH */, "GB_HTB_BMS2" /* GXT: Survive until the time runs out */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(86, "GB_HTB_BMT0" /* GXT: EXECUTIVE SEARCH */, "GB_HTB_BMS2" /* GXT: Survive until the time runs out */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1103,7 +1103,7 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 3:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
 					func_736(87, Local_118.f_5, -1, "GB_HTB_BMS3" /* GXT: You killed the target VIP <C>~a~</C>~s~ */, "GB_WINNER" /* GXT: WINNER */, 1, -1, 2, 0);
@@ -1114,7 +1114,7 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 4:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
 					func_736(88, func_6(), -1, "GB_HTB_BMS4" /* GXT: <C>~a~</C>~s~ successfully found and killed the wanted VIP */, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, 1, -1, 2, 0);
@@ -1125,10 +1125,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 5:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(87, "GB_WINNER" /* GXT: WINNER */, "GB_HTB_BMS5" /* GXT: The VIP survived the search */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(87, "GB_WINNER" /* GXT: WINNER */, "GB_HTB_BMS5" /* GXT: The VIP survived the search */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1136,10 +1136,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 6:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS5" /* GXT: The VIP survived the search */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS5" /* GXT: The VIP survived the search */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1147,10 +1147,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 7:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS6" /* GXT: The VIP has left */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS6" /* GXT: The VIP has left */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1158,7 +1158,7 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 8:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
 					func_736(88, func_6(), -1, "GB_HTB_BMS7" /* GXT: You were taken out by <C>~a~</C>~s~ */, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, 1, -1, 2, 0);
@@ -1169,10 +1169,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 9:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					func_716(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS8" /* GXT: You were taken out by fellow ~a~~s~ member <C>~a~</C>~s~ */, __LIB_30__::func_903(), iLocal_92, func_6(), 0, 0, 0, -1, -1, -1, 2, -1, 2);
+					func_716(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS8" /* GXT: You were taken out by fellow ~a~~s~ member <C>~a~</C>~s~ */, __LIB_34__::func_805(), iLocal_92, func_6(), 0, 0, 0, -1, -1, -1, 2, -1, 2);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1180,10 +1180,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 10:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(87, "GB_WINNER" /* GXT: WINNER */, "GB_HTB_BMS9" /* GXT: You survived the search */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(87, "GB_WINNER" /* GXT: WINNER */, "GB_HTB_BMS9" /* GXT: You survived the search */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1191,10 +1191,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 11:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(87, "GB_WINNER" /* GXT: WINNER */, "GB_HTB_BMS10" /* GXT: Your VIP survived the search */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(87, "GB_WINNER" /* GXT: WINNER */, "GB_HTB_BMS10" /* GXT: Your VIP survived the search */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1202,10 +1202,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 12:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS11" /* GXT: You left the area before the time was up */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS11" /* GXT: You left the area before the time was up */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1213,10 +1213,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 13:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS12" /* GXT: Your VIP left the area before the time was up */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS12" /* GXT: Your VIP left the area before the time was up */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1224,10 +1224,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 14:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS13" /* GXT: The VIP left the hideout area before the time was up */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS13" /* GXT: The VIP left the hideout area before the time was up */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1235,10 +1235,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 15:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS14" /* GXT: You killed your VIP */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS14" /* GXT: You killed your VIP */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1246,10 +1246,10 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 16:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
-					__LIB_36__::func_424(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS15" /* GXT: You failed to enter the hide-out zone in time */, 1, -1, 2, 1, 0);
+					__LIB_42__::func_50(88, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, "GB_HTB_BMS15" /* GXT: You failed to enter the hide-out zone in time */, 1, -1, 2, 1, 0);
 					MISC::SET_BIT(&uLocal_102, bParam0);
 				}
 			}
@@ -1257,7 +1257,7 @@ void func_715(bool bParam0)//Position - 0x47011
 		case 17:
 			if (!BitTest(uLocal_102, bParam0))
 			{
-				if (__LIB_30__::func_767())
+				if (__LIB_30__::func_777())
 				{
 					func_740();
 					func_736(88, func_6(), -1, "GB_HTB_BMS16" /* GXT: <C>~a~</C>~s~ killed their own VIP */, "GB_WORK_OVER" /* GXT: VIP WORK OVER */, 1, -1, 2, 0);
@@ -1297,7 +1297,7 @@ int func_716(int iParam0, char* sParam1, char* sParam2, char* sParam3, int iPara
 		Var0.f_71 = iParam14;
 	}
 	__LIB_1__::func_330(&(Var0.f_69), 4);
-	return __LIB_36__::func_55(&Var0);
+	return __LIB_41__::func_801(&Var0);
 }
 
 int func_736(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam4, int iParam5, int iParam6, int iParam7, int iParam8)//Position - 0x47CCB
@@ -1321,7 +1321,7 @@ int func_736(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam4
 	{
 		__LIB_1__::func_330(&(Var0.f_69), iParam8);
 	}
-	return __LIB_36__::func_55(&Var0);
+	return __LIB_41__::func_801(&Var0);
 }
 
 int func_738(int iParam0, char* sParam1, char* sParam2, char* sParam3, int iParam4, char* sParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10)//Position - 0x47DCC
@@ -1337,7 +1337,7 @@ int func_738(int iParam0, char* sParam1, char* sParam2, char* sParam3, int iPara
 
 void func_740()//Position - 0x47F0E
 {
-	if (((((((__LIB_32__::func_203("GB_HTB_HR1" /* GXT: ~a~~s~ have started Executive Search. Search the area and take out their VIP to earn cash and RP. */, __LIB_30__::func_905(func_16()), __LIB_20__::func_73(func_16())) || __LIB_36__::func_487("GB_HTB_HR0" /* GXT: ~a~~s~ have started Executive Search. Search the area ~a~~s~ and take out their VIP to earn cash and RP. */, __LIB_30__::func_905(func_16()), __LIB_20__::func_73(func_16()), "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_73(func_16()))) || func_741("GB_HTB_HG0" /* GXT: Your VIP has started Executive Search. Enter the area ~a~~s~ and protect them to earn cash and RP. */, "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_73(func_16()))) || __LIB_0__::func_1("GB_HTB_HELP2" /* GXT: There is a wanted VIP on the loose somewhere in the countryside. Head over to the indicated location on your map to begin searching. */)) || __LIB_0__::func_1("GB_HTB_HELP3" /* GXT: Your VIP is wanted for unspecified crimes, and is currently hiding out in the indicated area on your map. Do whatever you can to throw any search parties off the VIP's scent. */)) || __LIB_0__::func_1("GB_HTB_HELP4" /* GXT: You are now visible to all players, return to the hideout area immediately to return to hiding. Failure to do so will result in a loss. */)) || __LIB_0__::func_1("GB_HTB_HELP5" /* GXT: The search has begun, try to stay hidden until the time runs out! */)) || __LIB_0__::func_1("GB_HTB_HELP7" /* GXT: Keep moving or you will become visible on the Radar to other players. When visible, your Radar arrow will turn red. */))
+	if (((((((__LIB_35__::func_935("GB_HTB_HR1" /* GXT: ~a~~s~ have started Executive Search. Search the area and take out their VIP to earn cash and RP. */, __LIB_34__::func_713(func_16()), __LIB_20__::func_83(func_16())) || __LIB_36__::func_143("GB_HTB_HR0" /* GXT: ~a~~s~ have started Executive Search. Search the area ~a~~s~ and take out their VIP to earn cash and RP. */, __LIB_34__::func_713(func_16()), __LIB_20__::func_83(func_16()), "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_83(func_16()))) || func_741("GB_HTB_HG0" /* GXT: Your VIP has started Executive Search. Enter the area ~a~~s~ and protect them to earn cash and RP. */, "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_83(func_16()))) || __LIB_0__::func_1("GB_HTB_HELP2" /* GXT: There is a wanted VIP on the loose somewhere in the countryside. Head over to the indicated location on your map to begin searching. */)) || __LIB_0__::func_1("GB_HTB_HELP3" /* GXT: Your VIP is wanted for unspecified crimes, and is currently hiding out in the indicated area on your map. Do whatever you can to throw any search parties off the VIP's scent. */)) || __LIB_0__::func_1("GB_HTB_HELP4" /* GXT: You are now visible to all players, return to the hideout area immediately to return to hiding. Failure to do so will result in a loss. */)) || __LIB_0__::func_1("GB_HTB_HELP5" /* GXT: The search has begun, try to stay hidden until the time runs out! */)) || __LIB_0__::func_1("GB_HTB_HELP7" /* GXT: Keep moving or you will become visible on the Radar to other players. When visible, your Radar arrow will turn red. */))
 	{
 		HUD::CLEAR_HELP(true);
 	}
@@ -1366,10 +1366,10 @@ void func_748(bool bParam0)//Position - 0x4812A
 		case 0:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
-					__LIB_21__::func_886("GB_HTB_HB0" /* GXT: You have started Executive Search. Enter the area ~a~~s~ and survive to earn cash and RP. */, "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_73(func_16()), -1);
-					__LIB_16__::func_609(1);
+					__LIB_21__::func_896("GB_HTB_HB0" /* GXT: You have started Executive Search. Enter the area ~a~~s~ and survive to earn cash and RP. */, "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_83(func_16()), -1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 				}
 			}
@@ -1377,10 +1377,10 @@ void func_748(bool bParam0)//Position - 0x4812A
 		case 1:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
-					__LIB_3__::func_132("GB_HTB_HR0" /* GXT: ~a~~s~ have started Executive Search. Search the area ~a~~s~ and take out their VIP to earn cash and RP. */, __LIB_30__::func_905(func_16()), __LIB_20__::func_73(func_16()), "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_73(func_16()), -1);
-					__LIB_16__::func_609(1);
+					__LIB_3__::func_132("GB_HTB_HR0" /* GXT: ~a~~s~ have started Executive Search. Search the area ~a~~s~ and take out their VIP to earn cash and RP. */, __LIB_34__::func_713(func_16()), __LIB_20__::func_83(func_16()), "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_83(func_16()), -1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 				}
 			}
@@ -1388,10 +1388,10 @@ void func_748(bool bParam0)//Position - 0x4812A
 		case 2:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
 					__LIB_1__::func_707("GB_HTB_HELP2" /* GXT: There is a wanted VIP on the loose somewhere in the countryside. Head over to the indicated location on your map to begin searching. */, -1);
-					__LIB_16__::func_609(1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 				}
 			}
@@ -1399,28 +1399,28 @@ void func_748(bool bParam0)//Position - 0x4812A
 		case 3:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
 					__LIB_1__::func_707("GB_HTB_HELP3" /* GXT: Your VIP is wanted for unspecified crimes, and is currently hiding out in the indicated area on your map. Do whatever you can to throw any search parties off the VIP's scent. */, -1);
-					__LIB_16__::func_609(1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 				}
 			}
 			break;
 		case 4:
-			if (__LIB_32__::func_204(0))
+			if (__LIB_35__::func_936(0))
 			{
 				__LIB_1__::func_707("GB_HTB_HELP4" /* GXT: You are now visible to all players, return to the hideout area immediately to return to hiding. Failure to do so will result in a loss. */, -1);
-				__LIB_16__::func_609(0);
+				__LIB_16__::func_612(0);
 			}
 			break;
 		case 5:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
 					__LIB_1__::func_707("GB_HTB_HELP5" /* GXT: The search has begun, try to stay hidden until the time runs out! */, -1);
-					__LIB_16__::func_609(1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 				}
 			}
@@ -1428,10 +1428,10 @@ void func_748(bool bParam0)//Position - 0x4812A
 		case 6:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
-					__LIB_21__::func_886("GB_HTB_HG0" /* GXT: Your VIP has started Executive Search. Enter the area ~a~~s~ and protect them to earn cash and RP. */, "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_73(func_16()), -1);
-					__LIB_16__::func_609(1);
+					__LIB_21__::func_896("GB_HTB_HG0" /* GXT: Your VIP has started Executive Search. Enter the area ~a~~s~ and protect them to earn cash and RP. */, "GB_HTB_BLP" /* GXT: ~BLIP_HUNT_THE_BOSS~ */, __LIB_20__::func_83(func_16()), -1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 				}
 			}
@@ -1439,10 +1439,10 @@ void func_748(bool bParam0)//Position - 0x4812A
 		case 7:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
 					__LIB_1__::func_707("GB_HTB_HELP7" /* GXT: Keep moving or you will become visible on the Radar to other players. When visible, your Radar arrow will turn red. */, -1);
-					__LIB_16__::func_609(1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 					__LIB_10__::func_577(-169037398, func_751(0));
 				}
@@ -1451,10 +1451,10 @@ void func_748(bool bParam0)//Position - 0x4812A
 		case 8:
 			if (!BitTest(uLocal_103, bParam0))
 			{
-				if (__LIB_32__::func_204(0))
+				if (__LIB_35__::func_936(0))
 				{
-					__LIB_3__::func_441("GB_HTB_HR1" /* GXT: ~a~~s~ have started Executive Search. Search the area and take out their VIP to earn cash and RP. */, __LIB_30__::func_905(func_16()), __LIB_20__::func_73(func_16()), -1);
-					__LIB_16__::func_609(1);
+					__LIB_3__::func_441("GB_HTB_HR1" /* GXT: ~a~~s~ have started Executive Search. Search the area and take out their VIP to earn cash and RP. */, __LIB_34__::func_713(func_16()), __LIB_20__::func_83(func_16()), -1);
+					__LIB_16__::func_612(1);
 					MISC::SET_BIT(&uLocal_103, bParam0);
 					__LIB_10__::func_577(-169037398, func_751(0));
 				}
@@ -1682,7 +1682,7 @@ int func_759(int iParam0)//Position - 0x48958
 
 bool func_760()//Position - 0x48968
 {
-	return __LIB_19__::func_352(func_16(), 1);
+	return __LIB_19__::func_362(func_16(), 1);
 }
 
 int func_762(int iParam0, int iParam1, var uParam2, bool bParam3, float fParam4, bool bParam5)//Position - 0x4898D
@@ -1799,7 +1799,7 @@ void func_788()//Position - 0x49E1C
 				{
 					if (!__LIB_2__::func_755("GB_HTB_OT2" /* GXT: Your ~a~~s~ is being hunted. Protect them. */))
 					{
-						__LIB_19__::func_873("GB_HTB_OT2" /* GXT: Your ~a~~s~ is being hunted. Protect them. */, "GB_BOSS_LC" /* GXT: VIP */, iLocal_92, 0);
+						__LIB_19__::func_883("GB_HTB_OT2" /* GXT: Your ~a~~s~ is being hunted. Protect them. */, "GB_BOSS_LC" /* GXT: VIP */, iLocal_92, 0);
 					}
 				}
 			}
@@ -1957,13 +1957,13 @@ void func_814()//Position - 0x4AA1A
 					{
 						if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 2))
 						{
-							__LIB_32__::func_205(1, 0);
+							__LIB_35__::func_937(1, 0);
 							MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 2);
 						}
 					}
 					else if (BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 2))
 					{
-						__LIB_32__::func_205(0, 0);
+						__LIB_35__::func_937(0, 0);
 						MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 2);
 					}
 				}
@@ -1980,7 +1980,7 @@ void func_814()//Position - 0x4AA1A
 							if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 10))
 							{
 								__LIB_12__::func_535(Local_118.f_5, 432, 1, 0);
-								__LIB_30__::func_773(Local_118.f_5, __LIB_1__::func_389(iLocal_92), 1, 0);
+								__LIB_30__::func_783(Local_118.f_5, __LIB_1__::func_389(iLocal_92), 1, 0);
 								if (__LIB_1__::func_693(func_16(), 1, 1))
 								{
 									__LIB_15__::func_359(Local_118.f_5, 1, 0, 0);
@@ -1991,7 +1991,7 @@ void func_814()//Position - 0x4AA1A
 						else if (BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 10))
 						{
 							__LIB_12__::func_535(Local_118.f_5, 432, 0, 0);
-							__LIB_30__::func_773(Local_118.f_5, __LIB_1__::func_389(iLocal_92), 0, 0);
+							__LIB_30__::func_783(Local_118.f_5, __LIB_1__::func_389(iLocal_92), 0, 0);
 							if (__LIB_1__::func_693(func_16(), 1, 1))
 							{
 								__LIB_15__::func_359(Local_118.f_5, 0, 0, 0);
@@ -2099,17 +2099,17 @@ void func_827()//Position - 0x4B429
 	{
 		if (BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 2))
 		{
-			__LIB_32__::func_205(0, 0);
+			__LIB_35__::func_937(0, 0);
 			MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 2);
 		}
 		if (__LIB_0__::func_937(&uLocal_113, SYSTEM::ROUND(Global_262145.f_12965 /* Tunable: GB_HUNTBOSS_BOSS_BLIPPED_TIME */), 0))
 		{
 			__LIB_0__::func_794(&uLocal_113);
 			MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 4);
-			__LIB_22__::func_106(0, -1, 500, 500, 0);
+			__LIB_22__::func_116(0, -1, 500, 500, 0);
 			if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 2))
 			{
-				__LIB_32__::func_205(1, 0);
+				__LIB_35__::func_937(1, 0);
 				MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 2);
 			}
 		}
@@ -2128,10 +2128,10 @@ void func_827()//Position - 0x4B429
 		{
 			if (BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 2))
 			{
-				__LIB_32__::func_205(0, 0);
+				__LIB_35__::func_937(0, 0);
 				MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 2);
 				func_748(7);
-				__LIB_22__::func_106(1, -1, 2147483647, 0, 0);
+				__LIB_22__::func_116(1, -1, 2147483647, 0, 0);
 			}
 			if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 4))
 			{
@@ -2194,7 +2194,7 @@ void func_832()//Position - 0x4B763
 	if (BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 10))
 	{
 		__LIB_12__::func_535(Local_118.f_5, 432, 0, 0);
-		__LIB_30__::func_773(Local_118.f_5, __LIB_1__::func_389(iLocal_92), 0, 0);
+		__LIB_30__::func_783(Local_118.f_5, __LIB_1__::func_389(iLocal_92), 0, 0);
 		__LIB_15__::func_359(Local_118.f_5, 0, 0, 0);
 		MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 10);
 	}
@@ -2291,7 +2291,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 			{
 				if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 8))
 				{
-					__LIB_19__::func_471();
+					__LIB_19__::func_481();
 					MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 8);
 				}
 			}
@@ -2302,7 +2302,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 			{
 				if (!__LIB_0__::func_165(PLAYER::PLAYER_ID(), 20))
 				{
-					__LIB_19__::func_557(0);
+					__LIB_19__::func_567(0);
 				}
 			}
 		}
@@ -2355,7 +2355,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 				{
 					if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 8))
 					{
-						__LIB_19__::func_471();
+						__LIB_19__::func_481();
 						MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 8);
 					}
 				}
@@ -2374,7 +2374,7 @@ void func_841()//Position - 0x4BDF7
 			{
 				if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 8))
 				{
-					__LIB_19__::func_471();
+					__LIB_19__::func_481();
 					MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 8);
 				}
 			}
@@ -2389,11 +2389,11 @@ void func_842()//Position - 0x4BE58
 	{
 		if (Local_118.f_1 >= 1 || __LIB_0__::func_797() == Local_118.f_5)
 		{
-			__LIB_32__::func_213(164, Local_118.f_7, &uLocal_106, 1140457472, 1144750080, 0);
+			__LIB_35__::func_944(164, Local_118.f_7, &uLocal_106, 1140457472, 1144750080, 0);
 		}
-		if (iLocal_91 != __LIB_19__::func_485(PLAYER::PLAYER_ID()))
+		if (iLocal_91 != __LIB_19__::func_495(PLAYER::PLAYER_ID()))
 		{
-			iLocal_91 = __LIB_19__::func_485(PLAYER::PLAYER_ID());
+			iLocal_91 = __LIB_19__::func_495(PLAYER::PLAYER_ID());
 		}
 	}
 	if (func_755())
@@ -2417,7 +2417,7 @@ void func_842()//Position - 0x4BE58
 					MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 0);
 					if (func_755())
 					{
-						__LIB_27__::func_857(0, 0);
+						__LIB_27__::func_867(0, 0);
 						__LIB_15__::func_297(2);
 					}
 				}
@@ -2429,7 +2429,7 @@ void func_842()//Position - 0x4BE58
 					MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 0);
 					if (func_755())
 					{
-						__LIB_27__::func_857(1, 0);
+						__LIB_27__::func_867(1, 0);
 						__LIB_15__::func_297(2);
 					}
 				}
@@ -2439,7 +2439,7 @@ void func_842()//Position - 0x4BE58
 				MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 0);
 				if (func_755())
 				{
-					__LIB_27__::func_857(0, 0);
+					__LIB_27__::func_867(0, 0);
 					__LIB_15__::func_296(2);
 				}
 			}
@@ -2449,7 +2449,7 @@ void func_842()//Position - 0x4BE58
 				{
 					if (!__LIB_0__::func_165(PLAYER::PLAYER_ID(), 20))
 					{
-						__LIB_19__::func_557(0);
+						__LIB_19__::func_567(0);
 					}
 				}
 			}
@@ -2563,21 +2563,21 @@ void func_911()//Position - 0x4DCCA
 		case 1:
 			if (func_759(NETWORK::PARTICIPANT_ID_TO_INT()) != 1)
 			{
-				__LIB_19__::func_551(func_843());
+				__LIB_19__::func_561(func_843());
 				func_912(1);
 			}
 			break;
 		case 2:
 			if (func_759(NETWORK::PARTICIPANT_ID_TO_INT()) != 2)
 			{
-				__LIB_19__::func_551(func_843());
+				__LIB_19__::func_561(func_843());
 				func_912(2);
 			}
 			break;
 		case 3:
 			if (func_759(NETWORK::PARTICIPANT_ID_TO_INT()) != 3)
 			{
-				__LIB_19__::func_551(func_843());
+				__LIB_19__::func_561(func_843());
 				func_912(3);
 			}
 			break;
@@ -2596,9 +2596,9 @@ int func_914()//Position - 0x4DD9B
 
 void func_915()//Position - 0x4DDA7
 {
-	iLocal_91 = __LIB_19__::func_485(PLAYER::PLAYER_ID());
-	__LIB_32__::func_208(164, 1, -1, 0);
-	iLocal_92 = __LIB_30__::func_909(Local_118.f_5, -2, 0, 0, 0);
+	iLocal_91 = __LIB_19__::func_495(PLAYER::PLAYER_ID());
+	__LIB_35__::func_939(164, 1, -1, 0);
+	iLocal_92 = __LIB_34__::func_809(Local_118.f_5, -2, 0, 0, 0);
 	HUD::GET_HUD_COLOUR(iLocal_92, &(uLocal_105[0]), &(uLocal_105[1]), &(uLocal_105[2]), &(uLocal_105[3]));
 }
 
@@ -2630,7 +2630,7 @@ void func_950()//Position - 0x4E7A5
 	{
 		if (BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 7))
 		{
-			__LIB_32__::func_199(0, 4, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+			__LIB_35__::func_931(0, 4, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 		}
 	}
 	if (__LIB_15__::func_298(2))
@@ -2649,16 +2649,16 @@ void func_950()//Position - 0x4E7A5
 	}
 	Global_1943929.f_2 = Local_118.f_20;
 	Global_1943929.f_3 = Local_118.f_21;
-	__LIB_32__::func_206(Local_118.f_4, -1, -1, -1082130432);
-	__LIB_27__::func_857(0, 0);
-	__LIB_20__::func_114(0, 0);
+	__LIB_35__::func_938(Local_118.f_4, -1, -1, -1082130432);
+	__LIB_27__::func_867(0, 0);
+	__LIB_20__::func_124(0, 0);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
 int func_1004(struct<21> Param0)//Position - 0x50D2A
 {
 	__LIB_0__::func_935(__LIB_1__::func_32(Param0.f_0), Param0);
-	__LIB_20__::func_516(164, 0, 0);
+	__LIB_20__::func_526(164, 0, 0);
 	NETWORK::RESERVE_NETWORK_MISSION_OBJECTS(0);
 	__LIB_0__::func_895(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_118, 22, 0);

@@ -279,7 +279,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 	}
 	MISC::CLEAR_BIT(&Global_8136, 21);
-	__LIB_16__::func_919(0);
+	__LIB_16__::func_922(0);
 	MISC::SET_BIT(&Global_8136, 17);
 	if (Global_20208 == 0)
 	{
@@ -315,7 +315,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 		}
 		__LIB_2__::func_829(iLocal_91, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(iLocal_95), -1082130432, -1082130432, -1082130432, -1082130432);
-		__LIB_16__::func_284(iLocal_91, "CLOSE_SHUTTER");
+		__LIB_16__::func_287(iLocal_91, "CLOSE_SHUTTER");
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(16);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -604,7 +604,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (CAM::IS_SCREEN_FADED_OUT() && __LIB_13__::func_87())
 										{
-											if (__LIB_16__::func_920() && iLocal_78)
+											if (__LIB_16__::func_923() && iLocal_78)
 											{
 											}
 											else if (iLocal_78 == 0)
@@ -631,7 +631,7 @@ void __EntryFunction__()//Position - 0x0
 													iLocal_93 = 0;
 													__LIB_0__::func_203(0, 1);
 													__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 16f, -1082130432, -1082130432, -1082130432, -1082130432);
-													__LIB_33__::func_207(1);
+													__LIB_31__::func_675(1);
 												}
 											}
 										}
@@ -642,7 +642,7 @@ void __EntryFunction__()//Position - 0x0
 												if (((Global_1931426 || Global_1574964) || Global_22641) || BitTest(Global_8136, 21))
 												{
 												}
-												else if (__LIB_16__::func_920() && iLocal_78)
+												else if (__LIB_16__::func_923() && iLocal_78)
 												{
 												}
 												else if (!__LIB_13__::func_87())
@@ -652,11 +652,11 @@ void __EntryFunction__()//Position - 0x0
 														CAM::DO_SCREEN_FADE_OUT(500);
 														iLocal_94 = 0;
 														__LIB_0__::func_203(1, 1);
-														__LIB_33__::func_206(1);
+														__LIB_31__::func_674(1);
 													}
 												}
 											}
-											else if (__LIB_16__::func_920() && iLocal_78)
+											else if (__LIB_16__::func_923() && iLocal_78)
 											{
 											}
 											else if (iLocal_78 == 0)
@@ -732,7 +732,7 @@ void __EntryFunction__()//Position - 0x0
 												{
 													if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 													{
-														__LIB_16__::func_284(iLocal_91, "CLOSE_SHUTTER");
+														__LIB_16__::func_287(iLocal_91, "CLOSE_SHUTTER");
 														iLocal_86 = MISC::GET_GAME_TIMER();
 														while (MISC::GET_GAME_TIMER() < (iLocal_86 + iLocal_88) && Global_20266.f_1 > 3)
 														{
@@ -766,7 +766,7 @@ void __EntryFunction__()//Position - 0x0
 												iLocal_78 = 0;
 												func_128();
 												iLocal_87 = 0;
-												__LIB_16__::func_284(iLocal_91, "OPEN_SHUTTER");
+												__LIB_16__::func_287(iLocal_91, "OPEN_SHUTTER");
 											}
 											func_126();
 											func_125(1);
@@ -1163,7 +1163,7 @@ void func_7()//Position - 0x1496
 	if (__LIB_13__::func_85(2, Global_20239, 0))
 	{
 		__LIB_13__::func_120(0);
-		if (__LIB_16__::func_920() || BitTest(Global_8137, 28))
+		if (__LIB_16__::func_923() || BitTest(Global_8137, 28))
 		{
 		}
 		else
@@ -1683,7 +1683,7 @@ void func_12()//Position - 0x1759
 				Local_34 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "Menu_Navigate", &Global_20255, true);
 				__LIB_2__::func_829(iLocal_91, "SHOW_PHOTO_FRAME", 0f, -1082130432, -1082130432, -1082130432, -1082130432);
-				__LIB_16__::func_284(iLocal_91, "CLOSE_SHUTTER");
+				__LIB_16__::func_287(iLocal_91, "CLOSE_SHUTTER");
 				iLocal_86 = MISC::GET_GAME_TIMER();
 				while (MISC::GET_GAME_TIMER() < (iLocal_86 + iLocal_90) && Global_20266.f_1 > 3)
 				{
@@ -1719,7 +1719,7 @@ void func_12()//Position - 0x1759
 					RECORDING::REPLAY_PREVENT_RECORDING_THIS_FRAME();
 					SYSTEM::WAIT(0);
 				}
-				__LIB_16__::func_284(iLocal_91, "OPEN_SHUTTER");
+				__LIB_16__::func_287(iLocal_91, "OPEN_SHUTTER");
 				if (func_173())
 				{
 					if (Global_4539954 == 0)
@@ -1801,7 +1801,7 @@ void func_12()//Position - 0x1759
 		__LIB_2__::func_829(iLocal_91, "SHOW_PHOTO_FRAME", 0f, -1082130432, -1082130432, -1082130432, -1082130432);
 		__LIB_2__::func_829(iLocal_91, "SHOW_REMAINING_PHOTOS", 0f, -1082130432, -1082130432, -1082130432, -1082130432);
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "Camera_Shoot", &Global_20255, true);
-		__LIB_16__::func_284(iLocal_91, "CLOSE_SHUTTER");
+		__LIB_16__::func_287(iLocal_91, "CLOSE_SHUTTER");
 		Local_43 = { -90.3f, 0f, 90f };
 		MOBILE::SET_MOBILE_PHONE_ROTATION(Local_43, 0);
 		if (!func_173())
@@ -1834,14 +1834,14 @@ void func_12()//Position - 0x1759
 			SYSTEM::WAIT(0);
 		}
 		SYSTEM::SETTIMERA(0);
-		__LIB_16__::func_284(iLocal_91, "OPEN_SHUTTER");
+		__LIB_16__::func_287(iLocal_91, "OPEN_SHUTTER");
 		MISC::CLEAR_BIT(&Global_8136, 21);
 		func_128();
 		if (Global_20266.f_1 > 3)
 		{
 			if (Global_78319)
 			{
-				__LIB_33__::func_282(1087, 1, -1);
+				__LIB_31__::func_753(1087, 1, -1);
 				func_22();
 				__LIB_1__::func_333(-1492367786, 23, 0);
 			}
@@ -2138,7 +2138,7 @@ int func_32(int iParam0)//Position - 0x3DA2
 {
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (__LIB_16__::func_812(Global_4456522, Global_4456523))
+		if (__LIB_16__::func_815(Global_4456522, Global_4456523))
 		{
 			if (iParam0 == 0 || !func_33(Global_4456522, Global_4456523, 0, 1, 0))
 			{
@@ -6349,7 +6349,7 @@ void func_99()//Position - 0xD938
 	}
 	if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_91))
 	{
-		__LIB_16__::func_284(iLocal_91, "SHUTDOWN_MOVIE");
+		__LIB_16__::func_287(iLocal_91, "SHUTDOWN_MOVIE");
 	}
 	SYSTEM::WAIT(0);
 	RECORDING::REPLAY_PREVENT_RECORDING_THIS_FRAME();
@@ -6923,7 +6923,7 @@ void func_166()//Position - 0x101B2
 			func_93();
 			RECORDING::REPLAY_PREVENT_RECORDING_THIS_FRAME();
 		}
-		__LIB_16__::func_284(iLocal_91, "OPEN_SHUTTER");
+		__LIB_16__::func_287(iLocal_91, "OPEN_SHUTTER");
 		func_158();
 		func_128();
 		iLocal_80 = 1;

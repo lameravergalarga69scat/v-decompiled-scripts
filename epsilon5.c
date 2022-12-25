@@ -370,7 +370,7 @@ void func_1()//Position - 0x147
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 					iLocal_250 = 1;
 				}
-				if (__LIB_17__::func_36())
+				if (__LIB_17__::func_39())
 				{
 					iLocal_250 = 1;
 				}
@@ -379,7 +379,7 @@ void func_1()//Position - 0x147
 			else if (iLocal_250 == 1)
 			{
 				func_229();
-				__LIB_17__::func_36();
+				__LIB_17__::func_39();
 				if (CUTSCENE::WAS_CUTSCENE_SKIPPED())
 				{
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
@@ -404,9 +404,9 @@ void func_1()//Position - 0x147
 void func_2()//Position - 0x2E5
 {
 	int iVar0;
-	__LIB_40__::func_611();
+	__LIB_40__::func_287();
 	__LIB_0__::func_697("EPSROBE_HE" /* GXT: Buy robes from the Epsilon Program website and wear them for 10 cumulative days. */, 1, 0, -1, 10000, 1, 0, 0, 0);
-	__LIB_17__::func_17(4, 16, 0);
+	__LIB_17__::func_20(4, 16, 0);
 	STATS::STAT_GET_INT(joaat("NUM_EPSILON_STEP"), &iVar0, -1);
 	if (iVar0 < 14)
 	{
@@ -1338,7 +1338,7 @@ int func_307(var uParam0)//Position - 0x2AC7B
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcm_epsilonism5", "ep_5_rcm_marnie_strokes_wall", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcm_epsilonism5", "ep_5_rcm_marnie_strokes_wall", 0);
 			iLocal_77 = 1;
 			break;
 		case 1:

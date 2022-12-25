@@ -323,15 +323,15 @@ void func_1()//Position - 0xDF
 			iLocal_219 = 0;
 		}
 	}
-	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) && __LIB_17__::func_19(0))
+	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) && __LIB_17__::func_22(0))
 	{
 		switch (iLocal_222)
 		{
 			case 0:
 				if (__LIB_0__::func_425(91) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
 				{
-					__LIB_17__::func_17(4, 10, 1);
-					__LIB_17__::func_29(4, "EPSROBE_M1" /* GXT: Order confirmation:~n~Official Epsilonian robes/pajama set~n~~n~Allow 24 hours for delivery.~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
+					__LIB_17__::func_20(4, 10, 1);
+					__LIB_17__::func_32(4, "EPSROBE_M1" /* GXT: Order confirmation:~n~Official Epsilonian robes/pajama set~n~~n~Allow 24 hours for delivery.~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
 					iLocal_225 = __LIB_11__::func_762();
 					__LIB_13__::func_827(&iLocal_225, 0, 0, 0, 1, 0, 0);
 					Global_113386.f_10049.f_104 = CLOCK::GET_CLOCK_DAY_OF_MONTH();
@@ -363,10 +363,10 @@ void func_1()//Position - 0xDF
 					if (CLOCK::GET_CLOCK_DAY_OF_MONTH() == iLocal_226)
 					{
 					}
-					__LIB_17__::func_17(4, 11, 1);
-					__LIB_17__::func_29(4, "EPSROBE_M2" /* GXT: Order delivered:~n~Official Epsilonian robes/pajama set~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
-					__LIB_17__::func_15(4);
-					__LIB_15__::func_948(__LIB_0__::func_154(0), 12, 8, 1);
+					__LIB_17__::func_20(4, 11, 1);
+					__LIB_17__::func_32(4, "EPSROBE_M2" /* GXT: Order delivered:~n~Official Epsilonian robes/pajama set~n~~n~Visit ~b~<u>www.epsilonprogram.com</u>~s~ to learn more and get involved. */, 1);
+					__LIB_17__::func_18(4);
+					__LIB_15__::func_950(__LIB_0__::func_154(0), 12, 8, 1);
 					func_138(__LIB_0__::func_154(0), 12, 8, 1, 1);
 					__LIB_0__::func_210();
 					iLocal_222 = 2;
@@ -617,7 +617,7 @@ int func_138(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 							if (iVar1 != 13)
 							{
 								func_138(iParam0, iVar1, uVar3[iVar1], 1, 1);
-								__LIB_15__::func_948(iParam0, iVar1, uVar3[iVar1], 1);
+								__LIB_15__::func_950(iParam0, iVar1, uVar3[iVar1], 1);
 							}
 							else
 							{
@@ -626,7 +626,7 @@ int func_138(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 								while (iVar2 <= 8)
 								{
 									func_138(iParam0, 14, uVar4[iVar2], 1, 1);
-									__LIB_15__::func_948(iParam0, 14, uVar4[iVar2], 1);
+									__LIB_15__::func_950(iParam0, 14, uVar4[iVar2], 1);
 									iVar2++;
 								}
 							}
@@ -817,7 +817,7 @@ void func_193()//Position - 0x202BD
 	int iVar0;
 	if (Global_113386.f_10049.f_105 >= 240 || __LIB_0__::func_425(92) == 1)
 	{
-		__LIB_28__::func_203(2106164812, 1, 1, 55, 85000, 10000, 14, 173, -1, 0, 1);
+		__LIB_28__::func_213(2106164812, 1, 1, 55, 85000, 10000, 14, 173, -1, 0, 1);
 		__LIB_0__::func_681(92, 1);
 		STATS::STAT_GET_INT(joaat("NUM_EPSILON_STEP"), &iVar0, -1);
 		if (iVar0 < 16)

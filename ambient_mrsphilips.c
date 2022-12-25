@@ -203,9 +203,9 @@ int func_3()//Position - 0x1B8
 {
 	struct<4> Var0;
 	char* sVar1;
-	while (!__LIB_32__::func_441(36))
+	while (!__LIB_30__::func_872(36))
 	{
-		if (__LIB_32__::func_440(36))
+		if (__LIB_30__::func_871(36))
 		{
 			__LIB_0__::func_135("LAUNCH_RC_MISSION - Script denied by RC Controller");
 			return 0;
@@ -219,9 +219,9 @@ int func_3()//Position - 0x1B8
 	__LIB_0__::func_771(36);
 	if (!__LIB_0__::func_323())
 	{
-		__LIB_41__::func_29("MrsPhilips2", 1);
+		__LIB_40__::func_705("MrsPhilips2", 1);
 	}
-	__LIB_37__::func_597(36, Var0.f_0);
+	__LIB_37__::func_271(36, Var0.f_0);
 	return 1;
 }
 
@@ -235,7 +235,7 @@ void func_116()//Position - 0xA176
 		SCRIPT::REQUEST_SCRIPT(sVar0);
 		SYSTEM::WAIT(0);
 	}
-	__LIB_32__::func_445(36);
+	__LIB_30__::func_876(36);
 	SYSTEM::START_NEW_SCRIPT(sVar0, 51000);
 	SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(sVar0);
 }

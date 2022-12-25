@@ -279,17 +279,17 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_45 = 64;
 	iLocal_49 = HUD::GET_STANDARD_BLIP_ENUM_ID();
 	iLocal_50 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
-	uLocal_52 = __LIB_17__::func_26(58);
+	uLocal_52 = __LIB_17__::func_29(58);
 	iLocal_53 = joaat("felon2");
 	iLocal_55 = -1;
 	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
-	__LIB_37__::func_582();
+	__LIB_37__::func_256();
 	Var0.f_17 = 2;
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
 	Var1 = { 0f, 0f, 0f };
-	__LIB_37__::func_581(&Var0);
+	__LIB_37__::func_255(&Var0);
 	Var1 = { ScriptParam_226.f_1[0 /*3*/] };
 	iVar2[0] = 27;
 	iVar2[1] = 28;
@@ -308,21 +308,21 @@ void __EntryFunction__()//Position - 0x0
 		}
 		func_291(&Var0, 1);
 	}
-	if (!__LIB_37__::func_631(&iVar2, &Var0, Var1, 1f))
+	if (!__LIB_37__::func_305(&iVar2, &Var0, Var1, 1f))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	if (!func_279(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_594(Var0.f_0))
+	if (__LIB_37__::func_268(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -349,32 +349,32 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_43__::func_539(&Var0, 1))
+		if (!__LIB_43__::func_496(&Var0, 1))
 		{
 			if (Var0.f_0 == 30)
 			{
 				if (__LIB_0__::func_724(PLAYER::PLAYER_PED_ID(), -1102.7241f, 290.1463f, 63.23002f, 1) < 200f)
 				{
 					PLAYER::SET_PLAYER_WANTED_LEVEL_NO_DROP(PLAYER::PLAYER_ID(), 1, false);
-					__LIB_37__::func_650(&Var0);
+					__LIB_37__::func_324(&Var0);
 					__LIB_0__::func_135("Making Josh cops attack");
 				}
 			}
 			func_291(&Var0, 1);
 		}
-		__LIB_37__::func_592(Var0.f_0);
-		__LIB_37__::func_623(&iLocal_55, &(Var0.f_9), Var1);
+		__LIB_37__::func_266(Var0.f_0);
+		__LIB_37__::func_297(&iLocal_55, &(Var0.f_9), Var1);
 		if (Var0.f_0 == 27)
 		{
-			__LIB_37__::func_622(&Var0, Var1, "JOSH1AU", "JOSH1_AMB1", 5, "JOSH", 5000, 14f);
+			__LIB_37__::func_296(&Var0, Var1, "JOSH1AU", "JOSH1_AMB1", 5, "JOSH", 5000, 14f);
 		}
 		else if (Var0.f_0 == 28)
 		{
-			__LIB_37__::func_622(&Var0, Var1, "JOSH2AU", "JOSH2_AMB", 5, "JOSH", 5000, 1101004800);
+			__LIB_37__::func_296(&Var0, Var1, "JOSH2AU", "JOSH2_AMB", 5, "JOSH", 5000, 1101004800);
 		}
 		else if (Var0.f_0 == 29)
 		{
-			__LIB_37__::func_622(&Var0, Var1, "JOSH3AU", "JOSH3_AMB", 3, "JOSH", 5000, 1101004800);
+			__LIB_37__::func_296(&Var0, Var1, "JOSH3AU", "JOSH3_AMB", 3, "JOSH", 5000, 1101004800);
 		}
 		else if (Var0.f_0 == 30)
 		{
@@ -397,17 +397,17 @@ void __EntryFunction__()//Position - 0x0
 			}
 			func_194();
 		}
-		if (((__LIB_37__::func_637(&Var0, 0) || func_178(&Var0)) || func_176(&Var0)) || func_174(&Var0))
+		if (((__LIB_37__::func_311(&Var0, 0) || func_178(&Var0)) || func_176(&Var0)) || func_174(&Var0))
 		{
-			if (__LIB_37__::func_566(Var0.f_0))
+			if (__LIB_37__::func_240(Var0.f_0))
 			{
-				__LIB_37__::func_590(Var0.f_0, &iLocal_224);
+				__LIB_37__::func_264(Var0.f_0, &iLocal_224);
 			}
-			if (!__LIB_43__::func_907(&Var0))
+			if (!__LIB_43__::func_899(&Var0))
 			{
 				func_291(&Var0, 1);
 			}
-			if (__LIB_37__::func_562(&Var0))
+			if (__LIB_37__::func_236(&Var0))
 			{
 				func_291(&Var0, 0);
 			}
@@ -495,7 +495,7 @@ void func_194()//Position - 0xD130
 		case 1:
 			if (__LIB_0__::func_724(PLAYER::PLAYER_PED_ID(), -1103.44f, 290.18f, 63.28f, 1) <= 20f)
 			{
-				if (__LIB_16__::func_5(&uLocal_57, "JOSH4AU", "JOSH4_AMB", 8, 0, 0, 0))
+				if (__LIB_16__::func_7(&uLocal_57, "JOSH4AU", "JOSH4_AMB", 8, 0, 0, 0))
 				{
 					iLocal_56 = 2;
 				}
@@ -577,7 +577,7 @@ int func_259(var uParam0)//Position - 0xF7A5
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmjosh4", "beckon_a_josh", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmjosh4", "beckon_a_josh", 0);
 			iLocal_51 = 1;
 			break;
 		case 1:
@@ -585,10 +585,10 @@ int func_259(var uParam0)//Position - 0xF7A5
 			{
 				return 0;
 			}
-			if (!__LIB_37__::func_648(0, 1))
+			if (!__LIB_37__::func_322(0, 1))
 			{
 			}
-			if (!__LIB_37__::func_647(1, 1))
+			if (!__LIB_37__::func_321(1, 1))
 			{
 			}
 			iLocal_51 = 2;
@@ -597,7 +597,7 @@ int func_259(var uParam0)//Position - 0xF7A5
 			bVar3 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (__LIB_37__::func_593(&(uParam0->f_28[0]), 58, -1103.6f, 290.81f, 64.31f, -99.24f, "JOSH LAUNCHER RC", 1))
+				if (__LIB_37__::func_267(&(uParam0->f_28[0]), 58, -1103.6f, 290.81f, 64.31f, -99.24f, "JOSH LAUNCHER RC", 1))
 				{
 					PED::SET_PED_COMBAT_ATTRIBUTES(uParam0->f_28[0], 17, true);
 				}
@@ -608,7 +608,7 @@ int func_259(var uParam0)//Position - 0xF7A5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[1]))
 			{
-				__LIB_17__::func_39(&(uParam0->f_28[1]), iVar0[2], -1102.92f, 290.12f, 64.28f, 40.46f, 6);
+				__LIB_17__::func_42(&(uParam0->f_28[1]), iVar0[2], -1102.92f, 290.12f, 64.28f, 40.46f, 6);
 				if (__LIB_0__::func_121(uParam0->f_28[1]))
 				{
 					PED::SET_PED_DEFAULT_COMPONENT_VARIATION(uParam0->f_28[1]);
@@ -627,7 +627,7 @@ int func_259(var uParam0)//Position - 0xF7A5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[2]))
 			{
-				__LIB_17__::func_39(&(uParam0->f_28[2]), iVar0[2], -1102.73f, 290.91f, 64.28f, 92.06f, 6);
+				__LIB_17__::func_42(&(uParam0->f_28[2]), iVar0[2], -1102.73f, 290.91f, 64.28f, 92.06f, 6);
 				if (__LIB_0__::func_121(uParam0->f_28[2]))
 				{
 					PED::SET_PED_COMPONENT_VARIATION(uParam0->f_28[2], 0, 1, 1, 0);
@@ -648,7 +648,7 @@ int func_259(var uParam0)//Position - 0xF7A5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[3], -1107.5f, 280.33f, 64.01f, 97.97f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[3], -1107.5f, 280.33f, 64.01f, 97.97f);
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[1]))
 			{
@@ -706,7 +706,7 @@ void func_260(int* iParam0, bool bParam1)//Position - 0xFB9A
 		Var0 = { -1139.759f, 291.483f, 66.327f };
 		fVar1 = 6.077003f;
 	}
-	__LIB_17__::func_22(iParam0, iLocal_53, Var0, fVar1);
+	__LIB_17__::func_25(iParam0, iLocal_53, Var0, fVar1);
 	VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(*iParam0, 4);
 	VEHICLE::SET_VEHICLE_DOORS_LOCKED(*iParam0, 3);
 	VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(*iParam0, false, 0);
@@ -751,7 +751,7 @@ int func_273(var uParam0)//Position - 0x1002A
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 58, 566.1639f, -1773.8171f, 29f, 14.4f, "JOSH LAUNCHER RC", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 58, 566.1639f, -1773.8171f, 29f, 14.4f, "JOSH LAUNCHER RC", 1))
 				{
 					bVar2 = false;
 				}
@@ -788,7 +788,7 @@ int func_273(var uParam0)//Position - 0x1002A
 
 void func_274(int* iParam0)//Position - 0x10212
 {
-	__LIB_17__::func_22(iParam0, iLocal_53, 558.09f, -1765.39f, 28.86f, 335.3252f);
+	__LIB_17__::func_25(iParam0, iLocal_53, 558.09f, -1765.39f, 28.86f, 335.3252f);
 	VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(*iParam0, 4);
 	VEHICLE::SET_VEHICLE_DOORS_LOCKED(*iParam0, 2);
 	VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(*iParam0, false, 0);
@@ -833,7 +833,7 @@ int func_275(var uParam0)//Position - 0x10258
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 58, 565.3901f, -1772.8378f, 29.80087f, 62.501556f, "JOSH LAUNCHER RC", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 58, 565.3901f, -1772.8378f, 29.80087f, 62.501556f, "JOSH LAUNCHER RC", 1))
 				{
 					bVar2 = false;
 				}
@@ -895,7 +895,7 @@ int func_276(var uParam0)//Position - 0x1047B
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmjosh1", "idle", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmjosh1", "idle", 0);
 			iLocal_51 = 1;
 			break;
 		case 1:
@@ -909,7 +909,7 @@ int func_276(var uParam0)//Position - 0x1047B
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 58, -1104.72f, 291.02f, 64.39f, 138.35f, "JOSH LAUNCHER RC", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 58, -1104.72f, 291.02f, 64.39f, 138.35f, "JOSH LAUNCHER RC", 1))
 				{
 					bVar2 = false;
 				}
@@ -918,7 +918,7 @@ int func_276(var uParam0)//Position - 0x1047B
 			{
 				func_260(&(uParam0->f_35[0]), 1);
 			}
-			if (!__LIB_37__::func_649(1, 1))
+			if (!__LIB_37__::func_323(1, 1))
 			{
 				bVar2 = false;
 			}
@@ -999,7 +999,7 @@ int func_280(int iParam0)//Position - 0x10760
 	{
 		return 0;
 	}
-	if (__LIB_37__::func_580(iParam0))
+	if (__LIB_37__::func_254(iParam0))
 	{
 		return 0;
 	}
@@ -1013,11 +1013,11 @@ int func_280(int iParam0)//Position - 0x10760
 	}
 	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_37__::func_579(iParam0))
+		if (!__LIB_37__::func_253(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_37__::func_578(iParam0))
+		if (!__LIB_37__::func_252(iParam0))
 		{
 			return 0;
 		}
@@ -1085,11 +1085,11 @@ void func_291(int iParam0, bool bParam1)//Position - 0x10BB0
 	{
 		HUD::REMOVE_BLIP(&iLocal_224);
 	}
-	__LIB_37__::func_619(&(iParam0->f_48));
+	__LIB_37__::func_293(&(iParam0->f_48));
 	if (iLocal_55 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_37__::func_331(&iLocal_55);
+		__LIB_37__::func_5(&iLocal_55);
 	}
 	switch (*iParam0)
 	{
@@ -1097,7 +1097,7 @@ void func_291(int iParam0, bool bParam1)//Position - 0x10BB0
 			sVar0 = "JOSH4_AMB";
 			break;
 	}
-	__LIB_37__::func_595(sVar0);
+	__LIB_37__::func_269(sVar0);
 	switch (*iParam0)
 	{
 		case 30:
@@ -1106,9 +1106,9 @@ void func_291(int iParam0, bool bParam1)//Position - 0x10BB0
 	}
 	if (bParam1)
 	{
-		__LIB_37__::func_592(*iParam0);
+		__LIB_37__::func_266(*iParam0);
 	}
-	__LIB_37__::func_588();
+	__LIB_37__::func_262();
 	__LIB_0__::func_135("SCRIPT TERMINATED");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

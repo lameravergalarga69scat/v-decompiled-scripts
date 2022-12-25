@@ -1073,7 +1073,7 @@ void __EntryFunction__()//Position - 0x0
 			func_1714();
 		}
 		PLAYER::SET_ALL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
-		__LIB_37__::func_42(&Local_213);
+		__LIB_36__::func_716(&Local_213);
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
 			switch (func_1693(NETWORK::PARTICIPANT_ID_TO_INT()))
@@ -1233,7 +1233,7 @@ void func_2(int iParam0)//Position - 0x3CB
 		{
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 			{
-				__LIB_41__::func_547(&(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/]), ENTITY::GET_ENTITY_COORDS(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4, true) + Vector((0.046f * 1.5f), 0f, 0f));
+				__LIB_41__::func_226(&(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/]), ENTITY::GET_ENTITY_COORDS(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4, true) + Vector((0.046f * 1.5f), 0f, 0f));
 			}
 		}
 		iVar0++;
@@ -1263,7 +1263,7 @@ int func_17(int iParam0)//Position - 0x809
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
 						Var1 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(NETWORK::NET_TO_OBJ(Local_178.f_381[iParam0 /*27*/]), (0.6f - (IntToFloat(iVar0) * 0.4f)), 0f, 0.1f) };
-						Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_597(joaat("PICKUP_GANG_ATTACK_MONEY"), Var1, iVar2, Local_178.f_381[iParam0 /*27*/].f_9, 0, 1, 1) };
+						Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_607(joaat("PICKUP_GANG_ATTACK_MONEY"), Var1, iVar2, Local_178.f_381[iParam0 /*27*/].f_9, 0, 1, 1) };
 					}
 					iVar0++;
 				}
@@ -1279,7 +1279,7 @@ int func_17(int iParam0)//Position - 0x809
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
 						Var1 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(NETWORK::NET_TO_OBJ(Local_178.f_381[iParam0 /*27*/]), 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.1f) };
-						Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_597(Local_178.f_381[iParam0 /*27*/].f_8, Var1, iVar2, -1, 0, 1, 1) };
+						Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_607(Local_178.f_381[iParam0 /*27*/].f_8, Var1, iVar2, -1, 0, 1, 1) };
 					}
 					iVar0++;
 				}
@@ -1298,7 +1298,7 @@ int func_17(int iParam0)//Position - 0x809
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
 						Var1 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(NETWORK::NET_TO_OBJ(Local_178.f_381[iParam0 /*27*/]), 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.2f) };
-						Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_597(joaat("PICKUP_AMMO_BULLET_MP"), Var1, iVar2, Local_178.f_381[iParam0 /*27*/].f_9, 0, 1, 1) };
+						Local_178.f_381[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_607(joaat("PICKUP_AMMO_BULLET_MP"), Var1, iVar2, Local_178.f_381[iParam0 /*27*/].f_9, 0, 1, 1) };
 					}
 					iVar0++;
 				}
@@ -1324,7 +1324,7 @@ int func_18(int iParam0, int iParam1)//Position - 0xA2C
 		if (!ENTITY::DOES_ENTITY_EXIST(Local_178.f_381[iParam0 /*27*/].f_10[iParam1 /*5*/].f_4))
 		{
 			Var0 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(NETWORK::NET_TO_OBJ(Local_178.f_381[iParam0 /*27*/]), 0f, (0.25f - (IntToFloat(iParam1) * 0.25f)), 0.1f) };
-			Local_178.f_381[iParam0 /*27*/].f_10[iParam1 /*5*/] = { __LIB_26__::func_597(joaat("PICKUP_GANG_ATTACK_MONEY"), Var0, iVar1, SYSTEM::ROUND((IntToFloat(Global_262145.f_4455 /* Tunable: CASH_MODIFIER_CRATE_DROP_GANG_ATTACK */) * Global_262145)), 0, 1, 1) };
+			Local_178.f_381[iParam0 /*27*/].f_10[iParam1 /*5*/] = { __LIB_26__::func_607(joaat("PICKUP_GANG_ATTACK_MONEY"), Var0, iVar1, SYSTEM::ROUND((IntToFloat(Global_262145.f_4455 /* Tunable: CASH_MODIFIER_CRATE_DROP_GANG_ATTACK */) * Global_262145)), 0, 1, 1) };
 		}
 		return 1;
 	}
@@ -1699,7 +1699,7 @@ void func_44(int iParam0, int iParam1, int iParam2)//Position - 0x170D
 	}
 	Global_4980736.f_94390[iParam1 /*1004*/].f_28 = func_52();
 	Global_4980736.f_94390[iParam1 /*1004*/].f_28 = func_51(iParam1);
-	if (__LIB_20__::func_350(Global_4980736.f_94390[iParam1 /*1004*/].f_28) > Local_178.f_287 || func_47(Global_4980736.f_94390[iParam1 /*1004*/].f_28))
+	if (__LIB_20__::func_360(Global_4980736.f_94390[iParam1 /*1004*/].f_28) > Local_178.f_287 || func_47(Global_4980736.f_94390[iParam1 /*1004*/].f_28))
 	{
 		if (__LIB_0__::func_680())
 		{
@@ -4970,7 +4970,7 @@ void func_229()//Position - 0xBD22
 		case 0:
 			Local_178.f_283 = __LIB_1__::func_724(&(Local_178.f_281), 0, 0);
 			func_231();
-			__LIB_23__::func_516(5);
+			__LIB_23__::func_526(5);
 			func_227();
 			break;
 	}
@@ -5006,7 +5006,7 @@ void func_233()//Position - 0xBE08
 			if (Local_178.f_265 >= Local_178.f_266)
 			{
 				Local_178.f_283 = __LIB_1__::func_724(&(Local_178.f_281), 0, 0);
-				__LIB_23__::func_516(4);
+				__LIB_23__::func_526(4);
 			}
 			break;
 	}
@@ -5017,18 +5017,18 @@ void func_234()//Position - 0xBE45
 	if (BitTest(Local_178.f_3, 4))
 	{
 		__LIB_0__::func_795(&(Local_178.f_281), 0, 0);
-		__LIB_23__::func_516(3);
+		__LIB_23__::func_526(3);
 	}
 }
 
 void func_235()//Position - 0xBE66
 {
-	__LIB_23__::func_516(2);
+	__LIB_23__::func_526(2);
 }
 
 void func_236()//Position - 0xBE73
 {
-	__LIB_23__::func_516(1);
+	__LIB_23__::func_526(1);
 }
 
 int func_237()//Position - 0xBE80
@@ -5144,8 +5144,8 @@ int func_244()//Position - 0xC100
 						{
 							if (__LIB_0__::func_957(&(Local_178.f_269[bVar0]), Global_4980736.f_78578[bVar0 /*450*/].f_12, Global_4980736.f_78578[bVar0 /*450*/], Global_4980736.f_78578[bVar0 /*450*/].f_3, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0))
 							{
-								__LIB_23__::func_518(NETWORK::NET_TO_VEH(Local_178.f_269[bVar0]), Global_4980736.f_78578[bVar0 /*450*/].f_107, -1);
-								__LIB_23__::func_527(NETWORK::NET_TO_VEH(Local_178.f_269[bVar0]), Global_4980736.f_78578[bVar0 /*450*/].f_23, Global_4980736.f_78578[bVar0 /*450*/].f_28, -1, -1, -1, -1082130432, -1);
+								__LIB_23__::func_528(NETWORK::NET_TO_VEH(Local_178.f_269[bVar0]), Global_4980736.f_78578[bVar0 /*450*/].f_107, -1);
+								__LIB_23__::func_537(NETWORK::NET_TO_VEH(Local_178.f_269[bVar0]), Global_4980736.f_78578[bVar0 /*450*/].f_23, Global_4980736.f_78578[bVar0 /*450*/].f_28, -1, -1, -1, -1082130432, -1);
 								func_245(NETWORK::NET_TO_VEH(Local_178.f_269[bVar0]), bVar0, &(Local_178.f_269), Global_4980736.f_78578[bVar0 /*450*/], 0, -1, 1, -1);
 								VEHICLE::SET_VEHICLE_INFLUENCES_WANTED_LEVEL(NETWORK::NET_TO_VEH(Local_178.f_269[bVar0]), false);
 								VEHICLE::SET_VEHICLE_DOORS_LOCKED(NETWORK::NET_TO_VEH(Local_178.f_269[bVar0]), 2);
@@ -5197,11 +5197,11 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	int iVar12;
 	if (VEHICLE::IS_VEHICLE_MODEL(iParam0, joaat("mule")))
 	{
-		__LIB_23__::func_518(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_107, Global_4980736.f_78578[bParam1 /*450*/].f_28);
+		__LIB_23__::func_528(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_107, Global_4980736.f_78578[bParam1 /*450*/].f_28);
 	}
 	else
 	{
-		__LIB_23__::func_518(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_107, -1);
+		__LIB_23__::func_528(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_107, -1);
 		if (VEHICLE::IS_VEHICLE_MODEL(iParam0, joaat("trailerlarge")))
 		{
 			if (BitTest(Global_4718592.f_25, 7) && BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_112, 8))
@@ -5216,7 +5216,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 						}
 					}
 				}
-				__LIB_23__::func_523(iParam0, 1, 0, Global_4980736.f_78578[bParam1 /*450*/].f_111, bParam1, Global_4980736.f_78578[bParam1 /*450*/].f_288, Global_4980736.f_78578[bParam1 /*450*/].f_289, Global_4980736.f_78578[bParam1 /*450*/].f_290, Global_4980736.f_78578[bParam1 /*450*/].f_291, -1, 0, -1, 0);
+				__LIB_23__::func_533(iParam0, 1, 0, Global_4980736.f_78578[bParam1 /*450*/].f_111, bParam1, Global_4980736.f_78578[bParam1 /*450*/].f_288, Global_4980736.f_78578[bParam1 /*450*/].f_289, Global_4980736.f_78578[bParam1 /*450*/].f_290, Global_4980736.f_78578[bParam1 /*450*/].f_291, -1, 0, -1, 0);
 			}
 		}
 		else if (VEHICLE::IS_VEHICLE_MODEL(iParam0, joaat("avenger")))
@@ -5311,13 +5311,13 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 			DECORATOR::DECOR_SET_INT(iParam0, "Heist_Veh_ID", iVar1);
 		}
 	}
-	if (__LIB_22__::func_528(Global_4980736.f_78578[bParam1 /*450*/].f_12))
+	if (__LIB_22__::func_538(Global_4980736.f_78578[bParam1 /*450*/].f_12))
 	{
-		__LIB_23__::func_527(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_23, Global_4980736.f_78578[bParam1 /*450*/].f_28, Global_4980736.f_78578[bParam1 /*450*/].f_27, Global_4980736.f_78578[bParam1 /*450*/].f_24, Global_4980736.f_78578[bParam1 /*450*/].f_25, 0.5f, Global_4980736.f_78578[bParam1 /*450*/].f_393);
+		__LIB_23__::func_537(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_23, Global_4980736.f_78578[bParam1 /*450*/].f_28, Global_4980736.f_78578[bParam1 /*450*/].f_27, Global_4980736.f_78578[bParam1 /*450*/].f_24, Global_4980736.f_78578[bParam1 /*450*/].f_25, 0.5f, Global_4980736.f_78578[bParam1 /*450*/].f_393);
 	}
 	else
 	{
-		__LIB_23__::func_527(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_23, Global_4980736.f_78578[bParam1 /*450*/].f_28, Global_4980736.f_78578[bParam1 /*450*/].f_27, Global_4980736.f_78578[bParam1 /*450*/].f_24, Global_4980736.f_78578[bParam1 /*450*/].f_25, Global_4980736.f_78578[bParam1 /*450*/].f_30, Global_4980736.f_78578[bParam1 /*450*/].f_393);
+		__LIB_23__::func_537(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_23, Global_4980736.f_78578[bParam1 /*450*/].f_28, Global_4980736.f_78578[bParam1 /*450*/].f_27, Global_4980736.f_78578[bParam1 /*450*/].f_24, Global_4980736.f_78578[bParam1 /*450*/].f_25, Global_4980736.f_78578[bParam1 /*450*/].f_30, Global_4980736.f_78578[bParam1 /*450*/].f_393);
 	}
 	VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(iParam0, true);
 	if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_112, 4))
@@ -5332,7 +5332,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	{
 		VEHICLE::SET_VEHICLE_TYRES_CAN_BURST(iParam0, false);
 	}
-	__LIB_22__::func_529(iParam0, Param3, iParam5);
+	__LIB_22__::func_539(iParam0, Param3, iParam5);
 	if ((VEHICLE::IS_THIS_MODEL_A_BOAT(Global_4980736.f_78578[bParam1 /*450*/].f_12) || Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("submersible")) || Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("submersible2"))
 	{
 		if (!Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("submersible") && !Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("submersible2"))
@@ -5356,7 +5356,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 			VEHICLE::SET_VEHICLE_ENGINE_ON(iParam0, false, true, false);
 		}
 	}
-	else if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_287(Global_4718592.f_116524)))
+	else if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_297(Global_4718592.f_116524)))
 	{
 		ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iParam0, false);
 	}
@@ -5364,15 +5364,15 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	{
 		ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iParam0, true);
 	}
-	if (((VEHICLE::IS_THIS_MODEL_A_PLANE(Global_4980736.f_78578[bParam1 /*450*/].f_12) && BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18)) && BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_110, 24)) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_287(Global_4718592.f_116524)))
+	if (((VEHICLE::IS_THIS_MODEL_A_PLANE(Global_4980736.f_78578[bParam1 /*450*/].f_12) && BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18)) && BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_110, 24)) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_297(Global_4718592.f_116524)))
 	{
 		VEHICLE::SET_HELI_BLADES_FULL_SPEED(iParam0);
 	}
-	if ((VEHICLE::IS_THIS_MODEL_A_PLANE(Global_4980736.f_78578[bParam1 /*450*/].f_12) && BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18)) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_287(Global_4718592.f_116524)))
+	if ((VEHICLE::IS_THIS_MODEL_A_PLANE(Global_4980736.f_78578[bParam1 /*450*/].f_12) && BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18)) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_297(Global_4718592.f_116524)))
 	{
 		VEHICLE::CONTROL_LANDING_GEAR(iParam0, 3);
 	}
-	if (Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_287(Global_4718592.f_116524))
+	if (Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_297(Global_4718592.f_116524))
 	{
 		VEHICLE::CONTROL_LANDING_GEAR(iParam0, 2);
 		ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iParam0, true);
@@ -5394,7 +5394,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	{
 		if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 15))
 		{
-			if (__LIB_25__::func_298())
+			if (__LIB_25__::func_308())
 			{
 				if (!VEHICLE::IS_VEHICLE_SEARCHLIGHT_ON(iParam0))
 				{
@@ -5403,10 +5403,10 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 			}
 		}
 	}
-	iVar0 = __LIB_22__::func_526(bParam1, iParam7);
+	iVar0 = __LIB_22__::func_536(bParam1, iParam7);
 	ENTITY::SET_ENTITY_HEALTH(iParam0, iVar0, 0);
 	ENTITY::SET_ENTITY_MAX_HEALTH(iParam0, iVar0);
-	if (__LIB_18__::func_5() || __LIB_16__::func_679())
+	if (__LIB_18__::func_15() || __LIB_16__::func_682())
 	{
 		fVar3 = SYSTEM::TO_FLOAT(iVar0);
 		VEHICLE::SET_VEHICLE_ENGINE_HEALTH(iParam0, fVar3);
@@ -5455,7 +5455,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 			DECORATOR::DECOR_SET_INT(iParam0, "MPBitset", iVar4);
 		}
 	}
-	if (!__LIB_18__::func_5() && !__LIB_16__::func_679())
+	if (!__LIB_18__::func_15() && !__LIB_16__::func_682())
 	{
 		if (Global_4980736.f_78578[bParam1 /*450*/].f_33 != 1000f && !BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_112, 30))
 		{
@@ -5480,7 +5480,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 			}
 			if (Global_4980736.f_78578[bParam1 /*450*/].f_42 != 1000f)
 			{
-				VEHICLE::SET_HELI_TAIL_ROTOR_HEALTH(iParam0, __LIB_25__::func_795(bParam1, iParam7));
+				VEHICLE::SET_HELI_TAIL_ROTOR_HEALTH(iParam0, __LIB_25__::func_805(bParam1, iParam7));
 			}
 			if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_111, 15))
 			{
@@ -5607,7 +5607,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 				iVar1++;
 			}
 		}
-		__LIB_23__::func_531(bParam1, iParam0);
+		__LIB_23__::func_541(bParam1, iParam0);
 	}
 	if (func_371(bParam1, -1))
 	{
@@ -5624,7 +5624,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	VEHICLE::SET_VEHICLE_AI_CAN_USE_EXCLUSIVE_SEATS(iParam0, true);
 	if ((Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("cargobob") || Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("cargobob2")) || Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("cargobob3"))
 	{
-		if (__LIB_25__::func_296(bParam1, &bVar5))
+		if (__LIB_25__::func_306(bParam1, &bVar5))
 		{
 			if (bVar5)
 			{
@@ -5767,7 +5767,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	{
 		VEHICLE::VEHICLE_SET_RAMP_AND_RAMMING_CARS_TAKE_DAMAGE(iParam0, false);
 	}
-	if (!BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_287(Global_4718592.f_116524)))
+	if (!BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_109, 18) && !(Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("titan") && __LIB_25__::func_297(Global_4718592.f_116524)))
 	{
 		bVar6 = true;
 		if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_111, 11))
@@ -5785,8 +5785,8 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 			Var7 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
 		}
 	}
-	__LIB_25__::func_285(__LIB_0__::func_402(iParam0), bParam1, 0);
-	if (__LIB_25__::func_294(Global_4718592.f_116524))
+	__LIB_25__::func_295(__LIB_0__::func_402(iParam0), bParam1, 0);
+	if (__LIB_25__::func_304(Global_4718592.f_116524))
 	{
 		if (Global_4980736.f_78578[bParam1 /*450*/].f_12 == joaat("dune4"))
 		{
@@ -5808,28 +5808,28 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	}
 	if (BitTest(Global_4718592.f_19, 27))
 	{
-		__LIB_25__::func_794(iParam0, 0);
+		__LIB_25__::func_804(iParam0, 0);
 	}
 	if (BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_108, 23))
 	{
-		__LIB_22__::func_524(Global_4980736.f_78578[bParam1 /*450*/].f_235, iParam0);
+		__LIB_22__::func_534(Global_4980736.f_78578[bParam1 /*450*/].f_235, iParam0);
 	}
 	if (Global_4980736.f_78578[bParam1 /*450*/].f_32 > 4999)
 	{
 		VEHICLE::SET_VEHICLE_STRONG(iParam0, true);
 	}
-	__LIB_25__::func_793(iParam0, bParam1);
+	__LIB_25__::func_803(iParam0, bParam1);
 	if (Global_4980736.f_78578[bParam1 /*450*/].f_204 > -1 && Global_4980736.f_78578[bParam1 /*450*/].f_205 == 1)
 	{
 		if (__LIB_0__::func_939((*uParam2)[Global_4980736.f_78578[bParam1 /*450*/].f_204]))
 		{
 			if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("cargobob2"))
 			{
-				__LIB_25__::func_120(iParam0, NETWORK::NET_TO_VEH((*uParam2)[Global_4980736.f_78578[bParam1 /*450*/].f_204]), 1);
+				__LIB_25__::func_130(iParam0, NETWORK::NET_TO_VEH((*uParam2)[Global_4980736.f_78578[bParam1 /*450*/].f_204]), 1);
 			}
 			else
 			{
-				__LIB_22__::func_521(iParam0, NETWORK::NET_TO_VEH((*uParam2)[Global_4980736.f_78578[bParam1 /*450*/].f_204]), 1, 0);
+				__LIB_22__::func_531(iParam0, NETWORK::NET_TO_VEH((*uParam2)[Global_4980736.f_78578[bParam1 /*450*/].f_204]), 1, 0);
 			}
 		}
 	}
@@ -5857,9 +5857,9 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	{
 		ENTITY::SET_ENTITY_PROOFS(iParam0, BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_112, 13), true, false, false, false, false, false, false);
 	}
-	if (__LIB_21__::func_734(Global_4980736.f_78578[bParam1 /*450*/].f_12))
+	if (__LIB_21__::func_744(Global_4980736.f_78578[bParam1 /*450*/].f_12))
 	{
-		__LIB_23__::func_523(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_286, Global_4980736.f_78578[bParam1 /*450*/].f_287, Global_4980736.f_78578[bParam1 /*450*/].f_111, bParam1, Global_4980736.f_78578[bParam1 /*450*/].f_288, Global_4980736.f_78578[bParam1 /*450*/].f_289, Global_4980736.f_78578[bParam1 /*450*/].f_290, Global_4980736.f_78578[bParam1 /*450*/].f_291, -1, 0, -1, 0);
+		__LIB_23__::func_533(iParam0, Global_4980736.f_78578[bParam1 /*450*/].f_286, Global_4980736.f_78578[bParam1 /*450*/].f_287, Global_4980736.f_78578[bParam1 /*450*/].f_111, bParam1, Global_4980736.f_78578[bParam1 /*450*/].f_288, Global_4980736.f_78578[bParam1 /*450*/].f_289, Global_4980736.f_78578[bParam1 /*450*/].f_290, Global_4980736.f_78578[bParam1 /*450*/].f_291, -1, 0, -1, 0);
 	}
 	if (BitTest(Global_4718592.f_26, 22) && VEHICLE::IS_VEHICLE_MODEL(iParam0, joaat("bombushka")))
 	{
@@ -5877,9 +5877,9 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	{
 		VEHICLE::SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS(iParam0, true);
 	}
-	if (__LIB_25__::func_293(bParam1))
+	if (__LIB_25__::func_303(bParam1))
 	{
-		__LIB_25__::func_792(iParam0);
+		__LIB_25__::func_802(iParam0);
 	}
 	if (__LIB_0__::func_177())
 	{
@@ -5890,25 +5890,25 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	}
 	if (Global_4980736.f_78578[bParam1 /*450*/].f_319 == 0)
 	{
-		__LIB_23__::func_517(iParam0);
+		__LIB_23__::func_527(iParam0);
 	}
 	if (Global_4980736.f_78578[bParam1 /*450*/].f_319 > 0)
 	{
-		if (__LIB_21__::func_737(3) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 4)
+		if (__LIB_21__::func_747(3) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 4)
 		{
-			__LIB_23__::func_517(iParam0);
+			__LIB_23__::func_527(iParam0);
 		}
-		else if (__LIB_21__::func_737(2) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 3)
+		else if (__LIB_21__::func_747(2) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 3)
 		{
-			__LIB_23__::func_517(iParam0);
+			__LIB_23__::func_527(iParam0);
 		}
-		else if (__LIB_21__::func_737(1) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 2)
+		else if (__LIB_21__::func_747(1) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 2)
 		{
-			__LIB_23__::func_517(iParam0);
+			__LIB_23__::func_527(iParam0);
 		}
-		else if (__LIB_21__::func_737(0) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 1)
+		else if (__LIB_21__::func_747(0) && Global_4980736.f_78578[bParam1 /*450*/].f_319 == 1)
 		{
-			__LIB_23__::func_517(iParam0);
+			__LIB_23__::func_527(iParam0);
 		}
 	}
 	if (BitTest(Global_4718592.f_29, 23))
@@ -5921,12 +5921,12 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	}
 	if (BitTest(Global_4718592.f_32, 18))
 	{
-		if (__LIB_21__::func_854(ENTITY::GET_ENTITY_MODEL(iParam0)))
+		if (__LIB_21__::func_864(ENTITY::GET_ENTITY_MODEL(iParam0)))
 		{
 			VEHICLE::SET_INCREASE_WHEEL_CRUSH_DAMAGE(iParam0, true);
 		}
 	}
-	if (__LIB_25__::func_287(Global_4718592.f_116524))
+	if (__LIB_25__::func_297(Global_4718592.f_116524))
 	{
 		if ((((bParam1 == 18 || bParam1 == 16) || bParam1 == 4) || bParam1 == 3) || bParam1 == 2)
 		{
@@ -5943,7 +5943,7 @@ void func_245(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 		bVar9 = false;
 		while (bVar9 <= 20)
 		{
-			ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iParam0, BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_327, bVar9), __LIB_25__::func_284(bVar9));
+			ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iParam0, BitTest(Global_4980736.f_78578[bParam1 /*450*/].f_327, bVar9), __LIB_25__::func_294(bVar9));
 			bVar9++;
 		}
 	}
@@ -6083,16 +6083,16 @@ void func_252(bool bParam0, int iParam1)//Position - 0xE3C4
 		switch (Global_4980736.f_78578[bParam0 /*450*/].f_318)
 		{
 			case 0:
-				__LIB_25__::func_292(&iVar0, &iVar1, &iVar2, &iVar3);
+				__LIB_25__::func_302(&iVar0, &iVar1, &iVar2, &iVar3);
 				break;
 			case 1:
-				__LIB_25__::func_291(&iVar0, &iVar1, &iVar2, &iVar3);
+				__LIB_25__::func_301(&iVar0, &iVar1, &iVar2, &iVar3);
 				break;
 			case 2:
-				__LIB_25__::func_290(&iVar0, &iVar1, &iVar2, &iVar3);
+				__LIB_25__::func_300(&iVar0, &iVar1, &iVar2, &iVar3);
 				break;
 			case 3:
-				__LIB_25__::func_289(&iVar0, &iVar1, &iVar2, &iVar3);
+				__LIB_25__::func_299(&iVar0, &iVar1, &iVar2, &iVar3);
 				break;
 		}
 		if (iVar0 > -1 && iVar1 > -1)
@@ -6115,44 +6115,44 @@ void func_275(int iParam0, int iParam1, int iParam2)//Position - 0x1229D
 	{
 		return;
 	}
-	__LIB_25__::func_295(iParam0, &(Var0.f_1), 0, 0, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_2), 1, 1, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_3), 2, 2, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_4), 3, 3, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_5), 4, 4, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_6), 5, 5, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_7), 6, 6, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_8), 7, 7, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_9), 8, 8, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_10), 9, 9, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_11), 10, 10, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_12), 11, 11, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_13), 12, 12, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_14), 13, 13, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_15), 14, 14, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_16), 15, 15, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_17), 16, 16, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_21), 23, 17, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_22), 24, 18, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_26), 27, 19, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_27), 28, 20, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_28), 29, 21, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_29), 30, 22, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_30), 31, 23, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_31), 32, 24, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_32), 33, 25, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_33), 35, 26, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_34), 37, 27, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_35), 39, 28, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_36), 40, 29, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_37), 41, 30, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_38), 42, 31, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_39), 43, 32, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_40), 44, 33, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_41), 45, 34, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_42), 46, 35, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_43), 47, 36, iParam2);
-	__LIB_25__::func_295(iParam0, &(Var0.f_44), 48, 37, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_1), 0, 0, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_2), 1, 1, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_3), 2, 2, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_4), 3, 3, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_5), 4, 4, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_6), 5, 5, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_7), 6, 6, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_8), 7, 7, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_9), 8, 8, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_10), 9, 9, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_11), 10, 10, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_12), 11, 11, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_13), 12, 12, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_14), 13, 13, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_15), 14, 14, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_16), 15, 15, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_17), 16, 16, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_21), 23, 17, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_22), 24, 18, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_26), 27, 19, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_27), 28, 20, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_28), 29, 21, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_29), 30, 22, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_30), 31, 23, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_31), 32, 24, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_32), 33, 25, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_33), 35, 26, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_34), 37, 27, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_35), 39, 28, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_36), 40, 29, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_37), 41, 30, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_38), 42, 31, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_39), 43, 32, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_40), 44, 33, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_41), 45, 34, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_42), 46, 35, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_43), 47, 36, iParam2);
+	__LIB_25__::func_305(iParam0, &(Var0.f_44), 48, 37, iParam2);
 	if (Var0.f_24 != -1)
 	{
 		VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT(iParam0, func_279(Var0.f_24));
@@ -6164,7 +6164,7 @@ void func_275(int iParam0, int iParam1, int iParam2)//Position - 0x1229D
 	if (Var0.f_20 != -1)
 	{
 		VEHICLE::TOGGLE_VEHICLE_MOD(iParam0, 22, true);
-		VEHICLE::SET_VEHICLE_XENON_LIGHT_COLOR_INDEX(iParam0, __LIB_22__::func_523(Var0.f_20));
+		VEHICLE::SET_VEHICLE_XENON_LIGHT_COLOR_INDEX(iParam0, __LIB_22__::func_533(Var0.f_20));
 	}
 	if (Var0.f_18 != -1)
 	{
@@ -6177,14 +6177,14 @@ void func_275(int iParam0, int iParam1, int iParam2)//Position - 0x1229D
 	}
 	if (Var0.f_25 != -1)
 	{
-		__LIB_22__::func_522(iParam0, Var0.f_25);
+		__LIB_22__::func_532(iParam0, Var0.f_25);
 	}
 }
 
 var func_279(int iParam0)//Position - 0x12709
 {
 	struct<16> Var0;
-	Var0 = { __LIB_22__::func_319(iParam0) };
+	Var0 = { __LIB_22__::func_329(iParam0) };
 	return __LIB_1__::func_601(&Var0);
 }
 
@@ -6233,7 +6233,7 @@ void func_285(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 						Var0.f_8 = 155;
 						Var0.f_97 = 1;
 						Var0.f_99 = 132;
-						__LIB_18__::func_670(*iParam0, &Var0, 0, 1, 0);
+						__LIB_18__::func_680(*iParam0, &Var0, 0, 1, 0);
 						VEHICLE::SET_VEHICLE_EXTRA(*iParam0, 1, true);
 						break;
 					case 1:
@@ -6242,7 +6242,7 @@ void func_285(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 						Var0.f_8 = 155;
 						Var0.f_97 = 1;
 						Var0.f_99 = 132;
-						__LIB_18__::func_670(*iParam0, &Var0, 0, 1, 0);
+						__LIB_18__::func_680(*iParam0, &Var0, 0, 1, 0);
 						VEHICLE::SET_VEHICLE_EXTRA(*iParam0, 1, true);
 						break;
 					case 2:
@@ -6251,7 +6251,7 @@ void func_285(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 						Var0.f_8 = 155;
 						Var0.f_97 = 1;
 						Var0.f_99 = 132;
-						__LIB_18__::func_670(*iParam0, &Var0, 0, 1, 0);
+						__LIB_18__::func_680(*iParam0, &Var0, 0, 1, 0);
 						VEHICLE::SET_VEHICLE_EXTRA(*iParam0, 1, true);
 						break;
 				}
@@ -6302,7 +6302,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[38] = 4;
 					uParam0->f_9[48] = 5;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "43SNR624", 16);
@@ -6329,7 +6329,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[38] = 2;
 					uParam0->f_9[48] = 3;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_1), "43SNR624", 16);
@@ -6356,7 +6356,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[38] = 2;
 					uParam0->f_9[48] = 8;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 3:
 					StringCopy(&(uParam0->f_1), "84RLR605", 16);
@@ -6381,7 +6381,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[38] = 1;
 					uParam0->f_9[48] = 6;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 4:
 					StringCopy(&(uParam0->f_1), "04HPD144", 16);
@@ -6406,7 +6406,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[38] = 1;
 					uParam0->f_9[48] = 2;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6439,7 +6439,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[16] = 3;
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 18;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "27YTR728", 16);
@@ -6469,7 +6469,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[18] = 1;
 					uParam0->f_9[23] = 14;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6514,7 +6514,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[43] = 1;
 					uParam0->f_9[45] = 2;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6542,7 +6542,7 @@ void func_357(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[13] = 3;
 					uParam0->f_9[15] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6576,7 +6576,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 4;
 					uParam0->f_9[15] = 1;
 					uParam0->f_9[23] = 15;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6614,7 +6614,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 26;
 					uParam0->f_9[48] = 10;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6645,7 +6645,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 11;
 					uParam0->f_9[48] = 10;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6700,7 +6700,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[45] = 5;
 					uParam0->f_9[46] = 1;
 					uParam0->f_9[48] = 4;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6734,7 +6734,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 24;
 					uParam0->f_9[48] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6774,7 +6774,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[39] = 2;
 					uParam0->f_9[40] = 3;
 					uParam0->f_9[48] = 8;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6808,7 +6808,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 17;
 					uParam0->f_9[48] = 4;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6845,7 +6845,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 18;
 					uParam0->f_9[48] = 10;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6886,7 +6886,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[45] = 2;
 					uParam0->f_9[48] = 7;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6931,7 +6931,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[39] = 4;
 					uParam0->f_9[40] = 4;
 					uParam0->f_9[48] = 4;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6969,7 +6969,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[15] = 2;
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 107;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -6991,7 +6991,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_64 = 255;
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7037,7 +7037,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[47] = 2;
 					uParam0->f_9[48] = 5;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 1:
 					*uParam0 = 3;
@@ -7075,7 +7075,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[43] = 3;
 					uParam0->f_9[47] = 1;
 					uParam0->f_9[48] = 6;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7124,7 +7124,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[44] = 4;
 					uParam0->f_9[47] = 1;
 					uParam0->f_9[48] = 7;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7145,7 +7145,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_64 = 255;
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7178,7 +7178,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[20] = 1;
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[30] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7207,7 +7207,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[15] = 2;
 					uParam0->f_9[16] = 2;
 					uParam0->f_9[23] = 26;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7239,7 +7239,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[16] = 5;
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 24;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "L2", 16);
@@ -7266,7 +7266,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[16] = 5;
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 24;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7295,7 +7295,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[22] = 1;
 					uParam0->f_9[23] = 3;
 					uParam0->f_9[24] = 3;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7334,7 +7334,7 @@ void func_358(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					{
 						uParam0->f_9[5] = 1;
 					}
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -7373,7 +7373,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[10] = 6;
 					uParam0->f_9[23] = 5;
 					uParam0->f_9[48] = 6;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "03QPK213", 16);
@@ -7398,7 +7398,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[8] = 4;
 					uParam0->f_9[23] = 46;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 2:
 					*uParam0 = 4;
@@ -7431,7 +7431,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 5;
 					uParam0->f_9[48] = 2;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -7439,36 +7439,36 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 11, 1, 0);
-					__LIB_18__::func_439(*uParam1, 12, 0, 0);
-					__LIB_18__::func_439(*uParam1, 13, 0, 0);
-					__LIB_18__::func_439(*uParam1, 15, 1, 0);
-					__LIB_18__::func_439(*uParam1, 23, 6, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 11, 1, 0);
+					__LIB_18__::func_449(*uParam1, 12, 0, 0);
+					__LIB_18__::func_449(*uParam1, 13, 0, 0);
+					__LIB_18__::func_449(*uParam1, 15, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 6, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 2, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 11, 2, 0);
-					__LIB_18__::func_439(*uParam1, 12, 1, 0);
-					__LIB_18__::func_439(*uParam1, 13, 1, 0);
-					__LIB_18__::func_439(*uParam1, 15, 2, 0);
-					__LIB_18__::func_439(*uParam1, 23, 13, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 2, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 11, 2, 0);
+					__LIB_18__::func_449(*uParam1, 12, 1, 0);
+					__LIB_18__::func_449(*uParam1, 13, 1, 0);
+					__LIB_18__::func_449(*uParam1, 15, 2, 0);
+					__LIB_18__::func_449(*uParam1, 23, 13, 0);
 					break;
 				case 2:
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 3, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 11, 3, 0);
-					__LIB_18__::func_439(*uParam1, 12, 2, 0);
-					__LIB_18__::func_439(*uParam1, 13, 2, 0);
-					__LIB_18__::func_439(*uParam1, 15, 3, 0);
-					__LIB_18__::func_439(*uParam1, 23, 9, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 3, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 11, 3, 0);
+					__LIB_18__::func_449(*uParam1, 12, 2, 0);
+					__LIB_18__::func_449(*uParam1, 13, 2, 0);
+					__LIB_18__::func_449(*uParam1, 15, 3, 0);
+					__LIB_18__::func_449(*uParam1, 23, 9, 0);
 					break;
 			}
 			break;
@@ -7477,177 +7477,177 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				case 0:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 15, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 12, 0);
-					__LIB_18__::func_439(*uParam1, 26, 13, 0);
-					__LIB_18__::func_439(*uParam1, 28, 13, 0);
-					__LIB_18__::func_439(*uParam1, 30, 2, 0);
-					__LIB_18__::func_439(*uParam1, 33, 9, 0);
-					__LIB_18__::func_439(*uParam1, 34, 9, 0);
-					__LIB_18__::func_439(*uParam1, 35, 12, 0);
-					__LIB_18__::func_439(*uParam1, 36, 3, 0);
-					__LIB_18__::func_439(*uParam1, 37, 6, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 4, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 15, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 12, 0);
+					__LIB_18__::func_449(*uParam1, 26, 13, 0);
+					__LIB_18__::func_449(*uParam1, 28, 13, 0);
+					__LIB_18__::func_449(*uParam1, 30, 2, 0);
+					__LIB_18__::func_449(*uParam1, 33, 9, 0);
+					__LIB_18__::func_449(*uParam1, 34, 9, 0);
+					__LIB_18__::func_449(*uParam1, 35, 12, 0);
+					__LIB_18__::func_449(*uParam1, 36, 3, 0);
+					__LIB_18__::func_449(*uParam1, 37, 6, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 4, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 1:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 3, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 23, 29, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 9, 0);
-					__LIB_18__::func_439(*uParam1, 26, 2, 0);
-					__LIB_18__::func_439(*uParam1, 28, 13, 0);
-					__LIB_18__::func_439(*uParam1, 30, 13, 0);
-					__LIB_18__::func_439(*uParam1, 33, 13, 0);
-					__LIB_18__::func_439(*uParam1, 34, 8, 0);
-					__LIB_18__::func_439(*uParam1, 35, 13, 0);
-					__LIB_18__::func_439(*uParam1, 36, 3, 0);
-					__LIB_18__::func_439(*uParam1, 37, 5, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 3, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 29, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 9, 0);
+					__LIB_18__::func_449(*uParam1, 26, 2, 0);
+					__LIB_18__::func_449(*uParam1, 28, 13, 0);
+					__LIB_18__::func_449(*uParam1, 30, 13, 0);
+					__LIB_18__::func_449(*uParam1, 33, 13, 0);
+					__LIB_18__::func_449(*uParam1, 34, 8, 0);
+					__LIB_18__::func_449(*uParam1, 35, 13, 0);
+					__LIB_18__::func_449(*uParam1, 36, 3, 0);
+					__LIB_18__::func_449(*uParam1, 37, 5, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 2:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 3, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 3, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 29, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 12, 0);
-					__LIB_18__::func_439(*uParam1, 28, 2, 0);
-					__LIB_18__::func_439(*uParam1, 30, 3, 0);
-					__LIB_18__::func_439(*uParam1, 33, 13, 0);
-					__LIB_18__::func_439(*uParam1, 34, 11, 0);
-					__LIB_18__::func_439(*uParam1, 35, 11, 0);
-					__LIB_18__::func_439(*uParam1, 36, 2, 0);
-					__LIB_18__::func_439(*uParam1, 37, 3, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 1, 0);
-					__LIB_18__::func_439(*uParam1, 40, 3, 0);
+					__LIB_18__::func_449(*uParam1, 23, 29, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 12, 0);
+					__LIB_18__::func_449(*uParam1, 28, 2, 0);
+					__LIB_18__::func_449(*uParam1, 30, 3, 0);
+					__LIB_18__::func_449(*uParam1, 33, 13, 0);
+					__LIB_18__::func_449(*uParam1, 34, 11, 0);
+					__LIB_18__::func_449(*uParam1, 35, 11, 0);
+					__LIB_18__::func_449(*uParam1, 36, 2, 0);
+					__LIB_18__::func_449(*uParam1, 37, 3, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 1, 0);
+					__LIB_18__::func_449(*uParam1, 40, 3, 0);
 					break;
 				case 3:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 4, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 9, 0);
-					__LIB_18__::func_439(*uParam1, 26, 1, 0);
-					__LIB_18__::func_439(*uParam1, 28, 10, 0);
-					__LIB_18__::func_439(*uParam1, 30, 2, 0);
-					__LIB_18__::func_439(*uParam1, 33, 10, 0);
-					__LIB_18__::func_439(*uParam1, 34, 10, 0);
-					__LIB_18__::func_439(*uParam1, 35, 1, 0);
-					__LIB_18__::func_439(*uParam1, 36, 3, 0);
-					__LIB_18__::func_439(*uParam1, 37, 4, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 1, 0);
-					__LIB_18__::func_439(*uParam1, 40, 3, 0);
+					__LIB_18__::func_449(*uParam1, 23, 4, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 9, 0);
+					__LIB_18__::func_449(*uParam1, 26, 1, 0);
+					__LIB_18__::func_449(*uParam1, 28, 10, 0);
+					__LIB_18__::func_449(*uParam1, 30, 2, 0);
+					__LIB_18__::func_449(*uParam1, 33, 10, 0);
+					__LIB_18__::func_449(*uParam1, 34, 10, 0);
+					__LIB_18__::func_449(*uParam1, 35, 1, 0);
+					__LIB_18__::func_449(*uParam1, 36, 3, 0);
+					__LIB_18__::func_449(*uParam1, 37, 4, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 1, 0);
+					__LIB_18__::func_449(*uParam1, 40, 3, 0);
 					break;
 				case 4:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 23, 13, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 28, 4, 0);
-					__LIB_18__::func_439(*uParam1, 30, 3, 0);
-					__LIB_18__::func_439(*uParam1, 33, 6, 0);
-					__LIB_18__::func_439(*uParam1, 34, 13, 0);
-					__LIB_18__::func_439(*uParam1, 35, 3, 0);
-					__LIB_18__::func_439(*uParam1, 36, 0, 0);
-					__LIB_18__::func_439(*uParam1, 37, 2, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 13, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 28, 4, 0);
+					__LIB_18__::func_449(*uParam1, 30, 3, 0);
+					__LIB_18__::func_449(*uParam1, 33, 6, 0);
+					__LIB_18__::func_449(*uParam1, 34, 13, 0);
+					__LIB_18__::func_449(*uParam1, 35, 3, 0);
+					__LIB_18__::func_449(*uParam1, 36, 0, 0);
+					__LIB_18__::func_449(*uParam1, 37, 2, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 5:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 23, 10, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 5, 0);
-					__LIB_18__::func_439(*uParam1, 26, 8, 0);
-					__LIB_18__::func_439(*uParam1, 28, 6, 0);
-					__LIB_18__::func_439(*uParam1, 30, 6, 0);
-					__LIB_18__::func_439(*uParam1, 33, 8, 0);
-					__LIB_18__::func_439(*uParam1, 34, 6, 0);
-					__LIB_18__::func_439(*uParam1, 35, 8, 0);
-					__LIB_18__::func_439(*uParam1, 36, 3, 0);
-					__LIB_18__::func_439(*uParam1, 37, 1, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 1, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 10, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 5, 0);
+					__LIB_18__::func_449(*uParam1, 26, 8, 0);
+					__LIB_18__::func_449(*uParam1, 28, 6, 0);
+					__LIB_18__::func_449(*uParam1, 30, 6, 0);
+					__LIB_18__::func_449(*uParam1, 33, 8, 0);
+					__LIB_18__::func_449(*uParam1, 34, 6, 0);
+					__LIB_18__::func_449(*uParam1, 35, 8, 0);
+					__LIB_18__::func_449(*uParam1, 36, 3, 0);
+					__LIB_18__::func_449(*uParam1, 37, 1, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 1, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 6:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 2, 0);
-					__LIB_18__::func_439(*uParam1, 10, 1, 0);
-					__LIB_18__::func_439(*uParam1, 23, 17, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 2, 0);
-					__LIB_18__::func_439(*uParam1, 26, 13, 0);
-					__LIB_18__::func_439(*uParam1, 28, 13, 0);
-					__LIB_18__::func_439(*uParam1, 30, 12, 0);
-					__LIB_18__::func_439(*uParam1, 33, 2, 0);
-					__LIB_18__::func_439(*uParam1, 34, 9, 0);
-					__LIB_18__::func_439(*uParam1, 35, 12, 0);
-					__LIB_18__::func_439(*uParam1, 36, 0, 0);
-					__LIB_18__::func_439(*uParam1, 37, 1, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 2, 0);
+					__LIB_18__::func_449(*uParam1, 10, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 17, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 2, 0);
+					__LIB_18__::func_449(*uParam1, 26, 13, 0);
+					__LIB_18__::func_449(*uParam1, 28, 13, 0);
+					__LIB_18__::func_449(*uParam1, 30, 12, 0);
+					__LIB_18__::func_449(*uParam1, 33, 2, 0);
+					__LIB_18__::func_449(*uParam1, 34, 9, 0);
+					__LIB_18__::func_449(*uParam1, 35, 12, 0);
+					__LIB_18__::func_449(*uParam1, 36, 0, 0);
+					__LIB_18__::func_449(*uParam1, 37, 1, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 7:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 3, 0);
-					__LIB_18__::func_439(*uParam1, 8, 0, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 23, 11, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 3, 0);
-					__LIB_18__::func_439(*uParam1, 26, 14, 0);
-					__LIB_18__::func_439(*uParam1, 28, 1, 0);
-					__LIB_18__::func_439(*uParam1, 30, 1, 0);
-					__LIB_18__::func_439(*uParam1, 33, 3, 0);
-					__LIB_18__::func_439(*uParam1, 34, 3, 0);
-					__LIB_18__::func_439(*uParam1, 35, 10, 0);
-					__LIB_18__::func_439(*uParam1, 36, 2, 0);
-					__LIB_18__::func_439(*uParam1, 37, 6, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 0, 0);
-					__LIB_18__::func_439(*uParam1, 40, 3, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 3, 0);
+					__LIB_18__::func_449(*uParam1, 8, 0, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 11, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 3, 0);
+					__LIB_18__::func_449(*uParam1, 26, 14, 0);
+					__LIB_18__::func_449(*uParam1, 28, 1, 0);
+					__LIB_18__::func_449(*uParam1, 30, 1, 0);
+					__LIB_18__::func_449(*uParam1, 33, 3, 0);
+					__LIB_18__::func_449(*uParam1, 34, 3, 0);
+					__LIB_18__::func_449(*uParam1, 35, 10, 0);
+					__LIB_18__::func_449(*uParam1, 36, 2, 0);
+					__LIB_18__::func_449(*uParam1, 37, 6, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 0, 0);
+					__LIB_18__::func_449(*uParam1, 40, 3, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 				case 8:
 					StringCopy(&(uParam0->f_1), "12TCU014", 16);
@@ -7696,10 +7696,10 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[40] = 2;
 					uParam0->f_9[45] = 1;
 					uParam0->f_9[48] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 9:
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
 					VEHICLE::SET_VEHICLE_EXTRA(*uParam1, 1, true);
 					VEHICLE::SET_VEHICLE_EXTRA(*uParam1, 2, true);
 					VEHICLE::SET_VEHICLE_EXTRA(*uParam1, 3, true);
@@ -7712,78 +7712,78 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				case 0:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 23, 19, 1);
-					__LIB_18__::func_439(*uParam1, 24, 3, 0);
+					__LIB_18__::func_449(*uParam1, 23, 19, 1);
+					__LIB_18__::func_449(*uParam1, 24, 3, 0);
 					break;
 				case 1:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 21, 1);
-					__LIB_18__::func_439(*uParam1, 24, 3, 0);
+					__LIB_18__::func_449(*uParam1, 23, 21, 1);
+					__LIB_18__::func_449(*uParam1, 24, 3, 0);
 					break;
 				case 2:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 1, 0);
-					__LIB_18__::func_439(*uParam1, 9, 1, 0);
-					__LIB_18__::func_439(*uParam1, 23, 29, 1);
-					__LIB_18__::func_439(*uParam1, 24, 3, 0);
-					__LIB_18__::func_439(*uParam1, 25, 2, 0);
-					__LIB_18__::func_439(*uParam1, 26, 1, 0);
-					__LIB_18__::func_439(*uParam1, 27, 0, 0);
-					__LIB_18__::func_439(*uParam1, 28, 17, 0);
-					__LIB_18__::func_439(*uParam1, 30, 12, 0);
-					__LIB_18__::func_439(*uParam1, 33, 11, 0);
-					__LIB_18__::func_439(*uParam1, 34, 2, 0);
-					__LIB_18__::func_439(*uParam1, 35, 13, 0);
-					__LIB_18__::func_439(*uParam1, 37, 5, 0);
-					__LIB_18__::func_439(*uParam1, 38, 4, 0);
-					__LIB_18__::func_439(*uParam1, 39, 0, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 1, 0);
+					__LIB_18__::func_449(*uParam1, 9, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 29, 1);
+					__LIB_18__::func_449(*uParam1, 24, 3, 0);
+					__LIB_18__::func_449(*uParam1, 25, 2, 0);
+					__LIB_18__::func_449(*uParam1, 26, 1, 0);
+					__LIB_18__::func_449(*uParam1, 27, 0, 0);
+					__LIB_18__::func_449(*uParam1, 28, 17, 0);
+					__LIB_18__::func_449(*uParam1, 30, 12, 0);
+					__LIB_18__::func_449(*uParam1, 33, 11, 0);
+					__LIB_18__::func_449(*uParam1, 34, 2, 0);
+					__LIB_18__::func_449(*uParam1, 35, 13, 0);
+					__LIB_18__::func_449(*uParam1, 37, 5, 0);
+					__LIB_18__::func_449(*uParam1, 38, 4, 0);
+					__LIB_18__::func_449(*uParam1, 39, 0, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 3:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
-					__LIB_18__::func_439(*uParam1, 9, 1, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 9, 1, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 27, 1);
-					__LIB_18__::func_439(*uParam1, 24, 3, 0);
-					__LIB_18__::func_439(*uParam1, 25, 12, 0);
-					__LIB_18__::func_439(*uParam1, 26, 12, 0);
-					__LIB_18__::func_439(*uParam1, 27, 9, 0);
-					__LIB_18__::func_439(*uParam1, 28, 15, 0);
-					__LIB_18__::func_439(*uParam1, 30, 2, 0);
-					__LIB_18__::func_439(*uParam1, 33, 2, 0);
-					__LIB_18__::func_439(*uParam1, 34, 13, 0);
-					__LIB_18__::func_439(*uParam1, 35, 14, 0);
-					__LIB_18__::func_439(*uParam1, 37, 7, 0);
-					__LIB_18__::func_439(*uParam1, 38, 4, 0);
-					__LIB_18__::func_439(*uParam1, 39, 3, 0);
-					__LIB_18__::func_439(*uParam1, 40, 1, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 27, 1);
+					__LIB_18__::func_449(*uParam1, 24, 3, 0);
+					__LIB_18__::func_449(*uParam1, 25, 12, 0);
+					__LIB_18__::func_449(*uParam1, 26, 12, 0);
+					__LIB_18__::func_449(*uParam1, 27, 9, 0);
+					__LIB_18__::func_449(*uParam1, 28, 15, 0);
+					__LIB_18__::func_449(*uParam1, 30, 2, 0);
+					__LIB_18__::func_449(*uParam1, 33, 2, 0);
+					__LIB_18__::func_449(*uParam1, 34, 13, 0);
+					__LIB_18__::func_449(*uParam1, 35, 14, 0);
+					__LIB_18__::func_449(*uParam1, 37, 7, 0);
+					__LIB_18__::func_449(*uParam1, 38, 4, 0);
+					__LIB_18__::func_449(*uParam1, 39, 3, 0);
+					__LIB_18__::func_449(*uParam1, 40, 1, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 				case 4:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 9, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 9, 1, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 15, 1);
-					__LIB_18__::func_439(*uParam1, 24, 3, 0);
-					__LIB_18__::func_439(*uParam1, 27, 10, 0);
-					__LIB_18__::func_439(*uParam1, 28, 11, 0);
-					__LIB_18__::func_439(*uParam1, 30, 2, 0);
-					__LIB_18__::func_439(*uParam1, 33, 7, 0);
-					__LIB_18__::func_439(*uParam1, 34, 4, 0);
-					__LIB_18__::func_439(*uParam1, 35, 8, 0);
-					__LIB_18__::func_439(*uParam1, 37, 3, 0);
-					__LIB_18__::func_439(*uParam1, 38, 4, 0);
-					__LIB_18__::func_439(*uParam1, 39, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 15, 1);
+					__LIB_18__::func_449(*uParam1, 24, 3, 0);
+					__LIB_18__::func_449(*uParam1, 27, 10, 0);
+					__LIB_18__::func_449(*uParam1, 28, 11, 0);
+					__LIB_18__::func_449(*uParam1, 30, 2, 0);
+					__LIB_18__::func_449(*uParam1, 33, 7, 0);
+					__LIB_18__::func_449(*uParam1, 34, 4, 0);
+					__LIB_18__::func_449(*uParam1, 35, 8, 0);
+					__LIB_18__::func_449(*uParam1, 37, 3, 0);
+					__LIB_18__::func_449(*uParam1, 38, 4, 0);
+					__LIB_18__::func_449(*uParam1, 39, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 			}
 			break;
@@ -7792,153 +7792,153 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				case 0:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 23, 23, 1);
-					__LIB_18__::func_439(*uParam1, 25, 4, 0);
-					__LIB_18__::func_439(*uParam1, 26, 9, 0);
-					__LIB_18__::func_439(*uParam1, 27, 3, 0);
-					__LIB_18__::func_439(*uParam1, 28, 15, 0);
-					__LIB_18__::func_439(*uParam1, 30, 12, 0);
-					__LIB_18__::func_439(*uParam1, 33, 3, 0);
-					__LIB_18__::func_439(*uParam1, 34, 0, 0);
-					__LIB_18__::func_439(*uParam1, 35, 11, 0);
-					__LIB_18__::func_439(*uParam1, 36, 1, 0);
-					__LIB_18__::func_439(*uParam1, 38, 0, 0);
-					__LIB_18__::func_439(*uParam1, 39, 3, 0);
-					__LIB_18__::func_439(*uParam1, 40, 4, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 23, 1);
+					__LIB_18__::func_449(*uParam1, 25, 4, 0);
+					__LIB_18__::func_449(*uParam1, 26, 9, 0);
+					__LIB_18__::func_449(*uParam1, 27, 3, 0);
+					__LIB_18__::func_449(*uParam1, 28, 15, 0);
+					__LIB_18__::func_449(*uParam1, 30, 12, 0);
+					__LIB_18__::func_449(*uParam1, 33, 3, 0);
+					__LIB_18__::func_449(*uParam1, 34, 0, 0);
+					__LIB_18__::func_449(*uParam1, 35, 11, 0);
+					__LIB_18__::func_449(*uParam1, 36, 1, 0);
+					__LIB_18__::func_449(*uParam1, 38, 0, 0);
+					__LIB_18__::func_449(*uParam1, 39, 3, 0);
+					__LIB_18__::func_449(*uParam1, 40, 4, 0);
 					break;
 				case 1:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 11, 1, 0);
-					__LIB_18__::func_439(*uParam1, 16, 3, 0);
+					__LIB_18__::func_449(*uParam1, 11, 1, 0);
+					__LIB_18__::func_449(*uParam1, 16, 3, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 13, 1);
-					__LIB_18__::func_439(*uParam1, 25, 2, 0);
-					__LIB_18__::func_439(*uParam1, 26, 0, 0);
-					__LIB_18__::func_439(*uParam1, 27, 0, 0);
-					__LIB_18__::func_439(*uParam1, 28, 10, 0);
-					__LIB_18__::func_439(*uParam1, 30, 4, 0);
-					__LIB_18__::func_439(*uParam1, 33, 15, 0);
-					__LIB_18__::func_439(*uParam1, 34, 2, 0);
-					__LIB_18__::func_439(*uParam1, 35, 0, 0);
-					__LIB_18__::func_439(*uParam1, 36, 1, 0);
-					__LIB_18__::func_439(*uParam1, 37, 1, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 4, 0);
+					__LIB_18__::func_449(*uParam1, 23, 13, 1);
+					__LIB_18__::func_449(*uParam1, 25, 2, 0);
+					__LIB_18__::func_449(*uParam1, 26, 0, 0);
+					__LIB_18__::func_449(*uParam1, 27, 0, 0);
+					__LIB_18__::func_449(*uParam1, 28, 10, 0);
+					__LIB_18__::func_449(*uParam1, 30, 4, 0);
+					__LIB_18__::func_449(*uParam1, 33, 15, 0);
+					__LIB_18__::func_449(*uParam1, 34, 2, 0);
+					__LIB_18__::func_449(*uParam1, 35, 0, 0);
+					__LIB_18__::func_449(*uParam1, 36, 1, 0);
+					__LIB_18__::func_449(*uParam1, 37, 1, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 4, 0);
 					break;
 				case 2:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 23, 21, 1);
-					__LIB_18__::func_439(*uParam1, 24, 0, 0);
-					__LIB_18__::func_439(*uParam1, 25, 0, 0);
-					__LIB_18__::func_439(*uParam1, 26, 2, 0);
-					__LIB_18__::func_439(*uParam1, 27, 4, 0);
-					__LIB_18__::func_439(*uParam1, 28, 1, 0);
-					__LIB_18__::func_439(*uParam1, 30, 4, 0);
-					__LIB_18__::func_439(*uParam1, 33, 4, 0);
-					__LIB_18__::func_439(*uParam1, 34, 14, 0);
-					__LIB_18__::func_439(*uParam1, 35, 10, 0);
-					__LIB_18__::func_439(*uParam1, 36, 0, 0);
-					__LIB_18__::func_439(*uParam1, 37, 2, 0);
-					__LIB_18__::func_439(*uParam1, 38, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 21, 1);
+					__LIB_18__::func_449(*uParam1, 24, 0, 0);
+					__LIB_18__::func_449(*uParam1, 25, 0, 0);
+					__LIB_18__::func_449(*uParam1, 26, 2, 0);
+					__LIB_18__::func_449(*uParam1, 27, 4, 0);
+					__LIB_18__::func_449(*uParam1, 28, 1, 0);
+					__LIB_18__::func_449(*uParam1, 30, 4, 0);
+					__LIB_18__::func_449(*uParam1, 33, 4, 0);
+					__LIB_18__::func_449(*uParam1, 34, 14, 0);
+					__LIB_18__::func_449(*uParam1, 35, 10, 0);
+					__LIB_18__::func_449(*uParam1, 36, 0, 0);
+					__LIB_18__::func_449(*uParam1, 37, 2, 0);
+					__LIB_18__::func_449(*uParam1, 38, 0, 0);
 					break;
 				case 3:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 20, true);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 20, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 1, 0);
-					__LIB_18__::func_439(*uParam1, 26, 8, 0);
-					__LIB_18__::func_439(*uParam1, 28, 0, 0);
-					__LIB_18__::func_439(*uParam1, 30, 10, 0);
-					__LIB_18__::func_439(*uParam1, 33, 10, 0);
-					__LIB_18__::func_439(*uParam1, 34, 1, 0);
-					__LIB_18__::func_439(*uParam1, 35, 1, 0);
-					__LIB_18__::func_439(*uParam1, 36, 1, 0);
-					__LIB_18__::func_439(*uParam1, 37, 2, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 4, 0);
+					__LIB_18__::func_449(*uParam1, 23, 20, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 1, 0);
+					__LIB_18__::func_449(*uParam1, 26, 8, 0);
+					__LIB_18__::func_449(*uParam1, 28, 0, 0);
+					__LIB_18__::func_449(*uParam1, 30, 10, 0);
+					__LIB_18__::func_449(*uParam1, 33, 10, 0);
+					__LIB_18__::func_449(*uParam1, 34, 1, 0);
+					__LIB_18__::func_449(*uParam1, 35, 1, 0);
+					__LIB_18__::func_449(*uParam1, 36, 1, 0);
+					__LIB_18__::func_449(*uParam1, 37, 2, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 4, 0);
 					break;
 				case 4:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 23, 29, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 12, 0);
-					__LIB_18__::func_439(*uParam1, 26, 2, 0);
-					__LIB_18__::func_439(*uParam1, 27, 2, 0);
-					__LIB_18__::func_439(*uParam1, 28, 12, 0);
-					__LIB_18__::func_439(*uParam1, 30, 4, 0);
-					__LIB_18__::func_439(*uParam1, 33, 6, 0);
-					__LIB_18__::func_439(*uParam1, 34, 12, 0);
-					__LIB_18__::func_439(*uParam1, 35, 10, 0);
-					__LIB_18__::func_439(*uParam1, 36, 1, 0);
-					__LIB_18__::func_439(*uParam1, 37, 2, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 3, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 23, 29, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 12, 0);
+					__LIB_18__::func_449(*uParam1, 26, 2, 0);
+					__LIB_18__::func_449(*uParam1, 27, 2, 0);
+					__LIB_18__::func_449(*uParam1, 28, 12, 0);
+					__LIB_18__::func_449(*uParam1, 30, 4, 0);
+					__LIB_18__::func_449(*uParam1, 33, 6, 0);
+					__LIB_18__::func_449(*uParam1, 34, 12, 0);
+					__LIB_18__::func_449(*uParam1, 35, 10, 0);
+					__LIB_18__::func_449(*uParam1, 36, 1, 0);
+					__LIB_18__::func_449(*uParam1, 37, 2, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 3, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
 					break;
 				case 5:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 23, 10, 1);
-					__LIB_18__::func_439(*uParam1, 24, 0, 0);
-					__LIB_18__::func_439(*uParam1, 25, 0, 0);
-					__LIB_18__::func_439(*uParam1, 26, 9, 0);
-					__LIB_18__::func_439(*uParam1, 27, 1, 0);
-					__LIB_18__::func_439(*uParam1, 28, 5, 0);
-					__LIB_18__::func_439(*uParam1, 30, 0, 0);
-					__LIB_18__::func_439(*uParam1, 33, 0, 0);
-					__LIB_18__::func_439(*uParam1, 34, 0, 0);
-					__LIB_18__::func_439(*uParam1, 35, 0, 0);
-					__LIB_18__::func_439(*uParam1, 36, 0, 0);
-					__LIB_18__::func_439(*uParam1, 37, 0, 0);
-					__LIB_18__::func_439(*uParam1, 38, 1, 0);
-					__LIB_18__::func_439(*uParam1, 39, 1, 0);
-					__LIB_18__::func_439(*uParam1, 40, 1, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 23, 10, 1);
+					__LIB_18__::func_449(*uParam1, 24, 0, 0);
+					__LIB_18__::func_449(*uParam1, 25, 0, 0);
+					__LIB_18__::func_449(*uParam1, 26, 9, 0);
+					__LIB_18__::func_449(*uParam1, 27, 1, 0);
+					__LIB_18__::func_449(*uParam1, 28, 5, 0);
+					__LIB_18__::func_449(*uParam1, 30, 0, 0);
+					__LIB_18__::func_449(*uParam1, 33, 0, 0);
+					__LIB_18__::func_449(*uParam1, 34, 0, 0);
+					__LIB_18__::func_449(*uParam1, 35, 0, 0);
+					__LIB_18__::func_449(*uParam1, 36, 0, 0);
+					__LIB_18__::func_449(*uParam1, 37, 0, 0);
+					__LIB_18__::func_449(*uParam1, 38, 1, 0);
+					__LIB_18__::func_449(*uParam1, 39, 1, 0);
+					__LIB_18__::func_449(*uParam1, 40, 1, 0);
 					break;
 				case 6:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 23, 11, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 3, 0);
-					__LIB_18__::func_439(*uParam1, 26, 12, 0);
-					__LIB_18__::func_439(*uParam1, 27, 0, 0);
-					__LIB_18__::func_439(*uParam1, 28, 14, 0);
-					__LIB_18__::func_439(*uParam1, 30, 10, 0);
-					__LIB_18__::func_439(*uParam1, 33, 4, 0);
-					__LIB_18__::func_439(*uParam1, 34, 4, 0);
-					__LIB_18__::func_439(*uParam1, 35, 7, 0);
-					__LIB_18__::func_439(*uParam1, 36, 1, 0);
-					__LIB_18__::func_439(*uParam1, 37, 2, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
-					__LIB_18__::func_439(*uParam1, 39, 1, 0);
-					__LIB_18__::func_439(*uParam1, 40, 3, 0);
+					__LIB_18__::func_449(*uParam1, 23, 11, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 3, 0);
+					__LIB_18__::func_449(*uParam1, 26, 12, 0);
+					__LIB_18__::func_449(*uParam1, 27, 0, 0);
+					__LIB_18__::func_449(*uParam1, 28, 14, 0);
+					__LIB_18__::func_449(*uParam1, 30, 10, 0);
+					__LIB_18__::func_449(*uParam1, 33, 4, 0);
+					__LIB_18__::func_449(*uParam1, 34, 4, 0);
+					__LIB_18__::func_449(*uParam1, 35, 7, 0);
+					__LIB_18__::func_449(*uParam1, 36, 1, 0);
+					__LIB_18__::func_449(*uParam1, 37, 2, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 39, 1, 0);
+					__LIB_18__::func_449(*uParam1, 40, 3, 0);
 					break;
 				case 7:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 20, true);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 10, 1);
-					__LIB_18__::func_439(*uParam1, 24, 1, 0);
-					__LIB_18__::func_439(*uParam1, 25, 11, 0);
-					__LIB_18__::func_439(*uParam1, 26, 11, 0);
-					__LIB_18__::func_439(*uParam1, 27, 1, 0);
-					__LIB_18__::func_439(*uParam1, 28, 11, 0);
-					__LIB_18__::func_439(*uParam1, 30, 13, 0);
-					__LIB_18__::func_439(*uParam1, 33, 15, 0);
-					__LIB_18__::func_439(*uParam1, 34, 14, 0);
-					__LIB_18__::func_439(*uParam1, 35, 14, 0);
-					__LIB_18__::func_439(*uParam1, 36, 0, 0);
-					__LIB_18__::func_439(*uParam1, 37, 2, 0);
-					__LIB_18__::func_439(*uParam1, 38, 2, 0);
-					__LIB_18__::func_439(*uParam1, 39, 3, 0);
-					__LIB_18__::func_439(*uParam1, 40, 4, 0);
+					__LIB_18__::func_449(*uParam1, 23, 10, 1);
+					__LIB_18__::func_449(*uParam1, 24, 1, 0);
+					__LIB_18__::func_449(*uParam1, 25, 11, 0);
+					__LIB_18__::func_449(*uParam1, 26, 11, 0);
+					__LIB_18__::func_449(*uParam1, 27, 1, 0);
+					__LIB_18__::func_449(*uParam1, 28, 11, 0);
+					__LIB_18__::func_449(*uParam1, 30, 13, 0);
+					__LIB_18__::func_449(*uParam1, 33, 15, 0);
+					__LIB_18__::func_449(*uParam1, 34, 14, 0);
+					__LIB_18__::func_449(*uParam1, 35, 14, 0);
+					__LIB_18__::func_449(*uParam1, 36, 0, 0);
+					__LIB_18__::func_449(*uParam1, 37, 2, 0);
+					__LIB_18__::func_449(*uParam1, 38, 2, 0);
+					__LIB_18__::func_449(*uParam1, 39, 3, 0);
+					__LIB_18__::func_449(*uParam1, 40, 4, 0);
 					break;
 			}
 			break;
@@ -7947,22 +7947,22 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				case 0:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 5, 0, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 5, 0, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 18, 1);
-					__LIB_18__::func_439(*uParam1, 24, 2, 0);
-					__LIB_18__::func_439(*uParam1, 25, 6, 0);
-					__LIB_18__::func_439(*uParam1, 26, 3, 0);
-					__LIB_18__::func_439(*uParam1, 27, 0, 0);
-					__LIB_18__::func_439(*uParam1, 28, 2, 0);
-					__LIB_18__::func_439(*uParam1, 31, 4, 0);
-					__LIB_18__::func_439(*uParam1, 32, 0, 0);
-					__LIB_18__::func_439(*uParam1, 33, 12, 0);
-					__LIB_18__::func_439(*uParam1, 34, 12, 0);
-					__LIB_18__::func_439(*uParam1, 35, 9, 0);
-					__LIB_18__::func_439(*uParam1, 37, 3, 0);
-					__LIB_18__::func_439(*uParam1, 38, 3, 0);
+					__LIB_18__::func_449(*uParam1, 23, 18, 1);
+					__LIB_18__::func_449(*uParam1, 24, 2, 0);
+					__LIB_18__::func_449(*uParam1, 25, 6, 0);
+					__LIB_18__::func_449(*uParam1, 26, 3, 0);
+					__LIB_18__::func_449(*uParam1, 27, 0, 0);
+					__LIB_18__::func_449(*uParam1, 28, 2, 0);
+					__LIB_18__::func_449(*uParam1, 31, 4, 0);
+					__LIB_18__::func_449(*uParam1, 32, 0, 0);
+					__LIB_18__::func_449(*uParam1, 33, 12, 0);
+					__LIB_18__::func_449(*uParam1, 34, 12, 0);
+					__LIB_18__::func_449(*uParam1, 35, 9, 0);
+					__LIB_18__::func_449(*uParam1, 37, 3, 0);
+					__LIB_18__::func_449(*uParam1, 38, 3, 0);
 					break;
 				case 1:
 					uParam0->f_6 = 145;
@@ -8013,7 +8013,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[38] = 4;
 					uParam0->f_9[39] = 2;
 					uParam0->f_9[40] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -8022,15 +8022,15 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				case 0:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 4);
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 3, 1, 0);
-					__LIB_18__::func_439(*uParam1, 4, 1, 0);
-					__LIB_18__::func_439(*uParam1, 5, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 2, 0);
-					__LIB_18__::func_439(*uParam1, 23, 1, 0);
-					__LIB_18__::func_439(*uParam1, 26, 1, 0);
-					__LIB_18__::func_439(*uParam1, 30, 1, 0);
-					__LIB_18__::func_439(*uParam1, 34, 1, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 3, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 1, 0);
+					__LIB_18__::func_449(*uParam1, 5, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 2, 0);
+					__LIB_18__::func_449(*uParam1, 23, 1, 0);
+					__LIB_18__::func_449(*uParam1, 26, 1, 0);
+					__LIB_18__::func_449(*uParam1, 30, 1, 0);
+					__LIB_18__::func_449(*uParam1, 34, 1, 0);
 					iVar0 = 1;
 					while (iVar0 <= 6)
 					{
@@ -8042,12 +8042,12 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					}
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 0, 0, 0);
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 3, 1, 0);
-					__LIB_18__::func_439(*uParam1, 4, 2, 0);
-					__LIB_18__::func_439(*uParam1, 5, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 0, 0);
+					__LIB_18__::func_449(*uParam1, 0, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 3, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 2, 0);
+					__LIB_18__::func_449(*uParam1, 5, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 0, 0);
 					iVar0 = 1;
 					while (iVar0 <= 6)
 					{
@@ -8064,10 +8064,10 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 11, 3, 0);
-					__LIB_18__::func_439(*uParam1, 12, 2, 0);
-					__LIB_18__::func_439(*uParam1, 13, 2, 0);
-					__LIB_18__::func_439(*uParam1, 23, 34, 0);
+					__LIB_18__::func_449(*uParam1, 11, 3, 0);
+					__LIB_18__::func_449(*uParam1, 12, 2, 0);
+					__LIB_18__::func_449(*uParam1, 13, 2, 0);
+					__LIB_18__::func_449(*uParam1, 23, 34, 0);
 					break;
 			}
 			break;
@@ -8076,49 +8076,49 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				case 0:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 1, 0);
-					__LIB_18__::func_439(*uParam1, 2, 1, 0);
-					__LIB_18__::func_439(*uParam1, 6, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 1, 0);
+					__LIB_18__::func_449(*uParam1, 2, 1, 0);
+					__LIB_18__::func_449(*uParam1, 6, 2, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 25, 1);
-					__LIB_18__::func_439(*uParam1, 24, 1, 0);
-					__LIB_18__::func_439(*uParam1, 25, 7, 0);
-					__LIB_18__::func_439(*uParam1, 26, 11, 0);
-					__LIB_18__::func_439(*uParam1, 27, 9, 0);
-					__LIB_18__::func_439(*uParam1, 28, 11, 0);
-					__LIB_18__::func_439(*uParam1, 33, 4, 0);
-					__LIB_18__::func_439(*uParam1, 34, 9, 0);
-					__LIB_18__::func_439(*uParam1, 35, 12, 0);
-					__LIB_18__::func_439(*uParam1, 37, 2, 0);
-					__LIB_18__::func_439(*uParam1, 38, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 43, 2, 0);
-					__LIB_18__::func_439(*uParam1, 45, 2, 0);
+					__LIB_18__::func_449(*uParam1, 23, 25, 1);
+					__LIB_18__::func_449(*uParam1, 24, 1, 0);
+					__LIB_18__::func_449(*uParam1, 25, 7, 0);
+					__LIB_18__::func_449(*uParam1, 26, 11, 0);
+					__LIB_18__::func_449(*uParam1, 27, 9, 0);
+					__LIB_18__::func_449(*uParam1, 28, 11, 0);
+					__LIB_18__::func_449(*uParam1, 33, 4, 0);
+					__LIB_18__::func_449(*uParam1, 34, 9, 0);
+					__LIB_18__::func_449(*uParam1, 35, 12, 0);
+					__LIB_18__::func_449(*uParam1, 37, 2, 0);
+					__LIB_18__::func_449(*uParam1, 38, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 43, 2, 0);
+					__LIB_18__::func_449(*uParam1, 45, 2, 0);
 					break;
 				case 1:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 2);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 2, 0);
-					__LIB_18__::func_439(*uParam1, 11, 3, 0);
-					__LIB_18__::func_439(*uParam1, 12, 2, 0);
-					__LIB_18__::func_439(*uParam1, 13, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 2, 0);
+					__LIB_18__::func_449(*uParam1, 11, 3, 0);
+					__LIB_18__::func_449(*uParam1, 12, 2, 0);
+					__LIB_18__::func_449(*uParam1, 13, 2, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 18, true);
-					__LIB_18__::func_439(*uParam1, 23, 18, 1);
-					__LIB_18__::func_439(*uParam1, 24, 3, 0);
-					__LIB_18__::func_439(*uParam1, 25, 7, 0);
-					__LIB_18__::func_439(*uParam1, 26, 5, 0);
-					__LIB_18__::func_439(*uParam1, 27, 9, 0);
-					__LIB_18__::func_439(*uParam1, 28, 9, 0);
-					__LIB_18__::func_439(*uParam1, 33, 11, 0);
-					__LIB_18__::func_439(*uParam1, 34, 2, 0);
-					__LIB_18__::func_439(*uParam1, 35, 3, 0);
-					__LIB_18__::func_439(*uParam1, 37, 1, 0);
-					__LIB_18__::func_439(*uParam1, 38, 4, 0);
-					__LIB_18__::func_439(*uParam1, 39, 3, 0);
-					__LIB_18__::func_439(*uParam1, 40, 1, 0);
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 43, 1, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 18, 1);
+					__LIB_18__::func_449(*uParam1, 24, 3, 0);
+					__LIB_18__::func_449(*uParam1, 25, 7, 0);
+					__LIB_18__::func_449(*uParam1, 26, 5, 0);
+					__LIB_18__::func_449(*uParam1, 27, 9, 0);
+					__LIB_18__::func_449(*uParam1, 28, 9, 0);
+					__LIB_18__::func_449(*uParam1, 33, 11, 0);
+					__LIB_18__::func_449(*uParam1, 34, 2, 0);
+					__LIB_18__::func_449(*uParam1, 35, 3, 0);
+					__LIB_18__::func_449(*uParam1, 37, 1, 0);
+					__LIB_18__::func_449(*uParam1, 38, 4, 0);
+					__LIB_18__::func_449(*uParam1, 39, 3, 0);
+					__LIB_18__::func_449(*uParam1, 40, 1, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 43, 1, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 			}
 			break;
@@ -8126,49 +8126,49 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 1, 0);
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 2, -1, 0);
-					__LIB_18__::func_439(*uParam1, 3, 2, 0);
-					__LIB_18__::func_439(*uParam1, 4, 4, 0);
-					__LIB_18__::func_439(*uParam1, 5, -1, 0);
-					__LIB_18__::func_439(*uParam1, 6, 1, 0);
-					__LIB_18__::func_439(*uParam1, 7, 7, 0);
-					__LIB_18__::func_439(*uParam1, 9, -1, 0);
-					__LIB_18__::func_439(*uParam1, 10, -1, 0);
-					__LIB_18__::func_439(*uParam1, 11, -1, 0);
-					__LIB_18__::func_439(*uParam1, 12, -1, 0);
-					__LIB_18__::func_439(*uParam1, 13, -1, 0);
-					__LIB_18__::func_439(*uParam1, 14, -1, 0);
-					__LIB_18__::func_439(*uParam1, 15, -1, 0);
-					__LIB_18__::func_439(*uParam1, 16, -1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 1, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 2, -1, 0);
+					__LIB_18__::func_449(*uParam1, 3, 2, 0);
+					__LIB_18__::func_449(*uParam1, 4, 4, 0);
+					__LIB_18__::func_449(*uParam1, 5, -1, 0);
+					__LIB_18__::func_449(*uParam1, 6, 1, 0);
+					__LIB_18__::func_449(*uParam1, 7, 7, 0);
+					__LIB_18__::func_449(*uParam1, 9, -1, 0);
+					__LIB_18__::func_449(*uParam1, 10, -1, 0);
+					__LIB_18__::func_449(*uParam1, 11, -1, 0);
+					__LIB_18__::func_449(*uParam1, 12, -1, 0);
+					__LIB_18__::func_449(*uParam1, 13, -1, 0);
+					__LIB_18__::func_449(*uParam1, 14, -1, 0);
+					__LIB_18__::func_449(*uParam1, 15, -1, 0);
+					__LIB_18__::func_449(*uParam1, 16, -1, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
-					__LIB_18__::func_439(*uParam1, 23, 5, 0);
-					__LIB_18__::func_439(*uParam1, 24, -1, 0);
-					__LIB_18__::func_439(*uParam1, 25, -1, 0);
-					__LIB_18__::func_439(*uParam1, 26, -1, 0);
-					__LIB_18__::func_439(*uParam1, 27, -1, 0);
-					__LIB_18__::func_439(*uParam1, 28, -1, 0);
-					__LIB_18__::func_439(*uParam1, 29, -1, 0);
-					__LIB_18__::func_439(*uParam1, 30, -1, 0);
-					__LIB_18__::func_439(*uParam1, 31, 1, 0);
-					__LIB_18__::func_439(*uParam1, 32, 2, 0);
-					__LIB_18__::func_439(*uParam1, 33, 6, 0);
-					__LIB_18__::func_439(*uParam1, 34, 1, 0);
-					__LIB_18__::func_439(*uParam1, 35, -1, 0);
-					__LIB_18__::func_439(*uParam1, 36, -1, 0);
-					__LIB_18__::func_439(*uParam1, 37, -1, 0);
-					__LIB_18__::func_439(*uParam1, 38, -1, 0);
-					__LIB_18__::func_439(*uParam1, 39, -1, 0);
-					__LIB_18__::func_439(*uParam1, 40, -1, 0);
-					__LIB_18__::func_439(*uParam1, 41, -1, 0);
-					__LIB_18__::func_439(*uParam1, 42, -1, 0);
-					__LIB_18__::func_439(*uParam1, 43, -1, 0);
-					__LIB_18__::func_439(*uParam1, 44, -1, 0);
-					__LIB_18__::func_439(*uParam1, 45, -1, 0);
-					__LIB_18__::func_439(*uParam1, 46, -1, 0);
-					__LIB_18__::func_439(*uParam1, 47, -1, 0);
-					__LIB_18__::func_439(*uParam1, 48, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 5, 0);
+					__LIB_18__::func_449(*uParam1, 24, -1, 0);
+					__LIB_18__::func_449(*uParam1, 25, -1, 0);
+					__LIB_18__::func_449(*uParam1, 26, -1, 0);
+					__LIB_18__::func_449(*uParam1, 27, -1, 0);
+					__LIB_18__::func_449(*uParam1, 28, -1, 0);
+					__LIB_18__::func_449(*uParam1, 29, -1, 0);
+					__LIB_18__::func_449(*uParam1, 30, -1, 0);
+					__LIB_18__::func_449(*uParam1, 31, 1, 0);
+					__LIB_18__::func_449(*uParam1, 32, 2, 0);
+					__LIB_18__::func_449(*uParam1, 33, 6, 0);
+					__LIB_18__::func_449(*uParam1, 34, 1, 0);
+					__LIB_18__::func_449(*uParam1, 35, -1, 0);
+					__LIB_18__::func_449(*uParam1, 36, -1, 0);
+					__LIB_18__::func_449(*uParam1, 37, -1, 0);
+					__LIB_18__::func_449(*uParam1, 38, -1, 0);
+					__LIB_18__::func_449(*uParam1, 39, -1, 0);
+					__LIB_18__::func_449(*uParam1, 40, -1, 0);
+					__LIB_18__::func_449(*uParam1, 41, -1, 0);
+					__LIB_18__::func_449(*uParam1, 42, -1, 0);
+					__LIB_18__::func_449(*uParam1, 43, -1, 0);
+					__LIB_18__::func_449(*uParam1, 44, -1, 0);
+					__LIB_18__::func_449(*uParam1, 45, -1, 0);
+					__LIB_18__::func_449(*uParam1, 46, -1, 0);
+					__LIB_18__::func_449(*uParam1, 47, -1, 0);
+					__LIB_18__::func_449(*uParam1, 48, 1, 0);
 					break;
 				case 1:
 					uParam0->f_66 = joaat("banshee2");
@@ -8203,7 +8203,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[39] = 4;
 					uParam0->f_9[41] = 1;
 					uParam0->f_9[48] = 3;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 2:
 					uParam0->f_66 = joaat("banshee2");
@@ -8240,7 +8240,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[39] = 2;
 					uParam0->f_9[41] = 6;
 					uParam0->f_9[48] = 6;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 3:
 					uParam0->f_66 = joaat("banshee2");
@@ -8278,7 +8278,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[32] = 12;
 					uParam0->f_9[33] = 6;
 					uParam0->f_9[48] = 2;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -8287,45 +8287,45 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			{
 				case 0:
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 5);
-					__LIB_18__::func_439(*uParam1, 0, 2, 0);
-					__LIB_18__::func_439(*uParam1, 1, 6, 0);
-					__LIB_18__::func_439(*uParam1, 2, 3, 0);
-					__LIB_18__::func_439(*uParam1, 3, 3, 0);
-					__LIB_18__::func_439(*uParam1, 4, 4, 0);
-					__LIB_18__::func_439(*uParam1, 5, -1, 0);
-					__LIB_18__::func_439(*uParam1, 6, 1, 0);
-					__LIB_18__::func_439(*uParam1, 7, 8, 0);
-					__LIB_18__::func_439(*uParam1, 8, 2, 0);
-					__LIB_18__::func_439(*uParam1, 9, 1, 0);
-					__LIB_18__::func_439(*uParam1, 11, -1, 0);
-					__LIB_18__::func_439(*uParam1, 12, -1, 0);
-					__LIB_18__::func_439(*uParam1, 13, -1, 0);
-					__LIB_18__::func_439(*uParam1, 14, -1, 0);
-					__LIB_18__::func_439(*uParam1, 15, -1, 0);
-					__LIB_18__::func_439(*uParam1, 16, -1, 0);
-					__LIB_18__::func_439(*uParam1, 23, 5, 0);
-					__LIB_18__::func_439(*uParam1, 24, -1, 0);
-					__LIB_18__::func_439(*uParam1, 25, -1, 0);
-					__LIB_18__::func_439(*uParam1, 26, -1, 0);
-					__LIB_18__::func_439(*uParam1, 27, -1, 0);
-					__LIB_18__::func_439(*uParam1, 28, -1, 0);
-					__LIB_18__::func_439(*uParam1, 29, -1, 0);
-					__LIB_18__::func_439(*uParam1, 30, -1, 0);
-					__LIB_18__::func_439(*uParam1, 31, -1, 0);
-					__LIB_18__::func_439(*uParam1, 32, -1, 0);
-					__LIB_18__::func_439(*uParam1, 33, -1, 0);
-					__LIB_18__::func_439(*uParam1, 34, -1, 0);
-					__LIB_18__::func_439(*uParam1, 35, -1, 0);
-					__LIB_18__::func_439(*uParam1, 36, -1, 0);
-					__LIB_18__::func_439(*uParam1, 37, -1, 0);
-					__LIB_18__::func_439(*uParam1, 38, -1, 0);
-					__LIB_18__::func_439(*uParam1, 39, -1, 0);
-					__LIB_18__::func_439(*uParam1, 40, -1, 0);
-					__LIB_18__::func_439(*uParam1, 41, -1, 0);
-					__LIB_18__::func_439(*uParam1, 42, 2, 0);
-					__LIB_18__::func_439(*uParam1, 45, -1, 0);
-					__LIB_18__::func_439(*uParam1, 47, -1, 0);
-					__LIB_18__::func_439(*uParam1, 48, -1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 6, 0);
+					__LIB_18__::func_449(*uParam1, 2, 3, 0);
+					__LIB_18__::func_449(*uParam1, 3, 3, 0);
+					__LIB_18__::func_449(*uParam1, 4, 4, 0);
+					__LIB_18__::func_449(*uParam1, 5, -1, 0);
+					__LIB_18__::func_449(*uParam1, 6, 1, 0);
+					__LIB_18__::func_449(*uParam1, 7, 8, 0);
+					__LIB_18__::func_449(*uParam1, 8, 2, 0);
+					__LIB_18__::func_449(*uParam1, 9, 1, 0);
+					__LIB_18__::func_449(*uParam1, 11, -1, 0);
+					__LIB_18__::func_449(*uParam1, 12, -1, 0);
+					__LIB_18__::func_449(*uParam1, 13, -1, 0);
+					__LIB_18__::func_449(*uParam1, 14, -1, 0);
+					__LIB_18__::func_449(*uParam1, 15, -1, 0);
+					__LIB_18__::func_449(*uParam1, 16, -1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 5, 0);
+					__LIB_18__::func_449(*uParam1, 24, -1, 0);
+					__LIB_18__::func_449(*uParam1, 25, -1, 0);
+					__LIB_18__::func_449(*uParam1, 26, -1, 0);
+					__LIB_18__::func_449(*uParam1, 27, -1, 0);
+					__LIB_18__::func_449(*uParam1, 28, -1, 0);
+					__LIB_18__::func_449(*uParam1, 29, -1, 0);
+					__LIB_18__::func_449(*uParam1, 30, -1, 0);
+					__LIB_18__::func_449(*uParam1, 31, -1, 0);
+					__LIB_18__::func_449(*uParam1, 32, -1, 0);
+					__LIB_18__::func_449(*uParam1, 33, -1, 0);
+					__LIB_18__::func_449(*uParam1, 34, -1, 0);
+					__LIB_18__::func_449(*uParam1, 35, -1, 0);
+					__LIB_18__::func_449(*uParam1, 36, -1, 0);
+					__LIB_18__::func_449(*uParam1, 37, -1, 0);
+					__LIB_18__::func_449(*uParam1, 38, -1, 0);
+					__LIB_18__::func_449(*uParam1, 39, -1, 0);
+					__LIB_18__::func_449(*uParam1, 40, -1, 0);
+					__LIB_18__::func_449(*uParam1, 41, -1, 0);
+					__LIB_18__::func_449(*uParam1, 42, 2, 0);
+					__LIB_18__::func_449(*uParam1, 45, -1, 0);
+					__LIB_18__::func_449(*uParam1, 47, -1, 0);
+					__LIB_18__::func_449(*uParam1, 48, -1, 0);
 					break;
 				case 1:
 					uParam0->f_66 = joaat("sultanrs");
@@ -8367,7 +8367,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[41] = 6;
 					uParam0->f_9[44] = 1;
 					uParam0->f_9[48] = 4;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 2:
 					uParam0->f_66 = joaat("sultanrs");
@@ -8408,7 +8408,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[41] = 1;
 					uParam0->f_9[44] = 1;
 					uParam0->f_9[48] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 3:
 					uParam0->f_66 = joaat("sultanrs");
@@ -8447,7 +8447,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[32] = 6;
 					uParam0->f_9[33] = 16;
 					uParam0->f_9[48] = 3;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -8458,10 +8458,10 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					VEHICLE::SET_VEHICLE_COLOURS(*uParam1, 13, 148);
 					VEHICLE::SET_VEHICLE_EXTRA_COLOURS(*uParam1, 148, 111);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 1);
-					__LIB_18__::func_439(*uParam1, 1, 5, 0);
-					__LIB_18__::func_439(*uParam1, 2, 1, 0);
-					__LIB_18__::func_439(*uParam1, 6, 1, 0);
-					__LIB_18__::func_439(*uParam1, 10, 3, 0);
+					__LIB_18__::func_449(*uParam1, 1, 5, 0);
+					__LIB_18__::func_449(*uParam1, 2, 1, 0);
+					__LIB_18__::func_449(*uParam1, 6, 1, 0);
+					__LIB_18__::func_449(*uParam1, 10, 3, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 18, true);
 					break;
 			}
@@ -8472,7 +8472,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 				case 0:
 					VEHICLE::SET_VEHICLE_COLOURS(*uParam1, 13, 148);
 					VEHICLE::SET_VEHICLE_EXTRA_COLOURS(*uParam1, 148, 111);
-					__LIB_18__::func_439(*uParam1, 26, 0, 0);
+					__LIB_18__::func_449(*uParam1, 26, 0, 0);
 					break;
 			}
 			break;
@@ -8482,12 +8482,12 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 				case 0:
 					VEHICLE::SET_VEHICLE_COLOURS(*uParam1, 13, 148);
 					VEHICLE::SET_VEHICLE_EXTRA_COLOURS(*uParam1, 148, 111);
-					__LIB_18__::func_439(*uParam1, 26, 0, 0);
+					__LIB_18__::func_449(*uParam1, 26, 0, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 11, 4, 0);
+					__LIB_18__::func_449(*uParam1, 11, 4, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 18, true);
-					__LIB_18__::func_439(*uParam1, 12, 3, 0);
+					__LIB_18__::func_449(*uParam1, 12, 3, 0);
 					break;
 			}
 			break;
@@ -8515,13 +8515,13 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 1, 0);
-					__LIB_18__::func_439(*uParam1, 2, 3, 0);
-					__LIB_18__::func_439(*uParam1, 5, 3, 0);
-					__LIB_18__::func_439(*uParam1, 6, 9, 0);
-					__LIB_18__::func_439(*uParam1, 7, 8, 0);
-					__LIB_18__::func_439(*uParam1, 8, 1, 0);
-					__LIB_18__::func_439(*uParam1, 23, 21, 0);
+					__LIB_18__::func_449(*uParam1, 1, 1, 0);
+					__LIB_18__::func_449(*uParam1, 2, 3, 0);
+					__LIB_18__::func_449(*uParam1, 5, 3, 0);
+					__LIB_18__::func_449(*uParam1, 6, 9, 0);
+					__LIB_18__::func_449(*uParam1, 7, 8, 0);
+					__LIB_18__::func_449(*uParam1, 8, 1, 0);
+					__LIB_18__::func_449(*uParam1, 23, 21, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
 					VEHICLE::SET_VEHICLE_NEON_ENABLED(*uParam1, 2, true);
 					VEHICLE::SET_VEHICLE_NEON_ENABLED(*uParam1, 0, true);
@@ -8535,7 +8535,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
 					break;
 			}
 			break;
@@ -8543,7 +8543,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 5, 1, 0);
+					__LIB_18__::func_449(*uParam1, 5, 1, 0);
 					break;
 			}
 			break;
@@ -8551,7 +8551,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 5, 1, 0);
+					__LIB_18__::func_449(*uParam1, 5, 1, 0);
 					break;
 			}
 			break;
@@ -8559,9 +8559,9 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 3, 3, 0);
-					__LIB_18__::func_439(*uParam1, 4, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 3, 3, 0);
+					__LIB_18__::func_449(*uParam1, 4, 2, 0);
 					VEHICLE::TOGGLE_VEHICLE_MOD(*uParam1, 22, true);
 					VEHICLE::SET_VEHICLE_NEON_ENABLED(*uParam1, 2, true);
 					VEHICLE::SET_VEHICLE_NEON_ENABLED(*uParam1, 0, true);
@@ -8575,10 +8575,10 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 4, 0);
-					__LIB_18__::func_439(*uParam1, 1, 6, 0);
-					__LIB_18__::func_439(*uParam1, 2, 2, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 0, 4, 0);
+					__LIB_18__::func_449(*uParam1, 1, 6, 0);
+					__LIB_18__::func_449(*uParam1, 2, 2, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
 					break;
 			}
 			break;
@@ -8586,10 +8586,10 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 5, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 7, 5, 0);
-					__LIB_18__::func_439(*uParam1, 3, 1, 0);
+					__LIB_18__::func_449(*uParam1, 1, 5, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 7, 5, 0);
+					__LIB_18__::func_449(*uParam1, 3, 1, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 2);
 					break;
 			}
@@ -8606,12 +8606,12 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 2, 0);
-					__LIB_18__::func_439(*uParam1, 4, 4, 0);
-					__LIB_18__::func_439(*uParam1, 7, 5, 0);
-					__LIB_18__::func_439(*uParam1, 3, 4, 0);
-					__LIB_18__::func_439(*uParam1, 0, 3, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 2, 0);
+					__LIB_18__::func_449(*uParam1, 4, 4, 0);
+					__LIB_18__::func_449(*uParam1, 7, 5, 0);
+					__LIB_18__::func_449(*uParam1, 3, 4, 0);
+					__LIB_18__::func_449(*uParam1, 0, 3, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 2);
 					break;
 			}
@@ -8620,8 +8620,8 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 3, 0, 0);
-					__LIB_18__::func_439(*uParam1, 0, 2, 0);
+					__LIB_18__::func_449(*uParam1, 3, 0, 0);
+					__LIB_18__::func_449(*uParam1, 0, 2, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 3);
 					break;
 			}
@@ -8630,11 +8630,11 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 1, 0);
-					__LIB_18__::func_439(*uParam1, 7, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 2, 0);
-					__LIB_18__::func_439(*uParam1, 3, 0, 0);
-					__LIB_18__::func_439(*uParam1, 0, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 1, 0);
+					__LIB_18__::func_449(*uParam1, 7, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 2, 0);
+					__LIB_18__::func_449(*uParam1, 3, 0, 0);
+					__LIB_18__::func_449(*uParam1, 0, 2, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 2);
 					break;
 			}
@@ -8643,11 +8643,11 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 4, 0);
-					__LIB_18__::func_439(*uParam1, 2, 5, 0);
-					__LIB_18__::func_439(*uParam1, 6, 13, 0);
-					__LIB_18__::func_439(*uParam1, 7, 9, 0);
-					__LIB_18__::func_439(*uParam1, 3, 6, 0);
+					__LIB_18__::func_449(*uParam1, 1, 4, 0);
+					__LIB_18__::func_449(*uParam1, 2, 5, 0);
+					__LIB_18__::func_449(*uParam1, 6, 13, 0);
+					__LIB_18__::func_449(*uParam1, 7, 9, 0);
+					__LIB_18__::func_449(*uParam1, 3, 6, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 2);
 					break;
 			}
@@ -8663,11 +8663,11 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 1, 0);
-					__LIB_18__::func_439(*uParam1, 4, 3, 0);
-					__LIB_18__::func_439(*uParam1, 7, 3, 0);
-					__LIB_18__::func_439(*uParam1, 3, 1, 0);
-					__LIB_18__::func_439(*uParam1, 0, 6, 0);
+					__LIB_18__::func_449(*uParam1, 1, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 3, 0);
+					__LIB_18__::func_449(*uParam1, 7, 3, 0);
+					__LIB_18__::func_449(*uParam1, 3, 1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 6, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 2);
 					break;
 			}
@@ -8676,7 +8676,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 1, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 2);
 					break;
 			}
@@ -8687,23 +8687,23 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 0, 0);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 2, 0);
-					__LIB_18__::func_439(*uParam1, 7, 12, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 10, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 2, 0);
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 0, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 2, 0);
+					__LIB_18__::func_449(*uParam1, 7, 12, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 10, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 2, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8713,25 +8713,25 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 2, 2, 0);
-					__LIB_18__::func_439(*uParam1, 3, 1, 0);
-					__LIB_18__::func_439(*uParam1, 4, 4, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 2, 0);
-					__LIB_18__::func_439(*uParam1, 7, 2, 0);
-					__LIB_18__::func_439(*uParam1, 8, 1, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 10, 1, 0);
-					__LIB_18__::func_439(*uParam1, 42, 5, 0);
-					__LIB_18__::func_439(*uParam1, 44, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 2, 2, 0);
+					__LIB_18__::func_449(*uParam1, 3, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 4, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 2, 0);
+					__LIB_18__::func_449(*uParam1, 7, 2, 0);
+					__LIB_18__::func_449(*uParam1, 8, 1, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 10, 1, 0);
+					__LIB_18__::func_449(*uParam1, 42, 5, 0);
+					__LIB_18__::func_449(*uParam1, 44, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8741,21 +8741,21 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 2, 2, 0);
-					__LIB_18__::func_439(*uParam1, 4, 9, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 6, 0);
-					__LIB_18__::func_439(*uParam1, 7, 4, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 5, 0);
-					__LIB_18__::func_439(*uParam1, 43, 2, 0);
+					__LIB_18__::func_449(*uParam1, 2, 2, 0);
+					__LIB_18__::func_449(*uParam1, 4, 9, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 6, 0);
+					__LIB_18__::func_449(*uParam1, 7, 4, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 5, 0);
+					__LIB_18__::func_449(*uParam1, 43, 2, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8765,14 +8765,14 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8782,23 +8782,23 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 2, 0);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 3, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 3, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 5, 0);
-					__LIB_18__::func_439(*uParam1, 7, 2, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 43, 1, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 3, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 3, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 5, 0);
+					__LIB_18__::func_449(*uParam1, 7, 2, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 43, 1, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8808,24 +8808,24 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 1, 0);
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 2, 1, 0);
-					__LIB_18__::func_439(*uParam1, 4, 0, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 1, 0);
-					__LIB_18__::func_439(*uParam1, 7, 2, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 2, 0);
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 1, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 2, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 0, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 1, 0);
+					__LIB_18__::func_449(*uParam1, 7, 2, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 2, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8835,23 +8835,23 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 5, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 1, 0);
-					__LIB_18__::func_439(*uParam1, 7, 6, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
-					__LIB_18__::func_439(*uParam1, 44, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 5, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 1, 0);
+					__LIB_18__::func_449(*uParam1, 7, 6, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 44, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8881,7 +8881,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[10] = 1;
 					uParam0->f_9[23] = 1;
 					uParam0->f_9[48] = 4;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "87LWG803", 16);
@@ -8906,7 +8906,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[10] = 1;
 					uParam0->f_9[23] = 1;
 					uParam0->f_9[48] = 4;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -8916,31 +8916,31 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 2, 0);
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 3, 1, 0);
-					__LIB_18__::func_439(*uParam1, 4, 3, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 3, 0);
-					__LIB_18__::func_439(*uParam1, 7, 9, 0);
-					__LIB_18__::func_439(*uParam1, 8, 2, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 2, 0);
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 0, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 3, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 3, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 3, 0);
+					__LIB_18__::func_449(*uParam1, 7, 9, 0);
+					__LIB_18__::func_449(*uParam1, 8, 2, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 2, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
 					if (iParam2 == joaat("issi6"))
 					{
-						__LIB_18__::func_439(*uParam1, 45, 0, 0);
+						__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					}
 					else
 					{
-						__LIB_18__::func_439(*uParam1, 45, 1, 0);
+						__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					}
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -8950,17 +8950,17 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 2, 1, 0);
-					__LIB_18__::func_439(*uParam1, 4, 1, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 7, 2, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 2, 1, 0);
+					__LIB_18__::func_449(*uParam1, 4, 1, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 7, 2, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 				case 2:
 					uParam0->f_5 = 153;
@@ -8986,7 +8986,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[35] = 1;
 					uParam0->f_9[48] = 4;
 					uParam0->f_9[22] = 10;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -8996,22 +8996,22 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 5, 0);
-					__LIB_18__::func_439(*uParam1, 1, 7, 0);
-					__LIB_18__::func_439(*uParam1, 3, 10, 0);
-					__LIB_18__::func_439(*uParam1, 4, 3, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 1, 0);
-					__LIB_18__::func_439(*uParam1, 10, 6, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 5, 0);
-					__LIB_18__::func_439(*uParam1, 43, 2, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 0, 5, 0);
+					__LIB_18__::func_449(*uParam1, 1, 7, 0);
+					__LIB_18__::func_449(*uParam1, 3, 10, 0);
+					__LIB_18__::func_449(*uParam1, 4, 3, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 1, 0);
+					__LIB_18__::func_449(*uParam1, 10, 6, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 5, 0);
+					__LIB_18__::func_449(*uParam1, 43, 2, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -9021,22 +9021,22 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 2, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 3, 0);
-					__LIB_18__::func_439(*uParam1, 7, 4, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 5, 0);
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
-					__LIB_18__::func_439(*uParam1, 44, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 0, 0);
+					__LIB_18__::func_449(*uParam1, 0, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 2, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 3, 0);
+					__LIB_18__::func_449(*uParam1, 7, 4, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 5, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 44, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 0, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -9046,24 +9046,24 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 5, 0);
-					__LIB_18__::func_439(*uParam1, 1, 0, 0);
-					__LIB_18__::func_439(*uParam1, 2, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 1, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 7, 3, 0);
-					__LIB_18__::func_439(*uParam1, 8, 2, 0);
-					__LIB_18__::func_439(*uParam1, 9, 2, 0);
-					__LIB_18__::func_439(*uParam1, 40, 2, 0);
-					__LIB_18__::func_439(*uParam1, 41, 2, 0);
-					__LIB_18__::func_439(*uParam1, 42, 3, 0);
-					__LIB_18__::func_439(*uParam1, 43, 0, 0);
-					__LIB_18__::func_439(*uParam1, 44, 0, 0);
-					__LIB_18__::func_439(*uParam1, 45, 1, 0);
+					__LIB_18__::func_449(*uParam1, 0, 5, 0);
+					__LIB_18__::func_449(*uParam1, 1, 0, 0);
+					__LIB_18__::func_449(*uParam1, 2, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 1, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 7, 3, 0);
+					__LIB_18__::func_449(*uParam1, 8, 2, 0);
+					__LIB_18__::func_449(*uParam1, 9, 2, 0);
+					__LIB_18__::func_449(*uParam1, 40, 2, 0);
+					__LIB_18__::func_449(*uParam1, 41, 2, 0);
+					__LIB_18__::func_449(*uParam1, 42, 3, 0);
+					__LIB_18__::func_449(*uParam1, 43, 0, 0);
+					__LIB_18__::func_449(*uParam1, 44, 0, 0);
+					__LIB_18__::func_449(*uParam1, 45, 1, 0);
 					break;
 				case 1:
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 48, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 0, 0);
 					break;
 			}
 			break;
@@ -9071,16 +9071,16 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 2, 0);
-					__LIB_18__::func_439(*uParam1, 2, 2, 0);
-					__LIB_18__::func_439(*uParam1, 3, 0, 0);
-					__LIB_18__::func_439(*uParam1, 4, 5, 0);
-					__LIB_18__::func_439(*uParam1, 5, 2, 0);
-					__LIB_18__::func_439(*uParam1, 6, 5, 0);
-					__LIB_18__::func_439(*uParam1, 8, 0, 0);
-					__LIB_18__::func_439(*uParam1, 10, 0, 0);
-					__LIB_18__::func_439(*uParam1, 42, 0, 0);
-					__LIB_18__::func_439(*uParam1, 48, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 2, 0);
+					__LIB_18__::func_449(*uParam1, 2, 2, 0);
+					__LIB_18__::func_449(*uParam1, 3, 0, 0);
+					__LIB_18__::func_449(*uParam1, 4, 5, 0);
+					__LIB_18__::func_449(*uParam1, 5, 2, 0);
+					__LIB_18__::func_449(*uParam1, 6, 5, 0);
+					__LIB_18__::func_449(*uParam1, 8, 0, 0);
+					__LIB_18__::func_449(*uParam1, 10, 0, 0);
+					__LIB_18__::func_449(*uParam1, 42, 0, 0);
+					__LIB_18__::func_449(*uParam1, 48, 2, 0);
 					break;
 			}
 			break;
@@ -9088,14 +9088,14 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 0, 7, 0);
-					__LIB_18__::func_439(*uParam1, 1, 5, 0);
-					__LIB_18__::func_439(*uParam1, 2, 7, 0);
-					__LIB_18__::func_439(*uParam1, 3, 3, 0);
-					__LIB_18__::func_439(*uParam1, 4, 3, 0);
-					__LIB_18__::func_439(*uParam1, 5, 0, 0);
-					__LIB_18__::func_439(*uParam1, 6, 1, 0);
-					__LIB_18__::func_439(*uParam1, 7, 4, 0);
+					__LIB_18__::func_449(*uParam1, 0, 7, 0);
+					__LIB_18__::func_449(*uParam1, 1, 5, 0);
+					__LIB_18__::func_449(*uParam1, 2, 7, 0);
+					__LIB_18__::func_449(*uParam1, 3, 3, 0);
+					__LIB_18__::func_449(*uParam1, 4, 3, 0);
+					__LIB_18__::func_449(*uParam1, 5, 0, 0);
+					__LIB_18__::func_449(*uParam1, 6, 1, 0);
+					__LIB_18__::func_449(*uParam1, 7, 4, 0);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "80WEG614", 16);
@@ -9117,7 +9117,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[2] = 8;
 					uParam0->f_9[7] = 3;
 					uParam0->f_9[48] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9125,12 +9125,12 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 			switch (iParam3)
 			{
 				case 0:
-					__LIB_18__::func_439(*uParam1, 1, 12, 0);
-					__LIB_18__::func_439(*uParam1, 2, 6, 0);
-					__LIB_18__::func_439(*uParam1, 3, 6, 0);
-					__LIB_18__::func_439(*uParam1, 6, 5, 0);
-					__LIB_18__::func_439(*uParam1, 7, 16, 0);
-					__LIB_18__::func_439(*uParam1, 10, 2, 0);
+					__LIB_18__::func_449(*uParam1, 1, 12, 0);
+					__LIB_18__::func_449(*uParam1, 2, 6, 0);
+					__LIB_18__::func_449(*uParam1, 3, 6, 0);
+					__LIB_18__::func_449(*uParam1, 6, 5, 0);
+					__LIB_18__::func_449(*uParam1, 7, 16, 0);
+					__LIB_18__::func_449(*uParam1, 10, 2, 0);
 					break;
 			}
 			break;
@@ -9157,7 +9157,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					VEHICLE::SET_VEHICLE_LIVERY2(*uParam1, 0);
 					VEHICLE::SET_VEHICLE_WINDOW_TINT(*uParam1, 2);
 					VEHICLE::SET_VEHICLE_WHEEL_TYPE(*uParam1, 7);
-					__LIB_18__::func_439(*uParam1, 23, 6, 0);
+					__LIB_18__::func_449(*uParam1, 23, 6, 0);
 					break;
 			}
 			break;
@@ -9180,7 +9180,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
 					MISC::SET_BIT(&(uParam0->f_77), 25);
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9208,7 +9208,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[3] = 1;
 					uParam0->f_9[5] = 1;
 					uParam0->f_9[7] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9231,7 +9231,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_76 = 255;
 					MISC::SET_BIT(&(uParam0->f_77), 24);
 					MISC::SET_BIT(&(uParam0->f_77), 9);
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9254,7 +9254,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					MISC::SET_BIT(&(uParam0->f_77), 9);
 					uParam0->f_9[1] = 1;
 					uParam0->f_9[3] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9277,7 +9277,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					MISC::SET_BIT(&(uParam0->f_77), 9);
 					uParam0->f_9[3] = 1;
 					uParam0->f_9[48] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9307,7 +9307,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[13] = 3;
 					uParam0->f_9[18] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9334,7 +9334,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[13] = 3;
 					uParam0->f_9[18] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "LAMAR G", 16);
@@ -9360,7 +9360,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[18] = 1;
 					uParam0->f_9[23] = 18;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9388,7 +9388,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[13] = 3;
 					uParam0->f_9[18] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9413,7 +9413,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[11] = 4;
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[18] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9442,7 +9442,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[13] = 3;
 					uParam0->f_9[18] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9469,7 +9469,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[13] = 3;
 					uParam0->f_9[18] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9496,7 +9496,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[12] = 3;
 					uParam0->f_9[13] = 3;
 					uParam0->f_9[18] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9528,7 +9528,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 8;
 					uParam0->f_9[9] = 2;
 					uParam0->f_9[22] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -9566,7 +9566,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[46] = 1;
 					uParam0->f_9[48] = 6;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "65LNN730", 16);
@@ -9593,7 +9593,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 14;
 					uParam0->f_9[27] = 1;
 					uParam0->f_9[48] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -9626,7 +9626,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 2;
 					uParam0->f_9[48] = 7;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "63CMS702", 16);
@@ -9657,7 +9657,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 6;
 					uParam0->f_9[48] = 6;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -9692,7 +9692,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 22;
 					uParam0->f_9[48] = 8;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "86ACK549", 16);
@@ -9720,7 +9720,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[10] = 2;
 					uParam0->f_9[23] = 23;
 					uParam0->f_9[48] = 3;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -9751,7 +9751,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 4;
 					uParam0->f_9[8] = 1;
 					uParam0->f_9[48] = 3;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "05SKJ131", 16);
@@ -9777,7 +9777,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[6] = 4;
 					uParam0->f_9[8] = 1;
 					uParam0->f_9[48] = 4;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -9811,7 +9811,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 22;
 					uParam0->f_9[48] = 4;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "28OKO870", 16);
@@ -9840,7 +9840,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 9;
 					uParam0->f_9[48] = 8;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 2:
 					*uParam0 = 1;
@@ -9870,7 +9870,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 16;
 					uParam0->f_9[48] = 8;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -9901,7 +9901,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 24;
 					uParam0->f_9[48] = 6;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "63LUV750", 16);
@@ -9928,7 +9928,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[10] = 1;
 					uParam0->f_9[23] = 17;
 					uParam0->f_9[48] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -9962,7 +9962,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 24;
 					uParam0->f_9[48] = 8;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "68BPK026", 16);
@@ -9988,7 +9988,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 22;
 					uParam0->f_9[48] = 9;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 2:
 					uParam0->f_5 = 53;
@@ -10017,7 +10017,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 12;
 					uParam0->f_9[48] = 10;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10051,7 +10051,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[9] = 2;
 					uParam0->f_9[10] = 7;
 					uParam0->f_9[48] = 8;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "28OAE229", 16);
@@ -10082,7 +10082,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[10] = 4;
 					uParam0->f_9[23] = 31;
 					uParam0->f_9[48] = 2;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10109,7 +10109,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[4] = 6;
 					uParam0->f_9[10] = 4;
 					uParam0->f_9[48] = 9;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "89FAZ643", 16);
@@ -10131,7 +10131,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 4;
 					uParam0->f_9[48] = 10;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10163,7 +10163,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[9] = 2;
 					uParam0->f_9[10] = 10;
 					uParam0->f_9[48] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "08PPT772", 16);
@@ -10191,7 +10191,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[23] = 16;
 					uParam0->f_9[48] = 8;
 					uParam0->f_59[0] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10220,7 +10220,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 1;
 					uParam0->f_9[10] = 3;
 					uParam0->f_9[48] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "27TIB223", 16);
@@ -10242,7 +10242,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[5] = 1;
 					uParam0->f_9[10] = 2;
 					uParam0->f_9[48] = 2;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_1), "42WKq996", 16);
@@ -10266,7 +10266,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 1;
 					uParam0->f_9[10] = 1;
 					uParam0->f_9[48] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 3:
 					StringCopy(&(uParam0->f_1), "06THT542", 16);
@@ -10289,7 +10289,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 1;
 					uParam0->f_9[10] = 3;
 					uParam0->f_9[48] = 9;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10314,7 +10314,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[2] = 5;
 					uParam0->f_9[4] = 5;
 					uParam0->f_9[48] = 7;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "05VIC098", 16);
@@ -10334,7 +10334,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[2] = 2;
 					uParam0->f_9[4] = 4;
 					uParam0->f_9[48] = 8;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_1), "81BJX061", 16);
@@ -10354,7 +10354,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[2] = 1;
 					uParam0->f_9[4] = 1;
 					uParam0->f_9[48] = 9;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 3:
 					StringCopy(&(uParam0->f_1), "61XWF939", 16);
@@ -10374,7 +10374,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[2] = 4;
 					uParam0->f_9[4] = 5;
 					uParam0->f_9[48] = 10;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10404,7 +10404,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 1;
 					uParam0->f_9[10] = 2;
 					uParam0->f_9[48] = 6;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "09QNN844", 16);
@@ -10426,7 +10426,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[5] = 3;
 					uParam0->f_9[10] = 3;
 					uParam0->f_9[48] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_1), "28BPV442", 16);
@@ -10448,7 +10448,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[5] = 1;
 					uParam0->f_9[10] = 4;
 					uParam0->f_9[48] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 3:
 					StringCopy(&(uParam0->f_1), "85LDY796", 16);
@@ -10472,7 +10472,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[7] = 1;
 					uParam0->f_9[10] = 1;
 					uParam0->f_9[48] = 12;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10495,7 +10495,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_64 = 255;
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "61KCQ803", 16);
@@ -10513,7 +10513,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_64 = 255;
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_1), "28DJW797", 16);
@@ -10531,7 +10531,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_64 = 255;
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 3:
 					StringCopy(&(uParam0->f_1), "63ASU750", 16);
@@ -10549,7 +10549,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_64 = 255;
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10584,7 +10584,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[8] = 1;
 					uParam0->f_9[9] = 1;
 					uParam0->f_9[10] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "46AOM725", 16);
@@ -10614,7 +10614,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[9] = 1;
 					uParam0->f_9[10] = 6;
 					uParam0->f_9[48] = 17;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10642,7 +10642,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[8] = 1;
 					uParam0->f_9[9] = 1;
 					uParam0->f_9[48] = 23;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "84USA531", 16);
@@ -10663,7 +10663,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[9] = 1;
 					uParam0->f_9[10] = 2;
 					uParam0->f_9[48] = 2;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10686,7 +10686,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
 					uParam0->f_9[48] = 17;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "02AFC413", 16);
@@ -10704,7 +10704,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_74 = 255;
 					uParam0->f_76 = 255;
 					uParam0->f_9[48] = 1;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 			}
 			break;
@@ -10734,7 +10734,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[9] = 5;
 					uParam0->f_9[10] = 6;
 					uParam0->f_9[48] = 4;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 1);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 1);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_1), "82AKQ481", 16);
@@ -10760,7 +10760,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[9] = 3;
 					uParam0->f_9[10] = 3;
 					uParam0->f_9[48] = 9;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -10795,7 +10795,7 @@ void func_360(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[3] = 1;
 					uParam0->f_9[4] = 2;
 					uParam0->f_9[10] = 5;
-					__LIB_18__::func_670(*uParam1, uParam0, 0, 1, 0);
+					__LIB_18__::func_680(*uParam1, uParam0, 0, 1, 0);
 					break;
 			}
 			break;
@@ -10836,7 +10836,7 @@ int func_371(int iParam0, int iParam1)//Position - 0x2352E
 	}
 	else if (Global_4980736.f_78578[iParam0 /*450*/].f_18[iParam1] < 17 && Global_4980736.f_78578[iParam0 /*450*/].f_13[iParam1] != 0)
 	{
-		if (__LIB_25__::func_297(Global_4980736.f_78578[iParam0 /*450*/].f_13[iParam1], iParam1, Global_4980736.f_78578[iParam0 /*450*/].f_18[iParam1]))
+		if (__LIB_25__::func_307(Global_4980736.f_78578[iParam0 /*450*/].f_13[iParam1], iParam1, Global_4980736.f_78578[iParam0 /*450*/].f_18[iParam1]))
 		{
 			iVar0 = 1;
 			iParam1 = 4;
@@ -10851,9 +10851,9 @@ int func_371(int iParam0, int iParam1)//Position - 0x2352E
 					iVar3 = 0;
 					while (iVar3 <= 12)
 					{
-						if (Global_4718592.f_113297[iVar2 /*66*/][iVar3 /*5*/][iParam1] < 17 && __LIB_25__::func_275(Global_4718592.f_111316[iVar2 /*66*/][iVar3 /*5*/][iParam1]) != 0)
+						if (Global_4718592.f_113297[iVar2 /*66*/][iVar3 /*5*/][iParam1] < 17 && __LIB_25__::func_285(Global_4718592.f_111316[iVar2 /*66*/][iVar3 /*5*/][iParam1]) != 0)
 						{
-							if (__LIB_25__::func_297(__LIB_25__::func_275(Global_4718592.f_111316[iVar2 /*66*/][iVar3 /*5*/][iParam1]), iParam1, Global_4718592.f_113297[iVar2 /*66*/][iVar3 /*5*/][iParam1]))
+							if (__LIB_25__::func_307(__LIB_25__::func_285(Global_4718592.f_111316[iVar2 /*66*/][iVar3 /*5*/][iParam1]), iParam1, Global_4718592.f_113297[iVar2 /*66*/][iVar3 /*5*/][iParam1]))
 							{
 								iVar0 = 1;
 								iVar3 = 13;
@@ -11051,7 +11051,7 @@ int func_418()//Position - 0x25DD0
 	switch (Local_213.f_436)
 	{
 		case 0:
-			__LIB_18__::func_517(1);
+			__LIB_18__::func_527(1);
 			if (func_545(&Local_213, &iLocal_985, &bVar0, 0, 0))
 			{
 				if (__LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1))
@@ -11060,7 +11060,7 @@ int func_418()//Position - 0x25DD0
 				}
 				__LIB_1__::func_222();
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "MP_WAVE_COMPLETE", "HUD_FRONTEND_DEFAULT_SOUNDSET", true);
-				__LIB_18__::func_915(&Local_213, 0);
+				__LIB_18__::func_925(&Local_213, 0);
 				__LIB_2__::func_420(1, 1);
 				__LIB_2__::func_593(0);
 				__LIB_2__::func_466(0);
@@ -11081,8 +11081,8 @@ int func_418()//Position - 0x25DD0
 			break;
 		case 1:
 			__LIB_2__::func_466(0);
-			__LIB_18__::func_915(&Local_213, 0);
-			if ((__LIB_18__::func_857(&Local_213) && CAM::IS_SCREEN_FADED_IN()) && !GRAPHICS::ANIMPOSTFX_IS_RUNNING("DeathFailMPIn"))
+			__LIB_18__::func_925(&Local_213, 0);
+			if ((__LIB_18__::func_867(&Local_213) && CAM::IS_SCREEN_FADED_IN()) && !GRAPHICS::ANIMPOSTFX_IS_RUNNING("DeathFailMPIn"))
 			{
 				cVar1 = "SUMMARY";
 				sVar2 = "HUD_COLOUR_BLACK" /* GXT: Black */;
@@ -11093,7 +11093,7 @@ int func_418()//Position - 0x25DD0
 				iVar6 = __LIB_1__::func_68(iVar4, 0, 0);
 				iVar7 = __LIB_1__::func_68(iVar5, 0, 0);
 				Local_213.f_419 = 666;
-				__LIB_18__::func_841(&Local_213, cVar1, sVar2, 1, 0);
+				__LIB_18__::func_851(&Local_213, cVar1, sVar2, 1, 0);
 				func_451(&Local_213, cVar1, 4, 1, "", "", "");
 				Local_213.f_419 += 2333;
 				func_450(&Local_213, cVar1, Local_212.f_1, 0, 1);
@@ -11108,21 +11108,21 @@ int func_418()//Position - 0x25DD0
 					func_447(&Local_213, cVar1, Local_212.f_3);
 					Local_213.f_419 += 2333;
 				}
-				__LIB_18__::func_516(&Local_213, cVar1, iVar8, iVar3, iVar6, iVar7, iVar4, iVar5);
+				__LIB_18__::func_526(&Local_213, cVar1, iVar8, iVar3, iVar6, iVar7, iVar4, iVar5);
 				Local_213.f_419 += 2333;
 				if ((iVar3 + iVar8) >= iVar7)
 				{
 					Local_213.f_419 += 1749;
 				}
-				__LIB_18__::func_584(&Local_213, cVar1, -1, 0);
-				__LIB_18__::func_511(&Local_213, cVar1);
+				__LIB_18__::func_594(&Local_213, cVar1, -1, 0);
+				__LIB_18__::func_521(&Local_213, cVar1);
 				__LIB_0__::func_794(&(Local_213.f_430));
 				__LIB_0__::func_795(&(Local_213.f_430), 0, 0);
 				if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("MP_CELEB_SCREEN_SCENE"))
 				{
 					AUDIO::START_AUDIO_SCENE("MP_CELEB_SCREEN_SCENE");
 				}
-				__LIB_18__::func_836(&Local_213);
+				__LIB_18__::func_846(&Local_213);
 				Local_213.f_436 = 3;
 			}
 			else if (GRAPHICS::ANIMPOSTFX_IS_RUNNING("DeathFailMPIn"))
@@ -11139,7 +11139,7 @@ int func_418()//Position - 0x25DD0
 			break;
 		case 3:
 			__LIB_2__::func_466(0);
-			__LIB_18__::func_731(&Local_213, 0);
+			__LIB_18__::func_741(&Local_213, 0);
 			if (__LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1) && CAM::DOES_CAM_EXIST(iLocal_985))
 			{
 				if (ENTITY::GET_ENTITY_SPEED(PLAYER::PLAYER_PED_ID()) < 0.1f)
@@ -11148,24 +11148,24 @@ int func_418()//Position - 0x25DD0
 					CAM::STOP_CAM_POINTING(iLocal_985);
 				}
 			}
-			if (__LIB_18__::func_515())
+			if (__LIB_18__::func_525())
 			{
 				GRAPHICS::ANIMPOSTFX_STOP_ALL();
 				GRAPHICS::ANIMPOSTFX_PLAY("MP_Celeb_Win_Out", 0, false);
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "Hit_1", "LONG_PLAYER_SWITCH_SOUNDS", true);
-				__LIB_23__::func_636(&iLocal_985);
+				__LIB_23__::func_646(&iLocal_985);
 				__LIB_0__::func_794(&(Local_213.f_430));
 				__LIB_0__::func_795(&(Local_213.f_430), 0, 0);
 				Local_213.f_436 = 4;
 			}
 			break;
 		case 4:
-			__LIB_18__::func_731(&Local_213, 0);
+			__LIB_18__::func_741(&Local_213, 0);
 			if (__LIB_0__::func_937(&(Local_213.f_430), 1000, 0))
 			{
 				__LIB_1__::func_751();
-				__LIB_18__::func_510(&Local_213, "SUMMARY");
-				__LIB_23__::func_532(&Local_213, 1, 0, 0);
+				__LIB_18__::func_520(&Local_213, "SUMMARY");
+				__LIB_23__::func_542(&Local_213, 1, 0, 0);
 				__LIB_2__::func_420(0, 1);
 				__LIB_1__::func_376(PLAYER::PLAYER_ID(), 1, 0, 0);
 				if (CAM::DOES_CAM_EXIST(iLocal_985))
@@ -11312,7 +11312,7 @@ void func_451(var uParam0, char* sParam1, int iParam2, bool bParam3, char* sPara
 	char* sVar0;
 	char* sVar1;
 	bool bVar2;
-	if (__LIB_22__::func_234())
+	if (__LIB_22__::func_244())
 	{
 		if (bParam3)
 		{
@@ -11372,7 +11372,7 @@ void func_451(var uParam0, char* sParam1, int iParam2, bool bParam3, char* sPara
 		{
 			if (__LIB_0__::func_177())
 			{
-				switch (__LIB_16__::func_272())
+				switch (__LIB_16__::func_275())
 				{
 					case 3:
 						sVar1 = "CELEB_ACT_1" /* GXT: ACT I: THE DATA BREACHES */;
@@ -11830,7 +11830,7 @@ int func_545(var uParam0, int iParam1, var uParam2, bool bParam3, int iParam4)//
 
 int func_579()//Position - 0x2C00B
 {
-	if ((__LIB_1__::func_15(PLAYER::PLAYER_ID()) || __LIB_0__::func_979(PLAYER::PLAYER_ID(), 21)) || __LIB_34__::func_656(PLAYER::PLAYER_ID()) == 3)
+	if ((__LIB_1__::func_15(PLAYER::PLAYER_ID()) || __LIB_0__::func_979(PLAYER::PLAYER_ID(), 21)) || __LIB_33__::func_173(PLAYER::PLAYER_ID()) == 3)
 	{
 		if (((((__LIB_1__::func_592(PLAYER::PLAYER_ID()) == 140 || __LIB_1__::func_592(PLAYER::PLAYER_ID()) == 139) || __LIB_1__::func_592(PLAYER::PLAYER_ID()) == 131) || __LIB_1__::func_592(PLAYER::PLAYER_ID()) == 141) || __LIB_1__::func_592(PLAYER::PLAYER_ID()) == 146) || __LIB_1__::func_592(PLAYER::PLAYER_ID()) == 138)
 		{
@@ -11839,7 +11839,7 @@ int func_579()//Position - 0x2C00B
 				return 0;
 			}
 		}
-		if (!BitTest(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_1, 8) || __LIB_34__::func_656(PLAYER::PLAYER_ID()) == 3)
+		if (!BitTest(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_1, 8) || __LIB_33__::func_173(PLAYER::PLAYER_ID()) == 3)
 		{
 			return 1;
 		}
@@ -11918,7 +11918,7 @@ void func_602()//Position - 0x2C54D
 				__LIB_1__::func_395(Local_178.f_362, 300000);
 				MISC::SET_BIT(&uLocal_186, 16);
 			}
-			else if (!__LIB_23__::func_519(Local_178.f_362))
+			else if (!__LIB_23__::func_529(Local_178.f_362))
 			{
 				__LIB_1__::func_395(Local_178.f_362, 60000);
 			}
@@ -11932,7 +11932,7 @@ void func_605()//Position - 0x2C5F3
 	{
 		if (func_601(NETWORK::PARTICIPANT_ID()) > 2 && func_601(NETWORK::PARTICIPANT_ID()) < 5)
 		{
-			__LIB_41__::func_548(6, Local_178.f_359[1], Local_178.f_359[0], 0, 0);
+			__LIB_41__::func_227(6, Local_178.f_359[1], Local_178.f_359[0], 0, 0);
 			MISC::SET_BIT(&uLocal_186, 14);
 		}
 	}
@@ -12164,7 +12164,7 @@ void func_778()//Position - 0x38B68
 					{
 						if (!__LIB_2__::func_596(2, -1))
 						{
-							__LIB_24__::func_359(2, 1, 1, 0, 0, -1);
+							__LIB_24__::func_369(2, 1, 1, 0, 0, -1);
 						}
 						__LIB_2__::func_183(6, 1, -1);
 					}
@@ -12186,7 +12186,7 @@ void func_778()//Position - 0x38B68
 			__LIB_1__::func_333(1147932892, 12, 0);
 			MISC::SET_BIT(&uLocal_186, 1);
 		}
-		if ((__LIB_21__::func_796() && (BitTest(uLocal_987, 4) || func_579())) && BitTest(uLocal_186, 20))
+		if ((__LIB_21__::func_806() && (BitTest(uLocal_987, 4) || func_579())) && BitTest(uLocal_186, 20))
 		{
 			if (!func_579())
 			{
@@ -12393,7 +12393,7 @@ void func_839(int iParam0, char* sParam1, int iParam2, bool bParam3)//Position -
 		return;
 	}
 	Global_2815059.f_4534 = iParam0;
-	__LIB_23__::func_524(__LIB_0__::func_943(1, 1), 1, iParam0, 1);
+	__LIB_23__::func_534(__LIB_0__::func_943(1, 1), 1, iParam0, 1);
 	if (bParam3)
 	{
 		func_840(iParam2, sParam1, 0, 0, -99);
@@ -12402,7 +12402,7 @@ void func_839(int iParam0, char* sParam1, int iParam2, bool bParam3)//Position -
 
 void func_840(var uParam0, char* sParam1, char* sParam2, bool bParam3, int iParam4)//Position - 0x3D145
 {
-	__LIB_23__::func_533(1, uParam0, sParam1, sParam2, bParam3, iParam4);
+	__LIB_23__::func_543(1, uParam0, sParam1, sParam2, bParam3, iParam4);
 }
 
 void func_864()//Position - 0x3D833
@@ -12540,7 +12540,7 @@ void func_884()//Position - 0x3E18C
 				MISC::SET_BIT(&uLocal_186, 13);
 				if (!__LIB_0__::func_927(PLAYER::PLAYER_ID()))
 				{
-					if (__LIB_34__::func_656(PLAYER::PLAYER_ID()) == 3)
+					if (__LIB_33__::func_173(PLAYER::PLAYER_ID()) == 3)
 					{
 						__LIB_1__::func_707("GB_EV_GA_UI" /* GXT: Gang Attacks are suppressed when on VIP/CEO/MC work. */, -1);
 					}
@@ -12607,7 +12607,7 @@ void func_896()//Position - 0x3E49B
 		{
 			if (!func_579())
 			{
-				__LIB_23__::func_542(55, "GHO_NAME" /* GXT: Gang Attack */, 0, 1, -1, 2, 1, 0);
+				__LIB_23__::func_552(55, "GHO_NAME" /* GXT: Gang Attack */, 0, 1, -1, 2, 1, 0);
 			}
 			MISC::SET_BIT(&uLocal_186, 19);
 			func_908();
@@ -12750,7 +12750,7 @@ void func_932()//Position - 0x3F64F
 
 void func_934(struct<3> Param0, struct<3> Param1, var uParam2, int iParam3, int iParam4)//Position - 0x3F6EF
 {
-	__LIB_23__::func_539(Param0, Param1, uParam2, 2, iParam3, iParam4);
+	__LIB_23__::func_549(Param0, Param1, uParam2, 2, iParam3, iParam4);
 }
 
 void func_943(struct<3> Param0, struct<3> Param1, var uParam2, int iParam3, int iParam4)//Position - 0x3FA9F
@@ -12765,7 +12765,7 @@ void func_944(struct<3> Param0, struct<3> Param1, var uParam2, int iParam3, int 
 	{
 		if (Global_2667225.f_1753)
 		{
-			__LIB_19__::func_500();
+			__LIB_19__::func_510();
 		}
 		if (Var0.f_10 == 1)
 		{
@@ -19065,7 +19065,7 @@ int func_1203(struct<3> Param0, float fParam1, bool bParam2, int iParam3, bool b
 									ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar0, true);
 									VEHICLE::SET_CLEAR_FREEZE_WAITING_ON_COLLISION_ONCE_PLAYER_ENTERS(iVar0, true);
 									VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iVar0, 5f);
-									__LIB_30__::func_513(&iVar0, iParam3);
+									__LIB_30__::func_523(&iVar0, iParam3);
 									if ((__LIB_1__::func_629() || __LIB_2__::func_632()) || __LIB_2__::func_631())
 									{
 										ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
@@ -19538,7 +19538,7 @@ void func_1357(int iParam0)//Position - 0xA7B8F
 	Global_1585234 = iParam0;
 	if (Global_2667225.f_45.f_172)
 	{
-		__LIB_30__::func_512(iParam0, 1);
+		__LIB_30__::func_522(iParam0, 1);
 	}
 	else
 	{
@@ -23671,7 +23671,7 @@ int func_1650()//Position - 0xBBFB4
 				if (!ENTITY::DOES_ENTITY_EXIST(iLocal_193[iVar0]))
 				{
 					iLocal_193[iVar0] = OBJECT::CREATE_OBJECT(Global_4980736.f_36356[iVar0 /*134*/].f_7, Global_4980736.f_36356[iVar0 /*134*/], false, false, false);
-					__LIB_24__::func_397(iLocal_193[iVar0], iVar0, 0);
+					__LIB_24__::func_407(iLocal_193[iVar0], iVar0, 0);
 				}
 				iVar0++;
 			}
@@ -23741,7 +23741,7 @@ void func_1714()//Position - 0xC6739
 		CAM::DESTROY_CAM(iLocal_985, true);
 		CAM::RENDER_SCRIPT_CAMS(false, true, 3000, true, false, 0);
 	}
-	__LIB_18__::func_517(0);
+	__LIB_18__::func_527(0);
 	AUDIO::STOP_STREAM();
 	PLAYER::SET_PLAYER_LOCKON(PLAYER::PLAYER_ID(), true);
 	PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 44, false);
@@ -23749,7 +23749,7 @@ void func_1714()//Position - 0xC6739
 	{
 		Global_2666435 = MISC::GET_HASH_KEY(&(Global_4718592.f_116811));
 	}
-	__LIB_16__::func_726(2, -1, 0);
+	__LIB_16__::func_729(2, -1, 0);
 	iVar0 = 0;
 	while (iVar0 < 6)
 	{
@@ -23759,7 +23759,7 @@ void func_1714()//Position - 0xC6739
 		}
 		iVar0++;
 	}
-	__LIB_23__::func_532(&Local_213, 1, 0, 0);
+	__LIB_23__::func_542(&Local_213, 1, 0, 0);
 	__LIB_2__::func_420(0, 1);
 	if (__LIB_1__::func_192() == 17)
 	{
@@ -23806,7 +23806,7 @@ void func_1714()//Position - 0xC6739
 		}
 	}
 	__LIB_1__::func_460(1, 0);
-	__LIB_19__::func_879(1, 1, 0);
+	__LIB_19__::func_889(1, 1, 0);
 	if (PATHFIND::DOES_NAVMESH_BLOCKING_OBJECT_EXIST(iLocal_986))
 	{
 		PATHFIND::REMOVE_NAVMESH_BLOCKING_OBJECT(iLocal_986);
@@ -23841,14 +23841,14 @@ void func_1714()//Position - 0xC6739
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		__LIB_32__::func_500(1, 0, iVar1, 0, 1);
+		__LIB_30__::func_931(1, 0, iVar1, 0, 1);
 	}
 	func_239();
-	if (__LIB_23__::func_520(Global_4718592.f_116524))
+	if (__LIB_23__::func_530(Global_4718592.f_116524))
 	{
 		Global_4718592.f_116524 = 0;
 	}
-	__LIB_23__::func_626(Local_178.f_1);
+	__LIB_23__::func_636(Local_178.f_1);
 }
 
 void func_1980(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4, var uParam5, var uParam6, int iParam7, int iParam8, int iParam9, var uParam10, int iParam11, int iParam12, bool bParam13, int iParam14, int iParam15, int iParam16, int iParam17)//Position - 0xCB71A
@@ -23857,21 +23857,21 @@ void func_1980(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4, 
 	{
 		return;
 	}
-	__LIB_23__::func_541(1);
-	__LIB_40__::func_610(iParam0, uParam1, 0, 0, iParam2, uParam5, uParam6, iParam7, iParam8, iParam9, iParam3, iParam4, uParam10, iParam11, iParam12, bParam13, iParam14, iParam15, iParam16, iParam17);
+	__LIB_23__::func_551(1);
+	__LIB_40__::func_286(iParam0, uParam1, 0, 0, iParam2, uParam5, uParam6, iParam7, iParam8, iParam9, iParam3, iParam4, uParam10, iParam11, iParam12, bParam13, iParam14, iParam15, iParam16, iParam17);
 }
 
 int func_1994(var uParam0)//Position - 0xCBBC0
 {
 	int iVar0;
 	int iVar1;
-	__LIB_39__::func_0(uParam0, &(Local_178.f_5.f_223), &(Local_178.f_5.f_224), 32, 1, 1, 1, 0);
+	__LIB_38__::func_675(uParam0, &(Local_178.f_5.f_223), &(Local_178.f_5.f_224), 32, 1, 1, 1, 0);
 	Global_1853348[PLAYER::PLAYER_ID() /*834*/] = 6;
 	if (Global_4980736.f_94384 > 6)
 	{
 		Global_4980736.f_94384 = 6;
 	}
-	__LIB_16__::func_726(2, -1, 0);
+	__LIB_16__::func_729(2, -1, 0);
 	func_1646(0);
 	__LIB_1__::func_460(1, 1);
 	if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
@@ -23903,7 +23903,7 @@ int func_1994(var uParam0)//Position - 0xCBBC0
 	}
 	if (Global_4718592.f_656 == 0)
 	{
-		Local_178.f_257 = __LIB_23__::func_665(Local_178.f_261, 1);
+		Local_178.f_257 = __LIB_23__::func_675(Local_178.f_261, 1);
 	}
 	else
 	{

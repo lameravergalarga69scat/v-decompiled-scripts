@@ -301,7 +301,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (iLocal_112 != bVar11)
 						{
-							if ((__LIB_11__::func_212(PLAYER::PLAYER_ID()) || __LIB_37__::func_553(PLAYER::PLAYER_ID())) || __LIB_3__::func_448(PLAYER::PLAYER_ID()))
+							if ((__LIB_11__::func_212(PLAYER::PLAYER_ID()) || __LIB_37__::func_227(PLAYER::PLAYER_ID())) || __LIB_3__::func_448(PLAYER::PLAYER_ID()))
 							{
 								if (iLocal_109 != -1)
 								{
@@ -449,7 +449,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						__LIB_3__::func_422(&iLocal_109);
 					}
-					if (__LIB_11__::func_212(PLAYER::PLAYER_ID()) || __LIB_37__::func_553(PLAYER::PLAYER_ID()))
+					if (__LIB_11__::func_212(PLAYER::PLAYER_ID()) || __LIB_37__::func_227(PLAYER::PLAYER_ID()))
 					{
 						if (func_202())
 						{
@@ -588,9 +588,9 @@ int func_7(int iParam0, char* sParam1)//Position - 0xA5D
 
 void func_30(int iParam0, bool bParam1)//Position - 0x1418
 {
-	if ((((!bParam1 && !__LIB_1__::func_30(PLAYER::PLAYER_ID(), 1)) && __LIB_12__::func_929() < __LIB_7__::func_910()) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION()) && !__LIB_33__::func_231(PLAYER::PLAYER_ID()))
+	if ((((!bParam1 && !__LIB_1__::func_30(PLAYER::PLAYER_ID(), 1)) && __LIB_12__::func_929() < __LIB_7__::func_910()) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION()) && !__LIB_31__::func_700(PLAYER::PLAYER_ID()))
 	{
-		__LIB_44__::func_183(1, iParam0);
+		__LIB_44__::func_200(1, iParam0);
 	}
 }
 
@@ -850,7 +850,7 @@ int func_177()//Position - 0x4E07
 
 int func_178()//Position - 0x4E3A
 {
-	if (__LIB_33__::func_231(PLAYER::PLAYER_ID()))
+	if (__LIB_31__::func_700(PLAYER::PLAYER_ID()))
 	{
 		return 0;
 	}
@@ -883,7 +883,7 @@ void func_181(bool bParam0)//Position - 0x4F7C
 
 void func_183(bool bParam0)//Position - 0x4FCB
 {
-	if ((((__LIB_13__::func_170(PLAYER::PLAYER_ID()) && __LIB_37__::func_552(PLAYER::PLAYER_ID()) == __LIB_2__::func_744(PLAYER::PLAYER_ID())) && !NETWORK::NETWORK_IS_PLAYER_IN_MP_CUTSCENE(PLAYER::PLAYER_ID())) && !__LIB_0__::func_833()) && !Global_1946108)
+	if ((((__LIB_13__::func_170(PLAYER::PLAYER_ID()) && __LIB_37__::func_226(PLAYER::PLAYER_ID()) == __LIB_2__::func_744(PLAYER::PLAYER_ID())) && !NETWORK::NETWORK_IS_PLAYER_IN_MP_CUTSCENE(PLAYER::PLAYER_ID())) && !__LIB_0__::func_833()) && !Global_1946108)
 	{
 		if (__LIB_7__::func_970())
 		{
@@ -895,7 +895,7 @@ void func_183(bool bParam0)//Position - 0x4FCB
 			{
 				__LIB_7__::func_954(&iLocal_109, 1, "WHSECUROMAXVIP" /* GXT: This computer is unavailable. The maximum number of VIPs, CEOs and Club Presidents has been reached in this session. */, 0, 0, 0, 0);
 			}
-			else if (__LIB_33__::func_231(PLAYER::PLAYER_ID()))
+			else if (__LIB_31__::func_700(PLAYER::PLAYER_ID()))
 			{
 				__LIB_7__::func_954(&iLocal_109, 1, "PIM_EXECH0x1" /* GXT: SecuroServ access is currently blocked due to your recent behavior. */, 0, 0, 0, 0);
 			}
@@ -955,7 +955,7 @@ bool func_184(int iParam0)//Position - 0x5140
 
 void func_195(bool bParam0)//Position - 0x5305
 {
-	if (((((__LIB_37__::func_553(PLAYER::PLAYER_ID()) || func_176()) && !NETWORK::NETWORK_IS_PLAYER_IN_MP_CUTSCENE(PLAYER::PLAYER_ID())) && !__LIB_0__::func_833()) && !Global_1946108) && __LIB_6__::func_177(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), ENTITY::GET_ENTITY_HEADING(iLocal_120), 90f))
+	if (((((__LIB_37__::func_227(PLAYER::PLAYER_ID()) || func_176()) && !NETWORK::NETWORK_IS_PLAYER_IN_MP_CUTSCENE(PLAYER::PLAYER_ID())) && !__LIB_0__::func_833()) && !Global_1946108) && __LIB_6__::func_177(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), ENTITY::GET_ENTITY_HEADING(iLocal_120), 90f))
 	{
 		if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 		{
@@ -963,7 +963,7 @@ void func_195(bool bParam0)//Position - 0x5305
 		}
 		else if (__LIB_7__::func_970())
 		{
-			if (__LIB_37__::func_553(PLAYER::PLAYER_ID()))
+			if (__LIB_37__::func_227(PLAYER::PLAYER_ID()))
 			{
 				__LIB_0__::func_190("BIKERWHBLCKC" /* GXT: Join a public session to purchase a Business. */);
 			}
@@ -976,7 +976,7 @@ void func_195(bool bParam0)//Position - 0x5305
 		{
 			if ((__LIB_0__::func_864(&uLocal_114) && __LIB_0__::func_937(&uLocal_114, 10000, 1)) || !iLocal_111)
 			{
-				if (__LIB_37__::func_764(PLAYER::PLAYER_ID()) || Global_1946108 == 1)
+				if (__LIB_37__::func_438(PLAYER::PLAYER_ID()) || Global_1946108 == 1)
 				{
 					iLocal_111 = 1;
 					if (!Global_1946108)
@@ -1001,7 +1001,7 @@ void func_195(bool bParam0)//Position - 0x5305
 				{
 					__LIB_0__::func_190("WHSECUROBLCK" /* GXT: This computer is unavailable during a mission. */);
 				}
-				if (!__LIB_37__::func_764(PLAYER::PLAYER_ID()))
+				if (!__LIB_37__::func_438(PLAYER::PLAYER_ID()))
 				{
 					iLocal_111 = 0;
 					HUD::CLEAR_HELP(true);
@@ -1045,7 +1045,7 @@ void func_200(bool bParam0)//Position - 0x54FE
 			{
 				__LIB_7__::func_954(&iLocal_109, 1, "WHSECUROMAXVIP" /* GXT: This computer is unavailable. The maximum number of VIPs, CEOs and Club Presidents has been reached in this session. */, 0, 0, 0, 0);
 			}
-			else if (__LIB_33__::func_231(PLAYER::PLAYER_ID()))
+			else if (__LIB_31__::func_700(PLAYER::PLAYER_ID()))
 			{
 				__LIB_7__::func_954(&iLocal_109, 1, "PIM_EXECH0x1" /* GXT: SecuroServ access is currently blocked due to your recent behavior. */, 0, 0, 0, 0);
 			}

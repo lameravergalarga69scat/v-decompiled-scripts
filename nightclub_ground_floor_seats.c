@@ -282,19 +282,19 @@ void __EntryFunction__()//Position - 0x0
 		while (!func_72())
 		{
 			SYSTEM::WAIT(0);
-			__LIB_44__::func_92(&uLocal_93);
+			__LIB_44__::func_108(&uLocal_93);
 		}
 	}
-	__LIB_43__::func_579();
+	__LIB_43__::func_536();
 }
 
 int func_72()//Position - 0x221D
 {
-	if (CAM::IS_SCREEN_FADED_OUT() && !__LIB_38__::func_642())
+	if (CAM::IS_SCREEN_FADED_OUT() && !__LIB_38__::func_317())
 	{
 		return 1;
 	}
-	if (!__LIB_38__::func_699())
+	if (!__LIB_38__::func_374())
 	{
 		return 1;
 	}

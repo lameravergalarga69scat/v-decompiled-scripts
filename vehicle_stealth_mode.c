@@ -124,8 +124,8 @@ void func_3()//Position - 0xF3
 
 void func_4(int* iParam0)//Position - 0x10E
 {
-	__LIB_32__::func_205(0, 1);
-	__LIB_30__::func_406(0, -1, 1);
+	__LIB_35__::func_937(0, 1);
+	__LIB_30__::func_416(0, -1, 1);
 	__LIB_2__::func_487(&(iParam0->f_6), 5);
 }
 
@@ -202,7 +202,7 @@ void func_17(int* iParam0)//Position - 0x33F
 	if (func_50(iParam0) && !func_51(iParam0))
 	{
 		func_40(iParam0);
-		__LIB_40__::func_958();
+		__LIB_40__::func_634();
 		func_42(iParam0, 2);
 		if (func_36(iParam0))
 		{
@@ -529,8 +529,8 @@ void func_54(int* iParam0)//Position - 0xBD8
 
 void func_55(int* iParam0)//Position - 0xC35
 {
-	__LIB_32__::func_205(1, 1);
-	__LIB_30__::func_406(1, -1, 1);
+	__LIB_35__::func_937(1, 1);
+	__LIB_30__::func_416(1, -1, 1);
 	__LIB_2__::func_486(&(iParam0->f_6), 5);
 }
 
@@ -549,7 +549,7 @@ int func_57(int* iParam0)//Position - 0xC6B
 	{
 		return 1;
 	}
-	if (!__LIB_40__::func_959(iParam0->f_2))
+	if (!__LIB_40__::func_635(iParam0->f_2))
 	{
 		return 1;
 	}
@@ -658,7 +658,7 @@ void func_67(int* iParam0)//Position - 0x11AB
 
 void func_68(int* iParam0)//Position - 0x1302
 {
-	if (ENTITY::DOES_ENTITY_EXIST(iParam0->f_3) && __LIB_40__::func_960(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0->f_3)))
+	if (ENTITY::DOES_ENTITY_EXIST(iParam0->f_3) && __LIB_40__::func_636(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0->f_3)))
 	{
 		__LIB_2__::func_486(iParam0, 0);
 	}

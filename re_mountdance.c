@@ -158,7 +158,7 @@ void __EntryFunction__()//Position - 0x0
 		switch (iLocal_95)
 		{
 			case 0:
-				if ((BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE() && !__LIB_39__::func_350()) && !__LIB_39__::func_340())
+				if ((BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE() && !__LIB_39__::func_25()) && !__LIB_39__::func_15())
 				{
 					if (func_11())
 					{
@@ -200,7 +200,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (!HUD::DOES_BLIP_EXIST(iLocal_96))
 					{
-						__LIB_39__::func_90(&iLocal_96, &iLocal_91, 0);
+						__LIB_38__::func_765(&iLocal_96, &iLocal_91, 0);
 						HUD::SET_BLIP_COLOUR(iLocal_96, 3);
 					}
 				}

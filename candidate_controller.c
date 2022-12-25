@@ -148,11 +148,11 @@ void __EntryFunction__()//Position - 0x0
 			}
 			if (Global_43052 == 15 || Global_43052 == 6)
 			{
-				__LIB_15__::func_826(0);
+				__LIB_15__::func_827(0);
 			}
 			else
 			{
-				__LIB_15__::func_826(1);
+				__LIB_15__::func_827(1);
 			}
 			if (func_12(Global_43052))
 			{

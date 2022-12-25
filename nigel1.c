@@ -312,8 +312,8 @@ void __EntryFunction__()//Position - 0x0
 		__LIB_14__::func_800(&Local_94, 0, 1);
 		Global_78564 = 0;
 	}
-	iLocal_263 = __LIB_38__::func_611();
-	__LIB_38__::func_610();
+	iLocal_263 = __LIB_38__::func_286();
+	__LIB_38__::func_285();
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -1166,7 +1166,7 @@ int func_236(int* iParam0, struct<3> Param1, float fParam2, int iParam3, int iPa
 	{
 		return 0;
 	}
-	__LIB_17__::func_22(iParam0, iLocal_81, Param1, fParam2);
+	__LIB_17__::func_25(iParam0, iLocal_81, Param1, fParam2);
 	if (__LIB_0__::func_121(*iParam0))
 	{
 		VEHICLE::SET_VEHICLE_COLOURS(*iParam0, 65, 0);
@@ -1313,7 +1313,7 @@ int func_341(var uParam0)//Position - 0x300E5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iLocal_81, -1077.959f, 793.9361f, 164.6374f, 172.8563f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iLocal_81, -1077.959f, 793.9361f, 164.6374f, 172.8563f);
 				if (__LIB_0__::func_121(uParam0->f_35[0]))
 				{
 					VEHICLE::SET_VEHICLE_COLOURS(uParam0->f_35[0], 65, 0);
@@ -1360,19 +1360,19 @@ void func_342(int iParam0, bool bParam1)//Position - 0x30386
 		case 37:
 			if (bParam1)
 			{
-				iLocal_93 = __LIB_38__::func_611();
+				iLocal_93 = __LIB_38__::func_286();
 				TASK::SET_SCENARIO_TYPE_ENABLED("WORLD_HUMAN_GUARD_STAND", false);
 				TASK::SET_SCENARIO_TYPE_ENABLED("WORLD_HUMAN_CLIPBOARD", false);
 				TASK::SET_SCENARIO_TYPE_ENABLED("WORLD_VEHICLE_DRIVE_SOLO", false);
-				__LIB_38__::func_610();
+				__LIB_38__::func_285();
 				MISC::CLEAR_AREA_OF_PEDS(-1100.5f, 789.8f, 164.34f, 20f, 0);
-				__LIB_38__::func_612(0);
+				__LIB_38__::func_287(0);
 			}
 			else
 			{
 				PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_93, false);
 				PED::CLEAR_PED_NON_CREATION_AREA();
-				__LIB_38__::func_612(1);
+				__LIB_38__::func_287(1);
 			}
 			break;
 		case 38:
@@ -1459,7 +1459,7 @@ void func_352()//Position - 0x30A3D
 	if (__LIB_14__::func_843())
 	{
 	}
-	__LIB_38__::func_612(1);
+	__LIB_38__::func_287(1);
 	__LIB_0__::func_221(&uLocal_95, 2);
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_263, false);
 	PED::CLEAR_PED_NON_CREATION_AREA();

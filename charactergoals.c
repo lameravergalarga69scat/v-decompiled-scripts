@@ -52,7 +52,7 @@ void __EntryFunction__()//Position - 0x0
 					if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 					{
 						Global_22724[3 /*42*/].f_27[0] = __LIB_12__::func_295(2);
-						__LIB_15__::func_811(2, 32, Global_22724[3 /*42*/].f_27[0]);
+						__LIB_15__::func_812(2, 32, Global_22724[3 /*42*/].f_27[0]);
 					}
 					StringCopy(&(Global_22724[3 /*42*/]), "PA_TREV1" /* GXT: Earn one million dollars. */, 16);
 					StringCopy(&(Global_22724[3 /*42*/].f_4), "PA_TREV1" /* GXT: Earn one million dollars. */, 16);
@@ -64,7 +64,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						Global_22724[3 /*42*/].f_27[1] = __LIB_12__::func_295(2);
 					}
-					__LIB_43__::func_612(2, 3, 1, 1);
+					__LIB_43__::func_569(2, 3, 1, 1);
 					func_39("PA_TREV1A" /* GXT: Current wealth $~1~. */, Global_22724[3 /*42*/].f_27[1]);
 					iLocal_18 = 1;
 				}
@@ -75,7 +75,7 @@ void __EntryFunction__()//Position - 0x0
 					Global_22724[3 /*42*/].f_27[1] = __LIB_12__::func_295(2);
 					if (func_38(2, 999999))
 					{
-						__LIB_39__::func_433("PA_COMPLETE" /* GXT: Goal achieved ~a~ */, "PA_TREV1" /* GXT: Earn one million dollars. */, 2000, 1);
+						__LIB_39__::func_108("PA_COMPLETE" /* GXT: Goal achieved ~a~ */, "PA_TREV1" /* GXT: Earn one million dollars. */, 2000, 1);
 						Global_22724[3 /*42*/].f_37[1] = 1;
 						Global_22724[3 /*42*/].f_8 = 1;
 						iLocal_22 = MISC::GET_GAME_TIMER();
@@ -119,7 +119,7 @@ int func_38(int iParam0, int iParam1)//Position - 0x1600
 void func_39(char* sParam0, int iParam1)//Position - 0x161B
 {
 	GRAPHICS::DRAW_RECT(0.852f, 0.81f, 0.141f, 0.025f, 0, 0, 0, 175, false);
-	__LIB_16__::func_298(255, 255, 255, 255);
+	__LIB_16__::func_301(255, 255, 255, 255);
 	__LIB_3__::func_42(0.81f, 0.8f, sParam0, iParam1, 0);
 }
 

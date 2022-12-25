@@ -294,7 +294,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									iLocal_38[iLocal_46] = 1;
 								}
-								if (__LIB_39__::func_305(bLocal_37))
+								if (__LIB_38__::func_980(bLocal_37))
 								{
 									if (!iLocal_39[iLocal_46])
 									{
@@ -305,7 +305,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (!Global_32174[bLocal_37])
 										{
-											__LIB_16__::func_790(bLocal_37, Global_32174[bLocal_37]);
+											__LIB_16__::func_793(bLocal_37, Global_32174[bLocal_37]);
 										}
 									}
 								}
@@ -439,12 +439,12 @@ void __EntryFunction__()//Position - 0x0
 							}
 							else if (iLocal_38[iLocal_46])
 							{
-								if (__LIB_39__::func_305(bLocal_37))
+								if (__LIB_38__::func_980(bLocal_37))
 								{
 									Local_48 = { func_33(bLocal_37) };
 									if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY(&Local_48)) == 0)
 									{
-										__LIB_16__::func_790(bLocal_37, 0);
+										__LIB_16__::func_793(bLocal_37, 0);
 										iLocal_38[iLocal_46] = 0;
 									}
 								}

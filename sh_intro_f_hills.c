@@ -145,22 +145,22 @@ void __EntryFunction__()//Position - 0x0
 	}
 	iLocal_44 = 0;
 	iLocal_50 = -1;
-	__LIB_16__::func_329(&uLocal_54);
-	__LIB_16__::func_328(&uLocal_54, 18.04353f, 554.79254f, 176.23518f);
-	__LIB_16__::func_328(&uLocal_54, 20.19232f, 549.81354f, 175.03096f);
-	__LIB_16__::func_328(&uLocal_54, 28.21084f, 545.16644f, 175.22356f);
-	__LIB_16__::func_328(&uLocal_54, 29.46619f, 542.40906f, 175.22392f);
-	__LIB_16__::func_328(&uLocal_54, 28.43769f, 540.62604f, 175.22446f);
-	__LIB_16__::func_328(&uLocal_54, 30.00231f, 537.1512f, 175.54428f);
-	__LIB_16__::func_328(&uLocal_54, 25.26361f, 534.6514f, 171.22798f);
-	__LIB_16__::func_328(&uLocal_54, 31.4003f, 521.60004f, 169.62772f);
-	__LIB_16__::func_328(&uLocal_54, -5.66947f, 504.50677f, 169.6277f);
-	__LIB_16__::func_328(&uLocal_54, -10.3168f, 506.92307f, 169.6277f);
-	__LIB_16__::func_328(&uLocal_54, -11.23373f, 508.84964f, 169.6277f);
-	__LIB_16__::func_328(&uLocal_54, -17.29933f, 512.3869f, 174.628f);
-	__LIB_16__::func_328(&uLocal_54, -25.41821f, 529.34204f, 170.86879f);
-	__LIB_16__::func_328(&uLocal_54, -12.27683f, 534.62604f, 171.22781f);
-	__LIB_16__::func_327(&uLocal_54);
+	__LIB_16__::func_332(&uLocal_54);
+	__LIB_16__::func_331(&uLocal_54, 18.04353f, 554.79254f, 176.23518f);
+	__LIB_16__::func_331(&uLocal_54, 20.19232f, 549.81354f, 175.03096f);
+	__LIB_16__::func_331(&uLocal_54, 28.21084f, 545.16644f, 175.22356f);
+	__LIB_16__::func_331(&uLocal_54, 29.46619f, 542.40906f, 175.22392f);
+	__LIB_16__::func_331(&uLocal_54, 28.43769f, 540.62604f, 175.22446f);
+	__LIB_16__::func_331(&uLocal_54, 30.00231f, 537.1512f, 175.54428f);
+	__LIB_16__::func_331(&uLocal_54, 25.26361f, 534.6514f, 171.22798f);
+	__LIB_16__::func_331(&uLocal_54, 31.4003f, 521.60004f, 169.62772f);
+	__LIB_16__::func_331(&uLocal_54, -5.66947f, 504.50677f, 169.6277f);
+	__LIB_16__::func_331(&uLocal_54, -10.3168f, 506.92307f, 169.6277f);
+	__LIB_16__::func_331(&uLocal_54, -11.23373f, 508.84964f, 169.6277f);
+	__LIB_16__::func_331(&uLocal_54, -17.29933f, 512.3869f, 174.628f);
+	__LIB_16__::func_331(&uLocal_54, -25.41821f, 529.34204f, 170.86879f);
+	__LIB_16__::func_331(&uLocal_54, -12.27683f, 534.62604f, 171.22781f);
+	__LIB_16__::func_330(&uLocal_54);
 	while (true)
 	{
 		switch (iLocal_44)
@@ -171,7 +171,7 @@ void __EntryFunction__()//Position - 0x0
 					if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("startup_positioning")) <= 0)
 					{
 						Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-						if (!__LIB_16__::func_325(&uLocal_54, Var0))
+						if (!__LIB_16__::func_328(&uLocal_54, Var0))
 						{
 							iLocal_44 = 1;
 						}
@@ -193,7 +193,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if (func_163())
 							{
-								if (__LIB_16__::func_325(&uLocal_54, Var0))
+								if (__LIB_16__::func_328(&uLocal_54, Var0))
 								{
 									if (func_157())
 									{
@@ -315,7 +315,7 @@ void func_2()//Position - 0x3A0
 					HUD::CLEAR_HELP(true);
 				}
 				__LIB_0__::func_532(0, 1, 1, 0, 0, 0, 0);
-				__LIB_17__::func_551(1, 1, 1, 1);
+				__LIB_17__::func_554(1, 1, 1, 1);
 				CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 				if (CAM::DOES_CAM_EXIST(iLocal_49))
 				{
@@ -1028,7 +1028,7 @@ void func_172()//Position - 0x1F6F1
 			{
 				HUD::CLEAR_HELP(true);
 			}
-			__LIB_17__::func_551(1, 1, 1, 1);
+			__LIB_17__::func_554(1, 1, 1, 1);
 			CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 			if (CAM::DOES_CAM_EXIST(iLocal_49))
 			{
@@ -1042,7 +1042,7 @@ void func_172()//Position - 0x1F6F1
 		STREAMING::CLEAR_FOCUS();
 		__LIB_15__::func_281(&iLocal_50);
 	}
-	if (__LIB_17__::func_676(197, &bVar0))
+	if (__LIB_17__::func_679(197, &bVar0))
 	{
 		if (!BitTest(Global_113386.f_18533.f_23, bVar0))
 		{

@@ -2182,7 +2182,7 @@ void func_78(int iParam0)//Position - 0x6A3B
 	{
 		if (__LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1) || iParam0 == 0)
 		{
-			__LIB_32__::func_534(1, 1, 0);
+			__LIB_30__::func_965(1, 1, 0);
 			MISC::CLEAR_BIT(&uLocal_86, 13);
 		}
 	}
@@ -2195,7 +2195,7 @@ void func_102(bool bParam0, float fParam1)//Position - 0x7049
 		if (__LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1))
 		{
 			func_120(Local_83.f_2.f_68[bParam0 /*104*/].f_1, fParam1, 0, 0, 1, 0);
-			__LIB_33__::func_945(Local_83.f_2.f_68[bParam0 /*104*/].f_1, ((200f / 4f) * 2f), 0, 1);
+			__LIB_32__::func_442(Local_83.f_2.f_68[bParam0 /*104*/].f_1, ((200f / 4f) * 2f), 0, 1);
 			__LIB_1__::func_959(Local_83.f_2.f_68[bParam0 /*104*/].f_1, 1, 0);
 			MISC::SET_BIT(&uLocal_86, 13);
 		}
@@ -2204,7 +2204,7 @@ void func_102(bool bParam0, float fParam1)//Position - 0x7049
 
 void func_120(struct<3> Param0, var uParam1, int iParam2, int iParam3, int iParam4, int iParam5)//Position - 0x759E
 {
-	__LIB_32__::func_532(Param0, 0f, 0f, 0f, uParam1, 0, iParam2, iParam4, iParam3, iParam5);
+	__LIB_30__::func_963(Param0, 0f, 0f, 0f, uParam1, 0, iParam2, iParam4, iParam3, iParam5);
 }
 
 void func_123(bool bParam0)//Position - 0x7672
@@ -2840,7 +2840,7 @@ void func_205(bool bParam0)//Position - 0xADE2
 				iVar0 = (Local_83.f_2.f_1[bParam0 /*66*/].f_32 * WEAPON::GET_MAX_AMMO_IN_CLIP(PLAYER::PLAYER_PED_ID(), iVar6, true));
 			}
 			WEAPON::GIVE_DELAYED_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), iVar6, iVar0, true);
-			__LIB_19__::func_928("ACD_TCONT_XW" /* GXT: Crate Contents:~n~ + ~1~RP~n~ + ~a~ */, __LIB_4__::func_960(iVar6, 0), iVar4);
+			__LIB_19__::func_938("ACD_TCONT_XW" /* GXT: Crate Contents:~n~ + ~1~RP~n~ + ~a~ */, __LIB_4__::func_960(iVar6, 0), iVar4);
 			break;
 		case 8:
 			iVar1 = __LIB_3__::func_103(Local_83.f_2.f_1[bParam0 /*66*/].f_32, 1);
@@ -2875,7 +2875,7 @@ void func_205(bool bParam0)//Position - 0xADE2
 				}
 				WEAPON::GIVE_DELAYED_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), Local_83.f_2.f_1[bParam0 /*66*/].f_33, iVar0, true);
 			}
-			__LIB_16__::func_225();
+			__LIB_16__::func_228();
 			iLocal_102 = 1;
 			iVar9 = -1;
 			iVar10 = -1;
@@ -3046,7 +3046,7 @@ int func_217(int iParam0, int iParam1, var uParam2)//Position - 0xB6EE
 			iVar0 = 1;
 		}
 	}
-	else if ((((((iParam0 != -1 && (iParam0 != 10 || !bVar4)) && iParam1 != -1) && iParam1 != -99) && __LIB_19__::func_84(__LIB_2__::func_82(), iParam0, iParam1)) && !MISC::IS_STRING_NULL_OR_EMPTY(&(Var3.f_8))) && BitTest(Var3.f_6, 6))
+	else if ((((((iParam0 != -1 && (iParam0 != 10 || !bVar4)) && iParam1 != -1) && iParam1 != -99) && __LIB_19__::func_94(__LIB_2__::func_82(), iParam0, iParam1)) && !MISC::IS_STRING_NULL_OR_EMPTY(&(Var3.f_8))) && BitTest(Var3.f_6, 6))
 	{
 		iVar1 = __LIB_11__::func_291(Global_2883588);
 		if (iVar1 != -1)
@@ -3089,7 +3089,7 @@ int func_281(int iParam0, int iParam1)//Position - 0x2DE1D
 	}
 	if (iParam0 != -1)
 	{
-		if ((iParam1 != -1 && iParam1 != -99) && __LIB_19__::func_84(__LIB_2__::func_82(), iParam0, iParam1))
+		if ((iParam1 != -1 && iParam1 != -99) && __LIB_19__::func_94(__LIB_2__::func_82(), iParam0, iParam1))
 		{
 			Var1 = { __LIB_6__::func_38(__LIB_2__::func_82(), iParam0, iParam1, -1) };
 			if (BitTest(Var1.f_6, 6))
@@ -3216,7 +3216,7 @@ int func_288(int iParam0, int iParam1, int iParam2)//Position - 0x2EFE7
 var func_291(int iParam0, int iParam1)//Position - 0x2F609
 {
 	var uVar0;
-	uVar0 = __LIB_1__::func_360(__LIB_16__::func_234(iParam0), iParam1, 0);
+	uVar0 = __LIB_1__::func_360(__LIB_16__::func_237(iParam0), iParam1, 0);
 	return uVar0;
 }
 
@@ -3249,7 +3249,7 @@ void func_366(int iParam0, int iParam1, int iParam2)//Position - 0x3167E
 		WEAPON::ADD_AMMO_TO_PED(PLAYER::PLAYER_PED_ID(), iParam0, iVar0);
 		if (iParam2 == 1)
 		{
-			__LIB_26__::func_517(PLAYER::PLAYER_PED_ID(), iVar0);
+			__LIB_26__::func_527(PLAYER::PLAYER_PED_ID(), iVar0);
 		}
 	}
 }

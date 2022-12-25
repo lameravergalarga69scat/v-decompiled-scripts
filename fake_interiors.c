@@ -147,7 +147,7 @@ void func_1()//Position - 0xB1
 int func_2()//Position - 0x1E7
 {
 	int iVar0;
-	if (__LIB_17__::func_132(PLAYER::PLAYER_ID()))
+	if (__LIB_17__::func_135(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
@@ -156,7 +156,7 @@ int func_2()//Position - 0x1E7
 		iVar0 = __LIB_0__::func_797();
 		if (iVar0 != __LIB_0__::func_162())
 		{
-			if (__LIB_17__::func_132(iVar0))
+			if (__LIB_17__::func_135(iVar0))
 			{
 				return 1;
 			}

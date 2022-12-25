@@ -327,9 +327,9 @@ void __EntryFunction__()//Position - 0x0
 				func_57(&iLocal_45);
 				break;
 			case 6:
-				__LIB_17__::func_17(2, 6, 1);
-				__LIB_17__::func_29(2, "EPS_LSTEMAIL" /* GXT: Brother Brother,~n~~n~Cris and the senior thesis holders are very happy with the vehicles you sourced to further Kraff's work.  You are firmly on the path to enlightenment and divinity but it is a long and expensive path, and there are many more trials ahead.  Are you ready to understand the technology of your existence?  Are you everything you need and less and more?  Until next time, brother.  ~n~~n~Kraff be praised! */, 1);
-				__LIB_17__::func_15(2);
+				__LIB_17__::func_20(2, 6, 1);
+				__LIB_17__::func_32(2, "EPS_LSTEMAIL" /* GXT: Brother Brother,~n~~n~Cris and the senior thesis holders are very happy with the vehicles you sourced to further Kraff's work.  You are firmly on the path to enlightenment and divinity but it is a long and expensive path, and there are many more trials ahead.  Are you ready to understand the technology of your existence?  Are you everything you need and less and more?  Until next time, brother.  ~n~~n~Kraff be praised! */, 1);
+				__LIB_17__::func_18(2);
 				func_96();
 				break;
 		}
@@ -468,14 +468,14 @@ void func_4(int iParam0)//Position - 0x595
 	{
 		return;
 	}
-	__LIB_17__::func_17(2, Local_42[(5 - iParam0) /*3*/], 1);
+	__LIB_17__::func_20(2, Local_42[(5 - iParam0) /*3*/], 1);
 	if (func_15(iLocal_52))
 	{
-		__LIB_17__::func_29(2, Local_42[(5 - iParam0) /*3*/].f_2, 0);
+		__LIB_17__::func_32(2, Local_42[(5 - iParam0) /*3*/].f_2, 0);
 	}
 	else
 	{
-		__LIB_17__::func_29(2, Local_42[(5 - iParam0) /*3*/].f_1, 0);
+		__LIB_17__::func_32(2, Local_42[(5 - iParam0) /*3*/].f_1, 0);
 	}
 	iParam0 = 0;
 	iVar0 = 0;
@@ -484,12 +484,12 @@ void func_4(int iParam0)//Position - 0x595
 	{
 		if (!func_14(iParam0))
 		{
-			__LIB_17__::func_10(2, func_13(iLocal_43[iParam0]));
+			__LIB_17__::func_13(2, func_13(iLocal_43[iParam0]));
 			iVar0++;
 		}
 		iParam0++;
 	}
-	__LIB_17__::func_16(2);
+	__LIB_17__::func_19(2);
 	Global_113386.f_10049.f_104 = CLOCK::GET_CLOCK_DAY_OF_MONTH();
 	if (iVar0 == 0)
 	{
@@ -703,7 +703,7 @@ void func_49(var uParam0)//Position - 0x20E2
 	}
 	else
 	{
-		Var0 = { __LIB_16__::func_44(uParam0->f_19[0 /*3*/], uParam0->f_19[1 /*3*/], 0.5f, 1) };
+		Var0 = { __LIB_16__::func_46(uParam0->f_19[0 /*3*/], uParam0->f_19[1 /*3*/], 0.5f, 1) };
 		uParam0->f_26 = MISC::IS_POSITION_OCCUPIED(Var0, 1.2f, false, true, true, false, false, PLAYER::PLAYER_PED_ID(), false);
 		if (uParam0->f_26)
 		{

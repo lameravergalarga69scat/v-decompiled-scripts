@@ -253,7 +253,7 @@ void func_4(int iParam0)//Position - 0x259
 		{
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 			{
-				__LIB_41__::func_547(&(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/]), ENTITY::GET_ENTITY_COORDS(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4, true) + Vector((0.046f * 1.5f), 0f, 0f));
+				__LIB_41__::func_226(&(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/]), ENTITY::GET_ENTITY_COORDS(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4, true) + Vector((0.046f * 1.5f), 0f, 0f));
 			}
 		}
 		iVar0++;
@@ -300,7 +300,7 @@ int func_21(int iParam0)//Position - 0x71F
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
 						Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, (0.6f - (IntToFloat(iVar0) * 0.4f)), 0f, 0.1f) };
-						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_597(joaat("PICKUP_GANG_ATTACK_MONEY"), Var1, iVar2, Local_114.f_2[iParam0 /*27*/].f_9, 0, 1, 1) };
+						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_607(joaat("PICKUP_GANG_ATTACK_MONEY"), Var1, iVar2, Local_114.f_2[iParam0 /*27*/].f_9, 0, 1, 1) };
 					}
 					iVar0++;
 				}
@@ -316,7 +316,7 @@ int func_21(int iParam0)//Position - 0x71F
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
 						Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.1f) };
-						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_597(Local_114.f_2[iParam0 /*27*/].f_8, Var1, iVar2, -1, 0, 1, 1) };
+						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_607(Local_114.f_2[iParam0 /*27*/].f_8, Var1, iVar2, -1, 0, 1, 1) };
 					}
 					iVar0++;
 				}
@@ -335,7 +335,7 @@ int func_21(int iParam0)//Position - 0x71F
 					if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/].f_4))
 					{
 						Var1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iVar0) * 0.25f)), 0.2f) };
-						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_597(joaat("PICKUP_AMMO_BULLET_MP"), Var1, iVar2, Local_114.f_2[iParam0 /*27*/].f_9, 0, 1, 1) };
+						Local_114.f_2[iParam0 /*27*/].f_10[iVar0 /*5*/] = { __LIB_26__::func_607(joaat("PICKUP_AMMO_BULLET_MP"), Var1, iVar2, Local_114.f_2[iParam0 /*27*/].f_9, 0, 1, 1) };
 					}
 					iVar0++;
 				}
@@ -361,7 +361,7 @@ int func_22(int iParam0, int iParam1)//Position - 0x964
 		if (!ENTITY::DOES_ENTITY_EXIST(Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/].f_4))
 		{
 			Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_114.f_2[iParam0 /*27*/].f_2, Local_114.f_2[iParam0 /*27*/].f_5, 0f, (0.25f - (IntToFloat(iParam1) * 0.25f)), 0.1f) };
-			Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/] = { __LIB_26__::func_597(joaat("PICKUP_GANG_ATTACK_MONEY"), Var0, iVar1, Global_262145.f_4455 /* Tunable: CASH_MODIFIER_CRATE_DROP_GANG_ATTACK */, 0, 1, 1) };
+			Local_114.f_2[iParam0 /*27*/].f_10[iParam1 /*5*/] = { __LIB_26__::func_607(joaat("PICKUP_GANG_ATTACK_MONEY"), Var0, iVar1, Global_262145.f_4455 /* Tunable: CASH_MODIFIER_CRATE_DROP_GANG_ATTACK */, 0, 1, 1) };
 		}
 		return 1;
 	}

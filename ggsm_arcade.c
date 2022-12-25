@@ -803,7 +803,7 @@ void __EntryFunction__()//Position - 0x0
 	ScriptParam_766.f_0 = 206;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		__LIB_36__::func_712(ScriptParam_766);
+		__LIB_36__::func_386(ScriptParam_766);
 	}
 	while (true)
 	{
@@ -844,16 +844,16 @@ void func_11()//Position - 0x3A5
 	}
 	func_54("ARCADE_SM_STOP");
 	func_53();
-	__LIB_16__::func_782();
+	__LIB_16__::func_785();
 	func_30(&(Local_632.f_4598));
 	func_25();
-	__LIB_36__::func_697("DLC_CH_AM_SM_IN_MENUS_SCENE");
-	__LIB_36__::func_697("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
-	__LIB_36__::func_697("DLC_CH_ARCADE_MACHINE_IN_USE_SCENE");
+	__LIB_36__::func_371("DLC_CH_AM_SM_IN_MENUS_SCENE");
+	__LIB_36__::func_371("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
+	__LIB_36__::func_371("DLC_CH_ARCADE_MACHINE_IN_USE_SCENE");
 	func_23();
-	__LIB_39__::func_111();
-	__LIB_43__::func_490();
-	__LIB_36__::func_693("DLC_HEIST3\H3_SpaceMonkey3");
+	__LIB_38__::func_786();
+	__LIB_43__::func_447();
+	__LIB_36__::func_367("DLC_HEIST3\H3_SpaceMonkey3");
 	HUD::CLEAR_ADDITIONAL_TEXT(3, false);
 	__LIB_0__::func_202();
 }
@@ -1132,7 +1132,7 @@ void func_67()//Position - 0x19F7
 	{
 		__LIB_7__::func_603(0, iVar0, "DEG_GAME_QUIT" /* GXT: Fill bar to quit the game. */, 1, -1, 2, -1082130432, -1082130432, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, -1, 0, -1, -1082130432, -1082130432, 0, 1, 0, 0, 1, -1, 0, -1, 1);
 	}
-	if (__LIB_5__::func_120(&(Local_632.f_4615), 1, iVar0) || __LIB_16__::func_778())
+	if (__LIB_5__::func_120(&(Local_632.f_4615), 1, iVar0) || __LIB_16__::func_781())
 	{
 		if (func_63())
 		{
@@ -1151,7 +1151,7 @@ void func_68(int iParam0)//Position - 0x1D8D
 
 void func_69(int iParam0)//Position - 0x1DA5
 {
-	__LIB_39__::func_111();
+	__LIB_38__::func_786();
 	Local_632.f_1 = iParam0;
 	Local_632.f_2 = 0f;
 	Local_632.f_3 = 0f;
@@ -1166,16 +1166,16 @@ void func_79()//Position - 0x219B
 	Var1 = { func_96(166, 0) };
 	if (Local_632.f_4561 > 0f)
 	{
-		__LIB_15__::func_812(&Var0, 255, 255, 255, SYSTEM::FLOOR((255f * Local_632.f_4561)));
-		__LIB_37__::func_93(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
+		__LIB_15__::func_813(&Var0, 255, 255, 255, SYSTEM::FLOOR((255f * Local_632.f_4561)));
+		__LIB_36__::func_767(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
 	}
 	if (Local_632.f_4558 > 0f)
 	{
-		__LIB_15__::func_812(&Var0, 0, 0, 0, SYSTEM::FLOOR((255f * Local_632.f_4558)));
-		__LIB_37__::func_93(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
+		__LIB_15__::func_813(&Var0, 0, 0, 0, SYSTEM::FLOOR((255f * Local_632.f_4558)));
+		__LIB_36__::func_767(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
 	}
 	func_84();
-	__LIB_36__::func_716(func_29(1), "FACADE", __LIB_5__::func_403(960f, 540f), Var1, 0f, Local_632.f_4603);
+	__LIB_36__::func_390(func_29(1), "FACADE", __LIB_5__::func_403(960f, 540f), Var1, 0f, Local_632.f_4603);
 }
 
 void func_84()//Position - 0x238D
@@ -1200,13 +1200,13 @@ void func_85(int iParam0)//Position - 0x23AE
 	{
 		return;
 	}
-	Var0 = { __LIB_16__::func_762() };
+	Var0 = { __LIB_16__::func_765() };
 	Var3.f_3 = 255;
 	if (Local_644[iParam0 /*17*/].f_3)
 	{
 		Var0.f_0 = -Var0.f_0;
 	}
-	Var1 = { __LIB_16__::func_761() };
+	Var1 = { __LIB_16__::func_764() };
 	if (!Local_644[iParam0 /*17*/].f_2)
 	{
 		if (Local_644[iParam0 /*17*/].f_4 > 0)
@@ -1232,32 +1232,32 @@ void func_85(int iParam0)//Position - 0x23AE
 	if (Local_644[iParam0 /*17*/].f_1)
 	{
 		fVar4 = (SYSTEM::TO_FLOAT(Local_644[iParam0 /*17*/].f_5) / SYSTEM::TO_FLOAT(Local_644[iParam0 /*17*/].f_8));
-		Var3.f_0 = __LIB_15__::func_813(Local_644[iParam0 /*17*/].f_9, Local_644[iParam0 /*17*/].f_13, fVar4);
-		Var3.f_1 = __LIB_15__::func_813(Local_644[iParam0 /*17*/].f_9.f_1, Local_644[iParam0 /*17*/].f_13.f_1, fVar4);
-		Var3.f_2 = __LIB_15__::func_813(Local_644[iParam0 /*17*/].f_9.f_2, Local_644[iParam0 /*17*/].f_13.f_2, fVar4);
-		Var3.f_3 = __LIB_15__::func_813(Local_644[iParam0 /*17*/].f_9.f_3, Local_644[iParam0 /*17*/].f_13.f_3, fVar4);
+		Var3.f_0 = __LIB_15__::func_814(Local_644[iParam0 /*17*/].f_9, Local_644[iParam0 /*17*/].f_13, fVar4);
+		Var3.f_1 = __LIB_15__::func_814(Local_644[iParam0 /*17*/].f_9.f_1, Local_644[iParam0 /*17*/].f_13.f_1, fVar4);
+		Var3.f_2 = __LIB_15__::func_814(Local_644[iParam0 /*17*/].f_9.f_2, Local_644[iParam0 /*17*/].f_13.f_2, fVar4);
+		Var3.f_3 = __LIB_15__::func_814(Local_644[iParam0 /*17*/].f_9.f_3, Local_644[iParam0 /*17*/].f_13.f_3, fVar4);
 	}
 	else
 	{
 		Var3 = { Local_644[iParam0 /*17*/].f_9 };
 	}
-	if (MISC::IS_STRING_NULL_OR_EMPTY(__LIB_16__::func_760(iParam0)))
+	if (MISC::IS_STRING_NULL_OR_EMPTY(__LIB_16__::func_763(iParam0)))
 	{
-		__LIB_37__::func_93(Var1, Var0, Var3);
+		__LIB_36__::func_767(Var1, Var0, Var3);
 	}
 	else
 	{
-		__LIB_36__::func_716(__LIB_16__::func_756(iParam0), __LIB_16__::func_760(iParam0), Var1, Var0, 0f, Var3);
+		__LIB_36__::func_390(__LIB_16__::func_759(iParam0), __LIB_16__::func_763(iParam0), Var1, Var0, 0f, Var3);
 	}
 	if (!Local_644[iParam0 /*17*/].f_2 && Local_644[iParam0 /*17*/].f_4 > 0)
 	{
-		if (MISC::IS_STRING_NULL_OR_EMPTY(__LIB_16__::func_760(0)))
+		if (MISC::IS_STRING_NULL_OR_EMPTY(__LIB_16__::func_763(0)))
 		{
-			__LIB_37__::func_93(Var2, Var0, Var3);
+			__LIB_36__::func_767(Var2, Var0, Var3);
 		}
 		else
 		{
-			__LIB_36__::func_716(__LIB_16__::func_756(iParam0), __LIB_16__::func_760(iParam0), Var2, Var0, 0f, Var3);
+			__LIB_36__::func_390(__LIB_16__::func_759(iParam0), __LIB_16__::func_763(iParam0), Var2, Var0, 0f, Var3);
 		}
 	}
 	Local_644[iParam0 /*17*/].f_5 = (Local_644[iParam0 /*17*/].f_5 - SYSTEM::ROUND((MISC::GET_FRAME_TIME() * 1000f)));
@@ -1624,7 +1624,7 @@ void func_99(var uParam0)//Position - 0x32AB
 		case 4:
 			if (*uParam0 == 0)
 			{
-				if (__LIB_36__::func_698(255))
+				if (__LIB_36__::func_372(255))
 				{
 					if (uParam0->f_7 != 494)
 					{
@@ -1633,7 +1633,7 @@ void func_99(var uParam0)//Position - 0x32AB
 					*uParam0 = 1;
 				}
 			}
-			else if (uParam0->f_7 == 494 || __LIB_36__::func_698(uParam0->f_7))
+			else if (uParam0->f_7 == 494 || __LIB_36__::func_372(uParam0->f_7))
 			{
 				func_111(uParam0, 5);
 			}
@@ -1647,7 +1647,7 @@ void func_99(var uParam0)//Position - 0x32AB
 				}
 				*uParam0 = 1;
 			}
-			else if (uParam0->f_8 == 494 || __LIB_36__::func_698(uParam0->f_8))
+			else if (uParam0->f_8 == 494 || __LIB_36__::func_372(uParam0->f_8))
 			{
 				func_111(uParam0, 3);
 			}
@@ -1666,7 +1666,7 @@ void func_99(var uParam0)//Position - 0x32AB
 					func_111(uParam0, 4);
 				}
 			}
-			if (__LIB_39__::func_558())
+			if (__LIB_39__::func_233())
 			{
 				func_111(uParam0, 6);
 			}
@@ -1700,15 +1700,15 @@ void func_99(var uParam0)//Position - 0x32AB
 	if (uParam0->f_1 > 3)
 	{
 		iVar3 = SYSTEM::FLOOR((128f * (SYSTEM::TO_FLOAT((700 - uParam0->f_9)) / SYSTEM::TO_FLOAT(700))));
-		__LIB_15__::func_812(&Var2, 0, 0, 0, iVar3);
-		__LIB_37__::func_93(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var2);
+		__LIB_15__::func_813(&Var2, 0, 0, 0, iVar3);
+		__LIB_36__::func_767(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var2);
 	}
 	if (uParam0->f_3 != 0)
 	{
 		Var1 = { func_96(uParam0->f_3, 0) };
 		Var0.f_0 = (((425f + (Var1.f_0 / 2f)) + 120f) - IntToFloat(uParam0->f_9));
 		Var0.f_1 = ((95f + (Var1.f_1 / 2f)) + 120f);
-		__LIB_36__::func_716(sVar4, func_100(uParam0->f_3, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
+		__LIB_36__::func_390(sVar4, func_100(uParam0->f_3, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
 		Var0.f_0 = (Var0.f_0 + ((Var1.f_0 / 2f) + 32f));
 		if (uParam0->f_9 == 0 && uParam0->f_5 != 0)
 		{
@@ -1721,7 +1721,7 @@ void func_99(var uParam0)//Position - 0x32AB
 			{
 				Var0.f_0 = (Var0.f_0 + (628f / 2f));
 			}
-			__LIB_36__::func_716(sVar5, func_100(uParam0->f_5, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
+			__LIB_36__::func_390(sVar5, func_100(uParam0->f_5, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
 		}
 	}
 	if (uParam0->f_4 != 0)
@@ -1736,7 +1736,7 @@ void func_99(var uParam0)//Position - 0x32AB
 		{
 			Var0.f_1 = ((995f - (Var1.f_1 / 2f)) - 120f);
 		}
-		__LIB_36__::func_716(sVar4, func_100(uParam0->f_4, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
+		__LIB_36__::func_390(sVar4, func_100(uParam0->f_4, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
 		Var0.f_0 = (Var0.f_0 - ((Var1.f_0 / 2f) + 32f));
 		if (uParam0->f_9 == 0 && uParam0->f_6 != 0)
 		{
@@ -1749,7 +1749,7 @@ void func_99(var uParam0)//Position - 0x32AB
 			{
 				Var0.f_0 = (Var0.f_0 - (628f / 2f));
 			}
-			__LIB_36__::func_716(sVar5, func_100(uParam0->f_6, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
+			__LIB_36__::func_390(sVar5, func_100(uParam0->f_6, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
 		}
 	}
 }
@@ -2406,8 +2406,8 @@ int func_104(int iParam0)//Position - 0x449E
 	{
 		return 0;
 	}
-	__LIB_39__::func_112(iParam0);
-	__LIB_36__::func_699(iParam0, "Screen_Position", 0.5f);
+	__LIB_38__::func_787(iParam0);
+	__LIB_36__::func_373(iParam0, "Screen_Position", 0.5f);
 	return 1;
 }
 
@@ -2737,9 +2737,9 @@ void func_118()//Position - 0x7182
 			}
 			func_180(1056964608);
 			func_179(1056964608);
-			__LIB_39__::func_111();
-			__LIB_36__::func_697("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
-			__LIB_38__::func_897("DLC_CH_AM_SM_IN_MENUS_SCENE");
+			__LIB_38__::func_786();
+			__LIB_36__::func_371("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
+			__LIB_38__::func_572("DLC_CH_AM_SM_IN_MENUS_SCENE");
 			func_177(&(Local_632.f_3085));
 			func_69(3);
 			func_54("ARCADE_SM_THEME_START");
@@ -2747,8 +2747,8 @@ void func_118()//Position - 0x7182
 		case 3:
 			func_167();
 			func_151(&(Local_632.f_4572.f_7));
-			__LIB_44__::func_93(0, 1);
-			if (Local_630.f_33 == 0 && (__LIB_39__::func_558() || func_121()))
+			__LIB_44__::func_109(0, 1);
+			if (Local_630.f_33 == 0 && (__LIB_39__::func_233() || func_121()))
 			{
 				func_120(1056964608);
 				func_69(19);
@@ -2762,7 +2762,7 @@ void func_118()//Position - 0x7182
 			else
 			{
 				func_167();
-				__LIB_44__::func_93(0, 1);
+				__LIB_44__::func_109(0, 1);
 			}
 			break;
 	}
@@ -2814,8 +2814,8 @@ void func_151(var uParam0)//Position - 0x8BBE
 		}
 		if (SOCIALCLUB::SC_PROFANITY_GET_STRING_PASSED(Local_630.f_39))
 		{
-			Local_630[__LIB_39__::func_99() /*3*/] = Local_630.f_38;
-			__LIB_16__::func_765(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_39__::func_94(), __LIB_39__::func_99(), Local_630[__LIB_39__::func_99() /*3*/], Local_630[__LIB_39__::func_99() /*3*/].f_1, 1);
+			Local_630[__LIB_38__::func_774() /*3*/] = Local_630.f_38;
+			__LIB_16__::func_768(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_38__::func_769(), __LIB_38__::func_774(), Local_630[__LIB_38__::func_774() /*3*/], Local_630[__LIB_38__::func_774() /*3*/].f_1, 1);
 			Local_630.f_33 = 0;
 			Local_630.f_37 = 0;
 			Local_630.f_38 = 0;
@@ -2846,19 +2846,19 @@ void func_151(var uParam0)//Position - 0x8BBE
 		Local_630.f_37++;
 		if (Local_630.f_37 >= 3)
 		{
-			__LIB_39__::func_112(__LIB_39__::func_97());
+			__LIB_38__::func_787(__LIB_38__::func_772());
 			Local_630.f_37 = 3;
-			__LIB_16__::func_774(Local_630.f_38, &iVar0);
-			StringCopy(&cVar5, __LIB_15__::func_814(iVar0[0]), 4);
-			StringConCat(&cVar5, __LIB_15__::func_814(iVar0[1]), 4);
-			StringConCat(&cVar5, __LIB_15__::func_814(iVar0[2]), 4);
+			__LIB_16__::func_777(Local_630.f_38, &iVar0);
+			StringCopy(&cVar5, __LIB_15__::func_815(iVar0[0]), 4);
+			StringConCat(&cVar5, __LIB_15__::func_815(iVar0[1]), 4);
+			StringConCat(&cVar5, __LIB_15__::func_815(iVar0[2]), 4);
 			if (SOCIALCLUB::SC_PROFANITY_CHECK_STRING(&cVar5, &(Local_630.f_39)))
 			{
 			}
 		}
 		else
 		{
-			__LIB_39__::func_112(__LIB_39__::func_96());
+			__LIB_38__::func_787(__LIB_38__::func_771());
 		}
 		return;
 	}
@@ -2866,7 +2866,7 @@ void func_151(var uParam0)//Position - 0x8BBE
 	{
 		if (Local_630.f_37 > 0)
 		{
-			__LIB_39__::func_112(__LIB_39__::func_96());
+			__LIB_38__::func_787(__LIB_38__::func_771());
 			Local_630.f_37 = (Local_630.f_37 - 1);
 		}
 		return;
@@ -2874,19 +2874,19 @@ void func_151(var uParam0)//Position - 0x8BBE
 	iVar6 = 0;
 	if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar1))
 	{
-		__LIB_39__::func_112(__LIB_39__::func_95());
+		__LIB_38__::func_787(__LIB_38__::func_770());
 		iVar6 = 1;
 	}
 	else if (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, iVar2))
 	{
-		__LIB_39__::func_112(__LIB_39__::func_95());
+		__LIB_38__::func_787(__LIB_38__::func_770());
 		iVar6 = -1;
 	}
 	if (iVar6 == 0)
 	{
 		return;
 	}
-	__LIB_16__::func_774(Local_630.f_38, &iVar0);
+	__LIB_16__::func_777(Local_630.f_38, &iVar0);
 	iVar0[Local_630.f_37] = (iVar0[Local_630.f_37] + iVar6);
 	if (iVar0[Local_630.f_37] >= 36)
 	{
@@ -2896,7 +2896,7 @@ void func_151(var uParam0)//Position - 0x8BBE
 	{
 		iVar0[Local_630.f_37] = 35;
 	}
-	Local_630.f_38 = __LIB_16__::func_773(&iVar0);
+	Local_630.f_38 = __LIB_16__::func_776(&iVar0);
 }
 
 void func_164(var uParam0)//Position - 0x9236
@@ -2930,14 +2930,14 @@ void func_164(var uParam0)//Position - 0x9236
 		Var0[10 /*3*/] = 0;
 	}
 	Local_630.f_36 = -1;
-	__LIB_39__::func_113(&Var0, 11);
+	__LIB_38__::func_788(&Var0, 11);
 	iVar1 = 0;
 	while (iVar1 <= 9)
 	{
 		Local_630[iVar1 /*3*/] = Var0[iVar1 /*3*/];
 		Local_630[iVar1 /*3*/].f_2 = Var0[iVar1 /*3*/].f_2;
 		Local_630[iVar1 /*3*/].f_1 = Var0[iVar1 /*3*/].f_1;
-		__LIB_16__::func_765(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_39__::func_94(), iVar1, Local_630[iVar1 /*3*/], Local_630[iVar1 /*3*/].f_1, 0);
+		__LIB_16__::func_768(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_38__::func_769(), iVar1, Local_630[iVar1 /*3*/], Local_630[iVar1 /*3*/].f_1, 0);
 		iVar1++;
 	}
 }
@@ -2961,7 +2961,7 @@ void func_168(var uParam0)//Position - 0x944E
 	while (iVar0 < 3)
 	{
 		Var4 = { func_176(uParam0->f_4[iVar0 /*2*/]) };
-		__LIB_36__::func_716(sVar2, sVar1, Var4, Var3, 0f, Local_632.f_4603);
+		__LIB_36__::func_390(sVar2, sVar1, Var4, Var3, 0f, Local_632.f_4603);
 		iVar0++;
 	}
 	sVar1 = func_175(*uParam0);
@@ -2972,7 +2972,7 @@ void func_168(var uParam0)//Position - 0x944E
 		while (iVar0 < 5)
 		{
 			Var4 = { func_176(uParam0->f_11[iVar0 /*2*/]) };
-			__LIB_36__::func_716(sVar2, sVar1, Var4, Var3, 0f, Local_632.f_4603);
+			__LIB_36__::func_390(sVar2, sVar1, Var4, Var3, 0f, Local_632.f_4603);
 			iVar0++;
 		}
 	}
@@ -2998,7 +2998,7 @@ void func_169(var uParam0)//Position - 0x9514
 			Var2.f_0 = (Var2.f_0 * (uParam0[iVar0 /*9*/])->f_7);
 			Var2.f_1 = (Var2.f_1 * (uParam0[iVar0 /*9*/])->f_7);
 			Var3 = { func_176(func_172((uParam0[iVar0 /*9*/])->f_3)) };
-			__LIB_36__::func_716(func_170((uParam0[iVar0 /*9*/])->f_1), func_100((uParam0[iVar0 /*9*/])->f_1, SYSTEM::FLOOR((uParam0[iVar0 /*9*/])->f_6), 0, 0), Var3, Var2, 0f, Var4);
+			__LIB_36__::func_390(func_170((uParam0[iVar0 /*9*/])->f_1), func_100((uParam0[iVar0 /*9*/])->f_1, SYSTEM::FLOOR((uParam0[iVar0 /*9*/])->f_6), 0, 0), Var3, Var2, 0f, Var4);
 		}
 		iVar0++;
 	}
@@ -3240,16 +3240,16 @@ void func_181()//Position - 0x9ACB
 				return;
 			}
 			func_179(1056964608);
-			__LIB_39__::func_111();
-			__LIB_36__::func_697("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
-			__LIB_38__::func_897("DLC_CH_AM_SM_IN_MENUS_SCENE");
+			__LIB_38__::func_786();
+			__LIB_36__::func_371("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
+			__LIB_38__::func_572("DLC_CH_AM_SM_IN_MENUS_SCENE");
 			func_177(&(Local_632.f_3085));
 			func_69(3);
 			break;
 		case 3:
 			func_167();
-			__LIB_44__::func_93(0, 1);
-			if ((Local_632.f_2 > 10f || __LIB_39__::func_558()) || func_121())
+			__LIB_44__::func_109(0, 1);
+			if ((Local_632.f_2 > 10f || __LIB_39__::func_233()) || func_121())
 			{
 				func_120(1056964608);
 				func_69(19);
@@ -3263,7 +3263,7 @@ void func_181()//Position - 0x9ACB
 			else
 			{
 				func_167();
-				__LIB_44__::func_93(0, 1);
+				__LIB_44__::func_109(0, 1);
 			}
 			break;
 	}
@@ -3288,17 +3288,17 @@ void func_182()//Position - 0x9B90
 			}
 			func_55();
 			func_179(1056964608);
-			__LIB_39__::func_111();
+			__LIB_38__::func_786();
 			func_191(1, 0);
-			__LIB_38__::func_897("DLC_CH_AM_SM_IN_MENUS_SCENE");
-			__LIB_36__::func_697("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
+			__LIB_38__::func_572("DLC_CH_AM_SM_IN_MENUS_SCENE");
+			__LIB_36__::func_371("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
 			func_190(&(Local_632.f_2695), 3, -1);
 			func_54("ARCADE_SM_STOP");
 			func_104(268);
 			func_69(3);
 			break;
 		case 3:
-			__LIB_36__::func_716(func_29(16), "GAME_OVER_SCREEN", __LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1364f, 972f), 0f, Local_632.f_4603);
+			__LIB_36__::func_390(func_29(16), "GAME_OVER_SCREEN", __LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1364f, 972f), 0f, Local_632.f_4603);
 			func_183(1073741824);
 			if (!func_114())
 			{
@@ -3307,7 +3307,7 @@ void func_182()//Position - 0x9B90
 			}
 			break;
 		case 19:
-			__LIB_36__::func_716(func_29(16), "GAME_OVER_SCREEN", __LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1364f, 972f), 0f, Local_632.f_4603);
+			__LIB_36__::func_390(func_29(16), "GAME_OVER_SCREEN", __LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1364f, 972f), 0f, Local_632.f_4603);
 			func_183(1073741824);
 			if (func_119())
 			{
@@ -3339,7 +3339,7 @@ void func_184(float fParam0, float fParam1, int iParam2, int iParam3)//Position 
 	iVar0 = 0;
 	while (iVar0 < iParam3)
 	{
-		iVar1 = __LIB_36__::func_703(iParam2, iVar0);
+		iVar1 = __LIB_36__::func_377(iParam2, iVar0);
 		Var3 = { func_186(iVar1, Local_632.f_4501, Local_632.f_4501.f_1) };
 		fVar4 = (fVar4 + Var3.f_0);
 		iVar0++;
@@ -3360,11 +3360,11 @@ void func_184(float fParam0, float fParam1, int iParam2, int iParam3)//Position 
 	iVar0 = 0;
 	while (iVar0 < iParam3)
 	{
-		iVar1 = __LIB_36__::func_703(iParam2, iVar0);
+		iVar1 = __LIB_36__::func_377(iParam2, iVar0);
 		if (iVar1 != 1 && iVar1 != 0)
 		{
 			Var3 = { func_186(iVar1, Local_632.f_4501, Local_632.f_4501.f_1) };
-			__LIB_36__::func_716("MpGoGoSpaceResident", func_185(iVar1), Var2, Var3, 0f, Local_632.f_4603);
+			__LIB_36__::func_390("MpGoGoSpaceResident", func_185(iVar1), Var2, Var3, 0f, Local_632.f_4603);
 			Var2.f_0 = (Var2.f_0 + Var3.f_0);
 		}
 		else
@@ -3851,7 +3851,7 @@ void func_198(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 	{
 		MISC::SET_BIT(&iVar0, 7);
 	}
-	__LIB_33__::func_478(&(uParam0->f_12[iParam2 /*241*/]), iParam1, 8, iVar0);
+	__LIB_31__::func_961(&(uParam0->f_12[iParam2 /*241*/]), iParam1, 8, iVar0);
 }
 
 void func_203(var uParam0)//Position - 0xADF6
@@ -4006,7 +4006,7 @@ int func_205(int* iParam0, int iParam1)//Position - 0xB0AD
 			func_210(iParam0, 30);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
 		default:
@@ -4079,7 +4079,7 @@ int func_217(int* iParam0, int iParam1)//Position - 0xB21D
 			func_210(iParam0, 45);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
 		case 1:
@@ -4090,7 +4090,7 @@ int func_217(int* iParam0, int iParam1)//Position - 0xB21D
 			func_210(iParam0, 43);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
 		case 2:
@@ -4101,7 +4101,7 @@ int func_217(int* iParam0, int iParam1)//Position - 0xB21D
 			func_210(iParam0, 35);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
 		case 3:
@@ -4112,7 +4112,7 @@ int func_217(int* iParam0, int iParam1)//Position - 0xB21D
 			func_210(iParam0, 30);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
 		case 4:
@@ -4123,7 +4123,7 @@ int func_217(int* iParam0, int iParam1)//Position - 0xB21D
 			func_210(iParam0, 38);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
 		default:
@@ -4159,7 +4159,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_210(iParam0, 45);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4195,7 +4195,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_210(iParam0, 43);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4231,7 +4231,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_210(iParam0, 35);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4259,7 +4259,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_210(iParam0, 30);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4295,7 +4295,7 @@ int func_218(int* iParam0, int iParam1)//Position - 0xB3EA
 			func_210(iParam0, 38);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4350,7 +4350,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4362,7 +4362,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4374,7 +4374,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4386,7 +4386,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4398,7 +4398,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4410,7 +4410,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 14);
 			func_209(iParam0, 10);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4430,7 +4430,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 11);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4442,7 +4442,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 14);
 			func_209(iParam0, 11);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4454,7 +4454,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4466,7 +4466,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 8);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4478,7 +4478,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 9);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4490,7 +4490,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4502,7 +4502,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4514,7 +4514,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4534,7 +4534,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 0);
+			__LIB_18__::func_31(iParam0, 0);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4546,7 +4546,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 5);
 			func_209(iParam0, 1);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, 1);
+			__LIB_18__::func_31(iParam0, 1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4558,7 +4558,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 13);
 			func_209(iParam0, 11);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 1);
+			__LIB_18__::func_31(iParam0, 1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -4570,7 +4570,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 11);
 			func_209(iParam0, 23);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4582,7 +4582,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -4602,7 +4602,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -4614,7 +4614,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4634,7 +4634,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4646,7 +4646,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4658,7 +4658,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4670,7 +4670,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4682,7 +4682,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4694,7 +4694,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4706,7 +4706,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4718,7 +4718,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4730,7 +4730,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4750,7 +4750,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4762,7 +4762,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4782,7 +4782,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 14);
 			func_209(iParam0, 12);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -4794,7 +4794,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 9);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -4806,7 +4806,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 15);
 			func_209(iParam0, 10);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4818,7 +4818,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 3);
 			func_209(iParam0, 8);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4830,7 +4830,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 8);
 			func_209(iParam0, 23);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -4858,7 +4858,7 @@ int func_222(int* iParam0, int iParam1)//Position - 0xB9D0
 			func_210(iParam0, 30);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4879,7 +4879,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4899,7 +4899,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 14);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4911,7 +4911,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4923,7 +4923,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -4943,7 +4943,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -4955,7 +4955,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 3);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4967,7 +4967,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4979,7 +4979,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -4991,7 +4991,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 14);
 			func_209(iParam0, 12);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5003,7 +5003,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 7);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5015,7 +5015,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 7);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5027,7 +5027,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5039,7 +5039,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 5);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5051,7 +5051,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 5);
 			func_209(iParam0, 1);
 			func_208(iParam0, 3);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5063,7 +5063,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5075,7 +5075,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, 10);
+			__LIB_18__::func_31(iParam0, 10);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5087,7 +5087,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 7);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 13);
+			__LIB_18__::func_31(iParam0, 13);
 			func_219(iParam0, 1.625f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5099,7 +5099,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5119,7 +5119,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 5);
 			func_209(iParam0, 27);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5131,7 +5131,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5151,7 +5151,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 9);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5163,7 +5163,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 15);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 8);
 			return 1;
@@ -5183,7 +5183,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 2.5f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5195,7 +5195,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5207,7 +5207,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5219,7 +5219,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 2.125f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5231,7 +5231,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 5);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5251,7 +5251,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 8);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5263,7 +5263,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 8);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5275,7 +5275,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5287,7 +5287,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.5f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5299,7 +5299,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5319,7 +5319,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 11);
 			func_209(iParam0, 23);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5331,7 +5331,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5351,7 +5351,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5363,7 +5363,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5375,7 +5375,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 3);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 2.875f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5395,7 +5395,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5407,7 +5407,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5419,7 +5419,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 14);
 			func_209(iParam0, 9);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.875f, 0.625f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -5431,7 +5431,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 10);
 			func_209(iParam0, 23);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.5f, 0.625f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5443,7 +5443,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 9);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 0.625f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5463,7 +5463,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 10);
 			func_209(iParam0, 23);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 0.5f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5475,7 +5475,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 15);
 			func_209(iParam0, 12);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 0.5f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5487,7 +5487,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 0.5f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5507,7 +5507,7 @@ int func_223(int* iParam0, int iParam1)//Position - 0xCBDE
 			func_210(iParam0, 35);
 			func_209(iParam0, 0);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5528,7 +5528,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5540,7 +5540,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 14);
 			func_209(iParam0, 12);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -5552,7 +5552,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5572,7 +5572,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5584,7 +5584,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5596,7 +5596,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.625f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5616,7 +5616,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.625f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5628,7 +5628,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.625f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5648,7 +5648,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 8);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.625f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5660,7 +5660,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 8);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.625f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5672,7 +5672,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 15);
 			func_209(iParam0, 10);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.625f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5684,7 +5684,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 26);
 			func_209(iParam0, 25);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 14);
 			return 1;
@@ -5704,7 +5704,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -5716,7 +5716,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 17);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 6);
 			return 1;
@@ -5728,7 +5728,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 6);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5748,7 +5748,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 14);
 			func_209(iParam0, 10);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -5760,7 +5760,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 8);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, 0);
+			__LIB_18__::func_31(iParam0, 0);
 			func_219(iParam0, 0.625f, 2.5f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -5772,7 +5772,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 15);
 			func_209(iParam0, 8);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5784,7 +5784,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 4);
 			func_209(iParam0, 8);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -5804,7 +5804,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5816,7 +5816,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 4);
 			func_209(iParam0, 18);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 2f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5836,7 +5836,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -5848,7 +5848,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5860,7 +5860,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 14);
 			func_209(iParam0, 9);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 2f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -5872,7 +5872,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 15);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5884,7 +5884,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.875f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5896,7 +5896,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 10);
 			func_209(iParam0, 1);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 2f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5908,7 +5908,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 2f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5920,7 +5920,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 5);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5932,7 +5932,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 15);
 			func_209(iParam0, 8);
 			func_208(iParam0, 9);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -5952,7 +5952,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 5);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, 6);
+			__LIB_18__::func_31(iParam0, 6);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -5972,7 +5972,7 @@ int func_224(int* iParam0, int iParam1)//Position - 0xE1D4
 			func_210(iParam0, 43);
 			func_209(iParam0, 2);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -5993,7 +5993,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 14);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6005,7 +6005,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 14);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6025,7 +6025,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 14);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 8);
 			return 1;
@@ -6037,7 +6037,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -6049,7 +6049,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 3);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -6061,7 +6061,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 6);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6073,7 +6073,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.125f, 1.125f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -6093,7 +6093,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -6105,7 +6105,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 7);
 			func_209(iParam0, 1);
 			func_208(iParam0, 3);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.75f, 1.875f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -6117,7 +6117,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6129,7 +6129,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 13);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6141,7 +6141,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 5);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -6153,7 +6153,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 5);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -6173,7 +6173,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 4);
 			func_209(iParam0, 2);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.125f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6185,7 +6185,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.125f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -6197,7 +6197,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 2.25f, 1.875f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6209,7 +6209,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 10);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -6221,7 +6221,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -6233,7 +6233,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -6245,7 +6245,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 17);
 			func_209(iParam0, 25);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 2.875f);
 			__LIB_1__::func_48(iParam0, 3);
 			return 1;
@@ -6257,7 +6257,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 13);
 			func_209(iParam0, 10);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 0.125f);
 			__LIB_1__::func_48(iParam0, 6);
 			return 1;
@@ -6269,7 +6269,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 17);
 			func_209(iParam0, 1);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 0.125f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -6281,7 +6281,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 10);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6293,7 +6293,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 9);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6305,7 +6305,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 9);
 			func_209(iParam0, 1);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6317,7 +6317,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 17);
 			func_209(iParam0, 18);
 			func_208(iParam0, 8);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6329,7 +6329,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 5);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 6);
 			return 1;
@@ -6349,7 +6349,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6361,7 +6361,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 6);
 			func_209(iParam0, 23);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6381,7 +6381,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 14);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6393,7 +6393,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 15);
 			func_209(iParam0, 8);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6405,7 +6405,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 17);
 			func_209(iParam0, 2);
 			func_208(iParam0, 11);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6417,7 +6417,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 4);
 			func_209(iParam0, 1);
 			func_208(iParam0, 7);
-			__LIB_18__::func_21(iParam0, 7);
+			__LIB_18__::func_31(iParam0, 7);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 2);
 			return 1;
@@ -6437,7 +6437,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 3);
 			func_209(iParam0, 2);
 			func_208(iParam0, 0);
-			__LIB_18__::func_21(iParam0, 0);
+			__LIB_18__::func_31(iParam0, 0);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 4);
 			return 1;
@@ -6457,7 +6457,7 @@ int func_225(int* iParam0, int iParam1)//Position - 0xF169
 			func_210(iParam0, 45);
 			func_209(iParam0, 2);
 			func_208(iParam0, 22);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 1);
 			return 1;
@@ -6478,7 +6478,7 @@ int func_226(int* iParam0, int iParam1)//Position - 0x101C7
 			func_210(iParam0, 14);
 			func_209(iParam0, 1);
 			func_208(iParam0, 1);
-			__LIB_18__::func_21(iParam0, -1);
+			__LIB_18__::func_31(iParam0, -1);
 			func_219(iParam0, 1.25f, 1.25f);
 			__LIB_1__::func_48(iParam0, 5);
 			return 1;
@@ -6702,7 +6702,7 @@ void func_243(var uParam0)//Position - 0x10615
 	while (iVar0 < *uParam0)
 	{
 		func_245(uParam0[iVar0 /*56*/]);
-		__LIB_36__::func_704(uParam0[iVar0 /*56*/], iVar0);
+		__LIB_36__::func_378(uParam0[iVar0 /*56*/], iVar0);
 		iVar0++;
 	}
 }
@@ -6719,7 +6719,7 @@ void func_245(var uParam0)//Position - 0x10655
 	uParam0->f_55 = 0f;
 	func_249(&(uParam0->f_2));
 	func_249(&(uParam0->f_7));
-	__LIB_36__::func_706(uParam0, -1);
+	__LIB_36__::func_380(uParam0, -1);
 	uParam0->f_44 = -1;
 	uParam0->f_29 = 0;
 	uParam0->f_40 = 0;
@@ -6733,7 +6733,7 @@ void func_246(var uParam0)//Position - 0x106B5
 	iVar0 = 0;
 	while (iVar0 < 20)
 	{
-		if (Local_632.f_4503[iVar0 /*2*/] == __LIB_36__::func_705(uParam0))
+		if (Local_632.f_4503[iVar0 /*2*/] == __LIB_36__::func_379(uParam0))
 		{
 			Local_632.f_4503[iVar0 /*2*/] = 21;
 			Local_632.f_4503[iVar0 /*2*/].f_1 = -1;
@@ -6777,7 +6777,7 @@ void func_250()//Position - 0x10743
 			break;
 		case 3:
 			func_251();
-			if ((__LIB_39__::func_558() || func_102()) || Local_632.f_2 > 15f)
+			if ((__LIB_39__::func_233() || func_102()) || Local_632.f_2 > 15f)
 			{
 				func_120(1056964608);
 				func_69(19);
@@ -6800,7 +6800,7 @@ void func_251()//Position - 0x10800
 	func_167();
 	Var0 = { __LIB_5__::func_403(960f, 450f) };
 	Var1 = { func_96(39, 0) };
-	__LIB_36__::func_716(func_29(16), func_100(39, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
+	__LIB_36__::func_390(func_29(16), func_100(39, 0, 0, 0), Var0, Var1, 0f, Local_632.f_4603);
 	func_253(960f, 140f, 1065353216);
 	func_252(960f, 720f, 1065353216);
 }
@@ -6839,11 +6839,11 @@ void func_254(int iParam0)//Position - 0x10914
 		switch (iParam0)
 		{
 			case 1:
-				__LIB_16__::func_767(82, 1, -1);
+				__LIB_16__::func_770(82, 1, -1);
 				func_260(1);
 				break;
 			case 2:
-				__LIB_16__::func_767(83, 1, -1);
+				__LIB_16__::func_770(83, 1, -1);
 				func_260(3);
 				break;
 			case 32:
@@ -6907,10 +6907,10 @@ void func_260(int iParam0)//Position - 0x10A97
 			__LIB_5__::func_170(6);
 			break;
 		case 7:
-			__LIB_15__::func_824(1, 0);
+			__LIB_15__::func_825(1, 0);
 			break;
 		case 8:
-			__LIB_15__::func_824(1, 1);
+			__LIB_15__::func_825(1, 1);
 			break;
 		default:
 			return;
@@ -7008,7 +7008,7 @@ void func_266()//Position - 0x11026
 			}
 			else
 			{
-				__LIB_42__::func_308(259);
+				__LIB_42__::func_183(259);
 				Local_632.f_4587 = (Local_632.f_4587 - 10000);
 				func_268(10000, func_281());
 			}
@@ -7021,7 +7021,7 @@ void func_266()//Position - 0x11026
 			}
 			else
 			{
-				__LIB_42__::func_308(259);
+				__LIB_42__::func_183(259);
 				Local_632.f_4589 = (Local_632.f_4589 - 10000);
 				func_268(10000, func_281());
 			}
@@ -7034,7 +7034,7 @@ void func_266()//Position - 0x11026
 			}
 			else
 			{
-				__LIB_42__::func_308(259);
+				__LIB_42__::func_183(259);
 				Local_632.f_4591 = (Local_632.f_4591 - 10000);
 				func_268(10000, func_281());
 			}
@@ -7047,7 +7047,7 @@ void func_266()//Position - 0x11026
 			}
 			else
 			{
-				__LIB_42__::func_308(259);
+				__LIB_42__::func_183(259);
 				Local_632.f_4588 = (Local_632.f_4588 - 10000);
 				func_268(10000, func_281());
 			}
@@ -7060,14 +7060,14 @@ void func_266()//Position - 0x11026
 			}
 			else
 			{
-				__LIB_42__::func_308(259);
+				__LIB_42__::func_183(259);
 				Local_632.f_4590 = (Local_632.f_4590 - 10000);
 				func_268(10000, func_281());
 			}
 			break;
 		case 16:
-			__LIB_36__::func_696(259);
-			__LIB_39__::func_112(260);
+			__LIB_36__::func_370(259);
+			__LIB_38__::func_787(260);
 			Local_632.f_484[Local_632.f_2680 /*56*/].f_39 = (Local_632.f_484[Local_632.f_2680 /*56*/].f_39 * 2f);
 			func_282(&(Local_632.f_484[Local_632.f_2680 /*56*/]), __LIB_5__::func_403(1800f, fVar1), 0);
 			func_69(17);
@@ -7121,7 +7121,7 @@ void func_268(int iParam0, bool bParam1)//Position - 0x11513
 	}
 	if (Local_632.f_4572.f_7 > __LIB_0__::func_356(96, -1))
 	{
-		__LIB_16__::func_766(96, Local_632.f_4572.f_7, -1);
+		__LIB_16__::func_769(96, Local_632.f_4572.f_7, -1);
 	}
 	if (Local_632.f_4572.f_7 >= Global_262145.f_28571 /* Tunable: 790883802 */)
 	{
@@ -7696,7 +7696,7 @@ void func_283(var uParam0, struct<2> Param1)//Position - 0x1280C
 	struct<2> Var0;
 	int iVar1;
 	Var0 = { Param1 };
-	iVar1 = __LIB_36__::func_707(uParam0);
+	iVar1 = __LIB_36__::func_381(uParam0);
 	if (iVar1 != 21)
 	{
 		Var0 = { func_291(&(Local_632.f_484[iVar1 /*56*/].f_7), Param1) };
@@ -7707,8 +7707,8 @@ void func_283(var uParam0, struct<2> Param1)//Position - 0x1280C
 void func_284(var uParam0, struct<2> Param1)//Position - 0x1284D
 {
 	uParam0->f_40 = func_274(Param1);
-	uParam0->f_36 = { __LIB_25__::func_949(Param1, uParam0->f_2) };
-	uParam0->f_36 = { __LIB_26__::func_443(uParam0->f_36) };
+	uParam0->f_36 = { __LIB_25__::func_959(Param1, uParam0->f_2) };
+	uParam0->f_36 = { __LIB_26__::func_453(uParam0->f_36) };
 	__LIB_0__::func_988(&(uParam0->f_29), 4);
 	__LIB_0__::func_988(&(uParam0->f_29), 2048);
 	if (func_285(Param1, uParam0->f_36, uParam0->f_2))
@@ -7723,7 +7723,7 @@ void func_284(var uParam0, struct<2> Param1)//Position - 0x1284D
 
 bool func_285(struct<2> Param0, struct<2> Param1, struct<2> Param2)//Position - 0x128C5
 {
-	return func_286(__LIB_25__::func_949(Param2, Param0), Param1) <= 0f;
+	return func_286(__LIB_25__::func_959(Param2, Param0), Param1) <= 0f;
 }
 
 float func_286(struct<2> Param0, struct<2> Param1)//Position - 0x128E3
@@ -7735,7 +7735,7 @@ struct<2> func_291(var uParam0, struct<2> Param1)//Position - 0x12991
 {
 	struct<2> Var0;
 	struct<2> Var1;
-	Var0 = { __LIB_25__::func_949(Param1, *uParam0) };
+	Var0 = { __LIB_25__::func_959(Param1, *uParam0) };
 	Var1 = { func_292(Var0, -uParam0->f_4) };
 	return Var1;
 }
@@ -7802,8 +7802,8 @@ void func_295(var uParam0)//Position - 0x12B05
 	{
 		if (MISC::GET_GAME_TIMER() < uParam0->f_24)
 		{
-			__LIB_15__::func_812(&Var4, 128, 128, 128, 128);
-			__LIB_36__::func_716(func_170(64), func_100(64, 0, 0, 0), Var5, func_96(64, 0), 0f, Var4);
+			__LIB_15__::func_813(&Var4, 128, 128, 128, 128);
+			__LIB_36__::func_390(func_170(64), func_100(64, 0, 0, 0), Var5, func_96(64, 0), 0f, Var4);
 		}
 	}
 	func_173(uParam0->f_54, &Var4);
@@ -7833,7 +7833,7 @@ void func_295(var uParam0)//Position - 0x12B05
 		Var5.f_0 = (Var5.f_0 - 50f);
 		Var5.f_1 = (Var5.f_1 + 14f);
 		iVar2 = (MISC::GET_FRAME_COUNT() % 3);
-		__LIB_36__::func_716(func_170(30), func_100(30, iVar2, 0, 0), Var5, func_96(30, 0), 0f, Local_632.f_4603);
+		__LIB_36__::func_390(func_170(30), func_100(30, iVar2, 0, 0), Var5, func_96(30, 0), 0f, Local_632.f_4603);
 	}
 	if (*uParam0 == 2 && func_296())
 	{
@@ -7845,7 +7845,7 @@ void func_295(var uParam0)//Position - 0x12B05
 	}
 	Var3.f_0 = (Var3.f_0 * uParam0->f_7.f_2);
 	Var3.f_1 = (Var3.f_1 * uParam0->f_7.f_2.f_1);
-	__LIB_36__::func_716(func_170(Var0.f_22), func_100(Var0.f_22, SYSTEM::FLOOR(uParam0->f_55), bVar6, bVar7), Var5, Var3, (uParam0->f_7.f_4 + Var0.f_25), Var4);
+	__LIB_36__::func_390(func_170(Var0.f_22), func_100(Var0.f_22, SYSTEM::FLOOR(uParam0->f_55), bVar6, bVar7), Var5, Var3, (uParam0->f_7.f_4 + Var0.f_25), Var4);
 }
 
 bool func_296()//Position - 0x12CE6
@@ -7872,11 +7872,11 @@ void func_297(int iParam0, float fParam1, float fParam2, float fParam3, int iPar
 	if (iParam0 > 0)
 	{
 		iVar3 = iParam0;
-		iVar1 = __LIB_36__::func_709(iParam0);
+		iVar1 = __LIB_36__::func_383(iParam0);
 		iVar2 = 0;
 		while (iVar2 < iVar1)
 		{
-			__LIB_36__::func_708((iVar3 % 10), (26 - iVar2), &iVar0);
+			__LIB_36__::func_382((iVar3 % 10), (26 - iVar2), &iVar0);
 			iVar3 = (iVar3 / 10);
 			iVar2++;
 		}
@@ -7901,11 +7901,11 @@ void func_300(int iParam0, float fParam1, float fParam2, float fParam3, int iPar
 	if (iParam0 > 0)
 	{
 		iVar3 = iParam0;
-		iVar1 = __LIB_36__::func_709(iParam0);
+		iVar1 = __LIB_36__::func_383(iParam0);
 		iVar2 = 0;
 		while (iVar2 < iVar1)
 		{
-			__LIB_36__::func_708((iVar3 % 10), (26 - iVar2), &iVar0);
+			__LIB_36__::func_382((iVar3 % 10), (26 - iVar2), &iVar0);
 			iVar3 = (iVar3 / 10);
 			iVar2++;
 		}
@@ -7930,11 +7930,11 @@ void func_301(int iParam0, float fParam1, float fParam2, float fParam3, int iPar
 	if (iParam0 > 0)
 	{
 		iVar3 = iParam0;
-		iVar1 = __LIB_36__::func_709(iParam0);
+		iVar1 = __LIB_36__::func_383(iParam0);
 		iVar2 = 0;
 		while (iVar2 < iVar1)
 		{
-			__LIB_36__::func_708((iVar3 % 10), (26 - iVar2), &iVar0);
+			__LIB_36__::func_382((iVar3 % 10), (26 - iVar2), &iVar0);
 			iVar3 = (iVar3 / 10);
 			iVar2++;
 		}
@@ -7959,11 +7959,11 @@ void func_302(int iParam0, float fParam1, float fParam2, float fParam3, int iPar
 	if (iParam0 > 0)
 	{
 		iVar3 = iParam0;
-		iVar1 = __LIB_36__::func_709(iParam0);
+		iVar1 = __LIB_36__::func_383(iParam0);
 		iVar2 = 0;
 		while (iVar2 < iVar1)
 		{
-			__LIB_36__::func_708((iVar3 % 10), (26 - iVar2), &iVar0);
+			__LIB_36__::func_382((iVar3 % 10), (26 - iVar2), &iVar0);
 			iVar3 = (iVar3 / 10);
 			iVar2++;
 		}
@@ -7988,11 +7988,11 @@ void func_303(int iParam0, float fParam1, float fParam2, float fParam3, int iPar
 	if (iParam0 > 0)
 	{
 		iVar3 = iParam0;
-		iVar1 = __LIB_36__::func_709(iParam0);
+		iVar1 = __LIB_36__::func_383(iParam0);
 		iVar2 = 0;
 		while (iVar2 < iVar1)
 		{
-			__LIB_36__::func_708((iVar3 % 10), (26 - iVar2), &iVar0);
+			__LIB_36__::func_382((iVar3 % 10), (26 - iVar2), &iVar0);
 			iVar3 = (iVar3 / 10);
 			iVar2++;
 		}
@@ -8015,7 +8015,7 @@ void func_304(float fParam0, float fParam1, float fParam2, int iParam3)//Positio
 		iVar0[4] = 486850640;
 		iVar0[5] = 3937281;
 		iVar1 = 29;
-		__LIB_36__::func_708(Local_632.f_4572.f_3, 13, &iVar0);
+		__LIB_36__::func_382(Local_632.f_4572.f_3, 13, &iVar0);
 	}
 	else
 	{
@@ -8059,8 +8059,8 @@ void func_305()//Position - 0x13134
 	func_314(&(Local_632.f_2995));
 	if (Local_632.f_4559 > 0f)
 	{
-		__LIB_15__::func_812(&Var2, 0, 0, 0, SYSTEM::FLOOR((255f * Local_632.f_4559)));
-		__LIB_37__::func_93(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var2);
+		__LIB_15__::func_813(&Var2, 0, 0, 0, SYSTEM::FLOOR((255f * Local_632.f_4559)));
+		__LIB_36__::func_767(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var2);
 	}
 	func_306();
 }
@@ -8080,7 +8080,7 @@ void func_306()//Position - 0x1320C
 	}
 	fVar0 = func_313();
 	Var3.f_3 = 255;
-	__LIB_15__::func_812(&Var3, 255, 0, 0, 255);
+	__LIB_15__::func_813(&Var3, 255, 0, 0, 255);
 	func_312((425f + 5f), (95f + 5f), 230f, 25f, fVar0, Var3, 2);
 	if (func_311(8))
 	{
@@ -8093,7 +8093,7 @@ void func_306()//Position - 0x1320C
 				fVar0 = (SYSTEM::TO_FLOAT(Local_632.f_2656[iVar2 /*23*/].f_14) / SYSTEM::TO_FLOAT(Local_632.f_2656[iVar2 /*23*/].f_15));
 				Var1 = { __LIB_5__::func_403((480f - 38f), (fVar5 + (25f / 2f))) };
 				iVar4 = func_310(Local_632.f_2656[iVar2 /*23*/]);
-				__LIB_36__::func_716(func_29(8), func_100(iVar4, 0, 0, 0), Var1, func_96(iVar4, 0), 0f, Local_632.f_4603);
+				__LIB_36__::func_390(func_29(8), func_100(iVar4, 0, 0, 0), Var1, func_96(iVar4, 0), 0f, Local_632.f_4603);
 				func_312(480f, fVar5, 1040f, 25f, fVar0, Var3, 2);
 				fVar5 = (fVar5 - 35f);
 			}
@@ -8105,23 +8105,23 @@ void func_306()//Position - 0x1320C
 	iVar2 = 0;
 	while (iVar2 < Local_632.f_4583)
 	{
-		__LIB_36__::func_716("MPGoGoSpaceCommon", "LIVES_REMAINING", Var1, Var6, 0f, Local_632.f_4603);
+		__LIB_36__::func_390("MPGoGoSpaceCommon", "LIVES_REMAINING", Var1, Var6, 0f, Local_632.f_4603);
 		Var1.f_0 = (Var1.f_0 + (32f + 5f));
 		iVar2++;
 	}
 	Var6 = { __LIB_5__::func_403(64f, 64f) };
 	Var1.f_0 = ((1490f - (SYSTEM::TO_FLOAT(2) * (64f + 10f))) + (64f / 2f));
 	Var1.f_1 = (95f + (64f / 2f));
-	__LIB_15__::func_812(&Var3, 0, 0, 0, 64);
+	__LIB_15__::func_813(&Var3, 0, 0, 0, 64);
 	iVar2 = 0;
 	while (iVar2 < 2)
 	{
-		__LIB_37__::func_93(Var1, __LIB_5__::func_403((64f - 4f), (64f - 4f)), Var3);
+		__LIB_36__::func_767(Var1, __LIB_5__::func_403((64f - 4f), (64f - 4f)), Var3);
 		if (Local_632.f_2811[iVar2] != 0)
 		{
-			__LIB_36__::func_716("MPGoGoSpaceCommon", func_100(Local_632.f_2811[iVar2], 0, 0, 0), Var1, __LIB_5__::func_403((64f - 8f), (64f - 8f)), 0f, Local_632.f_4603);
+			__LIB_36__::func_390("MPGoGoSpaceCommon", func_100(Local_632.f_2811[iVar2], 0, 0, 0), Var1, __LIB_5__::func_403((64f - 8f), (64f - 8f)), 0f, Local_632.f_4603);
 		}
-		__LIB_36__::func_716("MPGoGoSpaceCommon", "WEAPON_BOX", Var1, Var6, 0f, Local_632.f_4603);
+		__LIB_36__::func_390("MPGoGoSpaceCommon", "WEAPON_BOX", Var1, Var6, 0f, Local_632.f_4603);
 		Var1.f_0 = (Var1.f_0 + (64f + 10f));
 		iVar2++;
 	}
@@ -8151,11 +8151,11 @@ void func_307(float fParam0, float fParam1)//Position - 0x13500
 	if (iVar4 > 0)
 	{
 		iVar2 = iVar4;
-		iVar0 = __LIB_36__::func_709(iVar4);
+		iVar0 = __LIB_36__::func_383(iVar4);
 		iVar1 = 0;
 		while (iVar1 < iVar0)
 		{
-			__LIB_36__::func_708((iVar2 % 10), (11 - iVar1), &iVar3);
+			__LIB_36__::func_382((iVar2 % 10), (11 - iVar1), &iVar3);
 			iVar2 = (iVar2 / 10);
 			iVar1++;
 		}
@@ -8179,11 +8179,11 @@ void func_308(float fParam0, float fParam1)//Position - 0x135B6
 	if (iVar4 > 0)
 	{
 		iVar2 = iVar4;
-		iVar0 = __LIB_36__::func_709(iVar4);
+		iVar0 = __LIB_36__::func_383(iVar4);
 		iVar1 = 0;
 		while (iVar1 < iVar0)
 		{
-			__LIB_36__::func_708((iVar2 % 10), (11 - iVar1), &iVar3);
+			__LIB_36__::func_382((iVar2 % 10), (11 - iVar1), &iVar3);
 			iVar2 = (iVar2 / 10);
 			iVar1++;
 		}
@@ -8227,18 +8227,18 @@ void func_312(float fParam0, float fParam1, float fParam2, float fParam3, float 
 	struct<2> Var0;
 	struct<2> Var1;
 	Var0 = { func_309(fParam0, fParam1, fParam2, fParam3) };
-	__LIB_37__::func_93(Var0, __LIB_5__::func_403(fParam2, fParam3), Local_632.f_4603);
+	__LIB_36__::func_767(Var0, __LIB_5__::func_403(fParam2, fParam3), Local_632.f_4603);
 	Var1 = { __LIB_5__::func_403((fParam2 - IntToFloat(iParam6 * 2)), (fParam3 - IntToFloat(iParam6 * 2))) };
 	if (fParam4 < 1f)
 	{
 		Var0 = { func_309((fParam0 + IntToFloat(iParam6)), (fParam1 + IntToFloat(iParam6)), Var1.f_0, Var1.f_1) };
-		__LIB_36__::func_716("MpGoGoSpaceCommon", "HEALTH_BOX_BOSS", Var0, Var1, 0f, Param5);
+		__LIB_36__::func_390("MpGoGoSpaceCommon", "HEALTH_BOX_BOSS", Var0, Var1, 0f, Param5);
 	}
 	if (fParam4 > 0f)
 	{
 		Var1.f_0 = (Var1.f_0 * fParam4);
 		Var0 = { func_309((fParam0 + IntToFloat(iParam6)), (fParam1 + IntToFloat(iParam6)), Var1.f_0, Var1.f_1) };
-		__LIB_36__::func_716("MpGoGoSpaceCommon", "HEALTH_BAR_BOSS", Var0, Var1, 0f, Param5);
+		__LIB_36__::func_390("MpGoGoSpaceCommon", "HEALTH_BAR_BOSS", Var0, Var1, 0f, Param5);
 	}
 }
 
@@ -8265,7 +8265,7 @@ void func_314(var uParam0)//Position - 0x137C4
 		if ((*uParam0)[iVar0 /*2*/] != 0)
 		{
 			Var1 = { func_176(func_172((uParam0[iVar0 /*2*/])->f_1)) };
-			__LIB_36__::func_716("MPGoGoSpaceCommon", func_100((*uParam0)[iVar0 /*2*/], 0, 0, 0), Var1, Var2, 0f, Local_632.f_4607);
+			__LIB_36__::func_390("MPGoGoSpaceCommon", func_100((*uParam0)[iVar0 /*2*/], 0, 0, 0), Var1, Var2, 0f, Local_632.f_4607);
 		}
 		iVar0++;
 	}
@@ -8319,7 +8319,7 @@ void func_316(var uParam0, var uParam1, int iParam2, int iParam3, struct<4> Para
 	fVar7 = uParam1->f_4;
 	Var4.f_0 = (IntToFloat(iParam2) * uParam1->f_4);
 	Var4.f_1 = (IntToFloat(iParam3) * uParam1->f_4);
-	Var3 = { __LIB_25__::func_949(Var4, *uParam0) };
+	Var3 = { __LIB_25__::func_959(Var4, *uParam0) };
 	Var3.f_0 = (SYSTEM::TO_FLOAT(SYSTEM::FLOOR(Var3.f_0)) + fVar6);
 	Var3.f_1 = (SYSTEM::TO_FLOAT(SYSTEM::FLOOR(Var3.f_1)) + fVar6);
 	StringCopy(&Var8, uParam1->f_7, 24);
@@ -8338,7 +8338,7 @@ void func_316(var uParam0, var uParam1, int iParam2, int iParam3, struct<4> Para
 		Var5.f_1 = (Var5.f_1 * -1f);
 	}
 	Var3 = { func_176(Var3) };
-	__LIB_36__::func_716(uParam1->f_6, &Var8, Var3, Var5, 0f, Param4);
+	__LIB_36__::func_390(uParam1->f_6, &Var8, Var3, Var5, 0f, Param4);
 }
 
 int func_317(var uParam0, int iParam1, int iParam2, var uParam3, var uParam4, var uParam5)//Position - 0x1397F
@@ -8364,7 +8364,7 @@ int func_317(var uParam0, int iParam1, int iParam2, var uParam3, var uParam4, va
 	}
 	iParam1 = (iParam1 % uParam0->f_2);
 	iParam2 = (iParam2 % uParam0->f_3);
-	iVar0 = __LIB_33__::func_480(&(uParam0->f_12[iParam2 /*241*/]), iParam1, 8);
+	iVar0 = __LIB_31__::func_963(&(uParam0->f_12[iParam2 /*241*/]), iParam1, 8);
 	*uParam3 = MISC::GET_BITS_IN_RANGE(iVar0, 0, 5);
 	*uParam4 = BitTest(iVar0, 6);
 	*uParam5 = BitTest(iVar0, 7);
@@ -8406,9 +8406,9 @@ void func_319(var uParam0)//Position - 0x13A5E
 				}
 				else
 				{
-					__LIB_36__::func_716("MPGoGoSpaceCommon", sVar7, Var6, Var5, fVar4, Local_632.f_4603);
+					__LIB_36__::func_390("MPGoGoSpaceCommon", sVar7, Var6, Var5, fVar4, Local_632.f_4603);
 					Jump @275; //curOff = 237
-					__LIB_36__::func_716("MPGoGoSpaceCommon", func_100(iVar3, 0, 0, 0), Var6, Var5, fVar4, Local_632.f_4603);
+					__LIB_36__::func_390("MPGoGoSpaceCommon", func_100(iVar3, 0, 0, 0), Var6, Var5, fVar4, Local_632.f_4603);
 				}
 				iVar0++;
 			}
@@ -8825,12 +8825,12 @@ void func_324(var uParam0)//Position - 0x14530
 		return;
 	}
 	uParam0->f_1 = func_274(Var0);
-	fVar2 = __LIB_25__::func_953(Local_632.f_484[Local_632.f_2680 /*56*/].f_12.f_7, Var0);
+	fVar2 = __LIB_25__::func_963(Local_632.f_484[Local_632.f_2680 /*56*/].f_12.f_7, Var0);
 	if (fVar2 <= (500f * 500f))
 	{
 		if (func_334(16))
 		{
-			__LIB_39__::func_111();
+			__LIB_38__::func_786();
 			func_331(13, 5000);
 		}
 		__LIB_0__::func_989(&(Local_632.f_4550), 16);
@@ -8973,8 +8973,8 @@ int func_329(int iParam0, float fParam1, var uParam2)//Position - 0x1498C
 	}
 	fVar0 = ((fParam1 - 298f) / 1334f);
 	fVar0 = __LIB_0__::func_331(fVar0, 0f, 1f);
-	__LIB_39__::func_112(iParam0);
-	__LIB_36__::func_699(iParam0, "Screen_Position", fVar0);
+	__LIB_38__::func_787(iParam0);
+	__LIB_36__::func_373(iParam0, "Screen_Position", fVar0);
 	return 1;
 }
 
@@ -9003,9 +9003,9 @@ void func_331(int iParam0, int iParam1)//Position - 0x14A08
 		{
 			__LIB_1__::func_458(&(Local_629.f_1), iParam0);
 			Local_629.f_0 = 1;
-			Local_629.f_5 = MISC::GET_HASH_KEY(__LIB_15__::func_818(iParam0));
+			Local_629.f_5 = MISC::GET_HASH_KEY(__LIB_15__::func_819(iParam0));
 			Local_629.f_6 = (NETWORK::GET_NETWORK_TIME() + iParam1);
-			__LIB_5__::func_401(__LIB_15__::func_818(iParam0));
+			__LIB_5__::func_401(__LIB_15__::func_819(iParam0));
 		}
 	}
 }
@@ -9153,7 +9153,7 @@ void func_341(var uParam0)//Position - 0x14CE3
 void func_342(var uParam0)//Position - 0x14DC6
 {
 	int iVar0;
-	iVar0 = __LIB_36__::func_705(uParam0);
+	iVar0 = __LIB_36__::func_379(uParam0);
 	if (__LIB_0__::func_703(uParam0->f_28, 32))
 	{
 		__LIB_0__::func_988(&(Local_632.f_4551), 128);
@@ -9186,7 +9186,7 @@ void func_343(var uParam0)//Position - 0x14E44
 	{
 		return;
 	}
-	bVar1 = __LIB_36__::func_705(uParam0);
+	bVar1 = __LIB_36__::func_379(uParam0);
 	if (BitTest(Local_632.f_2708[iVar0 /*17*/].f_3, bVar1))
 	{
 		MISC::CLEAR_BIT(&(Local_632.f_2708[iVar0 /*17*/].f_3), bVar1);
@@ -9305,7 +9305,7 @@ void func_352(var uParam0, int iParam1, struct<2> Param2, int iParam3, bool bPar
 	uParam0->f_41 = func_274(Param2);
 	uParam0->f_39 = Var0.f_7;
 	uParam0->f_44 = -1;
-	__LIB_36__::func_706(uParam0, iParam5);
+	__LIB_36__::func_380(uParam0, iParam5);
 	if (iParam5 != 21)
 	{
 		func_362(&(Local_632.f_484[iParam5 /*56*/].f_7), &(uParam0->f_2), &(uParam0->f_7));
@@ -9400,7 +9400,7 @@ float func_358(struct<2> Param0)//Position - 0x15409
 
 void func_359(var uParam0, var uParam1, int iParam2)//Position - 0x1542C
 {
-	__LIB_36__::func_706(uParam0, __LIB_36__::func_705(uParam1));
+	__LIB_36__::func_380(uParam0, __LIB_36__::func_379(uParam1));
 	func_361(&(uParam1->f_7), &(uParam0->f_7), &(uParam0->f_2));
 	if (iParam2 == 1)
 	{
@@ -9415,7 +9415,7 @@ void func_359(var uParam0, var uParam1, int iParam2)//Position - 0x1542C
 void func_360(var uParam0, int iParam1)//Position - 0x1547D
 {
 	bool bVar0;
-	bVar0 = __LIB_36__::func_705(uParam0);
+	bVar0 = __LIB_36__::func_379(uParam0);
 	if (!__LIB_0__::func_703(Local_632.f_2708[iParam1 /*17*/].f_1, 1))
 	{
 		__LIB_0__::func_989(&(Local_632.f_2708[iParam1 /*17*/].f_1), 1);
@@ -9445,7 +9445,7 @@ void func_360(var uParam0, int iParam1)//Position - 0x1547D
 void func_361(var uParam0, var uParam1, var uParam2)//Position - 0x15581
 {
 	struct<2> Var0;
-	Var0 = { __LIB_25__::func_949(*uParam1, *uParam0) };
+	Var0 = { __LIB_25__::func_959(*uParam1, *uParam0) };
 	Var0.f_0 = (Var0.f_0 * uParam1->f_2);
 	Var0.f_1 = (Var0.f_1 * uParam1->f_2.f_1);
 	*uParam2 = { func_292(Var0, -uParam0->f_4) };
@@ -9480,7 +9480,7 @@ void func_364(var uParam0, int iParam1)//Position - 0x1566A
 	iVar0 = 0;
 	while (iVar0 < 20)
 	{
-		if (Local_632.f_4503[iVar0 /*2*/] == __LIB_36__::func_705(uParam0))
+		if (Local_632.f_4503[iVar0 /*2*/] == __LIB_36__::func_379(uParam0))
 		{
 			Local_632.f_4503[iVar0 /*2*/].f_1 = iParam1;
 			return;
@@ -9493,7 +9493,7 @@ void func_364(var uParam0, int iParam1)//Position - 0x1566A
 		if (Local_632.f_4503[iVar0 /*2*/] == 21)
 		{
 			Local_632.f_4503[iVar0 /*2*/].f_1 = iParam1;
-			Local_632.f_4503[iVar0 /*2*/] = __LIB_36__::func_705(uParam0);
+			Local_632.f_4503[iVar0 /*2*/] = __LIB_36__::func_379(uParam0);
 			return;
 		}
 		iVar0++;
@@ -9658,7 +9658,7 @@ int func_371(var uParam0, int iParam1, int iParam2)//Position - 0x15A26
 	{
 		return 0;
 	}
-	iVar0 = __LIB_36__::func_705(uParam0);
+	iVar0 = __LIB_36__::func_379(uParam0);
 	iVar1 = func_346(uParam0);
 	if (iVar1 != -1)
 	{
@@ -9732,9 +9732,9 @@ void func_372(var uParam0)//Position - 0x15B9A
 	{
 		return;
 	}
-	iVar2 = __LIB_36__::func_705(uParam0);
+	iVar2 = __LIB_36__::func_379(uParam0);
 	iVar3 = func_346(uParam0);
-	iVar4 = __LIB_36__::func_707(uParam0);
+	iVar4 = __LIB_36__::func_381(uParam0);
 	bVar5 = __LIB_0__::func_703(uParam0->f_28, 2);
 	uParam0->f_25 = 0f;
 	if (!bVar5)
@@ -9804,9 +9804,9 @@ void func_372(var uParam0)//Position - 0x15B9A
 	iVar0 = 0;
 	while (iVar0 < 20)
 	{
-		if (__LIB_36__::func_707(&(Local_632.f_484[iVar0 /*56*/])) == iVar2)
+		if (__LIB_36__::func_381(&(Local_632.f_484[iVar0 /*56*/])) == iVar2)
 		{
-			__LIB_36__::func_706(&(Local_632.f_484[iVar0 /*56*/]), iVar4);
+			__LIB_36__::func_380(&(Local_632.f_484[iVar0 /*56*/]), iVar4);
 			if (iVar4 == 21)
 			{
 				Local_632.f_484[iVar0 /*56*/].f_2 = { Local_632.f_484[iVar0 /*56*/].f_7 };
@@ -9940,7 +9940,7 @@ void func_378(int iParam0, struct<2> Param1, float fParam2, int iParam3, bool bP
 	}
 	if (bParam4)
 	{
-		Var6 = { __LIB_25__::func_949(func_382(), Param1) };
+		Var6 = { __LIB_25__::func_959(func_382(), Param1) };
 		fVar3 = MISC::GET_HEADING_FROM_VECTOR_2D(Var6.f_0, Var6.f_1);
 	}
 	fVar5 = (fParam2 / SYSTEM::TO_FLOAT((iParam3 - 1)));
@@ -10030,7 +10030,7 @@ int func_380(var uParam0, struct<2> Param1, bool bParam2)//Position - 0x16220
 		{
 			if (!__LIB_0__::func_703((uParam0[iVar0 /*56*/])->f_28, 64))
 			{
-				fVar2 = __LIB_25__::func_953((uParam0[iVar0 /*56*/])->f_12.f_7, Param1);
+				fVar2 = __LIB_25__::func_963((uParam0[iVar0 /*56*/])->f_12.f_7, Param1);
 				if (fVar2 < fVar3)
 				{
 					fVar3 = fVar2;
@@ -10130,7 +10130,7 @@ void func_384(int iParam0, struct<2> Param1, int iParam2, float fParam3, bool bP
 	}
 	if (bParam4)
 	{
-		Var5 = { __LIB_25__::func_949(func_382(), Param1) };
+		Var5 = { __LIB_25__::func_959(func_382(), Param1) };
 		fVar3 = MISC::GET_HEADING_FROM_VECTOR_2D(Var5.f_0, Var5.f_1);
 	}
 	iVar0 = 0;
@@ -10228,7 +10228,7 @@ void func_389(var uParam0)//Position - 0x16581
 			break;
 		case 3:
 			iVar0 = SYSTEM::FLOOR(((uParam0->f_2 / 10f) * 128f));
-			__LIB_42__::func_308(278);
+			__LIB_42__::func_183(278);
 			if (func_390())
 			{
 				func_216(&(Local_632.f_484[Local_632.f_2681 /*56*/].f_54), iVar0);
@@ -10241,7 +10241,7 @@ void func_389(var uParam0)//Position - 0x16581
 			if (uParam0->f_2 < 0f)
 			{
 				Var1 = { Local_632.f_484[Local_632.f_2681 /*56*/].f_7 };
-				__LIB_36__::func_696(278);
+				__LIB_36__::func_370(278);
 				func_342(&(Local_632.f_484[Local_632.f_2681 /*56*/]));
 				func_329(279, Var1);
 				uParam0->f_1 = 4;
@@ -10252,7 +10252,7 @@ void func_389(var uParam0)//Position - 0x16581
 			{
 				func_342(&(Local_632.f_484[Local_632.f_2681 /*56*/]));
 			}
-			__LIB_36__::func_696(278);
+			__LIB_36__::func_370(278);
 			uParam0->f_1 = 0;
 			break;
 	}
@@ -10621,7 +10621,7 @@ int func_400(struct<2> Param0, struct<2> Param1, var uParam2)//Position - 0x16E6
 			return 1;
 			break;
 		case 4:
-			Param0 = { __LIB_25__::func_949(Param0, Param1) };
+			Param0 = { __LIB_25__::func_959(Param0, Param1) };
 			return func_401(Param0, &(uParam2->f_1), uParam2->f_14);
 			break;
 	}
@@ -10899,9 +10899,9 @@ float func_414(struct<2> Param0, struct<2> Param1, struct<2> Param2, struct<2> P
 	float fVar13;
 	float fVar14;
 	struct<2> Var15;
-	Var0 = { __LIB_25__::func_949(Param1, Param0) };
-	Var1 = { __LIB_25__::func_949(Param3, Param2) };
-	Var2 = { __LIB_25__::func_949(Param0, Param2) };
+	Var0 = { __LIB_25__::func_959(Param1, Param0) };
+	Var1 = { __LIB_25__::func_959(Param3, Param2) };
+	Var2 = { __LIB_25__::func_959(Param0, Param2) };
 	fVar3 = func_286(Var0, Var0);
 	fVar4 = func_286(Var0, Var1);
 	fVar5 = func_286(Var1, Var1);
@@ -10998,7 +10998,7 @@ bool func_415(var uParam0, var uParam1)//Position - 0x175FE
 	struct<3> Var1;
 	fVar0 = (uParam1->f_6 + uParam0->f_6);
 	Var1 = { MISC::GET_CLOSEST_POINT_ON_LINE(uParam1->f_1[0 /*2*/], uParam1->f_1[0 /*2*/].f_1, 0f, uParam0->f_1[0 /*2*/], uParam0->f_1[0 /*2*/].f_1, 0f, uParam0->f_1[1 /*2*/], uParam0->f_1[1 /*2*/].f_1, 0f, true) };
-	return __LIB_25__::func_953(__LIB_5__::func_403(Var1.f_0, Var1.f_1), uParam1->f_1[0 /*2*/]) <= (fVar0 * fVar0);
+	return __LIB_25__::func_963(__LIB_5__::func_403(Var1.f_0, Var1.f_1), uParam1->f_1[0 /*2*/]) <= (fVar0 * fVar0);
 }
 
 bool func_416(var uParam0, var uParam1)//Position - 0x1766A
@@ -11134,7 +11134,7 @@ void func_422(var uParam0)//Position - 0x178FA
 		{
 			if (MISC::GET_GAME_TIMER() > Local_632.f_484[Local_632.f_2680 /*56*/].f_24)
 			{
-				if (__LIB_25__::func_953(uParam0->f_8.f_7, Local_632.f_484[Local_632.f_2680 /*56*/].f_7) < (Local_632.f_4564 * Local_632.f_4564))
+				if (__LIB_25__::func_963(uParam0->f_8.f_7, Local_632.f_484[Local_632.f_2680 /*56*/].f_7) < (Local_632.f_4564 * Local_632.f_4564))
 				{
 					Local_632.f_4567 = 1;
 				}
@@ -11172,7 +11172,7 @@ void func_422(var uParam0)//Position - 0x178FA
 	}
 	if (__LIB_0__::func_703(uParam0->f_1, 2048))
 	{
-		if (__LIB_25__::func_953(uParam0->f_8.f_1[0 /*2*/], func_382()) < (400f * 400f) || uParam0->f_5 > 700f)
+		if (__LIB_25__::func_963(uParam0->f_8.f_1[0 /*2*/], func_382()) < (400f * 400f) || uParam0->f_5 > 700f)
 		{
 			func_407(uParam0);
 		}
@@ -11315,9 +11315,9 @@ void func_430(var uParam0)//Position - 0x17E4B
 	{
 		if (Local_632.f_484[uParam0->f_6 /*56*/].f_1 == 1)
 		{
-			Var1 = { __LIB_25__::func_949(Local_632.f_484[uParam0->f_6 /*56*/].f_12.f_7, uParam0->f_8.f_1[0 /*2*/]) };
-			Var2 = { __LIB_26__::func_443(Var1) };
-			uParam0->f_2 = { __LIB_37__::func_92(uParam0->f_2, Var2, 0.125f) };
+			Var1 = { __LIB_25__::func_959(Local_632.f_484[uParam0->f_6 /*56*/].f_12.f_7, uParam0->f_8.f_1[0 /*2*/]) };
+			Var2 = { __LIB_26__::func_453(Var1) };
+			uParam0->f_2 = { __LIB_36__::func_766(uParam0->f_2, Var2, 0.125f) };
 		}
 		else
 		{
@@ -11354,9 +11354,9 @@ void func_432(var uParam0)//Position - 0x18026
 	{
 		if (Local_632.f_484[uParam0->f_6 /*56*/].f_1 == 1)
 		{
-			Var1 = { __LIB_25__::func_949(Local_632.f_484[uParam0->f_6 /*56*/].f_12.f_7, uParam0->f_8.f_1[0 /*2*/]) };
-			Var2 = { __LIB_26__::func_443(Var1) };
-			uParam0->f_2 = { __LIB_37__::func_92(uParam0->f_2, Var2, 0.25f) };
+			Var1 = { __LIB_25__::func_959(Local_632.f_484[uParam0->f_6 /*56*/].f_12.f_7, uParam0->f_8.f_1[0 /*2*/]) };
+			Var2 = { __LIB_26__::func_453(Var1) };
+			uParam0->f_2 = { __LIB_36__::func_766(uParam0->f_2, Var2, 0.25f) };
 		}
 		else
 		{
@@ -11407,7 +11407,7 @@ void func_435(var uParam0)//Position - 0x182A7
 	fVar0 = (0f + (func_425(uParam0) * SYSTEM::TIMESTEP()));
 	if (uParam0->f_5 > 300f)
 	{
-		uParam0->f_2 = { __LIB_37__::func_92(uParam0->f_2, __LIB_5__::func_403(-1f, 0f), 0.25f) };
+		uParam0->f_2 = { __LIB_36__::func_766(uParam0->f_2, __LIB_5__::func_403(-1f, 0f), 0.25f) };
 	}
 	uParam0->f_5 = (uParam0->f_5 + fVar0);
 	uParam0->f_8.f_1[0 /*2*/] = (uParam0->f_8.f_1[0 /*2*/] + (uParam0->f_2 * fVar0));
@@ -11475,7 +11475,7 @@ int func_437(var uParam0)//Position - 0x183BD
 				func_505(&(Local_632.f_2708[uParam0->f_18 /*17*/]));
 				uParam0->f_18 = -1;
 			}
-			__LIB_36__::func_696(332);
+			__LIB_36__::func_370(332);
 			func_504(&(Local_632.f_484), 0);
 			func_54("ARCADE_SM_STOP");
 			func_503(&(Local_632.f_3000));
@@ -11526,7 +11526,7 @@ int func_437(var uParam0)//Position - 0x183BD
 		case 2:
 			if (func_490(uParam0))
 			{
-				__LIB_40__::func_358(uParam0);
+				__LIB_40__::func_34(uParam0);
 				func_506(uParam0, 3);
 			}
 			break;
@@ -11875,7 +11875,7 @@ void func_447(var uParam0)//Position - 0x18D88
 	int iVar0;
 	if (!func_449(uParam0))
 	{
-		__LIB_40__::func_358(uParam0);
+		__LIB_40__::func_34(uParam0);
 	}
 	func_448(uParam0, &iVar0);
 	func_451(uParam0, iVar0);
@@ -11940,7 +11940,7 @@ void func_451(var uParam0, int iParam1)//Position - 0x18E77
 	func_506(uParam0, iParam1);
 	if (!func_449(uParam0))
 	{
-		__LIB_40__::func_358(uParam0);
+		__LIB_40__::func_34(uParam0);
 		MISC::SET_BIT(&(uParam0->f_22), (iParam1 - 5));
 	}
 }
@@ -12316,7 +12316,7 @@ void func_459(var uParam0)//Position - 0x19619
 		case 10:
 			if (uParam0->f_2 == 0)
 			{
-				__LIB_36__::func_696(332);
+				__LIB_36__::func_370(332);
 				func_190(&(Local_632.f_2695), 12, -1);
 				uParam0->f_2 = 1;
 			}
@@ -12324,7 +12324,7 @@ void func_459(var uParam0)//Position - 0x19619
 		case 11:
 			if (uParam0->f_2 == 0)
 			{
-				__LIB_36__::func_696(332);
+				__LIB_36__::func_370(332);
 				func_190(&(Local_632.f_2695), 11, -1);
 				uParam0->f_2 = 1;
 			}
@@ -12352,7 +12352,7 @@ void func_460(var uParam0)//Position - 0x197EA
 	switch (uParam0->f_20)
 	{
 		case 0:
-			__LIB_42__::func_308(332);
+			__LIB_42__::func_183(332);
 			if (fVar2 > 0.5f)
 			{
 				func_458(&(Local_632.f_484[iVar1 /*56*/]), 6);
@@ -12384,7 +12384,7 @@ void func_460(var uParam0)//Position - 0x197EA
 		case 2:
 			if (uParam0->f_4 > 1f)
 			{
-				__LIB_36__::func_696(332);
+				__LIB_36__::func_370(332);
 				__LIB_0__::func_989(&(Local_632.f_484[iVar1 /*56*/].f_28), 2048);
 				if (fVar2 < 0.5f)
 				{
@@ -12443,7 +12443,7 @@ int func_461(var uParam0)//Position - 0x19994
 	if (__LIB_0__::func_703(uParam0->f_28, 65536) && !bVar6)
 	{
 		Var3 = { func_382() };
-		Var4 = { __LIB_25__::func_949(Var3, Var9) };
+		Var4 = { __LIB_25__::func_959(Var3, Var9) };
 		fVar2 = MISC::GET_HEADING_FROM_VECTOR_2D(Var4.f_0, Var4.f_1);
 	}
 	Var10 = { func_464(uParam0->f_48) };
@@ -13031,7 +13031,7 @@ void func_468(var uParam0)//Position - 0x1A8CE
 
 void func_469(var uParam0)//Position - 0x1A8F6
 {
-	__LIB_36__::func_706(uParam0, 21);
+	__LIB_36__::func_380(uParam0, 21);
 	uParam0->f_2 = { uParam0->f_7 };
 }
 
@@ -13067,7 +13067,7 @@ void func_471(var uParam0)//Position - 0x1A931
 	switch (uParam0->f_20)
 	{
 		case 0:
-			__LIB_36__::func_696(332);
+			__LIB_36__::func_370(332);
 			__LIB_0__::func_988(&(Local_632.f_484[iVar1 /*56*/].f_28), 2048);
 			__LIB_0__::func_988(&(Local_632.f_484[iVar2 /*56*/].f_28), 2048);
 			__LIB_0__::func_989(&(Local_632.f_484[iVar0 /*56*/].f_28), 2048);
@@ -13388,7 +13388,7 @@ void func_477(var uParam0)//Position - 0x1AFCC
 			{
 				func_276(&(Local_632.f_484[iVar1 /*56*/]), -1, 1);
 				func_479(&(Local_632.f_484[iVar1 /*56*/]), 1890f, 820f, 0f);
-				__LIB_36__::func_706(&(Local_632.f_484[iVar1 /*56*/]), iVar0);
+				__LIB_36__::func_380(&(Local_632.f_484[iVar1 /*56*/]), iVar0);
 				func_468(&(Local_632.f_484[iVar1 /*56*/]));
 				uParam0->f_20++;
 			}
@@ -13923,7 +13923,7 @@ void func_492(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 0
 	iVar0 = func_499(uParam0, iParam2);
 	if (iVar0 == 21 && !__LIB_0__::func_703(uParam1->f_28, 2))
 	{
-		func_233(uParam0, iParam2, __LIB_36__::func_705(uParam1));
+		func_233(uParam0, iParam2, __LIB_36__::func_379(uParam1));
 		if (bParam3)
 		{
 			uParam0->f_15 = (uParam0->f_15 + uParam1->f_23);
@@ -14384,7 +14384,7 @@ int func_509(var uParam0)//Position - 0x1CEC6
 	int iVar0;
 	bool bVar1;
 	struct<26> Var2;
-	iVar0 = __LIB_36__::func_707(uParam0);
+	iVar0 = __LIB_36__::func_381(uParam0);
 	bVar1 = __LIB_0__::func_703(uParam0->f_28, 2);
 	Var2 = { func_277(*uParam0) };
 	Local_632.f_2686++;
@@ -14539,7 +14539,7 @@ void func_510(var uParam0)//Position - 0x1D07B
 int func_511(var uParam0)//Position - 0x1D1FB
 {
 	int iVar0;
-	iVar0 = __LIB_36__::func_705(uParam0);
+	iVar0 = __LIB_36__::func_379(uParam0);
 	if (!func_423(&(uParam0->f_12)))
 	{
 		__LIB_0__::func_988(&(uParam0->f_28), 4);
@@ -14832,7 +14832,7 @@ int func_520(var uParam0, float fParam1, bool bParam2)//Position - 0x1D81B
 	uParam0->f_2.f_1 = (uParam0->f_2.f_1 + (uParam0->f_36.f_1 * fParam1));
 	if (__LIB_0__::func_703(uParam0->f_29, 8))
 	{
-		Var1 = { __LIB_25__::func_949(Var2, uParam0->f_2) };
+		Var1 = { __LIB_25__::func_959(Var2, uParam0->f_2) };
 		fVar3 = (MISC::GET_HEADING_FROM_VECTOR_2D(Var1.f_0, Var1.f_1) - uParam0->f_2.f_4);
 		if (fVar3 > 180f)
 		{
@@ -14845,7 +14845,7 @@ int func_520(var uParam0, float fParam1, bool bParam2)//Position - 0x1D81B
 		uParam0->f_2.f_4 = (uParam0->f_2.f_4 + (0f + (fVar3 * SYSTEM::TIMESTEP())));
 	}
 	bVar0 = func_285(Var2, uParam0->f_36, uParam0->f_2);
-	if (bVar0 != __LIB_0__::func_703(uParam0->f_29, 2) || __LIB_25__::func_953(Var2, uParam0->f_2) <= 1f)
+	if (bVar0 != __LIB_0__::func_703(uParam0->f_29, 2) || __LIB_25__::func_963(Var2, uParam0->f_2) <= 1f)
 	{
 		__LIB_0__::func_989(&(uParam0->f_29), 4);
 		__LIB_0__::func_989(&(uParam0->f_29), 2048);
@@ -14977,7 +14977,7 @@ void func_525(var uParam0)//Position - 0x1DBAF
 	struct<2> Var1;
 	struct<2> Var2;
 	int iVar3;
-	iVar3 = __LIB_36__::func_707(uParam0);
+	iVar3 = __LIB_36__::func_381(uParam0);
 	switch (uParam0->f_31)
 	{
 		case 1:
@@ -14997,10 +14997,10 @@ void func_525(var uParam0)//Position - 0x1DBAF
 	Var1 = { Local_632.f_484[iVar3 /*56*/].f_7 };
 	Var0.f_0 = (Var1.f_0 - uParam0->f_7);
 	Var0.f_1 = (Var1.f_1 - uParam0->f_7.f_1);
-	uParam0->f_36 = { __LIB_26__::func_443(Var0) };
+	uParam0->f_36 = { __LIB_26__::func_453(Var0) };
 	Var2.f_0 = (Var1.f_0 - (uParam0->f_2 * uParam0->f_36));
 	Var2.f_1 = (Var1.f_1 - (uParam0->f_2 * uParam0->f_36.f_1));
-	uParam0->f_7 = { __LIB_37__::func_92(uParam0->f_7, Var2, 0.5f) };
+	uParam0->f_7 = { __LIB_36__::func_766(uParam0->f_7, Var2, 0.5f) };
 	if (__LIB_0__::func_703(uParam0->f_29, 8))
 	{
 		uParam0->f_7.f_4 = MISC::GET_HEADING_FROM_VECTOR_2D(uParam0->f_36, uParam0->f_36.f_1);
@@ -15058,7 +15058,7 @@ void func_527(var uParam0)//Position - 0x1DDB8
 			}
 			break;
 		case 2:
-			Var0 = { __LIB_25__::func_949(Var2, uParam0->f_2) };
+			Var0 = { __LIB_25__::func_959(Var2, uParam0->f_2) };
 			fVar1 = (MISC::GET_HEADING_FROM_VECTOR_2D(Var0.f_0, Var0.f_1) - uParam0->f_2.f_4);
 			if (fVar1 > 180f)
 			{
@@ -15250,7 +15250,7 @@ void func_529(var uParam0)//Position - 0x1DFAB
 			{
 				if (func_334(2))
 				{
-					__LIB_39__::func_111();
+					__LIB_38__::func_786();
 					func_331(12, 5000);
 				}
 				__LIB_0__::func_989(&(Local_632.f_4550), 2);
@@ -15363,7 +15363,7 @@ void func_534(var uParam0)//Position - 0x1E485
 			Var0.f_0 = (SYSTEM::SIN(uParam0->f_32[1]) * uParam0->f_32[0]);
 			Var0.f_1 = (SYSTEM::COS(uParam0->f_32[1]) * uParam0->f_32[0]);
 			func_284(uParam0, Var0);
-			if (__LIB_25__::func_950(__LIB_5__::func_402(Var0, uParam0->f_2), uParam0->f_2) < 2f)
+			if (__LIB_25__::func_960(__LIB_5__::func_402(Var0, uParam0->f_2), uParam0->f_2) < 2f)
 			{
 				func_521(uParam0, 2);
 			}
@@ -15382,7 +15382,7 @@ void func_534(var uParam0)//Position - 0x1E485
 			uParam0->f_32[1] = (uParam0->f_32[1] + (0f + (((uParam0->f_32[2] * 360f) * Local_632.f_4555) * SYSTEM::TIMESTEP())));
 			uParam0->f_2 = (SYSTEM::SIN(uParam0->f_32[1]) * uParam0->f_32[0]);
 			uParam0->f_2.f_1 = (SYSTEM::COS(uParam0->f_32[1]) * uParam0->f_32[0]);
-			uParam0->f_36 = { __LIB_26__::func_443(uParam0->f_2) };
+			uParam0->f_36 = { __LIB_26__::func_453(uParam0->f_2) };
 			if (__LIB_0__::func_703(uParam0->f_29, 8))
 			{
 				uParam0->f_2.f_4 = (MISC::GET_HEADING_FROM_VECTOR_2D(uParam0->f_2, uParam0->f_2.f_1) - uParam0->f_2.f_4);
@@ -15444,7 +15444,7 @@ void func_537(var uParam0)//Position - 0x1E695
 			uParam0->f_38 = (uParam0->f_38 + fVar0);
 			uParam0->f_2 = (uParam0->f_2 + (uParam0->f_36 * fVar0));
 			uParam0->f_2.f_1 = (uParam0->f_2.f_1 + (uParam0->f_36.f_1 * fVar0));
-			if (__LIB_25__::func_953(Var2, uParam0->f_7) < (fVar1 * fVar1))
+			if (__LIB_25__::func_963(Var2, uParam0->f_7) < (fVar1 * fVar1))
 			{
 				func_469(uParam0);
 				func_283(uParam0, Var2);
@@ -15526,8 +15526,8 @@ void func_539(var uParam0, struct<2> Param1)//Position - 0x1E945
 	Var0.f_1 = (Var0.f_1 + (uParam0->f_36.f_1 * 3000f));
 	Var1 = { func_540(Param1, uParam0->f_2, Var0, 0) };
 	func_283(uParam0, Var1);
-	Var0 = { __LIB_25__::func_949(Var1, Param1) };
-	uParam0->f_32[0] = __LIB_25__::func_950(Var1, Param1);
+	Var0 = { __LIB_25__::func_959(Var1, Param1) };
+	uParam0->f_32[0] = __LIB_25__::func_960(Var1, Param1);
 	uParam0->f_32[1] = MISC::GET_HEADING_FROM_VECTOR_2D(uParam0->f_36, uParam0->f_36.f_1);
 	uParam0->f_32[2] = (func_517(uParam0) / ((2f * 3.1415927f) * uParam0->f_32[0]));
 	switch (uParam0->f_30)
@@ -15619,7 +15619,7 @@ void func_542(var uParam0)//Position - 0x1EC09
 			Var1 = { func_545(uParam0->f_42) };
 			Var2 = { func_172(uParam0->f_41) };
 			Var3 = { func_544(&Var1, 0) };
-			Var4 = { __LIB_25__::func_949(func_544(&Var1, SYSTEM::FLOOR(uParam0->f_43)), Var3) };
+			Var4 = { __LIB_25__::func_959(func_544(&Var1, SYSTEM::FLOOR(uParam0->f_43)), Var3) };
 			if (__LIB_0__::func_703(uParam0->f_29, 512))
 			{
 				Var4.f_0 = (Var4.f_0 * -1f);
@@ -15695,13 +15695,13 @@ int func_546(var uParam0, int iParam1)//Position - 0x1EE2A
 	switch (iParam1)
 	{
 		case 0:
-			__LIB_16__::func_654(uParam0, 3);
+			__LIB_16__::func_657(uParam0, 3);
 			func_547(uParam0, 0, 1664f, 320f);
 			func_547(uParam0, 1, 768f, 320f);
 			func_547(uParam0, 2, 256f, 640f);
 			return 1;
 		case 1:
-			__LIB_16__::func_654(uParam0, 3);
+			__LIB_16__::func_657(uParam0, 3);
 			func_547(uParam0, 0, 1408f, 64f);
 			func_547(uParam0, 1, 1408f, 448f);
 			func_547(uParam0, 2, 256f, 448f);
@@ -15853,7 +15853,7 @@ int func_552(var uParam0, float fParam1, float fParam2, bool bParam3, int iParam
 		return 1;
 	}
 	Var0 = { func_172(uParam0->f_40) };
-	fVar1 = __LIB_25__::func_950(Var0, uParam0->f_2);
+	fVar1 = __LIB_25__::func_960(Var0, uParam0->f_2);
 	fVar2 = ((fParam2 - fVar1) / fParam2);
 	fVar2 = __LIB_0__::func_331(fVar2, 0.25f, 1f);
 	uParam0->f_2.f_2 = { __LIB_5__::func_403(fVar2, fVar2) };
@@ -16857,10 +16857,10 @@ void func_592()//Position - 0x20D61
 				return;
 			}
 			func_179(1056964608);
-			__LIB_39__::func_111();
+			__LIB_38__::func_786();
 			func_595();
-			__LIB_38__::func_897("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
-			__LIB_36__::func_697("DLC_CH_AM_SM_IN_MENUS_SCENE");
+			__LIB_38__::func_572("DLC_CH_AM_SM_IN_GAMEPLAY_SCENE");
+			__LIB_36__::func_371("DLC_CH_AM_SM_IN_MENUS_SCENE");
 			func_191(0, 0);
 			func_69(3);
 			func_594(Local_632.f_4572.f_3);
@@ -17017,7 +17017,7 @@ void func_598()//Position - 0x20FF5
 				func_69(3);
 				Local_632.f_3 = 1f;
 			}
-			else if (__LIB_39__::func_558())
+			else if (__LIB_39__::func_233())
 			{
 				func_69(7);
 				Local_632.f_3 = 1f;
@@ -17031,7 +17031,7 @@ void func_598()//Position - 0x20FF5
 				func_69(3);
 				Local_632.f_3 = 1f;
 			}
-			else if (__LIB_39__::func_558())
+			else if (__LIB_39__::func_233())
 			{
 				func_69(7);
 				Local_632.f_3 = 1f;
@@ -17040,7 +17040,7 @@ void func_598()//Position - 0x20FF5
 			break;
 		case 3:
 			func_599();
-			if (__LIB_39__::func_558() || func_102())
+			if (__LIB_39__::func_233() || func_102())
 			{
 				func_69(7);
 				Local_632.f_3 = 1f;
@@ -17080,9 +17080,9 @@ void func_599()//Position - 0x2115B
 	Var4.f_3 = 255;
 	sVar7 = func_29(64);
 	Var1 = { func_96(165, 0) };
-	__LIB_36__::func_716(sVar7, func_100(165, 0, 0, 0), __LIB_5__::func_403(960f, 540f), Var1, 0f, Local_632.f_4603);
-	__LIB_15__::func_812(&Var3, 32, 32, 32, 255);
-	__LIB_15__::func_812(&Var4, 130, 130, 130, 255);
+	__LIB_36__::func_390(sVar7, func_100(165, 0, 0, 0), __LIB_5__::func_403(960f, 540f), Var1, 0f, Local_632.f_4603);
+	__LIB_15__::func_813(&Var3, 32, 32, 32, 255);
+	__LIB_15__::func_813(&Var4, 130, 130, 130, 255);
 	iVar8 = (SYSTEM::FLOOR((Local_632.f_2 * 5f)) % 10);
 	if ((iVar8 % 2) == 0)
 	{
@@ -17098,15 +17098,15 @@ void func_599()//Position - 0x2115B
 		func_604(iVar6, Var2.f_0, Var2.f_1, 1, 1058642330);
 		if (iVar6 == Local_632.f_4572.f_3)
 		{
-			__LIB_36__::func_716(sVar7, func_603(iVar6), Var0, Var1, 0f, Local_632.f_4603);
+			__LIB_36__::func_390(sVar7, func_603(iVar6), Var0, Var1, 0f, Local_632.f_4603);
 		}
 		else if (iVar6 < Local_632.f_4572.f_3)
 		{
-			__LIB_36__::func_716(sVar7, func_603(iVar6), Var0, Var1, 0f, Var4);
+			__LIB_36__::func_390(sVar7, func_603(iVar6), Var0, Var1, 0f, Var4);
 		}
 		else
 		{
-			__LIB_36__::func_716(sVar7, func_603(iVar6), Var0, Var1, 0f, Var3);
+			__LIB_36__::func_390(sVar7, func_603(iVar6), Var0, Var1, 0f, Var3);
 		}
 		iVar6++;
 	}
@@ -17120,18 +17120,18 @@ void func_599()//Position - 0x2115B
 			fVar5 = func_601(iVar6);
 			if (iVar6 == Local_632.f_4572.f_3)
 			{
-				__LIB_36__::func_716(sVar7, "Dashes", Var0, Var1, fVar5, Local_632.f_4603);
+				__LIB_36__::func_390(sVar7, "Dashes", Var0, Var1, fVar5, Local_632.f_4603);
 			}
 			else
 			{
-				__LIB_36__::func_716(sVar7, "Dashes", Var0, Var1, fVar5, Var4);
+				__LIB_36__::func_390(sVar7, "Dashes", Var0, Var1, fVar5, Var4);
 			}
 		}
 		iVar6++;
 	}
 	Var1 = { func_96(176, 0) };
 	Var0 = { func_602(Local_632.f_4572.f_3) };
-	if (__LIB_21__::func_595(Local_632.f_4572.f_3))
+	if (__LIB_21__::func_605(Local_632.f_4572.f_3))
 	{
 		Var9 = { __LIB_5__::func_403((Var0.f_0 - (Var1.f_1 / 2f)), Var0.f_1) };
 		Var10 = { __LIB_5__::func_403((Var0.f_0 + (Var1.f_1 / 2f)), Var0.f_1) };
@@ -17143,15 +17143,15 @@ void func_599()//Position - 0x2115B
 	}
 	if (Local_632.f_4572.f_3 != 3)
 	{
-		Var0 = { __LIB_37__::func_92(Var9, Var10, Local_632.f_3) };
+		Var0 = { __LIB_36__::func_766(Var9, Var10, Local_632.f_3) };
 	}
 	else
 	{
-		Var0 = { __LIB_37__::func_92(Var10, Var9, Local_632.f_3) };
+		Var0 = { __LIB_36__::func_766(Var10, Var9, Local_632.f_3) };
 	}
-	Var1 = { __LIB_16__::func_768(func_96(38, 0), 0.5f) };
+	Var1 = { __LIB_16__::func_771(func_96(38, 0), 0.5f) };
 	sVar7 = func_29(2);
-	__LIB_36__::func_716(sVar7, func_100(38, 0, 0, 0), Var0, Var1, 0.5f, Local_632.f_4603);
+	__LIB_36__::func_390(sVar7, func_100(38, 0, 0, 0), Var0, Var1, 0.5f, Local_632.f_4603);
 }
 
 float func_601(int iParam0)//Position - 0x2143F
@@ -17173,7 +17173,7 @@ struct<2> func_602(int iParam0)//Position - 0x21458
 	}
 	Var0 = { func_607((iParam0 - 1)) };
 	Var1 = { func_607(iParam0) };
-	return __LIB_37__::func_92(Var0, Var1, 0.5f);
+	return __LIB_36__::func_766(Var0, Var1, 0.5f);
 }
 
 char* func_603(int iParam0)//Position - 0x214A1
@@ -17333,7 +17333,7 @@ void func_609()//Position - 0x217D5
 		case 3:
 			Local_632.f_4544.f_1 = (Local_632.f_4544.f_1 - (Local_632.f_4546 * MISC::GET_FRAME_TIME()));
 			func_610();
-			if ((__LIB_39__::func_558() || func_102()) || Local_632.f_4544.f_1 < -750f)
+			if ((__LIB_39__::func_233() || func_102()) || Local_632.f_4544.f_1 < -750f)
 			{
 				func_120(1056964608);
 				func_104(266);
@@ -17361,7 +17361,7 @@ void func_610()//Position - 0x218BF
 	Var2 = { Local_632.f_4544 };
 	iVar3 = 177;
 	Var4 = { func_96(165, 0) };
-	__LIB_36__::func_716(func_29(64), func_100(165, 0, 0, 0), __LIB_5__::func_403(960f, 540f), Var4, 0f, Local_632.f_4603);
+	__LIB_36__::func_390(func_29(64), func_100(165, 0, 0, 0), __LIB_5__::func_403(960f, 540f), Var4, 0f, Local_632.f_4603);
 	Var5.f_3 = 255;
 	while (iVar3 <= 185)
 	{
@@ -17376,7 +17376,7 @@ void func_610()//Position - 0x218BF
 			Var5.f_3 = __LIB_0__::func_340(Var5.f_3, 0, 255);
 		}
 		Var4 = { func_96(iVar3, 0) };
-		__LIB_36__::func_716(func_170(iVar3), func_100(iVar3, 0, 0, 0), Var2, Var4, 0f, Var5);
+		__LIB_36__::func_390(func_170(iVar3), func_100(iVar3, 0, 0, 0), Var2, Var4, 0f, Var5);
 		Var2.f_1 = (Var2.f_1 + (Var4.f_1 * 2f));
 		if ((iVar3 == 180 || iVar3 == 182) || iVar3 == 184)
 		{
@@ -17435,8 +17435,8 @@ void func_616()//Position - 0x21B21
 				return;
 			}
 			func_179(1056964608);
-			__LIB_39__::func_111();
-			__LIB_36__::func_697("DLC_CH_AM_SM_IN_MENUS_SCENE");
+			__LIB_38__::func_786();
+			__LIB_36__::func_371("DLC_CH_AM_SM_IN_MENUS_SCENE");
 			func_69(3);
 			break;
 		case 3:
@@ -17461,7 +17461,7 @@ void func_617()//Position - 0x21B6F
 			func_179(1056964608);
 			func_177(&(Local_632.f_3085));
 			func_229(&(Local_632.f_3007), 0);
-			__LIB_38__::func_897("DLC_CH_AM_SM_IN_MENUS_SCENE");
+			__LIB_38__::func_572("DLC_CH_AM_SM_IN_MENUS_SCENE");
 			func_69(3);
 			func_54("ARCADE_SM_THEME_START");
 			break;
@@ -17480,7 +17480,7 @@ void func_617()//Position - 0x21B6F
 					func_331(9, 15000);
 				}
 			}
-			if (__LIB_39__::func_558() || func_102())
+			if (__LIB_39__::func_233() || func_102())
 			{
 				func_120(1056964608);
 				func_104(266);
@@ -17511,7 +17511,7 @@ void func_617()//Position - 0x21B6F
 
 int func_618(int iParam0)//Position - 0x21CD7
 {
-	if (Local_629.f_5 == MISC::GET_HASH_KEY(__LIB_15__::func_818(iParam0)))
+	if (Local_629.f_5 == MISC::GET_HASH_KEY(__LIB_15__::func_819(iParam0)))
 	{
 		return 1;
 	}
@@ -17531,14 +17531,14 @@ void func_620()//Position - 0x21D06
 	Var1.f_3 = 255;
 	sVar2 = func_29(16);
 	func_167();
-	__LIB_15__::func_812(&Var1, 255, 0, 0, 255);
+	__LIB_15__::func_813(&Var1, 255, 0, 0, 255);
 	if (Local_632.f_4597)
 	{
-		__LIB_36__::func_716(sVar2, "SPACE_MONKEY_LOGO", __LIB_5__::func_403(960f, 350f), __LIB_5__::func_403(1024f, 512f), 0f, Var1);
+		__LIB_36__::func_390(sVar2, "SPACE_MONKEY_LOGO", __LIB_5__::func_403(960f, 350f), __LIB_5__::func_403(1024f, 512f), 0f, Var1);
 	}
 	else
 	{
-		__LIB_36__::func_716(sVar2, "SPACE_MONKEY_LOGO", __LIB_5__::func_403(960f, 350f), __LIB_5__::func_403(1024f, 512f), 0f, Local_632.f_4603);
+		__LIB_36__::func_390(sVar2, "SPACE_MONKEY_LOGO", __LIB_5__::func_403(960f, 350f), __LIB_5__::func_403(1024f, 512f), 0f, Local_632.f_4603);
 	}
 	iVar0 = (SYSTEM::FLOOR((Local_632.f_2 * 5f)) % 10);
 	if ((iVar0 % 2) == 0)
@@ -17649,9 +17649,9 @@ void func_626()//Position - 0x21F4F
 	sVar1 = func_170(168);
 	sVar2 = func_100(168, 0, 0, 0);
 	Var3 = { func_96(168, 0) };
-	__LIB_15__::func_812(&Var0, 123, 181, 247, 255);
-	__LIB_37__::func_93(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
-	__LIB_36__::func_716(sVar1, sVar2, __LIB_5__::func_403(960f, 540f), Var3, 0f, Local_632.f_4603);
+	__LIB_15__::func_813(&Var0, 123, 181, 247, 255);
+	__LIB_36__::func_767(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
+	__LIB_36__::func_390(sVar1, sVar2, __LIB_5__::func_403(960f, 540f), Var3, 0f, Local_632.f_4603);
 }
 
 int func_627(int iParam0)//Position - 0x21FD2
@@ -17709,9 +17709,9 @@ void func_629()//Position - 0x22081
 	sVar1 = func_170(167);
 	sVar2 = func_100(167, 0, 0, 0);
 	Var3 = { func_96(167, 0) };
-	__LIB_15__::func_812(&Var0, 115, 140, 156, 255);
-	__LIB_37__::func_93(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
-	__LIB_36__::func_716(sVar1, sVar2, __LIB_5__::func_403(960f, 540f), Var3, 0f, Local_632.f_4603);
+	__LIB_15__::func_813(&Var0, 115, 140, 156, 255);
+	__LIB_36__::func_767(__LIB_5__::func_403(960f, 540f), __LIB_5__::func_403(1920f, 1080f), Var0);
+	__LIB_36__::func_390(sVar1, sVar2, __LIB_5__::func_403(960f, 540f), Var3, 0f, Local_632.f_4603);
 }
 
 void func_630()//Position - 0x22104
@@ -17732,15 +17732,15 @@ void func_630()//Position - 0x22104
 	{
 		return;
 	}
-	if (!__LIB_36__::func_715())
+	if (!__LIB_36__::func_389())
 	{
 		return;
 	}
-	if (!__LIB_39__::func_102("DLC_HEIST3\H3_SpaceMonkey3"))
+	if (!__LIB_38__::func_777("DLC_HEIST3\H3_SpaceMonkey3"))
 	{
 		return;
 	}
-	__LIB_38__::func_897("DLC_CH_ARCADE_MACHINE_IN_USE_SCENE");
+	__LIB_38__::func_572("DLC_CH_ARCADE_MACHINE_IN_USE_SCENE");
 	func_68(5);
 	func_120(0.01f);
 }
@@ -17763,9 +17763,9 @@ int func_634()//Position - 0x221F0
 void func_636()//Position - 0x22228
 {
 	func_652();
-	__LIB_16__::func_781();
+	__LIB_16__::func_784();
 	func_642(5);
-	__LIB_36__::func_710(5);
+	__LIB_36__::func_384(5);
 	func_640();
 	func_639();
 	func_638(&(Local_632.f_3085));
@@ -17843,23 +17843,23 @@ void func_640()//Position - 0x223B4
 void func_642(int iParam0)//Position - 0x223FD
 {
 	Local_644.f_137 = iParam0;
-	__LIB_15__::func_812(&(Local_644[0 /*17*/].f_9), 255, 255, 255, 255);
+	__LIB_15__::func_813(&(Local_644[0 /*17*/].f_9), 255, 255, 255, 255);
 	Local_644[1 /*17*/].f_6 = 1000;
 	Local_644[1 /*17*/].f_7 = 10000;
 	Local_644[2 /*17*/].f_1 = 1;
 	Local_644[2 /*17*/].f_8 = 40;
-	__LIB_15__::func_812(&(Local_644[2 /*17*/].f_9), 0, 0, 0, 0);
-	__LIB_15__::func_812(&(Local_644[3 /*17*/].f_9), 255, 255, 255, 127);
-	__LIB_15__::func_812(&(Local_644[4 /*17*/].f_9), 255, 255, 255, 127);
-	__LIB_15__::func_812(&(Local_644[5 /*17*/].f_9), 255, 255, 255, 127);
-	__LIB_15__::func_812(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 255);
+	__LIB_15__::func_813(&(Local_644[2 /*17*/].f_9), 0, 0, 0, 0);
+	__LIB_15__::func_813(&(Local_644[3 /*17*/].f_9), 255, 255, 255, 127);
+	__LIB_15__::func_813(&(Local_644[4 /*17*/].f_9), 255, 255, 255, 127);
+	__LIB_15__::func_813(&(Local_644[5 /*17*/].f_9), 255, 255, 255, 127);
+	__LIB_15__::func_813(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 255);
 	switch (Local_644.f_137)
 	{
 		case 2:
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 30);
-			__LIB_15__::func_812(&(Local_644[4 /*17*/].f_9), 255, 255, 255, 127);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 30);
+			__LIB_15__::func_813(&(Local_644[4 /*17*/].f_9), 255, 255, 255, 127);
 			Local_644[0 /*17*/] = 1;
 			Local_644[6 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
@@ -17867,10 +17867,10 @@ void func_642(int iParam0)//Position - 0x223FD
 			Local_644[3 /*17*/] = 1;
 			break;
 		case 3:
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 30);
-			__LIB_15__::func_812(&(Local_644[4 /*17*/].f_9), 255, 255, 255, 255);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 30);
+			__LIB_15__::func_813(&(Local_644[4 /*17*/].f_9), 255, 255, 255, 255);
 			Local_644[0 /*17*/] = 1;
 			Local_644[6 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
@@ -17878,10 +17878,10 @@ void func_642(int iParam0)//Position - 0x223FD
 			Local_644[4 /*17*/] = 1;
 			break;
 		case 4:
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 30);
-			__LIB_15__::func_812(&(Local_644[5 /*17*/].f_9), 255, 255, 255, 184);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 30);
+			__LIB_15__::func_813(&(Local_644[5 /*17*/].f_9), 255, 255, 255, 184);
 			Local_644[0 /*17*/] = 1;
 			Local_644[6 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
@@ -17889,9 +17889,9 @@ void func_642(int iParam0)//Position - 0x223FD
 			Local_644[5 /*17*/] = 1;
 			break;
 		case 1:
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 10);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 10);
 			Local_644[0 /*17*/] = 1;
 			Local_644[6 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
@@ -17899,10 +17899,10 @@ void func_642(int iParam0)//Position - 0x223FD
 			Local_644[3 /*17*/] = 1;
 			break;
 		case 0:
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 10);
-			__LIB_15__::func_812(&(Local_644[5 /*17*/].f_9), 255, 255, 255, 255);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 10);
+			__LIB_15__::func_813(&(Local_644[5 /*17*/].f_9), 255, 255, 255, 255);
 			Local_644[0 /*17*/] = 1;
 			Local_644[6 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
@@ -17910,27 +17910,27 @@ void func_642(int iParam0)//Position - 0x223FD
 			Local_644[5 /*17*/] = 1;
 			break;
 		case 6:
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 10);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 8);
-			__LIB_15__::func_812(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 100);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 10);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 8);
+			__LIB_15__::func_813(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 100);
 			Local_644[0 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
 			Local_644[2 /*17*/] = 1;
 			Local_644[7 /*17*/] = 1;
 			break;
 		case 7:
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 8);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 8);
 			Local_644[2 /*17*/] = 1;
 			Local_644[0 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[3 /*17*/].f_9), 255, 255, 255, 180);
+			__LIB_15__::func_813(&(Local_644[3 /*17*/].f_9), 255, 255, 255, 180);
 			Local_644[3 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
 			Local_644[6 /*17*/] = 1;
 			break;
 		case 5:
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 10);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 30);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 20);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 10);
 			Local_644[0 /*17*/] = 1;
 			Local_644[6 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
@@ -17941,46 +17941,46 @@ void func_642(int iParam0)//Position - 0x223FD
 			Local_644[1 /*17*/] = 0;
 			Local_644[2 /*17*/] = 0;
 			Local_644[0 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
+			__LIB_15__::func_813(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
 			Local_644[6 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 0, 0, 15);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 0, 0, 15);
 			Local_644[7 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 115);
+			__LIB_15__::func_813(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 115);
 			break;
 		case 9:
 			Local_644[1 /*17*/] = 0;
 			Local_644[2 /*17*/] = 0;
 			Local_644[0 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
+			__LIB_15__::func_813(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
 			Local_644[6 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 0, 0, 15);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 0, 0, 15);
 			Local_644[7 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 115);
+			__LIB_15__::func_813(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 115);
 			break;
 		case 10:
 			Local_644[1 /*17*/] = 0;
 			Local_644[2 /*17*/] = 0;
 			Local_644[0 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
+			__LIB_15__::func_813(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
 			Local_644[6 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 0, 0, 15);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 0, 0, 15);
 			Local_644[7 /*17*/] = 1;
-			__LIB_15__::func_812(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 115);
+			__LIB_15__::func_813(&(Local_644[7 /*17*/].f_9), 255, 255, 255, 115);
 			break;
 		case 11:
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 15);
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 10);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 5);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 15);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 10);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 5);
 			Local_644[0 /*17*/] = 1;
 			Local_644[6 /*17*/] = 1;
 			Local_644[1 /*17*/] = 1;
 			Local_644[3 /*17*/] = 1;
 			break;
 		case 12:
-			__LIB_15__::func_812(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 3);
-			__LIB_15__::func_812(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 15);
-			__LIB_15__::func_812(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
-			__LIB_15__::func_812(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 15);
+			__LIB_15__::func_813(&(Local_644[1 /*17*/].f_9), 255, 255, 255, 3);
+			__LIB_15__::func_813(&(Local_644[2 /*17*/].f_13), 0, 0, 0, 15);
+			__LIB_15__::func_813(&(Local_644[0 /*17*/].f_9), 0, 0, 255, 90);
+			__LIB_15__::func_813(&(Local_644[6 /*17*/].f_9), 255, 255, 255, 15);
 			Local_644[1 /*17*/] = 1;
 			Local_644[2 /*17*/] = 0;
 			Local_644[0 /*17*/] = 1;
@@ -17995,10 +17995,10 @@ void func_652()//Position - 0x22B6A
 	Local_632.f_4615.f_3 = 202;
 	Local_632.f_4619.f_2 = 2;
 	Local_632.f_4619.f_3 = 217;
-	__LIB_15__::func_812(&(Local_632.f_4599), 0, 0, 0, 255);
-	__LIB_15__::func_812(&(Local_632.f_4611), 64, 64, 64, 255);
-	__LIB_15__::func_812(&(Local_632.f_4607), 208, 208, 208, 255);
-	__LIB_15__::func_812(&(Local_632.f_4603), 255, 255, 255, 255);
+	__LIB_15__::func_813(&(Local_632.f_4599), 0, 0, 0, 255);
+	__LIB_15__::func_813(&(Local_632.f_4611), 64, 64, 64, 255);
+	__LIB_15__::func_813(&(Local_632.f_4607), 208, 208, 208, 255);
+	__LIB_15__::func_813(&(Local_632.f_4603), 255, 255, 255, 255);
 	func_615();
 }
 
@@ -18114,7 +18114,7 @@ void func_655(var uParam0)//Position - 0x22DFE
 			uParam0->f_1 = (uParam0->f_1 + (uParam0->f_8.f_1 * uParam0->f_15));
 		}
 	}
-	uParam0->f_10 = (uParam0->f_10 + __LIB_25__::func_950(uParam0->f_2, *uParam0));
+	uParam0->f_10 = (uParam0->f_10 + __LIB_25__::func_960(uParam0->f_2, *uParam0));
 	uParam0->f_2 = { *uParam0 };
 }
 
@@ -18140,9 +18140,9 @@ void func_657()//Position - 0x22EF1
 	func_681();
 	func_677();
 	func_675(5);
-	__LIB_39__::func_101();
+	__LIB_38__::func_776();
 	bVar0 = Local_632.f_0 >= 2;
-	__LIB_36__::func_717(bVar0);
+	__LIB_36__::func_391(bVar0);
 }
 
 void func_675(int iParam0)//Position - 0x23262
@@ -18155,7 +18155,7 @@ void func_675(int iParam0)//Position - 0x23262
 	}
 	if (!Local_630.f_32 && (Local_630.f_35 == -2147483647 || (NETWORK::GET_NETWORK_TIME() - Local_630.f_35) > 300000))
 	{
-		__LIB_36__::func_711(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_39__::func_94());
+		__LIB_36__::func_385(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_38__::func_769());
 		Local_630.f_35 = NETWORK::GET_NETWORK_TIME();
 	}
 }
@@ -18180,7 +18180,7 @@ void func_677()//Position - 0x23319
 		{
 			if (Var1.f_0 == -1168862534)
 			{
-				if (Var1.f_2 != __LIB_39__::func_94())
+				if (Var1.f_2 != __LIB_38__::func_769())
 				{
 				}
 				else
@@ -18197,9 +18197,9 @@ void func_678(var uParam0, var uParam1)//Position - 0x2339A
 	{
 		if ((*uParam1)[iVar0] <= 0)
 		{
-			Local_630[iVar0 /*3*/].f_1 = __LIB_42__::func_682(iVar0);
-			Local_630[iVar0 /*3*/] = __LIB_42__::func_681(iVar0);
-			__LIB_16__::func_765(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_39__::func_94(), iVar0, Local_630[iVar0 /*3*/], Local_630[iVar0 /*3*/].f_1, 0);
+			Local_630[iVar0 /*3*/].f_1 = __LIB_42__::func_557(iVar0);
+			Local_630[iVar0 /*3*/] = __LIB_42__::func_556(iVar0);
+			__LIB_16__::func_768(__LIB_1__::func_874(PLAYER::PLAYER_ID()), __LIB_38__::func_769(), iVar0, Local_630[iVar0 /*3*/], Local_630[iVar0 /*3*/].f_1, 0);
 		}
 		else
 		{
@@ -18295,7 +18295,7 @@ int func_683(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 							{
 								if (bParam3)
 								{
-									__LIB_15__::func_819();
+									__LIB_15__::func_820();
 								}
 								else
 								{
@@ -18377,46 +18377,46 @@ void func_693(var uParam0, int iParam1)//Position - 0x244A7
 	switch (iParam1)
 	{
 		case 0:
-			uParam0->f_2 = 151948/*func_717*/;
+			uParam0->f_2 = 151948/*__LIB_5__::func_49*/;
 			break;
 		case 1:
-			*uParam0 = 151919/*func_716*/;
+			*uParam0 = 151919/*__LIB_5__::func_48*/;
 			break;
 		case 2:
-			uParam0->f_1 = 151897/*func_715*/;
+			uParam0->f_1 = 151897/*__LIB_5__::func_47*/;
 			break;
 		case 3:
-			uParam0->f_3 = 151845/*func_714*/;
+			uParam0->f_3 = 151845/*__LIB_5__::func_46*/;
 			break;
 		case 4:
-			uParam0->f_4 = 149205/*func_703*/;
+			uParam0->f_4 = 149205/*__LIB_5__::func_126*/;
 			break;
 		case 5:
-			uParam0->f_5 = 149196/*func_702*/;
+			uParam0->f_5 = 149196/*__LIB_0__::func_109*/;
 			break;
 		case 6:
-			uParam0->f_6 = 149187/*func_701*/;
+			uParam0->f_6 = 149187/*__LIB_0__::func_114*/;
 			break;
 		case 7:
-			uParam0->f_7 = 149178/*func_700*/;
+			uParam0->f_7 = 149178/*__LIB_0__::func_114*/;
 			break;
 		case 8:
-			uParam0->f_8 = 149170/*func_699*/;
+			uParam0->f_8 = 149170/*__LIB_0__::func_467*/;
 			break;
 		case 9:
-			uParam0->f_9 = 149130/*func_698*/;
+			uParam0->f_9 = 149130/*__LIB_5__::func_45*/;
 			break;
 		case 10:
-			uParam0->f_10 = 148926/*func_697*/;
+			uParam0->f_10 = 148926/*__LIB_5__::func_44*/;
 			break;
 		case 11:
-			uParam0->f_11 = 148915/*func_696*/;
+			uParam0->f_11 = 148915/*__LIB_3__::func_554*/;
 			break;
 		case 12:
-			uParam0->f_12 = 148907/*func_695*/;
+			uParam0->f_12 = 148907/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_13 = 148899/*func_694*/;
+			uParam0->f_13 = 148899/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -18426,46 +18426,46 @@ void func_718(var uParam0, int iParam1)//Position - 0x251A6
 	switch (iParam1)
 	{
 		case 0:
-			uParam0->f_2 = 153320/*func_734*/;
+			uParam0->f_2 = 153320/*__LIB_5__::func_55*/;
 			break;
 		case 1:
-			*uParam0 = 153291/*func_733*/;
+			*uParam0 = 153291/*__LIB_5__::func_54*/;
 			break;
 		case 2:
-			uParam0->f_1 = 153247/*func_732*/;
+			uParam0->f_1 = 153247/*__LIB_5__::func_53*/;
 			break;
 		case 3:
-			uParam0->f_3 = 153195/*func_731*/;
+			uParam0->f_3 = 153195/*__LIB_5__::func_52*/;
 			break;
 		case 4:
-			uParam0->f_4 = 152371/*func_728*/;
+			uParam0->f_4 = 152371/*__LIB_5__::func_694*/;
 			break;
 		case 5:
-			uParam0->f_5 = 152362/*func_727*/;
+			uParam0->f_5 = 152362/*__LIB_0__::func_114*/;
 			break;
 		case 6:
-			uParam0->f_6 = 152353/*func_726*/;
+			uParam0->f_6 = 152353/*__LIB_0__::func_109*/;
 			break;
 		case 7:
-			uParam0->f_7 = 152344/*func_725*/;
+			uParam0->f_7 = 152344/*__LIB_0__::func_114*/;
 			break;
 		case 8:
-			uParam0->f_8 = 152336/*func_724*/;
+			uParam0->f_8 = 152336/*__LIB_0__::func_467*/;
 			break;
 		case 9:
-			uParam0->f_9 = 152296/*func_723*/;
+			uParam0->f_9 = 152296/*__LIB_5__::func_51*/;
 			break;
 		case 10:
-			uParam0->f_10 = 152284/*func_722*/;
+			uParam0->f_10 = 152284/*__LIB_3__::func_635*/;
 			break;
 		case 11:
-			uParam0->f_11 = 152242/*func_721*/;
+			uParam0->f_11 = 152242/*__LIB_5__::func_50*/;
 			break;
 		case 12:
-			uParam0->f_12 = 152234/*func_720*/;
+			uParam0->f_12 = 152234/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_13 = 152226/*func_719*/;
+			uParam0->f_13 = 152226/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -18475,46 +18475,46 @@ void func_735(var uParam0, int iParam1)//Position - 0x25702
 	switch (iParam1)
 	{
 		case 0:
-			uParam0->f_2 = 153999/*func_749*/;
+			uParam0->f_2 = 153999/*__LIB_5__::func_59*/;
 			break;
 		case 1:
-			*uParam0 = 153970/*func_748*/;
+			*uParam0 = 153970/*__LIB_5__::func_58*/;
 			break;
 		case 2:
-			uParam0->f_1 = 153948/*func_747*/;
+			uParam0->f_1 = 153948/*__LIB_5__::func_57*/;
 			break;
 		case 3:
-			uParam0->f_3 = 153896/*func_746*/;
+			uParam0->f_3 = 153896/*__LIB_5__::func_56*/;
 			break;
 		case 4:
-			uParam0->f_4 = 153680/*func_745*/;
+			uParam0->f_4 = 153680/*__LIB_5__::func_40*/;
 			break;
 		case 5:
-			uParam0->f_5 = 153671/*func_744*/;
+			uParam0->f_5 = 153671/*__LIB_0__::func_114*/;
 			break;
 		case 6:
-			uParam0->f_6 = 153662/*func_743*/;
+			uParam0->f_6 = 153662/*__LIB_0__::func_114*/;
 			break;
 		case 7:
-			uParam0->f_7 = 153653/*func_742*/;
+			uParam0->f_7 = 153653/*__LIB_0__::func_114*/;
 			break;
 		case 8:
-			uParam0->f_8 = 153645/*func_741*/;
+			uParam0->f_8 = 153645/*__LIB_0__::func_467*/;
 			break;
 		case 9:
-			uParam0->f_9 = 153637/*func_740*/;
+			uParam0->f_9 = 153637/*__LIB_0__::func_467*/;
 			break;
 		case 10:
-			uParam0->f_10 = 153625/*func_739*/;
+			uParam0->f_10 = 153625/*__LIB_3__::func_635*/;
 			break;
 		case 11:
-			uParam0->f_11 = 153614/*func_738*/;
+			uParam0->f_11 = 153614/*__LIB_3__::func_554*/;
 			break;
 		case 12:
-			uParam0->f_12 = 153606/*func_737*/;
+			uParam0->f_12 = 153606/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_13 = 153598/*func_736*/;
+			uParam0->f_13 = 153598/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -18524,46 +18524,46 @@ void func_750(var uParam0, int iParam1)//Position - 0x259A9
 	switch (iParam1)
 	{
 		case 0:
-			uParam0->f_2 = 155285/*func_764*/;
+			uParam0->f_2 = 155285/*__LIB_5__::func_64*/;
 			break;
 		case 1:
-			*uParam0 = 155256/*func_763*/;
+			*uParam0 = 155256/*__LIB_5__::func_63*/;
 			break;
 		case 2:
-			uParam0->f_1 = 155234/*func_762*/;
+			uParam0->f_1 = 155234/*__LIB_5__::func_57*/;
 			break;
 		case 3:
-			uParam0->f_3 = 155182/*func_761*/;
+			uParam0->f_3 = 155182/*__LIB_5__::func_62*/;
 			break;
 		case 4:
-			uParam0->f_4 = 154908/*func_760*/;
+			uParam0->f_4 = 154908/*__LIB_5__::func_109*/;
 			break;
 		case 5:
-			uParam0->f_5 = 154899/*func_759*/;
+			uParam0->f_5 = 154899/*__LIB_0__::func_114*/;
 			break;
 		case 6:
-			uParam0->f_6 = 154890/*func_758*/;
+			uParam0->f_6 = 154890/*__LIB_0__::func_114*/;
 			break;
 		case 7:
-			uParam0->f_7 = 154881/*func_757*/;
+			uParam0->f_7 = 154881/*__LIB_0__::func_114*/;
 			break;
 		case 8:
-			uParam0->f_8 = 154873/*func_756*/;
+			uParam0->f_8 = 154873/*__LIB_0__::func_467*/;
 			break;
 		case 9:
-			uParam0->f_9 = 154833/*func_755*/;
+			uParam0->f_9 = 154833/*__LIB_5__::func_61*/;
 			break;
 		case 10:
-			uParam0->f_10 = 154304/*func_754*/;
+			uParam0->f_10 = 154304/*__LIB_5__::func_60*/;
 			break;
 		case 11:
-			uParam0->f_11 = 154293/*func_753*/;
+			uParam0->f_11 = 154293/*__LIB_3__::func_554*/;
 			break;
 		case 12:
-			uParam0->f_12 = 154285/*func_752*/;
+			uParam0->f_12 = 154285/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_13 = 154277/*func_751*/;
+			uParam0->f_13 = 154277/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -18573,46 +18573,46 @@ void func_765(var uParam0, int iParam1)//Position - 0x25EAF
 	switch (iParam1)
 	{
 		case 0:
-			uParam0->f_2 = 536765/*func_1123*/;
+			uParam0->f_2 = 536765/*__LIB_5__::func_105*/;
 			break;
 		case 1:
-			*uParam0 = 536223/*func_1122*/;
+			*uParam0 = 536223/*__LIB_5__::func_104*/;
 			break;
 		case 2:
-			uParam0->f_1 = 535982/*func_1121*/;
+			uParam0->f_1 = 535982/*__LIB_5__::func_103*/;
 			break;
 		case 3:
-			uParam0->f_3 = 535400/*func_1120*/;
+			uParam0->f_3 = 535400/*__LIB_5__::func_102*/;
 			break;
 		case 4:
-			uParam0->f_4 = 531560/*func_1118*/;
+			uParam0->f_4 = 531560/*__LIB_5__::func_174*/;
 			break;
 		case 5:
-			uParam0->f_5 = 531551/*func_1117*/;
+			uParam0->f_5 = 531551/*__LIB_0__::func_114*/;
 			break;
 		case 6:
-			uParam0->f_6 = 531437/*func_1116*/;
+			uParam0->f_6 = 531437/*__LIB_5__::func_100*/;
 			break;
 		case 7:
-			uParam0->f_7 = 520206/*func_1081*/;
+			uParam0->f_7 = 520206/*__LIB_31__::func_952*/;
 			break;
 		case 8:
 			uParam0->f_8 = 158015/*func_776*/;
 			break;
 		case 9:
-			uParam0->f_9 = 157470/*func_775*/;
+			uParam0->f_9 = 157470/*__LIB_5__::func_68*/;
 			break;
 		case 10:
-			uParam0->f_10 = 156645/*func_774*/;
+			uParam0->f_10 = 156645/*__LIB_5__::func_67*/;
 			break;
 		case 11:
-			uParam0->f_11 = 156442/*func_773*/;
+			uParam0->f_11 = 156442/*__LIB_5__::func_66*/;
 			break;
 		case 12:
-			uParam0->f_12 = 155961/*func_767*/;
+			uParam0->f_12 = 155961/*__LIB_5__::func_171*/;
 			break;
 		case 13:
-			uParam0->f_13 = 155563/*func_766*/;
+			uParam0->f_13 = 155563/*__LIB_5__::func_65*/;
 			break;
 	}
 }
@@ -18622,10 +18622,10 @@ void func_776(int iParam0, var uParam1)//Position - 0x2693F
 	switch (iParam0)
 	{
 		case 9:
-			__LIB_16__::func_776(iParam0, uParam1);
+			__LIB_16__::func_779(iParam0, uParam1);
 			break;
 		case 10:
-			__LIB_16__::func_775(iParam0, uParam1);
+			__LIB_16__::func_778(iParam0, uParam1);
 			break;
 		case 18:
 			func_780(uParam1);
@@ -18633,7 +18633,7 @@ void func_776(int iParam0, var uParam1)//Position - 0x2693F
 		case 3:
 		case 4:
 		case 5:
-			__LIB_16__::func_779(uParam1, iParam0);
+			__LIB_16__::func_782(uParam1, iParam0);
 			break;
 	}
 }
@@ -18759,7 +18759,7 @@ void func_781(int* iParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 			iParam0->f_2 = 1;
 			break;
 		case 1:
-			if ((__LIB_15__::func_822(iParam0, uParam1, iVar0, bVar1, 1) && __LIB_5__::func_116(iParam0, uParam1, iVar0, bVar1, 1, bParam7, iParam8)) && __LIB_5__::func_115(iParam0, uParam1, iParam3, iVar0, bVar1, ENTITY::GET_ENTITY_COORDS(iParam3, true), ENTITY::GET_ENTITY_ROTATION(iParam3, 2) + Vector(0f, 0f, 0f)))
+			if ((__LIB_15__::func_823(iParam0, uParam1, iVar0, bVar1, 1) && __LIB_5__::func_116(iParam0, uParam1, iVar0, bVar1, 1, bParam7, iParam8)) && __LIB_5__::func_115(iParam0, uParam1, iParam3, iVar0, bVar1, ENTITY::GET_ENTITY_COORDS(iParam3, true), ENTITY::GET_ENTITY_ROTATION(iParam3, 2) + Vector(0f, 0f, 0f)))
 			{
 				iParam0->f_2 = 2;
 			}
@@ -18941,7 +18941,7 @@ void func_781(int* iParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 					ENTITY::SET_ENTITY_VISIBLE(iVar10, true, false);
 				}
 			}
-			__LIB_16__::func_780(iParam0, uParam1, iParam6, iParam4);
+			__LIB_16__::func_783(iParam0, uParam1, iParam6, iParam4);
 			if (BitTest(*iParam0, 8))
 			{
 				if (iParam0->f_17 > 1f)
@@ -19105,7 +19105,7 @@ void func_781(int* iParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 					}
 				}
 			}
-			if (__LIB_15__::func_825(iParam0, iVar0, iParam4))
+			if (__LIB_15__::func_826(iParam0, iVar0, iParam4))
 			{
 				iVar12 = __LIB_5__::func_172(iParam4);
 				if (!BitTest(Global_1966339[iVar12], 2))

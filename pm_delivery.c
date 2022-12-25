@@ -138,7 +138,7 @@ void __EntryFunction__()//Position - 0x0
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
-		__LIB_39__::func_78(2);
+		__LIB_38__::func_753(2);
 		func_114();
 	}
 	iLocal_36 = func_112();
@@ -209,7 +209,7 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0x153
 {
-	__LIB_39__::func_78(2);
+	__LIB_38__::func_753(2);
 	func_114();
 }
 
@@ -233,11 +233,11 @@ void func_2()//Position - 0x164
 			}
 			else if (iVar1 < 75)
 			{
-				__LIB_33__::func_590(iVar1, iVar0, "PMDL_DMG", 6, 0, 1, 2);
+				__LIB_32__::func_74(iVar1, iVar0, "PMDL_DMG", 6, 0, 1, 2);
 			}
 			else
 			{
-				__LIB_33__::func_590(iVar1, iVar0, "PMDL_DMG", 1, 0, 1, 2);
+				__LIB_32__::func_74(iVar1, iVar0, "PMDL_DMG", 1, 0, 1, 2);
 			}
 		}
 		else
@@ -428,7 +428,7 @@ void func_9()//Position - 0x93B
 			iVar0++;
 		}
 	}
-	if (__LIB_16__::func_32(&iLocal_39, Local_65, Global_22, 1, iLocal_86, sLocal_92, "", sLocal_93, 1, 0, 1, -1))
+	if (__LIB_16__::func_34(&iLocal_39, Local_65, Global_22, 1, iLocal_86, sLocal_92, "", sLocal_93, 1, 0, 1, -1))
 	{
 		__LIB_0__::func_213(iLocal_86, 10.5f, 2, 1056964608, 0, 1, 0);
 		TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 2000, 0);
@@ -473,7 +473,7 @@ void func_9()//Position - 0x93B
 
 void func_13()//Position - 0xC6A
 {
-	__LIB_39__::func_78(1);
+	__LIB_38__::func_753(1);
 	func_114();
 }
 
@@ -588,7 +588,7 @@ void func_67()//Position - 0x3B59
 	{
 		if (PED::IS_PED_IN_VEHICLE(iLocal_84[0], iLocal_86, false))
 		{
-			__LIB_17__::func_68(&uLocal_94, iLocal_86, 0, 0, 1, 1, 1);
+			__LIB_17__::func_71(&uLocal_94, iLocal_86, 0, 0, 1, 1, 1);
 		}
 	}
 }
@@ -746,8 +746,8 @@ void func_106()//Position - 0x5065
 void func_107()//Position - 0x513F
 {
 	float fVar0;
-	Local_64 = { __LIB_42__::func_660(__LIB_39__::func_76(), iLocal_36) };
-	fLocal_67 = __LIB_39__::func_75(__LIB_39__::func_76(), iLocal_36);
+	Local_64 = { __LIB_42__::func_535(__LIB_38__::func_751(), iLocal_36) };
+	fLocal_67 = __LIB_38__::func_750(__LIB_38__::func_751(), iLocal_36);
 	if (iLocal_36 > 6)
 	{
 		sLocal_91 = "PMDL_TRUCK";
@@ -756,7 +756,7 @@ void func_107()//Position - 0x513F
 		iLocal_82 = joaat("benson");
 		iLocal_79 = 2;
 	}
-	if (__LIB_39__::func_76() == 10)
+	if (__LIB_38__::func_751() == 10)
 	{
 		Local_65 = { -1161.2133f, -1567.0677f, 3.4234f };
 		iLocal_82 = joaat("pony2");
@@ -797,25 +797,25 @@ void func_107()//Position - 0x513F
 			iLocal_80 = joaat("G_M_Y_SalvaGoon_02");
 		}
 	}
-	else if (__LIB_39__::func_76() == 14)
+	else if (__LIB_38__::func_751() == 14)
 	{
 		Local_65 = { -2169.8284f, 4277.365f, 47.9568f };
 		fVar0 = MISC::GET_DISTANCE_BETWEEN_COORDS(Local_64, Local_65, true);
 		iLocal_77 = SYSTEM::ROUND((((fVar0 / 16.5f) + 40f) / 2f));
 	}
-	else if (__LIB_39__::func_76() == 13)
+	else if (__LIB_38__::func_751() == 13)
 	{
 		Local_65 = { -323.356f, 6264.4307f, 30.4463f };
 		fVar0 = MISC::GET_DISTANCE_BETWEEN_COORDS(Local_64, Local_65, true);
 		iLocal_77 = SYSTEM::ROUND((((fVar0 / 16.5f) + 40f) / 2f));
 	}
-	else if (__LIB_39__::func_76() == 12)
+	else if (__LIB_38__::func_751() == 12)
 	{
 		Local_65 = { 198.5282f, 342.2399f, 104.9566f };
 		fVar0 = MISC::GET_DISTANCE_BETWEEN_COORDS(Local_64, Local_65, true);
 		iLocal_77 = SYSTEM::ROUND((((fVar0 / 16.5f) + 15f) / 2f));
 	}
-	else if (__LIB_39__::func_76() == 11)
+	else if (__LIB_38__::func_751() == 11)
 	{
 		Local_65 = { -560.0195f, 301.1481f, 82.1436f };
 		fVar0 = MISC::GET_DISTANCE_BETWEEN_COORDS(Local_64, Local_65, true);
@@ -827,7 +827,7 @@ void func_107()//Position - 0x513F
 
 int func_112()//Position - 0x581F
 {
-	return __LIB_39__::func_77(Global_112096.f_20, Global_112096.f_29);
+	return __LIB_38__::func_752(Global_112096.f_20, Global_112096.f_29);
 }
 
 void func_114()//Position - 0x593F
@@ -839,7 +839,7 @@ void func_114()//Position - 0x593F
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iLocal_88, false))
 		{
-			__LIB_17__::func_197(iLocal_88, 0, 145);
+			__LIB_17__::func_200(iLocal_88, 0, 145);
 		}
 		PLAYER::RESET_WANTED_LEVEL_DIFFICULTY(PLAYER::PLAYER_ID());
 		__LIB_0__::func_345(&uLocal_94, 0, 0);

@@ -935,13 +935,13 @@ void func_71()//Position - 0x1845
 	int iVar0[2];
 	iVar0[0] = 0;
 	iVar0[1] = 1;
-	__LIB_33__::func_297(2, &uLocal_93, &iVar0);
+	__LIB_31__::func_769(2, &uLocal_93, &iVar0);
 	iVar0[0] = 2;
 	iVar0[1] = 3;
-	__LIB_33__::func_297(3, &uLocal_93, &iVar0);
+	__LIB_31__::func_769(3, &uLocal_93, &iVar0);
 	iVar0[0] = 4;
 	iVar0[1] = 5;
-	__LIB_33__::func_297(4, &uLocal_93, &iVar0);
+	__LIB_31__::func_769(4, &uLocal_93, &iVar0);
 	func_72(&uLocal_93, 6324/*func_73*/);
 }
 

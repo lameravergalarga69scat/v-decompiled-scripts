@@ -894,7 +894,7 @@ void func_56()//Position - 0x1856
 			__LIB_5__::func_32(1);
 			__LIB_0__::func_186(28191, 1, -1);
 			__LIB_5__::func_170(10);
-			__LIB_15__::func_824(18, 0);
+			__LIB_15__::func_825(18, 0);
 		}
 	}
 	else if (Local_149.f_2 == 41)

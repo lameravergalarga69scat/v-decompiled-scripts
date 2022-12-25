@@ -128,10 +128,10 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::WAIT(0);
 	func_37();
 	func_33();
-	__LIB_17__::func_501();
-	while (iLocal_67 && __LIB_39__::func_36(3, 0))
+	__LIB_17__::func_504();
+	while (iLocal_67 && __LIB_38__::func_711(3, 0))
 	{
-		if (__LIB_39__::func_56())
+		if (__LIB_38__::func_731())
 		{
 			func_56();
 		}
@@ -152,7 +152,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 2:
-				__LIB_39__::func_42();
+				__LIB_38__::func_717();
 				break;
 		}
 	}
@@ -176,7 +176,7 @@ int func_2()//Position - 0x118
 				fVar2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.5f, 1f);
 				fVar3 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 0.5f);
 				VEHICLE::START_VEHICLE_HORN(iLocal_69[iVar0], SYSTEM::ROUND((fVar2 * 1000f)), 0, false);
-				__LIB_39__::func_43(&iLocal_87, fVar3);
+				__LIB_38__::func_718(&iLocal_87, fVar3);
 			}
 		}
 	}
@@ -242,11 +242,11 @@ int func_11()//Position - 0x2C9
 				fVar2 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(0.5f, 1f) * 2f);
 				fVar3 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 0.5f) * 2f);
 				VEHICLE::START_VEHICLE_HORN(iLocal_69[iVar0], SYSTEM::ROUND((fVar2 * 1000f)), 0, false);
-				__LIB_39__::func_43(&iLocal_87, fVar3);
+				__LIB_38__::func_718(&iLocal_87, fVar3);
 			}
 		}
 	}
-	if (!__LIB_17__::func_677())
+	if (!__LIB_17__::func_680())
 	{
 		func_13();
 		func_12(&iLocal_87, MISC::GET_RANDOM_FLOAT_IN_RANGE(1.75f, 2.25f));
@@ -263,7 +263,7 @@ void func_12(int* iParam0, float fParam1)//Position - 0x38C
 {
 	if (!func_9(iParam0))
 	{
-		__LIB_39__::func_43(iParam0, fParam1);
+		__LIB_38__::func_718(iParam0, fParam1);
 	}
 }
 
@@ -1161,7 +1161,7 @@ int func_49(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0x
 				return 0;
 				break;
 			case 1:
-				__LIB_17__::func_690(&iVar0);
+				__LIB_17__::func_693(&iVar0);
 				if (iVar0 < 5)
 				{
 					*uParam1 = { Global_95644[iVar0 /*9*/].f_3 };
@@ -1236,7 +1236,7 @@ int func_52(int iParam0, var uParam1, char* sParam2)//Position - 0x2B57
 			return 0;
 			break;
 		case 1:
-			__LIB_17__::func_690(&iVar1);
+			__LIB_17__::func_693(&iVar1);
 			if (iVar1 < 5)
 			{
 				*uParam1 = Global_95644[iVar1 /*9*/].f_6;
@@ -1267,17 +1267,17 @@ int func_52(int iParam0, var uParam1, char* sParam2)//Position - 0x2B57
 			break;
 		case 5:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[0];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[0]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[0]), 32);
 			return 1;
 			break;
 		case 6:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[1];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[1]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[1]), 32);
 			return 1;
 			break;
 		case 7:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[2];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[2]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[2]), 32);
 			return 1;
 			break;
 		case 11:

@@ -380,12 +380,12 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_333 = "SA_WHEAT" /* GXT: Press ~INPUT_CONTEXT~ to drink green juice. */;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if ((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(16) || __LIB_18__::func_440()) || Global_2815059.f_1917)
+		if ((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(16) || __LIB_18__::func_450()) || Global_2815059.f_1917)
 		{
 			func_425();
 		}
 	}
-	else if (((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(19) || __LIB_0__::func_540(9)) || (__LIB_0__::func_767() && !__LIB_0__::func_766())) || __LIB_18__::func_440())
+	else if (((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(19) || __LIB_0__::func_540(9)) || (__LIB_0__::func_767() && !__LIB_0__::func_766())) || __LIB_18__::func_450())
 	{
 		func_425();
 	}
@@ -400,7 +400,7 @@ void __EntryFunction__()//Position - 0x0
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
 			iLocal_326 = Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_32;
-			__LIB_38__::func_748(&Global_1563873, iLocal_326);
+			__LIB_38__::func_423(&Global_1563873, iLocal_326);
 			Local_342 = { Global_1563873.f_146.f_82[8 /*102*/] };
 			fLocal_343 = Global_1563873.f_146.f_82[8 /*102*/].f_3;
 			if (fLocal_343 < 0f)
@@ -427,12 +427,12 @@ void __EntryFunction__()//Position - 0x0
 		SYSTEM::WAIT(0);
 		if (ENTITY::DOES_ENTITY_EXIST(iLocal_41))
 		{
-			if (((((((func_404() && !ENTITY::IS_ENTITY_DEAD(iLocal_41, false)) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) && __LIB_38__::func_753()) && __LIB_38__::func_745(0)) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !FIRE::IS_ENTITY_ON_FIRE(PLAYER::PLAYER_PED_ID())) && !PED::IS_PED_IN_COVER(PLAYER::PLAYER_PED_ID(), false))
+			if (((((((func_404() && !ENTITY::IS_ENTITY_DEAD(iLocal_41, false)) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) && __LIB_38__::func_428()) && __LIB_38__::func_420(0)) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !FIRE::IS_ENTITY_ON_FIRE(PLAYER::PLAYER_PED_ID())) && !PED::IS_PED_IN_COVER(PLAYER::PLAYER_PED_ID(), false))
 			{
 				switch (iLocal_321)
 				{
 					case 0:
-						if (func_398() && __LIB_38__::func_752())
+						if (func_398() && __LIB_38__::func_427())
 						{
 							iLocal_321 = 1;
 						}
@@ -479,27 +479,27 @@ void func_1()//Position - 0x313
 	float fVar1;
 	float fVar2;
 	float fVar3;
-	Local_342 = { __LIB_38__::func_731() };
+	Local_342 = { __LIB_38__::func_406() };
 	Var0 = { 1.2f, 1.2f, 1.2f };
 	fVar1 = 0f;
 	switch (iLocal_322)
 	{
 		case 0:
-			if ((((__LIB_38__::func_744(Local_342, Var0) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_38__::func_741() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_38__::func_741() + 90f)) && __LIB_38__::func_740()) && !__LIB_0__::func_1("FAM_WEAPDIS" /* GXT: A weapon cannot be equipped when in a safehouse. */))
+			if ((((__LIB_38__::func_419(Local_342, Var0) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_38__::func_416() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_38__::func_416() + 90f)) && __LIB_38__::func_415()) && !__LIB_0__::func_1("FAM_WEAPDIS" /* GXT: A weapon cannot be equipped when in a safehouse. */))
 			{
 				if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("MICHAEL_SAFEHOUSE_ACTIVITIES_SCENE"))
 				{
 					AUDIO::START_AUDIO_SCENE("MICHAEL_SAFEHOUSE_ACTIVITIES_SCENE");
 				}
-				__LIB_38__::func_725();
-				__LIB_0__::func_190(__LIB_38__::func_724());
+				__LIB_38__::func_400();
+				__LIB_0__::func_190(__LIB_38__::func_399());
 				iLocal_322 = 1;
 			}
 			break;
 		case 1:
 			if (__LIB_0__::func_494(1, 0, 1))
 			{
-				if (((__LIB_38__::func_744(Local_342, Var0) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_38__::func_741() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_38__::func_741() + 90f)) && __LIB_38__::func_740())
+				if (((__LIB_38__::func_419(Local_342, Var0) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) >= (__LIB_38__::func_416() - 90f)) && ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()) <= (__LIB_38__::func_416() + 90f)) && __LIB_38__::func_415())
 				{
 					if (!PLAYER::IS_PLAYER_TARGETTING_ANYTHING(PLAYER::PLAYER_ID()) && PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
@@ -507,7 +507,7 @@ void func_1()//Position - 0x313
 						{
 							PED::SET_PED_STEALTH_MOVEMENT(PLAYER::PLAYER_PED_ID(), false, 0);
 						}
-						__LIB_38__::func_725();
+						__LIB_38__::func_400();
 						PED::SET_PED_CLOTH_PIN_FRAMES(PLAYER::PLAYER_PED_ID(), 180);
 						__LIB_0__::func_189();
 						PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
@@ -532,7 +532,7 @@ void func_1()//Position - 0x313
 				}
 				else
 				{
-					if (__LIB_0__::func_1(__LIB_38__::func_724()))
+					if (__LIB_0__::func_1(__LIB_38__::func_399()))
 					{
 						HUD::CLEAR_HELP(true);
 					}
@@ -544,11 +544,11 @@ void func_1()//Position - 0x313
 			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
-			iLocal_327 = PED::CREATE_SYNCHRONIZED_SCENE(__LIB_38__::func_730(), __LIB_38__::func_729(), 2);
-			TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_327, sLocal_330, __LIB_38__::func_723(0), 1000f, -4f, 0, 0, 1000f, 0);
-			ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(__LIB_38__::func_743(), iLocal_327, __LIB_38__::func_728(0), sLocal_330, 1000f, -4f, 0, 1000f);
+			iLocal_327 = PED::CREATE_SYNCHRONIZED_SCENE(__LIB_38__::func_405(), __LIB_38__::func_404(), 2);
+			TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_327, sLocal_330, __LIB_38__::func_398(0), 1000f, -4f, 0, 0, 1000f, 0);
+			ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(__LIB_38__::func_418(), iLocal_327, __LIB_38__::func_403(0), sLocal_330, 1000f, -4f, 0, 1000f);
 			PED::PLAY_FACIAL_ANIM(PLAYER::PLAYER_PED_ID(), "ig_2_wheatgrassdrink_michael_facial", sLocal_330);
-			ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(__LIB_38__::func_743());
+			ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(__LIB_38__::func_418());
 			if (PED::IS_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_327))
 			{
 				PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_327, false);
@@ -561,7 +561,7 @@ void func_1()//Position - 0x313
 			{
 				CAM::DESTROY_ALL_CAMS(false);
 			}
-			if (__LIB_38__::func_721(iLocal_325))
+			if (__LIB_38__::func_396(iLocal_325))
 			{
 				CAM::SET_CAM_ACTIVE(iLocal_325, true);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
@@ -576,9 +576,9 @@ void func_1()//Position - 0x313
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_327))
 			{
-				if (__LIB_38__::func_721(iLocal_325))
+				if (__LIB_38__::func_396(iLocal_325))
 				{
-					__LIB_38__::func_773(iLocal_325, Local_335);
+					__LIB_38__::func_448(iLocal_325, Local_335);
 				}
 				fVar1 = PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_327);
 				func_33();
@@ -591,18 +591,18 @@ void func_1()//Position - 0x313
 				}
 				if (iLocal_323)
 				{
-					if (ENTITY::FIND_ANIM_EVENT_PHASE(sLocal_330, __LIB_38__::func_723(0), "WalkInterruptible", &fVar2, &fVar3))
+					if (ENTITY::FIND_ANIM_EVENT_PHASE(sLocal_330, __LIB_38__::func_398(0), "WalkInterruptible", &fVar2, &fVar3))
 					{
 						if (fVar1 >= fVar2 && fVar1 <= fVar3)
 						{
-							iLocal_327 = PED::CREATE_SYNCHRONIZED_SCENE(__LIB_38__::func_730(), __LIB_38__::func_729(), 2);
-							TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_327, sLocal_330, __LIB_38__::func_733(), 8f, -8f, 0, 0, 1000f, 0);
-							ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(__LIB_38__::func_743(), iLocal_327, __LIB_38__::func_732(), sLocal_330, 8f, -8f, 0, 1000f);
+							iLocal_327 = PED::CREATE_SYNCHRONIZED_SCENE(__LIB_38__::func_405(), __LIB_38__::func_404(), 2);
+							TASK::TASK_SYNCHRONIZED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_327, sLocal_330, __LIB_38__::func_408(), 8f, -8f, 0, 0, 1000f, 0);
+							ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(__LIB_38__::func_418(), iLocal_327, __LIB_38__::func_407(), sLocal_330, 8f, -8f, 0, 1000f);
 							if (PED::IS_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_327))
 							{
 								PED::SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME(iLocal_327, false);
 							}
-							if (__LIB_38__::func_721(iLocal_325))
+							if (__LIB_38__::func_396(iLocal_325))
 							{
 								CAM::SET_CAM_PARAMS(iLocal_325, Local_337, Local_338, fLocal_339, 0, 1, 1, 2);
 							}
@@ -613,7 +613,7 @@ void func_1()//Position - 0x313
 			}
 			else
 			{
-				if (__LIB_38__::func_721(iLocal_325))
+				if (__LIB_38__::func_396(iLocal_325))
 				{
 					CAM::SET_CAM_PARAMS(iLocal_325, Local_337, Local_338, fLocal_339, 0, 1, 1, 2);
 				}
@@ -626,7 +626,7 @@ void func_1()//Position - 0x313
 			PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 0 /*INPUT_NEXT_CAMERA*/, true);
 			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_327))
 			{
-				if (__LIB_38__::func_721(iLocal_325))
+				if (__LIB_38__::func_396(iLocal_325))
 				{
 					CAM::SET_CAM_PARAMS(iLocal_325, Local_337, Local_338, fLocal_339, 0, 1, 1, 2);
 				}
@@ -641,7 +641,7 @@ void func_1()//Position - 0x313
 			{
 				STATS::STAT_SET_INT(joaat("NUM_SH_WHEATGRASS"), iLocal_328 + 1, true);
 			}
-			if (__LIB_38__::func_721(iLocal_325))
+			if (__LIB_38__::func_396(iLocal_325))
 			{
 				CAM::STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP(false, 0f, 3, 0);
 			}
@@ -650,7 +650,7 @@ void func_1()//Position - 0x313
 			iLocal_323 = 0;
 			__LIB_0__::func_532(0, 1, 0, 0, 0, 0, 0);
 			ENTITY::FREEZE_ENTITY_POSITION(iLocal_41, true);
-			ENTITY::PLAY_ENTITY_ANIM(__LIB_38__::func_743(), __LIB_38__::func_728(0), sLocal_330, 1000f, false, true, false, 1f, 0);
+			ENTITY::PLAY_ENTITY_ANIM(__LIB_38__::func_418(), __LIB_38__::func_403(0), sLocal_330, 1000f, false, true, false, 1f, 0);
 			if (ENTITY::GET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID()) < (PED::GET_PED_MAX_HEALTH(PLAYER::PLAYER_PED_ID()) - 10))
 			{
 				ENTITY::SET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID()) + 10, 0);
@@ -710,10 +710,10 @@ void func_69()//Position - 0x30D3
 			{
 				Global_1835486 = -1;
 			}
-			iLocal_329 = __LIB_31__::func_365(PLAYER::PLAYER_PED_ID());
-			if (__LIB_38__::func_747(4) && !BitTest(Global_1835485, 20))
+			iLocal_329 = __LIB_35__::func_242(PLAYER::PLAYER_PED_ID());
+			if (__LIB_38__::func_422(4) && !BitTest(Global_1835485, 20))
 			{
-				if (__LIB_38__::func_744(Local_342, Var0) && iLocal_329 == -1)
+				if (__LIB_38__::func_419(Local_342, Var0) && iLocal_329 == -1)
 				{
 					__LIB_0__::func_190("SA_WHEAT" /* GXT: Press ~INPUT_CONTEXT~ to drink green juice. */);
 					iLocal_322 = 1;
@@ -723,7 +723,7 @@ void func_69()//Position - 0x30D3
 		case 1:
 			if (__LIB_0__::func_494(1, 0, 1))
 			{
-				if ((__LIB_38__::func_744(Local_342, Var0) && __LIB_38__::func_747(4)) && !BitTest(Global_1835485, 20))
+				if ((__LIB_38__::func_419(Local_342, Var0) && __LIB_38__::func_422(4)) && !BitTest(Global_1835485, 20))
 				{
 					if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 					{
@@ -5199,7 +5199,7 @@ void func_425()//Position - 0x6CBF4
 	}
 	else
 	{
-		__LIB_38__::func_737();
+		__LIB_38__::func_412();
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 }

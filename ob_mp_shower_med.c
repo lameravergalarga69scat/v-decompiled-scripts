@@ -543,7 +543,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_367 = { ENTITY::GET_ENTITY_COORDS(iScriptParam_420, true) };
 	func_520();
 	func_518();
-	if (((((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(16) || __LIB_0__::func_540(9)) || (__LIB_0__::func_767() && !__LIB_0__::func_766())) || __LIB_18__::func_440()) || Global_2815059.f_1917) || !ENTITY::DOES_ENTITY_EXIST(iScriptParam_420))
+	if (((((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(16) || __LIB_0__::func_540(9)) || (__LIB_0__::func_767() && !__LIB_0__::func_766())) || __LIB_18__::func_450()) || Global_2815059.f_1917) || !ENTITY::DOES_ENTITY_EXIST(iScriptParam_420))
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(iScriptParam_420))
 		{
@@ -1108,7 +1108,7 @@ void func_2()//Position - 0x206B
 			{
 				func_467();
 			}
-			else if ((__LIB_38__::func_747(iLocal_368) && (BitTest(Global_1835485, 21) || BitTest(Global_1835485, 24))) || ((__LIB_7__::func_685(Global_2779522.f_26) && __LIB_38__::func_747(iLocal_368)) && iLocal_375 == 1))
+			else if ((__LIB_38__::func_422(iLocal_368) && (BitTest(Global_1835485, 21) || BitTest(Global_1835485, 24))) || ((__LIB_7__::func_685(Global_2779522.f_26) && __LIB_38__::func_422(iLocal_368)) && iLocal_375 == 1))
 			{
 				if (!func_457())
 				{
@@ -1117,7 +1117,7 @@ void func_2()//Position - 0x206B
 				}
 				if (Global_1853198)
 				{
-					if (__LIB_38__::func_744(Global_2779522.f_28, Global_2779522.f_32))
+					if (__LIB_38__::func_419(Global_2779522.f_28, Global_2779522.f_32))
 					{
 						if (!__LIB_0__::func_1("MPSH_BILL" /* GXT: Unable to use the shower until utility charge is paid. */))
 						{
@@ -1131,7 +1131,7 @@ void func_2()//Position - 0x206B
 				}
 				else if (Global_1664908 > 120000)
 				{
-					if (__LIB_38__::func_744(Global_2779522.f_28, Global_2779522.f_32))
+					if (__LIB_38__::func_419(Global_2779522.f_28, Global_2779522.f_32))
 					{
 						if (!__LIB_0__::func_1("SA_SHWR_IN2" /* GXT: You are unable to shower anymore today. */))
 						{
@@ -1143,7 +1143,7 @@ void func_2()//Position - 0x206B
 						HUD::CLEAR_HELP(true);
 					}
 				}
-				else if (__LIB_38__::func_744(Global_2779522.f_28, Global_2779522.f_32) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
+				else if (__LIB_38__::func_419(Global_2779522.f_28, Global_2779522.f_32) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
 				{
 					if (!__LIB_0__::func_1("SA_SHWR_IN" /* GXT: Press ~INPUT_CONTEXT~ to take a shower.~n~ */) && !__LIB_0__::func_877())
 					{
@@ -1151,13 +1151,13 @@ void func_2()//Position - 0x206B
 					}
 					iLocal_387 = 1;
 				}
-				else if (!__LIB_38__::func_744(Global_2779522.f_28, Global_2779522.f_32))
+				else if (!__LIB_38__::func_419(Global_2779522.f_28, Global_2779522.f_32))
 				{
 				}
 			}
 			else
 			{
-				if (!__LIB_38__::func_747(iLocal_368))
+				if (!__LIB_38__::func_422(iLocal_368))
 				{
 				}
 				if (!BitTest(Global_1835485, 21))
@@ -1173,9 +1173,9 @@ void func_2()//Position - 0x206B
 		case 1:
 			if (__LIB_0__::func_494(1, 0, 1))
 			{
-				if (__LIB_38__::func_744(Global_2779522.f_28, Global_2779522.f_32))
+				if (__LIB_38__::func_419(Global_2779522.f_28, Global_2779522.f_32))
 				{
-					if ((((__LIB_38__::func_747(iLocal_368) && (BitTest(Global_1835485, 21) || BitTest(Global_1835485, 24))) && !__LIB_5__::func_836(PLAYER::PLAYER_ID())) && iVar1 == 1) || (((__LIB_7__::func_685(Global_2779522.f_26) && !__LIB_5__::func_836(PLAYER::PLAYER_ID())) && iVar1 == 1) && iLocal_375 == 1))
+					if ((((__LIB_38__::func_422(iLocal_368) && (BitTest(Global_1835485, 21) || BitTest(Global_1835485, 24))) && !__LIB_5__::func_836(PLAYER::PLAYER_ID())) && iVar1 == 1) || (((__LIB_7__::func_685(Global_2779522.f_26) && !__LIB_5__::func_836(PLAYER::PLAYER_ID())) && iVar1 == 1) && iLocal_375 == 1))
 					{
 						if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 51 /*INPUT_CONTEXT*/))
 						{
@@ -1235,7 +1235,7 @@ void func_2()//Position - 0x206B
 					}
 					else
 					{
-						if (!__LIB_38__::func_747(iLocal_368))
+						if (!__LIB_38__::func_422(iLocal_368))
 						{
 						}
 						if (__LIB_5__::func_836(PLAYER::PLAYER_ID()))
@@ -1564,7 +1564,7 @@ void func_2()//Position - 0x206B
 			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			__LIB_3__::func_93(1);
-			__LIB_38__::func_765(4);
+			__LIB_38__::func_440(4);
 			Global_1835487 = 3;
 			if (iLocal_370 == 77)
 			{
@@ -5922,7 +5922,7 @@ int func_285(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 								iVar2 = 0;
 								while (iVar2 < 15)
 								{
-									iVar3 = __LIB_16__::func_222(iParam0, iVar10, 14, uVar12[iVar1], iVar2, 0);
+									iVar3 = __LIB_16__::func_225(iParam0, iVar10, 14, uVar12[iVar1], iVar2, 0);
 									if (iVar3 != -99)
 									{
 										func_285(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -5953,7 +5953,7 @@ int func_285(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 							iVar2 = 0;
 							while (iVar2 < 15)
 							{
-								iVar3 = __LIB_16__::func_222(iParam0, iVar10, iVar0, uVar11[iVar0], iVar2, 0);
+								iVar3 = __LIB_16__::func_225(iParam0, iVar10, iVar0, uVar11[iVar0], iVar2, 0);
 								if (iVar3 != -99)
 								{
 									func_285(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -6046,7 +6046,7 @@ int func_285(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				iVar2 = 0;
 				while (iVar2 < 15)
 				{
-					iVar3 = __LIB_16__::func_222(iParam0, iVar10, 14, uVar15[iVar1], iVar2, 0);
+					iVar3 = __LIB_16__::func_225(iParam0, iVar10, 14, uVar15[iVar1], iVar2, 0);
 					if (iVar3 != -99)
 					{
 						func_285(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -6066,7 +6066,7 @@ int func_285(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 			iVar2 = 0;
 			while (iVar2 < 15)
 			{
-				iVar3 = __LIB_16__::func_222(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
+				iVar3 = __LIB_16__::func_225(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
 				if (iVar3 != -99)
 				{
 					func_285(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -6090,7 +6090,7 @@ int func_285(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 			iVar2 = 0;
 			while (iVar2 < 15)
 			{
-				iVar3 = __LIB_16__::func_222(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
+				iVar3 = __LIB_16__::func_225(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
 				if (iVar3 != -99)
 				{
 					func_285(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -6402,7 +6402,7 @@ void func_327(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 		iVar1++;
 	}
 	bVar2 = false;
-	if (__LIB_16__::func_375(iParam0, &Global_78200, iParam1, &iParam3))
+	if (__LIB_16__::func_378(iParam0, &Global_78200, iParam1, &iParam3))
 	{
 		iVar1 = 0;
 		while (iVar1 < 12)
@@ -6627,7 +6627,7 @@ void func_467()//Position - 0x71D08
 			iLocal_391 = MISC::GET_GAME_TIMER();
 			func_339();
 			iLocal_387 = 9;
-			__LIB_37__::func_895();
+			__LIB_37__::func_569();
 			Global_2671449.f_16 = 1;
 			Global_2671449.f_19 = 1;
 		}

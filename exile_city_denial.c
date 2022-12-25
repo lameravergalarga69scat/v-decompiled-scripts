@@ -99,12 +99,12 @@ void __EntryFunction__()//Position - 0x0
 					func_38();
 					break;
 				case 1:
-					__LIB_17__::func_110(1628462442);
-					__LIB_17__::func_110(1791324372);
-					__LIB_17__::func_110(joaat("CALL_THIRD_CREW"));
-					__LIB_17__::func_110(1806999335);
-					__LIB_17__::func_110(2054503592);
-					__LIB_17__::func_110(-2009081795);
+					__LIB_17__::func_113(1628462442);
+					__LIB_17__::func_113(1791324372);
+					__LIB_17__::func_113(joaat("CALL_THIRD_CREW"));
+					__LIB_17__::func_113(1806999335);
+					__LIB_17__::func_113(2054503592);
+					__LIB_17__::func_113(-2009081795);
 					bLocal_29 = false;
 					while (!PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 					{
@@ -127,7 +127,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 		}
 		Var2 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
-		bLocal_29 = __LIB_39__::func_442(Var2, &bLocal_32);
+		bLocal_29 = __LIB_39__::func_117(Var2, &bLocal_32);
 		if (Global_78588 || Global_78588.f_1)
 		{
 			bLocal_29 = false;
@@ -214,30 +214,30 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (!BitTest(Global_113386.f_7688.f_923, 0))
 						{
-							__LIB_17__::func_18(1628462442, 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
+							__LIB_17__::func_21(1628462442, 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
 						}
 						else if (!BitTest(Global_113386.f_7688.f_923, 1))
 						{
-							__LIB_17__::func_18(1791324372, 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
+							__LIB_17__::func_21(1791324372, 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
 						}
 						else if (!BitTest(Global_113386.f_7688.f_923, 2))
 						{
-							__LIB_17__::func_18(joaat("CALL_THIRD_CREW"), 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
+							__LIB_17__::func_21(joaat("CALL_THIRD_CREW"), 7, 1, 31, 3, 10000, 20000, -1, -1, 150, -1, 1024);
 						}
 					}
 					else if (__LIB_0__::func_216(PLAYER::PLAYER_PED_ID()) == 2)
 					{
 						if (!BitTest(Global_113386.f_7688.f_923, 3))
 						{
-							__LIB_17__::func_18(1806999335, 7, 4, 31, 3, 10000, 20000, -1, -1, 151, -1, 1024);
+							__LIB_17__::func_21(1806999335, 7, 4, 31, 3, 10000, 20000, -1, -1, 151, -1, 1024);
 						}
 						else if (!BitTest(Global_113386.f_7688.f_923, 4))
 						{
-							__LIB_17__::func_18(2054503592, 7, 4, 31, 3, 10000, 20000, -1, -1, 151, -1, 1024);
+							__LIB_17__::func_21(2054503592, 7, 4, 31, 3, 10000, 20000, -1, -1, 151, -1, 1024);
 						}
 						else if (!BitTest(Global_113386.f_7688.f_923, 4))
 						{
-							__LIB_17__::func_18(-2009081795, 7, 4, 31, 3, 10000, 20000, -1, -1, 151, -1, 1024);
+							__LIB_17__::func_21(-2009081795, 7, 4, 31, 3, 10000, 20000, -1, -1, 151, -1, 1024);
 						}
 					}
 					if (iVar1 == 0 && !bVar4)
@@ -362,13 +362,13 @@ void __EntryFunction__()//Position - 0x0
 
 void func_4()//Position - 0x802
 {
-	__LIB_37__::func_758(0, 1);
-	__LIB_37__::func_758(2, 1);
-	__LIB_37__::func_758(1, 1);
-	__LIB_37__::func_757(0, 1);
-	__LIB_37__::func_757(1, 1);
-	__LIB_37__::func_757(3, 1);
-	__LIB_37__::func_757(2, 1);
+	__LIB_37__::func_432(0, 1);
+	__LIB_37__::func_432(2, 1);
+	__LIB_37__::func_432(1, 1);
+	__LIB_37__::func_431(0, 1);
+	__LIB_37__::func_431(1, 1);
+	__LIB_37__::func_431(3, 1);
+	__LIB_37__::func_431(2, 1);
 }
 
 void func_20()//Position - 0xEE2
@@ -377,12 +377,12 @@ void func_20()//Position - 0xEE2
 	{
 		__LIB_15__::func_281(&iLocal_28);
 	}
-	__LIB_17__::func_110(1628462442);
-	__LIB_17__::func_110(1791324372);
-	__LIB_17__::func_110(joaat("CALL_THIRD_CREW"));
-	__LIB_17__::func_110(1806999335);
-	__LIB_17__::func_110(2054503592);
-	__LIB_17__::func_110(-2009081795);
+	__LIB_17__::func_113(1628462442);
+	__LIB_17__::func_113(1791324372);
+	__LIB_17__::func_113(joaat("CALL_THIRD_CREW"));
+	__LIB_17__::func_113(1806999335);
+	__LIB_17__::func_113(2054503592);
+	__LIB_17__::func_113(-2009081795);
 	bLocal_29 = false;
 	bLocal_30 = false;
 	Global_43017 = 0;
@@ -398,12 +398,12 @@ void func_38()//Position - 0x17A7
 
 void func_41()//Position - 0x183F
 {
-	__LIB_37__::func_758(0, 0);
-	__LIB_37__::func_758(2, 0);
-	__LIB_37__::func_758(1, 0);
-	__LIB_37__::func_757(0, 0);
-	__LIB_37__::func_757(1, 0);
-	__LIB_37__::func_757(3, 0);
-	__LIB_37__::func_757(2, 0);
+	__LIB_37__::func_432(0, 0);
+	__LIB_37__::func_432(2, 0);
+	__LIB_37__::func_432(1, 0);
+	__LIB_37__::func_431(0, 0);
+	__LIB_37__::func_431(1, 0);
+	__LIB_37__::func_431(3, 0);
+	__LIB_37__::func_431(2, 0);
 }
 

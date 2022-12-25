@@ -711,7 +711,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_720();
 		}
-		if (__LIB_32__::func_566(29))
+		if (__LIB_30__::func_998(29))
 		{
 			func_720();
 		}
@@ -768,7 +768,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		func_583();
 		func_551();
-		__LIB_32__::func_564();
+		__LIB_30__::func_996();
 		func_528();
 		switch (func_527(NETWORK::PARTICIPANT_ID_TO_INT()))
 		{
@@ -1689,7 +1689,7 @@ void func_20()//Position - 0x7D1
 										else
 										{
 											sVar5 = "KOTC_OVER3" /* GXT: <C>~a~</C> ~s~won King of the Castle with a score of ~1~ */;
-											__LIB_25__::func_689(sVar5, Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_1, 1, func_79(Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_3), 0, 0, 0, 1, 0);
+											__LIB_25__::func_699(sVar5, Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_1, 1, func_79(Local_91.f_6[iVar0 /*204*/].f_74[0 /*4*/].f_3), 0, 0, 0, 1, 0);
 										}
 									}
 								}
@@ -2065,7 +2065,7 @@ void func_91(int iParam0)//Position - 0x2F6A
 			{
 				iLocal_658 = 1;
 			}
-			__LIB_43__::func_661(1, 1, 0, 1060320051, 1086324736, 1065353216, 1088421888, 1084227584, 0, 1066192077, 0, 0, 1, 0, 1109393408);
+			__LIB_43__::func_618(1, 1, 0, 1060320051, 1086324736, 1065353216, 1088421888, 1084227584, 0, 1066192077, 0, 0, 1, 0, 1109393408);
 			func_97();
 			MISC::SET_BIT(&bLocal_96, 18);
 		}
@@ -2077,7 +2077,7 @@ void func_91(int iParam0)//Position - 0x2F6A
 			iLocal_658 = 0;
 		}
 		__LIB_2__::func_91();
-		__LIB_43__::func_661(0, 1, 0, 1060320051, 1086324736, 1065353216, 1088421888, 1084227584, 0, 1066192077, 0, 0, 1, 0, 1109393408);
+		__LIB_43__::func_618(0, 1, 0, 1060320051, 1086324736, 1065353216, 1088421888, 1084227584, 0, 1066192077, 0, 0, 1, 0, 1109393408);
 		MISC::CLEAR_BIT(&bLocal_96, 18);
 	}
 }
@@ -4866,7 +4866,7 @@ void func_121(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	{
 		sVar2 = sParam10;
 	}
-	__LIB_30__::func_829(iParam7, sVar2, 0, 0, -1, 0, 3, 0, iParam9, 0, 0, 0, iParam9, 0, 0, 0, 0, -1);
+	__LIB_30__::func_839(iParam7, sVar2, 0, 0, -1, 0, 3, 0, iParam9, 0, 0, 0, iParam9, 0, 0, 0, 0, -1);
 	*uParam8 = 0;
 }
 
@@ -4896,7 +4896,7 @@ void func_144(int iParam0, int iParam1, char* sParam2)//Position - 0xA2C1
 	{
 		sVar0 = sParam2;
 	}
-	__LIB_30__::func_829(iParam0, sVar0, 0, 0, -1, 0, 3, 0, iParam1, 0, 0, 0, iParam1, 0, 0, 0, 0, -1);
+	__LIB_30__::func_839(iParam0, sVar0, 0, 0, -1, 0, 3, 0, iParam1, 0, 0, 0, iParam1, 0, 0, 0, 0, -1);
 }
 
 bool func_147(int iParam0)//Position - 0xA4D1
@@ -5740,7 +5740,7 @@ void func_351(int iParam0, struct<3> Param1, var uParam2, float fParam3, float f
 		MISC::CLEAR_BIT(&(Global_1836844.f_1), 3);
 		if (iParam0 != 146 && uParam5)
 		{
-			__LIB_44__::func_99();
+			__LIB_44__::func_115();
 		}
 	}
 }
@@ -5813,7 +5813,7 @@ void func_368(int iParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 	uParam3->f_36 = 0;
 	if (__LIB_3__::func_475() || iParam2 == 28)
 	{
-		if (__LIB_41__::func_58(iParam1, iParam2, uParam3, Global_1836357, 0, __LIB_2__::func_772(), sParam7))
+		if (__LIB_40__::func_734(iParam1, iParam2, uParam3, Global_1836357, 0, __LIB_2__::func_772(), sParam7))
 		{
 			__LIB_1__::func_995(1);
 			if ((!__LIB_1__::func_994() && !__LIB_1__::func_993()) || BitTest(Global_2815059.f_4657, 1))
@@ -5862,7 +5862,7 @@ void func_368(int iParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 												iVar1[bVar10] = iVar21;
 												iVar21++;
 												iVar0++;
-												__LIB_32__::func_492(&iVar1, bVar4, &iVar21, &iVar0, bVar3);
+												__LIB_30__::func_923(&iVar1, bVar4, &iVar21, &iVar0, bVar3);
 											}
 										}
 									}
@@ -5892,7 +5892,7 @@ void func_368(int iParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 							{
 								bVar4 = (iParam0[iVar18 /*42*/])->f_1;
 							}
-							if ((__LIB_2__::func_144(bVar4) && __LIB_32__::func_491(bVar4, iParam2, bVar3)) && __LIB_1__::func_693(bVar4, 0, 1))
+							if ((__LIB_2__::func_144(bVar4) && __LIB_30__::func_922(bVar4, iParam2, bVar3)) && __LIB_1__::func_693(bVar4, 0, 1))
 							{
 								bVar10 = bVar4;
 								iVar8 = Global_1853348[bVar10 /*834*/].f_205.f_6;
@@ -7767,7 +7767,7 @@ void func_551()//Position - 0x15A68
 				{
 					if (func_559(Local_102[bVar1 /*3*/]))
 					{
-						__LIB_30__::func_773(Local_102[bVar1 /*3*/], __LIB_1__::func_389(iVar7), func_555(bVar0, bVar1, iVar8), 0);
+						__LIB_30__::func_783(Local_102[bVar1 /*3*/], __LIB_1__::func_389(iVar7), func_555(bVar0, bVar1, iVar8), 0);
 					}
 				}
 			}
@@ -7855,7 +7855,7 @@ void func_561(bool bParam0)//Position - 0x16387
 				__LIB_12__::func_535(Local_102[bParam0 /*3*/], 439, 1, 0);
 				if (func_559(Local_102[bParam0 /*3*/]))
 				{
-					__LIB_30__::func_773(Local_102[bParam0 /*3*/], __LIB_1__::func_389(iVar0), 1, 0);
+					__LIB_30__::func_783(Local_102[bParam0 /*3*/], __LIB_1__::func_389(iVar0), 1, 0);
 				}
 				__LIB_15__::func_359(Local_102[bParam0 /*3*/], 1, 1, 0);
 				MISC::SET_BIT(&uLocal_653, bParam0);
@@ -7886,7 +7886,7 @@ void func_566(bool bParam0)//Position - 0x16523
 					__LIB_12__::func_535(Local_102[bParam0 /*3*/], 439, 0, 0);
 					if (func_559(Local_102[bParam0 /*3*/]))
 					{
-						__LIB_30__::func_773(Local_102[bParam0 /*3*/], __LIB_1__::func_389(iVar0), 0, 0);
+						__LIB_30__::func_783(Local_102[bParam0 /*3*/], __LIB_1__::func_389(iVar0), 0, 0);
 					}
 					__LIB_15__::func_359(Local_102[bParam0 /*3*/], 0, 0, 0);
 					MISC::CLEAR_BIT(&uLocal_653, bParam0);
@@ -8615,8 +8615,8 @@ void func_662(float fParam0, var uParam1, var uParam2, var uParam3)//Position - 
 		{
 			iVar2 = func_672();
 		}
-		*uParam1 = SYSTEM::ROUND((IntToFloat(__LIB_32__::func_565(func_671(), func_670(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11934 /* Tunable: KING_OF_THE_CASTLE_EVENT_MULTIPLIER_CASH */));
-		*uParam2 = (*uParam2 + SYSTEM::ROUND((IntToFloat(__LIB_32__::func_565(func_664(), func_663(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11935 /* Tunable: KING_OF_THE_CASTLE_EVENT_MULTIPLIER_RP */)));
+		*uParam1 = SYSTEM::ROUND((IntToFloat(__LIB_30__::func_997(func_671(), func_670(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11934 /* Tunable: KING_OF_THE_CASTLE_EVENT_MULTIPLIER_CASH */));
+		*uParam2 = (*uParam2 + SYSTEM::ROUND((IntToFloat(__LIB_30__::func_997(func_664(), func_663(), iVar1, fParam0, func_669(), func_668(), func_667(), iVar2)) * Global_262145.f_11935 /* Tunable: KING_OF_THE_CASTLE_EVENT_MULTIPLIER_RP */)));
 	}
 }
 
@@ -9266,7 +9266,7 @@ void func_731(int iParam0, bool bParam1, int iParam2)//Position - 0x1AB28
 		__LIB_2__::func_28();
 		if ((!__LIB_2__::func_106(PLAYER::PLAYER_ID()) && !__LIB_2__::func_111(PLAYER::PLAYER_ID())) && !__LIB_1__::func_632())
 		{
-			__LIB_44__::func_99();
+			__LIB_44__::func_115();
 		}
 		__LIB_2__::func_23();
 		if (!BitTest(Global_1943920.f_3, 0) && !BitTest(Global_1943920.f_3, 1))

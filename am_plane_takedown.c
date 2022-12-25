@@ -483,11 +483,11 @@ void func_23()//Position - 0xB61
 					__LIB_2__::func_428(65, 1, -1);
 					if (__LIB_0__::func_680())
 					{
-						__LIB_32__::func_533(2, "PTD_PASS0" /* GXT: Well dun, frend. I hope u told 'em 2 run guns with TP Inc next time, b4 u blasted em out the skie */, 0, 0, -99);
+						__LIB_30__::func_964(2, "PTD_PASS0" /* GXT: Well dun, frend. I hope u told 'em 2 run guns with TP Inc next time, b4 u blasted em out the skie */, 0, 0, -99);
 					}
 					else
 					{
-						__LIB_32__::func_533(2, "PTD_PASS1" /* GXT: Nice work, buddy. Those engine noises, I hadn't been sleepin 4 weeks. But that coulda been the tina. Haha. Next time I'll get a trailer out the flight path. */, 0, 0, -99);
+						__LIB_30__::func_964(2, "PTD_PASS1" /* GXT: Nice work, buddy. Those engine noises, I hadn't been sleepin 4 weeks. But that coulda been the tina. Haha. Next time I'll get a trailer out the flight path. */, 0, 0, -99);
 					}
 					MISC::SET_BIT(&(Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_1), 0);
 				}
@@ -656,7 +656,7 @@ void func_206()//Position - 0x5D03
 	}
 	if (BitTest(Local_83.f_1, 1))
 	{
-		__LIB_32__::func_533(2, "PTD_FAIL" /* GXT: Sum1 just tried 2 sell me sum guns!  That means that the byrd landed, and u r no kind of friend at all! Remind me 2 eat u when I next c u */, 0, 0, -99);
+		__LIB_30__::func_964(2, "PTD_FAIL" /* GXT: Sum1 just tried 2 sell me sum guns!  That means that the byrd landed, and u r no kind of friend at all! Remind me 2 eat u when I next c u */, 0, 0, -99);
 	}
 	func_209();
 	if (__LIB_2__::func_86() == 4 && Local_83.f_4 != 0)

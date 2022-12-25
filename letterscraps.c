@@ -135,7 +135,7 @@ void func_1()//Position - 0xF8
 				{
 					if (!__LIB_13__::func_94())
 					{
-						if (((!AUDIO::IS_MOBILE_PHONE_CALL_ONGOING() && !__LIB_8__::func_943()) && !__LIB_37__::func_470()) && !__LIB_16__::func_827())
+						if (((!AUDIO::IS_MOBILE_PHONE_CALL_ONGOING() && !__LIB_8__::func_943()) && !__LIB_37__::func_144()) && !__LIB_16__::func_830())
 						{
 							iLocal_58 = 0;
 							iLocal_56 = 0;
@@ -236,7 +236,7 @@ void func_21()//Position - 0x712
 		case 0:
 			func_62();
 			__LIB_0__::func_740(&Local_44, 1, joaat("prop_ld_scrap"), "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
-			__LIB_37__::func_693(&Local_44, joaat("NUM_HIDDEN_PACKAGES_0"), 705, 50);
+			__LIB_37__::func_367(&Local_44, joaat("NUM_HIDDEN_PACKAGES_0"), 705, 50);
 			iLocal_43 = 1;
 			iLocal_60 = 1;
 			break;
@@ -290,11 +290,11 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 			{
 				if (((((((uParam0->f_10 == 1 || uParam0->f_10 == 5) || uParam0->f_10 == 7) || uParam0->f_10 == 13) || uParam0->f_10 == 18) || uParam0->f_10 == 20) || uParam0->f_10 == 37) || uParam0->f_10 == 42)
 				{
-					__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
+					__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
 				}
 				else if (uParam0->f_10 == iLocal_51)
 				{
-					__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
+					__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
 					if (OBJECT::DOES_PICKUP_EXIST((iParam1[uParam0->f_10 /*11*/])->f_1))
 					{
 						INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME((iParam1[uParam0->f_10 /*11*/])->f_1, sLocal_52);
@@ -302,13 +302,13 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 				}
 				else
 				{
-					__LIB_17__::func_41(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
+					__LIB_17__::func_44(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
 				}
 			}
 		}
 		else if (!bVar1)
 		{
-			if (__LIB_39__::func_728(uParam0, iParam1, Var2))
+			if (__LIB_39__::func_404(uParam0, iParam1, Var2))
 			{
 				if (bVar3)
 				{
@@ -331,7 +331,7 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 	{
 		if (!Global_78579)
 		{
-			__LIB_32__::func_439(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 1, &iLocal_53, &iLocal_54, "LETTERS_TITLE" /* GXT: Scrap Collected~s~ */, "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
+			__LIB_30__::func_870(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 1, &iLocal_53, &iLocal_54, "LETTERS_TITLE" /* GXT: Scrap Collected~s~ */, "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
 		}
 	}
 	if (!uParam0->f_12 && !uParam0->f_11)
@@ -348,7 +348,7 @@ void func_62()//Position - 0x196F
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		Local_50[iVar0 /*11*/].f_3 = { __LIB_37__::func_691(iVar0, 0) };
+		Local_50[iVar0 /*11*/].f_3 = { __LIB_37__::func_365(iVar0, 0) };
 		Local_50[iVar0 /*11*/].f_10 = 0;
 		iVar0++;
 	}

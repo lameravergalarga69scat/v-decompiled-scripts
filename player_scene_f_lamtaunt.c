@@ -382,8 +382,8 @@ void __EntryFunction__()//Position - 0x0
 	SYSTEM::WAIT(0);
 	func_147();
 	func_145();
-	__LIB_17__::func_501();
-	while (iLocal_257 && __LIB_39__::func_36(2, 0))
+	__LIB_17__::func_504();
+	while (iLocal_257 && __LIB_38__::func_711(2, 0))
 	{
 		SYSTEM::WAIT(0);
 		switch (iLocal_66)
@@ -415,7 +415,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 4:
-				__LIB_39__::func_50();
+				__LIB_38__::func_725();
 				break;
 		}
 	}
@@ -451,18 +451,18 @@ void func_3(int iParam0)//Position - 0x1B0
 	{
 		if (!iLocal_337 && ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(iParam0, PLAYER::PLAYER_PED_ID(), true))
 		{
-			bVar0 = __LIB_16__::func_747(iParam0);
+			bVar0 = __LIB_16__::func_750(iParam0);
 			iVar1 = __LIB_14__::func_791(bVar0);
-			iVar2 = __LIB_39__::func_37(iVar1);
+			iVar2 = __LIB_38__::func_712(iVar1);
 			if (iVar2 != -1)
 			{
-				iVar3 = __LIB_17__::func_311(iParam0);
+				iVar3 = __LIB_17__::func_314(iParam0);
 				if (iVar3 != 0)
 				{
-					if (!__LIB_16__::func_979(iVar2) || __LIB_42__::func_653(iVar2) == 6)
+					if (!__LIB_16__::func_982(iVar2) || __LIB_42__::func_528(iVar2) == 6)
 					{
-						__LIB_17__::func_273(75, ENTITY::GET_ENTITY_COORDS(iParam0, false), 250f, -1);
-						if (__LIB_39__::func_39(Global_96175, bVar0, 2, 0, iVar3, iVar2, 75))
+						__LIB_17__::func_276(75, ENTITY::GET_ENTITY_COORDS(iParam0, false), 250f, -1);
+						if (__LIB_38__::func_714(Global_96175, bVar0, 2, 0, iVar3, iVar2, 75))
 						{
 							iLocal_337 = 1;
 						}
@@ -472,7 +472,7 @@ void func_3(int iParam0)//Position - 0x1B0
 		}
 		return;
 	}
-	__LIB_42__::func_655(iParam0, 138, &uLocal_68, "FMFAUD", &uLocal_233, &iLocal_254, 3);
+	__LIB_42__::func_530(iParam0, 138, &uLocal_68, "FMFAUD", &uLocal_233, &iLocal_254, 3);
 	fVar4 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iParam0, true), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true));
 	if (fVar4 > (8f * 8f))
 	{
@@ -523,7 +523,7 @@ int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 	iVar0 = 0;
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
-		if (!__LIB_39__::func_36(2, *iParam0))
+		if (!__LIB_38__::func_711(2, *iParam0))
 		{
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(*iParam0, true, true);
 			PED::DELETE_PED(iParam0);
@@ -672,7 +672,7 @@ int func_125(int* iParam0, int iParam1)//Position - 0x50D9
 					{
 						return 0;
 					}
-					Var6 = { __LIB_39__::func_51(Local_263 + Local_266[iParam1 /*3*/], __LIB_0__::func_331((fLocal_268[iParam1] * 0.9f), 10f, 100f), 0f) };
+					Var6 = { __LIB_38__::func_726(Local_263 + Local_266[iParam1 /*3*/], __LIB_0__::func_331((fLocal_268[iParam1] * 0.9f), 10f, 100f), 0f) };
 					if (TASK::GET_SCRIPT_TASK_STATUS(*iParam0, joaat("SCRIPT_TASK_USE_NEAREST_SCENARIO_TO_POS")) == 1)
 					{
 					}
@@ -723,7 +723,7 @@ int func_133()//Position - 0x58EE
 {
 	float fVar0;
 	int iVar1;
-	if (!__LIB_17__::func_677())
+	if (!__LIB_17__::func_680())
 	{
 		if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(Global_97771))
 		{
@@ -757,7 +757,7 @@ int func_133()//Position - 0x58EE
 int func_135()//Position - 0x59C9
 {
 	int iVar0;
-	if (!__LIB_17__::func_677())
+	if (!__LIB_17__::func_680())
 	{
 		if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(Global_97771))
 		{
@@ -866,10 +866,10 @@ void func_145()//Position - 0x5CE2
 		{
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_100162, true, true);
 		}
-		__LIB_39__::func_38(&Global_100162, Global_95445);
+		__LIB_38__::func_713(&Global_100162, Global_95445);
 		PED::SET_PED_CONFIG_FLAG(Global_100162, 132, true);
 		PED::SET_PED_CONFIG_FLAG(Global_100162, 317, true);
-		__LIB_39__::func_38(&Global_100162, Global_95445);
+		__LIB_38__::func_713(&Global_100162, Global_95445);
 	}
 	PED::ADD_RELATIONSHIP_GROUP("TAUNTERS", &iLocal_261);
 	iVar0 = 0;
@@ -899,7 +899,7 @@ void func_147()//Position - 0x5EF6
 	var uVar2;
 	iLocal_67 = Global_99844;
 	func_151(iLocal_67, &Local_263, &fLocal_264, &cVar0);
-	__LIB_33__::func_604(iLocal_67, &sLocal_269, &cLocal_285, &cLocal_301, &uVar1, &uVar2);
+	__LIB_32__::func_88(iLocal_67, &sLocal_269, &cLocal_285, &cLocal_301, &uVar1, &uVar2);
 	switch (iLocal_67)
 	{
 		case 218:
@@ -991,7 +991,7 @@ void func_147()//Position - 0x5EF6
 			StringCopy(&(Local_326[1 /*16*/]), "fras_ig_10_p3_loop_g2", 64);
 			StringCopy(&(Local_327[0 /*16*/]), "fras_ig_10_p3_exit_g1", 64);
 			StringCopy(&(Local_327[1 /*16*/]), "fras_ig_10_p3_exit_g2", 64);
-			Local_328 = { __LIB_17__::func_673("FRAS_IG_10", 3) };
+			Local_328 = { __LIB_17__::func_676("FRAS_IG_10", 3) };
 			fLocal_331 = 0f;
 			break;
 		default:
@@ -1028,7 +1028,7 @@ int func_151(int iParam0, var uParam1, var uParam2, char* sParam3)//Position - 0
 				return 0;
 				break;
 			case 1:
-				__LIB_17__::func_690(&iVar0);
+				__LIB_17__::func_693(&iVar0);
 				if (iVar0 < 5)
 				{
 					*uParam1 = { Global_95644[iVar0 /*9*/].f_3 };
@@ -1103,7 +1103,7 @@ int func_153(int iParam0, var uParam1, char* sParam2)//Position - 0x7F0D
 			return 0;
 			break;
 		case 1:
-			__LIB_17__::func_690(&iVar1);
+			__LIB_17__::func_693(&iVar1);
 			if (iVar1 < 5)
 			{
 				*uParam1 = Global_95644[iVar1 /*9*/].f_6;
@@ -1134,17 +1134,17 @@ int func_153(int iParam0, var uParam1, char* sParam2)//Position - 0x7F0D
 			break;
 		case 5:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[0];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[0]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[0]), 32);
 			return 1;
 			break;
 		case 6:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[1];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[1]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[1]), 32);
 			return 1;
 			break;
 		case 7:
 			*uParam1 = Global_113386.f_2363.f_539.f_2310[2];
-			StringCopy(sParam2, __LIB_17__::func_691(Global_113386.f_2363.f_539.f_2314[2]), 32);
+			StringCopy(sParam2, __LIB_17__::func_694(Global_113386.f_2363.f_539.f_2314[2]), 32);
 			return 1;
 			break;
 		case 11:

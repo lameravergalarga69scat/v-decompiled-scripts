@@ -55,7 +55,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				else
 				{
-					__LIB_17__::func_854();
+					__LIB_17__::func_864();
 				}
 			}
 		}

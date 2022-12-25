@@ -696,7 +696,7 @@ void __EntryFunction__()//Position - 0x0
 		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("SF_EDF", 0);
 		SYSTEM::WAIT(0);
 		__LIB_14__::func_863(Local_54.f_9, 1, 0, 0, 0, 0);
-		__LIB_17__::func_408();
+		__LIB_17__::func_411();
 		switch (iLocal_55)
 		{
 			case -1:
@@ -749,39 +749,39 @@ void func_1()//Position - 0x2CB
 			switch (iLocal_117)
 			{
 				case 0:
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_GENERIC");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_GENERIC");
 					break;
 				case 1:
 					sVar0 = "FATIC3_11";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
 					break;
 				case 2:
 					sVar0 = "FATIC3_YOURBIKE";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
 					break;
 				case 3:
 					sVar0 = "FATIC3_16";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_OUT_OF_TIME");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_OUT_OF_TIME");
 					break;
 				case 4:
 					sVar0 = "FATIC3_8";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_LOST_RACE");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_LOST_RACE");
 					break;
 				case 5:
 					sVar0 = "FATIC3_7";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_WOMAN_DIED");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_WOMAN_DIED");
 					break;
 				case 6:
 					sVar0 = "FATIC3_10";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_WOMAN_HURT");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_WOMAN_HURT");
 					break;
 				case 7:
 					sVar0 = "FATIC3_13";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_WOMAN_SCARED");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_WOMAN_SCARED");
 					break;
 				case 9:
 					sVar0 = "FATIC3_14";
-					__LIB_17__::func_32("MISSION_FAILED reason=FAILED_LEFT_AREA");
+					__LIB_17__::func_35("MISSION_FAILED reason=FAILED_LEFT_AREA");
 					break;
 			}
 			if (iLocal_117 == 0)
@@ -827,7 +827,7 @@ void func_11()//Position - 0x623
 	switch (iLocal_115)
 	{
 		case 0:
-			__LIB_17__::func_32("WAITING FOR OUTRO ASSETS");
+			__LIB_17__::func_35("WAITING FOR OUTRO ASSETS");
 			STREAMING::REQUEST_ANIM_DICT("rcmfanatic3leadinoutef_3_mcs_1");
 			iLocal_147 = 0;
 			bLocal_146 = false;
@@ -851,20 +851,20 @@ void func_11()//Position - 0x623
 					VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_67, 5f);
 				}
 				iLocal_115++;
-				__LIB_17__::func_32("DOING OUTRO");
+				__LIB_17__::func_35("DOING OUTRO");
 			}
 			break;
 		case 1:
 			iLocal_599 = CAM::CREATE_CAM_WITH_PARAMS("DEFAULT_ANIMATED_CAMERA", 71.2335f, 7032.0923f, 25.1157f, -2.4036f, 0f, 17.3552f, 25f, false, 2);
 			iLocal_115++;
 			MISC::CLEAR_AREA_OF_PEDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 25f, 0);
-			__LIB_17__::func_32("Going to case 2");
+			__LIB_17__::func_35("Going to case 2");
 			break;
 		case 2:
 			if (__LIB_0__::func_121(iLocal_106))
 			{
 				TASK::CLEAR_PED_TASKS(iLocal_106);
-				__LIB_17__::func_32("*** Clearing Mary Ann tasks (Cutscene)");
+				__LIB_17__::func_35("*** Clearing Mary Ann tasks (Cutscene)");
 				if (bLocal_146)
 				{
 					ENTITY::SET_ENTITY_COORDS(iLocal_106, 64.0768f, 7045.163f, 14.9558f, true, false, false, true);
@@ -912,7 +912,7 @@ void func_11()//Position - 0x623
 			{
 				iLocal_118 = MISC::GET_GAME_TIMER();
 				iLocal_115++;
-				__LIB_17__::func_32("Going to case 3");
+				__LIB_17__::func_35("Going to case 3");
 			}
 			break;
 		case 3:
@@ -928,7 +928,7 @@ void func_11()//Position - 0x623
 					CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
-					__LIB_17__::func_32("Intro skip case 3");
+					__LIB_17__::func_35("Intro skip case 3");
 					SYSTEM::WAIT(750);
 					func_229(1);
 					func_12();
@@ -938,7 +938,7 @@ void func_11()//Position - 0x623
 			{
 				iLocal_118 = MISC::GET_GAME_TIMER();
 				iLocal_115++;
-				__LIB_17__::func_32("Going to case 4");
+				__LIB_17__::func_35("Going to case 4");
 			}
 			break;
 		case 4:
@@ -954,7 +954,7 @@ void func_11()//Position - 0x623
 					CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
-					__LIB_17__::func_32("Intro skip case 4");
+					__LIB_17__::func_35("Intro skip case 4");
 					SYSTEM::WAIT(750);
 					func_229(1);
 					func_12();
@@ -963,7 +963,7 @@ void func_11()//Position - 0x623
 			else
 			{
 				iLocal_115++;
-				__LIB_17__::func_32("Going to case 5");
+				__LIB_17__::func_35("Going to case 5");
 			}
 			break;
 		case 5:
@@ -979,7 +979,7 @@ void func_11()//Position - 0x623
 					CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
-					__LIB_17__::func_32("Intro skip case 5");
+					__LIB_17__::func_35("Intro skip case 5");
 					SYSTEM::WAIT(750);
 					func_229(1);
 					func_12();
@@ -991,7 +991,7 @@ void func_11()//Position - 0x623
 						if (ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(iLocal_106, "rcmfanatic3leadinoutef_3_mcs_1", "leadout_ef_3_mcs_maryann") >= 0.9f)
 						{
 							iLocal_115++;
-							__LIB_17__::func_32("Going to case 6");
+							__LIB_17__::func_35("Going to case 6");
 						}
 						if (ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(iLocal_106, "rcmfanatic3leadinoutef_3_mcs_1", "leadout_ef_3_mcs_maryann") >= 0.98f)
 						{
@@ -1051,7 +1051,7 @@ void func_11()//Position - 0x623
 					CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
-					__LIB_17__::func_32("Intro skip case 6");
+					__LIB_17__::func_35("Intro skip case 6");
 					SYSTEM::WAIT(750);
 					func_229(1);
 					func_12();
@@ -1871,7 +1871,7 @@ void func_229(int iParam0)//Position - 0x2804D
 	STREAMING::REMOVE_ANIM_DICT("rcmfanatic1out_of_breath");
 	__LIB_0__::func_124(&iLocal_106, 1, 0, 1);
 	__LIB_0__::func_106(&iLocal_67);
-	__LIB_17__::func_112(1, 1, 1, 1);
+	__LIB_17__::func_115(1, 1, 1, 1);
 	__LIB_0__::func_84(500, 1);
 }
 
@@ -1892,7 +1892,7 @@ void func_263(struct<3> Param0, int iParam1, int iParam2, int iParam3, int iPara
 	iVar0 = PLAYER::GET_PLAYER_INDEX();
 	if (PLAYER::IS_PLAYER_PLAYING(iVar0))
 	{
-		__LIB_17__::func_111(0);
+		__LIB_17__::func_114(0);
 		if (bParam7)
 		{
 			PLAYER::REMOVE_PLAYER_HELMET(PLAYER::GET_PLAYER_INDEX(), true);
@@ -1976,7 +1976,7 @@ void func_280()//Position - 0x29AA3
 	switch (iLocal_57)
 	{
 		case 0:
-			__LIB_17__::func_32("DOING LOST SETUP");
+			__LIB_17__::func_35("DOING LOST SETUP");
 			iLocal_57 = 1;
 			break;
 		case 1:
@@ -1986,7 +1986,7 @@ void func_280()//Position - 0x29AA3
 			}
 			else
 			{
-				__LIB_17__::func_32("Waiting for Lost race convo to finish...");
+				__LIB_17__::func_35("Waiting for Lost race convo to finish...");
 			}
 			break;
 		case 2:
@@ -1997,35 +1997,35 @@ void func_280()//Position - 0x29AA3
 
 void func_281(int iParam0)//Position - 0x29AF3
 {
-	__LIB_17__::func_32("MISSION_FAILED CALLED!");
+	__LIB_17__::func_35("MISSION_FAILED CALLED!");
 	switch (iParam0)
 	{
 		case 0:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_GENERIC");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_GENERIC");
 			break;
 		case 1:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
 			break;
 		case 2:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_BIKE_DESTROYED");
 			break;
 		case 3:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_OUT_OF_TIME");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_OUT_OF_TIME");
 			break;
 		case 4:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_LOST_RACE");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_LOST_RACE");
 			break;
 		case 5:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_WOMAN_DIED");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_WOMAN_DIED");
 			break;
 		case 6:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_WOMAN_HURT");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_WOMAN_HURT");
 			break;
 		case 7:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_WOMAN_SCARED");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_WOMAN_SCARED");
 			break;
 		case 9:
-			__LIB_17__::func_32("MISSION_FAILED reason=FAILED_LEFT_AREA");
+			__LIB_17__::func_35("MISSION_FAILED reason=FAILED_LEFT_AREA");
 			break;
 	}
 	iLocal_117 = iParam0;
@@ -2066,12 +2066,12 @@ void func_282()//Position - 0x29BA6
 	switch (iLocal_57)
 	{
 		case 0:
-			__LIB_17__::func_32("DOING RUN SETUP");
+			__LIB_17__::func_35("DOING RUN SETUP");
 			iLocal_57 = 1;
 			iLocal_144 = 0;
 			iLocal_140 = 0;
 			STREAMING::REQUEST_ANIM_DICT("rcmfanatic3leadinoutef_3_mcs_1");
-			__LIB_17__::func_32("DOING RUN RUNNING");
+			__LIB_17__::func_35("DOING RUN RUNNING");
 			break;
 		case 1:
 			if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_80[iLocal_100 /*3*/], true) > 75f)
@@ -2101,13 +2101,13 @@ void func_282()//Position - 0x29BA6
 			{
 				if (ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(PLAYER::PLAYER_PED_ID(), "rcmfanatic3leadinoutef_3_mcs_1", "Fra_outofbreath_intro") >= 0.9f)
 				{
-					__LIB_17__::func_32("Player done lead-out info");
+					__LIB_17__::func_35("Player done lead-out info");
 					iLocal_55 = 6;
 				}
 			}
 			else
 			{
-				__LIB_17__::func_32("Player not playing anim, cut to outro");
+				__LIB_17__::func_35("Player not playing anim, cut to outro");
 				iLocal_55 = 6;
 			}
 			break;
@@ -2151,7 +2151,7 @@ int func_283(var uParam0)//Position - 0x29D3B
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "CHECKPOINT_NORMAL", "HUD_MINI_GAME_SOUNDSET", false);
 		if (iLocal_90 != 0)
 		{
-			__LIB_17__::func_32("Create prev CP");
+			__LIB_17__::func_35("Create prev CP");
 			HUD::GET_HUD_COLOUR(1, &iVar2, &iVar3, &iVar4, &iLocal_92);
 			iLocal_92 = 180;
 			Var5 = { *(uParam0[iLocal_100 /*3*/]) };
@@ -2554,7 +2554,7 @@ void func_288()//Position - 0x2A7D1
 				{
 					iLocal_76 = PED::CREATE_PED(26, joaat("A_F_Y_Runner_01"), 56.3978f, 7015.1646f, 8.8828f, 101.1728f, true, true);
 					STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_F_Y_Runner_01"));
-					__LIB_17__::func_32("*** Dog owner created");
+					__LIB_17__::func_35("*** Dog owner created");
 					iLocal_114++;
 				}
 			}
@@ -2565,7 +2565,7 @@ void func_288()//Position - 0x2A7D1
 				if (!TASK::IS_WAYPOINT_PLAYBACK_GOING_ON_FOR_PED(iLocal_76))
 				{
 					TASK::TASK_FOLLOW_WAYPOINT_RECORDING(iLocal_76, "fan3_ownerroute", 0, 0, -1);
-					__LIB_17__::func_32("*** Dog owner playing back recording");
+					__LIB_17__::func_35("*** Dog owner playing back recording");
 					iLocal_114++;
 				}
 			}
@@ -2614,7 +2614,7 @@ void func_288()//Position - 0x2A7D1
 	}
 	if (__LIB_0__::func_121(iLocal_76))
 	{
-		if (__LIB_17__::func_123(iLocal_76, 1, 1116471296, 1126825984, 0, 0, 0, 0) || PED::IS_PED_IN_COMBAT(iLocal_76, 0))
+		if (__LIB_17__::func_126(iLocal_76, 1, 1116471296, 1126825984, 0, 0, 0, 0) || PED::IS_PED_IN_COMBAT(iLocal_76, 0))
 		{
 			TASK::CLEAR_PED_TASKS(iLocal_76);
 			TASK::TASK_SMART_FLEE_PED(iLocal_76, PLAYER::PLAYER_PED_ID(), 100f, -1, false, false);
@@ -2664,7 +2664,7 @@ void func_313()//Position - 0x2B4A1
 		switch (iLocal_111)
 		{
 			case 0:
-				if (__LIB_17__::func_123(iLocal_72, 1, 1116471296, 1126825984, 0, 0, 0, 0))
+				if (__LIB_17__::func_126(iLocal_72, 1, 1116471296, 1126825984, 0, 0, 0, 0))
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_72);
 					PED::SET_PED_FLEE_ATTRIBUTES(iLocal_72, 2, true);
@@ -2682,7 +2682,7 @@ void func_313()//Position - 0x2B4A1
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_161);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_72, iLocal_161);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_161);
-						__LIB_17__::func_32("iBinocStage = 1");
+						__LIB_17__::func_35("iBinocStage = 1");
 						iLocal_111 = 1;
 					}
 					else if (!__LIB_0__::func_695(iLocal_66))
@@ -2692,7 +2692,7 @@ void func_313()//Position - 0x2B4A1
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_161);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_72, iLocal_161);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_161);
-						__LIB_17__::func_32("iBinocStage = 2");
+						__LIB_17__::func_35("iBinocStage = 2");
 						iLocal_111 = 2;
 					}
 				}
@@ -2709,7 +2709,7 @@ void func_313()//Position - 0x2B4A1
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_161);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_72, iLocal_161);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_161);
-						__LIB_17__::func_32("iBinocStage = 2");
+						__LIB_17__::func_35("iBinocStage = 2");
 						iLocal_111 = 2;
 					}
 				}
@@ -2731,7 +2731,7 @@ void func_313()//Position - 0x2B4A1
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_161);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_72, iLocal_161);
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_161);
-						__LIB_17__::func_32("iBinocStage = 2");
+						__LIB_17__::func_35("iBinocStage = 2");
 						iLocal_111 = 2;
 					}
 				}
@@ -2749,12 +2749,12 @@ void func_313()//Position - 0x2B4A1
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_161);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_72, iLocal_161);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_161);
-					__LIB_17__::func_32("Car wrecked - iBinocStage = 2");
+					__LIB_17__::func_35("Car wrecked - iBinocStage = 2");
 					iLocal_111 = 2;
 				}
 				if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_72, 1) > 300f)
 				{
-					__LIB_17__::func_32("iBinocStage = 3");
+					__LIB_17__::func_35("iBinocStage = 3");
 					iLocal_111 = 3;
 				}
 				break;
@@ -2763,7 +2763,7 @@ void func_313()//Position - 0x2B4A1
 				{
 					if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_72, 1) > 100f)
 					{
-						__LIB_17__::func_32("iBinocStage = 3");
+						__LIB_17__::func_35("iBinocStage = 3");
 						iLocal_111 = 3;
 					}
 				}
@@ -2793,7 +2793,7 @@ void func_316()//Position - 0x2B9B0
 		switch (iLocal_112)
 		{
 			case 0:
-				if (__LIB_17__::func_123(iLocal_74, 1, 1116471296, 1126825984, 0, 0, 0, 0))
+				if (__LIB_17__::func_126(iLocal_74, 1, 1116471296, 1126825984, 0, 0, 0, 0))
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_74);
 					TASK::TASK_SMART_FLEE_PED(iLocal_74, PLAYER::PLAYER_PED_ID(), 100f, -1, false, false);
@@ -2813,7 +2813,7 @@ void func_317()//Position - 0x2BA0D
 		switch (iLocal_113)
 		{
 			case 0:
-				if (__LIB_17__::func_123(iLocal_73, 1, 1116471296, 1126825984, 0, 0, 0, 0))
+				if (__LIB_17__::func_126(iLocal_73, 1, 1116471296, 1126825984, 0, 0, 0, 0))
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_73);
 					TASK::TASK_SMART_FLEE_PED(iLocal_73, PLAYER::PLAYER_PED_ID(), 100f, -1, false, false);
@@ -2828,7 +2828,7 @@ void func_317()//Position - 0x2BA0D
 
 void func_318()//Position - 0x2BA6A
 {
-	if (!__LIB_16__::func_325(&uLocal_494, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)))
+	if (!__LIB_16__::func_328(&uLocal_494, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)))
 	{
 		if (iLocal_136)
 		{
@@ -2891,7 +2891,7 @@ void func_321()//Position - 0x2BBBA
 				}
 			}
 			TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
-			__LIB_17__::func_32("Telling player to leave any vehicle...");
+			__LIB_17__::func_35("Telling player to leave any vehicle...");
 		}
 	}
 }
@@ -3005,14 +3005,14 @@ void func_324()//Position - 0x2BE63
 			if ((__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_106, 1) > 40f && !iLocal_127) && iLocal_133)
 			{
 				AUDIO::PAUSE_SCRIPTED_CONVERSATION(true);
-				__LIB_17__::func_32("*** PAUSING TRASH TALK");
+				__LIB_17__::func_35("*** PAUSING TRASH TALK");
 				iLocal_141 = 1;
 			}
 		}
 		else if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_106, 1) < 30f)
 		{
 			AUDIO::RESTART_SCRIPTED_CONVERSATION();
-			__LIB_17__::func_32("*** RESTARTING TRASH TALK");
+			__LIB_17__::func_35("*** RESTARTING TRASH TALK");
 			iLocal_141 = 0;
 		}
 	}
@@ -3053,13 +3053,13 @@ void func_325()//Position - 0x2BF51
 				Local_163[iVar1 /*7*/][iVar0 /*2*/] = 1;
 				iLocal_133 = 1;
 				iLocal_119 = MISC::GET_GAME_TIMER();
-				__LIB_17__::func_32("*** CREATING TRASH TALK");
+				__LIB_17__::func_35("*** CREATING TRASH TALK");
 			}
 		}
 	}
 	else
 	{
-		__LIB_17__::func_32("*** Trying to start trash talk, but god text is preventing it");
+		__LIB_17__::func_35("*** Trying to start trash talk, but god text is preventing it");
 	}
 }
 
@@ -3093,7 +3093,7 @@ void func_327()//Position - 0x2C073
 {
 	func_353();
 	func_350();
-	__LIB_17__::func_411(&iLocal_96, iLocal_106, 1, 1092616192, 1);
+	__LIB_17__::func_414(&iLocal_96, iLocal_106, 1, 1092616192, 1);
 	switch (iLocal_56)
 	{
 		case 1:
@@ -3258,7 +3258,7 @@ int func_330()//Position - 0x2C38A
 {
 	if (!TASK::GET_IS_WAYPOINT_RECORDING_LOADED("fan3_pedJog"))
 	{
-		__LIB_17__::func_32("Requesting Mary Ann's jog waypoint recording");
+		__LIB_17__::func_35("Requesting Mary Ann's jog waypoint recording");
 		TASK::REQUEST_WAYPOINT_RECORDING("fan3_pedJog");
 		return 0;
 	}
@@ -3269,7 +3269,7 @@ int func_331()//Position - 0x2C3B6
 {
 	if (((!TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fan3_pedBike") || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fan3_pedBikePanic")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fan3_pedBikePrep")) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(500, "Fan3_MaryAnnBikeJump"))
 	{
-		__LIB_17__::func_32("Waiting for Mary Ann's bike recordings to load");
+		__LIB_17__::func_35("Waiting for Mary Ann's bike recordings to load");
 		TASK::REQUEST_WAYPOINT_RECORDING("Fan3_pedBike");
 		TASK::REQUEST_WAYPOINT_RECORDING("Fan3_pedBikePanic");
 		TASK::REQUEST_WAYPOINT_RECORDING("Fan3_pedBikePrep");
@@ -3300,7 +3300,7 @@ void func_333()//Position - 0x2C457
 	{
 		case 1:
 			TASK::TASK_GO_STRAIGHT_TO_COORD(iLocal_106, Local_78[iLocal_101 /*3*/], 3f, 20000, 0.25f, 0.5f);
-			__LIB_17__::func_31("*** Updating Mary Ann swimming task to pos", iLocal_101);
+			__LIB_17__::func_34("*** Updating Mary Ann swimming task to pos", iLocal_101);
 			break;
 		case 2:
 			break;
@@ -3311,11 +3311,11 @@ void func_333()//Position - 0x2C457
 				{
 					if (iLocal_101 > 2)
 					{
-						__LIB_17__::func_32("*** Mary Ann has missed a position but reached the end of the bike route!!");
-						__LIB_17__::func_32("*** Changing position to 11 so the check returns true...");
+						__LIB_17__::func_35("*** Mary Ann has missed a position but reached the end of the bike route!!");
+						__LIB_17__::func_35("*** Changing position to 11 so the check returns true...");
 						iLocal_101 = 11;
 					}
-					__LIB_17__::func_32("*** Mary Ann: Doing start of bike section setup");
+					__LIB_17__::func_35("*** Mary Ann: Doing start of bike section setup");
 					sLocal_107 = "Fan3_pedBike";
 					VEHICLE::SET_VEHICLE_DOORS_LOCKED(iLocal_63, 3);
 					ENTITY::SET_ENTITY_CAN_BE_DAMAGED(iLocal_63, false);
@@ -3336,7 +3336,7 @@ void func_333()//Position - 0x2C457
 			{
 				if (!TASK::IS_WAYPOINT_PLAYBACK_GOING_ON_FOR_PED(iLocal_106))
 				{
-					__LIB_17__::func_32("*** Telling Mary Ann to play waypoint recording");
+					__LIB_17__::func_35("*** Telling Mary Ann to play waypoint recording");
 					TASK::TASK_FOLLOW_WAYPOINT_RECORDING(iLocal_106, "fan3_pedJog", 0, 0, -1);
 				}
 			}
@@ -3361,10 +3361,10 @@ int func_335(var uParam0)//Position - 0x2C5B1
 			if (fVar1 < 6f)
 			{
 				iLocal_101++;
-				__LIB_17__::func_31("*** UPDATED Mary Ann position = ", iLocal_101);
+				__LIB_17__::func_34("*** UPDATED Mary Ann position = ", iLocal_101);
 				if (iLocal_101 >= iLocal_102)
 				{
-					__LIB_17__::func_32("*** Mary Ann position >= max positions");
+					__LIB_17__::func_35("*** Mary Ann position >= max positions");
 					return 1;
 				}
 				if (iLocal_56 == 1)
@@ -3372,20 +3372,20 @@ int func_335(var uParam0)//Position - 0x2C5B1
 					if (iLocal_101 != iLocal_102)
 					{
 						TASK::CLEAR_PED_TASKS(iLocal_106);
-						__LIB_17__::func_32("*** Clearing Mary Ann tasks (ma_pDoCheckpoints())");
+						__LIB_17__::func_35("*** Clearing Mary Ann tasks (ma_pDoCheckpoints())");
 						func_333();
 					}
 					else
 					{
-						__LIB_17__::func_32("*** Mary Ann position = max position and she is stuck... this wasn't caught by the previous check?!");
+						__LIB_17__::func_35("*** Mary Ann position = max position and she is stuck... this wasn't caught by the previous check?!");
 					}
 				}
 			}
 		}
 		else if (iLocal_101 >= iLocal_102)
 		{
-			__LIB_17__::func_32("*** Mary Ann's checkpoints have been manipulated by some sort of fix before being checked");
-			__LIB_17__::func_32("... and she should finish the race without hitting the final checkpoint");
+			__LIB_17__::func_35("*** Mary Ann's checkpoints have been manipulated by some sort of fix before being checked");
+			__LIB_17__::func_35("... and she should finish the race without hitting the final checkpoint");
 			return 1;
 		}
 	}
@@ -3435,14 +3435,14 @@ void func_337()//Position - 0x2C69F
 							{
 								fVar4 = ENTITY::GET_ENTITY_SPEED(iLocal_106);
 								ENTITY::SET_ENTITY_COORDS(iLocal_63, Var2, true, false, false, true);
-								__LIB_17__::func_413(iLocal_63, Var3);
+								__LIB_17__::func_416(iLocal_63, Var3);
 								if (!PED::IS_PED_IN_VEHICLE(iLocal_106, iLocal_63, false))
 								{
 									PED::SET_PED_INTO_VEHICLE(iLocal_106, iLocal_63, -1);
 								}
 								TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(iLocal_106, iLocal_63, sLocal_107, 786485, 0, 24, -1, -1f, false, 2f);
 								VEHICLE::SET_VEHICLE_FORWARD_SPEED(iLocal_63, fVar4);
-								__LIB_17__::func_31("*** Teleported Mary Ann to waypoint ", iVar0);
+								__LIB_17__::func_34("*** Teleported Mary Ann to waypoint ", iVar0);
 								if (iVar0 < 14)
 								{
 									iLocal_101 = 0;
@@ -3490,7 +3490,7 @@ void func_337()//Position - 0x2C69F
 							}
 							else
 							{
-								__LIB_17__::func_32("*** Trying to teleport, but points are visible!!");
+								__LIB_17__::func_35("*** Trying to teleport, but points are visible!!");
 							}
 						}
 					}
@@ -3521,7 +3521,7 @@ void func_341()//Position - 0x2C95A
 	if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -151.02936f, 6589.512f, 7.479042f, -164.08327f, 6577.416f, 9.015114f, 6f, false, true, 0))
 	{
 		iLocal_130 = 0;
-		__LIB_17__::func_32("*** Detected player failed bridge jump");
+		__LIB_17__::func_35("*** Detected player failed bridge jump");
 	}
 	if (!iLocal_130)
 	{
@@ -3551,7 +3551,7 @@ void func_342()//Position - 0x2CA0C
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_63))
 				{
-					__LIB_17__::func_32("Adding Mary Ann's bike to mix group!");
+					__LIB_17__::func_35("Adding Mary Ann's bike to mix group!");
 					AUDIO::ADD_ENTITY_TO_AUDIO_MIX_GROUP(iLocal_63, "FANATIC_MIX_MARY_BIKE", 0f);
 				}
 			}
@@ -3563,10 +3563,10 @@ void func_342()//Position - 0x2CA0C
 			{
 				iLocal_63 = iLocal_60;
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_106);
-				__LIB_17__::func_32("*** Clearing Mary Ann tasks (ma_pDoToBikeTask())");
+				__LIB_17__::func_35("*** Clearing Mary Ann tasks (ma_pDoToBikeTask())");
 				if (__LIB_0__::func_121(iLocal_63) && __LIB_0__::func_121(iLocal_106))
 				{
-					__LIB_17__::func_32("Making Mary Ann use default player's bike");
+					__LIB_17__::func_35("Making Mary Ann use default player's bike");
 					TASK::TASK_ENTER_VEHICLE(iLocal_106, iLocal_63, 20000, -1, 3f, 1, 0);
 				}
 			}
@@ -3574,10 +3574,10 @@ void func_342()//Position - 0x2CA0C
 			{
 				iLocal_63 = iLocal_61;
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_106);
-				__LIB_17__::func_32("*** Clearing Mary Ann tasks (ma_pDoToBikeTask())");
+				__LIB_17__::func_35("*** Clearing Mary Ann tasks (ma_pDoToBikeTask())");
 				if (__LIB_0__::func_121(iLocal_63) && __LIB_0__::func_121(iLocal_106))
 				{
-					__LIB_17__::func_32("Making Mary Ann use default opponent bike");
+					__LIB_17__::func_35("Making Mary Ann use default opponent bike");
 					TASK::TASK_ENTER_VEHICLE(iLocal_106, iLocal_63, 20000, -1, 3f, 1, 0);
 				}
 			}
@@ -3611,8 +3611,8 @@ void func_343()//Position - 0x2CB0B
 				TASK::SET_PED_DESIRED_MOVE_BLEND_RATIO(iLocal_106, (fVar2 + 0.2f));
 				if (bLocal_137)
 				{
-					__LIB_17__::func_400("fDist is", fVar0);
-					__LIB_17__::func_400("Setting fMoveRatio to", fVar2);
+					__LIB_17__::func_403("fDist is", fVar0);
+					__LIB_17__::func_403("Setting fMoveRatio to", fVar2);
 				}
 			}
 		}
@@ -3628,8 +3628,8 @@ void func_343()//Position - 0x2CB0B
 				}
 				if (bLocal_137)
 				{
-					__LIB_17__::func_400("fDist is", fVar0);
-					__LIB_17__::func_400("Setting fMoveRatio to", fVar2);
+					__LIB_17__::func_403("fDist is", fVar0);
+					__LIB_17__::func_403("Setting fMoveRatio to", fVar2);
 				}
 			}
 		}
@@ -3656,15 +3656,15 @@ void func_343()//Position - 0x2CB0B
 								fVar4 = ((fVar4 - fVar1) - 7.5f);
 								if (bLocal_137)
 								{
-									__LIB_17__::func_400("fRatioModifier is ", fVar1);
-									__LIB_17__::func_400("Setting fPlaybackSpd to ", fVar4);
-									__LIB_17__::func_400("Actual entity speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
+									__LIB_17__::func_403("fRatioModifier is ", fVar1);
+									__LIB_17__::func_403("Setting fPlaybackSpd to ", fVar4);
+									__LIB_17__::func_403("Actual entity speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
 								}
 								TASK::VEHICLE_WAYPOINT_PLAYBACK_OVERRIDE_SPEED(iLocal_63, fVar4);
 							}
 							if (iVar3 > 93 && iVar3 < 98)
 							{
-								__LIB_17__::func_32("**** SWITCHING TO JUMP PREP");
+								__LIB_17__::func_35("**** SWITCHING TO JUMP PREP");
 								sLocal_107 = "Fan3_pedBikePrep";
 								TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(iLocal_106, iLocal_63, sLocal_107, 262144, 0, 24, -1, -1f, false, 2f);
 							}
@@ -3695,9 +3695,9 @@ void func_343()//Position - 0x2CB0B
 			TASK::SET_PED_DESIRED_MOVE_BLEND_RATIO(iLocal_106, fVar2);
 			if (bLocal_137)
 			{
-				__LIB_17__::func_400("fDist is ", fVar0);
-				__LIB_17__::func_400("Setting fMoveRatio to ", fVar2);
-				__LIB_17__::func_400("Actual speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
+				__LIB_17__::func_403("fDist is ", fVar0);
+				__LIB_17__::func_403("Setting fMoveRatio to ", fVar2);
+				__LIB_17__::func_403("Actual speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
 			}
 		}
 	}
@@ -3719,9 +3719,9 @@ void func_343()//Position - 0x2CB0B
 		}
 		if (bLocal_137)
 		{
-			__LIB_17__::func_400("fDist is ", fVar0);
-			__LIB_17__::func_400("Setting fMoveRatio to ", fVar2);
-			__LIB_17__::func_400("Actual speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
+			__LIB_17__::func_403("fDist is ", fVar0);
+			__LIB_17__::func_403("Setting fMoveRatio to ", fVar2);
+			__LIB_17__::func_403("Actual speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
 		}
 	}
 	else if (iLocal_56 == 3)
@@ -3740,15 +3740,15 @@ void func_343()//Position - 0x2CB0B
 						fVar6 = ((fVar6 + fVar1) + 3f);
 						if (bLocal_137)
 						{
-							__LIB_17__::func_400("fRatioModifier is ", fVar1);
-							__LIB_17__::func_400("Setting fPlaybackSpd to ", fVar6);
-							__LIB_17__::func_400("Actual entity speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
+							__LIB_17__::func_403("fRatioModifier is ", fVar1);
+							__LIB_17__::func_403("Setting fPlaybackSpd to ", fVar6);
+							__LIB_17__::func_403("Actual entity speed is ", ENTITY::GET_ENTITY_SPEED(iLocal_106));
 						}
 						TASK::VEHICLE_WAYPOINT_PLAYBACK_OVERRIDE_SPEED(iLocal_63, fVar6);
 					}
 					if (iVar5 > 93 && iVar5 < 98)
 					{
-						__LIB_17__::func_32("**** SWITCHING TO JUMP PREP");
+						__LIB_17__::func_35("**** SWITCHING TO JUMP PREP");
 						sLocal_107 = "Fan3_pedBikePrep";
 						TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(iLocal_106, iLocal_63, sLocal_107, 262160, 0, 24, -1, -1f, false, 2f);
 					}
@@ -3777,7 +3777,7 @@ void func_344(int iParam0)//Position - 0x2CED7
 			{
 				if (!VEHICLE::IS_PLAYBACK_USING_AI_GOING_ON_FOR_VEHICLE(iLocal_63) && !VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_63))
 				{
-					__LIB_17__::func_32("******* USING RECORDING NOW");
+					__LIB_17__::func_35("******* USING RECORDING NOW");
 					iLocal_128 = 1;
 					VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_USING_AI(iLocal_63, 500, "Fan3_MaryAnnBikeJump", (20f + 1f), 262144);
 					VEHICLE::SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER(iLocal_63, 1250, 262144, true);
@@ -3798,10 +3798,10 @@ void func_344(int iParam0)//Position - 0x2CED7
 			}
 			if (iParam0 >= 20)
 			{
-				__LIB_17__::func_32("******* SWITCHING BACK TO WAYPOINT");
+				__LIB_17__::func_35("******* SWITCHING BACK TO WAYPOINT");
 				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_63))
 				{
-					__LIB_17__::func_32("******* STOPPING PLAYBACK");
+					__LIB_17__::func_35("******* STOPPING PLAYBACK");
 					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_63);
 				}
 				sLocal_107 = "Fan3_pedBike";
@@ -3812,13 +3812,13 @@ void func_344(int iParam0)//Position - 0x2CED7
 		else
 		{
 			TASK::WAYPOINT_RECORDING_GET_CLOSEST_WAYPOINT(sLocal_107, ENTITY::GET_ENTITY_COORDS(iLocal_63, true), &iParam0);
-			__LIB_17__::func_31("DOING RECORDING, CLOSEST WP IS: ", iParam0);
+			__LIB_17__::func_34("DOING RECORDING, CLOSEST WP IS: ", iParam0);
 			if (iParam0 >= 20)
 			{
-				__LIB_17__::func_32("******* SWITCHING BACK TO WAYPOINT");
+				__LIB_17__::func_35("******* SWITCHING BACK TO WAYPOINT");
 				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_63) || VEHICLE::IS_PLAYBACK_USING_AI_GOING_ON_FOR_VEHICLE(iLocal_63))
 				{
-					__LIB_17__::func_32("******* STOPPING PLAYBACK");
+					__LIB_17__::func_35("******* STOPPING PLAYBACK");
 					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_63);
 				}
 				sLocal_107 = "Fan3_pedBike";
@@ -3833,7 +3833,7 @@ void func_346()//Position - 0x2D067
 {
 	if (func_335(&Local_78))
 	{
-		__LIB_17__::func_32("*** Mary Ann swim complete");
+		__LIB_17__::func_35("*** Mary Ann swim complete");
 		func_328(2);
 	}
 	if (iLocal_101 >= 6)
@@ -3862,7 +3862,7 @@ void func_350()//Position - 0x2D1B4
 					{
 						iLocal_110++;
 						iLocal_134 = 0;
-						__LIB_17__::func_32("Push warning given: 1...");
+						__LIB_17__::func_35("Push warning given: 1...");
 						iLocal_98 = MISC::GET_GAME_TIMER();
 					}
 					break;
@@ -3871,12 +3871,12 @@ void func_350()//Position - 0x2D1B4
 					{
 						iLocal_110++;
 						iLocal_134 = 0;
-						__LIB_17__::func_32("Push warning given: 2...");
+						__LIB_17__::func_35("Push warning given: 2...");
 						iLocal_98 = MISC::GET_GAME_TIMER();
 					}
 					break;
 				case 2:
-					__LIB_17__::func_32("Push warning given: 3, you fail...");
+					__LIB_17__::func_35("Push warning given: 3, you fail...");
 					func_351();
 					break;
 			}
@@ -3891,7 +3891,7 @@ void func_350()//Position - 0x2D1B4
 					if (__LIB_2__::func_859(&uLocal_164, "FAN3AUD", "FAN3_IMP", 7, 0, 0, 0))
 					{
 						iLocal_134 = 0;
-						__LIB_17__::func_31("Swim push warning given: ", iLocal_110);
+						__LIB_17__::func_34("Swim push warning given: ", iLocal_110);
 						iLocal_98 = MISC::GET_GAME_TIMER();
 						iLocal_110++;
 					}
@@ -3918,7 +3918,7 @@ void func_351()//Position - 0x2D2DD
 	{
 		TASK::TASK_VEHICLE_MISSION_PED_TARGET(iLocal_106, PED::GET_VEHICLE_PED_IS_IN(iLocal_106, false), PLAYER::PLAYER_PED_ID(), 8, 30f, 786469, 100f, 0.1f, true);
 		PED::SET_PED_FLEE_ATTRIBUTES(iLocal_106, 2, true);
-		__LIB_17__::func_32("Setting Mary Ann Use Vehicle flee attribute");
+		__LIB_17__::func_35("Setting Mary Ann Use Vehicle flee attribute");
 	}
 	else
 	{
@@ -3950,9 +3950,9 @@ void func_353()//Position - 0x2D40E
 		}
 		if (iLocal_56 == 3 || iLocal_56 == 2)
 		{
-			if (!__LIB_16__::func_325(&uLocal_546, ENTITY::GET_ENTITY_COORDS(iLocal_106, true)))
+			if (!__LIB_16__::func_328(&uLocal_546, ENTITY::GET_ENTITY_COORDS(iLocal_106, true)))
 			{
-				__LIB_17__::func_32("Mary Ann not detected in race area! Failing the mission for this!!");
+				__LIB_17__::func_35("Mary Ann not detected in race area! Failing the mission for this!!");
 				func_351();
 			}
 			if (!iLocal_134)
@@ -3963,11 +3963,11 @@ void func_353()//Position - 0x2D40E
 					{
 						if (ENTITY::IS_ENTITY_TOUCHING_ENTITY(iLocal_62, iLocal_63))
 						{
-							__LIB_17__::func_32("Player's bike touched Mary Ann's bike!");
+							__LIB_17__::func_35("Player's bike touched Mary Ann's bike!");
 						}
 						if (ENTITY::IS_ENTITY_TOUCHING_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_63))
 						{
-							__LIB_17__::func_32("The player touched Mary Ann's bike!");
+							__LIB_17__::func_35("The player touched Mary Ann's bike!");
 						}
 						if ((MISC::GET_GAME_TIMER() - iLocal_98) > 2000)
 						{
@@ -3983,7 +3983,7 @@ void func_353()//Position - 0x2D40E
 			{
 				if (ENTITY::IS_ENTITY_TOUCHING_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_106) && iLocal_103 == 1)
 				{
-					__LIB_17__::func_32("The player touched Mary Ann's during swim!");
+					__LIB_17__::func_35("The player touched Mary Ann's during swim!");
 					if ((MISC::GET_GAME_TIMER() - iLocal_98) > 2000)
 					{
 						iLocal_134 = 1;
@@ -4051,7 +4051,7 @@ void func_354()//Position - 0x2D58C
 		}
 		else
 		{
-			__LIB_17__::func_32("Trying to update the race logic when not in a race stage? Mission failed just now?");
+			__LIB_17__::func_35("Trying to update the race logic when not in a race stage? Mission failed just now?");
 		}
 		if (iLocal_56 < 2)
 		{
@@ -4101,7 +4101,7 @@ void func_354()//Position - 0x2D58C
 		}
 		iLocal_159 = ((MISC::GET_GAME_TIMER() - iLocal_158) + iLocal_160);
 		__LIB_1__::func_910();
-		__LIB_33__::func_544(iLocal_159, "", -1, -1, "", iLocal_103, 2, "", 0, 1, -1, -1, 0, 12, -1, -1, 0, 6, -1, 0, 0, 1, -1, 0, -1082130432, 1, 1);
+		__LIB_32__::func_28(iLocal_159, "", -1, -1, "", iLocal_103, 2, "", 0, 1, -1, -1, 0, 12, -1, -1, 0, 6, -1, 0, 0, 1, -1, 0, -1082130432, 1, 1);
 	}
 }
 
@@ -4150,9 +4150,9 @@ void func_367()//Position - 0x2E2EC
 	{
 		case 0:
 			RECORDING::REPLAY_RECORD_BACK_FOR_TIME(5f, 15f, 1);
-			__LIB_17__::func_32("DOING OFF BIKE SETUP");
+			__LIB_17__::func_35("DOING OFF BIKE SETUP");
 			iLocal_57 = 1;
-			__LIB_17__::func_32("DOING OFF BIKE RUNNING");
+			__LIB_17__::func_35("DOING OFF BIKE RUNNING");
 			break;
 		case 1:
 			if (PED::IS_PED_SITTING_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID()))
@@ -4160,7 +4160,7 @@ void func_367()//Position - 0x2E2EC
 				if (__LIB_0__::func_213(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 7f, 10, 1056964608, 0, 1, 0))
 				{
 					TASK::TASK_LEAVE_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0, 0);
-					__LIB_17__::func_32("Telling player to leave bike...");
+					__LIB_17__::func_35("Telling player to leave bike...");
 				}
 			}
 			if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
@@ -4180,7 +4180,7 @@ void func_367()//Position - 0x2E2EC
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("DOING OFF BIKE CLEANUP");
+			__LIB_17__::func_35("DOING OFF BIKE CLEANUP");
 			iLocal_99 = 11;
 			HUD::CLEAR_PRINTS();
 			__LIB_0__::func_229("FATIC3_6", 7500, 1);
@@ -4222,7 +4222,7 @@ void func_367()//Position - 0x2E2EC
 
 void func_368(var uParam0)//Position - 0x2E52F
 {
-	__LIB_17__::func_32("*** Creating first blip");
+	__LIB_17__::func_35("*** Creating first blip");
 	iLocal_93 = __LIB_14__::func_704(*(uParam0[iLocal_100 /*3*/]), 5, 0);
 	HUD::SET_BLIP_COLOUR(iLocal_93, 5);
 	HUD::SET_BLIP_SCALE(iLocal_93, 1.2f);
@@ -4243,7 +4243,7 @@ void func_368(var uParam0)//Position - 0x2E52F
 			HUD::SHOW_HEIGHT_ON_BLIP(iLocal_94, false);
 		}
 	}
-	__LIB_17__::func_31("***current_position: ", iLocal_100);
+	__LIB_17__::func_34("***current_position: ", iLocal_100);
 	func_369(uParam0);
 }
 
@@ -4452,24 +4452,24 @@ int func_370()//Position - 0x2E9C7
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("baller"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("prop_binoc_01"));
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_M_Y_Hiker_01"));
-	__LIB_16__::func_329(&uLocal_494);
-	__LIB_16__::func_328(&uLocal_494, 42.25f, 6775.99f, 20.035f);
-	__LIB_16__::func_328(&uLocal_494, 70.9f, 6811.02f, 16.56f);
-	__LIB_16__::func_328(&uLocal_494, 30.55f, 6908.24f, 12.57f);
-	__LIB_16__::func_328(&uLocal_494, 17.22f, 6966.57f, 9.87f);
-	__LIB_16__::func_328(&uLocal_494, 42.16f, 7088.71f, 0.65f);
-	__LIB_16__::func_328(&uLocal_494, 133.71f, 7050.03f, 0.35f);
-	__LIB_16__::func_328(&uLocal_494, 119.44f, 6923.47f, 19.92f);
-	__LIB_16__::func_328(&uLocal_494, 144.19f, 6821.13f, 21.8f);
-	__LIB_16__::func_328(&uLocal_494, 128.37f, 6764.95f, 26.39f);
-	__LIB_16__::func_328(&uLocal_494, 49.68f, 6736.11f, 30.31f);
-	__LIB_16__::func_327(&uLocal_494);
+	__LIB_16__::func_332(&uLocal_494);
+	__LIB_16__::func_331(&uLocal_494, 42.25f, 6775.99f, 20.035f);
+	__LIB_16__::func_331(&uLocal_494, 70.9f, 6811.02f, 16.56f);
+	__LIB_16__::func_331(&uLocal_494, 30.55f, 6908.24f, 12.57f);
+	__LIB_16__::func_331(&uLocal_494, 17.22f, 6966.57f, 9.87f);
+	__LIB_16__::func_331(&uLocal_494, 42.16f, 7088.71f, 0.65f);
+	__LIB_16__::func_331(&uLocal_494, 133.71f, 7050.03f, 0.35f);
+	__LIB_16__::func_331(&uLocal_494, 119.44f, 6923.47f, 19.92f);
+	__LIB_16__::func_331(&uLocal_494, 144.19f, 6821.13f, 21.8f);
+	__LIB_16__::func_331(&uLocal_494, 128.37f, 6764.95f, 26.39f);
+	__LIB_16__::func_331(&uLocal_494, 49.68f, 6736.11f, 30.31f);
+	__LIB_16__::func_330(&uLocal_494);
 	__LIB_0__::func_222(&uLocal_164, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 	__LIB_0__::func_222(&uLocal_164, 3, iLocal_106, "MARYANN", 0, 1);
 	if (!iLocal_140)
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("FANATIC3_RUN");
-		__LIB_17__::func_32("Starting run music");
+		__LIB_17__::func_35("Starting run music");
 	}
 	return 1;
 }
@@ -4495,7 +4495,7 @@ void func_378()//Position - 0x2F23E
 			{
 				if (!iLocal_127)
 				{
-					__LIB_17__::func_32("Starting bad driver");
+					__LIB_17__::func_35("Starting bad driver");
 					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_65, true, 1);
 					__LIB_0__::func_222(&uLocal_329, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 					TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(iLocal_70, iLocal_65, "Fan3_baddriver", 786469, 0, 0, -1, -1f, false, 2f);
@@ -4510,7 +4510,7 @@ void func_378()//Position - 0x2F23E
 				}
 				if (__LIB_0__::func_76(iLocal_65, PLAYER::PLAYER_PED_ID(), 1) < 6f)
 				{
-					__LIB_17__::func_32("Play conversation");
+					__LIB_17__::func_35("Play conversation");
 					if (!__LIB_0__::func_75())
 					{
 						__LIB_2__::func_859(&uLocal_329, "FAN3AUD", "FAN3_SHOUT", 7, 0, 0, 0);
@@ -4518,7 +4518,7 @@ void func_378()//Position - 0x2F23E
 				}
 				if (!TASK::IS_WAYPOINT_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_65))
 				{
-					__LIB_17__::func_32("bad_driver_car no longer needed");
+					__LIB_17__::func_35("bad_driver_car no longer needed");
 					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_65, false, 1);
 					ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_65, true);
 					__LIB_0__::func_106(&iLocal_65);
@@ -4587,9 +4587,9 @@ void func_381()//Position - 0x2F3C4
 	switch (iLocal_57)
 	{
 		case 0:
-			__LIB_17__::func_32("DOING BIKE SETUP");
+			__LIB_17__::func_35("DOING BIKE SETUP");
 			iLocal_57 = 1;
-			__LIB_17__::func_32("DOING BIKE RUNNING");
+			__LIB_17__::func_35("DOING BIKE RUNNING");
 			break;
 		case 1:
 			func_324();
@@ -4618,29 +4618,29 @@ void func_381()//Position - 0x2F3C4
 			{
 				if (__LIB_0__::func_501("FATIC3_BACKON", 0, 0))
 				{
-					__LIB_17__::func_32("Clearing 'FATIC3_BACKON' print");
+					__LIB_17__::func_35("Clearing 'FATIC3_BACKON' print");
 					HUD::CLEAR_PRINTS();
 				}
 				if (func_283(&Local_79))
 				{
-					__LIB_17__::func_32("Player finished bike section, going into cleanup");
+					__LIB_17__::func_35("Player finished bike section, going into cleanup");
 					iLocal_57 = 2;
 				}
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("DOING BIKE CLEANUP");
+			__LIB_17__::func_35("DOING BIKE CLEANUP");
 			iLocal_100 = 0;
 			iLocal_99 = 11;
 			iLocal_145 = 0;
 			if (iLocal_55 < iLocal_56)
 			{
-				__LIB_17__::func_32("Player lost cycling");
+				__LIB_17__::func_35("Player lost cycling");
 				iLocal_104 = 0;
 			}
 			else
 			{
-				__LIB_17__::func_32("Player won cycling");
+				__LIB_17__::func_35("Player won cycling");
 				iLocal_104 = 1;
 			}
 			__LIB_14__::func_874(2, "Jog section", 0, 0, 0, 1);
@@ -4663,20 +4663,20 @@ void func_458()//Position - 0x3657C
 				{
 					RECORDING::REPLAY_START_EVENT(3);
 					iLocal_162 = 1;
-					__LIB_17__::func_32("*** Started tracking jump replay");
+					__LIB_17__::func_35("*** Started tracking jump replay");
 				}
 			}
 			else if ((ENTITY::IS_ENTITY_IN_ANGLED_AREA(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), -152.12108f, 6592.1953f, 8.325163f, -149.19452f, 6588.7183f, 13.289552f, 5.25f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), -183.96875f, 6611.616f, -1.050815f, -146.16302f, 6575.147f, 7.485405f, 46.5f, false, true, 0)) || !ENTITY::IS_ENTITY_IN_ANGLED_AREA(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), -182.59041f, 6607.4736f, 0.027168f, -143.88004f, 6571.712f, 37.02929f, 70.75f, false, true, 0))
 			{
 				RECORDING::REPLAY_STOP_EVENT();
 				iLocal_162 = 0;
-				__LIB_17__::func_32("*** Stopped tracking jump replay");
+				__LIB_17__::func_35("*** Stopped tracking jump replay");
 			}
 		}
 	}
 	else if (iLocal_162)
 	{
-		__LIB_17__::func_32("*** Stopped tracking jump replay (player not in vehicle)");
+		__LIB_17__::func_35("*** Stopped tracking jump replay (player not in vehicle)");
 		iLocal_162 = 0;
 		RECORDING::REPLAY_STOP_EVENT();
 	}
@@ -4713,12 +4713,12 @@ void func_459()//Position - 0x366D3
 	switch (iLocal_57)
 	{
 		case 0:
-			__LIB_17__::func_32("DOING TO BIKE SETUP");
+			__LIB_17__::func_35("DOING TO BIKE SETUP");
 			iLocal_57 = 1;
 			iLocal_129 = 0;
 			iLocal_127 = 0;
 			iLocal_140 = 0;
-			__LIB_17__::func_32("DOING TO BIKE RUNNING");
+			__LIB_17__::func_35("DOING TO BIKE RUNNING");
 			break;
 		case 1:
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
@@ -4734,13 +4734,13 @@ void func_459()//Position - 0x366D3
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("DOING TO BIKE CLEANUP");
+			__LIB_17__::func_35("DOING TO BIKE CLEANUP");
 			if (!iLocal_138)
 			{
 				__LIB_0__::func_467();
 				if (func_460())
 				{
-					__LIB_17__::func_32("Loaded bike resources");
+					__LIB_17__::func_35("Loaded bike resources");
 					iLocal_138 = 1;
 				}
 			}
@@ -4803,7 +4803,7 @@ int func_460()//Position - 0x36904
 	STREAMING::REQUEST_ANIM_DICT("rcmfanatic3");
 	if ((((((!STREAMING::HAS_MODEL_LOADED(joaat("patriot")) || !STREAMING::HAS_MODEL_LOADED(joaat("A_F_M_KTown_02"))) || !STREAMING::HAS_MODEL_LOADED(joaat("S_M_M_DockWork_01"))) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fan3_baddriver")) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(500, "Fan3_MaryAnnBikeJump")) || !TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fan3_pedBike")) || !STREAMING::HAS_ANIM_DICT_LOADED("rcmfanatic3"))
 	{
-		__LIB_17__::func_32("Waiting for bike resources");
+		__LIB_17__::func_35("Waiting for bike resources");
 		return 0;
 	}
 	__LIB_8__::func_397(&iLocal_65);
@@ -4827,28 +4827,28 @@ int func_460()//Position - 0x36904
 	}
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("S_M_M_DockWork_01"));
 	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(Local_148, Local_149, fLocal_150, false, false, false, false, false, 0, 0);
-	__LIB_16__::func_329(&uLocal_494);
-	__LIB_16__::func_328(&uLocal_494, -669.58f, 6153.29f, 0.45f);
-	__LIB_16__::func_328(&uLocal_494, -522.75f, 6317.6f, 9.79f);
-	__LIB_16__::func_328(&uLocal_494, -221.87f, 6550.84f, 8.87f);
-	__LIB_16__::func_328(&uLocal_494, -220.85f, 6657.39f, 0.47f);
-	__LIB_16__::func_328(&uLocal_494, -98.01f, 6746.05f, 0.66f);
-	__LIB_16__::func_328(&uLocal_494, 58.62f, 6800.74f, 19.35f);
-	__LIB_16__::func_328(&uLocal_494, 92.21f, 6746.91f, 37.55f);
-	__LIB_16__::func_328(&uLocal_494, -346.8f, 6373.35f, 20.4f);
-	__LIB_16__::func_328(&uLocal_494, -464f, 6242.33f, 27.31f);
-	__LIB_16__::func_328(&uLocal_494, -478.26f, 6133.85f, 13.53f);
-	__LIB_16__::func_328(&uLocal_494, -632.49f, 6112.85f, 9.95f);
-	__LIB_16__::func_328(&uLocal_494, -679.62f, 6097.66f, 2.07f);
-	__LIB_16__::func_328(&uLocal_494, -721.78f, 6112.86f, -0.68f);
-	__LIB_16__::func_327(&uLocal_494);
+	__LIB_16__::func_332(&uLocal_494);
+	__LIB_16__::func_331(&uLocal_494, -669.58f, 6153.29f, 0.45f);
+	__LIB_16__::func_331(&uLocal_494, -522.75f, 6317.6f, 9.79f);
+	__LIB_16__::func_331(&uLocal_494, -221.87f, 6550.84f, 8.87f);
+	__LIB_16__::func_331(&uLocal_494, -220.85f, 6657.39f, 0.47f);
+	__LIB_16__::func_331(&uLocal_494, -98.01f, 6746.05f, 0.66f);
+	__LIB_16__::func_331(&uLocal_494, 58.62f, 6800.74f, 19.35f);
+	__LIB_16__::func_331(&uLocal_494, 92.21f, 6746.91f, 37.55f);
+	__LIB_16__::func_331(&uLocal_494, -346.8f, 6373.35f, 20.4f);
+	__LIB_16__::func_331(&uLocal_494, -464f, 6242.33f, 27.31f);
+	__LIB_16__::func_331(&uLocal_494, -478.26f, 6133.85f, 13.53f);
+	__LIB_16__::func_331(&uLocal_494, -632.49f, 6112.85f, 9.95f);
+	__LIB_16__::func_331(&uLocal_494, -679.62f, 6097.66f, 2.07f);
+	__LIB_16__::func_331(&uLocal_494, -721.78f, 6112.86f, -0.68f);
+	__LIB_16__::func_330(&uLocal_494);
 	__LIB_0__::func_222(&uLocal_164, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 	__LIB_0__::func_222(&uLocal_164, 3, iLocal_106, "MARYANN", 0, 1);
 	iLocal_128 = 0;
 	if (!iLocal_140)
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("FANATIC3_CYCLE");
-		__LIB_17__::func_32("Starting bike music");
+		__LIB_17__::func_35("Starting bike music");
 	}
 	return 1;
 }
@@ -4865,7 +4865,7 @@ void func_462()//Position - 0x36C2B
 	switch (iLocal_57)
 	{
 		case 0:
-			__LIB_17__::func_32("DOING SWIM SETUP");
+			__LIB_17__::func_35("DOING SWIM SETUP");
 			__LIB_14__::func_800(&Local_54, 0, 1);
 			func_321();
 			func_379();
@@ -4882,10 +4882,10 @@ void func_462()//Position - 0x36C2B
 			iLocal_140 = 0;
 			PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 2f, 4000, 0f, true, false);
 			func_466();
-			__LIB_17__::func_415(0, 1, 1);
+			__LIB_17__::func_418(0, 1, 1);
 			__LIB_2__::func_859(&uLocal_164, "FAN3AUD", "FAN3_OPENER", 8, 1, 0, 0);
 			__LIB_0__::func_229("FATIC3_1", 7500, 1);
-			__LIB_17__::func_32("DOING SWIM RUNNING");
+			__LIB_17__::func_35("DOING SWIM RUNNING");
 			RECORDING::REPLAY_RECORD_BACK_FOR_TIME(0f, 15f, 1);
 			iLocal_57 = 1;
 			break;
@@ -4923,10 +4923,10 @@ void func_462()//Position - 0x36C2B
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("DOING SWIM CLEANUP");
+			__LIB_17__::func_35("DOING SWIM CLEANUP");
 			if (__LIB_0__::func_75())
 			{
-				if (!__LIB_15__::func_963("FAN3_SWIMWIN") || !__LIB_15__::func_963("FAN3_SWIMLOS"))
+				if (!__LIB_15__::func_965("FAN3_SWIMWIN") || !__LIB_15__::func_965("FAN3_SWIMLOS"))
 				{
 					__LIB_0__::func_325();
 				}
@@ -4945,12 +4945,12 @@ void func_462()//Position - 0x36C2B
 			}
 			if (iLocal_55 < iLocal_56)
 			{
-				__LIB_17__::func_32("Player lost swimming");
+				__LIB_17__::func_35("Player lost swimming");
 				iLocal_104 = 0;
 			}
 			else
 			{
-				__LIB_17__::func_32("Player won swimming");
+				__LIB_17__::func_35("Player won swimming");
 				iLocal_104 = 1;
 			}
 			__LIB_14__::func_874(1, "Bike section", 0, 0, 0, 1);
@@ -4999,14 +4999,14 @@ void func_468()//Position - 0x36F4A
 	iLocal_58 = joaat("scorcher");
 	if (__LIB_0__::func_323() && !iLocal_140)
 	{
-		__LIB_17__::func_32("Replay in progress - skipping cutscene and jumping to checkpointed stage...");
+		__LIB_17__::func_35("Replay in progress - skipping cutscene and jumping to checkpointed stage...");
 		func_500();
 		iVar0 = __LIB_0__::func_344();
-		__LIB_17__::func_31("ReplayStage: ", iVar0);
+		__LIB_17__::func_34("ReplayStage: ", iVar0);
 		if (Global_94618 == 1)
 		{
 			iVar0++;
-			__LIB_17__::func_31("ReplayStage after shitskip: ", iVar0);
+			__LIB_17__::func_34("ReplayStage after shitskip: ", iVar0);
 		}
 		switch (iVar0)
 		{
@@ -5030,17 +5030,17 @@ void func_468()//Position - 0x36F4A
 	{
 		if (iLocal_122 == 0)
 		{
-			__LIB_17__::func_414("ef_3_rcm_concat", 0);
-			__LIB_17__::func_32("Requesting cutscene...");
+			__LIB_17__::func_417("ef_3_rcm_concat", 0);
+			__LIB_17__::func_35("Requesting cutscene...");
 			iLocal_122 = 1;
 		}
 		else
 		{
-			__LIB_17__::func_32("Waiting for cutscene...");
+			__LIB_17__::func_35("Waiting for cutscene...");
 		}
 		if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 		{
-			__LIB_17__::func_32("Trying to set Mary Ann component variation");
+			__LIB_17__::func_35("Trying to set Mary Ann component variation");
 			if (__LIB_0__::func_121(iLocal_106))
 			{
 				CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Mary_Ann", iLocal_106, 0);
@@ -5071,7 +5071,7 @@ void func_468()//Position - 0x36F4A
 			__LIB_14__::func_614(-921.5067f, 6138.8394f, 3.262831f, -903.90186f, 6142.16f, 9.201322f, 14.5f, -913.52f, 6151.76f, 4.74f, 317.56f, __LIB_13__::func_790(), 1, 1, 1, 0, 0);
 			__LIB_14__::func_614(-867.7527f, 6134.8735f, -0.996085f, -913.1636f, 6140.983f, 7.133643f, 13.5f, -913.52f, 6151.76f, 4.74f, 317.56f, __LIB_13__::func_790(), 1, 1, 1, 0, 0);
 			func_263(-915.46f, 6139.21f, 4.52f, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
-			__LIB_17__::func_32("Starting cutscene...");
+			__LIB_17__::func_35("Starting cutscene...");
 			iLocal_123 = 1;
 		}
 	}
@@ -5086,7 +5086,7 @@ void func_468()//Position - 0x36F4A
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 			if (CUTSCENE::WAS_CUTSCENE_SKIPPED())
 			{
-				__LIB_17__::func_32("*** Cam exit state pitch/heading");
+				__LIB_17__::func_35("*** Cam exit state pitch/heading");
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 				iLocal_124 = 1;
@@ -5116,7 +5116,7 @@ void func_468()//Position - 0x36F4A
 					}
 					if (!iLocal_135)
 					{
-						__LIB_17__::func_32("*** Cutscene skip detected");
+						__LIB_17__::func_35("*** Cutscene skip detected");
 						func_471(1, 1);
 						func_328(1);
 						if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
@@ -5152,18 +5152,18 @@ void func_469()//Position - 0x372BC
 	while ((!TASK::GET_IS_WAYPOINT_RECORDING_LOADED("Fan3_RollingStart") || !HUD::HAS_ADDITIONAL_TEXT_LOADED(0)) || !STREAMING::HAS_MODEL_LOADED(iLocal_58))
 	{
 		func_466();
-		__LIB_17__::func_32("Waiting for swim assets...");
+		__LIB_17__::func_35("Waiting for swim assets...");
 		SYSTEM::WAIT(0);
 	}
-	__LIB_16__::func_329(&uLocal_494);
-	__LIB_16__::func_328(&uLocal_494, -911.33f, 6156.95f, 3.78f);
-	__LIB_16__::func_328(&uLocal_494, -833.3f, 6159.46f, 1.19f);
-	__LIB_16__::func_328(&uLocal_494, -712.84f, 6161.51f, 0.18f);
-	__LIB_16__::func_328(&uLocal_494, -653.84f, 6154.68f, 1.39f);
-	__LIB_16__::func_328(&uLocal_494, -651.92f, 6134.7f, 3.2f);
-	__LIB_16__::func_328(&uLocal_494, -683.51f, 6108.33f, 1.6f);
-	__LIB_16__::func_328(&uLocal_494, -922.48f, 6125.13f, 5.71f);
-	__LIB_16__::func_327(&uLocal_494);
+	__LIB_16__::func_332(&uLocal_494);
+	__LIB_16__::func_331(&uLocal_494, -911.33f, 6156.95f, 3.78f);
+	__LIB_16__::func_331(&uLocal_494, -833.3f, 6159.46f, 1.19f);
+	__LIB_16__::func_331(&uLocal_494, -712.84f, 6161.51f, 0.18f);
+	__LIB_16__::func_331(&uLocal_494, -653.84f, 6154.68f, 1.39f);
+	__LIB_16__::func_331(&uLocal_494, -651.92f, 6134.7f, 3.2f);
+	__LIB_16__::func_331(&uLocal_494, -683.51f, 6108.33f, 1.6f);
+	__LIB_16__::func_331(&uLocal_494, -922.48f, 6125.13f, 5.71f);
+	__LIB_16__::func_330(&uLocal_494);
 	__LIB_0__::func_222(&uLocal_164, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 	__LIB_0__::func_222(&uLocal_164, 3, iLocal_106, "MARYANN", 0, 1);
 	TASK::USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE("Fan3_RollingStart", true, 1f, 0.5f);
@@ -5174,14 +5174,14 @@ void func_469()//Position - 0x372BC
 	if (!iLocal_140)
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("FANATIC3_START");
-		__LIB_17__::func_32("Starting swim music");
+		__LIB_17__::func_35("Starting swim music");
 	}
 	iLocal_123 = 0;
 	iLocal_132 = 0;
 	iLocal_119 = MISC::GET_GAME_TIMER();
 	if (!__LIB_0__::func_324())
 	{
-		__LIB_17__::func_112(1, 1, 1, 1);
+		__LIB_17__::func_115(1, 1, 1, 1);
 	}
 	__LIB_0__::func_229("FATIC3_1", 7500, 1);
 }
@@ -5190,7 +5190,7 @@ void func_471(bool bParam0, bool bParam1)//Position - 0x37464
 {
 	if (bParam0)
 	{
-		__LIB_17__::func_416(0, 1, 1);
+		__LIB_17__::func_419(0, 1, 1);
 	}
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
@@ -5210,7 +5210,7 @@ void func_473()//Position - 0x374F6
 			TASK::TASK_GO_STRAIGHT_TO_COORD(iLocal_106, Local_78[0 /*3*/], 2f, 20000, 40000f, 0.5f);
 			iLocal_109 = MISC::GET_GAME_TIMER();
 			iLocal_108 = 1;
-			__LIB_17__::func_32("*** Forcing opponent's move state");
+			__LIB_17__::func_35("*** Forcing opponent's move state");
 		}
 	}
 }
@@ -5223,7 +5223,7 @@ int func_474()//Position - 0x37561
 		{
 			PED::FORCE_PED_MOTION_STATE(PLAYER::PLAYER_PED_ID(), joaat("MotionState_Run"), false, 1, false);
 			PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 2f, 5000, 0f, true, false);
-			__LIB_17__::func_32("*** Forcing player's move state");
+			__LIB_17__::func_35("*** Forcing player's move state");
 			return 1;
 		}
 	}
@@ -5239,7 +5239,7 @@ void func_481(int iParam0, int iParam1)//Position - 0x37760
 		TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());
 		STREAMING::REMOVE_ANIM_DICT("rcmfanatic1out_of_breath");
 		CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
-		__LIB_17__::func_112(1, 1, 1, 1);
+		__LIB_17__::func_115(1, 1, 1, 1);
 		__LIB_0__::func_84(500, 1);
 	}
 	PLAYER::RESET_PLAYER_STAMINA(PLAYER::PLAYER_ID());
@@ -5273,22 +5273,22 @@ void func_481(int iParam0, int iParam1)//Position - 0x37760
 	}
 	else if (iParam0 == 1)
 	{
-		__LIB_17__::func_416(1, 1, 1);
+		__LIB_17__::func_419(1, 1, 1);
 		func_498();
 	}
 	else if (iParam0 == 2)
 	{
-		__LIB_17__::func_416(1, 1, 1);
+		__LIB_17__::func_419(1, 1, 1);
 		func_497();
 	}
 	else if (iParam0 == 3)
 	{
-		__LIB_17__::func_416(1, 1, 1);
+		__LIB_17__::func_419(1, 1, 1);
 		func_485();
 	}
 	else if (iParam0 == 4)
 	{
-		__LIB_17__::func_416(1, 1, 1);
+		__LIB_17__::func_419(1, 1, 1);
 		func_482();
 	}
 }
@@ -5323,7 +5323,7 @@ void func_484()//Position - 0x37990
 			if (__LIB_0__::func_121(iLocal_106))
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_106);
-				__LIB_17__::func_32("*** Clearing Mary Ann tasks (ma_pSkip())");
+				__LIB_17__::func_35("*** Clearing Mary Ann tasks (ma_pSkip())");
 				ENTITY::SET_ENTITY_COORDS(iLocal_106, -910.3204f, 6144.248f, 4.2755f, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(iLocal_106, 312.68f);
 				__LIB_0__::func_714(&iLocal_96);
@@ -5334,7 +5334,7 @@ void func_484()//Position - 0x37990
 			if (__LIB_0__::func_121(iLocal_106))
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_106);
-				__LIB_17__::func_32("*** Clearing Mary Ann tasks (ma_pSkip() CASE MS_SWIM)");
+				__LIB_17__::func_35("*** Clearing Mary Ann tasks (ma_pSkip() CASE MS_SWIM)");
 				ENTITY::SET_ENTITY_COORDS(iLocal_106, -903.2273f, 6142.6387f, 4.1911f, true, true, false, true);
 				ENTITY::SET_ENTITY_HEADING(iLocal_106, 264.8848f);
 				__LIB_0__::func_714(&iLocal_96);
@@ -5346,7 +5346,7 @@ void func_484()//Position - 0x37990
 			if (__LIB_0__::func_121(iLocal_106))
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_106);
-				__LIB_17__::func_32("*** Clearing Mary Ann tasks (ma_pSkip() CASE MS_BIKE)");
+				__LIB_17__::func_35("*** Clearing Mary Ann tasks (ma_pSkip() CASE MS_BIKE)");
 				ENTITY::SET_ENTITY_COORDS(iLocal_106, -674.4872f, 6134.1387f, 1.072f, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(iLocal_106, 259.44f);
 				__LIB_0__::func_714(&iLocal_96);
@@ -5359,7 +5359,7 @@ void func_484()//Position - 0x37990
 			if (__LIB_0__::func_121(iLocal_106))
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_106);
-				__LIB_17__::func_32("*** Clearing Mary Ann tasks (ma_pSkip() CASE MS_RUN)");
+				__LIB_17__::func_35("*** Clearing Mary Ann tasks (ma_pSkip() CASE MS_RUN)");
 				ENTITY::SET_ENTITY_COORDS(iLocal_106, 51.1448f, 6773.212f, 19.2801f, true, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(iLocal_106, 313.146f);
 				__LIB_0__::func_714(&iLocal_96);
@@ -5382,7 +5382,7 @@ void func_485()//Position - 0x37B03
 	if (__LIB_0__::func_121(iLocal_106))
 	{
 		TASK::CLEAR_PED_TASKS_IMMEDIATELY(iLocal_106);
-		__LIB_17__::func_32("*** Clearing Mary Ann tasks (Run skip)");
+		__LIB_17__::func_35("*** Clearing Mary Ann tasks (Run skip)");
 	}
 	AUDIO::TRIGGER_MUSIC_EVENT("FANATIC3_RESTART3");
 	iLocal_158 = MISC::GET_GAME_TIMER();
@@ -5426,7 +5426,7 @@ void func_485()//Position - 0x37B03
 		PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 2f, 2000, 0f, true, false);
 		SYSTEM::WAIT(1000);
 	}
-	__LIB_17__::func_415(1, 1, 1);
+	__LIB_17__::func_418(1, 1, 1);
 }
 
 void func_486()//Position - 0x37C95
@@ -5543,7 +5543,7 @@ void func_497()//Position - 0x38097
 		PED::FORCE_PED_MOTION_STATE(PLAYER::PLAYER_PED_ID(), joaat("MotionState_Run"), false, 0, false);
 		SYSTEM::WAIT(1000);
 	}
-	__LIB_17__::func_415(1, 1, 1);
+	__LIB_17__::func_418(1, 1, 1);
 	HUD::CLEAR_PRINTS();
 	__LIB_0__::func_229("FATIC3_2", 7500, 1);
 }
@@ -5569,7 +5569,7 @@ void func_498()//Position - 0x381F9
 		__LIB_14__::func_748(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1112014848, 12, 5000, 0, 0);
 	}
 	AUDIO::TRIGGER_MUSIC_EVENT("FANATIC3_RESTART1");
-	__LIB_17__::func_32("Skipping to swim");
+	__LIB_17__::func_35("Skipping to swim");
 	iLocal_55 = 1;
 	iLocal_57 = 0;
 	iLocal_101 = 0;
@@ -5594,7 +5594,7 @@ void func_498()//Position - 0x381F9
 		PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 2f, 4000, 0f, true, false);
 		SYSTEM::WAIT(500);
 	}
-	__LIB_17__::func_415(1, 1, 1);
+	__LIB_17__::func_418(1, 1, 1);
 }
 
 void func_499()//Position - 0x38310
@@ -5603,7 +5603,7 @@ void func_499()//Position - 0x38310
 	func_225();
 	iLocal_55 = 0;
 	iLocal_57 = 0;
-	__LIB_17__::func_32("Skipping to intro");
+	__LIB_17__::func_35("Skipping to intro");
 	iLocal_101 = 0;
 	iLocal_100 = 0;
 	iLocal_99 = 7;
@@ -5617,7 +5617,7 @@ void func_499()//Position - 0x38310
 	iLocal_109 = -1;
 	ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), -909.0488f, 6142.6167f, 4.2883f, true, false, false, true);
 	func_484();
-	__LIB_17__::func_415(1, 1, 1);
+	__LIB_17__::func_418(1, 1, 1);
 }
 
 void func_500()//Position - 0x38386
@@ -5680,21 +5680,21 @@ void func_500()//Position - 0x38386
 	Local_80[8 /*3*/] = { 51.32f, 7024.07f, 8.87f };
 	Local_80[9 /*3*/] = { 68.42f, 7030.54f, 11.75f };
 	Local_80[10 /*3*/] = { 61.6f, 7049.5f, 15.45f };
-	__LIB_16__::func_329(&uLocal_546);
-	__LIB_16__::func_328(&uLocal_546, -669.58f, 6153.29f, 0.45f);
-	__LIB_16__::func_328(&uLocal_546, -522.75f, 6317.6f, 9.79f);
-	__LIB_16__::func_328(&uLocal_546, -221.87f, 6550.84f, 8.87f);
-	__LIB_16__::func_328(&uLocal_546, -220.85f, 6657.39f, 0.47f);
-	__LIB_16__::func_328(&uLocal_546, -98.01f, 6746.05f, 0.66f);
-	__LIB_16__::func_328(&uLocal_546, 82.53f, 6814.59f, 17.29f);
-	__LIB_16__::func_328(&uLocal_546, 100.83f, 6770.48f, 28.49f);
-	__LIB_16__::func_328(&uLocal_546, -346.8f, 6373.35f, 20.4f);
-	__LIB_16__::func_328(&uLocal_546, -464f, 6242.33f, 27.31f);
-	__LIB_16__::func_328(&uLocal_546, -478.26f, 6133.85f, 13.53f);
-	__LIB_16__::func_328(&uLocal_546, -632.49f, 6112.85f, 9.95f);
-	__LIB_16__::func_328(&uLocal_546, -679.62f, 6097.66f, 2.07f);
-	__LIB_16__::func_328(&uLocal_546, -721.78f, 6112.86f, -0.68f);
-	__LIB_16__::func_327(&uLocal_546);
+	__LIB_16__::func_332(&uLocal_546);
+	__LIB_16__::func_331(&uLocal_546, -669.58f, 6153.29f, 0.45f);
+	__LIB_16__::func_331(&uLocal_546, -522.75f, 6317.6f, 9.79f);
+	__LIB_16__::func_331(&uLocal_546, -221.87f, 6550.84f, 8.87f);
+	__LIB_16__::func_331(&uLocal_546, -220.85f, 6657.39f, 0.47f);
+	__LIB_16__::func_331(&uLocal_546, -98.01f, 6746.05f, 0.66f);
+	__LIB_16__::func_331(&uLocal_546, 82.53f, 6814.59f, 17.29f);
+	__LIB_16__::func_331(&uLocal_546, 100.83f, 6770.48f, 28.49f);
+	__LIB_16__::func_331(&uLocal_546, -346.8f, 6373.35f, 20.4f);
+	__LIB_16__::func_331(&uLocal_546, -464f, 6242.33f, 27.31f);
+	__LIB_16__::func_331(&uLocal_546, -478.26f, 6133.85f, 13.53f);
+	__LIB_16__::func_331(&uLocal_546, -632.49f, 6112.85f, 9.95f);
+	__LIB_16__::func_331(&uLocal_546, -679.62f, 6097.66f, 2.07f);
+	__LIB_16__::func_331(&uLocal_546, -721.78f, 6112.86f, -0.68f);
+	__LIB_16__::func_330(&uLocal_546);
 	func_501(-888.0333f, 6142.6577f, 2.3874f, -679.05f, 6139.86f, 0.7f, &Local_78, 7);
 	iLocal_58 = joaat("scorcher");
 	sLocal_107 = "Fan3_pedBike";
@@ -5833,7 +5833,7 @@ int func_503(int iParam0, int iParam1)//Position - 0x38A1A
 					{
 						return 1;
 					}
-					if (!__LIB_17__::func_397(PLAYER::PLAYER_PED_ID()))
+					if (!__LIB_17__::func_400(PLAYER::PLAYER_PED_ID()))
 					{
 						return 1;
 					}
@@ -5888,7 +5888,7 @@ int func_503(int iParam0, int iParam1)//Position - 0x38A1A
 					{
 						return 1;
 					}
-					if (!__LIB_17__::func_397(PLAYER::PLAYER_PED_ID()))
+					if (!__LIB_17__::func_400(PLAYER::PLAYER_PED_ID()))
 					{
 						return 1;
 					}
@@ -5911,21 +5911,21 @@ void func_505()//Position - 0x38EF8
 	switch (iLocal_57)
 	{
 		case 0:
-			__LIB_17__::func_32("Doing leadin init");
+			__LIB_17__::func_35("Doing leadin init");
 			if (__LIB_0__::func_323() && !iLocal_140)
 			{
-				__LIB_17__::func_32("Replay in progress - skipping leadin & cutscene and jumping to checkpointed stage...");
+				__LIB_17__::func_35("Replay in progress - skipping leadin & cutscene and jumping to checkpointed stage...");
 				func_500();
 				if (__LIB_0__::func_121(iLocal_106))
 				{
 					ENTITY::FREEZE_ENTITY_POSITION(iLocal_106, false);
 				}
 				iVar0 = __LIB_0__::func_344();
-				__LIB_17__::func_31("ReplayStage: ", iVar0);
+				__LIB_17__::func_34("ReplayStage: ", iVar0);
 				if (Global_94618 == 1)
 				{
 					iVar0++;
-					__LIB_17__::func_31("ReplayStage after shitskip: ", iVar0);
+					__LIB_17__::func_34("ReplayStage after shitskip: ", iVar0);
 				}
 				switch (iVar0)
 				{
@@ -5963,7 +5963,7 @@ void func_505()//Position - 0x38EF8
 			}
 			else if (__LIB_0__::func_2(0))
 			{
-				__LIB_17__::func_32("Skipping leadin because repeat play is active");
+				__LIB_17__::func_35("Skipping leadin because repeat play is active");
 				iLocal_57 = 2;
 			}
 			STREAMING::REQUEST_ANIM_DICT("rcmfanatic3");
@@ -5975,7 +5975,7 @@ void func_505()//Position - 0x38EF8
 				{
 					__LIB_0__::func_429();
 				}
-				__LIB_17__::func_32("Player too close to Mary Ann, starting cutscene early");
+				__LIB_17__::func_35("Player too close to Mary Ann, starting cutscene early");
 				iLocal_57 = 2;
 			}
 			if (STREAMING::HAS_ANIM_DICT_LOADED("rcmfanatic3"))
@@ -5998,7 +5998,7 @@ void func_505()//Position - 0x38EF8
 									CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_106, 0f, 0f, -0.5f, true, 30000, 2000, 2000, 0);
 									if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_106, 1) <= 7f)
 									{
-										__LIB_17__::func_32("Using FOV 40 instead");
+										__LIB_17__::func_35("Using FOV 40 instead");
 										fLocal_153 = 40f;
 									}
 									CAM::SET_GAMEPLAY_HINT_FOV(fLocal_153);
@@ -6014,18 +6014,18 @@ void func_505()//Position - 0x38EF8
 								CAM::STOP_GAMEPLAY_HINT_BEING_CANCELLED_THIS_UPDATE(true);
 							}
 							__LIB_1__::func_373(1, 1, 0, 0, 0, 0, 0);
-							__LIB_17__::func_32("Done Mary Ann leadin anim");
+							__LIB_17__::func_35("Done Mary Ann leadin anim");
 							iLocal_57 = 1;
 						}
 					}
 					else if (iLocal_55 == -1)
 					{
-						__LIB_17__::func_32("Mary Ann not in leadin loop, starting cutscene early");
+						__LIB_17__::func_35("Mary Ann not in leadin loop, starting cutscene early");
 						iLocal_57 = 2;
 					}
 					else
 					{
-						__LIB_17__::func_32("Mary Ann not in leadin loop, but not in leadin stage, not doing anything!");
+						__LIB_17__::func_35("Mary Ann not in leadin loop, but not in leadin stage, not doing anything!");
 					}
 				}
 			}
@@ -6052,7 +6052,7 @@ void func_505()//Position - 0x38EF8
 							CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_106, 0f, 0f, -0.5f, true, 30000, 2000, 2000, 0);
 							if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_106, 1) <= 7f)
 							{
-								__LIB_17__::func_32("Using FOV 40 instead");
+								__LIB_17__::func_35("Using FOV 40 instead");
 								fLocal_153 = 40f;
 							}
 							CAM::SET_GAMEPLAY_HINT_FOV(fLocal_153);
@@ -6070,25 +6070,25 @@ void func_505()//Position - 0x38EF8
 					if (ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(iLocal_106, "rcmfanatic3", "ef_3_rcm_action_maryann") > 0.9f)
 					{
 						ENTITY::FREEZE_ENTITY_POSITION(iLocal_106, false);
-						__LIB_17__::func_32("Mary Ann leadin anim over");
+						__LIB_17__::func_35("Mary Ann leadin anim over");
 						iLocal_57 = 2;
 					}
 					if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), iLocal_106, 1) <= 2.5f)
 					{
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_106, 0);
 						PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
-						__LIB_17__::func_32("Player too close to Mary Ann, starting cutscene early");
+						__LIB_17__::func_35("Player too close to Mary Ann, starting cutscene early");
 					}
 				}
 				else
 				{
-					__LIB_17__::func_32("Mary Ann not playing leadin anim anymore - skip to cutscene for safety");
+					__LIB_17__::func_35("Mary Ann not playing leadin anim anymore - skip to cutscene for safety");
 					iLocal_57 = 2;
 				}
 			}
 			break;
 		case 2:
-			__LIB_17__::func_32("Doing leadin cleanup");
+			__LIB_17__::func_35("Doing leadin cleanup");
 			iLocal_57 = 0;
 			iLocal_55 = 0;
 			break;
@@ -6149,7 +6149,7 @@ int func_530(var uParam0)//Position - 0x3A0D1
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmfanatic3", "ef_3_rcm_loop_maryann", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmfanatic3", "ef_3_rcm_loop_maryann", 0);
 			iLocal_49 = 1;
 			break;
 		case 1:

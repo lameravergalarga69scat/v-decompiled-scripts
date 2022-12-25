@@ -987,7 +987,7 @@ void func_44()//Position - 0x14CA
 		iLocal_61 = 1;
 	}
 	func_79();
-	if (__LIB_16__::func_621(iLocal_112, 0, "EXTRASUNNY", "cirrocumulus", &Local_109, 0f, 0, 1, 1065353216))
+	if (__LIB_16__::func_624(iLocal_112, 0, "EXTRASUNNY", "cirrocumulus", &Local_109, 0f, 0, 1, 1065353216))
 	{
 		if (AUDIO::IS_AUDIO_SCENE_ACTIVE("TOD_SHIFT_SCENE"))
 		{
@@ -1197,7 +1197,7 @@ void func_107()//Position - 0x2E52
 {
 	if (Global_113386.f_9085)
 	{
-		__LIB_43__::func_593();
+		__LIB_43__::func_550();
 		func_136(0, 1, 0);
 		MISC::QUEUE_MISSION_REPEAT_SAVE_FOR_BENCHMARK_TEST();
 		while (MISC::GET_STATUS_OF_MISSION_REPEAT_SAVE() == 1)
@@ -1318,7 +1318,7 @@ void func_108(bool bParam0)//Position - 0x3224
 	{
 		while (Global_78581 != -1)
 		{
-			__LIB_37__::func_498();
+			__LIB_37__::func_172();
 			if (Global_78581 != -1)
 			{
 				PLAYER::FORCE_CLEANUP_FOR_ALL_THREADS_WITH_THIS_NAME(&(Global_91229[Global_78581 /*34*/]), 2);
@@ -1342,13 +1342,13 @@ void func_108(bool bParam0)//Position - 0x3224
 		Global_78581 = -1;
 		Global_43014 = -1;
 		Global_43015 = 0;
-		__LIB_37__::func_760();
+		__LIB_37__::func_434();
 	}
 	else
 	{
 		while ((((Global_97371 || Global_43018) || Global_78581 != -1) || Global_43014 != -1) || Global_43015 != 0)
 		{
-			__LIB_37__::func_498();
+			__LIB_37__::func_172();
 			SYSTEM::WAIT(0);
 			if (Global_78581 != -1)
 			{
@@ -1396,9 +1396,9 @@ void func_108(bool bParam0)//Position - 0x3224
 	{
 	}
 	Global_113386.f_9085 = 0;
-	__LIB_17__::func_8();
+	__LIB_17__::func_11();
 	__LIB_0__::func_366(1);
-	__LIB_42__::func_579();
+	__LIB_42__::func_454();
 	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 	{
 		PLAYER::CLEAR_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID());
@@ -1416,7 +1416,7 @@ void func_108(bool bParam0)//Position - 0x3224
 	{
 		Global_113386.f_2363.f_539[2 /*65*/].f_13[8] = 0;
 	}
-	while (!__LIB_37__::func_697(__LIB_2__::func_82()))
+	while (!__LIB_37__::func_371(__LIB_2__::func_82()))
 	{
 		STREAMING::REQUEST_MODEL(joaat("Player_Zero"));
 		if (STREAMING::HAS_MODEL_LOADED(joaat("Player_Zero")))
@@ -1437,7 +1437,7 @@ void func_136(bool bParam0, bool bParam1, bool bParam2)//Position - 0x3EC3
 	var uVar0;
 	var uVar1;
 	__LIB_15__::func_213();
-	__LIB_38__::func_368();
+	__LIB_38__::func_43();
 	func_170();
 	if (bParam2)
 	{
@@ -1479,7 +1479,7 @@ void func_137(int iParam0, bool bParam1)//Position - 0x3F66
 	func_162(iParam0);
 	__LIB_15__::func_220(iParam0, 0);
 	__LIB_14__::func_624(iParam0);
-	__LIB_16__::func_844(iParam0);
+	__LIB_16__::func_847(iParam0);
 }
 
 void func_162(int iParam0)//Position - 0x8590
@@ -1642,7 +1642,7 @@ void func_173(int iParam0, int iParam1)//Position - 0x8E1E
 			Global_100166[iVar0 /*65*/] = { Var2 };
 			if (iParam0 == PLAYER::PLAYER_PED_ID())
 			{
-				__LIB_15__::func_981();
+				__LIB_15__::func_983();
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
@@ -6016,7 +6016,7 @@ void func_542()//Position - 0x72A7B
 
 int func_543(int iParam0)//Position - 0x72ADE
 {
-	return __LIB_41__::func_278(iParam0, 1, 60);
+	return __LIB_40__::func_956(iParam0, 1, 60);
 }
 
 void func_573(int iParam0)//Position - 0x7701F

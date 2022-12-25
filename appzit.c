@@ -205,7 +205,7 @@ void func_11()//Position - 0x562
 	int iVar0;
 	__LIB_0__::func_183(134, 1);
 	iVar0 = AUDIO::GET_PLAYER_RADIO_STATION_INDEX();
-	switch (__LIB_39__::func_795(iVar0))
+	switch (__LIB_39__::func_471(iVar0))
 	{
 		case 1:
 			__LIB_0__::func_183(82, 1);

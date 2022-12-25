@@ -344,7 +344,7 @@ void func_1()//Position - 0x17C
 	switch (iLocal_83)
 	{
 		case 0:
-			__LIB_17__::func_32("Doing setup for leadout");
+			__LIB_17__::func_35("Doing setup for leadout");
 			STREAMING::REQUEST_ANIM_DICT("rcmjosh1leadinout");
 			STREAMING::REQUEST_MODEL(joaat("p_amb_phone_01"));
 			if (STREAMING::HAS_ANIM_DICT_LOADED("rcmjosh1leadinout") && STREAMING::HAS_MODEL_LOADED(joaat("p_amb_phone_01")))
@@ -363,7 +363,7 @@ void func_1()//Position - 0x17C
 		case 1:
 			if (iLocal_92 == 1)
 			{
-				__LIB_17__::func_32("Skip detected, waiting 500ms...");
+				__LIB_17__::func_35("Skip detected, waiting 500ms...");
 				if ((MISC::GET_GAME_TIMER() - iLocal_93) >= 500)
 				{
 					__LIB_14__::func_879(1, 1, 1);
@@ -379,7 +379,7 @@ void func_1()//Position - 0x17C
 					ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_85, iLocal_87, "leadout_gate", "rcmjosh1leadinout", 8f, 8f, 0, 1000f);
 					ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(iLocal_85);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(Local_81.f_28[0], true, false);
-					__LIB_17__::func_32("Done Josh leadout anim");
+					__LIB_17__::func_35("Done Josh leadout anim");
 					iLocal_94 = 1;
 				}
 			}
@@ -393,23 +393,23 @@ void func_1()//Position - 0x17C
 						__LIB_0__::func_222(&uLocal_97, 5, Local_81.f_28[0], "Josh", 0, 1);
 						if (__LIB_0__::func_787(&uLocal_97, "JOSH1AU", "JOSH1_OUT", 8, 0, 0, 0))
 						{
-							__LIB_17__::func_32("Leadout convo done");
+							__LIB_17__::func_35("Leadout convo done");
 							iLocal_95 = 1;
 						}
 					}
 				}
 				if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_87) > 0.98f)
 				{
-					__LIB_17__::func_32("Leadout done, end mission");
+					__LIB_17__::func_35("Leadout done, end mission");
 					iLocal_83 = 2;
 				}
 				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1107.1068f, 290.4275f, 62.9487f, -1102.038f, 291.34207f, 66.278946f, 2f, false, true, 0))
 				{
-					__LIB_17__::func_32("Too close, stopping scene");
+					__LIB_17__::func_35("Too close, stopping scene");
 					if (__LIB_0__::func_121(Local_81.f_28[0]))
 					{
 						TASK::CLEAR_PED_TASKS(Local_81.f_28[0]);
-						__LIB_17__::func_32("Stopping Josh?");
+						__LIB_17__::func_35("Stopping Josh?");
 					}
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_85))
 					{
@@ -446,7 +446,7 @@ void func_1()//Position - 0x17C
 			}
 			else
 			{
-				__LIB_17__::func_32("Leadout ended early, end mission");
+				__LIB_17__::func_35("Leadout ended early, end mission");
 				iLocal_83 = 2;
 			}
 			break;
@@ -485,7 +485,7 @@ void func_1()//Position - 0x17C
 			if (iLocal_96 == 0)
 			{
 				OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(904342475, 0f, true, true);
-				__LIB_17__::func_32("Josh 4: PROP_LRGGATE_01c_L - Closed");
+				__LIB_17__::func_35("Josh 4: PROP_LRGGATE_01c_L - Closed");
 			}
 			func_2();
 			break;
@@ -495,7 +495,7 @@ void func_1()//Position - 0x17C
 void func_2()//Position - 0x63C
 {
 	__LIB_0__::func_712(58, 2, 1);
-	while (!__LIB_28__::func_203(joaat("TEXT_JOSH_1"), 0, 4, 58, 6000, 6000, 65, 0, -1, 17, 1))
+	while (!__LIB_28__::func_213(joaat("TEXT_JOSH_1"), 0, 4, 58, 6000, 6000, 65, 0, -1, 17, 1))
 	{
 		SYSTEM::WAIT(0);
 	}
@@ -1209,7 +1209,7 @@ void func_247()//Position - 0x2833D
 	float fVar2;
 	if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 	{
-		__LIB_17__::func_32("Trying to set Josh component variation");
+		__LIB_17__::func_35("Trying to set Josh component variation");
 		if (__LIB_0__::func_121(Local_81.f_28[0]))
 		{
 			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Josh", Local_81.f_28[0], 0);
@@ -1264,7 +1264,7 @@ void func_247()//Position - 0x2833D
 				CAM::STOP_GAMEPLAY_HINT(false);
 				if (OBJECT::DOES_OBJECT_OF_TYPE_EXIST_AT_COORDS(-1107.01f, 289.38f, 64.76f, 5f, joaat("prop_lrggate_01c_l"), false))
 				{
-					__LIB_17__::func_32("Locked left gate open?");
+					__LIB_17__::func_35("Locked left gate open?");
 					OBJECT::SET_STATE_OF_CLOSEST_DOOR_OF_TYPE(joaat("prop_lrggate_01c_l"), -1107.01f, 289.38f, 64.76f, true, 90f, false);
 				}
 				__LIB_14__::func_614(-1115.9844f, 285.59244f, 61.942406f, -1097.5992f, 285.1346f, 66.346695f, 33f, Var1, fVar2, 3f, 6f, 3f, 1, 1, 1, 0, 0);
@@ -1277,14 +1277,14 @@ void func_247()//Position - 0x2833D
 			{
 				RECORDING::REPLAY_STOP_EVENT();
 				RECORDING::REPLAY_RECORD_BACK_FOR_TIME(0f, 8f, 0);
-				__LIB_17__::func_32("Done Trevor exit");
+				__LIB_17__::func_35("Done Trevor exit");
 			}
 			if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Josh", 0))
 			{
-				__LIB_17__::func_32("Exit state for Josh...");
+				__LIB_17__::func_35("Exit state for Josh...");
 				if (!iLocal_94)
 				{
-					__LIB_17__::func_32("Played lead-out on Josh exit state");
+					__LIB_17__::func_35("Played lead-out on Josh exit state");
 					__LIB_14__::func_659(PLAYER::PLAYER_PED_ID(), -1104.65f, 289.02f, 63.25f, 16.6717f, 0, 1);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
@@ -1293,7 +1293,7 @@ void func_247()//Position - 0x2833D
 						iLocal_87 = PED::CREATE_SYNCHRONIZED_SCENE(Local_88, Local_89, 2);
 						TASK::TASK_SYNCHRONIZED_SCENE(Local_81.f_28[0], iLocal_87, "rcmjosh1leadinout", "leadout_josh", 1000f, -8f, 25, 0, 1000f, 16);
 						ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_85, iLocal_87, "leadout_gate", "rcmjosh1leadinout", 8f, 8f, 0, 1000f);
-						__LIB_17__::func_32("Done Josh leadout anim on Josh exit state");
+						__LIB_17__::func_35("Done Josh leadout anim on Josh exit state");
 						ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(iLocal_85);
 						PED::FORCE_PED_MOTION_STATE(Local_81.f_28[0], joaat("MotionState_Idle"), false, 1, true);
 						iLocal_94 = 1;
@@ -1302,10 +1302,10 @@ void func_247()//Position - 0x2833D
 			}
 			if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_CAMERA(true))
 			{
-				__LIB_17__::func_32("Exit state for camera...");
+				__LIB_17__::func_35("Exit state for camera...");
 				if (!iLocal_94)
 				{
-					__LIB_17__::func_32("Played lead-out on camera exit state");
+					__LIB_17__::func_35("Played lead-out on camera exit state");
 					__LIB_14__::func_659(PLAYER::PLAYER_PED_ID(), -1104.65f, 289.02f, 63.25f, 16.6717f, 0, 1);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
@@ -1314,7 +1314,7 @@ void func_247()//Position - 0x2833D
 						iLocal_87 = PED::CREATE_SYNCHRONIZED_SCENE(Local_88, Local_89, 2);
 						TASK::TASK_SYNCHRONIZED_SCENE(Local_81.f_28[0], iLocal_87, "rcmjosh1leadinout", "leadout_josh", 1000f, -8f, 25, 0, 1000f, 16);
 						ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_85, iLocal_87, "leadout_gate", "rcmjosh1leadinout", 8f, 8f, 0, 1000f);
-						__LIB_17__::func_32("Done Josh leadout anim on cam exit state cutscene");
+						__LIB_17__::func_35("Done Josh leadout anim on cam exit state cutscene");
 						ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(iLocal_85);
 						PED::FORCE_PED_MOTION_STATE(Local_81.f_28[0], joaat("MotionState_Idle"), false, 1, true);
 						iLocal_94 = 1;
@@ -1341,10 +1341,10 @@ void func_247()//Position - 0x2833D
 			}
 			if (!CUTSCENE::IS_CUTSCENE_ACTIVE())
 			{
-				__LIB_17__::func_32("cutscene not active...");
+				__LIB_17__::func_35("cutscene not active...");
 				if (!iLocal_94)
 				{
-					__LIB_17__::func_32("Played lead-out on not cutscene active");
+					__LIB_17__::func_35("Played lead-out on not cutscene active");
 					__LIB_14__::func_659(PLAYER::PLAYER_PED_ID(), -1104.65f, 289.02f, 63.25f, 16.6717f, 0, 1);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
@@ -1353,7 +1353,7 @@ void func_247()//Position - 0x2833D
 						iLocal_87 = PED::CREATE_SYNCHRONIZED_SCENE(Local_88, Local_89, 2);
 						TASK::TASK_SYNCHRONIZED_SCENE(Local_81.f_28[0], iLocal_87, "rcmjosh1leadinout", "leadout_josh", 8f, -8f, 25, 0, 1000f, 16);
 						ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_85, iLocal_87, "leadout_gate", "rcmjosh1leadinout", 8f, 8f, 0, 1000f);
-						__LIB_17__::func_32("Done Josh leadout anim on non active cutscene");
+						__LIB_17__::func_35("Done Josh leadout anim on non active cutscene");
 						ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(iLocal_85);
 						PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(Local_81.f_28[0], false, false);
 						iLocal_94 = 1;
@@ -1460,7 +1460,7 @@ void func_271()//Position - 0x299CA
 	__LIB_14__::func_862();
 	if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 	{
-		__LIB_17__::func_32("Trying to set Josh component variation");
+		__LIB_17__::func_35("Trying to set Josh component variation");
 		if (__LIB_0__::func_121(Local_81.f_28[0]))
 		{
 			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED("Josh", Local_81.f_28[0], 0);
@@ -1471,7 +1471,7 @@ void func_271()//Position - 0x299CA
 		case 0:
 			if (!__LIB_0__::func_2(0) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -1115.0707f, 279.6581f, 62.421844f, -1092.4285f, 284.13983f, 67.31652f, 15.75f, false, true, 0))
 			{
-				__LIB_17__::func_32("Doing setup for leadin");
+				__LIB_17__::func_35("Doing setup for leadin");
 				__LIB_0__::func_222(&uLocal_97, 2, PLAYER::PLAYER_PED_ID(), "Trevor", 0, 1);
 				__LIB_0__::func_222(&uLocal_97, 5, Local_81.f_28[0], "Josh", 0, 1);
 				STREAMING::REQUEST_ANIM_DICT("rcmjosh1leadinout");
@@ -1489,7 +1489,7 @@ void func_271()//Position - 0x299CA
 			}
 			else
 			{
-				__LIB_17__::func_32("Skipping setup for leadin (wrong area)");
+				__LIB_17__::func_35("Skipping setup for leadin (wrong area)");
 				STREAMING::REQUEST_ANIM_DICT("rcmjosh1leadinout");
 				if (OBJECT::DOES_OBJECT_OF_TYPE_EXIST_AT_COORDS(-1107.01f, 289.38f, 64.76f, 5f, joaat("prop_lrggate_01c_l"), false))
 				{
@@ -1513,7 +1513,7 @@ void func_271()//Position - 0x299CA
 							ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(iLocal_85, iLocal_86, "leadin_gate", "rcmjosh1leadinout", 8f, 8f, 0, 1000f);
 							TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), Local_81.f_28[0], -1, 0, 2);
 							TASK::TASK_LOOK_AT_ENTITY(Local_81.f_28[0], PLAYER::PLAYER_PED_ID(), 4000, 2060, 2);
-							__LIB_17__::func_32("Done Josh leadin anim");
+							__LIB_17__::func_35("Done Josh leadin anim");
 							bLocal_90 = true;
 						}
 					}
@@ -1521,11 +1521,11 @@ void func_271()//Position - 0x299CA
 					{
 						if (!__LIB_0__::func_2(0) && !bLocal_90)
 						{
-							__LIB_17__::func_32("Cannot play lead-in, re-requesting cutscene with new sections");
+							__LIB_17__::func_35("Cannot play lead-in, re-requesting cutscene with new sections");
 							CUTSCENE::REMOVE_CUTSCENE();
 							CUTSCENE::REQUEST_CUTSCENE_WITH_PLAYBACK_LIST("JOSH_1_INT_CONCAT", 13, 8);
 						}
-						__LIB_17__::func_32("Replay in progress, skipping leadin");
+						__LIB_17__::func_35("Replay in progress, skipping leadin");
 						iLocal_83 = 2;
 					}
 				}
@@ -1537,14 +1537,14 @@ void func_271()//Position - 0x299CA
 						{
 							if (__LIB_0__::func_787(&uLocal_97, "JOSH1AU", "JOSH1_LEADIN", 8, 0, 0, 0))
 							{
-								__LIB_17__::func_32("Leadin convo done");
+								__LIB_17__::func_35("Leadin convo done");
 								iLocal_91 = 1;
 							}
 						}
 					}
 					if (PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_86) > 0.9f)
 					{
-						__LIB_17__::func_32("Leadin anim done, launch cutscene");
+						__LIB_17__::func_35("Leadin anim done, launch cutscene");
 						iLocal_83 = 2;
 					}
 					if (__LIB_0__::func_76(PLAYER::PLAYER_PED_ID(), Local_81.f_28[0], 1) <= 2.5f)
@@ -1555,7 +1555,7 @@ void func_271()//Position - 0x299CA
 				}
 				else
 				{
-					__LIB_17__::func_32("Leadin not playing, launch cutscene");
+					__LIB_17__::func_35("Leadin not playing, launch cutscene");
 					iLocal_83 = 2;
 				}
 			}
@@ -1563,11 +1563,11 @@ void func_271()//Position - 0x299CA
 			{
 				if (!__LIB_0__::func_2(0) && !bLocal_90)
 				{
-					__LIB_17__::func_32("Cannot play lead-in, re-requesting cutscene with new sections");
+					__LIB_17__::func_35("Cannot play lead-in, re-requesting cutscene with new sections");
 					CUTSCENE::REMOVE_CUTSCENE();
 					CUTSCENE::REQUEST_CUTSCENE_WITH_PLAYBACK_LIST("JOSH_1_INT_CONCAT", 13, 8);
 				}
-				__LIB_17__::func_32("Replay in progress, skipping leadin");
+				__LIB_17__::func_35("Replay in progress, skipping leadin");
 				iLocal_83 = 2;
 			}
 			break;
@@ -1598,7 +1598,7 @@ int func_299(var uParam0)//Position - 0x2AAC4
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmjosh1", "idle", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmjosh1", "idle", 0);
 			iLocal_77 = 1;
 			break;
 		case 1:
@@ -1621,7 +1621,7 @@ int func_299(var uParam0)//Position - 0x2AAC4
 			{
 				func_301(&(uParam0->f_35[0]), 1);
 			}
-			if (!__LIB_37__::func_649(1, 1))
+			if (!__LIB_37__::func_323(1, 1))
 			{
 				bVar2 = false;
 			}
@@ -1658,7 +1658,7 @@ void func_301(int* iParam0, bool bParam1)//Position - 0x2AC9F
 		Var0 = { -1139.759f, 291.483f, 66.327f };
 		fVar1 = 6.077003f;
 	}
-	__LIB_17__::func_22(iParam0, iLocal_79, Var0, fVar1);
+	__LIB_17__::func_25(iParam0, iLocal_79, Var0, fVar1);
 	VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(*iParam0, 4);
 	VEHICLE::SET_VEHICLE_DOORS_LOCKED(*iParam0, 3);
 	VEHICLE::SET_VEHICLE_AUTOMATICALLY_ATTACHES(*iParam0, false, 0);
@@ -1670,7 +1670,7 @@ void func_312()//Position - 0x2B001
 	__LIB_14__::func_841();
 	if (__LIB_14__::func_843())
 	{
-		__LIB_17__::func_32("...Random Character Script was triggered so additional cleanup required");
+		__LIB_17__::func_35("...Random Character Script was triggered so additional cleanup required");
 	}
 	__LIB_0__::func_124(&(Local_81.f_28[0]), 1, 1, 1);
 	__LIB_14__::func_871(&Local_81, 1, 0, 0);

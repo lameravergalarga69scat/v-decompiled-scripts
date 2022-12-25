@@ -235,7 +235,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (__LIB_39__::func_84(0))
+		if (__LIB_38__::func_759(0))
 		{
 			func_36();
 		}

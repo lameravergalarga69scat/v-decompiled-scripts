@@ -94,7 +94,7 @@ void func_1()//Position - 0x135
 	{
 		ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&iLocal_4);
 	}
-	__LIB_38__::func_718("ob_foundry_cauldron Terminated >>>>>>>>>>>>>>>>>\n");
+	__LIB_38__::func_393("ob_foundry_cauldron Terminated >>>>>>>>>>>>>>>>>\n");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

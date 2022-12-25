@@ -2034,8 +2034,8 @@ void func_77(int iParam0)//Position - 0x6996
 
 void func_83()//Position - 0x6B5C
 {
-	__LIB_15__::func_809(&uLocal_313, -1703.854f, -1082.2223f, 42.006f, -8.3096f, 0f, -111.8213f, 0, 0);
-	__LIB_15__::func_808(&uLocal_313, &uLocal_352, 0, 0, 1, 1);
+	__LIB_15__::func_810(&uLocal_313, -1703.854f, -1082.2223f, 42.006f, -8.3096f, 0f, -111.8213f, 0, 0);
+	__LIB_15__::func_809(&uLocal_313, &uLocal_352, 0, 0, 1, 1);
 	if (BitTest(uLocal_369, 8))
 	{
 		iLocal_297 = AUDIO::GET_SOUND_ID();
@@ -2055,9 +2055,9 @@ void func_84()//Position - 0x6C24
 {
 	if (__LIB_0__::func_715(PLAYER::PLAYER_PED_ID()))
 	{
-		__LIB_33__::func_305(&uLocal_336);
+		__LIB_31__::func_777(&uLocal_336);
 		__LIB_2__::func_816(&Local_303, 0, 1);
-		__LIB_15__::func_808(&uLocal_313, &uLocal_352, 0, 0, 1, 1);
+		__LIB_15__::func_809(&uLocal_313, &uLocal_352, 0, 0, 1, 1);
 		iLocal_353 = 0;
 		if (AUDIO::IS_AUDIO_SCENE_ACTIVE("FAIRGROUND_RIDES_FERRIS_WHALE"))
 		{
@@ -2103,7 +2103,7 @@ void func_91()//Position - 0x6EA0
 		{
 			if (bLocal_301 == 0)
 			{
-				__LIB_33__::func_304(&uLocal_336);
+				__LIB_31__::func_776(&uLocal_336);
 			}
 			else
 			{

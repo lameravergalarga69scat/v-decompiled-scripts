@@ -1027,37 +1027,37 @@ void __EntryFunction__()//Position - 0x0
 	func_311(&Var0, &Var1, 1, iVar4, iVar5, &ScriptParam_616, joaat("A_F_Y_Tennis_01"), joaat("A_M_M_Tennis_01"));
 	while (true)
 	{
-		__LIB_40__::func_467(&Var0);
+		__LIB_40__::func_143(&Var0);
 		if (Global_97369)
 		{
-			__LIB_40__::func_547(&Var0);
+			__LIB_40__::func_223(&Var0);
 		}
-		if (__LIB_15__::func_243(&Var1) > 4 && __LIB_40__::func_533(&Var0, iVar4, &iVar3))
+		if (__LIB_15__::func_243(&Var1) > 4 && __LIB_40__::func_209(&Var0, iVar4, &iVar3))
 		{
-			__LIB_40__::func_547(&Var0);
+			__LIB_40__::func_223(&Var0);
 		}
 		if (NETWORK::NETWORK_IS_IN_SESSION() && !ScriptParam_616.f_1)
 		{
-			__LIB_40__::func_547(&Var0);
+			__LIB_40__::func_223(&Var0);
 		}
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
 			if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var0.f_189.f_55) < 5625f || ScriptParam_616.f_1)
 			{
-				__LIB_44__::func_97(&Var0, &Var1, &iVar3, iVar4, iVar5, &uVar6, ScriptParam_616.f_1);
+				__LIB_44__::func_113(&Var0, &Var1, &iVar3, iVar4, iVar5, &uVar6, ScriptParam_616.f_1);
 			}
 		}
-		__LIB_18__::func_814(&(Var0.f_281));
+		__LIB_18__::func_824(&(Var0.f_281));
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
 			if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var0.f_189.f_55) > (fVar2 * fVar2))
 			{
-				__LIB_40__::func_547(&Var0);
+				__LIB_40__::func_223(&Var0);
 			}
 		}
 		if ((__LIB_0__::func_540(10) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("tennis")) == 0) && !ScriptParam_616.f_1)
 		{
-			__LIB_40__::func_547(&Var0);
+			__LIB_40__::func_223(&Var0);
 		}
 		SYSTEM::WAIT(0);
 	}
@@ -1069,7 +1069,7 @@ void func_311(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, v
 	struct<3> Var1;
 	int iVar2;
 	uParam0->f_1657 = iParam2;
-	__LIB_42__::func_859(&(uParam0->f_189), uParam0, *uParam5);
+	__LIB_42__::func_734(&(uParam0->f_189), uParam0, *uParam5);
 	if (iParam3 == 0)
 	{
 		Var0 = { uParam0->f_1658 };
@@ -1081,16 +1081,16 @@ void func_311(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, v
 		Var1 = { -uParam0->f_1661 };
 	}
 	StringCopy(&(uParam0->f_1670), "Idle1", 8);
-	__LIB_40__::func_548(uParam0[iParam3 /*94*/], iParam3, 4, Var0, Var1);
-	__LIB_40__::func_548(uParam0[iParam4 /*94*/], iParam4, 4, -Var0, -Var1);
+	__LIB_40__::func_224(uParam0[iParam3 /*94*/], iParam3, 4, Var0, Var1);
+	__LIB_40__::func_224(uParam0[iParam4 /*94*/], iParam4, 4, -Var0, -Var1);
 	__LIB_0__::func_794(&(uParam0->f_247));
-	__LIB_40__::func_471(uParam0);
-	__LIB_40__::func_470(uParam0);
-	__LIB_40__::func_469(uParam0);
-	__LIB_40__::func_468(&((uParam0[iParam3 /*94*/])->f_4), uParam0->f_189.f_3[0 /*3*/], (uParam0[iParam3 /*94*/])->f_40, (uParam0[iParam3 /*94*/])->f_43, uParam0->f_189.f_16[0 /*3*/]);
-	__LIB_40__::func_468(&((uParam0[iParam4 /*94*/])->f_4), uParam0->f_189.f_3[2 /*3*/], (uParam0[iParam4 /*94*/])->f_40, (uParam0[iParam4 /*94*/])->f_43, uParam0->f_189.f_16[2 /*3*/]);
+	__LIB_40__::func_147(uParam0);
+	__LIB_40__::func_146(uParam0);
+	__LIB_40__::func_145(uParam0);
+	__LIB_40__::func_144(&((uParam0[iParam3 /*94*/])->f_4), uParam0->f_189.f_3[0 /*3*/], (uParam0[iParam3 /*94*/])->f_40, (uParam0[iParam3 /*94*/])->f_43, uParam0->f_189.f_16[0 /*3*/]);
+	__LIB_40__::func_144(&((uParam0[iParam4 /*94*/])->f_4), uParam0->f_189.f_3[2 /*3*/], (uParam0[iParam4 /*94*/])->f_40, (uParam0[iParam4 /*94*/])->f_43, uParam0->f_189.f_16[2 /*3*/]);
 	func_312(uParam1, __LIB_0__::func_138(uParam5->f_1, uParam5->f_3, MISC::GET_RANDOM_INT_IN_RANGE(500, 3000)));
-	__LIB_40__::func_483(uParam1, 4);
+	__LIB_40__::func_159(uParam1, 4);
 	uParam0->f_1668 = iParam6;
 	uParam0->f_1669 = iParam7;
 	if (uParam5->f_1)

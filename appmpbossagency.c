@@ -206,7 +206,7 @@ void func_5()//Position - 0x1F7
 	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		iLocal_83 = 1;
-		iVar0 = __LIB_33__::func_238(iLocal_102, 0);
+		iVar0 = __LIB_31__::func_707(iLocal_102, 0);
 		func_6(iVar0);
 		return;
 	}
@@ -225,7 +225,7 @@ void func_6(int iParam0)//Position - 0x25E
 	if (Global_1888478.f_7[iParam0 /*8*/].f_1 == 1 && iLocal_103 == iVar0)
 	{
 		func_26(iVar0, Global_1888478.f_7[iParam0 /*8*/].f_6);
-		__LIB_41__::func_270(iParam0);
+		__LIB_40__::func_948(iParam0);
 	}
 	Global_1888478.f_6 = 0;
 	__LIB_0__::func_366(0);
@@ -248,7 +248,7 @@ void func_31()//Position - 0xD8A
 {
 	int iVar0;
 	int iVar1;
-	iVar0 = __LIB_33__::func_238(iLocal_102, 0);
+	iVar0 = __LIB_31__::func_707(iLocal_102, 0);
 	if (iLocal_102 == -1)
 	{
 		func_85(1);
@@ -268,7 +268,7 @@ void func_31()//Position - 0xD8A
 	}
 	if (__LIB_13__::func_476(&iLocal_105))
 	{
-		__LIB_41__::func_270(iVar0);
+		__LIB_40__::func_948(iVar0);
 		func_85(1);
 		return;
 	}
@@ -297,7 +297,7 @@ void func_31()//Position - 0xD8A
 void func_32(int iParam0)//Position - 0xE50
 {
 	MISC::SET_BIT(&Global_1836068, 15);
-	__LIB_41__::func_270(iParam0);
+	__LIB_40__::func_948(iParam0);
 	Global_1888478.f_6 = 0;
 	__LIB_0__::func_366(0);
 }
@@ -321,7 +321,7 @@ void func_47()//Position - 0x117B
 			SYSTEM::WAIT(0);
 		}
 		iLocal_102 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iVar0);
-		iVar1 = __LIB_33__::func_238(iLocal_102, 0);
+		iVar1 = __LIB_31__::func_707(iLocal_102, 0);
 		switch (Global_1888478.f_7[iVar1 /*8*/].f_1)
 		{
 			case 0:
@@ -344,13 +344,13 @@ void func_47()//Position - 0x117B
 			SYSTEM::WAIT(0);
 		}
 		iLocal_102 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iVar2);
-		iVar3 = __LIB_33__::func_238(iLocal_102, 0);
+		iVar3 = __LIB_31__::func_707(iLocal_102, 0);
 		switch (Global_1888478.f_7[iVar3 /*8*/].f_1)
 		{
 			case 0:
 				return;
 			case 1:
-				__LIB_41__::func_270(iVar3);
+				__LIB_40__::func_948(iVar3);
 				func_85(0);
 				return;
 			default:
@@ -360,7 +360,7 @@ void func_47()//Position - 0x117B
 	}
 	if (__LIB_13__::func_425(0))
 	{
-		__LIB_33__::func_239(0);
+		__LIB_31__::func_708(0);
 		func_85(0);
 	}
 }
@@ -386,7 +386,7 @@ void func_49()//Position - 0x12A4
 	}
 	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
 	bVar0 = false;
-	iVar3 = __LIB_33__::func_238(iLocal_102, 0);
+	iVar3 = __LIB_31__::func_707(iLocal_102, 0);
 	iLocal_103 = Global_1888478.f_7[iVar3 /*8*/].f_2;
 	iVar4 = Global_1888478.f_7[iVar3 /*8*/].f_2;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
@@ -396,7 +396,7 @@ void func_49()//Position - 0x12A4
 	{
 		Var5 = { __LIB_13__::func_458(iVar4) };
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRING");
-		HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(__LIB_19__::func_253(iVar4));
+		HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(__LIB_19__::func_263(iVar4));
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Var5);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		bVar0 = true;
@@ -509,7 +509,7 @@ void func_49()//Position - 0x12A4
 	else if (Global_1888478.f_7[iVar3 /*8*/] == 1)
 	{
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_DM2" /* GXT: ~HUD_COLOUR_WHITE~The VIP of ~a~~HUD_COLOUR_WHITE~ has challenged you to an Executive Deathmatch.~s~ */);
-		HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(__LIB_19__::func_253(Global_1888478.f_7[iVar3 /*8*/].f_2));
+		HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(__LIB_19__::func_263(Global_1888478.f_7[iVar3 /*8*/].f_2));
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(__LIB_13__::func_422(Global_1888478.f_7[iVar3 /*8*/].f_2));
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	}
@@ -580,7 +580,7 @@ void func_85(bool bParam0)//Position - 0x1EEE
 		return;
 	}
 	iVar1 = __LIB_13__::func_429();
-	iVar1 = (iVar1 - __LIB_33__::func_240());
+	iVar1 = (iVar1 - __LIB_31__::func_709());
 	if ((__LIB_1__::func_30(PLAYER::PLAYER_ID(), 0) && !__LIB_1__::func_375(1)) && iVar1 <= 0)
 	{
 		func_91();
@@ -766,7 +766,7 @@ void func_91()//Position - 0x22DD
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(26);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRING");
-	HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(__LIB_19__::func_253(PLAYER::PLAYER_ID()));
+	HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(__LIB_19__::func_263(PLAYER::PLAYER_ID()));
 	HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(__LIB_13__::func_394());
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	__LIB_0__::func_610("BA_APP_NONEG" /* GXT: You are already a member of this Organization. */);

@@ -168,7 +168,7 @@ void func_1()//Position - 0xCE
 				}
 				if (iVar1 == iLocal_41)
 				{
-					__LIB_17__::func_41(&(Local_49[iLocal_41 /*11*/]), iLocal_40, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
+					__LIB_17__::func_44(&(Local_49[iLocal_41 /*11*/]), iLocal_40, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 0, 2);
 				}
 			}
 		}
@@ -264,7 +264,7 @@ void func_2(bool bParam0, bool bParam1, var uParam2, int iParam3, var uParam4, i
 void func_11()//Position - 0x604
 {
 	__LIB_0__::func_681(95, 1);
-	__LIB_17__::func_17(27, 84, 0);
+	__LIB_17__::func_20(27, 84, 0);
 	__LIB_0__::func_693(9);
 	iLocal_39 = 2;
 }

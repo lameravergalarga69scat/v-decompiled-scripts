@@ -331,7 +331,7 @@ void func_3(var uParam0)//Position - 0xF3B
 			*uParam0++;
 			break;
 		case 1:
-			if (__LIB_16__::func_882(PLAYER::PLAYER_PED_ID(), -1210.2365f, -579.875f, 26.332148f, -1204.7253f, -586.3573f, 29.567726f, 6f))
+			if (__LIB_16__::func_885(PLAYER::PLAYER_PED_ID(), -1210.2365f, -579.875f, 26.332148f, -1204.7253f, -586.3573f, 29.567726f, 6f))
 			{
 				fLocal_235 = 0.25f;
 				*uParam0++;
@@ -343,7 +343,7 @@ void func_3(var uParam0)//Position - 0xF3B
 				fVar1 = MISC::ACOS(__LIB_0__::func_992(Local_244, 0.73f, 0.683f, -0.013f));
 				if (MISC::ABSF(fVar1) < 25f)
 				{
-					if (__LIB_16__::func_882(iVar2, -1211.7739f, -580.92993f, 26.33095f, -1208.1272f, -585.3617f, 29.660564f, 4.5f))
+					if (__LIB_16__::func_885(iVar2, -1211.7739f, -580.92993f, 26.33095f, -1208.1272f, -585.3617f, 29.660564f, 4.5f))
 					{
 						fLocal_235 = 3f;
 						*uParam0++;
@@ -366,11 +366,11 @@ void func_3(var uParam0)//Position - 0xF3B
 				__LIB_0__::func_222(&uLocal_68, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 				if (__LIB_0__::func_680())
 				{
-					bVar0 = __LIB_15__::func_870(&uLocal_68, "AMSOLAU", "AMSOL_HERE", 8, 0, 0, 0);
+					bVar0 = __LIB_15__::func_872(&uLocal_68, "AMSOLAU", "AMSOL_HERE", 8, 0, 0, 0);
 				}
 				else
 				{
-					bVar0 = __LIB_15__::func_870(&uLocal_68, "AMSOLAU", "AMSOL_WORK", 8, 0, 0, 0);
+					bVar0 = __LIB_15__::func_872(&uLocal_68, "AMSOLAU", "AMSOL_WORK", 8, 0, 0, 0);
 				}
 				if (bVar0)
 				{
@@ -410,7 +410,7 @@ void func_3(var uParam0)//Position - 0xF3B
 			*uParam0++;
 			break;
 		case 7:
-			if (!__LIB_16__::func_882(PLAYER::PLAYER_PED_ID(), -1210.2365f, -579.875f, 26.332148f, -1204.7253f, -586.3573f, 29.567726f, 6f))
+			if (!__LIB_16__::func_885(PLAYER::PLAYER_PED_ID(), -1210.2365f, -579.875f, 26.332148f, -1204.7253f, -586.3573f, 29.567726f, 6f))
 			{
 				func_59(&iLocal_239);
 				*uParam0++;
@@ -457,7 +457,7 @@ void func_5(int iParam0)//Position - 0x1273
 
 void func_6(int iParam0, int iParam1)//Position - 0x12F2
 {
-	__LIB_16__::func_319(iParam0, iParam1);
+	__LIB_16__::func_322(iParam0, iParam1);
 	MISC::SET_BIT(&(Global_38421[(iParam0 / 32)]), (iParam0 % 32));
 	Global_38884[iParam0] = iParam1;
 	Global_113386.f_7261[iParam0] = iParam1;
@@ -511,7 +511,7 @@ void func_63(var uParam0)//Position - 0x6281
 			*uParam0++;
 			break;
 		case 1:
-			if (__LIB_16__::func_882(PLAYER::PLAYER_PED_ID(), -1055.0461f, -469.33472f, 35.433327f, -1057.4398f, -474.97723f, 39.8187f, 12.5f))
+			if (__LIB_16__::func_885(PLAYER::PLAYER_PED_ID(), -1055.0461f, -469.33472f, 35.433327f, -1057.4398f, -474.97723f, 39.8187f, 12.5f))
 			{
 				fLocal_235 = 0.25f;
 				*uParam0++;
@@ -523,7 +523,7 @@ void func_63(var uParam0)//Position - 0x6281
 				fVar1 = MISC::ACOS(__LIB_0__::func_992(Local_244, -0.37f, -0.927f, -0.053f));
 				if (MISC::ABSF(fVar1) < 45f)
 				{
-					if (__LIB_16__::func_882(iVar2, -1049.3175f, -473.7472f, 34.941956f, -1059.4834f, -468.76077f, 39.94483f, 4.5f))
+					if (__LIB_16__::func_885(iVar2, -1049.3175f, -473.7472f, 34.941956f, -1059.4834f, -468.76077f, 39.94483f, 4.5f))
 					{
 						fLocal_235 = 1f;
 						*uParam0++;
@@ -546,11 +546,11 @@ void func_63(var uParam0)//Position - 0x6281
 				__LIB_0__::func_222(&uLocal_68, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 				if (__LIB_0__::func_680())
 				{
-					bVar0 = __LIB_15__::func_870(&uLocal_68, "AMSOLAU", "AMSOL_HERE", 8, 0, 0, 0);
+					bVar0 = __LIB_15__::func_872(&uLocal_68, "AMSOLAU", "AMSOL_HERE", 8, 0, 0, 0);
 				}
 				else
 				{
-					bVar0 = __LIB_15__::func_870(&uLocal_68, "AMSOLAU", "AMSOL_WORK", 8, 0, 0, 0);
+					bVar0 = __LIB_15__::func_872(&uLocal_68, "AMSOLAU", "AMSOL_WORK", 8, 0, 0, 0);
 				}
 				if (bVar0)
 				{
@@ -590,7 +590,7 @@ void func_63(var uParam0)//Position - 0x6281
 			*uParam0++;
 			break;
 		case 7:
-			if (!__LIB_16__::func_882(PLAYER::PLAYER_PED_ID(), -1055.5137f, -474.63712f, 35.6278f, -1051.2297f, -464.41263f, 39.914795f, 9.5f))
+			if (!__LIB_16__::func_885(PLAYER::PLAYER_PED_ID(), -1055.5137f, -474.63712f, 35.6278f, -1051.2297f, -464.41263f, 39.914795f, 9.5f))
 			{
 				func_59(&iLocal_237);
 				*uParam0++;

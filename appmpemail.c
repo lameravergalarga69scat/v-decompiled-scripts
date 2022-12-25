@@ -967,7 +967,7 @@ void func_44()//Position - 0x2C8C
 void func_45()//Position - 0x2D39
 {
 	float fVar0;
-	fVar0 = __LIB_16__::func_296(Local_39, Local_38, Global_20226, -90f, 0f, 90f, 350f, 0);
+	fVar0 = __LIB_16__::func_299(Local_39, Local_38, Global_20226, -90f, 0f, 90f, 350f, 0);
 	MOBILE::SET_MOBILE_PHONE_SCALE((500f + (75f * fVar0)));
 	if (fVar0 >= 1f)
 	{
@@ -979,7 +979,7 @@ void func_45()//Position - 0x2D39
 void func_50()//Position - 0x3120
 {
 	float fVar0;
-	fVar0 = __LIB_16__::func_296(Local_38, Local_39, -90f, 0f, 90f, Global_20226, 350f, 0);
+	fVar0 = __LIB_16__::func_299(Local_38, Local_39, -90f, 0f, 90f, Global_20226, 350f, 0);
 	MOBILE::SET_MOBILE_PHONE_SCALE((500f + (75f * (1f - fVar0))));
 	if (fVar0 >= 1f)
 	{

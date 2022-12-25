@@ -197,11 +197,11 @@ void __EntryFunction__()//Position - 0x0
 	{
 		while (!func_59())
 		{
-			__LIB_43__::func_692(&uLocal_93);
+			__LIB_43__::func_649(&uLocal_93);
 			SYSTEM::WAIT(0);
 		}
 	}
-	__LIB_43__::func_691();
+	__LIB_43__::func_648();
 }
 
 int func_59()//Position - 0x1662
@@ -243,9 +243,9 @@ void func_71()//Position - 0x1845
 	int iVar0[2];
 	iVar0[0] = 0;
 	iVar0[1] = 1;
-	__LIB_33__::func_297(0, &uLocal_93, &iVar0);
+	__LIB_31__::func_769(0, &uLocal_93, &iVar0);
 	iVar0[0] = 2;
 	iVar0[1] = 3;
-	__LIB_33__::func_297(1, &uLocal_93, &iVar0);
+	__LIB_31__::func_769(1, &uLocal_93, &iVar0);
 }
 

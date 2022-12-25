@@ -402,7 +402,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_336 = 230.5943f;
 	Local_337 = { 262.74f, -1004.344f, -99.575f };
 	Local_338 = { 0f, 0f, -162.36f };
-	if ((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(16) || __LIB_18__::func_440()) || Global_2815059.f_1917)
+	if ((PLAYER::HAS_FORCE_CLEANUP_OCCURRED(16) || __LIB_18__::func_450()) || Global_2815059.f_1917)
 	{
 		func_82();
 	}
@@ -474,9 +474,9 @@ void func_1()//Position - 0x245
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_326);
 				iLocal_322 = 7;
 			}
-			else if (__LIB_38__::func_747(8))
+			else if (__LIB_38__::func_422(8))
 			{
-				if ((((__LIB_38__::func_744(Local_335, Var0) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_335)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_333, Local_334, 2f, false, true, 0)) && func_48()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
+				if ((((__LIB_38__::func_419(Local_335, Var0) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_335)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_333, Local_334, 2f, false, true, 0)) && func_48()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
 				{
 					if (iLocal_328 == -1)
 					{
@@ -489,7 +489,7 @@ void func_1()//Position - 0x245
 		case 1:
 			if (__LIB_0__::func_494(1, 0, 1))
 			{
-				if (((((__LIB_38__::func_744(Local_335, Var0) && __LIB_38__::func_747(8)) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_335)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_333, Local_334, 2f, false, true, 0)) && func_48()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
+				if (((((__LIB_38__::func_419(Local_335, Var0) && __LIB_38__::func_422(8)) && INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == INTERIOR::GET_INTERIOR_AT_COORDS(Local_335)) && ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), Local_333, Local_334, 2f, false, true, 0)) && func_48()) && !__LIB_5__::func_836(PLAYER::PLAYER_ID()))
 				{
 					if (__LIB_3__::func_113(iLocal_328, 1))
 					{
@@ -632,7 +632,7 @@ void func_1()//Position - 0x245
 			iLocal_327 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(iLocal_326);
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_327))
 			{
-				__LIB_38__::func_765(5);
+				__LIB_38__::func_440(5);
 				iLocal_322 = 9;
 			}
 			break;

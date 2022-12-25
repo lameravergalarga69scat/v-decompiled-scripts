@@ -143,20 +143,20 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_52 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(-812.1f, 188.2f, 73.2f, "v_michael_garage");
 	iLocal_41 = 0;
 	iLocal_42 = 0;
-	__LIB_16__::func_329(&uLocal_53);
-	__LIB_16__::func_328(&uLocal_53, -844.14935f, 162.55867f, 65.89324f);
-	__LIB_16__::func_328(&uLocal_53, -849.6625f, 166.86949f, 66.54545f);
-	__LIB_16__::func_328(&uLocal_53, -846.0641f, 198.59845f, 76.9182f);
-	__LIB_16__::func_328(&uLocal_53, -796.5247f, 194.14273f, 77.94861f);
-	__LIB_16__::func_328(&uLocal_53, -774.87134f, 195.20262f, 77.13674f);
-	__LIB_16__::func_328(&uLocal_53, -768.13275f, 190.18369f, 76.24245f);
-	__LIB_16__::func_328(&uLocal_53, -761.38745f, 139.44395f, 66.47416f);
-	__LIB_16__::func_328(&uLocal_53, -764.73773f, 137.70203f, 66.47416f);
-	__LIB_16__::func_328(&uLocal_53, -800.0312f, 141.21796f, 61.96946f);
-	__LIB_16__::func_328(&uLocal_53, -851.1459f, 139.22386f, 60.13711f);
-	__LIB_16__::func_328(&uLocal_53, -850.16095f, 150.52716f, 64.38181f);
-	__LIB_16__::func_328(&uLocal_53, -844.149f, 155.82861f, 65.77842f);
-	__LIB_16__::func_327(&uLocal_53);
+	__LIB_16__::func_332(&uLocal_53);
+	__LIB_16__::func_331(&uLocal_53, -844.14935f, 162.55867f, 65.89324f);
+	__LIB_16__::func_331(&uLocal_53, -849.6625f, 166.86949f, 66.54545f);
+	__LIB_16__::func_331(&uLocal_53, -846.0641f, 198.59845f, 76.9182f);
+	__LIB_16__::func_331(&uLocal_53, -796.5247f, 194.14273f, 77.94861f);
+	__LIB_16__::func_331(&uLocal_53, -774.87134f, 195.20262f, 77.13674f);
+	__LIB_16__::func_331(&uLocal_53, -768.13275f, 190.18369f, 76.24245f);
+	__LIB_16__::func_331(&uLocal_53, -761.38745f, 139.44395f, 66.47416f);
+	__LIB_16__::func_331(&uLocal_53, -764.73773f, 137.70203f, 66.47416f);
+	__LIB_16__::func_331(&uLocal_53, -800.0312f, 141.21796f, 61.96946f);
+	__LIB_16__::func_331(&uLocal_53, -851.1459f, 139.22386f, 60.13711f);
+	__LIB_16__::func_331(&uLocal_53, -850.16095f, 150.52716f, 64.38181f);
+	__LIB_16__::func_331(&uLocal_53, -844.149f, 155.82861f, 65.77842f);
+	__LIB_16__::func_330(&uLocal_53);
 	while (true)
 	{
 		switch (iLocal_37)
@@ -167,7 +167,7 @@ void __EntryFunction__()//Position - 0x0
 					if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("startup_positioning")) <= 0)
 					{
 						Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-						if (!__LIB_16__::func_325(&uLocal_53, Var0))
+						if (!__LIB_16__::func_328(&uLocal_53, Var0))
 						{
 							iLocal_37 = 1;
 						}
@@ -235,7 +235,7 @@ void __EntryFunction__()//Position - 0x0
 							}
 							if ((Var0.f_2 > 59f && Var0.f_2 < 90f) || iLocal_40)
 							{
-								if (__LIB_16__::func_325(&uLocal_53, Var0) || iLocal_40)
+								if (__LIB_16__::func_328(&uLocal_53, Var0) || iLocal_40)
 								{
 									if (func_213() || iLocal_40)
 									{
@@ -539,7 +539,7 @@ void func_2()//Position - 0x5D2
 					HUD::CLEAR_HELP(true);
 				}
 				__LIB_0__::func_532(0, 1, 1, 0, 0, 0, 0);
-				__LIB_17__::func_551(1, 1, 1, 1);
+				__LIB_17__::func_554(1, 1, 1, 1);
 				GRAPHICS::RESET_ADAPTATION(6);
 				CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 				if (CAM::DOES_CAM_EXIST(iLocal_46))
@@ -1353,7 +1353,7 @@ void func_227()//Position - 0x26C6A
 			{
 				HUD::CLEAR_HELP(true);
 			}
-			__LIB_17__::func_551(1, 1, 1, 1);
+			__LIB_17__::func_554(1, 1, 1, 1);
 			CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 			if (CAM::DOES_CAM_EXIST(iLocal_46))
 			{

@@ -415,7 +415,7 @@ void func_2()//Position - 0x1AB
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_125, "HIDE_OVERLAY");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_31__::func_954(0);
+	__LIB_35__::func_707(0);
 	MISC::CLEAR_BIT(&uLocal_109, 0);
 }
 
@@ -1005,7 +1005,7 @@ char* func_67(int iParam0, var uParam1, bool bParam2)//Position - 0x1887
 
 int func_71(int iParam0)//Position - 0x1A34
 {
-	if (__LIB_33__::func_199(iParam0) == 0 || __LIB_33__::func_199(iParam0) == 4)
+	if (__LIB_31__::func_667(iParam0) == 0 || __LIB_31__::func_667(iParam0) == 4)
 	{
 		return 0;
 	}
@@ -1497,7 +1497,7 @@ void func_101(char* sParam0, char* sParam1, char* sParam2, char* sParam3, bool b
 		AUDIO::PLAY_SOUND_FRONTEND(-1, "Click_Fail", "GTAO_SMG_Hangar_Computer_Sounds", true);
 	}
 	MISC::SET_BIT(&uLocal_109, 0);
-	__LIB_31__::func_954(iParam6);
+	__LIB_35__::func_707(iParam6);
 	func_90();
 }
 
@@ -1877,11 +1877,11 @@ void func_168()//Position - 0x3FFC
 				}
 				else
 				{
-					__LIB_43__::func_906();
+					__LIB_43__::func_898();
 				}
 				if (!__LIB_0__::func_796(PLAYER::PLAYER_ID()))
 				{
-					__LIB_44__::func_183(0, iVar0);
+					__LIB_44__::func_200(0, iVar0);
 				}
 				if (__LIB_0__::func_796(PLAYER::PLAYER_ID()))
 				{
@@ -1897,18 +1897,18 @@ void func_168()//Position - 0x3FFC
 			if (__LIB_1__::func_802(PLAYER::PLAYER_ID()))
 			{
 				sVar1 = __LIB_13__::func_394();
-				__LIB_28__::func_611("GB_BECOMEB" /* GXT: You are now the President of ~a~~s~ */, sVar1, __LIB_2__::func_795(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
+				__LIB_28__::func_621("GB_BECOMEB" /* GXT: You are now the President of ~a~~s~ */, sVar1, __LIB_2__::func_795(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
 			}
 			else if (__LIB_0__::func_796(PLAYER::PLAYER_ID()))
 			{
 				sVar2 = __LIB_13__::func_394();
 				if (__LIB_3__::func_39(PLAYER::PLAYER_ID()))
 				{
-					__LIB_28__::func_611("GB_BECOMEC" /* GXT: You are now the CEO of ~a~~s~ */, sVar2, __LIB_2__::func_795(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
+					__LIB_28__::func_621("GB_BECOMEC" /* GXT: You are now the CEO of ~a~~s~ */, sVar2, __LIB_2__::func_795(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
 				}
 				else
 				{
-					__LIB_28__::func_611("GB_BECOME" /* GXT: You are now the VIP of ~a~~s~ */, sVar2, __LIB_2__::func_795(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
+					__LIB_28__::func_621("GB_BECOME" /* GXT: You are now the VIP of ~a~~s~ */, sVar2, __LIB_2__::func_795(PLAYER::PLAYER_ID(), -2, 0, 0, 0), -1, 1);
 				}
 			}
 			MISC::CLEAR_BIT(&uLocal_109, 10);
@@ -1948,7 +1948,7 @@ int func_332(var uParam0, int iParam1, bool bParam2, char* sParam3, bool bParam4
 		}
 		else
 		{
-			Var0 = { __LIB_37__::func_548(61, 63, -1) };
+			Var0 = { __LIB_37__::func_222(61, 63, -1) };
 			if (MISC::IS_STRING_NULL_OR_EMPTY(&Var0))
 			{
 				Var0 = { __LIB_13__::func_393(PLAYER::PLAYER_ID()) };
@@ -2054,10 +2054,10 @@ int func_332(var uParam0, int iParam1, bool bParam2, char* sParam3, bool bParam4
 			*uParam0 = 0;
 			uParam0->f_2 = 0;
 			uParam0->f_1 = 0;
-			Var3 = { __LIB_37__::func_548(61, 63, -1) };
+			Var3 = { __LIB_37__::func_222(61, 63, -1) };
 			if (__LIB_1__::func_375(1))
 			{
-				Var3 = { __LIB_37__::func_548(47, 48, -1) };
+				Var3 = { __LIB_37__::func_222(47, 48, -1) };
 			}
 			if (!bParam2 || MISC::IS_STRING_NULL_OR_EMPTY(&Var3))
 			{
@@ -2065,15 +2065,15 @@ int func_332(var uParam0, int iParam1, bool bParam2, char* sParam3, bool bParam4
 				{
 					if (bParam4)
 					{
-						__LIB_43__::func_536(sVar2, 1, 1);
+						__LIB_43__::func_493(sVar2, 1, 1);
 					}
 					else
 					{
-						__LIB_43__::func_536(sVar2, 0, 1);
+						__LIB_43__::func_493(sVar2, 0, 1);
 					}
 					if (!__LIB_1__::func_375(1) && !bParam4)
 					{
-						__LIB_42__::func_487(sVar2, 1);
+						__LIB_42__::func_362(sVar2, 1);
 					}
 				}
 			}

@@ -113,16 +113,16 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_45 = 64;
 	iLocal_49 = HUD::GET_STANDARD_BLIP_ENUM_ID();
 	iLocal_50 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
-	uLocal_52 = __LIB_17__::func_26(69);
+	uLocal_52 = __LIB_17__::func_29(69);
 	iLocal_53 = -1;
 	MISC::SET_THIS_IS_A_TRIGGER_SCRIPT(true);
-	__LIB_37__::func_582();
+	__LIB_37__::func_256();
 	Var0.f_17 = 2;
 	Var0.f_28 = 6;
 	Var0.f_35 = 5;
 	Var0.f_41 = 6;
 	Var1 = { 0f, 0f, 0f };
-	__LIB_37__::func_581(&Var0);
+	__LIB_37__::func_255(&Var0);
 	Var1 = { ScriptParam_60.f_1[0 /*3*/] };
 	iVar2[0] = 44;
 	iVar2[1] = 45;
@@ -139,21 +139,21 @@ void __EntryFunction__()//Position - 0x0
 		}
 		func_269(&Var0, 1);
 	}
-	if (!__LIB_37__::func_631(&iVar2, &Var0, Var1, 1f))
+	if (!__LIB_37__::func_305(&iVar2, &Var0, Var1, 1f))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	if (!func_257(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_37__::func_594(Var0.f_0))
+	if (__LIB_37__::func_268(Var0.f_0))
 	{
-		__LIB_37__::func_588();
+		__LIB_37__::func_262();
 		__LIB_0__::func_135("SCRIPT TERMINATED");
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -178,12 +178,12 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (!__LIB_37__::func_659(&Var0, 1))
+		if (!__LIB_37__::func_333(&Var0, 1))
 		{
 			func_269(&Var0, 1);
 		}
-		__LIB_37__::func_592(Var0.f_0);
-		__LIB_37__::func_623(&iLocal_53, &(Var0.f_9), Var1);
+		__LIB_37__::func_266(Var0.f_0);
+		__LIB_37__::func_297(&iLocal_53, &(Var0.f_9), Var1);
 		if (Var0.f_0 == 44)
 		{
 			func_189(&Var0, Var1, "SCRAPAU", "SCRAP_1_AMB", 3, "OMEGA", &uLocal_54);
@@ -194,13 +194,13 @@ void __EntryFunction__()//Position - 0x0
 			func_189(&Var0, Var1, "SCRAPAU", "SCRAP_2_AMB", 3, "OMEGA", &uLocal_55);
 			func_186(&Var0);
 		}
-		if (__LIB_37__::func_646(&Var0, 0))
+		if (__LIB_37__::func_320(&Var0, 0))
 		{
-			if (!__LIB_37__::func_669(&Var0))
+			if (!__LIB_37__::func_343(&Var0))
 			{
 				func_269(&Var0, 1);
 			}
-			if (__LIB_37__::func_562(&Var0))
+			if (__LIB_37__::func_236(&Var0))
 			{
 				func_269(&Var0, 0);
 			}
@@ -295,7 +295,7 @@ int func_189(int iParam0, struct<3> Param1, char[4] cParam2, char* sParam3, int 
 	var uVar0;
 	if (!*uParam6 == 3)
 	{
-		if (__LIB_37__::func_559(2))
+		if (__LIB_37__::func_233(2))
 		{
 			if (!__LIB_0__::func_75())
 			{
@@ -317,7 +317,7 @@ int func_189(int iParam0, struct<3> Param1, char[4] cParam2, char* sParam3, int 
 					}
 				}
 			}
-			else if (__LIB_15__::func_963(sParam3))
+			else if (__LIB_15__::func_965(sParam3))
 			{
 				if (!*uParam6 == 1)
 				{
@@ -412,7 +412,7 @@ int func_246(var uParam0)//Position - 0xEAFE
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmrc_omega_2", "omega_idle_looking_around", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmrc_omega_2", "omega_idle_looking_around", 0);
 			iLocal_51 = 1;
 			break;
 		case 1:
@@ -426,14 +426,14 @@ int func_246(var uParam0)//Position - 0xEAFE
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 69, 2319.443f, 2583.5881f, 46.7663f, 220f, "OMEGA LAUNCHER RC", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 69, 2319.443f, 2583.5881f, 46.7663f, 220f, "OMEGA LAUNCHER RC", 1))
 				{
 					bVar2 = false;
 				}
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[1], 2331.08f, 2573.53f, 46.13f, 358.61f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[1], 2331.08f, 2573.53f, 46.13f, 358.61f);
 			}
 			if (bVar2)
 			{
@@ -479,7 +479,7 @@ int func_255(var uParam0)//Position - 0xEF72
 				STREAMING::REQUEST_MODEL(iVar0[iVar1]);
 				iVar1++;
 			}
-			__LIB_17__::func_28(&(uParam0->f_48), "rcmrc_omega_1", "omega_idle_geiger_counter", 0);
+			__LIB_17__::func_31(&(uParam0->f_48), "rcmrc_omega_1", "omega_idle_geiger_counter", 0);
 			iLocal_51 = 1;
 			break;
 		case 1:
@@ -493,7 +493,7 @@ int func_255(var uParam0)//Position - 0xEF72
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[0]))
 			{
-				if (!__LIB_37__::func_593(&(uParam0->f_28[0]), 69, 2468.51f, 3437.39f, 49.9f, 180f, "OMEGA LAUNCHER RC", 1))
+				if (!__LIB_37__::func_267(&(uParam0->f_28[0]), 69, 2468.51f, 3437.39f, 49.9f, 180f, "OMEGA LAUNCHER RC", 1))
 				{
 					bVar2 = false;
 				}
@@ -591,7 +591,7 @@ int func_258(int iParam0)//Position - 0xF300
 	{
 		return 0;
 	}
-	if (__LIB_37__::func_580(iParam0))
+	if (__LIB_37__::func_254(iParam0))
 	{
 		return 0;
 	}
@@ -605,11 +605,11 @@ int func_258(int iParam0)//Position - 0xF300
 	}
 	if (!__LIB_0__::func_774(iParam0))
 	{
-		if (!__LIB_37__::func_579(iParam0))
+		if (!__LIB_37__::func_253(iParam0))
 		{
 			return 0;
 		}
-		if (!__LIB_37__::func_578(iParam0))
+		if (!__LIB_37__::func_252(iParam0))
 		{
 			return 0;
 		}
@@ -681,11 +681,11 @@ void func_269(int iParam0, bool bParam1)//Position - 0xF750
 		}
 		__LIB_14__::func_871(iParam0, 0, 0, 0);
 	}
-	__LIB_37__::func_619(&(iParam0->f_48));
+	__LIB_37__::func_293(&(iParam0->f_48));
 	if (iLocal_53 != -1)
 	{
 		__LIB_0__::func_135("SCRIPT TERMINATING: Ending off-mission cutscene request");
-		__LIB_37__::func_331(&iLocal_53);
+		__LIB_37__::func_5(&iLocal_53);
 	}
 	switch (*iParam0)
 	{
@@ -696,12 +696,12 @@ void func_269(int iParam0, bool bParam1)//Position - 0xF750
 			sVar0 = "SCRAP_2_AMB";
 			break;
 	}
-	__LIB_37__::func_595(sVar0);
+	__LIB_37__::func_269(sVar0);
 	if (bParam1)
 	{
-		__LIB_37__::func_592(*iParam0);
+		__LIB_37__::func_266(*iParam0);
 	}
-	__LIB_37__::func_588();
+	__LIB_37__::func_262();
 	__LIB_0__::func_135("SCRIPT TERMINATED");
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

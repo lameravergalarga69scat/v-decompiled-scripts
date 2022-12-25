@@ -290,7 +290,7 @@ void func_1()//Position - 0xF2
 {
 	if (Global_32193)
 	{
-		__LIB_39__::func_408(0);
+		__LIB_39__::func_83(0);
 	}
 	iLocal_43 = 0;
 	iLocal_44 = 0;
@@ -298,12 +298,12 @@ void func_1()//Position - 0xF2
 
 void func_3()//Position - 0x123
 {
-	if (__LIB_25__::func_398())
+	if (__LIB_25__::func_408())
 	{
 		MemCopy(&uLocal_210, {func_5()}, 6);
 		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY(&uLocal_210)) == 0)
 		{
-			__LIB_15__::func_929();
+			__LIB_15__::func_931();
 		}
 		else
 		{
@@ -338,11 +338,11 @@ void func_7()//Position - 0x191
 				}
 				if (!Global_32018)
 				{
-					if (__LIB_17__::func_14())
+					if (__LIB_17__::func_17())
 					{
 						if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601" /* GXT: Which Service? */, "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
 						{
-							if (!__LIB_25__::func_398())
+							if (!__LIB_25__::func_408())
 							{
 								SCRIPT::REQUEST_SCRIPT("emergencycall");
 								while (!SCRIPT::HAS_SCRIPT_LOADED("emergencycall"))
@@ -356,7 +356,7 @@ void func_7()//Position - 0x191
 					}
 					else if (func_8(&uLocal_45, 130, "LOCAUD", "LOC_CALLQ", iLocal_217, "CELL_601" /* GXT: Which Service? */, "LOC_CALLA", "LOC_CALLF", "LOC_CALLP", 0, 0, 0, 0))
 					{
-						if (!__LIB_25__::func_398())
+						if (!__LIB_25__::func_408())
 						{
 							SCRIPT::REQUEST_SCRIPT("emergencycall");
 							while (!SCRIPT::HAS_SCRIPT_LOADED("emergencycall"))
@@ -416,13 +416,13 @@ void func_36()//Position - 0xD54
 {
 	if (iLocal_216)
 	{
-		if (__LIB_25__::func_398())
+		if (__LIB_25__::func_408())
 		{
-			__LIB_15__::func_929();
+			__LIB_15__::func_931();
 		}
 		else
 		{
-			__LIB_15__::func_999();
+			__LIB_16__::func_1();
 		}
 		iLocal_216 = 0;
 	}

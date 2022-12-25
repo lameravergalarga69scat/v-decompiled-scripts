@@ -696,7 +696,7 @@ void func_23(int iParam0, int iParam1)//Position - 0x1EB8
 			{
 				if (!iVar6 == iVar7)
 				{
-					__LIB_17__::func_12(Global_47582[iParam0 /*46*/].f_3[iVar6], iParam0, 0, 0, 0);
+					__LIB_17__::func_15(Global_47582[iParam0 /*46*/].f_3[iVar6], iParam0, 0, 0, 0);
 				}
 				iVar6++;
 			}
@@ -735,7 +735,7 @@ void func_24(int iParam0, bool bParam1)//Position - 0x205B
 	}
 	else
 	{
-		__LIB_16__::func_587(iParam0);
+		__LIB_16__::func_590(iParam0);
 		func_24(iParam0, bParam1);
 	}
 }
@@ -773,13 +773,13 @@ void func_26(int iParam0, bool bParam1)//Position - 0x20E4
 	Global_47582[iParam0 /*46*/].f_45 = Global_44257[iVar1 /*12*/].f_10;
 	Global_47582[iParam0 /*46*/].f_43 = Global_44257[iVar1 /*12*/].f_11;
 	iVar2 = Global_47582[iParam0 /*46*/].f_2;
-	__LIB_17__::func_12(Global_44257[iVar1 /*12*/].f_3, iParam0, 0, 0, bParam1);
+	__LIB_17__::func_15(Global_44257[iVar1 /*12*/].f_3, iParam0, 0, 0, bParam1);
 	iVar3 = 0;
 	while (iVar3 < iVar2)
 	{
 		if (Global_47582[iParam0 /*46*/].f_3[iVar3] != Global_44257[iVar1 /*12*/].f_2 && Global_47582[iParam0 /*46*/].f_3[iVar3] != Global_44257[iVar1 /*12*/].f_3)
 		{
-			__LIB_17__::func_12(Global_47582[iParam0 /*46*/].f_3[iVar3], iParam0, 0, 0, bParam1);
+			__LIB_17__::func_15(Global_47582[iParam0 /*46*/].f_3[iVar3], iParam0, 0, 0, bParam1);
 		}
 		iVar3++;
 	}
@@ -2400,7 +2400,7 @@ void func_67(int iParam0)//Position - 0x5252
 void func_68()//Position - 0x54EE
 {
 	float fVar0;
-	fVar0 = __LIB_16__::func_296(Local_48, Local_47, -90f, 0f, 90f, Global_20226, 350f, 0);
+	fVar0 = __LIB_16__::func_299(Local_48, Local_47, -90f, 0f, 90f, Global_20226, 350f, 0);
 	if (Global_8940 == 0)
 	{
 		MOBILE::SET_MOBILE_PHONE_SCALE((500f + (75f * (1f - fVar0))));
@@ -2417,7 +2417,7 @@ void func_68()//Position - 0x54EE
 void func_73()//Position - 0x58E5
 {
 	float fVar0;
-	fVar0 = __LIB_16__::func_296(Local_47, Local_48, Global_20226, -90f, 0f, 90f, 350f, 0);
+	fVar0 = __LIB_16__::func_299(Local_47, Local_48, Global_20226, -90f, 0f, 90f, 350f, 0);
 	if (Global_8940 == 0)
 	{
 		if (MISC::IS_PC_VERSION())

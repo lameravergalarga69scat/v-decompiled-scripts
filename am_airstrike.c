@@ -697,7 +697,7 @@ void func_45()//Position - 0x1818
 		}
 		if (fLocal_62 >= 0f)
 		{
-			__LIB_16__::func_620(iVar3, "AIRSTRIKE_2" /* GXT: JET RANGE */, -1, iVar4, 2, 0, "AIRSTRIKE_6" /* GXT: ~1~ m */, 0, 0f, 0, 0, iVar4, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
+			__LIB_16__::func_623(iVar3, "AIRSTRIKE_2" /* GXT: JET RANGE */, -1, iVar4, 2, 0, "AIRSTRIKE_6" /* GXT: ~1~ m */, 0, 0f, 0, 0, iVar4, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 1, -1);
 		}
 	}
 }

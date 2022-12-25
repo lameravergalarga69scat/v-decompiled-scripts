@@ -448,7 +448,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("SF_PRC", 0);
 		SYSTEM::WAIT(0);
-		__LIB_38__::func_820(Local_56.f_9, 0, 0, 0, 0, 0);
+		__LIB_38__::func_495(Local_56.f_9, 0, 0, 0, 0, 0);
 		VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
 		PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
 		switch (iLocal_224)
@@ -1256,7 +1256,7 @@ void func_212()//Position - 0x26FE3
 			func_255();
 			func_252();
 			func_234();
-			__LIB_38__::func_209(&iLocal_57, "", "", &uLocal_229, iLocal_230, 0);
+			__LIB_37__::func_884(&iLocal_57, "", "", &uLocal_229, iLocal_230, 0);
 			func_228();
 			func_225();
 			func_222();
@@ -1475,7 +1475,7 @@ int func_252()//Position - 0x281A8
 			}
 		}
 	}
-	if (__LIB_38__::func_817(Local_56.f_35[0]) || iVar1)
+	if (__LIB_38__::func_492(Local_56.f_35[0]) || iVar1)
 	{
 		if (PED::IS_PED_IN_VEHICLE(Local_56.f_28[0], Local_56.f_35[0], false))
 		{
@@ -1518,7 +1518,7 @@ void func_255()//Position - 0x283FB
 {
 	if (((!bLocal_279 && __LIB_0__::func_692(PLAYER::PLAYER_PED_ID())) && __LIB_0__::func_692(Local_56.f_28[0])) && __LIB_0__::func_687(PLAYER::PLAYER_PED_ID(), Local_56.f_28[0], 5f, 1))
 	{
-		if ((PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()) || __LIB_43__::func_584(Local_56.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0)) || __LIB_43__::func_584(Local_56.f_28[1], 1, 1116471296, 1126825984, 0, 0, 0, 0))
+		if ((PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()) || __LIB_43__::func_541(Local_56.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0)) || __LIB_43__::func_541(Local_56.f_28[1], 1, 1116471296, 1126825984, 0, 0, 0, 0))
 		{
 			if (MISC::GET_GAME_TIMER() > iLocal_248)
 			{
@@ -1620,7 +1620,7 @@ void func_278()//Position - 0x290E3
 			{
 				if (iLocal_295 == 0)
 				{
-					if (((PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_56.f_35[0], false) || PED::IS_PED_BEING_JACKED(Local_56.f_28[0])) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_35[0], PLAYER::PLAYER_PED_ID(), true)) || __LIB_16__::func_966(Local_56.f_35[0]))
+					if (((PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_56.f_35[0], false) || PED::IS_PED_BEING_JACKED(Local_56.f_28[0])) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_35[0], PLAYER::PLAYER_PED_ID(), true)) || __LIB_16__::func_969(Local_56.f_35[0]))
 					{
 						iLocal_295 = 1;
 						iLocal_224 = 2;
@@ -1727,7 +1727,7 @@ void func_281()//Position - 0x29405
 			{
 				bVar0 = __LIB_2__::func_859(&uLocal_58, "PAP4AUD", "PAP4_CARSHOT", 7, 0, 0, 0);
 			}
-			else if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_56.f_35[0], false) || __LIB_16__::func_966(Local_56.f_35[0]))
+			else if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_56.f_35[0], false) || __LIB_16__::func_969(Local_56.f_35[0]))
 			{
 				bVar0 = __LIB_2__::func_859(&uLocal_58, "PAP4AUD", "PAP4_STEAL", 7, 0, 0, 0);
 			}
@@ -1930,7 +1930,7 @@ void func_286()//Position - 0x29AD1
 				if (__LIB_2__::func_859(&uLocal_58, "PAP4AUD", "PAP4_TV_TALK", 7, 0, 0, 0))
 				{
 					iLocal_57 = __LIB_14__::func_661(Local_56.f_28[0], 1, 0, 5);
-					__LIB_38__::func_210(&iLocal_57, "", "", &uLocal_229, &iLocal_230, 1, 0);
+					__LIB_37__::func_885(&iLocal_57, "", "", &uLocal_229, &iLocal_230, 1, 0);
 					PED::SET_PED_DIES_WHEN_INJURED(Local_56.f_28[0], true);
 					iLocal_247 = 0;
 					iLocal_234 = 0;
@@ -1964,7 +1964,7 @@ void func_286()//Position - 0x29AD1
 			func_234();
 			func_294(0);
 			func_291();
-			__LIB_38__::func_209(&iLocal_57, "", "", &uLocal_229, iLocal_230, 0);
+			__LIB_37__::func_884(&iLocal_57, "", "", &uLocal_229, iLocal_230, 0);
 			func_228();
 			func_225();
 			func_290();
@@ -2314,7 +2314,7 @@ void func_296()//Position - 0x2A376
 					}
 				}
 			}
-			else if ((((__LIB_42__::func_635(Local_56.f_28[0], 1126825984) && func_304()) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("OBJECT")) || PED::IS_PED_PERFORMING_STEALTH_KILL(PLAYER::PLAYER_PED_ID()))
+			else if ((((__LIB_42__::func_510(Local_56.f_28[0], 1126825984) && func_304()) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("OBJECT")) || PED::IS_PED_PERFORMING_STEALTH_KILL(PLAYER::PLAYER_PED_ID()))
 			{
 				if (__LIB_6__::func_572(Local_56.f_28[0], joaat("SCRIPT_TASK_COMBAT")))
 				{
@@ -2357,7 +2357,7 @@ void func_296()//Position - 0x2A376
 					__LIB_0__::func_122(&(Local_56.f_41[0]), 0);
 				}
 			}
-			else if (((((__LIB_42__::func_635(Local_56.f_28[0], 1126825984) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[1], PLAYER::PLAYER_PED_ID(), true)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[2], PLAYER::PLAYER_PED_ID(), true)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[0], PLAYER::PLAYER_PED_ID(), true)) || iLocal_262) && (__LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) == joaat("WEAPON_UNARMED") || __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) == joaat("OBJECT")))
+			else if (((((__LIB_42__::func_510(Local_56.f_28[0], 1126825984) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[1], PLAYER::PLAYER_PED_ID(), true)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[2], PLAYER::PLAYER_PED_ID(), true)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[0], PLAYER::PLAYER_PED_ID(), true)) || iLocal_262) && (__LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) == joaat("WEAPON_UNARMED") || __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) == joaat("OBJECT")))
 			{
 				if (__LIB_0__::func_692(Local_56.f_28[0]) && !PED::IS_PED_IN_COMBAT(Local_56.f_28[0], 0))
 				{
@@ -2445,7 +2445,7 @@ void func_296()//Position - 0x2A376
 		}
 		if (__LIB_0__::func_692(Local_56.f_28[1]))
 		{
-			if (((((((((__LIB_14__::func_858(Local_56.f_28[1], 0, 0, 0, 0) && func_304()) || ((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[1], PLAYER::PLAYER_PED_ID(), true) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("OBJECT"))) || ((__LIB_42__::func_635(Local_56.f_28[1], 1126825984) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("OBJECT"))) || !__LIB_0__::func_695(Local_56.f_35[1])) || PED::IS_PED_RAGDOLL(Local_56.f_28[1])) || func_298(Local_56.f_28[1])) || func_280(Local_56.f_28[0])) || func_280(Local_56.f_28[2])) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_320, fLocal_321))
+			if (((((((((__LIB_14__::func_858(Local_56.f_28[1], 0, 0, 0, 0) && func_304()) || ((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_56.f_28[1], PLAYER::PLAYER_PED_ID(), true) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("OBJECT"))) || ((__LIB_42__::func_510(Local_56.f_28[1], 1126825984) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("WEAPON_UNARMED")) && __LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) != joaat("OBJECT"))) || !__LIB_0__::func_695(Local_56.f_35[1])) || PED::IS_PED_RAGDOLL(Local_56.f_28[1])) || func_298(Local_56.f_28[1])) || func_280(Local_56.f_28[0])) || func_280(Local_56.f_28[2])) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_320, fLocal_321))
 			{
 				if (!PED::IS_PED_FLEEING(Local_56.f_28[1]) && !PED::IS_PED_IN_ANY_VEHICLE(Local_56.f_28[1], false))
 				{
@@ -2467,7 +2467,7 @@ void func_296()//Position - 0x2A376
 		}
 		if (__LIB_0__::func_692(Local_56.f_28[2]) && !iLocal_309)
 		{
-			if (((((((((((__LIB_43__::func_584(Local_56.f_28[2], 1, 1116471296, 1126825984, 0, 0, 0, 0) && func_304()) || (__LIB_43__::func_584(Local_56.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0) && func_304())) || (__LIB_43__::func_584(Local_56.f_28[1], 1, 1116471296, 1126825984, 0, 0, 0, 0) && func_304())) || func_298(Local_56.f_28[2])) || func_298(Local_56.f_28[0])) || func_298(Local_56.f_28[1])) || PED::IS_PED_RAGDOLL(Local_56.f_28[2])) || !__LIB_0__::func_695(Local_56.f_35[1])) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_320, fLocal_321)) || func_280(Local_56.f_28[0])) || func_280(Local_56.f_28[1]))
+			if (((((((((((__LIB_43__::func_541(Local_56.f_28[2], 1, 1116471296, 1126825984, 0, 0, 0, 0) && func_304()) || (__LIB_43__::func_541(Local_56.f_28[0], 1, 1116471296, 1126825984, 0, 0, 0, 0) && func_304())) || (__LIB_43__::func_541(Local_56.f_28[1], 1, 1116471296, 1126825984, 0, 0, 0, 0) && func_304())) || func_298(Local_56.f_28[2])) || func_298(Local_56.f_28[0])) || func_298(Local_56.f_28[1])) || PED::IS_PED_RAGDOLL(Local_56.f_28[2])) || !__LIB_0__::func_695(Local_56.f_35[1])) || FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_320, fLocal_321)) || func_280(Local_56.f_28[0])) || func_280(Local_56.f_28[1]))
 			{
 				if (!PED::IS_PED_FLEEING(Local_56.f_28[2]) && !PED::IS_PED_IN_ANY_VEHICLE(Local_56.f_28[2], false))
 				{
@@ -2574,7 +2574,7 @@ int func_304()//Position - 0x2AF53
 {
 	if (__LIB_2__::func_85(PLAYER::PLAYER_PED_ID()) == joaat("WEAPON_STICKYBOMB"))
 	{
-		if ((__LIB_42__::func_567(Local_56.f_28[0], 1126825984) || __LIB_42__::func_567(Local_56.f_28[1], 1126825984)) || __LIB_42__::func_567(Local_56.f_28[2], 1126825984))
+		if ((__LIB_42__::func_442(Local_56.f_28[0], 1126825984) || __LIB_42__::func_442(Local_56.f_28[1], 1126825984)) || __LIB_42__::func_442(Local_56.f_28[2], 1126825984))
 		{
 			return 1;
 		}
@@ -2948,7 +2948,7 @@ void func_312()//Position - 0x2B802
 			}
 			bLocal_308 = false;
 			iLocal_309 = 0;
-			__LIB_38__::func_819(1, 1, 1, 1);
+			__LIB_38__::func_494(1, 1, 1, 1);
 			__LIB_14__::func_800(&Local_56, 0, 1);
 			func_216(0);
 			break;
@@ -3187,14 +3187,14 @@ void func_352()//Position - 0x2D555
 	{
 		__LIB_14__::func_748(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1112014848, 12, 5000, 0, 0);
 	}
-	__LIB_42__::func_633(1, 1, 1);
+	__LIB_42__::func_508(1, 1, 1);
 }
 
 void func_360(bool bParam0, bool bParam1)//Position - 0x2D890
 {
 	if (bParam0)
 	{
-		__LIB_42__::func_634(0, 1, 1);
+		__LIB_42__::func_509(0, 1, 1);
 	}
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
@@ -3280,7 +3280,7 @@ int func_389(var uParam0)//Position - 0x2E8B5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[1]))
 			{
-				__LIB_17__::func_39(&(uParam0->f_28[1]), iVar0[3], -498.16565f, 228.62839f, 82.09948f, 292.9763f, 26);
+				__LIB_17__::func_42(&(uParam0->f_28[1]), iVar0[3], -498.16565f, 228.62839f, 82.09948f, 292.9763f, 26);
 				if (__LIB_0__::func_692(uParam0->f_28[1]))
 				{
 					PED::SET_PED_NAME_DEBUG(uParam0->f_28[1], "Camera Man");
@@ -3299,7 +3299,7 @@ int func_389(var uParam0)//Position - 0x2E8B5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_28[2]))
 			{
-				__LIB_17__::func_39(&(uParam0->f_28[2]), iVar0[4], -498.30902f, 227.91116f, 82.105995f, 296.4216f, 26);
+				__LIB_17__::func_42(&(uParam0->f_28[2]), iVar0[4], -498.30902f, 227.91116f, 82.105995f, 296.4216f, 26);
 				if (__LIB_0__::func_692(uParam0->f_28[2]))
 				{
 					PED::SET_PED_NAME_DEBUG(uParam0->f_28[2], "Makeup Woman");
@@ -3319,7 +3319,7 @@ int func_389(var uParam0)//Position - 0x2E8B5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[1], -497.99f, 224.97f, 82.67f, 266.5f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[1], -497.99f, 224.97f, 82.67f, 266.5f);
 				if (__LIB_0__::func_695(uParam0->f_35[0]))
 				{
 					VEHICLE::LOWER_CONVERTIBLE_ROOF(uParam0->f_35[0], true);
@@ -3333,7 +3333,7 @@ int func_389(var uParam0)//Position - 0x2E8B5
 			}
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[1]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[1]), iVar0[2], -501.55f, 230.7f, 83.1f, 233.93f);
+				__LIB_17__::func_25(&(uParam0->f_35[1]), iVar0[2], -501.55f, 230.7f, 83.1f, 233.93f);
 				if (__LIB_0__::func_695(uParam0->f_35[1]))
 				{
 					VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(uParam0->f_35[1], 1);

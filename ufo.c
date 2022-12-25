@@ -74,7 +74,7 @@ void __EntryFunction__()//Position - 0x0
 		switch (iLocal_18)
 		{
 			case 0:
-				if (CLOCK::GET_CLOCK_HOURS() == 3 && __LIB_40__::func_941())
+				if (CLOCK::GET_CLOCK_HOURS() == 3 && __LIB_40__::func_617())
 				{
 					iLocal_18 = 1;
 				}
@@ -88,7 +88,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 2:
-				if (CLOCK::GET_CLOCK_HOURS() != 3 || !__LIB_40__::func_941())
+				if (CLOCK::GET_CLOCK_HOURS() != 3 || !__LIB_40__::func_617())
 				{
 					func_10();
 				}

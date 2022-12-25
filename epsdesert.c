@@ -402,7 +402,7 @@ void func_1()//Position - 0xD6
 				iLocal_208 = 0;
 			}
 		}
-		if (__LIB_17__::func_19(0))
+		if (__LIB_17__::func_22(0))
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
@@ -438,7 +438,7 @@ void func_1()//Position - 0xD6
 										fVar0 = 0.4f;
 									}
 									Global_113386.f_10049.f_107 = (Global_113386.f_10049.f_107 + fVar0);
-									if (__LIB_36__::func_718())
+									if (__LIB_36__::func_392())
 									{
 										if (Global_113386.f_10049.f_107 >= 8000f)
 										{
@@ -447,7 +447,7 @@ void func_1()//Position - 0xD6
 									}
 									if (Global_113386.f_10049.f_107 < (1609f * 5f) && ((1609f * 5f) - Global_113386.f_10049.f_107) < (fLocal_210 - 160.9f))
 									{
-										if (__LIB_36__::func_718())
+										if (__LIB_36__::func_392())
 										{
 											fVar2 = func_132(Global_113386.f_10049.f_107);
 											fLocal_218 = fVar2;
@@ -461,7 +461,7 @@ void func_1()//Position - 0xD6
 											fLocal_218 = fVar5;
 										}
 										fLocal_210 = ((1609f * 5f) - Global_113386.f_10049.f_107);
-										if (__LIB_36__::func_718())
+										if (__LIB_36__::func_392())
 										{
 											if (fLocal_218 >= 7.95f)
 											{
@@ -474,7 +474,7 @@ void func_1()//Position - 0xD6
 										HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true);
 										iLocal_221 = 1;
 										__LIB_0__::func_210();
-										if (__LIB_36__::func_718())
+										if (__LIB_36__::func_392())
 										{
 											fVar6 = 6.4f;
 										}
@@ -486,7 +486,7 @@ void func_1()//Position - 0xD6
 										{
 											if (!iLocal_223)
 											{
-												while (!__LIB_17__::func_18(-694220424, 6, 1, 51, 6, 10000, 30000, -1, -1, 0, -1, 0))
+												while (!__LIB_17__::func_21(-694220424, 6, 1, 51, 6, 10000, 30000, -1, -1, 0, -1, 0))
 												{
 													SYSTEM::WAIT(0);
 												}
@@ -585,7 +585,7 @@ void func_1()//Position - 0xD6
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("EPSDES_02" /* GXT: 5 miles walked in the desert - pilgrimage complete. */);
 		HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(true, true);
 		__LIB_1__::func_38(1);
-		while (!__LIB_17__::func_18(joaat("CALL_EPSILON_DESERT_DONE"), 6, 1, 51, 6, 10000, 30000, -1, -1, 0, -1, 0))
+		while (!__LIB_17__::func_21(joaat("CALL_EPSILON_DESERT_DONE"), 6, 1, 51, 6, 10000, 30000, -1, -1, 0, -1, 0))
 		{
 			SYSTEM::WAIT(0);
 		}

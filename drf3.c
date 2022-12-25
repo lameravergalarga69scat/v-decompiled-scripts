@@ -1297,11 +1297,11 @@ void __EntryFunction__()//Position - 0x0
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(67))
 	{
 		func_137();
-		__LIB_16__::func_996();
+		__LIB_16__::func_999();
 	}
 	iLocal_70 = __LIB_1__::func_806();
-	__LIB_16__::func_963(&cLocal_49, iLocal_70);
-	bVar1 = __LIB_15__::func_805(0) < __LIB_16__::func_944(iLocal_70);
+	__LIB_16__::func_966(&cLocal_49, iLocal_70);
+	bVar1 = __LIB_15__::func_806(0) < __LIB_16__::func_947(iLocal_70);
 	while (true)
 	{
 		SYSTEM::WAIT(0);
@@ -1310,23 +1310,23 @@ void __EntryFunction__()//Position - 0x0
 			case 0:
 				if (bVar1)
 				{
-					if (__LIB_41__::func_346(&uLocal_74, &uLocal_335, &uLocal_524, &iLocal_1261))
+					if (__LIB_41__::func_24(&uLocal_74, &uLocal_335, &uLocal_524, &iLocal_1261))
 					{
-						__LIB_16__::func_993(&uLocal_239, &uLocal_335, iLocal_1261);
-						__LIB_16__::func_993(&uLocal_287, &uLocal_524, iLocal_1261);
+						__LIB_16__::func_996(&uLocal_239, &uLocal_335, iLocal_1261);
+						__LIB_16__::func_996(&uLocal_287, &uLocal_524, iLocal_1261);
 						bVar2 = true;
 					}
 				}
 				else
 				{
-					__LIB_41__::func_345(&uLocal_74, &uLocal_335, &uLocal_524, &iLocal_1261, &uLocal_769, &uLocal_878, &iLocal_1262, &uLocal_1043, &uLocal_1152, &iLocal_1263, &cLocal_49, iLocal_70);
+					__LIB_41__::func_23(&uLocal_74, &uLocal_335, &uLocal_524, &iLocal_1261, &uLocal_769, &uLocal_878, &iLocal_1262, &uLocal_1043, &uLocal_1152, &iLocal_1263, &cLocal_49, iLocal_70);
 					Global_96902 = 0;
-					__LIB_16__::func_993(&uLocal_239, &uLocal_335, iLocal_1261);
-					__LIB_16__::func_993(&uLocal_287, &uLocal_524, iLocal_1261);
-					__LIB_16__::func_993(&uLocal_713, &uLocal_769, iLocal_1262);
-					__LIB_16__::func_993(&uLocal_741, &uLocal_878, iLocal_1262);
-					__LIB_16__::func_993(&uLocal_987, &uLocal_1043, iLocal_1263);
-					__LIB_16__::func_993(&uLocal_1015, &uLocal_1152, iLocal_1263);
+					__LIB_16__::func_996(&uLocal_239, &uLocal_335, iLocal_1261);
+					__LIB_16__::func_996(&uLocal_287, &uLocal_524, iLocal_1261);
+					__LIB_16__::func_996(&uLocal_713, &uLocal_769, iLocal_1262);
+					__LIB_16__::func_996(&uLocal_741, &uLocal_878, iLocal_1262);
+					__LIB_16__::func_996(&uLocal_987, &uLocal_1043, iLocal_1263);
+					__LIB_16__::func_996(&uLocal_1015, &uLocal_1152, iLocal_1263);
 					iVar3 = 0;
 				}
 				iLocal_48 = 1;
@@ -1336,7 +1336,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (bVar2)
 					{
-						__LIB_16__::func_997(iLocal_1261, &uLocal_74, 36, "DrfAud", &uLocal_239, &uLocal_287, 9, 1, 0, 0, 0);
+						__LIB_17__::func_0(iLocal_1261, &uLocal_74, 36, "DrfAud", &uLocal_239, &uLocal_287, 9, 1, 0, 0, 0);
 						iLocal_48 = 3;
 					}
 					else
@@ -1344,9 +1344,9 @@ void __EntryFunction__()//Position - 0x0
 						iLocal_48 = 2;
 					}
 				}
-				else if (__LIB_16__::func_998(iLocal_1261, &uLocal_74, 36, "DrfAud", &uLocal_239, &uLocal_287, "SHRINK_CELL_Q" /* GXT: Accept advice? */, 9, 1, 0, 0, 0))
+				else if (__LIB_17__::func_1(iLocal_1261, &uLocal_74, 36, "DrfAud", &uLocal_239, &uLocal_287, "SHRINK_CELL_Q" /* GXT: Accept advice? */, 9, 1, 0, 0, 0))
 				{
-					__LIB_16__::func_986(iLocal_1262, iLocal_1263, &uLocal_713, &uLocal_741, &uLocal_987, &uLocal_1015);
+					__LIB_16__::func_989(iLocal_1262, iLocal_1263, &uLocal_713, &uLocal_741, &uLocal_987, &uLocal_1015);
 					iLocal_48 = 3;
 				}
 				break;
@@ -1366,14 +1366,14 @@ void __EntryFunction__()//Position - 0x0
 				{
 					iVar0 = AUDIO::GET_CURRENT_SCRIPTED_CONVERSATION_LINE();
 				}
-				if (__LIB_16__::func_978())
+				if (__LIB_16__::func_981())
 				{
 					__LIB_3__::func_128(&iLocal_71);
 					iVar3 = 1;
 					iVar0 = -1;
-					if (__LIB_16__::func_984(&iLocal_71, 30f))
+					if (__LIB_16__::func_987(&iLocal_71, 30f))
 					{
-						__LIB_16__::func_985(1);
+						__LIB_16__::func_988(1);
 					}
 				}
 				if (PED::IS_PED_JUMPING_OUT_OF_VEHICLE(PLAYER::PLAYER_PED_ID()) || ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()))
@@ -1401,15 +1401,15 @@ void __EntryFunction__()//Position - 0x0
 				}
 				break;
 			case 4:
-				__LIB_15__::func_811(__LIB_0__::func_683(), 24, __LIB_16__::func_944(iLocal_70));
+				__LIB_15__::func_812(__LIB_0__::func_683(), 24, __LIB_16__::func_947(iLocal_70));
 				__LIB_0__::func_526(0, 0);
-				__LIB_16__::func_996();
+				__LIB_16__::func_999();
 				break;
 			case 5:
 				if (!bVar1 || !__LIB_0__::func_1("SHRINK_BROKE"))
 				{
 					func_1(0);
-					__LIB_16__::func_996();
+					__LIB_16__::func_999();
 				}
 				break;
 		}

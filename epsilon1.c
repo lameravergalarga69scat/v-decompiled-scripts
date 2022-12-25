@@ -411,7 +411,7 @@ void func_5()//Position - 0x2B6
 		PLAYER::CLEAR_PLAYER_WANTED_LEVEL(PLAYER::GET_PLAYER_INDEX());
 	}
 	func_17(73, 1);
-	while (!__LIB_17__::func_27(-1504002834, 6, 1, 60, 15000, 10000, -1, 0, -1, 0))
+	while (!__LIB_17__::func_30(-1504002834, 6, 1, 60, 15000, 10000, -1, 0, -1, 0))
 	{
 		if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 		{
@@ -1343,7 +1343,7 @@ void func_255()//Position - 0x27D04
 				}
 				else if (__LIB_0__::func_645(1000))
 				{
-					__LIB_17__::func_25(0, 0, 0);
+					__LIB_17__::func_28(0, 0, 0);
 					iLocal_83 = 2;
 				}
 			}
@@ -1488,7 +1488,7 @@ void func_295()//Position - 0x2944F
 	__LIB_0__::func_222(&uLocal_91, 0, PLAYER::PLAYER_PED_ID(), "MICHAEL", 0, 1);
 	if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 	{
-		__LIB_17__::func_23(PLAYER::PLAYER_PED_ID(), 0);
+		__LIB_17__::func_26(PLAYER::PLAYER_PED_ID(), 0);
 		WEAPON::REMOVE_ALL_PED_WEAPONS(PLAYER::PLAYER_PED_ID(), true);
 	}
 	func_219(1);
@@ -1528,7 +1528,7 @@ int func_320(var uParam0)//Position - 0x2B34C
 			bVar2 = true;
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 			{
-				__LIB_17__::func_22(&(uParam0->f_35[0]), iVar0[0], -1619.53f, 4204.1f, 83.3f, 77.92f);
+				__LIB_17__::func_25(&(uParam0->f_35[0]), iVar0[0], -1619.53f, 4204.1f, 83.3f, 77.92f);
 				if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_35[0]))
 				{
 					VEHICLE::SET_VEHICLE_DOORS_LOCKED(uParam0->f_35[0], 2);
@@ -1573,7 +1573,7 @@ void func_326()//Position - 0x2B60C
 		if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 		{
 			TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
-			__LIB_17__::func_24(PLAYER::PLAYER_PED_ID(), 1, 0);
+			__LIB_17__::func_27(PLAYER::PLAYER_PED_ID(), 1, 0);
 		}
 		if (__LIB_0__::func_121(PLAYER::GET_PLAYERS_LAST_VEHICLE()))
 		{

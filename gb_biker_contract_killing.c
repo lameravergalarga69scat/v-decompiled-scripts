@@ -440,7 +440,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		__LIB_0__::func_933();
-		if (__LIB_30__::func_667(1))
+		if (__LIB_30__::func_677(1))
 		{
 			func_6689(0, 1);
 			func_6640();
@@ -450,7 +450,7 @@ void __EntryFunction__()//Position - 0x0
 			func_6689(0, 1);
 			func_6640();
 		}
-		__LIB_30__::func_792();
+		__LIB_30__::func_802();
 		func_6623();
 		func_6617();
 		func_1060(&uLocal_154, 1, 0, 1, 1, 6000);
@@ -671,7 +671,7 @@ void func_5()//Position - 0x392
 				func_15(iVar0, 1);
 				break;
 			case 1:
-				if (func_18(__LIB_30__::func_842(2, Var1.f_2)))
+				if (func_18(__LIB_30__::func_852(2, Var1.f_2)))
 				{
 					if ((func_13(iVar0, 10) && bVar7) && !bVar6)
 					{
@@ -710,7 +710,7 @@ void func_5()//Position - 0x392
 					{
 						if (ENTITY::IS_ENTITY_IN_AIR(iVar3))
 						{
-							if (func_18(__LIB_30__::func_842(10, Var1.f_2)) || func_18(__LIB_30__::func_842(2, Var1.f_2)))
+							if (func_18(__LIB_30__::func_852(10, Var1.f_2)) || func_18(__LIB_30__::func_852(2, Var1.f_2)))
 							{
 								func_15(iVar0, 7);
 							}
@@ -740,7 +740,7 @@ void func_5()//Position - 0x392
 				{
 					if (bVar5)
 					{
-						if (func_18(__LIB_30__::func_842(2, Var1.f_2)))
+						if (func_18(__LIB_30__::func_852(2, Var1.f_2)))
 						{
 							if (func_10(Var1, 1112014848))
 							{
@@ -790,7 +790,7 @@ void func_5()//Position - 0x392
 						func_15(iVar0, 1);
 					}
 				}
-				if (func_18(__LIB_30__::func_842(2, Var1.f_2)))
+				if (func_18(__LIB_30__::func_852(2, Var1.f_2)))
 				{
 					if (bVar7)
 					{
@@ -816,13 +816,13 @@ void func_5()//Position - 0x392
 				}
 				break;
 			case 10:
-				if (func_18(__LIB_30__::func_842(2, Var1.f_2)))
+				if (func_18(__LIB_30__::func_852(2, Var1.f_2)))
 				{
 					func_15(iVar0, 2);
 				}
 				break;
 			case 11:
-				if (func_18(__LIB_30__::func_842(2, Var1.f_2)))
+				if (func_18(__LIB_30__::func_852(2, Var1.f_2)))
 				{
 					if (func_12(iVar0))
 					{
@@ -1197,7 +1197,7 @@ int func_33()//Position - 0xDEF
 					ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_RELATIONSHIP_GROUP(iVar8, true, iLocal_199);
 					if (func_38(iVar0, iLocal_183))
 					{
-						__LIB_30__::func_790(iVar8, 1);
+						__LIB_30__::func_800(iVar8, 1);
 					}
 					func_15(Local_380.f_370, func_34(Local_380.f_370));
 					Local_380.f_370++;
@@ -2938,30 +2938,30 @@ void func_85()//Position - 0x3BAD
 		case 0:
 			break;
 		case 1:
-			if (!__LIB_30__::func_787(2))
+			if (!__LIB_30__::func_797(2))
 			{
-				__LIB_30__::func_713(186, 1, -1, 0);
-				__LIB_30__::func_786(2);
+				__LIB_30__::func_723(186, 1, -1, 0);
+				__LIB_30__::func_796(2);
 			}
-			else if (!__LIB_30__::func_787(3))
+			else if (!__LIB_30__::func_797(3))
 			{
 				if (__LIB_0__::func_937(&(Local_380.f_2), 10000, 0))
 				{
 					__LIB_15__::func_577();
-					__LIB_30__::func_786(3);
+					__LIB_30__::func_796(3);
 				}
 			}
-			if ((!__LIB_3__::func_290() && !__LIB_0__::func_114()) && !__LIB_30__::func_441(186))
+			if ((!__LIB_3__::func_290() && !__LIB_0__::func_114()) && !__LIB_30__::func_451(186))
 			{
 				if (func_25() == 0)
 				{
 					if (Global_2703735.f_4.f_10)
 					{
-						if (!__LIB_30__::func_787(4))
+						if (!__LIB_30__::func_797(4))
 						{
-							__LIB_30__::func_676(-1, 0, 0, -1, 0, 0);
+							__LIB_30__::func_686(-1, 0, 0, -1, 0, 0);
 							func_906(0);
-							__LIB_30__::func_786(4);
+							__LIB_30__::func_796(4);
 						}
 						if (func_894())
 						{
@@ -2976,7 +2976,7 @@ void func_85()//Position - 0x3BAD
 						func_769();
 						func_764();
 						func_711();
-						__LIB_30__::func_964(&(Global_1637407.f_534), &Global_1637407, 28, &(Global_1637407.f_1), &(Global_1637407.f_117), -1, 0, 0);
+						__LIB_34__::func_769(&(Global_1637407.f_534), &Global_1637407, 28, &(Global_1637407.f_1), &(Global_1637407.f_117), -1, 0, 0);
 						if (!Global_1941287)
 						{
 							if (func_579())
@@ -3012,21 +3012,21 @@ void func_85()//Position - 0x3BAD
 			{
 				if (func_894())
 				{
-					if (!__LIB_30__::func_787(8))
+					if (!__LIB_30__::func_797(8))
 					{
-						__LIB_30__::func_781(__LIB_1__::func_137(Local_380.f_321[func_126() /*6*/].f_5));
+						__LIB_30__::func_791(__LIB_1__::func_137(Local_380.f_321[func_126() /*6*/].f_5));
 						func_888();
-						__LIB_30__::func_786(8);
+						__LIB_30__::func_796(8);
 					}
 				}
 			}
-			if (!__LIB_30__::func_595(&iLocal_204))
+			if (!__LIB_30__::func_605(&iLocal_204))
 			{
 				func_122("BKR_CONTRACT_KILL_STOP");
 			}
 			func_121();
 			func_119();
-			__LIB_30__::func_964(&(Global_1637407.f_534), &Global_1637407, 28, &(Global_1637407.f_1), &(Global_1637407.f_117), -1, 0, 0);
+			__LIB_34__::func_769(&(Global_1637407.f_534), &Global_1637407, 28, &(Global_1637407.f_1), &(Global_1637407.f_117), -1, 0, 0);
 			break;
 		case 3:
 			break;
@@ -3067,7 +3067,7 @@ void func_86(int iParam0, bool bParam1, int* iParam2, int iParam3)//Position - 0
 	}
 	else
 	{
-		iVar0 = 40000/*func_252*/;
+		iVar0 = 40000/*__LIB_2__::func_194*/;
 	}
 	if (iParam2->f_1 > -1)
 	{
@@ -3155,7 +3155,7 @@ void func_98()//Position - 0x4571
 					switch (ENTITY::GET_ENTITY_MODEL(iVar2))
 					{
 						case joaat("coach"):
-							if (func_18(__LIB_30__::func_842(10, Var1.f_1)))
+							if (func_18(__LIB_30__::func_852(10, Var1.f_1)))
 							{
 								ENTITY::SET_ENTITY_INVINCIBLE(iVar2, false);
 								VEHICLE::SET_VEHICLE_DOORS_LOCKED(iVar2, 1);
@@ -3369,7 +3369,7 @@ void func_99()//Position - 0x460A
 
 bool func_100(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 0x4AE4
 {
-	return ((((ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_896(), __LIB_40__::func_29(0, bParam1, bParam2, bParam3), 3) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_896(), __LIB_40__::func_29(1, bParam1, bParam2, bParam3), 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_896(), __LIB_40__::func_29(2, bParam1, bParam2, bParam3), 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_896(), __LIB_40__::func_29(3, bParam1, bParam2, bParam3), 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_896(), __LIB_40__::func_29(4, bParam1, bParam2, bParam3), 3));
+	return ((((ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_571(), __LIB_39__::func_705(0, bParam1, bParam2, bParam3), 3) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_571(), __LIB_39__::func_705(1, bParam1, bParam2, bParam3), 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_571(), __LIB_39__::func_705(2, bParam1, bParam2, bParam3), 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_571(), __LIB_39__::func_705(3, bParam1, bParam2, bParam3), 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(iParam0, __LIB_38__::func_571(), __LIB_39__::func_705(4, bParam1, bParam2, bParam3), 3));
 }
 
 float func_105()//Position - 0x51D9
@@ -3391,12 +3391,12 @@ void func_108(struct<3> Param0, var uParam1, var uParam2, var uParam3)//Position
 		return;
 	}
 	iVar0 = Param0.f_2;
-	if (!func_18(__LIB_30__::func_842(2, iVar0)) && !func_118(NETWORK::PARTICIPANT_ID(), __LIB_30__::func_842(2, iVar0)))
+	if (!func_18(__LIB_30__::func_852(2, iVar0)) && !func_118(NETWORK::PARTICIPANT_ID(), __LIB_30__::func_852(2, iVar0)))
 	{
 		iVar1 = NETWORK::NET_TO_PED(Param0.f_0);
 		if (((__LIB_15__::func_530(iVar1, 30f, 1) || (PED::IS_PED_BEING_JACKED(iVar1) && PED::GET_PEDS_JACKER(iVar1) == PLAYER::PLAYER_PED_ID())) || MISC::IS_BULLET_IN_AREA(ENTITY::GET_ENTITY_COORDS(iVar1, true), 5f, true)) || (Local_380.f_321[iVar0 /*6*/] == 8 && SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iVar1, true)) < 100f))
 		{
-			func_109(__LIB_30__::func_842(2, iVar0));
+			func_109(__LIB_30__::func_852(2, iVar0));
 		}
 	}
 }
@@ -3483,7 +3483,7 @@ int func_126()//Position - 0x5A5D
 
 void func_127()//Position - 0x5A6D
 {
-	if (func_894() || __LIB_30__::func_793(PLAYER::PLAYER_ID()) == 3)
+	if (func_894() || __LIB_30__::func_803(PLAYER::PLAYER_ID()) == 3)
 	{
 		func_205();
 		func_128();
@@ -3522,7 +3522,7 @@ void func_128()//Position - 0x5A94
 		}
 		iVar0++;
 	}
-	__LIB_19__::func_993(func_4(), "BCK_HUD" /* GXT: TARGETS */, -1, 1, 1, 1, 1, 1, 1, 1, 1, 18, 6, -1, 2, -1082130432, -1082130432, 0, iVar1[0], iVar1[1], iVar1[2], iVar1[3], iVar1[4], iVar1[5], iVar1[6], iVar1[7], 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, func_134(0), func_134(1), func_134(2), func_134(3), func_134(4), func_134(5), func_134(6), func_134(7), 0, 0, iVar2[0], iVar2[1], iVar2[2], iVar2[3], iVar2[4], iVar2[5], iVar2[6], iVar2[7], 0);
+	__LIB_20__::func_3(func_4(), "BCK_HUD" /* GXT: TARGETS */, -1, 1, 1, 1, 1, 1, 1, 1, 1, 18, 6, -1, 2, -1082130432, -1082130432, 0, iVar1[0], iVar1[1], iVar1[2], iVar1[3], iVar1[4], iVar1[5], iVar1[6], iVar1[7], 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, func_134(0), func_134(1), func_134(2), func_134(3), func_134(4), func_134(5), func_134(6), func_134(7), 0, 0, iVar2[0], iVar2[1], iVar2[2], iVar2[3], iVar2[4], iVar2[5], iVar2[6], iVar2[7], 0);
 }
 
 bool func_134(int iParam0)//Position - 0x5FE9
@@ -3532,9 +3532,9 @@ bool func_134(int iParam0)//Position - 0x5FE9
 
 void func_135(int iParam0, int iParam1)//Position - 0x5FFD
 {
-	if (__LIB_30__::func_788(iParam1))
+	if (__LIB_30__::func_798(iParam1))
 	{
-		if (!__LIB_30__::func_782(iParam0))
+		if (!__LIB_30__::func_792(iParam0))
 		{
 			switch (iParam0)
 			{
@@ -3545,7 +3545,7 @@ void func_135(int iParam0, int iParam1)//Position - 0x5FFD
 					}
 					else
 					{
-						__LIB_3__::func_441("BCK_H_RINTRO" /* GXT: ~a~~s~ has started Weapon of Choice. Protect the targets ~HUD_COLOUR_BLUE~~BLIP_VIP~~s~ from them to earn cash and RP. */, __LIB_22__::func_245(func_200()), __LIB_5__::func_706(func_200()), -1);
+						__LIB_3__::func_441("BCK_H_RINTRO" /* GXT: ~a~~s~ has started Weapon of Choice. Protect the targets ~HUD_COLOUR_BLUE~~BLIP_VIP~~s~ from them to earn cash and RP. */, __LIB_22__::func_255(func_200()), __LIB_5__::func_706(func_200()), -1);
 					}
 					break;
 				case 1:
@@ -3559,19 +3559,19 @@ void func_135(int iParam0, int iParam1)//Position - 0x5FFD
 				case 3:
 					if (func_894())
 					{
-						__LIB_10__::func_712(__LIB_30__::func_850(), "BCK_TX_TIME" /* GXT: Can you move any faster? The client is getting impatient. */, 1, 0, 0, 0, 0, 1, 0, 1);
+						__LIB_10__::func_712(__LIB_34__::func_722(), "BCK_TX_TIME" /* GXT: Can you move any faster? The client is getting impatient. */, 1, 0, 0, 0, 0, 1, 0, 1);
 					}
 					break;
 				case 5:
 					__LIB_1__::func_707("BCK_H_STEALTH" /* GXT: Press ~INPUT_DUCK~ to enter stealth mode. Sneaking through this area may help to avoid any unwanted attention. */, -1);
 					break;
 				case 6:
-					__LIB_10__::func_712(__LIB_30__::func_850(), "BCK_TX_GOOD" /* GXT: Nice, just what the doctor ordered. */, 1, 0, 0, 0, 0, 1, 0, 1);
-					__LIB_30__::func_781(-1);
+					__LIB_10__::func_712(__LIB_34__::func_722(), "BCK_TX_GOOD" /* GXT: Nice, just what the doctor ordered. */, 1, 0, 0, 0, 0, 1, 0, 1);
+					__LIB_30__::func_791(-1);
 					break;
 				case 7:
-					__LIB_10__::func_712(__LIB_30__::func_850(), "BCK_TX_BAD" /* GXT: You can't just smoke 'em however you want! You gotta follow orders if you want the real pay. */, 1, 0, 0, 0, 0, 1, 0, 1);
-					__LIB_30__::func_781(-1);
+					__LIB_10__::func_712(__LIB_34__::func_722(), "BCK_TX_BAD" /* GXT: You can't just smoke 'em however you want! You gotta follow orders if you want the real pay. */, 1, 0, 0, 0, 0, 1, 0, 1);
+					__LIB_30__::func_791(-1);
 					break;
 				case 8:
 					__LIB_1__::func_707("BCK_H_SWITCH" /* GXT: After your assigned target has been taken out you will switch to help with the contract of another MC member. */, -1);
@@ -3590,19 +3590,19 @@ void func_135(int iParam0, int iParam1)//Position - 0x5FFD
 					break;
 				case 13:
 					HUD::FLASH_MINIMAP_DISPLAY();
-					__LIB_30__::func_406(1, 5000, 0);
+					__LIB_30__::func_416(1, 5000, 0);
 					__LIB_3__::func_218("BCK_TK_VIS" /* GXT: The targets are now visible to all players in session. */, 0);
 					break;
 				case 14:
-					__LIB_10__::func_712(__LIB_30__::func_850(), "BCK_TX_AVOID" /* GXT: You're heading for the stairs at the back of the building. Don't get too close to the meeting point or they'll know something is up. */, 1, 0, 0, 0, 0, 1, 0, 1);
+					__LIB_10__::func_712(__LIB_34__::func_722(), "BCK_TX_AVOID" /* GXT: You're heading for the stairs at the back of the building. Don't get too close to the meeting point or they'll know something is up. */, 1, 0, 0, 0, 0, 1, 0, 1);
 					break;
 				default:
 					break;
 			}
-			__LIB_24__::func_323(1);
+			__LIB_24__::func_333(1);
 			if (!func_137(iParam0))
 			{
-				__LIB_30__::func_601(iParam0);
+				__LIB_30__::func_611(iParam0);
 			}
 		}
 	}
@@ -3665,7 +3665,7 @@ void func_205()//Position - 0x7F8D
 		}
 		if (iLocal_181 < func_210())
 		{
-			if (iLocal_181 < __LIB_21__::func_112())
+			if (iLocal_181 < __LIB_21__::func_122())
 			{
 				func_135(3, 0);
 			}
@@ -3701,7 +3701,7 @@ void func_220()//Position - 0x8391
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	if (!__LIB_30__::func_787(9))
+	if (!__LIB_30__::func_797(9))
 	{
 		iVar0 = func_200();
 		iVar1 = 0;
@@ -3724,7 +3724,7 @@ void func_220()//Position - 0x8391
 			}
 			iVar1++;
 		}
-		__LIB_30__::func_786(9);
+		__LIB_30__::func_796(9);
 	}
 }
 
@@ -3733,13 +3733,13 @@ void func_223()//Position - 0x84B9
 	bool bVar0;
 	int iVar1;
 	iVar1 = __LIB_0__::func_162();
-	if (!__LIB_30__::func_787(1))
+	if (!__LIB_30__::func_797(1))
 	{
 		if (func_25() != 0)
 		{
 			if (Global_2703735.f_4.f_10)
 			{
-				if ((!__LIB_3__::func_290() && !__LIB_0__::func_114()) && !__LIB_30__::func_441(186))
+				if ((!__LIB_3__::func_290() && !__LIB_0__::func_114()) && !__LIB_30__::func_451(186))
 				{
 					switch (func_25())
 					{
@@ -3759,7 +3759,7 @@ void func_223()//Position - 0x84B9
 							}
 							else
 							{
-								__LIB_20__::func_63(24);
+								__LIB_20__::func_73(24);
 							}
 							break;
 						case 4:
@@ -3768,7 +3768,7 @@ void func_223()//Position - 0x84B9
 							if (func_894())
 							{
 								bVar0 = true;
-								__LIB_20__::func_63(23);
+								__LIB_20__::func_73(23);
 							}
 							iVar1 = PLAYER::PLAYER_ID();
 							break;
@@ -3779,14 +3779,14 @@ void func_223()//Position - 0x84B9
 						}
 					}
 			}
-			__LIB_30__::func_542(0, iVar1);
+			__LIB_30__::func_552(0, iVar1);
 			func_534(&Local_132, &(Local_132.f_1));
-			__LIB_30__::func_825(186, 1, &Local_132, 0);
+			__LIB_30__::func_835(186, 1, &Local_132, 0);
 			func_6689(bVar0, 0);
-			__LIB_30__::func_786(1);
+			__LIB_30__::func_796(1);
 		}
 	}
-	if (__LIB_30__::func_963(&uLocal_166, 0, 0))
+	if (__LIB_34__::func_768(&uLocal_166, 0, 0))
 	{
 		func_109(0);
 	}
@@ -4032,19 +4032,19 @@ void func_559(bool bParam0, struct<3> Param1, int* iParam2)//Position - 0x39FB7
 	{
 		if (OBJECT::DOES_PICKUP_EXIST(Param1.f_0))
 		{
-			if (OBJECT::DOES_PICKUP_OBJECT_EXIST(Param1.f_0) || !__LIB_30__::func_787(6))
+			if (OBJECT::DOES_PICKUP_OBJECT_EXIST(Param1.f_0) || !__LIB_30__::func_797(6))
 			{
 				if (!HUD::DOES_BLIP_EXIST(*iParam2))
 				{
 					*iParam2 = HUD::ADD_BLIP_FOR_COORD(func_561(Local_380.f_321[Param1.f_2 /*6*/], 0));
-					HUD::SET_BLIP_SPRITE(*iParam2, __LIB_22__::func_533(Param1.f_1, -1, -1));
+					HUD::SET_BLIP_SPRITE(*iParam2, __LIB_22__::func_543(Param1.f_1, -1, -1));
 					__LIB_2__::func_53(iParam2, 1);
 					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*iParam2, "BCK_BL_WP" /* GXT: Weapon */);
 					func_135(1, 0);
 				}
 				if (OBJECT::DOES_PICKUP_OBJECT_EXIST(Param1.f_0))
 				{
-					__LIB_30__::func_786(6);
+					__LIB_30__::func_796(6);
 				}
 				bVar0 = true;
 			}
@@ -4433,11 +4433,11 @@ void func_711()//Position - 0x3E586
 		{
 			if (!__LIB_4__::func_77(PLAYER::PLAYER_ID()))
 			{
-				__LIB_30__::func_849(0);
+				__LIB_34__::func_752(0);
 				NETWORK::NETWORK_SET_FRIENDLY_FIRE_OPTION(false);
 			}
 		}
-		__LIB_22__::func_262();
+		__LIB_22__::func_272();
 	}
 	if (func_894())
 	{
@@ -4446,7 +4446,7 @@ void func_711()//Position - 0x3E586
 			Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 		}
 	}
-	__LIB_30__::func_750(186, Var0, &uLocal_173, 1140457472, 1144750080, 0);
+	__LIB_30__::func_760(186, Var0, &uLocal_173, 1140457472, 1144750080, 0);
 }
 
 void func_764()//Position - 0x3FB08
@@ -4509,13 +4509,13 @@ void func_764()//Position - 0x3FB08
 				{
 					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar5, Var1, Var2, fVar4, false, true, 0) || MISC::IS_BULLET_IN_ANGLED_AREA(Var1, Var2, fVar4, true))
 					{
-						func_109(__LIB_30__::func_842(2, iVar8));
+						func_109(__LIB_30__::func_852(2, iVar8));
 					}
 				}
 				iVar8++;
 			}
 		}
-		else if (__LIB_30__::func_793(PLAYER::PLAYER_ID()) != 0)
+		else if (__LIB_30__::func_803(PLAYER::PLAYER_ID()) != 0)
 		{
 			func_552(&uVar9, &Var10);
 			if (!func_118(NETWORK::PARTICIPANT_ID(), 13))
@@ -4603,14 +4603,14 @@ int func_768(float fParam0)//Position - 0x3FE82
 	{
 		if (Local_380.f_321[func_126() /*6*/] == 1)
 		{
-			if (func_18(__LIB_30__::func_842(10, func_126())))
+			if (func_18(__LIB_30__::func_852(10, func_126())))
 			{
 				return 1;
 			}
 		}
 		if (Local_380.f_321[func_126() /*6*/] == 5)
 		{
-			if (func_18(__LIB_30__::func_842(2, func_126())) && fParam0 <= 10000f)
+			if (func_18(__LIB_30__::func_852(2, func_126())) && fParam0 <= 10000f)
 			{
 				return 1;
 			}
@@ -4623,10 +4623,10 @@ void func_769()//Position - 0x3FEE9
 {
 	if (func_894())
 	{
-		__LIB_30__::func_625(1);
+		__LIB_30__::func_635(1);
 		func_205();
 		func_122("BKR_CONTRACT_KILL_START");
-		if (__LIB_30__::func_597())
+		if (__LIB_30__::func_607())
 		{
 			func_549();
 			__LIB_0__::func_467();
@@ -4640,7 +4640,7 @@ void func_769()//Position - 0x3FEE9
 	}
 	else
 	{
-		switch (__LIB_30__::func_793(PLAYER::PLAYER_ID()))
+		switch (__LIB_30__::func_803(PLAYER::PLAYER_ID()))
 		{
 			case 0:
 				__LIB_3__::func_0();
@@ -4686,14 +4686,14 @@ void func_775()//Position - 0x402D4
 {
 	struct<4> Var0;
 	var uVar1;
-	if (!__LIB_30__::func_787(11))
+	if (!__LIB_30__::func_797(11))
 	{
 		__LIB_0__::func_222(&uLocal_215, 2, 0, "MALCOLM", 0, 1);
-		__LIB_30__::func_786(11);
+		__LIB_30__::func_796(11);
 	}
-	if (!__LIB_30__::func_787(10))
+	if (!__LIB_30__::func_797(10))
 	{
-		if (__LIB_30__::func_787(11))
+		if (__LIB_30__::func_797(11))
 		{
 			if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 			{
@@ -4703,9 +4703,9 @@ void func_775()//Position - 0x402D4
 					{
 						MISC::SET_BIT(&uVar1, 4);
 						Var0 = { func_849() };
-						if (__LIB_43__::func_870(&uLocal_215, __LIB_30__::func_850(), "BPMALAU", &Var0, uVar1, 0))
+						if (__LIB_44__::func_79(&uLocal_215, __LIB_34__::func_722(), "BPMALAU", &Var0, uVar1, 0))
 						{
-							__LIB_30__::func_786(10);
+							__LIB_30__::func_796(10);
 						}
 					}
 				}
@@ -4746,7 +4746,7 @@ void func_859()//Position - 0x421A2
 			}
 			else
 			{
-				__LIB_30__::func_794("BCK_OBJ1" /* GXT: Take out the ~HUD_COLOUR_RED~~a~~s~ with a ~a~. */, func_868(func_564()), func_867(func_74(func_564())), 0);
+				__LIB_30__::func_804("BCK_OBJ1" /* GXT: Take out the ~HUD_COLOUR_RED~~a~~s~ with a ~a~. */, func_868(func_564()), func_867(func_74(func_564())), 0);
 			}
 		}
 		else if (__LIB_3__::func_244())
@@ -4758,11 +4758,11 @@ void func_859()//Position - 0x421A2
 	{
 		if (iLocal_189 > 1)
 		{
-			__LIB_30__::func_529("BCK_OBJRIV" /* GXT: Protect the ~HUD_COLOUR_BLUE~targets~s~ from ~a~.~s~ */, __LIB_22__::func_245(func_200()), __LIB_5__::func_706(func_200()), 0);
+			__LIB_30__::func_539("BCK_OBJRIV" /* GXT: Protect the ~HUD_COLOUR_BLUE~targets~s~ from ~a~.~s~ */, __LIB_22__::func_255(func_200()), __LIB_5__::func_706(func_200()), 0);
 		}
 		else
 		{
-			__LIB_30__::func_529("BCK_OBJRIV1" /* GXT: Protect the ~HUD_COLOUR_BLUE~target~s~ from ~a~.~s~ */, __LIB_22__::func_245(func_200()), __LIB_5__::func_706(func_200()), 0);
+			__LIB_30__::func_539("BCK_OBJRIV1" /* GXT: Protect the ~HUD_COLOUR_BLUE~target~s~ from ~a~.~s~ */, __LIB_22__::func_255(func_200()), __LIB_5__::func_706(func_200()), 0);
 		}
 	}
 	else if (__LIB_3__::func_244())
@@ -5056,14 +5056,14 @@ void func_889()//Position - 0x42C2B
 	{
 		if (func_126() != -1)
 		{
-			__LIB_30__::func_781(__LIB_1__::func_137(Local_380.f_321[func_126() /*6*/].f_5));
+			__LIB_30__::func_791(__LIB_1__::func_137(Local_380.f_321[func_126() /*6*/].f_5));
 		}
 		iVar0 = func_126();
 		func_891(func_892(func_126()));
 		if (iVar0 != func_126())
 		{
 			func_765(10);
-			__LIB_30__::func_783(6);
+			__LIB_30__::func_793(6);
 			Local_381[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_3 = 0;
 			func_135(8, 0);
 		}
@@ -5113,7 +5113,7 @@ int func_893()//Position - 0x42D23
 
 int func_894()//Position - 0x42D3B
 {
-	if ((func_904() || func_898()) || __LIB_30__::func_795(func_200()))
+	if ((func_904() || func_898()) || __LIB_30__::func_805(func_200()))
 	{
 		return 1;
 	}
@@ -5142,44 +5142,44 @@ bool func_905(int iParam0)//Position - 0x42F0D
 
 void func_906(int iParam0)//Position - 0x42F1C
 {
-	if (!__LIB_30__::func_785(iParam0))
+	if (!__LIB_30__::func_795(iParam0))
 	{
 		switch (iParam0)
 		{
 			case 0:
 				if (func_894())
 				{
-					__LIB_30__::func_651(86, "BCK_SH_BIG" /* GXT: WEAPON OF CHOICE */, "BCK_SH_OBJ" /* GXT: Take out the targets */, 1, -1, 2, 1, 0);
+					__LIB_30__::func_661(86, "BCK_SH_BIG" /* GXT: WEAPON OF CHOICE */, "BCK_SH_OBJ" /* GXT: Take out the targets */, 1, -1, 2, 1, 0);
 				}
 				else
 				{
-					__LIB_30__::func_651(86, "BCK_SH_BIG" /* GXT: WEAPON OF CHOICE */, "BCK_SH_RIV" /* GXT: Protect the targets */, 1, -1, 2, 1, 0);
+					__LIB_30__::func_661(86, "BCK_SH_BIG" /* GXT: WEAPON OF CHOICE */, "BCK_SH_RIV" /* GXT: Protect the targets */, 1, -1, 2, 1, 0);
 				}
 				break;
 			case 1:
 				if (func_894())
 				{
-					__LIB_30__::func_859(87, "BK_WINNER" /* GXT: MISSION PASSED */, "BCK_SH_PASSE" /* GXT: ~a~~s~ eliminated the targets */);
+					__LIB_34__::func_753(87, "BK_WINNER" /* GXT: MISSION PASSED */, "BCK_SH_PASSE" /* GXT: ~a~~s~ eliminated the targets */);
 				}
 				else
 				{
-					__LIB_30__::func_859(89, "BK_OVER" /* GXT: MISSION OVER */, "BCK_SH_PASSE" /* GXT: ~a~~s~ eliminated the targets */);
+					__LIB_34__::func_753(89, "BK_OVER" /* GXT: MISSION OVER */, "BCK_SH_PASSE" /* GXT: ~a~~s~ eliminated the targets */);
 				}
 				break;
 			case 3:
 				if (func_894())
 				{
-					__LIB_30__::func_651(89, "BK_OVER" /* GXT: MISSION OVER */, "BCK_SH_FAILTU" /* GXT: The targets were not eliminated */, 1, -1, 2, 1, 0);
+					__LIB_30__::func_661(89, "BK_OVER" /* GXT: MISSION OVER */, "BCK_SH_FAILTU" /* GXT: The targets were not eliminated */, 1, -1, 2, 1, 0);
 				}
 				else
 				{
-					__LIB_30__::func_651(87, "BK_WINNER" /* GXT: MISSION PASSED */, "BCK_SH_RIVWIN" /* GXT: The targets were protected */, 1, -1, 2, 1, 0);
+					__LIB_30__::func_661(87, "BK_WINNER" /* GXT: MISSION PASSED */, "BCK_SH_RIVWIN" /* GXT: The targets were protected */, 1, -1, 2, 1, 0);
 				}
 				break;
 			default:
 				break;
 		}
-		__LIB_30__::func_784(iParam0);
+		__LIB_30__::func_794(iParam0);
 	}
 }
 
@@ -5243,16 +5243,16 @@ bool func_1056()//Position - 0x4EAB8
 int func_1057(bool bParam0, bool bParam1, bool bParam2, int* iParam3)//Position - 0x4EAD9
 {
 	char* sVar0;
-	sVar0 = __LIB_38__::func_896();
+	sVar0 = __LIB_38__::func_571();
 	STREAMING::REQUEST_ANIM_DICT(sVar0);
 	if (STREAMING::HAS_ANIM_DICT_LOADED(sVar0))
 	{
 		TASK::OPEN_SEQUENCE_TASK(iParam3);
-		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_40__::func_29(0, bParam0, bParam1, bParam2), 8f, -8f, -1, 0, 0f, false, false, false);
-		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_40__::func_29(1, bParam0, bParam1, bParam2), 8f, -4f, -1, 0, 0f, false, false, false);
-		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_40__::func_29(2, bParam0, bParam1, bParam2), 8f, -4f, -1, 1, 0f, false, false, false);
-		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_40__::func_29(3, bParam0, bParam1, bParam2), 8f, -4f, -1, 0, 0f, false, false, false);
-		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_40__::func_29(4, bParam0, bParam1, bParam2), 4f, -2f, -1, 0, 0f, false, false, false);
+		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_39__::func_705(0, bParam0, bParam1, bParam2), 8f, -8f, -1, 0, 0f, false, false, false);
+		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_39__::func_705(1, bParam0, bParam1, bParam2), 8f, -4f, -1, 0, 0f, false, false, false);
+		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_39__::func_705(2, bParam0, bParam1, bParam2), 8f, -4f, -1, 1, 0f, false, false, false);
+		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_39__::func_705(3, bParam0, bParam1, bParam2), 8f, -4f, -1, 0, 0f, false, false, false);
+		TASK::TASK_PLAY_ANIM(0, sVar0, __LIB_39__::func_705(4, bParam0, bParam1, bParam2), 4f, -2f, -1, 0, 0f, false, false, false);
 		TASK::CLOSE_SEQUENCE_TASK(*iParam3);
 		return 1;
 	}
@@ -5286,11 +5286,11 @@ int func_1060(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 	{
 		if (__LIB_12__::func_110())
 		{
-			if (__LIB_30__::func_407(1))
+			if (__LIB_30__::func_417(1))
 			{
 				__LIB_15__::func_406();
 			}
-			__LIB_29__::func_165();
+			__LIB_29__::func_175();
 			return 0;
 		}
 		return 0;
@@ -5299,9 +5299,9 @@ int func_1060(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 	switch (*uParam0)
 	{
 		case 0:
-			__LIB_27__::func_856();
-			__LIB_30__::func_833(&Global_1941652);
-			__LIB_30__::func_879(&Global_1941652);
+			__LIB_27__::func_866();
+			__LIB_30__::func_843(&Global_1941652);
+			__LIB_34__::func_724(&Global_1941652);
 			if (__LIB_10__::func_843(&(Global_1941652.f_1)))
 			{
 				CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
@@ -5351,13 +5351,13 @@ int func_1060(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 			*uParam0 = 1;
 			break;
 		case 1:
-			if (BitTest(uParam0->f_2, 1) && __LIB_29__::func_846(0))
+			if (BitTest(uParam0->f_2, 1) && __LIB_29__::func_856(0))
 			{
 				__LIB_1__::func_707("GB_SPEC_MENH" /* GXT: You can choose to spectate your Bodyguards in the VIP Abilities Interaction Menu */, -1);
-				__LIB_24__::func_323(1);
+				__LIB_24__::func_333(1);
 				MISC::CLEAR_BIT(&(uParam0->f_2), 1);
 			}
-			if (!__LIB_10__::func_206(&(Global_1941652.f_1)) && __LIB_30__::func_791(5))
+			if (!__LIB_10__::func_206(&(Global_1941652.f_1)) && __LIB_30__::func_801(5))
 			{
 				STREAMING::CLEAR_FOCUS();
 				__LIB_11__::func_775(&Global_1941652, 4, 0, 8);
@@ -5371,22 +5371,22 @@ int func_1060(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 				}
 				if (__LIB_7__::func_700(&(Global_1941652.f_1)) && __LIB_10__::func_208())
 				{
-					if (!__LIB_30__::func_791(5))
+					if (!__LIB_30__::func_801(5))
 					{
 						if (__LIB_10__::func_206(&(Global_1941652.f_1)))
 						{
-							__LIB_30__::func_798(uParam0, 0);
+							__LIB_30__::func_808(uParam0, 0);
 						}
 					}
 				}
 			}
-			if (__LIB_30__::func_635(uParam0))
+			if (__LIB_30__::func_645(uParam0))
 			{
-				__LIB_30__::func_798(uParam0, iParam2);
+				__LIB_30__::func_808(uParam0, iParam2);
 			}
 			if (__LIB_7__::func_532(0, 1, 0))
 			{
-				__LIB_30__::func_447(bParam3);
+				__LIB_30__::func_457(bParam3);
 			}
 			break;
 		case 2:
@@ -5395,7 +5395,7 @@ int func_1060(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 				if ((CAM::IS_SCREEN_FADED_OUT() && __LIB_1__::func_693(PLAYER::PLAYER_ID(), 1, 1)) && Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_230 == 99)
 				{
 					MISC::SET_BIT(&(uParam0->f_2), 3);
-					__LIB_30__::func_666(&Global_1941652, 0);
+					__LIB_30__::func_676(&Global_1941652, 0);
 					__LIB_0__::func_794(&(uParam0->f_4));
 					__LIB_0__::func_795(&(uParam0->f_4), 0, 0);
 					STREAMING::SET_FOCUS_ENTITY(PLAYER::PLAYER_PED_ID());
@@ -5418,14 +5418,14 @@ int func_1060(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 				__LIB_0__::func_794(&(uParam0->f_4));
 				uParam0->f_2 = 0;
 				*uParam0 = 0;
-				bVar2 = !__LIB_29__::func_164();
+				bVar2 = !__LIB_29__::func_174();
 				bVar1 = __LIB_15__::func_415();
 				func_6047();
-				__LIB_29__::func_163();
-				if (((__LIB_5__::func_185(PLAYER::PLAYER_ID()) != 153 && __LIB_5__::func_185(PLAYER::PLAYER_ID()) != 191) && !__LIB_30__::func_407(0)) && __LIB_6__::func_391(PLAYER::PLAYER_ID(), 0))
+				__LIB_29__::func_173();
+				if (((__LIB_5__::func_185(PLAYER::PLAYER_ID()) != 153 && __LIB_5__::func_185(PLAYER::PLAYER_ID()) != 191) && !__LIB_30__::func_417(0)) && __LIB_6__::func_391(PLAYER::PLAYER_ID(), 0))
 				{
 					__LIB_1__::func_707("GB_SPEC_NO" /* GXT: Not enough Bodyguards to continue spectating. */, -1);
-					__LIB_24__::func_323(1);
+					__LIB_24__::func_333(1);
 				}
 				if (bVar1)
 				{
@@ -5546,7 +5546,7 @@ void func_1061(var uParam0)//Position - 0x4F0A4
 	}
 	if (__LIB_10__::func_206(&(uParam0->f_1)))
 	{
-		__LIB_30__::func_891(uParam0);
+		__LIB_34__::func_758(uParam0);
 		if (((__LIB_10__::func_383() && !__LIB_2__::func_40(PLAYER::PLAYER_ID(), 0)) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID())) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 		{
 			__LIB_10__::func_944(&(uParam0->f_1), 0);
@@ -5621,7 +5621,7 @@ void func_1061(var uParam0)//Position - 0x4F0A4
 			__LIB_10__::func_861(uParam0);
 			break;
 		case 1:
-			__LIB_30__::func_853(uParam0);
+			__LIB_34__::func_693(uParam0);
 			break;
 		case 2:
 			func_1831(uParam0);
@@ -5641,17 +5641,17 @@ void func_1061(var uParam0)//Position - 0x4F0A4
 	}
 	if (__LIB_10__::func_333())
 	{
-		__LIB_30__::func_879(uParam0);
+		__LIB_34__::func_724(uParam0);
 		MISC::SET_BIT(&(uParam0->f_47), 6);
 		__LIB_10__::func_329();
 		if (__LIB_2__::func_40(PLAYER::PLAYER_ID(), 0) || (__LIB_10__::func_206(&(uParam0->f_1)) && __LIB_7__::func_700(&(uParam0->f_1))))
 		{
 			if (!__LIB_10__::func_328(__LIB_1__::func_4()) || !__LIB_11__::func_782(&(uParam0->f_47), &iVar0, &uVar1, __LIB_1__::func_4()))
 			{
-				__LIB_30__::func_889(uParam0, 0, 1);
+				__LIB_34__::func_756(uParam0, 0, 1);
 				if (__LIB_2__::func_40(PLAYER::PLAYER_ID(), 0))
 				{
-					if (!__LIB_30__::func_834(uParam0, &iVar0, &uVar1, 0, 0, 0))
+					if (!__LIB_30__::func_844(uParam0, &iVar0, &uVar1, 0, 0, 0))
 					{
 						if (__LIB_10__::func_325())
 						{
@@ -5691,8 +5691,8 @@ void func_1061(var uParam0)//Position - 0x4F0A4
 		}
 	}
 	__LIB_10__::func_931();
-	__LIB_30__::func_814(uParam0);
-	__LIB_30__::func_888(uParam0);
+	__LIB_30__::func_824(uParam0);
+	__LIB_34__::func_755(uParam0);
 }
 
 void func_1433(var uParam0)//Position - 0x5B280
@@ -6018,7 +6018,7 @@ int func_1505(bool bParam0, bool bParam1, bool bParam2, int iParam3, bool bParam
 				if (__LIB_11__::func_810(0))
 				{
 					bParam12 = true;
-					if (__LIB_2__::func_174() > 800 || (__LIB_22__::func_423() && !__LIB_1__::func_683()))
+					if (__LIB_2__::func_174() > 800 || (__LIB_22__::func_433() && !__LIB_1__::func_683()))
 					{
 						if (__LIB_0__::func_893() && !__LIB_0__::func_983())
 						{
@@ -13419,7 +13419,7 @@ int func_1603(int iParam0, int iParam1, int iParam2)//Position - 0x7B971
 				case 3:
 					return 50000;
 				case 4:
-					return 75000/*func_258*/;
+					return 75000/*__LIB_0__::func_338*/;
 				case 5:
 					return 100000;
 				default:
@@ -16348,7 +16348,7 @@ int func_1742(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 								iVar2 = 0;
 								while (iVar2 < 15)
 								{
-									iVar3 = __LIB_21__::func_128(iParam0, iVar10, 14, uVar12[iVar1], iVar2, 0);
+									iVar3 = __LIB_21__::func_138(iParam0, iVar10, 14, uVar12[iVar1], iVar2, 0);
 									if (iVar3 != -99)
 									{
 										func_1742(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -16379,7 +16379,7 @@ int func_1742(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 							iVar2 = 0;
 							while (iVar2 < 15)
 							{
-								iVar3 = __LIB_21__::func_128(iParam0, iVar10, iVar0, uVar11[iVar0], iVar2, 0);
+								iVar3 = __LIB_21__::func_138(iParam0, iVar10, iVar0, uVar11[iVar0], iVar2, 0);
 								if (iVar3 != -99)
 								{
 									func_1742(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -16472,7 +16472,7 @@ int func_1742(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 				iVar2 = 0;
 				while (iVar2 < 15)
 				{
-					iVar3 = __LIB_21__::func_128(iParam0, iVar10, 14, uVar15[iVar1], iVar2, 0);
+					iVar3 = __LIB_21__::func_138(iParam0, iVar10, 14, uVar15[iVar1], iVar2, 0);
 					if (iVar3 != -99)
 					{
 						func_1742(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -16492,7 +16492,7 @@ int func_1742(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			iVar2 = 0;
 			while (iVar2 < 15)
 			{
-				iVar3 = __LIB_21__::func_128(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
+				iVar3 = __LIB_21__::func_138(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
 				if (iVar3 != -99)
 				{
 					func_1742(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -16516,7 +16516,7 @@ int func_1742(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			iVar2 = 0;
 			while (iVar2 < 15)
 			{
-				iVar3 = __LIB_21__::func_128(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
+				iVar3 = __LIB_21__::func_138(iParam0, iVar10, iParam1, iParam2, iVar2, 0);
 				if (iVar3 != -99)
 				{
 					func_1742(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -16526,7 +16526,7 @@ int func_1742(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		}
 		if (iParam6 == 0)
 		{
-			__LIB_18__::func_669(iVar10, iParam1, iParam2);
+			__LIB_18__::func_679(iVar10, iParam1, iParam2);
 		}
 	}
 	if (Global_78128 == 1)
@@ -16638,17 +16638,17 @@ int func_1763(var uParam0, bool bParam1, bool bParam2)//Position - 0xACB0E
 	{
 		return 0;
 	}
-	if (((__LIB_1__::func_711() != -1 && ENTITY::DOES_ENTITY_EXIST(__LIB_1__::func_711())) && (!bParam1 || __LIB_30__::func_710(uParam0, __LIB_1__::func_711(), 1))) && !__LIB_10__::func_224(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(__LIB_1__::func_711())))
+	if (((__LIB_1__::func_711() != -1 && ENTITY::DOES_ENTITY_EXIST(__LIB_1__::func_711())) && (!bParam1 || __LIB_30__::func_720(uParam0, __LIB_1__::func_711(), 1))) && !__LIB_10__::func_224(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(__LIB_1__::func_711())))
 	{
 		iVar1 = __LIB_1__::func_711();
 	}
-	else if (__LIB_24__::func_265(uParam0, 0))
+	else if (__LIB_24__::func_275(uParam0, 0))
 	{
-		__LIB_30__::func_879(uParam0);
-		if (__LIB_30__::func_834(uParam0, &iVar6, &iVar7, 0, 1, 1))
+		__LIB_34__::func_724(uParam0);
+		if (__LIB_30__::func_844(uParam0, &iVar6, &iVar7, 0, 1, 1))
 		{
 			__LIB_10__::func_909(uParam0, __LIB_10__::func_925(&(uParam0->f_47), iVar6, iVar7));
-			__LIB_30__::func_261(uParam0, iVar6, iVar7);
+			__LIB_30__::func_271(uParam0, iVar6, iVar7);
 			__LIB_9__::func_819(&(uParam0->f_1), 0);
 		}
 		else if (__LIB_2__::func_40(PLAYER::PLAYER_ID(), 0))
@@ -16788,7 +16788,7 @@ int func_1763(var uParam0, bool bParam1, bool bParam2)//Position - 0xACB0E
 					{
 						if (!__LIB_10__::func_224(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(__LIB_2__::func_51())))
 						{
-							__LIB_30__::func_590(1, 1);
+							__LIB_30__::func_600(1, 1);
 						}
 					}
 					if (STREAMING::IS_NEW_LOAD_SCENE_ACTIVE())
@@ -17037,7 +17037,7 @@ int func_1763(var uParam0, bool bParam1, bool bParam2)//Position - 0xACB0E
 					__LIB_11__::func_839(uParam0);
 					if (BitTest(uParam0->f_47, 15))
 					{
-						if (__LIB_0__::func_983() || __LIB_22__::func_386())
+						if (__LIB_0__::func_983() || __LIB_22__::func_396())
 						{
 							MISC::CLEAR_BIT(&(uParam0->f_47), 15);
 						}
@@ -17054,7 +17054,7 @@ int func_1763(var uParam0, bool bParam1, bool bParam2)//Position - 0xACB0E
 							{
 								if (!__LIB_10__::func_889() && !__LIB_10__::func_350(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar1), Global_2815059.f_6749))
 								{
-									if (__LIB_0__::func_983() || __LIB_22__::func_386())
+									if (__LIB_0__::func_983() || __LIB_22__::func_396())
 									{
 										CAM::DO_SCREEN_FADE_IN(250);
 									}
@@ -17169,7 +17169,7 @@ void func_1797(var uParam0)//Position - 0xAE2B6
 					{
 						if (PED::IS_PED_A_PLAYER(__LIB_1__::func_711()))
 						{
-							__LIB_24__::func_269(uParam0);
+							__LIB_24__::func_279(uParam0);
 							if (__LIB_2__::func_40(PLAYER::PLAYER_ID(), 0))
 							{
 								func_1816(uParam0);
@@ -17210,7 +17210,7 @@ void func_1797(var uParam0)//Position - 0xAE2B6
 							}
 							if (__LIB_0__::func_864(&(uParam0->f_2255)))
 							{
-								if (__LIB_30__::func_706(__LIB_1__::func_711(), __LIB_5__::func_839(&(uParam0->f_1))) && iVar1)
+								if (__LIB_30__::func_716(__LIB_1__::func_711(), __LIB_5__::func_839(&(uParam0->f_1))) && iVar1)
 								{
 									__LIB_0__::func_794(&(uParam0->f_2255));
 								}
@@ -17223,7 +17223,7 @@ void func_1797(var uParam0)//Position - 0xAE2B6
 						if (!BitTest(uParam0->f_47, 3))
 						{
 							MISC::SET_BIT(&(uParam0->f_47), 0);
-							__LIB_30__::func_879(uParam0);
+							__LIB_34__::func_724(uParam0);
 						}
 					}
 					if ((__LIB_10__::func_197(&(uParam0->f_1)) != 6 && __LIB_10__::func_197(&(uParam0->f_1)) != 4) && __LIB_10__::func_197(&(uParam0->f_1)) != 5)
@@ -17242,7 +17242,7 @@ void func_1797(var uParam0)//Position - 0xAE2B6
 				}
 				else
 				{
-					__LIB_30__::func_889(uParam0, 1, 0);
+					__LIB_34__::func_756(uParam0, 1, 0);
 				}
 			}
 		}
@@ -17250,9 +17250,9 @@ void func_1797(var uParam0)//Position - 0xAE2B6
 	else
 	{
 		__LIB_10__::func_887(&(uParam0->f_1));
-		__LIB_30__::func_890(uParam0);
+		__LIB_34__::func_757(uParam0);
 	}
-	__LIB_30__::func_927(uParam0);
+	__LIB_34__::func_765(uParam0);
 }
 
 void func_1802(var uParam0, int iParam1)//Position - 0xAE6BA
@@ -17369,7 +17369,7 @@ void func_1816(var uParam0)//Position - 0xAEC75
 						{
 							__LIB_5__::func_942(1, __LIB_1__::func_4(), 1);
 							__LIB_2__::func_325();
-							__LIB_30__::func_590(1, 1);
+							__LIB_30__::func_600(1, 1);
 							__LIB_10__::func_363(1);
 							__LIB_10__::func_385(0);
 						}
@@ -17380,7 +17380,7 @@ void func_1816(var uParam0)//Position - 0xAEC75
 					uParam0->f_1.f_28 = NETWORK::GET_NETWORK_TIME();
 					__LIB_5__::func_942(1, __LIB_1__::func_4(), 1);
 					__LIB_2__::func_325();
-					__LIB_30__::func_590(1, 1);
+					__LIB_30__::func_600(1, 1);
 					__LIB_10__::func_363(1);
 					__LIB_10__::func_385(2);
 				}
@@ -17431,9 +17431,9 @@ void func_1831(var uParam0)//Position - 0xAF4FF
 	{
 		__LIB_10__::func_886();
 		__LIB_10__::func_887(&(uParam0->f_1));
-		__LIB_30__::func_890(uParam0);
+		__LIB_34__::func_757(uParam0);
 	}
-	__LIB_30__::func_927(uParam0);
+	__LIB_34__::func_765(uParam0);
 }
 
 void func_1843(var uParam0)//Position - 0xAF8B3
@@ -18095,176 +18095,176 @@ void func_1855(var uParam0, int iParam1)//Position - 0xB0CD5
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 896586/*func_2383*/;
+			*uParam0 = 896586/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 896572/*func_2382*/;
+			uParam0->f_35 = 896572/*__LIB_7__::func_293*/;
 			break;
 		case 1:
-			uParam0->f_30 = 896474/*func_2381*/;
+			uParam0->f_30 = 896474/*__LIB_7__::func_218*/;
 			break;
 		case 2:
-			uParam0->f_31 = 895119/*func_2375*/;
+			uParam0->f_31 = 895119/*__LIB_7__::func_292*/;
 			break;
 		case 3:
-			uParam0->f_34 = 894890/*func_2374*/;
+			uParam0->f_34 = 894890/*__LIB_3__::func_732*/;
 			break;
 		case 4:
-			uParam0->f_12 = 894877/*func_2373*/;
+			uParam0->f_12 = 894877/*__LIB_3__::func_731*/;
 			break;
 		case 5:
-			uParam0->f_11 = 894867/*func_2372*/;
+			uParam0->f_11 = 894867/*__LIB_3__::func_730*/;
 			break;
 		case 37:
-			uParam0->f_18 = 894669/*func_2371*/;
+			uParam0->f_18 = 894669/*__LIB_6__::func_453*/;
 			break;
 		case 38:
-			uParam0->f_9 = 894621/*func_2370*/;
+			uParam0->f_9 = 894621/*__LIB_11__::func_900*/;
 			break;
 		case 42:
-			uParam0->f_10 = 894592/*func_2369*/;
+			uParam0->f_10 = 894592/*__LIB_7__::func_730*/;
 			break;
 		case 6:
-			uParam0->f_32 = 894283/*func_2368*/;
+			uParam0->f_32 = 894283/*__LIB_7__::func_217*/;
 			break;
 		case 11:
-			uParam0->f_11 = 894274/*func_2367*/;
+			uParam0->f_11 = 894274/*__LIB_3__::func_729*/;
 			break;
 		case 12:
-			uParam0->f_33 = 891630/*func_2360*/;
+			uParam0->f_33 = 891630/*__LIB_8__::func_63*/;
 			break;
 		case 14:
-			uParam0->f_11 = 891621/*func_2359*/;
+			uParam0->f_11 = 891621/*__LIB_0__::func_114*/;
 			break;
 		case 109:
-			uParam0->f_56 = 884890/*func_2356*/;
+			uParam0->f_56 = 884890/*__LIB_8__::func_51*/;
 			break;
 		case 8:
-			uParam0->f_37 = 884014/*func_2355*/;
+			uParam0->f_37 = 884014/*__LIB_3__::func_724*/;
 			break;
 		case 7:
-			uParam0->f_36 = 883897/*func_2354*/;
+			uParam0->f_36 = 883897/*__LIB_3__::func_723*/;
 			break;
 		case 79:
-			*uParam0 = 883841/*func_2351*/;
+			*uParam0 = 883841/*__LIB_5__::func_265*/;
 			break;
 		case 9:
-			uParam0->f_29 = 883688/*func_2350*/;
+			uParam0->f_29 = 883688/*__LIB_7__::func_289*/;
 			break;
 		case 10:
-			uParam0->f_27 = 883540/*func_2348*/;
+			uParam0->f_27 = 883540/*__LIB_5__::func_444*/;
 			break;
 		case 13:
-			uParam0->f_2 = 883478/*func_2347*/;
+			uParam0->f_2 = 883478/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 881920/*func_2333*/;
+			uParam0->f_2 = 881920/*__LIB_30__::func_492*/;
 			break;
 		case 16:
-			uParam0->f_5 = 880750/*func_2325*/;
+			uParam0->f_5 = 880750/*__LIB_30__::func_653*/;
 			break;
 		case 108:
-			uParam0->f_55 = 825715/*func_2225*/;
+			uParam0->f_55 = 825715/*__LIB_30__::func_834*/;
 			break;
 		case 17:
-			uParam0->f_17 = 824122/*func_2211*/;
+			uParam0->f_17 = 824122/*__LIB_15__::func_635*/;
 			break;
 		case 19:
-			uParam0->f_17 = 823971/*func_2206*/;
+			uParam0->f_17 = 823971/*__LIB_6__::func_30*/;
 			break;
 		case 18:
-			uParam0->f_8 = 823946/*func_2205*/;
+			uParam0->f_8 = 823946/*__LIB_3__::func_688*/;
 			break;
 		case 20:
-			uParam0->f_3 = 823726/*func_2203*/;
+			uParam0->f_3 = 823726/*__LIB_7__::func_288*/;
 			break;
 		case 21:
-			uParam0->f_3 = 822285/*func_2189*/;
+			uParam0->f_3 = 822285/*__LIB_7__::func_672*/;
 			break;
 		case 74:
-			uParam0->f_53 = 822095/*func_2187*/;
+			uParam0->f_53 = 822095/*__LIB_6__::func_77*/;
 			break;
 		case 75:
-			uParam0->f_4 = 820897/*func_2182*/;
+			uParam0->f_4 = 820897/*__LIB_5__::func_711*/;
 			break;
 		case 22:
-			uParam0->f_24 = 820790/*func_2181*/;
+			uParam0->f_24 = 820790/*__LIB_6__::func_605*/;
 			break;
 		case 23:
-			uParam0->f_26 = 820743/*func_2180*/;
+			uParam0->f_26 = 820743/*__LIB_3__::func_683*/;
 			break;
 		case 24:
-			uParam0->f_26 = 820706/*func_2179*/;
+			uParam0->f_26 = 820706/*__LIB_3__::func_682*/;
 			break;
 		case 26:
-			uParam0->f_38 = 820698/*func_2178*/;
+			uParam0->f_38 = 820698/*__LIB_0__::func_467*/;
 			break;
 		case 25:
 			uParam0->f_23 = 817731/*func_2159*/;
 			break;
 		case 27:
-			uParam0->f_25 = 817723/*func_2158*/;
+			uParam0->f_25 = 817723/*__LIB_0__::func_467*/;
 			break;
 		case 28:
-			uParam0->f_24 = 817715/*func_2157*/;
+			uParam0->f_24 = 817715/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 817565/*func_2155*/;
+			uParam0->f_8 = 817565/*__LIB_30__::func_422*/;
 			break;
 		case 31:
-			uParam0->f_39 = 817353/*func_2153*/;
+			uParam0->f_39 = 817353/*__LIB_6__::func_712*/;
 			break;
 		case 33:
-			uParam0->f_40 = 816395/*func_2144*/;
+			uParam0->f_40 = 816395/*__LIB_22__::func_400*/;
 			break;
 		case 32:
-			*uParam0 = 816340/*func_2143*/;
+			*uParam0 = 816340/*__LIB_11__::func_807*/;
 			break;
 		case 76:
-			uParam0->f_13 = 816329/*func_2142*/;
+			uParam0->f_13 = 816329/*__LIB_3__::func_554*/;
 			break;
 		case 34:
-			uParam0->f_41 = 812577/*func_2139*/;
+			uParam0->f_41 = 812577/*__LIB_7__::func_393*/;
 			break;
 		case 36:
-			uParam0->f_58 = 812532/*func_2138*/;
+			uParam0->f_58 = 812532/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 791352/*func_2135*/;
+			uParam0->f_42 = 791352/*__LIB_5__::func_946*/;
 			break;
 		case 45:
-			uParam0->f_14 = 791343/*func_2134*/;
+			uParam0->f_14 = 791343/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 791334/*func_2133*/;
+			uParam0->f_14 = 791334/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 791326/*func_2132*/;
+			uParam0->f_57 = 791326/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 791303/*func_2131*/;
+			uParam0->f_13 = 791303/*__LIB_3__::func_665*/;
 			break;
 		case 82:
-			uParam0->f_19 = 791257/*func_2129*/;
+			uParam0->f_19 = 791257/*__LIB_5__::func_267*/;
 			break;
 		case 47:
-			uParam0->f_43 = 791114/*func_2128*/;
+			uParam0->f_43 = 791114/*__LIB_7__::func_216*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 789971/*func_2119*/;
+			uParam0->f_44 = 789971/*__LIB_22__::func_399*/;
 			break;
 		case 49:
-			uParam0->f_8 = 789953/*func_2118*/;
+			uParam0->f_8 = 789953/*__LIB_3__::func_658*/;
 			break;
 		case 50:
-			*uParam0 = 789639/*func_2115*/;
+			*uParam0 = 789639/*__LIB_22__::func_398*/;
 			break;
 		case 51:
-			*uParam0 = 789537/*func_2114*/;
+			*uParam0 = 789537/*__LIB_5__::func_707*/;
 			break;
 		case 52:
-			uParam0->f_15 = 789526/*func_2113*/;
+			uParam0->f_15 = 789526/*__LIB_3__::func_657*/;
 			break;
 		case 53:
 			uParam0->f_13 = 789400/*func_2112*/;
@@ -18273,142 +18273,142 @@ void func_1855(var uParam0, int iParam1)//Position - 0xB0CD5
 			uParam0->f_45 = 789010/*func_2111*/;
 			break;
 		case 56:
-			uParam0->f_46 = 788991/*func_2110*/;
+			uParam0->f_46 = 788991/*__LIB_3__::func_656*/;
 			break;
 		case 57:
-			uParam0->f_11 = 788737/*func_2109*/;
+			uParam0->f_11 = 788737/*__LIB_30__::func_616*/;
 			break;
 		case 58:
-			uParam0->f_13 = 788611/*func_2108*/;
+			uParam0->f_13 = 788611/*__LIB_3__::func_655*/;
 			break;
 		case 59:
-			*uParam0 = 787232/*func_2097*/;
+			*uParam0 = 787232/*__LIB_30__::func_623*/;
 			break;
 		case 60:
-			*uParam0 = 787223/*func_2096*/;
+			*uParam0 = 787223/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 787212/*func_2095*/;
+			uParam0->f_15 = 787212/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 787086/*func_2094*/;
+			uParam0->f_13 = 787086/*__LIB_3__::func_646*/;
 			break;
 		case 55:
-			uParam0->f_45 = 787078/*func_2093*/;
+			uParam0->f_45 = 787078/*__LIB_0__::func_467*/;
 			break;
 		case 63:
-			uParam0->f_11 = 787064/*func_2092*/;
+			uParam0->f_11 = 787064/*__LIB_30__::func_809*/;
 			break;
 		case 64:
-			uParam0->f_47 = 787056/*func_2091*/;
+			uParam0->f_47 = 787056/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 785645/*func_2080*/;
+			uParam0->f_21 = 785645/*__LIB_7__::func_534*/;
 			break;
 		case 66:
-			uParam0->f_21 = 784949/*func_2077*/;
+			uParam0->f_21 = 784949/*__LIB_5__::func_422*/;
 			break;
 		case 67:
-			uParam0->f_21 = 784809/*func_2075*/;
+			uParam0->f_21 = 784809/*__LIB_5__::func_216*/;
 			break;
 		case 68:
-			*uParam0 = 783604/*func_2070*/;
+			*uParam0 = 783604/*__LIB_7__::func_773*/;
 			break;
 		case 69:
-			*uParam0 = 783595/*func_2069*/;
+			*uParam0 = 783595/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 783583/*func_2068*/;
+			uParam0->f_48 = 783583/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 783574/*func_2067*/;
+			uParam0->f_49 = 783574/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 783562/*func_2066*/;
+			uParam0->f_50 = 783562/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 783111/*func_2064*/;
+			uParam0->f_7 = 783111/*__LIB_5__::func_945*/;
 			break;
 		case 84:
-			uParam0->f_1 = 783102/*func_2063*/;
+			uParam0->f_1 = 783102/*__LIB_0__::func_109*/;
 			break;
 		case 85:
 			uParam0->f_1 = 742322/*func_1969*/;
 			break;
 		case 87:
-			uParam0->f_1 = 738467/*func_1948*/;
+			uParam0->f_1 = 738467/*__LIB_6__::func_439*/;
 			break;
 		case 88:
-			uParam0->f_1 = 738458/*func_1947*/;
+			uParam0->f_1 = 738458/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 738450/*func_1946*/;
+			uParam0->f_54 = 738450/*__LIB_0__::func_467*/;
 			break;
 		case 90:
-			uParam0->f_1 = 737572/*func_1929*/;
+			uParam0->f_1 = 737572/*__LIB_8__::func_19*/;
 			break;
 		case 91:
-			uParam0->f_1 = 737538/*func_1928*/;
+			uParam0->f_1 = 737538/*__LIB_3__::func_614*/;
 			break;
 		case 92:
-			uParam0->f_1 = 735742/*func_1917*/;
+			uParam0->f_1 = 735742/*__LIB_7__::func_389*/;
 			break;
 		case 94:
-			uParam0->f_1 = 733772/*func_1905*/;
+			uParam0->f_1 = 733772/*__LIB_7__::func_679*/;
 			break;
 		case 95:
-			uParam0->f_22 = 732383/*func_1893*/;
+			uParam0->f_22 = 732383/*__LIB_11__::func_950*/;
 			break;
 		case 96:
-			uParam0->f_1 = 732374/*func_1892*/;
+			uParam0->f_1 = 732374/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 732365/*func_1891*/;
+			uParam0->f_1 = 732365/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 732356/*func_1890*/;
+			uParam0->f_1 = 732356/*__LIB_0__::func_109*/;
 			break;
 		case 100:
-			uParam0->f_22 = 732348/*func_1889*/;
+			uParam0->f_22 = 732348/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 732340/*func_1888*/;
+			uParam0->f_22 = 732340/*__LIB_0__::func_467*/;
 			break;
 		case 112:
-			uParam0->f_13 = 732226/*func_1887*/;
+			uParam0->f_13 = 732226/*__LIB_3__::func_606*/;
 			break;
 		case 113:
-			uParam0->f_3 = 732072/*func_1883*/;
+			uParam0->f_3 = 732072/*__LIB_7__::func_388*/;
 			break;
 		case 114:
-			uParam0->f_16 = 731404/*func_1882*/;
+			uParam0->f_16 = 731404/*__LIB_3__::func_605*/;
 			break;
 		case 115:
-			uParam0->f_3 = 731395/*func_1881*/;
+			uParam0->f_3 = 731395/*__LIB_0__::func_114*/;
 			break;
 		case 116:
-			*uParam0 = 731386/*func_1880*/;
+			*uParam0 = 731386/*__LIB_0__::func_114*/;
 			break;
 		case 117:
-			uParam0->f_16 = 726970/*func_1879*/;
+			uParam0->f_16 = 726970/*__LIB_3__::func_604*/;
 			break;
 		case 118:
-			uParam0->f_11 = 726961/*func_1878*/;
+			uParam0->f_11 = 726961/*__LIB_3__::func_603*/;
 			break;
 		case 119:
-			uParam0->f_27 = 726834/*func_1873*/;
+			uParam0->f_27 = 726834/*__LIB_8__::func_49*/;
 			break;
 		case 120:
-			uParam0->f_19 = 726779/*func_1870*/;
+			uParam0->f_19 = 726779/*__LIB_5__::func_700*/;
 			break;
 		case 78:
-			uParam0->f_59 = 725993/*func_1858*/;
+			uParam0->f_59 = 725993/*__LIB_7__::func_828*/;
 			break;
 		case 124:
-			uParam0->f_1 = 725984/*func_1857*/;
+			uParam0->f_1 = 725984/*__LIB_0__::func_109*/;
 			break;
 		case 125:
-			uParam0->f_19 = 725976/*func_1856*/;
+			uParam0->f_19 = 725976/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -18631,7 +18631,7 @@ int func_1984(int iParam0, var uParam1, int iParam2)//Position - 0xB5ED8
 		}
 		return 1;
 	}
-	else if (__LIB_30__::func_733(uParam1, *iParam0, 10f, 20f, 15f, ENTITY::GET_ENTITY_HEADING(*iParam0), 0, 0))
+	else if (__LIB_30__::func_743(uParam1, *iParam0, 10f, 20f, 15f, ENTITY::GET_ENTITY_HEADING(*iParam0), 0, 0))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(*uParam1))
 		{
@@ -18644,7 +18644,7 @@ int func_1984(int iParam0, var uParam1, int iParam2)//Position - 0xB5ED8
 			Var0.f_99 = 132;
 			Var0.f_100 = -1;
 			__LIB_9__::func_494(*iParam0, &Var0);
-			__LIB_30__::func_672(*uParam1, &Var0, 1, 1, 0);
+			__LIB_30__::func_682(*uParam1, &Var0, 1, 1, 0);
 			__LIB_1__::func_495(*iParam0, uParam1);
 			ENTITY::SET_ENTITY_COLLISION(*uParam1, false, false);
 			ENTITY::SET_ENTITY_VISIBLE(*uParam1, false, false);
@@ -18671,7 +18671,7 @@ int func_1984(int iParam0, var uParam1, int iParam2)//Position - 0xB5ED8
 			}
 			if (__LIB_0__::func_703(iParam2, 4))
 			{
-				__LIB_30__::func_815(iParam0, &(uParam1->f_12));
+				__LIB_30__::func_825(iParam0, &(uParam1->f_12));
 				if (__LIB_0__::func_703(iParam2, 8))
 				{
 					iVar4 = 0;
@@ -18840,7 +18840,7 @@ void func_2159(int iParam0, int iParam1)//Position - 0xC7A43
 		}
 		if (__LIB_3__::func_661(0, iParam1))
 		{
-			__LIB_22__::func_390(iParam0, -1);
+			__LIB_22__::func_400(iParam0, -1);
 		}
 		else if (__LIB_3__::func_661(1, iParam1))
 		{
@@ -18848,7 +18848,7 @@ void func_2159(int iParam0, int iParam1)//Position - 0xC7A43
 			{
 				__LIB_12__::func_135(PLAYER::PLAYER_ID(), iParam0, Var3, 1, 0, 0, 0, -1, -1, __LIB_6__::func_598());
 			}
-			__LIB_24__::func_348(iParam0, __LIB_6__::func_598());
+			__LIB_24__::func_358(iParam0, __LIB_6__::func_598());
 		}
 		else if (__LIB_3__::func_661(2, iParam1))
 		{
@@ -18856,7 +18856,7 @@ void func_2159(int iParam0, int iParam1)//Position - 0xC7A43
 			{
 				__LIB_12__::func_135(PLAYER::PLAYER_ID(), iParam0, Var3, 0, 0, 1, 0, -1, -1, __LIB_6__::func_598());
 			}
-			__LIB_24__::func_348(iParam0, __LIB_6__::func_598());
+			__LIB_24__::func_358(iParam0, __LIB_6__::func_598());
 		}
 	}
 	else
@@ -18986,97 +18986,97 @@ void func_2384(var uParam0, int iParam1)//Position - 0xDAE53
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 952716/*func_2603*/;
+			*uParam0 = 952716/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 952707/*func_2602*/;
+			uParam0->f_35 = 952707/*__LIB_0__::func_162*/;
 			break;
 		case 1:
-			uParam0->f_30 = 952627/*func_2600*/;
+			uParam0->f_30 = 952627/*__LIB_7__::func_296*/;
 			break;
 		case 2:
-			uParam0->f_31 = 951988/*func_2596*/;
+			uParam0->f_31 = 951988/*__LIB_7__::func_613*/;
 			break;
 		case 3:
-			uParam0->f_34 = 951722/*func_2595*/;
+			uParam0->f_34 = 951722/*__LIB_3__::func_797*/;
 			break;
 		case 4:
-			uParam0->f_12 = 951709/*func_2594*/;
+			uParam0->f_12 = 951709/*__LIB_3__::func_796*/;
 			break;
 		case 6:
-			uParam0->f_32 = 951610/*func_2593*/;
+			uParam0->f_32 = 951610/*__LIB_7__::func_223*/;
 			break;
 		case 37:
-			uParam0->f_18 = 951473/*func_2592*/;
+			uParam0->f_18 = 951473/*__LIB_3__::func_795*/;
 			break;
 		case 38:
-			uParam0->f_9 = 951425/*func_2591*/;
+			uParam0->f_9 = 951425/*__LIB_6__::func_614*/;
 			break;
 		case 39:
-			uParam0->f_11 = 951390/*func_2590*/;
+			uParam0->f_11 = 951390/*__LIB_30__::func_624*/;
 			break;
 		case 41:
-			uParam0->f_20 = 951271/*func_2587*/;
+			uParam0->f_20 = 951271/*__LIB_12__::func_136*/;
 			break;
 		case 42:
-			uParam0->f_10 = 951242/*func_2586*/;
+			uParam0->f_10 = 951242/*__LIB_6__::func_456*/;
 			break;
 		case 11:
-			uParam0->f_11 = 951232/*func_2585*/;
+			uParam0->f_11 = 951232/*__LIB_3__::func_793*/;
 			break;
 		case 12:
-			uParam0->f_33 = 949080/*func_2581*/;
+			uParam0->f_33 = 949080/*__LIB_5__::func_856*/;
 			break;
 		case 14:
-			uParam0->f_11 = 949071/*func_2580*/;
+			uParam0->f_11 = 949071/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 946475/*func_2577*/;
+			uParam0->f_56 = 946475/*__LIB_5__::func_465*/;
 			break;
 		case 8:
-			uParam0->f_37 = 946467/*func_2576*/;
+			uParam0->f_37 = 946467/*__LIB_0__::func_467*/;
 			break;
 		case 7:
-			uParam0->f_36 = 946458/*func_2575*/;
+			uParam0->f_36 = 946458/*__LIB_0__::func_114*/;
 			break;
 		case 79:
-			*uParam0 = 946449/*func_2574*/;
+			*uParam0 = 946449/*__LIB_0__::func_114*/;
 			break;
 		case 13:
-			uParam0->f_2 = 946387/*func_2573*/;
+			uParam0->f_2 = 946387/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 946306/*func_2572*/;
+			uParam0->f_2 = 946306/*__LIB_30__::func_475*/;
 			break;
 		case 16:
-			uParam0->f_5 = 945953/*func_2571*/;
+			uParam0->f_5 = 945953/*__LIB_6__::func_722*/;
 			break;
 		case 108:
-			uParam0->f_55 = 941519/*func_2556*/;
+			uParam0->f_55 = 941519/*__LIB_30__::func_826*/;
 			break;
 		case 17:
-			uParam0->f_17 = 940351/*func_2554*/;
+			uParam0->f_17 = 940351/*__LIB_15__::func_636*/;
 			break;
 		case 19:
-			uParam0->f_17 = 940325/*func_2553*/;
+			uParam0->f_17 = 940325/*__LIB_5__::func_953*/;
 			break;
 		case 20:
-			uParam0->f_3 = 940316/*func_2552*/;
+			uParam0->f_3 = 940316/*__LIB_0__::func_109*/;
 			break;
 		case 21:
-			uParam0->f_3 = 940185/*func_2550*/;
+			uParam0->f_3 = 940185/*__LIB_6__::func_613*/;
 			break;
 		case 74:
-			uParam0->f_53 = 940081/*func_2549*/;
+			uParam0->f_53 = 940081/*__LIB_6__::func_77*/;
 			break;
 		case 75:
-			uParam0->f_4 = 940065/*func_2548*/;
+			uParam0->f_4 = 940065/*__LIB_5__::func_464*/;
 			break;
 		case 22:
-			uParam0->f_24 = 939909/*func_2547*/;
+			uParam0->f_24 = 939909/*__LIB_6__::func_612*/;
 			break;
 		case 23:
-			uParam0->f_26 = 939901/*func_2546*/;
+			uParam0->f_26 = 939901/*__LIB_0__::func_467*/;
 			break;
 		case 26:
 			uParam0->f_38 = 931959/*func_2507*/;
@@ -19085,197 +19085,197 @@ void func_2384(var uParam0, int iParam1)//Position - 0xDAE53
 			uParam0->f_23 = 930910/*func_2503*/;
 			break;
 		case 27:
-			uParam0->f_25 = 930694/*func_2500*/;
+			uParam0->f_25 = 930694/*__LIB_5__::func_854*/;
 			break;
 		case 28:
-			uParam0->f_24 = 930653/*func_2499*/;
+			uParam0->f_24 = 930653/*__LIB_3__::func_777*/;
 			break;
 		case 29:
-			uParam0->f_28 = 930630/*func_2498*/;
+			uParam0->f_28 = 930630/*__LIB_7__::func_222*/;
 			break;
 		case 30:
-			uParam0->f_8 = 930449/*func_2495*/;
+			uParam0->f_8 = 930449/*__LIB_11__::func_808*/;
 			break;
 		case 31:
-			uParam0->f_39 = 930421/*func_2494*/;
+			uParam0->f_39 = 930421/*__LIB_3__::func_775*/;
 			break;
 		case 43:
-			uParam0->f_8 = 930307/*func_2493*/;
+			uParam0->f_8 = 930307/*__LIB_5__::func_205*/;
 			break;
 		case 33:
-			uParam0->f_40 = 930189/*func_2492*/;
+			uParam0->f_40 = 930189/*__LIB_7__::func_295*/;
 			break;
 		case 76:
-			uParam0->f_13 = 930140/*func_2491*/;
+			uParam0->f_13 = 930140/*__LIB_7__::func_221*/;
 			break;
 		case 34:
-			uParam0->f_41 = 921302/*func_2490*/;
+			uParam0->f_41 = 921302/*__LIB_7__::func_220*/;
 			break;
 		case 36:
-			uParam0->f_58 = 921254/*func_2489*/;
+			uParam0->f_58 = 921254/*__LIB_3__::func_774*/;
 			break;
 		case 35:
-			uParam0->f_42 = 910164/*func_2482*/;
+			uParam0->f_42 = 910164/*__LIB_6__::func_415*/;
 			break;
 		case 45:
-			uParam0->f_14 = 910155/*func_2481*/;
+			uParam0->f_14 = 910155/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 910146/*func_2480*/;
+			uParam0->f_14 = 910146/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 910138/*func_2479*/;
+			uParam0->f_57 = 910138/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 910127/*func_2478*/;
+			uParam0->f_13 = 910127/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 910001/*func_2477*/;
+			uParam0->f_43 = 910001/*__LIB_7__::func_219*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 909116/*func_2464*/;
+			uParam0->f_44 = 909116/*__LIB_30__::func_727*/;
 			break;
 		case 49:
-			uParam0->f_8 = 909107/*func_2463*/;
+			uParam0->f_8 = 909107/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 908938/*func_2462*/;
+			*uParam0 = 908938/*__LIB_6__::func_719*/;
 			break;
 		case 51:
-			*uParam0 = 908929/*func_2461*/;
+			*uParam0 = 908929/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 908918/*func_2460*/;
+			uParam0->f_15 = 908918/*__LIB_3__::func_766*/;
 			break;
 		case 53:
-			uParam0->f_13 = 908895/*func_2459*/;
+			uParam0->f_13 = 908895/*__LIB_3__::func_765*/;
 			break;
 		case 54:
-			uParam0->f_45 = 908846/*func_2458*/;
+			uParam0->f_45 = 908846/*__LIB_3__::func_764*/;
 			break;
 		case 56:
-			uParam0->f_46 = 908828/*func_2457*/;
+			uParam0->f_46 = 908828/*__LIB_3__::func_763*/;
 			break;
 		case 57:
-			uParam0->f_11 = 908786/*func_2455*/;
+			uParam0->f_11 = 908786/*__LIB_5__::func_456*/;
 			break;
 		case 58:
-			uParam0->f_13 = 908744/*func_2454*/;
+			uParam0->f_13 = 908744/*__LIB_3__::func_761*/;
 			break;
 		case 59:
-			*uParam0 = 908615/*func_2452*/;
+			*uParam0 = 908615/*__LIB_7__::func_487*/;
 			break;
 		case 60:
-			*uParam0 = 908606/*func_2451*/;
+			*uParam0 = 908606/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 908595/*func_2450*/;
+			uParam0->f_15 = 908595/*__LIB_3__::func_760*/;
 			break;
 		case 62:
-			uParam0->f_13 = 908572/*func_2449*/;
+			uParam0->f_13 = 908572/*__LIB_3__::func_759*/;
 			break;
 		case 63:
-			uParam0->f_11 = 908563/*func_2448*/;
+			uParam0->f_11 = 908563/*__LIB_1__::func_804*/;
 			break;
 		case 55:
-			uParam0->f_45 = 908521/*func_2447*/;
+			uParam0->f_45 = 908521/*__LIB_3__::func_758*/;
 			break;
 		case 64:
-			uParam0->f_47 = 908513/*func_2446*/;
+			uParam0->f_47 = 908513/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 908505/*func_2445*/;
+			uParam0->f_21 = 908505/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 908234/*func_2444*/;
+			uParam0->f_21 = 908234/*__LIB_7__::func_294*/;
 			break;
 		case 67:
-			uParam0->f_21 = 908164/*func_2443*/;
+			uParam0->f_21 = 908164/*__LIB_3__::func_757*/;
 			break;
 		case 68:
-			*uParam0 = 907492/*func_2441*/;
+			*uParam0 = 907492/*__LIB_5__::func_454*/;
 			break;
 		case 69:
-			*uParam0 = 907483/*func_2440*/;
+			*uParam0 = 907483/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 907471/*func_2439*/;
+			uParam0->f_48 = 907471/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 907251/*func_2438*/;
+			uParam0->f_49 = 907251/*__LIB_3__::func_756*/;
 			break;
 		case 107:
-			uParam0->f_50 = 907239/*func_2437*/;
+			uParam0->f_50 = 907239/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 906703/*func_2433*/;
+			uParam0->f_7 = 906703/*__LIB_7__::func_732*/;
 			break;
 		case 84:
-			uParam0->f_1 = 906588/*func_2428*/;
+			uParam0->f_1 = 906588/*__LIB_5__::func_874*/;
 			break;
 		case 85:
 			uParam0->f_1 = 905684/*func_2426*/;
 			break;
 		case 87:
-			uParam0->f_1 = 903053/*func_2417*/;
+			uParam0->f_1 = 903053/*__LIB_6__::func_414*/;
 			break;
 		case 88:
-			uParam0->f_1 = 903044/*func_2416*/;
+			uParam0->f_1 = 903044/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 903036/*func_2415*/;
+			uParam0->f_54 = 903036/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 903027/*func_2414*/;
+			uParam0->f_1 = 903027/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 903018/*func_2413*/;
+			uParam0->f_1 = 903018/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 903009/*func_2412*/;
+			uParam0->f_1 = 903009/*__LIB_0__::func_109*/;
 			break;
 		case 100:
-			uParam0->f_22 = 903001/*func_2411*/;
+			uParam0->f_22 = 903001/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 902993/*func_2410*/;
+			uParam0->f_22 = 902993/*__LIB_0__::func_467*/;
 			break;
 		case 112:
-			uParam0->f_13 = 902958/*func_2408*/;
+			uParam0->f_13 = 902958/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 902949/*func_2407*/;
+			uParam0->f_3 = 902949/*__LIB_0__::func_114*/;
 			break;
 		case 114:
-			uParam0->f_16 = 900829/*func_2405*/;
+			uParam0->f_16 = 900829/*__LIB_5__::func_451*/;
 			break;
 		case 115:
-			uParam0->f_3 = 900820/*func_2404*/;
+			uParam0->f_3 = 900820/*__LIB_0__::func_114*/;
 			break;
 		case 116:
-			*uParam0 = 900811/*func_2403*/;
+			*uParam0 = 900811/*__LIB_0__::func_114*/;
 			break;
 		case 117:
-			uParam0->f_16 = 899591/*func_2402*/;
+			uParam0->f_16 = 899591/*__LIB_3__::func_744*/;
 			break;
 		case 121:
-			*uParam0 = 899509/*func_2401*/;
+			*uParam0 = 899509/*__LIB_3__::func_743*/;
 			break;
 		case 122:
-			*uParam0 = 899492/*func_2400*/;
+			*uParam0 = 899492/*__LIB_3__::func_742*/;
 			break;
 		case 123:
-			uParam0->f_19 = 899460/*func_2398*/;
+			uParam0->f_19 = 899460/*__LIB_5__::func_450*/;
 			break;
 		case 78:
-			uParam0->f_59 = 898270/*func_2387*/;
+			uParam0->f_59 = 898270/*__LIB_12__::func_160*/;
 			break;
 		case 124:
-			uParam0->f_1 = 898261/*func_2386*/;
+			uParam0->f_1 = 898261/*__LIB_0__::func_109*/;
 			break;
 		case 125:
-			uParam0->f_19 = 898253/*func_2385*/;
+			uParam0->f_19 = 898253/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -19534,7 +19534,7 @@ void func_2508(var uParam0, var uParam1)//Position - 0xE38CD
 			}
 			if (iVar4[uParam0->f_4] != 0)
 			{
-				__LIB_30__::func_205(iVar4[uParam0->f_4], 154);
+				__LIB_30__::func_215(iVar4[uParam0->f_4], 154);
 			}
 		}
 	}
@@ -19551,94 +19551,94 @@ void func_2604(var uParam0, int iParam1)//Position - 0xE8995
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 993223/*func_2773*/;
+			*uParam0 = 993223/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 993209/*func_2772*/;
+			uParam0->f_35 = 993209/*__LIB_7__::func_297*/;
 			break;
 		case 1:
-			uParam0->f_30 = 993117/*func_2770*/;
+			uParam0->f_30 = 993117/*__LIB_5__::func_474*/;
 			break;
 		case 2:
-			uParam0->f_31 = 992895/*func_2767*/;
+			uParam0->f_31 = 992895/*__LIB_5__::func_473*/;
 			break;
 		case 3:
-			uParam0->f_34 = 992738/*func_2766*/;
+			uParam0->f_34 = 992738/*__LIB_3__::func_841*/;
 			break;
 		case 4:
-			uParam0->f_12 = 992725/*func_2765*/;
+			uParam0->f_12 = 992725/*__LIB_3__::func_840*/;
 			break;
 		case 5:
-			uParam0->f_11 = 992715/*func_2764*/;
+			uParam0->f_11 = 992715/*__LIB_3__::func_839*/;
 			break;
 		case 37:
-			uParam0->f_18 = 992595/*func_2763*/;
+			uParam0->f_18 = 992595/*__LIB_3__::func_838*/;
 			break;
 		case 38:
-			uParam0->f_9 = 992547/*func_2762*/;
+			uParam0->f_9 = 992547/*__LIB_6__::func_381*/;
 			break;
 		case 42:
-			uParam0->f_10 = 992518/*func_2761*/;
+			uParam0->f_10 = 992518/*__LIB_6__::func_380*/;
 			break;
 		case 6:
-			uParam0->f_32 = 992430/*func_2760*/;
+			uParam0->f_32 = 992430/*__LIB_3__::func_837*/;
 			break;
 		case 11:
-			uParam0->f_11 = 992421/*func_2759*/;
+			uParam0->f_11 = 992421/*__LIB_3__::func_603*/;
 			break;
 		case 12:
-			uParam0->f_33 = 990676/*func_2754*/;
+			uParam0->f_33 = 990676/*__LIB_10__::func_536*/;
 			break;
 		case 14:
-			uParam0->f_11 = 990667/*func_2753*/;
+			uParam0->f_11 = 990667/*__LIB_0__::func_114*/;
 			break;
 		case 109:
 			uParam0->f_56 = 986559/*func_2750*/;
 			break;
 		case 8:
-			uParam0->f_37 = 986082/*func_2749*/;
+			uParam0->f_37 = 986082/*__LIB_3__::func_835*/;
 			break;
 		case 7:
-			uParam0->f_36 = 985988/*func_2748*/;
+			uParam0->f_36 = 985988/*__LIB_3__::func_834*/;
 			break;
 		case 79:
-			*uParam0 = 985979/*func_2747*/;
+			*uParam0 = 985979/*__LIB_0__::func_114*/;
 			break;
 		case 13:
-			uParam0->f_2 = 985917/*func_2746*/;
+			uParam0->f_2 = 985917/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 985836/*func_2745*/;
+			uParam0->f_2 = 985836/*__LIB_30__::func_476*/;
 			break;
 		case 16:
-			uParam0->f_5 = 984938/*func_2743*/;
+			uParam0->f_5 = 984938/*__LIB_11__::func_902*/;
 			break;
 		case 108:
-			uParam0->f_55 = 981657/*func_2731*/;
+			uParam0->f_55 = 981657/*__LIB_30__::func_827*/;
 			break;
 		case 17:
-			uParam0->f_17 = 980385/*func_2728*/;
+			uParam0->f_17 = 980385/*__LIB_15__::func_637*/;
 			break;
 		case 19:
-			uParam0->f_17 = 980359/*func_2727*/;
+			uParam0->f_17 = 980359/*__LIB_5__::func_954*/;
 			break;
 		case 20:
-			uParam0->f_3 = 980145/*func_2725*/;
+			uParam0->f_3 = 980145/*__LIB_6__::func_619*/;
 			break;
 		case 21:
-			uParam0->f_3 = 980081/*func_2724*/;
+			uParam0->f_3 = 980081/*__LIB_5__::func_798*/;
 			break;
 		case 74:
-			uParam0->f_53 = 979977/*func_2723*/;
+			uParam0->f_53 = 979977/*__LIB_6__::func_77*/;
 			break;
 		case 75:
-			uParam0->f_4 = 979961/*func_2722*/;
+			uParam0->f_4 = 979961/*__LIB_5__::func_472*/;
 			break;
 		case 22:
-			uParam0->f_24 = 979854/*func_2721*/;
+			uParam0->f_24 = 979854/*__LIB_6__::func_618*/;
 			break;
 		case 23:
-			uParam0->f_26 = 979846/*func_2720*/;
+			uParam0->f_26 = 979846/*__LIB_0__::func_467*/;
 			break;
 		case 26:
 			uParam0->f_38 = 975865/*func_2702*/;
@@ -19647,65 +19647,65 @@ void func_2604(var uParam0, int iParam1)//Position - 0xE8995
 			uParam0->f_23 = 975415/*func_2699*/;
 			break;
 		case 27:
-			uParam0->f_25 = 975407/*func_2698*/;
+			uParam0->f_25 = 975407/*__LIB_0__::func_467*/;
 			break;
 		case 28:
-			uParam0->f_24 = 975399/*func_2697*/;
+			uParam0->f_24 = 975399/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 974762/*func_2692*/;
+			uParam0->f_8 = 974762/*__LIB_7__::func_401*/;
 			break;
 		case 31:
-			uParam0->f_39 = 974628/*func_2691*/;
+			uParam0->f_39 = 974628/*__LIB_5__::func_217*/;
 			break;
 		case 33:
-			uParam0->f_40 = 973754/*func_2682*/;
+			uParam0->f_40 = 973754/*__LIB_7__::func_614*/;
 			break;
 		case 32:
-			*uParam0 = 973551/*func_2678*/;
+			*uParam0 = 973551/*__LIB_7__::func_400*/;
 			break;
 		case 76:
-			uParam0->f_13 = 973398/*func_2677*/;
+			uParam0->f_13 = 973398/*__LIB_3__::func_821*/;
 			break;
 		case 34:
-			uParam0->f_41 = 971786/*func_2673*/;
+			uParam0->f_41 = 971786/*__LIB_5__::func_469*/;
 			break;
 		case 36:
-			uParam0->f_58 = 971741/*func_2672*/;
+			uParam0->f_58 = 971741/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 962701/*func_2669*/;
+			uParam0->f_42 = 962701/*__LIB_5__::func_468*/;
 			break;
 		case 45:
-			uParam0->f_14 = 962692/*func_2668*/;
+			uParam0->f_14 = 962692/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 962683/*func_2667*/;
+			uParam0->f_14 = 962683/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 962675/*func_2666*/;
+			uParam0->f_57 = 962675/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 962652/*func_2665*/;
+			uParam0->f_13 = 962652/*__LIB_3__::func_815*/;
 			break;
 		case 47:
-			uParam0->f_43 = 962600/*func_2664*/;
+			uParam0->f_43 = 962600/*__LIB_3__::func_814*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 962462/*func_2662*/;
+			uParam0->f_44 = 962462/*__LIB_5__::func_859*/;
 			break;
 		case 49:
-			uParam0->f_8 = 962444/*func_2661*/;
+			uParam0->f_8 = 962444/*__LIB_3__::func_658*/;
 			break;
 		case 50:
-			*uParam0 = 961637/*func_2658*/;
+			*uParam0 = 961637/*__LIB_7__::func_490*/;
 			break;
 		case 51:
-			*uParam0 = 961535/*func_2657*/;
+			*uParam0 = 961535/*__LIB_6__::func_615*/;
 			break;
 		case 52:
-			uParam0->f_15 = 961524/*func_2656*/;
+			uParam0->f_15 = 961524/*__LIB_3__::func_811*/;
 			break;
 		case 53:
 			uParam0->f_13 = 961371/*func_2655*/;
@@ -19714,115 +19714,115 @@ void func_2604(var uParam0, int iParam1)//Position - 0xE8995
 			uParam0->f_45 = 961136/*func_2654*/;
 			break;
 		case 56:
-			uParam0->f_46 = 961127/*func_2653*/;
+			uParam0->f_46 = 961127/*__LIB_3__::func_729*/;
 			break;
 		case 57:
-			uParam0->f_11 = 960714/*func_2649*/;
+			uParam0->f_11 = 960714/*__LIB_7__::func_399*/;
 			break;
 		case 58:
-			uParam0->f_13 = 960561/*func_2648*/;
+			uParam0->f_13 = 960561/*__LIB_3__::func_808*/;
 			break;
 		case 59:
-			*uParam0 = 960552/*func_2647*/;
+			*uParam0 = 960552/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 960543/*func_2646*/;
+			*uParam0 = 960543/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 960532/*func_2645*/;
+			uParam0->f_15 = 960532/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 960521/*func_2644*/;
+			uParam0->f_13 = 960521/*__LIB_3__::func_554*/;
 			break;
 		case 63:
-			uParam0->f_11 = 960512/*func_2643*/;
+			uParam0->f_11 = 960512/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 960504/*func_2642*/;
+			uParam0->f_47 = 960504/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 959448/*func_2639*/;
+			uParam0->f_21 = 959448/*__LIB_10__::func_702*/;
 			break;
 		case 66:
-			uParam0->f_21 = 959228/*func_2638*/;
+			uParam0->f_21 = 959228/*__LIB_3__::func_807*/;
 			break;
 		case 67:
-			uParam0->f_21 = 959153/*func_2637*/;
+			uParam0->f_21 = 959153/*__LIB_5__::func_216*/;
 			break;
 		case 68:
-			*uParam0 = 958464/*func_2636*/;
+			*uParam0 = 958464/*__LIB_5__::func_215*/;
 			break;
 		case 69:
-			*uParam0 = 958455/*func_2635*/;
+			*uParam0 = 958455/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 958443/*func_2634*/;
+			uParam0->f_48 = 958443/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 958351/*func_2633*/;
+			uParam0->f_49 = 958351/*__LIB_3__::func_806*/;
 			break;
 		case 107:
-			uParam0->f_50 = 958339/*func_2632*/;
+			uParam0->f_50 = 958339/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 957972/*func_2631*/;
+			uParam0->f_7 = 957972/*__LIB_5__::func_858*/;
 			break;
 		case 84:
-			uParam0->f_1 = 957963/*func_2630*/;
+			uParam0->f_1 = 957963/*__LIB_0__::func_109*/;
 			break;
 		case 85:
 			uParam0->f_1 = 957170/*func_2628*/;
 			break;
 		case 87:
-			uParam0->f_1 = 955790/*func_2621*/;
+			uParam0->f_1 = 955790/*__LIB_6__::func_416*/;
 			break;
 		case 88:
-			uParam0->f_1 = 955781/*func_2620*/;
+			uParam0->f_1 = 955781/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 955773/*func_2619*/;
+			uParam0->f_54 = 955773/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 955764/*func_2618*/;
+			uParam0->f_1 = 955764/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 955755/*func_2617*/;
+			uParam0->f_1 = 955755/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 955746/*func_2616*/;
+			uParam0->f_1 = 955746/*__LIB_0__::func_109*/;
 			break;
 		case 100:
-			uParam0->f_22 = 955738/*func_2615*/;
+			uParam0->f_22 = 955738/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 955730/*func_2614*/;
+			uParam0->f_22 = 955730/*__LIB_0__::func_467*/;
 			break;
 		case 112:
-			uParam0->f_13 = 955718/*func_2613*/;
+			uParam0->f_13 = 955718/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 955709/*func_2612*/;
+			uParam0->f_3 = 955709/*__LIB_0__::func_114*/;
 			break;
 		case 114:
-			uParam0->f_16 = 900829/*func_2405*/;
+			uParam0->f_16 = 900829/*__LIB_5__::func_451*/;
 			break;
 		case 115:
-			uParam0->f_3 = 955700/*func_2611*/;
+			uParam0->f_3 = 955700/*__LIB_0__::func_114*/;
 			break;
 		case 116:
-			*uParam0 = 955691/*func_2610*/;
+			*uParam0 = 955691/*__LIB_0__::func_114*/;
 			break;
 		case 117:
-			uParam0->f_16 = 954471/*func_2609*/;
+			uParam0->f_16 = 954471/*__LIB_3__::func_800*/;
 			break;
 		case 78:
-			uParam0->f_59 = 954299/*func_2607*/;
+			uParam0->f_59 = 954299/*__LIB_7__::func_783*/;
 			break;
 		case 124:
-			uParam0->f_1 = 954290/*func_2606*/;
+			uParam0->f_1 = 954290/*__LIB_0__::func_109*/;
 			break;
 		case 125:
-			uParam0->f_19 = 954282/*func_2605*/;
+			uParam0->f_19 = 954282/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -20015,7 +20015,7 @@ void func_2705(var uParam0, var uParam1)//Position - 0xEE4D8
 			func_2717(uParam0, uParam1);
 			break;
 		case 2:
-			__LIB_30__::func_457(uParam0, uParam1);
+			__LIB_30__::func_467(uParam0, uParam1);
 			break;
 		default:
 			break;
@@ -20461,281 +20461,281 @@ void func_2774(var uParam0, int iParam1)//Position - 0xF27D0
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1009547/*func_2894*/;
+			*uParam0 = 1009547/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1009538/*func_2893*/;
+			uParam0->f_35 = 1009538/*__LIB_0__::func_162*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1009470/*func_2891*/;
+			uParam0->f_30 = 1009470/*__LIB_5__::func_484*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1009030/*func_2888*/;
+			uParam0->f_31 = 1009030/*__LIB_5__::func_861*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1008882/*func_2887*/;
+			uParam0->f_34 = 1008882/*__LIB_3__::func_867*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1008869/*func_2886*/;
+			uParam0->f_12 = 1008869/*__LIB_3__::func_866*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1008643/*func_2885*/;
+			uParam0->f_18 = 1008643/*__LIB_5__::func_230*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1008553/*func_2884*/;
+			uParam0->f_9 = 1008553/*__LIB_6__::func_624*/;
 			break;
 		case 39:
-			uParam0->f_11 = 1008533/*func_2883*/;
+			uParam0->f_11 = 1008533/*__LIB_5__::func_229*/;
 			break;
 		case 40:
-			uParam0->f_6 = 1008428/*func_2882*/;
+			uParam0->f_6 = 1008428/*__LIB_7__::func_226*/;
 			break;
 		case 41:
-			uParam0->f_20 = 1008403/*func_2881*/;
+			uParam0->f_20 = 1008403/*__LIB_6__::func_459*/;
 			break;
 		case 42:
-			uParam0->f_10 = 1008390/*func_2880*/;
+			uParam0->f_10 = 1008390/*__LIB_3__::func_865*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1008326/*func_2879*/;
+			uParam0->f_32 = 1008326/*__LIB_3__::func_864*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1008317/*func_2878*/;
+			uParam0->f_11 = 1008317/*__LIB_3__::func_603*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1007780/*func_2874*/;
+			uParam0->f_33 = 1007780/*__LIB_5__::func_483*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1007771/*func_2873*/;
+			uParam0->f_11 = 1007771/*__LIB_0__::func_114*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1006831/*func_2871*/;
+			uParam0->f_56 = 1006831/*__LIB_5__::func_482*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1006823/*func_2870*/;
+			uParam0->f_37 = 1006823/*__LIB_0__::func_467*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1006814/*func_2869*/;
+			uParam0->f_36 = 1006814/*__LIB_0__::func_114*/;
 			break;
 		case 79:
-			*uParam0 = 1006805/*func_2868*/;
+			*uParam0 = 1006805/*__LIB_0__::func_114*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1006743/*func_2867*/;
+			uParam0->f_2 = 1006743/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1006662/*func_2866*/;
+			uParam0->f_2 = 1006662/*__LIB_30__::func_477*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1006335/*func_2865*/;
+			uParam0->f_5 = 1006335/*__LIB_7__::func_491*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1006326/*func_2864*/;
+			uParam0->f_55 = 1006326/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1006315/*func_2863*/;
+			uParam0->f_17 = 1006315/*__LIB_3__::func_860*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1006304/*func_2862*/;
+			uParam0->f_17 = 1006304/*__LIB_3__::func_860*/;
 			break;
 		case 18:
-			uParam0->f_8 = 1006262/*func_2860*/;
+			uParam0->f_8 = 1006262/*__LIB_6__::func_382*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1006253/*func_2859*/;
+			uParam0->f_3 = 1006253/*__LIB_0__::func_109*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1006205/*func_2858*/;
+			uParam0->f_3 = 1006205/*__LIB_5__::func_227*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1006150/*func_2857*/;
+			uParam0->f_53 = 1006150/*__LIB_6__::func_472*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1006141/*func_2856*/;
+			uParam0->f_4 = 1006141/*__LIB_0__::func_114*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1006034/*func_2855*/;
+			uParam0->f_24 = 1006034/*__LIB_6__::func_623*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1006026/*func_2854*/;
+			uParam0->f_26 = 1006026/*__LIB_0__::func_467*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1005599/*func_2851*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1005591/*func_2850*/;
+			uParam0->f_25 = 1005591/*__LIB_0__::func_467*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1005583/*func_2849*/;
+			uParam0->f_24 = 1005583/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1005548/*func_2848*/;
+			uParam0->f_8 = 1005548/*__LIB_5__::func_226*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1005520/*func_2847*/;
+			uParam0->f_39 = 1005520/*__LIB_3__::func_775*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1005353/*func_2846*/;
+			uParam0->f_40 = 1005353/*__LIB_7__::func_298*/;
 			break;
 		case 76:
-			uParam0->f_13 = 1005330/*func_2845*/;
+			uParam0->f_13 = 1005330/*__LIB_3__::func_849*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1001716/*func_2842*/;
+			uParam0->f_41 = 1001716/*__LIB_5__::func_480*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1001671/*func_2841*/;
+			uParam0->f_58 = 1001671/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 998476/*func_2837*/;
+			uParam0->f_42 = 998476/*__LIB_5__::func_955*/;
 			break;
 		case 45:
-			uParam0->f_14 = 998467/*func_2836*/;
+			uParam0->f_14 = 998467/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 998458/*func_2835*/;
+			uParam0->f_14 = 998458/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 998450/*func_2834*/;
+			uParam0->f_57 = 998450/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 998439/*func_2833*/;
+			uParam0->f_13 = 998439/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 998268/*func_2832*/;
+			uParam0->f_43 = 998268/*__LIB_6__::func_622*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
 			uParam0->f_44 = 996995/*func_2824*/;
 			break;
 		case 49:
-			uParam0->f_8 = 996986/*func_2823*/;
+			uParam0->f_8 = 996986/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 996561/*func_2816*/;
+			*uParam0 = 996561/*__LIB_6__::func_823*/;
 			break;
 		case 51:
-			*uParam0 = 996552/*func_2815*/;
+			*uParam0 = 996552/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 996541/*func_2814*/;
+			uParam0->f_15 = 996541/*__LIB_3__::func_850*/;
 			break;
 		case 53:
-			uParam0->f_13 = 996518/*func_2813*/;
+			uParam0->f_13 = 996518/*__LIB_3__::func_849*/;
 			break;
 		case 54:
-			uParam0->f_45 = 996510/*func_2812*/;
+			uParam0->f_45 = 996510/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 996501/*func_2811*/;
+			uParam0->f_46 = 996501/*__LIB_3__::func_729*/;
 			break;
 		case 57:
-			uParam0->f_11 = 996488/*func_2810*/;
+			uParam0->f_11 = 996488/*__LIB_3__::func_848*/;
 			break;
 		case 58:
-			uParam0->f_13 = 996446/*func_2809*/;
+			uParam0->f_13 = 996446/*__LIB_3__::func_847*/;
 			break;
 		case 59:
-			*uParam0 = 996437/*func_2808*/;
+			*uParam0 = 996437/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 996428/*func_2807*/;
+			*uParam0 = 996428/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 996417/*func_2806*/;
+			uParam0->f_15 = 996417/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 996406/*func_2805*/;
+			uParam0->f_13 = 996406/*__LIB_3__::func_554*/;
 			break;
 		case 63:
-			uParam0->f_11 = 996397/*func_2804*/;
+			uParam0->f_11 = 996397/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 996389/*func_2803*/;
+			uParam0->f_47 = 996389/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 996381/*func_2802*/;
+			uParam0->f_21 = 996381/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 995768/*func_2799*/;
+			uParam0->f_21 = 995768/*__LIB_5__::func_476*/;
 			break;
 		case 67:
-			uParam0->f_21 = 995698/*func_2798*/;
+			uParam0->f_21 = 995698/*__LIB_3__::func_757*/;
 			break;
 		case 68:
-			*uParam0 = 995009/*func_2797*/;
+			*uParam0 = 995009/*__LIB_5__::func_215*/;
 			break;
 		case 69:
-			*uParam0 = 995000/*func_2796*/;
+			*uParam0 = 995000/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 994988/*func_2795*/;
+			uParam0->f_48 = 994988/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 994979/*func_2794*/;
+			uParam0->f_49 = 994979/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 994967/*func_2793*/;
+			uParam0->f_50 = 994967/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 994958/*func_2792*/;
+			uParam0->f_7 = 994958/*__LIB_0__::func_114*/;
 			break;
 		case 84:
-			uParam0->f_1 = 994949/*func_2791*/;
+			uParam0->f_1 = 994949/*__LIB_0__::func_109*/;
 			break;
 		case 85:
-			uParam0->f_1 = 994940/*func_2790*/;
+			uParam0->f_1 = 994940/*__LIB_0__::func_109*/;
 			break;
 		case 87:
-			uParam0->f_1 = 994931/*func_2789*/;
+			uParam0->f_1 = 994931/*__LIB_0__::func_109*/;
 			break;
 		case 88:
-			uParam0->f_1 = 994922/*func_2788*/;
+			uParam0->f_1 = 994922/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 994914/*func_2787*/;
+			uParam0->f_54 = 994914/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 994905/*func_2786*/;
+			uParam0->f_1 = 994905/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 994896/*func_2785*/;
+			uParam0->f_1 = 994896/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 994887/*func_2784*/;
+			uParam0->f_1 = 994887/*__LIB_0__::func_109*/;
 			break;
 		case 100:
-			uParam0->f_22 = 994879/*func_2783*/;
+			uParam0->f_22 = 994879/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 994871/*func_2782*/;
+			uParam0->f_22 = 994871/*__LIB_0__::func_467*/;
 			break;
 		case 112:
-			uParam0->f_13 = 994859/*func_2781*/;
+			uParam0->f_13 = 994859/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 994850/*func_2780*/;
+			uParam0->f_3 = 994850/*__LIB_0__::func_114*/;
 			break;
 		case 114:
-			uParam0->f_16 = 900829/*func_2405*/;
+			uParam0->f_16 = 900829/*__LIB_5__::func_451*/;
 			break;
 		case 115:
-			uParam0->f_3 = 994841/*func_2779*/;
+			uParam0->f_3 = 994841/*__LIB_0__::func_114*/;
 			break;
 		case 116:
-			*uParam0 = 994832/*func_2778*/;
+			*uParam0 = 994832/*__LIB_0__::func_114*/;
 			break;
 		case 117:
-			uParam0->f_16 = 954471/*func_2609*/;
+			uParam0->f_16 = 954471/*__LIB_3__::func_800*/;
 			break;
 		case 78:
-			uParam0->f_59 = 994824/*func_2777*/;
+			uParam0->f_59 = 994824/*__LIB_0__::func_467*/;
 			break;
 		case 124:
-			uParam0->f_1 = 994815/*func_2776*/;
+			uParam0->f_1 = 994815/*__LIB_0__::func_109*/;
 			break;
 		case 125:
-			uParam0->f_19 = 994807/*func_2775*/;
+			uParam0->f_19 = 994807/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -20923,217 +20923,217 @@ void func_2895(var uParam0, int iParam1)//Position - 0xF6794
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1107374/*func_3202*/;
+			*uParam0 = 1107374/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1107318/*func_3201*/;
+			uParam0->f_30 = 1107318/*__LIB_3__::func_975*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1106656/*func_3199*/;
+			uParam0->f_31 = 1106656/*__LIB_5__::func_965*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1106529/*func_3198*/;
+			uParam0->f_34 = 1106529/*__LIB_3__::func_974*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1106495/*func_3197*/;
+			uParam0->f_12 = 1106495/*__LIB_3__::func_973*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1106484/*func_3196*/;
+			uParam0->f_11 = 1106484/*__LIB_3__::func_972*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1106420/*func_3195*/;
+			uParam0->f_32 = 1106420/*__LIB_3__::func_971*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1106397/*func_3194*/;
+			uParam0->f_35 = 1106397/*__LIB_6__::func_461*/;
 			break;
 		case 79:
-			*uParam0 = 1106388/*func_3193*/;
+			*uParam0 = 1106388/*__LIB_0__::func_114*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1106270/*func_3192*/;
+			uParam0->f_18 = 1106270/*__LIB_3__::func_970*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1106173/*func_3190*/;
+			uParam0->f_9 = 1106173/*__LIB_6__::func_946*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1106164/*func_3189*/;
+			uParam0->f_11 = 1106164/*__LIB_3__::func_969*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1105774/*func_3187*/;
+			uParam0->f_33 = 1105774/*__LIB_7__::func_577*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1105464/*func_3186*/;
+			uParam0->f_56 = 1105464/*__LIB_7__::func_302*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1103565/*func_3175*/;
+			uParam0->f_2 = 1103565/*__LIB_24__::func_387*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1103556/*func_3174*/;
+			uParam0->f_2 = 1103556/*__LIB_0__::func_109*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1103547/*func_3173*/;
+			uParam0->f_4 = 1103547/*__LIB_0__::func_109*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1103164/*func_3170*/;
+			uParam0->f_5 = 1103164/*__LIB_30__::func_666*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1099246/*func_3152*/;
+			uParam0->f_55 = 1099246/*__LIB_30__::func_762*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1098505/*func_3149*/;
+			uParam0->f_17 = 1098505/*__LIB_15__::func_638*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1098479/*func_3148*/;
+			uParam0->f_17 = 1098479/*__LIB_5__::func_963*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1098310/*func_3147*/;
+			uParam0->f_3 = 1098310/*__LIB_11__::func_504*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1098247/*func_3146*/;
+			uParam0->f_3 = 1098247/*__LIB_6__::func_303*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1098095/*func_3145*/;
+			uParam0->f_53 = 1098095/*__LIB_6__::func_89*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1098010/*func_3144*/;
+			uParam0->f_24 = 1098010/*__LIB_3__::func_957*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1097068/*func_3140*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1095740/*func_3134*/;
+			uParam0->f_8 = 1095740/*__LIB_22__::func_441*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1095156/*func_3131*/;
+			uParam0->f_39 = 1095156/*__LIB_11__::func_503*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1093959/*func_3127*/;
+			uParam0->f_40 = 1093959/*__LIB_11__::func_530*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1093950/*func_3126*/;
+			uParam0->f_11 = 1093950/*__LIB_1__::func_806*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1091183/*func_3123*/;
+			uParam0->f_41 = 1091183/*__LIB_5__::func_495*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1091130/*func_3122*/;
+			uParam0->f_58 = 1091130/*__LIB_3__::func_945*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1085678/*func_3118*/;
+			uParam0->f_42 = 1085678/*__LIB_5__::func_962*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1085669/*func_3117*/;
+			uParam0->f_14 = 1085669/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1085660/*func_3116*/;
+			uParam0->f_14 = 1085660/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1085652/*func_3115*/;
+			uParam0->f_57 = 1085652/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1085629/*func_3114*/;
+			uParam0->f_13 = 1085629/*__LIB_3__::func_943*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1085577/*func_3113*/;
+			uParam0->f_43 = 1085577/*__LIB_3__::func_942*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1085552/*func_3112*/;
+			uParam0->f_8 = 1085552/*__LIB_3__::func_941*/;
 			break;
 		case 50:
-			*uParam0 = 1085514/*func_3111*/;
+			*uParam0 = 1085514/*__LIB_5__::func_725*/;
 			break;
 		case 51:
-			*uParam0 = 1085472/*func_3109*/;
+			*uParam0 = 1085472/*__LIB_6__::func_899*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1085461/*func_3108*/;
+			uParam0->f_15 = 1085461/*__LIB_3__::func_940*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1085382/*func_3107*/;
+			uParam0->f_13 = 1085382/*__LIB_6__::func_630*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1085374/*func_3106*/;
+			uParam0->f_45 = 1085374/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1085365/*func_3105*/;
+			uParam0->f_46 = 1085365/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1085355/*func_3104*/;
+			uParam0->f_11 = 1085355/*__LIB_3__::func_938*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1085108/*func_3103*/;
+			uParam0->f_13 = 1085108/*__LIB_10__::func_418*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1083962/*func_3098*/;
+			uParam0->f_47 = 1083962/*__LIB_30__::func_452*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1082769/*func_3093*/;
+			uParam0->f_21 = 1082769/*__LIB_7__::func_537*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1081710/*func_3084*/;
+			uParam0->f_21 = 1081710/*__LIB_7__::func_54*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1081534/*func_3082*/;
+			uParam0->f_21 = 1081534/*__LIB_5__::func_866*/;
 			break;
 		case 68:
-			*uParam0 = 1080008/*func_3074*/;
+			*uParam0 = 1080008/*__LIB_7__::func_407*/;
 			break;
 		case 69:
-			*uParam0 = 1079999/*func_3073*/;
+			*uParam0 = 1079999/*__LIB_0__::func_109*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1079987/*func_3072*/;
+			uParam0->f_48 = 1079987/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1079978/*func_3071*/;
+			uParam0->f_49 = 1079978/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1079966/*func_3070*/;
+			uParam0->f_50 = 1079966/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1079133/*func_3064*/;
+			uParam0->f_7 = 1079133/*__LIB_5__::func_961*/;
 			break;
 		case 73:
-			uParam0->f_51 = 1079124/*func_3063*/;
+			uParam0->f_51 = 1079124/*__LIB_0__::func_114*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1078452/*func_3061*/;
+			uParam0->f_1 = 1078452/*__LIB_11__::func_940*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1077579/*func_3053*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1076366/*func_3044*/;
+			uParam0->f_1 = 1076366/*__LIB_11__::func_952*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1076346/*func_3043*/;
+			uParam0->f_1 = 1076346/*__LIB_3__::func_918*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1076252/*func_3042*/;
+			uParam0->f_54 = 1076252/*__LIB_3__::func_917*/;
 			break;
 		case 90:
-			uParam0->f_1 = 1076121/*func_3039*/;
+			uParam0->f_1 = 1076121/*__LIB_5__::func_865*/;
 			break;
 		case 91:
-			uParam0->f_1 = 1075475/*func_3038*/;
+			uParam0->f_1 = 1075475/*__LIB_5__::func_801*/;
 			break;
 		case 92:
 			uParam0->f_1 = 1074707/*func_3035*/;
 			break;
 		case 94:
-			uParam0->f_1 = 1074154/*func_3034*/;
+			uParam0->f_1 = 1074154/*__LIB_5__::func_960*/;
 			break;
 		case 95:
-			uParam0->f_22 = 1073560/*func_3029*/;
+			uParam0->f_22 = 1073560/*__LIB_6__::func_383*/;
 			break;
 		case 18:
-			uParam0->f_8 = 1073202/*func_3025*/;
+			uParam0->f_8 = 1073202/*__LIB_5__::func_959*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1073109/*func_3024*/;
+			uParam0->f_1 = 1073109/*__LIB_5__::func_800*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1072241/*func_3019*/;
+			uParam0->f_1 = 1072241/*__LIB_5__::func_864*/;
 			break;
 		case 98:
 			uParam0->f_1 = 1016163/*func_2949*/;
@@ -21142,22 +21142,22 @@ void func_2895(var uParam0, int iParam1)//Position - 0xF6794
 			uParam0->f_22 = 1012878/*func_2927*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1011719/*func_2914*/;
+			uParam0->f_22 = 1011719/*__LIB_6__::func_417*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1011511/*func_2911*/;
+			uParam0->f_59 = 1011511/*__LIB_7__::func_788*/;
 			break;
 		case 104:
-			uParam0->f_1 = 1011071/*func_2903*/;
+			uParam0->f_1 = 1011071/*__LIB_5__::func_957*/;
 			break;
 		case 102:
-			uParam0->f_1 = 1011062/*func_2902*/;
+			uParam0->f_1 = 1011062/*__LIB_0__::func_109*/;
 			break;
 		case 103:
-			uParam0->f_22 = 1010950/*func_2897*/;
+			uParam0->f_22 = 1010950/*__LIB_5__::func_956*/;
 			break;
 		case 81:
-			*uParam0 = 1010907/*func_2896*/;
+			*uParam0 = 1010907/*__LIB_3__::func_870*/;
 			break;
 	}
 }
@@ -21294,7 +21294,7 @@ int func_2932(var uParam0)//Position - 0xF76EB
 						NETWORK::SET_NETWORK_CUTSCENE_ENTITIES(true);
 					}
 					uParam0->f_248 = VEHICLE::CREATE_VEHICLE(joaat("seasparrow2"), ENTITY::GET_ENTITY_COORDS(iVar0, true), 0f, true, false, false);
-					__LIB_3__::func_892(uParam0->f_248, __LIB_0__::func_253(30505, -1), __LIB_0__::func_253(30506, -1), __LIB_0__::func_253(34835/*func_228*/, -1));
+					__LIB_3__::func_892(uParam0->f_248, __LIB_0__::func_253(30505, -1), __LIB_0__::func_253(30506, -1), __LIB_0__::func_253(34835/*__LIB_1__::func_695*/, -1));
 					ENTITY::SET_ENTITY_ROTATION(uParam0->f_248, ENTITY::GET_ENTITY_ROTATION(iVar0, 2), 2, true);
 					ENTITY::SET_ENTITY_VISIBLE(uParam0->f_248, false, false);
 					ENTITY::SET_ENTITY_COLLISION(uParam0->f_248, false, false);
@@ -22798,269 +22798,269 @@ void func_3203(var uParam0, int iParam1)//Position - 0x10E5B7
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1128442/*func_3321*/;
+			*uParam0 = 1128442/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1128433/*func_3320*/;
+			uParam0->f_35 = 1128433/*__LIB_0__::func_162*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1128365/*func_3318*/;
+			uParam0->f_30 = 1128365/*__LIB_5__::func_506*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1128039/*func_3315*/;
+			uParam0->f_31 = 1128039/*__LIB_5__::func_505*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1127878/*func_3314*/;
+			uParam0->f_34 = 1127878/*__LIB_4__::func_4*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1127865/*func_3313*/;
+			uParam0->f_12 = 1127865/*__LIB_4__::func_3*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1127801/*func_3312*/;
+			uParam0->f_32 = 1127801/*__LIB_4__::func_2*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1127792/*func_3311*/;
+			uParam0->f_11 = 1127792/*__LIB_0__::func_109*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1127456/*func_3307*/;
+			uParam0->f_33 = 1127456/*__LIB_5__::func_869*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1127447/*func_3306*/;
+			uParam0->f_11 = 1127447/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1126710/*func_3304*/;
+			uParam0->f_56 = 1126710/*__LIB_5__::func_504*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1126702/*func_3303*/;
+			uParam0->f_37 = 1126702/*__LIB_0__::func_467*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1126693/*func_3302*/;
+			uParam0->f_36 = 1126693/*__LIB_0__::func_114*/;
 			break;
 		case 79:
-			*uParam0 = 1126684/*func_3301*/;
+			*uParam0 = 1126684/*__LIB_0__::func_114*/;
 			break;
 		case 72:
-			uParam0->f_12 = 1126671/*func_3300*/;
+			uParam0->f_12 = 1126671/*__LIB_3__::func_999*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1126662/*func_3299*/;
+			uParam0->f_2 = 1126662/*__LIB_0__::func_109*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1126583/*func_3298*/;
+			uParam0->f_2 = 1126583/*__LIB_30__::func_478*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1126239/*func_3297*/;
+			uParam0->f_5 = 1126239/*__LIB_6__::func_732*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1126230/*func_3296*/;
+			uParam0->f_55 = 1126230/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1125701/*func_3294*/;
+			uParam0->f_17 = 1125701/*__LIB_11__::func_903*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1125646/*func_3293*/;
+			uParam0->f_17 = 1125646/*__LIB_6__::func_730*/;
 			break;
 		case 18:
-			uParam0->f_8 = 1125558/*func_3291*/;
+			uParam0->f_8 = 1125558/*__LIB_6__::func_638*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1125538/*func_3290*/;
+			uParam0->f_3 = 1125538/*__LIB_5__::func_251*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1125511/*func_3289*/;
+			uParam0->f_3 = 1125511/*__LIB_3__::func_997*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1125489/*func_3288*/;
+			uParam0->f_53 = 1125489/*__LIB_3__::func_996*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1125480/*func_3287*/;
+			uParam0->f_4 = 1125480/*__LIB_0__::func_114*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1125373/*func_3286*/;
+			uParam0->f_24 = 1125373/*__LIB_6__::func_637*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1125365/*func_3285*/;
+			uParam0->f_26 = 1125365/*__LIB_0__::func_467*/;
 			break;
 		case 26:
-			uParam0->f_38 = 1125357/*func_3284*/;
+			uParam0->f_38 = 1125357/*__LIB_0__::func_467*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1124596/*func_3280*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1124588/*func_3279*/;
+			uParam0->f_25 = 1124588/*__LIB_0__::func_467*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1124580/*func_3278*/;
+			uParam0->f_24 = 1124580/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1124469/*func_3277*/;
+			uParam0->f_8 = 1124469/*__LIB_5__::func_250*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1124421/*func_3276*/;
+			uParam0->f_39 = 1124421/*__LIB_3__::func_994*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1124352/*func_3275*/;
+			uParam0->f_40 = 1124352/*__LIB_7__::func_303*/;
 			break;
 		case 76:
-			uParam0->f_13 = 1124329/*func_3274*/;
+			uParam0->f_13 = 1124329/*__LIB_3__::func_993*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1120256/*func_3271*/;
+			uParam0->f_41 = 1120256/*__LIB_5__::func_868*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1120199/*func_3270*/;
+			uParam0->f_58 = 1120199/*__LIB_3__::func_991*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1113931/*func_3261*/;
+			uParam0->f_42 = 1113931/*__LIB_5__::func_966*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1113922/*func_3260*/;
+			uParam0->f_14 = 1113922/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1113913/*func_3259*/;
+			uParam0->f_14 = 1113913/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1113905/*func_3258*/;
+			uParam0->f_57 = 1113905/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1113894/*func_3257*/;
+			uParam0->f_13 = 1113894/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1113781/*func_3256*/;
+			uParam0->f_43 = 1113781/*__LIB_3__::func_983*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1112808/*func_3251*/;
+			uParam0->f_44 = 1112808/*__LIB_30__::func_625*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1112799/*func_3250*/;
+			uParam0->f_8 = 1112799/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 1112462/*func_3245*/;
+			*uParam0 = 1112462/*__LIB_6__::func_729*/;
 			break;
 		case 51:
-			*uParam0 = 1112453/*func_3244*/;
+			*uParam0 = 1112453/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1112443/*func_3243*/;
+			uParam0->f_15 = 1112443/*__LIB_3__::func_980*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1112420/*func_3242*/;
+			uParam0->f_13 = 1112420/*__LIB_3__::func_979*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1111924/*func_3240*/;
+			uParam0->f_45 = 1111924/*__LIB_5__::func_867*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1111915/*func_3239*/;
+			uParam0->f_46 = 1111915/*__LIB_3__::func_969*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1111906/*func_3238*/;
+			uParam0->f_11 = 1111906/*__LIB_1__::func_804*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1111864/*func_3237*/;
+			uParam0->f_13 = 1111864/*__LIB_3__::func_978*/;
 			break;
 		case 59:
-			*uParam0 = 1111855/*func_3236*/;
+			*uParam0 = 1111855/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 1111846/*func_3235*/;
+			*uParam0 = 1111846/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1111835/*func_3234*/;
+			uParam0->f_15 = 1111835/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1111824/*func_3233*/;
+			uParam0->f_13 = 1111824/*__LIB_3__::func_554*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1111815/*func_3232*/;
+			uParam0->f_11 = 1111815/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1111807/*func_3231*/;
+			uParam0->f_47 = 1111807/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1111799/*func_3230*/;
+			uParam0->f_21 = 1111799/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1111489/*func_3229*/;
+			uParam0->f_21 = 1111489/*__LIB_5__::func_246*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1111419/*func_3228*/;
+			uParam0->f_21 = 1111419/*__LIB_3__::func_757*/;
 			break;
 		case 68:
-			*uParam0 = 1110730/*func_3227*/;
+			*uParam0 = 1110730/*__LIB_5__::func_215*/;
 			break;
 		case 69:
-			*uParam0 = 1110721/*func_3226*/;
+			*uParam0 = 1110721/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1110709/*func_3225*/;
+			uParam0->f_48 = 1110709/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1110700/*func_3224*/;
+			uParam0->f_49 = 1110700/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1110688/*func_3223*/;
+			uParam0->f_50 = 1110688/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1110679/*func_3222*/;
+			uParam0->f_7 = 1110679/*__LIB_0__::func_114*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1110670/*func_3221*/;
+			uParam0->f_1 = 1110670/*__LIB_0__::func_109*/;
 			break;
 		case 85:
-			uParam0->f_1 = 1110661/*func_3220*/;
+			uParam0->f_1 = 1110661/*__LIB_0__::func_109*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1110652/*func_3219*/;
+			uParam0->f_1 = 1110652/*__LIB_0__::func_109*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1110643/*func_3218*/;
+			uParam0->f_1 = 1110643/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1110635/*func_3217*/;
+			uParam0->f_54 = 1110635/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1110610/*func_3216*/;
+			uParam0->f_1 = 1110610/*__LIB_3__::func_977*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1110500/*func_3215*/;
+			uParam0->f_1 = 1110500/*__LIB_3__::func_976*/;
 			break;
 		case 98:
 			uParam0->f_1 = 1109783/*func_3214*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1109082/*func_3212*/;
+			uParam0->f_22 = 1109082/*__LIB_4__::func_315*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1108954/*func_3211*/;
+			uParam0->f_22 = 1108954/*__LIB_11__::func_953*/;
 			break;
 		case 112:
-			uParam0->f_13 = 1108942/*func_3210*/;
+			uParam0->f_13 = 1108942/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 1108933/*func_3209*/;
+			uParam0->f_3 = 1108933/*__LIB_0__::func_114*/;
 			break;
 		case 114:
-			uParam0->f_16 = 900829/*func_2405*/;
+			uParam0->f_16 = 900829/*__LIB_5__::func_451*/;
 			break;
 		case 115:
-			uParam0->f_3 = 1108924/*func_3208*/;
+			uParam0->f_3 = 1108924/*__LIB_0__::func_114*/;
 			break;
 		case 116:
-			*uParam0 = 1108915/*func_3207*/;
+			*uParam0 = 1108915/*__LIB_0__::func_114*/;
 			break;
 		case 117:
-			uParam0->f_16 = 954471/*func_2609*/;
+			uParam0->f_16 = 954471/*__LIB_3__::func_800*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1108907/*func_3206*/;
+			uParam0->f_59 = 1108907/*__LIB_0__::func_467*/;
 			break;
 		case 124:
-			uParam0->f_1 = 1108898/*func_3205*/;
+			uParam0->f_1 = 1108898/*__LIB_0__::func_109*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1108890/*func_3204*/;
+			uParam0->f_19 = 1108890/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -23248,263 +23248,263 @@ void func_3322(var uParam0, int iParam1)//Position - 0x113803
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1136757/*func_3415*/;
+			*uParam0 = 1136757/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1136748/*func_3414*/;
+			uParam0->f_35 = 1136748/*__LIB_0__::func_162*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1136676/*func_3412*/;
+			uParam0->f_30 = 1136676/*__LIB_5__::func_511*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1136439/*func_3409*/;
+			uParam0->f_31 = 1136439/*__LIB_5__::func_510*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1136388/*func_3408*/;
+			uParam0->f_34 = 1136388/*__LIB_4__::func_25*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1136375/*func_3407*/;
+			uParam0->f_12 = 1136375/*__LIB_4__::func_24*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1136311/*func_3406*/;
+			uParam0->f_32 = 1136311/*__LIB_4__::func_23*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1136302/*func_3405*/;
+			uParam0->f_11 = 1136302/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1135862/*func_3401*/;
+			uParam0->f_33 = 1135862/*__LIB_5__::func_509*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1135853/*func_3400*/;
+			uParam0->f_11 = 1135853/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1135178/*func_3398*/;
+			uParam0->f_56 = 1135178/*__LIB_5__::func_508*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1135170/*func_3397*/;
+			uParam0->f_37 = 1135170/*__LIB_0__::func_467*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1135161/*func_3396*/;
+			uParam0->f_36 = 1135161/*__LIB_0__::func_114*/;
 			break;
 		case 79:
-			*uParam0 = 1135152/*func_3395*/;
+			*uParam0 = 1135152/*__LIB_0__::func_114*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1135090/*func_3394*/;
+			uParam0->f_2 = 1135090/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1135010/*func_3393*/;
+			uParam0->f_2 = 1135010/*__LIB_30__::func_479*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1134641/*func_3391*/;
+			uParam0->f_5 = 1134641/*__LIB_6__::func_734*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1134632/*func_3390*/;
+			uParam0->f_55 = 1134632/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1134621/*func_3389*/;
+			uParam0->f_17 = 1134621/*__LIB_3__::func_860*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1134610/*func_3388*/;
+			uParam0->f_17 = 1134610/*__LIB_3__::func_860*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1134601/*func_3387*/;
+			uParam0->f_3 = 1134601/*__LIB_0__::func_114*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1134592/*func_3386*/;
+			uParam0->f_3 = 1134592/*__LIB_0__::func_114*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1134570/*func_3385*/;
+			uParam0->f_53 = 1134570/*__LIB_4__::func_18*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1134561/*func_3384*/;
+			uParam0->f_4 = 1134561/*__LIB_0__::func_114*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1134549/*func_3383*/;
+			uParam0->f_24 = 1134549/*__LIB_4__::func_17*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1134541/*func_3382*/;
+			uParam0->f_26 = 1134541/*__LIB_0__::func_467*/;
 			break;
 		case 26:
-			uParam0->f_38 = 1134533/*func_3381*/;
+			uParam0->f_38 = 1134533/*__LIB_0__::func_467*/;
 			break;
 		case 25:
-			uParam0->f_23 = 1134525/*func_3380*/;
+			uParam0->f_23 = 1134525/*__LIB_0__::func_467*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1134517/*func_3379*/;
+			uParam0->f_25 = 1134517/*__LIB_0__::func_467*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1134509/*func_3378*/;
+			uParam0->f_24 = 1134509/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1134474/*func_3377*/;
+			uParam0->f_8 = 1134474/*__LIB_5__::func_226*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1134446/*func_3376*/;
+			uParam0->f_39 = 1134446/*__LIB_3__::func_775*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1134376/*func_3375*/;
+			uParam0->f_40 = 1134376/*__LIB_7__::func_304*/;
 			break;
 		case 76:
-			uParam0->f_13 = 1134353/*func_3374*/;
+			uParam0->f_13 = 1134353/*__LIB_4__::func_16*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1134257/*func_3373*/;
+			uParam0->f_41 = 1134257/*__LIB_4__::func_15*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1134212/*func_3372*/;
+			uParam0->f_58 = 1134212/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1131699/*func_3370*/;
+			uParam0->f_42 = 1131699/*__LIB_5__::func_507*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1131690/*func_3369*/;
+			uParam0->f_14 = 1131690/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1131681/*func_3368*/;
+			uParam0->f_14 = 1131681/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1131673/*func_3367*/;
+			uParam0->f_57 = 1131673/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1131662/*func_3366*/;
+			uParam0->f_13 = 1131662/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1131620/*func_3365*/;
+			uParam0->f_43 = 1131620/*__LIB_4__::func_13*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1131512/*func_3364*/;
+			uParam0->f_44 = 1131512/*__LIB_5__::func_802*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1131503/*func_3363*/;
+			uParam0->f_8 = 1131503/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 1131300/*func_3362*/;
+			*uParam0 = 1131300/*__LIB_6__::func_733*/;
 			break;
 		case 51:
-			*uParam0 = 1131291/*func_3361*/;
+			*uParam0 = 1131291/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1131280/*func_3360*/;
+			uParam0->f_15 = 1131280/*__LIB_4__::func_12*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1131257/*func_3359*/;
+			uParam0->f_13 = 1131257/*__LIB_4__::func_11*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1131249/*func_3358*/;
+			uParam0->f_45 = 1131249/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1131240/*func_3357*/;
+			uParam0->f_46 = 1131240/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1131227/*func_3356*/;
+			uParam0->f_11 = 1131227/*__LIB_4__::func_10*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1131185/*func_3355*/;
+			uParam0->f_13 = 1131185/*__LIB_4__::func_9*/;
 			break;
 		case 59:
-			*uParam0 = 1131176/*func_3354*/;
+			*uParam0 = 1131176/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 1131167/*func_3353*/;
+			*uParam0 = 1131167/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1131156/*func_3352*/;
+			uParam0->f_15 = 1131156/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1131145/*func_3351*/;
+			uParam0->f_13 = 1131145/*__LIB_3__::func_554*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1131136/*func_3350*/;
+			uParam0->f_11 = 1131136/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1131128/*func_3349*/;
+			uParam0->f_47 = 1131128/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1131120/*func_3348*/;
+			uParam0->f_21 = 1131120/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1130887/*func_3347*/;
+			uParam0->f_21 = 1130887/*__LIB_4__::func_8*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1130817/*func_3346*/;
+			uParam0->f_21 = 1130817/*__LIB_3__::func_757*/;
 			break;
 		case 68:
-			*uParam0 = 1130126/*func_3345*/;
+			*uParam0 = 1130126/*__LIB_5__::func_215*/;
 			break;
 		case 69:
-			*uParam0 = 1130117/*func_3344*/;
+			*uParam0 = 1130117/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1130105/*func_3343*/;
+			uParam0->f_48 = 1130105/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1130096/*func_3342*/;
+			uParam0->f_49 = 1130096/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1130084/*func_3341*/;
+			uParam0->f_50 = 1130084/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1130075/*func_3340*/;
+			uParam0->f_7 = 1130075/*__LIB_0__::func_114*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1130066/*func_3339*/;
+			uParam0->f_1 = 1130066/*__LIB_0__::func_109*/;
 			break;
 		case 85:
-			uParam0->f_1 = 1130057/*func_3338*/;
+			uParam0->f_1 = 1130057/*__LIB_0__::func_109*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1130048/*func_3337*/;
+			uParam0->f_1 = 1130048/*__LIB_0__::func_109*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1130039/*func_3336*/;
+			uParam0->f_1 = 1130039/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1130031/*func_3335*/;
+			uParam0->f_54 = 1130031/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1130022/*func_3334*/;
+			uParam0->f_1 = 1130022/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1130013/*func_3333*/;
+			uParam0->f_1 = 1130013/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 1130004/*func_3332*/;
+			uParam0->f_1 = 1130004/*__LIB_0__::func_109*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1129996/*func_3331*/;
+			uParam0->f_22 = 1129996/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1129988/*func_3330*/;
+			uParam0->f_22 = 1129988/*__LIB_0__::func_467*/;
 			break;
 		case 112:
-			uParam0->f_13 = 1129976/*func_3329*/;
+			uParam0->f_13 = 1129976/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 1129967/*func_3328*/;
+			uParam0->f_3 = 1129967/*__LIB_0__::func_114*/;
 			break;
 		case 114:
-			uParam0->f_16 = 900829/*func_2405*/;
+			uParam0->f_16 = 900829/*__LIB_5__::func_451*/;
 			break;
 		case 115:
-			uParam0->f_3 = 1129958/*func_3327*/;
+			uParam0->f_3 = 1129958/*__LIB_0__::func_114*/;
 			break;
 		case 116:
-			*uParam0 = 1129949/*func_3326*/;
+			*uParam0 = 1129949/*__LIB_0__::func_114*/;
 			break;
 		case 117:
-			uParam0->f_16 = 954471/*func_2609*/;
+			uParam0->f_16 = 954471/*__LIB_3__::func_800*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1129941/*func_3325*/;
+			uParam0->f_59 = 1129941/*__LIB_0__::func_467*/;
 			break;
 		case 124:
-			uParam0->f_1 = 1129932/*func_3324*/;
+			uParam0->f_1 = 1129932/*__LIB_0__::func_109*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1129924/*func_3323*/;
+			uParam0->f_19 = 1129924/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -23514,97 +23514,97 @@ void func_3416(var uParam0, int iParam1)//Position - 0x11587E
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1213795/*func_3631*/;
+			*uParam0 = 1213795/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1213781/*func_3630*/;
+			uParam0->f_35 = 1213781/*__LIB_7__::func_310*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1213625/*func_3628*/;
+			uParam0->f_30 = 1213625/*__LIB_5__::func_529*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1213149/*func_3624*/;
+			uParam0->f_31 = 1213149/*__LIB_5__::func_528*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1212950/*func_3623*/;
+			uParam0->f_34 = 1212950/*__LIB_4__::func_98*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1212828/*func_3622*/;
+			uParam0->f_12 = 1212828/*__LIB_4__::func_97*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1212818/*func_3621*/;
+			uParam0->f_11 = 1212818/*__LIB_4__::func_96*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1212681/*func_3620*/;
+			uParam0->f_18 = 1212681/*__LIB_4__::func_95*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1212637/*func_3619*/;
+			uParam0->f_9 = 1212637/*__LIB_7__::func_743*/;
 			break;
 		case 42:
-			uParam0->f_10 = 1212553/*func_3617*/;
+			uParam0->f_10 = 1212553/*__LIB_7__::func_797*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1212459/*func_3616*/;
+			uParam0->f_32 = 1212459/*__LIB_4__::func_94*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1212450/*func_3615*/;
+			uParam0->f_11 = 1212450/*__LIB_1__::func_804*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1211272/*func_3611*/;
+			uParam0->f_33 = 1211272/*__LIB_10__::func_538*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1211263/*func_3610*/;
+			uParam0->f_11 = 1211263/*__LIB_0__::func_114*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1204689/*func_3608*/;
+			uParam0->f_56 = 1204689/*__LIB_6__::func_645*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1204389/*func_3607*/;
+			uParam0->f_37 = 1204389/*__LIB_4__::func_92*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1204332/*func_3606*/;
+			uParam0->f_36 = 1204332/*__LIB_4__::func_91*/;
 			break;
 		case 79:
-			*uParam0 = 1204088/*func_3604*/;
+			*uParam0 = 1204088/*__LIB_5__::func_527*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1204026/*func_3603*/;
+			uParam0->f_2 = 1204026/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1203946/*func_3602*/;
+			uParam0->f_2 = 1203946/*__LIB_30__::func_480*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1203226/*func_3600*/;
+			uParam0->f_5 = 1203226/*__LIB_11__::func_904*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1200034/*func_3588*/;
+			uParam0->f_55 = 1200034/*__LIB_30__::func_828*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1197770/*func_3586*/;
+			uParam0->f_17 = 1197770/*__LIB_30__::func_434*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1197744/*func_3585*/;
+			uParam0->f_17 = 1197744/*__LIB_5__::func_971*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1197568/*func_3584*/;
+			uParam0->f_3 = 1197568/*__LIB_6__::func_643*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1197504/*func_3583*/;
+			uParam0->f_3 = 1197504/*__LIB_5__::func_798*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1197400/*func_3582*/;
+			uParam0->f_53 = 1197400/*__LIB_6__::func_77*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1197384/*func_3581*/;
+			uParam0->f_4 = 1197384/*__LIB_5__::func_526*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1197277/*func_3580*/;
+			uParam0->f_24 = 1197277/*__LIB_6__::func_642*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1197230/*func_3579*/;
+			uParam0->f_26 = 1197230/*__LIB_4__::func_89*/;
 			break;
 		case 24:
-			uParam0->f_26 = 1197193/*func_3578*/;
+			uParam0->f_26 = 1197193/*__LIB_4__::func_88*/;
 			break;
 		case 26:
 			uParam0->f_38 = 1195147/*func_3566*/;
@@ -23613,167 +23613,167 @@ void func_3416(var uParam0, int iParam1)//Position - 0x11587E
 			uParam0->f_23 = 1194825/*func_3564*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1193968/*func_3562*/;
+			uParam0->f_8 = 1193968/*__LIB_7__::func_308*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1193834/*func_3561*/;
+			uParam0->f_39 = 1193834/*__LIB_5__::func_257*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1193262/*func_3560*/;
+			uParam0->f_40 = 1193262/*__LIB_7__::func_307*/;
 			break;
 		case 32:
-			*uParam0 = 1193048/*func_3556*/;
+			*uParam0 = 1193048/*__LIB_12__::func_676*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1190562/*func_3554*/;
+			uParam0->f_41 = 1190562/*__LIB_5__::func_872*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1190505/*func_3553*/;
+			uParam0->f_58 = 1190505/*__LIB_4__::func_85*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1163539/*func_3550*/;
+			uParam0->f_42 = 1163539/*__LIB_5__::func_524*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1163530/*func_3549*/;
+			uParam0->f_14 = 1163530/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1163521/*func_3548*/;
+			uParam0->f_14 = 1163521/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1163513/*func_3547*/;
+			uParam0->f_57 = 1163513/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1163490/*func_3546*/;
+			uParam0->f_13 = 1163490/*__LIB_4__::func_82*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1163418/*func_3544*/;
+			uParam0->f_43 = 1163418/*__LIB_5__::func_523*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1163290/*func_3543*/;
+			uParam0->f_44 = 1163290/*__LIB_5__::func_871*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1163262/*func_3542*/;
+			uParam0->f_8 = 1163262/*__LIB_4__::func_80*/;
 			break;
 		case 50:
-			*uParam0 = 1162575/*func_3538*/;
+			*uParam0 = 1162575/*__LIB_7__::func_498*/;
 			break;
 		case 51:
-			*uParam0 = 1162413/*func_3537*/;
+			*uParam0 = 1162413/*__LIB_22__::func_281*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1162402/*func_3536*/;
+			uParam0->f_15 = 1162402/*__LIB_4__::func_76*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1162240/*func_3535*/;
+			uParam0->f_13 = 1162240/*__LIB_4__::func_75*/;
 			break;
 		case 54:
 			uParam0->f_45 = 1161754/*func_3529*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1161736/*func_3528*/;
+			uParam0->f_46 = 1161736/*__LIB_3__::func_763*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1161484/*func_3527*/;
+			uParam0->f_11 = 1161484/*__LIB_7__::func_414*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1161322/*func_3526*/;
+			uParam0->f_13 = 1161322/*__LIB_4__::func_73*/;
 			break;
 		case 59:
-			*uParam0 = 1160826/*func_3519*/;
+			*uParam0 = 1160826/*__LIB_7__::func_497*/;
 			break;
 		case 60:
-			*uParam0 = 1160811/*func_3518*/;
+			*uParam0 = 1160811/*__LIB_7__::func_306*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1160800/*func_3517*/;
+			uParam0->f_15 = 1160800/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1160638/*func_3516*/;
+			uParam0->f_13 = 1160638/*__LIB_4__::func_69*/;
 			break;
 		case 55:
-			uParam0->f_45 = 1160459/*func_3515*/;
+			uParam0->f_45 = 1160459/*__LIB_7__::func_305*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1160432/*func_3514*/;
+			uParam0->f_11 = 1160432/*__LIB_11__::func_650*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1158999/*func_3507*/;
+			uParam0->f_47 = 1158999/*__LIB_5__::func_970*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1157612/*func_3504*/;
+			uParam0->f_21 = 1157612/*__LIB_7__::func_539*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1157253/*func_3503*/;
+			uParam0->f_21 = 1157253/*__LIB_5__::func_254*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1157139/*func_3502*/;
+			uParam0->f_21 = 1157139/*__LIB_4__::func_64*/;
 			break;
 		case 68:
-			*uParam0 = 1156179/*func_3499*/;
+			*uParam0 = 1156179/*__LIB_7__::func_413*/;
 			break;
 		case 69:
-			*uParam0 = 1156170/*func_3498*/;
+			*uParam0 = 1156170/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1156158/*func_3497*/;
+			uParam0->f_48 = 1156158/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1155614/*func_3496*/;
+			uParam0->f_49 = 1155614/*__LIB_4__::func_62*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1155602/*func_3495*/;
+			uParam0->f_50 = 1155602/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1155414/*func_3494*/;
+			uParam0->f_7 = 1155414/*__LIB_5__::func_870*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1155405/*func_3493*/;
+			uParam0->f_1 = 1155405/*__LIB_0__::func_109*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1153819/*func_3490*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1152301/*func_3483*/;
+			uParam0->f_1 = 1152301/*__LIB_6__::func_418*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1152292/*func_3482*/;
+			uParam0->f_1 = 1152292/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1152284/*func_3481*/;
+			uParam0->f_54 = 1152284/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1152254/*func_3480*/;
+			uParam0->f_1 = 1152254/*__LIB_5__::func_519*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1151809/*func_3479*/;
+			uParam0->f_1 = 1151809/*__LIB_5__::func_518*/;
 			break;
 		case 98:
-			uParam0->f_1 = 1147320/*func_3445*/;
+			uParam0->f_1 = 1147320/*__LIB_30__::func_595*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1139430/*func_3430*/;
+			uParam0->f_22 = 1139430/*__LIB_7__::func_495*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1138489/*func_3424*/;
+			uParam0->f_22 = 1138489/*__LIB_12__::func_161*/;
 			break;
 		case 112:
-			uParam0->f_13 = 1138478/*func_3423*/;
+			uParam0->f_13 = 1138478/*__LIB_3__::func_554*/;
 			break;
 		case 113:
-			uParam0->f_3 = 1138469/*func_3422*/;
+			uParam0->f_3 = 1138469/*__LIB_0__::func_114*/;
 			break;
 		case 114:
-			uParam0->f_16 = 1138460/*func_3421*/;
+			uParam0->f_16 = 1138460/*__LIB_0__::func_114*/;
 			break;
 		case 117:
-			uParam0->f_16 = 1138451/*func_3420*/;
+			uParam0->f_16 = 1138451/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1138279/*func_3418*/;
+			uParam0->f_59 = 1138279/*__LIB_7__::func_783*/;
 			break;
 		case 76:
-			uParam0->f_13 = 1138256/*func_3417*/;
+			uParam0->f_13 = 1138256/*__LIB_4__::func_29*/;
 			break;
 	}
 }
@@ -24241,245 +24241,245 @@ void func_3632(var uParam0, int iParam1)//Position - 0x12856C
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1230022/*func_3741*/;
+			*uParam0 = 1230022/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1230013/*func_3740*/;
+			uParam0->f_35 = 1230013/*__LIB_0__::func_162*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1229945/*func_3738*/;
+			uParam0->f_30 = 1229945/*__LIB_5__::func_536*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1229499/*func_3735*/;
+			uParam0->f_31 = 1229499/*__LIB_5__::func_535*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1229394/*func_3734*/;
+			uParam0->f_34 = 1229394/*__LIB_4__::func_120*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1229381/*func_3733*/;
+			uParam0->f_12 = 1229381/*__LIB_4__::func_119*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1229317/*func_3732*/;
+			uParam0->f_32 = 1229317/*__LIB_4__::func_118*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1229308/*func_3731*/;
+			uParam0->f_11 = 1229308/*__LIB_1__::func_804*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1228847/*func_3726*/;
+			uParam0->f_33 = 1228847/*__LIB_5__::func_534*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1228838/*func_3725*/;
+			uParam0->f_11 = 1228838/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1228444/*func_3723*/;
+			uParam0->f_56 = 1228444/*__LIB_5__::func_533*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1228436/*func_3722*/;
+			uParam0->f_37 = 1228436/*__LIB_0__::func_467*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1228427/*func_3721*/;
+			uParam0->f_36 = 1228427/*__LIB_0__::func_114*/;
 			break;
 		case 79:
-			*uParam0 = 1228403/*func_3720*/;
+			*uParam0 = 1228403/*__LIB_5__::func_265*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1228341/*func_3719*/;
+			uParam0->f_2 = 1228341/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1228262/*func_3718*/;
+			uParam0->f_2 = 1228262/*__LIB_30__::func_481*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1227965/*func_3717*/;
+			uParam0->f_5 = 1227965/*__LIB_6__::func_738*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1227956/*func_3716*/;
+			uParam0->f_55 = 1227956/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1227945/*func_3715*/;
+			uParam0->f_17 = 1227945/*__LIB_3__::func_860*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1227919/*func_3714*/;
+			uParam0->f_17 = 1227919/*__LIB_5__::func_973*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1227910/*func_3713*/;
+			uParam0->f_3 = 1227910/*__LIB_0__::func_114*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1227901/*func_3712*/;
+			uParam0->f_3 = 1227901/*__LIB_0__::func_114*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1227879/*func_3711*/;
+			uParam0->f_53 = 1227879/*__LIB_4__::func_18*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1227870/*func_3710*/;
+			uParam0->f_4 = 1227870/*__LIB_0__::func_114*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1227862/*func_3709*/;
+			uParam0->f_24 = 1227862/*__LIB_0__::func_467*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1227854/*func_3708*/;
+			uParam0->f_26 = 1227854/*__LIB_0__::func_467*/;
 			break;
 		case 26:
-			uParam0->f_38 = 1227846/*func_3707*/;
+			uParam0->f_38 = 1227846/*__LIB_0__::func_467*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1227514/*func_3704*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1227506/*func_3703*/;
+			uParam0->f_25 = 1227506/*__LIB_0__::func_467*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1227498/*func_3702*/;
+			uParam0->f_24 = 1227498/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1227177/*func_3699*/;
+			uParam0->f_8 = 1227177/*__LIB_18__::func_490*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1227149/*func_3698*/;
+			uParam0->f_39 = 1227149/*__LIB_3__::func_775*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1227080/*func_3697*/;
+			uParam0->f_40 = 1227080/*__LIB_7__::func_303*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1223348/*func_3696*/;
+			uParam0->f_41 = 1223348/*__LIB_5__::func_264*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1223303/*func_3695*/;
+			uParam0->f_58 = 1223303/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1220136/*func_3692*/;
+			uParam0->f_42 = 1220136/*__LIB_5__::func_532*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1220127/*func_3691*/;
+			uParam0->f_14 = 1220127/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1220118/*func_3690*/;
+			uParam0->f_14 = 1220118/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1220110/*func_3689*/;
+			uParam0->f_57 = 1220110/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1220099/*func_3688*/;
+			uParam0->f_13 = 1220099/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1219986/*func_3687*/;
+			uParam0->f_43 = 1219986/*__LIB_4__::func_113*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1218863/*func_3684*/;
+			uParam0->f_44 = 1218863/*__LIB_7__::func_418*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1218854/*func_3683*/;
+			uParam0->f_8 = 1218854/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 1218845/*func_3682*/;
+			*uParam0 = 1218845/*__LIB_0__::func_114*/;
 			break;
 		case 51:
-			*uParam0 = 1218836/*func_3681*/;
+			*uParam0 = 1218836/*__LIB_0__::func_114*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1218825/*func_3680*/;
+			uParam0->f_15 = 1218825/*__LIB_4__::func_112*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1218814/*func_3679*/;
+			uParam0->f_13 = 1218814/*__LIB_3__::func_554*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1218806/*func_3678*/;
+			uParam0->f_45 = 1218806/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1218797/*func_3677*/;
+			uParam0->f_46 = 1218797/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1218788/*func_3676*/;
+			uParam0->f_11 = 1218788/*__LIB_1__::func_804*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1218746/*func_3675*/;
+			uParam0->f_13 = 1218746/*__LIB_4__::func_111*/;
 			break;
 		case 59:
-			*uParam0 = 1218737/*func_3674*/;
+			*uParam0 = 1218737/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 1218728/*func_3673*/;
+			*uParam0 = 1218728/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1218717/*func_3672*/;
+			uParam0->f_15 = 1218717/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1218706/*func_3671*/;
+			uParam0->f_13 = 1218706/*__LIB_3__::func_554*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1218697/*func_3670*/;
+			uParam0->f_11 = 1218697/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1218689/*func_3669*/;
+			uParam0->f_47 = 1218689/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1218681/*func_3668*/;
+			uParam0->f_21 = 1218681/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1218378/*func_3667*/;
+			uParam0->f_21 = 1218378/*__LIB_5__::func_263*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1218308/*func_3666*/;
+			uParam0->f_21 = 1218308/*__LIB_3__::func_757*/;
 			break;
 		case 68:
-			*uParam0 = 1217659/*func_3665*/;
+			*uParam0 = 1217659/*__LIB_5__::func_262*/;
 			break;
 		case 69:
-			*uParam0 = 1217650/*func_3664*/;
+			*uParam0 = 1217650/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1217642/*func_3663*/;
+			uParam0->f_48 = 1217642/*__LIB_0__::func_467*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1217633/*func_3662*/;
+			uParam0->f_49 = 1217633/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1217621/*func_3661*/;
+			uParam0->f_50 = 1217621/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1217187/*func_3660*/;
+			uParam0->f_7 = 1217187/*__LIB_7__::func_744*/;
 			break;
 		case 18:
-			uParam0->f_8 = 1217162/*func_3659*/;
+			uParam0->f_8 = 1217162/*__LIB_4__::func_110*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1217145/*func_3658*/;
+			uParam0->f_1 = 1217145/*__LIB_5__::func_874*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1216603/*func_3654*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1215560/*func_3645*/;
+			uParam0->f_1 = 1215560/*__LIB_6__::func_799*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1215551/*func_3644*/;
+			uParam0->f_1 = 1215551/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1215543/*func_3643*/;
+			uParam0->f_54 = 1215543/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1215534/*func_3642*/;
+			uParam0->f_1 = 1215534/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1215525/*func_3641*/;
+			uParam0->f_1 = 1215525/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 1215516/*func_3640*/;
+			uParam0->f_1 = 1215516/*__LIB_0__::func_109*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1215508/*func_3639*/;
+			uParam0->f_22 = 1215508/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1215500/*func_3638*/;
+			uParam0->f_22 = 1215500/*__LIB_0__::func_467*/;
 			break;
 		case 112:
-			uParam0->f_13 = 1215488/*func_3637*/;
+			uParam0->f_13 = 1215488/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 1215479/*func_3636*/;
+			uParam0->f_3 = 1215479/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1215176/*func_3633*/;
+			uParam0->f_59 = 1215176/*__LIB_7__::func_798*/;
 			break;
 	}
 }
@@ -24613,97 +24613,97 @@ void func_3742(var uParam0, int iParam1)//Position - 0x12C4CF
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1265117/*func_3919*/;
+			*uParam0 = 1265117/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1265094/*func_3918*/;
+			uParam0->f_35 = 1265094/*__LIB_6__::func_469*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1264964/*func_3916*/;
+			uParam0->f_30 = 1264964/*__LIB_7__::func_321*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1264299/*func_3912*/;
+			uParam0->f_31 = 1264299/*__LIB_7__::func_320*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1264036/*func_3911*/;
+			uParam0->f_34 = 1264036/*__LIB_4__::func_169*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1264023/*func_3910*/;
+			uParam0->f_12 = 1264023/*__LIB_4__::func_168*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1264013/*func_3909*/;
+			uParam0->f_11 = 1264013/*__LIB_4__::func_167*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1263815/*func_3908*/;
+			uParam0->f_18 = 1263815/*__LIB_6__::func_468*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1263767/*func_3907*/;
+			uParam0->f_9 = 1263767/*__LIB_15__::func_639*/;
 			break;
 		case 42:
-			uParam0->f_10 = 1263731/*func_3906*/;
+			uParam0->f_10 = 1263731/*__LIB_6__::func_893*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1263616/*func_3905*/;
+			uParam0->f_32 = 1263616/*__LIB_7__::func_229*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1263607/*func_3904*/;
+			uParam0->f_11 = 1263607/*__LIB_3__::func_729*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1262677/*func_3898*/;
+			uParam0->f_33 = 1262677/*__LIB_30__::func_638*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1262668/*func_3897*/;
+			uParam0->f_11 = 1262668/*__LIB_3__::func_603*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1261506/*func_3895*/;
+			uParam0->f_56 = 1261506/*__LIB_30__::func_570*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1261462/*func_3894*/;
+			uParam0->f_37 = 1261462/*__LIB_4__::func_163*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1261439/*func_3893*/;
+			uParam0->f_36 = 1261439/*__LIB_4__::func_162*/;
 			break;
 		case 79:
-			*uParam0 = 1261415/*func_3892*/;
+			*uParam0 = 1261415/*__LIB_5__::func_265*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1261353/*func_3891*/;
+			uParam0->f_2 = 1261353/*__LIB_30__::func_466*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1261274/*func_3890*/;
+			uParam0->f_2 = 1261274/*__LIB_30__::func_482*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1260600/*func_3885*/;
+			uParam0->f_5 = 1260600/*__LIB_30__::func_579*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1257318/*func_3872*/;
+			uParam0->f_55 = 1257318/*__LIB_30__::func_829*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1256381/*func_3871*/;
+			uParam0->f_17 = 1256381/*__LIB_30__::func_435*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1256336/*func_3870*/;
+			uParam0->f_17 = 1256336/*__LIB_7__::func_318*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1256163/*func_3869*/;
+			uParam0->f_3 = 1256163/*__LIB_6__::func_649*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1256078/*func_3868*/;
+			uParam0->f_3 = 1256078/*__LIB_6__::func_467*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1255938/*func_3867*/;
+			uParam0->f_53 = 1255938/*__LIB_6__::func_466*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1255922/*func_3866*/;
+			uParam0->f_4 = 1255922/*__LIB_5__::func_464*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1255815/*func_3865*/;
+			uParam0->f_24 = 1255815/*__LIB_6__::func_648*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1255768/*func_3864*/;
+			uParam0->f_26 = 1255768/*__LIB_4__::func_159*/;
 			break;
 		case 24:
-			uParam0->f_26 = 1255731/*func_3863*/;
+			uParam0->f_26 = 1255731/*__LIB_4__::func_88*/;
 			break;
 		case 26:
 			uParam0->f_38 = 1254320/*func_3850*/;
@@ -24712,185 +24712,185 @@ void func_3742(var uParam0, int iParam1)//Position - 0x12C4CF
 			uParam0->f_23 = 1253954/*func_3847*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1253140/*func_3843*/;
+			uParam0->f_25 = 1253140/*__LIB_6__::func_740*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1253099/*func_3842*/;
+			uParam0->f_24 = 1253099/*__LIB_4__::func_152*/;
 			break;
 		case 29:
-			uParam0->f_28 = 1252864/*func_3838*/;
+			uParam0->f_28 = 1252864/*__LIB_5__::func_876*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1252539/*func_3834*/;
+			uParam0->f_8 = 1252539/*__LIB_18__::func_491*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1252342/*func_3833*/;
+			uParam0->f_39 = 1252342/*__LIB_7__::func_228*/;
 			break;
 		case 43:
-			uParam0->f_8 = 1252236/*func_3832*/;
+			uParam0->f_8 = 1252236/*__LIB_7__::func_993*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1251920/*func_3831*/;
+			uParam0->f_40 = 1251920/*__LIB_7__::func_317*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1246928/*func_3828*/;
+			uParam0->f_41 = 1246928/*__LIB_7__::func_316*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1246871/*func_3827*/;
+			uParam0->f_58 = 1246871/*__LIB_4__::func_85*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1240666/*func_3823*/;
+			uParam0->f_42 = 1240666/*__LIB_7__::func_623*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1240657/*func_3822*/;
+			uParam0->f_14 = 1240657/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1240648/*func_3821*/;
+			uParam0->f_14 = 1240648/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1240640/*func_3820*/;
+			uParam0->f_57 = 1240640/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1240617/*func_3819*/;
+			uParam0->f_13 = 1240617/*__LIB_4__::func_146*/;
 			break;
 		case 82:
-			uParam0->f_19 = 1240604/*func_3818*/;
+			uParam0->f_19 = 1240604/*__LIB_5__::func_267*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1240301/*func_3815*/;
+			uParam0->f_43 = 1240301/*__LIB_7__::func_314*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1238138/*func_3810*/;
+			uParam0->f_44 = 1238138/*__LIB_30__::func_721*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1238090/*func_3809*/;
+			uParam0->f_8 = 1238090/*__LIB_7__::func_227*/;
 			break;
 		case 50:
-			*uParam0 = 1237898/*func_3807*/;
+			*uParam0 = 1237898/*__LIB_6__::func_739*/;
 			break;
 		case 51:
-			*uParam0 = 1237889/*func_3806*/;
+			*uParam0 = 1237889/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1237878/*func_3805*/;
+			uParam0->f_15 = 1237878/*__LIB_3__::func_647*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1237836/*func_3804*/;
+			uParam0->f_13 = 1237836/*__LIB_4__::func_141*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1237828/*func_3803*/;
+			uParam0->f_45 = 1237828/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1237819/*func_3802*/;
+			uParam0->f_46 = 1237819/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1237810/*func_3801*/;
+			uParam0->f_11 = 1237810/*__LIB_1__::func_804*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1237768/*func_3800*/;
+			uParam0->f_13 = 1237768/*__LIB_4__::func_140*/;
 			break;
 		case 59:
-			*uParam0 = 1237759/*func_3799*/;
+			*uParam0 = 1237759/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 1237750/*func_3798*/;
+			*uParam0 = 1237750/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1237739/*func_3797*/;
+			uParam0->f_15 = 1237739/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1237709/*func_3796*/;
+			uParam0->f_13 = 1237709/*__LIB_4__::func_139*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1237700/*func_3795*/;
+			uParam0->f_11 = 1237700/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1237692/*func_3794*/;
+			uParam0->f_47 = 1237692/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1236606/*func_3791*/;
+			uParam0->f_21 = 1236606/*__LIB_7__::func_540*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1236265/*func_3790*/;
+			uParam0->f_21 = 1236265/*__LIB_7__::func_312*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1236151/*func_3789*/;
+			uParam0->f_21 = 1236151/*__LIB_4__::func_64*/;
 			break;
 		case 68:
-			*uParam0 = 1235323/*func_3788*/;
+			*uParam0 = 1235323/*__LIB_7__::func_419*/;
 			break;
 		case 69:
-			*uParam0 = 1235314/*func_3787*/;
+			*uParam0 = 1235314/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1235302/*func_3786*/;
+			uParam0->f_48 = 1235302/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1235210/*func_3785*/;
+			uParam0->f_49 = 1235210/*__LIB_4__::func_138*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1235198/*func_3784*/;
+			uParam0->f_50 = 1235198/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1235010/*func_3783*/;
+			uParam0->f_7 = 1235010/*__LIB_5__::func_870*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1235001/*func_3782*/;
+			uParam0->f_1 = 1235001/*__LIB_0__::func_109*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1234987/*func_3781*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1234971/*func_3780*/;
+			uParam0->f_1 = 1234971/*__LIB_6__::func_799*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1234962/*func_3779*/;
+			uParam0->f_1 = 1234962/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1234954/*func_3778*/;
+			uParam0->f_54 = 1234954/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1234945/*func_3777*/;
+			uParam0->f_1 = 1234945/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1234502/*func_3773*/;
+			uParam0->f_1 = 1234502/*__LIB_6__::func_420*/;
 			break;
 		case 98:
 			uParam0->f_1 = 1233040/*func_3763*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1232161/*func_3758*/;
+			uParam0->f_22 = 1232161/*__LIB_6__::func_389*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1231984/*func_3755*/;
+			uParam0->f_22 = 1231984/*__LIB_5__::func_538*/;
 			break;
 		case 112:
-			uParam0->f_13 = 1231972/*func_3754*/;
+			uParam0->f_13 = 1231972/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 1231958/*func_3753*/;
+			uParam0->f_3 = 1231958/*__LIB_6__::func_465*/;
 			break;
 		case 114:
-			uParam0->f_16 = 900829/*func_2405*/;
+			uParam0->f_16 = 900829/*__LIB_5__::func_451*/;
 			break;
 		case 117:
-			uParam0->f_16 = 954471/*func_2609*/;
+			uParam0->f_16 = 954471/*__LIB_3__::func_800*/;
 			break;
 		case 118:
-			uParam0->f_11 = 1231949/*func_3752*/;
+			uParam0->f_11 = 1231949/*__LIB_3__::func_939*/;
 			break;
 		case 119:
-			uParam0->f_27 = 1231848/*func_3748*/;
+			uParam0->f_27 = 1231848/*__LIB_8__::func_25*/;
 			break;
 		case 120:
-			uParam0->f_19 = 1231823/*func_3746*/;
+			uParam0->f_19 = 1231823/*__LIB_5__::func_537*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1231651/*func_3744*/;
+			uParam0->f_59 = 1231651/*__LIB_7__::func_783*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1231624/*func_3743*/;
+			uParam0->f_19 = 1231624/*__LIB_4__::func_124*/;
 			break;
 	}
 }
@@ -25149,7 +25149,7 @@ void func_3853(var uParam0, var uParam1)//Position - 0x13249B
 		__LIB_5__::func_462();
 		if (iVar1[uParam0->f_4] != 0)
 		{
-			__LIB_30__::func_206(iVar1[uParam0->f_4]);
+			__LIB_30__::func_216(iVar1[uParam0->f_4]);
 		}
 	}
 	else if (uParam0->f_3)
@@ -25250,224 +25250,224 @@ void func_3920(var uParam0, int iParam1)//Position - 0x134DE6
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1294498/*func_4076*/;
+			*uParam0 = 1294498/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1294489/*func_4075*/;
+			uParam0->f_35 = 1294489/*__LIB_0__::func_162*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1294421/*func_4073*/;
+			uParam0->f_30 = 1294421/*__LIB_5__::func_557*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1294069/*func_4070*/;
+			uParam0->f_31 = 1294069/*__LIB_5__::func_556*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1293836/*func_4069*/;
+			uParam0->f_34 = 1293836/*__LIB_4__::func_211*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1293823/*func_4068*/;
+			uParam0->f_12 = 1293823/*__LIB_4__::func_210*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1293759/*func_4067*/;
+			uParam0->f_32 = 1293759/*__LIB_4__::func_209*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1293750/*func_4066*/;
+			uParam0->f_11 = 1293750/*__LIB_3__::func_939*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1293025/*func_4062*/;
+			uParam0->f_33 = 1293025/*__LIB_7__::func_324*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1293016/*func_4061*/;
+			uParam0->f_11 = 1293016/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1291891/*func_4060*/;
+			uParam0->f_56 = 1291891/*__LIB_5__::func_285*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1291883/*func_4059*/;
+			uParam0->f_37 = 1291883/*__LIB_0__::func_467*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1291874/*func_4058*/;
+			uParam0->f_36 = 1291874/*__LIB_0__::func_114*/;
 			break;
 		case 79:
-			*uParam0 = 1291850/*func_4057*/;
+			*uParam0 = 1291850/*__LIB_5__::func_265*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1291778/*func_4056*/;
+			uParam0->f_2 = 1291778/*__LIB_30__::func_468*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1291689/*func_4055*/;
+			uParam0->f_2 = 1291689/*__LIB_30__::func_483*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1291329/*func_4054*/;
+			uParam0->f_5 = 1291329/*__LIB_6__::func_748*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1291190/*func_4052*/;
+			uParam0->f_55 = 1291190/*__LIB_8__::func_218*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1290515/*func_4051*/;
+			uParam0->f_17 = 1290515/*__LIB_24__::func_147*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1290489/*func_4050*/;
+			uParam0->f_17 = 1290489/*__LIB_5__::func_976*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1290480/*func_4049*/;
+			uParam0->f_3 = 1290480/*__LIB_0__::func_114*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1290432/*func_4048*/;
+			uParam0->f_3 = 1290432/*__LIB_5__::func_227*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1290377/*func_4047*/;
+			uParam0->f_53 = 1290377/*__LIB_6__::func_472*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1290264/*func_4046*/;
+			uParam0->f_4 = 1290264/*__LIB_5__::func_555*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1290256/*func_4045*/;
+			uParam0->f_24 = 1290256/*__LIB_0__::func_467*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1290248/*func_4044*/;
+			uParam0->f_26 = 1290248/*__LIB_0__::func_467*/;
 			break;
 		case 26:
 			uParam0->f_38 = 1287691/*func_4028*/;
 			break;
 		case 25:
-			uParam0->f_23 = 1287683/*func_4027*/;
+			uParam0->f_23 = 1287683/*__LIB_0__::func_467*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1287675/*func_4026*/;
+			uParam0->f_25 = 1287675/*__LIB_0__::func_467*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1287667/*func_4025*/;
+			uParam0->f_24 = 1287667/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1287386/*func_4024*/;
+			uParam0->f_8 = 1287386/*__LIB_18__::func_392*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1287358/*func_4023*/;
+			uParam0->f_39 = 1287358/*__LIB_3__::func_775*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1287289/*func_4022*/;
+			uParam0->f_40 = 1287289/*__LIB_7__::func_303*/;
 			break;
 		case 76:
-			uParam0->f_13 = 1287266/*func_4021*/;
+			uParam0->f_13 = 1287266/*__LIB_4__::func_204*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1284712/*func_4018*/;
+			uParam0->f_41 = 1284712/*__LIB_5__::func_881*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1284667/*func_4017*/;
+			uParam0->f_58 = 1284667/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1284571/*func_4016*/;
+			uParam0->f_42 = 1284571/*__LIB_5__::func_283*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1284562/*func_4015*/;
+			uParam0->f_14 = 1284562/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1284553/*func_4014*/;
+			uParam0->f_14 = 1284553/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1284545/*func_4013*/;
+			uParam0->f_57 = 1284545/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1284534/*func_4012*/;
+			uParam0->f_13 = 1284534/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1284421/*func_4011*/;
+			uParam0->f_43 = 1284421/*__LIB_4__::func_202*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1283574/*func_4010*/;
+			uParam0->f_44 = 1283574/*__LIB_30__::func_618*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1283565/*func_4009*/;
+			uParam0->f_8 = 1283565/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 1283352/*func_4008*/;
+			*uParam0 = 1283352/*__LIB_6__::func_746*/;
 			break;
 		case 51:
-			*uParam0 = 1283343/*func_4007*/;
+			*uParam0 = 1283343/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1283332/*func_4006*/;
+			uParam0->f_15 = 1283332/*__LIB_4__::func_201*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1283290/*func_4005*/;
+			uParam0->f_13 = 1283290/*__LIB_4__::func_200*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1283251/*func_4004*/;
+			uParam0->f_45 = 1283251/*__LIB_4__::func_199*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1283242/*func_4003*/;
+			uParam0->f_46 = 1283242/*__LIB_3__::func_729*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1283200/*func_4001*/;
+			uParam0->f_11 = 1283200/*__LIB_5__::func_553*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1283158/*func_4000*/;
+			uParam0->f_13 = 1283158/*__LIB_4__::func_197*/;
 			break;
 		case 59:
-			*uParam0 = 1283149/*func_3999*/;
+			*uParam0 = 1283149/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 1283140/*func_3998*/;
+			*uParam0 = 1283140/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1283129/*func_3997*/;
+			uParam0->f_15 = 1283129/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1283118/*func_3996*/;
+			uParam0->f_13 = 1283118/*__LIB_3__::func_554*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1283109/*func_3995*/;
+			uParam0->f_11 = 1283109/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1283023/*func_3993*/;
+			uParam0->f_47 = 1283023/*__LIB_5__::func_552*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1283015/*func_3992*/;
+			uParam0->f_21 = 1283015/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1282674/*func_3991*/;
+			uParam0->f_21 = 1282674/*__LIB_5__::func_282*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1282604/*func_3990*/;
+			uParam0->f_21 = 1282604/*__LIB_3__::func_757*/;
 			break;
 		case 68:
-			*uParam0 = 1281907/*func_3989*/;
+			*uParam0 = 1281907/*__LIB_5__::func_281*/;
 			break;
 		case 69:
-			*uParam0 = 1281898/*func_3988*/;
+			*uParam0 = 1281898/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1281825/*func_3987*/;
+			uParam0->f_48 = 1281825/*__LIB_4__::func_195*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1281816/*func_3986*/;
+			uParam0->f_49 = 1281816/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1281804/*func_3985*/;
+			uParam0->f_50 = 1281804/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1281795/*func_3984*/;
+			uParam0->f_7 = 1281795/*__LIB_0__::func_114*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1281268/*func_3981*/;
+			uParam0->f_1 = 1281268/*__LIB_6__::func_745*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1279712/*func_3978*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1276479/*func_3965*/;
+			uParam0->f_1 = 1276479/*__LIB_7__::func_843*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1276464/*func_3964*/;
+			uParam0->f_1 = 1276464/*__LIB_5__::func_803*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1276102/*func_3962*/;
+			uParam0->f_54 = 1276102/*__LIB_5__::func_880*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1275811/*func_3959*/;
+			uParam0->f_1 = 1275811/*__LIB_6__::func_744*/;
 			break;
 		case 97:
 			uParam0->f_1 = 1275304/*func_3957*/;
@@ -25476,46 +25476,46 @@ void func_3920(var uParam0, int iParam1)//Position - 0x134DE6
 			uParam0->f_1 = 1273670/*func_3955*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1273392/*func_3954*/;
+			uParam0->f_22 = 1273392/*__LIB_6__::func_317*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1272917/*func_3952*/;
+			uParam0->f_22 = 1272917/*__LIB_11__::func_956*/;
 			break;
 		case 112:
-			uParam0->f_13 = 1272905/*func_3951*/;
+			uParam0->f_13 = 1272905/*__LIB_5__::func_214*/;
 			break;
 		case 113:
-			uParam0->f_3 = 1272896/*func_3950*/;
+			uParam0->f_3 = 1272896/*__LIB_0__::func_114*/;
 			break;
 		case 114:
-			uParam0->f_16 = 900829/*func_2405*/;
+			uParam0->f_16 = 900829/*__LIB_5__::func_451*/;
 			break;
 		case 115:
-			uParam0->f_3 = 1272785/*func_3948*/;
+			uParam0->f_3 = 1272785/*__LIB_6__::func_743*/;
 			break;
 		case 116:
-			*uParam0 = 1272737/*func_3947*/;
+			*uParam0 = 1272737/*__LIB_6__::func_471*/;
 			break;
 		case 117:
-			uParam0->f_16 = 954471/*func_2609*/;
+			uParam0->f_16 = 954471/*__LIB_3__::func_800*/;
 			break;
 		case 118:
-			uParam0->f_11 = 1231949/*func_3752*/;
+			uParam0->f_11 = 1231949/*__LIB_3__::func_939*/;
 			break;
 		case 119:
-			uParam0->f_27 = 1231848/*func_3748*/;
+			uParam0->f_27 = 1231848/*__LIB_8__::func_25*/;
 			break;
 		case 120:
-			uParam0->f_19 = 1231823/*func_3746*/;
+			uParam0->f_19 = 1231823/*__LIB_5__::func_537*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1272729/*func_3946*/;
+			uParam0->f_59 = 1272729/*__LIB_0__::func_467*/;
 			break;
 		case 124:
 			uParam0->f_1 = 1266706/*func_3922*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1266650/*func_3921*/;
+			uParam0->f_19 = 1266650/*__LIB_4__::func_175*/;
 			break;
 	}
 }
@@ -25532,7 +25532,7 @@ int func_3922(int iParam0, int* iParam1)//Position - 0x135412
 	{
 		if (iParam1->f_258 > 0)
 		{
-			__LIB_30__::func_659(iParam1);
+			__LIB_30__::func_669(iParam1);
 		}
 		return 0;
 	}
@@ -25603,7 +25603,7 @@ int func_3922(int iParam0, int* iParam1)//Position - 0x135412
 				__LIB_7__::func_843(iParam0, iParam1);
 				if (__LIB_3__::func_630(&(Global_1946250.f_3638), 0))
 				{
-					__LIB_19__::func_82(&iParam0);
+					__LIB_19__::func_92(&iParam0);
 					MISC::SET_BIT(&(Global_1946250.f_6), 26);
 					__LIB_4__::func_181(iParam1, 4);
 				}
@@ -25611,7 +25611,7 @@ int func_3922(int iParam0, int* iParam1)//Position - 0x135412
 			else
 			{
 				__LIB_6__::func_741(iParam1);
-				__LIB_19__::func_82(&iParam0);
+				__LIB_19__::func_92(&iParam0);
 				MISC::SET_BIT(&(Global_1946250.f_6), 26);
 				__LIB_4__::func_181(iParam1, 4);
 			}
@@ -25634,12 +25634,12 @@ int func_3922(int iParam0, int* iParam1)//Position - 0x135412
 				__LIB_12__::func_165(&(Global_1946250.f_3638), 0, 1);
 				if (__LIB_7__::func_843(iParam0, iParam1) && BitTest(Global_1946250.f_6, 27))
 				{
-					__LIB_30__::func_659(iParam1);
+					__LIB_30__::func_669(iParam1);
 				}
 			}
 			else if (__LIB_6__::func_741(iParam1) && BitTest(Global_1946250.f_6, 27))
 			{
-				__LIB_30__::func_659(iParam1);
+				__LIB_30__::func_669(iParam1);
 			}
 			break;
 	}
@@ -26050,12 +26050,12 @@ void func_4028(var uParam0, var uParam1)//Position - 0x13A60B
 			{
 				if (__LIB_1__::func_744(PLAYER::PLAYER_ID()))
 				{
-					__LIB_30__::func_207(1, *uParam0);
+					__LIB_30__::func_217(1, *uParam0);
 				}
 			}
 			if (__LIB_1__::func_744(PLAYER::PLAYER_ID()))
 			{
-				__LIB_30__::func_207(1, *uParam0);
+				__LIB_30__::func_217(1, *uParam0);
 			}
 			uParam1->f_8 = 1;
 			uParam1->f_6 = 1;
@@ -26179,7 +26179,7 @@ void func_4029(var uParam0, var uParam1)//Position - 0x13A749
 			}
 			if (iVar5[uParam0->f_4] != 0)
 			{
-				__LIB_30__::func_207(iVar5[uParam0->f_4], 123);
+				__LIB_30__::func_217(iVar5[uParam0->f_4], 123);
 			}
 		}
 		else if (__LIB_3__::func_785() == 5)
@@ -26190,7 +26190,7 @@ void func_4029(var uParam0, var uParam1)//Position - 0x13A749
 			__LIB_4__::func_151(*uParam0, 146);
 			if (iVar5[uParam0->f_4] != 0)
 			{
-				__LIB_30__::func_207(iVar5[uParam0->f_4], 146);
+				__LIB_30__::func_217(iVar5[uParam0->f_4], 146);
 			}
 		}
 		else
@@ -26207,7 +26207,7 @@ void func_4029(var uParam0, var uParam1)//Position - 0x13A749
 			}
 			if (iVar5[uParam0->f_4] != 0)
 			{
-				__LIB_30__::func_207(iVar5[uParam0->f_4], 124);
+				__LIB_30__::func_217(iVar5[uParam0->f_4], 124);
 			}
 		}
 	}
@@ -26396,94 +26396,94 @@ void func_4077(var uParam0, int iParam1)//Position - 0x13C0AB
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1330078/*func_4243*/;
+			*uParam0 = 1330078/*__LIB_0__::func_109*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1330064/*func_4242*/;
+			uParam0->f_35 = 1330064/*__LIB_7__::func_328*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1329965/*func_4241*/;
+			uParam0->f_30 = 1329965/*__LIB_7__::func_233*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1328903/*func_4237*/;
+			uParam0->f_31 = 1328903/*__LIB_7__::func_327*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1328749/*func_4236*/;
+			uParam0->f_34 = 1328749/*__LIB_4__::func_265*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1328696/*func_4234*/;
+			uParam0->f_12 = 1328696/*__LIB_5__::func_564*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1328641/*func_4233*/;
+			uParam0->f_11 = 1328641/*__LIB_6__::func_476*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1328523/*func_4232*/;
+			uParam0->f_18 = 1328523/*__LIB_4__::func_262*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1328391/*func_4228*/;
+			uParam0->f_9 = 1328391/*__LIB_5__::func_981*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1328276/*func_4227*/;
+			uParam0->f_32 = 1328276/*__LIB_7__::func_232*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1328266/*func_4226*/;
+			uParam0->f_11 = 1328266/*__LIB_4__::func_261*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1327082/*func_4221*/;
+			uParam0->f_33 = 1327082/*__LIB_7__::func_326*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1327073/*func_4220*/;
+			uParam0->f_11 = 1327073/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1325743/*func_4219*/;
+			uParam0->f_56 = 1325743/*__LIB_30__::func_572*/;
 			break;
 		case 8:
-			uParam0->f_37 = 1325699/*func_4218*/;
+			uParam0->f_37 = 1325699/*__LIB_4__::func_258*/;
 			break;
 		case 7:
-			uParam0->f_36 = 1325676/*func_4217*/;
+			uParam0->f_36 = 1325676/*__LIB_4__::func_162*/;
 			break;
 		case 79:
-			*uParam0 = 1325652/*func_4216*/;
+			*uParam0 = 1325652/*__LIB_5__::func_265*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1325589/*func_4215*/;
+			uParam0->f_2 = 1325589/*__LIB_30__::func_469*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1325509/*func_4214*/;
+			uParam0->f_2 = 1325509/*__LIB_30__::func_484*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1324866/*func_4210*/;
+			uParam0->f_5 = 1324866/*__LIB_30__::func_580*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1321726/*func_4197*/;
+			uParam0->f_55 = 1321726/*__LIB_30__::func_830*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1321022/*func_4196*/;
+			uParam0->f_17 = 1321022/*__LIB_22__::func_443*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1320996/*func_4195*/;
+			uParam0->f_17 = 1320996/*__LIB_5__::func_979*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1320817/*func_4194*/;
+			uParam0->f_3 = 1320817/*__LIB_6__::func_658*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1320753/*func_4193*/;
+			uParam0->f_3 = 1320753/*__LIB_5__::func_798*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1320539/*func_4192*/;
+			uParam0->f_53 = 1320539/*__LIB_11__::func_905*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1320523/*func_4191*/;
+			uParam0->f_4 = 1320523/*__LIB_5__::func_562*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1320416/*func_4190*/;
+			uParam0->f_24 = 1320416/*__LIB_6__::func_657*/;
 			break;
 		case 23:
-			uParam0->f_26 = 1320369/*func_4189*/;
+			uParam0->f_26 = 1320369/*__LIB_4__::func_256*/;
 			break;
 		case 24:
-			uParam0->f_26 = 1320332/*func_4188*/;
+			uParam0->f_26 = 1320332/*__LIB_4__::func_255*/;
 			break;
 		case 26:
 			uParam0->f_38 = 1319502/*func_4181*/;
@@ -26492,158 +26492,158 @@ void func_4077(var uParam0, int iParam1)//Position - 0x13C0AB
 			uParam0->f_23 = 1319136/*func_4178*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1318754/*func_4176*/;
+			uParam0->f_25 = 1318754/*__LIB_5__::func_885*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1318703/*func_4175*/;
+			uParam0->f_24 = 1318703/*__LIB_4__::func_250*/;
 			break;
 		case 29:
-			uParam0->f_28 = 1318695/*func_4174*/;
+			uParam0->f_28 = 1318695/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1318458/*func_4170*/;
+			uParam0->f_8 = 1318458/*__LIB_7__::func_427*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1318337/*func_4169*/;
+			uParam0->f_39 = 1318337/*__LIB_5__::func_296*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1317917/*func_4168*/;
+			uParam0->f_40 = 1317917/*__LIB_7__::func_325*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1306619/*func_4154*/;
+			uParam0->f_41 = 1306619/*__LIB_7__::func_502*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1306574/*func_4153*/;
+			uParam0->f_58 = 1306574/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1303487/*func_4150*/;
+			uParam0->f_42 = 1303487/*__LIB_5__::func_559*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1303478/*func_4149*/;
+			uParam0->f_14 = 1303478/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1303469/*func_4148*/;
+			uParam0->f_14 = 1303469/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1303461/*func_4147*/;
+			uParam0->f_57 = 1303461/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1303412/*func_4146*/;
+			uParam0->f_13 = 1303412/*__LIB_7__::func_230*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1303330/*func_4145*/;
+			uParam0->f_43 = 1303330/*__LIB_4__::func_243*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1302566/*func_4138*/;
+			uParam0->f_44 = 1302566/*__LIB_7__::func_426*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1302519/*func_4137*/;
+			uParam0->f_8 = 1302519/*__LIB_4__::func_237*/;
 			break;
 		case 50:
-			*uParam0 = 1302460/*func_4136*/;
+			*uParam0 = 1302460/*__LIB_6__::func_749*/;
 			break;
 		case 51:
-			*uParam0 = 1302228/*func_4133*/;
+			*uParam0 = 1302228/*__LIB_22__::func_282*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1302217/*func_4132*/;
+			uParam0->f_15 = 1302217/*__LIB_4__::func_234*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1302175/*func_4131*/;
+			uParam0->f_13 = 1302175/*__LIB_4__::func_233*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1302167/*func_4130*/;
+			uParam0->f_45 = 1302167/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1302158/*func_4129*/;
+			uParam0->f_46 = 1302158/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1302149/*func_4128*/;
+			uParam0->f_11 = 1302149/*__LIB_1__::func_804*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1302107/*func_4127*/;
+			uParam0->f_13 = 1302107/*__LIB_4__::func_232*/;
 			break;
 		case 59:
-			*uParam0 = 1302098/*func_4126*/;
+			*uParam0 = 1302098/*__LIB_0__::func_114*/;
 			break;
 		case 60:
-			*uParam0 = 1302089/*func_4125*/;
+			*uParam0 = 1302089/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1302078/*func_4124*/;
+			uParam0->f_15 = 1302078/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1302036/*func_4123*/;
+			uParam0->f_13 = 1302036/*__LIB_4__::func_231*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1302027/*func_4122*/;
+			uParam0->f_11 = 1302027/*__LIB_1__::func_804*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1302019/*func_4121*/;
+			uParam0->f_47 = 1302019/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1300957/*func_4118*/;
+			uParam0->f_21 = 1300957/*__LIB_7__::func_542*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1300654/*func_4117*/;
+			uParam0->f_21 = 1300654/*__LIB_5__::func_263*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1300540/*func_4116*/;
+			uParam0->f_21 = 1300540/*__LIB_4__::func_64*/;
 			break;
 		case 68:
-			*uParam0 = 1299697/*func_4115*/;
+			*uParam0 = 1299697/*__LIB_7__::func_425*/;
 			break;
 		case 69:
-			*uParam0 = 1299688/*func_4114*/;
+			*uParam0 = 1299688/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1299615/*func_4113*/;
+			uParam0->f_48 = 1299615/*__LIB_4__::func_230*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1299606/*func_4112*/;
+			uParam0->f_49 = 1299606/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1299594/*func_4111*/;
+			uParam0->f_50 = 1299594/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1299392/*func_4110*/;
+			uParam0->f_7 = 1299392/*__LIB_5__::func_884*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1299383/*func_4109*/;
+			uParam0->f_1 = 1299383/*__LIB_0__::func_109*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1297650/*func_4096*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1296195/*func_4088*/;
+			uParam0->f_1 = 1296195/*__LIB_6__::func_421*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1296186/*func_4087*/;
+			uParam0->f_1 = 1296186/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1296178/*func_4086*/;
+			uParam0->f_54 = 1296178/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1296169/*func_4085*/;
+			uParam0->f_1 = 1296169/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1296160/*func_4084*/;
+			uParam0->f_1 = 1296160/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 1296151/*func_4083*/;
+			uParam0->f_1 = 1296151/*__LIB_0__::func_109*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1296143/*func_4082*/;
+			uParam0->f_22 = 1296143/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1296135/*func_4081*/;
+			uParam0->f_22 = 1296135/*__LIB_0__::func_467*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1295963/*func_4079*/;
+			uParam0->f_59 = 1295963/*__LIB_7__::func_783*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1295930/*func_4078*/;
+			uParam0->f_19 = 1295930/*__LIB_4__::func_215*/;
 			break;
 	}
 }
@@ -26856,181 +26856,181 @@ void func_4244(var uParam0, int iParam1)//Position - 0x144BA7
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1421201/*func_4381*/;
+			*uParam0 = 1421201/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1421145/*func_4380*/;
+			uParam0->f_30 = 1421145/*__LIB_4__::func_312*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1420801/*func_4379*/;
+			uParam0->f_31 = 1420801/*__LIB_5__::func_307*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1420762/*func_4378*/;
+			uParam0->f_34 = 1420762/*__LIB_4__::func_311*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1420728/*func_4377*/;
+			uParam0->f_12 = 1420728/*__LIB_4__::func_310*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1420717/*func_4376*/;
+			uParam0->f_11 = 1420717/*__LIB_4__::func_309*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1420653/*func_4375*/;
+			uParam0->f_32 = 1420653/*__LIB_4__::func_308*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1420630/*func_4374*/;
+			uParam0->f_35 = 1420630/*__LIB_6__::func_488*/;
 			break;
 		case 79:
-			*uParam0 = 1420606/*func_4373*/;
+			*uParam0 = 1420606/*__LIB_5__::func_265*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1420488/*func_4372*/;
+			uParam0->f_18 = 1420488/*__LIB_4__::func_307*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1420409/*func_4371*/;
+			uParam0->f_9 = 1420409/*__LIB_5__::func_888*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1420400/*func_4370*/;
+			uParam0->f_11 = 1420400/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1419804/*func_4367*/;
+			uParam0->f_33 = 1419804/*__LIB_24__::func_388*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1419796/*func_4366*/;
+			uParam0->f_56 = 1419796/*__LIB_0__::func_467*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1414634/*func_4342*/;
+			uParam0->f_2 = 1414634/*__LIB_30__::func_654*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1414625/*func_4341*/;
+			uParam0->f_2 = 1414625/*__LIB_0__::func_114*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1414610/*func_4340*/;
+			uParam0->f_4 = 1414610/*__LIB_5__::func_303*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1414135/*func_4336*/;
+			uParam0->f_5 = 1414135/*__LIB_30__::func_439*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1410164/*func_4320*/;
+			uParam0->f_55 = 1410164/*__LIB_30__::func_851*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1409385/*func_4319*/;
+			uParam0->f_17 = 1409385/*__LIB_30__::func_640*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1409359/*func_4318*/;
+			uParam0->f_17 = 1409359/*__LIB_5__::func_982*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1409148/*func_4317*/;
+			uParam0->f_3 = 1409148/*__LIB_24__::func_289*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1408983/*func_4316*/;
+			uParam0->f_3 = 1408983/*__LIB_10__::func_539*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1408374/*func_4313*/;
+			uParam0->f_53 = 1408374/*__LIB_7__::func_505*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1408289/*func_4312*/;
+			uParam0->f_24 = 1408289/*__LIB_4__::func_288*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1407373/*func_4309*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1406399/*func_4303*/;
+			uParam0->f_8 = 1406399/*__LIB_11__::func_906*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1405724/*func_4299*/;
+			uParam0->f_39 = 1405724/*__LIB_30__::func_438*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1404881/*func_4297*/;
+			uParam0->f_40 = 1404881/*__LIB_30__::func_639*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1404872/*func_4296*/;
+			uParam0->f_11 = 1404872/*__LIB_0__::func_162*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1404097/*func_4293*/;
+			uParam0->f_41 = 1404097/*__LIB_5__::func_568*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1404044/*func_4292*/;
+			uParam0->f_58 = 1404044/*__LIB_3__::func_945*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1335626/*func_4280*/;
+			uParam0->f_42 = 1335626/*__LIB_7__::func_663*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1335617/*func_4279*/;
+			uParam0->f_14 = 1335617/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1335608/*func_4278*/;
+			uParam0->f_14 = 1335608/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1335600/*func_4277*/;
+			uParam0->f_57 = 1335600/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1335577/*func_4276*/;
+			uParam0->f_13 = 1335577/*__LIB_4__::func_273*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1335437/*func_4275*/;
+			uParam0->f_43 = 1335437/*__LIB_4__::func_272*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1335402/*func_4274*/;
+			uParam0->f_8 = 1335402/*__LIB_4__::func_271*/;
 			break;
 		case 50:
-			*uParam0 = 1335364/*func_4273*/;
+			*uParam0 = 1335364/*__LIB_5__::func_725*/;
 			break;
 		case 51:
-			*uParam0 = 1335340/*func_4272*/;
+			*uParam0 = 1335340/*__LIB_6__::func_899*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1335329/*func_4271*/;
+			uParam0->f_15 = 1335329/*__LIB_4__::func_270*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1335250/*func_4270*/;
+			uParam0->f_13 = 1335250/*__LIB_22__::func_284*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1335242/*func_4269*/;
+			uParam0->f_45 = 1335242/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1335233/*func_4268*/;
+			uParam0->f_46 = 1335233/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1335223/*func_4267*/;
+			uParam0->f_11 = 1335223/*__LIB_3__::func_938*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1334934/*func_4266*/;
+			uParam0->f_13 = 1334934/*__LIB_22__::func_283*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1333554/*func_4260*/;
+			uParam0->f_47 = 1333554/*__LIB_30__::func_671*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1332591/*func_4257*/;
+			uParam0->f_21 = 1332591/*__LIB_7__::func_543*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1332396/*func_4256*/;
+			uParam0->f_21 = 1332396/*__LIB_5__::func_887*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1332293/*func_4255*/;
+			uParam0->f_21 = 1332293/*__LIB_5__::func_886*/;
 			break;
 		case 68:
-			*uParam0 = 1331604/*func_4254*/;
+			*uParam0 = 1331604/*__LIB_5__::func_215*/;
 			break;
 		case 69:
-			*uParam0 = 1331595/*func_4253*/;
+			*uParam0 = 1331595/*__LIB_0__::func_109*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1331583/*func_4252*/;
+			uParam0->f_48 = 1331583/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1331574/*func_4251*/;
+			uParam0->f_49 = 1331574/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1331562/*func_4250*/;
+			uParam0->f_50 = 1331562/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1331225/*func_4248*/;
+			uParam0->f_7 = 1331225/*__LIB_6__::func_661*/;
 			break;
 		case 73:
-			uParam0->f_51 = 1331216/*func_4247*/;
+			uParam0->f_51 = 1331216/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1331099/*func_4245*/;
+			uParam0->f_59 = 1331099/*__LIB_7__::func_810*/;
 			break;
 	}
 }
@@ -27048,7 +27048,7 @@ void func_4309(int iParam0, int iParam1)//Position - 0x15798D
 	struct<13> Var8;
 	bool bVar9;
 	iVar4 = -1;
-	if (__LIB_24__::func_279(PLAYER::PLAYER_ID(), iParam0))
+	if (__LIB_24__::func_289(PLAYER::PLAYER_ID(), iParam0))
 	{
 		if (__LIB_1__::func_526())
 		{
@@ -27111,18 +27111,18 @@ void func_4309(int iParam0, int iParam1)//Position - 0x15798D
 					}
 					if (((bVar1 || bVar0) && !__LIB_3__::func_779()) && !__LIB_5__::func_241(PLAYER::PLAYER_ID()))
 					{
-						__LIB_30__::func_629(iParam0, -1);
+						__LIB_30__::func_639(iParam0, -1);
 					}
 					bVar9 = __LIB_6__::func_58(PLAYER::PLAYER_ID());
 					if (__LIB_3__::func_661(0, iParam1))
 					{
-						__LIB_30__::func_629(iParam0, -1);
+						__LIB_30__::func_639(iParam0, -1);
 					}
 					else if (__LIB_3__::func_661(1, iParam1))
 					{
 						if (bVar1)
 						{
-							__LIB_22__::func_275(1);
+							__LIB_22__::func_285(1);
 							__LIB_12__::func_135(PLAYER::PLAYER_ID(), iParam0, Var6, 1, 0, 0, bVar9, Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_7, -1, -1);
 						}
 						if (!__LIB_2__::func_752(PLAYER::PLAYER_ID()))
@@ -27134,7 +27134,7 @@ void func_4309(int iParam0, int iParam1)//Position - 0x15798D
 					{
 						if (bVar0)
 						{
-							__LIB_22__::func_275(1);
+							__LIB_22__::func_285(1);
 							__LIB_12__::func_135(PLAYER::PLAYER_ID(), iParam0, Var6, 0, 0, 1, bVar9, Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_7, -1, -1);
 						}
 						if (!__LIB_2__::func_752(PLAYER::PLAYER_ID()))
@@ -27148,7 +27148,7 @@ void func_4309(int iParam0, int iParam1)//Position - 0x15798D
 				}
 void func_4310(int iParam0)//Position - 0x157C45
 {
-	__LIB_30__::func_629(iParam0, -1);
+	__LIB_30__::func_639(iParam0, -1);
 	Global_1946250.f_504 = -1;
 	__LIB_5__::func_947(1, iParam0);
 	Global_1946250.f_3607 = 0;
@@ -27160,88 +27160,88 @@ void func_4382(var uParam0, int iParam1)//Position - 0x15AF9A
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1484123/*func_4602*/;
+			*uParam0 = 1484123/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1483883/*func_4600*/;
+			uParam0->f_30 = 1483883/*__LIB_5__::func_592*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1481582/*func_4594*/;
+			uParam0->f_31 = 1481582/*__LIB_5__::func_591*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1481373/*func_4593*/;
+			uParam0->f_34 = 1481373/*__LIB_4__::func_393*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1481167/*func_4591*/;
+			uParam0->f_12 = 1481167/*__LIB_5__::func_590*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1481089/*func_4590*/;
+			uParam0->f_11 = 1481089/*__LIB_6__::func_491*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1480950/*func_4589*/;
+			uParam0->f_18 = 1480950/*__LIB_7__::func_237*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1480894/*func_4588*/;
+			uParam0->f_9 = 1480894/*__LIB_12__::func_128*/;
 			break;
 		case 42:
-			uParam0->f_10 = 1480733/*func_4585*/;
+			uParam0->f_10 = 1480733/*__LIB_5__::func_988*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1480497/*func_4584*/;
+			uParam0->f_32 = 1480497/*__LIB_4__::func_390*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1480483/*func_4583*/;
+			uParam0->f_35 = 1480483/*__LIB_7__::func_333*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1480474/*func_4582*/;
+			uParam0->f_11 = 1480474/*__LIB_1__::func_804*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1477104/*func_4573*/;
+			uParam0->f_33 = 1477104/*__LIB_10__::func_540*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1477095/*func_4572*/;
+			uParam0->f_11 = 1477095/*__LIB_1__::func_806*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1463179/*func_4571*/;
+			uParam0->f_56 = 1463179/*__LIB_6__::func_489*/;
 			break;
 		case 79:
-			*uParam0 = 1462923/*func_4567*/;
+			*uParam0 = 1462923/*__LIB_7__::func_332*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1462874/*func_4566*/;
+			uParam0->f_2 = 1462874/*__LIB_5__::func_745*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1462663/*func_4563*/;
+			uParam0->f_2 = 1462663/*__LIB_30__::func_485*/;
 			break;
 		case 44:
-			*uParam0 = 1462654/*func_4562*/;
+			*uParam0 = 1462654/*__LIB_0__::func_114*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1462625/*func_4561*/;
+			uParam0->f_4 = 1462625/*__LIB_5__::func_587*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1461898/*func_4558*/;
+			uParam0->f_5 = 1461898/*__LIB_11__::func_910*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1458043/*func_4545*/;
+			uParam0->f_55 = 1458043/*__LIB_30__::func_831*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1456728/*func_4541*/;
+			uParam0->f_17 = 1456728/*__LIB_30__::func_440*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1456683/*func_4540*/;
+			uParam0->f_17 = 1456683/*__LIB_7__::func_331*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1456518/*func_4539*/;
+			uParam0->f_3 = 1456518/*__LIB_6__::func_669*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1456454/*func_4538*/;
+			uParam0->f_3 = 1456454/*__LIB_5__::func_798*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1456227/*func_4537*/;
+			uParam0->f_53 = 1456227/*__LIB_11__::func_908*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1456100/*func_4536*/;
+			uParam0->f_24 = 1456100/*__LIB_6__::func_668*/;
 			break;
 		case 26:
 			uParam0->f_38 = 1452717/*func_4510*/;
@@ -27250,164 +27250,164 @@ void func_4382(var uParam0, int iParam1)//Position - 0x15AF9A
 			uParam0->f_23 = 1452396/*func_4508*/;
 			break;
 		case 27:
-			uParam0->f_25 = 1451304/*func_4500*/;
+			uParam0->f_25 = 1451304/*__LIB_10__::func_983*/;
 			break;
 		case 28:
-			uParam0->f_24 = 1451191/*func_4499*/;
+			uParam0->f_24 = 1451191/*__LIB_4__::func_371*/;
 			break;
 		case 29:
-			uParam0->f_28 = 1451110/*func_4498*/;
+			uParam0->f_28 = 1451110/*__LIB_4__::func_370*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1450220/*func_4496*/;
+			uParam0->f_8 = 1450220/*__LIB_11__::func_907*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1449673/*func_4494*/;
+			uParam0->f_39 = 1449673/*__LIB_7__::func_438*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1448991/*func_4492*/;
+			uParam0->f_40 = 1448991/*__LIB_7__::func_509*/;
 			break;
 		case 32:
-			*uParam0 = 1448898/*func_4490*/;
+			*uParam0 = 1448898/*__LIB_30__::func_108*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1439627/*func_4475*/;
+			uParam0->f_41 = 1439627/*__LIB_5__::func_986*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1439569/*func_4474*/;
+			uParam0->f_58 = 1439569/*__LIB_4__::func_359*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1336495/*func_4283*/;
+			uParam0->f_42 = 1336495/*__LIB_7__::func_431*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1439560/*func_4473*/;
+			uParam0->f_14 = 1439560/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1439551/*func_4472*/;
+			uParam0->f_14 = 1439551/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1439543/*func_4471*/;
+			uParam0->f_57 = 1439543/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1439494/*func_4470*/;
+			uParam0->f_13 = 1439494/*__LIB_7__::func_236*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1439202/*func_4469*/;
+			uParam0->f_43 = 1439202/*__LIB_7__::func_235*/;
 			break;
 		case 48:
 			uParam0->f_60 = 1;
-			uParam0->f_44 = 1436538/*func_4454*/;
+			uParam0->f_44 = 1436538/*__LIB_10__::func_552*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1436434/*func_4453*/;
+			uParam0->f_8 = 1436434/*__LIB_7__::func_234*/;
 			break;
 		case 50:
-			*uParam0 = 1436151/*func_4452*/;
+			*uParam0 = 1436151/*__LIB_7__::func_435*/;
 			break;
 		case 51:
-			*uParam0 = 1435989/*func_4451*/;
+			*uParam0 = 1435989/*__LIB_22__::func_288*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1435978/*func_4450*/;
+			uParam0->f_15 = 1435978/*__LIB_4__::func_344*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1435720/*func_4449*/;
+			uParam0->f_13 = 1435720/*__LIB_4__::func_343*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1435458/*func_4448*/;
+			uParam0->f_45 = 1435458/*__LIB_7__::func_434*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1435449/*func_4447*/;
+			uParam0->f_46 = 1435449/*__LIB_3__::func_969*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1434292/*func_4440*/;
+			uParam0->f_11 = 1434292/*__LIB_7__::func_508*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1434034/*func_4439*/;
+			uParam0->f_13 = 1434034/*__LIB_4__::func_338*/;
 			break;
 		case 59:
-			*uParam0 = 1433755/*func_4436*/;
+			*uParam0 = 1433755/*__LIB_6__::func_750*/;
 			break;
 		case 60:
-			*uParam0 = 1433746/*func_4435*/;
+			*uParam0 = 1433746/*__LIB_0__::func_109*/;
 			break;
 		case 61:
-			uParam0->f_15 = 1433735/*func_4434*/;
+			uParam0->f_15 = 1433735/*__LIB_3__::func_647*/;
 			break;
 		case 62:
-			uParam0->f_13 = 1433477/*func_4433*/;
+			uParam0->f_13 = 1433477/*__LIB_4__::func_336*/;
 			break;
 		case 55:
-			uParam0->f_45 = 1433469/*func_4432*/;
+			uParam0->f_45 = 1433469/*__LIB_0__::func_467*/;
 			break;
 		case 63:
-			uParam0->f_11 = 1433411/*func_4431*/;
+			uParam0->f_11 = 1433411/*__LIB_5__::func_985*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1433261/*func_4430*/;
+			uParam0->f_47 = 1433261/*__LIB_7__::func_631*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1431555/*func_4423*/;
+			uParam0->f_21 = 1431555/*__LIB_10__::func_703*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1431244/*func_4422*/;
+			uParam0->f_21 = 1431244/*__LIB_7__::func_330*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1431092/*func_4421*/;
+			uParam0->f_21 = 1431092/*__LIB_4__::func_334*/;
 			break;
 		case 68:
-			*uParam0 = 1430092/*func_4418*/;
+			*uParam0 = 1430092/*__LIB_7__::func_432*/;
 			break;
 		case 69:
-			*uParam0 = 1430083/*func_4417*/;
+			*uParam0 = 1430083/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1429634/*func_4416*/;
+			uParam0->f_48 = 1429634/*__LIB_4__::func_331*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1429355/*func_4415*/;
+			uParam0->f_49 = 1429355/*__LIB_4__::func_330*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1429343/*func_4414*/;
+			uParam0->f_50 = 1429343/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1429110/*func_4413*/;
+			uParam0->f_7 = 1429110/*__LIB_5__::func_889*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1429101/*func_4412*/;
+			uParam0->f_1 = 1429101/*__LIB_0__::func_109*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1427004/*func_4403*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1424106/*func_4394*/;
+			uParam0->f_1 = 1424106/*__LIB_6__::func_422*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1424097/*func_4393*/;
+			uParam0->f_1 = 1424097/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1424089/*func_4392*/;
+			uParam0->f_54 = 1424089/*__LIB_0__::func_467*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1424063/*func_4391*/;
+			uParam0->f_1 = 1424063/*__LIB_4__::func_316*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1423953/*func_4390*/;
+			uParam0->f_1 = 1423953/*__LIB_3__::func_976*/;
 			break;
 		case 98:
 			uParam0->f_1 = 1423236/*func_4389*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1423073/*func_4388*/;
+			uParam0->f_22 = 1423073/*__LIB_4__::func_315*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1422945/*func_4387*/;
+			uParam0->f_22 = 1422945/*__LIB_11__::func_953*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1422655/*func_4384*/;
+			uParam0->f_59 = 1422655/*__LIB_7__::func_811*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1422631/*func_4383*/;
+			uParam0->f_19 = 1422631/*__LIB_4__::func_313*/;
 			break;
 	}
 }
@@ -27710,7 +27710,7 @@ void func_4524(var uParam0, var uParam1)//Position - 0x16308F
 			func_4533(uParam0, uParam1);
 			break;
 		case 2:
-			__LIB_30__::func_444(uParam0, uParam1);
+			__LIB_30__::func_454(uParam0, uParam1);
 			break;
 		default:
 			break;
@@ -27778,169 +27778,169 @@ void func_4603(var uParam0, int iParam1)//Position - 0x16A564
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1491655/*func_4680*/;
+			*uParam0 = 1491655/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1491599/*func_4679*/;
+			uParam0->f_30 = 1491599/*__LIB_4__::func_411*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1491330/*func_4678*/;
+			uParam0->f_31 = 1491330/*__LIB_5__::func_324*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1491269/*func_4677*/;
+			uParam0->f_34 = 1491269/*__LIB_4__::func_410*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1491238/*func_4676*/;
+			uParam0->f_12 = 1491238/*__LIB_4__::func_409*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1491174/*func_4675*/;
+			uParam0->f_32 = 1491174/*__LIB_4__::func_408*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1491165/*func_4674*/;
+			uParam0->f_35 = 1491165/*__LIB_0__::func_162*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1491156/*func_4673*/;
+			uParam0->f_11 = 1491156/*__LIB_0__::func_109*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1491147/*func_4672*/;
+			uParam0->f_11 = 1491147/*__LIB_0__::func_162*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1490934/*func_4670*/;
+			uParam0->f_33 = 1490934/*__LIB_9__::func_133*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1490926/*func_4669*/;
+			uParam0->f_56 = 1490926/*__LIB_0__::func_467*/;
 			break;
 		case 79:
-			*uParam0 = 1490902/*func_4668*/;
+			*uParam0 = 1490902/*__LIB_5__::func_265*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1490893/*func_4667*/;
+			uParam0->f_2 = 1490893/*__LIB_0__::func_114*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1489949/*func_4660*/;
+			uParam0->f_2 = 1489949/*__LIB_11__::func_942*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1489940/*func_4659*/;
+			uParam0->f_4 = 1489940/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1489915/*func_4658*/;
+			uParam0->f_5 = 1489915/*__LIB_5__::func_323*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1489906/*func_4657*/;
+			uParam0->f_55 = 1489906/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1489880/*func_4656*/;
+			uParam0->f_17 = 1489880/*__LIB_5__::func_322*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1489869/*func_4655*/;
+			uParam0->f_17 = 1489869/*__LIB_3__::func_860*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1489860/*func_4654*/;
+			uParam0->f_3 = 1489860/*__LIB_0__::func_114*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1489851/*func_4653*/;
+			uParam0->f_3 = 1489851/*__LIB_0__::func_114*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1489383/*func_4650*/;
+			uParam0->f_53 = 1489383/*__LIB_8__::func_934*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1489260/*func_4649*/;
+			uParam0->f_24 = 1489260/*__LIB_6__::func_672*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1488490/*func_4645*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1488344/*func_4643*/;
+			uParam0->f_8 = 1488344/*__LIB_6__::func_492*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1488333/*func_4642*/;
+			uParam0->f_39 = 1488333/*__LIB_3__::func_860*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1488126/*func_4640*/;
+			uParam0->f_40 = 1488126/*__LIB_10__::func_469*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1487809/*func_4638*/;
+			uParam0->f_41 = 1487809/*__LIB_5__::func_594*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1487756/*func_4637*/;
+			uParam0->f_58 = 1487756/*__LIB_3__::func_945*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1486983/*func_4634*/;
+			uParam0->f_42 = 1486983/*__LIB_5__::func_891*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1486974/*func_4633*/;
+			uParam0->f_14 = 1486974/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1486965/*func_4632*/;
+			uParam0->f_14 = 1486965/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1486957/*func_4631*/;
+			uParam0->f_57 = 1486957/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1486946/*func_4630*/;
+			uParam0->f_13 = 1486946/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1486707/*func_4628*/;
+			uParam0->f_43 = 1486707/*__LIB_5__::func_890*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1486698/*func_4627*/;
+			uParam0->f_8 = 1486698/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 1486689/*func_4626*/;
+			*uParam0 = 1486689/*__LIB_0__::func_114*/;
 			break;
 		case 51:
-			*uParam0 = 1486680/*func_4625*/;
+			*uParam0 = 1486680/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1486669/*func_4624*/;
+			uParam0->f_15 = 1486669/*__LIB_4__::func_401*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1486658/*func_4623*/;
+			uParam0->f_13 = 1486658/*__LIB_3__::func_554*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1486650/*func_4622*/;
+			uParam0->f_45 = 1486650/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1486641/*func_4621*/;
+			uParam0->f_46 = 1486641/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1486632/*func_4620*/;
+			uParam0->f_11 = 1486632/*__LIB_1__::func_804*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1486339/*func_4618*/;
+			uParam0->f_13 = 1486339/*__LIB_8__::func_186*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1485795/*func_4615*/;
+			uParam0->f_47 = 1485795/*__LIB_8__::func_222*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1485787/*func_4614*/;
+			uParam0->f_21 = 1485787/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1485719/*func_4613*/;
+			uParam0->f_21 = 1485719/*__LIB_5__::func_319*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1485579/*func_4611*/;
+			uParam0->f_21 = 1485579/*__LIB_5__::func_593*/;
 			break;
 		case 68:
-			*uParam0 = 1485135/*func_4610*/;
+			*uParam0 = 1485135/*__LIB_5__::func_318*/;
 			break;
 		case 69:
-			*uParam0 = 1485126/*func_4609*/;
+			*uParam0 = 1485126/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1485114/*func_4608*/;
+			uParam0->f_48 = 1485114/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1485105/*func_4607*/;
+			uParam0->f_49 = 1485105/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1485093/*func_4606*/;
+			uParam0->f_50 = 1485093/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1485084/*func_4605*/;
+			uParam0->f_7 = 1485084/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1485076/*func_4604*/;
+			uParam0->f_59 = 1485076/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -28056,178 +28056,178 @@ void func_4681(var uParam0, int iParam1)//Position - 0x16C2D0
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1590629/*func_4917*/;
+			*uParam0 = 1590629/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1590525/*func_4916*/;
+			uParam0->f_30 = 1590525/*__LIB_4__::func_515*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1589790/*func_4914*/;
+			uParam0->f_31 = 1589790/*__LIB_5__::func_620*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1589708/*func_4913*/;
+			uParam0->f_34 = 1589708/*__LIB_4__::func_513*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1589565/*func_4912*/;
+			uParam0->f_12 = 1589565/*__LIB_4__::func_512*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1589555/*func_4911*/;
+			uParam0->f_11 = 1589555/*__LIB_4__::func_511*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1589420/*func_4910*/;
+			uParam0->f_18 = 1589420/*__LIB_4__::func_510*/;
 			break;
 		case 42:
-			uParam0->f_10 = 1589353/*func_4909*/;
+			uParam0->f_10 = 1589353/*__LIB_5__::func_897*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1589195/*func_4908*/;
+			uParam0->f_32 = 1589195/*__LIB_4__::func_509*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1588956/*func_4904*/;
+			uParam0->f_35 = 1588956/*__LIB_5__::func_751*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1588947/*func_4903*/;
+			uParam0->f_11 = 1588947/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1588447/*func_4900*/;
+			uParam0->f_33 = 1588447/*__LIB_5__::func_619*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1588438/*func_4899*/;
+			uParam0->f_11 = 1588438/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1588430/*func_4898*/;
+			uParam0->f_56 = 1588430/*__LIB_0__::func_467*/;
 			break;
 		case 79:
-			*uParam0 = 1588406/*func_4897*/;
+			*uParam0 = 1588406/*__LIB_5__::func_265*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1588326/*func_4896*/;
+			uParam0->f_9 = 1588326/*__LIB_5__::func_896*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1588230/*func_4895*/;
+			uParam0->f_2 = 1588230/*__LIB_5__::func_750*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1588025/*func_4894*/;
+			uParam0->f_2 = 1588025/*__LIB_30__::func_486*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1588009/*func_4893*/;
+			uParam0->f_4 = 1588009/*__LIB_5__::func_618*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1587200/*func_4890*/;
+			uParam0->f_5 = 1587200/*__LIB_11__::func_911*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1582548/*func_4874*/;
+			uParam0->f_55 = 1582548/*__LIB_30__::func_832*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1581729/*func_4873*/;
+			uParam0->f_17 = 1581729/*__LIB_22__::func_445*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1581703/*func_4872*/;
+			uParam0->f_17 = 1581703/*__LIB_5__::func_994*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1581619/*func_4871*/;
+			uParam0->f_3 = 1581619/*__LIB_6__::func_337*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1581555/*func_4870*/;
+			uParam0->f_3 = 1581555/*__LIB_5__::func_798*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1581403/*func_4869*/;
+			uParam0->f_53 = 1581403/*__LIB_6__::func_89*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1581232/*func_4868*/;
+			uParam0->f_24 = 1581232/*__LIB_6__::func_676*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1580182/*func_4863*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1579564/*func_4861*/;
+			uParam0->f_8 = 1579564/*__LIB_6__::func_675*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1579253/*func_4860*/;
+			uParam0->f_39 = 1579253/*__LIB_6__::func_758*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1578314/*func_4858*/;
+			uParam0->f_40 = 1578314/*__LIB_7__::func_513*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1576954/*func_4857*/;
+			uParam0->f_41 = 1576954/*__LIB_4__::func_500*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1576896/*func_4856*/;
+			uParam0->f_58 = 1576896/*__LIB_4__::func_499*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1528966/*func_4853*/;
+			uParam0->f_42 = 1528966/*__LIB_5__::func_614*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1528957/*func_4852*/;
+			uParam0->f_14 = 1528957/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1528948/*func_4851*/;
+			uParam0->f_14 = 1528948/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1528940/*func_4850*/;
+			uParam0->f_57 = 1528940/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1528917/*func_4849*/;
+			uParam0->f_13 = 1528917/*__LIB_4__::func_496*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1528789/*func_4848*/;
+			uParam0->f_43 = 1528789/*__LIB_4__::func_495*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1528748/*func_4847*/;
+			uParam0->f_8 = 1528748/*__LIB_4__::func_494*/;
 			break;
 		case 50:
-			*uParam0 = 1528480/*func_4844*/;
+			*uParam0 = 1528480/*__LIB_5__::func_747*/;
 			break;
 		case 51:
-			*uParam0 = 1528411/*func_4843*/;
+			*uParam0 = 1528411/*__LIB_7__::func_759*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1528400/*func_4842*/;
+			uParam0->f_15 = 1528400/*__LIB_4__::func_492*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1528166/*func_4841*/;
+			uParam0->f_13 = 1528166/*__LIB_4__::func_296*/;
 			break;
 		case 54:
 			uParam0->f_45 = 1527816/*func_4838*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1527807/*func_4837*/;
+			uParam0->f_46 = 1527807/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1527736/*func_4836*/;
+			uParam0->f_11 = 1527736/*__LIB_7__::func_447*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1527502/*func_4835*/;
+			uParam0->f_13 = 1527502/*__LIB_4__::func_296*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1527302/*func_4833*/;
+			uParam0->f_47 = 1527302/*__LIB_5__::func_613*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1526404/*func_4831*/;
+			uParam0->f_21 = 1526404/*__LIB_7__::func_545*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1525690/*func_4823*/;
+			uParam0->f_21 = 1525690/*__LIB_6__::func_35*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1523426/*func_4804*/;
+			uParam0->f_21 = 1523426/*__LIB_7__::func_446*/;
 			break;
 		case 68:
-			*uParam0 = 1522793/*func_4800*/;
+			*uParam0 = 1522793/*__LIB_7__::func_445*/;
 			break;
 		case 69:
-			*uParam0 = 1522784/*func_4799*/;
+			*uParam0 = 1522784/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1522772/*func_4798*/;
+			uParam0->f_48 = 1522772/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1522763/*func_4797*/;
+			uParam0->f_49 = 1522763/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1522751/*func_4796*/;
+			uParam0->f_50 = 1522751/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1522058/*func_4790*/;
+			uParam0->f_7 = 1522058/*__LIB_6__::func_334*/;
 			break;
 		case 84:
 			uParam0->f_1 = 1521518/*func_4788*/;
@@ -28236,49 +28236,49 @@ void func_4681(var uParam0, int iParam1)//Position - 0x16C2D0
 			uParam0->f_1 = 1517416/*func_4780*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1513429/*func_4768*/;
+			uParam0->f_1 = 1513429/*__LIB_7__::func_27*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1512915/*func_4764*/;
+			uParam0->f_1 = 1512915/*__LIB_7__::func_60*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1512744/*func_4763*/;
+			uParam0->f_54 = 1512744/*__LIB_5__::func_894*/;
 			break;
 		case 90:
-			uParam0->f_1 = 1512572/*func_4760*/;
+			uParam0->f_1 = 1512572/*__LIB_6__::func_333*/;
 			break;
 		case 91:
-			uParam0->f_1 = 1512406/*func_4759*/;
+			uParam0->f_1 = 1512406/*__LIB_5__::func_328*/;
 			break;
 		case 92:
 			uParam0->f_1 = 1510954/*func_4755*/;
 			break;
 		case 94:
-			uParam0->f_1 = 1506826/*func_4744*/;
+			uParam0->f_1 = 1506826/*__LIB_6__::func_34*/;
 			break;
 		case 95:
-			uParam0->f_22 = 1506530/*func_4741*/;
+			uParam0->f_22 = 1506530/*__LIB_5__::func_605*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1506500/*func_4740*/;
+			uParam0->f_1 = 1506500/*__LIB_5__::func_326*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1505833/*func_4737*/;
+			uParam0->f_1 = 1505833/*__LIB_5__::func_992*/;
 			break;
 		case 98:
 			uParam0->f_1 = 1503184/*func_4718*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1495121/*func_4694*/;
+			uParam0->f_22 = 1495121/*__LIB_11__::func_958*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1493192/*func_4685*/;
+			uParam0->f_22 = 1493192/*__LIB_11__::func_957*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1492972/*func_4683*/;
+			uParam0->f_59 = 1492972/*__LIB_7__::func_817*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1492948/*func_4682*/;
+			uParam0->f_19 = 1492948/*__LIB_4__::func_412*/;
 			break;
 	}
 }
@@ -28432,7 +28432,7 @@ int func_4718(int iParam0, int* iParam1)//Position - 0x16EFD0
 			}
 			else
 			{
-				__LIB_22__::func_432(0, 1, 0, 1, 0, 1, 0, 1, 1, 0);
+				__LIB_22__::func_442(0, 1, 0, 1, 0, 1, 0, 1, 1, 0);
 				return 0;
 			}
 		}
@@ -28529,7 +28529,7 @@ int func_4755(int iParam0, int* iParam1)//Position - 0x170E2A
 			MISC::SET_BIT(&(iParam1->f_188), 1);
 			if (ENTITY::GET_ENTITY_MODEL(iVar1) == joaat("avenger"))
 			{
-				__LIB_30__::func_736(&iVar1, &(iParam1->f_109), 48, 10f, 20f, 15f);
+				__LIB_30__::func_746(&iVar1, &(iParam1->f_109), 48, 10f, 20f, 15f);
 			}
 			else
 			{
@@ -28813,7 +28813,7 @@ int func_4788(int iParam0, var uParam1)//Position - 0x17376E
 				{
 					bVar0 = false;
 				}
-				else if (!__LIB_30__::func_736(&iVar1, &(uParam1->f_122), 16, Var2))
+				else if (!__LIB_30__::func_746(&iVar1, &(uParam1->f_122), 16, Var2))
 				{
 					bVar0 = false;
 				}
@@ -29026,178 +29026,178 @@ void func_4918(var uParam0, int iParam1)//Position - 0x18456E
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1618642/*func_5083*/;
+			*uParam0 = 1618642/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1618586/*func_5082*/;
+			uParam0->f_30 = 1618586/*__LIB_4__::func_571*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1618317/*func_5081*/;
+			uParam0->f_31 = 1618317/*__LIB_5__::func_341*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1618258/*func_5080*/;
+			uParam0->f_34 = 1618258/*__LIB_4__::func_570*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1618227/*func_5079*/;
+			uParam0->f_12 = 1618227/*__LIB_4__::func_569*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1618109/*func_5078*/;
+			uParam0->f_18 = 1618109/*__LIB_4__::func_568*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1618025/*func_5077*/;
+			uParam0->f_9 = 1618025/*__LIB_5__::func_898*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1617961/*func_5076*/;
+			uParam0->f_32 = 1617961/*__LIB_4__::func_567*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1617938/*func_5075*/;
+			uParam0->f_35 = 1617938/*__LIB_5__::func_340*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1617929/*func_5074*/;
+			uParam0->f_11 = 1617929/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1617476/*func_5071*/;
+			uParam0->f_33 = 1617476/*__LIB_30__::func_444*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1617467/*func_5070*/;
+			uParam0->f_11 = 1617467/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1617459/*func_5069*/;
+			uParam0->f_56 = 1617459/*__LIB_0__::func_467*/;
 			break;
 		case 79:
-			*uParam0 = 1617435/*func_5068*/;
+			*uParam0 = 1617435/*__LIB_5__::func_265*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1617426/*func_5067*/;
+			uParam0->f_2 = 1617426/*__LIB_0__::func_114*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1612449/*func_5044*/;
+			uParam0->f_2 = 1612449/*__LIB_30__::func_722*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1612440/*func_5043*/;
+			uParam0->f_4 = 1612440/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1612256/*func_5042*/;
+			uParam0->f_5 = 1612256/*__LIB_5__::func_805*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1609159/*func_5028*/;
+			uParam0->f_55 = 1609159/*__LIB_34__::func_723*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1608651/*func_5026*/;
+			uParam0->f_17 = 1608651/*__LIB_22__::func_402*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1608625/*func_5025*/;
+			uParam0->f_17 = 1608625/*__LIB_5__::func_997*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1608547/*func_5024*/;
+			uParam0->f_3 = 1608547/*__LIB_5__::func_628*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1608484/*func_5023*/;
+			uParam0->f_3 = 1608484/*__LIB_5__::func_336*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1608269/*func_5021*/;
+			uParam0->f_53 = 1608269/*__LIB_12__::func_118*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1608146/*func_5020*/;
+			uParam0->f_24 = 1608146/*__LIB_6__::func_682*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1607199/*func_5015*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1606635/*func_5013*/;
+			uParam0->f_8 = 1606635/*__LIB_7__::func_335*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1606457/*func_5010*/;
+			uParam0->f_39 = 1606457/*__LIB_6__::func_681*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1605343/*func_5005*/;
+			uParam0->f_40 = 1605343/*__LIB_24__::func_292*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1604649/*func_5003*/;
+			uParam0->f_41 = 1604649/*__LIB_5__::func_624*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1604596/*func_5002*/;
+			uParam0->f_58 = 1604596/*__LIB_3__::func_945*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1604019/*func_5000*/;
+			uParam0->f_42 = 1604019/*__LIB_6__::func_680*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1604010/*func_4999*/;
+			uParam0->f_14 = 1604010/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1604001/*func_4998*/;
+			uParam0->f_14 = 1604001/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1603824/*func_4997*/;
+			uParam0->f_57 = 1603824/*__LIB_22__::func_446*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1603813/*func_4996*/;
+			uParam0->f_13 = 1603813/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1603315/*func_4993*/;
+			uParam0->f_43 = 1603315/*__LIB_7__::func_821*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1603274/*func_4992*/;
+			uParam0->f_8 = 1603274/*__LIB_4__::func_550*/;
 			break;
 		case 50:
-			*uParam0 = 1603265/*func_4991*/;
+			*uParam0 = 1603265/*__LIB_0__::func_114*/;
 			break;
 		case 51:
-			*uParam0 = 1603256/*func_4990*/;
+			*uParam0 = 1603256/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1603245/*func_4989*/;
+			uParam0->f_15 = 1603245/*__LIB_4__::func_549*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1603234/*func_4988*/;
+			uParam0->f_13 = 1603234/*__LIB_3__::func_554*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1603226/*func_4987*/;
+			uParam0->f_45 = 1603226/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1603217/*func_4986*/;
+			uParam0->f_46 = 1603217/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1603208/*func_4985*/;
+			uParam0->f_11 = 1603208/*__LIB_1__::func_804*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1602979/*func_4984*/;
+			uParam0->f_13 = 1602979/*__LIB_24__::func_150*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1597052/*func_4953*/;
+			uParam0->f_47 = 1597052/*__LIB_30__::func_849*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1595438/*func_4944*/;
+			uParam0->f_21 = 1595438/*__LIB_22__::func_464*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1595127/*func_4942*/;
+			uParam0->f_21 = 1595127/*__LIB_6__::func_759*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1594402/*func_4938*/;
+			uParam0->f_21 = 1594402/*__LIB_11__::func_507*/;
 			break;
 		case 68:
-			*uParam0 = 1593857/*func_4937*/;
+			*uParam0 = 1593857/*__LIB_7__::func_451*/;
 			break;
 		case 69:
-			*uParam0 = 1593848/*func_4936*/;
+			*uParam0 = 1593848/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1593836/*func_4935*/;
+			uParam0->f_48 = 1593836/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1593827/*func_4934*/;
+			uParam0->f_49 = 1593827/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1593815/*func_4933*/;
+			uParam0->f_50 = 1593815/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1592099/*func_4923*/;
+			uParam0->f_7 = 1592099/*__LIB_6__::func_807*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1591649/*func_4920*/;
+			uParam0->f_59 = 1591649/*__LIB_11__::func_943*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1591633/*func_4919*/;
+			uParam0->f_19 = 1591633/*__LIB_4__::func_516*/;
 			break;
 	}
 }
@@ -29274,18 +29274,18 @@ void func_5015(int iParam0, int iParam1)//Position - 0x18861F
 					}
 					if (((bVar1 || bVar0) && !__LIB_3__::func_779()) && !__LIB_5__::func_241(PLAYER::PLAYER_ID()))
 					{
-						__LIB_24__::func_282(iParam0, -1);
+						__LIB_24__::func_292(iParam0, -1);
 					}
 					bVar9 = __LIB_4__::func_557(PLAYER::PLAYER_ID());
 					if (__LIB_3__::func_661(0, iParam1))
 					{
-						__LIB_24__::func_282(iParam0, -1);
+						__LIB_24__::func_292(iParam0, -1);
 					}
 					else if (__LIB_3__::func_661(1, iParam1))
 					{
 						if (bVar1)
 						{
-							__LIB_24__::func_141(1);
+							__LIB_24__::func_151(1);
 							__LIB_12__::func_135(PLAYER::PLAYER_ID(), iParam0, Var6, 1, 0, 0, bVar9, Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_7, -1, -1);
 						}
 						func_5016(iParam0);
@@ -29294,7 +29294,7 @@ void func_5015(int iParam0, int iParam1)//Position - 0x18861F
 					{
 						if (bVar0)
 						{
-							__LIB_24__::func_141(1);
+							__LIB_24__::func_151(1);
 							__LIB_12__::func_135(PLAYER::PLAYER_ID(), iParam0, Var6, 0, 0, 1, bVar9, Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_318.f_7, -1, -1);
 						}
 						func_5016(iParam0);
@@ -29305,7 +29305,7 @@ void func_5015(int iParam0, int iParam1)//Position - 0x18861F
 				}
 void func_5016(int iParam0)//Position - 0x1888B2
 {
-	__LIB_24__::func_282(iParam0, -1);
+	__LIB_24__::func_292(iParam0, -1);
 	Global_1946250.f_504 = -1;
 	__LIB_5__::func_947(1, iParam0);
 	Global_1946250.f_3607 = 0;
@@ -29317,205 +29317,205 @@ void func_5084(var uParam0, int iParam1)//Position - 0x18B2DB
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1671147/*func_5251*/;
+			*uParam0 = 1671147/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1671067/*func_5250*/;
+			uParam0->f_30 = 1671067/*__LIB_4__::func_631*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1670568/*func_5249*/;
+			uParam0->f_31 = 1670568/*__LIB_5__::func_348*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1670518/*func_5248*/;
+			uParam0->f_34 = 1670518/*__LIB_4__::func_630*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1670431/*func_5247*/;
+			uParam0->f_12 = 1670431/*__LIB_4__::func_629*/;
 			break;
 		case 5:
-			uParam0->f_11 = 1670421/*func_5246*/;
+			uParam0->f_11 = 1670421/*__LIB_4__::func_628*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1670303/*func_5245*/;
+			uParam0->f_18 = 1670303/*__LIB_4__::func_627*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1670181/*func_5244*/;
+			uParam0->f_9 = 1670181/*__LIB_5__::func_905*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1670093/*func_5243*/;
+			uParam0->f_32 = 1670093/*__LIB_4__::func_626*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1670079/*func_5242*/;
+			uParam0->f_35 = 1670079/*__LIB_5__::func_904*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1670070/*func_5241*/;
+			uParam0->f_11 = 1670070/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1669691/*func_5238*/;
+			uParam0->f_33 = 1669691/*__LIB_5__::func_645*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1669682/*func_5237*/;
+			uParam0->f_11 = 1669682/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1669674/*func_5236*/;
+			uParam0->f_56 = 1669674/*__LIB_0__::func_467*/;
 			break;
 		case 79:
-			*uParam0 = 1669650/*func_5235*/;
+			*uParam0 = 1669650/*__LIB_5__::func_265*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1669518/*func_5234*/;
+			uParam0->f_2 = 1669518/*__LIB_6__::func_394*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1669236/*func_5232*/;
+			uParam0->f_2 = 1669236/*__LIB_30__::func_487*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1669222/*func_5231*/;
+			uParam0->f_4 = 1669222/*__LIB_4__::func_624*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1668704/*func_5229*/;
+			uParam0->f_5 = 1668704/*__LIB_8__::func_224*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1665080/*func_5217*/;
+			uParam0->f_55 = 1665080/*__LIB_30__::func_833*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1664542/*func_5215*/;
+			uParam0->f_17 = 1664542/*__LIB_11__::func_912*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1664516/*func_5214*/;
+			uParam0->f_17 = 1664516/*__LIB_6__::func_3*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1664432/*func_5213*/;
+			uParam0->f_3 = 1664432/*__LIB_5__::func_643*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1664368/*func_5212*/;
+			uParam0->f_3 = 1664368/*__LIB_5__::func_798*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1664188/*func_5211*/;
+			uParam0->f_53 = 1664188/*__LIB_6__::func_111*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1664041/*func_5210*/;
+			uParam0->f_24 = 1664041/*__LIB_6__::func_686*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1663417/*func_5208*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1662902/*func_5206*/;
+			uParam0->f_8 = 1662902/*__LIB_6__::func_685*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1662617/*func_5205*/;
+			uParam0->f_39 = 1662617/*__LIB_6__::func_763*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1661946/*func_5203*/;
+			uParam0->f_40 = 1661946/*__LIB_7__::func_521*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1660682/*func_5202*/;
+			uParam0->f_41 = 1660682/*__LIB_4__::func_620*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1660637/*func_5201*/;
+			uParam0->f_58 = 1660637/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1634591/*func_5193*/;
+			uParam0->f_42 = 1634591/*__LIB_5__::func_755*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1634582/*func_5192*/;
+			uParam0->f_14 = 1634582/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1634573/*func_5191*/;
+			uParam0->f_14 = 1634573/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1634565/*func_5190*/;
+			uParam0->f_57 = 1634565/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1634542/*func_5189*/;
+			uParam0->f_13 = 1634542/*__LIB_4__::func_616*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1634438/*func_5188*/;
+			uParam0->f_43 = 1634438/*__LIB_4__::func_615*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1634397/*func_5187*/;
+			uParam0->f_8 = 1634397/*__LIB_4__::func_494*/;
 			break;
 		case 50:
-			*uParam0 = 1634183/*func_5184*/;
+			*uParam0 = 1634183/*__LIB_5__::func_754*/;
 			break;
 		case 51:
-			*uParam0 = 1634114/*func_5183*/;
+			*uParam0 = 1634114/*__LIB_7__::func_759*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1634103/*func_5182*/;
+			uParam0->f_15 = 1634103/*__LIB_4__::func_613*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1633965/*func_5181*/;
+			uParam0->f_13 = 1633965/*__LIB_4__::func_302*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1633777/*func_5180*/;
+			uParam0->f_45 = 1633777/*__LIB_5__::func_347*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1633768/*func_5179*/;
+			uParam0->f_46 = 1633768/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1633591/*func_5177*/;
+			uParam0->f_11 = 1633591/*__LIB_6__::func_2*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1633453/*func_5176*/;
+			uParam0->f_13 = 1633453/*__LIB_4__::func_302*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1633445/*func_5175*/;
+			uParam0->f_47 = 1633445/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1632609/*func_5173*/;
+			uParam0->f_21 = 1632609/*__LIB_10__::func_704*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1632502/*func_5172*/;
+			uParam0->f_21 = 1632502/*__LIB_4__::func_611*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1632438/*func_5171*/;
+			uParam0->f_21 = 1632438/*__LIB_4__::func_610*/;
 			break;
 		case 68:
-			*uParam0 = 1631950/*func_5170*/;
+			*uParam0 = 1631950/*__LIB_5__::func_346*/;
 			break;
 		case 69:
-			*uParam0 = 1631941/*func_5169*/;
+			*uParam0 = 1631941/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1631929/*func_5168*/;
+			uParam0->f_48 = 1631929/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1631920/*func_5167*/;
+			uParam0->f_49 = 1631920/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1631908/*func_5166*/;
+			uParam0->f_50 = 1631908/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1631205/*func_5162*/;
+			uParam0->f_7 = 1631205/*__LIB_6__::func_1*/;
 			break;
 		case 84:
-			uParam0->f_1 = 1631105/*func_5160*/;
+			uParam0->f_1 = 1631105/*__LIB_5__::func_902*/;
 			break;
 		case 85:
 			uParam0->f_1 = 1629121/*func_5157*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1626698/*func_5145*/;
+			uParam0->f_1 = 1626698/*__LIB_6__::func_428*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1626689/*func_5144*/;
+			uParam0->f_1 = 1626689/*__LIB_0__::func_109*/;
 			break;
 		case 96:
-			uParam0->f_1 = 1626626/*func_5143*/;
+			uParam0->f_1 = 1626626/*__LIB_4__::func_600*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1626305/*func_5140*/;
+			uParam0->f_1 = 1626305/*__LIB_6__::func_0*/;
 			break;
 		case 98:
 			uParam0->f_1 = 1622298/*func_5106*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1620019/*func_5088*/;
+			uParam0->f_22 = 1620019/*__LIB_6__::func_441*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1619815/*func_5086*/;
+			uParam0->f_59 = 1619815/*__LIB_5__::func_998*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1619799/*func_5085*/;
+			uParam0->f_19 = 1619799/*__LIB_4__::func_516*/;
 			break;
 	}
 }
@@ -29694,172 +29694,172 @@ void func_5252(var uParam0, int iParam1)//Position - 0x197FF4
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1679775/*func_5314*/;
+			*uParam0 = 1679775/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1679719/*func_5313*/;
+			uParam0->f_30 = 1679719/*__LIB_4__::func_641*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1679500/*func_5312*/;
+			uParam0->f_31 = 1679500/*__LIB_6__::func_912*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1679449/*func_5311*/;
+			uParam0->f_34 = 1679449/*__LIB_4__::func_640*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1679415/*func_5310*/;
+			uParam0->f_12 = 1679415/*__LIB_4__::func_639*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1679351/*func_5309*/;
+			uParam0->f_32 = 1679351/*__LIB_4__::func_638*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1679342/*func_5308*/;
+			uParam0->f_35 = 1679342/*__LIB_0__::func_162*/;
 			break;
 		case 79:
-			*uParam0 = 1679318/*func_5307*/;
+			*uParam0 = 1679318/*__LIB_5__::func_265*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1679309/*func_5306*/;
+			uParam0->f_11 = 1679309/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1679217/*func_5305*/;
+			uParam0->f_33 = 1679217/*__LIB_8__::func_274*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1679208/*func_5304*/;
+			uParam0->f_11 = 1679208/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1679200/*func_5303*/;
+			uParam0->f_56 = 1679200/*__LIB_0__::func_467*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1678948/*func_5302*/;
+			uParam0->f_2 = 1678948/*__LIB_8__::func_196*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1678939/*func_5301*/;
+			uParam0->f_2 = 1678939/*__LIB_0__::func_114*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1678930/*func_5300*/;
+			uParam0->f_4 = 1678930/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1678921/*func_5299*/;
+			uParam0->f_5 = 1678921/*__LIB_0__::func_109*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1678912/*func_5298*/;
+			uParam0->f_55 = 1678912/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1678867/*func_5297*/;
+			uParam0->f_17 = 1678867/*__LIB_5__::func_351*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1678856/*func_5296*/;
+			uParam0->f_17 = 1678856/*__LIB_3__::func_860*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1678809/*func_5295*/;
+			uParam0->f_3 = 1678809/*__LIB_8__::func_863*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1678757/*func_5294*/;
+			uParam0->f_3 = 1678757/*__LIB_5__::func_350*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1678701/*func_5293*/;
+			uParam0->f_53 = 1678701/*__LIB_6__::func_911*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1678616/*func_5292*/;
+			uParam0->f_24 = 1678616/*__LIB_4__::func_637*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1677649/*func_5287*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1677439/*func_5286*/;
+			uParam0->f_8 = 1677439/*__LIB_5__::func_647*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1677408/*func_5285*/;
+			uParam0->f_39 = 1677408/*__LIB_4__::func_635*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1677218/*func_5284*/;
+			uParam0->f_40 = 1677218/*__LIB_10__::func_429*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1674013/*func_5282*/;
+			uParam0->f_41 = 1674013/*__LIB_5__::func_646*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1673960/*func_5281*/;
+			uParam0->f_58 = 1673960/*__LIB_3__::func_945*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1672769/*func_5279*/;
+			uParam0->f_42 = 1672769/*__LIB_5__::func_906*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1672760/*func_5278*/;
+			uParam0->f_14 = 1672760/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1672751/*func_5277*/;
+			uParam0->f_14 = 1672751/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1672743/*func_5276*/;
+			uParam0->f_57 = 1672743/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1672732/*func_5275*/;
+			uParam0->f_13 = 1672732/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1672629/*func_5274*/;
+			uParam0->f_43 = 1672629/*__LIB_4__::func_632*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1672604/*func_5273*/;
+			uParam0->f_8 = 1672604/*__LIB_3__::func_941*/;
 			break;
 		case 50:
-			*uParam0 = 1672566/*func_5272*/;
+			*uParam0 = 1672566/*__LIB_5__::func_725*/;
 			break;
 		case 51:
-			*uParam0 = 1672557/*func_5271*/;
+			*uParam0 = 1672557/*__LIB_0__::func_109*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1672546/*func_5270*/;
+			uParam0->f_15 = 1672546/*__LIB_4__::func_270*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1672465/*func_5269*/;
+			uParam0->f_13 = 1672465/*__LIB_8__::func_193*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1672457/*func_5268*/;
+			uParam0->f_45 = 1672457/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1672448/*func_5267*/;
+			uParam0->f_46 = 1672448/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1672438/*func_5266*/;
+			uParam0->f_11 = 1672438/*__LIB_3__::func_938*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1672231/*func_5265*/;
+			uParam0->f_13 = 1672231/*__LIB_8__::func_192*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1672223/*func_5264*/;
+			uParam0->f_47 = 1672223/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1672215/*func_5263*/;
+			uParam0->f_21 = 1672215/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1672207/*func_5262*/;
+			uParam0->f_21 = 1672207/*__LIB_0__::func_467*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1672199/*func_5261*/;
+			uParam0->f_21 = 1672199/*__LIB_0__::func_467*/;
 			break;
 		case 68:
-			*uParam0 = 1672190/*func_5260*/;
+			*uParam0 = 1672190/*__LIB_0__::func_109*/;
 			break;
 		case 69:
-			*uParam0 = 1672181/*func_5259*/;
+			*uParam0 = 1672181/*__LIB_0__::func_109*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1672169/*func_5258*/;
+			uParam0->f_48 = 1672169/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1672160/*func_5257*/;
+			uParam0->f_49 = 1672160/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1672148/*func_5256*/;
+			uParam0->f_50 = 1672148/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1672139/*func_5255*/;
+			uParam0->f_7 = 1672139/*__LIB_0__::func_114*/;
 			break;
 		case 73:
-			uParam0->f_51 = 1672130/*func_5254*/;
+			uParam0->f_51 = 1672130/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1672122/*func_5253*/;
+			uParam0->f_59 = 1672122/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -29979,178 +29979,178 @@ void func_5315(var uParam0, int iParam1)//Position - 0x19A1A8
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1757366/*func_5469*/;
+			*uParam0 = 1757366/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1757310/*func_5468*/;
+			uParam0->f_30 = 1757310/*__LIB_4__::func_687*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1755765/*func_5467*/;
+			uParam0->f_31 = 1755765/*__LIB_8__::func_869*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1755716/*func_5466*/;
+			uParam0->f_34 = 1755716/*__LIB_4__::func_686*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1755682/*func_5465*/;
+			uParam0->f_12 = 1755682/*__LIB_4__::func_685*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1755618/*func_5464*/;
+			uParam0->f_32 = 1755618/*__LIB_4__::func_684*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1755595/*func_5463*/;
+			uParam0->f_35 = 1755595/*__LIB_5__::func_360*/;
 			break;
 		case 79:
-			*uParam0 = 1755571/*func_5462*/;
+			*uParam0 = 1755571/*__LIB_5__::func_265*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1755453/*func_5461*/;
+			uParam0->f_18 = 1755453/*__LIB_4__::func_683*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1755386/*func_5460*/;
+			uParam0->f_9 = 1755386/*__LIB_5__::func_910*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1755377/*func_5459*/;
+			uParam0->f_11 = 1755377/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1755032/*func_5457*/;
+			uParam0->f_33 = 1755032/*__LIB_9__::func_505*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1755023/*func_5456*/;
+			uParam0->f_11 = 1755023/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1755015/*func_5455*/;
+			uParam0->f_56 = 1755015/*__LIB_0__::func_467*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1749688/*func_5433*/;
+			uParam0->f_2 = 1749688/*__LIB_30__::func_655*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1749679/*func_5432*/;
+			uParam0->f_2 = 1749679/*__LIB_0__::func_114*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1749670/*func_5431*/;
+			uParam0->f_4 = 1749670/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1749645/*func_5430*/;
+			uParam0->f_5 = 1749645/*__LIB_5__::func_323*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1743113/*func_5415*/;
+			uParam0->f_55 = 1743113/*__LIB_30__::func_850*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1742529/*func_5414*/;
+			uParam0->f_17 = 1742529/*__LIB_22__::func_448*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1742503/*func_5413*/;
+			uParam0->f_17 = 1742503/*__LIB_6__::func_5*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1742442/*func_5412*/;
+			uParam0->f_3 = 1742442/*__LIB_9__::func_476*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1742322/*func_5411*/;
+			uParam0->f_3 = 1742322/*__LIB_6__::func_914*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1742266/*func_5410*/;
+			uParam0->f_53 = 1742266/*__LIB_6__::func_913*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1742181/*func_5409*/;
+			uParam0->f_24 = 1742181/*__LIB_4__::func_676*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1741209/*func_5404*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1740469/*func_5403*/;
+			uParam0->f_8 = 1740469/*__LIB_5__::func_650*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1740199/*func_5402*/;
+			uParam0->f_39 = 1740199/*__LIB_6__::func_766*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1739288/*func_5400*/;
+			uParam0->f_40 = 1739288/*__LIB_12__::func_144*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1735942/*func_5399*/;
+			uParam0->f_41 = 1735942/*__LIB_5__::func_355*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1735889/*func_5398*/;
+			uParam0->f_58 = 1735889/*__LIB_3__::func_945*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1735206/*func_5396*/;
+			uParam0->f_42 = 1735206/*__LIB_5__::func_909*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1735197/*func_5395*/;
+			uParam0->f_14 = 1735197/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1735188/*func_5394*/;
+			uParam0->f_14 = 1735188/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1734745/*func_5393*/;
+			uParam0->f_57 = 1734745/*__LIB_30__::func_815*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1734734/*func_5392*/;
+			uParam0->f_13 = 1734734/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1734631/*func_5391*/;
+			uParam0->f_43 = 1734631/*__LIB_4__::func_672*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1734606/*func_5390*/;
+			uParam0->f_8 = 1734606/*__LIB_3__::func_941*/;
 			break;
 		case 50:
-			*uParam0 = 1734568/*func_5389*/;
+			*uParam0 = 1734568/*__LIB_5__::func_725*/;
 			break;
 		case 51:
-			*uParam0 = 1734544/*func_5388*/;
+			*uParam0 = 1734544/*__LIB_6__::func_899*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1734533/*func_5387*/;
+			uParam0->f_15 = 1734533/*__LIB_4__::func_270*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1734454/*func_5386*/;
+			uParam0->f_13 = 1734454/*__LIB_8__::func_865*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1734446/*func_5385*/;
+			uParam0->f_45 = 1734446/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1734437/*func_5384*/;
+			uParam0->f_46 = 1734437/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1734427/*func_5383*/;
+			uParam0->f_11 = 1734427/*__LIB_3__::func_938*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1734198/*func_5382*/;
+			uParam0->f_13 = 1734198/*__LIB_8__::func_864*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1687908/*func_5350*/;
+			uParam0->f_47 = 1687908/*__LIB_30__::func_821*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1686766/*func_5347*/;
+			uParam0->f_21 = 1686766/*__LIB_22__::func_465*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1686543/*func_5345*/;
+			uParam0->f_21 = 1686543/*__LIB_5__::func_908*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1685648/*func_5341*/;
+			uParam0->f_21 = 1685648/*__LIB_5__::func_907*/;
 			break;
 		case 68:
-			*uParam0 = 1685103/*func_5340*/;
+			*uParam0 = 1685103/*__LIB_7__::func_454*/;
 			break;
 		case 69:
-			*uParam0 = 1685094/*func_5339*/;
+			*uParam0 = 1685094/*__LIB_0__::func_109*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1685082/*func_5338*/;
+			uParam0->f_48 = 1685082/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1685073/*func_5337*/;
+			uParam0->f_49 = 1685073/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1685061/*func_5336*/;
+			uParam0->f_50 = 1685061/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1683002/*func_5328*/;
+			uParam0->f_7 = 1683002/*__LIB_30__::func_455*/;
 			break;
 		case 73:
-			uParam0->f_51 = 1681248/*func_5321*/;
+			uParam0->f_51 = 1681248/*__LIB_30__::func_747*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1680779/*func_5316*/;
+			uParam0->f_59 = 1680779/*__LIB_11__::func_914*/;
 			break;
 	}
 }
@@ -30270,220 +30270,220 @@ void func_5470(var uParam0, int iParam1)//Position - 0x1AD0BF
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1793024/*func_5637*/;
+			*uParam0 = 1793024/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1792908/*func_5636*/;
+			uParam0->f_30 = 1792908/*__LIB_4__::func_745*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1791678/*func_5633*/;
+			uParam0->f_31 = 1791678/*__LIB_7__::func_67*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1791608/*func_5632*/;
+			uParam0->f_34 = 1791608/*__LIB_4__::func_744*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1791434/*func_5631*/;
+			uParam0->f_12 = 1791434/*__LIB_4__::func_743*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1791310/*func_5630*/;
+			uParam0->f_32 = 1791310/*__LIB_4__::func_742*/;
 			break;
 		case 106:
-			uParam0->f_52 = 1791143/*func_5629*/;
+			uParam0->f_52 = 1791143/*__LIB_15__::func_472*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1791129/*func_5628*/;
+			uParam0->f_35 = 1791129/*__LIB_5__::func_924*/;
 			break;
 		case 79:
-			*uParam0 = 1791105/*func_5627*/;
+			*uParam0 = 1791105/*__LIB_5__::func_265*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1790987/*func_5626*/;
+			uParam0->f_18 = 1790987/*__LIB_4__::func_741*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1790787/*func_5624*/;
+			uParam0->f_9 = 1790787/*__LIB_6__::func_398*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1790778/*func_5623*/;
+			uParam0->f_11 = 1790778/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1789074/*func_5621*/;
+			uParam0->f_33 = 1789074/*__LIB_5__::func_663*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1789065/*func_5620*/;
+			uParam0->f_11 = 1789065/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1789057/*func_5619*/;
+			uParam0->f_56 = 1789057/*__LIB_0__::func_467*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1788551/*func_5615*/;
+			uParam0->f_2 = 1788551/*__LIB_30__::func_488*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1788512/*func_5614*/;
+			uParam0->f_2 = 1788512/*__LIB_5__::func_370*/;
 			break;
 		case 44:
-			*uParam0 = 1788503/*func_5613*/;
+			*uParam0 = 1788503/*__LIB_0__::func_114*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1788494/*func_5612*/;
+			uParam0->f_4 = 1788494/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1788071/*func_5608*/;
+			uParam0->f_5 = 1788071/*__LIB_11__::func_541*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1786032/*func_5604*/;
+			uParam0->f_55 = 1786032/*__LIB_11__::func_540*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1783894/*func_5596*/;
+			uParam0->f_17 = 1783894/*__LIB_22__::func_450*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1783868/*func_5595*/;
+			uParam0->f_17 = 1783868/*__LIB_6__::func_10*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1783784/*func_5594*/;
+			uParam0->f_3 = 1783784/*__LIB_5__::func_919*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1783684/*func_5593*/;
+			uParam0->f_3 = 1783684/*__LIB_6__::func_693*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1783517/*func_5592*/;
+			uParam0->f_53 = 1783517/*__LIB_6__::func_112*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1783410/*func_5591*/;
+			uParam0->f_24 = 1783410/*__LIB_6__::func_692*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1782758/*func_5589*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1782258/*func_5586*/;
+			uParam0->f_8 = 1782258/*__LIB_6__::func_691*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1781965/*func_5585*/;
+			uParam0->f_39 = 1781965/*__LIB_6__::func_771*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1781043/*func_5582*/;
+			uParam0->f_40 = 1781043/*__LIB_22__::func_449*/;
 			break;
 		case 32:
-			*uParam0 = 1780939/*func_5581*/;
+			*uParam0 = 1780939/*__LIB_6__::func_917*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1778794/*func_5580*/;
+			uParam0->f_41 = 1778794/*__LIB_5__::func_367*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1693318/*func_5373*/;
+			uParam0->f_42 = 1693318/*__LIB_5__::func_649*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1778734/*func_5579*/;
+			uParam0->f_58 = 1778734/*__LIB_5__::func_366*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1778725/*func_5578*/;
+			uParam0->f_14 = 1778725/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1778716/*func_5577*/;
+			uParam0->f_14 = 1778716/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1778450/*func_5576*/;
+			uParam0->f_57 = 1778450/*__LIB_5__::func_813*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1778439/*func_5575*/;
+			uParam0->f_13 = 1778439/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1778299/*func_5574*/;
+			uParam0->f_43 = 1778299/*__LIB_4__::func_731*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1778258/*func_5573*/;
+			uParam0->f_8 = 1778258/*__LIB_4__::func_550*/;
 			break;
 		case 50:
-			*uParam0 = 1778167/*func_5572*/;
+			*uParam0 = 1778167/*__LIB_6__::func_9*/;
 			break;
 		case 51:
-			*uParam0 = 1778083/*func_5571*/;
+			*uParam0 = 1778083/*__LIB_9__::func_435*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1778072/*func_5570*/;
+			uParam0->f_15 = 1778072/*__LIB_4__::func_730*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1777790/*func_5569*/;
+			uParam0->f_13 = 1777790/*__LIB_4__::func_729*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1777782/*func_5568*/;
+			uParam0->f_45 = 1777782/*__LIB_0__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1777773/*func_5567*/;
+			uParam0->f_46 = 1777773/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1777712/*func_5566*/;
+			uParam0->f_11 = 1777712/*__LIB_6__::func_8*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1777430/*func_5565*/;
+			uParam0->f_13 = 1777430/*__LIB_4__::func_729*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1775515/*func_5556*/;
+			uParam0->f_47 = 1775515/*__LIB_30__::func_846*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1775472/*func_5555*/;
+			uParam0->f_21 = 1775472/*__LIB_5__::func_916*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1774769/*func_5552*/;
+			uParam0->f_21 = 1774769/*__LIB_6__::func_7*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1773685/*func_5544*/;
+			uParam0->f_21 = 1773685/*__LIB_5__::func_915*/;
 			break;
 		case 68:
-			*uParam0 = 1773094/*func_5542*/;
+			*uParam0 = 1773094/*__LIB_7__::func_460*/;
 			break;
 		case 69:
-			*uParam0 = 1773085/*func_5541*/;
+			*uParam0 = 1773085/*__LIB_0__::func_114*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1773073/*func_5540*/;
+			uParam0->f_48 = 1773073/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1773064/*func_5539*/;
+			uParam0->f_49 = 1773064/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1773052/*func_5538*/;
+			uParam0->f_50 = 1773052/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1770378/*func_5526*/;
+			uParam0->f_7 = 1770378/*__LIB_12__::func_145*/;
 			break;
 		case 84:
 			uParam0->f_1 = 1768530/*func_5515*/;
 			break;
 		case 85:
-			uParam0->f_1 = 1766196/*func_5509*/;
+			uParam0->f_1 = 1766196/*__LIB_6__::func_813*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1761971/*func_5488*/;
+			uParam0->f_1 = 1761971/*__LIB_7__::func_551*/;
 			break;
 		case 88:
-			uParam0->f_1 = 1761962/*func_5487*/;
+			uParam0->f_1 = 1761962/*__LIB_0__::func_109*/;
 			break;
 		case 90:
-			uParam0->f_1 = 1761919/*func_5486*/;
+			uParam0->f_1 = 1761919/*__LIB_5__::func_363*/;
 			break;
 		case 91:
-			uParam0->f_1 = 1761618/*func_5484*/;
+			uParam0->f_1 = 1761618/*__LIB_5__::func_656*/;
 			break;
 		case 92:
 			uParam0->f_1 = 1760855/*func_5482*/;
 			break;
 		case 94:
-			uParam0->f_1 = 1759355/*func_5481*/;
+			uParam0->f_1 = 1759355/*__LIB_6__::func_499*/;
 			break;
 		case 102:
-			uParam0->f_1 = 1758787/*func_5475*/;
+			uParam0->f_1 = 1758787/*__LIB_6__::func_6*/;
 			break;
 		case 103:
-			uParam0->f_22 = 1758779/*func_5474*/;
+			uParam0->f_22 = 1758779/*__LIB_0__::func_467*/;
 			break;
 		case 104:
-			uParam0->f_1 = 1758704/*func_5473*/;
+			uParam0->f_1 = 1758704/*__LIB_4__::func_689*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1758630/*func_5472*/;
+			uParam0->f_59 = 1758630/*__LIB_11__::func_916*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1758606/*func_5471*/;
+			uParam0->f_19 = 1758606/*__LIB_4__::func_688*/;
 			break;
 	}
 }
@@ -30750,11 +30750,11 @@ void func_5589(int iParam0, int iParam1)//Position - 0x1B33E6
 					}
 					if ((bVar1 || bVar0) && !__LIB_3__::func_779())
 					{
-						__LIB_22__::func_439(iParam0, -1);
+						__LIB_22__::func_449(iParam0, -1);
 					}
 					if (__LIB_3__::func_661(0, iParam1))
 					{
-						__LIB_22__::func_439(iParam0, -1);
+						__LIB_22__::func_449(iParam0, -1);
 					}
 					else if (__LIB_3__::func_661(1, iParam1))
 					{
@@ -30778,7 +30778,7 @@ void func_5589(int iParam0, int iParam1)//Position - 0x1B33E6
 				}
 void func_5590(int iParam0)//Position - 0x1B3644
 {
-	__LIB_22__::func_439(iParam0, -1);
+	__LIB_22__::func_449(iParam0, -1);
 	Global_1946250.f_504 = -1;
 	__LIB_5__::func_947(1, iParam0);
 	Global_1946250.f_3607 = 0;
@@ -30790,172 +30790,172 @@ void func_5638(var uParam0, int iParam1)//Position - 0x1B5C09
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1833367/*func_5710*/;
+			*uParam0 = 1833367/*__LIB_5__::func_926*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1832715/*func_5707*/;
+			uParam0->f_30 = 1832715/*__LIB_6__::func_11*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1832652/*func_5705*/;
+			uParam0->f_31 = 1832652/*__LIB_5__::func_669*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1832596/*func_5704*/;
+			uParam0->f_34 = 1832596/*__LIB_4__::func_758*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1831881/*func_5703*/;
+			uParam0->f_12 = 1831881/*__LIB_4__::func_757*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1831873/*func_5702*/;
+			uParam0->f_32 = 1831873/*__LIB_0__::func_467*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1831864/*func_5701*/;
+			uParam0->f_35 = 1831864/*__LIB_0__::func_162*/;
 			break;
 		case 79:
-			*uParam0 = 1831840/*func_5700*/;
+			*uParam0 = 1831840/*__LIB_5__::func_265*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1831831/*func_5699*/;
+			uParam0->f_11 = 1831831/*__LIB_0__::func_109*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1830003/*func_5696*/;
+			uParam0->f_33 = 1830003/*__LIB_5__::func_668*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1829994/*func_5695*/;
+			uParam0->f_11 = 1829994/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1829986/*func_5694*/;
+			uParam0->f_56 = 1829986/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1829977/*func_5693*/;
+			uParam0->f_2 = 1829977/*__LIB_0__::func_109*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1829968/*func_5692*/;
+			uParam0->f_2 = 1829968/*__LIB_0__::func_109*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1829959/*func_5691*/;
+			uParam0->f_4 = 1829959/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1829950/*func_5690*/;
+			uParam0->f_5 = 1829950/*__LIB_0__::func_114*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1829941/*func_5689*/;
+			uParam0->f_55 = 1829941/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1829915/*func_5688*/;
+			uParam0->f_17 = 1829915/*__LIB_5__::func_322*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1829904/*func_5687*/;
+			uParam0->f_17 = 1829904/*__LIB_3__::func_860*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1829895/*func_5686*/;
+			uParam0->f_3 = 1829895/*__LIB_0__::func_114*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1829886/*func_5685*/;
+			uParam0->f_3 = 1829886/*__LIB_0__::func_114*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1829877/*func_5684*/;
+			uParam0->f_53 = 1829877/*__LIB_0__::func_114*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1829869/*func_5683*/;
+			uParam0->f_24 = 1829869/*__LIB_0__::func_467*/;
 			break;
 		case 25:
-			uParam0->f_23 = 1829861/*func_5682*/;
+			uParam0->f_23 = 1829861/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1828731/*func_5681*/;
+			uParam0->f_8 = 1828731/*__LIB_5__::func_667*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1828720/*func_5680*/;
+			uParam0->f_39 = 1828720/*__LIB_3__::func_860*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1828692/*func_5679*/;
+			uParam0->f_40 = 1828692/*__LIB_4__::func_755*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1828683/*func_5678*/;
+			uParam0->f_41 = 1828683/*__LIB_0__::func_114*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1828638/*func_5677*/;
+			uParam0->f_58 = 1828638/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1794896/*func_5674*/;
+			uParam0->f_42 = 1794896/*__LIB_5__::func_666*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1794887/*func_5673*/;
+			uParam0->f_14 = 1794887/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1794878/*func_5672*/;
+			uParam0->f_14 = 1794878/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1794870/*func_5671*/;
+			uParam0->f_57 = 1794870/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1794859/*func_5670*/;
+			uParam0->f_13 = 1794859/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1794851/*func_5669*/;
+			uParam0->f_43 = 1794851/*__LIB_0__::func_467*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1794842/*func_5668*/;
+			uParam0->f_8 = 1794842/*__LIB_0__::func_114*/;
 			break;
 		case 50:
-			*uParam0 = 1794543/*func_5662*/;
+			*uParam0 = 1794543/*__LIB_7__::func_34*/;
 			break;
 		case 51:
-			*uParam0 = 1794514/*func_5661*/;
+			*uParam0 = 1794514/*__LIB_4__::func_751*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1794483/*func_5660*/;
+			uParam0->f_15 = 1794483/*__LIB_4__::func_750*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1794449/*func_5659*/;
+			uParam0->f_13 = 1794449/*__LIB_5__::func_373*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1794405/*func_5658*/;
+			uParam0->f_45 = 1794405/*__LIB_4__::func_749*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1794376/*func_5657*/;
+			uParam0->f_46 = 1794376/*__LIB_4__::func_748*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1794367/*func_5656*/;
+			uParam0->f_11 = 1794367/*__LIB_0__::func_114*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1794310/*func_5654*/;
+			uParam0->f_13 = 1794310/*__LIB_5__::func_373*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1794302/*func_5653*/;
+			uParam0->f_47 = 1794302/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1794294/*func_5652*/;
+			uParam0->f_21 = 1794294/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1794286/*func_5651*/;
+			uParam0->f_21 = 1794286/*__LIB_0__::func_467*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1794278/*func_5650*/;
+			uParam0->f_21 = 1794278/*__LIB_0__::func_467*/;
 			break;
 		case 68:
-			*uParam0 = 1794252/*func_5649*/;
+			*uParam0 = 1794252/*__LIB_4__::func_746*/;
 			break;
 		case 69:
-			*uParam0 = 1794226/*func_5648*/;
+			*uParam0 = 1794226/*__LIB_4__::func_746*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1794214/*func_5647*/;
+			uParam0->f_48 = 1794214/*__LIB_3__::func_635*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1794205/*func_5646*/;
+			uParam0->f_49 = 1794205/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1794193/*func_5645*/;
+			uParam0->f_50 = 1794193/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1794184/*func_5644*/;
+			uParam0->f_7 = 1794184/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1794176/*func_5643*/;
+			uParam0->f_59 = 1794176/*__LIB_0__::func_467*/;
 			break;
 		case 126:
-			*uParam0 = 1793993/*func_5639*/;
+			*uParam0 = 1793993/*__LIB_7__::func_855*/;
 			break;
 	}
 }
@@ -30965,181 +30965,181 @@ void func_5711(var uParam0, int iParam1)//Position - 0x1BFE6E
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1876611/*func_5780*/;
+			*uParam0 = 1876611/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1876301/*func_5779*/;
+			uParam0->f_30 = 1876301/*__LIB_4__::func_786*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1871329/*func_5773*/;
+			uParam0->f_31 = 1871329/*__LIB_5__::func_674*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1871300/*func_5772*/;
+			uParam0->f_34 = 1871300/*__LIB_4__::func_780*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1871105/*func_5771*/;
+			uParam0->f_12 = 1871105/*__LIB_4__::func_779*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1870755/*func_5770*/;
+			uParam0->f_32 = 1870755/*__LIB_4__::func_778*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1870613/*func_5768*/;
+			uParam0->f_35 = 1870613/*__LIB_5__::func_929*/;
 			break;
 		case 79:
-			*uParam0 = 1870589/*func_5767*/;
+			*uParam0 = 1870589/*__LIB_5__::func_265*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1870379/*func_5766*/;
+			uParam0->f_18 = 1870379/*__LIB_5__::func_673*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1870274/*func_5765*/;
+			uParam0->f_9 = 1870274/*__LIB_7__::func_462*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1870265/*func_5764*/;
+			uParam0->f_11 = 1870265/*__LIB_0__::func_109*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1870160/*func_5762*/;
+			uParam0->f_33 = 1870160/*__LIB_5__::func_672*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1870151/*func_5761*/;
+			uParam0->f_11 = 1870151/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1870143/*func_5760*/;
+			uParam0->f_56 = 1870143/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1870134/*func_5759*/;
+			uParam0->f_2 = 1870134/*__LIB_0__::func_114*/;
 			break;
 		case 44:
-			*uParam0 = 1870125/*func_5758*/;
+			*uParam0 = 1870125/*__LIB_0__::func_114*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1869836/*func_5757*/;
+			uParam0->f_2 = 1869836/*__LIB_30__::func_489*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1869827/*func_5756*/;
+			uParam0->f_4 = 1869827/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1869743/*func_5755*/;
+			uParam0->f_5 = 1869743/*__LIB_6__::func_775*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1869734/*func_5754*/;
+			uParam0->f_55 = 1869734/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1869112/*func_5752*/;
+			uParam0->f_17 = 1869112/*__LIB_15__::func_659*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1868912/*func_5751*/;
+			uParam0->f_17 = 1868912/*__LIB_6__::func_12*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1868848/*func_5750*/;
+			uParam0->f_3 = 1868848/*__LIB_7__::func_352*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1868788/*func_5749*/;
+			uParam0->f_3 = 1868788/*__LIB_6__::func_773*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1868779/*func_5748*/;
+			uParam0->f_53 = 1868779/*__LIB_0__::func_109*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1868536/*func_5747*/;
+			uParam0->f_24 = 1868536/*__LIB_4__::func_777*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1868232/*func_5746*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1868094/*func_5745*/;
+			uParam0->f_8 = 1868094/*__LIB_7__::func_527*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1867650/*func_5743*/;
+			uParam0->f_39 = 1867650/*__LIB_7__::func_526*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1867229/*func_5742*/;
+			uParam0->f_40 = 1867229/*__LIB_30__::func_628*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1864651/*func_5741*/;
+			uParam0->f_41 = 1864651/*__LIB_4__::func_776*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1864606/*func_5740*/;
+			uParam0->f_58 = 1864606/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1838761/*func_5739*/;
+			uParam0->f_42 = 1838761/*__LIB_4__::func_775*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1838533/*func_5738*/;
+			uParam0->f_14 = 1838533/*__LIB_4__::func_774*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1838357/*func_5737*/;
+			uParam0->f_14 = 1838357/*__LIB_4__::func_773*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1838349/*func_5736*/;
+			uParam0->f_57 = 1838349/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1838338/*func_5735*/;
+			uParam0->f_13 = 1838338/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1838096/*func_5734*/;
+			uParam0->f_43 = 1838096/*__LIB_4__::func_772*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1838064/*func_5733*/;
+			uParam0->f_8 = 1838064/*__LIB_4__::func_771*/;
 			break;
 		case 50:
-			*uParam0 = 1837998/*func_5732*/;
+			*uParam0 = 1837998/*__LIB_30__::func_675*/;
 			break;
 		case 51:
-			*uParam0 = 1837974/*func_5731*/;
+			*uParam0 = 1837974/*__LIB_6__::func_899*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1837791/*func_5730*/;
+			uParam0->f_15 = 1837791/*__LIB_4__::func_770*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1837196/*func_5728*/;
+			uParam0->f_13 = 1837196/*__LIB_5__::func_671*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1836959/*func_5727*/;
+			uParam0->f_45 = 1836959/*__LIB_4__::func_768*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1836950/*func_5726*/;
+			uParam0->f_46 = 1836950/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1836885/*func_5725*/;
+			uParam0->f_11 = 1836885/*__LIB_7__::func_461*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1836463/*func_5724*/;
+			uParam0->f_13 = 1836463/*__LIB_5__::func_375*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1836455/*func_5723*/;
+			uParam0->f_47 = 1836455/*__LIB_0__::func_467*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1836447/*func_5722*/;
+			uParam0->f_21 = 1836447/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1836387/*func_5721*/;
+			uParam0->f_21 = 1836387/*__LIB_4__::func_767*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1836369/*func_5720*/;
+			uParam0->f_21 = 1836369/*__LIB_4__::func_766*/;
 			break;
 		case 68:
-			*uParam0 = 1836360/*func_5719*/;
+			*uParam0 = 1836360/*__LIB_0__::func_109*/;
 			break;
 		case 69:
-			*uParam0 = 1836351/*func_5718*/;
+			*uParam0 = 1836351/*__LIB_0__::func_109*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1835847/*func_5717*/;
+			uParam0->f_48 = 1835847/*__LIB_4__::func_765*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1835699/*func_5716*/;
+			uParam0->f_49 = 1835699/*__LIB_4__::func_764*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1835654/*func_5715*/;
+			uParam0->f_50 = 1835654/*__LIB_4__::func_763*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1835645/*func_5714*/;
+			uParam0->f_7 = 1835645/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1835637/*func_5713*/;
+			uParam0->f_59 = 1835637/*__LIB_0__::func_467*/;
 			break;
 		case 125:
-			uParam0->f_19 = 1835621/*func_5712*/;
+			uParam0->f_19 = 1835621/*__LIB_4__::func_516*/;
 			break;
 	}
 }
@@ -31201,175 +31201,175 @@ void func_5781(var uParam0, int iParam1)//Position - 0x1CA28C
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1911343/*func_5906*/;
+			*uParam0 = 1911343/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1911233/*func_5905*/;
+			uParam0->f_30 = 1911233/*__LIB_4__::func_833*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1908741/*func_5900*/;
+			uParam0->f_31 = 1908741/*__LIB_5__::func_686*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1908712/*func_5899*/;
+			uParam0->f_34 = 1908712/*__LIB_4__::func_780*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1908552/*func_5898*/;
+			uParam0->f_12 = 1908552/*__LIB_4__::func_828*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1908434/*func_5897*/;
+			uParam0->f_32 = 1908434/*__LIB_4__::func_827*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1908217/*func_5894*/;
+			uParam0->f_35 = 1908217/*__LIB_6__::func_20*/;
 			break;
 		case 79:
-			*uParam0 = 1908193/*func_5893*/;
+			*uParam0 = 1908193/*__LIB_5__::func_265*/;
 			break;
 		case 37:
-			uParam0->f_18 = 1908075/*func_5892*/;
+			uParam0->f_18 = 1908075/*__LIB_4__::func_826*/;
 			break;
 		case 38:
-			uParam0->f_9 = 1907924/*func_5889*/;
+			uParam0->f_9 = 1907924/*__LIB_6__::func_404*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1907915/*func_5888*/;
+			uParam0->f_11 = 1907915/*__LIB_1__::func_806*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1906912/*func_5885*/;
+			uParam0->f_33 = 1906912/*__LIB_5__::func_684*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1906903/*func_5884*/;
+			uParam0->f_11 = 1906903/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1906895/*func_5883*/;
+			uParam0->f_56 = 1906895/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1906886/*func_5882*/;
+			uParam0->f_2 = 1906886/*__LIB_0__::func_114*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1906732/*func_5881*/;
+			uParam0->f_2 = 1906732/*__LIB_30__::func_490*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1906723/*func_5880*/;
+			uParam0->f_4 = 1906723/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1906635/*func_5879*/;
+			uParam0->f_5 = 1906635/*__LIB_6__::func_778*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1905845/*func_5873*/;
+			uParam0->f_55 = 1905845/*__LIB_6__::func_430*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1905215/*func_5869*/;
+			uParam0->f_17 = 1905215/*__LIB_6__::func_818*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1905189/*func_5868*/;
+			uParam0->f_17 = 1905189/*__LIB_6__::func_18*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1905150/*func_5867*/;
+			uParam0->f_3 = 1905150/*__LIB_5__::func_820*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1905090/*func_5866*/;
+			uParam0->f_3 = 1905090/*__LIB_5__::func_933*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1905081/*func_5865*/;
+			uParam0->f_53 = 1905081/*__LIB_0__::func_109*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1905027/*func_5864*/;
+			uParam0->f_24 = 1905027/*__LIB_5__::func_682*/;
 			break;
 		case 25:
 			uParam0->f_23 = 1904723/*func_5863*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1904600/*func_5862*/;
+			uParam0->f_8 = 1904600/*__LIB_7__::func_530*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1904380/*func_5861*/;
+			uParam0->f_39 = 1904380/*__LIB_6__::func_777*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1904095/*func_5860*/;
+			uParam0->f_40 = 1904095/*__LIB_5__::func_932*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1903689/*func_5859*/;
+			uParam0->f_41 = 1903689/*__LIB_4__::func_822*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1903644/*func_5858*/;
+			uParam0->f_58 = 1903644/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1886114/*func_5857*/;
+			uParam0->f_42 = 1886114/*__LIB_4__::func_821*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1886105/*func_5856*/;
+			uParam0->f_14 = 1886105/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1886021/*func_5855*/;
+			uParam0->f_14 = 1886021/*__LIB_4__::func_820*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1886013/*func_5854*/;
+			uParam0->f_57 = 1886013/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1885990/*func_5853*/;
+			uParam0->f_13 = 1885990/*__LIB_4__::func_819*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1885938/*func_5852*/;
+			uParam0->f_43 = 1885938/*__LIB_4__::func_818*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1885906/*func_5851*/;
+			uParam0->f_8 = 1885906/*__LIB_4__::func_771*/;
 			break;
 		case 50:
-			*uParam0 = 1885728/*func_5850*/;
+			*uParam0 = 1885728/*__LIB_7__::func_670*/;
 			break;
 		case 51:
-			*uParam0 = 1885631/*func_5849*/;
+			*uParam0 = 1885631/*__LIB_24__::func_389*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1885620/*func_5848*/;
+			uParam0->f_15 = 1885620/*__LIB_4__::func_817*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1885305/*func_5846*/;
+			uParam0->f_13 = 1885305/*__LIB_5__::func_681*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1884671/*func_5843*/;
+			uParam0->f_45 = 1884671/*__LIB_22__::func_467*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1884662/*func_5842*/;
+			uParam0->f_46 = 1884662/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1879905/*func_5807*/;
+			uParam0->f_11 = 1879905/*__LIB_30__::func_817*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1879891/*func_5806*/;
+			uParam0->f_13 = 1879891/*__LIB_6__::func_14*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1878453/*func_5793*/;
+			uParam0->f_47 = 1878453/*__LIB_12__::func_371*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1878445/*func_5792*/;
+			uParam0->f_21 = 1878445/*__LIB_0__::func_467*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1878394/*func_5791*/;
+			uParam0->f_21 = 1878394/*__LIB_4__::func_790*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1878366/*func_5790*/;
+			uParam0->f_21 = 1878366/*__LIB_4__::func_789*/;
 			break;
 		case 68:
-			*uParam0 = 1878357/*func_5789*/;
+			*uParam0 = 1878357/*__LIB_0__::func_109*/;
 			break;
 		case 69:
-			*uParam0 = 1878348/*func_5788*/;
+			*uParam0 = 1878348/*__LIB_0__::func_109*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1878064/*func_5787*/;
+			uParam0->f_48 = 1878064/*__LIB_4__::func_788*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1877968/*func_5786*/;
+			uParam0->f_49 = 1877968/*__LIB_4__::func_787*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1877956/*func_5785*/;
+			uParam0->f_50 = 1877956/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1877770/*func_5784*/;
+			uParam0->f_7 = 1877770/*__LIB_5__::func_930*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1877598/*func_5782*/;
+			uParam0->f_59 = 1877598/*__LIB_6__::func_13*/;
 			break;
 	}
 }
@@ -31431,169 +31431,169 @@ void func_5907(var uParam0, int iParam1)//Position - 0x1D2A38
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = 1938934/*func_5976*/;
+			*uParam0 = 1938934/*__LIB_0__::func_109*/;
 			break;
 		case 1:
-			uParam0->f_30 = 1938788/*func_5975*/;
+			uParam0->f_30 = 1938788/*__LIB_5__::func_822*/;
 			break;
 		case 2:
-			uParam0->f_31 = 1933562/*func_5969*/;
+			uParam0->f_31 = 1933562/*__LIB_6__::func_348*/;
 			break;
 		case 3:
-			uParam0->f_34 = 1933533/*func_5968*/;
+			uParam0->f_34 = 1933533/*__LIB_4__::func_780*/;
 			break;
 		case 4:
-			uParam0->f_12 = 1933122/*func_5966*/;
+			uParam0->f_12 = 1933122/*__LIB_5__::func_692*/;
 			break;
 		case 6:
-			uParam0->f_32 = 1932952/*func_5965*/;
+			uParam0->f_32 = 1932952/*__LIB_5__::func_821*/;
 			break;
 		case 111:
-			uParam0->f_35 = 1932557/*func_5962*/;
+			uParam0->f_35 = 1932557/*__LIB_5__::func_691*/;
 			break;
 		case 79:
-			*uParam0 = 1932533/*func_5961*/;
+			*uParam0 = 1932533/*__LIB_5__::func_265*/;
 			break;
 		case 11:
-			uParam0->f_11 = 1932524/*func_5960*/;
+			uParam0->f_11 = 1932524/*__LIB_0__::func_109*/;
 			break;
 		case 12:
-			uParam0->f_33 = 1932429/*func_5958*/;
+			uParam0->f_33 = 1932429/*__LIB_5__::func_690*/;
 			break;
 		case 14:
-			uParam0->f_11 = 1932420/*func_5957*/;
+			uParam0->f_11 = 1932420/*__LIB_0__::func_162*/;
 			break;
 		case 109:
-			uParam0->f_56 = 1932412/*func_5956*/;
+			uParam0->f_56 = 1932412/*__LIB_0__::func_467*/;
 			break;
 		case 13:
-			uParam0->f_2 = 1932403/*func_5955*/;
+			uParam0->f_2 = 1932403/*__LIB_0__::func_114*/;
 			break;
 		case 15:
-			uParam0->f_2 = 1932156/*func_5953*/;
+			uParam0->f_2 = 1932156/*__LIB_30__::func_656*/;
 			break;
 		case 75:
-			uParam0->f_4 = 1932147/*func_5952*/;
+			uParam0->f_4 = 1932147/*__LIB_0__::func_114*/;
 			break;
 		case 16:
-			uParam0->f_5 = 1932059/*func_5951*/;
+			uParam0->f_5 = 1932059/*__LIB_6__::func_781*/;
 			break;
 		case 108:
-			uParam0->f_55 = 1932050/*func_5950*/;
+			uParam0->f_55 = 1932050/*__LIB_0__::func_114*/;
 			break;
 		case 17:
-			uParam0->f_17 = 1931795/*func_5949*/;
+			uParam0->f_17 = 1931795/*__LIB_7__::func_600*/;
 			break;
 		case 19:
-			uParam0->f_17 = 1931769/*func_5948*/;
+			uParam0->f_17 = 1931769/*__LIB_6__::func_22*/;
 			break;
 		case 20:
-			uParam0->f_3 = 1931760/*func_5947*/;
+			uParam0->f_3 = 1931760/*__LIB_0__::func_114*/;
 			break;
 		case 21:
-			uParam0->f_3 = 1931751/*func_5946*/;
+			uParam0->f_3 = 1931751/*__LIB_0__::func_114*/;
 			break;
 		case 74:
-			uParam0->f_53 = 1931742/*func_5945*/;
+			uParam0->f_53 = 1931742/*__LIB_0__::func_114*/;
 			break;
 		case 22:
-			uParam0->f_24 = 1931734/*func_5944*/;
+			uParam0->f_24 = 1931734/*__LIB_0__::func_467*/;
 			break;
 		case 25:
-			uParam0->f_23 = 1931726/*func_5943*/;
+			uParam0->f_23 = 1931726/*__LIB_0__::func_467*/;
 			break;
 		case 30:
-			uParam0->f_8 = 1931603/*func_5942*/;
+			uParam0->f_8 = 1931603/*__LIB_7__::func_531*/;
 			break;
 		case 31:
-			uParam0->f_39 = 1931357/*func_5941*/;
+			uParam0->f_39 = 1931357/*__LIB_7__::func_463*/;
 			break;
 		case 33:
-			uParam0->f_40 = 1931101/*func_5940*/;
+			uParam0->f_40 = 1931101/*__LIB_15__::func_437*/;
 			break;
 		case 34:
-			uParam0->f_41 = 1929117/*func_5939*/;
+			uParam0->f_41 = 1929117/*__LIB_5__::func_936*/;
 			break;
 		case 36:
-			uParam0->f_58 = 1929072/*func_5938*/;
+			uParam0->f_58 = 1929072/*__LIB_3__::func_667*/;
 			break;
 		case 35:
-			uParam0->f_42 = 1914623/*func_5937*/;
+			uParam0->f_42 = 1914623/*__LIB_4__::func_838*/;
 			break;
 		case 45:
-			uParam0->f_14 = 1914614/*func_5936*/;
+			uParam0->f_14 = 1914614/*__LIB_0__::func_162*/;
 			break;
 		case 46:
-			uParam0->f_14 = 1914605/*func_5935*/;
+			uParam0->f_14 = 1914605/*__LIB_0__::func_162*/;
 			break;
 		case 110:
-			uParam0->f_57 = 1914597/*func_5934*/;
+			uParam0->f_57 = 1914597/*__LIB_0__::func_467*/;
 			break;
 		case 77:
-			uParam0->f_13 = 1914586/*func_5933*/;
+			uParam0->f_13 = 1914586/*__LIB_3__::func_554*/;
 			break;
 		case 47:
-			uParam0->f_43 = 1914534/*func_5932*/;
+			uParam0->f_43 = 1914534/*__LIB_4__::func_837*/;
 			break;
 		case 49:
-			uParam0->f_8 = 1914502/*func_5931*/;
+			uParam0->f_8 = 1914502/*__LIB_4__::func_771*/;
 			break;
 		case 50:
-			*uParam0 = 1914373/*func_5930*/;
+			*uParam0 = 1914373/*__LIB_6__::func_780*/;
 			break;
 		case 51:
-			*uParam0 = 1914349/*func_5929*/;
+			*uParam0 = 1914349/*__LIB_6__::func_899*/;
 			break;
 		case 52:
-			uParam0->f_15 = 1914338/*func_5928*/;
+			uParam0->f_15 = 1914338/*__LIB_4__::func_270*/;
 			break;
 		case 53:
-			uParam0->f_13 = 1913687/*func_5926*/;
+			uParam0->f_13 = 1913687/*__LIB_5__::func_689*/;
 			break;
 		case 54:
-			uParam0->f_45 = 1913082/*func_5923*/;
+			uParam0->f_45 = 1913082/*__LIB_7__::func_644*/;
 			break;
 		case 56:
-			uParam0->f_46 = 1913073/*func_5922*/;
+			uParam0->f_46 = 1913073/*__LIB_3__::func_939*/;
 			break;
 		case 57:
-			uParam0->f_11 = 1913006/*func_5921*/;
+			uParam0->f_11 = 1913006/*__LIB_30__::func_619*/;
 			break;
 		case 58:
-			uParam0->f_13 = 1912992/*func_5920*/;
+			uParam0->f_13 = 1912992/*__LIB_6__::func_21*/;
 			break;
 		case 64:
-			uParam0->f_47 = 1912613/*func_5919*/;
+			uParam0->f_47 = 1912613/*__LIB_5__::func_387*/;
 			break;
 		case 65:
-			uParam0->f_21 = 1912538/*func_5917*/;
+			uParam0->f_21 = 1912538/*__LIB_5__::func_687*/;
 			break;
 		case 66:
-			uParam0->f_21 = 1912487/*func_5916*/;
+			uParam0->f_21 = 1912487/*__LIB_4__::func_835*/;
 			break;
 		case 67:
-			uParam0->f_21 = 1912469/*func_5915*/;
+			uParam0->f_21 = 1912469/*__LIB_4__::func_766*/;
 			break;
 		case 68:
-			*uParam0 = 1912460/*func_5914*/;
+			*uParam0 = 1912460/*__LIB_0__::func_109*/;
 			break;
 		case 69:
-			*uParam0 = 1912451/*func_5913*/;
+			*uParam0 = 1912451/*__LIB_0__::func_109*/;
 			break;
 		case 70:
-			uParam0->f_48 = 1912334/*func_5912*/;
+			uParam0->f_48 = 1912334/*__LIB_4__::func_834*/;
 			break;
 		case 71:
-			uParam0->f_49 = 1912325/*func_5911*/;
+			uParam0->f_49 = 1912325/*__LIB_0__::func_114*/;
 			break;
 		case 107:
-			uParam0->f_50 = 1912313/*func_5910*/;
+			uParam0->f_50 = 1912313/*__LIB_3__::func_635*/;
 			break;
 		case 80:
-			uParam0->f_7 = 1912304/*func_5909*/;
+			uParam0->f_7 = 1912304/*__LIB_0__::func_114*/;
 			break;
 		case 78:
-			uParam0->f_59 = 1912296/*func_5908*/;
+			uParam0->f_59 = 1912296/*__LIB_0__::func_467*/;
 			break;
 	}
 }
@@ -31603,22 +31603,22 @@ void func_5977(var uParam0, int iParam1)//Position - 0x1D95FF
 	switch (iParam1)
 	{
 		case 96:
-			uParam0->f_1 = 1939401/*func_5984*/;
+			uParam0->f_1 = 1939401/*__LIB_0__::func_114*/;
 			break;
 		case 97:
-			uParam0->f_1 = 1939392/*func_5983*/;
+			uParam0->f_1 = 1939392/*__LIB_0__::func_109*/;
 			break;
 		case 98:
-			uParam0->f_1 = 1939383/*func_5982*/;
+			uParam0->f_1 = 1939383/*__LIB_0__::func_109*/;
 			break;
 		case 99:
-			uParam0->f_1 = 1939223/*func_5981*/;
+			uParam0->f_1 = 1939223/*__LIB_5__::func_390*/;
 			break;
 		case 100:
-			uParam0->f_22 = 1939215/*func_5980*/;
+			uParam0->f_22 = 1939215/*__LIB_0__::func_467*/;
 			break;
 		case 101:
-			uParam0->f_22 = 1939060/*func_5978*/;
+			uParam0->f_22 = 1939060/*__LIB_12__::func_162*/;
 			break;
 	}
 }
@@ -31628,22 +31628,22 @@ void func_5985(var uParam0, int iParam1)//Position - 0x1D97D2
 	switch (iParam1)
 	{
 		case 90:
-			uParam0->f_1 = 1939618/*func_5990*/;
+			uParam0->f_1 = 1939618/*__LIB_0__::func_114*/;
 			break;
 		case 91:
-			uParam0->f_1 = 1939609/*func_5989*/;
+			uParam0->f_1 = 1939609/*__LIB_0__::func_109*/;
 			break;
 		case 92:
-			uParam0->f_1 = 1939600/*func_5988*/;
+			uParam0->f_1 = 1939600/*__LIB_0__::func_109*/;
 			break;
 		case 93:
-			uParam0->f_1 = 1939223/*func_5981*/;
+			uParam0->f_1 = 1939223/*__LIB_5__::func_390*/;
 			break;
 		case 94:
-			uParam0->f_1 = 1939591/*func_5987*/;
+			uParam0->f_1 = 1939591/*__LIB_0__::func_109*/;
 			break;
 		case 95:
-			uParam0->f_22 = 1939527/*func_5986*/;
+			uParam0->f_22 = 1939527/*__LIB_12__::func_162*/;
 			break;
 	}
 }
@@ -31653,19 +31653,19 @@ void func_5991(var uParam0, int iParam1)//Position - 0x1D98AB
 	switch (iParam1)
 	{
 		case 84:
-			uParam0->f_1 = 1939845/*func_5995*/;
+			uParam0->f_1 = 1939845/*__LIB_0__::func_109*/;
 			break;
 		case 85:
-			uParam0->f_1 = 1939836/*func_5994*/;
+			uParam0->f_1 = 1939836/*__LIB_0__::func_109*/;
 			break;
 		case 86:
-			uParam0->f_1 = 1939223/*func_5981*/;
+			uParam0->f_1 = 1939223/*__LIB_5__::func_390*/;
 			break;
 		case 87:
-			uParam0->f_1 = 1939827/*func_5993*/;
+			uParam0->f_1 = 1939827/*__LIB_0__::func_109*/;
 			break;
 		case 89:
-			uParam0->f_54 = 1939727/*func_5992*/;
+			uParam0->f_54 = 1939727/*__LIB_12__::func_163*/;
 			break;
 	}
 }
@@ -31702,7 +31702,7 @@ void func_6047()//Position - 0x1DB087
 	{
 		TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());
 	}
-	__LIB_30__::func_666(&Global_1941652, 0);
+	__LIB_30__::func_676(&Global_1941652, 0);
 	__LIB_15__::func_194(&Global_1941652);
 	func_6037(&Global_1941652, 0);
 	__LIB_15__::func_585();
@@ -31807,12 +31807,12 @@ int func_6054(int iParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4
 					{
 						iVar2 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID());
-						__LIB_30__::func_446(&iVar2);
+						__LIB_30__::func_456(&iVar2);
 					}
 					else
 					{
 						iVar2 = __LIB_1__::func_640();
-						__LIB_30__::func_633(&iVar2);
+						__LIB_30__::func_643(&iVar2);
 					}
 					if (__LIB_3__::func_262())
 					{
@@ -31932,7 +31932,7 @@ int func_6054(int iParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4
 			}
 			if (Global_1836584)
 			{
-				__LIB_30__::func_808(Global_2667225.f_706);
+				__LIB_30__::func_818(Global_2667225.f_706);
 			}
 			if (bParam7 && !Global_2703735.f_910)
 			{
@@ -32085,7 +32085,7 @@ int func_6054(int iParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4
 	else if (!Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_215 == 0)
 	{
 		TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID());
-		__LIB_30__::func_633(&(Global_2667225.f_45.f_173));
+		__LIB_30__::func_643(&(Global_2667225.f_45.f_173));
 		__LIB_0__::func_858();
 	}
 	Global_2667225.f_703 = NETWORK::GET_NETWORK_TIME();
@@ -32281,7 +32281,7 @@ int func_6113(struct<3> Param0, float fParam1, bool bParam2)//Position - 0x1DD8F
 		{
 			if ((__LIB_3__::func_262() && ENTITY::GET_ENTITY_MODEL(iVar0) == Global_2667225.f_45.f_67) || !__LIB_3__::func_262())
 			{
-				if (!__LIB_24__::func_56(ENTITY::GET_ENTITY_COORDS(iVar0, true), 30f, 1, 1, 0, 0, 0, 0, 0))
+				if (!__LIB_24__::func_66(ENTITY::GET_ENTITY_COORDS(iVar0, true), 30f, 1, 1, 0, 0, 0, 0, 0))
 				{
 					if (bParam2)
 					{
@@ -32296,11 +32296,11 @@ int func_6113(struct<3> Param0, float fParam1, bool bParam2)//Position - 0x1DD8F
 	}
 	if (Global_1836584 || __LIB_1__::func_141())
 	{
-		__LIB_30__::func_633(&iVar0);
+		__LIB_30__::func_643(&iVar0);
 	}
 	if (func_6293())
 	{
-		__LIB_30__::func_633(&(Global_2667225.f_45.f_173));
+		__LIB_30__::func_643(&(Global_2667225.f_45.f_173));
 		if (__LIB_2__::func_870())
 		{
 			if (__LIB_1__::func_599(44) && VEHICLE::IS_VEHICLE_DRIVEABLE(__LIB_2__::func_638(), false))
@@ -32606,7 +32606,7 @@ int func_6116(struct<3> Param0, float fParam1, bool bParam2, int iParam3, bool b
 									ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar0, true);
 									VEHICLE::SET_CLEAR_FREEZE_WAITING_ON_COLLISION_ONCE_PLAYER_ENTERS(iVar0, true);
 									VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iVar0, 5f);
-									__LIB_30__::func_749(&iVar0, iParam3);
+									__LIB_30__::func_759(&iVar0, iParam3);
 									if ((__LIB_1__::func_629() || __LIB_2__::func_632()) || __LIB_2__::func_631())
 									{
 										ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
@@ -32787,13 +32787,13 @@ int func_6165(struct<3> Param0, struct<3> Param1, int iParam2, int iParam3, var 
 		Global_2667225.f_681 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 		__LIB_0__::func_851();
 		__LIB_0__::func_854();
-		if (!uParam6->f_27 || (((((((__LIB_22__::func_428(Param0, 1, 1133903872) && !uParam6->f_28) && !Global_2815059.f_924) && !Global_2815059.f_913) && !Global_2815059.f_921) && !Global_2815059.f_925) && !Global_2815059.f_933) && !Global_2815059.f_945))
+		if (!uParam6->f_27 || (((((((__LIB_22__::func_438(Param0, 1, 1133903872) && !uParam6->f_28) && !Global_2815059.f_924) && !Global_2815059.f_913) && !Global_2815059.f_921) && !Global_2815059.f_925) && !Global_2815059.f_933) && !Global_2815059.f_945))
 		{
-			__LIB_30__::func_451(Param0, iParam2);
+			__LIB_30__::func_461(Param0, iParam2);
 		}
-		if (__LIB_30__::func_461(Param0))
+		if (__LIB_30__::func_471(Param0))
 		{
-			__LIB_30__::func_451(Param0, iParam2);
+			__LIB_30__::func_461(Param0, iParam2);
 		}
 		Global_2667225.f_676 = 2;
 	}
@@ -32816,7 +32816,7 @@ int func_6165(struct<3> Param0, struct<3> Param1, int iParam2, int iParam3, var 
 					fVar3 = 1f;
 					fVar4 = 1f;
 				}
-				if (((uParam6->f_3 && __LIB_30__::func_450(Param0, fVar2, fVar3, fVar4, 1f, 0, 0, 0, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0)) && !uParam6->f_7) && !__LIB_4__::func_986(Param0, *uParam5, iParam2, PLAYER::PLAYER_ID(), 0))
+				if (((uParam6->f_3 && __LIB_30__::func_460(Param0, fVar2, fVar3, fVar4, 1f, 0, 0, 0, 1123024896, 0, -1, 1, 0, 0, 0, 0, 0)) && !uParam6->f_7) && !__LIB_4__::func_986(Param0, *uParam5, iParam2, PLAYER::PLAYER_ID(), 0))
 				{
 					Global_2667225.f_683 = { Param0 };
 					Global_2667225.f_686 = *uParam5;
@@ -32943,7 +32943,7 @@ int func_6165(struct<3> Param0, struct<3> Param1, int iParam2, int iParam3, var 
 						{
 							if (!NETWORK::NETWORK_ENTITY_AREA_IS_OCCUPIED(Global_2667225.f_699))
 							{
-								if (__LIB_4__::func_985(Global_2667225.f_683, Global_2667225.f_686, iParam2, PLAYER::PLAYER_ID(), 0) || __LIB_22__::func_460(Global_2667225.f_683, Global_2667225.f_686, iParam2, 1, 0, 0, 0, 1, 0))
+								if (__LIB_4__::func_985(Global_2667225.f_683, Global_2667225.f_686, iParam2, PLAYER::PLAYER_ID(), 0) || __LIB_22__::func_470(Global_2667225.f_683, Global_2667225.f_686, iParam2, 1, 0, 0, 0, 1, 0))
 								{
 									func_6172(Global_2667225.f_683, 0);
 									__LIB_0__::func_821(-1);
@@ -33295,12 +33295,12 @@ int func_6178(var uParam0, var uParam1, var uParam2)//Position - 0x1E3805
 																					{
 																						if (uParam2->f_3 > 7f)
 																						{
-																							if (__LIB_30__::func_450(Var1, 6f, 1f, 1f, 5f, iVar17, bVar18, iVar19, fVar20, uParam2->f_58, -1, 1, uParam2->f_3, 0, 0, 0, 0))
+																							if (__LIB_30__::func_460(Var1, 6f, 1f, 1f, 5f, iVar17, bVar18, iVar19, fVar20, uParam2->f_58, -1, 1, uParam2->f_3, 0, 0, 0, 0))
 																							{
 																								iVar21 = 1;
 																							}
 																						}
-																						else if (__LIB_30__::func_450(Var1, 6f, 1f, 1f, 5f, iVar17, bVar18, iVar19, fVar20, uParam2->f_58, -1, 1, 0f, 0, 0, 0, 0) && !__LIB_22__::func_460(Var1, fVar2, uParam2->f_34, 1, 1, 0, 0, 0, 0))
+																						else if (__LIB_30__::func_460(Var1, 6f, 1f, 1f, 5f, iVar17, bVar18, iVar19, fVar20, uParam2->f_58, -1, 1, 0f, 0, 0, 0, 0) && !__LIB_22__::func_470(Var1, fVar2, uParam2->f_34, 1, 1, 0, 0, 0, 0))
 																						{
 																							iVar21 = 1;
 																						}
@@ -33312,7 +33312,7 @@ int func_6178(var uParam0, var uParam1, var uParam2)//Position - 0x1E3805
 																							fVar23 = 0f;
 																							if (uParam2->f_52)
 																							{
-																								iVar22 = __LIB_30__::func_632(Var1, uParam2->f_54, &fVar23);
+																								iVar22 = __LIB_30__::func_642(Var1, uParam2->f_54, &fVar23);
 																							}
 																							if (!uParam2->f_52 || (uParam2->f_52 && iVar22 <= uParam2->f_53))
 																							{
@@ -33821,12 +33821,12 @@ int func_6217(var uParam0, var uParam1, var uParam2)//Position - 0x1E603E
 										{
 											if (uParam2->f_3 > 7f)
 											{
-												if (__LIB_30__::func_450(Var3, 6f, 1f, 1f, 5f, iVar6, bVar7, iVar8, fVar9, uParam2->f_58, -1, 1, uParam2->f_3, 0, 0, 0, 0))
+												if (__LIB_30__::func_460(Var3, 6f, 1f, 1f, 5f, iVar6, bVar7, iVar8, fVar9, uParam2->f_58, -1, 1, uParam2->f_3, 0, 0, 0, 0))
 												{
 													bVar10 = true;
 												}
 											}
-											else if (__LIB_30__::func_450(Var3, 6f, 1f, 1f, 5f, iVar6, bVar7, iVar8, fVar9, uParam2->f_58, -1, 1, 0f, 0, 0, 0, 0) && !__LIB_22__::func_460(Var3, fVar4, uParam2->f_34, 1, 1, 0, 0, uParam2->f_58, 0))
+											else if (__LIB_30__::func_460(Var3, 6f, 1f, 1f, 5f, iVar6, bVar7, iVar8, fVar9, uParam2->f_58, -1, 1, 0f, 0, 0, 0, 0) && !__LIB_22__::func_470(Var3, fVar4, uParam2->f_34, 1, 1, 0, 0, uParam2->f_58, 0))
 											{
 												bVar10 = true;
 											}
@@ -33838,7 +33838,7 @@ int func_6217(var uParam0, var uParam1, var uParam2)//Position - 0x1E603E
 												fVar12 = 0f;
 												if (uParam2->f_52)
 												{
-													iVar11 = __LIB_30__::func_632(Var3, uParam2->f_54, &fVar12);
+													iVar11 = __LIB_30__::func_642(Var3, uParam2->f_54, &fVar12);
 												}
 												if (!uParam2->f_52 || (uParam2->f_52 && iVar11 <= uParam2->f_53))
 												{
@@ -34045,7 +34045,7 @@ void func_6270(int iParam0)//Position - 0x1EF49C
 	Global_1585234 = iParam0;
 	if (Global_2667225.f_45.f_172)
 	{
-		__LIB_30__::func_739(iParam0, 1);
+		__LIB_30__::func_749(iParam0, 1);
 	}
 	else
 	{
@@ -34825,7 +34825,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 		{
 			if (Global_2667225.f_2477 == 0)
 			{
-				if (__LIB_24__::func_56(Global_2676213, 150f, 1, 1, 0, 0, 0, 0, 0))
+				if (__LIB_24__::func_66(Global_2676213, 150f, 1, 1, 0, 0, 0, 0, 0))
 				{
 					__LIB_3__::func_261(Global_2676213);
 					Global_2667225.f_2479 = 0;
@@ -35104,15 +35104,15 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 		switch (Global_2667225.f_489)
 		{
 			case 57:
-				__LIB_30__::func_804(&(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 10f);
+				__LIB_30__::func_814(&(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 10f);
 				bVar2 = true;
 				break;
 			case 58:
-				__LIB_30__::func_803(&(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 10f);
+				__LIB_30__::func_813(&(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 10f);
 				bVar2 = true;
 				break;
 			case 9:
-				__LIB_30__::func_732(&Global_1574067, &(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 10f);
+				__LIB_30__::func_742(&Global_1574067, &(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 10f);
 				bVar2 = true;
 				break;
 			case 8:
@@ -35163,7 +35163,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 				bVar2 = true;
 				break;
 			case 12:
-				__LIB_30__::func_732(&Global_1574100, &(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 1123024896);
+				__LIB_30__::func_742(&Global_1574100, &(Global_2667225.f_555), &(Global_2667225.f_555.f_3), 1123024896);
 				bVar2 = true;
 				break;
 			case 51:
@@ -35234,7 +35234,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 				{
 					if (__LIB_1__::func_693(Global_1888188, 0, 1))
 					{
-						if (__LIB_30__::func_438(Global_1888188))
+						if (__LIB_30__::func_448(Global_1888188))
 						{
 							Global_2667225.f_520.f_13[0 /*3*/] = { __LIB_1__::func_694(Global_1888188) };
 							if (!__LIB_4__::func_934(PLAYER::PLAYER_ID(), 1))
@@ -35310,7 +35310,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 				{
 					fVar12 = Global_2667225.f_520.f_5;
 				}
-				Var13 = { __LIB_30__::func_623(Global_2667225.f_555, fVar12) };
+				Var13 = { __LIB_30__::func_633(Global_2667225.f_555, fVar12) };
 				if (SYSTEM::VMAG(Var13) > 0f)
 				{
 					Var13.f_2 = Global_2667225.f_555.f_2;
@@ -35469,15 +35469,15 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 					fVar12 = (1f + (((300f - Global_2667225.f_520.f_5) / 100f) * 0.5f));
 				}
 				fVar35 = (Global_2667225.f_520.f_5 * fVar12);
-				iVar30 = __LIB_30__::func_632(Var21, fVar35, &uVar43);
+				iVar30 = __LIB_30__::func_642(Var21, fVar35, &uVar43);
 				if (iVar30 > 0 || Global_2667225.f_555.f_15)
 				{
 					if (Global_2667225.f_555.f_15)
 					{
-						Var21 = { __LIB_30__::func_720(Var21, Global_2667225.f_45[iVar9 /*12*/], Global_2667225.f_45[iVar9 /*12*/].f_3, Global_2667225.f_45[iVar9 /*12*/].f_6, Global_2667225.f_45[iVar9 /*12*/].f_10, fVar35, 1, Global_2667225.f_520.f_30, 1, &(Global_2667225.f_555.f_25)) };
+						Var21 = { __LIB_30__::func_730(Var21, Global_2667225.f_45[iVar9 /*12*/], Global_2667225.f_45[iVar9 /*12*/].f_3, Global_2667225.f_45[iVar9 /*12*/].f_6, Global_2667225.f_45[iVar9 /*12*/].f_10, fVar35, 1, Global_2667225.f_520.f_30, 1, &(Global_2667225.f_555.f_25)) };
 						if (!Global_2667225.f_555.f_25)
 						{
-							Var21 = { __LIB_30__::func_720(Var21, Global_2667225.f_45[iVar9 /*12*/], Global_2667225.f_45[iVar9 /*12*/].f_3, Global_2667225.f_45[iVar9 /*12*/].f_6, Global_2667225.f_45[iVar9 /*12*/].f_10, fVar35, 1, Global_2667225.f_520.f_30, 0, &(Global_2667225.f_555.f_25)) };
+							Var21 = { __LIB_30__::func_730(Var21, Global_2667225.f_45[iVar9 /*12*/], Global_2667225.f_45[iVar9 /*12*/].f_3, Global_2667225.f_45[iVar9 /*12*/].f_6, Global_2667225.f_45[iVar9 /*12*/].f_10, fVar35, 1, Global_2667225.f_520.f_30, 0, &(Global_2667225.f_555.f_25)) };
 						}
 						Global_2667225.f_596 = 0f;
 						fVar36 = 40f;
@@ -35485,8 +35485,8 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 					else
 					{
 						bVar31 = false;
-						Var22 = { __LIB_30__::func_622(Var21, fVar35) };
-						Var23 = { __LIB_30__::func_621(Var21, fVar35) };
+						Var22 = { __LIB_30__::func_632(Var21, fVar35) };
+						Var23 = { __LIB_30__::func_631(Var21, fVar35) };
 						Var24 = { Var21 - Var22 };
 						Var24 = { Var24 / FtoV(SYSTEM::VMAG(Var24)) };
 						Var24 = { Var24 * Vector(fVar35, fVar35, fVar35) };
@@ -35500,7 +35500,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 							{
 								__LIB_3__::func_182(&(Var25[iVar0 /*3*/]), &(Global_2667225.f_45[iVar9 /*12*/]), 1036831949);
 							}
-							uVar26[iVar0] = __LIB_30__::func_632(Var25[iVar0 /*3*/], fVar35, &(uVar28[iVar0]));
+							uVar26[iVar0] = __LIB_30__::func_642(Var25[iVar0 /*3*/], fVar35, &(uVar28[iVar0]));
 							Var14 = { Var22 - Var25[iVar0 /*3*/] };
 							if (__LIB_0__::func_158(Var14, Var23) < 0f)
 							{
@@ -36316,7 +36316,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 						}
 						if (iVar46 != -1)
 						{
-							__LIB_30__::func_634(iVar46, &(Global_2667225.f_555), &(Global_2667225.f_555.f_3), Global_2671449.f_26);
+							__LIB_30__::func_644(iVar46, &(Global_2667225.f_555), &(Global_2667225.f_555.f_3), Global_2671449.f_26);
 						}
 						break;
 				}
@@ -36581,9 +36581,9 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 				}
 				break;
 			case 16:
-				if (Global_2667225.f_490.f_3 && !__LIB_30__::func_620(Global_2676213))
+				if (Global_2667225.f_490.f_3 && !__LIB_30__::func_630(Global_2676213))
 				{
-					Global_2667225.f_555 = { __LIB_30__::func_719() };
+					Global_2667225.f_555 = { __LIB_30__::func_729() };
 					Global_2667225.f_555.f_3 = Global_2676213.f_5;
 					Global_2667225.f_555.f_4 = Global_2676213.f_4;
 					Global_2667225.f_555.f_27 = Global_2676213.f_26;
@@ -36660,7 +36660,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 		{
 			Global_2667225.f_2674 = 1;
 		}
-		if (__LIB_24__::func_370(Global_2667225.f_555, &iVar0))
+		if (__LIB_24__::func_380(Global_2667225.f_555, &iVar0))
 		{
 			Global_2667225.f_515 = 1;
 		}
@@ -36979,7 +36979,7 @@ int func_6328(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 					}
 				}
 			}
-			else if ((__LIB_24__::func_56(Var18[iVar0 /*3*/], 3.5f, 1, 1, 0, 0, 0, 0, 0) || __LIB_9__::func_516(Var18[iVar0 /*3*/], 0.5f, PLAYER::PLAYER_ID(), 0, 0)) || Global_2667225.f_45.f_304)
+			else if ((__LIB_24__::func_66(Var18[iVar0 /*3*/], 3.5f, 1, 1, 0, 0, 0, 0, 0) || __LIB_9__::func_516(Var18[iVar0 /*3*/], 0.5f, PLAYER::PLAYER_ID(), 0, 0)) || Global_2667225.f_45.f_304)
 			{
 				if (iVar0 == 4 || SYSTEM::VMAG(Var18[iVar0 + 1 /*3*/]) == 0f)
 				{
@@ -37204,7 +37204,7 @@ int func_6329(var uParam0, var uParam1, var uParam2)//Position - 0x1F6B3B
 		{
 			if (SYSTEM::VMAG(*uParam0) > 0f)
 			{
-				if (__LIB_30__::func_450(*uParam0, 6f, 1f, 1f, 5f, 1, 1, 1, 120f, 0, -1, 1, uParam1->f_5, uParam0->f_17, 0, 0, 0))
+				if (__LIB_30__::func_460(*uParam0, 6f, 1f, 1f, 5f, 1, 1, 1, 120f, 0, -1, 1, uParam1->f_5, uParam0->f_17, 0, 0, 0))
 				{
 					*(uParam2[0 /*3*/]) = { *uParam0 };
 					uParam2->f_16[0] = uParam0->f_3;
@@ -38240,7 +38240,7 @@ void func_6347(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool b
 	}
 	if (uParam2->f_5 && uParam2->f_6)
 	{
-		if (!__LIB_22__::func_341(Param0, 1084227584, 1123024896, 0))
+		if (!__LIB_22__::func_351(Param0, 1084227584, 1123024896, 0))
 		{
 			iVar8 += 4;
 		}
@@ -38268,7 +38268,7 @@ void func_6347(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool b
 	}
 	if (uParam2->f_5)
 	{
-		if (!__LIB_24__::func_56(Param0, uParam3->f_5, 1, 1, 1, 1, 1, 1, 0))
+		if (!__LIB_24__::func_66(Param0, uParam3->f_5, 1, 1, 1, 1, 1, 1, 0))
 		{
 			iVar8 += 32;
 		}
@@ -38306,7 +38306,7 @@ void func_6347(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool b
 	}
 	if (uParam2->f_5)
 	{
-		if (__LIB_30__::func_647(Param0, fParam1, uParam2->f_15, __LIB_1__::func_430(1), uParam2->f_16, 0, 1123024896, 1101004800, 1101004800, 1084227584, 1092616192, 0, 0, 0))
+		if (__LIB_30__::func_657(Param0, fParam1, uParam2->f_15, __LIB_1__::func_430(1), uParam2->f_16, 0, 1123024896, 1101004800, 1101004800, 1084227584, 1092616192, 0, 0, 0))
 		{
 			iVar8 += 64;
 			iVar8 += 128;
@@ -38539,11 +38539,11 @@ void func_6347(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool b
 			}
 			if (uParam2->f_21)
 			{
-				fVar0 = __LIB_30__::func_714(Param0, uParam2->f_18, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
+				fVar0 = __LIB_30__::func_724(Param0, uParam2->f_18, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
 			}
 			else
 			{
-				fVar0 = __LIB_30__::func_714(Param0, Global_2667225.f_2466, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
+				fVar0 = __LIB_30__::func_724(Param0, Global_2667225.f_2466, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
 			}
 			if (bVar9)
 			{
@@ -38553,7 +38553,7 @@ void func_6347(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool b
 			{
 				Var19.f_2 = __LIB_3__::func_256(Param0);
 			}
-			fVar7 = __LIB_30__::func_619(Param0, 1, 0, 0, 0, 0);
+			fVar7 = __LIB_30__::func_629(Param0, 1, 0, 0, 0, 0);
 			Var19.f_4 = { Param0 };
 			Var19.f_7 = fParam1;
 			Var19.f_0 = iVar8;
@@ -38585,11 +38585,11 @@ void func_6347(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool b
 						}
 						if (uParam2->f_21)
 						{
-							fVar0 = __LIB_30__::func_714(Param0, uParam2->f_18, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
+							fVar0 = __LIB_30__::func_724(Param0, uParam2->f_18, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
 						}
 						else
 						{
-							fVar0 = __LIB_30__::func_714(Param0, Global_2667225.f_2466, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
+							fVar0 = __LIB_30__::func_724(Param0, Global_2667225.f_2466, uParam3->f_6, uParam3->f_4, bVar4, iVar10, &(Var19.f_8));
 						}
 						if (bVar9)
 						{
@@ -38639,8 +38639,8 @@ void func_6347(struct<3> Param0, float fParam1, var uParam2, var uParam3, bool b
 						{
 							fVar1 = 1f;
 						}
-						fVar5 = __LIB_22__::func_340(Param0, fVar1, 1, 1, 0, -1, 1);
-						fVar6 = __LIB_30__::func_619(Param0, 1, 1, 1, 1, 0);
+						fVar5 = __LIB_22__::func_350(Param0, fVar1, 1, 1, 0, -1, 1);
+						fVar6 = __LIB_30__::func_629(Param0, 1, 1, 1, 1, 0);
 						if (fVar5 > 15f && fVar6 > 5f)
 						{
 							fVar3 = __LIB_1__::func_420(fVar5, 0f, 80f, 160f, 1f, 1.2f);
@@ -38873,7 +38873,7 @@ Vector3 func_6398(struct<3> Param0, struct<3> Param1, float fParam2, int iParam3
 int func_6401(var uParam0, bool bParam1)//Position - 0x1FB5D8
 {
 	func_6402(uParam0, bParam1);
-	if (__LIB_30__::func_450(*uParam0, 6f, 1f, 1f, 5f, 0, 0, 0, 120f, 0, -1, 1, 0f, 0, 0, 0, 0))
+	if (__LIB_30__::func_460(*uParam0, 6f, 1f, 1f, 5f, 0, 0, 0, 120f, 0, -1, 1, 0f, 0, 0, 0, 0))
 	{
 		return 1;
 	}
@@ -39031,7 +39031,7 @@ Vector3 func_6452(int iParam0)//Position - 0x1FF9A6
 	}
 	if (__LIB_4__::func_902(iParam0))
 	{
-		Var1 = { __LIB_30__::func_626(iParam0) };
+		Var1 = { __LIB_30__::func_636(iParam0) };
 		if (SYSTEM::VMAG(Var1) > 0f)
 		{
 			return Var1;
@@ -39391,11 +39391,11 @@ struct<18> func_6498(bool bParam0)//Position - 0x204214
 					fVar3 = __LIB_1__::func_420(fVar5, Global_2667225.f_714.f_514, -1f, 100f, fVar8, 1f);
 					fVar4 = (fVar4 * (fVar3 * 0.91f));
 				}
-				fVar5 = __LIB_30__::func_619(Global_2667225.f_714.f_1[iVar1 /*5*/], 1, 0, 0, 0, iVar2);
+				fVar5 = __LIB_30__::func_629(Global_2667225.f_714.f_1[iVar1 /*5*/], 1, 0, 0, 0, iVar2);
 				fVar6 = fVar5;
 				fVar3 = __LIB_1__::func_420(fVar5, Global_2667225.f_714.f_515, __LIB_3__::func_403(), __LIB_3__::func_402(), fVar8, 0.3f);
 				fVar4 = (fVar4 * (fVar3 * 0.91f));
-				fVar5 = __LIB_30__::func_619(Global_2667225.f_714.f_1[iVar1 /*5*/], 0, 1, 0, 0, iVar2);
+				fVar5 = __LIB_30__::func_629(Global_2667225.f_714.f_1[iVar1 /*5*/], 0, 1, 0, 0, iVar2);
 				if (fVar5 < 10000f)
 				{
 					fVar3 = __LIB_1__::func_420(fVar5, Global_2667225.f_714.f_516, 15f, 150f, fVar8, 0.2f);
@@ -39682,9 +39682,9 @@ void func_6618(int iParam0)//Position - 0x20700E
 	int iVar9;
 	if (SCRIPT::GET_EVENT_DATA(1, iParam0, &Var0, 13))
 	{
-		if (__LIB_30__::func_789(Var0))
+		if (__LIB_30__::func_799(Var0))
 		{
-			__LIB_22__::func_262();
+			__LIB_22__::func_272();
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(Var0.f_0))
 		{
@@ -39723,15 +39723,15 @@ void func_6618(int iParam0)//Position - 0x20700E
 										iVar5 = NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar4);
 										if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 										{
-											func_71(__LIB_30__::func_842(2, Local_380.f_62[iVar1 /*6*/].f_2));
+											func_71(__LIB_30__::func_852(2, Local_380.f_62[iVar1 /*6*/].f_2));
 										}
 										else
 										{
-											func_109(__LIB_30__::func_842(2, Local_380.f_62[iVar1 /*6*/].f_2));
+											func_109(__LIB_30__::func_852(2, Local_380.f_62[iVar1 /*6*/].f_2));
 										}
 										if (iVar5 == PLAYER::PLAYER_ID())
 										{
-											__LIB_22__::func_262();
+											__LIB_22__::func_272();
 										}
 										if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 										{
@@ -39779,11 +39779,11 @@ void func_6618(int iParam0)//Position - 0x20700E
 							iVar9 = Local_380.f_9[iVar8 /*4*/].f_1;
 							if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 							{
-								func_71(__LIB_30__::func_842(2, iVar9));
+								func_71(__LIB_30__::func_852(2, iVar9));
 							}
 							else
 							{
-								func_109(__LIB_30__::func_842(2, iVar9));
+								func_109(__LIB_30__::func_852(2, iVar9));
 							}
 						}
 					}
@@ -39957,9 +39957,9 @@ void func_6623()//Position - 0x2074A1
 					iVar7 = 0;
 					while (iVar7 < func_4())
 					{
-						if (func_118(Local_130[iVar0 /*20*/], __LIB_30__::func_842(2, iVar7)))
+						if (func_118(Local_130[iVar0 /*20*/], __LIB_30__::func_852(2, iVar7)))
 						{
-							func_71(__LIB_30__::func_842(2, iVar7));
+							func_71(__LIB_30__::func_852(2, iVar7));
 						}
 						iVar7++;
 					}
@@ -39968,7 +39968,7 @@ void func_6623()//Position - 0x2074A1
 						iVar8 = func_11(Local_130[iVar0 /*20*/]);
 						if (iVar8 != -1)
 						{
-							func_71(__LIB_30__::func_842(10, iVar8));
+							func_71(__LIB_30__::func_852(10, iVar8));
 						}
 					}
 				}
@@ -40006,7 +40006,7 @@ void func_6624(int iParam0)//Position - 0x207726
 
 void func_6640()//Position - 0x207B2A
 {
-	__LIB_30__::func_418(Global_1943929, -1, -1, -1, -1);
+	__LIB_30__::func_428(Global_1943929, -1, -1, -1, -1);
 	if (func_25() != 0 || func_1058() == 3)
 	{
 		func_121();
@@ -40028,7 +40028,7 @@ void func_6640()//Position - 0x207B2A
 	func_1054(0);
 	__LIB_15__::func_574(&iLocal_204);
 	AUDIO::SET_AUDIO_FLAG("DisableFlightMusic", false);
-	__LIB_30__::func_966(0, 0);
+	__LIB_34__::func_770(0, 0);
 	__LIB_3__::func_0();
 	func_6047();
 	SCRIPT::TERMINATE_THIS_THREAD();
@@ -40070,31 +40070,31 @@ void func_6689(bool bParam0, bool bParam1)//Position - 0x209F23
 {
 	bool bVar0;
 	var uVar1;
-	if (!__LIB_30__::func_787(0))
+	if (!__LIB_30__::func_797(0))
 	{
-		uVar1 = __LIB_30__::func_408(func_25(), bParam0, bVar0, bParam1);
+		uVar1 = __LIB_30__::func_418(func_25(), bParam0, bVar0, bParam1);
 		Global_1943929.f_2 = Local_380.f_7;
 		Global_1943929.f_3 = Local_380.f_8;
-		if (__LIB_30__::func_787(4))
+		if (__LIB_30__::func_797(4))
 		{
-			__LIB_30__::func_648(bParam0, uVar1, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
+			__LIB_30__::func_658(bParam0, uVar1, 0, 0, -1, -1, -1, -1, -1, 0, -1, 0);
 		}
-		__LIB_30__::func_786(0);
+		__LIB_30__::func_796(0);
 	}
 }
 
 int func_6749(struct<21> Param0)//Position - 0x20C339
 {
 	__LIB_0__::func_935(32, Param0);
-	NETWORK::RESERVE_NETWORK_MISSION_OBJECTS(__LIB_30__::func_449(186, -1, -1, -1, -1, -1));
-	NETWORK::RESERVE_NETWORK_MISSION_PEDS(__LIB_30__::func_448(186, -1, -1, -1));
-	NETWORK::RESERVE_NETWORK_MISSION_VEHICLES(__LIB_30__::func_838(186, -1, 1, -1, -1, -1));
+	NETWORK::RESERVE_NETWORK_MISSION_OBJECTS(__LIB_30__::func_459(186, -1, -1, -1, -1, -1));
+	NETWORK::RESERVE_NETWORK_MISSION_PEDS(__LIB_30__::func_458(186, -1, -1, -1));
+	NETWORK::RESERVE_NETWORK_MISSION_VEHICLES(__LIB_30__::func_848(186, -1, 1, -1, -1, -1));
 	__LIB_0__::func_895(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_380, 386, 0);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&Local_381, 129, 0);
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 	func_6791();
-	__LIB_30__::func_649(0, 0, 0);
+	__LIB_30__::func_659(0, 0, 0);
 	return 1;
 }
 
@@ -40121,7 +40121,7 @@ void func_6791()//Position - 0x20D0A3
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, Global_1837206, iLocal_199);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("AMBIENT_GANG_CULT"), Global_1837206);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("AMBIENT_GANG_CULT"), iLocal_199);
-	__LIB_29__::func_742(1, &Global_1837206);
+	__LIB_29__::func_752(1, &Global_1837206);
 	__LIB_12__::func_525(&Global_1837206);
 	__LIB_12__::func_525(&iLocal_199);
 }

@@ -658,17 +658,17 @@ void __EntryFunction__()//Position - 0x0
 	Local_602 = { ScriptParam_603 };
 	__LIB_14__::func_800(&Local_602, 0, 0);
 	MISC::SET_MISSION_FLAG(true);
-	__LIB_42__::func_702(81);
+	__LIB_42__::func_577(81);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(11))
 	{
 		__LIB_14__::func_872(1);
 		func_586(1);
 	}
-	__LIB_39__::func_202(&Local_602);
+	__LIB_38__::func_877(&Local_602);
 	while (true)
 	{
 		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("SF_R5", 0);
-		__LIB_38__::func_820(Local_602.f_9, 0, 1, 0, 0, 0);
+		__LIB_38__::func_495(Local_602.f_9, 0, 1, 0, 0, 0);
 		func_1();
 		SYSTEM::WAIT(0);
 	}
@@ -680,12 +680,12 @@ void func_1()//Position - 0x17B
 	iLocal_368 = MISC::GET_GAME_TIMER();
 	if ((iLocal_302 % 10) == 0)
 	{
-		__LIB_39__::func_177();
+		__LIB_38__::func_852();
 	}
 	__LIB_14__::func_821();
 	PLAYER::SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
 	PLAYER::SET_ALL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
-	if (__LIB_39__::func_176())
+	if (__LIB_38__::func_851())
 	{
 		func_549();
 	}
@@ -700,29 +700,29 @@ void func_1()//Position - 0x17B
 	}
 	if (iLocal_378 == 4)
 	{
-		__LIB_39__::func_240();
-		__LIB_39__::func_246();
-		__LIB_39__::func_146();
-		__LIB_39__::func_238();
-		__LIB_39__::func_255(&Local_323);
-		__LIB_42__::func_700();
-		__LIB_39__::func_224(&Local_325);
-		__LIB_39__::func_235();
-		__LIB_42__::func_703();
-		iLocal_336 = __LIB_39__::func_194(&Local_323);
-		iLocal_337 = __LIB_39__::func_137();
-		if (__LIB_39__::func_136())
+		__LIB_38__::func_915();
+		__LIB_38__::func_921();
+		__LIB_38__::func_821();
+		__LIB_38__::func_913();
+		__LIB_38__::func_930(&Local_323);
+		__LIB_42__::func_575();
+		__LIB_38__::func_899(&Local_325);
+		__LIB_38__::func_910();
+		__LIB_42__::func_578();
+		iLocal_336 = __LIB_38__::func_869(&Local_323);
+		iLocal_337 = __LIB_38__::func_812();
+		if (__LIB_38__::func_811())
 		{
 			if (iLocal_368 > (Local_277.f_13 + iLocal_341))
 			{
-				__LIB_42__::func_698(&Local_350);
+				__LIB_42__::func_573(&Local_350);
 			}
 			if (iLocal_368 > (Local_277.f_13 + iLocal_340))
 			{
-				__LIB_42__::func_684(&Local_354);
-				__LIB_42__::func_684(&Local_356);
-				__LIB_42__::func_697(&Local_357);
-				__LIB_42__::func_701(&Local_349);
+				__LIB_42__::func_559(&Local_354);
+				__LIB_42__::func_559(&Local_356);
+				__LIB_42__::func_572(&Local_357);
+				__LIB_42__::func_576(&Local_349);
 			}
 		}
 		if (!HUD::DOES_BLIP_EXIST(iLocal_366))
@@ -784,19 +784,19 @@ void func_135()//Position - 0x6526
 				CAM::STOP_GAMEPLAY_HINT(false);
 			}
 			__LIB_14__::func_862();
-			if (__LIB_39__::func_201())
+			if (__LIB_38__::func_876())
 			{
 				CUTSCENE::REMOVE_CUTSCENE();
-				__LIB_39__::func_216(1);
-				__LIB_16__::func_1(Local_280.f_43, Local_280.f_42, 0, 0);
-				__LIB_39__::func_200(&Local_276);
+				__LIB_38__::func_891(1);
+				__LIB_16__::func_3(Local_280.f_43, Local_280.f_42, 0, 0);
+				__LIB_38__::func_875(&Local_276);
 				HUD::CLEAR_HELP(true);
 				HUD::HIDE_HELP_TEXT_THIS_FRAME();
 				iLocal_378 = 2;
 				__LIB_14__::func_840(&Local_276, 1);
-				__LIB_39__::func_169(&Local_277);
+				__LIB_38__::func_844(&Local_277);
 				__LIB_14__::func_816(0, 0, 1, 1);
-				__LIB_39__::func_204();
+				__LIB_38__::func_879();
 				func_267(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 1, 0, 0, 1, 1, 1, 1, 1, 1, 1);
 				__LIB_14__::func_844(1, 1, 1, 1);
 				MISC::CLEAR_AREA_OF_PEDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 240f, 0);
@@ -812,7 +812,7 @@ void func_135()//Position - 0x6526
 			break;
 		case 2:
 			iLocal_381 = 255;
-			__LIB_39__::func_169(&Local_277);
+			__LIB_38__::func_844(&Local_277);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_375, "SHOW_SHARD_CENTERED_MP_MESSAGE");
 			__LIB_0__::func_610("RAMPAGE");
 			__LIB_0__::func_610("");
@@ -827,8 +827,8 @@ void func_135()//Position - 0x6526
 			}
 			break;
 		case 3:
-			__LIB_39__::func_169(&Local_277);
-			if (__LIB_39__::func_201())
+			__LIB_38__::func_844(&Local_277);
+			if (__LIB_38__::func_876())
 			{
 				if (CAM::IS_SCREEN_FADED_OUT())
 				{
@@ -837,8 +837,8 @@ void func_135()//Position - 0x6526
 				{
 				}
 				WEAPON::REMOVE_ALL_PED_WEAPONS(PLAYER::PLAYER_PED_ID(), true);
-				__LIB_42__::func_696(1);
-				__LIB_42__::func_695();
+				__LIB_42__::func_571(1);
+				__LIB_42__::func_570();
 			}
 			iLocal_378 = 4;
 			iLocal_303 = 0;
@@ -847,14 +847,14 @@ void func_135()//Position - 0x6526
 			Local_277.f_15 = (Local_277.f_13 + Local_280.f_16);
 			__LIB_0__::func_433(0, -1, 1);
 			__LIB_0__::func_84(500, 0);
-			__LIB_39__::func_162();
-			__LIB_39__::func_198(&Local_323);
-			__LIB_39__::func_161();
-			__LIB_39__::func_160();
-			__LIB_39__::func_159();
+			__LIB_38__::func_837();
+			__LIB_38__::func_873(&Local_323);
+			__LIB_38__::func_836();
+			__LIB_38__::func_835();
+			__LIB_38__::func_834();
 			if (__LIB_0__::func_715(PLAYER::PLAYER_PED_ID()))
 			{
-				__LIB_39__::func_158();
+				__LIB_38__::func_833();
 				PLAYER::SET_MAX_WANTED_LEVEL(0);
 				PLAYER::SET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID(), 0, false);
 				PLAYER::SET_WANTED_LEVEL_MULTIPLIER(0f);
@@ -925,13 +925,13 @@ void func_135()//Position - 0x6526
 			AUDIO::TRIGGER_MUSIC_EVENT("RAMPAGE_STOP");
 			AUDIO::STOP_SOUND(iLocal_310);
 			__LIB_0__::func_714(&iLocal_366);
-			__LIB_39__::func_144(&Local_325, 1);
-			__LIB_39__::func_157();
+			__LIB_38__::func_819(&Local_325, 1);
+			__LIB_38__::func_832();
 			FIRE::STOP_FIRE_IN_RANGE(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 30f);
 			func_267(0f, 0f, 0f, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1);
-			__LIB_39__::func_215(PLAYER::PLAYER_PED_ID(), 10f, 0, 1101004800);
-			__LIB_42__::func_688(&Local_324);
-			__LIB_39__::func_248(&Local_323);
+			__LIB_38__::func_890(PLAYER::PLAYER_PED_ID(), 10f, 0, 1101004800);
+			__LIB_42__::func_563(&Local_324);
+			__LIB_38__::func_923(&Local_323);
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 			if (PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID()))
 			{
@@ -939,7 +939,7 @@ void func_135()//Position - 0x6526
 			}
 			if (Local_280.f_50)
 			{
-				__LIB_39__::func_236(2000);
+				__LIB_38__::func_911(2000);
 				AUDIO::STOP_STREAM();
 				AUDIO::PLAY_SOUND_FRONTEND(-1, "RAMPAGE_PASSED_MASTER", 0, true);
 			}
@@ -979,7 +979,7 @@ void func_135()//Position - 0x6526
 					}
 					else
 					{
-						iLocal_301 = __LIB_39__::func_120(iVar0, 0);
+						iLocal_301 = __LIB_38__::func_795(iVar0, 0);
 						if (__LIB_0__::func_715(iLocal_301))
 						{
 							if (ENTITY::IS_ENTITY_ATTACHED(iLocal_301))
@@ -994,12 +994,12 @@ void func_135()//Position - 0x6526
 					}
 				}
 			}
-			__LIB_42__::func_690();
+			__LIB_42__::func_565();
 			iLocal_382 = MISC::GET_GAME_TIMER();
 			iLocal_378 = 6;
 			break;
 		case 6:
-			__LIB_39__::func_157();
+			__LIB_38__::func_832();
 			if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()))
 			{
 				if (bLocal_312)
@@ -1012,7 +1012,7 @@ void func_135()//Position - 0x6526
 					{
 						if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true))
 						{
-							iLocal_301 = __LIB_39__::func_120(iVar0, 0);
+							iLocal_301 = __LIB_38__::func_795(iVar0, 0);
 						}
 						if (__LIB_0__::func_715(iLocal_301))
 						{
@@ -1031,7 +1031,7 @@ void func_135()//Position - 0x6526
 				{
 					if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true))
 					{
-						iLocal_301 = __LIB_39__::func_120(iVar0, 0);
+						iLocal_301 = __LIB_38__::func_795(iVar0, 0);
 					}
 					if (__LIB_0__::func_715(iLocal_301))
 					{
@@ -1056,14 +1056,14 @@ void func_135()//Position - 0x6526
 			}
 			break;
 		case 7:
-			__LIB_39__::func_157();
+			__LIB_38__::func_832();
 			HUD::HIDE_HELP_TEXT_THIS_FRAME();
 			GRAPHICS::DRAW_RECT(0.5f, 0.5f, 1f, 1f, 0, 0, 0, 0, false);
 			if (MISC::GET_GAME_TIMER() > iLocal_382)
 			{
 				__LIB_0__::func_123(&iLocal_301);
 				iLocal_301 = 0;
-				__LIB_39__::func_149();
+				__LIB_38__::func_824();
 				return;
 			}
 			break;
@@ -1074,7 +1074,7 @@ void func_135()//Position - 0x6526
 			}
 			break;
 		case 9:
-			__LIB_39__::func_157();
+			__LIB_38__::func_832();
 			WEAPON::REMOVE_ALL_PED_WEAPONS(PLAYER::PLAYER_PED_ID(), true);
 			HUD::HIDE_HELP_TEXT_THIS_FRAME();
 			__LIB_0__::func_122(&iLocal_301, 0);
@@ -1089,7 +1089,7 @@ void func_135()//Position - 0x6526
 			CAM::DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE();
 		}
 	}
-	if (!__LIB_39__::func_176())
+	if (!__LIB_38__::func_851())
 	{
 		if (iLocal_378 >= 5)
 		{
@@ -1114,11 +1114,11 @@ int func_227()//Position - 0xBCEF
 	switch (iLocal_309)
 	{
 		case 0:
-			__LIB_39__::func_200(&Local_276);
+			__LIB_38__::func_875(&Local_276);
 			if (!CUTSCENE::HAS_CUTSCENE_LOADED())
 			{
 				__LIB_14__::func_851(&(Local_276.f_9), 0);
-				__LIB_39__::func_121(&Local_276, &sLocal_410);
+				__LIB_38__::func_796(&Local_276, &sLocal_410);
 				if (Local_280.f_0 == 78)
 				{
 					if (__LIB_0__::func_121(Local_276.f_28[0]))
@@ -1131,7 +1131,7 @@ int func_227()//Position - 0xBCEF
 			iLocal_309 = 1;
 			break;
 		case 1:
-			__LIB_39__::func_121(&Local_276, &sLocal_410);
+			__LIB_38__::func_796(&Local_276, &sLocal_410);
 			if (Local_280.f_0 == 78)
 			{
 				if (__LIB_0__::func_121(Local_276.f_28[0]))
@@ -1146,20 +1146,20 @@ int func_227()//Position - 0xBCEF
 				TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());
 				Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 				PED::REQUEST_ACTION_MODE_ASSET("TREVOR_ACTION");
-				__LIB_39__::func_168();
+				__LIB_38__::func_843();
 				CUTSCENE::SET_CUTSCENE_CAN_BE_SKIPPED(false);
 				__LIB_14__::func_841();
 				CUTSCENE::START_CUTSCENE(0);
-				__LIB_39__::func_167(&uLocal_384);
+				__LIB_38__::func_842(&uLocal_384);
 				func_267(Var0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1);
 				__LIB_0__::func_84(500, 0);
 				iLocal_600 = 0;
-				__LIB_39__::func_216(0);
+				__LIB_38__::func_891(0);
 				iLocal_309 = 2;
 			}
 			break;
 		case 2:
-			if (__LIB_39__::func_166())
+			if (__LIB_38__::func_841())
 			{
 				if (!iLocal_414)
 				{
@@ -1178,7 +1178,7 @@ int func_227()//Position - 0xBCEF
 				PLAYER::SET_PLAYER_WEAPON_DAMAGE_MODIFIER(PLAYER::PLAYER_ID(), Local_285.f_1);
 				PLAYER::SET_PLAYER_WEAPON_DEFENSE_MODIFIER(PLAYER::PLAYER_ID(), Local_285.f_2);
 				WEAPON::REMOVE_ALL_PED_WEAPONS(PLAYER::PLAYER_PED_ID(), true);
-				__LIB_39__::func_204();
+				__LIB_38__::func_879();
 				if (Local_280.f_0 == 81)
 				{
 					if (__LIB_0__::func_121(Local_276.f_41[2]))
@@ -1209,7 +1209,7 @@ int func_227()//Position - 0xBCEF
 			}
 			if (CUTSCENE::GET_CUTSCENE_TIME() > iLocal_595)
 			{
-				__LIB_39__::func_161();
+				__LIB_38__::func_836();
 			}
 			if (Local_280.f_0 == 79)
 			{
@@ -1228,11 +1228,11 @@ int func_227()//Position - 0xBCEF
 			if (CUTSCENE::HAS_CUTSCENE_FINISHED())
 			{
 				__LIB_14__::func_844(1, 0, 1, 1);
-				__LIB_42__::func_696(0);
-				__LIB_42__::func_695();
+				__LIB_42__::func_571(0);
+				__LIB_42__::func_570();
 				if (Local_280.f_0 == 81)
 				{
-					__LIB_17__::func_310(&iLocal_101);
+					__LIB_17__::func_313(&iLocal_101);
 				}
 				if (Local_280.f_0 == 77)
 				{
@@ -1249,13 +1249,13 @@ int func_227()//Position - 0xBCEF
 				}
 				if (bLocal_599)
 				{
-					__LIB_39__::func_165();
+					__LIB_38__::func_840();
 				}
 				return 1;
 			}
 			else
 			{
-				__LIB_39__::func_206();
+				__LIB_38__::func_881();
 				if (!bLocal_413)
 				{
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
@@ -1266,7 +1266,7 @@ int func_227()//Position - 0xBCEF
 		case 3:
 			CUTSCENE::SET_CUTSCENE_FADE_VALUES(false, false, false, false);
 			__LIB_14__::func_806(250, 0);
-			__LIB_17__::func_399(1, 1, 1);
+			__LIB_17__::func_402(1, 1, 1);
 			__LIB_14__::func_844(1, 1, 1, 1);
 			__LIB_0__::func_123(&(Local_276.f_41[0]));
 			if (Local_280.f_0 == 77)
@@ -1282,8 +1282,8 @@ int func_227()//Position - 0xBCEF
 					ENTITY::SET_ENTITY_VISIBLE(Local_276.f_41[2], true, false);
 				}
 			}
-			__LIB_42__::func_696(1);
-			__LIB_42__::func_695();
+			__LIB_42__::func_571(1);
+			__LIB_42__::func_570();
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 			SYSTEM::WAIT(250);
@@ -1900,7 +1900,7 @@ int func_384(int iParam0, int iParam1, int iParam2)//Position - 0x2D663
 
 void func_549()//Position - 0x3B9C4
 {
-	__LIB_39__::func_157();
+	__LIB_38__::func_832();
 	switch (iLocal_379)
 	{
 		case 0:
@@ -1908,7 +1908,7 @@ void func_549()//Position - 0x3B9C4
 		case 1:
 			HUD::CLEAR_PRINTS();
 			HUD::CLEAR_HELP(true);
-			__LIB_39__::func_150();
+			__LIB_38__::func_825();
 			if (Local_277.f_0 < Local_280.f_53)
 			{
 				__LIB_14__::func_880("TR_FAIL", 1);
@@ -1922,7 +1922,7 @@ void func_549()//Position - 0x3B9C4
 		case 2:
 			if (__LIB_0__::func_223())
 			{
-				GRAPHICS::REMOVE_DECALS_IN_RANGE(__LIB_39__::func_175(), 500f);
+				GRAPHICS::REMOVE_DECALS_IN_RANGE(__LIB_38__::func_850(), 500f);
 				WEAPON::REMOVE_ALL_PED_WEAPONS(PLAYER::PLAYER_PED_ID(), true);
 				func_586(0);
 			}
@@ -1948,7 +1948,7 @@ void func_586(bool bParam0)//Position - 0x3CEBB
 	}
 	__LIB_12__::func_849(23, 0);
 	Global_32209 = uLocal_284;
-	__LIB_39__::func_150();
+	__LIB_38__::func_825();
 	AUDIO::STOP_SOUND(iLocal_310);
 	if (CAM::IS_GAMEPLAY_HINT_ACTIVE())
 	{
@@ -1956,10 +1956,10 @@ void func_586(bool bParam0)//Position - 0x3CEBB
 	}
 	if (Local_280.f_0 == 81)
 	{
-		__LIB_17__::func_310(&iLocal_101);
+		__LIB_17__::func_313(&iLocal_101);
 	}
-	__LIB_39__::func_182();
-	__LIB_39__::func_181();
+	__LIB_38__::func_857();
+	__LIB_38__::func_856();
 	__LIB_14__::func_804(0);
 	__LIB_0__::func_714(&iLocal_366);
 	__LIB_0__::func_122(&iLocal_301, 0);
@@ -1968,7 +1968,7 @@ void func_586(bool bParam0)//Position - 0x3CEBB
 	{
 		if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar1, true))
 		{
-			iLocal_301 = __LIB_39__::func_120(iVar1, 0);
+			iLocal_301 = __LIB_38__::func_795(iVar1, 0);
 			__LIB_0__::func_122(&iLocal_301, 0);
 			iLocal_301 = 0;
 		}
@@ -1978,10 +1978,10 @@ void func_586(bool bParam0)//Position - 0x3CEBB
 		PED::SET_PED_USING_ACTION_MODE(PLAYER::PLAYER_PED_ID(), false, -1, 0);
 	}
 	PED::SET_PED_CAN_SWITCH_WEAPON(PLAYER::PLAYER_PED_ID(), true);
-	__LIB_16__::func_837(&Global_103950);
+	__LIB_16__::func_840(&Global_103950);
 	if (!bParam0)
 	{
-		__LIB_17__::func_24(PLAYER::PLAYER_PED_ID(), 1, 0);
+		__LIB_17__::func_27(PLAYER::PLAYER_PED_ID(), 1, 0);
 	}
 	if (Local_280.f_50 == 1)
 	{
@@ -2017,11 +2017,11 @@ void func_586(bool bParam0)//Position - 0x3CEBB
 		GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_377);
 		iLocal_377 = 0;
 	}
-	__LIB_39__::func_251(&Local_324);
-	__LIB_39__::func_248(&Local_323);
-	__LIB_39__::func_144(&Local_325, 1);
-	__LIB_39__::func_180();
-	__LIB_39__::func_179();
+	__LIB_38__::func_926(&Local_324);
+	__LIB_38__::func_923(&Local_323);
+	__LIB_38__::func_819(&Local_325, 1);
+	__LIB_38__::func_855();
+	__LIB_38__::func_854();
 	__LIB_14__::func_828(iLocal_307);
 	if (iLocal_306 != 0)
 	{
@@ -2074,7 +2074,7 @@ void func_586(bool bParam0)//Position - 0x3CEBB
 	Global_31962 = 0;
 	Global_31969 = 1;
 	__LIB_14__::func_871(&Local_276, 0, 0, 0);
-	__LIB_39__::func_178();
+	__LIB_38__::func_853();
 	__LIB_0__::func_183(74, 1);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

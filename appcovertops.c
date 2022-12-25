@@ -739,7 +739,7 @@ int func_59(var uParam0, int iParam1, int iParam2)//Position - 0x1113
 			HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FMMC_PLYLOAD" /* GXT: Initializing */);
 			HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(5);
 			__LIB_13__::func_515(__LIB_11__::func_715(), 0, 0, 0);
-			__LIB_31__::func_507(uParam0, 0, 0, 0f, 0f, 0f, &uVar2, 0f, 0f, 0f, 1, 0, &uVar2, &iVar3, iVar3, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+			__LIB_31__::func_676(uParam0, 0, 0, 0f, 0f, 0f, &uVar2, 0f, 0f, 0f, 1, 0, &uVar2, &iVar3, iVar3, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 			HUD::DISPLAY_RADAR(false);
 			__LIB_7__::func_153();
 			Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_95 = 8;
@@ -1139,7 +1139,7 @@ void func_221(int iParam0)//Position - 0x6EEE
 			__LIB_0__::func_794(&uLocal_141);
 			if (iVar1 != -1)
 			{
-				__LIB_33__::func_249(&fVar5, &fVar6, 0, 9, 0, 0, MISC::GET_HASH_KEY(&(Global_794709.f_4[iVar1 /*88*/])));
+				__LIB_31__::func_719(&fVar5, &fVar6, 0, 9, 0, 0, MISC::GET_HASH_KEY(&(Global_794709.f_4[iVar1 /*88*/])));
 			}
 			if (fVar5 == 1f)
 			{

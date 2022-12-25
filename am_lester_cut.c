@@ -564,7 +564,7 @@ void func_19()//Position - 0x830
 			}
 			if (!BitTest(uLocal_333, 5))
 			{
-				if ((((((__LIB_1__::func_29(PLAYER::PLAYER_ID(), 1, 0) || __LIB_1__::func_381()) || __LIB_2__::func_907() > 0) || __LIB_0__::func_629()) || __LIB_33__::func_177()) || __LIB_3__::func_503()) || __LIB_3__::func_518(0))
+				if ((((((__LIB_1__::func_29(PLAYER::PLAYER_ID(), 1, 0) || __LIB_1__::func_381()) || __LIB_2__::func_907() > 0) || __LIB_0__::func_629()) || __LIB_31__::func_643()) || __LIB_3__::func_503()) || __LIB_3__::func_518(0))
 				{
 					MISC::SET_BIT(&uLocal_333, 5);
 					__LIB_3__::func_0();
@@ -694,7 +694,7 @@ void func_19()//Position - 0x830
 				{
 					if (CAM::IS_SCREEN_FADED_IN())
 					{
-						if (((((!__LIB_1__::func_29(PLAYER::PLAYER_ID(), 1, 0) && !__LIB_1__::func_381()) && __LIB_2__::func_907() == 0) && !__LIB_0__::func_629()) && !__LIB_33__::func_177()) && !__LIB_3__::func_518(0))
+						if (((((!__LIB_1__::func_29(PLAYER::PLAYER_ID(), 1, 0) && !__LIB_1__::func_381()) && __LIB_2__::func_907() == 0) && !__LIB_0__::func_629()) && !__LIB_31__::func_643()) && !__LIB_3__::func_518(0))
 						{
 							if (!__LIB_0__::func_864(&uLocal_336))
 							{
@@ -764,7 +764,7 @@ void func_19()//Position - 0x830
 			CUTSCENE::REMOVE_CUTSCENE();
 		}
 		__LIB_3__::func_512();
-		__LIB_41__::func_611(1);
+		__LIB_41__::func_319(1);
 	}
 }
 

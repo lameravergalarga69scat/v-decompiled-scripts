@@ -106,15 +106,15 @@ void __EntryFunction__()//Position - 0x0
 	Local_55 = { 0f, 0f, 0f };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(210))
 	{
-		__LIB_25__::func_382(&iLocal_49);
-		__LIB_25__::func_382(&iLocal_50);
-		__LIB_25__::func_382(&iLocal_51);
-		__LIB_25__::func_382(&iLocal_52);
-		__LIB_25__::func_382(&iLocal_53);
+		__LIB_25__::func_392(&iLocal_49);
+		__LIB_25__::func_392(&iLocal_50);
+		__LIB_25__::func_392(&iLocal_51);
+		__LIB_25__::func_392(&iLocal_52);
+		__LIB_25__::func_392(&iLocal_53);
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	func_115();
-	while (__LIB_16__::func_923())
+	while (__LIB_16__::func_926())
 	{
 		SYSTEM::WAIT(0);
 	}
@@ -129,7 +129,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (iLocal_47 == 0)
 			{
-				if (__LIB_16__::func_923())
+				if (__LIB_16__::func_926())
 				{
 					fVar0 = 0f;
 					iLocal_48 = func_103(&fVar0);
@@ -147,15 +147,15 @@ void __EntryFunction__()//Position - 0x0
 							fVar6 = 0f;
 							func_99(Var1, Var2, Var3, &fVar5, &fVar6);
 							fVar7 = (fVar5 * fVar6);
-							if (((((fVar7 >= 0.35f && __LIB_21__::func_271(Var1, 0f, 1f)) && __LIB_21__::func_271(Var2, 0f, 1f)) && __LIB_21__::func_271(Var3, 0f, 1f)) && __LIB_21__::func_271(Var4, 0f, 1f)) || ((((fVar7 < 0.35f && __LIB_21__::func_271(Var1, 0.05f, 0.95f)) && __LIB_21__::func_271(Var2, 0.05f, 0.95f)) && __LIB_21__::func_271(Var3, 0.05f, 0.95f)) && __LIB_21__::func_271(Var4, 0.05f, 0.95f)))
+							if (((((fVar7 >= 0.35f && __LIB_21__::func_281(Var1, 0f, 1f)) && __LIB_21__::func_281(Var2, 0f, 1f)) && __LIB_21__::func_281(Var3, 0f, 1f)) && __LIB_21__::func_281(Var4, 0f, 1f)) || ((((fVar7 < 0.35f && __LIB_21__::func_281(Var1, 0.05f, 0.95f)) && __LIB_21__::func_281(Var2, 0.05f, 0.95f)) && __LIB_21__::func_281(Var3, 0.05f, 0.95f)) && __LIB_21__::func_281(Var4, 0.05f, 0.95f)))
 							{
 								if (fVar5 >= 0.08f && fVar6 >= 0.101f)
 								{
-									__LIB_38__::func_902(&iLocal_49, Local_54[iLocal_48 /*8*/], 0.01f);
-									__LIB_38__::func_902(&iLocal_50, Var1, 0.01f);
-									__LIB_38__::func_902(&iLocal_51, Var2, 0.01f);
-									__LIB_38__::func_902(&iLocal_52, Var3, 0.01f);
-									__LIB_38__::func_902(&iLocal_53, Var4, 0.01f);
+									__LIB_38__::func_577(&iLocal_49, Local_54[iLocal_48 /*8*/], 0.01f);
+									__LIB_38__::func_577(&iLocal_50, Var1, 0.01f);
+									__LIB_38__::func_577(&iLocal_51, Var2, 0.01f);
+									__LIB_38__::func_577(&iLocal_52, Var3, 0.01f);
+									__LIB_38__::func_577(&iLocal_53, Var4, 0.01f);
 									bVar8 = false;
 									iVar9 = 0;
 									while (iVar9 < 10 && !bVar8)
@@ -174,13 +174,13 @@ void __EntryFunction__()//Position - 0x0
 											func_6();
 										}
 										__LIB_0__::func_210();
-										__LIB_20__::func_822(1);
+										__LIB_20__::func_832(1);
 									}
-									__LIB_25__::func_382(&iLocal_49);
-									__LIB_25__::func_382(&iLocal_50);
-									__LIB_25__::func_382(&iLocal_51);
-									__LIB_25__::func_382(&iLocal_52);
-									__LIB_25__::func_382(&iLocal_53);
+									__LIB_25__::func_392(&iLocal_49);
+									__LIB_25__::func_392(&iLocal_50);
+									__LIB_25__::func_392(&iLocal_51);
+									__LIB_25__::func_392(&iLocal_52);
+									__LIB_25__::func_392(&iLocal_53);
 								}
 							}
 						}
@@ -190,9 +190,9 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else if (iLocal_47 == 1)
 			{
-				if (!__LIB_16__::func_923())
+				if (!__LIB_16__::func_926())
 				{
-					__LIB_20__::func_822(iLocal_59);
+					__LIB_20__::func_832(iLocal_59);
 					iLocal_47 = 0;
 				}
 			}
@@ -202,7 +202,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (__LIB_0__::func_116())
 					{
-						__LIB_37__::func_690(33, 1);
+						__LIB_37__::func_364(33, 1);
 						func_1();
 						__LIB_0__::func_210();
 						SCRIPT::TERMINATE_THIS_THREAD();
@@ -248,7 +248,7 @@ void func_6()//Position - 0x538
 
 void func_7(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, int iParam6)//Position - 0x69C
 {
-	__LIB_15__::func_948(iParam0, iParam1, iParam2, bParam3);
+	__LIB_15__::func_950(iParam0, iParam1, iParam2, bParam3);
 	func_80(iParam0, iParam1, iParam2, bParam4, 1);
 	if (bParam5)
 	{
@@ -256,7 +256,7 @@ void func_7(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, b
 	}
 	if (iParam6 == 1)
 	{
-		__LIB_15__::func_950(iParam0, iParam1, iParam2, 0);
+		__LIB_15__::func_952(iParam0, iParam1, iParam2, 0);
 	}
 }
 
@@ -295,7 +295,7 @@ int func_80(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//P
 							if (iVar1 != 13)
 							{
 								func_80(iParam0, iVar1, uVar3[iVar1], 1, 1);
-								__LIB_15__::func_948(iParam0, iVar1, uVar3[iVar1], 1);
+								__LIB_15__::func_950(iParam0, iVar1, uVar3[iVar1], 1);
 							}
 							else
 							{
@@ -304,7 +304,7 @@ int func_80(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//P
 								while (iVar2 <= 8)
 								{
 									func_80(iParam0, 14, uVar4[iVar2], 1, 1);
-									__LIB_15__::func_948(iParam0, 14, uVar4[iVar2], 1);
+									__LIB_15__::func_950(iParam0, 14, uVar4[iVar2], 1);
 									iVar2++;
 								}
 							}
@@ -624,7 +624,7 @@ void func_107()//Position - 0x1ACF4
 				iLocal_56++;
 				break;
 			case 4:
-				if ((((((iLocal_60 < MISC::GET_GAME_TIMER() || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_903())
+				if ((((((iLocal_60 < MISC::GET_GAME_TIMER() || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_578())
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_57, "SHARD_ANIM_OUT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -635,7 +635,7 @@ void func_107()//Position - 0x1ACF4
 				}
 				break;
 			case 5:
-				if ((((((iLocal_60 < MISC::GET_GAME_TIMER() || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_903())
+				if ((((((iLocal_60 < MISC::GET_GAME_TIMER() || CAM::IS_SCREEN_FADED_OUT()) || !PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID())) || __LIB_0__::func_691()) || !PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) || __LIB_0__::func_134()) || __LIB_38__::func_578())
 				{
 					iLocal_56++;
 				}

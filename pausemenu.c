@@ -24,7 +24,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				func_2(1, 0, -1029819160, 0, 1, "PM_PANE_AUD" /* GXT: Audio */);
 				func_2(1, 1, -1029819160, 1, 0, "PM_PANE_DIS" /* GXT: Display */);
-				__LIB_37__::func_847(1);
+				__LIB_37__::func_521(1);
 			}
 			if (ScriptParam_0.f_1 == -1029820160)
 			{

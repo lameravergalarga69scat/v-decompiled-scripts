@@ -424,7 +424,7 @@ void func_46()//Position - 0x12BD
 				iVar0 = 0;
 				if (Local_112.f_2[iVar1] == -1)
 				{
-					if ((iVar1 <= 7 && __LIB_13__::func_601()) && __LIB_33__::func_256())
+					if ((iVar1 <= 7 && __LIB_13__::func_601()) && __LIB_31__::func_726())
 					{
 						ENTITY::CREATE_MODEL_HIDE(func_51(iVar1), 0.5f, joaat("xs_prop_x18_vip_greeenlight"), true);
 					}
@@ -580,7 +580,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 		case 2:
 			if ((__LIB_13__::func_598(PLAYER::PLAYER_PED_ID(), uParam0[uParam0->f_281.f_2 /*14*/]) && func_129(PLAYER::PLAYER_PED_ID(), (uParam0[uParam0->f_281.f_2 /*14*/])->f_8.f_3)) && !__LIB_4__::func_47())
 			{
-				if ((((((func_128(uParam0) || Global_1931426) || func_126(uParam0)) || !func_125(uParam0)) || ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID())) || ((uParam0->f_281.f_2 <= 7 && __LIB_13__::func_601()) && __LIB_33__::func_256())) || (uParam0->f_281.f_2 < 10 && Global_262145.f_26630 /* Tunable: -1263858477 */))
+				if ((((((func_128(uParam0) || Global_1931426) || func_126(uParam0)) || !func_125(uParam0)) || ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID())) || ((uParam0->f_281.f_2 <= 7 && __LIB_13__::func_601()) && __LIB_31__::func_726())) || (uParam0->f_281.f_2 < 10 && Global_262145.f_26630 /* Tunable: -1263858477 */))
 				{
 					if (!Global_1931426 && ((uParam0->f_281.f_2 < 10 && iParam1->f_2[uParam0->f_281.f_2] != -1) && iParam1->f_2[uParam0->f_281.f_2] != PLAYER::PLAYER_ID()))
 					{
@@ -598,7 +598,7 @@ void func_59(var uParam0, int iParam1)//Position - 0x17A8
 							func_132(uParam0, 1);
 						}
 					}
-					else if ((uParam0->f_281.f_2 <= 7 && __LIB_13__::func_601()) && __LIB_33__::func_256())
+					else if ((uParam0->f_281.f_2 <= 7 && __LIB_13__::func_601()) && __LIB_31__::func_726())
 					{
 						if (uParam0->f_281.f_6 == -1)
 						{
@@ -1129,7 +1129,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 				__LIB_2__::func_487(&(uParam0->f_281), 15);
 			}
 		}
-		else if ((((((((((((((((((((((__LIB_0__::func_624(&(uParam0->f_281), 13) || !Global_1574965) || (!BitTest(Global_1965531, 23) && !func_91())) || Global_2789734) || Global_2789737) || BitTest(Global_1958711, 13)) || BitTest(Global_1965531, 14)) || BitTest(Global_1958711, 9)) || BitTest(Global_2787913, 0)) || BitTest(Global_1965531, 6)) || BitTest(Global_1965531, 7)) || BitTest(Global_1965531, 8)) || BitTest(Global_1965531, 9)) || BitTest(Global_1965531, 2)) || BitTest(Global_1965531, 3)) || BitTest(Global_1965531, 4)) || BitTest(Global_1965531, 5)) || __LIB_6__::func_200(PLAYER::PLAYER_ID())) || __LIB_4__::func_47()) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/)) || !CAM::IS_SCREEN_FADED_IN()) || __LIB_18__::func_660(PLAYER::PLAYER_ID())) || Global_2787934 != 0)
+		else if ((((((((((((((((((((((__LIB_0__::func_624(&(uParam0->f_281), 13) || !Global_1574965) || (!BitTest(Global_1965531, 23) && !func_91())) || Global_2789734) || Global_2789737) || BitTest(Global_1958711, 13)) || BitTest(Global_1965531, 14)) || BitTest(Global_1958711, 9)) || BitTest(Global_2787913, 0)) || BitTest(Global_1965531, 6)) || BitTest(Global_1965531, 7)) || BitTest(Global_1965531, 8)) || BitTest(Global_1965531, 9)) || BitTest(Global_1965531, 2)) || BitTest(Global_1965531, 3)) || BitTest(Global_1965531, 4)) || BitTest(Global_1965531, 5)) || __LIB_6__::func_200(PLAYER::PLAYER_ID())) || __LIB_4__::func_47()) || PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/)) || !CAM::IS_SCREEN_FADED_IN()) || __LIB_18__::func_670(PLAYER::PLAYER_ID())) || Global_2787934 != 0)
 		{
 			func_25(uParam0, 1);
 			if (!BitTest(Global_1965531, 23))
@@ -1213,7 +1213,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 			{
 				if (bVar2)
 				{
-					if (__LIB_13__::func_601() && !__LIB_33__::func_256())
+					if (__LIB_13__::func_601() && !__LIB_31__::func_726())
 					{
 						if (((((__LIB_13__::func_291("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_5__::func_831("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_13__::func_291("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */)) || __LIB_5__::func_831("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 						{
@@ -1231,7 +1231,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 					{
 						if (bVar2)
 						{
-							if (__LIB_13__::func_601() && !__LIB_33__::func_256())
+							if (__LIB_13__::func_601() && !__LIB_31__::func_726())
 							{
 								if ((__LIB_13__::func_291("ARENA_SEAT_PC1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_5__::func_831("ARENA_SEAT_PC2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT_PC3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 								{
@@ -1270,7 +1270,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 					}
 					else if (bVar2)
 					{
-						if (__LIB_13__::func_601() && !__LIB_33__::func_256())
+						if (__LIB_13__::func_601() && !__LIB_31__::func_726())
 						{
 							if ((__LIB_13__::func_291("ARENA_SEAT1" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */, Global_262145.f_26634 /* Tunable: -76677190 */) || __LIB_5__::func_831("ARENA_SEAT2" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam for $~1~.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26633 /* Tunable: -887378230 */)) || __LIB_5__::func_831("ARENA_SEAT3" /* GXT: Press ~INPUT_SCRIPT_RDOWN~ to use Spectator Cam.~n~Press ~INPUT_SCRIPT_RLEFT~ to fly a Spectator Drone for $~1~.~n~Press ~INPUT_SCRIPT_PAD_RIGHT~ to stand up. */, Global_262145.f_26634 /* Tunable: -76677190 */))
 							{
@@ -1309,7 +1309,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 				}
 				if (uParam0->f_281.f_5 == 7)
 				{
-					if (__LIB_13__::func_601() && !__LIB_33__::func_256())
+					if (__LIB_13__::func_601() && !__LIB_31__::func_726())
 					{
 						if (((((((((PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 225 /*INPUT_SCRIPT_RRIGHT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 222 /*INPUT_SCRIPT_RUP*/)) && !BitTest(Global_1965531, 6)) && !BitTest(Global_1965531, 7)) && !BitTest(Global_1965531, 8)) && !BitTest(Global_1965531, 9)) && !__LIB_6__::func_200(PLAYER::PLAYER_ID()))
 						{
@@ -1423,7 +1423,7 @@ void func_62(var uParam0, var uParam1)//Position - 0x2905
 								{
 									AUDIO::PLAY_SOUND_FROM_ENTITY(iVar8, "Select_Live_Stream", NETWORK::NET_TO_OBJ(uParam1->f_14[uParam0->f_281.f_2]), "DLC_AW_Spectator_Tablet_Sounds", true, 0);
 								}
-								__LIB_33__::func_257(73, -1);
+								__LIB_31__::func_727(73, -1);
 								__LIB_13__::func_602();
 								func_63();
 							}
@@ -1577,7 +1577,7 @@ int func_92(var uParam0)//Position - 0x3E46
 	int iVar0;
 	if (*uParam0 == 0)
 	{
-		*uParam0 = __LIB_29__::func_879(1, 0, 0, 1, 1);
+		*uParam0 = __LIB_29__::func_889(1, 0, 0, 1, 1);
 	}
 	iVar0 = __LIB_13__::func_597(*uParam0);
 	if (iVar0 == 1)
@@ -1587,7 +1587,7 @@ int func_92(var uParam0)//Position - 0x3E46
 	else if (iVar0 != 0)
 	{
 		*uParam0 = 0;
-		__LIB_18__::func_643(0, -1, -1);
+		__LIB_18__::func_653(0, -1, -1);
 	}
 	return iVar0;
 }

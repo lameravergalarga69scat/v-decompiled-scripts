@@ -1804,7 +1804,7 @@ int func_17(int iParam0, int iParam1, bool bParam2, char* sParam3, char* sParam4
 	{
 		if (bParam2)
 		{
-			__LIB_42__::func_958(sParam3, sParam4, 1);
+			__LIB_42__::func_833(sParam3, sParam4, 1);
 		}
 		if (__LIB_2__::func_38(26, -1))
 		{
@@ -1824,7 +1824,7 @@ int func_17(int iParam0, int iParam1, bool bParam2, char* sParam3, char* sParam4
 	{
 		if (bParam2)
 		{
-			__LIB_42__::func_958(sParam3, sParam4, 0);
+			__LIB_42__::func_833(sParam3, sParam4, 0);
 		}
 		if (__LIB_2__::func_38(26, -1))
 		{
@@ -1836,7 +1836,7 @@ int func_17(int iParam0, int iParam1, bool bParam2, char* sParam3, char* sParam4
 	{
 		if (bParam2)
 		{
-			__LIB_42__::func_958(sParam3, sParam4, 1);
+			__LIB_42__::func_833(sParam3, sParam4, 1);
 		}
 		if (__LIB_2__::func_38(26, -1))
 		{
@@ -1909,7 +1909,7 @@ void func_96()//Position - 0x2382
 						func_469(2);
 					}
 					__LIB_1__::func_961((Global_262145.f_11675 /* Tunable: CRIMINAL_DAMAGE_EVENT_START_COUNTDOWN_TIME */ - __LIB_1__::func_724(&(Local_108.f_43), 0, 0)));
-					__LIB_32__::func_487(__LIB_1__::func_723((Global_262145.f_11675 /* Tunable: CRIMINAL_DAMAGE_EVENT_START_COUNTDOWN_TIME */ - __LIB_1__::func_724(&(Local_108.f_43), 0, 0)), 0), "HUD_STARTING" /* GXT: EVENT START */);
+					__LIB_30__::func_918(__LIB_1__::func_723((Global_262145.f_11675 /* Tunable: CRIMINAL_DAMAGE_EVENT_START_COUNTDOWN_TIME */ - __LIB_1__::func_724(&(Local_108.f_43), 0, 0)), 0), "HUD_STARTING" /* GXT: EVENT START */);
 					break;
 				case 2:
 					if (Local_108.f_37 > 2)
@@ -1917,7 +1917,7 @@ void func_96()//Position - 0x2382
 						__LIB_0__::func_467();
 						__LIB_1__::func_963(0);
 						func_440(144, 0f, 0f, 0, 0, 0, 0);
-						__LIB_41__::func_247(63, "AMBC_TITLE" /* GXT: CRIMINAL DAMAGE */, "AMBC_BIG_START" /* GXT: Cause the highest value of damage to vehicles and other players */, __LIB_1__::func_259(), -1, __LIB_1__::func_259(), 1, 0);
+						__LIB_40__::func_925(63, "AMBC_TITLE" /* GXT: CRIMINAL DAMAGE */, "AMBC_BIG_START" /* GXT: Cause the highest value of damage to vehicles and other players */, __LIB_1__::func_259(), -1, __LIB_1__::func_259(), 1, 0);
 						func_469(3);
 						Local_1455.f_9 = NETWORK::GET_CLOUD_TIME_AS_INT();
 						Local_1455.f_8 = NETWORK::GET_CLOUD_TIME_AS_INT();
@@ -1983,7 +1983,7 @@ void func_97()//Position - 0x2590
 	int iVar2;
 	if (BitTest(uLocal_94, 4))
 	{
-		if (__LIB_35__::func_668())
+		if (__LIB_34__::func_331())
 		{
 			if (!BitTest(uLocal_94, 5))
 			{
@@ -2030,7 +2030,7 @@ int func_98(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x26
 	uVar1 = Global_78130[0 /*14*/].f_7;
 	bVar2 = BitTest(Global_78130[0 /*14*/].f_6, 6);
 	Var3 = { Global_78130[0 /*14*/].f_8 };
-	__LIB_30__::func_255(&Var3, &uVar1, bVar2, iParam0, iVar0, iParam2, iParam3);
+	__LIB_30__::func_265(&Var3, &uVar1, bVar2, iParam0, iVar0, iParam2, iParam3);
 	return uVar1;
 }
 
@@ -2370,7 +2370,7 @@ int func_240(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 {
 	int iVar0;
 	int iVar1;
-	iVar0 = __LIB_36__::func_38(iParam0, sParam2, iParam3, iParam4, iParam5, iParam6, iParam7, bParam9);
+	iVar0 = __LIB_35__::func_940(iParam0, sParam2, iParam3, iParam4, iParam5, iParam6, iParam7, bParam9);
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION() && BitTest(Global_4718592.f_39, 19))
 	{
 		return iVar0;
@@ -2461,7 +2461,7 @@ void func_308(var uParam0, var uParam1)//Position - 0x86C6A
 	iVar0 = 0;
 	*uParam0 = 0;
 	*uParam1 = 0;
-	if (Local_1454[NETWORK::PARTICIPANT_ID_TO_INT() /*7*/].f_3 >= __LIB_30__::func_970() || func_343())
+	if (Local_1454[NETWORK::PARTICIPANT_ID_TO_INT() /*7*/].f_3 >= __LIB_34__::func_859() || func_343())
 	{
 		fVar1 = func_342();
 		fVar2 = func_341();
@@ -2493,8 +2493,8 @@ void func_308(var uParam0, var uParam1)//Position - 0x86C6A
 		{
 			iVar9 = 1;
 		}
-		iVar0 = (__LIB_30__::func_969() * iVar9);
-		iVar8 = (__LIB_30__::func_968() * iVar9);
+		iVar0 = (__LIB_34__::func_858() * iVar9);
+		iVar8 = (__LIB_34__::func_857() * iVar9);
 		*uParam0 = __LIB_2__::func_108(SYSTEM::ROUND((IntToFloat(((iVar3 + SYSTEM::FLOOR((IntToFloat(iVar5) * fVar1))) + iVar6)) * Global_262145.f_11908 /* Tunable: CRIMINAL_DAMAGE_EVENT_MULTIPLIER_CASH */)), 50, 0);
 		*uParam1 = __LIB_2__::func_108(SYSTEM::ROUND(((IntToFloat(((iVar4 + SYSTEM::FLOOR((IntToFloat(iVar5) * fVar2))) + iVar7)) * Global_262145.f_11909 /* Tunable: CRIMINAL_DAMAGE_EVENT_MULTIPLIER_RP */) + IntToFloat(iVar8))), 50, 0);
 	}
@@ -2532,7 +2532,7 @@ void func_309(var uParam0, int iParam1)//Position - 0x86DAD
 						__LIB_2__::func_98(&iVar0, 0);
 						if (iParam1 == 1)
 						{
-							__LIB_41__::func_41("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, __LIB_0__::func_797(), iVar0, 0, 0, 1);
+							__LIB_40__::func_717("GB_BCUT_TICK1" /* GXT: You paid ~a~ ~s~a $~1~ ~s~cut. */, __LIB_0__::func_797(), iVar0, 0, 0, 1);
 						}
 						__LIB_1__::func_928(20);
 						__LIB_2__::func_128(__LIB_0__::func_797(), iVar0, 1);
@@ -2609,7 +2609,7 @@ void func_345()//Position - 0x874C8
 				func_356(&iVar0, uVar1);
 				if (func_395(0))
 				{
-					__LIB_42__::func_956(73, iVar0, "AMBC_WIN" /* GXT: You won Criminal Damage by causing $~a~ worth of destruction */, "AMCH_WIN" /* GXT: WINNER */, 1, 15000, -1082130432, 2, 0);
+					__LIB_42__::func_831(73, iVar0, "AMBC_WIN" /* GXT: You won Criminal Damage by causing $~a~ worth of destruction */, "AMCH_WIN" /* GXT: WINNER */, 1, 15000, -1082130432, 2, 0);
 				}
 				else
 				{
@@ -2618,11 +2618,11 @@ void func_345()//Position - 0x874C8
 					{
 						if (func_395(1))
 						{
-							__LIB_42__::func_956(73, iVar0, "AMBC_2ND" /* GXT: You came second in Criminal Damage by causing $~a~ worth of destruction */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 1, 15000, -1082130432, 2, 0);
+							__LIB_42__::func_831(73, iVar0, "AMBC_2ND" /* GXT: You came second in Criminal Damage by causing $~a~ worth of destruction */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 1, 15000, -1082130432, 2, 0);
 						}
 						else if (func_395(2))
 						{
-							__LIB_42__::func_956(73, iVar0, "AMBC_3RD" /* GXT: You came third in Criminal Damage by causing $~a~ worth of destruction */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 1, 15000, -1082130432, 2, 0);
+							__LIB_42__::func_831(73, iVar0, "AMBC_3RD" /* GXT: You came third in Criminal Damage by causing $~a~ worth of destruction */, "AMCH_OVER" /* GXT: CHALLENGE OVER */, 1, 15000, -1082130432, 2, 0);
 						}
 						else
 						{
@@ -2635,19 +2635,19 @@ void func_345()//Position - 0x874C8
 							{
 								sVar5 = __LIB_3__::func_299(bVar3);
 							}
-							__LIB_42__::func_955(78, iVar0, sVar4, sVar5, "AMPP_LOSER" /* GXT: EVENT OVER */, 1, 15000, 2);
+							__LIB_42__::func_830(78, iVar0, sVar4, sVar5, "AMPP_LOSER" /* GXT: EVENT OVER */, 1, 15000, 2);
 						}
 					}
 				}
 			}
 			else
 			{
-				__LIB_41__::func_247(66, "CPC_OVER" /* GXT: EVENT OVER */, "AMCH_NOWIN" /* GXT: No players achieved a score */, 1, 15000, 2, 1, 0);
+				__LIB_40__::func_925(66, "CPC_OVER" /* GXT: EVENT OVER */, "AMCH_NOWIN" /* GXT: No players achieved a score */, 1, 15000, 2, 1, 0);
 			}
 		}
 		else
 		{
-			__LIB_42__::func_958("", "", 1);
+			__LIB_42__::func_833("", "", 1);
 		}
 		MISC::SET_BIT(&(Local_1454[NETWORK::PARTICIPANT_ID_TO_INT() /*7*/].f_1), 1);
 		__LIB_1__::func_916(144);
@@ -2703,7 +2703,7 @@ void func_370()//Position - 0x884A6
 							{
 								if (__LIB_2__::func_72(bVar1, 1))
 								{
-									uVar9[iVar5] = __LIB_32__::func_489(bVar1, -2, 0, 0, 0);
+									uVar9[iVar5] = __LIB_30__::func_920(bVar1, -2, 0, 0, 0);
 								}
 							}
 						}
@@ -2930,7 +2930,7 @@ void func_398()//Position - 0x8968D
 	int iVar0;
 	if (!__LIB_2__::func_139(PLAYER::PLAYER_ID()) && !__LIB_2__::func_40(PLAYER::PLAYER_ID(), 0))
 	{
-		iVar0 = __LIB_39__::func_817();
+		iVar0 = __LIB_39__::func_493();
 		if (iVar0 != Local_1454[NETWORK::PARTICIPANT_ID_TO_INT() /*7*/].f_3)
 		{
 			if (iLocal_104 == 0)
@@ -3607,7 +3607,7 @@ void func_507(var uParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 												iVar1[bVar10] = iVar21;
 												iVar21++;
 												iVar0++;
-												__LIB_32__::func_492(&iVar1, bVar4, &iVar21, &iVar0, bVar3);
+												__LIB_30__::func_923(&iVar1, bVar4, &iVar21, &iVar0, bVar3);
 											}
 										}
 									}
@@ -3637,7 +3637,7 @@ void func_507(var uParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 							{
 								bVar4 = (uParam0[iVar18 /*42*/])->f_1;
 							}
-							if ((__LIB_2__::func_144(bVar4) && __LIB_32__::func_491(bVar4, iParam2, bVar3)) && __LIB_1__::func_693(bVar4, 0, 1))
+							if ((__LIB_2__::func_144(bVar4) && __LIB_30__::func_922(bVar4, iParam2, bVar3)) && __LIB_1__::func_693(bVar4, 0, 1))
 							{
 								bVar10 = bVar4;
 								iVar8 = Global_1853348[bVar10 /*834*/].f_205.f_6;
@@ -3765,7 +3765,7 @@ void func_507(var uParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 										}
 									}
 									uParam3->f_38[bVar10 /*2*/].f_1 = iVar19;
-									__LIB_42__::func_957(bVar4, PLAYER::GET_PLAYER_NAME(bVar4), iParam1, uParam3, iVar19, Var7, sVar5, iVar8, iVar17, iVar16);
+									__LIB_42__::func_832(bVar4, PLAYER::GET_PLAYER_NAME(bVar4), iParam1, uParam3, iVar19, Var7, sVar5, iVar8, iVar17, iVar16);
 									iVar19++;
 								}
 							}
@@ -3995,7 +3995,7 @@ void func_537(bool bParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				{
 					__LIB_0__::func_700(&sParam4);
 				}
-				__LIB_41__::func_42(uParam2, bParam0);
+				__LIB_40__::func_718(uParam2, bParam0);
 				if (iParam12 == 1 || MISC::IS_STRING_NULL_OR_EMPTY(sParam8))
 				{
 					__LIB_0__::func_700("");
@@ -4196,7 +4196,7 @@ int func_578(int* iParam0, int iParam1, var uParam2, var uParam3, bool bParam4, 
 					}
 					else if (iParam1 == 28)
 					{
-						sVar6 = __LIB_32__::func_493(uParam2);
+						sVar6 = __LIB_30__::func_924(uParam2);
 						if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam6))
 						{
 							sVar6 = sParam6;
@@ -4593,7 +4593,7 @@ void func_674(int iParam0, bool bParam1, bool bParam2)//Position - 0x984A5
 		__LIB_2__::func_28();
 		if ((!__LIB_2__::func_106(PLAYER::PLAYER_ID()) && !__LIB_2__::func_111(PLAYER::PLAYER_ID())) && !__LIB_1__::func_632())
 		{
-			__LIB_44__::func_99();
+			__LIB_44__::func_115();
 		}
 		__LIB_2__::func_23();
 		if (!BitTest(Global_1943920.f_3, 0) && !BitTest(Global_1943920.f_3, 1))

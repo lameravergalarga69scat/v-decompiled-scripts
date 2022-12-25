@@ -101,7 +101,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		Global_78564 = 1;
 		iLocal_37 = 0;
-		while (!__LIB_37__::func_628(&Local_53))
+		while (!__LIB_37__::func_302(&Local_53))
 		{
 			SYSTEM::WAIT(0);
 		}
@@ -171,7 +171,7 @@ void func_1()//Position - 0x175
 			{
 				func_512();
 				func_4();
-				__LIB_17__::func_116(0, uLocal_44);
+				__LIB_17__::func_119(0, uLocal_44);
 				func_510();
 			}
 			break;
@@ -180,7 +180,7 @@ void func_1()//Position - 0x175
 
 void func_4()//Position - 0x253
 {
-	__LIB_15__::func_984(&Global_103950);
+	__LIB_15__::func_986(&Global_103950);
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
 		func_5(PLAYER::PLAYER_PED_ID(), &(Global_100166[__LIB_0__::func_216(PLAYER::PLAYER_PED_ID()) /*65*/]), 0, 0, 1, 0);
@@ -4517,7 +4517,7 @@ void func_306()//Position - 0x6187E
 		case 2:
 			if (__LIB_0__::func_121(iLocal_47))
 			{
-				if (__LIB_17__::func_123(iLocal_47, 1, 1116471296, 1126825984, 1, 1, 0, 0) || PED::IS_PED_BEING_JACKED(iLocal_47))
+				if (__LIB_17__::func_126(iLocal_47, 1, 1116471296, 1126825984, 1, 1, 0, 0) || PED::IS_PED_BEING_JACKED(iLocal_47))
 				{
 					iLocal_43 = 1;
 					AUDIO::TRIGGER_MUSIC_EVENT("EPS_FAIL");
@@ -4532,7 +4532,7 @@ void func_306()//Position - 0x6187E
 			}
 			if (__LIB_0__::func_121(iLocal_46))
 			{
-				if (__LIB_17__::func_123(iLocal_46, 1, 1116471296, 1126825984, 1, 1, 0, 0) || PED::IS_PED_BEING_JACKED(iLocal_46))
+				if (__LIB_17__::func_126(iLocal_46, 1, 1116471296, 1126825984, 1, 1, 0, 0) || PED::IS_PED_BEING_JACKED(iLocal_46))
 				{
 					iLocal_43 = 1;
 					AUDIO::TRIGGER_MUSIC_EVENT("EPS_FAIL");
@@ -4547,7 +4547,7 @@ void func_306()//Position - 0x6187E
 			}
 			if (__LIB_0__::func_121(iLocal_48))
 			{
-				if (__LIB_17__::func_123(iLocal_48, 1, 1116471296, 1126825984, 1, 1, 0, 0) || PED::IS_PED_BEING_JACKED(iLocal_48))
+				if (__LIB_17__::func_126(iLocal_48, 1, 1116471296, 1126825984, 1, 1, 0, 0) || PED::IS_PED_BEING_JACKED(iLocal_48))
 				{
 					iLocal_43 = 1;
 					AUDIO::TRIGGER_MUSIC_EVENT("EPS_FAIL");
@@ -4797,10 +4797,10 @@ void func_408()//Position - 0x6AE96
 			STREAMING::REQUEST_MODEL(joaat("bison"));
 			HUD::REQUEST_ADDITIONAL_TEXT("EPS7", 0);
 			TASK::REQUEST_WAYPOINT_RECORDING("eps7_driveaway");
-			uLocal_44 = __LIB_17__::func_122(0);
+			uLocal_44 = __LIB_17__::func_125(0);
 			if (__LIB_0__::func_692(PLAYER::PLAYER_PED_ID()))
 			{
-				__LIB_17__::func_38(PLAYER::PLAYER_PED_ID(), 28);
+				__LIB_17__::func_41(PLAYER::PLAYER_PED_ID(), 28);
 			}
 			iLocal_42 = 1;
 			break;
@@ -4851,7 +4851,7 @@ void func_408()//Position - 0x6AE96
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 					iLocal_51 = 1;
 				}
-				if (__LIB_17__::func_36())
+				if (__LIB_17__::func_39())
 				{
 					iLocal_51 = 1;
 				}
@@ -4867,18 +4867,18 @@ void func_408()//Position - 0x6AE96
 				func_425();
 				func_424();
 				func_423();
-				__LIB_17__::func_36();
+				__LIB_17__::func_39();
 				if (!CUTSCENE::IS_CUTSCENE_PLAYING())
 				{
-					__LIB_15__::func_948(__LIB_0__::func_154(0), 12, 28, 1);
+					__LIB_15__::func_950(__LIB_0__::func_154(0), 12, 28, 1);
 					func_421(__LIB_0__::func_154(0), 12, 28, 1, 1);
 					if (__LIB_0__::func_692(PLAYER::PLAYER_PED_ID()))
 					{
 						func_282(PLAYER::PLAYER_PED_ID(), 12, 28, 1, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-						__LIB_17__::func_117(0);
+						__LIB_17__::func_120(0);
 						PED::RELEASE_PED_PRELOAD_VARIATION_DATA(PLAYER::PLAYER_PED_ID());
 					}
-					__LIB_15__::func_948(__LIB_0__::func_154(0), 12, 8, 0);
+					__LIB_15__::func_950(__LIB_0__::func_154(0), 12, 8, 0);
 					func_421(__LIB_0__::func_154(0), 12, 8, 0, 1);
 					__LIB_14__::func_870(1, 1, 1, 1);
 					iLocal_42 = 3;
@@ -4945,7 +4945,7 @@ int func_421(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 							if (iVar1 != 13)
 							{
 								func_421(iParam0, iVar1, uVar3[iVar1], 1, 1);
-								__LIB_15__::func_948(iParam0, iVar1, uVar3[iVar1], 1);
+								__LIB_15__::func_950(iParam0, iVar1, uVar3[iVar1], 1);
 							}
 							else
 							{
@@ -4954,7 +4954,7 @@ int func_421(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 								while (iVar2 <= 8)
 								{
 									func_421(iParam0, 14, uVar4[iVar2], 1, 1);
-									__LIB_15__::func_948(iParam0, 14, uVar4[iVar2], 1);
+									__LIB_15__::func_950(iParam0, 14, uVar4[iVar2], 1);
 									iVar2++;
 								}
 							}
@@ -5234,9 +5234,9 @@ void func_510()//Position - 0x6E2B7
 
 void func_512()//Position - 0x6E399
 {
-	__LIB_15__::func_948(__LIB_0__::func_154(0), 12, 28, 0);
+	__LIB_15__::func_950(__LIB_0__::func_154(0), 12, 28, 0);
 	func_421(__LIB_0__::func_154(0), 12, 28, 0, 1);
-	__LIB_15__::func_948(__LIB_0__::func_154(0), 12, 8, 1);
+	__LIB_15__::func_950(__LIB_0__::func_154(0), 12, 8, 1);
 	func_421(__LIB_0__::func_154(0), 12, 8, 1, 1);
 }
 

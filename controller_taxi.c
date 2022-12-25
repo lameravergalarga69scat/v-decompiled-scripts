@@ -363,7 +363,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							__LIB_1__::func_330(&(Global_113386.f_19097), 64);
 						}
-						__LIB_40__::func_105(&uLocal_120);
+						__LIB_39__::func_781(&uLocal_120);
 						iVar1 = 1;
 						__LIB_1__::func_31(&iLocal_114);
 					}
@@ -382,7 +382,7 @@ void __EntryFunction__()//Position - 0x0
 						if ((!MISC::IS_MINIGAME_IN_PROGRESS() && !bVar0) && !__LIB_0__::func_39(5))
 						{
 							func_73();
-							if (__LIB_40__::func_103())
+							if (__LIB_39__::func_779())
 							{
 								if (!iLocal_109)
 								{
@@ -553,7 +553,7 @@ void __EntryFunction__()//Position - 0x0
 									{
 										if (iLocal_102 == 0 || iLocal_102 == 3)
 										{
-											__LIB_40__::func_105(&uLocal_120);
+											__LIB_39__::func_781(&uLocal_120);
 											iLocal_103 = 9;
 											func_35(iLocal_103, &Local_97, &uLocal_120, 0);
 											iLocal_111 = 1;
@@ -678,7 +678,7 @@ void __EntryFunction__()//Position - 0x0
 					}
 					else
 					{
-						__LIB_40__::func_102("PROCESS_TAXI_DBG_SKIP = Scene is loading.", &iLocal_113, 1000);
+						__LIB_39__::func_778("PROCESS_TAXI_DBG_SKIP = Scene is loading.", &iLocal_113, 1000);
 					}
 				}
 				break;
@@ -700,13 +700,13 @@ void __EntryFunction__()//Position - 0x0
 				{
 					StringCopy(&Var7, "OJTX_ACCEPT", 24);
 					func_24(&Var7, 1);
-					__LIB_40__::func_105(&uLocal_120);
+					__LIB_39__::func_781(&uLocal_120);
 					__LIB_2__::func_859(&uLocal_120, "OJTXAUD", &Var7, 8, 0, 0, 0);
 					iVar1 = 8;
 				}
 				break;
 			case 8:
-				if (__LIB_40__::func_103())
+				if (__LIB_39__::func_779())
 				{
 					if (!__LIB_0__::func_75())
 					{
@@ -761,7 +761,7 @@ void __EntryFunction__()//Position - 0x0
 				else if (__LIB_0__::func_703(Global_113386.f_19097, 1024))
 				{
 					__LIB_2__::func_712(&(Global_113386.f_19097), 1024);
-					__LIB_0__::func_716(__LIB_40__::func_98(iLocal_103), 0, 0);
+					__LIB_0__::func_716(__LIB_39__::func_774(iLocal_103), 0, 0);
 					bLocal_110 = true;
 					func_11(iLocal_103, bLocal_110);
 					__LIB_0__::func_734(1, 0);
@@ -920,7 +920,7 @@ void func_35(int iParam0, char* sParam1, var uParam2, bool bParam3)//Position - 
 		StringCopy(&Var0, func_56(iParam0), 24);
 		cVar1 = { Var0 };
 		StringConCat(&cVar1, "_1", 24);
-		__LIB_40__::func_105(uParam2);
+		__LIB_39__::func_781(uParam2);
 		__LIB_14__::func_535(uParam2, "OJTXAUD", &Var0, &cVar1, 8, 0, 0);
 	}
 }
@@ -975,7 +975,7 @@ int func_70()//Position - 0x28D3
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	if (!__LIB_40__::func_103())
+	if (!__LIB_39__::func_779())
 	{
 		return 1;
 	}
@@ -988,7 +988,7 @@ int func_70()//Position - 0x28D3
 		{
 			return 2;
 		}
-		if (!__LIB_40__::func_101(iVar0))
+		if (!__LIB_39__::func_777(iVar0))
 		{
 			return 2;
 		}
@@ -1004,16 +1004,16 @@ void func_73()//Position - 0x2A52
 {
 	if (!__LIB_0__::func_703(Global_113386.f_19097, 8192))
 	{
-		if (__LIB_40__::func_103())
+		if (__LIB_39__::func_779())
 		{
 			__LIB_1__::func_330(&(Global_113386.f_19097), 8192);
-			__LIB_40__::func_100();
+			__LIB_39__::func_776();
 		}
 	}
-	else if (!__LIB_40__::func_103())
+	else if (!__LIB_39__::func_779())
 	{
 		__LIB_2__::func_712(&(Global_113386.f_19097), 8192);
-		__LIB_40__::func_99();
+		__LIB_39__::func_775();
 	}
 }
 

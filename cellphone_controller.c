@@ -115,8 +115,8 @@ void __EntryFunction__()//Position - 0x0
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	Global_113328 = MISC::GET_GAME_TIMER();
 	__LIB_0__::func_467();
-	__LIB_16__::func_288();
-	__LIB_16__::func_287();
+	__LIB_16__::func_291();
+	__LIB_16__::func_290();
 	Global_20266.f_1 = 3;
 	Global_20254 = 0;
 	Global_20466 = 0;
@@ -247,14 +247,14 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (Global_78319 == 0)
 			{
-				iVar1 = __LIB_41__::func_278(0, 0, 119);
+				iVar1 = __LIB_40__::func_956(0, 0, 119);
 				if (iVar1 != 0)
 				{
-					__LIB_16__::func_835(iVar1);
+					__LIB_16__::func_838(iVar1);
 				}
 				else
 				{
-					__LIB_16__::func_285();
+					__LIB_16__::func_288();
 				}
 				__LIB_0__::func_366(0);
 			}
@@ -274,7 +274,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					MISC::SET_BIT(&Global_4541229, 14);
 					SYSTEM::WAIT(0);
-					while (!__LIB_16__::func_297(3, 0, 1, 0))
+					while (!__LIB_16__::func_300(3, 0, 1, 0))
 					{
 						SYSTEM::WAIT(0);
 					}
@@ -285,7 +285,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					MISC::SET_BIT(&Global_4541229, 14);
 					SYSTEM::WAIT(0);
-					while (!__LIB_16__::func_297(17, 0, 1, 0))
+					while (!__LIB_16__::func_300(17, 0, 1, 0))
 					{
 						SYSTEM::WAIT(0);
 					}
@@ -297,7 +297,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					MISC::SET_BIT(&Global_4541229, 14);
 					SYSTEM::WAIT(0);
-					while (!__LIB_16__::func_297(23, 0, 1, 0))
+					while (!__LIB_16__::func_300(23, 0, 1, 0))
 					{
 						SYSTEM::WAIT(0);
 					}
@@ -309,7 +309,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					MISC::SET_BIT(&Global_4541229, 14);
 					SYSTEM::WAIT(0);
-					while (!__LIB_16__::func_297(1, 0, 1, 0))
+					while (!__LIB_16__::func_300(1, 0, 1, 0))
 					{
 						SYSTEM::WAIT(0);
 					}
@@ -909,7 +909,7 @@ void func_17()//Position - 0xD63
 		fLocal_73 = ((100f * fLocal_70) - (100f * fLocal_67));
 		fLocal_68 = (fLocal_71 + (fLocal_73 * 0.005f));
 		fLocal_69 = (fLocal_72 - (fLocal_73 * 0.005f));
-		if (!__LIB_16__::func_798())
+		if (!__LIB_16__::func_801())
 		{
 			GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(true);
 			GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(7);
@@ -993,7 +993,7 @@ void func_17()//Position - 0xD63
 								fLocal_73 = ((100f * fLocal_70) - (100f * fLocal_67));
 								fLocal_68 = (fLocal_71 + (fLocal_73 * 0.005f));
 								fLocal_69 = (fLocal_72 - (fLocal_73 * 0.005f));
-								if (!__LIB_16__::func_798())
+								if (!__LIB_16__::func_801())
 								{
 									if (MISC::IS_PC_VERSION())
 									{
@@ -1090,7 +1090,7 @@ void func_23()//Position - 0x10FC
 							SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED("cellphone_flashhand");
 						}
 					}
-					__LIB_39__::func_66(0);
+					__LIB_38__::func_741(0);
 				}
 				if (Global_21615 || Global_21616)
 				{
@@ -1159,7 +1159,7 @@ void func_23()//Position - 0x10FC
 									{
 										if (Global_113386.f_14051[Global_20266 /*20*/].f_17 == 1)
 										{
-											__LIB_16__::func_297(1, 0, 1, 0);
+											__LIB_16__::func_300(1, 0, 1, 0);
 										}
 									}
 								}
@@ -1600,7 +1600,7 @@ void func_58()//Position - 0x321F
 	if ((((((((Global_113386.f_14141[Global_22672 /*104*/].f_32 == 4 || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 5) || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 6) || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 7) || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 8) || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 9) || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 10) || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 11) || Global_113386.f_14141[Global_22672 /*104*/].f_32 == 12)
 	{
 		iVar1 = 0;
-		iVar2 = __LIB_16__::func_283(9, Global_113386.f_14141[Global_22672 /*104*/].f_49);
+		iVar2 = __LIB_16__::func_286(9, Global_113386.f_14141[Global_22672 /*104*/].f_49);
 		switch (iVar2)
 		{
 			case 1:
@@ -1960,7 +1960,7 @@ void func_80()//Position - 0x4853
 			{
 				if (iLocal_41)
 				{
-					__LIB_16__::func_284(iLocal_37, "CLEAR_ALL");
+					__LIB_16__::func_287(iLocal_37, "CLEAR_ALL");
 					if (BitTest(Global_8136, 25))
 					{
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_37, "CREATE_ALERT");

@@ -534,7 +534,7 @@ int func_30()//Position - 0xFE0
 		case 2:
 			if (!Global_2815059.f_4594)
 			{
-				if (__LIB_18__::func_928(&uLocal_64, &(Global_2815059.f_4589)) >= 500)
+				if (__LIB_18__::func_938(&uLocal_64, &(Global_2815059.f_4589)) >= 500)
 				{
 					CAM::DO_SCREEN_FADE_OUT(1500);
 					Global_2815059.f_4594 = 1;
@@ -550,7 +550,7 @@ int func_30()//Position - 0xFE0
 			}
 			if (!Global_2815059.f_4592)
 			{
-				if (__LIB_18__::func_928(&uLocal_64, &(Global_2815059.f_4589)) >= 3000)
+				if (__LIB_18__::func_938(&uLocal_64, &(Global_2815059.f_4589)) >= 3000)
 				{
 					if (!Global_2815059.f_4592)
 					{
@@ -592,7 +592,7 @@ int func_30()//Position - 0xFE0
 				func_16();
 				return 1;
 			}
-			else if (__LIB_18__::func_928(&uLocal_64, &(Global_2815059.f_4589)) >= 3000)
+			else if (__LIB_18__::func_938(&uLocal_64, &(Global_2815059.f_4589)) >= 3000)
 			{
 				PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
 				func_16();
@@ -5118,7 +5118,7 @@ int func_334(struct<3> Param0, float fParam1, bool bParam2, int iParam3, bool bP
 									ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iVar0, true);
 									VEHICLE::SET_CLEAR_FREEZE_WAITING_ON_COLLISION_ONCE_PLAYER_ENTERS(iVar0, true);
 									VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iVar0, 5f);
-									__LIB_30__::func_513(&iVar0, iParam3);
+									__LIB_30__::func_523(&iVar0, iParam3);
 									if ((__LIB_1__::func_629() || __LIB_2__::func_632()) || __LIB_2__::func_631())
 									{
 										ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
@@ -6557,7 +6557,7 @@ void func_643(int iParam0)//Position - 0x78966
 	Global_1585234 = iParam0;
 	if (Global_2667225.f_45.f_172)
 	{
-		__LIB_30__::func_512(iParam0, 1);
+		__LIB_30__::func_522(iParam0, 1);
 	}
 	else
 	{

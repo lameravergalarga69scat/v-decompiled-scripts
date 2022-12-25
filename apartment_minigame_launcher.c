@@ -472,7 +472,7 @@ void func_3()//Position - 0x451
 							iVar1 = Local_115.f_4;
 							break;
 						case -1597956485:
-							if (__LIB_18__::func_313(Local_115.f_2, 1))
+							if (__LIB_18__::func_323(Local_115.f_2, 1))
 							{
 								if (iLocal_217[Local_115.f_3] <= Local_216[Local_115.f_3 /*21*/].f_11)
 								{
@@ -897,7 +897,7 @@ int func_23(int iParam0, int iParam1, int iParam2)//Position - 0x10BF
 {
 	if (SCRIPT::GET_EVENT_DATA(1, iParam0, iParam1, 6))
 	{
-		if (__LIB_18__::func_313(iParam1->f_2, 3) == iParam2)
+		if (__LIB_18__::func_323(iParam1->f_2, 3) == iParam2)
 		{
 			return 1;
 		}
@@ -941,7 +941,7 @@ void func_25(var uParam0, var uParam1, var uParam2)//Position - 0x1117
 					func_43(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), -1);
 					func_42(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]));
 					func_124(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 0);
-					__LIB_38__::func_596(&Local_146, 0);
+					__LIB_38__::func_271(&Local_146, 0);
 					func_38(&iLocal_137);
 					__LIB_1__::func_31(&iLocal_118);
 					__LIB_1__::func_12(&iLocal_133);
@@ -1047,7 +1047,7 @@ void func_25(var uParam0, var uParam1, var uParam2)//Position - 0x1117
 				func_44(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 7, 0);
 				func_43(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), -1);
 				__LIB_1__::func_31(&iLocal_118);
-				__LIB_38__::func_596(&Local_146, 0);
+				__LIB_38__::func_271(&Local_146, 0);
 				func_124(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 0);
 			}
 			break;
@@ -1139,7 +1139,7 @@ int func_35(char* sParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 	if (!NETWORK::NETWORK_IS_SCRIPT_ACTIVE(sParam0, Var0.f_16, true, 0))
 	{
 		Global_1853348[PLAYER::GET_PLAYER_INDEX() /*834*/] = -1;
-		if (__LIB_29__::func_80(sParam0, iParam1, Var0, 0, 0, 1, 1, 1))
+		if (__LIB_29__::func_90(sParam0, iParam1, Var0, 0, 0, 1, 1, 1))
 		{
 			return 1;
 		}
@@ -1154,7 +1154,7 @@ void func_38(int* iParam0)//Position - 0x1E91
 	MISC::CLEAR_BIT(iParam0, 1);
 	MISC::CLEAR_BIT(iParam0, 5);
 	MISC::CLEAR_BIT(iParam0, 7);
-	__LIB_38__::func_800(iParam0, 0);
+	__LIB_38__::func_475(iParam0, 0);
 	func_26(iParam0);
 }
 
@@ -1229,7 +1229,7 @@ void func_46(var uParam0, var uParam1, bool bParam2)//Position - 0x1F94
 			}
 			else
 			{
-				__LIB_38__::func_596(bParam2, 8);
+				__LIB_38__::func_271(bParam2, 8);
 				func_47(Local_216[Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_1 /*21*/], 1);
 			}
 		}
@@ -1388,7 +1388,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 							{
 								__LIB_1__::func_31(&iLocal_124);
 							}
-							__LIB_38__::func_596(&Local_146, 1);
+							__LIB_38__::func_271(&Local_146, 1);
 						}
 						else
 						{
@@ -1420,16 +1420,16 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 					{
 						if (Param0.f_0 == 0)
 						{
-							__LIB_38__::func_596(&Local_146, 6);
+							__LIB_38__::func_271(&Local_146, 6);
 						}
 						else
 						{
-							__LIB_38__::func_596(&Local_146, 2);
+							__LIB_38__::func_271(&Local_146, 2);
 						}
 					}
 					else
 					{
-						__LIB_38__::func_596(&Local_146, 8);
+						__LIB_38__::func_271(&Local_146, 8);
 					}
 				}
 				if (!__LIB_1__::func_13(&iLocal_124))
@@ -1439,7 +1439,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				else if (__LIB_1__::func_361(&iLocal_124) >= 3f)
 				{
 					bVar3 = true;
-					__LIB_38__::func_596(&Local_146, 8);
+					__LIB_38__::func_271(&Local_146, 8);
 				}
 				if (bVar3)
 				{
@@ -1468,7 +1468,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				{
 					TASK::TASK_GO_STRAIGHT_TO_COORD(PLAYER::PLAYER_PED_ID(), Var4, 1f, 300, fVar7, 0.05f);
 				}
-				__LIB_38__::func_596(&Local_146, 6);
+				__LIB_38__::func_271(&Local_146, 6);
 				break;
 			case 6:
 				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 37 /*INPUT_SELECT_WEAPON*/, true);
@@ -1509,7 +1509,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				}
 				if ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, func_100(0)) || BitTest(Local_156.f_3, Param0.f_0)) && !bLocal_94)
 				{
-					__LIB_38__::func_596(&Local_146, 8);
+					__LIB_38__::func_271(&Local_146, 8);
 				}
 				__LIB_12__::func_902(&iLocal_137, 0, 1);
 				__LIB_12__::func_902(&iLocal_137, 1, 0);
@@ -1522,7 +1522,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 					{
 						if ((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) && BitTest(Local_156.f_2, Param0.f_0)) && !bLocal_94)
 						{
-							__LIB_38__::func_596(&Local_146, 7);
+							__LIB_38__::func_271(&Local_146, 7);
 						}
 						if (Param0.f_2 == 0)
 						{
@@ -1591,7 +1591,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				__LIB_1__::func_31(&iLocal_118);
 				__LIB_1__::func_12(&iLocal_121);
 				__LIB_1__::func_12(&iLocal_210);
-				__LIB_38__::func_596(&Local_146, 0);
+				__LIB_38__::func_271(&Local_146, 0);
 				break;
 			case 8:
 				iLocal_95 = 0;
@@ -1609,7 +1609,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 				__LIB_1__::func_31(&iLocal_118);
 				func_108(&Local_136);
 				HUD::CLEAR_HELP(true);
-				__LIB_38__::func_596(&Local_146, 0);
+				__LIB_38__::func_271(&Local_146, 0);
 				break;
 			}
 	}
@@ -1626,7 +1626,7 @@ void func_47(struct<21> Param0, bool bParam1)//Position - 0x207F
 		func_44(&(Local_218[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/]), 5, 0);
 		if (Local_146.f_4 > 0 && Local_146.f_4 != 8)
 		{
-			__LIB_38__::func_596(&Local_146, 8);
+			__LIB_38__::func_271(&Local_146, 8);
 		}
 	}
 	if (Local_136.f_0)
@@ -2043,7 +2043,7 @@ int func_113(int* iParam0)//Position - 0x7DAB
 	{
 		if (__LIB_1__::func_361(iParam0) >= 1f)
 		{
-			__LIB_40__::func_369(iParam0);
+			__LIB_40__::func_45(iParam0);
 			return 1;
 		}
 		else
@@ -2137,7 +2137,7 @@ void func_119(var uParam0)//Position - 0x7F9C
 			{
 				if (NETWORK::NETWORK_IS_SCRIPT_ACTIVE(uParam0->f_1, uParam0->f_3, false, 0) && !NETWORK::NETWORK_IS_SCRIPT_ACTIVE(uParam0->f_1, uParam0->f_3, true, 0))
 				{
-					if (__LIB_29__::func_80(uParam0->f_1, 8344, Var0, 0, 0, 1, 1, 1))
+					if (__LIB_29__::func_90(uParam0->f_1, 8344, Var0, 0, 0, 1, 1, 1))
 					{
 						uParam0->f_2 = 0;
 					}
@@ -2188,7 +2188,7 @@ void func_121(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 								uParam1->f_1 = 1;
 								uParam1->f_2 = Var1.f_3;
 								uParam1->f_3 = (uParam3[uParam1->f_2 /*21*/])->f_1;
-								*uParam1 = __LIB_18__::func_313(Var1.f_2, 0);
+								*uParam1 = __LIB_18__::func_323(Var1.f_2, 0);
 							}
 							break;
 						case 1473310688:
@@ -2196,7 +2196,7 @@ void func_121(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 							{
 								uParam1->f_2 = Var1.f_3;
 								uParam1->f_3 = (uParam3[uParam1->f_2 /*21*/])->f_1;
-								__LIB_38__::func_596(uParam1, 8);
+								__LIB_38__::func_271(uParam1, 8);
 							}
 							break;
 						case 702229153:
@@ -2206,15 +2206,15 @@ void func_121(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 								{
 									if (!BitTest(uParam1->f_5, Var1.f_3))
 									{
-										if (!__LIB_18__::func_313(Var1.f_2, 4))
+										if (!__LIB_18__::func_323(Var1.f_2, 4))
 										{
 											uParam1->f_2 = Var1.f_3;
 											uParam1->f_3 = (uParam3[uParam1->f_2 /*21*/])->f_1;
 											func_44(uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/], 2, 1);
-											if (func_44(uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/], 0, __LIB_18__::func_313(Var1.f_2, 2)) && Var1.f_3 == (uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/])->f_1)
+											if (func_44(uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/], 0, __LIB_18__::func_323(Var1.f_2, 2)) && Var1.f_3 == (uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/])->f_1)
 											{
 											}
-											func_44(uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/], 5, __LIB_18__::func_313(Var1.f_2, 5));
+											func_44(uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/], 5, __LIB_18__::func_323(Var1.f_2, 5));
 											func_124(uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/], 1);
 										}
 									}

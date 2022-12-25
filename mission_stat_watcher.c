@@ -132,7 +132,7 @@ void __EntryFunction__()//Position - 0x0
 	}
 	iVar1 = 0;
 	SYSTEM::WAIT(0);
-	__LIB_43__::func_568();
+	__LIB_43__::func_525();
 	while (!Global_63147)
 	{
 		SYSTEM::WAIT(200);
@@ -497,7 +497,7 @@ void __EntryFunction__()//Position - 0x0
 						Global_63162 = 0;
 						Global_63165 = 0;
 						__LIB_0__::func_704(0);
-						__LIB_32__::func_443();
+						__LIB_30__::func_874();
 						Global_63155 = 0;
 						bVar2 = true;
 					}
@@ -578,7 +578,7 @@ void func_71()//Position - 0x3C86
 		fVar7 = Global_63379[iVar3 /*13*/].f_9;
 		bVar8 = false;
 		bVar8 = false;
-		if (__LIB_38__::func_380(iVar3, Global_75250[iVar0 /*9*/].f_1))
+		if (__LIB_38__::func_55(iVar3, Global_75250[iVar0 /*9*/].f_1))
 		{
 			bVar8 = true;
 		}
@@ -3603,7 +3603,7 @@ void func_77(var uParam0)//Position - 0xBAA3
 	{
 		fVar3 = SYSTEM::TO_FLOAT(iVar1);
 	}
-	__LIB_42__::func_585(fVar3, bVar2);
+	__LIB_42__::func_460(fVar3, bVar2);
 }
 
 float func_83(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0xBD64
@@ -3611,8 +3611,8 @@ float func_83(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	float fVar0;
 	int iVar1;
 	int iVar2;
-	fVar0 = __LIB_38__::func_378(iParam1, iParam2, 0);
-	iVar1 = __LIB_38__::func_377(fVar0);
+	fVar0 = __LIB_38__::func_53(iParam1, iParam2, 0);
+	iVar1 = __LIB_38__::func_52(fVar0);
 	if (bParam3)
 	{
 		fVar0 = 50f;
@@ -3624,7 +3624,7 @@ float func_83(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 		return fVar0;
 	}
 	iVar2 = 0;
-	switch (__LIB_38__::func_888(iVar1))
+	switch (__LIB_38__::func_563(iVar1))
 	{
 		case 109:
 			iVar2 = 3;
@@ -3636,7 +3636,7 @@ float func_83(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 			iVar2 = 1;
 			break;
 	}
-	switch (__LIB_38__::func_888(iVar1))
+	switch (__LIB_38__::func_563(iVar1))
 	{
 		case 109:
 			__LIB_14__::func_519(uParam0, 1, "MTPHPER", SYSTEM::ROUND(fVar0), 0, 0, iVar2, 0);
@@ -3685,7 +3685,7 @@ int func_88(var uParam0, int iParam1)//Position - 0xBF5B
 	{
 		Global_75250[iParam1 /*9*/].f_1 = SYSTEM::FLOOR(Global_75250[iParam1 /*9*/].f_2);
 	}
-	if (__LIB_38__::func_380(Global_75250[iParam1 /*9*/], Global_75250[iParam1 /*9*/].f_1))
+	if (__LIB_38__::func_55(Global_75250[iParam1 /*9*/], Global_75250[iParam1 /*9*/].f_1))
 	{
 		fVar0 = 1f;
 	}
@@ -3701,7 +3701,7 @@ int func_88(var uParam0, int iParam1)//Position - 0xBF5B
 			fVar1 = 100f;
 		}
 	}
-	iVar3 = __LIB_37__::func_746(Var2.f_4);
+	iVar3 = __LIB_37__::func_420(Var2.f_4);
 	iVar4 = 0;
 	switch (Global_75250[iParam1 /*9*/])
 	{
@@ -3726,12 +3726,12 @@ int func_88(var uParam0, int iParam1)//Position - 0xBF5B
 		{
 			if ((iVar3 > Global_75250[iParam1 /*9*/].f_1 || iVar3 < 0) || iVar3 == -1)
 			{
-				__LIB_38__::func_379(Global_75250[iParam1 /*9*/].f_1, Global_75250[iParam1 /*9*/]);
+				__LIB_38__::func_54(Global_75250[iParam1 /*9*/].f_1, Global_75250[iParam1 /*9*/]);
 			}
 		}
 		else if ((Global_75250[iParam1 /*9*/].f_1 > iVar3 || iVar3 < 0) || iVar3 == -1)
 		{
-			__LIB_38__::func_379(Global_75250[iParam1 /*9*/].f_1, Global_75250[iParam1 /*9*/]);
+			__LIB_38__::func_54(Global_75250[iParam1 /*9*/].f_1, Global_75250[iParam1 /*9*/]);
 		}
 	}
 	iVar5 = Global_75250[iParam1 /*9*/].f_1;
@@ -3745,12 +3745,12 @@ int func_88(var uParam0, int iParam1)//Position - 0xBF5B
 		iLocal_61++;
 		iVar6 = 2;
 	}
-	sVar7 = __LIB_38__::func_889(Global_75250[iParam1 /*9*/]);
+	sVar7 = __LIB_38__::func_564(Global_75250[iParam1 /*9*/]);
 	if (Global_75250[iParam1 /*9*/].f_3 != 0)
 	{
 		if (!__LIB_0__::func_2(0))
 		{
-			__LIB_38__::func_379(-1, Global_75250[iParam1 /*9*/]);
+			__LIB_38__::func_54(-1, Global_75250[iParam1 /*9*/]);
 		}
 		sVar8 = "MTPHPERRET" /* GXT: Checkpoint */;
 		switch (Global_75250[iParam1 /*9*/].f_3)
@@ -3902,10 +3902,10 @@ void func_98(int iParam0)//Position - 0xD824
 	switch (iParam0)
 	{
 		case 0:
-			__LIB_17__::func_735(iParam0, 2, 2500000);
+			__LIB_17__::func_738(iParam0, 2, 2500000);
 			break;
 		case 1:
-			__LIB_17__::func_735(iParam0, 4, 20000000);
+			__LIB_17__::func_738(iParam0, 4, 20000000);
 			break;
 	}
 	iVar2 = 0;
@@ -3931,7 +3931,7 @@ void func_98(int iParam0)//Position - 0xD824
 	if (iParam0 == 2)
 	{
 		iVar4 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_113386.f_1.f_126[iParam0 /*23*/].f_1) * 0.78f));
-		__LIB_17__::func_735(iParam0, 3, iVar4);
+		__LIB_17__::func_738(iParam0, 3, iVar4);
 		Global_113386.f_1.f_126[iParam0 /*23*/].f_1 = (Global_113386.f_1.f_126[iParam0 /*23*/].f_1 - iVar4);
 		iVar1 = (iVar1 - iVar4);
 	}

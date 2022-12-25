@@ -224,7 +224,7 @@ void func_14(var uParam0)//Position - 0x4B4
 	struct<3> Var3;
 	char* sVar4;
 	fVar0 = 0.6f;
-	if (((((((((__LIB_38__::func_766() || func_321()) || func_319()) || __LIB_38__::func_767()) || func_315()) || func_313()) || func_311()) || func_309()) || func_307()) || func_304())
+	if (((((((((__LIB_38__::func_441() || func_321()) || func_319()) || __LIB_38__::func_442()) || func_315()) || func_313()) || func_311()) || func_309()) || func_307()) || func_304())
 	{
 		if (BitTest(Global_1946250, 28) || BitTest(Global_1946250, 27))
 		{
@@ -250,11 +250,11 @@ void func_14(var uParam0)//Position - 0x4B4
 					Local_86 = { *uParam0 };
 					bLocal_85 = uParam0->f_12;
 					sVar1 = sLocal_81;
-					sVar1 = __LIB_38__::func_764(1);
+					sVar1 = __LIB_38__::func_439(1);
 					iLocal_64 = func_301(PLAYER::PLAYER_PED_ID(), 1, -1);
 					PED::FINALIZE_HEAD_BLEND(PLAYER::PLAYER_PED_ID());
 					iLocal_78 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(Local_86, Local_87, 2, false, true, 1f, 0f, 1f);
-					sVar2 = __LIB_38__::func_763(uParam0->f_12);
+					sVar2 = __LIB_38__::func_438(uParam0->f_12);
 					NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_78, sVar1, sVar2, 8f, -2f, 261, 0, 1000f, 0);
 					NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_78);
 					func_299(7);
@@ -370,7 +370,7 @@ void func_14(var uParam0)//Position - 0x4B4
 			{
 				iLocal_70 = 1;
 				iLocal_78 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(Local_86, Local_87, 2, false, true, 1f, 0f, 1f);
-				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_78, sLocal_81, __LIB_38__::func_763(bLocal_85), 8f, -2f, 5, 0, 1000f, 0);
+				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_78, sLocal_81, __LIB_38__::func_438(bLocal_85), 8f, -2f, 5, 0, 1000f, 0);
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_78);
 				func_299(5);
 			}
@@ -410,7 +410,7 @@ void func_14(var uParam0)//Position - 0x4B4
 					HUD::CLEAR_HELP(true);
 				}
 				iLocal_78 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(Local_86, Local_87, 2, false, false, 1f, 0f, 1f);
-				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_78, sLocal_81, __LIB_38__::func_760(bLocal_85), 2f, -2f, 13, 0, 1000f, 0);
+				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_78, sLocal_81, __LIB_38__::func_435(bLocal_85), 2f, -2f, 13, 0, 1000f, 0);
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_78);
 				func_21();
 				func_299(8);
@@ -431,7 +431,7 @@ void func_14(var uParam0)//Position - 0x4B4
 					sVar4 = func_285(1, bLocal_85);
 				}
 				iLocal_78 = NETWORK::NETWORK_CREATE_SYNCHRONISED_SCENE(Local_86, Local_87, 2, false, false, 1f, 0f, 1f);
-				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_78, sVar4, __LIB_38__::func_760(bLocal_85), 1000f, -2f, 5, 0, 1000f, 0);
+				NETWORK::NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE(PLAYER::PLAYER_PED_ID(), iLocal_78, sVar4, __LIB_38__::func_435(bLocal_85), 1000f, -2f, 5, 0, 1000f, 0);
 				NETWORK::NETWORK_START_SYNCHRONISED_SCENE(iLocal_78);
 				func_299(8);
 			}
@@ -444,7 +444,7 @@ void func_14(var uParam0)//Position - 0x4B4
 			iLocal_77 = NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(iLocal_78);
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_77))
 			{
-				__LIB_38__::func_765(5);
+				__LIB_38__::func_440(5);
 				if (iLocal_88)
 				{
 					ENTITY::SET_ENTITY_VISIBLE(PLAYER::PLAYER_PED_ID(), true, false);
@@ -547,7 +547,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0xF
 		iVar1++;
 	}
 	bVar2 = false;
-	if (__LIB_16__::func_375(iParam0, &Global_78200, iParam1, &iParam3))
+	if (__LIB_16__::func_378(iParam0, &Global_78200, iParam1, &iParam3))
 	{
 		iVar1 = 0;
 		while (iVar1 < 12)
@@ -4232,11 +4232,11 @@ char* func_285(int iParam0, bool bParam1)//Position - 0x554CF
 	char* sVar0;
 	if (bParam1)
 	{
-		sVar0 = __LIB_38__::func_764(iParam0);
+		sVar0 = __LIB_38__::func_439(iParam0);
 	}
 	else
 	{
-		sVar0 = __LIB_38__::func_761(iParam0);
+		sVar0 = __LIB_38__::func_436(iParam0);
 	}
 	return sVar0;
 }

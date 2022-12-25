@@ -295,9 +295,9 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_39__::func_345(Local_46, 29, bLocal_50, 0, 0))
+	if (__LIB_39__::func_20(Local_46, 29, bLocal_50, 0, 0))
 	{
-		__LIB_39__::func_334(29);
+		__LIB_39__::func_9(29);
 	}
 	else
 	{
@@ -313,13 +313,13 @@ void __EntryFunction__()//Position - 0x0
 			PATHFIND::REQUEST_PATH_NODES_IN_AREA_THIS_FRAME((Var0.f_0 - 2000f), (Var0.f_1 - 2000f), (Var0.f_0 + 2000f), (Var0.f_1 + 2000f));
 			PLAYER::SET_ALL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
 		}
-		if (!__LIB_39__::func_333())
+		if (!__LIB_39__::func_8())
 		{
 			if (BRAIN::IS_WORLD_POINT_WITHIN_BRAIN_ACTIVATION_RANGE())
 			{
-				if (!__LIB_39__::func_333())
+				if (!__LIB_39__::func_8())
 				{
-					if (__LIB_39__::func_340())
+					if (__LIB_39__::func_15())
 					{
 						func_134();
 					}
@@ -336,9 +336,9 @@ void __EntryFunction__()//Position - 0x0
 						}
 						break;
 					case 1:
-						if (!__LIB_39__::func_333())
+						if (!__LIB_39__::func_8())
 						{
-							__LIB_39__::func_336(1);
+							__LIB_39__::func_11(1);
 						}
 						break;
 				}
@@ -381,7 +381,7 @@ void func_2()//Position - 0x1FA
 {
 	__LIB_0__::func_109();
 	__LIB_14__::func_557();
-	__LIB_39__::func_382(29, bLocal_50);
+	__LIB_39__::func_57(29, bLocal_50);
 	func_134();
 }
 
@@ -887,12 +887,12 @@ void func_134()//Position - 0x6407
 	}
 	if (MISC::GET_RANDOM_EVENT_FLAG())
 	{
-		if (__LIB_39__::func_333())
+		if (__LIB_39__::func_8())
 		{
 			PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);
 		}
 	}
-	__LIB_39__::func_344(-1);
+	__LIB_39__::func_19(-1);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

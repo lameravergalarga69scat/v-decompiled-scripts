@@ -602,7 +602,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_82();
 		}
-		__LIB_16__::func_254(&uLocal_109);
+		__LIB_16__::func_257(&uLocal_109);
 	}
 }
 
@@ -634,7 +634,7 @@ int func_66()//Position - 0x1EE6
 void func_82()//Position - 0x25EC
 {
 	Global_1946234 = 0;
-	__LIB_16__::func_214(&uLocal_109);
+	__LIB_16__::func_217(&uLocal_109);
 	__LIB_0__::func_202();
 }
 
