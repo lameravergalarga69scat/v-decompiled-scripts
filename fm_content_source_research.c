@@ -14663,7 +14663,7 @@ void func_1384(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -37396,7 +37396,7 @@ void func_3403(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bPara
 	iVar1 = PLAYER::PLAYER_ID();
 	iVar2 = __LIB_1__::func_721(iVar1);
 	iVar3 = __LIB_7__::func_934(iVar1, iVar2);
-	STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &Var0, &(Var0.f_1));
+	STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &Var0, &(Var0.f_1));
 	Var0.f_2 = func_3404(iVar3, bParam0, bParam2, bParam3, bParam4, uParam5, bParam6);
 	if (iParam1 != -1)
 	{

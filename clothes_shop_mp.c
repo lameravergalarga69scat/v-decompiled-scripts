@@ -656,7 +656,7 @@ void func_63(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	if (!bParam3)
 	{
@@ -1234,7 +1234,7 @@ void func_80(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 	int iVar9;
 	if (iParam2 == -1)
 	{
-		iParam2 = __LIB_0__::func_5();
+		iParam2 = __LIB_0__::getGlobal_1574918();
 	}
 	PED::CLEAR_PED_DECORATIONS_LEAVE_SCARS(*iParam0);
 	iVar1 = __LIB_0__::func_276(*iParam0);
@@ -5872,7 +5872,7 @@ void func_481(var uParam0, bool bParam1)//Position - 0x4F51B
 					iVar1 = PLAYER::PLAYER_PED_ID();
 					Stack.Push(&iVar1);
 					Stack.Push(2);
-					Stack.Push(__LIB_0__::func_5());
+					Stack.Push(__LIB_0__::getGlobal_1574918());
 					Stack.Push(0);
 					Call_Loc(uParam0->f_516);
 				}
@@ -6007,11 +6007,11 @@ int func_506(var uParam0, bool bParam1)//Position - 0x51CD6
 		iVar12 = 0;
 		if (__LIB_16__::func_390(iVar9, iVar1, iVar0))
 		{
-			if (__LIB_18__::func_465(2, __LIB_0__::func_5()))
+			if (__LIB_18__::func_465(2, __LIB_0__::getGlobal_1574918()))
 			{
 				Stack.Push(&iVar8);
 				Stack.Push(2);
-				Stack.Push(__LIB_0__::func_5());
+				Stack.Push(__LIB_0__::getGlobal_1574918());
 				Stack.Push(0);
 				Call_Loc(uParam0->f_516);
 				iVar12 = 1;
@@ -8031,7 +8031,7 @@ int func_892(var uParam0)//Position - 0xED08B
 					{
 						Stack.Push(&(uParam0->f_617.f_2));
 						Stack.Push(3);
-						Stack.Push(__LIB_0__::func_5());
+						Stack.Push(__LIB_0__::getGlobal_1574918());
 						Stack.Push(0);
 						Call_Loc(uParam0->f_516);
 						PED::SET_FACIAL_IDLE_ANIM_OVERRIDE(uParam0->f_617.f_2, __LIB_16__::func_528(Global_1853348[PLAYER::PLAYER_ID() /*834*/]), 0);
@@ -36409,7 +36409,7 @@ void func_1276(var uParam0)//Position - 0x14B986
 		switch (uParam0->f_116.f_26)
 		{
 			case 0:
-				if (NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) && !NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+				if (NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) && !NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 				{
 					if (__LIB_12__::func_387())
 					{
@@ -41051,7 +41051,7 @@ void func_1444(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}

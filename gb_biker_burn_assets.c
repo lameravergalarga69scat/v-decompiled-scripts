@@ -8417,7 +8417,7 @@ void func_1665(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}

@@ -5305,7 +5305,7 @@ int func_588(char* sParam0, var uParam1, struct<246> Param2)//Position - 0x2C23F
 			case 15:
 				if (__LIB_1__::func_136(PLAYER::PLAYER_ID()) >= 5)
 				{
-					func_590(__LIB_0__::func_5(), __LIB_1__::func_74(__LIB_1__::func_464(PLAYER::PLAYER_ID(), 1), 0));
+					func_590(__LIB_0__::getGlobal_1574918(), __LIB_1__::func_74(__LIB_1__::func_464(PLAYER::PLAYER_ID(), 1), 0));
 					__LIB_16__::func_228();
 					StringCopy(sParam0, "CAS_LW_ARMU" /* GXT: Full Armor */, 64);
 					return 1;

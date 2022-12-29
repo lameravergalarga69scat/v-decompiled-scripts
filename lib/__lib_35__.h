@@ -21656,7 +21656,7 @@ int func_472(var uParam0, int iParam1, char* sParam2, char* sParam3, var uParam4
 
 var func_473()//Position - 0x17F88
 {
-	return Global_2870003[__LIB_0__::func_5()];
+	return Global_2870003[__LIB_0__::getGlobal_1574918()];
 }
 
 int func_474(int iParam0)//Position - 0x2190C
@@ -34083,7 +34083,7 @@ void func_722(bool bParam0, int iParam1, int iParam2, bool bParam3, int iParam4,
 		Global_1944066.f_18 = (Global_1944066.f_9 - Global_1944066.f_8);
 		Global_1944066.f_11 = iParam1;
 		Global_1944066.f_7 = __LIB_15__::func_660();
-		Global_1944066.f_42 = __LIB_15__::func_347(__LIB_0__::func_5(), 5);
+		Global_1944066.f_42 = __LIB_15__::func_347(__LIB_0__::getGlobal_1574918(), 5);
 		iVar1 = PLAYER::PLAYER_ID();
 		iVar2 = __LIB_4__::func_566(iVar1);
 		if (__LIB_0__::func_797() != -1)
@@ -41952,7 +41952,7 @@ void func_931(bool bParam0, int iParam1, int iParam2, bool bParam3, int iParam4,
 		Global_1944066.f_18 = (Global_1944066.f_9 - Global_1944066.f_8);
 		Global_1944066.f_11 = iParam1;
 		Global_1944066.f_7 = __LIB_19__::func_509();
-		Global_1944066.f_42 = __LIB_15__::func_347(__LIB_0__::func_5(), 5);
+		Global_1944066.f_42 = __LIB_15__::func_347(__LIB_0__::getGlobal_1574918(), 5);
 		iVar1 = PLAYER::PLAYER_ID();
 		iVar2 = __LIB_1__::func_721(iVar1);
 		if (__LIB_0__::func_797() != -1)

@@ -2601,7 +2601,7 @@ void func_145(int iParam0)//Position - 0x4A8D
 void func_147(bool bParam0)//Position - 0x4B12
 {
 	Global_1575084 = 0;
-	__LIB_18__::func_306(__LIB_0__::func_5());
+	__LIB_18__::func_306(__LIB_0__::getGlobal_1574918());
 	__LIB_27__::func_505();
 	__LIB_26__::func_395();
 	__LIB_0__::func_764();

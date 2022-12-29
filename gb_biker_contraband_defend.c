@@ -19049,7 +19049,7 @@ void func_1425(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -48014,12 +48014,12 @@ void func_6995()//Position - 0x227E07
 
 void func_6996(var uParam0, bool bParam1)//Position - 0x227E5D
 {
-	if (__LIB_0__::func_5() < 0)
+	if (__LIB_0__::getGlobal_1574918() < 0)
 	{
 		return;
 	}
-	Global_2715699.f_3076.f_172[__LIB_0__::func_5()] = uParam0;
-	Global_2715699.f_3076.f_175[__LIB_0__::func_5()] = bParam1;
+	Global_2715699.f_3076.f_172[__LIB_0__::getGlobal_1574918()] = uParam0;
+	Global_2715699.f_3076.f_175[__LIB_0__::getGlobal_1574918()] = bParam1;
 }
 
 void func_6998(struct<21> Param0)//Position - 0x227E9F

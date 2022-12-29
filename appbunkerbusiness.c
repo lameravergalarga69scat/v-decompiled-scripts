@@ -2024,7 +2024,7 @@ void func_359()//Position - 0xFBDB
 	StringCopy(&cVar6, "UA_BUNKER_TXD_", 24);
 	iVar7 = __LIB_7__::func_934(PLAYER::PLAYER_ID(), iLocal_121);
 	StringIntConCat(&cVar6, (iLocal_121 - 21), 24);
-	iVar8 = __LIB_0__::func_5();
+	iVar8 = __LIB_0__::getGlobal_1574918();
 	iVar9 = __LIB_31__::func_660(iVar8, 5);
 	iVar10 = __LIB_31__::func_659(iVar8, 5);
 	iVar11 = __LIB_31__::func_658(iVar8, 5);
@@ -2171,7 +2171,7 @@ void func_415(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	iVar1 = PLAYER::PLAYER_ID();
 	iVar2 = __LIB_1__::func_721(iVar1);
 	iVar3 = __LIB_7__::func_934(iVar1, iVar2);
-	STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &Var0, &(Var0.f_1));
+	STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &Var0, &(Var0.f_1));
 	Var0.f_2 = __LIB_29__::func_148(iVar3, bParam0, bParam2, bParam3, bParam4, iParam5, bParam6);
 	if (iParam1 != -1)
 	{
@@ -2586,7 +2586,7 @@ void func_454()//Position - 0x12094
 	fVar0 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 1f);
 	fVar1 = (__LIB_13__::func_44(2) / (__LIB_13__::func_44(2) + 13f));
 	fVar2 = Global_262145.f_33145 /* Tunable: -1452102250 */;
-	iVar3 = __LIB_13__::func_18(__LIB_0__::func_5(), 5);
+	iVar3 = __LIB_13__::func_18(__LIB_0__::getGlobal_1574918(), 5);
 	if (__LIB_13__::func_43(fVar0, fVar1, fVar2, iVar3))
 	{
 		__LIB_13__::func_723(297, -1, -1);

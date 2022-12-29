@@ -452,7 +452,7 @@ bool func_38(int iParam0, int iParam1)//Position - 0x12D2
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	iVar0 = __LIB_1__::func_321(iParam1);
 	iVar1 = MISC::GET_PROFILE_SETTING(iVar0);
@@ -1651,7 +1651,7 @@ void func_70(bool bParam0, int iParam1)//Position - 0x120A
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	switch (bParam0)
 	{
@@ -8779,7 +8779,7 @@ void func_384(bool bParam0, int iParam1)//Position - 0x990A4
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	switch (bParam0)
 	{
@@ -21279,7 +21279,7 @@ int func_771(int iParam0, int iParam1)//Position - 0x93205
 	iVar0 = iParam1;
 	if (iParam1 == -1)
 	{
-		iVar0 = __LIB_0__::func_5();
+		iVar0 = __LIB_0__::getGlobal_1574918();
 	}
 	if (iParam0 == 7 && !Global_262145.f_17499 /* Tunable: ENABLE_BIKER_PROPERTY */)
 	{
@@ -24650,7 +24650,7 @@ bool func_866(int iParam0, int iParam1)//Position - 0x3001
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	iVar0 = __LIB_1__::func_14(iParam1);
 	iVar1 = MISC::GET_PROFILE_SETTING(iVar0);
@@ -25727,7 +25727,7 @@ void func_916(bool bParam0, int iParam1)//Position - 0x2EB6
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	Global_1659608 = 0;
 	if (MISC::ARE_PROFILE_SETTINGS_VALID() == 0)
@@ -26179,7 +26179,7 @@ void func_942(bool bParam0, int iParam1)//Position - 0x9D7C0
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	switch (bParam0)
 	{
@@ -41685,7 +41685,7 @@ void func_968(int iParam0, int iParam1, int iParam2)//Position - 0x2FB13
 	{
 		return;
 	}
-	if (iParam2 == __LIB_0__::func_5() || iParam2 == -1)
+	if (iParam2 == __LIB_0__::getGlobal_1574918() || iParam2 == -1)
 	{
 		Global_1940666[iParam0] = iParam1;
 	}

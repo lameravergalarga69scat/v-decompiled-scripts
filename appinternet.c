@@ -4973,7 +4973,7 @@ void func_220(int iParam0, int iParam1)//Position - 0x233AE
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_FAILED", 0, 0, 0, 0, 6);
@@ -5868,7 +5868,7 @@ int func_338(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 		{
 			iLocal_444 = 3;
 		}
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_444 = 3;
 		}
@@ -16516,7 +16516,7 @@ void func_823(int iParam0, int iParam1)//Position - 0x52A7C
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 8);
@@ -17443,7 +17443,7 @@ void func_877(int iParam0, int iParam1)//Position - 0x559D9
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 7);
@@ -18143,7 +18143,7 @@ void func_927(int iParam0, int iParam1)//Position - 0x5838C
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 4);
@@ -19447,7 +19447,7 @@ void func_1068(int iParam0, int iParam1)//Position - 0x5C390
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 3);
@@ -20514,7 +20514,7 @@ void func_1117(int iParam0, int iParam1)//Position - 0x5E071
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 2);
@@ -21593,7 +21593,7 @@ void func_1169(int iParam0, int iParam1)//Position - 0x5FC77
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 1);
@@ -23317,7 +23317,7 @@ int func_1340(int iParam0)//Position - 0x71C78
 {
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, iParam0);
@@ -23458,7 +23458,7 @@ void func_1343()//Position - 0x71D53
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(iVar0, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 0);
@@ -24680,7 +24680,7 @@ void func_1356(int iParam0)//Position - 0x73562
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(iParam0, "_S_PURCHASE_D_ERROR", 0, 0, 0, 0, 0);
@@ -27436,7 +27436,7 @@ void func_1385(bool bParam0, int iParam1, int iParam2, int iParam3)//Position - 
 		__LIB_1__::func_354(11389, iVar1, -1, 1, 0);
 		MISC::CLEAR_BIT(&(Global_2815059.f_1801), 17);
 		__LIB_11__::func_676();
-		STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &iVar2, &iVar3);
+		STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &iVar2, &iVar3);
 		if (iVar2 != 0 || iVar3 != 0)
 		{
 			iVar4 = __LIB_1__::func_360(11429, -1, 0);
@@ -31020,7 +31020,7 @@ void func_1585(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -32245,7 +32245,7 @@ void func_1738(bool bParam0, bool bParam1, int iParam2)//Position - 0xC58C4
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10 = PLAYER::PLAYER_ID();
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_428 = iParam2;
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_465 = iParam2;
-		STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &uVar3, &uVar4);
+		STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &uVar3, &uVar4);
 		__LIB_4__::func_865(uVar3, uVar4);
 		sVar5 = NETWORK::NETWORK_PLAYER_GET_USERID(PLAYER::PLAYER_ID(), &uVar0);
 		StringCopy(&Var6, sVar5, 64);
@@ -33475,7 +33475,7 @@ void func_1846(int iParam0, int iParam1)//Position - 0xC96E4
 	}
 	if (__LIB_0__::func_112())
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			iLocal_456 = 6;
 			func_2775(-1, "_S_PURCHASE_D_FAILED", 0, 0, 0, 0, 5);
@@ -39851,12 +39851,12 @@ void func_2059(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4,
 	int iVar1;
 	if (iParam6 == -1)
 	{
-		iParam6 = __LIB_0__::func_5();
+		iParam6 = __LIB_0__::getGlobal_1574918();
 	}
 	if (bParam0)
 	{
 		__LIB_1__::func_364(11391, 86, iParam6, 1);
-		if (iParam6 == __LIB_0__::func_5())
+		if (iParam6 == __LIB_0__::getGlobal_1574918())
 		{
 			if (SYSTEM::VMAG(__LIB_30__::func_319(PLAYER::PLAYER_ID())) < 0.01f)
 			{
@@ -39887,7 +39887,7 @@ void func_2059(bool bParam0, int iParam1, var uParam2, var uParam3, var uParam4,
 		__LIB_26__::func_404();
 		__LIB_26__::func_403();
 	}
-	if (iParam6 == __LIB_0__::func_5())
+	if (iParam6 == __LIB_0__::getGlobal_1574918())
 	{
 		Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_269 = bParam0;
 		if (iParam1 < 0 || iParam1 > 5)
@@ -40095,9 +40095,9 @@ void func_2113()//Position - 0xE045B
 
 void func_2129(bool bParam0)//Position - 0xE2539
 {
-	if (Global_1952176.f_1[__LIB_0__::func_5()] == bParam0 || bParam0 == -1)
+	if (Global_1952176.f_1[__LIB_0__::getGlobal_1574918()] == bParam0 || bParam0 == -1)
 	{
-		Global_1952176.f_1[__LIB_0__::func_5()] = -1;
+		Global_1952176.f_1[__LIB_0__::getGlobal_1574918()] = -1;
 	}
 }
 

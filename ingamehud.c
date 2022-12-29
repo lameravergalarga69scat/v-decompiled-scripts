@@ -520,7 +520,7 @@ void func_18()//Position - 0x68F
 	func_1167();
 	func_1158();
 	func_1140(&uLocal_309);
-	func_1132(__LIB_0__::func_5());
+	func_1132(__LIB_0__::getGlobal_1574918());
 	func_1131();
 	func_1129();
 	func_1128();
@@ -1768,7 +1768,7 @@ void func_175()//Position - 0x69F8
 	bool bVar1;
 	int iVar2;
 	int iVar3;
-	iVar0 = __LIB_0__::func_5();
+	iVar0 = __LIB_0__::getGlobal_1574918();
 	iVar2 = __LIB_1__::func_321(iVar0);
 	iVar3 = MISC::GET_PROFILE_SETTING(iVar2);
 	if (BitTest(iVar3, 12))
@@ -10486,7 +10486,7 @@ void func_749(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -14099,7 +14099,7 @@ void func_1140(var uParam0)//Position - 0x884D5
 			{
 				*uParam0 = 8;
 			}
-			if (STATS::STAT_SLOT_IS_LOADED(__LIB_0__::func_5() + 1) == 0)
+			if (STATS::STAT_SLOT_IS_LOADED(__LIB_0__::getGlobal_1574918() + 1) == 0)
 			{
 				*uParam0 = 8;
 			}
@@ -14131,7 +14131,7 @@ void func_1140(var uParam0)//Position - 0x884D5
 				*uParam0 = 4;
 				return;
 			}
-			if (STATS::STAT_SLOT_IS_LOADED(__LIB_0__::func_5() + 1) == 0)
+			if (STATS::STAT_SLOT_IS_LOADED(__LIB_0__::getGlobal_1574918() + 1) == 0)
 			{
 				*uParam0 = 4;
 				return;

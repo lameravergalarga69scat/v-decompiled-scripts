@@ -42334,7 +42334,7 @@ void func_832(bool bParam0, bool bParam1, int iParam2)//Position - 0x1A5C47
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10 = PLAYER::PLAYER_ID();
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_428 = iParam2;
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_465 = iParam2;
-		STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &uVar3, &uVar4);
+		STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &uVar3, &uVar4);
 		__LIB_4__::func_865(uVar3, uVar4);
 		sVar5 = NETWORK::NETWORK_PLAYER_GET_USERID(PLAYER::PLAYER_ID(), &uVar0);
 		StringCopy(&Var6, sVar5, 64);

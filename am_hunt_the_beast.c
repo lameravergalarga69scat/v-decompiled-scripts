@@ -3592,7 +3592,7 @@ void func_68()//Position - 0x3CB1
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	iVar0 = __LIB_0__::func_5();
+	iVar0 = __LIB_0__::getGlobal_1574918();
 	if (__LIB_0__::func_253(386, iVar0) == 0)
 	{
 		bVar1 = true;
@@ -6853,7 +6853,7 @@ void func_219(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -11276,7 +11276,7 @@ void func_525(bool bParam0, bool bParam1, int iParam2)//Position - 0x79E10
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10 = PLAYER::PLAYER_ID();
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_428 = iParam2;
 		Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_465 = iParam2;
-		STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &uVar3, &uVar4);
+		STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &uVar3, &uVar4);
 		__LIB_4__::func_865(uVar3, uVar4);
 		sVar5 = NETWORK::NETWORK_PLAYER_GET_USERID(PLAYER::PLAYER_ID(), &uVar0);
 		StringCopy(&Var6, sVar5, 64);
@@ -13871,7 +13871,7 @@ void func_846(bool bParam0, int iParam1, int iParam2, int iParam3)//Position - 0
 		__LIB_1__::func_354(11389, iVar1, -1, 1, 0);
 		MISC::CLEAR_BIT(&(Global_2815059.f_1801), 17);
 		__LIB_11__::func_676();
-		STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &iVar2, &iVar3);
+		STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &iVar2, &iVar3);
 		if (iVar2 != 0 || iVar3 != 0)
 		{
 			iVar4 = __LIB_1__::func_360(11429, -1, 0);

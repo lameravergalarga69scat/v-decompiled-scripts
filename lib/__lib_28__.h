@@ -36150,7 +36150,7 @@ int func_715(int iParam0)//Position - 0x41360C
 
 bool func_716()//Position - 0x413654
 {
-	return Global_2869985[__LIB_0__::func_5()] >= Global_262145.f_15615 /* Tunable: EXEC_CONTRABAND_SPECIAL_ITEM_THRESHOLD */;
+	return Global_2869985[__LIB_0__::getGlobal_1574918()] >= Global_262145.f_15615 /* Tunable: EXEC_CONTRABAND_SPECIAL_ITEM_THRESHOLD */;
 }
 
 void func_717(int iParam0)//Position - 0x413677

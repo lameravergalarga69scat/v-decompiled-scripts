@@ -24205,7 +24205,7 @@ void func_2127(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -25646,7 +25646,7 @@ void func_2180(int iParam0, bool bParam1, int iParam2)//Position - 0xD7D8C
 {
 	if (iParam2 == -1)
 	{
-		iParam2 = __LIB_0__::func_5();
+		iParam2 = __LIB_0__::getGlobal_1574918();
 	}
 	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
@@ -63282,7 +63282,7 @@ void func_10082(int iParam0)//Position - 0x3016F2
 
 void func_10091(bool bParam0, int iParam1, int iParam2, bool bParam3, int iParam4, int iParam5, bool bParam6, bool bParam7)//Position - 0x301E1F
 {
-	__LIB_18__::func_306(__LIB_0__::func_5());
+	__LIB_18__::func_306(__LIB_0__::getGlobal_1574918());
 	__LIB_27__::func_892(0);
 	__LIB_27__::func_901(0);
 	__LIB_27__::func_251(0);

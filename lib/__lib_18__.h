@@ -2632,7 +2632,7 @@ var func_46(int iParam0)//Position - 0x1DD225
 {
 	if (iParam0 == -1)
 	{
-		iParam0 = __LIB_0__::func_5();
+		iParam0 = __LIB_0__::getGlobal_1574918();
 	}
 	iParam0++;
 	return Global_1574538[iParam0];
@@ -14819,7 +14819,7 @@ int func_303()//Position - 0x321632
 {
 	int iVar0;
 	int iVar1;
-	STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &iVar0, &iVar1);
+	STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &iVar0, &iVar1);
 	if (iVar0 != 0 || iVar1 != 0)
 	{
 		return 1;

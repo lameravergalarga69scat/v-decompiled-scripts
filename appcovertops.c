@@ -1090,7 +1090,7 @@ void func_221(int iParam0)//Position - 0x6EEE
 	char* sVar4;
 	float fVar5;
 	float fVar6;
-	iLocal_133 = __LIB_13__::func_18(__LIB_0__::func_5(), 5);
+	iLocal_133 = __LIB_13__::func_18(__LIB_0__::getGlobal_1574918(), 5);
 	iVar1 = __LIB_13__::func_118(__LIB_0__::func_402(iParam0), 1);
 	iVar2 = func_56(iParam0);
 	bVar3 = iLocal_133 >= iVar2;

@@ -24587,7 +24587,7 @@ int func_374(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, va
 	}
 	if (!bVar0)
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			Global_4535607 = 1;
 			return 0;
@@ -24756,84 +24756,84 @@ int func_377(int iParam0)//Position - 0x13DA5B
 	}
 	else if (iVar0 > -1 && iVar0 < 32)
 	{
-		uVar1 = Global_2870006[__LIB_0__::func_5()];
+		uVar1 = Global_2870006[__LIB_0__::getGlobal_1574918()];
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 31 && iVar0 < 64)
 	{
-		uVar1 = Global_2870009[__LIB_0__::func_5()];
+		uVar1 = Global_2870009[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 32);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 63 && iVar0 < 96)
 	{
-		uVar1 = Global_2870012[__LIB_0__::func_5()];
+		uVar1 = Global_2870012[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 64);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 95 && iVar0 < 128)
 	{
-		uVar1 = Global_2870015[__LIB_0__::func_5()];
+		uVar1 = Global_2870015[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 96);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 127 && iVar0 < 160)
 	{
-		uVar1 = Global_2870018[__LIB_0__::func_5()];
+		uVar1 = Global_2870018[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 128);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 159 && iVar0 < 192)
 	{
-		uVar1 = Global_2870021[__LIB_0__::func_5()];
+		uVar1 = Global_2870021[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 160);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 191 && iVar0 < 224)
 	{
-		uVar1 = Global_2870024[__LIB_0__::func_5()];
+		uVar1 = Global_2870024[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 192);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 223 && iVar0 < 256)
 	{
-		uVar1 = Global_2870027[__LIB_0__::func_5()];
+		uVar1 = Global_2870027[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 224);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 255 && iVar0 < 288)
 	{
-		uVar1 = Global_2870030[__LIB_0__::func_5()];
+		uVar1 = Global_2870030[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 256);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 287 && iVar0 < 320)
 	{
-		uVar1 = Global_2870033[__LIB_0__::func_5()];
+		uVar1 = Global_2870033[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 288);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 319 && iVar0 < 352)
 	{
-		uVar1 = Global_2870036[__LIB_0__::func_5()];
+		uVar1 = Global_2870036[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 320);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 351 && iVar0 < 384)
 	{
-		uVar1 = Global_2870039[__LIB_0__::func_5()];
+		uVar1 = Global_2870039[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 352);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 383 && iVar0 < 416)
 	{
-		uVar1 = Global_2870042[__LIB_0__::func_5()];
+		uVar1 = Global_2870042[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 384);
 		return BitTest(uVar1, iVar0);
 	}
 	else if (iVar0 > 415 && iVar0 < 448)
 	{
-		uVar1 = Global_2870045[__LIB_0__::func_5()];
+		uVar1 = Global_2870045[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 416);
 		return BitTest(uVar1, iVar0);
 	}
@@ -48742,7 +48742,7 @@ int func_564(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	}
 	if (!bVar0)
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			Global_4535607 = 1;
 			return 0;

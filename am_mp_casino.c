@@ -6654,7 +6654,7 @@ void func_389(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -29978,97 +29978,97 @@ void func_5361(int iParam0)//Position - 0x1C0E5E
 	iVar0 = iParam0;
 	if (iVar0 > -1 && iVar0 < 32)
 	{
-		iVar1 = Global_2870006[__LIB_0__::func_5()];
+		iVar1 = Global_2870006[__LIB_0__::getGlobal_1574918()];
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8285, iVar1, -1, 1);
 	}
 	else if (iVar0 > 31 && iVar0 < 64)
 	{
-		iVar1 = Global_2870009[__LIB_0__::func_5()];
+		iVar1 = Global_2870009[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 32);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8286, iVar1, -1, 1);
 	}
 	else if (iVar0 > 63 && iVar0 < 96)
 	{
-		iVar1 = Global_2870012[__LIB_0__::func_5()];
+		iVar1 = Global_2870012[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 64);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8287, iVar1, -1, 1);
 	}
 	else if (iVar0 > 95 && iVar0 < 128)
 	{
-		iVar1 = Global_2870015[__LIB_0__::func_5()];
+		iVar1 = Global_2870015[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 96);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8288, iVar1, -1, 1);
 	}
 	else if (iVar0 > 127 && iVar0 < 160)
 	{
-		iVar1 = Global_2870018[__LIB_0__::func_5()];
+		iVar1 = Global_2870018[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 128);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8289, iVar1, -1, 1);
 	}
 	else if (iVar0 > 159 && iVar0 < 192)
 	{
-		iVar1 = Global_2870021[__LIB_0__::func_5()];
+		iVar1 = Global_2870021[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 160);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8290, iVar1, -1, 1);
 	}
 	else if (iVar0 > 191 && iVar0 < 224)
 	{
-		iVar1 = Global_2870024[__LIB_0__::func_5()];
+		iVar1 = Global_2870024[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 192);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8291, iVar1, -1, 1);
 	}
 	else if (iVar0 > 223 && iVar0 < 256)
 	{
-		iVar1 = Global_2870027[__LIB_0__::func_5()];
+		iVar1 = Global_2870027[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 224);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8292, iVar1, -1, 1);
 	}
 	else if (iVar0 > 255 && iVar0 < 288)
 	{
-		iVar1 = Global_2870030[__LIB_0__::func_5()];
+		iVar1 = Global_2870030[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 256);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8293, iVar1, -1, 1);
 	}
 	else if (iVar0 > 287 && iVar0 < 320)
 	{
-		iVar1 = Global_2870033[__LIB_0__::func_5()];
+		iVar1 = Global_2870033[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 288);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8294, iVar1, -1, 1);
 	}
 	else if (iVar0 > 319 && iVar0 < 352)
 	{
-		iVar1 = Global_2870036[__LIB_0__::func_5()];
+		iVar1 = Global_2870036[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 320);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8295, iVar1, -1, 1);
 	}
 	else if (iVar0 > 351 && iVar0 < 384)
 	{
-		iVar1 = Global_2870039[__LIB_0__::func_5()];
+		iVar1 = Global_2870039[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 352);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8296, iVar1, -1, 1);
 	}
 	else if (iVar0 > 383 && iVar0 < 416)
 	{
-		iVar1 = Global_2870042[__LIB_0__::func_5()];
+		iVar1 = Global_2870042[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 384);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8297, iVar1, -1, 1);
 	}
 	else if (iVar0 > 415 && iVar0 < 448)
 	{
-		iVar1 = Global_2870045[__LIB_0__::func_5()];
+		iVar1 = Global_2870045[__LIB_0__::getGlobal_1574918()];
 		iVar0 = (iVar0 - 416);
 		MISC::SET_BIT(&iVar1, iVar0);
 		__LIB_1__::func_364(8905, iVar1, -1, 1);

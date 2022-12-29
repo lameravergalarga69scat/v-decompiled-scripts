@@ -13746,7 +13746,7 @@ int func_681(int iParam0)//Position - 0x643E7C
 
 var func_682()//Position - 0x643ECA
 {
-	return Global_2869994[__LIB_0__::func_5()];
+	return Global_2869994[__LIB_0__::getGlobal_1574918()];
 }
 
 void func_683()//Position - 0x6452E4
@@ -13755,7 +13755,7 @@ void func_683()//Position - 0x6452E4
 	bool bVar1;
 	int iVar2;
 	int iVar3;
-	iVar0 = __LIB_0__::func_5();
+	iVar0 = __LIB_0__::getGlobal_1574918();
 	iVar2 = __LIB_25__::func_313(iVar0);
 	iVar3 = MISC::GET_PROFILE_SETTING(iVar2);
 	if (BitTest(iVar3, 1))

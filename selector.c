@@ -1160,7 +1160,7 @@ void func_18()//Position - 0x805
 					}
 					else if (Global_23011.f_69 == 2)
 					{
-						if ((((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)) && !__LIB_0__::func_2(0)) && __LIB_0__::func_438()) && __LIB_27__::func_322(__LIB_0__::func_5()))
+						if ((((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)) && !__LIB_0__::func_2(0)) && __LIB_0__::func_438()) && __LIB_27__::func_322(__LIB_0__::getGlobal_1574918()))
 						{
 							bVar1 = true;
 						}
@@ -2118,7 +2118,7 @@ void func_70()//Position - 0x388E
 			}
 			else if (iVar0 == 3)
 			{
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_42__::func_606(iVar0, func_98(iVar2), 0, __LIB_0__::func_5()));
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_42__::func_606(iVar0, func_98(iVar2), 0, __LIB_0__::getGlobal_1574918()));
 			}
 			else
 			{
@@ -2295,12 +2295,12 @@ void func_102()//Position - 0x52D4
 			{
 				if (!NETWORK::HAS_NETWORK_TIME_STARTED() || NETWORK::IS_TIME_MORE_THAN(NETWORK::GET_NETWORK_TIME(), Global_1660992))
 				{
-					if (__LIB_0__::func_438() && __LIB_27__::func_322(__LIB_0__::func_5()))
+					if (__LIB_0__::func_438() && __LIB_27__::func_322(__LIB_0__::getGlobal_1574918()))
 					{
 						func_105();
 					}
 					Var0 = { __LIB_0__::func_819(PLAYER::PLAYER_ID()) };
-					iLocal_150 = __LIB_0__::func_5();
+					iLocal_150 = __LIB_0__::getGlobal_1574918();
 					Var1 = { __LIB_37__::func_520(iLocal_150) };
 					if (iLocal_150 != -1)
 					{
@@ -7589,7 +7589,7 @@ void func_409(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}

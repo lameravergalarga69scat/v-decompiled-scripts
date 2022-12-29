@@ -649,7 +649,7 @@ int func_6(var uParam0, bool bParam1)//Position - 0xC18
 	iVar1 = uParam0;
 	if (iVar1 == -1)
 	{
-		iVar1 = __LIB_0__::func_5();
+		iVar1 = __LIB_0__::getGlobal_1574918();
 	}
 	if (Global_1575038[iVar1] == 1)
 	{

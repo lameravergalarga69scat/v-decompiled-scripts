@@ -1,8 +1,6 @@
 /**
  * This seems to be the entry point for the game (very c stylish)
 */
-namespace main { 
-
 #region Local Var
 	var uLocal_0 = 0;
 	var uLocal_1 = 0;
@@ -194,7 +192,7 @@ namespace main {
 	var uLocal_187 = 0;
 	var uLocal_188 = 0;
 	var uLocal_189 = 0;
-	var uLocal_190 = -1;
+	var uLocal_190_CurrentNoirFilterScene = -1;
 	var uLocal_191 = 0;
 	var uLocal_192 = 0;
 	int iLocal_193 = 0;
@@ -332,13 +330,13 @@ void __EntryFunction__()//Position - 0x0
 			iLocal_79 = iLocal_77 + 5000;
 		}
 		func_39();
-		func_2(&uLocal_190);
-		func_1();
+		func_2(&uLocal_190_CurrentNoirFilterScene);
+		logFrameRate30();
 		SYSTEM::WAIT(0);
 	}
 }
 
-void func_1()//Position - 0x23C
+void logFrameRate30()//Position - 0x23C
 {
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 	{
@@ -473,25 +471,25 @@ void func_36()//Position - 0xC90
 {
 	if (Global_113386.f_10049.f_134 == 1)
 	{
-		func_37(2, 0);
-		func_37(1, 1);
+		switchNoirFilterSceneById(2, 0);
+		switchNoirFilterSceneById(1, 1);
 	}
 	else if (Global_113386.f_10049.f_134 == 2)
 	{
-		func_37(1, 0);
-		func_37(2, 1);
+		switchNoirFilterSceneById(1, 0);
+		switchNoirFilterSceneById(2, 1);
 	}
 	else if (Global_113386.f_10049.f_134 == 0)
 	{
-		func_37(1, 0);
-		func_37(2, 0);
+		switchNoirFilterSceneById(1, 0);
+		switchNoirFilterSceneById(2, 0);
 	}
 }
 
-void func_37(int iParam0, bool bParam1)//Position - 0xCE9
+void switchNoirFilterSceneById(int iParam0, bool bParam1)//Position - 0xCE9
 {
 	char* sVar0;
-	sVar0 = func_38(iParam0);
+	sVar0 = filmNoirFilterById(iParam0);
 	if (bParam1)
 	{
 		if (!AUDIO::IS_AUDIO_SCENE_ACTIVE(sVar0))
@@ -505,7 +503,7 @@ void func_37(int iParam0, bool bParam1)//Position - 0xCE9
 	}
 }
 
-char* func_38(int iParam0)//Position - 0xD21
+char* filmNoirFilterById(int iParam0)//Position - 0xD21
 {
 	switch (iParam0)
 	{
@@ -4747,7 +4745,7 @@ void func_403(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -38342,14 +38340,14 @@ void launchInitialScript()//Position - 0xD46C4
 
 void terminateThisThread()//Position - 0xD4742
 {
-	__LIB_37__::func_427(0);
-	func_1992(&uLocal_190);
-	func_1991();
+	__LIB_37__::setGlobal_1973076(0);
+	stopNoirFilter(&uLocal_190_CurrentNoirFilterScene);
+	cleanControlGlobals();
 	__LIB_37__::func_450(&Global_152266);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_1991()//Position - 0xD4765
+void cleanControlGlobals()//Position - 0xD4765
 {
 	int iVar0;
 	iVar0 = 0;
@@ -38367,7 +38365,7 @@ void func_1991()//Position - 0xD4765
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
-void func_1992(var uParam0)//Position - 0xD47B0
+void stopNoirFilter(var uParam0)//Position - 0xD47B0
 {
 	if (GRAPHICS::GET_EXTRA_TCMODIFIER() != -1)
 	{
@@ -38379,14 +38377,12 @@ void func_1992(var uParam0)//Position - 0xD47B0
 		AUDIO::RELEASE_SOUND_ID(*uParam0);
 		*uParam0 = -1;
 	}
-	if (AUDIO::IS_AUDIO_SCENE_ACTIVE(func_38(1)))
+	if (AUDIO::IS_AUDIO_SCENE_ACTIVE(filmNoirFilterById(1)))
 	{
-		AUDIO::STOP_AUDIO_SCENE(func_38(1));
+		AUDIO::STOP_AUDIO_SCENE(filmNoirFilterById(1));
 	}
-	if (AUDIO::IS_AUDIO_SCENE_ACTIVE(func_38(2)))
+	if (AUDIO::IS_AUDIO_SCENE_ACTIVE(filmNoirFilterById(2)))
 	{
-		AUDIO::STOP_AUDIO_SCENE(func_38(2));
+		AUDIO::STOP_AUDIO_SCENE(filmNoirFilterById(2));
 	}
-}
-
 }

@@ -533,7 +533,7 @@ void func_57(var uParam0, int iParam1)//Position - 0x2260
 	iVar0 = iParam1;
 	if (iVar0 == -1)
 	{
-		iVar0 = __LIB_0__::func_5();
+		iVar0 = __LIB_0__::getGlobal_1574918();
 	}
 	Global_1575038[iVar0] = uParam0;
 }

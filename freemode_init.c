@@ -391,12 +391,12 @@ void func_14(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	int iVar1;
 	if (iParam6 == -1)
 	{
-		iParam6 = __LIB_0__::func_5();
+		iParam6 = __LIB_0__::getGlobal_1574918();
 	}
 	if (bParam0)
 	{
 		__LIB_1__::func_364(11391, 86, iParam6, 1);
-		if (iParam6 == __LIB_0__::func_5())
+		if (iParam6 == __LIB_0__::getGlobal_1574918())
 		{
 			if (SYSTEM::VMAG(__LIB_30__::func_319(PLAYER::PLAYER_ID())) < 0.01f)
 			{
@@ -427,7 +427,7 @@ void func_14(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		__LIB_26__::func_404();
 		__LIB_26__::func_403();
 	}
-	if (iParam6 == __LIB_0__::func_5())
+	if (iParam6 == __LIB_0__::getGlobal_1574918())
 	{
 		Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_269 = bParam0;
 		if (iParam1 < 0 || iParam1 > 5)

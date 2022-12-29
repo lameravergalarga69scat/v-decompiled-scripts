@@ -11981,7 +11981,7 @@ void func_452(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -21689,7 +21689,7 @@ void func_1242(struct<3> Param0, float fParam1, int iParam2, int iParam3, bool b
 	{
 		Global_2689235[PLAYER::PLAYER_ID() /*453*/].f_231 = NETWORK::GET_NETWORK_TIME();
 	}
-	if (Global_1574654.f_6[__LIB_0__::func_5()])
+	if (Global_1574654.f_6[__LIB_0__::getGlobal_1574918()])
 	{
 		__LIB_1__::func_821(-1);
 	}
@@ -21725,7 +21725,7 @@ void func_1264()//Position - 0xD537E
 	{
 		PLAYER::CLEAR_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID());
 	}
-	iVar6 = __LIB_0__::func_5();
+	iVar6 = __LIB_0__::getGlobal_1574918();
 	if (__LIB_0__::func_3() != 1 && __LIB_0__::func_3() != 2)
 	{
 		func_1783();
@@ -21770,7 +21770,7 @@ void func_1264()//Position - 0xD537E
 			{
 				if (!func_1700(PLAYER::PLAYER_PED_ID()))
 				{
-					__LIB_18__::func_306(__LIB_0__::func_5());
+					__LIB_18__::func_306(__LIB_0__::getGlobal_1574918());
 					func_1698(PLAYER::PLAYER_ID());
 					__LIB_1__::func_348(141, 1, -1, 1);
 				}
@@ -21778,7 +21778,7 @@ void func_1264()//Position - 0xD537E
 		}
 		if (!__LIB_2__::func_151())
 		{
-			__LIB_18__::func_306(__LIB_0__::func_5());
+			__LIB_18__::func_306(__LIB_0__::getGlobal_1574918());
 			Global_2787396 = 1;
 			__LIB_1__::func_348(141, 0, -1, 1);
 		}
@@ -21959,7 +21959,7 @@ void func_1264()//Position - 0xD537E
 	}
 	PED::SET_PED_CAN_LOSE_PROPS_ON_DAMAGE(PLAYER::PLAYER_PED_ID(), false, 0);
 	ENTITY::SET_ENTITY_PROOFS(PLAYER::PLAYER_PED_ID(), bVar0, bVar1, bVar2, bVar3, bVar4, false, false, false);
-	NETWORK::NETWORK_APPLY_PED_SCAR_DATA(PLAYER::PLAYER_PED_ID(), __LIB_0__::func_5());
+	NETWORK::NETWORK_APPLY_PED_SCAR_DATA(PLAYER::PLAYER_PED_ID(), __LIB_0__::getGlobal_1574918());
 	AUDIO::SET_AMBIENT_VOICE_NAME(PLAYER::PLAYER_PED_ID(), "NO_VOICE");
 	PED::SET_PED_ARMOUR(PLAYER::PLAYER_PED_ID(), __LIB_1__::func_360(817, -1, 0));
 	Global_2826521.f_280 = 0;
@@ -23512,7 +23512,7 @@ void func_1399()//Position - 0xE834B
 
 void func_1402(bool bParam0, int iParam1, int iParam2, bool bParam3, int iParam4, int iParam5, bool bParam6, bool bParam7)//Position - 0xE8405
 {
-	__LIB_18__::func_306(__LIB_0__::func_5());
+	__LIB_18__::func_306(__LIB_0__::getGlobal_1574918());
 	func_1629(0);
 	func_1607(0);
 	func_1605(0);
@@ -32393,7 +32393,7 @@ int func_1700(int iParam0)//Position - 0x1255A5
 
 void func_1702()//Position - 0x1257B0
 {
-	__LIB_18__::func_306(__LIB_0__::func_5());
+	__LIB_18__::func_306(__LIB_0__::getGlobal_1574918());
 	func_1705();
 	func_1703(PLAYER::PLAYER_ID(), -1);
 	__LIB_18__::func_673(joaat("WEAPON_PISTOL"), 1, -1);

@@ -10653,7 +10653,7 @@ void func_331(var uParam0, int iParam1)//Position - 0x2FF57E
 	int iVar2;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	iVar1 = __LIB_1__::func_321(iParam1);
 	iVar2 = MISC::GET_PROFILE_SETTING(iVar1);

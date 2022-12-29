@@ -455,7 +455,7 @@ void func_9(var uParam0, var uParam1)//Position - 0x9B2
 	{
 		if (__LIB_0__::func_194(8, -1) == 0)
 		{
-			*uParam1 = __LIB_0__::func_5();
+			*uParam1 = __LIB_0__::getGlobal_1574918();
 		}
 		func_149();
 		switch (uParam1->f_5)

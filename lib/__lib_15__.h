@@ -29665,7 +29665,7 @@ int func_386(int iParam0)//Position - 0x1B1C4B
 void func_387()//Position - 0x1B26AA
 {
 	int iVar0;
-	iVar0 = Global_2869991[__LIB_0__::func_5()];
+	iVar0 = Global_2869991[__LIB_0__::getGlobal_1574918()];
 	iVar0++;
 	__LIB_1__::func_364(3670, iVar0, -1, 1);
 }
@@ -29673,7 +29673,7 @@ void func_387()//Position - 0x1B26AA
 void func_388()//Position - 0x1B26CF
 {
 	int iVar0;
-	iVar0 = Global_2869997[__LIB_0__::func_5()];
+	iVar0 = Global_2869997[__LIB_0__::getGlobal_1574918()];
 	iVar0++;
 	__LIB_1__::func_364(3669, iVar0, -1, 1);
 }
@@ -29761,9 +29761,9 @@ int func_389(int iParam0)//Position - 0x1B2753
 void func_390()//Position - 0x1B2D64
 {
 	int iVar0;
-	iVar0 = Global_2869988[__LIB_0__::func_5()];
+	iVar0 = Global_2869988[__LIB_0__::getGlobal_1574918()];
 	iVar0++;
-	Global_2869988[__LIB_0__::func_5()] = iVar0;
+	Global_2869988[__LIB_0__::getGlobal_1574918()] = iVar0;
 	__LIB_1__::func_364(3668, iVar0, -1, 1);
 }
 
@@ -29771,12 +29771,12 @@ void func_391()//Position - 0x1B2D95
 {
 	int iVar0;
 	int iVar1;
-	iVar0 = Global_2869985[__LIB_0__::func_5()];
-	iVar1 = Global_2869994[__LIB_0__::func_5()];
+	iVar0 = Global_2869985[__LIB_0__::getGlobal_1574918()];
+	iVar1 = Global_2869994[__LIB_0__::getGlobal_1574918()];
 	iVar0++;
 	iVar1++;
-	Global_2869985[__LIB_0__::func_5()] = iVar0;
-	Global_2869994[__LIB_0__::func_5()] = iVar1;
+	Global_2869985[__LIB_0__::getGlobal_1574918()] = iVar0;
+	Global_2869994[__LIB_0__::getGlobal_1574918()] = iVar1;
 	Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_136 = iVar1;
 	__LIB_1__::func_364(3666, iVar0, -1, 1);
 	__LIB_1__::func_364(3667, iVar1, -1, 1);
@@ -36142,7 +36142,7 @@ void func_610(int iParam0)//Position - 0x1D02DE
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	iVar0 = Global_2870000[__LIB_0__::func_5()];
+	iVar0 = Global_2870000[__LIB_0__::getGlobal_1574918()];
 	iVar0 = (iVar0 + iParam0);
 	__LIB_1__::func_364(3671, iVar0, -1, 1);
 	if (__LIB_0__::func_253(7666, -1) < 24)

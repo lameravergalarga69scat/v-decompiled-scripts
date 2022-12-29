@@ -16624,7 +16624,7 @@ void func_426()//Position - 0xD43D5
 	}
 }
 
-void func_427(bool bParam0)//Position - 0xD4807
+void setGlobal_1973076(bool bParam0)//Position - 0xD4807
 {
 	if (bParam0)
 	{
@@ -50433,7 +50433,7 @@ void func_651()//Position - 0x860D1
 	bool bVar1;
 	int iVar2;
 	int iVar3;
-	iVar0 = __LIB_0__::func_5();
+	iVar0 = __LIB_0__::getGlobal_1574918();
 	iVar2 = __LIB_1__::func_14(iVar0);
 	iVar3 = MISC::GET_PROFILE_SETTING(iVar2);
 	if (BitTest(iVar3, 14))
@@ -50478,7 +50478,7 @@ void func_652()//Position - 0x8616E
 	bool bVar1;
 	int iVar2;
 	int iVar3;
-	iVar0 = __LIB_0__::func_5();
+	iVar0 = __LIB_0__::getGlobal_1574918();
 	iVar2 = __LIB_1__::func_14(iVar0);
 	iVar3 = MISC::GET_PROFILE_SETTING(iVar2);
 	if (BitTest(iVar3, 8))
@@ -54746,7 +54746,7 @@ int func_844(int iParam0)//Position - 0x1BDEC8
 	}
 	if (!bVar0)
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			Global_4535607 = 1;
 			return 0;
@@ -54802,7 +54802,7 @@ void func_846(int iParam0, int iParam1)//Position - 0x1D50B6
 
 int func_847()//Position - 0x1D7A40
 {
-	return __LIB_27__::func_322(__LIB_0__::func_5());
+	return __LIB_27__::func_322(__LIB_0__::getGlobal_1574918());
 }
 
 int func_848()//Position - 0x1D8DCF

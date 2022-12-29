@@ -18806,7 +18806,7 @@ int func_511(int iParam0, int iParam1, int iParam2)//Position - 0x6819
 	if (iParam1 == 0)
 	{
 	}
-	iVar2 = __LIB_0__::func_5();
+	iVar2 = __LIB_0__::getGlobal_1574918();
 	if (__LIB_27__::func_322(iVar2) == 0)
 	{
 		iVar1 = 0;

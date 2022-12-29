@@ -10130,7 +10130,7 @@ int func_315(bool bParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	fVar0 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 1f);
 	fVar1 = (__LIB_13__::func_44(2) / (__LIB_13__::func_44(2) + __LIB_13__::func_44(20)));
 	fVar2 = Global_262145.f_33146 /* Tunable: 567360631 */;
-	iVar3 = Global_2869985[__LIB_0__::func_5()];
+	iVar3 = Global_2869985[__LIB_0__::getGlobal_1574918()];
 	iVar4 = 167;
 	if (__LIB_13__::func_43(fVar0, fVar1, fVar2, iVar3))
 	{
@@ -14034,7 +14034,7 @@ int func_745()//Position - 0x2968D
 
 var func_749()//Position - 0x296D1
 {
-	return Global_2869988[__LIB_0__::func_5()];
+	return Global_2869988[__LIB_0__::getGlobal_1574918()];
 }
 
 Vector3 func_751(int iParam0)//Position - 0x296F5
@@ -14056,17 +14056,17 @@ Vector3 func_751(int iParam0)//Position - 0x296F5
 
 var func_757()//Position - 0x298DC
 {
-	return Global_2870000[__LIB_0__::func_5()];
+	return Global_2870000[__LIB_0__::getGlobal_1574918()];
 }
 
 var func_759()//Position - 0x29915
 {
-	return Global_2869991[__LIB_0__::func_5()];
+	return Global_2869991[__LIB_0__::getGlobal_1574918()];
 }
 
 var func_760()//Position - 0x29927
 {
-	return Global_2869997[__LIB_0__::func_5()];
+	return Global_2869997[__LIB_0__::getGlobal_1574918()];
 }
 
 void func_761(int iParam0, char* sParam1, char* sParam2, int iParam3, int iParam4)//Position - 0x29939

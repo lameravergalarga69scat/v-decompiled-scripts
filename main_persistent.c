@@ -6188,7 +6188,7 @@ void func_437(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -7905,7 +7905,7 @@ int func_710()//Position - 0x6EE04
 void func_711(bool bParam0)//Position - 0x6EE4E
 {
 	Global_1575084 = 0;
-	__LIB_18__::func_306(__LIB_0__::func_5());
+	__LIB_18__::func_306(__LIB_0__::getGlobal_1574918());
 	__LIB_27__::func_505();
 	__LIB_26__::func_395();
 	__LIB_0__::func_764();
@@ -31333,7 +31333,7 @@ void func_5691()//Position - 0x1C4310
 void func_5708()//Position - 0x1C58DD
 {
 	int iVar0;
-	if (__LIB_18__::func_46(__LIB_0__::func_5()) && __LIB_0__::func_438())
+	if (__LIB_18__::func_46(__LIB_0__::getGlobal_1574918()) && __LIB_0__::func_438())
 	{
 		if (__LIB_1__::func_342(130, -1))
 		{

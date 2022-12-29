@@ -5793,7 +5793,7 @@ void func_367(bool bParam0, int iParam1)//Position - 0x4B1E50
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	Global_1659608 = 0;
 	if (MISC::ARE_PROFILE_SETTINGS_VALID() == 0)

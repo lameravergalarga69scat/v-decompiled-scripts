@@ -4032,7 +4032,7 @@ void func_193(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -4615,7 +4615,7 @@ void func_256(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 	int iVar9;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	if (!bParam3)
 	{
@@ -6554,12 +6554,12 @@ int func_400(var uParam0)//Position - 0x59420
 	}
 	else if (iVar3 == 11 && __LIB_16__::func_390(ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), iVar3, iVar2))
 	{
-		if (__LIB_18__::func_465(2, __LIB_0__::func_5()))
+		if (__LIB_18__::func_465(2, __LIB_0__::getGlobal_1574918()))
 		{
 			iVar31 = PLAYER::PLAYER_PED_ID();
 			Stack.Push(&iVar31);
 			Stack.Push(2);
-			Stack.Push(__LIB_0__::func_5());
+			Stack.Push(__LIB_0__::getGlobal_1574918());
 			Stack.Push(0);
 			Call_Loc(uParam0->f_107);
 			func_252(iVar31);
@@ -7199,7 +7199,7 @@ void func_447(int iParam0, bool bParam1, int iParam2)//Position - 0x5DCBE
 {
 	if (iParam2 == -1)
 	{
-		iParam2 = __LIB_0__::func_5();
+		iParam2 = __LIB_0__::getGlobal_1574918();
 	}
 	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }

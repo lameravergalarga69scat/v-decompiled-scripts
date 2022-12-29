@@ -166,7 +166,7 @@ int func_14(int iParam0)//Position - 0x9183A
 	int iVar0;
 	if (iParam0 == -1)
 	{
-		iParam0 = __LIB_0__::func_5();
+		iParam0 = __LIB_0__::getGlobal_1574918();
 	}
 	switch (iParam0)
 	{
@@ -335,7 +335,7 @@ int func_27(int iParam0)//Position - 0x8B27
 	iVar0 = iParam0;
 	if (iVar0 == -1)
 	{
-		iVar1 = __LIB_0__::func_5();
+		iVar1 = __LIB_0__::getGlobal_1574918();
 		if (iVar1 > -1)
 		{
 			Global_2826521 = 0;
@@ -8672,7 +8672,7 @@ int func_321(int iParam0)//Position - 0x44205
 	int iVar0;
 	if (iParam0 == -1)
 	{
-		iParam0 = __LIB_0__::func_5();
+		iParam0 = __LIB_0__::getGlobal_1574918();
 	}
 	switch (iParam0)
 	{
@@ -11521,7 +11521,7 @@ void func_379(int iParam0, int iParam1, int iParam2)//Position - 0x2AB1
 {
 	if (iParam2 == -1)
 	{
-		iParam2 = __LIB_0__::func_5();
+		iParam2 = __LIB_0__::getGlobal_1574918();
 	}
 	if (iParam1 < 0)
 	{
@@ -12166,7 +12166,7 @@ int func_407(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	iVar1 = 1;
 	if (!bVar0)
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			Global_4535607 = 1;
 			return 0;

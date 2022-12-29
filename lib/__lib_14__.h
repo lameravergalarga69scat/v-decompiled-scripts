@@ -25296,7 +25296,7 @@ int func_499(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	iVar1 = 1;
 	if (!bVar0)
 	{
-		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+		if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 		{
 			Global_4535607 = 1;
 			return 0;
@@ -25886,7 +25886,7 @@ int func_511(int iParam0, var* uParam1)//Position - 0xE50E
 	return 0;
 }
 
-int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//Position - 0xA7E09
+int func_512(int characterIndex, int iParam1, int iParam2, int iParam3, bool bParam4)//Position - 0xA7E09
 {
 	float fVar0;
 	bool bVar1;
@@ -25903,7 +25903,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 	switch (iParam1)
 	{
 		case 0:
-			switch (iParam0)
+			switch (characterIndex)
 			{
 				case 0:
 					__LIB_0__::func_183(99, 1);
@@ -25936,7 +25936,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 				case 66:
 				case 67:
 				case 68:
-					switch (iParam0)
+					switch (characterIndex)
 					{
 						case 0:
 							__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_ON_TATTOOS"), iParam3);
@@ -25955,7 +25955,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 					}
 					break;
 				case 21:
-					switch (iParam0)
+					switch (characterIndex)
 					{
 						case 0:
 							__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_ON_TAXIS"), iParam3);
@@ -25969,7 +25969,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 					}
 					break;
 				case 25:
-					switch (iParam0)
+					switch (characterIndex)
 					{
 						case 0:
 							__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_IN_STRIP_CLUBS"), iParam3);
@@ -25996,7 +25996,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 				case 111:
 				case 112:
 				case 113:
-					switch (iParam0)
+					switch (characterIndex)
 					{
 						case 0:
 							__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_PROPERTY"), iParam3);
@@ -26013,7 +26013,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 					switch (SCRIPT::GET_HASH_OF_THIS_SCRIPT_NAME())
 					{
 						case joaat("clothes_shop_sp"):
-							switch (iParam0)
+							switch (characterIndex)
 							{
 								case 0:
 									__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_IN_CLOTHES"), iParam3);
@@ -26027,7 +26027,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 							}
 							break;
 						case joaat("hairdo_shop_sp"):
-							switch (iParam0)
+							switch (characterIndex)
 							{
 								case 0:
 									__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_ON_HAIRDOS"), iParam3);
@@ -26046,7 +26046,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 							}
 							break;
 						case joaat("gunclub_shop"):
-							switch (iParam0)
+							switch (characterIndex)
 							{
 								case 0:
 									__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_IN_BUYING_GUNS"), iParam3);
@@ -26060,7 +26060,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 							}
 							break;
 						case joaat("carmod_shop"):
-							switch (iParam0)
+							switch (characterIndex)
 							{
 								case 0:
 									__LIB_0__::func_182(joaat("SP0_MONEY_SPENT_CAR_MODS"), iParam3);
@@ -26079,7 +26079,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 			}
 			break;
 		case 1:
-			switch (iParam0)
+			switch (characterIndex)
 			{
 				case 0:
 					__LIB_0__::func_183(95, iParam3);
@@ -26094,7 +26094,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 			__LIB_0__::func_183(98, iParam3);
 			break;
 	}
-	iVar2 = iParam0;
+	iVar2 = characterIndex;
 	iParam3 = SYSTEM::FLOOR((fVar0 * SYSTEM::TO_FLOAT(iParam3)));
 	iVar3 = 0;
 	iVar4 = iParam3;
@@ -26122,7 +26122,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 					Global_60328_SPN_TOTAL_CASH[iVar2] = (Global_60328_SPN_TOTAL_CASH[iVar2] + iParam3);
 				}
 			}
-			switch (iParam0)
+			switch (characterIndex)
 			{
 				case 0:
 					__LIB_0__::func_182(joaat("SP0_TOTAL_CASH_EARNED"), iParam3);
@@ -26169,7 +26169,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 			Global_113386.f_20564.f_233[iVar2 /*69*/].f_1 = 0;
 		}
 	}
-	__LIB_0__::saveTotalCashToStatsByCharacterIndex(iParam0);
+	__LIB_0__::saveTotalCashToStatsByCharacterIndex(characterIndex);
 	if (Global_43052 == 15)
 	{
 		__LIB_0__::func_179(0);

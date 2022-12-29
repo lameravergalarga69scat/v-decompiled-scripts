@@ -1273,14 +1273,14 @@ void func_26(var uParam0)//Position - 0x1827
 	{
 		return;
 	}
-	if (uParam0->f_1 != __LIB_0__::func_5())
+	if (uParam0->f_1 != __LIB_0__::getGlobal_1574918())
 	{
 		*uParam0 = 0;
 	}
 	switch (*uParam0)
 	{
 		case 0:
-			if (uParam0->f_1 != __LIB_0__::func_5())
+			if (uParam0->f_1 != __LIB_0__::getGlobal_1574918())
 			{
 				uParam0->f_2 = __LIB_1__::func_360(1080, -1, 0);
 				uParam0->f_3 = __LIB_1__::func_360(150, -1, 0);
@@ -1389,7 +1389,7 @@ void func_26(var uParam0)//Position - 0x1827
 				{
 					MISC::SET_BIT(&(uParam0->f_9), 27);
 				}
-				uParam0->f_1 = __LIB_0__::func_5();
+				uParam0->f_1 = __LIB_0__::getGlobal_1574918();
 			}
 			*uParam0++;
 			break;
@@ -3413,7 +3413,7 @@ void func_200(int iParam0)//Position - 0x7A35
 	{
 		APP::APP_SET_APP("car");
 		StringCopy(&cVar0, "multiplayer", 16);
-		StringIntConCat(&cVar0, __LIB_0__::func_5(), 16);
+		StringIntConCat(&cVar0, __LIB_0__::getGlobal_1574918(), 16);
 		APP::APP_SET_BLOCK(&cVar0);
 		StringCopy(&cVar0, "vehicle", 16);
 		StringIntConCat(&cVar0, iParam0, 16);
@@ -3494,7 +3494,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 	}
 	else if (iParam0 == 3)
 	{
-		iVar3 = __LIB_0__::func_5();
+		iVar3 = __LIB_0__::getGlobal_1574918();
 		iVar2 = (3 + iVar3);
 		StringCopy(&Var8, "multiplayer", 24);
 		StringIntConCat(&Var8, iVar3, 24);
@@ -7919,7 +7919,7 @@ void func_502()//Position - 0x3E312
 		{
 			APP::APP_SET_APP("car");
 			StringCopy(&cVar1, "multiplayer", 16);
-			StringIntConCat(&cVar1, __LIB_0__::func_5(), 16);
+			StringIntConCat(&cVar1, __LIB_0__::getGlobal_1574918(), 16);
 			APP::APP_SET_BLOCK(&cVar1);
 			iVar3 = 0;
 			while (iVar3 < 10)
@@ -7934,7 +7934,7 @@ void func_502()//Position - 0x3E312
 			APP::APP_CLOSE_BLOCK();
 			APP::APP_SET_BLOCK("appdata");
 			StringCopy(&Var4, "orderCount_mp", 24);
-			StringIntConCat(&Var4, __LIB_0__::func_5(), 24);
+			StringIntConCat(&Var4, __LIB_0__::getGlobal_1574918(), 24);
 			func_198(&Var4, 0);
 			APP::APP_CLOSE_BLOCK();
 			iLocal_95 = 1;
@@ -7951,7 +7951,7 @@ void func_502()//Position - 0x3E312
 				{
 					APP::APP_SET_APP("car");
 					StringCopy(&cVar1, "multiplayer", 16);
-					StringIntConCat(&cVar1, __LIB_0__::func_5(), 16);
+					StringIntConCat(&cVar1, __LIB_0__::getGlobal_1574918(), 16);
 					APP::APP_SET_BLOCK(&cVar1);
 					StringCopy(&cVar1, "vehicle", 16);
 					StringIntConCat(&cVar1, iVar5, 16);
@@ -7991,14 +7991,14 @@ void func_502()//Position - 0x3E312
 					}
 					APP::APP_SET_APP("car");
 					StringCopy(&cVar2, "mp", 16);
-					StringIntConCat(&cVar2, __LIB_0__::func_5(), 16);
+					StringIntConCat(&cVar2, __LIB_0__::getGlobal_1574918(), 16);
 					StringConCat(&cVar2, "_order", 16);
 					APP::APP_SET_BLOCK(&cVar2);
 					APP::APP_CLEAR_BLOCK();
 					APP::APP_CLOSE_BLOCK();
 					APP::APP_SET_BLOCK("appdata");
 					StringCopy(&Var6, "orderCount_mp", 24);
-					StringIntConCat(&Var6, __LIB_0__::func_5(), 24);
+					StringIntConCat(&Var6, __LIB_0__::getGlobal_1574918(), 24);
 					func_198(&Var6, Global_2359296[iVar0 /*5567*/].f_593.f_61);
 					APP::APP_CLOSE_BLOCK();
 					APP::APP_CLOSE_APP();

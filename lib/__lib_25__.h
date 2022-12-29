@@ -12988,7 +12988,7 @@ int func_313(int iParam0)//Position - 0xE3C52
 	int iVar0;
 	if (iParam0 == -1)
 	{
-		iParam0 = __LIB_0__::func_5();
+		iParam0 = __LIB_0__::getGlobal_1574918();
 	}
 	switch (iParam0)
 	{
@@ -14265,7 +14265,7 @@ void func_375()//Position - 0x1E6766
 	bool bVar1;
 	int iVar2;
 	int iVar3;
-	iVar0 = __LIB_0__::func_5();
+	iVar0 = __LIB_0__::getGlobal_1574918();
 	iVar2 = __LIB_1__::func_14(iVar0);
 	iVar3 = MISC::GET_PROFILE_SETTING(iVar2);
 	if (BitTest(iVar3, 20))
@@ -19749,7 +19749,7 @@ void func_612()//Position - 0xE4C87
 	bool bVar1;
 	int iVar2;
 	int iVar3;
-	iVar0 = __LIB_0__::func_5();
+	iVar0 = __LIB_0__::getGlobal_1574918();
 	iVar2 = __LIB_1__::func_14(iVar0);
 	iVar3 = MISC::GET_PROFILE_SETTING(iVar2);
 	if (BitTest(iVar3, 24))
@@ -34788,7 +34788,7 @@ void func_838(bool bParam0, int iParam1)//Position - 0xC62EF
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	iVar1 = __LIB_25__::func_313(iParam1);
 	switch (bParam0)
@@ -34813,7 +34813,7 @@ bool func_839(int iParam0, int iParam1)//Position - 0xC6348
 	int iVar1;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	iVar0 = __LIB_25__::func_313(iParam1);
 	iVar1 = MISC::GET_PROFILE_SETTING(iVar0);

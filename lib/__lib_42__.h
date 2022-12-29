@@ -3591,7 +3591,7 @@ void func_25(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, b
 		{
 			Global_1944113.f_20 = iParam0;
 		}
-		Global_1944113.f_27 = __LIB_15__::func_347(__LIB_0__::func_5(), 5);
+		Global_1944113.f_27 = __LIB_15__::func_347(__LIB_0__::getGlobal_1574918(), 5);
 		Global_1944113.f_28 = __LIB_1__::func_137(__LIB_1__::func_655(PLAYER::PLAYER_ID()));
 		Global_1944113.f_29 = __LIB_1__::func_360(6110, -1, 0);
 		Global_1944113.f_30 = __LIB_1__::func_360(6106, -1, 0);
@@ -4054,7 +4054,7 @@ void func_26(bool bParam0, var uParam1, int iParam2, bool bParam3, int iParam4, 
 		Global_1944066.f_18 = (Global_1944066.f_9 - Global_1944066.f_8);
 		Global_1944066.f_11 = uParam1;
 		Global_1944066.f_7 = __LIB_35__::func_498();
-		Global_1944066.f_42 = __LIB_15__::func_347(__LIB_0__::func_5(), 5);
+		Global_1944066.f_42 = __LIB_15__::func_347(__LIB_0__::getGlobal_1574918(), 5);
 		iVar1 = PLAYER::PLAYER_ID();
 		iVar2 = __LIB_4__::func_566(iVar1);
 		if (__LIB_0__::func_797() != -1)
@@ -23387,7 +23387,7 @@ int func_426(var* uParam0, int iParam1, bool bParam2)//Position - 0x1D7D05
 		bVar3 = __LIB_37__::func_518(uParam0->f_16);
 		iVar4 = -1;
 		iVar5 = -1;
-		STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &iVar4, &iVar5);
+		STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &iVar4, &iVar5);
 		bVar6 = uParam0->f_21 >= __LIB_7__::func_910();
 		bVar6 = (bVar6 && !Global_2714762.f_888);
 		if (iVar4 == 0 && iVar5 == 0)

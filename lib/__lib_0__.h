@@ -57,7 +57,7 @@ int func_4(int iParam0, int iParam1)//Position - 0xD61
 	return 0;
 }
 
-int func_5()//Position - 0xDD0
+int getGlobal_1574918()//Position - 0xDD0
 {
 	return Global_1574918;
 }
@@ -10572,7 +10572,7 @@ bool func_137(int iParam0, int iParam1)//Position - 0x520
 {
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	return STATS::GET_PACKED_STAT_BOOL_CODE(iParam0, iParam1);
 }
@@ -10770,7 +10770,7 @@ int func_153(var uParam0)//Position - 0x4E0
 	iVar0 = uParam0;
 	if (iVar0 == -1)
 	{
-		iVar1 = __LIB_0__::func_5();
+		iVar1 = __LIB_0__::getGlobal_1574918();
 		if (iVar1 > -1)
 		{
 			Global_2826521 = 0;
@@ -11868,7 +11868,7 @@ void func_186(int iParam0, bool bParam1, int iParam2)//Position - 0x94886
 {
 	if (iParam2 == -1)
 	{
-		iParam2 = __LIB_0__::func_5();
+		iParam2 = __LIB_0__::getGlobal_1574918();
 	}
 	STATS::SET_PACKED_STAT_BOOL_CODE(iParam0, bParam1, iParam2);
 }
@@ -11930,7 +11930,7 @@ int func_195(int iParam0, bool bParam1)//Position - 0x9D959
 	iVar1 = iParam0;
 	if (iVar1 == -1)
 	{
-		iVar1 = __LIB_0__::func_5();
+		iVar1 = __LIB_0__::getGlobal_1574918();
 	}
 	if (Global_1575038[iVar1] == 1)
 	{
@@ -13247,7 +13247,7 @@ int func_234(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x2
 
 var func_235()//Position - 0x27142
 {
-	return __LIB_0__::func_159(__LIB_0__::func_5() + 1);
+	return __LIB_0__::func_159(__LIB_0__::getGlobal_1574918() + 1);
 }
 
 int func_236()//Position - 0x29F44
@@ -14227,7 +14227,7 @@ int func_252(int iParam0, int iParam1)//Position - 0x2ED57
 	iVar0 = 0;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	iVar1 = 0;
 	iVar2 = 0;
@@ -14375,7 +14375,7 @@ int func_253(int iParam0, int iParam1)//Position - 0x2F426
 {
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
@@ -28028,7 +28028,7 @@ void func_408(int iParam0, bool bParam1, int iParam2)//Position - 0x40088
 {
 	if (iParam2 == -1)
 	{
-		iParam2 = __LIB_0__::func_5();
+		iParam2 = __LIB_0__::getGlobal_1574918();
 	}
 	if (bParam1 < 0)
 	{

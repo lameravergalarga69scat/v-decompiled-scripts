@@ -2243,7 +2243,7 @@ void func_365(int iParam0)//Position - 0xED86
 	bVar4 = false;
 	sVar5 = ZONE::GET_NAME_OF_ZONE(__LIB_12__::func_956(iVar0, 0));
 	Var6 = { __LIB_13__::func_298(iVar0, iVar2) };
-	iVar7 = __LIB_0__::func_5();
+	iVar7 = __LIB_0__::getGlobal_1574918();
 	iVar8 = 0;
 	iVar9 = __LIB_30__::func_94(iVar0);
 	iVar10 = -1;

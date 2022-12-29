@@ -2867,7 +2867,7 @@ void func_246()//Position - 0x20679
 				__LIB_1__::func_775(iVar1, &iVar2, 1);
 				if (iVar2 >= 0)
 				{
-					iVar0 = __LIB_1__::func_360(__LIB_1__::func_811(4, iVar2), __LIB_0__::func_5(), 0);
+					iVar0 = __LIB_1__::func_360(__LIB_1__::func_811(4, iVar2), __LIB_0__::getGlobal_1574918(), 0);
 					if (iVar0 != 0)
 					{
 						if (iVar0 == joaat("rcbandito") && iVar1 != 257)
@@ -3203,7 +3203,7 @@ void func_282()//Position - 0x2B40F
 			__LIB_1__::func_775(158, &iVar0, 1);
 			if (iVar0 >= 0 && iVar0 != 158)
 			{
-				iLocal_241 = __LIB_1__::func_360(__LIB_1__::func_811(4, iVar0), __LIB_0__::func_5(), 0);
+				iLocal_241 = __LIB_1__::func_360(__LIB_1__::func_811(4, iVar0), __LIB_0__::getGlobal_1574918(), 0);
 				if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(Global_2815059.f_304[0]))
 				{
 					if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(Global_2815059.f_304[0]))
@@ -5043,7 +5043,7 @@ void func_637()//Position - 0x474AE
 			}
 			if (__LIB_0__::func_112())
 			{
-				if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+				if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 				{
 					iLocal_347 = NETWORK::GET_NETWORK_TIME();
 					iLocal_345 = 1;
@@ -8273,7 +8273,7 @@ void func_776(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
@@ -14041,7 +14041,7 @@ void func_920()//Position - 0xADDA9
 				Var2.f_6 = -1;
 				Var2.f_7 = -1;
 				Var2.f_26 = iVar3;
-				STATS::GET_BOSS_GOON_UUID(__LIB_0__::func_5(), &(Var2.f_4), &(Var2.f_5));
+				STATS::GET_BOSS_GOON_UUID(__LIB_0__::getGlobal_1574918(), &(Var2.f_4), &(Var2.f_5));
 				Var2.f_40 = __LIB_1__::func_794(iVar3);
 				Var2.f_41 = func_927();
 				Var2.f_42 = __LIB_6__::func_580(PLAYER::PLAYER_ID(), iVar3);
@@ -14645,7 +14645,7 @@ void func_1005()//Position - 0xB1C43
 	{
 		if (__LIB_1__::func_360(__LIB_13__::func_652(0), -1, 0) != 0)
 		{
-			iVar0 = __LIB_1__::func_360(9850, __LIB_0__::func_5(), 0);
+			iVar0 = __LIB_1__::func_360(9850, __LIB_0__::getGlobal_1574918(), 0);
 			if ((__LIB_14__::func_37(iVar0) != 0 && __LIB_1__::func_360(__LIB_13__::func_652(0), -1, 0) != __LIB_14__::func_37(iVar0)) || iLocal_358 == 1)
 			{
 				__LIB_13__::func_696(0);
@@ -14674,7 +14674,7 @@ void func_1005()//Position - 0xB1C43
 	{
 		if (__LIB_1__::func_360(__LIB_13__::func_652(1), -1, 0) != 0)
 		{
-			iVar1 = __LIB_1__::func_360(9854, __LIB_0__::func_5(), 0);
+			iVar1 = __LIB_1__::func_360(9854, __LIB_0__::getGlobal_1574918(), 0);
 			if ((__LIB_14__::func_37(iVar1) != 0 && __LIB_1__::func_360(__LIB_13__::func_652(1), -1, 0) != __LIB_14__::func_37(iVar1)) || iLocal_358 == 1)
 			{
 				__LIB_13__::func_696(1);
@@ -14882,9 +14882,9 @@ void func_1025()//Position - 0xB272A
 	}
 	if (!BitTest(uLocal_162, 7) && !__LIB_0__::func_137(28262, -1))
 	{
-		if (((__LIB_1__::func_360(__LIB_13__::func_207(0), -1, 0) == 0 && __LIB_1__::func_360(__LIB_13__::func_652(0), -1, 0) != 0) && __LIB_1__::func_360(9850, __LIB_0__::func_5(), 0) != 0) || iLocal_357 == 1)
+		if (((__LIB_1__::func_360(__LIB_13__::func_207(0), -1, 0) == 0 && __LIB_1__::func_360(__LIB_13__::func_652(0), -1, 0) != 0) && __LIB_1__::func_360(9850, __LIB_0__::getGlobal_1574918(), 0) != 0) || iLocal_357 == 1)
 		{
-			iVar0 = __LIB_1__::func_360(9850, __LIB_0__::func_5(), 0);
+			iVar0 = __LIB_1__::func_360(9850, __LIB_0__::getGlobal_1574918(), 0);
 			if (!func_529(func_532(iVar0), 0, &iLocal_357))
 			{
 				return;
@@ -14903,9 +14903,9 @@ void func_1025()//Position - 0xB272A
 	}
 	if ((!BitTest(uLocal_162, 8) && BitTest(uLocal_162, 7)) && !__LIB_0__::func_137(28263, -1))
 	{
-		if (((__LIB_1__::func_360(__LIB_13__::func_207(1), -1, 0) == 0 && __LIB_1__::func_360(__LIB_13__::func_652(1), -1, 0) != 0) && __LIB_1__::func_360(9854, __LIB_0__::func_5(), 0) != 0) || iLocal_357 == 1)
+		if (((__LIB_1__::func_360(__LIB_13__::func_207(1), -1, 0) == 0 && __LIB_1__::func_360(__LIB_13__::func_652(1), -1, 0) != 0) && __LIB_1__::func_360(9854, __LIB_0__::getGlobal_1574918(), 0) != 0) || iLocal_357 == 1)
 		{
-			iVar1 = __LIB_1__::func_360(9854, __LIB_0__::func_5(), 0);
+			iVar1 = __LIB_1__::func_360(9854, __LIB_0__::getGlobal_1574918(), 0);
 			if (!func_529(func_532(iVar1), 1, &iLocal_357))
 			{
 				return;
@@ -15962,7 +15962,7 @@ void func_1055()//Position - 0xB3D44
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		iVar23 = __LIB_0__::func_5();
+		iVar23 = __LIB_0__::getGlobal_1574918();
 		if (iLocal_275 != iVar23)
 		{
 			iLocal_275 = iVar23;
@@ -19190,7 +19190,7 @@ void func_1126()//Position - 0xBDDAC
 	{
 		if (iLocal_301 > 0)
 		{
-			if ((((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || !__LIB_1__::func_693(PLAYER::PLAYER_ID(), 0, 1)) || !__LIB_1__::func_526()) || !NETWORK::NETWORK_CLAN_SERVICE_IS_VALID()) || iLocal_340 != __LIB_0__::func_5())
+			if ((((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || !__LIB_1__::func_693(PLAYER::PLAYER_ID(), 0, 1)) || !__LIB_1__::func_526()) || !NETWORK::NETWORK_CLAN_SERVICE_IS_VALID()) || iLocal_340 != __LIB_0__::getGlobal_1574918())
 			{
 				if (iLocal_301 == 2)
 				{
@@ -19204,7 +19204,7 @@ void func_1126()//Position - 0xBDDAC
 			case 0:
 				if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_1__::func_693(PLAYER::PLAYER_ID(), 0, 1)) && __LIB_1__::func_526()) && NETWORK::NETWORK_CLAN_SERVICE_IS_VALID())
 				{
-					iLocal_340 = __LIB_0__::func_5();
+					iLocal_340 = __LIB_0__::getGlobal_1574918();
 					Local_339 = { __LIB_1__::func_696(PLAYER::PLAYER_ID()) };
 					if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Local_339) && NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&iLocal_304, 35, &Local_339))
 					{
@@ -20421,7 +20421,7 @@ void func_1208()//Position - 0xC16D0
 			if (MISC::GET_FRAME_COUNT() - Local_236[iVar2 /*85*/].f_66.f_14) >= __LIB_39__::func_331(Local_236[iVar2 /*85*/].f_66.f_5)
 			{
 				iVar1 = 0;
-				if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::func_5()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
+				if (!NETSHOPPING::NET_GAMESERVER_IS_SESSION_VALID(__LIB_0__::getGlobal_1574918()) || NETSHOPPING::NET_GAMESERVER_IS_SESSION_REFRESH_PENDING())
 				{
 					iVar1 = 1;
 				}

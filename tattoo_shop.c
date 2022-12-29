@@ -622,7 +622,7 @@ void func_50(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (iParam1 == -1)
 	{
-		iParam1 = __LIB_0__::func_5();
+		iParam1 = __LIB_0__::getGlobal_1574918();
 	}
 	if (!bParam3)
 	{
@@ -1968,7 +1968,7 @@ void func_254(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 	int iVar13;
 	if (iParam3 == -1)
 	{
-		iParam3 = __LIB_0__::func_5();
+		iParam3 = __LIB_0__::getGlobal_1574918();
 	}
 	PED::CLEAR_PED_DECORATIONS_LEAVE_SCARS(iParam0);
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
@@ -13812,7 +13812,7 @@ void func_770(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 	int iVar9;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (Global_78127 != __LIB_0__::func_5() || iParam2 == -99)
+		if (Global_78127 != __LIB_0__::getGlobal_1574918() || iParam2 == -99)
 		{
 			return;
 		}
