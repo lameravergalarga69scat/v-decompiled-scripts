@@ -271,7 +271,7 @@ void func_12()//Position - 0x701
 	__LIB_14__::func_622(108, Global_113386.f_20011.f_8 >= 1, 0);
 	__LIB_16__::func_591(107, Global_113386.f_20011.f_8 > 0);
 	__LIB_16__::func_591(108, Global_113386.f_20011.f_8 > 1);
-	if (Global_113386.f_9085.f_99.f_58[130] && !Global_113386.f_9085.f_99.f_58[131])
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[130] && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131])
 	{
 		__LIB_14__::func_622(109, 0, 0);
 	}
@@ -473,11 +473,11 @@ void func_29()//Position - 0xF9C
 
 void func_30()//Position - 0xFC5
 {
-	if (Global_113386.f_9085.f_99.f_58[63])
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[63])
 	{
 		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("chop")) == 0)
 		{
-			if (Global_113386.f_9085.f_99.f_58[126])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[126])
 			{
 				__LIB_14__::func_622(139, 1, 0);
 			}
@@ -725,13 +725,13 @@ int func_44(int iParam0)//Position - 0x1B6B
 {
 	int iVar0;
 	int iVar1;
-	iVar0 = Global_113386.f_9085.f_2[iParam0 /*3*/].f_2;
+	iVar0 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iParam0 /*3*/].f_2;
 	iVar1 = Global_78588.f_12526[iParam0 /*2*/];
 	while (iVar1 <= Global_78588.f_12526[iParam0 /*2*/].f_1)
 	{
 		if (iVar0 == __LIB_31__::func_774(iVar1))
 		{
-			Global_113386.f_9085.f_2[iParam0 /*3*/].f_1 = iVar1;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iParam0 /*3*/].f_1 = iVar1;
 			return 1;
 		}
 		iVar1++;
@@ -743,10 +743,10 @@ int func_55(int iParam0)//Position - 0x222C
 {
 	int iVar0;
 	int iVar1;
-	if (Global_113386.f_9085.f_2[iParam0 /*3*/].f_1 < 1900)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iParam0 /*3*/].f_1 < 1900)
 	{
-		iVar0 = Global_113386.f_9085.f_2[iParam0 /*3*/].f_2;
-		iVar1 = __LIB_31__::func_774(Global_113386.f_9085.f_2[iParam0 /*3*/].f_1);
+		iVar0 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iParam0 /*3*/].f_2;
+		iVar1 = __LIB_31__::func_774(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iParam0 /*3*/].f_1);
 		if (iVar0 != iVar1)
 		{
 			return 0;
@@ -4254,9 +4254,9 @@ void func_87(int iParam0)//Position - 0x87C4
 		return;
 	}
 	Global_78588.f_12526[iParam0 /*2*/].f_1 = (Global_78588.f_12591 - 1);
-	if (Global_113386.f_9085.f_2[iParam0 /*3*/].f_1 == -1)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iParam0 /*3*/].f_1 == -1)
 	{
-		Global_113386.f_9085.f_2[iParam0 /*3*/].f_1 = Global_78588.f_12526[iParam0 /*2*/];
+		Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iParam0 /*3*/].f_1 = Global_78588.f_12526[iParam0 /*2*/];
 	}
 }
 
@@ -7712,9 +7712,9 @@ void func_219()//Position - 0x101D0
 		bVar0 = false;
 		if (!bVar0)
 		{
-			if (!BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1) || !__LIB_0__::func_178(53))
+			if (!BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1) || !__LIB_0__::func_178(53))
 			{
-				MISC::SET_BIT(&(Global_113386.f_9085.f_2[27 /*3*/]), 1);
+				MISC::SET_BIT(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/]), 1);
 				if (!CAM::IS_SCREEN_FADED_OUT())
 				{
 					if (!CAM::IS_SCREEN_FADING_OUT())
@@ -7730,7 +7730,7 @@ void func_219()//Position - 0x101D0
 		{
 			if (!bVar0)
 			{
-				iVar2 = Global_113386.f_9085.f_2[iVar1 /*3*/].f_1;
+				iVar2 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iVar1 /*3*/].f_1;
 				if (iVar2 != -1)
 				{
 					if (Global_78588.f_6825[iVar2 /*3*/] == -868169264)
@@ -7848,7 +7848,7 @@ void func_220(int iParam0)//Position - 0x10484
 			bVar2 = false;
 			if (iVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_310(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -7857,7 +7857,7 @@ void func_220(int iParam0)//Position - 0x10484
 					}
 					func_221(__LIB_0__::func_154(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_310(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)

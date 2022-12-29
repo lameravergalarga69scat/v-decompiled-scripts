@@ -958,7 +958,7 @@ int func_152()//Position - 0x9E9A
 {
 	if (!__LIB_0__::func_39(0))
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			if (__LIB_0__::func_786(0, 14) && __LIB_13__::func_636(0) == 1)
 			{

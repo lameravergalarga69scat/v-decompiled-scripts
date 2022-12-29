@@ -608,7 +608,7 @@ int func_16(int iParam0)//Position - 0x83E22
 	{
 		return -1;
 	}
-	return Global_113386.f_9085.f_330[iParam0 /*6*/].f_2;
+	return Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iParam0 /*6*/].f_2;
 }
 
 void func_17(var uParam0, struct<3> Param1, float fParam2)//Position - 0x8A4DB
@@ -653,7 +653,7 @@ int func_20(int iParam0)//Position - 0x7CC23
 {
 	if (__LIB_0__::func_374(iParam0))
 	{
-		if ((Global_113386.f_9085 || Global_3) || __LIB_0__::func_2(0))
+		if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || Global_3) || __LIB_0__::func_2(0))
 		{
 			return Global_113386.f_2363.f_539.f_2348[iParam0];
 		}
@@ -1783,19 +1783,19 @@ int func_36()//Position - 0x69FA4
 	switch (__LIB_15__::func_944())
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[65])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[65])
 			{
 				return 1;
 			}
 			break;
 		case 1:
-			if (Global_113386.f_9085.f_99.f_58[66])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[66])
 			{
 				return 1;
 			}
 			break;
 		case 2:
-			if (Global_113386.f_9085.f_99.f_58[65])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[65])
 			{
 				return 1;
 			}
@@ -2097,7 +2097,7 @@ int func_43(int iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPar
 			}
 			return 1;
 		}
-		if ((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131])
+		if ((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131])
 		{
 			Global_113386.f_2363.f_539.f_2407[0 /*295*/][iParam1 /*98*/] = 0;
 		}
@@ -2348,7 +2348,7 @@ int func_43(int iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPar
 				VEHICLE::SET_VEHICLE_ENVEFF_SCALE(*iParam0, Var2.f_96);
 				if (iParam1 == 1)
 				{
-					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085.f_99.f_58[118])
+					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[118])
 					{
 						VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT(*iParam0, &cVar6);
 						bVar5 = false;
@@ -2361,7 +2361,7 @@ int func_43(int iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPar
 						__LIB_0__::func_647(iParam0);
 					}
 				}
-				else if (((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
+				else if (((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
 				{
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 6, 1, false);
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 14, 7, false);
@@ -56924,7 +56924,7 @@ float func_593(int iParam0, var uParam1)//Position - 0x359B
 	}
 	if (BitTest(uParam1, 1))
 	{
-		if (__LIB_0__::func_422(21))
+		if (__LIB_0__::isMissionCompleted(21))
 		{
 			return 1f;
 		}
@@ -57800,7 +57800,7 @@ void func_617(var uParam0, char* sParam1, int iParam2, char* sParam3, int iParam
 				break;
 		}
 		uParam0->f_9[iVar1] = Global_113386.f_20564.f_233[iVar1 /*69*/].f_1;
-		uParam0->f_13[iVar1] = Global_60328[iVar1];
+		uParam0->f_13[iVar1] = Global_60328_SPN_TOTAL_CASH[iVar1];
 		uParam0->f_25[0 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[0 /*295*/][iVar1 /*98*/] };
 		uParam0->f_25[1 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[1 /*295*/][iVar1 /*98*/] };
 		iVar0 = 0;
@@ -64271,16 +64271,16 @@ void func_831(int iParam0)//Position - 0xD62CF
 	switch (iVar0)
 	{
 		case 1:
-			Global_60328[iParam0] = (Global_60328[iParam0] - iVar1);
+			Global_60328_SPN_TOTAL_CASH[iParam0] = (Global_60328_SPN_TOTAL_CASH[iParam0] - iVar1);
 			break;
 		case 0:
-			Global_60328[iParam0] = (Global_60328[iParam0] + iVar1);
+			Global_60328_SPN_TOTAL_CASH[iParam0] = (Global_60328_SPN_TOTAL_CASH[iParam0] + iVar1);
 			break;
 	}
 	Global_113386.f_20564.f_233[iParam0 /*69*/].f_2[Global_113386.f_20564.f_233[iParam0 /*69*/].f_1 /*6*/].f_2 = 0;
 	Global_113386.f_20564.f_233[iParam0 /*69*/].f_2[Global_113386.f_20564.f_233[iParam0 /*69*/].f_1 /*6*/].f_1 = 0;
 	Global_113386.f_20564.f_233[iParam0 /*69*/] = (Global_113386.f_20564.f_233[iParam0 /*69*/] - 1);
-	__LIB_0__::func_180(iParam0);
+	__LIB_0__::saveTotalCashToStatsByCharacterIndex(iParam0);
 }
 
 int func_832()//Position - 0x14B93
@@ -66348,7 +66348,7 @@ void func_869(var uParam0, int iParam1, bool bParam2, var uParam3, var uParam4, 
 		{
 			*uParam3 = 1;
 		}
-		else if (((uParam0->f_23 && !BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1)) && !Global_3) && !__LIB_0__::func_2(0))
+		else if (((uParam0->f_23 && !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1)) && !Global_3) && !__LIB_0__::func_2(0))
 		{
 			if ((((__LIB_0__::func_540(0) || __LIB_0__::func_540(3)) || __LIB_0__::func_540(2)) || __LIB_0__::func_39(9)) || __LIB_0__::func_39(10))
 			{
@@ -67089,7 +67089,7 @@ int func_896(int iParam0, bool bParam1)//Position - 0xA9FF
 					bVar1 = true;
 				}
 			}
-			else if (!((BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
+			else if (!((BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
 			{
 				if (iParam0->f_23)
 				{
@@ -68507,7 +68507,7 @@ int func_939(int iParam0, bool bParam1, struct<3> Param2, float fParam3, bool bP
 			}
 			return 1;
 		}
-		if ((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131])
+		if ((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131])
 		{
 			Global_113386.f_2363.f_539.f_2407[0 /*295*/][bParam1 /*98*/] = 0;
 		}
@@ -68758,7 +68758,7 @@ int func_939(int iParam0, bool bParam1, struct<3> Param2, float fParam3, bool bP
 				VEHICLE::SET_VEHICLE_ENVEFF_SCALE(*iParam0, Var2.f_96);
 				if (bParam1 == 1)
 				{
-					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085.f_99.f_58[118])
+					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[118])
 					{
 						VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT(*iParam0, &cVar6);
 						bVar5 = false;
@@ -68771,7 +68771,7 @@ int func_939(int iParam0, bool bParam1, struct<3> Param2, float fParam3, bool bP
 						__LIB_0__::func_647(iParam0);
 					}
 				}
-				else if (((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
+				else if (((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
 				{
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 6, 1, false);
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 14, 7, false);
@@ -68933,7 +68933,7 @@ void func_940(var uParam0, char* sParam1, var uParam2, var uParam3, int iParam4,
 				break;
 		}
 		uParam0->f_9[iVar1] = Global_113386.f_20564.f_233[iVar1 /*69*/].f_1;
-		uParam0->f_13[iVar1] = Global_60328[iVar1];
+		uParam0->f_13[iVar1] = Global_60328_SPN_TOTAL_CASH[iVar1];
 		uParam0->f_25[0 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[0 /*295*/][iVar1 /*98*/] };
 		uParam0->f_25[1 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[1 /*295*/][iVar1 /*98*/] };
 		iVar0 = 0;

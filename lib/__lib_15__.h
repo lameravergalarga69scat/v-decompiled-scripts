@@ -14753,7 +14753,7 @@ void func_96(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, va
 		{
 			if (DECORATOR::DECOR_GET_BOOL(iParam1, "GetawayVehicleValid"))
 			{
-				if ((Global_113386.f_9085.f_99.f_58[45] || Global_113386.f_9085.f_99.f_58[12]) || Global_113386.f_9085.f_99.f_58[34])
+				if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[45] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[12]) || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 				{
 					*uParam5 = 0;
 					Global_100144[iVar0] = 0;
@@ -23262,7 +23262,7 @@ void func_230(int iParam0)//Position - 0x42B7
 	}
 	else if (BitTest(Var0.f_4, 0))
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			iVar3 = __LIB_14__::func_633(iParam0);
 		}
@@ -27391,7 +27391,7 @@ void func_284(int iParam0)//Position - 0x6001
 	}
 	else if (BitTest(Var0.f_4, 0))
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			iVar3 = __LIB_14__::func_633(iParam0);
 		}
@@ -58676,7 +58676,7 @@ int func_805()//Position - 0x4020
 
 var func_806(int iParam0)//Position - 0x24FC7
 {
-	return Global_60328[iParam0];
+	return Global_60328_SPN_TOTAL_CASH[iParam0];
 }
 
 void func_807(bool bParam0)//Position - 0x252A5
@@ -66915,7 +66915,7 @@ int func_963(int iParam0)//Position - 0xA70DC
 	{
 		return -1;
 	}
-	return Global_113386.f_9085.f_330[iParam0 /*6*/].f_1;
+	return Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iParam0 /*6*/].f_1;
 }
 
 Vector3 func_964(int iParam0, int iParam1)//Position - 0xA9857
@@ -67366,7 +67366,7 @@ int func_970(int iParam0)//Position - 0x569A8
 
 int func_971(int iParam0)//Position - 0x56BBD
 {
-	if ((Global_113386.f_9085 || Global_3) || __LIB_0__::func_2(0))
+	if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || Global_3) || __LIB_0__::func_2(0))
 	{
 		if (!Global_78319 || (Global_78319 && iParam0 != __LIB_0__::func_682(__LIB_0__::func_563())))
 		{
@@ -67440,7 +67440,7 @@ void func_974(int iParam0)//Position - 0x544F3
 
 int func_975(int iParam0)//Position - 0x56B0A
 {
-	if (Global_113386.f_9085 || Global_3)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || Global_3)
 	{
 		if (!Global_78319 || (Global_78319 && iParam0 != __LIB_0__::func_682(__LIB_0__::func_563())))
 		{

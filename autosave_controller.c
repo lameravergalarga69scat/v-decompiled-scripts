@@ -98,7 +98,7 @@ void func_1()//Position - 0x8C
 			Global_100480.f_4 = 1;
 			return;
 		}
-		if (!Global_113386.f_9085 || !BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1))
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1))
 		{
 			Global_100480.f_4 = 1;
 			return;
@@ -211,7 +211,7 @@ void func_1()//Position - 0x8C
 		iVar2 = 0;
 		while (iVar2 < 32)
 		{
-			iVar4 = Global_113386.f_9085.f_2[iVar2 /*3*/].f_1;
+			iVar4 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iVar2 /*3*/].f_1;
 			if (iVar4 != -1)
 			{
 				if (Global_78588.f_6825[iVar4 /*3*/] == -868169264)
@@ -515,9 +515,9 @@ void func_58(int iParam0, int iParam1)//Position - 0x5A20
 					}
 					if (iVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -4867,7 +4867,7 @@ int func_383()//Position - 0x6A290
 	{
 		return 0;
 	}
-	if (Global_113386.f_9085.f_99.f_58[57])
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[57])
 	{
 		return 1;
 	}
@@ -5013,7 +5013,7 @@ int func_383()//Position - 0x6A290
 			iVar20 = 10;
 			bVar21 = (25 - 31);
 		}
-		if (BitTest(Global_113386.f_9085.f_99.f_219[iVar20], bVar21))
+		if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar20], bVar21))
 		{
 			Var18 = { -808.7974f, 169.31934f, 70.9558f };
 			fVar19 = 85f;
@@ -5033,7 +5033,7 @@ int func_383()//Position - 0x6A290
 			iVar20 = 10;
 			bVar21 = (24 - 31);
 		}
-		if (BitTest(Global_113386.f_9085.f_99.f_219[iVar20], bVar21))
+		if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar20], bVar21))
 		{
 			Var18 = { -2.62564f, 528.3256f, 178.39198f };
 			fVar19 = 65f;

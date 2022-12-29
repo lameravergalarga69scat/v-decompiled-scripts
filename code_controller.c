@@ -1560,7 +1560,7 @@ void func_235()//Position - 0x23A26
 	int iVar7;
 	if (__LIB_11__::func_283(43))
 	{
-		Global_113386.f_9085.f_99.f_58[81] = 1;
+		Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[81] = 1;
 		uVar0 = Global_78588.f_12526[22 /*2*/];
 		iVar1 = Global_78588.f_12526[22 /*2*/].f_1;
 		iVar2 = uVar0;
@@ -1574,7 +1574,7 @@ void func_235()//Position - 0x23A26
 				iVar5 = Global_78588.f_109[iVar3 /*4*/];
 				if (iVar5 == 128)
 				{
-					Global_113386.f_9085.f_2[22 /*3*/].f_1 = iVar2;
+					Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[22 /*3*/].f_1 = iVar2;
 					bVar4 = true;
 				}
 			}
@@ -2130,7 +2130,7 @@ void func_316()//Position - 0x261FB
 {
 	if (__LIB_0__::func_178(79))
 	{
-		if (Global_113386.f_9085.f_99.f_58[34])
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 		{
 			func_315(187813079, -1334144471, -1, 0, 0, 0, 12, 3, 6000, 6000, -1, 112, 1028);
 			func_315(-39544602, -1334144471, -1, 0, 0, 1, 12, 3, 6000, 6000, -1, 112, 1028);
@@ -2143,7 +2143,7 @@ void func_316()//Position - 0x261FB
 			func_315(-997367701, -1394105734, -1, 0, 0, 2, 12, 3, 6000, 6000, -1, 112, 1024);
 		}
 	}
-	else if (Global_113386.f_9085.f_99.f_58[34])
+	else if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 	{
 		func_315(187813079, 94848458, -1, 0, 0, 0, 12, 3, 6000, 6000, -1, 112, 1024);
 		func_315(-39544602, 94848458, -1, 0, 0, 1, 12, 3, 6000, 6000, -1, 112, 1024);
@@ -2274,7 +2274,7 @@ void func_319()//Position - 0x266FC
 {
 	if (__LIB_0__::func_178(83))
 	{
-		if (Global_113386.f_9085.f_99.f_58[34])
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 		{
 			func_315(-458789713, -1334144471, -1, 0, 0, 0, 12, 3, 6000, 6000, -1, 109, 1028);
 			func_315(321648831, -1334144471, -1, 0, 0, 1, 12, 3, 6000, 6000, -1, 109, 1028);
@@ -2287,7 +2287,7 @@ void func_319()//Position - 0x266FC
 			func_315(312697495, -1394105734, -1, 0, 0, 2, 12, 3, 6000, 6000, -1, 109, 1024);
 		}
 	}
-	else if (Global_113386.f_9085.f_99.f_58[34])
+	else if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 	{
 		func_315(-458789713, -1106471007, -1, 0, 0, 0, 12, 3, 6000, 6000, -1, 109, 1024);
 		func_315(321648831, -1106471007, -1, 0, 0, 1, 12, 3, 6000, 6000, -1, 109, 1024);

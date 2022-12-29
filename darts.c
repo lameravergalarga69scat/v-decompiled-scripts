@@ -6202,7 +6202,7 @@ void func_493()//Position - 0x22AF0
 	{
 		SYSTEM::START_NEW_SCRIPT("buddyDeathResponse", 1424);
 	}
-	if (Global_113386.f_9085 || __LIB_0__::func_2(0))
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || __LIB_0__::func_2(0))
 	{
 		if (!__LIB_0__::func_134())
 		{
@@ -6241,7 +6241,7 @@ int func_495(int iParam0)//Position - 0x22C50
 	func_496(&(Global_113386.f_2363.f_539), iVar1);
 	if (Global_94616 == Global_100478)
 	{
-		Global_113386.f_9085.f_330[iVar1 /*6*/].f_1++;
+		Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iVar1 /*6*/].f_1++;
 	}
 	if (!BitTest(Global_91229[iVar1 /*34*/].f_15, 1))
 	{
@@ -6250,11 +6250,11 @@ int func_495(int iParam0)//Position - 0x22C50
 			MISC::SET_FADE_IN_AFTER_DEATH_ARREST(false);
 		}
 	}
-	Global_113386.f_9085.f_330[iVar1 /*6*/].f_2++;
+	Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iVar1 /*6*/].f_2++;
 	Global_94616 = Global_100478;
 	if (iParam0 == -1)
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 		}
 		return 0;
@@ -6284,7 +6284,7 @@ void func_496(var uParam0, int iParam1)//Position - 0x22D60
 	while (iVar0 < 3)
 	{
 		iVar1 = Global_113386.f_18533[iVar0];
-		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 		{
 		}
 		else

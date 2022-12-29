@@ -951,7 +951,7 @@ int func_175()//Position - 0xFA39
 
 int func_186()//Position - 0x103BD
 {
-	if (Global_113386.f_9085)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 	{
 		return (__LIB_0__::func_786(0, 15) && __LIB_0__::func_786(0, 16));
 	}

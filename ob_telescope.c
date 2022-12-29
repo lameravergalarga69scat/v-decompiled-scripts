@@ -352,7 +352,7 @@ void func_4()//Position - 0x387
 			iVar1 = 10;
 			bVar2 = (24 - 31);
 		}
-		if (BitTest(Global_113386.f_9085.f_99.f_219[iVar1], bVar2))
+		if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar1], bVar2))
 		{
 			return;
 		}

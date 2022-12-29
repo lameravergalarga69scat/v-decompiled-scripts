@@ -607,7 +607,7 @@ void func_71()//Position - 0x3C86
 			iVar11 = Global_75400;
 			if (iVar11 == 90)
 			{
-				if (Global_113386.f_9085.f_99.f_205[__LIB_0__::func_567(0)] == 2)
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[__LIB_0__::func_567(0)] == 2)
 				{
 					Var12.f_2.f_1 = 4;
 					Var12.f_0 = 716;
@@ -702,7 +702,7 @@ void func_71()//Position - 0x3C86
 			{
 				func_73(iVar11);
 			}
-			Global_113386.f_9085.f_330[iVar11 /*6*/].f_4 = Global_75395;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iVar11 /*6*/].f_4 = Global_75395;
 		}
 		else
 		{

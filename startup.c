@@ -1331,39 +1331,39 @@ void func_25()//Position - 0x2CE6
 
 void func_28()//Position - 0x2D69
 {
-	if (Global_113386.f_9085.f_99.f_205[7] != 0)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[7] != 0)
 	{
-		if (!Global_113386.f_9085.f_330[86 /*6*/])
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[86 /*6*/])
 		{
-			Global_113386.f_9085.f_330[86 /*6*/] = 1;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[86 /*6*/] = 1;
 		}
 	}
-	if (Global_113386.f_9085.f_99.f_205[8] != 0)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[8] != 0)
 	{
-		if (!Global_113386.f_9085.f_330[71 /*6*/])
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[71 /*6*/])
 		{
-			Global_113386.f_9085.f_330[71 /*6*/] = 1;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[71 /*6*/] = 1;
 		}
 	}
-	if (Global_113386.f_9085.f_99.f_205[9] != 0)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[9] != 0)
 	{
-		if (!Global_113386.f_9085.f_330[91 /*6*/])
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[91 /*6*/])
 		{
-			Global_113386.f_9085.f_330[91 /*6*/] = 1;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[91 /*6*/] = 1;
 		}
 	}
-	if (Global_113386.f_9085.f_99.f_205[10] != 0)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[10] != 0)
 	{
-		if (!Global_113386.f_9085.f_330[67 /*6*/])
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[67 /*6*/])
 		{
-			Global_113386.f_9085.f_330[67 /*6*/] = 1;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[67 /*6*/] = 1;
 		}
 	}
-	if (Global_113386.f_9085.f_99.f_205[11] != 0)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[11] != 0)
 	{
-		if (!Global_113386.f_9085.f_330[77 /*6*/])
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[77 /*6*/])
 		{
-			Global_113386.f_9085.f_330[77 /*6*/] = 1;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[77 /*6*/] = 1;
 		}
 	}
 	func_29(195, 198);

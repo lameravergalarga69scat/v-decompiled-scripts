@@ -10851,15 +10851,15 @@ int func_410(int iParam0, bool bParam1)//Position - 0x3BCAF
 	switch (bVar0)
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[120] && !Global_113386.f_9085.f_99.f_58[122])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120] && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122])
 			{
 				func_264(iParam0, 12, 0, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-				Global_113386.f_9085.f_99.f_58[121] = 1;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121] = 1;
 				return 1;
 			}
-			if (Global_113386.f_9085.f_99.f_58[123])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123])
 			{
-				Global_113386.f_9085.f_99.f_58[123] = 0;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123] = 0;
 				if (!PED::IS_PED_INJURED(iParam0))
 				{
 					if (func_266(iParam0, 3, 169))
@@ -11124,9 +11124,9 @@ void func_414(int iParam0, int iParam1)//Position - 0x3C441
 					}
 					if (bVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -14952,7 +14952,7 @@ void func_611(int iParam0)//Position - 0x81D47
 			bVar2 = false;
 			if (bVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_274(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -14961,7 +14961,7 @@ void func_611(int iParam0)//Position - 0x81D47
 					}
 					func_612(__LIB_16__::func_512(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_274(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)

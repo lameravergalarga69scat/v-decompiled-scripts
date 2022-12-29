@@ -30090,7 +30090,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 			case joaat("WEAPON_HATCHET"):
 				if (__LIB_0__::func_116())
 				{
-					if (Global_113386.f_9085.f_330[62 /*6*/])
+					if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[62 /*6*/])
 					{
 						return 1;
 					}
@@ -30107,7 +30107,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 			case joaat("WEAPON_RAILGUN"):
 				if (__LIB_0__::func_116())
 				{
-					if (Global_113386.f_9085.f_330[14 /*6*/])
+					if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[14 /*6*/])
 					{
 						return 1;
 					}
@@ -30123,7 +30123,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				break;
 			case joaat("WEAPON_BOTTLE"):
 			case joaat("WEAPON_HAMMER"):
-				if (Global_113386.f_9085.f_330[1 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[1 /*6*/])
 				{
 					return 1;
 				}
@@ -30133,7 +30133,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_SNSPISTOL"):
-				if ((Global_113386.f_9085.f_330[1 /*6*/] || Global_113386.f_9085.f_330[43 /*6*/]) || Global_113386.f_9085.f_330[19 /*6*/])
+				if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[1 /*6*/] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[43 /*6*/]) || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[19 /*6*/])
 				{
 					return 1;
 				}
@@ -30143,7 +30143,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_SPECIALCARBINE"):
-				if (Global_113386.f_9085.f_330[90 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[90 /*6*/])
 				{
 					return 1;
 				}
@@ -30154,7 +30154,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				break;
 			case joaat("WEAPON_DAGGER"):
 			case joaat("WEAPON_VINTAGEPISTOL"):
-				if (Global_113386.f_9085.f_330[62 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[62 /*6*/])
 				{
 					return 1;
 				}
@@ -30164,7 +30164,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_HEAVYPISTOL"):
-				if (Global_113386.f_9085.f_330[29 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[29 /*6*/])
 				{
 					return 1;
 				}
@@ -30174,7 +30174,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_BULLPUPSHOTGUN"):
-				if (Global_113386.f_9085.f_330[74 /*6*/] || Global_113386.f_9085.f_330[38 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[74 /*6*/] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[38 /*6*/])
 				{
 					return 1;
 				}
@@ -30185,7 +30185,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				break;
 			case joaat("WEAPON_MUSKET"):
 			case joaat("WEAPON_MARKSMANPISTOL"):
-				if (Global_113386.f_9085.f_330[59 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[59 /*6*/])
 				{
 					return 1;
 				}
@@ -30195,7 +30195,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_GUSENBERG"):
-				if (Global_113386.f_9085.f_330[28 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[28 /*6*/])
 				{
 					return 1;
 				}
@@ -30205,7 +30205,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_PISTOL50"):
-				if (Global_113386.f_9085.f_330[39 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[39 /*6*/])
 				{
 					return 1;
 				}
@@ -30215,7 +30215,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_BULLPUPRIFLE"):
-				if (Global_113386.f_9085.f_330[84 /*6*/] || Global_113386.f_9085.f_330[85 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[84 /*6*/] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[85 /*6*/])
 				{
 					return 1;
 				}
@@ -30225,7 +30225,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_MARKSMANRIFLE"):
-				if (Global_113386.f_9085.f_330[93 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[93 /*6*/])
 				{
 					return 1;
 				}
@@ -30235,7 +30235,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_HEAVYSHOTGUN"):
-				if (Global_113386.f_9085.f_330[39 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[39 /*6*/])
 				{
 					return 1;
 				}
@@ -30245,7 +30245,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_FIREWORK"):
-				if (Global_113386.f_9085.f_330[28 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[28 /*6*/])
 				{
 					return 1;
 				}
@@ -30255,7 +30255,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_PROXMINE"):
-				if (Global_113386.f_9085.f_330[64 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[64 /*6*/])
 				{
 					return 1;
 				}
@@ -30265,7 +30265,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_HOMINGLAUNCHER"):
-				if (Global_113386.f_9085.f_330[14 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[14 /*6*/])
 				{
 					return 1;
 				}
@@ -30275,7 +30275,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_KNUCKLE"):
-				if (Global_113386.f_9085.f_330[2 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[2 /*6*/])
 				{
 					return 1;
 				}
@@ -30285,7 +30285,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_COMBATPDW"):
-				if (Global_113386.f_9085.f_330[92 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[92 /*6*/])
 				{
 					return 1;
 				}
@@ -30295,7 +30295,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_MACHETE"):
-				if (Global_113386.f_9085.f_330[63 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[63 /*6*/])
 				{
 					return 1;
 				}
@@ -30305,7 +30305,7 @@ int func_775(int iParam0)//Position - 0xAE6A
 				}
 				break;
 			case joaat("WEAPON_MACHINEPISTOL"):
-				if (Global_113386.f_9085.f_330[41 /*6*/])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[41 /*6*/])
 				{
 					return 1;
 				}
@@ -43207,7 +43207,7 @@ int func_931(int iParam0, bool bParam1)//Position - 0x177D0
 					bVar1 = true;
 				}
 			}
-			else if (!((BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
+			else if (!((BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
 			{
 				if (iParam0->f_23)
 				{
@@ -43570,7 +43570,7 @@ void func_947(int iParam0)//Position - 0x57C1
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = Global_113386.f_9085.f_99.f_205[7];
+			iVar0 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[7];
 			if (iVar0 == 1)
 			{
 				STATS::STAT_SET_BOOL(joaat("SP_HEIST_CHOSE_JEWEL_STEALTH"), true, true);
@@ -43581,7 +43581,7 @@ void func_947(int iParam0)//Position - 0x57C1
 			}
 			break;
 		case 1:
-			iVar0 = Global_113386.f_9085.f_99.f_205[8];
+			iVar0 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[8];
 			if (iVar0 == 3)
 			{
 				STATS::STAT_SET_BOOL(joaat("SP_HEIST_CHOSE_DOCKS_SINK_SHIP"), true, true);
@@ -43592,7 +43592,7 @@ void func_947(int iParam0)//Position - 0x57C1
 			}
 			break;
 		case 3:
-			iVar0 = Global_113386.f_9085.f_99.f_205[10];
+			iVar0 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[10];
 			if (iVar0 == 6)
 			{
 				STATS::STAT_SET_BOOL(joaat("SP_HEIST_CHOSE_BUREAU_FIRECREW"), true, true);
@@ -43603,7 +43603,7 @@ void func_947(int iParam0)//Position - 0x57C1
 			}
 			break;
 		case 4:
-			iVar0 = Global_113386.f_9085.f_99.f_205[11];
+			iVar0 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[11];
 			if (iVar0 == 8)
 			{
 				STATS::STAT_SET_BOOL(joaat("SP_HEIST_CHOSE_BIGS_TRAFFIC"), true, true);
@@ -45058,7 +45058,7 @@ void func_991(int iParam0)//Position - 0x59A6
 	switch (iParam0)
 	{
 		case 0:
-			iVar1 = Global_113386.f_9085.f_99.f_205[7];
+			iVar1 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[7];
 			iVar0 = 0;
 			while (iVar0 < Global_96470[iVar1 /*19*/])
 			{
@@ -45093,7 +45093,7 @@ void func_991(int iParam0)//Position - 0x59A6
 			}
 			break;
 		case 2:
-			iVar1 = Global_113386.f_9085.f_99.f_205[9];
+			iVar1 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[9];
 			iVar0 = 0;
 			while (iVar0 < Global_96470[iVar1 /*19*/])
 			{
@@ -45116,7 +45116,7 @@ void func_991(int iParam0)//Position - 0x59A6
 			}
 			break;
 		case 3:
-			iVar1 = Global_113386.f_9085.f_99.f_205[10];
+			iVar1 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[10];
 			iVar0 = 0;
 			while (iVar0 < Global_96470[iVar1 /*19*/])
 			{

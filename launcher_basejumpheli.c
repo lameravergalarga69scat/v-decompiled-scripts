@@ -763,7 +763,7 @@ void __EntryFunction__()//Position - 0x0
 						}
 						if (iLocal_63 != -1)
 						{
-							if (Global_113386.f_9085)
+							if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 							{
 								if (!__LIB_0__::func_786(0, iLocal_63))
 								{

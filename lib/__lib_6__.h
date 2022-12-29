@@ -9049,7 +9049,7 @@ void func_170(int iParam0, char* sParam1, int iParam2)//Position - 0x1BB5F7
 	Global_23150.f_5160++;
 }
 
-void func_171()//Position - 0x1BD59A
+void cleanUpGlobal_1643888()//Position - 0x1BD59A
 {
 	int iVar0;
 	int iVar1;

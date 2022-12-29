@@ -717,16 +717,16 @@ float func_43(int iParam0)//Position - 0x1CD1
 		return 1f;
 	}
 	iVar3 = 1000000000;
-	iVar4 = ((Global_60328[0] + Global_60328[1]) + Global_60328[2]);
-	if (Global_60328[0] > iVar3)
+	iVar4 = ((Global_60328_SPN_TOTAL_CASH[0] + Global_60328_SPN_TOTAL_CASH[1]) + Global_60328_SPN_TOTAL_CASH[2]);
+	if (Global_60328_SPN_TOTAL_CASH[0] > iVar3)
 	{
 		return 0f;
 	}
-	if (Global_60328[1] > iVar3)
+	if (Global_60328_SPN_TOTAL_CASH[1] > iVar3)
 	{
 		return 0f;
 	}
-	if (Global_60328[2] > iVar3)
+	if (Global_60328_SPN_TOTAL_CASH[2] > iVar3)
 	{
 		return 0f;
 	}

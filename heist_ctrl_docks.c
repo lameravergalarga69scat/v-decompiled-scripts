@@ -761,7 +761,7 @@ int func_157(var uParam0, int iParam1, int iParam2)//Position - 0x7EE0
 	var uVar3;
 	var uVar4;
 	var uVar5;
-	if (!BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+	if (!BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 	{
 		iVar0 = Global_113386.f_18533[iParam1];
 		if (iVar0 == 11)
@@ -2683,7 +2683,7 @@ void func_187(var uParam0, int iParam1)//Position - 0xFE84
 	while (iVar0 < 3)
 	{
 		iVar1 = Global_113386.f_18533[iVar0];
-		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 		{
 		}
 		else
@@ -2745,7 +2745,7 @@ void func_220(int iParam0)//Position - 0x12557
 			bVar2 = false;
 			if (iVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_307(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -2754,7 +2754,7 @@ void func_220(int iParam0)//Position - 0x12557
 					}
 					func_221(__LIB_0__::func_154(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_307(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)

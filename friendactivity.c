@@ -1991,7 +1991,7 @@ void func_85(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, va
 		{
 			if (DECORATOR::DECOR_GET_BOOL(iParam1, "GetawayVehicleValid"))
 			{
-				if ((Global_113386.f_9085.f_99.f_58[45] || Global_113386.f_9085.f_99.f_58[12]) || Global_113386.f_9085.f_99.f_58[34])
+				if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[45] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[12]) || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 				{
 					*uParam5 = 0;
 					Global_100144[iVar0] = 0;
@@ -9941,15 +9941,15 @@ int func_537(int iParam0, bool bParam1)//Position - 0x39B41
 	switch (iVar0)
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[120] && !Global_113386.f_9085.f_99.f_58[122])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120] && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122])
 			{
 				func_162(iParam0, 12, 0, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-				Global_113386.f_9085.f_99.f_58[121] = 1;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121] = 1;
 				return 1;
 			}
-			if (Global_113386.f_9085.f_99.f_58[123])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123])
 			{
-				Global_113386.f_9085.f_99.f_58[123] = 0;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123] = 0;
 				if (!PED::IS_PED_INJURED(iParam0))
 				{
 					if (func_277(iParam0, 3, 169))
@@ -10214,9 +10214,9 @@ void func_541(int iParam0, int iParam1)//Position - 0x3A2D2
 					}
 					if (iVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -14042,7 +14042,7 @@ void func_739(int iParam0)//Position - 0x7F6B7
 			bVar2 = false;
 			if (iVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_171(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -14051,7 +14051,7 @@ void func_739(int iParam0)//Position - 0x7F6B7
 					}
 					func_740(__LIB_0__::func_154(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_171(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)
@@ -19323,7 +19323,7 @@ int func_942(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, va
 			return 0;
 		}
 	}
-	if (Global_113386.f_9085)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 	{
 		bVar1 = false;
 		switch (Global_96177[iParam0 /*2*/].f_1)
@@ -20130,11 +20130,11 @@ int func_985(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 		bVar0 = false;
 		if (24 <= 31)
 		{
-			bVar0 = BitTest(Global_113386.f_9085.f_99.f_219[9], 24);
+			bVar0 = BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[9], 24);
 		}
 		else
 		{
-			bVar0 = BitTest(Global_113386.f_9085.f_99.f_219[10], (24 - 31));
+			bVar0 = BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[10], (24 - 31));
 		}
 		if (bVar0)
 		{
@@ -20146,11 +20146,11 @@ int func_985(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 		bVar1 = false;
 		if (25 <= 31)
 		{
-			bVar1 = BitTest(Global_113386.f_9085.f_99.f_219[9], 25);
+			bVar1 = BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[9], 25);
 		}
 		else
 		{
-			bVar1 = BitTest(Global_113386.f_9085.f_99.f_219[10], (25 - 31));
+			bVar1 = BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[10], (25 - 31));
 		}
 		if (bVar1)
 		{

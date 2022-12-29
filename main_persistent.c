@@ -631,7 +631,7 @@ void func_3(var uParam0, int iParam1)//Position - 0x5DF
 	while (iVar0 < 3)
 	{
 		iVar1 = Global_113386.f_18533[iVar0];
-		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 		{
 		}
 		else
@@ -1551,7 +1551,7 @@ void func_142()//Position - 0x61DD
 	STATS::STAT_GET_INT(joaat("SP0_TOTAL_CASH"), &iVar0, -1);
 	if (iVar0 < -2100000000)
 	{
-		iVar1 = Global_60328[0];
+		iVar1 = Global_60328_SPN_TOTAL_CASH[0];
 		if (iVar1 < 0)
 		{
 			iVar1 = 2147483647;
@@ -1561,7 +1561,7 @@ void func_142()//Position - 0x61DD
 	STATS::STAT_GET_INT(joaat("SP1_TOTAL_CASH"), &iVar0, -1);
 	if (iVar0 < -2100000000)
 	{
-		iVar2 = Global_60328[1];
+		iVar2 = Global_60328_SPN_TOTAL_CASH[1];
 		if (iVar2 < 0)
 		{
 			iVar2 = 2147483647;
@@ -1571,7 +1571,7 @@ void func_142()//Position - 0x61DD
 	STATS::STAT_GET_INT(joaat("SP2_TOTAL_CASH"), &iVar0, -1);
 	if (iVar0 < -2100000000)
 	{
-		iVar3 = Global_60328[2];
+		iVar3 = Global_60328_SPN_TOTAL_CASH[2];
 		if (iVar3 < 0)
 		{
 			iVar3 = 2147483647;
@@ -33171,7 +33171,7 @@ int func_6144()//Position - 0x1D8B91
 		func_6146();
 		Global_78320 = 1;
 		Global_78319 = 1;
-		__LIB_37__::func_834(1);
+		__LIB_37__::setGlobal_151971(1);
 		MISC::CLEAR_BIT(&uLocal_298, 1);
 		MISC::CLEAR_BIT(&uLocal_298, 2);
 		MISC::CLEAR_BIT(&uLocal_298, 3);

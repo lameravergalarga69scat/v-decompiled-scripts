@@ -948,7 +948,7 @@ int func_46(int iParam0)//Position - 0x1638
 	if (!__LIB_17__::func_22(iParam0))
 	{
 	}
-	if (!BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1))
+	if (!BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1))
 	{
 		return 0;
 	}

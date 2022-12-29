@@ -3711,7 +3711,7 @@ struct<17> func_36(int iParam0, int iParam1)//Position - 0x53FC
 			switch (iParam1)
 			{
 				case 0:
-					if (Global_113386.f_9085.f_99.f_58[120])
+					if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120])
 					{
 						__LIB_0__::func_35(&Var1, -99, -99, 1, 1, 0, 0, 0, 0, 0, -99, 0, 0, 31);
 					}
@@ -23287,7 +23287,7 @@ void func_146(int iParam0, int iParam1, int iParam2)//Position - 0x23F63
 		{
 			if (*iParam2 >= 0 && *iParam2 <= 1)
 			{
-				if (Global_113386.f_9085.f_99.f_58[120])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120])
 				{
 					*iParam2 = 1;
 				}
@@ -23301,7 +23301,7 @@ void func_146(int iParam0, int iParam1, int iParam2)//Position - 0x23F63
 		{
 			if (*iParam2 >= 0 && *iParam2 <= 1)
 			{
-				if (Global_113386.f_9085.f_99.f_58[120])
+				if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120])
 				{
 					*iParam2 = 1;
 				}
@@ -28988,7 +28988,7 @@ void func_159(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 			Stack.Push(0);
 			Stack.Push(-1);
 			Call_Loc(*iParam0);
-			if (Global_113386.f_9085.f_99.f_58[120])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120])
 			{
 				Stack.Push(uParam1);
 				Stack.Push(uParam2);
@@ -36654,7 +36654,7 @@ void func_168(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 			Stack.Push(0);
 			Stack.Push(-1);
 			Call_Loc(*iParam0);
-			if (Global_113386.f_9085.f_99.f_58[120])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120])
 			{
 				Stack.Push(uParam1);
 				Stack.Push(uParam2);
@@ -43681,7 +43681,7 @@ int func_196(int iParam0, bool bParam1)//Position - 0x2F42C
 	bool bVar2;
 	bool bVar3;
 	bool bVar4;
-	if (!Global_113386.f_9085)
+	if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 	{
 		return 0;
 	}
@@ -51675,7 +51675,7 @@ int func_354()//Position - 0x3C02B
 							iVar27 = 10;
 							bVar28 = (24 - 31);
 						}
-						if (BitTest(Global_113386.f_9085.f_99.f_219[iVar27], bVar28))
+						if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar27], bVar28))
 						{
 							func_236(Local_67.f_2, "wardrobe");
 							if (Local_67.f_118 == 2)
@@ -62182,9 +62182,9 @@ void func_463(int iParam0, int iParam1)//Position - 0x52230
 					}
 					if (bVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -93187,7 +93187,7 @@ void func_638(int iParam0)//Position - 0x961F5
 			bVar2 = false;
 			if (bVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_71(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -93196,7 +93196,7 @@ void func_638(int iParam0)//Position - 0x961F5
 					}
 					func_639(__LIB_17__::func_706(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_71(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)
@@ -96457,7 +96457,7 @@ int func_682(struct<3> Param0, var uParam1, var uParam2, var uParam3, var uParam
 		case 11:
 		case 9:
 		case 10:
-			if (Global_113386.f_9085)
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 			{
 				if (!__LIB_0__::func_786(0, 9))
 				{
@@ -98576,7 +98576,7 @@ void func_828(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 		{
 			if (DECORATOR::DECOR_GET_BOOL(iParam1, "GetawayVehicleValid"))
 			{
-				if ((Global_113386.f_9085.f_99.f_58[45] || Global_113386.f_9085.f_99.f_58[12]) || Global_113386.f_9085.f_99.f_58[34])
+				if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[45] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[12]) || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 				{
 					*uParam5 = 0;
 					Global_100144[iVar0] = 0;

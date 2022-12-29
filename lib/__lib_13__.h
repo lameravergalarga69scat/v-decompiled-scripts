@@ -26169,7 +26169,7 @@ void func_730(int iParam0, var uParam1)//Position - 0x1B9D7B
 		case 142:
 			if (__LIB_0__::func_516(iParam0))
 			{
-				if ((SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_heist")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_setup1")) == 0) && !Global_113386.f_9085.f_99.f_58[4])
+				if ((SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_heist")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("jewelry_setup1")) == 0) && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[4])
 				{
 					if (iVar1 < 21)
 					{
@@ -26184,13 +26184,13 @@ void func_730(int iParam0, var uParam1)//Position - 0x1B9D7B
 						return;
 					}
 				}
-				else if (!Global_113386.f_9085.f_99.f_58[4])
+				else if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[4])
 				{
 					Global_113386.f_7261[iParam0] = 0;
 					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
 				}
 			}
-			else if (Global_113386.f_9085.f_99.f_58[4])
+			else if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[4])
 			{
 				Global_113386.f_7261[iParam0] = 1;
 				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(uParam1->f_5, Global_113386.f_7261[iParam0], true, true);
@@ -27459,7 +27459,7 @@ void func_763(int iParam0)//Position - 0x9A984
 
 int func_764(int iParam0)//Position - 0x9D39F
 {
-	if (Global_113386.f_9085 || Global_3)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || Global_3)
 	{
 		if (!Global_78319 || (Global_78319 && iParam0 != __LIB_0__::func_482(__LIB_0__::func_563())))
 		{
@@ -27474,7 +27474,7 @@ int func_764(int iParam0)//Position - 0x9D39F
 
 int func_765(int iParam0)//Position - 0x9D452
 {
-	if ((Global_113386.f_9085 || Global_3) || __LIB_0__::func_2(0))
+	if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || Global_3) || __LIB_0__::func_2(0))
 	{
 		if (!Global_78319 || (Global_78319 && iParam0 != __LIB_0__::func_482(__LIB_0__::func_563())))
 		{
@@ -27758,20 +27758,20 @@ void func_774(bool bParam0, int iParam1)//Position - 0x4DD70
 			__LIB_0__::func_635(11, *iParam1);
 			break;
 		case 1:
-			if (Global_113386.f_9085.f_330[2 /*6*/])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[2 /*6*/])
 			{
 				__LIB_0__::func_635(4, *iParam1);
 			}
 			__LIB_0__::func_635(7, *iParam1);
 			__LIB_0__::func_635(8, *iParam1);
 			__LIB_0__::func_635(11, *iParam1);
-			if (Global_113386.f_9085.f_99.f_58[126])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[126])
 			{
 				__LIB_0__::func_635(12, *iParam1);
 			}
 			break;
 		case 2:
-			if (Global_113386.f_9085.f_330[20 /*6*/])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[20 /*6*/])
 			{
 				__LIB_0__::func_635(4, *iParam1);
 			}
@@ -28046,18 +28046,18 @@ void func_782(int iParam0, int iParam1, bool bParam2)//Position - 0x33164
 	{
 		return;
 	}
-	iVar0 = BitTest(Global_113386.f_9085.f_99.f_219[iParam0], iParam1);
+	iVar0 = BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iParam0], iParam1);
 	if (iVar0 == bParam2)
 	{
 		return;
 	}
 	if (bParam2)
 	{
-		MISC::SET_BIT(&(Global_113386.f_9085.f_99.f_219[iParam0]), iParam1);
+		MISC::SET_BIT(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iParam0]), iParam1);
 	}
 	else
 	{
-		MISC::CLEAR_BIT(&(Global_113386.f_9085.f_99.f_219[iParam0]), iParam1);
+		MISC::CLEAR_BIT(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iParam0]), iParam1);
 	}
 }
 
@@ -28796,7 +28796,7 @@ void func_813(int iParam0, int iParam1)//Position - 0x21325
 			__LIB_0__::func_483(7, *iParam1, 0);
 			__LIB_0__::func_483(8, *iParam1, 0);
 			__LIB_0__::func_483(11, *iParam1, 0);
-			if (Global_113386.f_9085.f_99.f_58[126])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[126])
 			{
 				__LIB_0__::func_483(12, *iParam1, 0);
 			}
@@ -29125,20 +29125,20 @@ void func_818(int iParam0, int iParam1)//Position - 0x1EB0B
 			__LIB_0__::func_635(11, *iParam1);
 			break;
 		case 1:
-			if (Global_113386.f_9085.f_330[2 /*6*/])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[2 /*6*/])
 			{
 				__LIB_0__::func_635(4, *iParam1);
 			}
 			__LIB_0__::func_635(7, *iParam1);
 			__LIB_0__::func_635(8, *iParam1);
 			__LIB_0__::func_635(11, *iParam1);
-			if (Global_113386.f_9085.f_99.f_58[126])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[126])
 			{
 				__LIB_0__::func_635(12, *iParam1);
 			}
 			break;
 		case 2:
-			if (Global_113386.f_9085.f_330[20 /*6*/])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[20 /*6*/])
 			{
 				__LIB_0__::func_635(4, *iParam1);
 			}

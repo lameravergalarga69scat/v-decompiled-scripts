@@ -2727,7 +2727,7 @@ void func_170(struct<36> Param0, int iParam1)//Position - 0x672A
 
 var func_171(int iParam0)//Position - 0x6934
 {
-	return Global_113386.f_9085.f_330[iParam0 /*6*/].f_4;
+	return Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iParam0 /*6*/].f_4;
 }
 
 int func_174(int iParam0)//Position - 0x69DE
@@ -3572,7 +3572,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 		{
 			if (((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(2)) || !__LIB_0__::func_178(0))
 			{
-				if ((iParam0 == 1 || (((iParam0 == 0 && __LIB_0__::func_178(0)) && __LIB_37__::func_104(iParam0)) && !Global_113386.f_9085.f_99.f_58[135])) || (((iParam0 == 2 && __LIB_0__::func_178(0)) && __LIB_37__::func_104(iParam0)) && !Global_113386.f_9085.f_99.f_58[136]))
+				if ((iParam0 == 1 || (((iParam0 == 0 && __LIB_0__::func_178(0)) && __LIB_37__::func_104(iParam0)) && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[135])) || (((iParam0 == 2 && __LIB_0__::func_178(0)) && __LIB_37__::func_104(iParam0)) && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[136]))
 				{
 					APP::APP_SET_APP("car");
 					APP::APP_SET_BLOCK(&Var8);
@@ -3662,7 +3662,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 				}
 			}
 		}
-		else if ((iParam0 == 0 && Global_113386.f_9085.f_99.f_58[135]) || (iParam0 == 2 && Global_113386.f_9085.f_99.f_58[136]))
+		else if ((iParam0 == 0 && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[135]) || (iParam0 == 2 && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[136]))
 		{
 			Global_113386.f_20118[iParam0 /*43*/].f_41 = 1;
 			Global_113386.f_20118.f_273[iParam0] = 0;
@@ -4158,7 +4158,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 							{
 								iLocal_100[iParam0] = 1;
 							}
-							else if (((!__LIB_0__::func_178(0) && __LIB_39__::func_389(1, 0) == 0) && (Global_113386.f_9085 || __LIB_0__::func_2(0))) && (BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1) || __LIB_0__::func_2(0)))
+							else if (((!__LIB_0__::func_178(0) && __LIB_39__::func_389(1, 0) == 0) && (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || __LIB_0__::func_2(0))) && (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1) || __LIB_0__::func_2(0)))
 							{
 								iLocal_100[iParam0] = 1;
 								iLocal_101[iParam0] = 1;

@@ -19687,7 +19687,7 @@ int func_245(var uParam0, bool bParam1)//Position - 0x9A4A5
 					bVar1 = true;
 				}
 			}
-			else if (!((BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
+			else if (!((BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
 			{
 				if (uParam0->f_23)
 				{
@@ -19868,7 +19868,7 @@ void func_250(int iParam0)//Position - 0x2283E
 	}
 	else if (BitTest(Var0.f_4, 0))
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			iVar3 = __LIB_17__::func_376(iParam0);
 		}

@@ -34567,7 +34567,7 @@ void func_736(var uParam0)//Position - 0x1BD285
 	}
 	else
 	{
-		__LIB_6__::func_171();
+		__LIB_6__::cleanUpGlobal_1643888();
 	}
 }
 

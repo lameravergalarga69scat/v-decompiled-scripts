@@ -92,7 +92,7 @@ void __EntryFunction__()//Position - 0x0
 	func_655();
 	MISC::START_SAVE_DATA(&Global_113386, 38584, true);
 	MISC::REGISTER_FLOAT_TO_SAVE(&Global_113386, "fSaveVersion");
-	func_645();
+	registerFLOW_STRUCT();
 	func_638();
 	func_624();
 	func_617();
@@ -151,7 +151,7 @@ void __EntryFunction__()//Position - 0x0
 	func_429();
 	STATS::STAT_SET_INT(joaat("SP_KNIFE_FLIGHTS_COUNT"), __LIB_42__::func_628(), true);
 	STATS::STAT_SET_INT(joaat("SP_UNDER_THE_BRIDGE_COUNT"), __LIB_39__::func_425(), true);
-	if (BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1))
+	if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1))
 	{
 		Global_1 = 1;
 	}
@@ -256,17 +256,17 @@ void __EntryFunction__()//Position - 0x0
 			__LIB_39__::func_434("startup_positioning", 2324);
 		}
 	}
-	Global_113386.f_9085 = 1;
+	Global_113386.f_9085_FLOW_STRUCT_isGameflowActive = 1;
 	if (!Global_1)
 	{
 		__LIB_42__::func_632();
 		if (Global_2 || Global_3)
 		{
-			MISC::CLEAR_BIT(&(Global_113386.f_9085.f_2[27 /*3*/]), 1);
+			MISC::CLEAR_BIT(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/]), 1);
 		}
 		else
 		{
-			MISC::SET_BIT(&(Global_113386.f_9085.f_2[27 /*3*/]), 1);
+			MISC::SET_BIT(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/]), 1);
 		}
 	}
 	Global_113386.f_7229.f_31 = 1;
@@ -307,7 +307,7 @@ void func_34()//Position - 0x8D65
 		while (iVar0 <= (10 - 1))
 		{
 			Global_113386.f_7229[iVar0] = 0;
-			if (!Global_113386.f_9085 && !__LIB_0__::func_2(0))
+			if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive && !__LIB_0__::func_2(0))
 			{
 				MISC::SET_BIT(&(Global_113386.f_7229[iVar0]), 0);
 			}
@@ -708,7 +708,7 @@ void func_122(int iParam0)//Position - 0x14F9D
 			bVar2 = false;
 			if (iVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_209(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -717,7 +717,7 @@ void func_122(int iParam0)//Position - 0x14F9D
 					}
 					func_123(__LIB_12__::func_894(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_209(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)
@@ -11046,14 +11046,14 @@ void func_644(var* uParam0, char* sParam1)//Position - 0x7ECEB
 	MISC::STOP_SAVE_ARRAY();
 }
 
-void func_645()//Position - 0x7ED2D
+void registerFLOW_STRUCT()//Position - 0x7ED2D
 {
-	MISC::START_SAVE_STRUCT_WITH_SIZE(&(Global_113386.f_9085), 931, "FLOW_STRUCT");
-	MISC::REGISTER_BOOL_TO_SAVE(&(Global_113386.f_9085), "isGameflowActive");
-	MISC::REGISTER_BOOL_TO_SAVE(&(Global_113386.f_9085.f_1), "flowCompleted");
-	func_653(&(Global_113386.f_9085.f_2), "MF_STRANDS_ARRAY");
-	func_648(&(Global_113386.f_9085.f_99), "MF_CONTROLS_STRUCT");
-	func_646(&(Global_113386.f_9085.f_330), "MF_MISSION_ARRAY");
+	MISC::START_SAVE_STRUCT_WITH_SIZE(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive), 931, "FLOW_STRUCT");
+	MISC::REGISTER_BOOL_TO_SAVE(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive), "isGameflowActive");
+	MISC::REGISTER_BOOL_TO_SAVE(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_1_flowCompleted), "flowCompleted");
+	func_653(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY), "MF_STRANDS_ARRAY");
+	func_648(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT), "MF_CONTROLS_STRUCT");
+	func_646(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY), "MF_MISSION_ARRAY");
 	MISC::STOP_SAVE_STRUCT();
 }
 

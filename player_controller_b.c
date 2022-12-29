@@ -905,7 +905,7 @@ void func_86(var uParam0, int iParam1)//Position - 0x889B
 	while (iVar0 < 3)
 	{
 		iVar1 = Global_113386.f_18533[iVar0];
-		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 		{
 		}
 		else
@@ -3830,7 +3830,7 @@ int func_123(var uParam0, int iParam1, int iParam2)//Position - 0x1346B
 	var uVar3;
 	var uVar4;
 	var uVar5;
-	if (!BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+	if (!BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 	{
 		iVar0 = Global_113386.f_18533[iParam1];
 		if (iVar0 == 11)
@@ -5826,9 +5826,9 @@ void func_269(int iParam0, int iParam1)//Position - 0x22F01
 					}
 					if (iVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -16054,15 +16054,15 @@ int func_598(int iParam0, bool bParam1)//Position - 0x91C2F
 	switch (iVar0)
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[120] && !Global_113386.f_9085.f_99.f_58[122])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120] && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122])
 			{
 				func_527(iParam0, 12, 0, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-				Global_113386.f_9085.f_99.f_58[121] = 1;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121] = 1;
 				return 1;
 			}
-			if (Global_113386.f_9085.f_99.f_58[123])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123])
 			{
-				Global_113386.f_9085.f_99.f_58[123] = 0;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123] = 0;
 				if (!PED::IS_PED_INJURED(iParam0))
 				{
 					if (func_470(iParam0, 3, 169))
@@ -16301,7 +16301,7 @@ void func_604(int iParam0)//Position - 0x9240F
 			bVar2 = false;
 			if (iVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_542(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -16310,7 +16310,7 @@ void func_604(int iParam0)//Position - 0x9240F
 					}
 					func_605(__LIB_16__::func_512(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_542(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)
@@ -16978,7 +16978,7 @@ int func_626(int iParam0, int iParam1)//Position - 0x939F9
 				iVar2 = 10;
 				bVar3 = (25 - 31);
 			}
-			if (BitTest(Global_113386.f_9085.f_99.f_219[iVar2], bVar3))
+			if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar2], bVar3))
 			{
 				Var0 = { -808.7974f, 169.31934f, 70.9558f };
 				fVar1 = 85f;
@@ -16995,7 +16995,7 @@ int func_626(int iParam0, int iParam1)//Position - 0x939F9
 				iVar2 = 10;
 				bVar3 = (24 - 31);
 			}
-			if (BitTest(Global_113386.f_9085.f_99.f_219[iVar2], bVar3))
+			if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar2], bVar3))
 			{
 				Var0 = { -2.62564f, 528.3256f, 178.39198f };
 				fVar1 = 65f;
@@ -20514,7 +20514,7 @@ void func_707()//Position - 0x9B5D5
 	if (Global_78320 && !__LIB_0__::func_2(0))
 	{
 		bVar0 = false;
-		if (!BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1))
+		if (!BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1))
 		{
 			bVar0 = true;
 			iVar1 = 0;
@@ -20539,7 +20539,7 @@ void func_707()//Position - 0x9B5D5
 			{
 				if (!bVar0)
 				{
-					iVar3 = Global_113386.f_9085.f_2[iVar2 /*3*/].f_1;
+					iVar3 = Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[iVar2 /*3*/].f_1;
 					if (iVar3 != -1)
 					{
 						if (Global_78588.f_6825[iVar3 /*3*/] == -868169264)

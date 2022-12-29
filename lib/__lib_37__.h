@@ -2161,7 +2161,7 @@ int func_104(int iParam0)//Position - 0x7E296
 {
 	if (__LIB_0__::func_43(iParam0))
 	{
-		if ((Global_113386.f_9085 || Global_3) || __LIB_0__::func_2(0))
+		if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || Global_3) || __LIB_0__::func_2(0))
 		{
 			return Global_113386.f_2363.f_539.f_2348[iParam0];
 		}
@@ -3392,7 +3392,7 @@ void func_168(int iParam0, int iParam1, int iParam2)//Position - 0x8371A
 
 bool func_169(int iParam0)//Position - 0x5D3
 {
-	return BitTest(Global_113386.f_9085.f_99.f_219[0], iParam0);
+	return BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], iParam0);
 }
 
 void func_170()//Position - 0x1011
@@ -3417,7 +3417,7 @@ void func_170()//Position - 0x1011
 			iVar0 = 10;
 			bVar1 = (iVar2 - 32);
 		}
-		if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
+		if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar0], bVar1))
 		{
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Global_94620[iVar2 /*18*/])))
 			{
@@ -3431,7 +3431,7 @@ void func_170()//Position - 0x1011
 			}
 			else
 			{
-				MISC::CLEAR_BIT(&(Global_113386.f_9085.f_99.f_219[iVar0]), bVar1);
+				MISC::CLEAR_BIT(&(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar0]), bVar1);
 			}
 		}
 		iVar2++;
@@ -3453,7 +3453,7 @@ void func_170()//Position - 0x1011
 				iVar0 = 10;
 				bVar1 = (iVar2 - 32);
 			}
-			if (BitTest(Global_113386.f_9085.f_99.f_219[iVar0], bVar1))
+			if (BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[iVar0], bVar1))
 			{
 				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(Global_94620[iVar2 /*18*/].f_17) == 0)
 				{
@@ -4432,12 +4432,12 @@ void func_197(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 		iVar1 = __LIB_0__::func_365(SCRIPT::GET_THIS_SCRIPT_NAME(), 1);
 		if (iVar1 != -1 && iVar1 != 94)
 		{
-			Global_113386.f_9085.f_330[iVar1 /*6*/].f_1 = 0;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iVar1 /*6*/].f_1 = 0;
 			iVar2 = __LIB_0__::func_510(iVar1);
 			cVar3 = { Global_91229[iVar1 /*34*/].f_8 };
 			if (iVar1 == 90)
 			{
-				switch (Global_113386.f_9085.f_99.f_205[7])
+				switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[7])
 				{
 					case 1:
 						StringConCat(&cVar3, "A", 8);
@@ -5121,19 +5121,19 @@ int func_215()//Position - 0x22546
 	switch (__LIB_33__::func_611())
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[65])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[65])
 			{
 				return 1;
 			}
 			break;
 		case 1:
-			if (Global_113386.f_9085.f_99.f_58[66])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[66])
 			{
 				return 1;
 			}
 			break;
 		case 2:
-			if (Global_113386.f_9085.f_99.f_58[65])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[65])
 			{
 				return 1;
 			}
@@ -8115,7 +8115,7 @@ void func_309(var uParam0, char* sParam1, int iParam2, char* sParam3, int iParam
 				break;
 		}
 		uParam0->f_9[iVar1] = Global_113386.f_20564.f_233[iVar1 /*69*/].f_1;
-		uParam0->f_13[iVar1] = Global_60328[iVar1];
+		uParam0->f_13[iVar1] = Global_60328_SPN_TOTAL_CASH[iVar1];
 		uParam0->f_25[0 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[0 /*295*/][iVar1 /*98*/] };
 		uParam0->f_25[1 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[1 /*295*/][iVar1 /*98*/] };
 		iVar0 = 0;
@@ -15429,7 +15429,7 @@ int func_376(int iParam0)//Position - 0x8715B
 		StringConCat(&cVar0, &(Global_91229[iParam0 /*34*/].f_8), 16);
 		if (iParam0 == 90)
 		{
-			if (Global_113386.f_9085.f_99.f_205[7] == 2)
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[7] == 2)
 			{
 				StringConCat(&cVar0, "B", 16);
 			}
@@ -53750,7 +53750,7 @@ void func_833()//Position - 0x1D8B09
 	Global_2703735.f_60 = 1;
 }
 
-void func_834(int iParam0)//Position - 0x1D8DAC
+void setGlobal_151971(int iParam0)//Position - 0x1D8DAC
 {
 	Global_151971 = iParam0;
 }
@@ -55987,31 +55987,31 @@ int func_863(bool bParam0)//Position - 0x14B07
 	{
 		return 1;
 	}
-	if (Global_99845[bParam0 /*98*/] == joaat("entityxf") && !Global_113386.f_9085.f_330[8 /*6*/])
+	if (Global_99845[bParam0 /*98*/] == joaat("entityxf") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[8 /*6*/])
 	{
 		return 1;
 	}
-	if (Global_99845[bParam0 /*98*/] == joaat("cheetah") && !Global_113386.f_9085.f_330[8 /*6*/])
+	if (Global_99845[bParam0 /*98*/] == joaat("cheetah") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[8 /*6*/])
 	{
 		return 1;
 	}
-	if (Global_99845[bParam0 /*98*/] == joaat("policeb") && !Global_113386.f_9085.f_330[8 /*6*/])
+	if (Global_99845[bParam0 /*98*/] == joaat("policeb") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[8 /*6*/])
 	{
 		return 1;
 	}
-	if (Global_99845[bParam0 /*98*/] == joaat("ztype") && !Global_113386.f_9085.f_330[9 /*6*/])
+	if (Global_99845[bParam0 /*98*/] == joaat("ztype") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[9 /*6*/])
 	{
 		return 1;
 	}
-	if (Global_99845[bParam0 /*98*/] == joaat("polmav") && !Global_113386.f_9085.f_330[9 /*6*/])
+	if (Global_99845[bParam0 /*98*/] == joaat("polmav") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[9 /*6*/])
 	{
 		return 1;
 	}
-	if (Global_99845[bParam0 /*98*/] == joaat("jb700") && !Global_113386.f_9085.f_330[10 /*6*/])
+	if (Global_99845[bParam0 /*98*/] == joaat("jb700") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[10 /*6*/])
 	{
 		return 1;
 	}
-	if (Global_99845[bParam0 /*98*/] == joaat("monroe") && !Global_113386.f_9085.f_330[11 /*6*/])
+	if (Global_99845[bParam0 /*98*/] == joaat("monroe") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[11 /*6*/])
 	{
 		return 1;
 	}
@@ -56031,7 +56031,7 @@ int func_863(bool bParam0)//Position - 0x14B07
 	{
 		return 1;
 	}
-	if (((Global_99845[bParam0 /*98*/] == joaat("gauntlet") && !Global_113386.f_9085.f_330[80 /*6*/]) && !Global_113386.f_9085.f_330[81 /*6*/]) && !Global_113386.f_9085.f_330[82 /*6*/])
+	if (((Global_99845[bParam0 /*98*/] == joaat("gauntlet") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[80 /*6*/]) && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[81 /*6*/]) && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[82 /*6*/])
 	{
 		return 1;
 	}
@@ -58030,7 +58030,7 @@ void func_867(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 		{
 			if (DECORATOR::DECOR_GET_BOOL(iParam1, "GetawayVehicleValid"))
 			{
-				if ((Global_113386.f_9085.f_99.f_58[45] || Global_113386.f_9085.f_99.f_58[12]) || Global_113386.f_9085.f_99.f_58[34])
+				if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[45] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[12]) || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 				{
 					*uParam5 = 0;
 					Global_100144[iVar0] = 0;
@@ -59662,7 +59662,7 @@ void func_916(var uParam0, char* sParam1, var uParam2, var uParam3, int iParam4,
 				break;
 		}
 		uParam0->f_9[iVar1] = Global_113386.f_20564.f_233[iVar1 /*69*/].f_1;
-		uParam0->f_13[iVar1] = Global_60328[iVar1];
+		uParam0->f_13[iVar1] = Global_60328_SPN_TOTAL_CASH[iVar1];
 		uParam0->f_25[0 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[0 /*295*/][iVar1 /*98*/] };
 		uParam0->f_25[1 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[1 /*295*/][iVar1 /*98*/] };
 		iVar0 = 0;
@@ -59823,7 +59823,7 @@ int func_922(int iParam0, bool bParam1)//Position - 0xAA5C3
 					bVar1 = true;
 				}
 			}
-			else if (!((BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
+			else if (!((BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
 			{
 				if (iParam0->f_23)
 				{
@@ -60763,7 +60763,7 @@ void func_937(var uParam0, char* sParam1, var uParam2, var uParam3, int iParam4,
 				break;
 		}
 		uParam0->f_9[iVar1] = Global_113386.f_20564.f_233[iVar1 /*69*/].f_1;
-		uParam0->f_13[iVar1] = Global_60328[iVar1];
+		uParam0->f_13[iVar1] = Global_60328_SPN_TOTAL_CASH[iVar1];
 		uParam0->f_25[0 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[0 /*295*/][iVar1 /*98*/] };
 		uParam0->f_25[1 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[1 /*295*/][iVar1 /*98*/] };
 		iVar0 = 0;
@@ -61439,7 +61439,7 @@ void func_949(var uParam0, char* sParam1, var uParam2, var uParam3, int iParam4,
 				break;
 		}
 		uParam0->f_9[iVar1] = Global_113386.f_20564.f_233[iVar1 /*69*/].f_1;
-		uParam0->f_13[iVar1] = Global_60328[iVar1];
+		uParam0->f_13[iVar1] = Global_60328_SPN_TOTAL_CASH[iVar1];
 		uParam0->f_25[0 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[0 /*295*/][iVar1 /*98*/] };
 		uParam0->f_25[1 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[1 /*295*/][iVar1 /*98*/] };
 		iVar0 = 0;
@@ -63921,7 +63921,7 @@ int func_980(int iParam0)//Position - 0x4910
 			return 7;
 			break;
 		case 90:
-			if (Global_113386.f_9085.f_99.f_205[7] == 1)
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[7] == 1)
 			{
 				return 8;
 			}
@@ -63952,7 +63952,7 @@ int func_980(int iParam0)//Position - 0x4910
 			return 16;
 			break;
 		case 41:
-			if (!Global_113386.f_9085.f_99.f_58[43])
+			if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[43])
 			{
 				return 17;
 			}
@@ -63971,7 +63971,7 @@ int func_980(int iParam0)//Position - 0x4910
 			return 20;
 			break;
 		case 9:
-			if (Global_113386.f_9085.f_99.f_58[76])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[76])
 			{
 				return 23;
 			}
@@ -64050,7 +64050,7 @@ int func_980(int iParam0)//Position - 0x4910
 			return 60;
 			break;
 		case 58:
-			if (Global_113386.f_9085.f_99.f_58[80])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[80])
 			{
 				return 63;
 			}

@@ -4608,7 +4608,7 @@ void func_296(int iParam0)//Position - 0x61686
 			bVar2 = false;
 			if (iVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_282(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -4617,7 +4617,7 @@ void func_296(int iParam0)//Position - 0x61686
 					}
 					func_297(__LIB_0__::func_154(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_282(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)

@@ -5387,7 +5387,7 @@ void func_267()//Position - 0x3305B
 							{
 								bVar17 = false;
 							}
-							else if ((iVar7 == 1 && ENTITY::GET_ENTITY_MODEL(Global_100144[iVar7]) == joaat("bagger")) && !Global_113386.f_9085.f_99.f_58[118])
+							else if ((iVar7 == 1 && ENTITY::GET_ENTITY_MODEL(Global_100144[iVar7]) == joaat("bagger")) && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[118])
 							{
 								bVar17 = false;
 							}
@@ -7464,15 +7464,15 @@ int func_392(int iParam0, bool bParam1)//Position - 0x3F89B
 	switch (iVar0)
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[120] && !Global_113386.f_9085.f_99.f_58[122])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120] && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122])
 			{
 				func_579(iParam0, 12, 0, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-				Global_113386.f_9085.f_99.f_58[121] = 1;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121] = 1;
 				return 1;
 			}
-			if (Global_113386.f_9085.f_99.f_58[123])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123])
 			{
-				Global_113386.f_9085.f_99.f_58[123] = 0;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123] = 0;
 				if (!PED::IS_PED_INJURED(iParam0))
 				{
 					if (func_157(iParam0, 3, 169))
@@ -7737,9 +7737,9 @@ void func_396(int iParam0, int iParam1)//Position - 0x4002D
 					}
 					if (iVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -12039,7 +12039,7 @@ void func_603(int iParam0)//Position - 0x83E59
 			bVar2 = false;
 			if (iVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_578(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -12048,7 +12048,7 @@ void func_603(int iParam0)//Position - 0x83E59
 					}
 					func_2(__LIB_0__::func_154(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_578(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)
@@ -12721,7 +12721,7 @@ void func_640(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 		{
 			if (DECORATOR::DECOR_GET_BOOL(iParam1, "GetawayVehicleValid"))
 			{
-				if ((Global_113386.f_9085.f_99.f_58[45] || Global_113386.f_9085.f_99.f_58[12]) || Global_113386.f_9085.f_99.f_58[34])
+				if ((Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[45] || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[12]) || Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[34])
 				{
 					*uParam5 = 0;
 					Global_100144[iVar0] = 0;
@@ -13725,7 +13725,7 @@ void func_680()//Position - 0x889BE
 
 int func_683(int iParam0)//Position - 0x88B0C
 {
-	if (Global_113386.f_9085 || Global_3)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive || Global_3)
 	{
 		if (!Global_78319 || (Global_78319 && iParam0 != __LIB_0__::func_682(__LIB_0__::func_563())))
 		{

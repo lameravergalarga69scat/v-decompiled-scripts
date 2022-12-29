@@ -864,7 +864,7 @@ int func_139(int iParam0)//Position - 0x21956
 	switch (iParam0)
 	{
 		case 87:
-			switch (Global_113386.f_9085.f_99.f_205[__LIB_0__::func_567(0)])
+			switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[__LIB_0__::func_567(0)])
 			{
 				case 1:
 					return 87;
@@ -878,7 +878,7 @@ int func_139(int iParam0)//Position - 0x21956
 			}
 			break;
 		case 74:
-			switch (Global_113386.f_9085.f_99.f_205[__LIB_0__::func_567(1)])
+			switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[__LIB_0__::func_567(1)])
 			{
 				case 3:
 					return 74;
@@ -892,7 +892,7 @@ int func_139(int iParam0)//Position - 0x21956
 			}
 			break;
 		case 69:
-			switch (Global_113386.f_9085.f_99.f_205[__LIB_0__::func_567(3)])
+			switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[__LIB_0__::func_567(3)])
 			{
 				case 6:
 					return 69;
@@ -906,7 +906,7 @@ int func_139(int iParam0)//Position - 0x21956
 			}
 			break;
 		case 84:
-			switch (Global_113386.f_9085.f_99.f_205[__LIB_0__::func_567(4)])
+			switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[__LIB_0__::func_567(4)])
 			{
 				case 8:
 					return 84;
@@ -920,7 +920,7 @@ int func_139(int iParam0)//Position - 0x21956
 			}
 			break;
 		case 78:
-			switch (Global_113386.f_9085.f_99.f_205[__LIB_0__::func_567(4)])
+			switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[__LIB_0__::func_567(4)])
 			{
 				case 8:
 					return 78;
@@ -934,7 +934,7 @@ int func_139(int iParam0)//Position - 0x21956
 			}
 			break;
 		case 80:
-			switch (Global_113386.f_9085.f_99.f_205[__LIB_0__::func_567(4)])
+			switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[__LIB_0__::func_567(4)])
 			{
 				case 8:
 					return 80;
@@ -948,7 +948,7 @@ int func_139(int iParam0)//Position - 0x21956
 			}
 			break;
 		case 24:
-			switch (Global_113386.f_9085.f_99.f_205[12])
+			switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[12])
 			{
 				case 0:
 					return 24;

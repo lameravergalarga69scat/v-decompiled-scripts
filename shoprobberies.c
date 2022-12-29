@@ -5282,7 +5282,7 @@ void func_283()//Position - 0x1177C
 
 int func_284()//Position - 0x117C4
 {
-	if (Global_113386.f_9085)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 	{
 		if (!__LIB_0__::func_425(56))
 		{

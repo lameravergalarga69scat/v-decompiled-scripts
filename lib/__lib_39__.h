@@ -580,7 +580,7 @@ int func_20(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPar
 				return 0;
 			}
 		}
-		if (!Global_113386.f_9085)
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			return 0;
 		}
@@ -1145,7 +1145,7 @@ int func_46(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPar
 				return 0;
 			}
 		}
-		if (!Global_113386.f_9085)
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			return 0;
 		}
@@ -1634,7 +1634,7 @@ int func_62(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPar
 				return 0;
 			}
 		}
-		if (!Global_113386.f_9085)
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			return 0;
 		}
@@ -2895,7 +2895,7 @@ int func_93(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPar
 				return 0;
 			}
 		}
-		if (!Global_113386.f_9085)
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			return 0;
 		}
@@ -3119,7 +3119,7 @@ void func_95(int iParam0)//Position - 0x6B01
 	}
 	else if (BitTest(Var0.f_4, 0))
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			iVar3 = __LIB_37__::func_357(iParam0);
 		}
@@ -3967,7 +3967,7 @@ int func_127(var uParam0, bool bParam1)//Position - 0x1AEC8
 					bVar1 = true;
 				}
 			}
-			else if (!((BitTest(Global_113386.f_9085.f_2[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
+			else if (!((BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 1) && !Global_3) && !__LIB_0__::func_2(0)))
 			{
 				if (uParam0->f_23)
 				{
@@ -4012,7 +4012,7 @@ int func_128(int iParam0, bool bParam1, struct<3> Param2, float fParam3, bool bP
 			}
 			return 1;
 		}
-		if ((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131])
+		if ((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131])
 		{
 			Global_113386.f_2363.f_539.f_2407[0 /*295*/][bParam1 /*98*/] = 0;
 		}
@@ -4263,7 +4263,7 @@ int func_128(int iParam0, bool bParam1, struct<3> Param2, float fParam3, bool bP
 				VEHICLE::SET_VEHICLE_ENVEFF_SCALE(*iParam0, Var2.f_96);
 				if (bParam1 == 1)
 				{
-					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085.f_99.f_58[118])
+					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[118])
 					{
 						VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT(*iParam0, &cVar6);
 						bVar5 = false;
@@ -4276,7 +4276,7 @@ int func_128(int iParam0, bool bParam1, struct<3> Param2, float fParam3, bool bP
 						__LIB_0__::func_647(iParam0);
 					}
 				}
-				else if (((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
+				else if (((bParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
 				{
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 6, 1, false);
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 14, 7, false);
@@ -13203,7 +13203,7 @@ void func_430(int iParam0, int iParam1)//Position - 0x73A1A
 	{
 		return;
 	}
-	if (iParam1 && !Global_113386.f_9085.f_330[iParam0 /*6*/])
+	if (iParam1 && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iParam0 /*6*/])
 	{
 		if (!BitTest(Global_91229[iParam0 /*34*/].f_15, 6))
 		{
@@ -13229,7 +13229,7 @@ void func_430(int iParam0, int iParam1)//Position - 0x73A1A
 			}
 		}
 	}
-	Global_113386.f_9085.f_330[iParam0 /*6*/] = iParam1;
+	Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iParam0 /*6*/] = iParam1;
 }
 
 void func_431()//Position - 0x308
@@ -13728,7 +13728,7 @@ int func_448(int iParam0, bool bParam1)//Position - 0x97973
 		case 112:
 		case 113:
 		case 123:
-			if (Global_113386.f_9085.f_99.f_58[128])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[128])
 			{
 				return 1;
 			}
@@ -14482,7 +14482,7 @@ void func_464(int iParam0)//Position - 0x19D49
 	}
 	else if (BitTest(Var0.f_4, 0))
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			iVar3 = __LIB_14__::func_633(iParam0);
 		}
@@ -15512,7 +15512,7 @@ void func_503(int iParam0)//Position - 0x7B64E
 	}
 	else if (BitTest(Var0.f_4, 0))
 	{
-		if (Global_113386.f_9085)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			iVar3 = __LIB_37__::func_357(iParam0);
 		}

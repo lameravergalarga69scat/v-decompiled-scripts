@@ -685,18 +685,18 @@ void func_33()//Position - 0xDF6
 	iVar1 = 0;
 	while (iVar1 < 3)
 	{
-		if (Global_60328[iVar1] < 0)
+		if (Global_60328_SPN_TOTAL_CASH[iVar1] < 0)
 		{
-			Global_60328[iVar1] = 0;
+			Global_60328_SPN_TOTAL_CASH[iVar1] = 0;
 			bVar0 = true;
 		}
 		iVar1++;
 	}
 	if (bVar0)
 	{
-		__LIB_0__::func_180(0);
-		__LIB_0__::func_180(1);
-		__LIB_0__::func_180(2);
+		__LIB_0__::saveTotalCashToStatsByCharacterIndex(0);
+		__LIB_0__::saveTotalCashToStatsByCharacterIndex(1);
+		__LIB_0__::saveTotalCashToStatsByCharacterIndex(2);
 	}
 }
 

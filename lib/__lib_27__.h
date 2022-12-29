@@ -14771,7 +14771,7 @@ int func_315(char* sParam0, int iParam1, int* iParam2)//Position - 0xFDCEE
 
 int func_316()//Position - 0xFE121
 {
-	if (Global_113386.f_9085.f_330[0 /*6*/])
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[0 /*6*/])
 	{
 		return 1;
 	}

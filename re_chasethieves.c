@@ -3392,7 +3392,7 @@ int func_359(struct<3> Param0, int iParam1, bool bParam2, bool bParam3, bool bPa
 				return 0;
 			}
 		}
-		if (!Global_113386.f_9085)
+		if (!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{
 			return 0;
 		}

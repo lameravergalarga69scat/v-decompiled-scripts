@@ -6514,9 +6514,9 @@ int func_149(bool bParam0)//Position - 0x112ED
 	{
 	}
 	iVar0 = 0;
-	while (iVar0 < Global_113386.f_9085.f_330)
+	while (iVar0 < Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY)
 	{
-		if (Global_113386.f_9085.f_330[iVar0 /*6*/].f_3 != -1 && __LIB_13__::func_372(iVar0, 1))
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iVar0 /*6*/].f_3 != -1 && __LIB_13__::func_372(iVar0, 1))
 		{
 			iVar3 = 0;
 			iVar4 = 0;

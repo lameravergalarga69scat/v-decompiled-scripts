@@ -25778,11 +25778,11 @@ void func_755(var uParam0, bool bParam1)//Position - 0x79677
 					iVar3++;
 				}
 			}
-			iVar5 = (Global_60328[iVar2] - uParam0->f_13[iVar2]);
+			iVar5 = (Global_60328_SPN_TOTAL_CASH[iVar2] - uParam0->f_13[iVar2]);
 			if (iVar5 != 0)
 			{
-				Global_60328[iVar2] = uParam0->f_13[iVar2];
-				__LIB_0__::func_180(iVar2);
+				Global_60328_SPN_TOTAL_CASH[iVar2] = uParam0->f_13[iVar2];
+				__LIB_0__::saveTotalCashToStatsByCharacterIndex(iVar2);
 			}
 			iVar4 = 0;
 			while (iVar4 <= 3)
@@ -25889,7 +25889,7 @@ void func_756(var uParam0, int iParam1)//Position - 0x79F7F
 	while (iVar0 < 3)
 	{
 		iVar1 = Global_113386.f_18533[iVar0];
-		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 		{
 		}
 		else
@@ -26792,15 +26792,15 @@ int func_851(int iParam0, bool bParam1)//Position - 0x83E42
 	switch (bVar0)
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[120] && !Global_113386.f_9085.f_99.f_58[122])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120] && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122])
 			{
 				func_349(iParam0, 12, 0, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-				Global_113386.f_9085.f_99.f_58[121] = 1;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121] = 1;
 				return 1;
 			}
-			if (Global_113386.f_9085.f_99.f_58[123])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123])
 			{
-				Global_113386.f_9085.f_99.f_58[123] = 0;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123] = 0;
 				if (!PED::IS_PED_INJURED(iParam0))
 				{
 					if (func_291(iParam0, 3, 169))
@@ -27065,9 +27065,9 @@ void func_855(int iParam0, int iParam1)//Position - 0x845D6
 					}
 					if (bVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -27101,7 +27101,7 @@ void func_860(int iParam0)//Position - 0x84ACB
 			bVar2 = false;
 			if (bVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_353(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -27110,7 +27110,7 @@ void func_860(int iParam0)//Position - 0x84ACB
 					}
 					func_861(__LIB_16__::func_512(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_353(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)

@@ -31988,7 +31988,7 @@ void func_5556()//Position - 0x1A8F2C
 	func_5154(&Global_2788057, 1);
 	func_5561();
 	func_4781(&uLocal_289, &(Local_114.f_853), &uLocal_224, 1, 0);
-	__LIB_6__::func_171();
+	__LIB_6__::cleanUpGlobal_1643888();
 	__LIB_5__::func_167(1);
 	Global_2787908 = 0;
 	Global_2787912 = 0;

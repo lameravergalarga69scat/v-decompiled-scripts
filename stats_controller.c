@@ -301,7 +301,7 @@ void func_2()//Position - 0xD7
 							bVar13 = false;
 						}
 					}
-					else if ((!Global_113386.f_9085 && !__LIB_0__::func_2(0)) || !BitTest(Global_113386.f_9085.f_2[27 /*3*/], 2))
+					else if ((!Global_113386.f_9085_FLOW_STRUCT_isGameflowActive && !__LIB_0__::func_2(0)) || !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 2))
 					{
 						bVar13 = false;
 					}

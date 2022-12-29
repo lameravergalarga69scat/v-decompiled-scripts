@@ -1195,7 +1195,7 @@ void func_106()//Position - 0x2E39
 
 void func_107()//Position - 0x2E52
 {
-	if (Global_113386.f_9085)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 	{
 		__LIB_43__::func_550();
 		func_136(0, 1, 0);
@@ -1395,7 +1395,7 @@ void func_108(bool bParam0)//Position - 0x3224
 	if (iVar0 > MISC::GET_GAME_TIMER())
 	{
 	}
-	Global_113386.f_9085 = 0;
+	Global_113386.f_9085_FLOW_STRUCT_isGameflowActive = 0;
 	__LIB_17__::func_11();
 	__LIB_0__::func_366(1);
 	__LIB_42__::func_454();
@@ -1664,9 +1664,9 @@ void func_173(int iParam0, int iParam1)//Position - 0x8E1E
 					}
 					if (iVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}

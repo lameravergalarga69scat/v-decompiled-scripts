@@ -749,9 +749,9 @@ void func_39(int iParam0, int iParam1)//Position - 0x2A5C
 					}
 					if (iVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -63377,7 +63377,7 @@ void func_5067(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0
 			Stack.Push(0);
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
-			if (Global_113386.f_9085.f_99.f_58[120])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120])
 			{
 				Stack.Push(uParam1);
 				Stack.Push(iParam2);
@@ -73351,7 +73351,7 @@ void func_5082(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0
 			Stack.Push(0);
 			Stack.Push(-1);
 			Call_Loc(*uParam0);
-			if (Global_113386.f_9085.f_99.f_58[120])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120])
 			{
 				Stack.Push(uParam1);
 				Stack.Push(iParam2);

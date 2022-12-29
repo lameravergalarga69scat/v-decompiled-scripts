@@ -2216,7 +2216,7 @@ void func_1(var uParam0)//Position - 0x4A7
 	{
 		uParam0->f_109 = MISC::GET_GAME_TIMER() + 2000;
 	}
-	if (Global_113386.f_9085)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 	{
 		if (!Global_97371)
 		{
@@ -2228,7 +2228,7 @@ void func_1(var uParam0)//Position - 0x4A7
 					Global_97362 = Global_97374[iVar0 /*17*/].f_5;
 					if (Global_97374[iVar0 /*17*/] == 1 && !Global_97371)
 					{
-						if (!BitTest(Global_113386.f_9085.f_2[Global_97374[iVar0 /*17*/].f_6 /*3*/], 1) || BitTest(Global_113386.f_9085.f_2[Global_97374[iVar0 /*17*/].f_6 /*3*/], 2))
+						if (!BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[Global_97374[iVar0 /*17*/].f_6 /*3*/], 1) || BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[Global_97374[iVar0 /*17*/].f_6 /*3*/], 2))
 						{
 							__LIB_38__::func_36(iVar0);
 						}
@@ -3475,15 +3475,15 @@ int func_219(int iParam0, bool bParam1)//Position - 0xD764
 	switch (bVar0)
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[120] && !Global_113386.f_9085.f_99.f_58[122])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[120] && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122])
 			{
 				func_503(iParam0, 12, 0, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
-				Global_113386.f_9085.f_99.f_58[121] = 1;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121] = 1;
 				return 1;
 			}
-			if (Global_113386.f_9085.f_99.f_58[123])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123])
 			{
-				Global_113386.f_9085.f_99.f_58[123] = 0;
+				Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[123] = 0;
 				if (!PED::IS_PED_INJURED(iParam0))
 				{
 					if (func_289(iParam0, 3, 169))
@@ -3850,9 +3850,9 @@ void func_309(int iParam0, int iParam1)//Position - 0x29358
 					}
 					if (bVar0 == 0)
 					{
-						if (Global_113386.f_9085.f_99.f_58[121])
+						if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[121])
 						{
-							Global_113386.f_9085.f_99.f_58[122] = 1;
+							Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[122] = 1;
 						}
 					}
 				}
@@ -8094,7 +8094,7 @@ void func_540(int iParam0)//Position - 0x724E4
 			bVar2 = false;
 			if (bVar0 == 0)
 			{
-				if (!__LIB_0__::func_422(49))
+				if (!__LIB_0__::isMissionCompleted(49))
 				{
 					iVar1 = func_502(iParam0, 12, -1);
 					if (iVar1 == 16)
@@ -8103,7 +8103,7 @@ void func_540(int iParam0)//Position - 0x724E4
 					}
 					func_541(__LIB_0__::func_518(0), 12, 16, 0, 0, 0, 0);
 				}
-				if (!__LIB_0__::func_422(44))
+				if (!__LIB_0__::isMissionCompleted(44))
 				{
 					iVar1 = func_502(iParam0, 3, -1);
 					if (((((iVar1 == 70 || iVar1 == 71) || iVar1 == 72) || iVar1 == 73) || iVar1 == 74) || iVar1 == 75)

@@ -3648,9 +3648,9 @@ void func_99(int iParam0, int iParam1, int iParam2, int iParam3, float fParam4)/
 	}
 	iVar1 = SYSTEM::CEIL(fParam4);
 	bVar2 = false;
-	if (iVar1 > Global_60328[iParam0])
+	if (iVar1 > Global_60328_SPN_TOTAL_CASH[iParam0])
 	{
-		iVar1 = Global_60328[iParam0];
+		iVar1 = Global_60328_SPN_TOTAL_CASH[iParam0];
 		bVar2 = true;
 	}
 	if (!__LIB_14__::func_512(iParam0, 0, 2, iVar1, bVar2))
@@ -66605,7 +66605,7 @@ void func_2523(int iParam0)//Position - 0x126C6E
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_60328[iVar0]);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_60328_SPN_TOTAL_CASH[iVar0]);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	switch (iVar0)
 	{
@@ -66634,7 +66634,7 @@ void func_2523(int iParam0)//Position - 0x126C6E
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_60328[iVar0]);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_60328_SPN_TOTAL_CASH[iVar0]);
 	__LIB_0__::func_610("W_BA_BAL" /* GXT: Balance */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar1 = 4;
@@ -75894,7 +75894,7 @@ int func_2570(int iParam0)//Position - 0x131D94
 	iVar0 = 0;
 	while (iVar0 <= (94 - 1))
 	{
-		if (Global_113386.f_9085.f_330[iVar0 /*6*/].f_3 == iParam0)
+		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iVar0 /*6*/].f_3 == iParam0)
 		{
 			return iVar0;
 		}
@@ -77107,7 +77107,7 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			break;
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	fVar7 = SYSTEM::TO_FLOAT(Global_60328[iVar0]);
+	fVar7 = SYSTEM::TO_FLOAT(Global_60328_SPN_TOTAL_CASH[iVar0]);
 	switch (iParam1)
 	{
 		case 1:
@@ -78048,7 +78048,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	}
 	fVar3 = fVar2;
 	fVar4 = (IntToFloat(Global_75613) * fVar3);
-	fVar5 = SYSTEM::TO_FLOAT(Global_60328[iVar0]);
+	fVar5 = SYSTEM::TO_FLOAT(Global_60328_SPN_TOTAL_CASH[iVar0]);
 	fVar6 = 2.1474836E+09f;
 	if ((fVar4 + fVar5) > fVar6)
 	{
@@ -78274,7 +78274,7 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 		}
 	}
 	Global_75614 = Global_75613;
-	Global_75615 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_60328[iVar2]) / fVar0));
+	Global_75615 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_60328_SPN_TOTAL_CASH[iVar2]) / fVar0));
 	if (Global_75615 < 0)
 	{
 		Global_75615 = 2147483647;
@@ -78298,9 +78298,9 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	}
 	Global_75613 = __LIB_0__::func_340(Global_75613, 0, Global_75615);
 	Global_75616 = (IntToFloat(Global_75613) * fVar0);
-	if (Global_75616 > SYSTEM::TO_FLOAT(Global_60328[iVar2]))
+	if (Global_75616 > SYSTEM::TO_FLOAT(Global_60328_SPN_TOTAL_CASH[iVar2]))
 	{
-		Global_75616 = SYSTEM::TO_FLOAT(Global_60328[iVar2]);
+		Global_75616 = SYSTEM::TO_FLOAT(Global_60328_SPN_TOTAL_CASH[iVar2]);
 	}
 	if (!bVar3)
 	{
@@ -79093,7 +79093,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 			case 2:
 				if (bParam1)
 				{
-					if (__LIB_0__::func_422(90))
+					if (__LIB_0__::isMissionCompleted(90))
 					{
 						if (func_2625(69))
 						{
@@ -79107,7 +79107,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 				}
 				break;
 			case 3:
-				if (__LIB_0__::func_422(7))
+				if (__LIB_0__::isMissionCompleted(7))
 				{
 					if (func_2625(49))
 					{
@@ -79121,7 +79121,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 						}
 					}
 				}
-				else if (__LIB_0__::func_422(6))
+				else if (__LIB_0__::isMissionCompleted(6))
 				{
 					if (func_2625(36))
 					{
@@ -79135,7 +79135,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 						}
 					}
 				}
-				else if (__LIB_0__::func_422(5))
+				else if (__LIB_0__::isMissionCompleted(5))
 				{
 					if (bParam1)
 					{
@@ -79146,7 +79146,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 						StringCopy(&Var0, "FRT_P_USR_H" /* GXT: Fruit share price on the rise as rival Facade's Head of Product Development is found dead. */, 16);
 					}
 				}
-				else if (__LIB_0__::func_422(4))
+				else if (__LIB_0__::isMissionCompleted(4))
 				{
 					if (bParam1)
 					{
@@ -79157,7 +79157,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 						StringCopy(&Var0, "DEB_P_USR_H" /* GXT: Debonaire Cigarettes stock on fire as Redwood struggles to weather a PR shitstorm over class action lawsuit. */, 16);
 					}
 				}
-				else if (__LIB_0__::func_422(3))
+				else if (__LIB_0__::isMissionCompleted(3))
 				{
 					if (bParam1)
 					{
@@ -79170,7 +79170,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 				}
 				break;
 			case 4:
-				if (__LIB_0__::func_422(16))
+				if (__LIB_0__::isMissionCompleted(16))
 				{
 					if (bParam1)
 					{
@@ -79181,7 +79181,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 						return 0;
 					}
 				}
-				else if (__LIB_0__::func_422(44))
+				else if (__LIB_0__::isMissionCompleted(44))
 				{
 					if (bParam1)
 					{
@@ -82188,7 +82188,7 @@ void func_2682(int iParam0)//Position - 0x13A99F
 			iLocal_243 = 0;
 		}
 	}
-	fVar3 = SYSTEM::TO_FLOAT(Global_60328[iVar0]);
+	fVar3 = SYSTEM::TO_FLOAT(Global_60328_SPN_TOTAL_CASH[iVar0]);
 	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/) || (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 237 /*INPUT_CURSOR_ACCEPT*/) && !HUD::IS_WARNING_MESSAGE_ACTIVE())) || PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/)) || (PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 237 /*INPUT_CURSOR_ACCEPT*/) && !HUD::IS_WARNING_MESSAGE_ACTIVE()))
 	{
 		if (iLocal_245 == 0)

@@ -2008,7 +2008,7 @@ void func_87()//Position - 0xE839
 
 void func_88()//Position - 0xE8AC
 {
-	if (!iLocal_62 && BitTest(Global_113386.f_9085.f_2[27 /*3*/], 2))
+	if (!iLocal_62 && BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_2_MF_STRANDS_ARRAY[27 /*3*/], 2))
 	{
 		iLocal_62 = 1;
 		bLocal_61 = true;

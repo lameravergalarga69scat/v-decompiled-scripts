@@ -25894,7 +25894,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 	int iVar3;
 	int iVar4;
 	int iVar5;
-	__LIB_0__::func_184();
+	__LIB_0__::loadSpTotalCashFromStats();
 	if (iParam3 < 1)
 	{
 		return 0;
@@ -26107,19 +26107,19 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 	{
 		__LIB_13__::func_689(bVar1);
 	}
-	iVar5 = (Global_60328[iVar2] + iParam3);
+	iVar5 = (Global_60328_SPN_TOTAL_CASH[iVar2] + iParam3);
 	switch (iParam1)
 	{
 		case 1:
-			if (Global_60328[iVar2] >= 0 && iParam3 > 0)
+			if (Global_60328_SPN_TOTAL_CASH[iVar2] >= 0 && iParam3 > 0)
 			{
 				if (iVar5 <= 0)
 				{
-					Global_60328[iVar2] = 2147483647;
+					Global_60328_SPN_TOTAL_CASH[iVar2] = 2147483647;
 				}
 				else
 				{
-					Global_60328[iVar2] = (Global_60328[iVar2] + iParam3);
+					Global_60328_SPN_TOTAL_CASH[iVar2] = (Global_60328_SPN_TOTAL_CASH[iVar2] + iParam3);
 				}
 			}
 			switch (iParam0)
@@ -26138,13 +26138,13 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 		case 0:
 			if (!bParam4)
 			{
-				if ((Global_60328[iVar2] - iParam3) < 0)
+				if ((Global_60328_SPN_TOTAL_CASH[iVar2] - iParam3) < 0)
 				{
 					return 0;
 				}
 			}
-			iVar3 = Global_60328[iVar2];
-			Global_60328[iVar2] = (Global_60328[iVar2] - iParam3);
+			iVar3 = Global_60328_SPN_TOTAL_CASH[iVar2];
+			Global_60328_SPN_TOTAL_CASH[iVar2] = (Global_60328_SPN_TOTAL_CASH[iVar2] - iParam3);
 			if (bParam4)
 			{
 				iVar4 = iVar3;
@@ -26169,7 +26169,7 @@ int func_512(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 			Global_113386.f_20564.f_233[iVar2 /*69*/].f_1 = 0;
 		}
 	}
-	__LIB_0__::func_180(iParam0);
+	__LIB_0__::saveTotalCashToStatsByCharacterIndex(iParam0);
 	if (Global_43052 == 15)
 	{
 		__LIB_0__::func_179(0);
@@ -28414,7 +28414,7 @@ int func_571(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 	int iVar3;
 	int iVar4;
 	int iVar5;
-	__LIB_0__::func_184();
+	__LIB_0__::loadSpTotalCashFromStats();
 	if (iParam3 < 1)
 	{
 		return 0;
@@ -28627,19 +28627,19 @@ int func_571(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 	{
 		__LIB_0__::func_745(bVar1);
 	}
-	iVar5 = (Global_60328[iVar2] + iParam3);
+	iVar5 = (Global_60328_SPN_TOTAL_CASH[iVar2] + iParam3);
 	switch (iParam1)
 	{
 		case 1:
-			if (Global_60328[iVar2] >= 0 && iParam3 > 0)
+			if (Global_60328_SPN_TOTAL_CASH[iVar2] >= 0 && iParam3 > 0)
 			{
 				if (iVar5 <= 0)
 				{
-					Global_60328[iVar2] = 2147483647;
+					Global_60328_SPN_TOTAL_CASH[iVar2] = 2147483647;
 				}
 				else
 				{
-					Global_60328[iVar2] = (Global_60328[iVar2] + iParam3);
+					Global_60328_SPN_TOTAL_CASH[iVar2] = (Global_60328_SPN_TOTAL_CASH[iVar2] + iParam3);
 				}
 			}
 			switch (iParam0)
@@ -28658,13 +28658,13 @@ int func_571(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 		case 0:
 			if (!bParam4)
 			{
-				if ((Global_60328[iVar2] - iParam3) < 0)
+				if ((Global_60328_SPN_TOTAL_CASH[iVar2] - iParam3) < 0)
 				{
 					return 0;
 				}
 			}
-			iVar3 = Global_60328[iVar2];
-			Global_60328[iVar2] = (Global_60328[iVar2] - iParam3);
+			iVar3 = Global_60328_SPN_TOTAL_CASH[iVar2];
+			Global_60328_SPN_TOTAL_CASH[iVar2] = (Global_60328_SPN_TOTAL_CASH[iVar2] - iParam3);
 			if (bParam4)
 			{
 				iVar4 = iVar3;
@@ -28689,7 +28689,7 @@ int func_571(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)//
 			Global_113386.f_20564.f_233[iVar2 /*69*/].f_1 = 0;
 		}
 	}
-	__LIB_0__::func_180(iParam0);
+	__LIB_0__::saveTotalCashToStatsByCharacterIndex(iParam0);
 	if (Global_43052 == 15)
 	{
 		__LIB_0__::func_179(0);
@@ -30343,7 +30343,7 @@ void func_608(var uParam0, char* sParam1, var uParam2, var uParam3, int iParam4,
 				break;
 		}
 		uParam0->f_9[iVar1] = Global_113386.f_20564.f_233[iVar1 /*69*/].f_1;
-		uParam0->f_13[iVar1] = Global_60328[iVar1];
+		uParam0->f_13[iVar1] = Global_60328_SPN_TOTAL_CASH[iVar1];
 		uParam0->f_25[0 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[0 /*295*/][iVar1 /*98*/] };
 		uParam0->f_25[1 /*295*/][iVar1 /*98*/] = { Global_113386.f_2363.f_539.f_2407[1 /*295*/][iVar1 /*98*/] };
 		iVar0 = 0;
@@ -32026,19 +32026,19 @@ int func_632()//Position - 0x114E
 	switch (__LIB_14__::func_466())
 	{
 		case 0:
-			if (Global_113386.f_9085.f_99.f_58[65])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[65])
 			{
 				return 1;
 			}
 			break;
 		case 1:
-			if (Global_113386.f_9085.f_99.f_58[66])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[66])
 			{
 				return 1;
 			}
 			break;
 		case 2:
-			if (Global_113386.f_9085.f_99.f_58[65])
+			if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[65])
 			{
 				return 1;
 			}
@@ -35882,7 +35882,7 @@ int func_771(char* sParam0, int iParam1, int iParam2)//Position - 0x379C3
 			{
 				if (!BitTest(Global_91229[iParam2 /*34*/].f_15, 16))
 				{
-					if (Global_113386.f_9085.f_330[iParam2 /*6*/].f_1 >= 2)
+					if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iParam2 /*6*/].f_1 >= 2)
 					{
 						Global_94617 = 1;
 					}
@@ -36395,7 +36395,7 @@ int func_784(int iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPa
 			}
 			return 1;
 		}
-		if ((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131])
+		if ((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131])
 		{
 			Global_113386.f_2363.f_539.f_2407[0 /*295*/][iParam1 /*98*/] = 0;
 		}
@@ -36646,7 +36646,7 @@ int func_784(int iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPa
 				VEHICLE::SET_VEHICLE_ENVEFF_SCALE(*iParam0, Var2.f_96);
 				if (iParam1 == 1)
 				{
-					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085.f_99.f_58[118])
+					if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("bagger") && !Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[118])
 					{
 						VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT(*iParam0, &cVar6);
 						bVar5 = false;
@@ -36659,7 +36659,7 @@ int func_784(int iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPa
 						__LIB_0__::func_522(iParam0);
 					}
 				}
-				else if (((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085.f_99.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
+				else if (((iParam1 == 0 && !Global_113386.f_2363.f_539.f_4316) && Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_58[131]) && ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("tailgater"))
 				{
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 6, 1, false);
 					VEHICLE::SET_VEHICLE_MOD(*iParam0, 14, 7, false);
@@ -39193,12 +39193,12 @@ void func_874(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 		iVar1 = __LIB_0__::func_365(SCRIPT::GET_THIS_SCRIPT_NAME(), 1);
 		if (iVar1 != -1 && iVar1 != 94)
 		{
-			Global_113386.f_9085.f_330[iVar1 /*6*/].f_1 = 0;
+			Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[iVar1 /*6*/].f_1 = 0;
 			iVar2 = __LIB_0__::func_510(iVar1);
 			cVar3 = { Global_91229[iVar1 /*34*/].f_8 };
 			if (iVar1 == 90)
 			{
-				switch (Global_113386.f_9085.f_99.f_205[7])
+				switch (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[7])
 				{
 					case 1:
 						StringConCat(&cVar3, "A", 8);

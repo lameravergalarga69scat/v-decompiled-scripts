@@ -410,9 +410,9 @@ void __EntryFunction__()//Position - 0x0
 	__LIB_0__::func_694(5);
 	func_300(&(Local_172.f_1), Global_96470[5 /*19*/]);
 	__LIB_36__::func_957(&Local_172, 2);
-	if (Global_113386.f_9085.f_99.f_205[9] != 5)
+	if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[9] != 5)
 	{
-		Global_113386.f_9085.f_99.f_205[9] = 5;
+		Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_205[9] = 5;
 	}
 	while (!__LIB_0__::func_425(5))
 	{
@@ -935,7 +935,7 @@ int func_164(var uParam0, int iParam1, int iParam2)//Position - 0x812F
 	var uVar3;
 	var uVar4;
 	var uVar5;
-	if (!BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+	if (!BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 	{
 		iVar0 = Global_113386.f_18533[iParam1];
 		if (iVar0 == 11)
@@ -2857,7 +2857,7 @@ void func_193(var uParam0, int iParam1)//Position - 0x100BE
 	while (iVar0 < 3)
 	{
 		iVar1 = Global_113386.f_18533[iVar0];
-		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085.f_99.f_219[0], 9))
+		if ((((iVar1 == 8 || iVar1 == 9) || iVar1 == 10) || (((iVar1 == 11 || iVar1 == 34) || iVar1 == 72) || iVar1 == 73)) && !BitTest(Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_99_MF_CONTROLS_STRUCT.f_219[0], 9))
 		{
 		}
 		else

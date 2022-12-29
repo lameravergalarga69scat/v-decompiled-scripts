@@ -12568,7 +12568,7 @@ char* func_1024(var uParam0)//Position - 0x858A8
 				break;
 		}
 	}
-	else if (Global_113386.f_9085.f_330[53 /*6*/] == 0)
+	else if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive.f_330_MF_MISSION_ARRAY[53 /*6*/] == 0)
 	{
 		sVar1 = "PM_DOPROB" /* GXT: GTA Online will be available once you have completed the Prologue. */;
 	}
