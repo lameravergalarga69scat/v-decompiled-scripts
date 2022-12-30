@@ -388,7 +388,7 @@ void func_10()//Position - 0x2D9
 	StringCopy(&(Var2.f_11), "", 16);
 	Var2.f_15 = -1f;
 	func_12(sVar1, &Var2, "");
-	__LIB_0__::func_183(126, 1);
+	__LIB_0__::incrementGlobal_58896ByIndex(126, 1);
 	func_178();
 }
 
@@ -1519,7 +1519,7 @@ void func_139()//Position - 0x48A9
 	}
 	PLAYER::SET_PLAYER_WANTED_LEVEL_NO_DROP(PLAYER::PLAYER_ID(), 1, false);
 	PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(PLAYER::PLAYER_ID(), false);
-	__LIB_0__::func_183(73, 1);
+	__LIB_0__::incrementGlobal_58896ByIndex(73, 1);
 }
 
 void func_140()//Position - 0x4978
@@ -2241,7 +2241,7 @@ void func_166()//Position - 0x5597
 	if (bLocal_46)
 	{
 		__LIB_0__::func_467();
-		__LIB_0__::func_183(71, 1);
+		__LIB_0__::incrementGlobal_58896ByIndex(71, 1);
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
 			iVar0 = __LIB_0__::func_369(2059, -1, 0);

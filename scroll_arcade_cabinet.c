@@ -563,7 +563,7 @@ bool func_17()//Position - 0x706
 
 int func_41()//Position - 0x10D8
 {
-	if (PLAYER::PLAYER_ID() != __LIB_0__::func_162())
+	if (PLAYER::PLAYER_ID() != __LIB_0__::getMinusOneOrNull())
 	{
 		switch (__LIB_7__::func_723())
 		{
@@ -1219,7 +1219,7 @@ void func_100()//Position - 0x2DA0
 				AUDIO::START_AUDIO_SCENE("dlc_vw_am_ip_in_menus_scene");
 				func_8(5);
 			}
-			__LIB_0__::func_794(&(Local_135.f_2886));
+			__LIB_0__::clearF_1Prop(&(Local_135.f_2886));
 		}
 		else if (!BitTest(Local_135.f_2368.f_333, 8) && __LIB_0__::func_937(&(Local_135.f_2886), 5500, 0))
 		{
@@ -1323,15 +1323,15 @@ void func_102()//Position - 0x2EAA
 	Local_135.f_2878 = 0;
 	if (__LIB_0__::func_864(&(Local_135.f_2884)))
 	{
-		__LIB_0__::func_794(&(Local_135.f_2884));
+		__LIB_0__::clearF_1Prop(&(Local_135.f_2884));
 	}
 	if (__LIB_0__::func_864(&(Local_135.f_2886)))
 	{
-		__LIB_0__::func_794(&(Local_135.f_2886));
+		__LIB_0__::clearF_1Prop(&(Local_135.f_2886));
 	}
 	if (__LIB_0__::func_864(&(Local_135.f_2888)))
 	{
-		__LIB_0__::func_794(&(Local_135.f_2888));
+		__LIB_0__::clearF_1Prop(&(Local_135.f_2888));
 	}
 }
 
@@ -3690,7 +3690,7 @@ int func_171()//Position - 0x8D67
 		{
 			return 1;
 		}
-		__LIB_0__::func_794(&(Local_135.f_2892));
+		__LIB_0__::clearF_1Prop(&(Local_135.f_2892));
 	}
 	return 0;
 }
@@ -6072,7 +6072,7 @@ void func_272()//Position - 0xD7FD
 		__LIB_0__::func_413(8359, Local_135.f_2905, -1, 1, 0);
 		func_8(8);
 		Local_135.f_2368.f_319 = 0;
-		__LIB_0__::func_794(&(Local_135.f_2884));
+		__LIB_0__::clearF_1Prop(&(Local_135.f_2884));
 		Local_135.f_2726 = 0;
 		MISC::SET_BIT(&(Local_135.f_2368.f_333), 5);
 		Local_135.f_2727 = 0;
@@ -6097,7 +6097,7 @@ void func_272()//Position - 0xD7FD
 		func_8(9);
 		func_51("Frontend_Stage_Clear");
 		__LIB_39__::func_230(func_13(5));
-		__LIB_0__::func_794(&(Local_135.f_2884));
+		__LIB_0__::clearF_1Prop(&(Local_135.f_2884));
 	}
 }
 
@@ -7977,7 +7977,7 @@ void func_314()//Position - 0x118E1
 	{
 		return;
 	}
-	__LIB_0__::func_794(&(Local_135.f_2882));
+	__LIB_0__::clearF_1Prop(&(Local_135.f_2882));
 	__LIB_39__::func_230(func_13(2));
 	func_8(6);
 	AUDIO::STOP_AUDIO_SCENE("dlc_vw_am_ip_in_menus_scene");

@@ -1687,7 +1687,7 @@ void func_75()//Position - 0x3B7F
 			iVar2 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(iVar1));
 			if (!__LIB_0__::func_361(iVar2, 0))
 			{
-				if (iVar0 != __LIB_0__::func_162())
+				if (iVar0 != __LIB_0__::getMinusOneOrNull())
 				{
 					if (iVar2 == iVar0 || __LIB_1__::func_876(iVar2, iVar0, 1))
 					{
@@ -2457,7 +2457,7 @@ void func_406(int iParam0, bool bParam1, var uParam2, bool bParam3)//Position - 
 		Global_2815059.f_5195.f_387 = iVar5;
 	}
 	iVar8 = __LIB_1__::func_730();
-	if (iVar8 != __LIB_0__::func_162() && iParam0 != 148)
+	if (iVar8 != __LIB_0__::getMinusOneOrNull() && iParam0 != 148)
 	{
 		if (__LIB_12__::func_486(PLAYER::PLAYER_ID(), 0))
 		{
@@ -5891,7 +5891,7 @@ void func_855()//Position - 0x44818
 	{
 		return;
 	}
-	iVar1 = __LIB_0__::func_162();
+	iVar1 = __LIB_0__::getMinusOneOrNull();
 	iVar2 = -1;
 	if (!__LIB_0__::func_361(PLAYER::PLAYER_ID(), 0))
 	{
@@ -6218,7 +6218,7 @@ void func_925()//Position - 0x4F0D1
 	int iVar3;
 	int iVar4;
 	float fVar5;
-	iVar4 = __LIB_0__::func_162();
+	iVar4 = __LIB_0__::getMinusOneOrNull();
 	bVar0 = false;
 	while (bVar0 < 4)
 	{
@@ -6481,7 +6481,7 @@ void func_925()//Position - 0x4F0D1
 									PED::SET_PED_TO_LOAD_COVER(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), true);
 									fVar5 = 0f;
 									iVar4 = func_931(bVar0, &fVar5);
-									if (iVar4 != __LIB_0__::func_162())
+									if (iVar4 != __LIB_0__::getMinusOneOrNull())
 									{
 										TASK::TASK_SEEK_COVER_FROM_PED(NETWORK::NET_TO_PED(Local_91.f_2[bVar0 /*26*/].f_1), PLAYER::GET_PLAYER_PED(iVar4), -1, false);
 									}
@@ -6635,7 +6635,7 @@ int func_931(bool bParam0, float fParam1)//Position - 0x50019
 	int iVar4;
 	int iVar5;
 	int iVar6;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	fVar1 = 100000000f;
 	Var3 = { ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_PED(Local_91.f_2[bParam0 /*26*/].f_1), true) };
 	iVar4 = 0;
@@ -6663,7 +6663,7 @@ int func_931(bool bParam0, float fParam1)//Position - 0x50019
 		}
 		iVar4++;
 	}
-	if (iVar0 != __LIB_0__::func_162())
+	if (iVar0 != __LIB_0__::getMinusOneOrNull())
 	{
 		*fParam1 = fVar1;
 	}
@@ -6675,7 +6675,7 @@ int func_932(bool bParam0)//Position - 0x500DF
 	int iVar0;
 	int iVar1;
 	iVar1 = func_933(bParam0);
-	if (iVar1 != __LIB_0__::func_162())
+	if (iVar1 != __LIB_0__::getMinusOneOrNull())
 	{
 		iVar0 = PLAYER::GET_PLAYER_PED(iVar1);
 	}
@@ -6691,7 +6691,7 @@ int func_933(int iParam0)//Position - 0x50102
 	struct<3> Var4;
 	int iVar5;
 	int iVar6;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	fVar1 = 1E+10f;
 	fVar2 = 0f;
 	Var4 = { ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_PED(Local_91.f_2[iParam0 /*26*/].f_1), false) };
@@ -7109,7 +7109,7 @@ int func_977()//Position - 0x51422
 	int iVar1;
 	int iVar2;
 	iVar0 = -1;
-	iVar1 = __LIB_0__::func_162();
+	iVar1 = __LIB_0__::getMinusOneOrNull();
 	if (!__LIB_0__::func_361(PLAYER::PLAYER_ID(), 0))
 	{
 		iVar0 = NETWORK::PARTICIPANT_ID_TO_INT();
@@ -7139,7 +7139,7 @@ int func_977()//Position - 0x51422
 	else if (__LIB_12__::func_486(iVar1, 1))
 	{
 		iVar2 = __LIB_0__::func_818(iVar1);
-		if (iVar2 != __LIB_0__::func_162())
+		if (iVar2 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(iVar2))
 			{

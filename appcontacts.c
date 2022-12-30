@@ -3155,7 +3155,7 @@ void func_174(var uParam0)//Position - 0xCD71
 					}
 				}
 			}
-			if ((*uParam0)[uParam0->f_2936] != __LIB_0__::func_162() && __LIB_0__::func_156((*uParam0)[uParam0->f_2936], 0, 0))
+			if ((*uParam0)[uParam0->f_2936] != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_156((*uParam0)[uParam0->f_2936], 0, 0))
 			{
 				if (__LIB_1__::func_386((*uParam0)[uParam0->f_2936], 146))
 				{
@@ -3469,7 +3469,7 @@ void func_190()//Position - 0xD818
 									}
 									func_290(sVar7);
 									Local_293.f_2999 = 1;
-									__LIB_0__::func_794(&(Local_293.f_2979));
+									__LIB_0__::clearF_1Prop(&(Local_293.f_2979));
 									func_288(0);
 									if (Global_78319)
 									{
@@ -3780,7 +3780,7 @@ void func_190()//Position - 0xD818
 			}
 			else if (!__LIB_0__::func_864(&(Local_293.f_2979)))
 			{
-				__LIB_0__::func_794(&(Local_293.f_2979));
+				__LIB_0__::clearF_1Prop(&(Local_293.f_2979));
 				__LIB_0__::func_795(&(Local_293.f_2979), 1, 0);
 			}
 			else
@@ -4310,7 +4310,7 @@ void func_305(var uParam0)//Position - 0x1261D
 	iVar0 = 0;
 	while (iVar0 < 32)
 	{
-		(*uParam0)[iVar0] = __LIB_0__::func_162();
+		(*uParam0)[iVar0] = __LIB_0__::getMinusOneOrNull();
 		iVar0++;
 	}
 	iVar0 = 0;
@@ -4335,7 +4335,7 @@ void func_305(var uParam0)//Position - 0x1261D
 	uParam0->f_2963 = { Var1 };
 	uParam0->f_2976 = 0;
 	uParam0->f_2977 = 0;
-	__LIB_0__::func_794(&(uParam0->f_2979));
+	__LIB_0__::clearF_1Prop(&(uParam0->f_2979));
 	uParam0->f_2999 = 0;
 	StringCopy(&(uParam0->f_2983), "", 64);
 }

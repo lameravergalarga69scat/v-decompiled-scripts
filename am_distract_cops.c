@@ -252,7 +252,7 @@ void func_4()//Position - 0x263
 		{
 			Local_83.f_17++;
 			Local_83.f_16 = func_6();
-			__LIB_0__::func_794(&(Local_83.f_13));
+			__LIB_0__::clearF_1Prop(&(Local_83.f_13));
 		}
 	}
 	else
@@ -510,7 +510,7 @@ void func_143()//Position - 0x384A
 		}
 		__LIB_43__::func_615(0, PLAYER::PLAYER_PED_ID(), "XPT_DSC" /* GXT: Distract Cops */, joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_DISTRACT_COPS"), (Global_262145.f_8566 /* Tunable: XP_REWARD_EVENT_DISTRACT_COPS */ * Local_83.f_16), 1, -1, 0, 0, 0);
 		Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_2++;
-		__LIB_0__::func_794(&uLocal_88);
+		__LIB_0__::clearF_1Prop(&uLocal_88);
 	}
 }
 
@@ -563,8 +563,8 @@ void func_200()//Position - 0x5956
 
 void func_203()//Position - 0x5A3A
 {
-	__LIB_0__::func_794(&uLocal_88);
-	__LIB_0__::func_794(&uLocal_90);
+	__LIB_0__::clearF_1Prop(&uLocal_88);
+	__LIB_0__::clearF_1Prop(&uLocal_90);
 	func_204();
 	MISC::CLEAR_BIT(&(Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_1), 0);
 	MISC::CLEAR_BIT(&uLocal_86, 3);

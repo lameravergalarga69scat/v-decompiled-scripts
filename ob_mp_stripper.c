@@ -836,7 +836,7 @@ void func_2()//Position - 0xCE5
 	int iVar0;
 	int iVar1;
 	iVar0 = Global_1853184;
-	if (iVar0 > -1 && iVar0 != __LIB_0__::func_162())
+	if (iVar0 > -1 && iVar0 != __LIB_0__::getMinusOneOrNull())
 	{
 		iVar1 = 0;
 		while (iVar1 < 29)

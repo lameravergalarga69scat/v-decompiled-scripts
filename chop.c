@@ -3546,11 +3546,11 @@ void func_126()//Position - 0x9607
 		{
 			if (__LIB_17__::func_87() == 1)
 			{
-				__LIB_0__::func_183(115, 1);
+				__LIB_0__::incrementGlobal_58896ByIndex(115, 1);
 			}
 			else
 			{
-				__LIB_0__::func_183(116, 1);
+				__LIB_0__::incrementGlobal_58896ByIndex(116, 1);
 			}
 		}
 	}

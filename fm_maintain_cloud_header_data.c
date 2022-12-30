@@ -663,7 +663,7 @@ int func_46(var uParam0, var* uParam1, int iParam2, var uParam3, int iParam4, in
 			__LIB_18__::func_208();
 			uParam0->f_24 = __LIB_17__::func_51(1);
 			uParam0->f_25 = __LIB_17__::func_55(1);
-			__LIB_0__::func_794(&(uParam0->f_39));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_39));
 			__LIB_18__::func_603(uParam0, 0, 1);
 			__LIB_2__::func_289();
 			uParam0->f_12 = uParam3;

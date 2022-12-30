@@ -372,25 +372,25 @@ void func_2(var uParam0, var uParam1, var uParam2)//Position - 0x516
 	}
 	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 187 /*INPUT_FRONTEND_DOWN*/) || __LIB_7__::func_705(187, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		__LIB_0__::func_794(uParam2);
+		__LIB_0__::clearF_1Prop(uParam2);
 		__LIB_0__::func_795(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 0);
 	}
 	if ((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 188 /*INPUT_FRONTEND_UP*/) || __LIB_7__::func_705(188, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		__LIB_0__::func_794(uParam2);
+		__LIB_0__::clearF_1Prop(uParam2);
 		__LIB_0__::func_795(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 1);
 	}
 	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 241 /*INPUT_CURSOR_SCROLL_UP*/)) || __LIB_7__::func_705(189, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		__LIB_0__::func_794(uParam2);
+		__LIB_0__::clearF_1Prop(uParam2);
 		__LIB_0__::func_795(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 2);
 	}
 	if (((PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/) || PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 242 /*INPUT_CURSOR_SCROLL_DOWN*/)) || __LIB_7__::func_705(190, &(Global_1648034.f_1060), 1)) && iVar0)
 	{
-		__LIB_0__::func_794(uParam2);
+		__LIB_0__::clearF_1Prop(uParam2);
 		__LIB_0__::func_795(uParam2, 0, 0);
 		MISC::SET_BIT(&(uParam0->f_464), 3);
 	}

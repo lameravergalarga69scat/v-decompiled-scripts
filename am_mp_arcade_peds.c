@@ -187,19 +187,19 @@ void func_3()//Position - 0x21F
 {
 	if (__LIB_0__::func_864(&(Local_55.f_24)) && __LIB_0__::func_937(&(Local_55.f_24), 15000, 0))
 	{
-		__LIB_0__::func_794(&(Local_55.f_24));
+		__LIB_0__::clearF_1Prop(&(Local_55.f_24));
 	}
 	if (__LIB_0__::func_864(&(Local_55.f_26)) && __LIB_0__::func_937(&(Local_55.f_26), 15000, 0))
 	{
-		__LIB_0__::func_794(&(Local_55.f_26));
+		__LIB_0__::clearF_1Prop(&(Local_55.f_26));
 	}
 	if (__LIB_0__::func_864(&(Local_55.f_28)) && __LIB_0__::func_937(&(Local_55.f_28), 15000, 0))
 	{
-		__LIB_0__::func_794(&(Local_55.f_28));
+		__LIB_0__::clearF_1Prop(&(Local_55.f_28));
 	}
 	if (__LIB_0__::func_864(&(Local_47.f_394)) && __LIB_0__::func_937(&(Local_47.f_394), 15000, 0))
 	{
-		__LIB_0__::func_794(&(Local_47.f_394));
+		__LIB_0__::clearF_1Prop(&(Local_47.f_394));
 	}
 }
 
@@ -409,7 +409,7 @@ void func_17()//Position - 0x6A4
 
 int func_18(int iParam0)//Position - 0x753
 {
-	if (iParam0 == __LIB_0__::func_162() || !__LIB_4__::func_79(iParam0))
+	if (iParam0 == __LIB_0__::getMinusOneOrNull() || !__LIB_4__::func_79(iParam0))
 	{
 		return 0;
 	}
@@ -568,7 +568,7 @@ void func_30(var uParam0, int iParam1)//Position - 0xA20
 
 int func_31(int iParam0)//Position - 0xAFD
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		return BitTest(Global_1853348[iParam0 /*834*/].f_267.f_408.f_2, 27);
 	}
@@ -700,7 +700,7 @@ void func_40(var uParam0, int iParam1)//Position - 0xE04
 				func_33(Local_55.f_21, 3);
 				bVar1 = func_41(Local_55.f_21, iParam1);
 				MISC::SET_BIT(&Local_55, bVar1);
-				__LIB_0__::func_794(&(Local_55.f_22));
+				__LIB_0__::clearF_1Prop(&(Local_55.f_22));
 				Local_55.f_21 = 0;
 			}
 			else
@@ -777,7 +777,7 @@ void func_42(var uParam0, int iParam1)//Position - 0xF5E
 				func_33(Local_55.f_18, 2);
 				bVar1 = func_41(Local_55.f_18, iParam1);
 				MISC::SET_BIT(&Local_55, bVar1);
-				__LIB_0__::func_794(&(Local_55.f_19));
+				__LIB_0__::clearF_1Prop(&(Local_55.f_19));
 				Local_55.f_18 = 0;
 			}
 			else
@@ -820,7 +820,7 @@ void func_43(var uParam0, int iParam1)//Position - 0x101D
 				}
 				bVar1 = func_41(Local_55.f_14, iParam1);
 				MISC::SET_BIT(&Local_55, bVar1);
-				__LIB_0__::func_794(&(Local_55.f_16));
+				__LIB_0__::clearF_1Prop(&(Local_55.f_16));
 				Local_55.f_14 = 0;
 			}
 			else
@@ -1521,7 +1521,7 @@ void func_65(var uParam0)//Position - 0x1E69
 {
 	if (__LIB_0__::func_864(&(uParam0->f_20)) && __LIB_0__::func_937(&(uParam0->f_20), 2000, 0))
 	{
-		__LIB_0__::func_794(&(uParam0->f_20));
+		__LIB_0__::clearF_1Prop(&(uParam0->f_20));
 	}
 }
 
@@ -1610,7 +1610,7 @@ int func_70(var uParam0, int iParam1, int iParam2)//Position - 0x1F6C
 							}
 							else if (__LIB_0__::func_937(&(Local_47.f_396), 30000, 0))
 							{
-								__LIB_0__::func_794(&(Local_47.f_396));
+								__LIB_0__::clearF_1Prop(&(Local_47.f_396));
 							}
 							break;
 						case 3:
@@ -1620,7 +1620,7 @@ int func_70(var uParam0, int iParam1, int iParam2)//Position - 0x1F6C
 							}
 							else if (__LIB_0__::func_937(&(Local_47.f_398), 30000, 0))
 							{
-								__LIB_0__::func_794(&(Local_47.f_398));
+								__LIB_0__::clearF_1Prop(&(Local_47.f_398));
 							}
 							break;
 						case 4:
@@ -1630,7 +1630,7 @@ int func_70(var uParam0, int iParam1, int iParam2)//Position - 0x1F6C
 							}
 							else if (__LIB_0__::func_937(&(Local_47.f_400), 30000, 0))
 							{
-								__LIB_0__::func_794(&(Local_47.f_400));
+								__LIB_0__::clearF_1Prop(&(Local_47.f_400));
 							}
 							break;
 					}
@@ -1690,13 +1690,13 @@ int func_70(var uParam0, int iParam1, int iParam2)//Position - 0x1F6C
 					else if (Local_47.f_378 == iParam2 && BitTest(uParam0->f_5, 9))
 					{
 						MISC::CLEAR_BIT(&(uParam0->f_5), 9);
-						__LIB_0__::func_794(&(Local_47.f_392));
+						__LIB_0__::clearF_1Prop(&(Local_47.f_392));
 					}
 				}
 			}
 			else if (__LIB_0__::func_937(&(Local_47.f_394), 15000, 0))
 			{
-				__LIB_0__::func_794(&(Local_47.f_394));
+				__LIB_0__::clearF_1Prop(&(Local_47.f_394));
 			}
 			break;
 		case 3:
@@ -2732,7 +2732,7 @@ void func_102(var uParam0, int iParam1, int iParam2)//Position - 0x3578
 			}
 			break;
 		case 4:
-			__LIB_0__::func_794(&(Local_47.f_392));
+			__LIB_0__::clearF_1Prop(&(Local_47.f_392));
 			__LIB_0__::func_627(&(Local_47.f_394), 0, 0);
 			MISC::CLEAR_BIT(&(uParam0->f_5), 9);
 			MISC::CLEAR_BIT(&(uParam0->f_5), 2);

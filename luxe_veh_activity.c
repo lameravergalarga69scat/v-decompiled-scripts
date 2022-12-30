@@ -1256,7 +1256,7 @@ void func_17(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x9
 							if ((!NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(uParam0->f_244[iVar1 /*4*/].f_1) || PLAYER::IS_PLAYER_DEAD(uParam0->f_244[iVar1 /*4*/].f_1)) || __LIB_0__::func_361(uParam0->f_244[iVar1 /*4*/].f_1, 0))
 							{
 								MISC::SET_BIT(&(uParam2->f_4), uParam0->f_244[iVar1 /*4*/].f_1);
-								uParam0->f_244[iVar1 /*4*/].f_1 = __LIB_0__::func_162();
+								uParam0->f_244[iVar1 /*4*/].f_1 = __LIB_0__::getMinusOneOrNull();
 							}
 						}
 					}
@@ -1926,7 +1926,7 @@ void func_29(var uParam0, var uParam1, var uParam2)//Position - 0x1194
 		case 5:
 			if ((uParam1[PLAYER::PLAYER_ID() /*8*/])->f_5 == 3)
 			{
-				__LIB_0__::func_794(&(uParam2->f_45));
+				__LIB_0__::clearF_1Prop(&(uParam2->f_45));
 				__LIB_1__::func_289(uParam2, 17);
 			}
 			else if ((uParam1[PLAYER::PLAYER_ID() /*8*/])->f_5 == 1)
@@ -5649,7 +5649,7 @@ int func_217(int iParam0)//Position - 0x2FD67
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -5689,7 +5689,7 @@ int func_217(int iParam0)//Position - 0x2FD67
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -6485,7 +6485,7 @@ int func_308(var uParam0)//Position - 0x579D1
 		}
 		if (__LIB_0__::func_937(&(uParam0->f_59), 2000, 0))
 		{
-			__LIB_0__::func_794(&(uParam0->f_59));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_59));
 			return 1;
 		}
 		else

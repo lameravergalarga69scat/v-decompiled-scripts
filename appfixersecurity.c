@@ -2962,7 +2962,7 @@ void func_361()//Position - 0xB061
 			MISC::CLEAR_BIT(&uLocal_129, 8);
 			iLocal_139 = -1;
 			iLocal_137 = 0;
-			__LIB_0__::func_794(&uLocal_141);
+			__LIB_0__::clearF_1Prop(&uLocal_141);
 			func_335(0);
 			if (func_362())
 			{

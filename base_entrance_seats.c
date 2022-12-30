@@ -214,7 +214,7 @@ int func_59()//Position - 0x1662
 	{
 		return 1;
 	}
-	if (Global_1853191 == __LIB_0__::func_162())
+	if (Global_1853191 == __LIB_0__::getMinusOneOrNull())
 	{
 		return 1;
 	}
@@ -223,7 +223,7 @@ int func_59()//Position - 0x1662
 
 int func_70()//Position - 0x17F9
 {
-	if (Global_1853191 != __LIB_0__::func_162())
+	if (Global_1853191 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (NETWORK::NETWORK_IS_SCRIPT_ACTIVE("base_entrance_seats", Global_1853191, true, 0))
 		{

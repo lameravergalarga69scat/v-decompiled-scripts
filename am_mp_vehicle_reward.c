@@ -359,7 +359,7 @@ void func_24()//Position - 0xA11
 		iVar0++;
 	}
 	Local_67.f_0 = 0;
-	__LIB_0__::func_794(&(Local_67.f_371));
+	__LIB_0__::clearF_1Prop(&(Local_67.f_371));
 }
 
 int func_42(int iParam0)//Position - 0x124F
@@ -986,7 +986,7 @@ void func_131(int iParam0, bool bParam1)//Position - 0xDFC3
 		StringCopy(&(Global_2815059.f_2309[iParam0 /*44*/].f_23), "", 64);
 		Global_2815059.f_2309[iParam0 /*44*/].f_39 = -1;
 		Global_2815059.f_2309[iParam0 /*44*/].f_40 = -1;
-		__LIB_0__::func_794(&(Global_2815059.f_2309[iParam0 /*44*/].f_41));
+		__LIB_0__::clearF_1Prop(&(Global_2815059.f_2309[iParam0 /*44*/].f_41));
 		Global_2815059.f_2309[iParam0 /*44*/].f_43 = 0;
 	}
 }
@@ -1843,7 +1843,7 @@ int func_215(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, i
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_UP_DOWN", "HUD_FREEMODE_SOUNDSET", true);
 							MISC::SET_BIT(&(uParam0->f_373), 4);
 							MISC::CLEAR_BIT(&(uParam0->f_370), 0);
-							__LIB_0__::func_794(&(uParam0->f_371));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_371));
 						}
 					}
 					else if (__LIB_7__::func_272(uParam0, 172))
@@ -1865,7 +1865,7 @@ int func_215(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, i
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_UP_DOWN", "HUD_FREEMODE_SOUNDSET", true);
 							MISC::SET_BIT(&(uParam0->f_373), 5);
 							MISC::CLEAR_BIT(&(uParam0->f_370), 0);
-							__LIB_0__::func_794(&(uParam0->f_371));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_371));
 						}
 					}
 					else if (__LIB_7__::func_272(uParam0, 173))
@@ -4273,7 +4273,7 @@ void func_389(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 		if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iParam0)) || !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
 			iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-			if (PLAYER::PLAYER_ID() != __LIB_0__::func_162())
+			if (PLAYER::PLAYER_ID() != __LIB_0__::getMinusOneOrNull())
 			{
 				uParam1->f_100 = PLAYER::PLAYER_ID();
 			}

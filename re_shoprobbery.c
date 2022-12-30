@@ -2755,7 +2755,7 @@ void func_180(int iParam0, bool bParam1)//Position - 0xC86E
 		if (!__LIB_0__::func_431(iParam0, 4, 1))
 		{
 			__LIB_13__::func_768(iParam0, 4, 1);
-			__LIB_0__::func_183(137, 1);
+			__LIB_0__::incrementGlobal_58896ByIndex(137, 1);
 		}
 	}
 	else if (__LIB_0__::func_431(iParam0, 4, 1))

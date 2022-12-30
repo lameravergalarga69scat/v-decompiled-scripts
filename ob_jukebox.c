@@ -204,7 +204,7 @@ void __EntryFunction__()//Position - 0x0
 		AUDIO::START_AUDIO_SCENE("dlc_ch_arcade_music_volume");
 		AUDIO::SET_AUDIO_SCENE_VARIABLE("dlc_ch_arcade_music_volume", "ArcadeRadioVolumeDucking", Local_137.f_1);
 	}
-	if (iLocal_111 == __LIB_0__::func_162())
+	if (iLocal_111 == __LIB_0__::getMinusOneOrNull())
 	{
 		func_211(0);
 	}
@@ -529,7 +529,7 @@ void func_23()//Position - 0xBAB
 				func_157(1);
 				MISC::CLEAR_BIT(&(Local_138[PLAYER::PLAYER_ID() /*3*/]), 0);
 				MISC::SET_BIT(&(Local_138[PLAYER::PLAYER_ID() /*3*/]), 1);
-				__LIB_0__::func_794(&uLocal_130);
+				__LIB_0__::clearF_1Prop(&uLocal_130);
 			}
 			else if (Local_137.f_2 != -1 || !__LIB_0__::func_893())
 			{
@@ -905,7 +905,7 @@ void func_103()//Position - 0x6A4C
 	}
 	else if (__LIB_0__::func_937(&uLocal_128, iVar1, 0))
 	{
-		__LIB_0__::func_794(&uLocal_128);
+		__LIB_0__::clearF_1Prop(&uLocal_128);
 		MISC::CLEAR_BIT(&uLocal_120, 0);
 	}
 	if (bVar3)
@@ -1227,7 +1227,7 @@ int func_136()//Position - 0x8433
 		case 1:
 			if (func_38("ENTER", 1, 0))
 			{
-				__LIB_0__::func_794(&uLocal_130);
+				__LIB_0__::clearF_1Prop(&uLocal_130);
 				iLocal_118 = 2;
 			}
 			break;

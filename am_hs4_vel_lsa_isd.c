@@ -238,7 +238,7 @@ void func_155(var uParam0)//Position - 0xAA5B
 	{
 		STREAMING::NEW_LOAD_SCENE_STOP();
 	}
-	__LIB_0__::func_794(&(uParam0->f_18));
+	__LIB_0__::clearF_1Prop(&(uParam0->f_18));
 	__LIB_1__::func_289(uParam0, 1);
 }
 
@@ -258,7 +258,7 @@ int func_157(var uParam0)//Position - 0xAB42
 		return 0;
 	}
 	iVar0 = __LIB_3__::func_96();
-	if (iVar0 == __LIB_0__::func_162())
+	if (iVar0 == __LIB_0__::getMinusOneOrNull())
 	{
 		return 0;
 	}

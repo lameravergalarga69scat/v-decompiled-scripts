@@ -1092,7 +1092,7 @@ int func_21()//Position - 0x1B2E
 		{
 			if (PAD::IS_CONTROL_JUST_PRESSED(Local_138.f_3650.f_2, Local_138.f_3650.f_3))
 			{
-				__LIB_0__::func_794(&(Local_138.f_3650));
+				__LIB_0__::clearF_1Prop(&(Local_138.f_3650));
 			}
 			if (PAD::IS_CONTROL_PRESSED(Local_138.f_3654.f_2, Local_138.f_3654.f_3) || PAD::IS_DISABLED_CONTROL_PRESSED(Local_138.f_3654.f_2, Local_138.f_3654.f_3))
 			{
@@ -1114,7 +1114,7 @@ int func_21()//Position - 0x1B2E
 		{
 			if (PAD::IS_CONTROL_JUST_PRESSED(Local_138.f_3650.f_2, Local_138.f_3650.f_3))
 			{
-				__LIB_0__::func_794(&(Local_138.f_3650));
+				__LIB_0__::clearF_1Prop(&(Local_138.f_3650));
 			}
 			if (PAD::IS_CONTROL_PRESSED(Local_138.f_3650.f_2, Local_138.f_3650.f_3) || PAD::IS_DISABLED_CONTROL_PRESSED(Local_138.f_3650.f_2, Local_138.f_3650.f_3))
 			{
@@ -5853,7 +5853,7 @@ int func_354(int iParam0)//Position - 0x50D9C
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -5893,7 +5893,7 @@ int func_354(int iParam0)//Position - 0x50D9C
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -6646,7 +6646,7 @@ void func_534()//Position - 0x614FF
 	}
 	Var0.f_0 = 2064623591;
 	Var0.f_1 = Local_139.f_3;
-	if (PLAYER::PLAYER_ID() != __LIB_0__::func_162())
+	if (PLAYER::PLAYER_ID() != __LIB_0__::getMinusOneOrNull())
 	{
 		switch (__LIB_7__::func_723())
 		{

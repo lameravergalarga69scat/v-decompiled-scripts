@@ -774,7 +774,7 @@ int func_65(int iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3)//
 		}
 		else if (__LIB_0__::func_937(&uLocal_48, 8000, 0))
 		{
-			__LIB_0__::func_794(&uLocal_48);
+			__LIB_0__::clearF_1Prop(&uLocal_48);
 			__LIB_5__::func_167(0);
 		}
 	}
@@ -796,7 +796,7 @@ int func_65(int iParam0, struct<3> Param1, struct<3> Param2, struct<3> Param3)//
 			{
 				iLocal_50 = SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(joaat("am_mp_drone"), &Var0, 12, 1424);
 				SCRIPT::SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED(joaat("am_mp_drone"));
-				__LIB_0__::func_794(&uLocal_48);
+				__LIB_0__::clearF_1Prop(&uLocal_48);
 			}
 			else
 			{

@@ -1240,7 +1240,7 @@ void func_1()//Position - 0x29C
 					MISC::SET_BIT(&(Local_1084.f_2), 2);
 					iLocal_372 = 30000;
 					Local_1084.f_0 = 1;
-					__LIB_0__::func_794(&uLocal_370);
+					__LIB_0__::clearF_1Prop(&uLocal_370);
 					MISC::SET_BIT(&(Local_1084.f_3[iLocal_354]), 1);
 				}
 				if (BitTest(Local_1086[iLocal_354 /*5*/].f_2, 3) && !BitTest(Local_1084.f_3[iLocal_354], 0))
@@ -1451,7 +1451,7 @@ void func_6()//Position - 0x607
 				else
 				{
 					iLocal_372 = 1000;
-					__LIB_0__::func_794(&uLocal_370);
+					__LIB_0__::clearF_1Prop(&uLocal_370);
 				}
 			}
 			else
@@ -1786,7 +1786,7 @@ void func_32()//Position - 0x54CC
 		{
 			if (((TASK::IS_PED_WALKING(PLAYER::PLAYER_PED_ID()) || TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID())) || TASK::IS_PED_SPRINTING(PLAYER::PLAYER_PED_ID())) || TASK::IS_PED_STRAFING(PLAYER::PLAYER_PED_ID()))
 			{
-				__LIB_0__::func_794(&uLocal_373);
+				__LIB_0__::clearF_1Prop(&uLocal_373);
 				MISC::SET_BIT(&uLocal_369, 5);
 			}
 		}

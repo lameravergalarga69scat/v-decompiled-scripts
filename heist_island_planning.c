@@ -613,7 +613,7 @@ void func_24(var uParam0)//Position - 0x620
 			{
 				PED::PLAY_FACIAL_ANIM(iLocal_157, func_39(), func_48());
 			}
-			__LIB_0__::func_794(&uLocal_153);
+			__LIB_0__::clearF_1Prop(&uLocal_153);
 			uParam0->f_726.f_5 = 1;
 			func_34(uParam0, 14);
 			iLocal_148 = 4;
@@ -640,7 +640,7 @@ void func_24(var uParam0)//Position - 0x620
 			}
 			STREAMING::REMOVE_ANIM_DICT(func_48());
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_151);
-			__LIB_0__::func_794(&uLocal_153);
+			__LIB_0__::clearF_1Prop(&uLocal_153);
 			iLocal_148 = 0;
 			iLocal_134 = 0;
 			break;
@@ -1167,7 +1167,7 @@ int func_121()//Position - 0x28A9
 	{
 		if (__LIB_0__::func_937(&uLocal_172, 1000, 0))
 		{
-			__LIB_0__::func_794(&uLocal_172);
+			__LIB_0__::clearF_1Prop(&uLocal_172);
 			iLocal_171 = 0;
 			return 0;
 		}
@@ -8173,7 +8173,7 @@ int func_844(var uParam0, int iParam1)//Position - 0x1DF75
 	{
 		return PLAYER::INT_TO_PLAYERINDEX(uParam0->f_823.f_51[iParam1]);
 	}
-	return __LIB_0__::func_162();
+	return __LIB_0__::getMinusOneOrNull();
 }
 
 int func_845(int iParam0)//Position - 0x1DFAC
@@ -8216,7 +8216,7 @@ void func_846(var uParam0)//Position - 0x1DFE8
 int func_847(int iParam0)//Position - 0x1E046
 {
 	struct<13> Var0;
-	if (iParam0 != __LIB_0__::func_162() && NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
+	if (iParam0 != __LIB_0__::getMinusOneOrNull() && NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
 	{
 		Var0 = { __LIB_0__::func_819(iParam0) };
 		if (__LIB_0__::func_800(Var0))
@@ -8267,7 +8267,7 @@ int func_848(var uParam0)//Position - 0x1E0BF
 	{
 		if (__LIB_0__::func_937(&uLocal_155, 4000, 0))
 		{
-			__LIB_0__::func_794(&uLocal_155);
+			__LIB_0__::clearF_1Prop(&uLocal_155);
 		}
 		return 1;
 	}
@@ -8343,7 +8343,7 @@ int func_850(var uParam0)//Position - 0x1E2E2
 		uParam0->f_823.f_51[3] = -1;
 		return 1;
 	}
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	while (iVar1 <= 3)
 	{
@@ -8359,7 +8359,7 @@ int func_850(var uParam0)//Position - 0x1E2E2
 		iVar0 = PLAYER::INT_TO_PLAYERINDEX(iVar1);
 		if (__LIB_0__::func_156(iVar0, 1, 1))
 		{
-			if (iVar0 != __LIB_0__::func_162())
+			if (iVar0 != __LIB_0__::getMinusOneOrNull())
 			{
 				if (!__LIB_35__::func_821(iVar0))
 				{

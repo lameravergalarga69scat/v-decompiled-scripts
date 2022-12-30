@@ -252,7 +252,7 @@ int func_2()//Position - 0x22A
 			{
 				if (__LIB_0__::func_937(&(Local_83.f_47), 3000, 0))
 				{
-					if (Local_83.f_8 == __LIB_0__::func_162())
+					if (Local_83.f_8 == __LIB_0__::getMinusOneOrNull())
 					{
 						Var0.f_2 = 1884920006;
 						__LIB_1__::func_634(Var0, __LIB_1__::func_26(1));
@@ -936,12 +936,12 @@ void func_52()//Position - 0x2042
 				}
 				else if (__LIB_0__::func_864(&uLocal_102))
 				{
-					__LIB_0__::func_794(&uLocal_102);
+					__LIB_0__::clearF_1Prop(&uLocal_102);
 				}
 			}
 			else if (__LIB_0__::func_864(&uLocal_102))
 			{
-				__LIB_0__::func_794(&uLocal_102);
+				__LIB_0__::clearF_1Prop(&uLocal_102);
 			}
 		}
 		else
@@ -1054,7 +1054,7 @@ void func_229(struct<21> Param0)//Position - 0x6DBE
 		if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 		{
 			func_230();
-			Local_83.f_8 = __LIB_0__::func_162();
+			Local_83.f_8 = __LIB_0__::getMinusOneOrNull();
 		}
 		__LIB_1__::func_460(17, 1);
 		Local_85[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/] = 0;

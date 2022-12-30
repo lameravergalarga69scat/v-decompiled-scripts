@@ -318,7 +318,7 @@ void __EntryFunction__()//Position - 0x0
 							else
 							{
 								iVar2 = NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(&Var1);
-								if (iVar2 != __LIB_0__::func_162())
+								if (iVar2 != __LIB_0__::getMinusOneOrNull())
 								{
 									if (__LIB_0__::func_156(iVar2, 0, 1))
 									{
@@ -517,7 +517,7 @@ int func_48(var* uParam0, var uParam1, int iParam2, int iParam3, int iParam4, in
 			{
 				iVar0 = NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(uParam0);
 				iVar1 = PLAYER::GET_PLAYER_PED(iVar0);
-				if (iVar0 != __LIB_0__::func_162())
+				if (iVar0 != __LIB_0__::getMinusOneOrNull())
 				{
 					if (__LIB_0__::func_156(iVar0, 0, 1))
 					{
@@ -3691,7 +3691,7 @@ int func_194(int iParam0)//Position - 0x2D312
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -3731,7 +3731,7 @@ int func_194(int iParam0)//Position - 0x2D312
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}

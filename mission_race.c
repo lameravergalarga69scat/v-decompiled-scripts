@@ -5897,7 +5897,7 @@ int func_504(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, in
 				{
 					*uParam0 = 2;
 				}
-				__LIB_2__::func_547(uParam1, uParam2, &Var0);
+				__LIB_2__::clearLeaderBoards(uParam1, uParam2, &Var0);
 				Var0 = { Var1 };
 			}
 			break;
@@ -5930,7 +5930,7 @@ int func_504(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, in
 				{
 					*uParam0 = 2;
 				}
-				__LIB_2__::func_547(uParam1, uParam2, &Var0);
+				__LIB_2__::clearLeaderBoards(uParam1, uParam2, &Var0);
 				Var0 = { Var1 };
 			}
 			break;

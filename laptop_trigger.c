@@ -227,7 +227,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				else if (__LIB_0__::func_937(&uLocal_118, 10000, 0))
 				{
-					__LIB_0__::func_794(&uLocal_118);
+					__LIB_0__::clearF_1Prop(&uLocal_118);
 					Global_1946108 = 0;
 				}
 				__LIB_1__::func_33(0);
@@ -391,7 +391,7 @@ void __EntryFunction__()//Position - 0x0
 									__LIB_1__::func_33(0);
 									SYSTEM::WAIT(0);
 								}
-								__LIB_0__::func_794(&uLocal_116);
+								__LIB_0__::clearF_1Prop(&uLocal_116);
 							}
 							while (bVar13)
 							{
@@ -421,7 +421,7 @@ void __EntryFunction__()//Position - 0x0
 								func_6();
 							}
 							__LIB_1__::func_33(0);
-							__LIB_0__::func_794(&uLocal_118);
+							__LIB_0__::clearF_1Prop(&uLocal_118);
 							iLocal_110 = 0;
 						}
 					}
@@ -605,7 +605,7 @@ void func_170()//Position - 0x4659
 		WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 		Var1 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_120, 0.0328f, -0.8f, 0.3f) };
 		bVar2 = false;
-		__LIB_0__::func_794(&uLocal_116);
+		__LIB_0__::clearF_1Prop(&uLocal_116);
 		if (func_7(0, &sVar0))
 		{
 			while (!bVar2)
@@ -635,7 +635,7 @@ void func_170()//Position - 0x4659
 				GRAPHICS::DRAW_DEBUG_LINE(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var1, 0, 0, 255, 255);
 				SYSTEM::WAIT(0);
 			}
-			__LIB_0__::func_794(&uLocal_116);
+			__LIB_0__::clearF_1Prop(&uLocal_116);
 			iLocal_121 = 0;
 		}
 	}
@@ -929,7 +929,7 @@ void func_183(bool bParam0)//Position - 0x4FCB
 					HUD::CLEAR_HELP(true);
 				}
 				iLocal_111 = 0;
-				__LIB_0__::func_794(&uLocal_114);
+				__LIB_0__::clearF_1Prop(&uLocal_114);
 				__LIB_7__::func_954(&iLocal_109, 1, "WHSECUROINPUT" /* GXT: Press ~INPUT_CONTEXT~ to access this laptop. */, 0, 0, 0, 0);
 			}
 		}
@@ -991,7 +991,7 @@ void func_195(bool bParam0)//Position - 0x5305
 						HUD::CLEAR_HELP(true);
 					}
 					iLocal_111 = 0;
-					__LIB_0__::func_794(&uLocal_114);
+					__LIB_0__::clearF_1Prop(&uLocal_114);
 					__LIB_7__::func_954(&iLocal_109, 1, "BIKERWHINPUT" /* GXT: Press ~INPUT_CONTEXT~ to securely access the Open Road website. */, 0, 0, 0, 0);
 				}
 			}
@@ -1079,7 +1079,7 @@ void func_200(bool bParam0)//Position - 0x54FE
 					HUD::CLEAR_HELP(true);
 				}
 				iLocal_111 = 0;
-				__LIB_0__::func_794(&uLocal_114);
+				__LIB_0__::clearF_1Prop(&uLocal_114);
 				__LIB_7__::func_954(&iLocal_109, 1, "WHSECUROINPUT" /* GXT: Press ~INPUT_CONTEXT~ to access this laptop. */, 0, 0, 0, 0);
 			}
 		}

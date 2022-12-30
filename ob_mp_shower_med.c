@@ -1463,8 +1463,8 @@ void func_2()//Position - 0x206B
 			break;
 		case 9:
 			__LIB_1__::func_33(0);
-			__LIB_0__::func_794(&uLocal_411);
-			__LIB_0__::func_794(&uLocal_409);
+			__LIB_0__::clearF_1Prop(&uLocal_411);
+			__LIB_0__::clearF_1Prop(&uLocal_409);
 			__LIB_0__::func_189();
 			HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 			__LIB_3__::func_93(1);
@@ -1817,7 +1817,7 @@ void func_2()//Position - 0x206B
 					{
 						iLocal_377 = 0;
 						iLocal_418 = 0;
-						__LIB_0__::func_794(&uLocal_380);
+						__LIB_0__::clearF_1Prop(&uLocal_380);
 						func_3();
 					}
 					else
@@ -1851,8 +1851,8 @@ void func_3()//Position - 0x3651
 	Global_2779522.f_106 = 0;
 	Global_1835486 = -1;
 	Global_2779522.f_27 = 0;
-	__LIB_0__::func_794(&uLocal_409);
-	__LIB_0__::func_794(&uLocal_411);
+	__LIB_0__::clearF_1Prop(&uLocal_409);
+	__LIB_0__::clearF_1Prop(&uLocal_411);
 	__LIB_0__::func_532(0, 1, 1, 0, 0, 0, 0);
 	iLocal_387 = 0;
 }
@@ -5584,7 +5584,7 @@ int func_223(int iParam0)//Position - 0x4F423
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -5624,7 +5624,7 @@ int func_223(int iParam0)//Position - 0x4F423
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -7169,8 +7169,8 @@ void func_524(bool bParam0)//Position - 0x754F5
 {
 	if (!bParam0)
 	{
-		__LIB_0__::func_794(&uLocal_409);
-		__LIB_0__::func_794(&uLocal_411);
+		__LIB_0__::clearF_1Prop(&uLocal_409);
+		__LIB_0__::clearF_1Prop(&uLocal_411);
 		iLocal_416 = 0;
 		Global_2779522.f_106 = 0;
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(sLocal_407))

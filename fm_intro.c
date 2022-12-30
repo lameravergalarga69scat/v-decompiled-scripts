@@ -1015,7 +1015,7 @@ void func_31()//Position - 0x100A
 			if (!HUD::IS_PAUSE_MENU_ACTIVE())
 			{
 				MISC::SET_BIT(&uLocal_582, 16);
-				__LIB_0__::func_794(&uLocal_237);
+				__LIB_0__::clearF_1Prop(&uLocal_237);
 			}
 		}
 	}
@@ -1030,7 +1030,7 @@ void func_31()//Position - 0x100A
 			if (__LIB_0__::func_937(&uLocal_243, 10000, 0))
 			{
 				MISC::SET_BIT(&uLocal_583, 1);
-				__LIB_0__::func_794(&uLocal_243);
+				__LIB_0__::clearF_1Prop(&uLocal_243);
 			}
 		}
 		else if (BitTest(uLocal_582, 19))
@@ -1107,7 +1107,7 @@ void func_31()//Position - 0x100A
 				{
 					func_75();
 					MISC::SET_BIT(&uLocal_582, 17);
-					__LIB_0__::func_794(&uLocal_237);
+					__LIB_0__::clearF_1Prop(&uLocal_237);
 				}
 			}
 			else if (!func_196())
@@ -1255,7 +1255,7 @@ void func_31()//Position - 0x100A
 				__LIB_1__::func_348(115, 1, -1, 1);
 				MISC::SET_BIT(&uLocal_582, 31);
 			}
-			__LIB_0__::func_794(&uLocal_237);
+			__LIB_0__::clearF_1Prop(&uLocal_237);
 			if (bLocal_588)
 			{
 				if (bLocal_589)
@@ -1507,7 +1507,7 @@ int func_110(int iParam0, int iParam1, char* sParam2, bool bParam3, var uParam4,
 	int iVar10;
 	int iVar11;
 	bool bVar12;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	if (iParam0 == 145)
 	{
@@ -1947,7 +1947,7 @@ int func_145(int iParam0, int iParam1, char* sParam2, bool bParam3, var uParam4,
 	int iVar10;
 	int iVar11;
 	bool bVar12;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	if (iParam0 == 145)
 	{
@@ -2496,7 +2496,7 @@ void func_205(int* iParam0)//Position - 0x645F
 					if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 					{
 						__LIB_1__::func_707("HLP_XP1", 9000);
-						__LIB_0__::func_794(&uLocal_592);
+						__LIB_0__::clearF_1Prop(&uLocal_592);
 						__LIB_0__::func_795(&uLocal_592, 0, 0);
 						iLocal_586++;
 					}
@@ -2504,7 +2504,7 @@ void func_205(int* iParam0)//Position - 0x645F
 				else if (__LIB_0__::func_937(&uLocal_592, 5000, 0))
 				{
 					iLocal_586++;
-					__LIB_0__::func_794(&uLocal_592);
+					__LIB_0__::clearF_1Prop(&uLocal_592);
 					__LIB_0__::func_795(&uLocal_592, 0, 0);
 				}
 			}
@@ -2515,7 +2515,7 @@ void func_205(int* iParam0)//Position - 0x645F
 				if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED())
 				{
 					__LIB_1__::func_707("HLP_XP2", 9000);
-					__LIB_0__::func_794(&uLocal_592);
+					__LIB_0__::clearF_1Prop(&uLocal_592);
 					__LIB_0__::func_795(&uLocal_592, 0, 0);
 					iLocal_586++;
 				}
@@ -2523,7 +2523,7 @@ void func_205(int* iParam0)//Position - 0x645F
 			else if (__LIB_0__::func_937(&uLocal_592, 5000, 0))
 			{
 				iLocal_586++;
-				__LIB_0__::func_794(&uLocal_592);
+				__LIB_0__::clearF_1Prop(&uLocal_592);
 				__LIB_0__::func_795(&uLocal_592, 0, 0);
 			}
 			break;
@@ -2536,7 +2536,7 @@ void func_205(int* iParam0)//Position - 0x645F
 					__LIB_1__::func_8(1);
 					Global_2815059.f_1918 = 1;
 					__LIB_1__::func_7(1, 0, -1);
-					__LIB_0__::func_794(&uLocal_592);
+					__LIB_0__::clearF_1Prop(&uLocal_592);
 					__LIB_0__::func_795(&uLocal_592, 0, 0);
 					iLocal_586++;
 				}
@@ -2544,7 +2544,7 @@ void func_205(int* iParam0)//Position - 0x645F
 			else if (__LIB_0__::func_937(&uLocal_592, 5000, 0))
 			{
 				iLocal_586++;
-				__LIB_0__::func_794(&uLocal_592);
+				__LIB_0__::clearF_1Prop(&uLocal_592);
 				__LIB_0__::func_795(&uLocal_592, 0, 0);
 			}
 			break;
@@ -2566,7 +2566,7 @@ void func_205(int* iParam0)//Position - 0x645F
 					{
 						__LIB_1__::func_707("HLP_CASHGEN", 9000);
 					}
-					__LIB_0__::func_794(&uLocal_592);
+					__LIB_0__::clearF_1Prop(&uLocal_592);
 					__LIB_0__::func_795(&uLocal_592, 0, 0);
 					iLocal_586 = 99;
 				}
@@ -2574,7 +2574,7 @@ void func_205(int* iParam0)//Position - 0x645F
 			else if (__LIB_0__::func_937(&uLocal_592, 5000, 0))
 			{
 				iLocal_586 = 99;
-				__LIB_0__::func_794(&uLocal_592);
+				__LIB_0__::clearF_1Prop(&uLocal_592);
 				__LIB_0__::func_795(&uLocal_592, 0, 0);
 			}
 			break;
@@ -2754,7 +2754,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 						{
 							STREAMING::CLEAR_FOCUS();
 							STREAMING::NEW_LOAD_SCENE_START(754.2219f, 1226.8309f, 356.5081f, __LIB_3__::func_80(-14.367f, 0f, 157.3524f), 100f, 0);
-							__LIB_0__::func_794(&(iParam0->f_17));
+							__LIB_0__::clearF_1Prop(&(iParam0->f_17));
 							__LIB_0__::func_795(&(iParam0->f_17), 0, 0);
 							MISC::SET_BIT(iParam0, 4);
 						}
@@ -4415,7 +4415,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 							STREAMING::END_SRL();
 							MISC::CLEAR_BIT(iParam0, 11);
 						}
-						__LIB_0__::func_794(&(iParam0->f_17));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_17));
 						__LIB_0__::func_795(&(iParam0->f_17), 0, 0);
 						MISC::SET_BIT(iParam0, 17);
 					}
@@ -4486,7 +4486,7 @@ int func_210(int* iParam0, int* iParam1)//Position - 0x6715
 							STREAMING::END_SRL();
 							MISC::CLEAR_BIT(iParam0, 11);
 						}
-						__LIB_0__::func_794(&(iParam0->f_17));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_17));
 						__LIB_0__::func_795(&(iParam0->f_17), 0, 0);
 						MISC::SET_BIT(iParam0, 17);
 					}
@@ -4938,7 +4938,7 @@ void func_424(bool bParam0)//Position - 0x168CE
 	func_61(0);
 	func_750();
 	__LIB_16__::func_558(iLocal_61, 0);
-	__LIB_0__::func_794(&(Global_2703735.f_3678));
+	__LIB_0__::clearF_1Prop(&(Global_2703735.f_3678));
 	Global_2703735.f_3676 = 0;
 	Global_2703735.f_3675 = 0;
 	Global_2703735.f_3677 = 0;
@@ -5388,7 +5388,7 @@ void func_427(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 					__LIB_2__::func_318(Global_1922955.f_17);
 				}
 				iVar5 = Global_1853348[iVar0 /*834*/].f_10;
-				if (iVar5 != __LIB_0__::func_162())
+				if (iVar5 != __LIB_0__::getMinusOneOrNull())
 				{
 					if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar5))
 					{
@@ -5421,7 +5421,7 @@ void func_427(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 				iVar2 = 1;
 				__LIB_2__::func_308();
 				iVar5 = Global_1853348[iVar0 /*834*/].f_10;
-				if (iVar5 != __LIB_0__::func_162())
+				if (iVar5 != __LIB_0__::getMinusOneOrNull())
 				{
 					if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar5))
 					{

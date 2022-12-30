@@ -685,7 +685,7 @@ void func_49()//Position - 0x1BC7
 						MISC::SET_BIT(&(Local_128.f_5), 3);
 						MISC::CLEAR_BIT(&(Local_128.f_5), 5);
 						__LIB_0__::func_795(&(Local_128.f_119), 0, 0);
-						__LIB_0__::func_794(&(Local_128.f_115));
+						__LIB_0__::clearF_1Prop(&(Local_128.f_115));
 					}
 					Local_128.f_31++;
 				}
@@ -804,7 +804,7 @@ void func_60()//Position - 0x216D
 			}
 			else
 			{
-				__LIB_0__::func_794(&(Local_128.f_119));
+				__LIB_0__::clearF_1Prop(&(Local_128.f_119));
 				MISC::CLEAR_BIT(&(Local_128.f_5), 3);
 				Local_128.f_32 = -1;
 				Local_128.f_33 = 100;
@@ -824,7 +824,7 @@ void func_60()//Position - 0x216D
 			}
 			else
 			{
-				__LIB_0__::func_794(&(Local_128.f_134));
+				__LIB_0__::clearF_1Prop(&(Local_128.f_134));
 				MISC::CLEAR_BIT(&(Local_128.f_5), 1);
 				Local_128.f_33 = 100;
 			}
@@ -1051,7 +1051,7 @@ void func_64(bool bParam0, bool bParam1)//Position - 0x2758
 		{
 			MISC::CLEAR_BIT(&(Local_128.f_48), bParam0 + 6);
 		}
-		__LIB_0__::func_794(&(Local_128.f_149[bParam0 /*2*/]));
+		__LIB_0__::clearF_1Prop(&(Local_128.f_149[bParam0 /*2*/]));
 	}
 }
 
@@ -1069,7 +1069,7 @@ void func_65(bool bParam0, bool bParam1)//Position - 0x27BA
 		{
 			MISC::CLEAR_BIT(&(Local_128.f_48), bParam0);
 		}
-		__LIB_0__::func_794(&(Local_128.f_136[bParam0 /*2*/]));
+		__LIB_0__::clearF_1Prop(&(Local_128.f_136[bParam0 /*2*/]));
 	}
 }
 
@@ -1110,7 +1110,7 @@ void func_68()//Position - 0x28A7
 							if (Local_128.f_8 > -1)
 							{
 								Local_128.f_17[bVar0] = 0;
-								__LIB_0__::func_794(&(Local_128.f_121[bVar0 /*2*/]));
+								__LIB_0__::clearF_1Prop(&(Local_128.f_121[bVar0 /*2*/]));
 								Local_128.f_8 = (Local_128.f_8 - 1);
 							}
 						}
@@ -1122,7 +1122,7 @@ void func_68()//Position - 0x28A7
 				}
 				else
 				{
-					__LIB_0__::func_794(&(Local_128.f_121[bVar0 /*2*/]));
+					__LIB_0__::clearF_1Prop(&(Local_128.f_121[bVar0 /*2*/]));
 				}
 				if ((!func_74(Local_128.f_84[bVar0]) || !ENTITY::DOES_ENTITY_EXIST(Local_128.f_84[bVar0])) || !func_69(Local_128.f_84[bVar0]))
 				{
@@ -1136,7 +1136,7 @@ void func_68()//Position - 0x28A7
 					if (Local_128.f_8 > -1)
 					{
 						Local_128.f_17[bVar0] = 0;
-						__LIB_0__::func_794(&(Local_128.f_121[bVar0 /*2*/]));
+						__LIB_0__::clearF_1Prop(&(Local_128.f_121[bVar0 /*2*/]));
 						Local_128.f_8 = (Local_128.f_8 - 1);
 					}
 				}
@@ -1221,7 +1221,7 @@ void func_75()//Position - 0x2C51
 						{
 							Local_128.f_63[Local_128.f_28] = -1;
 							MISC::CLEAR_BIT(&(Local_128.f_5), 0);
-							__LIB_0__::func_794(&(Local_128.f_117));
+							__LIB_0__::clearF_1Prop(&(Local_128.f_117));
 							Local_128.f_28++;
 						}
 					}
@@ -1234,7 +1234,7 @@ void func_75()//Position - 0x2C51
 						Local_128.f_63[Local_128.f_28] = -1;
 						MISC::CLEAR_BIT(&(Local_128.f_5), 0);
 						Local_128.f_25 = 0;
-						__LIB_0__::func_794(&(Local_128.f_117));
+						__LIB_0__::clearF_1Prop(&(Local_128.f_117));
 						Local_128.f_28++;
 					}
 				}
@@ -1253,14 +1253,14 @@ void func_75()//Position - 0x2C51
 	{
 		Local_128.f_63[Local_128.f_28] = -1;
 		Local_128.f_25 = 0;
-		__LIB_0__::func_794(&(Local_128.f_117));
+		__LIB_0__::clearF_1Prop(&(Local_128.f_117));
 		Local_128.f_28++;
 	}
 	if (Local_128.f_28 == 20)
 	{
 		Local_128.f_111 = 0;
 		Local_128.f_25 = 0;
-		__LIB_0__::func_794(&(Local_128.f_117));
+		__LIB_0__::clearF_1Prop(&(Local_128.f_117));
 		Local_128.f_28 = 0;
 	}
 }
@@ -2168,7 +2168,7 @@ int func_116()//Position - 0x4645
 {
 	if (__LIB_0__::func_891(PLAYER::PLAYER_ID(), 0))
 	{
-		if (Global_1853193 != __LIB_0__::func_162())
+		if (Global_1853193 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (__LIB_1__::func_637(Global_1853193) || __LIB_4__::func_287(Global_1853193))
 			{
@@ -2752,10 +2752,10 @@ void func_194(bool bParam0)//Position - 0x63A3
 			ENTITY::FREEZE_ENTITY_POSITION(PLAYER::PLAYER_PED_ID(), false);
 		}
 	}
-	__LIB_0__::func_794(&(Local_128.f_113));
-	__LIB_0__::func_794(&(Local_128.f_115));
-	__LIB_0__::func_794(&(Local_128.f_117));
-	__LIB_0__::func_794(&(Local_128.f_119));
+	__LIB_0__::clearF_1Prop(&(Local_128.f_113));
+	__LIB_0__::clearF_1Prop(&(Local_128.f_115));
+	__LIB_0__::clearF_1Prop(&(Local_128.f_117));
+	__LIB_0__::clearF_1Prop(&(Local_128.f_119));
 	func_133(0);
 	func_132(0);
 	Local_128.f_32 = -1;
@@ -2767,7 +2767,7 @@ void func_194(bool bParam0)//Position - 0x63A3
 	while (iVar0 <= 5)
 	{
 		Local_128.f_17[iVar0] = 0;
-		__LIB_0__::func_794(&(Local_128.f_121[iVar0 /*2*/]));
+		__LIB_0__::clearF_1Prop(&(Local_128.f_121[iVar0 /*2*/]));
 		iVar0++;
 	}
 	func_88();

@@ -2009,7 +2009,7 @@ int func_35(int iParam0, int iParam1, bool bParam2, char* sParam3, char* sParam4
 		{
 			return 0;
 		}
-		__LIB_0__::func_794(&(Global_1836844.f_18));
+		__LIB_0__::clearF_1Prop(&(Global_1836844.f_18));
 	}
 	if (__LIB_1__::func_904())
 	{
@@ -2054,7 +2054,7 @@ int func_113()//Position - 0x2C89
 			Local_130.f_674[iVar0] = -1;
 			iVar0++;
 		}
-		__LIB_0__::func_794(&(Local_130.f_661));
+		__LIB_0__::clearF_1Prop(&(Local_130.f_661));
 		func_116();
 		if (func_34())
 		{
@@ -5021,7 +5021,7 @@ void func_294()//Position - 0xF294
 		iVar7 = 0;
 		while (iVar7 < 3)
 		{
-			bVar0[iVar7] = __LIB_0__::func_162();
+			bVar0[iVar7] = __LIB_0__::getMinusOneOrNull();
 			iVar7++;
 		}
 		iVar7 = 0;
@@ -5103,7 +5103,7 @@ void func_295(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Global_2726607[2] = iParam2;
 	Global_2726607[3] = 0;
 	Global_2726607[4] = 0;
-	if (Global_2726607[0] != __LIB_0__::func_162())
+	if (Global_2726607[0] != __LIB_0__::getMinusOneOrNull())
 	{
 		if (iVar1 == 1)
 		{
@@ -5115,7 +5115,7 @@ void func_295(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			__LIB_2__::func_131(iParam3, &(Global_2726613[0 /*16*/]), -1, 109, 8, 1, 0, 0, 0, 0, 0, 109, 0, 0, 0, 0, 0, 0, uParam13, 255, 0, 0, 0, 0, 1, -1);
 		}
 	}
-	if (Global_2726607[1] != __LIB_0__::func_162())
+	if (Global_2726607[1] != __LIB_0__::getMinusOneOrNull())
 	{
 		if (iVar1 == 1)
 		{
@@ -5127,7 +5127,7 @@ void func_295(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			__LIB_2__::func_131(iParam4, &(Global_2726613[1 /*16*/]), -1, 108, 7, 1, 0, 0, 0, 0, 0, 108, 0, 0, 0, 0, 0, 0, uParam14, 255, 0, 0, 0, 0, 1, -1);
 		}
 	}
-	if (Global_2726607[2] != __LIB_0__::func_162())
+	if (Global_2726607[2] != __LIB_0__::getMinusOneOrNull())
 	{
 		if (iVar1 == 1)
 		{
@@ -5170,7 +5170,7 @@ void func_313()//Position - 0x10228
 	while (iVar0 < NETWORK::NETWORK_GET_MAX_NUM_PARTICIPANTS())
 	{
 		Local_151.f_534[iVar0 /*42*/] = { Var1 };
-		Local_151.f_534[iVar0 /*42*/].f_1 = __LIB_0__::func_162();
+		Local_151.f_534[iVar0 /*42*/].f_1 = __LIB_0__::getMinusOneOrNull();
 		if (Local_130.f_674[iVar0] > -1)
 		{
 			iVar3 = PLAYER::INT_TO_PARTICIPANTINDEX(Local_130.f_674[iVar0]);
@@ -5195,7 +5195,7 @@ void func_314()//Position - 0x10314
 {
 	if (Local_129.f_0 != -1 && Local_129.f_1 != -1)
 	{
-		if (NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT() != __LIB_0__::func_162() && NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT()))
+		if (NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT() != __LIB_0__::getMinusOneOrNull() && NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT()))
 		{
 			func_315(Local_129.f_1, Local_129.f_0, __LIB_1__::func_705(NETWORK::NETWORK_GET_PLAYER_INDEX(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT())));
 			Local_129.f_0 = -1;
@@ -5449,7 +5449,7 @@ void func_355(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position
 				if (func_356())
 				{
 					iLocal_100 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), Local_130.f_9);
-					if (NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT() != __LIB_0__::func_162() && NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT()))
+					if (NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT() != __LIB_0__::getMinusOneOrNull() && NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT()))
 					{
 						func_315(iLocal_100, iParam3, __LIB_1__::func_705(NETWORK::NETWORK_GET_PLAYER_INDEX(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT())));
 						Local_129.f_0 = -1;
@@ -5466,7 +5466,7 @@ void func_355(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position
 		}
 		else if (__LIB_0__::func_937(&uLocal_107, 250, 0))
 		{
-			if (NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT() != __LIB_0__::func_162() && NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT()))
+			if (NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT() != __LIB_0__::getMinusOneOrNull() && NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT()))
 			{
 				func_315(iLocal_100, iParam3, __LIB_1__::func_705(NETWORK::NETWORK_GET_PLAYER_INDEX(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT())));
 				Local_129.f_1 = -1;
@@ -5477,7 +5477,7 @@ void func_355(struct<3> Param0, var uParam1, var uParam2, int iParam3)//Position
 				Local_129.f_0 = iParam3;
 				Local_129.f_1 = iLocal_100;
 			}
-			__LIB_0__::func_794(&uLocal_107);
+			__LIB_0__::clearF_1Prop(&uLocal_107);
 		}
 	}
 }
@@ -6245,7 +6245,7 @@ void func_531(var uParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 								}
 								else
 								{
-									bVar4 = __LIB_0__::func_162();
+									bVar4 = __LIB_0__::getMinusOneOrNull();
 								}
 							}
 							else
@@ -6349,7 +6349,7 @@ void func_531(var uParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 							}
 							else
 							{
-								bVar4 = __LIB_0__::func_162();
+								bVar4 = __LIB_0__::getMinusOneOrNull();
 							}
 							if (__LIB_2__::func_144(bVar4))
 							{
@@ -6390,7 +6390,7 @@ void func_531(var uParam0, int* iParam1, int iParam2, var uParam3, var uParam4, 
 						{
 							__LIB_2__::func_142(uParam3, iParam1, iParam2);
 						}
-						__LIB_0__::func_794(&(uParam3->f_21));
+						__LIB_0__::clearF_1Prop(&(uParam3->f_21));
 						__LIB_1__::func_975();
 						uParam3->f_27 = 2;
 					}
@@ -6904,7 +6904,7 @@ int func_657()//Position - 0x189F2
 	iVar2 = 0;
 	while (iVar2 < 32)
 	{
-		Local_151.f_534[iVar2 /*42*/].f_1 = __LIB_0__::func_162();
+		Local_151.f_534[iVar2 /*42*/].f_1 = __LIB_0__::getMinusOneOrNull();
 		iVar2++;
 	}
 	return 1;

@@ -1083,7 +1083,7 @@ void func_311(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, v
 	StringCopy(&(uParam0->f_1670), "Idle1", 8);
 	__LIB_40__::func_224(uParam0[iParam3 /*94*/], iParam3, 4, Var0, Var1);
 	__LIB_40__::func_224(uParam0[iParam4 /*94*/], iParam4, 4, -Var0, -Var1);
-	__LIB_0__::func_794(&(uParam0->f_247));
+	__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 	__LIB_40__::func_147(uParam0);
 	__LIB_40__::func_146(uParam0);
 	__LIB_40__::func_145(uParam0);

@@ -710,7 +710,7 @@ int func_22()//Position - 0x1026
 		}
 		else if (__LIB_0__::func_864(&uLocal_150))
 		{
-			__LIB_0__::func_794(&uLocal_150);
+			__LIB_0__::clearF_1Prop(&uLocal_150);
 			HUD::CLEAR_HELP(true);
 		}
 	}
@@ -1002,7 +1002,7 @@ void func_182()//Position - 0x5865
 	else if (__LIB_0__::func_937(&uLocal_153, 250, 0))
 	{
 		func_183(iLocal_152, __LIB_0__::func_950(NETWORK::NETWORK_GET_PLAYER_INDEX(NETWORK::NETWORK_GET_HOST_OF_THIS_SCRIPT())));
-		__LIB_0__::func_794(&uLocal_153);
+		__LIB_0__::clearF_1Prop(&uLocal_153);
 	}
 }
 
@@ -4403,7 +4403,7 @@ void func_464()//Position - 0x16F7A
 	__LIB_1__::func_766(1, 1, 0, 0, 0);
 	__LIB_1__::func_765(1, 2, 1, 1, 1);
 	iVar1 = 0;
-	iLocal_99 = __LIB_0__::func_162();
+	iLocal_99 = __LIB_0__::getMinusOneOrNull();
 	iVar0 = 0;
 	while (iVar0 < 32)
 	{
@@ -4627,7 +4627,7 @@ int func_476(bool bParam0)//Position - 0x177D4
 				__LIB_3__::func_781(Local_138.f_14, 1, 1);
 				iLocal_96 = 1;
 				iLocal_105 = 250;
-				__LIB_0__::func_794(&uLocal_103);
+				__LIB_0__::clearF_1Prop(&uLocal_103);
 				return 1;
 			}
 		}
@@ -4652,7 +4652,7 @@ int func_476(bool bParam0)//Position - 0x177D4
 				__LIB_3__::func_781(Local_138.f_14, 1, 1);
 				iLocal_96 = 1;
 				iLocal_105 = 250;
-				__LIB_0__::func_794(&uLocal_103);
+				__LIB_0__::clearF_1Prop(&uLocal_103);
 				return 1;
 			}
 		}
@@ -4696,7 +4696,7 @@ int func_476(bool bParam0)//Position - 0x177D4
 					iVar0++;
 				}
 				iLocal_108 = 250;
-				__LIB_0__::func_794(&uLocal_106);
+				__LIB_0__::clearF_1Prop(&uLocal_106);
 				iLocal_96 = 1;
 				iLocal_97 = 1;
 				Local_87.f_15.f_6++;
@@ -4735,7 +4735,7 @@ int func_476(bool bParam0)//Position - 0x177D4
 					iVar0++;
 				}
 				iLocal_108 = 250;
-				__LIB_0__::func_794(&uLocal_106);
+				__LIB_0__::clearF_1Prop(&uLocal_106);
 				iLocal_96 = 1;
 				iLocal_97 = 1;
 				Local_87.f_15.f_6++;
@@ -4817,7 +4817,7 @@ void func_480()//Position - 0x17CE4
 						{
 							__LIB_3__::func_452("R2P_TINVS1" /* GXT: Your invite has been sent to 1 player. */, 0);
 						}
-						__LIB_0__::func_794(&uLocal_139);
+						__LIB_0__::clearF_1Prop(&uLocal_139);
 						__LIB_0__::func_795(&uLocal_139, 0, 0);
 						iLocal_141 = 5000;
 						iLocal_96 = 1;

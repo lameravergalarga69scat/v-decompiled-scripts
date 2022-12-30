@@ -14676,7 +14676,7 @@ void func_205(var uParam0, var uParam1, int iParam2, int iParam3)//Position - 0x
 					uParam0->f_9[13] = 1;
 					uParam0->f_9[15] = 2;
 					uParam0->f_9[22] = 1;
-					if (((NETWORK::NETWORK_IS_ACTIVITY_SESSION() && __LIB_0__::func_797() != __LIB_0__::func_162()) && __LIB_3__::func_692(__LIB_0__::func_797())) && BitTest(Global_1853348[__LIB_0__::func_797() /*834*/].f_267.f_480.f_1, 21))
+					if (((NETWORK::NETWORK_IS_ACTIVITY_SESSION() && __LIB_0__::func_797() != __LIB_0__::getMinusOneOrNull()) && __LIB_3__::func_692(__LIB_0__::func_797())) && BitTest(Global_1853348[__LIB_0__::func_797() /*834*/].f_267.f_480.f_1, 21))
 					{
 						uParam0->f_9[5] = 1;
 					}
@@ -18452,7 +18452,7 @@ int func_211(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0
 			{
 				CAM::SHAKE_CAM(uParam0->f_3, "ROAD_VIBRATION_SHAKE", 0.1f);
 			}
-			__LIB_0__::func_794(&(uParam0->f_10));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_10));
 			__LIB_0__::func_795(&(uParam0->f_10), 0, 0);
 			if (bParam2)
 			{
@@ -18488,7 +18488,7 @@ int func_211(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0
 					}
 					uParam0->f_23++;
 					CAM::SET_CAM_PARAMS(uParam0->f_3, CAM::GET_CAM_COORD(uParam0->f_3), 0f, 0f, fVar3, 40f, 3600, 0, 0, 2);
-					__LIB_0__::func_794(&(uParam0->f_10));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_10));
 					__LIB_0__::func_795(&(uParam0->f_10), 0, 0);
 					__LIB_24__::func_401(uParam0, -1, 0, 0, 0, 0, 0, 0, 0, 0);
 				}

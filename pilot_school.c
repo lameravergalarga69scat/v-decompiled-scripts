@@ -3854,7 +3854,7 @@ void func_10()//Position - 0xADC
 	GRAPHICS::CLEAR_TIMECYCLE_MODIFIER();
 	AUDIO::STOP_AUDIO_SCENES();
 	__LIB_31__::func_778(0);
-	__LIB_0__::func_183(123, 1);
+	__LIB_0__::incrementGlobal_58896ByIndex(123, 1);
 	__LIB_0__::func_55();
 	if (STREAMING::IS_NEW_LOAD_SCENE_ACTIVE())
 	{
@@ -7943,7 +7943,7 @@ int func_256(int iParam0)//Position - 0x4D648
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -7983,7 +7983,7 @@ int func_256(int iParam0)//Position - 0x4D648
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}

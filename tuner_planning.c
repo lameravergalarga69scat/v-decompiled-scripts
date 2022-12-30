@@ -613,7 +613,7 @@ void func_1(var uParam0)//Position - 0x16D
 
 void func_2(var uParam0)//Position - 0x187
 {
-	if (uParam0->f_1084 != __LIB_0__::func_162())
+	if (uParam0->f_1084 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (uParam0->f_1084 == iLocal_276)
 		{
@@ -1506,7 +1506,7 @@ int func_103()//Position - 0x211C
 	{
 		if (__LIB_0__::func_937(&uLocal_290, 1000, 0))
 		{
-			__LIB_0__::func_794(&uLocal_290);
+			__LIB_0__::clearF_1Prop(&uLocal_290);
 			iLocal_289 = 0;
 			return 0;
 		}
@@ -4182,7 +4182,7 @@ int func_670(var uParam0)//Position - 0x16972
 int func_671(int iParam0)//Position - 0x169CB
 {
 	bool bVar0;
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		bVar0 = false;
 		while (bVar0 < 9)

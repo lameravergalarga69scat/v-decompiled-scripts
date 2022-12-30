@@ -4163,12 +4163,12 @@ int func_431(var uParam0, var uParam1, bool bParam2)//Position - 0x2D33D
 	if (!INTERIOR::IS_VALID_INTERIOR(*uParam0))
 	{
 		MISC::CLEAR_BIT(&Global_1965451, 1);
-		__LIB_0__::func_794(&Global_1965449);
+		__LIB_0__::clearF_1Prop(&Global_1965449);
 	}
 	else if (!INTERIOR::IS_INTERIOR_READY(*uParam0))
 	{
 		MISC::CLEAR_BIT(&Global_1965451, 1);
-		__LIB_0__::func_794(&Global_1965449);
+		__LIB_0__::clearF_1Prop(&Global_1965449);
 	}
 	if (STREAMING::IS_NEW_LOAD_SCENE_ACTIVE())
 	{
@@ -4789,7 +4789,7 @@ int func_646()//Position - 0x34821
 	{
 		return NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(&Var1);
 	}
-	return __LIB_0__::func_162();
+	return __LIB_0__::getMinusOneOrNull();
 }
 
 struct<13> func_647(var uParam0)//Position - 0x3484D

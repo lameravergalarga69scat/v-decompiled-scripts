@@ -2885,7 +2885,7 @@ int func_261(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)//P
 							Global_2103119.f_11[iVar0] = 1;
 						}
 						Global_2103119.f_22[iVar0] = 1;
-						__LIB_2__::func_547(uParam2, uParam3, &Var1);
+						__LIB_2__::clearLeaderBoards(uParam2, uParam3, &Var1);
 						Var1 = { Var2 };
 					}
 					break;

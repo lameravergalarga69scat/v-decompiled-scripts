@@ -399,7 +399,7 @@ int func_134(int iParam0)//Position - 0x5362
 
 int func_139(int iParam0, int iParam1)//Position - 0x5541
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (iParam0 == PLAYER::PLAYER_ID() && iParam1)
 		{
@@ -789,7 +789,7 @@ int func_183()//Position - 0x5FC7
 	{
 		if (__LIB_0__::func_937(&uLocal_182, 1000, 0))
 		{
-			__LIB_0__::func_794(&uLocal_182);
+			__LIB_0__::clearF_1Prop(&uLocal_182);
 			iLocal_181 = 0;
 			return 0;
 		}
@@ -2527,7 +2527,7 @@ int func_256(var uParam0)//Position - 0x914D
 int func_257(var uParam0, int iParam1)//Position - 0x917B
 {
 	int iVar0;
-	if (iParam1 == __LIB_0__::func_162())
+	if (iParam1 == __LIB_0__::getMinusOneOrNull())
 	{
 		return -1;
 	}
@@ -2543,7 +2543,7 @@ int func_257(var uParam0, int iParam1)//Position - 0x917B
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		if (uParam0->f_812[iVar0 /*10*/] == __LIB_0__::func_162())
+		if (uParam0->f_812[iVar0 /*10*/] == __LIB_0__::getMinusOneOrNull())
 		{
 			uParam0->f_812[iVar0 /*10*/] = iParam1;
 			uParam0->f_812[iVar0 /*10*/].f_2 = 0;
@@ -4987,7 +4987,7 @@ void func_334(var uParam0)//Position - 0xD751
 	}
 	if (__LIB_1__::func_19() == 32)
 	{
-		if (Global_1962546.f_812.f_41 == __LIB_0__::func_162() || !NETWORK::NETWORK_IS_PLAYER_ACTIVE(Global_1962546.f_812.f_41))
+		if (Global_1962546.f_812.f_41 == __LIB_0__::getMinusOneOrNull() || !NETWORK::NETWORK_IS_PLAYER_ACTIVE(Global_1962546.f_812.f_41))
 		{
 			return;
 		}
@@ -5212,7 +5212,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 					{
 						func_340(uParam0, 4);
 						__LIB_0__::func_151("HP_FIN_TUT2" /* GXT: This bar shows the total reward for the Heist and how much each member receives. The leader has a larger cut by default as they covered the initial setup cost. */, 10000);
-						__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+						__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 						uParam0->f_1239++;
 					}
 					break;
@@ -5221,7 +5221,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 					{
 						func_340(uParam0, 5);
 						__LIB_0__::func_151("HP_FIN_LTUT3" /* GXT: Here you can assign the role that each Heist member will perform and their percentage cut of the total take. */, 10000);
-						__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+						__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 						uParam0->f_1239++;
 					}
 					break;
@@ -5230,7 +5230,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 					{
 						func_340(uParam0, 6);
 						__LIB_0__::func_151("HP_FIN_TUT4" /* GXT: You can view the plan for the selected Heist member's tasks here. These will be shown when a player has been assigned a role. */, 10000);
-						__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+						__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 						uParam0->f_1239++;
 					}
 					break;
@@ -5244,7 +5244,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 						uParam0->f_1239++;
 						uParam0->f_703 = 1;
 						func_209(uParam0, 1);
-						__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+						__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 						Global_1888862[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*120*/].f_38.f_30 = 0;
 					}
 					break;
@@ -5275,7 +5275,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 				{
 					func_340(uParam0, 4);
 					__LIB_0__::func_151("HP_FIN_TUT2" /* GXT: This bar shows the total reward for the Heist and how much each member receives. The leader has a larger cut by default as they covered the initial setup cost. */, 10000);
-					__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 					uParam0->f_1239++;
 				}
 				break;
@@ -5284,7 +5284,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 				{
 					func_340(uParam0, 5);
 					__LIB_0__::func_151("HP_FIN_MTUT3" /* GXT: This section shows your Heist role configuration and your percentage cut of the total reward. This is set by the Heist leader. */, 10000);
-					__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 					uParam0->f_1239++;
 				}
 				break;
@@ -5293,7 +5293,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 				{
 					func_340(uParam0, 6);
 					__LIB_0__::func_151("HP_FIN_TUT4" /* GXT: You can view the plan for the selected Heist member's tasks here. These will be shown when a player has been assigned a role. */, 10000);
-					__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 					uParam0->f_1239++;
 				}
 				break;
@@ -5307,7 +5307,7 @@ void func_336(var uParam0)//Position - 0xDDC7
 					uParam0->f_1239++;
 					uParam0->f_703 = 1;
 					func_209(uParam0, 1);
-					__LIB_0__::func_794(&(uParam0->f_1239.f_2));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_1239.f_2));
 					Global_1888862[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*120*/].f_38.f_30 = 0;
 				}
 				break;
@@ -5347,7 +5347,7 @@ void func_337()//Position - 0xE224
 
 int func_338(int iParam0)//Position - 0xE254
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		return BitTest(Global_1888862[iParam0 /*120*/].f_38.f_26, 9);
 	}
@@ -5387,7 +5387,7 @@ void func_341(var uParam0, bool bParam1)//Position - 0xE2D5
 
 int func_342(int iParam0)//Position - 0xE2FF
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		return BitTest(Global_1888862[iParam0 /*120*/].f_38.f_26, 8);
 	}
@@ -5696,7 +5696,7 @@ int func_369(var uParam0, var uParam1)//Position - 0xF1C5
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	while (iVar1 <= 3)
 	{
@@ -5712,7 +5712,7 @@ int func_369(var uParam0, var uParam1)//Position - 0xF1C5
 			iVar0 = PLAYER::INT_TO_PLAYERINDEX(iVar1);
 			if (__LIB_0__::func_156(iVar0, 1, 1))
 			{
-				if (iVar0 != __LIB_0__::func_162())
+				if (iVar0 != __LIB_0__::getMinusOneOrNull())
 				{
 					if (!__LIB_35__::func_821(iVar0))
 					{
@@ -5775,7 +5775,7 @@ void func_375(var uParam0)//Position - 0xF310
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		uParam0->f_812[iVar0 /*10*/] = __LIB_0__::func_162();
+		uParam0->f_812[iVar0 /*10*/] = __LIB_0__::getMinusOneOrNull();
 		iVar0++;
 	}
 }
@@ -6432,7 +6432,7 @@ void func_432(var uParam0)//Position - 0x105BC
 	{
 		if (__LIB_0__::func_937(&(uParam0->f_794.f_7), 1000, 0))
 		{
-			__LIB_0__::func_794(&(uParam0->f_794.f_7));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_794.f_7));
 		}
 		return;
 	}
@@ -8025,7 +8025,7 @@ void func_659(var uParam0)//Position - 0x1AE14
 	if (func_258(uParam0))
 	{
 		cVar6 = __LIB_12__::func_943(uParam0->f_812, 0);
-		if (uParam0->f_812 != __LIB_0__::func_162())
+		if (uParam0->f_812 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (__LIB_0__::func_796(uParam0->f_812))
 			{
@@ -8222,7 +8222,7 @@ void func_668(var uParam0)//Position - 0x1B459
 
 void func_669(var uParam0)//Position - 0x1B523
 {
-	if (uParam0->f_812 != PLAYER::PLAYER_ID() && uParam0->f_812 != __LIB_0__::func_162())
+	if (uParam0->f_812 != PLAYER::PLAYER_ID() && uParam0->f_812 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (Global_1888862[uParam0->f_812 /*120*/].f_38 != Global_1888862[PLAYER::PLAYER_ID() /*120*/].f_38)
 		{
@@ -8469,7 +8469,7 @@ void func_677()//Position - 0x1BBE8
 
 int func_681(int iParam0)//Position - 0x1BC5C
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		return BitTest(Global_1888862[iParam0 /*120*/].f_38.f_26, 7);
 	}
@@ -8616,7 +8616,7 @@ void func_701(bool bParam0)//Position - 0x1C05F
 	{
 		if (!bParam0)
 		{
-			if (Global_1959720.f_812 != __LIB_11__::func_612() && Global_1959720.f_812 != __LIB_0__::func_162())
+			if (Global_1959720.f_812 != __LIB_11__::func_612() && Global_1959720.f_812 != __LIB_0__::getMinusOneOrNull())
 			{
 				if (Global_1959720.f_718 < 5)
 				{
@@ -8628,7 +8628,7 @@ void func_701(bool bParam0)//Position - 0x1C05F
 				}
 			}
 		}
-		else if (Global_1962546.f_812.f_41 != __LIB_11__::func_612() && Global_1962546.f_812.f_41 != __LIB_0__::func_162())
+		else if (Global_1962546.f_812.f_41 != __LIB_11__::func_612() && Global_1962546.f_812.f_41 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (Global_1962546.f_718 < 5)
 			{
@@ -9820,7 +9820,7 @@ void func_753(var uParam0)//Position - 0x1E2E0
 
 void func_754(var uParam0)//Position - 0x1E3AA
 {
-	if (uParam0->f_812.f_146 != PLAYER::PLAYER_ID() && uParam0->f_812.f_146 != __LIB_0__::func_162())
+	if (uParam0->f_812.f_146 != PLAYER::PLAYER_ID() && uParam0->f_812.f_146 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (Global_1888862[uParam0->f_812.f_146 /*120*/].f_38 != Global_1888862[PLAYER::PLAYER_ID() /*120*/].f_38)
 		{
@@ -9886,7 +9886,7 @@ void func_756()//Position - 0x1E532
 
 int func_757(int iParam0)//Position - 0x1E562
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		return BitTest(Global_1888862[iParam0 /*120*/].f_38.f_26, 18);
 	}
@@ -9999,11 +9999,11 @@ void func_771()//Position - 0x1E85B
 	char* sVar4;
 	char* sVar5;
 	char* sVar6;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 	{
 		iVar0 = Global_1962546.f_812.f_41;
-		if (iVar0 != __LIB_0__::func_162())
+		if (iVar0 != __LIB_0__::getMinusOneOrNull())
 		{
 		}
 	}
@@ -10011,7 +10011,7 @@ void func_771()//Position - 0x1E85B
 	{
 		iVar0 = __LIB_11__::func_612();
 	}
-	if (iVar0 != __LIB_0__::func_162())
+	if (iVar0 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (iVar0 == PLAYER::PLAYER_ID())
 		{
@@ -10952,7 +10952,7 @@ int func_800(int iParam0, int iParam1, int iParam2)//Position - 0x203F8
 
 int func_801(int iParam0, var uParam1, var uParam2, bool bParam3)//Position - 0x20459
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (__LIB_0__::func_309(iParam0) && (__LIB_10__::func_722(PLAYER::PLAYER_ID(), iParam0, 1) || uParam2))
 		{

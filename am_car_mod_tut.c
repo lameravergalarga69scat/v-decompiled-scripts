@@ -610,7 +610,7 @@ void func_78()//Position - 0x2624
 												if (func_149())
 												{
 													__LIB_0__::func_151("FM_CTUT_PRM" /* GXT: This is a premium vehicle that is already being tracked. You can only apply a tracker to this vehicle if it was purchased online. Find another vehicle. */, -1);
-													__LIB_0__::func_794(&uLocal_145);
+													__LIB_0__::clearF_1Prop(&uLocal_145);
 													__LIB_0__::func_795(&uLocal_145, 0, 0);
 												}
 											}
@@ -637,7 +637,7 @@ void func_78()//Position - 0x2624
 										{
 											__LIB_3__::func_198("FM_CTUT_MOD" /* GXT: Go to Los Santos Customs. */, 0);
 											MISC::SET_BIT(&uLocal_140, 3);
-											__LIB_0__::func_794(&uLocal_141);
+											__LIB_0__::clearF_1Prop(&uLocal_141);
 											__LIB_0__::func_795(&uLocal_141, 0, 0);
 											if (!__LIB_13__::func_649(PLAYER::PLAYER_ID()))
 											{
@@ -856,7 +856,7 @@ void func_78()//Position - 0x2624
 									MISC::CLEAR_BIT(&uLocal_140, 3);
 									MISC::CLEAR_BIT(&uLocal_140, 7);
 									MISC::CLEAR_BIT(&uLocal_140, 10);
-									__LIB_0__::func_794(&uLocal_143);
+									__LIB_0__::clearF_1Prop(&uLocal_143);
 									if (iLocal_139 != -1)
 									{
 										__LIB_30__::func_992(iLocal_139, 0);

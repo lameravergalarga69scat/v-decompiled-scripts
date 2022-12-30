@@ -2190,7 +2190,7 @@ void func_145()//Position - 0x5969
 			}
 		}
 	}
-	__LIB_0__::func_954(__LIB_0__::func_943(1, 1), 9, __LIB_0__::func_162());
+	__LIB_0__::func_954(__LIB_0__::func_943(1, 1), 9, __LIB_0__::getMinusOneOrNull());
 	func_147();
 	GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_71);
 	__LIB_0__::func_202();

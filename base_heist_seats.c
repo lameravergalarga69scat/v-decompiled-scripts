@@ -841,7 +841,7 @@ int func_64()//Position - 0x186D
 	{
 		return 1;
 	}
-	if (Global_1853191 == __LIB_0__::func_162())
+	if (Global_1853191 == __LIB_0__::getMinusOneOrNull())
 	{
 		return 1;
 	}
@@ -850,7 +850,7 @@ int func_64()//Position - 0x186D
 
 int func_75()//Position - 0x1A04
 {
-	if (Global_1853191 != __LIB_0__::func_162())
+	if (Global_1853191 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (NETWORK::NETWORK_IS_SCRIPT_ACTIVE("base_heist_seats", Global_1853191, true, 0))
 		{
@@ -943,7 +943,7 @@ bool func_78(var uParam0, int iParam1)//Position - 0x1F7F
 
 int func_81(int iParam0)//Position - 0x2082
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (__LIB_0__::func_156(iParam0, 1, 1))
 		{

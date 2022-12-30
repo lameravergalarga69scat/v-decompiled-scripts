@@ -1553,11 +1553,11 @@ int func_317()//Position - 0xDE76
 		}
 		else if (__LIB_0__::func_937(&uLocal_135, 5000, 0))
 		{
-			__LIB_0__::func_794(&uLocal_135);
+			__LIB_0__::clearF_1Prop(&uLocal_135);
 			return 0;
 		}
 	}
-	__LIB_0__::func_794(&uLocal_135);
+	__LIB_0__::clearF_1Prop(&uLocal_135);
 	Global_2787732 = 31;
 	if (__LIB_0__::func_112())
 	{
@@ -1603,7 +1603,7 @@ int func_317()//Position - 0xDE76
 		}
 		__LIB_20__::func_512(PLAYER::PLAYER_ID(), iLocal_121, 0, 1);
 		__LIB_19__::func_890(5, 0, 1, 0);
-		__LIB_0__::func_794(&Global_2787780);
+		__LIB_0__::clearF_1Prop(&Global_2787780);
 		func_494();
 	}
 	else
@@ -1618,7 +1618,7 @@ int func_317()//Position - 0xDE76
 		__LIB_0__::func_413(__LIB_12__::func_971(5), Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_191[5 /*13*/].f_2, -1, 1, 0);
 		__LIB_20__::func_512(PLAYER::PLAYER_ID(), iLocal_121, 0, 1);
 		__LIB_19__::func_890(5, 0, 1, 0);
-		__LIB_0__::func_794(&Global_2787780);
+		__LIB_0__::clearF_1Prop(&Global_2787780);
 		if (Global_262145.f_17486 /* Tunable: 393410238 */)
 		{
 			Global_2725352 = 1;
@@ -2614,7 +2614,7 @@ int func_473(int iParam0)//Position - 0x12355
 	}
 	if (__LIB_0__::func_112())
 	{
-		__LIB_0__::func_794(&uLocal_135);
+		__LIB_0__::clearF_1Prop(&uLocal_135);
 		iVar1 = __LIB_13__::func_149(bVar0);
 		while (!func_475(5, iVar1, &iLocal_125))
 		{
@@ -2628,13 +2628,13 @@ int func_473(int iParam0)//Position - 0x12355
 				}
 				else if (__LIB_0__::func_937(&uLocal_135, 7500, 0))
 				{
-					__LIB_0__::func_794(&uLocal_135);
+					__LIB_0__::clearF_1Prop(&uLocal_135);
 					func_61("BKR_TF_R6" /* GXT: Unable to launch the mission. */);
 					return 0;
 				}
 			}
 		}
-		__LIB_0__::func_794(&uLocal_135);
+		__LIB_0__::clearF_1Prop(&uLocal_135);
 		func_494();
 		if (iLocal_125 == 3)
 		{
@@ -3108,7 +3108,7 @@ void func_511()//Position - 0x13152
 		{
 			MISC::CLEAR_BIT(&uLocal_109, 9);
 			iLocal_115 = 0;
-			__LIB_0__::func_794(&uLocal_133);
+			__LIB_0__::clearF_1Prop(&uLocal_133);
 			if (func_512())
 			{
 				MISC::SET_BIT(&uLocal_109, 10);
@@ -3284,7 +3284,7 @@ void func_544()//Position - 0x13F81
 		{
 			MISC::CLEAR_BIT(&uLocal_109, 6);
 			iLocal_115 = 0;
-			__LIB_0__::func_794(&uLocal_131);
+			__LIB_0__::clearF_1Prop(&uLocal_131);
 			if (func_545())
 			{
 				MISC::SET_BIT(&uLocal_109, 7);

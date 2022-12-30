@@ -512,7 +512,7 @@ void func_2()//Position - 0x1F2
 							Local_65.f_5.f_4++;
 							if (Local_65.f_5.f_4 == 32)
 							{
-								__LIB_0__::func_794(&(Local_65.f_5));
+								__LIB_0__::clearF_1Prop(&(Local_65.f_5));
 								__LIB_0__::func_795(&(Local_65.f_5), 0, 0);
 								if (Local_65.f_5.f_72 >= 1)
 								{
@@ -1189,7 +1189,7 @@ int func_34(var uParam0)//Position - 0x1529
 				if (__LIB_0__::func_937(&(uParam0->f_6), 15000, 0))
 				{
 					func_293();
-					__LIB_0__::func_794(&(uParam0->f_6));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_6));
 					__LIB_0__::func_795(&(uParam0->f_6), 0, 0);
 				}
 			}
@@ -1199,7 +1199,7 @@ int func_34(var uParam0)//Position - 0x1529
 			if (__LIB_0__::func_937(&(uParam0->f_6), 5000, 0))
 			{
 				func_293();
-				__LIB_0__::func_794(&(uParam0->f_6));
+				__LIB_0__::clearF_1Prop(&(uParam0->f_6));
 				__LIB_0__::func_795(&(uParam0->f_6), 0, 0);
 			}
 		}
@@ -1263,7 +1263,7 @@ int func_34(var uParam0)//Position - 0x1529
 							{
 							}
 							func_149(iVar2, 1, __LIB_5__::func_410(1, 1));
-							__LIB_0__::func_794(&(uParam0->f_6));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_6));
 							__LIB_0__::func_795(&(uParam0->f_6), 0, 0);
 							func_294(1);
 							__LIB_1__::func_460(8, 1);
@@ -1280,14 +1280,14 @@ int func_34(var uParam0)//Position - 0x1529
 						else if (!__LIB_0__::func_864(&(uParam0->f_6)) || __LIB_0__::func_937(&(uParam0->f_6), 5000, 0))
 						{
 							func_293();
-							__LIB_0__::func_794(&(uParam0->f_6));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_6));
 							__LIB_0__::func_795(&(uParam0->f_6), 0, 0);
 						}
 					}
 					else if (!__LIB_0__::func_864(&(uParam0->f_6)) || __LIB_0__::func_937(&(uParam0->f_6), 30000, 0))
 					{
 						func_293();
-						__LIB_0__::func_794(&(uParam0->f_6));
+						__LIB_0__::clearF_1Prop(&(uParam0->f_6));
 						__LIB_0__::func_795(&(uParam0->f_6), 0, 0);
 					}
 				}
@@ -1316,7 +1316,7 @@ int func_34(var uParam0)//Position - 0x1529
 				else if (__LIB_0__::func_937(&(uParam0->f_12), 30000, 0))
 				{
 					MISC::CLEAR_BIT(&(Global_1853348[iVar3 /*834*/].f_143), 13);
-					__LIB_0__::func_794(&(uParam0->f_6));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_6));
 				}
 			}
 			break;
@@ -1366,7 +1366,7 @@ int func_34(var uParam0)//Position - 0x1529
 				}
 				else
 				{
-					__LIB_0__::func_794(&(uParam0->f_10));
+					__LIB_0__::clearF_1Prop(&(uParam0->f_10));
 					__LIB_0__::func_795(&(uParam0->f_10), 0, 0);
 				}
 				MISC::SET_BIT(&(uParam0->f_1), 0);
@@ -1480,7 +1480,7 @@ int func_34(var uParam0)//Position - 0x1529
 											{
 												if (!__LIB_0__::func_937(&(uParam0->f_10), (iLocal_64 - 420000), 0))
 												{
-													__LIB_0__::func_794(&(uParam0->f_10));
+													__LIB_0__::clearF_1Prop(&(uParam0->f_10));
 													__LIB_0__::func_795(&(uParam0->f_10), 0, 0);
 													MISC::SET_BIT(&uLocal_165, 11);
 													iLocal_64 = 180000;
@@ -2014,7 +2014,7 @@ void func_105(var uParam0)//Position - 0x4787
 					{
 						iLocal_331 = iVar1;
 					}
-					__LIB_0__::func_794(&uLocal_334);
+					__LIB_0__::clearF_1Prop(&uLocal_334);
 					__LIB_0__::func_795(&uLocal_334, 0, 0);
 				}
 			}
@@ -2068,7 +2068,7 @@ void func_105(var uParam0)//Position - 0x4787
 				if (func_143(10f))
 				{
 					iVar2 = NETWORK::NETWORK_GET_HOST_OF_SCRIPT(__LIB_1__::func_834(), -1, 0);
-					if (iVar2 != __LIB_0__::func_162())
+					if (iVar2 != __LIB_0__::getMinusOneOrNull())
 					{
 						MISC::CLEAR_BIT(&(uParam0->f_1), 9);
 						MISC::SET_BIT(&(uParam0->f_1), 10);
@@ -2553,7 +2553,7 @@ int func_151(var uParam0)//Position - 0x56B7
 									if (func_98())
 									{
 										__LIB_0__::func_151("FM_IHELP_INV2" /* GXT: Take out your phone, select the Job List and accept the 'Hold Up' invite from Lamar. */, -1);
-										__LIB_0__::func_794(&uLocal_332);
+										__LIB_0__::clearF_1Prop(&uLocal_332);
 										__LIB_0__::func_795(&uLocal_332, 0, 0);
 									}
 								}
@@ -2632,7 +2632,7 @@ bool func_169()//Position - 0x6143
 				}
 				else
 				{
-					__LIB_0__::func_794(&uLocal_161);
+					__LIB_0__::clearF_1Prop(&uLocal_161);
 					__LIB_0__::func_795(&uLocal_161, 0, 0);
 					MISC::CLEAR_BIT(&uLocal_165, 3);
 					MISC::SET_BIT(&uLocal_165, 5);
@@ -2800,7 +2800,7 @@ int func_182(int iParam0, int iParam1, char* sParam2, bool bParam3, var uParam4,
 	int iVar10;
 	int iVar11;
 	bool bVar12;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	if (iParam0 == 145)
 	{
@@ -2907,7 +2907,7 @@ int func_224(int iParam0, int iParam1, char* sParam2, bool bParam3, var uParam4,
 	int iVar10;
 	int iVar11;
 	bool bVar12;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	if (iParam0 == 145)
 	{

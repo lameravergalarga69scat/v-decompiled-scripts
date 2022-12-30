@@ -1327,7 +1327,7 @@ void func_140()//Position - 0x4482
 			iVar0++;
 		}
 		Local_60.f_0 = 4;
-		__LIB_0__::func_954(__LIB_0__::func_943(1, 1), 8, __LIB_0__::func_162());
+		__LIB_0__::func_954(__LIB_0__::func_943(1, 1), 8, __LIB_0__::getMinusOneOrNull());
 	}
 	func_143();
 	func_70();

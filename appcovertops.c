@@ -482,7 +482,7 @@ void func_35()//Position - 0xB76
 		{
 			MISC::CLEAR_BIT(&uLocal_129, 4);
 			iLocal_131 = 0;
-			__LIB_0__::func_794(&uLocal_143);
+			__LIB_0__::clearF_1Prop(&uLocal_143);
 			if (func_36())
 			{
 				MISC::SET_BIT(&uLocal_129, 3);
@@ -1136,7 +1136,7 @@ void func_221(int iParam0)//Position - 0x6EEE
 					SYSTEM::WAIT(0);
 				}
 			}
-			__LIB_0__::func_794(&uLocal_141);
+			__LIB_0__::clearF_1Prop(&uLocal_141);
 			if (iVar1 != -1)
 			{
 				__LIB_31__::func_719(&fVar5, &fVar6, 0, 9, 0, 0, MISC::GET_HASH_KEY(&(Global_794709.f_4[iVar1 /*88*/])));

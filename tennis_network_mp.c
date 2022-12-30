@@ -4581,7 +4581,7 @@ void func_15(int* iParam0, var uParam1)//Position - 0x292E
 		case 14:
 			func_20(iParam0, 4);
 			func_22(iParam0, 12, 0);
-			__LIB_0__::func_794(&(iParam0->f_61));
+			__LIB_0__::clearF_1Prop(&(iParam0->f_61));
 			__LIB_0__::func_795(&(iParam0->f_61), 0, 0);
 			break;
 		case 15:
@@ -4780,7 +4780,7 @@ void func_25(var uParam0, var uParam1, int iParam2)//Position - 0x2D77
 			func_78(uParam0);
 			func_30();
 		}
-		__LIB_0__::func_794(&(uParam1->f_247));
+		__LIB_0__::clearF_1Prop(&(uParam1->f_247));
 		func_1416(uParam0, 64);
 		__LIB_40__::func_160(uParam1[iParam2 /*94*/], 32768);
 		__LIB_40__::func_84(&(uParam1->f_247), __LIB_38__::func_389(uParam0));
@@ -5413,7 +5413,7 @@ void func_156(var uParam0, var uParam1, var uParam2, int* iParam3, int iParam4, 
 			__LIB_6__::func_205(&((uParam0[iParam5 /*94*/])->f_4), 0);
 			__LIB_40__::func_122(uParam0[iParam4 /*94*/], 0);
 			__LIB_40__::func_122(uParam0[iParam5 /*94*/], 0);
-			__LIB_0__::func_794(&(uParam0->f_247));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 			func_78(iParam3[(*uParam8)[iParam4] /*65*/]);
 			if ((((__LIB_1__::func_285(uParam2) == 16 || __LIB_1__::func_285(uParam2) == 18) || __LIB_1__::func_285(uParam2) == 17) || __LIB_1__::func_285(uParam2) == 22) || __LIB_1__::func_285(uParam2) == 27)
 			{
@@ -5635,7 +5635,7 @@ void func_156(var uParam0, var uParam1, var uParam2, int* iParam3, int iParam4, 
 							func_500(&(uParam1->f_28.f_137));
 							__LIB_2__::func_712(&(uParam1->f_989), 128);
 						}
-						__LIB_0__::func_794(&(uParam0->f_247));
+						__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 						func_147(uParam2, iParam4);
 					}
 					else
@@ -5665,7 +5665,7 @@ void func_156(var uParam0, var uParam1, var uParam2, int* iParam3, int iParam4, 
 			{
 				func_1164(iParam3[(*uParam8)[iParam4] /*65*/], 64);
 				func_1416(iParam3[(*uParam8)[iParam4] /*65*/], 32768);
-				__LIB_0__::func_794(&(uParam0->f_247));
+				__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 				__LIB_2__::func_712(&(uParam1->f_989), 128);
 				Var13 = { __LIB_40__::func_267(&(uParam0->f_189), __LIB_7__::func_147(&(uParam0->f_247)), uParam0->f_247.f_10, uParam0->f_1658, __LIB_15__::func_243(&(uParam0->f_247)), __LIB_1__::func_45(&(uParam0->f_247)), __LIB_9__::func_818(&(uParam0->f_247))) };
 				__LIB_40__::func_77(uParam0[iParam4 /*94*/], &Var13);
@@ -6503,7 +6503,7 @@ int func_181(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4,
 							STREAMING::REQUEST_ANIM_DICT(&sVar0);
 							if (STREAMING::HAS_ANIM_DICT_LOADED(&sVar0) || __LIB_1__::func_366(iParam0))
 							{
-								__LIB_0__::func_794(&(iParam0->f_430));
+								__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 								__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 								__LIB_2__::func_420(1, 1);
 								iParam0->f_436 = 1;
@@ -6542,7 +6542,7 @@ int func_181(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4,
 						iParam0->f_419 += 666;
 						__LIB_1__::func_83(iParam0, sVar3, 75, 0);
 						__LIB_1__::func_82(iParam0, sVar3);
-						__LIB_0__::func_794(&(iParam0->f_430));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 						__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 						__LIB_2__::func_448(1, 0, 1);
 						GRAPHICS::ANIMPOSTFX_STOP("MP_Celeb_Preload_Fade");
@@ -6640,7 +6640,7 @@ int func_181(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4,
 						}
 						__LIB_1__::func_83(iParam0, sVar8, -1, 0);
 						__LIB_1__::func_82(iParam0, sVar8);
-						__LIB_0__::func_794(&(iParam0->f_430));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 						__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 						if (__LIB_0__::func_625())
 						{
@@ -6702,7 +6702,7 @@ int func_181(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4,
 							{
 								__LIB_2__::func_416(uParam1);
 							}
-							__LIB_0__::func_794(&(iParam0->f_430));
+							__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 							__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 							iParam0->f_436 = 4;
 						}
@@ -12969,7 +12969,7 @@ void func_763()//Position - 0x405F8
 	int iVar0;
 	struct<62> Var1;
 	int iVar2;
-	if (PLAYER::PLAYER_ID() != __LIB_0__::func_162())
+	if (PLAYER::PLAYER_ID() != __LIB_0__::getMinusOneOrNull())
 	{
 		if (__LIB_1__::func_832(PLAYER::PLAYER_ID()))
 		{
@@ -13240,7 +13240,7 @@ int func_777(int iParam0)//Position - 0x42698
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -13280,7 +13280,7 @@ int func_777(int iParam0)//Position - 0x42698
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -18863,7 +18863,7 @@ void func_1420(var uParam0, int* iParam1, var uParam2, var uParam3, var uParam4,
 					__LIB_1__::func_303(iParam1[iVar2 /*65*/], __LIB_9__::func_550(&Var0));
 					__LIB_15__::func_247(iParam1[iVar2 /*65*/], __LIB_9__::func_818(&Var0));
 					func_573(iParam1[iVar2 /*65*/], __LIB_1__::func_324(&Var0));
-					__LIB_0__::func_794(&(uParam2->f_247));
+					__LIB_0__::clearF_1Prop(&(uParam2->f_247));
 				}
 				else if (__LIB_7__::func_85(&Var0) == 1)
 				{
@@ -20041,7 +20041,7 @@ void func_1504(var uParam0, int iParam1, int iParam2)//Position - 0xA08B9
 	__LIB_40__::func_224(uParam0[iParam1 /*94*/], iParam1, 1, Var0, Var1);
 	__LIB_40__::func_224(uParam0[iParam2 /*94*/], iParam2, 4, -Var0, -Var1);
 	__LIB_40__::func_133(uParam0[iParam1 /*94*/], PLAYER::PLAYER_PED_ID());
-	__LIB_0__::func_794(&(uParam0->f_247));
+	__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 	__LIB_40__::func_147(uParam0);
 	__LIB_40__::func_146(uParam0);
 	__LIB_40__::func_145(uParam0);

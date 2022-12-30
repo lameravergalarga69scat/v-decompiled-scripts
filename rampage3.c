@@ -2075,7 +2075,7 @@ void func_586(bool bParam0)//Position - 0x3CEBB
 	Global_31969 = 1;
 	__LIB_14__::func_871(&Local_276, 0, 0, 0);
 	__LIB_38__::func_853();
-	__LIB_0__::func_183(74, 1);
+	__LIB_0__::incrementGlobal_58896ByIndex(74, 1);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 

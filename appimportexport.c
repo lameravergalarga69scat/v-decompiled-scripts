@@ -894,7 +894,7 @@ void __EntryFunction__()//Position - 0x0
 				if (__LIB_13__::func_165(PLAYER::PLAYER_ID()))
 				{
 					iLocal_576 = 2;
-					__LIB_0__::func_794(&uLocal_742);
+					__LIB_0__::clearF_1Prop(&uLocal_742);
 				}
 				else if (!__LIB_4__::func_799(PLAYER::PLAYER_ID()))
 				{
@@ -1319,7 +1319,7 @@ int func_78(bool bParam0, bool bParam1)//Position - 0x3020
 		while (iVar0 < 4)
 		{
 			iVar1 = Global_1835008[iVar0 /*103*/].f_100;
-			if (iVar1 != __LIB_0__::func_162())
+			if (iVar1 != __LIB_0__::getMinusOneOrNull())
 			{
 				if (((!NETWORK::NETWORK_IS_PLAYER_CONNECTED(iVar1) || !__LIB_0__::func_156(iVar1, 1, 1)) || !__LIB_13__::func_170(iVar1)) || __LIB_0__::func_890(iVar1))
 				{
@@ -1359,7 +1359,7 @@ int func_82()//Position - 0x31D4
 	iVar0 = 0;
 	while (iVar0 < 7)
 	{
-		if (Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0] != __LIB_0__::func_162())
+		if (Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0] != __LIB_0__::getMinusOneOrNull())
 		{
 			if ((__LIB_13__::func_170(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0]) && __LIB_0__::func_156(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0], 1, 1)) && !__LIB_0__::func_890(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0]))
 			{
@@ -2038,14 +2038,14 @@ void func_300(var uParam0)//Position - 0x15281
 	iVar0 = 0;
 	while (iVar0 < iVar2)
 	{
-		if ((((Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0] != __LIB_0__::func_162() && __LIB_0__::func_156(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0], 1, 1)) && !func_301(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0])) && __LIB_13__::func_170(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0])) && !__LIB_0__::func_890(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0]))
+		if ((((Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0] != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_156(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0], 1, 1)) && !func_301(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0])) && __LIB_13__::func_170(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0])) && !__LIB_0__::func_890(Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0]))
 		{
 			(*uParam0)[iVar1] = Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_11[iVar0];
 			iVar1++;
 		}
 		else
 		{
-			(*uParam0)[iVar1] = __LIB_0__::func_162();
+			(*uParam0)[iVar1] = __LIB_0__::getMinusOneOrNull();
 		}
 		iVar0++;
 	}
@@ -2586,7 +2586,7 @@ void func_327()//Position - 0x16120
 		{
 			MISC::CLEAR_BIT(&uLocal_552, 0);
 			iLocal_573 = 0;
-			__LIB_0__::func_794(&uLocal_744);
+			__LIB_0__::clearF_1Prop(&uLocal_744);
 			if (func_379())
 			{
 				MISC::SET_BIT(&uLocal_552, 1);
@@ -2752,7 +2752,7 @@ void func_358()//Position - 0x16F09
 		{
 			MISC::CLEAR_BIT(&uLocal_552, 2);
 			iLocal_573 = 0;
-			__LIB_0__::func_794(&uLocal_744);
+			__LIB_0__::clearF_1Prop(&uLocal_744);
 			if (func_378())
 			{
 				MISC::SET_BIT(&uLocal_552, 3);
@@ -2934,7 +2934,7 @@ void func_389()//Position - 0x177DA
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		iLocal_556[iVar0] = __LIB_0__::func_162();
+		iLocal_556[iVar0] = __LIB_0__::getMinusOneOrNull();
 		iVar0++;
 	}
 }

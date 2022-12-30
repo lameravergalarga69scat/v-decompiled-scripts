@@ -436,7 +436,7 @@ void func_11(bool bParam0)//Position - 0x7CD
 				}
 				else
 				{
-					__LIB_0__::func_794(&(Local_83.f_2.f_1[bParam0 /*66*/].f_61));
+					__LIB_0__::clearF_1Prop(&(Local_83.f_2.f_1[bParam0 /*66*/].f_61));
 					Local_83.f_2.f_1[bParam0 /*66*/].f_63 = func_16();
 					MISC::SET_BIT(&(Local_83.f_1), 14);
 				}

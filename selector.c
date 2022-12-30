@@ -2791,7 +2791,7 @@ void func_132()//Position - 0x60B5
 								{
 									MISC::SET_TIME_SCALE(1f);
 									PLAYER::DISPLAY_SYSTEM_SIGNIN_UI(true);
-									__LIB_0__::func_794(&Global_1577859);
+									__LIB_0__::clearF_1Prop(&Global_1577859);
 									iVar8 = 1;
 								}
 								iVar10 = __LIB_39__::func_306(1, 1);
@@ -2806,7 +2806,7 @@ void func_132()//Position - 0x60B5
 								{
 									MISC::SET_TIME_SCALE(1f);
 									PLAYER::DISPLAY_SYSTEM_SIGNIN_UI(true);
-									__LIB_0__::func_794(&Global_1577859);
+									__LIB_0__::clearF_1Prop(&Global_1577859);
 									iVar8 = 1;
 								}
 								iVar10 = __LIB_39__::func_306(1, 1);
@@ -2967,7 +2967,7 @@ void func_132()//Position - 0x60B5
 							}
 							else if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS() == 0)
 							{
-								__LIB_0__::func_794(&Global_2727877);
+								__LIB_0__::clearF_1Prop(&Global_2727877);
 							}
 							else if (NETWORK::NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING())
 							{
@@ -3050,7 +3050,7 @@ void func_132()//Position - 0x60B5
 						{
 							MISC::SET_TIME_SCALE(1f);
 							PLAYER::DISPLAY_SYSTEM_SIGNIN_UI(true);
-							__LIB_0__::func_794(&Global_1577859);
+							__LIB_0__::clearF_1Prop(&Global_1577859);
 							iVar8 = 1;
 						}
 						iVar10 = __LIB_39__::func_306(1, 1);
@@ -3065,7 +3065,7 @@ void func_132()//Position - 0x60B5
 						{
 							MISC::SET_TIME_SCALE(1f);
 							PLAYER::DISPLAY_SYSTEM_SIGNIN_UI(true);
-							__LIB_0__::func_794(&Global_1577859);
+							__LIB_0__::clearF_1Prop(&Global_1577859);
 							iVar8 = 1;
 						}
 						iVar10 = __LIB_39__::func_306(1, 1);
@@ -3123,7 +3123,7 @@ void func_132()//Position - 0x60B5
 						{
 							MISC::SET_TIME_SCALE(1f);
 							PLAYER::DISPLAY_SYSTEM_SIGNIN_UI(true);
-							__LIB_0__::func_794(&Global_1577859);
+							__LIB_0__::clearF_1Prop(&Global_1577859);
 							iVar8 = 1;
 						}
 						iVar10 = __LIB_39__::func_306(1, 0);
@@ -3197,7 +3197,7 @@ void func_132()//Position - 0x60B5
 					}
 					else if (NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS() == 0)
 					{
-						__LIB_0__::func_794(&Global_2727877);
+						__LIB_0__::clearF_1Prop(&Global_2727877);
 					}
 					else if (NETWORK::NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING())
 					{
@@ -3446,7 +3446,7 @@ void func_132()//Position - 0x60B5
 			__LIB_0__::func_429();
 			__LIB_0__::func_325();
 			__LIB_24__::func_489(8, 1, -1);
-			__LIB_0__::func_794(&uLocal_99);
+			__LIB_0__::clearF_1Prop(&uLocal_99);
 			if (HUD::BUSYSPINNER_IS_ON())
 			{
 				HUD::BUSYSPINNER_OFF();
@@ -8027,7 +8027,7 @@ int func_451(int iParam0)//Position - 0x6C8BC
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -8067,7 +8067,7 @@ int func_451(int iParam0)//Position - 0x6C8BC
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}

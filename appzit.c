@@ -203,18 +203,18 @@ void func_8()//Position - 0x3D7
 void func_11()//Position - 0x562
 {
 	int iVar0;
-	__LIB_0__::func_183(134, 1);
+	__LIB_0__::incrementGlobal_58896ByIndex(134, 1);
 	iVar0 = AUDIO::GET_PLAYER_RADIO_STATION_INDEX();
 	switch (__LIB_39__::func_471(iVar0))
 	{
 		case 1:
-			__LIB_0__::func_183(82, 1);
+			__LIB_0__::incrementGlobal_58896ByIndex(82, 1);
 			break;
 		case 2:
-			__LIB_0__::func_183(81, 1);
+			__LIB_0__::incrementGlobal_58896ByIndex(81, 1);
 			break;
 		default:
-			__LIB_0__::func_183(83, 1);
+			__LIB_0__::incrementGlobal_58896ByIndex(83, 1);
 			break;
 	}
 }

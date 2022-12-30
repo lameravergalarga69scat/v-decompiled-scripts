@@ -267,7 +267,7 @@ void func_35()//Position - 0xD31
 	{
 		iVar1 = 0;
 		bVar2 = PLAYER::INT_TO_PLAYERINDEX(bVar0);
-		if (bVar2 != __LIB_0__::func_162() && NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(bVar2))
+		if (bVar2 != __LIB_0__::getMinusOneOrNull() && NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(bVar2))
 		{
 			if (BitTest(Local_123[bVar2 /*2*/], 0))
 			{

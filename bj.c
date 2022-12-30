@@ -1386,14 +1386,14 @@ void __EntryFunction__()//Position - 0x0
 					TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 					__LIB_1__::func_31(&iVar19);
 					iVar7 = 6;
-					__LIB_0__::func_183(88, 1);
+					__LIB_0__::incrementGlobal_58896ByIndex(88, 1);
 				}
 				else if (func_465(func_466(bVar13)))
 				{
 					__LIB_14__::func_565(0, 0, 1);
 					ENTITY::FREEZE_ENTITY_POSITION(PLAYER::PLAYER_PED_ID(), false);
 					iVar7 = 7;
-					__LIB_0__::func_183(88, 1);
+					__LIB_0__::incrementGlobal_58896ByIndex(88, 1);
 				}
 				else
 				{
@@ -1401,7 +1401,7 @@ void __EntryFunction__()//Position - 0x0
 					TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
 					PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 177, true);
 					iVar7 = 6;
-					__LIB_0__::func_183(88, 1);
+					__LIB_0__::incrementGlobal_58896ByIndex(88, 1);
 				}
 				if (bVar13 == 5)
 				{

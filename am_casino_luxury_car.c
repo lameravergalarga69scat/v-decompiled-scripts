@@ -2316,7 +2316,7 @@ void func_303()//Position - 0x182FF
 	iVar0 = 0;
 	while (iVar0 < NETWORK::NETWORK_GET_MAX_NUM_PARTICIPANTS())
 	{
-		iLocal_86[iVar0] = __LIB_0__::func_162();
+		iLocal_86[iVar0] = __LIB_0__::getMinusOneOrNull();
 		iVar0++;
 	}
 	iVar0 = 0;

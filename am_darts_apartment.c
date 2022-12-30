@@ -4784,7 +4784,7 @@ int func_66(int* iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 							STREAMING::REQUEST_ANIM_DICT(&sVar0);
 							if (STREAMING::HAS_ANIM_DICT_LOADED(&sVar0) || __LIB_1__::func_366(iParam0))
 							{
-								__LIB_0__::func_794(&(iParam0->f_430));
+								__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 								__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 								__LIB_2__::func_420(1, 1);
 								iParam0->f_436 = 1;
@@ -4823,7 +4823,7 @@ int func_66(int* iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 						iParam0->f_419 += 666;
 						__LIB_1__::func_83(iParam0, sVar3, 75, 0);
 						__LIB_1__::func_82(iParam0, sVar3);
-						__LIB_0__::func_794(&(iParam0->f_430));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 						__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 						__LIB_2__::func_448(1, 0, 1);
 						GRAPHICS::ANIMPOSTFX_STOP("MP_Celeb_Preload_Fade");
@@ -4921,7 +4921,7 @@ int func_66(int* iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 						}
 						__LIB_1__::func_83(iParam0, sVar8, -1, 0);
 						__LIB_1__::func_82(iParam0, sVar8);
-						__LIB_0__::func_794(&(iParam0->f_430));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 						__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 						if (__LIB_0__::func_625())
 						{
@@ -4983,7 +4983,7 @@ int func_66(int* iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 							{
 								__LIB_2__::func_416(iParam1);
 							}
-							__LIB_0__::func_794(&(iParam0->f_430));
+							__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 							__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 							iParam0->f_436 = 4;
 						}

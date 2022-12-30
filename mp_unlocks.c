@@ -775,7 +775,7 @@ void func_53()//Position - 0x1CB1
 						GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					}
 					iLocal_137 = 250;
-					__LIB_0__::func_794(&uLocal_135);
+					__LIB_0__::clearF_1Prop(&uLocal_135);
 				}
 			}
 		}
@@ -793,7 +793,7 @@ void func_53()//Position - 0x1CB1
 						GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					}
 					iLocal_137 = 250;
-					__LIB_0__::func_794(&uLocal_135);
+					__LIB_0__::clearF_1Prop(&uLocal_135);
 				}
 			}
 		}

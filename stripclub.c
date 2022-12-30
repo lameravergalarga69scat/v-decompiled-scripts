@@ -950,7 +950,7 @@ void __EntryFunction__()//Position - 0x0
 					case 0:
 						if (func_744(0))
 						{
-							__LIB_0__::func_183(120, 1);
+							__LIB_0__::incrementGlobal_58896ByIndex(120, 1);
 							iLocal_83 = 1;
 						}
 						break;
@@ -7180,7 +7180,7 @@ int func_561(int iParam0)//Position - 0x53E77
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -7220,7 +7220,7 @@ int func_561(int iParam0)//Position - 0x53E77
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -13665,7 +13665,7 @@ void func_1002(bool bParam0)//Position - 0x7A967
 			PLAYER::SET_ALL_RANDOM_PEDS_FLEE(PLAYER::PLAYER_ID(), true);
 		}
 	}
-	__LIB_0__::func_183(122, 1);
+	__LIB_0__::incrementGlobal_58896ByIndex(122, 1);
 	iLocal_83 = 5;
 }
 

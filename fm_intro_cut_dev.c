@@ -579,7 +579,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 						{
 							STREAMING::CLEAR_FOCUS();
 							STREAMING::NEW_LOAD_SCENE_START(754.2219f, 1226.8309f, 356.5081f, __LIB_3__::func_80(-14.367f, 0f, 157.3524f), 100f, 0);
-							__LIB_0__::func_794(&(iParam0->f_17));
+							__LIB_0__::clearF_1Prop(&(iParam0->f_17));
 							__LIB_0__::func_795(&(iParam0->f_17), 0, 0);
 							MISC::SET_BIT(iParam0, 4);
 						}
@@ -2240,7 +2240,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 							STREAMING::END_SRL();
 							MISC::CLEAR_BIT(iParam0, 11);
 						}
-						__LIB_0__::func_794(&(iParam0->f_17));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_17));
 						__LIB_0__::func_795(&(iParam0->f_17), 0, 0);
 						MISC::SET_BIT(iParam0, 17);
 					}
@@ -2311,7 +2311,7 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 							STREAMING::END_SRL();
 							MISC::CLEAR_BIT(iParam0, 11);
 						}
-						__LIB_0__::func_794(&(iParam0->f_17));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_17));
 						__LIB_0__::func_795(&(iParam0->f_17), 0, 0);
 						MISC::SET_BIT(iParam0, 17);
 					}

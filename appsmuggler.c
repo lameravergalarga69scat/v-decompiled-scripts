@@ -1020,7 +1020,7 @@ void func_272()//Position - 0xA887
 		}
 		else if (__LIB_0__::func_937(&uLocal_130, 750, 0))
 		{
-			__LIB_0__::func_794(&uLocal_130);
+			__LIB_0__::clearF_1Prop(&uLocal_130);
 			func_273();
 		}
 	}
@@ -1394,7 +1394,7 @@ void func_315(int iParam0, int iParam1)//Position - 0xB626
 		while (iVar2 < iVar3)
 		{
 			iVar5 = Global_1892703[iParam1 /*599*/].f_10.f_11[iVar2];
-			if (iVar5 != __LIB_0__::func_162())
+			if (iVar5 != __LIB_0__::getMinusOneOrNull())
 			{
 				StringCopy(&(Var4[iVar2 /*16*/]), PLAYER::GET_PLAYER_NAME(iVar5), 64);
 			}
@@ -1858,7 +1858,7 @@ void func_348()//Position - 0xC49E
 		{
 			MISC::CLEAR_BIT(&uLocal_109, 7);
 			iLocal_112 = 0;
-			__LIB_0__::func_794(&uLocal_128);
+			__LIB_0__::clearF_1Prop(&uLocal_128);
 			if (func_349())
 			{
 				MISC::SET_BIT(&uLocal_109, 8);
@@ -2089,7 +2089,7 @@ void func_377()//Position - 0xD25D
 		{
 			MISC::CLEAR_BIT(&uLocal_109, 4);
 			iLocal_112 = 0;
-			__LIB_0__::func_794(&uLocal_124);
+			__LIB_0__::clearF_1Prop(&uLocal_124);
 			if (func_378())
 			{
 				MISC::SET_BIT(&uLocal_109, 5);

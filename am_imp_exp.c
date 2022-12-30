@@ -681,7 +681,7 @@ void func_2()//Position - 0x6B0
 						}
 						else if (__LIB_0__::func_937(&uLocal_305, 10000, 0))
 						{
-							__LIB_0__::func_794(&uLocal_305);
+							__LIB_0__::clearF_1Prop(&uLocal_305);
 							if (__LIB_14__::func_793(Local_330.f_27))
 							{
 								MISC::SET_BIT(&(Local_330.f_23), 0);
@@ -750,7 +750,7 @@ void func_2()//Position - 0x6B0
 								MISC::SET_BIT(&uLocal_338, 23);
 								STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_330.f_67);
 								Local_330.f_26 = 1;
-								__LIB_0__::func_794(&(Local_330.f_30));
+								__LIB_0__::clearF_1Prop(&(Local_330.f_30));
 								__LIB_0__::func_795(&(Local_330.f_30), 0, 0);
 								VEHICLE::SET_VEHICLE_DOORS_LOCKED(NETWORK::NET_TO_VEH(Local_330.f_22), 7);
 								VEHICLE::SET_VEHICLE_NEEDS_TO_BE_HOTWIRED(NETWORK::NET_TO_VEH(Local_330.f_22), true);
@@ -805,7 +805,7 @@ void func_2()//Position - 0x6B0
 				if (__LIB_0__::func_937(&(Local_330.f_30), 360000, 0))
 				{
 					MISC::SET_BIT(&(Local_330.f_23), 4);
-					__LIB_0__::func_794(&(Local_330.f_30));
+					__LIB_0__::clearF_1Prop(&(Local_330.f_30));
 					__LIB_0__::func_795(&(Local_330.f_30), 0, 0);
 				}
 			}
@@ -829,7 +829,7 @@ void func_2()//Position - 0x6B0
 				}
 				else if (__LIB_0__::func_864(&(Local_330.f_30)))
 				{
-					__LIB_0__::func_794(&(Local_330.f_30));
+					__LIB_0__::clearF_1Prop(&(Local_330.f_30));
 				}
 			}
 			if (BitTest(Local_330.f_23, 6))
@@ -1330,7 +1330,7 @@ void func_73()//Position - 0x29F5
 				if (iVar0 > -1)
 				{
 					Global_2815059.f_4451 = func_34(iVar0);
-					__LIB_0__::func_794(&uLocal_309);
+					__LIB_0__::clearF_1Prop(&uLocal_309);
 					__LIB_0__::func_795(&uLocal_309, 0, 0);
 					if (BitTest(Global_2815059.f_4452, 0))
 					{
@@ -1339,7 +1339,7 @@ void func_73()//Position - 0x29F5
 				}
 				else
 				{
-					__LIB_0__::func_794(&uLocal_311);
+					__LIB_0__::clearF_1Prop(&uLocal_311);
 					__LIB_0__::func_795(&uLocal_311, 0, 0);
 				}
 			}
@@ -1352,7 +1352,7 @@ void func_73()//Position - 0x29F5
 				{
 					Global_2815059.f_4451 = 0;
 				}
-				__LIB_0__::func_794(&uLocal_309);
+				__LIB_0__::clearF_1Prop(&uLocal_309);
 				__LIB_0__::func_795(&uLocal_309, 0, 0);
 			}
 		}
@@ -1629,7 +1629,7 @@ void func_76()//Position - 0x2C0E
 								if (iVar0 != iLocal_326)
 								{
 									iLocal_97 = 0;
-									__LIB_0__::func_794(&uLocal_313);
+									__LIB_0__::clearF_1Prop(&uLocal_313);
 								}
 							}
 						}
@@ -2127,7 +2127,7 @@ int func_166(int iParam0, int iParam1, bool bParam2, var uParam3, float fParam4,
 			}
 		}
 	}
-	__LIB_0__::func_794(uParam3);
+	__LIB_0__::clearF_1Prop(uParam3);
 	return 0;
 }
 
@@ -2560,7 +2560,7 @@ void func_175()//Position - 0x75C7
 			}
 			else if (__LIB_0__::func_937(&uLocal_303, 5000, 0))
 			{
-				__LIB_0__::func_794(&uLocal_303);
+				__LIB_0__::clearF_1Prop(&uLocal_303);
 				Global_2815059.f_1721 = 0;
 			}
 		}
@@ -2640,7 +2640,7 @@ void func_176()//Position - 0x7CB5
 							}
 						}
 					}
-					__LIB_0__::func_794(&uLocal_344);
+					__LIB_0__::clearF_1Prop(&uLocal_344);
 				}
 				if (bVar4)
 				{
@@ -3127,7 +3127,7 @@ void func_268()//Position - 0xC1DD
 				if (func_269(18, "CELL_IMPT" /* GXT: Good work on that last delivery my friend, when I have more orders I will let you know. */, 0, 0))
 				{
 					iLocal_107 = 0;
-					__LIB_0__::func_794(&uLocal_115);
+					__LIB_0__::clearF_1Prop(&uLocal_115);
 				}
 			}
 		}
@@ -3350,7 +3350,7 @@ void func_385()//Position - 0x10259
 	}
 	else if (__LIB_0__::func_937(&uLocal_307, 250, 0))
 	{
-		__LIB_0__::func_794(&uLocal_307);
+		__LIB_0__::clearF_1Prop(&uLocal_307);
 		if (func_400(1, 0))
 		{
 			if (!BitTest(uLocal_315, 5) && !func_399())
@@ -3765,7 +3765,7 @@ void func_401()//Position - 0x111BE
 							iLocal_112++;
 						}
 					}
-					__LIB_0__::func_794(&uLocal_113);
+					__LIB_0__::clearF_1Prop(&uLocal_113);
 					__LIB_0__::func_795(&uLocal_113, 0, 0);
 				}
 			}
@@ -4020,7 +4020,7 @@ void func_405()//Position - 0x114E0
 															while (iVar4 < 4)
 															{
 																iVar1 = (iVar4 - 1);
-																iLocal_323[iVar4] = __LIB_0__::func_162();
+																iLocal_323[iVar4] = __LIB_0__::getMinusOneOrNull();
 																if (!VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_324, iVar1, false))
 																{
 																	if (ENTITY::DOES_ENTITY_EXIST(VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_324, iVar1, false)))

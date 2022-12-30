@@ -395,7 +395,7 @@ void func_2()//Position - 0x134
 			{
 				if (!__LIB_0__::func_629())
 				{
-					__LIB_0__::func_794(&uLocal_294);
+					__LIB_0__::clearF_1Prop(&uLocal_294);
 					HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("SC_PLAY_REM" /* GXT: Enter a Rockstar Tournament for a chance to win numerous in-game prizes! Launch the Qualification Playlist from the Online Menu for a chance to compete. */);
 					HUD::END_TEXT_COMMAND_THEFEED_POST_TICKER(false, true);
 				}
@@ -1252,7 +1252,7 @@ void func_25(var uParam0)//Position - 0x17B1
 	{
 		if (uParam0->f_168)
 		{
-			__LIB_0__::func_794(&(uParam0->f_10));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_10));
 			uParam0->f_168 = 0;
 		}
 	}
@@ -4208,7 +4208,7 @@ void func_201(int iParam0)//Position - 0x7AB8
 				if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
 					STATS::STAT_SET_BOOL(joaat("CAR_MOD_APP_USED"), true, true);
-					__LIB_0__::func_183(135, 1);
+					__LIB_0__::incrementGlobal_58896ByIndex(135, 1);
 					Global_113386.f_20118.f_262 = 1;
 				}
 				else
@@ -4930,7 +4930,7 @@ int func_301(int iParam0, int iParam1, char* sParam2, bool bParam3, var uParam4,
 	int iVar10;
 	int iVar11;
 	bool bVar12;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	if (iParam0 == 145)
 	{
@@ -5055,7 +5055,7 @@ int func_325(int iParam0, int iParam1, char* sParam2, bool bParam3, var uParam4,
 	int iVar10;
 	int iVar11;
 	bool bVar12;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 0;
 	if (iParam0 == 145)
 	{

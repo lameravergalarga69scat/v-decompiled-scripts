@@ -5138,7 +5138,7 @@ int func_507(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, in
 				}
 				uParam0->f_3 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", false);
 				CAM::STOP_CAM_POINTING(uParam0->f_3);
-				__LIB_0__::func_794(&(uParam1->f_247));
+				__LIB_0__::clearF_1Prop(&(uParam1->f_247));
 				func_612(uParam0, uParam1, uParam2, 1, iParam4, iParam4, iParam5, 0);
 				__LIB_40__::func_161(&(uParam1->f_247), 8);
 				func_611(uParam1);
@@ -7672,7 +7672,7 @@ void func_780(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, v
 			}
 			break;
 		case 8:
-			__LIB_0__::func_794(&(uParam0->f_247));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 			if (__LIB_0__::func_703(*uParam2, 1))
 			{
 				func_503(uParam0, iParam3, iParam4, 0, 0);
@@ -7951,7 +7951,7 @@ void func_780(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, v
 			__LIB_40__::func_274(uParam0[__LIB_0__::func_864(uParam1) /*94*/], &(uParam0->f_247));
 			if (func_519(uParam0[(1 - __LIB_0__::func_864(uParam1)) /*94*/], uParam0, &(uParam1->f_7), __LIB_0__::func_864(uParam1), (1 - __LIB_0__::func_864(uParam1)), __LIB_0__::func_404(uParam1), __LIB_1__::func_286(uParam1), __LIB_40__::func_115(uParam1)))
 			{
-				__LIB_0__::func_794(&(uParam0->f_247));
+				__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 				__LIB_0__::func_604(uParam1, (1 - __LIB_0__::func_864(uParam1)));
 				if ((uParam0[__LIB_0__::func_864(uParam1) /*94*/])->f_31 == 4)
 				{
@@ -9753,7 +9753,7 @@ void func_951(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, i
 		Var0 = { -uParam0->f_1658 };
 		Var1 = { -uParam0->f_1661 };
 	}
-	__LIB_0__::func_794(&(uParam0->f_247));
+	__LIB_0__::clearF_1Prop(&(uParam0->f_247));
 	__LIB_40__::func_147(uParam0);
 	__LIB_40__::func_146(uParam0);
 	__LIB_40__::func_145(uParam0);
@@ -14469,7 +14469,7 @@ int func_1168(int iParam0)//Position - 0x99907
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -14509,7 +14509,7 @@ int func_1168(int iParam0)//Position - 0x99907
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}

@@ -233,7 +233,7 @@ void func_6(int iParam0)//Position - 0x25E
 
 void func_26(int iParam0, var uParam1)//Position - 0xCAA
 {
-	if (Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_26 == __LIB_0__::func_162())
+	if (Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_26 == __LIB_0__::getMinusOneOrNull())
 	{
 		if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
 		{
@@ -415,7 +415,7 @@ void func_49()//Position - 0x12A4
 			{
 				if (iVar9 < 3)
 				{
-					if (Global_1892703[iVar4 /*599*/].f_10.f_11[iVar8] != __LIB_0__::func_162())
+					if (Global_1892703[iVar4 /*599*/].f_10.f_11[iVar8] != __LIB_0__::getMinusOneOrNull())
 					{
 						if (__LIB_0__::func_156(Global_1892703[iVar4 /*599*/].f_10.f_11[iVar8], 0, 1))
 						{
@@ -559,7 +559,7 @@ void func_85(bool bParam0)//Position - 0x1EEE
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	iLocal_103 = __LIB_0__::func_162();
+	iLocal_103 = __LIB_0__::getMinusOneOrNull();
 	if (!Global_20266.f_1 == 7)
 	{
 		Global_20266.f_1 = 7;
@@ -667,7 +667,7 @@ int func_88(int iParam0, int iParam1)//Position - 0x20EB
 	struct<16> Var0;
 	int iVar1;
 	int iVar2;
-	if (Global_1888478.f_7[iParam0 /*8*/].f_2 == __LIB_0__::func_162() || !__LIB_0__::func_156(Global_1888478.f_7[iParam0 /*8*/].f_2, 0, 1))
+	if (Global_1888478.f_7[iParam0 /*8*/].f_2 == __LIB_0__::getMinusOneOrNull() || !__LIB_0__::func_156(Global_1888478.f_7[iParam0 /*8*/].f_2, 0, 1))
 	{
 		return 0;
 	}
@@ -698,7 +698,7 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 	int iVar2;
 	int iVar3;
 	int iVar4;
-	if (Global_1888478.f_7[iParam0 /*8*/].f_2 == __LIB_0__::func_162() || !__LIB_0__::func_156(Global_1888478.f_7[iParam0 /*8*/].f_2, 0, 1))
+	if (Global_1888478.f_7[iParam0 /*8*/].f_2 == __LIB_0__::getMinusOneOrNull() || !__LIB_0__::func_156(Global_1888478.f_7[iParam0 /*8*/].f_2, 0, 1))
 	{
 		return 0;
 	}

@@ -1130,7 +1130,7 @@ void func_17()//Position - 0x390
 		case 4:
 			if (__LIB_0__::func_937(&(Local_101.f_21), 8000, 0))
 			{
-				__LIB_0__::func_794(&(Local_101.f_21));
+				__LIB_0__::clearF_1Prop(&(Local_101.f_21));
 				func_21(5);
 			}
 			break;
@@ -1156,7 +1156,7 @@ int func_22()//Position - 0x502
 		while (iVar0 < 7)
 		{
 			iVar1 = __LIB_1__::func_519(__LIB_0__::func_797(), iVar0);
-			if (((iVar1 != __LIB_0__::func_162() && __LIB_0__::func_156(iVar1, 0, 1)) && func_29(iVar1)) && !NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT_ON_SCRIPT(iVar1, __LIB_5__::func_23(203), __LIB_1__::func_470()))
+			if (((iVar1 != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_156(iVar1, 0, 1)) && func_29(iVar1)) && !NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT_ON_SCRIPT(iVar1, __LIB_5__::func_23(203), __LIB_1__::func_470()))
 			{
 				return 0;
 			}
@@ -5565,7 +5565,7 @@ void func_636()//Position - 0x419EA
 	iVar1 = 0;
 	while (iVar1 < 8)
 	{
-		Local_105[iVar1 /*3*/] = __LIB_0__::func_162();
+		Local_105[iVar1 /*3*/] = __LIB_0__::getMinusOneOrNull();
 		Local_105[iVar1 /*3*/].f_1 = -1;
 		Local_105[iVar1 /*3*/].f_2 = 0;
 		MISC::CLEAR_BIT(&uLocal_109, iVar1);
@@ -5575,7 +5575,7 @@ void func_636()//Position - 0x419EA
 	iVar0 = 0;
 	while (iVar0 < NETWORK::NETWORK_GET_MAX_NUM_PARTICIPANTS())
 	{
-		Local_104[iVar0 /*4*/] = __LIB_0__::func_162();
+		Local_104[iVar0 /*4*/] = __LIB_0__::getMinusOneOrNull();
 		Local_104[iVar0 /*4*/].f_1 = -1;
 		Local_104[iVar0 /*4*/].f_2 = 0;
 		Local_104[iVar0 /*4*/].f_3 = 0;

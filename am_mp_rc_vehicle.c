@@ -3937,7 +3937,7 @@ int func_220(int iParam0)//Position - 0x2F313
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -3977,7 +3977,7 @@ int func_220(int iParam0)//Position - 0x2F313
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -6379,7 +6379,7 @@ int func_646(var uParam0)//Position - 0x78758
 				iVar3 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::INT_TO_PARTICIPANTINDEX(iVar2));
 				*uParam0 = iVar3;
 			}
-			if (*uParam0 != __LIB_0__::func_162() && NETWORK::NETWORK_IS_PLAYER_ACTIVE(*uParam0))
+			if (*uParam0 != __LIB_0__::getMinusOneOrNull() && NETWORK::NETWORK_IS_PLAYER_ACTIVE(*uParam0))
 			{
 				return 1;
 			}
@@ -7658,7 +7658,7 @@ int func_703(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, v
 				}
 				if (Global_1836579)
 				{
-					if (Global_1836068.f_14 != __LIB_0__::func_162())
+					if (Global_1836068.f_14 != __LIB_0__::getMinusOneOrNull())
 					{
 						if (__LIB_0__::func_156(Global_1836068.f_14, 0, 1))
 						{
@@ -8569,7 +8569,7 @@ int func_703(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, v
 							if (Global_2715699.f_6602)
 							{
 								iVar47 = NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(&(Global_2715699.f_6603));
-								if (iVar47 != __LIB_0__::func_162())
+								if (iVar47 != __LIB_0__::getMinusOneOrNull())
 								{
 									iVar46 = __LIB_1__::func_635(__LIB_1__::func_636(iVar47));
 								}
@@ -8643,7 +8643,7 @@ int func_703(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, v
 				if (__LIB_0__::func_796(PLAYER::PLAYER_ID()))
 				{
 					iVar37 = __LIB_10__::func_716(PLAYER::PLAYER_ID(), 1);
-					if (!iVar37 == __LIB_0__::func_162())
+					if (!iVar37 == __LIB_0__::getMinusOneOrNull())
 					{
 						Global_2667225.f_555 = { func_860(iVar37) };
 					}
@@ -8678,7 +8678,7 @@ int func_703(var uParam0, int iParam1, bool bParam2, int iParam3, int iParam4, v
 				if (__LIB_0__::func_796(PLAYER::PLAYER_ID()))
 				{
 					iVar37 = __LIB_10__::func_716(PLAYER::PLAYER_ID(), 1);
-					if (!iVar37 == __LIB_0__::func_162())
+					if (!iVar37 == __LIB_0__::getMinusOneOrNull())
 					{
 						Global_2667225.f_555 = { func_860(iVar37) };
 					}
@@ -11934,7 +11934,7 @@ int func_961(int iParam0)//Position - 0x8FDC5
 	else
 	{
 		iVar3 = __LIB_10__::func_716(iParam0, 1);
-		if (!iVar3 == __LIB_0__::func_162())
+		if (!iVar3 == __LIB_0__::getMinusOneOrNull())
 		{
 			Var4 = { func_860(iVar3) };
 			Var0.f_2 = 0f;
@@ -12898,7 +12898,7 @@ void func_1092()//Position - 0x93638
 		{
 			MISC::SET_BIT(&Local_96, 2);
 		}
-		__LIB_0__::func_794(&(Local_96.f_41));
+		__LIB_0__::clearF_1Prop(&(Local_96.f_41));
 		if (!__LIB_0__::func_937(&(Local_96.f_43), iVar0, 0))
 		{
 			iVar1 = (100 * MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), Local_96.f_43)));
@@ -12924,7 +12924,7 @@ void func_1092()//Position - 0x93638
 		Local_96.f_2 = (100 - Local_96.f_1);
 		Local_96.f_4 = (iVar0 - MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), Local_96.f_43)));
 		Local_96.f_3 = Local_96.f_1;
-		__LIB_0__::func_794(&(Local_96.f_41));
+		__LIB_0__::clearF_1Prop(&(Local_96.f_41));
 		if (Local_96.f_5 != -1)
 		{
 			AUDIO::STOP_SOUND(Local_96.f_5);
@@ -12961,7 +12961,7 @@ void func_1092()//Position - 0x93638
 	}
 	else
 	{
-		__LIB_0__::func_794(&(Local_96.f_43));
+		__LIB_0__::clearF_1Prop(&(Local_96.f_43));
 		MISC::CLEAR_BIT(&Local_96, 13);
 		MISC::CLEAR_BIT(&Local_96, 12);
 	}
@@ -12997,7 +12997,7 @@ void func_1099()//Position - 0x939E9
 					__LIB_4__::func_563(0);
 				}
 				ENTITY::SET_ENTITY_INVINCIBLE(Global_1965535, false);
-				__LIB_0__::func_794(&(Local_96.f_33));
+				__LIB_0__::clearF_1Prop(&(Local_96.f_33));
 			}
 		}
 	}
@@ -13040,7 +13040,7 @@ void func_1107()//Position - 0x93C98
 		}
 		NETWORK::NETWORK_FADE_IN_ENTITY(PLAYER::PLAYER_PED_ID(), true, 1);
 		func_1130(6);
-		__LIB_0__::func_794(&(Local_96.f_35));
+		__LIB_0__::clearF_1Prop(&(Local_96.f_35));
 	}
 }
 
@@ -13107,7 +13107,7 @@ void func_1109()//Position - 0x93DA2
 	__LIB_0__::func_795(&(Local_96.f_33), 0, 0);
 	MISC::CLEAR_BIT(&(uLocal_94[PLAYER::PLAYER_ID()]), 0);
 	func_1111();
-	__LIB_0__::func_794(&(Local_96.f_35));
+	__LIB_0__::clearF_1Prop(&(Local_96.f_35));
 	OBJECT::SET_LOCAL_PLAYER_CAN_COLLECT_PORTABLE_PICKUPS(false);
 	HUD::SET_ABILITY_BAR_VISIBILITY(true);
 	__LIB_1__::func_951();
@@ -13624,7 +13624,7 @@ void func_1133()//Position - 0x948FC
 		}
 		NETWORK::NETWORK_FADE_IN_ENTITY(PLAYER::PLAYER_PED_ID(), true, 1);
 		func_1130(6);
-		__LIB_0__::func_794(&(Local_96.f_35));
+		__LIB_0__::clearF_1Prop(&(Local_96.f_35));
 	}
 }
 
@@ -13974,7 +13974,7 @@ int func_1155()//Position - 0x959B7
 	{
 		return 1;
 	}
-	if (PLAYER::PLAYER_ID() != __LIB_0__::func_162())
+	if (PLAYER::PLAYER_ID() != __LIB_0__::getMinusOneOrNull())
 	{
 		if (__LIB_0__::func_457(PLAYER::PLAYER_ID()) && !__LIB_1__::func_11())
 		{
@@ -14048,10 +14048,10 @@ void func_1164(bool bParam0)//Position - 0x95B1E
 			return;
 		}
 	}
-	__LIB_0__::func_794(&(Local_96.f_31));
-	__LIB_0__::func_794(&(Local_96.f_35));
-	__LIB_0__::func_794(&(Local_96.f_37));
-	__LIB_0__::func_794(&(Local_96.f_39));
+	__LIB_0__::clearF_1Prop(&(Local_96.f_31));
+	__LIB_0__::clearF_1Prop(&(Local_96.f_35));
+	__LIB_0__::clearF_1Prop(&(Local_96.f_37));
+	__LIB_0__::clearF_1Prop(&(Local_96.f_39));
 	if (!AUDIO::HAS_SOUND_FINISHED(Local_96.f_6))
 	{
 		AUDIO::STOP_SOUND(Local_96.f_6);
@@ -14107,7 +14107,7 @@ void func_1164(bool bParam0)//Position - 0x95B1E
 		if (__LIB_0__::func_864(&(Local_96.f_33)))
 		{
 			__LIB_3__::func_130();
-			__LIB_0__::func_794(&(Local_96.f_33));
+			__LIB_0__::clearF_1Prop(&(Local_96.f_33));
 		}
 		func_992(0);
 		if (!NETWORK::NETWORK_IS_ACTIVITY_SESSION() && !__LIB_29__::func_128())

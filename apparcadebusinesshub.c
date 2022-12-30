@@ -663,7 +663,7 @@ float func_42(int iParam0, int iParam1)//Position - 0xD6E
 	int iVar0;
 	int iVar1;
 	float fVar2;
-	if (iParam1 == __LIB_0__::func_162())
+	if (iParam1 == __LIB_0__::getMinusOneOrNull())
 	{
 		return 0f;
 	}
@@ -1640,7 +1640,7 @@ void func_137()//Position - 0x3527
 		{
 			MISC::CLEAR_BIT(&uLocal_109, 11);
 			iLocal_110 = 0;
-			__LIB_0__::func_794(&uLocal_123);
+			__LIB_0__::clearF_1Prop(&uLocal_123);
 			if (func_144())
 			{
 				MISC::SET_BIT(&uLocal_109, 12);

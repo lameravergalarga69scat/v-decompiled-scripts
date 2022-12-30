@@ -1075,7 +1075,7 @@ void func_41()//Position - 0x14C3
 				MISC::CLEAR_BIT(&Local_83, 17);
 				MISC::CLEAR_BIT(&Local_83, 15);
 				MISC::CLEAR_BIT(&Local_83, 12);
-				__LIB_0__::func_794(&(Local_83.f_21));
+				__LIB_0__::clearF_1Prop(&(Local_83.f_21));
 				__LIB_0__::func_795(&(Local_83.f_21), 0, 0);
 			}
 			if (!BitTest(Local_83.f_0, 11))
@@ -1426,7 +1426,7 @@ void func_63()//Position - 0x20E8
 				}
 				__LIB_1__::func_926(5, iVar8);
 			}
-			else if (iVar1 != __LIB_0__::func_162())
+			else if (iVar1 != __LIB_0__::getMinusOneOrNull())
 			{
 				if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar1))
 				{
@@ -1682,7 +1682,7 @@ void func_362()//Position - 0xB2DB
 		{
 			if ((__LIB_1__::func_29(PLAYER::PLAYER_ID(), 1, 0) || func_48(PLAYER::PLAYER_ID())) || __LIB_2__::func_907() > 0)
 			{
-				__LIB_0__::func_794(&uLocal_92);
+				__LIB_0__::clearF_1Prop(&uLocal_92);
 				MISC::CLEAR_BIT(&(Local_88[iVar0 /*3*/]), 0);
 			}
 			else if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))

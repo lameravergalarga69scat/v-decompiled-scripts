@@ -947,7 +947,7 @@ void func_3()//Position - 0x1CA
 							}
 							MISC::CLEAR_BIT(&(Global_2815059.f_1777), 1);
 							MISC::SET_BIT(&uLocal_530, 5);
-							__LIB_0__::func_794(&(Local_110.f_10));
+							__LIB_0__::clearF_1Prop(&(Local_110.f_10));
 						}
 					}
 				}
@@ -960,7 +960,7 @@ void func_3()//Position - 0x1CA
 			if (BitTest(uLocal_530, 2))
 			{
 				MISC::CLEAR_BIT(&uLocal_530, 2);
-				__LIB_0__::func_794(&uLocal_520);
+				__LIB_0__::clearF_1Prop(&uLocal_520);
 				__LIB_0__::func_795(&uLocal_520, 0, 0);
 			}
 			if (!BitTest(Local_110.f_0, 5))
@@ -1041,7 +1041,7 @@ void func_15()//Position - 0x67B
 		{
 			if (BitTest(Local_524[iVar0 /*3*/], 2))
 			{
-				__LIB_0__::func_794(&uLocal_525);
+				__LIB_0__::clearF_1Prop(&uLocal_525);
 				MISC::CLEAR_BIT(&(Local_524[iVar0 /*3*/]), 2);
 			}
 			if (BitTest(Global_2815059.f_1792, 24))
@@ -1052,7 +1052,7 @@ void func_15()//Position - 0x67B
 		if (!__LIB_0__::func_864(&uLocal_527) || __LIB_0__::func_937(&uLocal_527, 600000, 0))
 		{
 			func_349();
-			__LIB_0__::func_794(&uLocal_527);
+			__LIB_0__::clearF_1Prop(&uLocal_527);
 			__LIB_0__::func_795(&uLocal_527, 0, 0);
 		}
 		if (!BitTest(Local_524[iVar0 /*3*/], 3))
@@ -1094,7 +1094,7 @@ void func_15()//Position - 0x67B
 			}
 			__LIB_1__::func_392(97, 1);
 			iLocal_532 = 0;
-			__LIB_0__::func_794(&uLocal_534);
+			__LIB_0__::clearF_1Prop(&uLocal_534);
 			MISC::CLEAR_BIT(&(Global_2815059.f_1777), 2);
 		}
 	}
@@ -1129,7 +1129,7 @@ void func_15()//Position - 0x67B
 			}
 			__LIB_1__::func_392(99, 1);
 			iLocal_536 = 0;
-			__LIB_0__::func_794(&uLocal_538);
+			__LIB_0__::clearF_1Prop(&uLocal_538);
 			MISC::CLEAR_BIT(&(Global_2815059.f_1777), 3);
 		}
 	}
@@ -1164,7 +1164,7 @@ void func_15()//Position - 0x67B
 			}
 			__LIB_1__::func_392(88, 1);
 			iLocal_553 = 0;
-			__LIB_0__::func_794(&uLocal_522);
+			__LIB_0__::clearF_1Prop(&uLocal_522);
 			MISC::CLEAR_BIT(&(Global_2815059.f_1777), 0);
 		}
 	}
@@ -1198,7 +1198,7 @@ void func_15()//Position - 0x67B
 				}
 			}
 			iLocal_548 = 0;
-			__LIB_0__::func_794(&uLocal_550);
+			__LIB_0__::clearF_1Prop(&uLocal_550);
 			MISC::CLEAR_BIT(&(Global_2815059.f_1777), 6);
 		}
 	}
@@ -1229,7 +1229,7 @@ void func_15()//Position - 0x67B
 			}
 			__LIB_1__::func_392(100, 1);
 			iLocal_540 = 0;
-			__LIB_0__::func_794(&uLocal_542);
+			__LIB_0__::clearF_1Prop(&uLocal_542);
 			MISC::CLEAR_BIT(&(Global_2815059.f_1777), 4);
 		}
 	}
@@ -1264,7 +1264,7 @@ void func_15()//Position - 0x67B
 			}
 			__LIB_1__::func_392(106, 1);
 			iLocal_544 = 0;
-			__LIB_0__::func_794(&uLocal_546);
+			__LIB_0__::clearF_1Prop(&uLocal_546);
 			MISC::CLEAR_BIT(&(Global_2815059.f_1777), 5);
 		}
 	}
@@ -1324,7 +1324,7 @@ int func_16(var uParam0)//Position - 0xCB9
 			}
 			else if (__LIB_0__::func_937(&uLocal_728, 10000, 0))
 			{
-				__LIB_0__::func_794(&uLocal_728);
+				__LIB_0__::clearF_1Prop(&uLocal_728);
 				iLocal_725++;
 			}
 			break;
@@ -1491,7 +1491,7 @@ void func_21(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iParam
 	bool bVar5;
 	struct<13> Var6;
 	int iVar7;
-	iVar0 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
 	iVar1 = 145;
 	if (bParam5)
 	{
@@ -1650,7 +1650,7 @@ void func_21(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iParam
 int func_26(int iParam0)//Position - 0x1431
 {
 	struct<13> Var0;
-	if (iParam0 == __LIB_0__::func_162())
+	if (iParam0 == __LIB_0__::getMinusOneOrNull())
 	{
 		return 0;
 	}
@@ -2633,7 +2633,7 @@ int func_303(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 		}
 	}
 	iVar34 = 0;
-	iVar35 = __LIB_0__::func_162();
+	iVar35 = __LIB_0__::getMinusOneOrNull();
 	iVar36 = 0;
 	iVar37 = 0;
 	iVar0 = 0;

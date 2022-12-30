@@ -1594,7 +1594,7 @@ void func_1()//Position - 0x1F0
 			}
 			else if (!BitTest(Local_1462.f_2, 3))
 			{
-				__LIB_0__::func_794(&(Local_1462.f_93));
+				__LIB_0__::clearF_1Prop(&(Local_1462.f_93));
 				MISC::SET_BIT(&(Local_1462.f_2), 3);
 			}
 			else
@@ -1965,7 +1965,7 @@ void func_13()//Position - 0x666
 						ENTITY::PLAY_ENTITY_ANIM(iLocal_719[iVar1], &cLocal_1437, sLocal_1431, 8f, false, true, false, 0f, 0);
 						iVar1++;
 					}
-					__LIB_0__::func_794(&uLocal_1457);
+					__LIB_0__::clearF_1Prop(&uLocal_1457);
 					AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "Bar_Unlock_And_Raise", iLocal_719[1], "DLC_IND_ROLLERCOASTER_SOUNDS", false, 0);
 					MISC::SET_BIT(&(Local_1464[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/].f_2), 10);
 				}
@@ -2684,7 +2684,7 @@ int func_145(int iParam0)//Position - 0x54A5
 			if (AUDIO::LOAD_STREAM_WITH_START_OFFSET("Player_Ride", 0, "DLC_IND_ROLLERCOASTER_SOUNDS"))
 			{
 				MISC::SET_BIT(&uLocal_1459, 0);
-				__LIB_0__::func_794(&uLocal_1460);
+				__LIB_0__::clearF_1Prop(&uLocal_1460);
 			}
 			else if (!__LIB_0__::func_864(&uLocal_1460))
 			{
@@ -2693,7 +2693,7 @@ int func_145(int iParam0)//Position - 0x54A5
 			else if (__LIB_0__::func_937(&uLocal_1460, 5000, 1))
 			{
 				MISC::SET_BIT(&uLocal_1459, 0);
-				__LIB_0__::func_794(&uLocal_1460);
+				__LIB_0__::clearF_1Prop(&uLocal_1460);
 			}
 		}
 		else
@@ -2713,7 +2713,7 @@ int func_145(int iParam0)//Position - 0x54A5
 			if (AUDIO::LOAD_STREAM_WITH_START_OFFSET("Ambient_Ride", iParam0, "DLC_IND_ROLLERCOASTER_SOUNDS"))
 			{
 				MISC::SET_BIT(&uLocal_1459, 1);
-				__LIB_0__::func_794(&uLocal_1460);
+				__LIB_0__::clearF_1Prop(&uLocal_1460);
 			}
 			else if (!__LIB_0__::func_864(&uLocal_1460))
 			{
@@ -2721,7 +2721,7 @@ int func_145(int iParam0)//Position - 0x54A5
 			}
 			else if (__LIB_0__::func_937(&uLocal_1460, 5000, 1))
 			{
-				__LIB_0__::func_794(&uLocal_1460);
+				__LIB_0__::clearF_1Prop(&uLocal_1460);
 				MISC::SET_BIT(&uLocal_1459, 1);
 			}
 		}

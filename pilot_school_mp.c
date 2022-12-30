@@ -8353,7 +8353,7 @@ void func_1()//Position - 0xDCC
 	__LIB_2__::func_418();
 	PLAYER::SET_PLAYER_INVINCIBLE(PLAYER::PLAYER_ID(), false);
 	__LIB_31__::func_778(0);
-	__LIB_0__::func_183(123, 1);
+	__LIB_0__::incrementGlobal_58896ByIndex(123, 1);
 	__LIB_0__::func_55();
 	if (STREAMING::IS_NEW_LOAD_SCENE_ACTIVE())
 	{
@@ -12782,7 +12782,7 @@ int func_467(int iParam0)//Position - 0x5B987
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -12822,7 +12822,7 @@ int func_467(int iParam0)//Position - 0x5B987
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -30943,7 +30943,7 @@ void func_1421(int iParam0, int iParam1, int iParam2, var uParam3)//Position - 0
 		Var0.f_3 = 0;
 		StringCopy(&(Var0.f_3.f_1[0 /*16*/]), "", 32);
 		StringCopy(&(Var0.f_3.f_1[0 /*16*/].f_8), "", 32);
-		__LIB_2__::func_547(iParam2, uParam3, &Var0);
+		__LIB_2__::clearLeaderBoards(iParam2, uParam3, &Var0);
 	}
 	*iParam1 = 0;
 	*iParam2 = 0;
@@ -31897,7 +31897,7 @@ int func_1470(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, v
 				}
 				*uParam5 = *uParam2;
 				*uParam0 = 2;
-				__LIB_2__::func_547(uParam1, uParam2, &Var0);
+				__LIB_2__::clearLeaderBoards(uParam1, uParam2, &Var0);
 				Var0 = { Var1 };
 			}
 			break;
@@ -33260,13 +33260,13 @@ void func_1640()//Position - 0xB630B
 		{
 			if (!__LIB_0__::func_864(&(Local_170.f_23)))
 			{
-				__LIB_0__::func_794(&(Local_170.f_23));
+				__LIB_0__::clearF_1Prop(&(Local_170.f_23));
 				__LIB_0__::func_795(&(Local_170.f_23), 0, 0);
 			}
 		}
 		else if (__LIB_0__::func_864(&(Local_170.f_23)))
 		{
-			__LIB_0__::func_794(&(Local_170.f_23));
+			__LIB_0__::clearF_1Prop(&(Local_170.f_23));
 		}
 	}
 	else
@@ -33642,7 +33642,7 @@ void func_1654()//Position - 0xB7010
 					{
 						if (!BitTest(Global_2815059.f_4660, 5))
 						{
-							__LIB_0__::func_794(&Local_202);
+							__LIB_0__::clearF_1Prop(&Local_202);
 							__LIB_0__::func_795(&Local_202, 1, 0);
 						}
 						MISC::SET_BIT(&(Global_2815059.f_4660), 5);
@@ -33670,7 +33670,7 @@ void func_1654()//Position - 0xB7010
 							}
 							if (__LIB_2__::func_815(Local_202, 4000, 1) || !__LIB_0__::func_864(&Local_202))
 							{
-								__LIB_0__::func_794(&Local_202);
+								__LIB_0__::clearF_1Prop(&Local_202);
 								CAM::DO_SCREEN_FADE_IN(500);
 							}
 						}
@@ -33683,7 +33683,7 @@ void func_1654()//Position - 0xB7010
 					}
 					if ((((((Local_170.f_3 == 1 || (Local_170.f_3 == 2 && !BitTest(Global_2815059.f_4660, 5))) || Local_170.f_3 == 4) || Local_170.f_3 == 6) || Local_170.f_3 == 11) || (Local_170.f_3 == 10 && !BitTest(Global_2815059.f_4660, 5))) || Local_170.f_3 == 9)
 					{
-						__LIB_0__::func_794(&Local_202);
+						__LIB_0__::clearF_1Prop(&Local_202);
 						CAM::DO_SCREEN_FADE_OUT(0);
 					}
 					if (BitTest(Global_2689235[iVar1 /*453*/].f_197, 1) || BitTest(Global_2689235[iVar1 /*453*/].f_197, 0))
@@ -33704,7 +33704,7 @@ void func_1654()//Position - 0xB7010
 				iLocal_169 = 1;
 				func_1601();
 				CAM::DO_SCREEN_FADE_OUT(0);
-				__LIB_0__::func_794(&Local_202);
+				__LIB_0__::clearF_1Prop(&Local_202);
 				__LIB_0__::func_795(&Local_202, 1, 0);
 				func_1673();
 			}
@@ -34858,7 +34858,7 @@ void func_1673()//Position - 0xB91B9
 			{
 				HUD::BEGIN_TEXT_COMMAND_BUSYSPINNER_ON("FM_JIP_WAITO" /* GXT: Game options are being set */);
 				HUD::END_TEXT_COMMAND_BUSYSPINNER_ON(5);
-				__LIB_0__::func_794(&uLocal_200);
+				__LIB_0__::clearF_1Prop(&uLocal_200);
 			}
 		}
 	}

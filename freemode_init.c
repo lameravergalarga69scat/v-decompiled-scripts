@@ -727,7 +727,7 @@ void func_162()//Position - 0x5BCB
 	func_164();
 	Global_1573912 = uVar0;
 	Global_1573913 = { Var1 };
-	Global_1573913.f_1 = __LIB_0__::func_162();
+	Global_1573913.f_1 = __LIB_0__::getMinusOneOrNull();
 	__LIB_28__::func_949();
 }
 
@@ -1960,7 +1960,7 @@ void func_231()//Position - 0x87C7
 void func_246()//Position - 0x8FBF
 {
 	func_251();
-	Global_1573026 = __LIB_0__::func_162();
+	Global_1573026 = __LIB_0__::getMinusOneOrNull();
 	__LIB_34__::func_676();
 	func_247();
 	Global_2653201 = Global_2681762.f_69;

@@ -1187,7 +1187,7 @@ void func_20()//Position - 0x1F20
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/))
 	{
-		__LIB_0__::func_183(203, 1);
+		__LIB_0__::incrementGlobal_58896ByIndex(203, 1);
 		if (STATS::STAT_GET_INT(joaat("NUM_SH_SOFA_SMOKED"), &iLocal_330, -1))
 		{
 			STATS::STAT_SET_INT(joaat("NUM_SH_SOFA_SMOKED"), iLocal_330 + 1, true);

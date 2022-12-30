@@ -254,9 +254,9 @@ void __EntryFunction__()//Position - 0x0
 								}
 							}
 							Global_32020[iLocal_41 /*11*/].f_2 = 1;
-							__LIB_0__::func_183(133, 1);
-							__LIB_0__::func_183(131, 1);
-							__LIB_0__::func_183(132, 1);
+							__LIB_0__::incrementGlobal_58896ByIndex(133, 1);
+							__LIB_0__::incrementGlobal_58896ByIndex(131, 1);
+							__LIB_0__::incrementGlobal_58896ByIndex(132, 1);
 							iLocal_29 = 3;
 							break;
 						case 3:

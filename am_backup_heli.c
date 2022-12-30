@@ -944,7 +944,7 @@ void func_93()//Position - 0x2AAA
 		{
 			fLocal_58 = 85f;
 		}
-		__LIB_0__::func_794(&uLocal_59);
+		__LIB_0__::clearF_1Prop(&uLocal_59);
 	}
 }
 
@@ -958,7 +958,7 @@ void func_96()//Position - 0x2B2E
 	Global_2703735.f_3684[2] = uVar1;
 	Global_2703735.f_3688 = 0f;
 	Global_2703735.f_3689 = 0;
-	__LIB_0__::func_954(__LIB_0__::func_943(1, 1), 10, __LIB_0__::func_162());
+	__LIB_0__::func_954(__LIB_0__::func_943(1, 1), 10, __LIB_0__::getMinusOneOrNull());
 	__LIB_0__::func_202();
 }
 

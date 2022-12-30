@@ -3740,7 +3740,7 @@ int func_36(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4, 
 							STREAMING::REQUEST_ANIM_DICT(&sVar0);
 							if (STREAMING::HAS_ANIM_DICT_LOADED(&sVar0) || __LIB_1__::func_366(iParam0))
 							{
-								__LIB_0__::func_794(&(iParam0->f_430));
+								__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 								__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 								__LIB_2__::func_420(1, 1);
 								iParam0->f_436 = 1;
@@ -3779,7 +3779,7 @@ int func_36(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4, 
 						iParam0->f_419 += 666;
 						__LIB_1__::func_83(iParam0, sVar3, 75, 0);
 						__LIB_1__::func_82(iParam0, sVar3);
-						__LIB_0__::func_794(&(iParam0->f_430));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 						__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 						__LIB_2__::func_448(1, 0, 1);
 						GRAPHICS::ANIMPOSTFX_STOP("MP_Celeb_Preload_Fade");
@@ -3877,7 +3877,7 @@ int func_36(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4, 
 						}
 						__LIB_1__::func_83(iParam0, sVar8, -1, 0);
 						__LIB_1__::func_82(iParam0, sVar8);
-						__LIB_0__::func_794(&(iParam0->f_430));
+						__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 						__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 						if (__LIB_0__::func_625())
 						{
@@ -3939,7 +3939,7 @@ int func_36(int* iParam0, var uParam1, char* sParam2, int iParam3, int iParam4, 
 							{
 								__LIB_2__::func_416(uParam1);
 							}
-							__LIB_0__::func_794(&(iParam0->f_430));
+							__LIB_0__::clearF_1Prop(&(iParam0->f_430));
 							__LIB_0__::func_795(&(iParam0->f_430), 0, 0);
 							iParam0->f_436 = 4;
 						}
@@ -7378,7 +7378,7 @@ void func_518()//Position - 0x3D730
 	int iVar0;
 	struct<62> Var1;
 	int iVar2;
-	if (PLAYER::PLAYER_ID() != __LIB_0__::func_162())
+	if (PLAYER::PLAYER_ID() != __LIB_0__::getMinusOneOrNull())
 	{
 		if (__LIB_1__::func_832(PLAYER::PLAYER_ID()))
 		{
@@ -11188,7 +11188,7 @@ int func_664(int iParam0)//Position - 0x6E156
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -11228,7 +11228,7 @@ int func_664(int iParam0)//Position - 0x6E156
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}

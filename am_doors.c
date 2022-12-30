@@ -404,7 +404,7 @@ void func_2(bool bParam0, int iParam1, int iParam2)//Position - 0x3A0
 	{
 		if (__LIB_0__::func_937(&(Local_147[bParam0 /*2*/]), 1000, 1))
 		{
-			__LIB_0__::func_794(&(Local_147[bParam0 /*2*/]));
+			__LIB_0__::clearF_1Prop(&(Local_147[bParam0 /*2*/]));
 			iLocal_146[bParam0] = 0;
 		}
 	}
@@ -600,7 +600,7 @@ int func_35(int iParam0)//Position - 0xCAA
 	if (__LIB_1__::func_30(iParam0, 1))
 	{
 		iVar1 = __LIB_0__::func_818(iParam0);
-		if (iVar1 != __LIB_0__::func_162())
+		if (iVar1 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (__LIB_1__::func_655(iVar1))
 			{

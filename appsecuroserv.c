@@ -915,7 +915,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else if (__LIB_0__::func_937(&uLocal_751, 4000, 0))
 			{
-				__LIB_0__::func_794(&uLocal_751);
+				__LIB_0__::clearF_1Prop(&uLocal_751);
 				MISC::CLEAR_BIT(&iLocal_554, 21);
 			}
 		}
@@ -10626,7 +10626,7 @@ int func_352(bool bParam0)//Position - 0x176B6
 		else
 		{
 			iVar1 = func_358(bParam0);
-			if (iVar1 != __LIB_0__::func_162())
+			if (iVar1 != __LIB_0__::getMinusOneOrNull())
 			{
 				bVar2 = func_353(bParam0, iVar1);
 				if (BitTest(Global_2689235[func_358(bParam0) /*453*/].f_199, bVar2))
@@ -10642,7 +10642,7 @@ int func_352(bool bParam0)//Position - 0x176B6
 int func_353(bool bParam0, int iParam1)//Position - 0x17798
 {
 	int iVar0;
-	if (__LIB_3__::func_36(bParam0) && iParam1 != __LIB_0__::func_162())
+	if (__LIB_3__::func_36(bParam0) && iParam1 != __LIB_0__::getMinusOneOrNull())
 	{
 		iVar0 = 0;
 		while (iVar0 <= 4)
@@ -10686,7 +10686,7 @@ int func_358(bool bParam0)//Position - 0x1794E
 	{
 		return PLAYER::PLAYER_ID();
 	}
-	return __LIB_0__::func_162();
+	return __LIB_0__::getMinusOneOrNull();
 }
 
 int func_362(int iParam0)//Position - 0x17A1F
@@ -11630,7 +11630,7 @@ int func_403(var uParam0, var uParam1, bool bParam2)//Position - 0x1944A
 							uParam0->f_367 = (uParam0->f_367 - 1);
 							MISC::SET_BIT(&(uParam0->f_373), 4);
 							MISC::CLEAR_BIT(&(uParam0->f_370), 0);
-							__LIB_0__::func_794(&(uParam0->f_371));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_371));
 						}
 					}
 					else if (__LIB_7__::func_272(uParam0, 172))
@@ -11645,7 +11645,7 @@ int func_403(var uParam0, var uParam1, bool bParam2)//Position - 0x1944A
 							uParam0->f_367++;
 							MISC::SET_BIT(&(uParam0->f_373), 5);
 							MISC::CLEAR_BIT(&(uParam0->f_370), 0);
-							__LIB_0__::func_794(&(uParam0->f_371));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_371));
 						}
 					}
 					else if (__LIB_7__::func_272(uParam0, 173))
@@ -12025,7 +12025,7 @@ int func_482(var uParam0, int iParam1, int iParam2)//Position - 0x20264
 
 int func_589(int iParam0)//Position - 0x2465F
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		return Global_1853348[iParam0 /*834*/].f_267.f_142.f_44;
 	}
@@ -12690,7 +12690,7 @@ void func_608()//Position - 0x2554B
 		{
 			MISC::CLEAR_BIT(&iLocal_554, 14);
 			iLocal_733 = 0;
-			__LIB_0__::func_794(&uLocal_749);
+			__LIB_0__::clearF_1Prop(&uLocal_749);
 		}
 	}
 }
@@ -12832,7 +12832,7 @@ void func_614()//Position - 0x2579B
 		{
 			MISC::CLEAR_BIT(&iLocal_554, 15);
 			iLocal_733 = 0;
-			__LIB_0__::func_794(&uLocal_749);
+			__LIB_0__::clearF_1Prop(&uLocal_749);
 			if (func_683())
 			{
 				MISC::SET_BIT(&iLocal_554, 25);
@@ -13225,7 +13225,7 @@ void func_646()//Position - 0x269A5
 		{
 			MISC::CLEAR_BIT(&iLocal_554, 14);
 			iLocal_733 = 0;
-			__LIB_0__::func_794(&uLocal_749);
+			__LIB_0__::clearF_1Prop(&uLocal_749);
 			if (func_684())
 			{
 				MISC::SET_BIT(&iLocal_554, 24);
@@ -13245,7 +13245,7 @@ void func_648()//Position - 0x26D34
 		else if (__LIB_0__::func_937(&uLocal_749, 5000, 0))
 		{
 			MISC::CLEAR_BIT(&iLocal_554, 31);
-			__LIB_0__::func_794(&uLocal_749);
+			__LIB_0__::clearF_1Prop(&uLocal_749);
 		}
 	}
 	if (BitTest(iLocal_554, 13))
@@ -13509,7 +13509,7 @@ void func_685(int iParam0, int iParam1)//Position - 0x277B1
 	while (iVar2 < iVar3)
 	{
 		iVar5 = Global_1892703[iParam1 /*599*/].f_10.f_11[iVar2];
-		if (iVar5 != __LIB_0__::func_162())
+		if (iVar5 != __LIB_0__::getMinusOneOrNull())
 		{
 			StringCopy(&(Var4[iVar2 /*16*/]), PLAYER::GET_PLAYER_NAME(iVar5), 64);
 		}

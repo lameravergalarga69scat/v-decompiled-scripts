@@ -9982,7 +9982,7 @@ int func_478(int iParam0)//Position - 0x59570
 	{
 		if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_M_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -10022,7 +10022,7 @@ int func_478(int iParam0)//Position - 0x59570
 		}
 		else if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("MP_F_Freemode_01"))
 		{
-			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::func_162() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
+			if (NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0) != __LIB_0__::getMinusOneOrNull() && __LIB_0__::func_287(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iParam0)))
 			{
 				return 1;
 			}
@@ -12188,7 +12188,7 @@ int func_770(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, va
 				{
 					*uParam0 = 2;
 				}
-				__LIB_2__::func_547(uParam1, uParam2, &Var0);
+				__LIB_2__::clearLeaderBoards(uParam1, uParam2, &Var0);
 				Var0 = { Var1 };
 			}
 			break;
@@ -12221,7 +12221,7 @@ int func_770(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, va
 				{
 					*uParam0 = 2;
 				}
-				__LIB_2__::func_547(uParam1, uParam2, &Var0);
+				__LIB_2__::clearLeaderBoards(uParam1, uParam2, &Var0);
 				Var0 = { Var1 };
 			}
 			break;

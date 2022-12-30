@@ -575,7 +575,7 @@ int func_9()//Position - 0x84B
 			{
 				if (__LIB_3__::func_99(&Global_2727875, 300000, 0) == 1)
 				{
-					__LIB_0__::func_794(&Global_2727873);
+					__LIB_0__::clearF_1Prop(&Global_2727873);
 					__LIB_39__::func_469(3, -1);
 				}
 				else if (__LIB_3__::func_99(&Global_2727873, 7000, 0) == 0)

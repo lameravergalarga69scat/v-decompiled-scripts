@@ -154,7 +154,7 @@ int func_2()//Position - 0x1E7
 	if (__LIB_1__::func_30(PLAYER::PLAYER_ID(), 1))
 	{
 		iVar0 = __LIB_0__::func_797();
-		if (iVar0 != __LIB_0__::func_162())
+		if (iVar0 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (__LIB_17__::func_135(iVar0))
 			{

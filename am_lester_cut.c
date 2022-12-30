@@ -706,7 +706,7 @@ void func_19()//Position - 0x830
 								MISC::CLEAR_BIT(&uLocal_333, 2);
 								MISC::CLEAR_BIT(&uLocal_333, 3);
 								MISC::CLEAR_BIT(&uLocal_333, 8);
-								__LIB_0__::func_794(&uLocal_336);
+								__LIB_0__::clearF_1Prop(&uLocal_336);
 								if (!HUD::DOES_BLIP_EXIST(Global_1931382))
 								{
 									Global_1931382 = HUD::ADD_BLIP_FOR_COORD(Global_1931383);
@@ -1059,7 +1059,7 @@ int func_142()//Position - 0x4E92
 						{
 							if (__LIB_0__::func_787(&uLocal_166, "FM_1AU", "FM_LESTCUT", 7, 0, 0, 0))
 							{
-								__LIB_0__::func_794(&uLocal_343);
+								__LIB_0__::clearF_1Prop(&uLocal_343);
 								__LIB_0__::func_795(&uLocal_343, 0, 0);
 								iLocal_340++;
 							}
@@ -1077,7 +1077,7 @@ int func_142()//Position - 0x4E92
 					MISC::SET_BIT(&uLocal_333, 22);
 					TASK::TASK_CLEAR_LOOK_AT(iLocal_163);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_163, 1273.5762f, -1718.4594f, 53.7715f, 1f, 20000, 0.25f, 0, 40000f);
-					__LIB_0__::func_794(&uLocal_343);
+					__LIB_0__::clearF_1Prop(&uLocal_343);
 					__LIB_0__::func_795(&uLocal_343, 0, 0);
 					iLocal_340++;
 				}

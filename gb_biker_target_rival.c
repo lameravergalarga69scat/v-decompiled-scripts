@@ -99,7 +99,7 @@ int func_1()//Position - 0xD3
 	if (__LIB_1__::func_375(1))
 	{
 		iVar0 = Global_2815059.f_5195.f_753;
-		if (iVar0 != __LIB_0__::func_162())
+		if (iVar0 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (func_4(iVar0))
 			{
@@ -122,11 +122,11 @@ int func_1()//Position - 0xD3
 
 void func_2(int iParam0)//Position - 0x120
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		func_3(iParam0);
 	}
-	Global_2815059.f_5195.f_753 = __LIB_0__::func_162();
+	Global_2815059.f_5195.f_753 = __LIB_0__::getMinusOneOrNull();
 }
 
 void func_3(int iParam0)//Position - 0x145
@@ -156,7 +156,7 @@ int func_11()//Position - 0x2EF
 	if (__LIB_1__::func_375(1))
 	{
 		bVar0 = Global_2815059.f_5195.f_753;
-		if (bVar0 != __LIB_0__::func_162())
+		if (bVar0 != __LIB_0__::getMinusOneOrNull())
 		{
 			if (func_12(bVar0))
 			{
@@ -190,7 +190,7 @@ int func_12(bool bParam0)//Position - 0x322
 void func_13(bool bParam0, bool bParam1, int iParam2)//Position - 0x386
 {
 	int iVar0;
-	if (bParam0 == __LIB_0__::func_162())
+	if (bParam0 == __LIB_0__::getMinusOneOrNull())
 	{
 		return;
 	}

@@ -322,7 +322,7 @@ void func_1()//Position - 0x18E
 		case 0:
 			if (func_320())
 			{
-				__LIB_0__::func_794(&(Global_2779753.f_179));
+				__LIB_0__::clearF_1Prop(&(Global_2779753.f_179));
 				func_318(1);
 			}
 			break;
@@ -388,7 +388,7 @@ void func_1()//Position - 0x18E
 								Global_2779753.f_183 = Global_2815059.f_6740;
 								Global_2779753.f_184 = Global_2815059.f_6741;
 								Global_2779753.f_185 = Global_2815059.f_6742;
-								if (func_18(func_296(), &(Global_2779753.f_183), &(Global_2779753.f_184), __LIB_0__::func_162()))
+								if (func_18(func_296(), &(Global_2779753.f_183), &(Global_2779753.f_184), __LIB_0__::getMinusOneOrNull()))
 								{
 									func_318(6);
 								}
@@ -527,7 +527,7 @@ int func_11()//Position - 0x105B
 	{
 		return 0;
 	}
-	if (NETWORK::NETWORK_GET_HOST_OF_SCRIPT("AM_IMP_EXP", -1, 0) != __LIB_0__::func_162())
+	if (NETWORK::NETWORK_GET_HOST_OF_SCRIPT("AM_IMP_EXP", -1, 0) != __LIB_0__::getMinusOneOrNull())
 	{
 		__LIB_3__::func_477(__LIB_0__::func_950(NETWORK::NETWORK_GET_HOST_OF_SCRIPT("AM_IMP_EXP", -1, 0)), 1);
 		Global_2815059.f_1724 = 0;
@@ -547,7 +547,7 @@ int func_14()//Position - 0x10FA
 	{
 		if (!func_300(3))
 		{
-			__LIB_0__::func_794(&(Global_2779753.f_177));
+			__LIB_0__::clearF_1Prop(&(Global_2779753.f_177));
 			func_17(3);
 		}
 		else if (__LIB_0__::func_937(&(Global_2779753.f_177), (Global_262145.f_45 /* Tunable: CRATE_DROP_SPECIAL_FREQUENCY */ * 120000), 0))
@@ -637,7 +637,7 @@ int func_20(var[] uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 {
 	int iVar0;
 	int iVar1;
-	if (iParam20 == __LIB_0__::func_162())
+	if (iParam20 == __LIB_0__::getMinusOneOrNull())
 	{
 		return 0;
 	}
@@ -653,7 +653,7 @@ int func_20(var[] uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (Global_2681762.f_199.f_962[iVar0 /*75*/] == __LIB_0__::func_162() || Global_2681762.f_199.f_962[iVar0 /*75*/] == iParam20)
+		if (Global_2681762.f_199.f_962[iVar0 /*75*/] == __LIB_0__::getMinusOneOrNull() || Global_2681762.f_199.f_962[iVar0 /*75*/] == iParam20)
 		{
 			if (Global_2681762.f_199.f_962[iVar0 /*75*/] == iParam20)
 			{
@@ -1686,7 +1686,7 @@ int func_128(var uParam0, int iParam1, int iParam2)//Position - 0x50A9
 	{
 		case 0:
 		case 2:
-			if (iParam2 != __LIB_0__::func_162())
+			if (iParam2 != __LIB_0__::getMinusOneOrNull())
 			{
 				if (!__LIB_28__::func_417(uParam0->f_129, uParam0->f_767, uParam0->f_1220, ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(iParam2), false)))
 				{
@@ -3612,7 +3612,7 @@ void func_325()//Position - 0x10477
 				}
 				else if (!__LIB_30__::func_401(PLAYER::PLAYER_ID(), 3))
 				{
-					__LIB_0__::func_794(&uLocal_202);
+					__LIB_0__::clearF_1Prop(&uLocal_202);
 					MISC::SET_BIT(&(Local_210[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*3*/].f_1), 3);
 				}
 				else

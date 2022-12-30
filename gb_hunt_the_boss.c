@@ -275,7 +275,7 @@ int func_1()//Position - 0x175
 				}
 				else
 				{
-					__LIB_0__::func_794(&(Local_118.f_16));
+					__LIB_0__::clearF_1Prop(&(Local_118.f_16));
 					__LIB_0__::func_627(&(Local_118.f_18), 0, 0);
 					MISC::CLEAR_BIT(&(Local_118.f_2), 6);
 				}
@@ -283,7 +283,7 @@ int func_1()//Position - 0x175
 				{
 					if (__LIB_0__::func_937(&(Local_118.f_18), 5000, 0))
 					{
-						__LIB_0__::func_794(&(Local_118.f_18));
+						__LIB_0__::clearF_1Prop(&(Local_118.f_18));
 					}
 				}
 				bVar1 = func_7();
@@ -460,7 +460,7 @@ int func_23()//Position - 0x888
 	int iVar3;
 	int iVar4;
 	Local_118.f_5 = __LIB_1__::func_730();
-	Local_118.f_6 = __LIB_0__::func_162();
+	Local_118.f_6 = __LIB_0__::getMinusOneOrNull();
 	STATS::PLAYSTATS_CREATE_MATCH_HISTORY_ID_2(&(Local_118.f_20), &(Local_118.f_21));
 	Var0[0 /*3*/] = { -1976.481f, -638.13f, 4.6219f };
 	Var0[1 /*3*/] = { 2306.744f, -400.686f, 86.3213f };
@@ -839,7 +839,7 @@ void func_32()//Position - 0xE1C
 
 int func_81()//Position - 0x2590
 {
-	if (Local_118.f_6 == __LIB_0__::func_162() || Local_118.f_5 == __LIB_0__::func_162())
+	if (Local_118.f_6 == __LIB_0__::getMinusOneOrNull() || Local_118.f_5 == __LIB_0__::getMinusOneOrNull())
 	{
 		return 0;
 	}
@@ -854,13 +854,13 @@ void func_82(int iParam0)//Position - 0x25CD
 {
 	if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 6))
 	{
-		if (iParam0 != __LIB_0__::func_162())
+		if (iParam0 != __LIB_0__::getMinusOneOrNull())
 		{
 			__LIB_34__::func_802(0, iParam0);
 		}
 		else
 		{
-			__LIB_34__::func_802(0, __LIB_0__::func_162());
+			__LIB_34__::func_802(0, __LIB_0__::getMinusOneOrNull());
 		}
 		MISC::SET_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 6);
 	}
@@ -1329,9 +1329,9 @@ int func_738(int iParam0, char* sParam1, char* sParam2, char* sParam3, int iPara
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	iVar0 = __LIB_0__::func_162();
-	iVar1 = __LIB_0__::func_162();
-	iVar2 = __LIB_0__::func_162();
+	iVar0 = __LIB_0__::getMinusOneOrNull();
+	iVar1 = __LIB_0__::getMinusOneOrNull();
+	iVar2 = __LIB_0__::getMinusOneOrNull();
 	return func_716(iParam0, sParam1, sParam2, sParam3, iParam4, iVar0, iVar1, iVar2, sParam5, iParam6, iParam7, iParam8, iParam9, iParam10, 2);
 }
 
@@ -2085,7 +2085,7 @@ void func_827()//Position - 0x4B429
 	{
 		if (__LIB_0__::func_864(&uLocal_113))
 		{
-			__LIB_0__::func_794(&uLocal_113);
+			__LIB_0__::clearF_1Prop(&uLocal_113);
 		}
 		return;
 	}
@@ -2104,7 +2104,7 @@ void func_827()//Position - 0x4B429
 		}
 		if (__LIB_0__::func_937(&uLocal_113, SYSTEM::ROUND(Global_262145.f_12965 /* Tunable: GB_HUNTBOSS_BOSS_BLIPPED_TIME */), 0))
 		{
-			__LIB_0__::func_794(&uLocal_113);
+			__LIB_0__::clearF_1Prop(&uLocal_113);
 			MISC::CLEAR_BIT(&(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2), 4);
 			__LIB_22__::func_116(0, -1, 500, 500, 0);
 			if (!BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 2))
@@ -2118,7 +2118,7 @@ void func_827()//Position - 0x4B429
 	{
 		if (SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_109) > IntToFloat(Global_262145.f_12963 /* Tunable: GB_HUNTBOSS_BLIPPABLE_RADIUS */))
 		{
-			__LIB_0__::func_794(&uLocal_111);
+			__LIB_0__::clearF_1Prop(&uLocal_111);
 			if (BitTest(Local_119[NETWORK::PARTICIPANT_ID_TO_INT() /*3*/].f_2, 4))
 			{
 				__LIB_0__::func_795(&uLocal_113, 0, 0);
@@ -2145,7 +2145,7 @@ void func_827()//Position - 0x4B429
 int func_829(int iParam0)//Position - 0x4B695
 {
 	var uVar0;
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (!__LIB_0__::func_86(Local_118.f_7))
 		{
@@ -2229,8 +2229,8 @@ void func_834(int iParam0)//Position - 0x4B81B
 	int iVar3;
 	struct<6> Var4;
 	int iVar5;
-	iVar2 = __LIB_0__::func_162();
-	iVar3 = __LIB_0__::func_162();
+	iVar2 = __LIB_0__::getMinusOneOrNull();
+	iVar3 = __LIB_0__::getMinusOneOrNull();
 	SCRIPT::GET_EVENT_DATA(1, iParam0, &Var4, 13);
 	if (ENTITY::DOES_ENTITY_EXIST(Var4.f_0))
 	{
@@ -2242,7 +2242,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 				iVar2 = NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar0);
 				if (NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(iVar2))
 				{
-					if (iVar2 != __LIB_0__::func_162())
+					if (iVar2 != __LIB_0__::getMinusOneOrNull())
 					{
 						if (__LIB_1__::func_693(iVar2, 0, 0))
 						{
@@ -2266,7 +2266,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 					{
 						if (BitTest(Local_119[NETWORK::NETWORK_GET_PARTICIPANT_INDEX(iVar3) /*3*/].f_2, 0))
 						{
-							if (iVar3 != __LIB_0__::func_162())
+							if (iVar3 != __LIB_0__::getMinusOneOrNull())
 							{
 								if (__LIB_1__::func_693(iVar3, 0, 0))
 								{
@@ -2316,7 +2316,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 			{
 				return;
 			}
-			if (iVar3 != __LIB_0__::func_162())
+			if (iVar3 != __LIB_0__::getMinusOneOrNull())
 			{
 				Local_118.f_6 = iVar3;
 				MISC::SET_BIT(&(Local_118.f_2), 3);
@@ -2324,7 +2324,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 			}
 		}
 	}
-	else if (iVar2 != __LIB_0__::func_162() && __LIB_12__::func_486(iVar2, 0))
+	else if (iVar2 != __LIB_0__::getMinusOneOrNull() && __LIB_12__::func_486(iVar2, 0))
 	{
 		iVar5 = __LIB_0__::func_818(iVar2);
 		if (iVar5 == Local_118.f_5)
@@ -2339,7 +2339,7 @@ void func_834(int iParam0)//Position - 0x4B81B
 						iVar3 = NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar1);
 						if (NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(iVar3))
 						{
-							if (iVar3 != __LIB_0__::func_162())
+							if (iVar3 != __LIB_0__::getMinusOneOrNull())
 							{
 								if (__LIB_1__::func_693(iVar3, 0, 0))
 								{
@@ -2532,7 +2532,7 @@ int func_858(int iParam0, bool bParam1, int iParam2)//Position - 0x4C97C
 int func_859(int iParam0)//Position - 0x4CA03
 {
 	int iVar0;
-	if (iParam0 == __LIB_0__::func_162())
+	if (iParam0 == __LIB_0__::getMinusOneOrNull())
 	{
 		return iParam0;
 	}
@@ -2549,11 +2549,11 @@ int func_859(int iParam0)//Position - 0x4CA03
 		}
 		else if (iVar0 == 3)
 		{
-			return __LIB_0__::func_162();
+			return __LIB_0__::getMinusOneOrNull();
 		}
 		return Global_2689235[iParam0 /*453*/].f_318.f_9;
 	}
-	return __LIB_0__::func_162();
+	return __LIB_0__::getMinusOneOrNull();
 }
 
 void func_911()//Position - 0x4DCCA

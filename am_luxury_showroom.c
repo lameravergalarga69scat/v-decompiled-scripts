@@ -1043,7 +1043,7 @@ void func_198(int iParam0, bool bParam1)//Position - 0x1A999
 		StringCopy(&(Global_2815059.f_2309[iParam0 /*44*/].f_23), "", 64);
 		Global_2815059.f_2309[iParam0 /*44*/].f_39 = -1;
 		Global_2815059.f_2309[iParam0 /*44*/].f_40 = -1;
-		__LIB_0__::func_794(&(Global_2815059.f_2309[iParam0 /*44*/].f_41));
+		__LIB_0__::clearF_1Prop(&(Global_2815059.f_2309[iParam0 /*44*/].f_41));
 		Global_2815059.f_2309[iParam0 /*44*/].f_43 = 0;
 	}
 }
@@ -6788,7 +6788,7 @@ int func_490(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, i
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_UP_DOWN", "HUD_FREEMODE_SOUNDSET", true);
 							MISC::SET_BIT(&(uParam0->f_373), 4);
 							MISC::CLEAR_BIT(&(uParam0->f_370), 0);
-							__LIB_0__::func_794(&(uParam0->f_371));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_371));
 						}
 					}
 					else if (__LIB_7__::func_272(uParam0, 172))
@@ -6810,7 +6810,7 @@ int func_490(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, i
 							AUDIO::PLAY_SOUND_FRONTEND(-1, "NAV_UP_DOWN", "HUD_FREEMODE_SOUNDSET", true);
 							MISC::SET_BIT(&(uParam0->f_373), 5);
 							MISC::CLEAR_BIT(&(uParam0->f_370), 0);
-							__LIB_0__::func_794(&(uParam0->f_371));
+							__LIB_0__::clearF_1Prop(&(uParam0->f_371));
 						}
 					}
 					else if (__LIB_7__::func_272(uParam0, 173))
@@ -8064,7 +8064,7 @@ int func_732()//Position - 0x7199C
 	{
 		return 0;
 	}
-	if (PLAYER::PLAYER_ID() == __LIB_0__::func_162())
+	if (PLAYER::PLAYER_ID() == __LIB_0__::getMinusOneOrNull())
 	{
 		return 0;
 	}
@@ -8559,7 +8559,7 @@ void func_767(var uParam0, int iParam1)//Position - 0x72936
 	}
 	else if (__LIB_0__::func_937(&(uParam0->f_1), iVar3, 0))
 	{
-		__LIB_0__::func_794(&(uParam0->f_1));
+		__LIB_0__::clearF_1Prop(&(uParam0->f_1));
 		MISC::CLEAR_BIT(&Local_164, 1);
 	}
 	if (uParam0->f_3 == 0)
@@ -8659,7 +8659,7 @@ void func_776(var uParam0)//Position - 0x72DC0
 	GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(func_765());
 	*uParam0 = 0;
 	uParam0->f_3 = 0;
-	__LIB_0__::func_794(&(uParam0->f_1));
+	__LIB_0__::clearF_1Prop(&(uParam0->f_1));
 	__LIB_1__::func_895(1, -1);
 }
 

@@ -1578,7 +1578,7 @@ void func_1(int iParam0)//Position - 0x860
 							{
 								HUD::RELEASE_CONTROL_OF_FRONTEND();
 							}
-							__LIB_0__::func_794(&uLocal_809);
+							__LIB_0__::clearF_1Prop(&uLocal_809);
 						}
 					}
 					else
@@ -10213,7 +10213,7 @@ void func_595()//Position - 0x205DE
 				func_1426(2);
 				__LIB_38__::func_524(0, iLocal_798, 0, 1);
 				iLocal_797 = 250;
-				__LIB_0__::func_794(&uLocal_795);
+				__LIB_0__::clearF_1Prop(&uLocal_795);
 			}
 		}
 	}
@@ -10256,7 +10256,7 @@ void func_595()//Position - 0x205DE
 			func_1426(2);
 			__LIB_38__::func_524(0, iLocal_798, 0, 1);
 			iLocal_797 = 250;
-			__LIB_0__::func_794(&uLocal_795);
+			__LIB_0__::clearF_1Prop(&uLocal_795);
 		}
 	}
 	else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
@@ -12443,8 +12443,8 @@ void func_649()//Position - 0x239DD
 			func_284(0, 1, 2, "PM_INF_PLLT01" /* GXT: Loading... */, "PM_DOPROT" /* GXT: GTA Online */, 0, "", "", -1, 0, 0);
 			MISC::CLEAR_BIT(&uLocal_729, 0);
 			MISC::CLEAR_BIT(&uLocal_729, 1);
-			__LIB_0__::func_794(&uLocal_851);
-			__LIB_0__::func_794(&uLocal_809);
+			__LIB_0__::clearF_1Prop(&uLocal_851);
+			__LIB_0__::clearF_1Prop(&uLocal_809);
 			if (iLocal_845 != -1)
 			{
 				if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -12693,8 +12693,8 @@ void func_649()//Position - 0x239DD
 						{
 							func_1252(64, iLocal_238);
 							__LIB_38__::func_524(1, iVar10, 1, 1);
-							__LIB_0__::func_794(&uLocal_851);
-							__LIB_0__::func_794(&uLocal_809);
+							__LIB_0__::clearF_1Prop(&uLocal_851);
+							__LIB_0__::clearF_1Prop(&uLocal_809);
 							if (iLocal_853)
 							{
 								iLocal_853 = 0;
@@ -18289,7 +18289,7 @@ int func_1162()//Position - 0x7A66F
 			return 13;
 		}
 	}
-	if (PLAYER::PLAYER_ID() != __LIB_0__::func_162())
+	if (PLAYER::PLAYER_ID() != __LIB_0__::getMinusOneOrNull())
 	{
 		if (Global_2815059.f_5195.f_4 == PLAYER::PLAYER_ID())
 		{
@@ -25795,7 +25795,7 @@ int func_1416()//Position - 0x89B1D
 
 int func_1419(int iParam0)//Position - 0x89BE5
 {
-	if (iParam0 != __LIB_0__::func_162())
+	if (iParam0 != __LIB_0__::getMinusOneOrNull())
 	{
 		if (__LIB_0__::func_296(iParam0) && Global_2689235[iParam0 /*453*/].f_318.f_9 == iParam0)
 		{
@@ -26109,17 +26109,17 @@ void func_1435()//Position - 0x89FD4
 			if (!(iLocal_788[1] == 2 && iLocal_787 >= 2))
 			{
 				MISC::CLEAR_BIT(&Global_1835445, 1);
-				__LIB_0__::func_794(&uLocal_849);
+				__LIB_0__::clearF_1Prop(&uLocal_849);
 			}
 			if (!(iLocal_788[1] == 6 && iLocal_787 >= 2))
 			{
 				MISC::CLEAR_BIT(&Global_1835445, 2);
-				__LIB_0__::func_794(&uLocal_849);
+				__LIB_0__::clearF_1Prop(&uLocal_849);
 			}
 			if (!((iLocal_788[2] == iLocal_204 && iLocal_788[1] == 1) && iLocal_787 >= 2) && !(((iLocal_788[0] == 0 && iLocal_788[1] == 1) && iLocal_788[2] == iLocal_192) && iLocal_787 >= 3))
 			{
 				MISC::CLEAR_BIT(&Global_1835445, 0);
-				__LIB_0__::func_794(&uLocal_849);
+				__LIB_0__::clearF_1Prop(&uLocal_849);
 			}
 		}
 		if (iLocal_788[0] == 4)
@@ -26224,7 +26224,7 @@ void func_1435()//Position - 0x89FD4
 						if (func_1377())
 						{
 							MISC::CLEAR_BIT(&uLocal_244, 7);
-							__LIB_0__::func_794(&uLocal_849);
+							__LIB_0__::clearF_1Prop(&uLocal_849);
 							__LIB_38__::func_540(0, 2, bLocal_801, 2, 1, "PM_DLOAD_PLIST" /* GXT: My Bookmarked Playlists */, 0, 0, 0);
 							__LIB_13__::func_125(1);
 							func_1426(0);
@@ -26309,7 +26309,7 @@ void func_1435()//Position - 0x89FD4
 									HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageLeft"));
 								}
 								func_1426(1);
-								__LIB_0__::func_794(&uLocal_849);
+								__LIB_0__::clearF_1Prop(&uLocal_849);
 								__LIB_38__::func_544(0);
 							}
 						}
@@ -26365,7 +26365,7 @@ void func_1435()//Position - 0x89FD4
 								{
 									HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageLeft"));
 								}
-								__LIB_0__::func_794(&uLocal_849);
+								__LIB_0__::clearF_1Prop(&uLocal_849);
 								__LIB_38__::func_544(0);
 							}
 						}
@@ -26417,7 +26417,7 @@ void func_1435()//Position - 0x89FD4
 									HUD::PAUSE_MENU_DEACTIVATE_CONTEXT(joaat("PageLeft"));
 								}
 								func_1426(0);
-								__LIB_0__::func_794(&uLocal_849);
+								__LIB_0__::clearF_1Prop(&uLocal_849);
 								__LIB_38__::func_544(0);
 							}
 						}
@@ -26666,7 +26666,7 @@ int func_1438(var uParam0, var* uParam1, int iParam2, int iParam3, int iParam4, 
 			__LIB_18__::func_208();
 			uParam0->f_24 = __LIB_17__::func_51(1);
 			uParam0->f_25 = __LIB_17__::func_55(1);
-			__LIB_0__::func_794(&(uParam0->f_39));
+			__LIB_0__::clearF_1Prop(&(uParam0->f_39));
 			__LIB_38__::func_545(uParam0, 0, 1);
 			__LIB_2__::func_289();
 			uParam0->f_12 = iParam3;
