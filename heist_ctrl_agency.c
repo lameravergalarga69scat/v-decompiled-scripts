@@ -364,7 +364,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 			}
 			__LIB_36__::func_938(3, 0);
-			if (Global_113386.f_7261.f_227[71] == 1 && !__LIB_0__::func_39(14))
+			if (Global_113386.f_7261.f_227[71] == 1 && !__LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 				__LIB_42__::func_336(&Local_91, 40f, 50f);
 				__LIB_42__::func_340(&Local_91);

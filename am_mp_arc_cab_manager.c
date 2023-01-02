@@ -21856,7 +21856,7 @@ int func_4992(var uParam0)//Position - 0x1891A2
 	{
 		return 1;
 	}
-	if (__LIB_1__::func_16() || __LIB_5__::func_133())
+	if (__LIB_1__::getGlobal_2714762_f_691() || __LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 1;
 	}

@@ -611,19 +611,19 @@ void func_12(var uParam0, var* uParam1, var uParam2, var uParam3, var uParam4, v
 												}
 												else
 												{
-													__LIB_0__::func_610("CMRC_COMINGSOON" /* GXT: COMING SOON */);
+													__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CMRC_COMINGSOON" /* GXT: COMING SOON */);
 												}
 											}
 											else
 											{
-												__LIB_0__::func_610("");
+												__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 											}
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&cVar4);
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&Var3);
-											__LIB_0__::func_610("FMMC_VEHST_0" /* GXT: Top Speed */);
-											__LIB_0__::func_610("FMMC_VEHST_1" /* GXT: Acceleration */);
-											__LIB_0__::func_610("FMMC_VEHST_2" /* GXT: Braking */);
-											__LIB_0__::func_610("FMMC_VEHST_3" /* GXT: Traction */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_0" /* GXT: Top Speed */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_1" /* GXT: Acceleration */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_2" /* GXT: Braking */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_3" /* GXT: Traction */);
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND((*uParam3[iVar1 /*6*/])[0]));
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND((*uParam3[iVar1 /*6*/])[1]));
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND((*uParam3[iVar1 /*6*/])[2]));

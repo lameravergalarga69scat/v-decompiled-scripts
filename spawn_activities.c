@@ -5815,7 +5815,7 @@ void func_465(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4,
 		MISC::SET_BIT(&(uParam0->f_6), 1);
 		MISC::SET_BIT(&(uParam0->f_6), 2);
 		MISC::SET_BIT(&(uParam0->f_6), 6);
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			return;
 		}
@@ -5890,7 +5890,7 @@ void func_465(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4,
 		MISC::SET_BIT(&(uParam0->f_6), 0);
 		if ((((((((((iParam1 == 11 || iParam1 == 4) || iParam1 == 6) || iParam1 == 1) || iParam1 == 14) || iParam1 == 2) || iParam1 == 8) || iParam1 == 9) || iParam1 == 10) || iParam1 == 7) || iParam1 == 12)
 		{
-			if (__LIB_0__::func_39(14))
+			if (__LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 				return;
 			}

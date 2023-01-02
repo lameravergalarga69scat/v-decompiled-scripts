@@ -276,7 +276,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
@@ -347,10 +347,10 @@ void func_21()//Position - 0x18A6
 						SYSTEM::WAIT(0);
 					}
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_211, "SHOW_BRIDGES_KNIVES_PROGRESS");
-					__LIB_0__::func_610("PW_TITLE" /* GXT: Wildlife Photography~s~ */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PW_TITLE" /* GXT: Wildlife Photography~s~ */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(20);
-					__LIB_0__::func_610("PW_PASS" /* GXT: Success! */);
-					__LIB_0__::func_610("PW_CHALLENGE" /* GXT: Wildlife photographs taken */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PW_PASS" /* GXT: Success! */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PW_CHALLENGE" /* GXT: Wildlife photographs taken */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_26());
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					iLocal_222 = func_26();

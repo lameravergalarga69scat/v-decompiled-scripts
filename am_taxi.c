@@ -2510,7 +2510,7 @@ void func_89(bool bParam0)//Position - 0x37E4
 			{
 				Var6 = { HUD::GET_BLIP_COORDS(Local_97[iVar1 /*3*/]) };
 			}
-			__LIB_0__::func_610(ZONE::GET_NAME_OF_ZONE(Var6));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(ZONE::GET_NAME_OF_ZONE(Var6));
 			if (((((((__LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 40 || __LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 357) || __LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 475) || __LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 492) || __LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 557) || __LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 590) || __LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 591) || __LIB_39__::func_760(Local_97[iVar1 /*3*/]) == 614)
 			{
 				iVar8 = 0;
@@ -2523,7 +2523,7 @@ void func_89(bool bParam0)//Position - 0x37E4
 						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1" /* GXT: ~a~ */);
 						HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_1312193[iVar9 /*1951*/].f_16));
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-						__LIB_0__::func_610("");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 					}
 					iVar8++;
 				}
@@ -2535,7 +2535,7 @@ void func_89(bool bParam0)//Position - 0x37E4
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRTNM1" /* GXT: ~a~ */);
 					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(Local_97[iVar1 /*3*/].f_1);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-					__LIB_0__::func_610("");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 				}
 			}
 			else

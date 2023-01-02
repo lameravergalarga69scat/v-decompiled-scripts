@@ -382,7 +382,7 @@ int func_6()//Position - 0x3AF
 	{
 		return 1;
 	}
-	if (((((((((((((((__LIB_1__::func_19() == 0 && !__LIB_1__::func_16()) && !__LIB_39__::func_387()) && !__LIB_25__::func_143()) && !__LIB_18__::func_363()) && !__LIB_2__::func_250()) && !__LIB_39__::func_386()) && !__LIB_25__::func_142()) && !__LIB_19__::func_208()) && __LIB_0__::func_438()) && __LIB_1__::func_692()) && Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_95 != 8) && Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_95 != 9) && !__LIB_0__::func_936(PLAYER::PLAYER_ID())) && !__LIB_2__::func_290()) && !__LIB_1__::func_511(PLAYER::PLAYER_ID(), 1, 0))
+	if (((((((((((((((__LIB_1__::func_19() == 0 && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_39__::func_387()) && !__LIB_25__::func_143()) && !__LIB_18__::func_363()) && !__LIB_2__::func_250()) && !__LIB_39__::func_386()) && !__LIB_25__::func_142()) && !__LIB_19__::func_208()) && __LIB_0__::func_438()) && __LIB_1__::func_692()) && Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_95 != 8) && Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_95 != 9) && !__LIB_0__::func_936(PLAYER::PLAYER_ID())) && !__LIB_2__::func_290()) && !__LIB_1__::func_511(PLAYER::PLAYER_ID(), 1, 0))
 	{
 		return 1;
 	}

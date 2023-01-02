@@ -19876,7 +19876,7 @@ void func_250(int iParam0)//Position - 0x2283E
 		{
 			iVar3 = 0;
 		}
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar3 = 0;
 		}
@@ -36988,7 +36988,7 @@ int func_760(bool bParam0)//Position - 0x45EC5D
 int func_761(bool bParam0, int iParam1)//Position - 0x46079C
 {
 	int iVar0;
-	if (__LIB_1__::func_800())
+	if (__LIB_1__::setGlobal_1575016_10())
 	{
 		return 0;
 	}

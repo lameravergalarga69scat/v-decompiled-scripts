@@ -1328,7 +1328,7 @@ void func_165()//Position - 0x1F870
 
 int func_166()//Position - 0x1F88E
 {
-	if (__LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		return 1;
 	}

@@ -1843,7 +1843,7 @@ int func_182()//Position - 0xA3FF
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+	if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 	{
 		return 0;
 	}

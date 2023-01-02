@@ -4380,7 +4380,7 @@ void func_262(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_TITLE");
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 		{
-			__LIB_0__::func_610(sParam1);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		}
 		else if (__LIB_12__::func_568(PLAYER::PLAYER_ID()) == 133)
 		{
@@ -4396,7 +4396,7 @@ void func_262(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		}
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		if (iParam3 != -1)
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
@@ -10247,12 +10247,12 @@ void func_521(var uParam0)//Position - 0x490DB8
 		case 3:
 		case 0:
 		case 8:
-			__LIB_0__::func_610(__LIB_10__::func_442(Global_1853348[PLAYER::PLAYER_ID() /*834*/]));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_10__::func_442(Global_1853348[PLAYER::PLAYER_ID() /*834*/]));
 			__LIB_0__::func_700(&(Global_4718592.f_116531));
 			break;
 		default:
-			__LIB_0__::func_610("SPC_TXT_DFLT" /* GXT: GTA Online */);
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SPC_TXT_DFLT" /* GXT: GTA Online */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			break;
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -10277,19 +10277,19 @@ void func_521(var uParam0)//Position - 0x490DB8
 		}
 		else
 		{
-			__LIB_0__::func_610("MPTV_TICK2" /* GXT: Efforts to identify the suspect's known gangland affiliations have so far been unsuccessful. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_TICK2" /* GXT: Efforts to identify the suspect's known gangland affiliations have so far been unsuccessful. */);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_47.f_1471, "SET_SCROLL_TEXT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(0f);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(2f);
-	__LIB_0__::func_610(&sVar2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&sVar2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_47.f_1471, "SET_SCROLL_TEXT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(0f);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(3f);
-	__LIB_0__::func_610(&sVar3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&sVar3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (!BitTest(Global_2621446, 18))
 	{

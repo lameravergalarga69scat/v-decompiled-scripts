@@ -297,7 +297,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (!Global_78588)
 		{
-			if (!__LIB_11__::func_283(86) && !__LIB_0__::func_39(14))
+			if (!__LIB_11__::func_283(86) && !__LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 				__LIB_42__::func_336(&Local_46, 32f, 35f);
 			}

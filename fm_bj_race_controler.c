@@ -64751,7 +64751,7 @@ void func_9963(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4
 	}
 	if ((((((((((!__LIB_2__::func_254() && !__LIB_2__::func_239()) && !__LIB_2__::func_250()) && !__LIB_0__::func_197()) && !__LIB_1__::func_648()) && !__LIB_1__::func_647()) && !__LIB_1__::func_646()) && !__LIB_2__::func_251()) && !__LIB_2__::func_291()) && !__LIB_2__::func_252()) && !__LIB_2__::func_238())
 	{
-		if (!__LIB_1__::func_16())
+		if (!__LIB_1__::getGlobal_2714762_f_691())
 		{
 			__LIB_2__::func_237();
 			__LIB_18__::func_420();

@@ -1167,7 +1167,7 @@ void func_38()//Position - 0x1D98
 	struct<3> Var1;
 	float fVar2;
 	float fVar3;
-	if (((__LIB_0__::func_39(0) || __LIB_0__::func_39(2)) || __LIB_0__::func_39(3)) || __LIB_0__::func_39(4))
+	if (((__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(2)) || __LIB_0__::isGlobal_43052EqualsValue(3)) || __LIB_0__::isGlobal_43052EqualsValue(4))
 	{
 		return;
 	}

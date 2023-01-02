@@ -30321,13 +30321,13 @@ void func_5277()//Position - 0x1B2113
 								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(__LIB_6__::func_369(ENTITY::GET_ENTITY_MODEL(iVar4), 1));
 								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(ENTITY::GET_ENTITY_MODEL(iVar4)));
 								GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-								__LIB_0__::func_610(sVar9);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar9);
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&cVar8);
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&sVar7);
-								__LIB_0__::func_610("FMMC_VEHST_0" /* GXT: Top Speed */);
-								__LIB_0__::func_610("FMMC_VEHST_1" /* GXT: Acceleration */);
-								__LIB_0__::func_610("FMMC_VEHST_2" /* GXT: Braking */);
-								__LIB_0__::func_610("FMMC_VEHST_3" /* GXT: Traction */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_0" /* GXT: Top Speed */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_1" /* GXT: Acceleration */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_2" /* GXT: Braking */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_3" /* GXT: Traction */);
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(Local_543[bVar3 /*6*/][0]));
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(Local_543[bVar3 /*6*/][1]));
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(Local_543[bVar3 /*6*/][2]));
@@ -43997,7 +43997,7 @@ void func_5799()//Position - 0x1E8734
 	{
 		return;
 	}
-	if ((((__LIB_0__::func_983() || __LIB_1__::func_16()) || __LIB_5__::func_133()) || __LIB_0__::func_93()) || __LIB_1__::func_943())
+	if ((((__LIB_0__::func_983() || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_5__::getGlobal_2714762_f_692()) || __LIB_0__::func_93()) || __LIB_1__::func_943())
 	{
 		return;
 	}

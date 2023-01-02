@@ -616,7 +616,7 @@ void func_18()//Position - 0x68F
 						}
 					}
 				}
-				if ((__LIB_1__::func_16() || (__LIB_0__::func_983() && !__LIB_25__::func_208(PLAYER::PLAYER_ID()))) || __LIB_22__::func_391(1))
+				if ((__LIB_1__::getGlobal_2714762_f_691() || (__LIB_0__::func_983() && !__LIB_25__::func_208(PLAYER::PLAYER_ID()))) || __LIB_22__::func_391(1))
 				{
 					bVar2 = true;
 				}
@@ -2877,7 +2877,7 @@ void func_345(int iParam0, int iParam1, int iParam2, char* sParam3, char* sParam
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_2715699.f_2846.f_86, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam4);
-		__LIB_0__::func_610(sParam3);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_UGEN_NUM" /* GXT: ~1~/~1~ */);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam2);
@@ -2998,7 +2998,7 @@ void func_364(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4)
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_2715699.f_2846.f_86, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam4);
-		__LIB_0__::func_610(sParam3);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_UGEN_NUM" /* GXT: ~1~/~1~ */);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam1);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam2);
@@ -3109,7 +3109,7 @@ void func_372(var uParam0, var uParam1)//Position - 0x15154
 		}
 		if (GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_2715699.f_2846.f_86, "SET_TITLE"))
 		{
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			__LIB_0__::func_700(&(Global_794709.f_4[*uParam1 /*88*/].f_22));
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(NETWORK::TEXTURE_DOWNLOAD_GET_NAME(*uParam0));
@@ -14035,7 +14035,7 @@ void func_1140(var uParam0)//Position - 0x884D5
 			{
 				*uParam0 = 2;
 			}
-			else if (__LIB_1__::func_16())
+			else if (__LIB_1__::getGlobal_2714762_f_691())
 			{
 				__LIB_37__::func_143();
 				if (Global_1577843 > -1)

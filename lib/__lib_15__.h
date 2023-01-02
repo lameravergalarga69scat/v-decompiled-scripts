@@ -16787,7 +16787,7 @@ void func_119(int iParam0, int iParam1, var uParam2)//Position - 0xD008
 
 void func_120()//Position - 0x78758
 {
-	if (__LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{
@@ -21703,7 +21703,7 @@ void func_191(var uParam0, bool bParam1)//Position - 0x199183
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam1);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_47.f_1471, "SET_LIVE_PANEL");
-		__LIB_0__::func_610("SPEC_LIVE" /* GXT: LIVE */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SPEC_LIVE" /* GXT: LIVE */);
 		if (Global_2621446.f_69 == 1)
 		{
 			if (PED::IS_PED_A_PLAYER(__LIB_1__::func_4()))
@@ -21718,7 +21718,7 @@ void func_191(var uParam0, bool bParam1)//Position - 0x199183
 						sVar2 = PED::GET_PEDHEADSHOT_TXD_STRING(iVar1);
 					}
 					__LIB_8__::func_898(iVar0, &sVar3);
-					__LIB_0__::func_610("SPEC_CRWT" /* GXT: Currently Watching */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SPEC_CRWT" /* GXT: Currently Watching */);
 					__LIB_0__::func_700(PLAYER::GET_PLAYER_NAME(iVar0));
 					__LIB_0__::func_700(&sVar3);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sVar2);
@@ -22202,7 +22202,7 @@ void func_195(var uParam0, int iParam1)//Position - 0x1952B5
 																GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar15);
 																if (iVar25 == 0 && HUD::DOES_TEXT_LABEL_EXIST(&(Global_1837216[bVar24 /*16*/])))
 																{
-																	__LIB_0__::func_610(&(Global_1837216[bVar24 /*16*/]));
+																	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1837216[bVar24 /*16*/]));
 																}
 																else
 																{
@@ -23270,7 +23270,7 @@ void func_230(int iParam0)//Position - 0x42B7
 		{
 			iVar3 = 0;
 		}
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar3 = 0;
 		}
@@ -27399,7 +27399,7 @@ void func_284(int iParam0)//Position - 0x6001
 		{
 			iVar3 = 0;
 		}
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar3 = 0;
 		}
@@ -65924,7 +65924,7 @@ void func_943()//Position - 0xAEAD3
 	if (HUD::DOES_BLIP_EXIST(iVar0))
 	{
 		iVar1 = Global_113386.f_2363.f_539.f_4321;
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar1 = __LIB_0__::func_650(PLAYER::PLAYER_PED_ID());
 		}
@@ -67545,7 +67545,7 @@ void func_979()//Position - 0x4F239
 	if (HUD::DOES_BLIP_EXIST(iVar0))
 	{
 		iVar1 = Global_113386.f_2363.f_539.f_4321;
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar1 = __LIB_13__::func_716(PLAYER::PLAYER_PED_ID());
 		}

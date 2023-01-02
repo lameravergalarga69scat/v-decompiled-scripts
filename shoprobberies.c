@@ -193,7 +193,7 @@ void __EntryFunction__()//Position - 0x0
 		HUD::CLEAR_HELP(true);
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		HUD::CLEAR_HELP(true);
 		SCRIPT::TERMINATE_THIS_THREAD();

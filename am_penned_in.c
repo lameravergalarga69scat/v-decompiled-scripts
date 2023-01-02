@@ -5539,7 +5539,7 @@ int func_525(int* iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 				__LIB_1__::func_330(&(iParam0->f_1), 8);
 				HUD::GET_HUD_COLOUR(18, &iVar3, &iVar4, &iVar5, &uVar6);
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_MESSAGE");
-				__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);

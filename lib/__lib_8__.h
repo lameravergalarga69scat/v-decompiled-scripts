@@ -12677,7 +12677,7 @@ int func_299(var uParam0)//Position - 0x1D069C
 			while (iVar1 < 12)
 			{
 				StringCopy(&(Global_2097536.f_2833[iVar1 /*16*/]), "", 64);
-				__LIB_0__::func_946(&(Global_2097536.f_3026[iVar1 /*13*/]));
+				__LIB_0__::resetParamF1ToF12ToZero(&(Global_2097536.f_3026[iVar1 /*13*/]));
 				if (__LIB_0__::func_800((uParam0[iVar1 /*100*/])->f_32))
 				{
 					Global_2097536.f_3026[Global_2097536.f_3183 /*13*/] = { (uParam0[iVar1 /*100*/])->f_32 };
@@ -41687,7 +41687,7 @@ void func_872(var uParam0)//Position - 0x1D0464
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
-		__LIB_0__::func_946(&(Global_2103169[iVar0 /*13*/]));
+		__LIB_0__::resetParamF1ToF12ToZero(&(Global_2103169[iVar0 /*13*/]));
 		StringCopy(&(Global_2103169.f_157[iVar0 /*4*/]), "", 16);
 		iVar0++;
 	}

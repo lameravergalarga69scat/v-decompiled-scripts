@@ -40593,7 +40593,7 @@ void func_770(var uParam0, char* sParam1, char* sParam2, bool bParam3, int iPara
 		}
 		else
 		{
-			__LIB_0__::func_610(sParam1);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		}
 		if (__LIB_1__::func_828() && iParam6)
 		{
@@ -40614,7 +40614,7 @@ void func_770(var uParam0, char* sParam1, char* sParam2, bool bParam3, int iPara
 		}
 		else
 		{
-			__LIB_0__::func_610(sParam2);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 		}
 		if (iParam4 != -1)
 		{

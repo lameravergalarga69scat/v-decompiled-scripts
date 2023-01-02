@@ -7300,7 +7300,7 @@ void func_123()//Position - 0x1A419F
 {
 	Global_1852994 = -1;
 	Global_1852994.f_3 = __LIB_0__::getMinusOneOrNull();
-	__LIB_0__::func_946(&(Global_1852994.f_4));
+	__LIB_0__::resetParamF1ToF12ToZero(&(Global_1852994.f_4));
 	Global_1852994.f_17 = 0;
 	Global_1852994.f_18 = 0;
 	Global_1852994.f_19 = 0;
@@ -10817,10 +10817,10 @@ void func_261(var uParam0, int iParam1)//Position - 0x1BD1EA
 void func_262(var uParam0, char* sParam1)//Position - 0x1BD209
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_DESCRIPTION");
-	__LIB_0__::func_610("");
-	__LIB_0__::func_610("");
-	__LIB_0__::func_610("");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -11422,7 +11422,7 @@ void func_287(var uParam0)//Position - 0x1C0D4F
 	}
 	else
 	{
-		__LIB_0__::func_610(NETWORK::GET_TIME_AS_STRING(NETWORK::GET_NETWORK_TIME()));
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(NETWORK::GET_TIME_AS_STRING(NETWORK::GET_NETWORK_TIME()));
 	}
 	uParam0->f_47.f_2178 = 8000;
 	uParam0->f_47.f_2175++;
@@ -37403,7 +37403,7 @@ int func_629(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x2
 	{
 		return 0;
 	}
-	if ((__LIB_0__::func_983() || __LIB_1__::func_16()) || __LIB_5__::func_133())
+	if ((__LIB_0__::func_983() || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}
@@ -37463,7 +37463,7 @@ int func_631(var uParam0, int iParam1, var uParam2, var uParam3)//Position - 0x2
 	{
 		return 0;
 	}
-	if ((__LIB_0__::func_983() || __LIB_1__::func_16()) || __LIB_5__::func_133())
+	if ((__LIB_0__::func_983() || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}
@@ -55941,12 +55941,12 @@ void func_968(var uParam0)//Position - 0x1F91D1
 		case 3:
 		case 0:
 		case 8:
-			__LIB_0__::func_610(__LIB_10__::func_442(Global_1853348[PLAYER::PLAYER_ID() /*834*/]));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_10__::func_442(Global_1853348[PLAYER::PLAYER_ID() /*834*/]));
 			__LIB_0__::func_700(&(Global_4718592.f_116531));
 			break;
 		default:
-			__LIB_0__::func_610("SPC_TXT_DFLT" /* GXT: GTA Online */);
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SPC_TXT_DFLT" /* GXT: GTA Online */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			break;
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -55971,19 +55971,19 @@ void func_968(var uParam0)//Position - 0x1F91D1
 		}
 		else
 		{
-			__LIB_0__::func_610("MPTV_TICK2" /* GXT: Efforts to identify the suspect's known gangland affiliations have so far been unsuccessful. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_TICK2" /* GXT: Efforts to identify the suspect's known gangland affiliations have so far been unsuccessful. */);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_47.f_1471, "SET_SCROLL_TEXT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(0f);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(2f);
-	__LIB_0__::func_610(&sVar2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&sVar2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_47.f_1471, "SET_SCROLL_TEXT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(0f);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(3f);
-	__LIB_0__::func_610(&sVar3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&sVar3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (!BitTest(Global_2621446, 18))
 	{

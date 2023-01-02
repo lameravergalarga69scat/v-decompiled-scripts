@@ -2611,12 +2611,12 @@ void func_122()//Position - 0x63C2
 			iVar0 = joaat("SP2_DIST_AS_PASSENGER_TAXI");
 			break;
 		default:
-			if (!__LIB_0__::func_39(14))
+			if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 			}
 			break;
 	}
-	if (!__LIB_0__::func_39(14))
+	if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		fVar1 = PATHFIND::CALCULATE_TRAVEL_DISTANCE_BETWEEN_POINTS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Global_112424);
 		STATS::STAT_INCREMENT(iVar0, fVar1);
@@ -5716,7 +5716,7 @@ void func_187()//Position - 0xD198
 			{
 				Var5 = { HUD::GET_BLIP_COORDS(Local_819[iVar0 /*3*/]) };
 			}
-			__LIB_0__::func_610(ZONE::GET_NAME_OF_ZONE(Var5));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(ZONE::GET_NAME_OF_ZONE(Var5));
 			if (Local_819[iVar0 /*3*/].f_2 == 0)
 			{
 				if (Local_819[iVar0 /*3*/].f_1 != 0)

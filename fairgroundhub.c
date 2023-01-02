@@ -157,7 +157,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_75();
 		}
-		if (!__LIB_0__::func_39(14))
+		if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			if (__LIB_13__::func_94())
 			{
@@ -502,7 +502,7 @@ int func_1(var uParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4, i
 
 void func_67()//Position - 0x5DE9
 {
-	if (__LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		__LIB_16__::func_89(&(Local_50[0 /*24*/]), 0, "Bigwheel", __LIB_15__::func_504(158), 0, "", 0, 6.2f);
 		func_68(&(Local_49[0 /*24*/]), 0, "Rollercoaster", -1651.6411f, -1134.325f, 21.903982f, -1640.9845f, -1121.5903f, 16.503132f, 6.75f, 0, "", 0);

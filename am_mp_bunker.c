@@ -61289,7 +61289,7 @@ void func_6384()//Position - 0x211A02
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	if ((((((((Local_2476.f_1004 != __LIB_0__::getMinusOneOrNull() && __LIB_2__::func_754(PLAYER::PLAYER_ID())) && !__LIB_0__::func_863()) && Local_2475[NETWORK::PARTICIPANT_ID_TO_INT() /*7*/].f_1.f_3 != 2) && !__LIB_0__::func_626()) && !Global_1640732) && !__LIB_1__::func_583(PLAYER::PLAYER_ID())) && !__LIB_0__::func_983()) && !__LIB_1__::func_16())
+	if ((((((((Local_2476.f_1004 != __LIB_0__::getMinusOneOrNull() && __LIB_2__::func_754(PLAYER::PLAYER_ID())) && !__LIB_0__::func_863()) && Local_2475[NETWORK::PARTICIPANT_ID_TO_INT() /*7*/].f_1.f_3 != 2) && !__LIB_0__::func_626()) && !Global_1640732) && !__LIB_1__::func_583(PLAYER::PLAYER_ID())) && !__LIB_0__::func_983()) && !__LIB_1__::getGlobal_2714762_f_691())
 	{
 		iVar0 = 0;
 		iVar1 = 0;

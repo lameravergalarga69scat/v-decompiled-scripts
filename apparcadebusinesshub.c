@@ -467,11 +467,11 @@ void func_7(int iParam0, char* sParam1, char* sParam2, char* sParam3, float fPar
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_125, "ADD_BUSINESS");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(sParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam4);
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam5);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam6);
@@ -1462,7 +1462,7 @@ char* func_100(int iParam0, bool bParam1)//Position - 0x2747
 void func_101(char* sParam0, char* sParam1, char* sParam2, char* sParam3, bool bParam4, bool bParam5, int iParam6, int iParam7, int iParam8, char* sParam9, char* sParam10)//Position - 0x2807
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_125, "SHOW_OVERLAY");
-	__LIB_0__::func_610(sParam0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam9))
 	{
@@ -1485,8 +1485,8 @@ void func_101(char* sParam0, char* sParam1, char* sParam2, char* sParam3, bool b
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam7);
 	}
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610(sParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (bParam5)
 	{
@@ -1546,14 +1546,14 @@ void func_106()//Position - 0x2947
 {
 	int iVar0;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_125, "SHOW_SPECIAL_CARGO_OVERLAY");
-	__LIB_0__::func_610("ARC_H_OV_1_T" /* GXT: Special Cargo */);
-	__LIB_0__::func_610("ARC_H_OV_2_M" /* GXT: Select a Warehouse */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ARC_H_OV_1_T" /* GXT: Special Cargo */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ARC_H_OV_2_M" /* GXT: Select a Warehouse */);
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
 		if (Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_114[iVar0 /*3*/] != 0)
 		{
-			__LIB_0__::func_610(__LIB_3__::func_50(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_114[iVar0 /*3*/]));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_3__::func_50(Global_1853348[PLAYER::PLAYER_ID() /*834*/].f_267.f_114[iVar0 /*3*/]));
 		}
 		iVar0++;
 	}

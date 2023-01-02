@@ -1681,7 +1681,7 @@ void func_1106(var uParam0, bool bParam1, int iParam2)//Position - 0x4F9D0
 		{
 			__LIB_10__::func_909(uParam0, __LIB_10__::func_925(&(uParam0->f_47), iVar0, iVar1));
 			__LIB_11__::func_781(&(uParam0->f_1), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), 1);
-			if ((iParam2 && !__LIB_5__::func_133()) && __LIB_10__::func_388() != 2)
+			if ((iParam2 && !__LIB_5__::getGlobal_2714762_f_692()) && __LIB_10__::func_388() != 2)
 			{
 				CAM::DO_SCREEN_FADE_OUT(0);
 			}

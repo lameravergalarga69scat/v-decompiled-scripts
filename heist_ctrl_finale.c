@@ -422,7 +422,7 @@ void __EntryFunction__()//Position - 0x0
 	__LIB_39__::func_496(0);
 	while (!__LIB_0__::func_425(3))
 	{
-		if (!Global_78588 && !__LIB_0__::func_39(14))
+		if (!Global_78588 && !__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			__LIB_42__::func_336(&Local_178, 10f, 18f);
 			__LIB_42__::func_340(&Local_178);

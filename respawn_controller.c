@@ -112,13 +112,13 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if ((PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false)) && !PLAYER::IS_PLAYER_BEING_ARRESTED(PLAYER::PLAYER_ID(), false))
 				{
-					if (!__LIB_0__::func_39(13) && !__LIB_0__::func_39(14))
+					if (!__LIB_0__::isGlobal_43052EqualsValue(13) && !__LIB_0__::isGlobal_43052EqualsValue(14))
 					{
 						func_54();
 					}
 					iLocal_45 = 3;
 				}
-				else if (!__LIB_0__::func_39(13) && !__LIB_0__::func_39(14))
+				else if (!__LIB_0__::isGlobal_43052EqualsValue(13) && !__LIB_0__::isGlobal_43052EqualsValue(14))
 				{
 					func_42();
 				}
@@ -349,14 +349,14 @@ void func_45(int iParam0, char* sParam1, char* sParam2, int iParam3)//Position -
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 	{
-		__LIB_0__::func_610(sParam2);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
 int func_50()//Position - 0x4EA8
 {
-	if (__LIB_0__::func_39(1))
+	if (__LIB_0__::isGlobal_43052EqualsValue(1))
 	{
 		return 1;
 	}
@@ -2848,7 +2848,7 @@ void func_323(int iParam0, int iParam1)//Position - 0x2C034
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[bVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[bVar0] = __LIB_0__::func_407(iParam0);

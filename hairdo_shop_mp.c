@@ -2064,7 +2064,7 @@ void func_127(int iParam0, int iParam1)//Position - 0xAB37
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[bVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[bVar0] = __LIB_0__::func_407(iParam0);
@@ -15222,7 +15222,7 @@ void func_499(var uParam0, int iParam1, bool bParam2)//Position - 0x57ADF
 	}
 	if (GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_614, "SET_TITLE"))
 	{
-		__LIB_0__::func_610(sVar0);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar0);
 		if (iVar3 != -1 && uParam0->f_711 != -1)
 		{
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sVar1);
@@ -15309,7 +15309,7 @@ void func_499(var uParam0, int iParam1, bool bParam2)//Position - 0x57ADF
 		}
 		if (GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_624, "SET_TITLE"))
 		{
-			__LIB_0__::func_610(sVar0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar0);
 			if (iVar6 != -1 && uParam0->f_711 != -1)
 			{
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sVar5);
@@ -21262,7 +21262,7 @@ void func_1072(var uParam0, var uParam1)//Position - 0x8A2DF
 				}
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
-					if (((!__LIB_14__::func_350(*uParam0) || !__LIB_1__::func_686(*uParam0, 0, 0)) || __LIB_1__::func_16()) || __LIB_1__::func_872(PLAYER::PLAYER_ID()))
+					if (((!__LIB_14__::func_350(*uParam0) || !__LIB_1__::func_686(*uParam0, 0, 0)) || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_1__::func_872(PLAYER::PLAYER_ID()))
 					{
 						bVar1 = true;
 					}
@@ -21361,7 +21361,7 @@ void func_1072(var uParam0, var uParam1)//Position - 0x8A2DF
 						__LIB_3__::func_506(*uParam0);
 					}
 				}
-				else if ((((((uParam0->f_108 && !__LIB_0__::func_39(11)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(0)) && !__LIB_0__::func_39(3)) && !BitTest(Global_100493.f_1393[*uParam0], 1)) && !BitTest(Global_100493.f_1393[*uParam0], 2))
+				else if ((((((uParam0->f_108 && !__LIB_0__::isGlobal_43052EqualsValue(11)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(0)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !BitTest(Global_100493.f_1393[*uParam0], 1)) && !BitTest(Global_100493.f_1393[*uParam0], 2))
 				{
 					if (__LIB_0__::func_328(*uParam0) == 3)
 					{

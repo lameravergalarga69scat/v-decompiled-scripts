@@ -144,7 +144,7 @@ void __EntryFunction__()//Position - 0x0
 	__LIB_7__::func_252(&iLocal_105);
 	iLocal_102 = 0;
 	func_96();
-	__LIB_2__::func_829(Global_20247, "SET_THEME", SYSTEM::TO_FLOAT(5), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_THEME", SYSTEM::TO_FLOAT(5), -1082130432, -1082130432, -1082130432, -1082130432);
 	func_85(0);
 	while (true)
 	{
@@ -384,7 +384,7 @@ void func_49()//Position - 0x12A4
 	{
 		Global_20266.f_1 = 8;
 	}
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
 	bVar0 = false;
 	iVar3 = __LIB_31__::func_707(iLocal_102, 0);
 	iLocal_103 = Global_1888478.f_7[iVar3 /*8*/].f_2;
@@ -403,7 +403,7 @@ void func_49()//Position - 0x12A4
 	}
 	else
 	{
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	}
 	if (Global_1888478.f_7[iVar3 /*8*/] == 0)
 	{
@@ -430,11 +430,11 @@ void func_49()//Position - 0x12A4
 			{
 				if (bVar7)
 				{
-					__LIB_0__::func_610("BA_APP_BODYCTA" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~s~ */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCTA" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~s~ */);
 				}
 				else
 				{
-					__LIB_0__::func_610("BA_APP_BODY_TA" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~s~ */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_TA" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~s~ */);
 				}
 			}
 			else
@@ -531,10 +531,10 @@ void func_49()//Position - 0x12A4
 	}
 	else
 	{
-		__LIB_0__::func_610(&Local_99);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_99);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420(&Local_96);
 	__LIB_13__::func_478(13, &Local_90, 12, &Local_93, 4, &Local_84, &iLocal_105);
 	iLocal_83 = 1;
@@ -587,7 +587,7 @@ void func_85(bool bParam0)//Position - 0x1EEE
 		return;
 	}
 	func_86();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(25), SYSTEM::TO_FLOAT(iVar0), -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(25), SYSTEM::TO_FLOAT(iVar0), -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420("CELL_BOSSAGE" /* GXT: SecuroServ */);
 	bVar2 = false;
 	if (iVar1 > 0)
@@ -609,7 +609,7 @@ void func_86()//Position - 0x1FD8
 {
 	int iVar0;
 	int iVar1;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(25), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(25), -1082130432, -1082130432, -1082130432, -1082130432);
 	iVar0 = 0;
 	while (iVar0 < __LIB_13__::func_429())
 	{
@@ -648,13 +648,13 @@ void func_87()//Position - 0x208D
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	if (__LIB_0__::func_796(PLAYER::PLAYER_ID()))
 	{
-		__LIB_0__::func_610("BA_APP_NONEB" /* GXT: No Invites */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_NONEB" /* GXT: No Invites */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BA_APP_NONE" /* GXT: No VIP Invites */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_NONE" /* GXT: No VIP Invites */);
 	}
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 	bVar0 = NETWORK::NETWORK_IS_GAME_IN_PROGRESS();
@@ -713,11 +713,11 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 	{
 		if (bVar1)
 		{
-			__LIB_0__::func_610("BA_APP_BODYCT" /* GXT: Wants you to become an Associate. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCT" /* GXT: Wants you to become an Associate. */);
 		}
 		else
 		{
-			__LIB_0__::func_610("BA_APP_BODY_T" /* GXT: Wants you to become a Bodyguard. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_T" /* GXT: Wants you to become a Bodyguard. */);
 		}
 	}
 	else if (iVar2 == 1)
@@ -761,7 +761,7 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 
 void func_91()//Position - 0x22DD
 {
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(26);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -769,10 +769,10 @@ void func_91()//Position - 0x22DD
 	HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(__LIB_19__::func_263(PLAYER::PLAYER_ID()));
 	HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(__LIB_13__::func_394());
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610("BA_APP_NONEG" /* GXT: You are already a member of this Organization. */);
-	__LIB_0__::func_610("CELL_AGBOSSPIC" /* GXT: CHAR_GANGAPP */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_NONEG" /* GXT: You are already a member of this Organization. */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CELL_AGBOSSPIC" /* GXT: CHAR_GANGAPP */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420("CELL_BOSSAGE" /* GXT: SecuroServ */);
 	__LIB_13__::func_478(1, "", 1, "", 4, &Local_84, &iLocal_105);
 	iLocal_83 = 2;

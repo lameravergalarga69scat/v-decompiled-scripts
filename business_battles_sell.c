@@ -63847,19 +63847,19 @@ void func_5805(int* iParam0, int iParam1, bool bParam2)//Position - 0x1E0CD4
 			}
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_847, "SET_LABELS");
-		__LIB_0__::func_610("H_ICON_1");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_1");
 		if (iParam1 == 0)
 		{
-			__LIB_0__::func_610("H_ICON_2a");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_2a");
 		}
 		else
 		{
-			__LIB_0__::func_610("H_ICON_2");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_2");
 		}
-		__LIB_0__::func_610("H_ICON_3");
-		__LIB_0__::func_610("H_ICON_4");
-		__LIB_0__::func_610("H_ICON_5");
-		__LIB_0__::func_610("H_ICON_6");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_3");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_4");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_5");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_6");
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		MISC::SET_BIT(iParam0, 29);
 	}
@@ -93211,7 +93211,7 @@ void func_6914(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (uParam2->f_108 == 6 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					__LIB_0__::func_610(sParam16);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam16);
 				}
 				else
 				{
@@ -93298,7 +93298,7 @@ void func_6914(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				{
 					if (iParam15 == 0 && !MISC::IS_STRING_NULL_OR_EMPTY(&(uParam2->f_104)))
 					{
-						__LIB_0__::func_610(&(uParam2->f_104));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam2->f_104));
 					}
 					else
 					{
@@ -93346,19 +93346,19 @@ void func_6914(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (__LIB_2__::func_117(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (__LIB_1__::func_979(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (__LIB_1__::func_978(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_CREW" /* GXT: C */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_CREW" /* GXT: C */);
 				}
 				else
 				{
-					__LIB_0__::func_610("");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 				}
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}

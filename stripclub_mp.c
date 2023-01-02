@@ -835,7 +835,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (RECORDING::IS_REPLAY_RECORDING())
 			{
-				if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+				if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 				{
 					if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 115.93143f, -1290.4828f, 27.94359f) < (70f * 70f))
 					{
@@ -1022,7 +1022,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (__LIB_0__::func_959())
 			{
-				func_36(&uLocal_433, (__LIB_0__::func_197() || __LIB_1__::func_16()));
+				func_36(&uLocal_433, (__LIB_0__::func_197() || __LIB_1__::getGlobal_2714762_f_691()));
 			}
 			else
 			{
@@ -3330,7 +3330,7 @@ void func_191(char* sParam0, char* sParam1, bool bParam2, int iParam3)//Position
 	{
 		return;
 	}
-	if ((iParam3 == 0 && (__LIB_0__::func_39(15) || __LIB_0__::func_39(6))) && !Global_112025)
+	if ((iParam3 == 0 && (__LIB_0__::isGlobal_43052EqualsValue(15) || __LIB_0__::isGlobal_43052EqualsValue(6))) && !Global_112025)
 	{
 		if (!__LIB_13__::func_101(sParam0))
 		{
@@ -9251,7 +9251,7 @@ void func_742(char* sParam0, bool bParam1, int iParam2)//Position - 0x7CE70
 	{
 		return;
 	}
-	if ((iParam2 == 0 && (__LIB_0__::func_39(15) || __LIB_0__::func_39(6))) && !Global_112025)
+	if ((iParam2 == 0 && (__LIB_0__::isGlobal_43052EqualsValue(15) || __LIB_0__::isGlobal_43052EqualsValue(6))) && !Global_112025)
 	{
 		if (!__LIB_13__::func_101(sParam0))
 		{
@@ -15251,7 +15251,7 @@ void func_1184(var uParam0)//Position - 0x89974
 	}
 	if (!func_34())
 	{
-		if (!__LIB_0__::func_39(6) && !__LIB_0__::func_39(7))
+		if (!__LIB_0__::isGlobal_43052EqualsValue(6) && !__LIB_0__::isGlobal_43052EqualsValue(7))
 		{
 			__LIB_14__::func_622(94, 1, 0);
 		}
@@ -15319,7 +15319,7 @@ void func_1184(var uParam0)//Position - 0x89974
 	__LIB_39__::func_485(iLocal_118);
 	__LIB_39__::func_485(iLocal_120);
 	__LIB_0__::func_671(0);
-	if (__LIB_39__::func_646() && !__LIB_0__::func_39(14))
+	if (__LIB_39__::func_646() && !__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), true, 0);
 	}

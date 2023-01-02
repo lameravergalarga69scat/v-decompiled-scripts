@@ -106,16 +106,16 @@ void func_1()//Position - 0x8C
 		iVar0 = __LIB_14__::func_466();
 		if (!__LIB_0__::func_374(iVar0))
 		{
-			if (__LIB_0__::func_39(13))
+			if (__LIB_0__::isGlobal_43052EqualsValue(13))
 			{
 			}
-			else if (__LIB_0__::func_39(14))
+			else if (__LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 			}
 			else
 			{
 				iVar1 = ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID());
-				if (__LIB_0__::func_39(17))
+				if (__LIB_0__::isGlobal_43052EqualsValue(17))
 				{
 					return;
 				}
@@ -497,7 +497,7 @@ void func_58(int iParam0, int iParam1)//Position - 0x5A20
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[iVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[iVar0] = __LIB_0__::func_407(iParam0);

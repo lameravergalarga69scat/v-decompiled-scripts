@@ -610,12 +610,12 @@ void func_6()//Position - 0x654
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_290, "ADD_JOB");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
-		__LIB_0__::func_610(&Var5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var5);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		if (MISC::IS_STRING_NULL_OR_EMPTY(&Var6))
 		{
-			__LIB_0__::func_610(&Var7);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var7);
 		}
 		else
 		{
@@ -635,7 +635,7 @@ void func_7(int iParam0, char* sParam1)//Position - 0x775
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_290, "SHOW_JOB_OVERLAY");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -1227,12 +1227,12 @@ void func_230()//Position - 0x9A91
 			}
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_290, "ADD_JOB");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
-			__LIB_0__::func_610(&Var3);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var3);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar9);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar10);
 			if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar7))
 			{
-				__LIB_0__::func_610(&Var6);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var6);
 			}
 			else
 			{
@@ -2206,7 +2206,7 @@ void func_331()//Position - 0xD801
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 		if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
 		{
-			__LIB_0__::func_610(&Var6);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var6);
 		}
 		else
 		{
@@ -2218,7 +2218,7 @@ void func_331()//Position - 0xD801
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		if (iVar2 == 1 && func_248())
 		{
-			__LIB_0__::func_610(&Var7);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var7);
 		}
 		else
 		{
@@ -2278,12 +2278,12 @@ void func_342()//Position - 0xDBA5
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_290, "ADD_JOB");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
-		__LIB_0__::func_610(&Var1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
 		if (iVar6 <= 0)
 		{
-			__LIB_0__::func_610(&Var3);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var3);
 		}
 		else
 		{
@@ -2344,10 +2344,10 @@ void func_350()//Position - 0xDDC2
 			Var5 = { func_10(func_13(iVar0), iVar2) };
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
-		__LIB_0__::func_610(&Var4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var4);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
-		__LIB_0__::func_610(&Var5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var5);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bVar3);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0++;
@@ -2414,7 +2414,7 @@ void func_357(int iParam0)//Position - 0xE048
 void func_359(char* sParam0, char* sParam1, char* sParam2, char* sParam3, bool bParam4, bool bParam5, int iParam6, int iParam7, int iParam8, char* sParam9, char* sParam10)//Position - 0xE06B
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_290, "SHOW_OVERLAY");
-	__LIB_0__::func_610(sParam0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam9))
 	{
@@ -2437,8 +2437,8 @@ void func_359(char* sParam0, char* sParam1, char* sParam2, char* sParam3, bool b
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam7);
 	}
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610(sParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (bParam5)
 	{

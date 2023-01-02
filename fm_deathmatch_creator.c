@@ -35864,14 +35864,14 @@ void func_2233(var uParam0, float fParam1, bool bParam2)//Position - 0x14DA78
 			if (!uParam0->f_2)
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_1, "SHOW_MISSION_PASSED_MESSAGE");
-				__LIB_0__::func_610(&(uParam0->f_5));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_5));
 				if (uParam0->f_560 == 4)
 				{
 					__LIB_0__::func_700(&(uParam0->f_13));
 				}
 				else
 				{
-					__LIB_0__::func_610(&(uParam0->f_13));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_13));
 				}
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
@@ -89569,7 +89569,7 @@ void func_5897(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam6);
 		if (iParam7 != -1)

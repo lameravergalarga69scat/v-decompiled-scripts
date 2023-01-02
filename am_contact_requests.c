@@ -3124,7 +3124,7 @@ void func_148()//Position - 0x96D1
 			if (BitTest(iLocal_143, 19))
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_181, "SET_TEXT");
-				__LIB_0__::func_610("");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 			iLocal_142 = 0;
@@ -10965,7 +10965,7 @@ void func_1029(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4,
 	if (iParam9 > -1)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam9);
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	}
 	else if (MISC::IS_STRING_NULL_OR_EMPTY(sParam7))
 	{

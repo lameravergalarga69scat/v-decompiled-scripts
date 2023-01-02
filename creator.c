@@ -9360,7 +9360,7 @@ void func_724(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		}
 		if (iParam6 == 0)
 		{
-			__LIB_0__::func_610(sParam5);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		}
 		else
 		{
@@ -9380,8 +9380,8 @@ void func_726(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
-		__LIB_0__::func_610(sParam5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam6);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam7);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -9398,7 +9398,7 @@ void func_729(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		if (iParam5 != iParam6)
 		{
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_PLAYERS_V" /* GXT: ~1~ - ~1~ */);
@@ -9426,7 +9426,7 @@ void func_730(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam6);
 		if (iParam7 <= 9)

@@ -5068,7 +5068,7 @@ int func_339()//Position - 0x58A0A
 			}
 		}
 	}
-	else if (__LIB_0__::func_39(13) || __LIB_0__::func_39(14))
+	else if (__LIB_0__::isGlobal_43052EqualsValue(13) || __LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		return 0;
 	}

@@ -569,15 +569,15 @@ void func_44(int iParam0)//Position - 0xE3D
 void func_46(char* sParam0, char* sParam1, char* sParam2, char* sParam3, int iParam4, int iParam5)//Position - 0xE62
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_310, "SHOW_OVERLAY");
-	__LIB_0__::func_610(sParam0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	if (iParam4 != -1)
 	{
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam4);
 	}
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610(sParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	MISC::SET_BIT(&uLocal_129, 1);
 	func_47(iParam5);
@@ -1171,8 +1171,8 @@ void func_221(int iParam0)//Position - 0x6EEE
 	}
 	else
 	{
-		__LIB_0__::func_610("");
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(sVar4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);

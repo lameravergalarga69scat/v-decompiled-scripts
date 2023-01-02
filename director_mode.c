@@ -8508,7 +8508,7 @@ void func_268(var uParam0, var uParam1, var uParam2)//Position - 0x15529
 		}
 		if (__LIB_18__::func_266(uParam0))
 		{
-			if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_0__::func_39(14))
+			if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 				iVar0 = ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID());
 				if ((((iVar0 == joaat("Player_Zero") || iVar0 == joaat("Player_One")) || iVar0 == joaat("Player_Two")) || iVar0 == joaat("MP_F_Freemode_01")) || iVar0 == joaat("MP_M_Freemode_01"))
@@ -22612,7 +22612,7 @@ void func_807()//Position - 0x96BFD
 	Global_31963 = 0;
 	__LIB_0__::func_424(0);
 	HUD::DISPLAY_RADAR(true);
-	if (!__LIB_0__::func_39(14))
+	if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		HUD::THEFEED_RESUME();
 	}
@@ -22658,7 +22658,7 @@ void func_815(int iParam0, bool bParam1, bool bParam2)//Position - 0x9726D
 	if (bParam1)
 	{
 		HUD::DISPLAY_RADAR(false);
-		if (!__LIB_0__::func_39(14))
+		if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			HUD::THEFEED_PAUSE();
 		}
@@ -25748,7 +25748,7 @@ void func_890()//Position - 0xA0BB9
 				{
 					iLocal_425 = 1;
 					GRAPHICS::BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD(20, "SET_DIRECTOR_MODE_TEXT");
-					__LIB_0__::func_610("CM_MODE");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CM_MODE");
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 			}
@@ -38232,7 +38232,7 @@ int func_1332(int iParam0, bool bParam1, int iParam2)//Position - 0xCB306
 			return 2;
 		}
 	}
-	if (__LIB_13__::func_94() && !__LIB_0__::func_39(14))
+	if (__LIB_13__::func_94() && !__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		return 3;
 	}
@@ -39765,7 +39765,7 @@ int func_1409(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 			PLAYER::SET_AUTO_GIVE_SCUBA_GEAR_WHEN_EXIT_VEHICLE(PLAYER::PLAYER_ID(), __LIB_0__::func_425(68));
 		}
 		__LIB_13__::func_818(iVar2, &iVar7);
-		if (((__LIB_0__::func_39(0) || __LIB_0__::func_39(3)) || __LIB_0__::func_39(2)) || __LIB_0__::func_39(4))
+		if (((__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(3)) || __LIB_0__::isGlobal_43052EqualsValue(2)) || __LIB_0__::isGlobal_43052EqualsValue(4))
 		{
 			PED::SET_PED_CONFIG_FLAG(iVar7, 32, false);
 			PED::SET_PED_CONFIG_FLAG(iVar7, 250, false);
@@ -40110,7 +40110,7 @@ void func_1444(int iParam0, int iParam1)//Position - 0xD9407
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[iVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[iVar0] = __LIB_0__::func_407(iParam0);

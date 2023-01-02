@@ -216,7 +216,7 @@ void __EntryFunction__()//Position - 0x0
 						}
 						if (BitTest(Global_32338[iVar2 /*23*/].f_11, 7))
 						{
-							if (!__LIB_0__::func_39(15))
+							if (!__LIB_0__::isGlobal_43052EqualsValue(15))
 							{
 								iVar8++;
 							}
@@ -232,7 +232,7 @@ void __EntryFunction__()//Position - 0x0
 						}
 						if (BitTest(Global_32338[iVar2 /*23*/].f_11, 14))
 						{
-							if (__LIB_0__::func_39(5))
+							if (__LIB_0__::isGlobal_43052EqualsValue(5))
 							{
 								iVar8++;
 							}
@@ -1121,7 +1121,7 @@ void func_42()//Position - 0x1B0E
 
 void func_43()//Position - 0x1B31
 {
-	if (__LIB_0__::func_178(0) == 1 && !__LIB_0__::func_39(6))
+	if (__LIB_0__::func_178(0) == 1 && !__LIB_0__::isGlobal_43052EqualsValue(6))
 	{
 		__LIB_14__::func_622(112, 1, 0);
 		__LIB_14__::func_622(113, 1, 0);
@@ -1131,7 +1131,7 @@ void func_43()//Position - 0x1B31
 
 void func_45()//Position - 0x1B92
 {
-	if (__LIB_0__::func_178(0) == 1 && !__LIB_0__::func_39(6))
+	if (__LIB_0__::func_178(0) == 1 && !__LIB_0__::isGlobal_43052EqualsValue(6))
 	{
 		__LIB_14__::func_622(156, 1, 0);
 		__LIB_14__::func_622(157, 1, 0);

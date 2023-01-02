@@ -2292,7 +2292,7 @@ void func_28()//Position - 0xBE6
 			{
 				MISC::CLEAR_BIT(&iLocal_1402, 3);
 			}
-			if ((((((((((((__LIB_1__::func_693(PLAYER::PLAYER_ID(), 1, 1) && !BitTest(Global_2703735.f_876.f_4, 0)) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !__LIB_4__::func_849()) && !__LIB_3__::func_558()) && !__LIB_4__::func_897(PLAYER::PLAYER_ID())) && (__LIB_11__::func_981(Global_1853186) || __LIB_11__::func_980(Global_1853186))) && !func_778()) && !Global_262145.f_21509 /* Tunable: GR_SHOOTING_RANGE_DISABLE */) && !__LIB_1__::func_832(PLAYER::PLAYER_ID())) && !__LIB_1__::func_16()) && !__LIB_0__::func_626()) && !__LIB_4__::func_911())
+			if ((((((((((((__LIB_1__::func_693(PLAYER::PLAYER_ID(), 1, 1) && !BitTest(Global_2703735.f_876.f_4, 0)) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !__LIB_4__::func_849()) && !__LIB_3__::func_558()) && !__LIB_4__::func_897(PLAYER::PLAYER_ID())) && (__LIB_11__::func_981(Global_1853186) || __LIB_11__::func_980(Global_1853186))) && !func_778()) && !Global_262145.f_21509 /* Tunable: GR_SHOOTING_RANGE_DISABLE */) && !__LIB_1__::func_832(PLAYER::PLAYER_ID())) && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_0__::func_626()) && !__LIB_4__::func_911())
 			{
 				if ((func_770() && __LIB_3__::func_526(ENTITY::GET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID()), 350f, 35f)) && !__LIB_4__::func_849())
 				{
@@ -6782,7 +6782,7 @@ void func_297(int iParam0, char* sParam1, char* sParam2, int iParam3, int iParam
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRING");
 	HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam1);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	__LIB_1__::func_31(&(iParam0->f_2));
 	iParam0->f_1 = iParam3;
@@ -12530,7 +12530,7 @@ void func_740(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bPara
 					}
 					if (!MISC::IS_STRING_NULL_OR_EMPTY(iParam0->f_2[iVar6 /*15*/]))
 					{
-						__LIB_0__::func_610(iParam0->f_2[iVar6 /*15*/]);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_2[iVar6 /*15*/]);
 					}
 					if (MISC::IS_PC_VERSION())
 					{
@@ -14835,7 +14835,7 @@ void func_878()//Position - 0x83349
 				__LIB_1__::func_330(&Local_168, 8);
 				HUD::GET_HUD_COLOUR(18, &iVar2, &iVar3, &iVar4, &uVar5);
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Local_168.f_2, "SET_MESSAGE");
-				__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);

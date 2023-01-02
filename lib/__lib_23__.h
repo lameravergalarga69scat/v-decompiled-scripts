@@ -6741,7 +6741,7 @@ void func_288(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		if (bParam8)
 		{
 			__LIB_0__::func_700(sParam6);
@@ -6754,7 +6754,7 @@ void func_288(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		}
 		else
 		{
-			__LIB_0__::func_610(sParam6);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam6);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
@@ -6764,14 +6764,14 @@ void func_289(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sPar
 {
 	if (GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_TITLE"))
 	{
-		__LIB_0__::func_610(sParam1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		if (bParam6)
 		{
 			__LIB_0__::func_700(sParam2);
 		}
 		else
 		{
-			__LIB_0__::func_610(sParam2);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam4);
@@ -14984,7 +14984,7 @@ int func_380(var uParam0, int* iParam1, bool bParam2)//Position - 0x16C6D3
 				{
 					case 0:
 						__LIB_16__::func_287(*iParam1, "OPEN_SHUTTER");
-						__LIB_2__::func_829(*iParam1, "SET_REMAINING_PHOTOS", SYSTEM::TO_FLOAT(1), SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+						__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(*iParam1, "SET_REMAINING_PHOTOS", SYSTEM::TO_FLOAT(1), SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 						*uParam0 = 4;
 						uParam0->f_2 = MISC::GET_GAME_TIMER();
 						Global_4718592.f_628 = { CAM::GET_CAM_COORD(CAM::GET_RENDERING_CAM()) };
@@ -15000,7 +15000,7 @@ int func_380(var uParam0, int* iParam1, bool bParam2)//Position - 0x16C6D3
 			else if (uParam0->f_2 < (MISC::GET_GAME_TIMER() - 1000))
 			{
 				__LIB_16__::func_287(*iParam1, "OPEN_SHUTTER");
-				__LIB_2__::func_829(*iParam1, "SET_REMAINING_PHOTOS", SYSTEM::TO_FLOAT(1), SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+				__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(*iParam1, "SET_REMAINING_PHOTOS", SYSTEM::TO_FLOAT(1), SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 				*uParam0 = 4;
 				uParam0->f_2 = MISC::GET_GAME_TIMER();
 			}
@@ -23084,7 +23084,7 @@ void func_464(int* iParam0, int iParam1, int iParam2, bool bParam3, int iParam4,
 			case 1:
 				if (!bParam3)
 				{
-					__LIB_2__::func_829(*iParam0, "SHOW_PHOTO_FRAME", 1f, -1082130432, -1082130432, -1082130432, -1082130432);
+					__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(*iParam0, "SHOW_PHOTO_FRAME", 1f, -1082130432, -1082130432, -1082130432, -1082130432);
 					if (iParam1 == 16 || iParam1 == 774)
 					{
 						if (!BitTest(Global_4718592.f_7, 1))
@@ -23104,7 +23104,7 @@ void func_464(int* iParam0, int iParam1, int iParam2, bool bParam3, int iParam4,
 					{
 						iVar0 = 1;
 					}
-					__LIB_2__::func_829(*iParam0, "SET_REMAINING_PHOTOS", SYSTEM::TO_FLOAT(iVar0), SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+					__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_REMAINING_PHOTOS", SYSTEM::TO_FLOAT(iVar0), SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 					*iParam2++;
 				}
 				else
@@ -35623,7 +35623,7 @@ void func_681(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 					}
 					if (Global_23150.f_5404[iVar1] == -1)
 					{
-						__LIB_0__::func_610(&(Global_23150.f_5355[iVar1 /*4*/]));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_23150.f_5355[iVar1 /*4*/]));
 					}
 					else
 					{
@@ -35667,7 +35667,7 @@ void func_681(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 				__LIB_0__::func_700(&Global_4539885);
 				if (Global_4539885.f_20 == -1)
 				{
-					__LIB_0__::func_610(&(Global_4539885.f_16));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4539885.f_16));
 				}
 				else
 				{
@@ -37753,7 +37753,7 @@ void func_688(int iParam0, var uParam1, int iParam2, int iParam3, char* sParam4,
 		case 11:
 			if (iParam7 == -2)
 			{
-				__LIB_0__::func_610("");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			}
 			else if (bParam6)
 			{
@@ -37761,7 +37761,7 @@ void func_688(int iParam0, var uParam1, int iParam2, int iParam3, char* sParam4,
 			}
 			else
 			{
-				__LIB_0__::func_610(sParam5);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 			}
 			break;
 		case 3:
@@ -37793,7 +37793,7 @@ void func_688(int iParam0, var uParam1, int iParam2, int iParam3, char* sParam4,
 				}
 				else
 				{
-					__LIB_0__::func_610("");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 				}
 			}
 			else if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam5))
@@ -37821,12 +37821,12 @@ void func_688(int iParam0, var uParam1, int iParam2, int iParam3, char* sParam4,
 						}
 						else
 						{
-							__LIB_0__::func_610(sParam5);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 						}
 					}
 					else
 					{
-						__LIB_0__::func_610("");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 					}
 				}
 			}
@@ -37840,12 +37840,12 @@ void func_688(int iParam0, var uParam1, int iParam2, int iParam3, char* sParam4,
 				}
 				else
 				{
-					__LIB_0__::func_610("");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 				}
 			}
 			else
 			{
-				__LIB_0__::func_610("");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			}
 			break;
 		case 31:
@@ -37853,7 +37853,7 @@ void func_688(int iParam0, var uParam1, int iParam2, int iParam3, char* sParam4,
 		case 41:
 			if (BitTest(Global_4718592.f_31, 6))
 			{
-				__LIB_0__::func_610("");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			}
 			else
 			{
@@ -38525,7 +38525,7 @@ void func_696(var uParam0, int iParam1, char* sParam2, char* sParam3, int iParam
 	}
 	else
 	{
-		__LIB_0__::func_610(sVar1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar1);
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(116);
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sParam3))

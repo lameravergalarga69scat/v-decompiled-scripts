@@ -479,7 +479,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (iLocal_69 != 263)
 						{
-							if (__LIB_0__::func_39(6) && !__LIB_15__::func_276(iLocal_69))
+							if (__LIB_0__::isGlobal_43052EqualsValue(6) && !__LIB_15__::func_276(iLocal_69))
 							{
 							}
 							else
@@ -628,7 +628,7 @@ void __EntryFunction__()//Position - 0x0
 						bVar0 = false;
 						if (__LIB_0__::func_703(uLocal_58, 1))
 						{
-							if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+							if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 							{
 								iVar3 = 1;
 								bVar0 = true;
@@ -1306,7 +1306,7 @@ int func_114(int iParam0)//Position - 0x360E
 			return 1;
 			break;
 		case 1:
-			if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+			if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 			{
 				return 1;
 			}
@@ -1498,7 +1498,7 @@ void func_135()//Position - 0x3DB6
 	{
 		__LIB_2__::func_712(&uLocal_58, 8);
 	}
-	if (__LIB_0__::func_39(12))
+	if (__LIB_0__::isGlobal_43052EqualsValue(12))
 	{
 		__LIB_1__::func_330(&uLocal_58, 8);
 	}

@@ -6871,7 +6871,7 @@ void func_198(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4
 	}
 	else
 	{
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam4);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -17966,7 +17966,7 @@ void func_499(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		}
 		if (iParam6 == 0)
 		{
-			__LIB_0__::func_610(sParam5);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		}
 		else
 		{
@@ -18957,7 +18957,7 @@ void func_528(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam6);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -18976,7 +18976,7 @@ void func_529(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TIME(iParam6, 2567);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -18995,8 +18995,8 @@ void func_530(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
-		__LIB_0__::func_610(sParam5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam6);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam7);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam8);
@@ -19015,7 +19015,7 @@ void func_531(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		if (iParam5 != iParam6)
 		{
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("PM_PLAYERS_V" /* GXT: ~1~ - ~1~ */);
@@ -19220,7 +19220,7 @@ void func_537(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 		}
 		if ((MISC::IS_STRING_NULL_OR_EMPTY(sParam18) && MISC::IS_STRING_NULL_OR_EMPTY(sParam19)) && iParam20 == -1)
 		{
-			__LIB_0__::func_610(sParam4);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		}
 		else
 		{
@@ -19355,7 +19355,7 @@ void func_540(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 		}
-		__LIB_0__::func_610(sParam5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		if (bParam6)
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
@@ -19473,7 +19473,7 @@ void func_546(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		if (bParam8)
 		{
 			__LIB_0__::func_700(sParam6);
@@ -19486,7 +19486,7 @@ void func_546(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		}
 		else
 		{
-			__LIB_0__::func_610(sParam6);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam6);
 		}
 		if (bParam9)
 		{
@@ -19508,7 +19508,7 @@ void func_546(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 		}
 		if (!bVar0)
 		{
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam10);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -19649,14 +19649,14 @@ void func_555(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sPar
 	if (GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE"))
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
-		__LIB_0__::func_610(sParam1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		if (bParam6)
 		{
 			__LIB_0__::func_700(sParam2);
 		}
 		else
 		{
-			__LIB_0__::func_610(sParam2);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam4);
@@ -24723,7 +24723,7 @@ int func_668(var uParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, 
 						__LIB_1__::func_330(&(uParam0->f_1), 8);
 						HUD::GET_HUD_COLOUR(18, &iVar5, &iVar6, &iVar7, &uVar8);
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_MESSAGE");
-						__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
@@ -24787,7 +24787,7 @@ int func_668(var uParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, 
 			__LIB_1__::func_330(&(uParam0->f_1), 8);
 			HUD::GET_HUD_COLOUR(18, &iVar11, &iVar12, &iVar13, &uVar14);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_MESSAGE");
-			__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar11);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar12);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar13);
@@ -26924,7 +26924,7 @@ int func_711(int iParam0, int iParam1)//Position - 0xE07
 	}
 	if (!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 	{
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			return 0;
 		}
@@ -27888,7 +27888,7 @@ int func_731()//Position - 0x1DC7
 			}
 		}
 	}
-	if ((__LIB_0__::func_39(0) || __LIB_0__::func_39(3)) || __LIB_0__::func_39(2))
+	if ((__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(3)) || __LIB_0__::isGlobal_43052EqualsValue(2))
 	{
 		if (!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() && !__LIB_0__::func_217())
 		{

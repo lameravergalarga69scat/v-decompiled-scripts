@@ -978,7 +978,7 @@ int func_119(var uParam0, char* sParam1, int* iParam2, int iParam3, bool bParam4
 		MISC::SET_BIT(iParam2, 2);
 		return 1;
 	}
-	if ((__LIB_5__::func_133() && __LIB_18__::func_37()) || __LIB_18__::func_36())
+	if ((__LIB_5__::getGlobal_2714762_f_692() && __LIB_18__::func_37()) || __LIB_18__::func_36())
 	{
 		if (!BitTest(*iParam2, 2))
 		{

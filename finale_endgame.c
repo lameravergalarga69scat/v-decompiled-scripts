@@ -876,7 +876,7 @@ void func_190(int iParam0, int iParam1)//Position - 0x24786
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[iVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[iVar0] = __LIB_0__::func_407(iParam0);
@@ -16287,38 +16287,38 @@ int func_661()//Position - 0x94914
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_72, "SET_LETTER_TEXT");
-			__LIB_0__::func_610("HEADER_1");
-			__LIB_0__::func_610("HEADER_2");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HEADER_1");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HEADER_2");
 			Var0 = { __LIB_39__::func_379(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_378(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_377(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_376(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_375(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_42__::func_623(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { func_692(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_372(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_371(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_370(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_381(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_382(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_369(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_380(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			Var0 = { __LIB_39__::func_368(&uLocal_73) };
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			while (!__LIB_42__::func_622(&uLocal_89, &iLocal_90, &uLocal_73))
 			{

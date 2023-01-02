@@ -11384,19 +11384,19 @@ void func_984(int* iParam0, int iParam1, bool bParam2)//Position - 0x4E330
 			}
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_74, "SET_LABELS");
-		__LIB_0__::func_610("H_ICON_1");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_1");
 		if (iParam1 == 0)
 		{
-			__LIB_0__::func_610("H_ICON_2a");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_2a");
 		}
 		else
 		{
-			__LIB_0__::func_610("H_ICON_2");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_2");
 		}
-		__LIB_0__::func_610("H_ICON_3");
-		__LIB_0__::func_610("H_ICON_4");
-		__LIB_0__::func_610("H_ICON_5");
-		__LIB_0__::func_610("H_ICON_6");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_3");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_4");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_5");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_6");
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		MISC::SET_BIT(iParam0, 29);
 	}

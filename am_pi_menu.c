@@ -88428,7 +88428,7 @@ void func_6311()//Position - 0x23AAB7
 		}
 		__LIB_8__::func_233(iLocal_221, "PIM_IHFA" /* GXT: Support Crew */, 0, 1, 0, 0, 0);
 	}
-	if ((!__LIB_28__::func_509() && !__LIB_1__::func_800()) && !func_1760(PLAYER::PLAYER_ID()))
+	if ((!__LIB_28__::func_509() && !__LIB_1__::setGlobal_1575016_10()) && !func_1760(PLAYER::PLAYER_ID()))
 	{
 		if (__LIB_2__::func_159(1))
 		{
@@ -88499,7 +88499,7 @@ void func_6311()//Position - 0x23AAB7
 		if (__LIB_28__::func_509())
 		{
 		}
-		if (__LIB_1__::func_800())
+		if (__LIB_1__::setGlobal_1575016_10())
 		{
 		}
 		if (func_1760(PLAYER::PLAYER_ID()))
@@ -89892,7 +89892,7 @@ void func_6311()//Position - 0x23AAB7
 	{
 		Global_2789742 = bVar1;
 	}
-	if ((!__LIB_28__::func_509() && !__LIB_1__::func_800()) && !func_1760(PLAYER::PLAYER_ID()))
+	if ((!__LIB_28__::func_509() && !__LIB_1__::setGlobal_1575016_10()) && !func_1760(PLAYER::PLAYER_ID()))
 	{
 		if (!__LIB_2__::func_72(PLAYER::PLAYER_ID(), 0) || __LIB_6__::func_788(0))
 		{
@@ -129130,7 +129130,7 @@ void func_7041()//Position - 0x29C576
 	{
 		func_7043(&iLocal_221, "ciPI_TYPE_PLAYER_ABILITIES");
 	}
-	if ((!__LIB_28__::func_509() && !__LIB_1__::func_800()) && !func_1760(PLAYER::PLAYER_ID()))
+	if ((!__LIB_28__::func_509() && !__LIB_1__::setGlobal_1575016_10()) && !func_1760(PLAYER::PLAYER_ID()))
 	{
 		if (__LIB_6__::func_460())
 		{
@@ -129196,7 +129196,7 @@ void func_7041()//Position - 0x29C576
 	func_7043(&iLocal_201, "ciPI_TYPE_STYLE");
 	func_7043(&iLocal_202, "ciPI_TYPE_VEHICLES");
 	func_7043(&iLocal_203, "ciPI_TYPE_SERVICES");
-	if ((!__LIB_28__::func_509() && !__LIB_1__::func_800()) && !func_1760(PLAYER::PLAYER_ID()))
+	if ((!__LIB_28__::func_509() && !__LIB_1__::setGlobal_1575016_10()) && !func_1760(PLAYER::PLAYER_ID()))
 	{
 		iVar2 = 1;
 		if (((NETWORK::NETWORK_IS_ACTIVITY_SESSION() || !__LIB_1__::func_988(PLAYER::PLAYER_ID())) || __LIB_10__::func_904(PLAYER::PLAYER_ID())) || __LIB_10__::func_643(PLAYER::PLAYER_ID()))
@@ -132897,11 +132897,11 @@ void func_7214(int iParam0, int iParam1, char* sParam2, char* sParam3, char* sPa
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_649, "ADD_ITEM");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(sParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(sParam4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(sParam5);
-	__LIB_0__::func_610(sParam6);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam6);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam7);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam8);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(sParam9);

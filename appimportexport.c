@@ -2271,7 +2271,7 @@ int func_315(int iParam0, bool bParam1)//Position - 0x15947
 void func_317(char* sParam0, char* sParam1, char* sParam2, char* sParam3, int iParam4, int iParam5)//Position - 0x159E5
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_559, "SHOW_OVERLAY");
-	__LIB_0__::func_610(sParam0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	if (iParam4 != -1)
 	{
@@ -2282,8 +2282,8 @@ void func_317(char* sParam0, char* sParam1, char* sParam2, char* sParam3, int iP
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam5);
 	}
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610(sParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iLocal_575 = 1;
 }

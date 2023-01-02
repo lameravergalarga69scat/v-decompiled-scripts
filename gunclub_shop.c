@@ -54526,9 +54526,9 @@ void func_1210()//Position - 0xC7B2C
 				if (!iLocal_86)
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_87, "SHOW_WEAPON_PURCHASED");
-					__LIB_0__::func_610("SHOP_PURCH" /* GXT: purchased */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SHOP_PURCH" /* GXT: purchased */);
 					func_548(&Global_4539335, iLocal_89, iLocal_90, &sVar0, &cVar1, Local_120.f_0);
-					__LIB_0__::func_610(&sVar0);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&sVar0);
 					if (iLocal_88 == joaat("WEAPON_UNARMED") || iLocal_88 == 0)
 					{
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -56673,7 +56673,7 @@ void func_1281(var uParam0, var uParam1)//Position - 0xCCA43
 				}
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
-					if (((!__LIB_14__::func_350(*uParam0) || !__LIB_1__::func_686(*uParam0, 0, 0)) || __LIB_1__::func_16()) || __LIB_1__::func_872(PLAYER::PLAYER_ID()))
+					if (((!__LIB_14__::func_350(*uParam0) || !__LIB_1__::func_686(*uParam0, 0, 0)) || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_1__::func_872(PLAYER::PLAYER_ID()))
 					{
 						bVar1 = true;
 					}
@@ -56772,7 +56772,7 @@ void func_1281(var uParam0, var uParam1)//Position - 0xCCA43
 						__LIB_3__::func_506(*uParam0);
 					}
 				}
-				else if ((((((uParam0->f_108 && !__LIB_0__::func_39(11)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(0)) && !__LIB_0__::func_39(3)) && !BitTest(Global_100493.f_1393[*uParam0], 1)) && !BitTest(Global_100493.f_1393[*uParam0], 2))
+				else if ((((((uParam0->f_108 && !__LIB_0__::isGlobal_43052EqualsValue(11)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(0)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !BitTest(Global_100493.f_1393[*uParam0], 1)) && !BitTest(Global_100493.f_1393[*uParam0], 2))
 				{
 					if (__LIB_0__::func_328(*uParam0) == 3)
 					{

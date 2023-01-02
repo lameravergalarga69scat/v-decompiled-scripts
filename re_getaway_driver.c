@@ -2730,7 +2730,7 @@ int func_131(int iParam0)//Position - 0xB5E9
 			return 1;
 			break;
 		case 1:
-			if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+			if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 			{
 				return 1;
 			}

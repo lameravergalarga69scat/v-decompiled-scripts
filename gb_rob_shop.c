@@ -2960,7 +2960,7 @@ void func_1030(var uParam0, int iParam1)//Position - 0x50AD3
 																GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar15);
 																if (iVar25 == 0 && HUD::DOES_TEXT_LABEL_EXIST(&(Global_1837216[bVar24 /*16*/])))
 																{
-																	__LIB_0__::func_610(&(Global_1837216[bVar24 /*16*/]));
+																	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1837216[bVar24 /*16*/]));
 																}
 																else
 																{

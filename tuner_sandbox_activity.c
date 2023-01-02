@@ -26009,19 +26009,19 @@ void func_2305(bool bParam0, char* sParam1, int* iParam2, var uParam3, int iPara
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam9);
 			if (__LIB_2__::func_117(uParam3))
 			{
-				__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (__LIB_1__::func_979(uParam3))
 			{
-				__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (__LIB_1__::func_978(uParam3))
 			{
-				__LIB_0__::func_610("DPAD_CREW" /* GXT: C */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_CREW" /* GXT: C */);
 			}
 			else
 			{
-				__LIB_0__::func_610("");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			}
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
@@ -26129,7 +26129,7 @@ void func_2323(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (uParam2->f_108 == 6 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					__LIB_0__::func_610(sParam16);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam16);
 				}
 				else
 				{
@@ -26216,7 +26216,7 @@ void func_2323(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				{
 					if (iParam15 == 0 && !MISC::IS_STRING_NULL_OR_EMPTY(&(uParam2->f_104)))
 					{
-						__LIB_0__::func_610(&(uParam2->f_104));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam2->f_104));
 					}
 					else
 					{
@@ -26264,19 +26264,19 @@ void func_2323(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (__LIB_2__::func_117(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (__LIB_1__::func_979(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (__LIB_1__::func_978(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_CREW" /* GXT: C */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_CREW" /* GXT: C */);
 				}
 				else
 				{
-					__LIB_0__::func_610("");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 				}
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}

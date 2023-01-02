@@ -2356,7 +2356,7 @@ void func_47(var uParam0, int* iParam1, int* iParam2, var uParam3, int iParam4)/
 					}
 					bVar0 = true;
 					MISC::SET_BIT(iParam2, 11);
-					if ((__LIB_0__::func_983() && !__LIB_5__::func_133()) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION())
+					if ((__LIB_0__::func_983() && !__LIB_5__::getGlobal_2714762_f_692()) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 					{
 						AUDIO::START_AUDIO_SCENE("DLC_MPHEIST_LOBBY_FADE_IN_RADIO_SCENE");
 					}
@@ -17164,7 +17164,7 @@ void func_374(var uParam0, int iParam1, int iParam2, struct<3> Param3, var uPara
 		Var1 = { 13.7424f, 0f, 145.7582f };
 		fVar2 = 65.2994f;
 		bVar3 = true;
-		if (!__LIB_5__::func_133())
+		if (!__LIB_5__::getGlobal_2714762_f_692())
 		{
 			iVar5 = 0;
 		}

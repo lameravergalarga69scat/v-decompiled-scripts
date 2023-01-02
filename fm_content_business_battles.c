@@ -30049,19 +30049,19 @@ void func_2358(bool bParam0, char* sParam1, int* iParam2, var uParam3, int iPara
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam9);
 			if (__LIB_2__::func_117(uParam3))
 			{
-				__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (__LIB_1__::func_979(uParam3))
 			{
-				__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 			}
 			else if (__LIB_1__::func_978(uParam3))
 			{
-				__LIB_0__::func_610("DPAD_CREW" /* GXT: C */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_CREW" /* GXT: C */);
 			}
 			else
 			{
-				__LIB_0__::func_610("");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			}
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
@@ -30157,7 +30157,7 @@ void func_2375(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (uParam2->f_108 == 6 && !MISC::IS_STRING_NULL_OR_EMPTY(sParam16))
 				{
-					__LIB_0__::func_610(sParam16);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam16);
 				}
 				else
 				{
@@ -30244,7 +30244,7 @@ void func_2375(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				{
 					if (iParam15 == 0 && !MISC::IS_STRING_NULL_OR_EMPTY(&(uParam2->f_104)))
 					{
-						__LIB_0__::func_610(&(uParam2->f_104));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam2->f_104));
 					}
 					else
 					{
@@ -30292,19 +30292,19 @@ void func_2375(int iParam0, int* iParam1, var uParam2, int iParam3, char* sParam
 				}
 				if (__LIB_2__::func_117(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (__LIB_1__::func_979(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_FRIEND" /* GXT: F */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_FRIEND" /* GXT: F */);
 				}
 				else if (__LIB_1__::func_978(uParam2))
 				{
-					__LIB_0__::func_610("DPAD_CREW" /* GXT: C */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DPAD_CREW" /* GXT: C */);
 				}
 				else
 				{
-					__LIB_0__::func_610("");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 				}
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
@@ -34723,19 +34723,19 @@ void func_2647(int* iParam0, int iParam1, bool bParam2)//Position - 0xE2226
 			}
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_130, "SET_LABELS");
-		__LIB_0__::func_610("H_ICON_1");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_1");
 		if (iParam1 == 0)
 		{
-			__LIB_0__::func_610("H_ICON_2a");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_2a");
 		}
 		else
 		{
-			__LIB_0__::func_610("H_ICON_2");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_2");
 		}
-		__LIB_0__::func_610("H_ICON_3");
-		__LIB_0__::func_610("H_ICON_4");
-		__LIB_0__::func_610("H_ICON_5");
-		__LIB_0__::func_610("H_ICON_6");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_3");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_4");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_5");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_ICON_6");
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		MISC::SET_BIT(iParam0, 29);
 	}
@@ -35238,8 +35238,8 @@ void func_2685(var uParam0, bool bParam1, bool bParam2)//Position - 0xE33A9
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_130, "SET_DISPLAY");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
-				__LIB_0__::func_610("CIRC_HACK");
-				__LIB_0__::func_610("UNLCK_FIN");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_HACK");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("UNLCK_FIN");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);
@@ -35912,8 +35912,8 @@ void func_2701(var uParam0, bool bParam1)//Position - 0xE527D
 		{
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_130, "SET_DISPLAY");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-			__LIB_0__::func_610("CIRC_COMP");
-			__LIB_0__::func_610("TUT_WIN");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_COMP");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TUT_WIN");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);
@@ -35987,8 +35987,8 @@ void func_2702(var uParam0, bool bParam1)//Position - 0xE535C
 				{
 					case 0:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-						__LIB_0__::func_610("CIRC_FAIL");
-						__LIB_0__::func_610("TUT_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TUT_FAIL");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(188);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(49);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(43);
@@ -35996,8 +35996,8 @@ void func_2702(var uParam0, bool bParam1)//Position - 0xE535C
 						break;
 					case 1:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-						__LIB_0__::func_610("CIRC_FAIL");
-						__LIB_0__::func_610("TUT_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TUT_FAIL");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(188);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(49);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(43);
@@ -36005,8 +36005,8 @@ void func_2702(var uParam0, bool bParam1)//Position - 0xE535C
 						break;
 					case 2:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-						__LIB_0__::func_610("CIRC_FAIL");
-						__LIB_0__::func_610("TUT_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TUT_FAIL");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(188);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(49);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(43);
@@ -36014,8 +36014,8 @@ void func_2702(var uParam0, bool bParam1)//Position - 0xE535C
 						break;
 					case 3:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-						__LIB_0__::func_610("CIRC_FAIL");
-						__LIB_0__::func_610("FIN_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FIN_FAIL");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(188);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(49);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(43);
@@ -36023,8 +36023,8 @@ void func_2702(var uParam0, bool bParam1)//Position - 0xE535C
 						break;
 					case 4:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-						__LIB_0__::func_610("CIRC_FAIL");
-						__LIB_0__::func_610("FIN_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FIN_FAIL");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(188);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(49);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(43);
@@ -36032,8 +36032,8 @@ void func_2702(var uParam0, bool bParam1)//Position - 0xE535C
 						break;
 					case 5:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-						__LIB_0__::func_610("CIRC_FAIL");
-						__LIB_0__::func_610("FIN_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_FAIL");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FIN_FAIL");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(188);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(49);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(43);
@@ -36089,8 +36089,8 @@ void func_2703(var uParam0, bool bParam1)//Position - 0xE56CA
 				{
 					case 0:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-						__LIB_0__::func_610("CIRC_COMP");
-						__LIB_0__::func_610("TUT_WIN");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_COMP");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TUT_WIN");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);
@@ -36098,8 +36098,8 @@ void func_2703(var uParam0, bool bParam1)//Position - 0xE56CA
 						break;
 					case 1:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-						__LIB_0__::func_610("CIRC_COMP");
-						__LIB_0__::func_610("TUT_WIN");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_COMP");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TUT_WIN");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);
@@ -36107,8 +36107,8 @@ void func_2703(var uParam0, bool bParam1)//Position - 0xE56CA
 						break;
 					case 2:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-						__LIB_0__::func_610("CIRC_COMP");
-						__LIB_0__::func_610("TUT_WIN");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_COMP");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TUT_WIN");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);
@@ -36116,8 +36116,8 @@ void func_2703(var uParam0, bool bParam1)//Position - 0xE56CA
 						break;
 					case 3:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-						__LIB_0__::func_610("CIRC_COMP");
-						__LIB_0__::func_610("FIN_WIN");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_COMP");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FIN_WIN");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);
@@ -36125,8 +36125,8 @@ void func_2703(var uParam0, bool bParam1)//Position - 0xE56CA
 						break;
 					case 4:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-						__LIB_0__::func_610("CIRC_COMP");
-						__LIB_0__::func_610("FIN_WIN");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_COMP");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FIN_WIN");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);
@@ -36134,8 +36134,8 @@ void func_2703(var uParam0, bool bParam1)//Position - 0xE56CA
 						break;
 					case 5:
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-						__LIB_0__::func_610("CIRC_COMP");
-						__LIB_0__::func_610("FIN_WIN");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CIRC_COMP");
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FIN_WIN");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(45);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(203);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(134);

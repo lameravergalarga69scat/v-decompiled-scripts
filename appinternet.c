@@ -3060,7 +3060,7 @@ void func_16(char* sParam0)//Position - 0x2A56
 	}
 	iLocal_1023 = iVar0;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_CURSOR_STATE");
-	__LIB_0__::func_610(sParam0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -4504,35 +4504,35 @@ void func_129()//Position - 0x719A
 						GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-						__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 						GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 						switch (iLocal_456)
 						{
 							case 3:
-								__LIB_0__::func_610("LAR_IRANK" /* GXT: Purchasing properties unlocks from Rank 5. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_IRANK" /* GXT: Purchasing properties unlocks from Rank 5. */);
 								break;
 							case 2:
-								__LIB_0__::func_610("LAR_ICASH" /* GXT: You do not have the funds to purchase this property. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_ICASH" /* GXT: You do not have the funds to purchase this property. */);
 								break;
 							case 1:
-								__LIB_0__::func_610("LAR_NLOCK" /* GXT: Buy properties is locked. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_NLOCK" /* GXT: Buy properties is locked. */);
 								break;
 							case 4:
-								__LIB_0__::func_610("LAR_IRANKC" /* GXT: Purchasing properties will be unlocked after you get a call from Simeon. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_IRANKC" /* GXT: Purchasing properties will be unlocked after you get a call from Simeon. */);
 								break;
 							case 6:
-								__LIB_0__::func_610("LAR_SAVTRB" /* GXT: Sorry, you may not purchase a property at this time. Please try again later. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_SAVTRB" /* GXT: Sorry, you may not purchase a property at this time. Please try again later. */);
 								break;
 							case 7:
-								__LIB_0__::func_610("LAR_MISS" /* GXT: Sorry, you may not purchase a property at this time. Please try again later. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_MISS" /* GXT: Sorry, you may not purchase a property at this time. Please try again later. */);
 								break;
 							case 8:
-								__LIB_0__::func_610("LAR_SHIP" /* GXT: Sorry, you may not purchase a property whilst a shipment of supplies is on its way. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_SHIP" /* GXT: Sorry, you may not purchase a property whilst a shipment of supplies is on its way. */);
 								break;
 							case 9:
-								__LIB_0__::func_610("LAR_STOCK" /* GXT: Sorry, you may not trade a property which still holds stock. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LAR_STOCK" /* GXT: Sorry, you may not trade a property which still holds stock. */);
 								break;
 							case 0:
 								break;
@@ -50596,15 +50596,15 @@ void func_2303(int iParam0)//Position - 0x10AD3A
 	uVar0 = uVar0;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-	__LIB_0__::func_610("VHSITUSURE" /* GXT: Do you want to replace your saved vehicle with this vehicle? */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITUSURE" /* GXT: Do you want to replace your saved vehicle with this vehicle? */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	__LIB_0__::func_610("CELL_270" /* GXT: Yes */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CELL_270" /* GXT: Yes */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-	__LIB_0__::func_610("CELL_271" /* GXT: No */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CELL_271" /* GXT: No */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "UPDATE_TEXT");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -50649,31 +50649,31 @@ void func_2305(int iParam0)//Position - 0x10AE1E
 		case 7:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VSITALRIRANK" /* GXT: Insufficient Rank */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRIRANK" /* GXT: Insufficient Rank */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("VSITALRIRANK2" /* GXT: Purchasing yachts unlocks from Rank 5. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRIRANK2" /* GXT: Purchasing yachts unlocks from Rank 5. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 8:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VSITALRIRANK" /* GXT: Insufficient Rank */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRIRANK" /* GXT: Insufficient Rank */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("VSITALRIRANKC2" /* GXT: Purchasing yachts will be unlocked after you get a call from Simeon. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRIRANKC2" /* GXT: Purchasing yachts will be unlocked after you get a call from Simeon. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 9:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VSITALRPURC" /* GXT: Purchase Canceled. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRPURC" /* GXT: Purchase Canceled. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("VSITALVECBNE" /* GXT: Please buy something. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALVECBNE" /* GXT: Please buy something. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 0:
@@ -50681,7 +50681,7 @@ void func_2305(int iParam0)//Position - 0x10AE1E
 		case 1:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
@@ -50693,41 +50693,41 @@ void func_2305(int iParam0)//Position - 0x10AE1E
 						case 1:
 							if (__LIB_0__::func_61(12, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_HANGAR" /* GXT: You have nowhere to store this vehicle. Why not purchase a hangar? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_HANGAR" /* GXT: You have nowhere to store this vehicle. Why not purchase a hangar? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						case 2:
 							if (__LIB_0__::func_61(15, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_MARINA" /* GXT: You have nowhere to store this vehicle. Why not purchase a slip at the marina? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_MARINA" /* GXT: You have nowhere to store this vehicle. Why not purchase a slip at the marina? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						case 3:
 							if (__LIB_0__::func_61(18, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_HELIPAD" /* GXT: You have nowhere to store this vehicle. Why not purchase a helipad? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_HELIPAD" /* GXT: You have nowhere to store this vehicle. Why not purchase a helipad? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						default:
 							if (!__LIB_0__::func_61(21, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_GARAGE" /* GXT: You have nowhere to store this vehicle. Why not purchase a garage? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_GARAGE" /* GXT: You have nowhere to store this vehicle. Why not purchase a garage? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 					}
@@ -50738,41 +50738,41 @@ void func_2305(int iParam0)//Position - 0x10AE1E
 						case 1:
 							if (__LIB_0__::func_61(13, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_HANGAR" /* GXT: You have nowhere to store this vehicle. Why not purchase a hangar? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_HANGAR" /* GXT: You have nowhere to store this vehicle. Why not purchase a hangar? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						case 2:
 							if (__LIB_0__::func_61(16, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_MARINA" /* GXT: You have nowhere to store this vehicle. Why not purchase a slip at the marina? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_MARINA" /* GXT: You have nowhere to store this vehicle. Why not purchase a slip at the marina? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						case 3:
 							if (__LIB_0__::func_61(19, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_HELIPAD" /* GXT: You have nowhere to store this vehicle. Why not purchase a helipad? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_HELIPAD" /* GXT: You have nowhere to store this vehicle. Why not purchase a helipad? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						default:
 							if (!__LIB_0__::func_61(22, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_GARAGE" /* GXT: You have nowhere to store this vehicle. Why not purchase a garage? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_GARAGE" /* GXT: You have nowhere to store this vehicle. Why not purchase a garage? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 					}
@@ -50783,47 +50783,47 @@ void func_2305(int iParam0)//Position - 0x10AE1E
 						case 1:
 							if (__LIB_0__::func_61(14, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_HANGAR" /* GXT: You have nowhere to store this vehicle. Why not purchase a hangar? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_HANGAR" /* GXT: You have nowhere to store this vehicle. Why not purchase a hangar? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						case 2:
 							if (__LIB_0__::func_61(17, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_MARINA" /* GXT: You have nowhere to store this vehicle. Why not purchase a slip at the marina? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_MARINA" /* GXT: You have nowhere to store this vehicle. Why not purchase a slip at the marina? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						case 3:
 							if (__LIB_0__::func_61(20, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_HELIPAD" /* GXT: You have nowhere to store this vehicle. Why not purchase a helipad? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_HELIPAD" /* GXT: You have nowhere to store this vehicle. Why not purchase a helipad? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 						default:
 							if (!__LIB_0__::func_61(23, 0))
 							{
-								__LIB_0__::func_610("VSITNSTA_GARAGE" /* GXT: You have nowhere to store this vehicle. Why not purchase a garage? */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA_GARAGE" /* GXT: You have nowhere to store this vehicle. Why not purchase a garage? */);
 							}
 							else
 							{
-								__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 							}
 							break;
 					}
 					break;
 				default:
-					__LIB_0__::func_610("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITNSTA" /* GXT: You have nowhere to store this vehicle. */);
 					break;
 			}
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -50831,74 +50831,74 @@ void func_2305(int iParam0)//Position - 0x10AE1E
 		case 2:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("VSITINSF" /* GXT: Insufficient funds. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITINSF" /* GXT: Insufficient funds. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 3:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("VSITCATINVAL" /* GXT: This vehicle category is invalid for purchase in multiplayer. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITCATINVAL" /* GXT: This vehicle category is invalid for purchase in multiplayer. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 4:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 			if (iLocal_458 != 324)
 			{
-				__LIB_0__::func_610("VSITALRDOW" /* GXT: You have already unlocked this vehicle. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRDOW" /* GXT: You have already unlocked this vehicle. */);
 			}
 			else
 			{
-				__LIB_0__::func_610("ISITALRDOW" /* GXT: You have already unlocked this item. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ISITALRDOW" /* GXT: You have already unlocked this item. */);
 			}
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 5:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("VSITALRDOR" /* GXT: You have no space to store this vehicle. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRDOR" /* GXT: You have no space to store this vehicle. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 6:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("VSITALRDPEG" /* GXT: Sorry, the Pegasus vehicle delivery service is not available at this time. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITALRDPEG" /* GXT: Sorry, the Pegasus vehicle delivery service is not available at this time. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 10:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("VHSITPURFH" /* GXT: Purchase Failed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VHSITPURFH" /* GXT: Purchase Failed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_196, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 			if (iLocal_458 != 324)
 			{
-				__LIB_0__::func_610("VSITSAVTRB" /* GXT: Sorry, you may not purchase a vehicle at this time. Please try again later. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("VSITSAVTRB" /* GXT: Sorry, you may not purchase a vehicle at this time. Please try again later. */);
 			}
 			else
 			{
-				__LIB_0__::func_610("ISITSAVTRB" /* GXT: Sorry, you may not purchase an item at this time. Please try again later. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ISITSAVTRB" /* GXT: Sorry, you may not purchase an item at this time. Please try again later. */);
 			}
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
@@ -51859,7 +51859,7 @@ void func_2342(int iParam0, int iParam1)//Position - 0x110EAD
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_PRICES");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
-					__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -52168,7 +52168,7 @@ void func_2343(int iParam0, int iParam1)//Position - 0x1110B0
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
 							if (iVar11 == -1)
 							{
-								__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 							}
 							else
@@ -52190,7 +52190,7 @@ void func_2343(int iParam0, int iParam1)//Position - 0x1110B0
 								}
 								else
 								{
-									__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
 								}
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 							}
@@ -52205,8 +52205,8 @@ void func_2343(int iParam0, int iParam1)//Position - 0x1110B0
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
 							if (iVar11 == -1)
 							{
-								__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
-								__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
 							}
 							else
 							{
@@ -52221,8 +52221,8 @@ void func_2343(int iParam0, int iParam1)//Position - 0x1110B0
 							}
 							else
 							{
-								__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
-								__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
 							}
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar15);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -58525,13 +58525,13 @@ void func_2413(int iParam0, int iParam1, int iParam2)//Position - 0x119C03
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1 + 70);
-	__LIB_0__::func_610(func_645(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_645(iVar0));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(7);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2416(iVar0));
-	__LIB_0__::func_610(func_2414(iVar0));
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2414(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "APPEND_OFFICE_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
@@ -59301,13 +59301,13 @@ void func_2425(int iParam0, int iParam1, int iParam2)//Position - 0x11ACA3
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1 + 60);
-	__LIB_0__::func_610(__LIB_13__::func_199(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_13__::func_199(iVar0));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(6);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2427(iVar0));
-	__LIB_0__::func_610(func_2426(iVar0));
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2426(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "APPEND_OFFICE_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
@@ -59931,13 +59931,13 @@ void func_2435(int iParam0, int iParam1, int iParam2)//Position - 0x11BD6A
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1 + 10);
-	__LIB_0__::func_610(__LIB_8__::func_83(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_8__::func_83(iVar0));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(5);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2437(iVar0));
-	__LIB_0__::func_610(func_2436(iVar0));
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2436(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "APPEND_OFFICE_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
@@ -60558,13 +60558,13 @@ void func_2445(int iParam0, int iParam1, int iParam2)//Position - 0x11D153
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1 + 40);
-	__LIB_0__::func_610(__LIB_3__::func_551(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_3__::func_551(iVar0));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2447(iVar0));
-	__LIB_0__::func_610(func_2446(iVar0));
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2446(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
 	if (iVar3 != iVar0)
 	{
@@ -61361,13 +61361,13 @@ void func_2453(int iParam0, int iParam1, int iParam2)//Position - 0x11DFD2
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(__LIB_3__::func_552(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_3__::func_552(iVar0));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2455(iVar0));
-	__LIB_0__::func_610(func_2454(iVar0));
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2454(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
 	if (iVar3 != iVar0)
 	{
@@ -61976,13 +61976,13 @@ void func_2469(int iParam0, int iParam1, int iParam2)//Position - 0x11FAC1
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(__LIB_12__::func_642(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_12__::func_642(iVar0));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2470(iVar0));
-	__LIB_0__::func_610(&Var3);
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	if (iVar5 == 0)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -62441,7 +62441,7 @@ void func_2476(int iParam0, int iParam1, int iParam2)//Position - 0x1205C1
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(&(Global_1312193[iParam1 /*1951*/].f_16));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1312193[iParam1 /*1951*/].f_16));
 	if (__LIB_2__::func_681(iParam1) == 91)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -62457,8 +62457,8 @@ void func_2476(int iParam0, int iParam1, int iParam2)//Position - 0x1205C1
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2479(iParam1));
-	__LIB_0__::func_610(&(Global_1312193[iParam1 /*1951*/].f_20));
-	__LIB_0__::func_610(func_2478(iParam1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1312193[iParam1 /*1951*/].f_20));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2478(iParam1));
 	if (bVar3)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_13__::func_300(Global_1312193[iParam1 /*1951*/].f_31));
@@ -63694,12 +63694,12 @@ void func_2497(int iParam0, int iParam1, int iParam2)//Position - 0x122A8F
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1 + 20);
-	__LIB_0__::func_610(func_640(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_640(iVar0));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Var2.f_1);
 	__LIB_0__::func_700(func_2499(iVar0));
-	__LIB_0__::func_610(func_2498(iVar0));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2498(iVar0));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "APPEND_OFFICE_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
@@ -64242,11 +64242,11 @@ void func_2504(int iParam0, int iParam1, int iParam2)//Position - 0x12374A
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(&(Global_1312193[iParam1 /*1951*/].f_16));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1312193[iParam1 /*1951*/].f_16));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_1312193[iParam1 /*1951*/].f_3[0 /*3*/]);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_1312193[iParam1 /*1951*/].f_3[0 /*3*/].f_1);
 	__LIB_0__::func_700(func_2479(iParam1));
-	__LIB_0__::func_610(&(Global_1312193[iParam1 /*1951*/].f_20));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1312193[iParam1 /*1951*/].f_20));
 	if (bVar2)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_13__::func_300(Global_1312193[iParam1 /*1951*/].f_31));
@@ -64882,7 +64882,7 @@ void func_2504(int iParam0, int iParam1, int iParam2)//Position - 0x12374A
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "APPEND_OFFICE_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
-	__LIB_0__::func_610(func_2505(iParam1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2505(iParam1));
 	if (iVar19 == -1)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_2515(iParam1));
@@ -66612,30 +66612,30 @@ void func_2523(int iParam0)//Position - 0x126C6E
 		case 0:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("ACCNA_MIKE" /* GXT: Michael De Santa */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACCNA_MIKE" /* GXT: Michael De Santa */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 2:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("ACCNA_TREVOR" /* GXT: Trevor Philips */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACCNA_TREVOR" /* GXT: Trevor Philips */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 1:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("ACCNA_FRANKLIN" /* GXT: Franklin Clinton */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACCNA_FRANKLIN" /* GXT: Franklin Clinton */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	__LIB_0__::func_610("W_BA_ATL" /* GXT: Account Transactions */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("W_BA_ATL" /* GXT: Account Transactions */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_60328_SPN_TOTAL_CASH[iVar0]);
-	__LIB_0__::func_610("W_BA_BAL" /* GXT: Balance */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("W_BA_BAL" /* GXT: Balance */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar1 = 4;
 	iVar2 = 0;
@@ -66665,7 +66665,7 @@ void func_2523(int iParam0)//Position - 0x126C6E
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_113386.f_20564.f_233[iVar0 /*69*/].f_2[iVar5 /*6*/].f_2);
-			__LIB_0__::func_610(__LIB_14__::func_618(Global_113386.f_20564.f_233[iVar0 /*69*/].f_2[iVar5 /*6*/].f_1));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_14__::func_618(Global_113386.f_20564.f_233[iVar0 /*69*/].f_2[iVar5 /*6*/].f_1));
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			iVar5 = (iVar5 - 1);
 			iVar1++;
@@ -66715,7 +66715,7 @@ void func_2525(int iParam0, int iParam1)//Position - 0x1276FD
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "DISABLE_BUTTON");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
-		__LIB_0__::func_610("MPATM_WITM" /* GXT: Withdraw */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_WITM" /* GXT: Withdraw */);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
@@ -66739,11 +66739,11 @@ void func_2526(int iParam0)//Position - 0x1277DB
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-					__LIB_0__::func_610("MO_YES" /* GXT: Yes */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_YES" /* GXT: Yes */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-					__LIB_0__::func_610("MO_NO" /* GXT: No */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_NO" /* GXT: No */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					break;
 				case 2:
@@ -66762,11 +66762,11 @@ void func_2526(int iParam0)//Position - 0x1277DB
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-					__LIB_0__::func_610("MO_YES" /* GXT: Yes */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_YES" /* GXT: Yes */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-					__LIB_0__::func_610("MO_NO" /* GXT: No */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_NO" /* GXT: No */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					break;
 				case 2:
@@ -66785,19 +66785,19 @@ void func_2527(int iParam0)//Position - 0x127900
 		case 1:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_NODO2" /* GXT: You currently have fewer dollars in your account than the minimum withdrawal amount. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_NODO2" /* GXT: You currently have fewer dollars in your account than the minimum withdrawal amount. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 2:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_NODO" /* GXT: You currently have insufficient dollars to make a deposit. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_NODO" /* GXT: You currently have insufficient dollars to make a deposit. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 3:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_ERR" /* GXT: A network error occurred and your transaction could not be completed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_ERR" /* GXT: A network error occurred and your transaction could not be completed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 	}
@@ -66820,7 +66820,7 @@ void func_2528(int iParam0)//Position - 0x12798E
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-		__LIB_0__::func_610("MPATM_DITMT" /* GXT: Select the amount you wish to deposit into this account. */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_DITMT" /* GXT: Select the amount you wish to deposit into this account. */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0 = 0;
 		while (iVar0 <= 5)
@@ -66838,7 +66838,7 @@ void func_2528(int iParam0)//Position - 0x12798E
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
-		__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
@@ -67011,7 +67011,7 @@ void func_2531(int iParam0)//Position - 0x127C47
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-		__LIB_0__::func_610("MPATM_WITMT" /* GXT: Select the amount you wish to withdraw from this account. */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_WITMT" /* GXT: Select the amount you wish to withdraw from this account. */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar0 = 0;
 		while (iVar0 <= 5)
@@ -67029,7 +67029,7 @@ void func_2531(int iParam0)//Position - 0x127C47
 		}
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
-		__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
@@ -67062,18 +67062,18 @@ void func_2533(int iParam0, int iParam1)//Position - 0x127D53
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	__LIB_0__::func_610("MPATM_SER" /* GXT: Choose a service. */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_SER" /* GXT: Choose a service. */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-	__LIB_0__::func_610("MPATM_DIDM" /* GXT: Deposit */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_DIDM" /* GXT: Deposit */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (func_2532(func_2530(0, 0)))
 	{
 		*iParam1 = 0;
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
-		__LIB_0__::func_610("MPATM_WITM" /* GXT: Withdraw */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_WITM" /* GXT: Withdraw */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
@@ -67081,13 +67081,13 @@ void func_2533(int iParam0, int iParam1)//Position - 0x127D53
 		*iParam1 = 1;
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "DISABLE_BUTTON");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
-		__LIB_0__::func_610("MPATM_WITM" /* GXT: Withdraw */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_WITM" /* GXT: Withdraw */);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(5);
-	__LIB_0__::func_610("MPATM_LOG" /* GXT: Transaction Log */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_LOG" /* GXT: Transaction Log */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -67110,12 +67110,12 @@ void func_2534(int iParam0)//Position - 0x127E4F
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	__LIB_0__::func_610("MPATM_LOG" /* GXT: Transaction Log */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_LOG" /* GXT: Transaction Log */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(MONEY::NETWORK_GET_VC_BANK_BALANCE());
-	__LIB_0__::func_610("MPATM_ACBA" /* GXT: Account balance */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_ACBA" /* GXT: Account balance */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar0 = 4;
 	if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_5390 > 15)
@@ -67152,10 +67152,10 @@ void func_2534(int iParam0)//Position - 0x127E4F
 			switch (Global_2359296[__LIB_0__::func_155() /*5567*/].f_5390.f_115[iVar1])
 			{
 				case 0:
-					__LIB_0__::func_610("MPATM_PLCHLDR_WDR" /* GXT: Cash Withdrawn */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_WDR" /* GXT: Cash Withdrawn */);
 					break;
 				case 1:
-					__LIB_0__::func_610("MPATM_PLCHLDR_CAD" /* GXT: Cash Deposited */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_CAD" /* GXT: Cash Deposited */);
 					break;
 				case 2:
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_CRF" /* GXT: Cash Deposited by: ~a~ */);
@@ -67168,7 +67168,7 @@ void func_2534(int iParam0)//Position - 0x127E4F
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					break;
 				case 4:
-					__LIB_0__::func_610("MPATM_PLCHLDR_BRT" /* GXT: Virtual Currency Bought */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_BRT" /* GXT: Virtual Currency Bought */);
 					break;
 				case 5:
 					if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_5390.f_132[iVar1] != 0)
@@ -67177,42 +67177,42 @@ void func_2534(int iParam0)//Position - 0x127E4F
 						switch (iVar3)
 						{
 							case joaat("MONEY_SPENT_CONTACT_SERVICE"):
-								__LIB_0__::func_610("MONEY_SPENT_CONTACT_SERVICE" /* GXT: Spent on contact services */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_CONTACT_SERVICE" /* GXT: Spent on contact services */);
 								break;
 							case joaat("MONEY_SPENT_PROPERTY_UTIL"):
-								__LIB_0__::func_610("MONEY_SPENT_PROPERTY_UTIL" /* GXT: Spent on property & utilities */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_PROPERTY_UTIL" /* GXT: Spent on property & utilities */);
 								break;
 							case joaat("MONEY_SPENT_JOB_ACTIVITY"):
-								__LIB_0__::func_610("MONEY_SPENT_JOB_ACTIVITY" /* GXT: Spent on Job & Activity entry fees */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_JOB_ACTIVITY" /* GXT: Spent on Job & Activity entry fees */);
 								break;
 							case joaat("MONEY_SPENT_BETTING"):
-								__LIB_0__::func_610("MONEY_SPENT_BETTING" /* GXT: Spent on betting */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_BETTING" /* GXT: Spent on betting */);
 								break;
 							case joaat("MONEY_SPENT_STYLE_ENT"):
-								__LIB_0__::func_610("MONEY_SPENT_STYLE_ENT" /* GXT: Spent on style & entertainment */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_STYLE_ENT" /* GXT: Spent on style & entertainment */);
 								break;
 							case joaat("MONEY_SPENT_HEALTHCARE"):
-								__LIB_0__::func_610("MONEY_SPENT_HEALTHCARE" /* GXT: Spent on healthcare & bail */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_HEALTHCARE" /* GXT: Spent on healthcare & bail */);
 								break;
 							case joaat("MONEY_SPENT_FROM_DEBUG"):
-								__LIB_0__::func_610("MONEY_SPENT_FROM_DEBUG");
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_FROM_DEBUG");
 								break;
 							case joaat("MONEY_SPENT_DROPPED_STOLEN"):
-								__LIB_0__::func_610("MONEY_SPENT_DROPPED_STOLEN" /* GXT: Dropped or stolen */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_DROPPED_STOLEN" /* GXT: Dropped or stolen */);
 								break;
 							case joaat("MONEY_SPENT_VEH_MAINTENANCE"):
-								__LIB_0__::func_610("MONEY_SPENT_VEH_MAINTENANCE" /* GXT: Spent on vehicles & maintenance */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_VEH_MAINTENANCE" /* GXT: Spent on vehicles & maintenance */);
 								break;
 							case joaat("MONEY_SPENT_HOLDUPS"):
-								__LIB_0__::func_610("MONEY_SPENT_HOLDUPS");
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_HOLDUPS");
 								break;
 							case joaat("MONEY_SPENT_PASSIVEMODE"):
-								__LIB_0__::func_610("MONEY_SPENT_PASSIVEMODE" /* GXT: Spent on contact services */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_PASSIVEMODE" /* GXT: Spent on contact services */);
 								break;
 							default:
 								if (iVar3 == joaat("MONEY_EARN_REFUND"))
 								{
-									__LIB_0__::func_610("MONEY_EARN_REFUND" /* GXT: Cash refunded */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_REFUND" /* GXT: Cash refunded */);
 									break;
 									break;
 								}
@@ -67221,7 +67221,7 @@ void func_2534(int iParam0)//Position - 0x127E4F
 					}
 					else
 					{
-						__LIB_0__::func_610("MPATM_PLCHLDR_PRCH" /* GXT: Purchase */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_PRCH" /* GXT: Purchase */);
 					}
 					break;
 				case 6:
@@ -67231,72 +67231,72 @@ void func_2534(int iParam0)//Position - 0x127E4F
 						switch (iVar4)
 						{
 							case joaat("MONEY_EARN_JOBS"):
-								__LIB_0__::func_610("MONEY_EARN_JOBS" /* GXT: Earned from Jobs */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_JOBS" /* GXT: Earned from Jobs */);
 								break;
 							case joaat("MONEY_EARN_SELLING_VEH"):
-								__LIB_0__::func_610("MONEY_EARN_SELLING_VEH" /* GXT: Earned from selling vehicles */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_SELLING_VEH" /* GXT: Earned from selling vehicles */);
 								break;
 							case joaat("MONEY_EARN_BETTING"):
-								__LIB_0__::func_610("MONEY_EARN_BETTING" /* GXT: Earned from betting */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_BETTING" /* GXT: Earned from betting */);
 								break;
 							case joaat("MONEY_EARN_GOOD_SPORT"):
-								__LIB_0__::func_610("MONEY_EARN_GOOD_SPORT" /* GXT: Earned from Good Sport reward */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_GOOD_SPORT" /* GXT: Earned from Good Sport reward */);
 								break;
 							case joaat("MONEY_EARN_PICKED_UP"):
-								__LIB_0__::func_610("MONEY_EARN_PICKED_UP" /* GXT: Picked up */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_PICKED_UP" /* GXT: Picked up */);
 								break;
 							case joaat("MONEY_EARN_SHARED"):
-								__LIB_0__::func_610("MONEY_EARN_SHARED" /* GXT: Received from others */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_SHARED" /* GXT: Received from others */);
 								break;
 							case joaat("MONEY_EARN_JOBSHARED"):
-								__LIB_0__::func_610("MONEY_EARN_JOBSHARED" /* GXT: Job cash shared by others */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_JOBSHARED" /* GXT: Job cash shared by others */);
 								break;
 							case joaat("MONEY_EARN_ROCKSTAR_AWARD"):
-								__LIB_0__::func_610("MONEY_EARN_ROCKSTAR_AWARD" /* GXT: Received from Rockstar */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_ROCKSTAR_AWARD" /* GXT: Received from Rockstar */);
 								break;
 							case joaat("MONEY_EARN_REFUND"):
-								__LIB_0__::func_610("MONEY_EARN_REFUND" /* GXT: Cash refunded */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_REFUND" /* GXT: Cash refunded */);
 								break;
 							case joaat("MONEY_EARN_FROM_JOB_BONUS"):
-								__LIB_0__::func_610("MONEY_EARN_JOB_BONUS" /* GXT: Cash earned as a Job Bonus */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_JOB_BONUS" /* GXT: Cash earned as a Job Bonus */);
 								break;
 							case joaat("MONEY_EARN_FROM_HEIST_JOB"):
-								__LIB_0__::func_610("MONEY_EARN_HEIST_JOB" /* GXT: Cash earned on Heist */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_HEIST_JOB" /* GXT: Cash earned on Heist */);
 								break;
 							default:
 								if (iVar4 == joaat("MONEY_SPENT_PROPERTY_UTIL"))
 								{
-									__LIB_0__::func_610("MONEY_SPENT_PROPERTY_UTIL" /* GXT: Spent on property & utilities */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_PROPERTY_UTIL" /* GXT: Spent on property & utilities */);
 									break;
 									break;
 								}
 								if (iVar4 == joaat("MONEY_SPENT_STYLE_ENT"))
 								{
-									__LIB_0__::func_610("MONEY_SPENT_STYLE_ENT" /* GXT: Spent on style & entertainment */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_STYLE_ENT" /* GXT: Spent on style & entertainment */);
 									break;
 									break;
 								}
 								if (iVar4 == joaat("MONEY_SPENT_CONTACT_SERVICE"))
 								{
-									__LIB_0__::func_610("MONEY_SPENT_CONTACT_SERVICE" /* GXT: Spent on contact services */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_CONTACT_SERVICE" /* GXT: Spent on contact services */);
 									break;
 									break;
 								}
 								if (iVar4 == joaat("MONEY_SPENT_HEALTHCARE"))
 								{
-									__LIB_0__::func_610("MONEY_SPENT_HEALTHCARE" /* GXT: Spent on healthcare & bail */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_HEALTHCARE" /* GXT: Spent on healthcare & bail */);
 									break;
 									break;
 								}
 								if (iVar4 == joaat("MONEY_SPENT_VEH_MAINTENANCE"))
 								{
-									__LIB_0__::func_610("MONEY_SPENT_VEH_MAINTENANCE" /* GXT: Spent on vehicles & maintenance */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_VEH_MAINTENANCE" /* GXT: Spent on vehicles & maintenance */);
 									break;
 									break;
 								}
 								if (iVar4 == joaat("MONEY_SPENT_JOB_ACTIVITY"))
 								{
-									__LIB_0__::func_610("MONEY_SPENT_JOB_ACTIVITY" /* GXT: Spent on Job & Activity entry fees */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_JOB_ACTIVITY" /* GXT: Spent on Job & Activity entry fees */);
 									break;
 									break;
 								}
@@ -67305,7 +67305,7 @@ void func_2534(int iParam0)//Position - 0x127E4F
 					}
 					else
 					{
-						__LIB_0__::func_610("MPATM_PLCHLDR_REF" /* GXT: Refund */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_REF" /* GXT: Refund */);
 					}
 					break;
 			}
@@ -67445,8 +67445,8 @@ void func_2538(int iParam0)//Position - 0x1284EB
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610(&Var0);
-			__LIB_0__::func_610(&Var1);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var1);
 			__LIB_0__::func_700(&Var2);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -67485,8 +67485,8 @@ void func_2538(int iParam0)//Position - 0x1284EB
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610(&Var0);
-			__LIB_0__::func_610(&Var1);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var1);
 			__LIB_0__::func_700(&Var2);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
@@ -69371,8 +69371,8 @@ void func_2553(int iParam0)//Position - 0x12AEBC
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610(&Var0);
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			__LIB_0__::func_700(&Var1);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -69776,8 +69776,8 @@ void func_2555(int iParam0)//Position - 0x12B442
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610(&Var0);
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			__LIB_0__::func_700(&Var1);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bVar5);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -71485,9 +71485,9 @@ void func_2563(int iParam0, int iParam1, int iParam2)//Position - 0x12D1B3
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-	__LIB_0__::func_610(&Var0);
-	__LIB_0__::func_610("LFI_POSTEDUPDATE" /* GXT: Posted an update */);
-	__LIB_0__::func_610(&Var1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LFI_POSTEDUPDATE" /* GXT: Posted an update */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var1);
 	__LIB_0__::func_700(&Var2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bVar3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -75986,7 +75986,7 @@ void func_2573(int iParam0)//Position - 0x131EC6
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-	__LIB_0__::func_610(&Var0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -76047,10 +76047,10 @@ void func_2574(int iParam0)//Position - 0x131F6E
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-	__LIB_0__::func_610(&Var0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 	__LIB_0__::func_700(&Var1);
-	__LIB_0__::func_610(&Var2);
-	__LIB_0__::func_610(&Var3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var3);
 	__LIB_0__::func_700(&Var4);
 	__LIB_0__::func_700(&Var5);
 	__LIB_0__::func_700(&Var6);
@@ -76694,7 +76694,7 @@ void func_2587(int iParam0, int iParam1)//Position - 0x132CAD
 		Var0 = { func_2588(iVar5) };
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4 + 2);
-		__LIB_0__::func_610(&Var0);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		iVar4++;
 	}
@@ -76975,19 +76975,19 @@ void func_2598(int iParam0, int iParam1)//Position - 0x133987
 				case 3:
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-					__LIB_0__::func_610("EPSI_IP_FRIN" /* GXT: UNSAVEABLE! THIS CONTENT IS NOT AVAILABLE TO YOU! YOUR TRANSGRESSION HAS BEEN REPORTED TO THE AUTHORITIES! */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EPSI_IP_FRIN" /* GXT: UNSAVEABLE! THIS CONTENT IS NOT AVAILABLE TO YOU! YOUR TRANSGRESSION HAS BEEN REPORTED TO THE AUTHORITIES! */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					break;
 				case 1:
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-					__LIB_0__::func_610("EPSI_NO_STOCK" /* GXT: Sadly we have no robes in stock at this time. Please try again later. */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EPSI_NO_STOCK" /* GXT: Sadly we have no robes in stock at this time. Please try again later. */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					break;
 				case 0:
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-					__LIB_0__::func_610("EPSI_NO_MP_VISIT" /* GXT: Access denied! Your IP has been logged as that of an Unsaveable! */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EPSI_NO_MP_VISIT" /* GXT: Access denied! Your IP has been logged as that of an Unsaveable! */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					break;
 			}
@@ -77116,33 +77116,33 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			func_2626(iParam0);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-			__LIB_0__::func_610("BS_NP_GENNEWS" /* GXT: Main Stories */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_GENNEWS" /* GXT: Main Stories */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			if (__LIB_0__::func_178(44) && !__LIB_0__::func_178(21))
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-				__LIB_0__::func_610("BS_NEWS_LFIH1" /* GXT: Tragic device explosion kills LFI CEO */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NEWS_LFIH1" /* GXT: Tragic device explosion kills LFI CEO */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-				__LIB_0__::func_610("BS_NEWS_LFIB1" /* GXT: Content content content lorem ipsum dolor sit amet */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NEWS_LFIB1" /* GXT: Content content content lorem ipsum dolor sit amet */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
-				__LIB_0__::func_610("BS_NEWS_LFIH2" /* GXT: Lifeinvader press conference derailed by sabotage */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NEWS_LFIH2" /* GXT: Lifeinvader press conference derailed by sabotage */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(9f);
-				__LIB_0__::func_610("BS_NEWS_LFIB2" /* GXT: Content content content lorem ipsum dolor sit amet */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NEWS_LFIB2" /* GXT: Content content content lorem ipsum dolor sit amet */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
-				__LIB_0__::func_610("BS_NEWS_LFIH3" /* GXT: LFI bombing investigators pursuing leads. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NEWS_LFIH3" /* GXT: LFI bombing investigators pursuing leads. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(11f);
-				__LIB_0__::func_610("BS_NEWS_LFIB3" /* GXT: Content content content lorem ipsum dolor sit amet */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NEWS_LFIB3" /* GXT: Content content content lorem ipsum dolor sit amet */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 			else
@@ -77151,19 +77151,19 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-					__LIB_0__::func_610(&(Global_63000[0 /*34*/][0 /*11*/].f_1));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[0 /*34*/][0 /*11*/].f_1));
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				if (!func_2624(iParam0, 0))
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
-					__LIB_0__::func_610(&(Global_63000[0 /*34*/][1 /*11*/].f_1));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[0 /*34*/][1 /*11*/].f_1));
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
-				__LIB_0__::func_610(&(Global_63000[0 /*34*/][2 /*11*/].f_1));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[0 /*34*/][2 /*11*/].f_1));
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 			break;
@@ -77176,19 +77176,19 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			func_2628(iParam0, 4);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-			__LIB_0__::func_610("BS_WB_MLIST" /* GXT: Market List */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_MLIST" /* GXT: Market List */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-			__LIB_0__::func_610("BS_WB_PERCHA" /* GXT: Avg. Change % */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_PERCHA" /* GXT: Avg. Change % */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(11f);
-			__LIB_0__::func_610("BS_WB_STCKLST" /* GXT: Stock Listings */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_STCKLST" /* GXT: Stock Listings */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(12f);
-			__LIB_0__::func_610("BS_WB_LCSTWT" /* GXT: Jump to companies starting with: */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LCSTWT" /* GXT: Jump to companies starting with: */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			func_2623(iParam0, 0, 7);
 			func_2622(iParam0, 15);
@@ -77202,28 +77202,28 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			func_2628(iParam0, 4);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-			__LIB_0__::func_610("BS_WB_MSTOCK" /* GXT: My Portfolio */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_MSTOCK" /* GXT: My Portfolio */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-			__LIB_0__::func_610("BS_WB_BUYPRC" /* GXT: Invested */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_BUYPRC" /* GXT: Invested */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			func_2623(iParam0, 1, 7);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(11f);
-			__LIB_0__::func_610("BS_TL_PROF" /* GXT: Profit */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_PROF" /* GXT: Profit */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(12f);
-			__LIB_0__::func_610("BS_TL_SEARCH" /* GXT: Search Market */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SEARCH" /* GXT: Search Market */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(13f);
-			__LIB_0__::func_610("BS_TL_GOSTRT" /* GXT: Go to companies starting with: */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_GOSTRT" /* GXT: Go to companies starting with: */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(14f);
-			__LIB_0__::func_610("BS_TL_SELLALL" /* GXT: SELL ALL */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SELLALL" /* GXT: SELL ALL */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			func_2621(iParam0, 15);
 			break;
@@ -77377,28 +77377,28 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			func_2629(iParam0, 0);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(4f);
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			if (Global_78319)
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-				__LIB_0__::func_610("BS_WB_FAI1MP" /* GXT: The stock market is currently unavailable in GTA Online. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_FAI1MP" /* GXT: The stock market is currently unavailable in GTA Online. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-				__LIB_0__::func_610("BS_WB_FAI2MP" /* GXT: Switch to Grand Theft Auto V if you wish to invest. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_FAI2MP" /* GXT: Switch to Grand Theft Auto V if you wish to invest. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 			else if (Global_63142)
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-				__LIB_0__::func_610("BS_WB_FAI1NS" /* GXT: This transaction cannot be completed. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_FAI1NS" /* GXT: This transaction cannot be completed. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-				__LIB_0__::func_610("BS_WB_FAI2NS" /* GXT: There is no space remaining in your portfolio for new asset entries. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_FAI2NS" /* GXT: There is no space remaining in your portfolio for new asset entries. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				Global_63142 = 0;
 			}
@@ -77406,11 +77406,11 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-				__LIB_0__::func_610("BS_WB_FAI1" /* GXT: The market is down for maintenance. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_FAI1" /* GXT: The market is down for maintenance. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-				__LIB_0__::func_610("BS_WB_FAI2" /* GXT: Please try again later. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_FAI2" /* GXT: Please try again later. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 			break;
@@ -77418,11 +77418,11 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			func_2629(iParam0, 0);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(4f);
-			__LIB_0__::func_610(" ");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(" ");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-			__LIB_0__::func_610("BS_SL_ALLSHRS" /* GXT: Sell All */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_SL_ALLSHRS" /* GXT: Sell All */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
@@ -77449,11 +77449,11 @@ void func_2601(int iParam0, int iParam1)//Position - 0x133BB5
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-			__LIB_0__::func_610("BS_WB_CONFTRSH" /* GXT: CONFIRM */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CONFTRSH" /* GXT: CONFIRM */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
-			__LIB_0__::func_610("BS_WB_CAN" /* GXT: CANCEL */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CAN" /* GXT: CANCEL */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 	}
@@ -77505,7 +77505,7 @@ void func_2602(int iParam0, bool bParam1)//Position - 0x1344FC
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0 /*36*/].f_14[Global_55453[iVar0 /*36*/].f_13]);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0 /*36*/].f_33);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0 /*36*/].f_34);
-					__LIB_0__::func_610(&(Global_55453[iVar0 /*36*/].f_4));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar0 /*36*/].f_4));
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					iVar1++;
 				}
@@ -77570,70 +77570,70 @@ void func_2605(int iParam0, int iParam1)//Position - 0x13466E
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(4f);
-	__LIB_0__::func_610("BS_NP_GENNEWS" /* GXT: Main Stories */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_GENNEWS" /* GXT: Main Stories */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-	__LIB_0__::func_610("BS_NP_CITNEWS" /* GXT: City Stories */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_CITNEWS" /* GXT: City Stories */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-	__LIB_0__::func_610("BS_NP_MONNEWS" /* GXT: Market News */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_MONNEWS" /* GXT: Market News */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-	__LIB_0__::func_610("BS_NP_TECNEWS" /* GXT: Tech Stories */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_TECNEWS" /* GXT: Tech Stories */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	switch (iParam1)
 	{
 		case 0:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
-			__LIB_0__::func_610("BS_NP_GENNEWS" /* GXT: Main Stories */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_GENNEWS" /* GXT: Main Stories */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 1:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
-			__LIB_0__::func_610("BS_NP_CITNEWS" /* GXT: City Stories */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_CITNEWS" /* GXT: City Stories */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 2:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
-			__LIB_0__::func_610("BS_NP_MONNEWS" /* GXT: Market News */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_MONNEWS" /* GXT: Market News */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 3:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
-			__LIB_0__::func_610("BS_NP_TECNEWS" /* GXT: Tech Stories */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_NP_TECNEWS" /* GXT: Tech Stories */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(9f);
-	__LIB_0__::func_610(&(Global_63000[iParam1 /*34*/][0 /*11*/].f_1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[iParam1 /*34*/][0 /*11*/].f_1));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
-	__LIB_0__::func_610(&(Global_63000[iParam1 /*34*/][0 /*11*/].f_5));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[iParam1 /*34*/][0 /*11*/].f_5));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(11f);
-	__LIB_0__::func_610(&(Global_63000[iParam1 /*34*/][1 /*11*/].f_1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[iParam1 /*34*/][1 /*11*/].f_1));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(12f);
-	__LIB_0__::func_610(&(Global_63000[iParam1 /*34*/][1 /*11*/].f_5));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[iParam1 /*34*/][1 /*11*/].f_5));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(13f);
-	__LIB_0__::func_610(&(Global_63000[iParam1 /*34*/][2 /*11*/].f_1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[iParam1 /*34*/][2 /*11*/].f_1));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(14f);
-	__LIB_0__::func_610(&(Global_63000[iParam1 /*34*/][2 /*11*/].f_5));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_63000[iParam1 /*34*/][2 /*11*/].f_5));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -77643,12 +77643,12 @@ void func_2606(int iParam0, int iParam1)//Position - 0x13487B
 	fVar0 = SYSTEM::TO_FLOAT(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_SOR" /* GXT: Portfolio Empty */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_SOR" /* GXT: Portfolio Empty */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_GOBUY" /* GXT: You can purchase stocks from the Markets page. */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_GOBUY" /* GXT: You can purchase stocks from the Markets page. */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -77661,7 +77661,7 @@ void func_2607(int iParam0)//Position - 0x1348CB
 	func_2629(iParam0, 0);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(4f);
-	__LIB_0__::func_610("BS_WB_CONTBU" /* GXT: CONTINUE */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CONTBU" /* GXT: CONTINUE */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar0 = 19;
 	iVar1 = 0;
@@ -77729,7 +77729,7 @@ void func_2607(int iParam0)//Position - 0x1348CB
 			default:
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(SYSTEM::TO_FLOAT(iVar2));
-				__LIB_0__::func_610(&Var3);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var3);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				break;
 		}
@@ -77744,29 +77744,29 @@ void func_2608(int iParam0, int iParam1)//Position - 0x134AC7
 	fVar0 = func_92(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(4f);
-	__LIB_0__::func_610("BS_WB_CONTBU" /* GXT: CONTINUE */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CONTBU" /* GXT: CONTINUE */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (Global_75609)
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-		__LIB_0__::func_610("BS_WB_BS" /* GXT: Buy Shares */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_BS" /* GXT: Buy Shares */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-		__LIB_0__::func_610("BS_WB_SS" /* GXT: Sell Shares */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_SS" /* GXT: Sell Shares */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-	__LIB_0__::func_610("BS_TL_SHARES" /* GXT: Shares */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SHARES" /* GXT: Shares */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(9f);
@@ -77774,7 +77774,7 @@ void func_2608(int iParam0, int iParam1)//Position - 0x134AC7
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
-	__LIB_0__::func_610("BS_WB_TRCOM" /* GXT: Transaction complete */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_TRCOM" /* GXT: Transaction complete */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(11f);
@@ -77782,20 +77782,20 @@ void func_2608(int iParam0, int iParam1)//Position - 0x134AC7
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(12f);
-	__LIB_0__::func_610("BS_WB_COST" /* GXT: Cost */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_COST" /* GXT: Cost */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (Global_75609)
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(12f);
-		__LIB_0__::func_610("BS_WB_COST" /* GXT: Cost */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_COST" /* GXT: Cost */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(12f);
-		__LIB_0__::func_610("BS_WB_PROLOS" /* GXT: Payout */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_PROLOS" /* GXT: Payout */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -77814,11 +77814,11 @@ void func_2608(int iParam0, int iParam1)//Position - 0x134AC7
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(16f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_HIGHFH" /* GXT: Five hour high */))
 	{
-		__LIB_0__::func_610("BS_WB_HIGHFH" /* GXT: Five hour high */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGHFH" /* GXT: Five hour high */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_HIGH" /* GXT: High */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGH" /* GXT: High */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -77829,11 +77829,11 @@ void func_2608(int iParam0, int iParam1)//Position - 0x134AC7
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(18f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_LOWFH" /* GXT: Five hour low */))
 	{
-		__LIB_0__::func_610("BS_WB_LOWFH" /* GXT: Five hour low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOWFH" /* GXT: Five hour low */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_LOW" /* GXT: Low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOW" /* GXT: Low */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -77842,7 +77842,7 @@ void func_2608(int iParam0, int iParam1)//Position - 0x134AC7
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(20f);
-	__LIB_0__::func_610("BS_WB_VOLU" /* GXT: Volume */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VOLU" /* GXT: Volume */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(21f);
@@ -77850,7 +77850,7 @@ void func_2608(int iParam0, int iParam1)//Position - 0x134AC7
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(22f);
-	__LIB_0__::func_610("BS_WB_VAL" /* GXT: Value */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VAL" /* GXT: Value */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(23f);
@@ -77866,24 +77866,24 @@ void func_2609(int iParam0, int iParam1)//Position - 0x134DEB
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-		__LIB_0__::func_610("BS_WB_BS" /* GXT: Buy Shares */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_BS" /* GXT: Buy Shares */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-		__LIB_0__::func_610("BS_WB_SS" /* GXT: Sell Shares */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_SS" /* GXT: Sell Shares */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	fVar0 = func_92(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-	__LIB_0__::func_610("BS_TL_SHARES" /* GXT: Shares */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SHARES" /* GXT: Shares */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
@@ -77891,7 +77891,7 @@ void func_2609(int iParam0, int iParam1)//Position - 0x134DEB
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(9f);
-	__LIB_0__::func_610("BS_WB_VOLU" /* GXT: Volume */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VOLU" /* GXT: Volume */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
@@ -77907,7 +77907,7 @@ void func_2609(int iParam0, int iParam1)//Position - 0x134DEB
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(14f);
-	__LIB_0__::func_610("BS_WB_CONFTR" /* GXT: Confirm Transaction */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CONFTR" /* GXT: Confirm Transaction */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(15f);
@@ -77915,15 +77915,15 @@ void func_2609(int iParam0, int iParam1)//Position - 0x134DEB
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(16f);
-	__LIB_0__::func_610("BS_WB_COST" /* GXT: Cost */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_COST" /* GXT: Cost */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(18f);
-	__LIB_0__::func_610("BS_WB_CONF" /* GXT: CONFIRM */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CONF" /* GXT: CONFIRM */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(19f);
-	__LIB_0__::func_610("BS_WB_CAN" /* GXT: CANCEL */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CAN" /* GXT: CANCEL */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(20f);
@@ -77933,11 +77933,11 @@ void func_2609(int iParam0, int iParam1)//Position - 0x134DEB
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(21f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_HIGHFH" /* GXT: Five hour high */))
 	{
-		__LIB_0__::func_610("BS_WB_HIGHFH" /* GXT: Five hour high */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGHFH" /* GXT: Five hour high */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_HIGH" /* GXT: High */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGH" /* GXT: High */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -77948,11 +77948,11 @@ void func_2609(int iParam0, int iParam1)//Position - 0x134DEB
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(23f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_LOWFH" /* GXT: Five hour low */))
 	{
-		__LIB_0__::func_610("BS_WB_LOWFH" /* GXT: Five hour low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOWFH" /* GXT: Five hour low */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_LOW" /* GXT: Low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOW" /* GXT: Low */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -77961,7 +77961,7 @@ void func_2609(int iParam0, int iParam1)//Position - 0x134DEB
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(25f);
-	__LIB_0__::func_610("BS_WB_VAL" /* GXT: Value */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VAL" /* GXT: Value */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(26f);
@@ -78011,15 +78011,15 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	fVar2 = func_92(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-	__LIB_0__::func_610("BS_BU_SELL" /* GXT: SELL */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_BU_SELL" /* GXT: SELL */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/]));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/]));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
@@ -78027,7 +78027,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(9f);
-	__LIB_0__::func_610("BS_WB_VOLU" /* GXT: Volume */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VOLU" /* GXT: Volume */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
@@ -78064,7 +78064,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(13f);
-	__LIB_0__::func_610("BS_TL_SHARES" /* GXT: Shares */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SHARES" /* GXT: Shares */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(14f);
@@ -78072,7 +78072,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(15f);
-	__LIB_0__::func_610("BS_TL_SHOWN" /* GXT: Shares Owned */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SHOWN" /* GXT: Shares Owned */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(16f);
@@ -78080,7 +78080,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(17f);
-	__LIB_0__::func_610("BS_TL_IVEST" /* GXT: Total Invested */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_IVEST" /* GXT: Total Invested */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (Global_75618 > -1E-06f)
 	{
@@ -78090,7 +78090,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(19f);
-		__LIB_0__::func_610("BS_TL_PROF" /* GXT: Profit */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_PROF" /* GXT: Profit */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
@@ -78101,20 +78101,20 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(19f);
-		__LIB_0__::func_610("BS_TL_LOSS" /* GXT: Loss */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_LOSS" /* GXT: Loss */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(20f);
-	__LIB_0__::func_610("BS_BU_SELL" /* GXT: SELL */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_BU_SELL" /* GXT: SELL */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(21f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(22f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(23f);
@@ -78124,11 +78124,11 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(24f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_HIGHFH" /* GXT: Five hour high */))
 	{
-		__LIB_0__::func_610("BS_WB_HIGHFH" /* GXT: Five hour high */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGHFH" /* GXT: Five hour high */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_HIGH" /* GXT: High */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGH" /* GXT: High */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar7 = func_2612(iParam1);
@@ -78140,11 +78140,11 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(26f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_LOWFH" /* GXT: Five hour low */))
 	{
-		__LIB_0__::func_610("BS_WB_LOWFH" /* GXT: Five hour low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOWFH" /* GXT: Five hour low */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_LOW" /* GXT: Low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOW" /* GXT: Low */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar8 = func_2611(iParam1);
@@ -78154,7 +78154,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(28f);
-	__LIB_0__::func_610("BS_WB_VAL" /* GXT: Value */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VAL" /* GXT: Value */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(29f);
@@ -78162,7 +78162,7 @@ void func_2610(int iParam0, int iParam1)//Position - 0x1350E9
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(30f);
-	__LIB_0__::func_610("BS_TL_SELLALL" /* GXT: SELL ALL */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SELLALL" /* GXT: SELL ALL */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -78221,15 +78221,15 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	fVar0 = func_92(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-	__LIB_0__::func_610("BS_BU_BUY" /* GXT: BUY */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_BU_BUY" /* GXT: BUY */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/]));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/]));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
@@ -78237,7 +78237,7 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(9f);
-	__LIB_0__::func_610("BS_WB_VOLU" /* GXT: Volume */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VOLU" /* GXT: Volume */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
@@ -78318,7 +78318,7 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(13f);
-	__LIB_0__::func_610("BS_TL_SHARES" /* GXT: Shares */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SHARES" /* GXT: Shares */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(14f);
@@ -78326,7 +78326,7 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(15f);
-	__LIB_0__::func_610("BS_TL_GSUM" /* GXT: Gross Sum */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_GSUM" /* GXT: Gross Sum */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(16f);
@@ -78334,7 +78334,7 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(17f);
-	__LIB_0__::func_610("BS_TL_SHOWN" /* GXT: Shares Owned */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_SHOWN" /* GXT: Shares Owned */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(18f);
@@ -78342,19 +78342,19 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(19f);
-	__LIB_0__::func_610("BS_TL_IVEST" /* GXT: Total Invested */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_TL_IVEST" /* GXT: Total Invested */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(20f);
-	__LIB_0__::func_610("BS_BU_BUY" /* GXT: BUY */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_BU_BUY" /* GXT: BUY */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(21f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(22f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(23f);
@@ -78364,11 +78364,11 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(24f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_HIGHFH" /* GXT: Five hour high */))
 	{
-		__LIB_0__::func_610("BS_WB_HIGHFH" /* GXT: Five hour high */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGHFH" /* GXT: Five hour high */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_HIGH" /* GXT: High */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGH" /* GXT: High */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -78379,11 +78379,11 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(26f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_LOWFH" /* GXT: Five hour low */))
 	{
-		__LIB_0__::func_610("BS_WB_LOWFH" /* GXT: Five hour low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOWFH" /* GXT: Five hour low */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_LOW" /* GXT: Low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOW" /* GXT: Low */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -78392,7 +78392,7 @@ void func_2613(int iParam0, int iParam1)//Position - 0x1356AE
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(28f);
-	__LIB_0__::func_610("BS_WB_VAL" /* GXT: Value */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VAL" /* GXT: Value */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(29f);
@@ -78416,11 +78416,11 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	fVar0 = func_92(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(4f);
-	__LIB_0__::func_610("BS_WB_STCKINF" /* GXT: Stock Information */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_STCKINF" /* GXT: Stock Information */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(5f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/]));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/]));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(6f);
@@ -78428,7 +78428,7 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
-	__LIB_0__::func_610("BS_WB_VOLU" /* GXT: Volume */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VOLU" /* GXT: Volume */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(8f);
@@ -78440,25 +78440,25 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(10f);
-	__LIB_0__::func_610(&(Global_55453[iParam1 /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iParam1 /*36*/].f_4));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (Global_75638)
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(11f);
-		__LIB_0__::func_610("BS_PH_HRS" /* GXT: LAST 5 HOURS */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_HRS" /* GXT: LAST 5 HOURS */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(11f);
-		__LIB_0__::func_610("BS_PH_GR" /* GXT: PAST WEEK */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_GR" /* GXT: PAST WEEK */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(17f);
-	__LIB_0__::func_610("BS_BU_BUY" /* GXT: BUY */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_BU_BUY" /* GXT: BUY */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar1 = 0;
 	switch (__LIB_0__::func_683())
@@ -78477,27 +78477,27 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(18f);
-		__LIB_0__::func_610("BS_BU_SELL" /* GXT: SELL */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_BU_SELL" /* GXT: SELL */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(18f);
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(19f);
-	__LIB_0__::func_610(func_2616(iParam1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2616(iParam1));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(20f);
-	__LIB_0__::func_610("BS_PH_F" /* GXT: Fri */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_F" /* GXT: Fri */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(21f);
-	__LIB_0__::func_610(func_2616(iParam1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_2616(iParam1));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(22f);
@@ -78507,11 +78507,11 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(23f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_HIGHFH" /* GXT: Five hour high */))
 	{
-		__LIB_0__::func_610("BS_WB_HIGHFH" /* GXT: Five hour high */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGHFH" /* GXT: Five hour high */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_HIGH" /* GXT: High */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HIGH" /* GXT: High */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -78522,11 +78522,11 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(25f);
 	if (Global_75638 && HUD::DOES_TEXT_LABEL_EXIST("BS_WB_LOWFH" /* GXT: Five hour low */))
 	{
-		__LIB_0__::func_610("BS_WB_LOWFH" /* GXT: Five hour low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOWFH" /* GXT: Five hour low */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_LOW" /* GXT: Low */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_LOW" /* GXT: Low */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -78535,7 +78535,7 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(27f);
-	__LIB_0__::func_610("BS_WB_VAL" /* GXT: Value */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VAL" /* GXT: Value */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(28f);
@@ -78543,7 +78543,7 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(33f);
-	__LIB_0__::func_610("BS_WB_VOLU" /* GXT: Volume */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VOLU" /* GXT: Volume */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(34f);
@@ -78551,7 +78551,7 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(29f);
-	__LIB_0__::func_610("BS_H_LST" /* GXT: Last Avg. */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_H_LST" /* GXT: Last Avg. */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(30f);
@@ -78559,7 +78559,7 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(31f);
-	__LIB_0__::func_610("BS_H_CHNG" /* GXT: Avg. Change */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_H_CHNG" /* GXT: Avg. Change */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(32f);
@@ -78567,7 +78567,7 @@ void func_2615(int iParam0, int iParam1)//Position - 0x135BAD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(35f);
-	__LIB_0__::func_610("BS_H_OWNED" /* GXT: OWNED */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_H_OWNED" /* GXT: OWNED */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(36f);
@@ -78786,12 +78786,12 @@ void func_2618(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
-	__LIB_0__::func_610("BS_PH_5" /* GXT: -5h */);
-	__LIB_0__::func_610("BS_PH_4" /* GXT: -4h */);
-	__LIB_0__::func_610("BS_PH_3" /* GXT: -3h */);
-	__LIB_0__::func_610("BS_PH_2" /* GXT: -2h */);
-	__LIB_0__::func_610("BS_PH_1" /* GXT: -1h */);
-	__LIB_0__::func_610("BS_PH_0" /* GXT: 0h */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_5" /* GXT: -5h */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_4" /* GXT: -4h */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_3" /* GXT: -3h */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_2" /* GXT: -2h */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_1" /* GXT: -1h */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_0" /* GXT: 0h */);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(1.5f);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = func_92(iParam1);
@@ -78862,25 +78862,25 @@ void func_2619(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0
 		switch (iVar1)
 		{
 			case 0:
-				__LIB_0__::func_610("BS_PH_SU" /* GXT: Sun */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_SU" /* GXT: Sun */);
 				break;
 			case 1:
-				__LIB_0__::func_610("BS_PH_M" /* GXT: Mon */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_M" /* GXT: Mon */);
 				break;
 			case 2:
-				__LIB_0__::func_610("BS_PH_TU" /* GXT: Tue */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_TU" /* GXT: Tue */);
 				break;
 			case 3:
-				__LIB_0__::func_610("BS_PH_W" /* GXT: Wed */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_W" /* GXT: Wed */);
 				break;
 			case 4:
-				__LIB_0__::func_610("BS_PH_TH" /* GXT: Thur */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_TH" /* GXT: Thur */);
 				break;
 			case 5:
-				__LIB_0__::func_610("BS_PH_F" /* GXT: Fri */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_F" /* GXT: Fri */);
 				break;
 			case 6:
-				__LIB_0__::func_610("BS_PH_SA" /* GXT: Sat */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_SA" /* GXT: Sat */);
 				break;
 		}
 		iVar1++;
@@ -78980,8 +78980,8 @@ void func_2621(int iParam0, int iParam1)//Position - 0x13682C
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar5);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(66666f);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar7);
-				__LIB_0__::func_610(&(Global_55453[__LIB_16__::func_583(iVar0, iVar2) /*36*/].f_4));
-				__LIB_0__::func_610(&(Global_55453[__LIB_16__::func_583(iVar0, iVar2) /*36*/]));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[__LIB_16__::func_583(iVar0, iVar2) /*36*/].f_4));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[__LIB_16__::func_583(iVar0, iVar2) /*36*/]));
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(func_87(iVar0, iVar2));
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar6);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -79016,8 +79016,8 @@ void func_2622(int iParam0, int iParam1)//Position - 0x136965
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(func_92(iVar1));
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(55555);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar1 /*36*/].f_33);
-				__LIB_0__::func_610(&(Global_55453[iVar1 /*36*/].f_4));
-				__LIB_0__::func_610(&(Global_55453[iVar1 /*36*/]));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar1 /*36*/].f_4));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar1 /*36*/]));
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "APPEND_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT((IntToFloat(iVar2) + fVar0));
@@ -79036,28 +79036,28 @@ void func_2623(int iParam0, bool bParam1, int iParam2)//Position - 0x136A31
 	fVar0 = SYSTEM::TO_FLOAT(iParam2);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_NAMEH" /* GXT: Company Name */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_NAMEH" /* GXT: Company Name */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_CURPRICH" /* GXT: Current Price */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_CURPRICH" /* GXT: Current Price */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_VOLU" /* GXT: Volume */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_VOLU" /* GXT: Volume */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
 	if (bParam1)
 	{
-		__LIB_0__::func_610("BS_WB_RETP" /* GXT: Return Percentage */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_RETP" /* GXT: Return Percentage */);
 	}
 	else
 	{
-		__LIB_0__::func_610("BS_WB_MOVH" /* GXT: Price Movement */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_MOVH" /* GXT: Price Movement */);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
@@ -79222,7 +79222,7 @@ int func_2624(int iParam0, bool bParam1)//Position - 0x136ADE
 			{
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(7f);
 			}
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			return 1;
 		}
@@ -79341,31 +79341,31 @@ void func_2626(int iParam0)//Position - 0x136D5F
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(22);
-	__LIB_0__::func_610(&(Global_55453[iVar0[0] /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar0[0] /*36*/].f_4));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(func_92(iVar0[0]));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0[0] /*36*/].f_33);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(23);
-	__LIB_0__::func_610(&(Global_55453[iVar0[1] /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar0[1] /*36*/].f_4));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(func_92(iVar0[1]));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0[1] /*36*/].f_33);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(24);
-	__LIB_0__::func_610(&(Global_55453[iVar0[2] /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar0[2] /*36*/].f_4));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(func_92(iVar0[2]));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0[2] /*36*/].f_33);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(25);
-	__LIB_0__::func_610(&(Global_55453[iVar0[3] /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar0[3] /*36*/].f_4));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(func_92(iVar0[3]));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0[3] /*36*/].f_33);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(26);
-	__LIB_0__::func_610(&(Global_55453[iVar0[4] /*36*/].f_4));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_55453[iVar0[4] /*36*/].f_4));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(func_92(iVar0[4]));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_55453[iVar0[4] /*36*/].f_33);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -79400,7 +79400,7 @@ void func_2628(int iParam0, int iParam1)//Position - 0x137084
 	fVar0 = SYSTEM::TO_FLOAT(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_DATELINE" /* GXT: TEMP DATELINE */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_DATELINE" /* GXT: TEMP DATELINE */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -79410,22 +79410,22 @@ void func_2629(int iParam0, int iParam1)//Position - 0x1370B1
 	fVar0 = SYSTEM::TO_FLOAT(iParam1);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_HOME" /* GXT: Home */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_HOME" /* GXT: Home */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_NEWS" /* GXT: News */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_NEWS" /* GXT: News */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_MARK" /* GXT: Markets */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_MARK" /* GXT: Markets */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-	__LIB_0__::func_610("BS_WB_MSTOCK" /* GXT: My Portfolio */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_WB_MSTOCK" /* GXT: My Portfolio */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	fVar0 = (fVar0 + 1f);
 }
@@ -79565,12 +79565,12 @@ void func_2633(int iParam0, int iParam1, int iParam2)//Position - 0x137414
 	Global_1565928[*iParam0] = iParam1;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(*iParam0);
-	__LIB_0__::func_610(&(Global_1312193[iParam1 /*1951*/].f_16));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1312193[iParam1 /*1951*/].f_16));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_1312193[iParam1 /*1951*/].f_3[0 /*3*/]);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(Global_1312193[iParam1 /*1951*/].f_3[0 /*3*/].f_1);
 	if (__LIB_40__::func_941(iParam1) < 1 || __LIB_29__::func_896(iParam1))
 	{
-		__LIB_0__::func_610("ITEM_FREE" /* GXT: FREE */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ITEM_FREE" /* GXT: FREE */);
 	}
 	else if (bVar1)
 	{
@@ -79581,7 +79581,7 @@ void func_2633(int iParam0, int iParam1, int iParam2)//Position - 0x137414
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::CEIL((SYSTEM::TO_FLOAT(__LIB_40__::func_941(iParam1)) * Global_262145.f_78 /* Tunable: PROPERTY_MULTIPLIER */)));
 	}
 	__LIB_0__::func_700(func_2479(iParam1));
-	__LIB_0__::func_610(&(Global_1312193[iParam1 /*1951*/].f_20));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1312193[iParam1 /*1951*/].f_20));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_2__::func_908(Global_1312193[iParam1 /*1951*/].f_31));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_2635(Global_1312193[iParam1 /*1951*/].f_31));
 	switch (Global_1312193[iParam1 /*1951*/].f_31)
@@ -79591,7 +79591,7 @@ void func_2633(int iParam0, int iParam1, int iParam2)//Position - 0x137414
 		case 63:
 		case 64:
 		case 65:
-			__LIB_0__::func_610("DYN_UPDATEDINT" /* GXT: UPDATED INTERIOR */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DYN_UPDATEDINT" /* GXT: UPDATED INTERIOR */);
 			break;
 		case 73:
 		case 74:
@@ -79603,17 +79603,17 @@ void func_2633(int iParam0, int iParam1, int iParam2)//Position - 0x137414
 		case 80:
 		case 81:
 		case 82:
-			__LIB_0__::func_610("DYN_STILTAPT" /* GXT: STILT APARTMENT */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DYN_STILTAPT" /* GXT: STILT APARTMENT */);
 			bVar2 = true;
 			break;
 		case 83:
 		case 84:
 		case 85:
-			__LIB_0__::func_610("DYN_CUSTOMAPT" /* GXT: CUSTOM APARTMENT */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("DYN_CUSTOMAPT" /* GXT: CUSTOM APARTMENT */);
 			bVar2 = true;
 			break;
 		default:
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 			break;
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bVar1);
@@ -79626,7 +79626,7 @@ void func_2633(int iParam0, int iParam1, int iParam2)//Position - 0x137414
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	}
-	__LIB_0__::func_610(&Var0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 	if (bVar1)
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::CEIL((SYSTEM::TO_FLOAT(__LIB_40__::func_941(iParam1)) * Global_262145.f_78 /* Tunable: PROPERTY_MULTIPLIER */)));
@@ -79890,7 +79890,7 @@ void func_2640(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 
 				sVar6 = ZONE::GET_NAME_OF_ZONE(Var5);
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-				__LIB_0__::func_610(sVar6);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar6);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
@@ -79898,25 +79898,25 @@ void func_2640(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 
 			switch (iVar1)
 			{
 				case 0:
-					__LIB_0__::func_610("BS_PH_SU" /* GXT: Sun */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_SU" /* GXT: Sun */);
 					break;
 				case 1:
-					__LIB_0__::func_610("BS_PH_M" /* GXT: Mon */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_M" /* GXT: Mon */);
 					break;
 				case 2:
-					__LIB_0__::func_610("BS_PH_TU" /* GXT: Tue */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_TU" /* GXT: Tue */);
 					break;
 				case 3:
-					__LIB_0__::func_610("BS_PH_W" /* GXT: Wed */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_W" /* GXT: Wed */);
 					break;
 				case 4:
-					__LIB_0__::func_610("BS_PH_TH" /* GXT: Thur */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_TH" /* GXT: Thur */);
 					break;
 				case 5:
-					__LIB_0__::func_610("BS_PH_F" /* GXT: Fri */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_F" /* GXT: Fri */);
 					break;
 				case 6:
-					__LIB_0__::func_610("BS_PH_SA" /* GXT: Sat */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("BS_PH_SA" /* GXT: Sat */);
 					break;
 			}
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -79948,7 +79948,7 @@ void func_2640(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
-					__LIB_0__::func_610(&(Local_111.f_1));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Local_111.f_1));
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(5);
@@ -79956,18 +79956,18 @@ void func_2640(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(6);
-					__LIB_0__::func_610(&(Local_111.f_9));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Local_111.f_9));
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 			}
 			Var0 = { func_2643(uParam2) };
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(7);
-			__LIB_0__::func_610(&Var0);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var0);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(8);
-			__LIB_0__::func_610(&(Var0.f_4));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Var0.f_4));
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			if (Global_78319)
 			{
@@ -79985,11 +79985,11 @@ void func_2640(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_262145.f_22875 /* Tunable: -1765854872 */);
-					__LIB_0__::func_610("EYEDISC_SA" /* GXT: SPONSORED ADVERTISEMENT */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_SA" /* GXT: SPONSORED ADVERTISEMENT */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_262145.f_22876 /* Tunable: -2028629483 */);
-					__LIB_0__::func_610("EYEDISC_SA" /* GXT: SPONSORED ADVERTISEMENT */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_SA" /* GXT: SPONSORED ADVERTISEMENT */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_262145.f_22877 /* Tunable: 1985868434 */);
-					__LIB_0__::func_610("EYEDISC_SA" /* GXT: SPONSORED ADVERTISEMENT */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_SA" /* GXT: SPONSORED ADVERTISEMENT */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_262145.f_22878 /* Tunable: 771871949 */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_262145.f_22879 /* Tunable: 1942216784 */);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_262145.f_22880 /* Tunable: 311827958 */);
@@ -80016,31 +80016,31 @@ void func_2641(int iParam0, float fParam1)//Position - 0x1381EC
 	func_2642(iParam0, 0);
 	if (fParam1 == 0f)
 	{
-		__LIB_0__::func_610("EYEDISC_00" /* GXT: Discounts available on Selected Vehicles */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_00" /* GXT: Discounts available on Selected Vehicles */);
 	}
 	else if (fParam1 == 5f)
 	{
-		__LIB_0__::func_610("EYEDISC_05" /* GXT: 5% Off Selected Vehicles */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_05" /* GXT: 5% Off Selected Vehicles */);
 	}
 	else if (fParam1 == 10f)
 	{
-		__LIB_0__::func_610("EYEDISC_10" /* GXT: 10% Off Selected Vehicles */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_10" /* GXT: 10% Off Selected Vehicles */);
 	}
 	else if (fParam1 == 15f)
 	{
-		__LIB_0__::func_610("EYEDISC_15" /* GXT: 15% Off Selected Vehicles */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_15" /* GXT: 15% Off Selected Vehicles */);
 	}
 	else if (fParam1 == 20f)
 	{
-		__LIB_0__::func_610("EYEDISC_20" /* GXT: 20% Off Selected Vehicles */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_20" /* GXT: 20% Off Selected Vehicles */);
 	}
 	else if (fParam1 == 25f)
 	{
-		__LIB_0__::func_610("EYEDISC_25" /* GXT: 25% Off Selected Vehicles */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC_25" /* GXT: 25% Off Selected Vehicles */);
 	}
 	else
 	{
-		__LIB_0__::func_610("EYEDISC" /* GXT: ~1~% Off Selected Vehicles */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EYEDISC" /* GXT: ~1~% Off Selected Vehicles */);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::CEIL(fParam1));
 	}
 }
@@ -84153,11 +84153,11 @@ void func_2742(int iParam0, int iParam1, int iParam2)//Position - 0x13F8B9
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-							__LIB_0__::func_610("MPATM_TRANCOM" /* GXT: Transaction Complete */);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_TRANCOM" /* GXT: Transaction Complete */);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-							__LIB_0__::func_610("MPATM_MENU" /* GXT: Menu */);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_MENU" /* GXT: Menu */);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "UPDATE_TEXT");
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -84238,11 +84238,11 @@ void func_2742(int iParam0, int iParam1, int iParam2)//Position - 0x13F8B9
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-							__LIB_0__::func_610("MPATM_TRANCOM" /* GXT: Transaction Complete */);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_TRANCOM" /* GXT: Transaction Complete */);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 							GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-							__LIB_0__::func_610("MPATM_MENU" /* GXT: Menu */);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_MENU" /* GXT: Menu */);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "UPDATE_TEXT");
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -86429,19 +86429,19 @@ void func_2775(int iParam0, char* sParam1, bool bParam2, bool bParam3, bool bPar
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		if (bParam2)
 		{
-			__LIB_0__::func_610("MP_OFF_S_BUY_T" /* GXT: PURCHASE SUCCESSFUL */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MP_OFF_S_BUY_T" /* GXT: PURCHASE SUCCESSFUL */);
 		}
 		else if (bParam4)
 		{
-			__LIB_0__::func_610("MP_OFF_W_BUY_T" /* GXT: WAYPOINT SET */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MP_OFF_W_BUY_T" /* GXT: WAYPOINT SET */);
 		}
 		else if (bParam5)
 		{
-			__LIB_0__::func_610("MP_OFF_WF_BUY_T" /* GXT: WAYPOINT FAIL */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MP_OFF_WF_BUY_T" /* GXT: WAYPOINT FAIL */);
 		}
 		else
 		{
-			__LIB_0__::func_610("MP_OFF_F_BUY_T" /* GXT: PURCHASE FAILED */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MP_OFF_F_BUY_T" /* GXT: PURCHASE FAILED */);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		StringCopy(&Var22, "", 24);
@@ -86609,7 +86609,7 @@ void func_2775(int iParam0, char* sParam1, bool bParam2, bool bParam3, bool bPar
 		{
 			StringCopy(&Var22, func_2776(0, bParam2, bParam3), 24);
 		}
-		__LIB_0__::func_610(&Var22);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var22);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		if (bVar1)
 		{
@@ -88955,8 +88955,8 @@ void func_2820()//Position - 0x14806E
 
 void func_2821()//Position - 0x1480C3
 {
-	__LIB_2__::func_829(iLocal_991, "SET_CLEAR_SPACE", 200f, -1082130432, -1082130432, -1082130432, -1082130432);
-	__LIB_2__::func_829(iLocal_991, "SET_DATA_SLOT_EMPTY", 3f, -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(iLocal_991, "SET_CLEAR_SPACE", 200f, -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(iLocal_991, "SET_DATA_SLOT_EMPTY", 3f, -1082130432, -1082130432, -1082130432, -1082130432);
 	if (__LIB_0__::func_52())
 	{
 		__LIB_13__::func_308(iLocal_991, "SET_DATA_SLOT", 0f, PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0 /*PLAYER_CONTROL*/, 179 /*INPUT_CELLPHONE_EXTRA_OPTION*/, true), "CELL_EMAIL_PROF" /* GXT: View Profile of recipient */);
@@ -88965,7 +88965,7 @@ void func_2821()//Position - 0x1480C3
 	{
 		__LIB_13__::func_308(iLocal_991, "SET_DATA_SLOT", 0f, PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(0 /*PLAYER_CONTROL*/, 179 /*INPUT_CELLPHONE_EXTRA_OPTION*/, true), "CELL_EMAIL_CARO" /* GXT: View Gamercard of recipient */);
 	}
-	__LIB_2__::func_829(iLocal_991, "DRAW_INSTRUCTIONAL_BUTTONS", 0f, -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(iLocal_991, "DRAW_INSTRUCTIONAL_BUTTONS", 0f, -1082130432, -1082130432, -1082130432, -1082130432);
 }
 
 int func_2823(struct<13> Param0)//Position - 0x1481AE
@@ -90422,13 +90422,13 @@ void func_2895(bool bParam0, int iParam1, bool bParam2)//Position - 0x14B137
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 		iVar0++;
 		__LIB_0__::func_700(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/, true));
-		__LIB_0__::func_610("CELL_270" /* GXT: Yes */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CELL_270" /* GXT: Yes */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_197, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 		iVar0++;
 		__LIB_0__::func_700(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/, true));
-		__LIB_0__::func_610("CELL_271" /* GXT: No */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CELL_271" /* GXT: No */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else if (iLocal_189 && iLocal_216 == 0)
@@ -90444,7 +90444,7 @@ void func_2895(bool bParam0, int iParam1, bool bParam2)//Position - 0x14B137
 		{
 			__LIB_0__::func_700(PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 6, true));
 		}
-		__LIB_0__::func_610("IB_NAVIGATE" /* GXT: Navigate */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("IB_NAVIGATE" /* GXT: Navigate */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_197, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
@@ -90457,7 +90457,7 @@ void func_2895(bool bParam0, int iParam1, bool bParam2)//Position - 0x14B137
 		{
 			__LIB_0__::func_700(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/, true));
 		}
-		__LIB_0__::func_610("APINTRHLSEL" /* GXT: Select */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("APINTRHLSEL" /* GXT: Select */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_197, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
@@ -90470,7 +90470,7 @@ void func_2895(bool bParam0, int iParam1, bool bParam2)//Position - 0x14B137
 		{
 			__LIB_0__::func_700(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/, true));
 		}
-		__LIB_0__::func_610("APINTRHLDEL" /* GXT: Close */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("APINTRHLDEL" /* GXT: Close */);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_197, "DRAW_INSTRUCTIONAL_BUTTONS");

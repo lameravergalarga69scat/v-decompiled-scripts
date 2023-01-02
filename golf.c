@@ -6270,7 +6270,7 @@ void func_447(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 	{
-		__LIB_0__::func_610(sParam1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	}
 	if (bParam5)
 	{
@@ -6610,7 +6610,7 @@ int func_522(var uParam0, var uParam1, char* sParam2, char* sParam3, int iParam4
 			HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(6);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-			__LIB_0__::func_610(sParam3);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(100);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
@@ -6920,10 +6920,10 @@ void func_533(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, b
 	}
 	else
 	{
-		__LIB_0__::func_610(&(uParam4->f_1));
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam4->f_1));
 	}
 	__LIB_0__::func_700(&(uParam4->f_17));
-	__LIB_0__::func_610("PLAYER_READY");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PLAYER_READY");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam4->f_33);
 	__LIB_0__::func_700(&Var0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
@@ -6932,7 +6932,7 @@ void func_533(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, b
 	{
 		if (MISC::IS_STRING_NULL_OR_EMPTY(&(Var1[iVar6 /*4*/])))
 		{
-			__LIB_0__::func_610("GOLF_ENDASH");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("GOLF_ENDASH");
 		}
 		else
 		{
@@ -7056,7 +7056,7 @@ void func_542(int iParam0, var uParam1, var uParam2, int iParam3, bool bParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_610(&(uParam2->f_1));
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam2->f_1));
 	}
 	__LIB_0__::func_700(&(uParam2->f_17));
 	__LIB_0__::func_700(&(uParam2->f_21));
@@ -8832,7 +8832,7 @@ void func_706(char* sParam0, int iParam1, char* sParam2, int iParam3, int iParam
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 	{
-		__LIB_0__::func_610(sParam2);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	}
 	if (bParam6)
 	{

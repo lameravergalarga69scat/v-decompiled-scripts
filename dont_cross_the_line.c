@@ -1405,7 +1405,7 @@ void func_57(var uParam0, char* sParam1, int iParam2, int iParam3)//Position - 0
 	if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(uParam0->f_34))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_34, "SET_CENTRAL_MESSAGE");
-		__LIB_0__::func_610(sParam1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 		__LIB_0__::func_700("");
@@ -1584,7 +1584,7 @@ void func_65(var uParam0, char* sParam1, int iParam2)//Position - 0x2032
 	if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(uParam0->f_34))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_34, "INIT_LOBBY");
-		__LIB_0__::func_610(sParam1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
 		func_66(0);
 		func_66(1);
@@ -2116,7 +2116,7 @@ void func_126(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam
 	if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(uParam0->f_34))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_34, "SET_CENTRAL_MESSAGE");
-		__LIB_0__::func_610(sParam1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam4);
 		__LIB_0__::func_700(sParam2);

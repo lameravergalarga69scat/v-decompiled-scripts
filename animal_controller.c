@@ -432,7 +432,7 @@ void __EntryFunction__()//Position - 0x0
 	Local_367 = { 0f, 0f, 0f };
 	fLocal_368 = 0f;
 	iLocal_369 = MISC::GET_GAME_TIMER();
-	if (__LIB_0__::func_39(14) || HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE())
+	if (__LIB_0__::isGlobal_43052EqualsValue(14) || HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE())
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -484,7 +484,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		func_636();
 		func_629();
-		if ((((!__LIB_0__::func_215(13) && !__LIB_0__::func_39(13)) && !__LIB_0__::func_39(14)) && !__LIB_0__::func_39(17)) || (__LIB_0__::func_39(14) || HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE()))
+		if ((((!__LIB_0__::func_215(13) && !__LIB_0__::isGlobal_43052EqualsValue(13)) && !__LIB_0__::isGlobal_43052EqualsValue(14)) && !__LIB_0__::isGlobal_43052EqualsValue(17)) || (__LIB_0__::isGlobal_43052EqualsValue(14) || HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE()))
 		{
 			func_639();
 		}
@@ -1042,7 +1042,7 @@ void func_29()//Position - 0x1458
 	Global_31963 = 0;
 	__LIB_0__::func_424(0);
 	HUD::DISPLAY_RADAR(true);
-	if (!__LIB_0__::func_39(14))
+	if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		HUD::THEFEED_RESUME();
 	}
@@ -6230,7 +6230,7 @@ int func_390(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 0
 			PLAYER::SET_AUTO_GIVE_SCUBA_GEAR_WHEN_EXIT_VEHICLE(PLAYER::PLAYER_ID(), __LIB_0__::func_425(68));
 		}
 		__LIB_13__::func_818(iVar2, &iVar7);
-		if (((__LIB_0__::func_39(0) || __LIB_0__::func_39(3)) || __LIB_0__::func_39(2)) || __LIB_0__::func_39(4))
+		if (((__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(3)) || __LIB_0__::isGlobal_43052EqualsValue(2)) || __LIB_0__::isGlobal_43052EqualsValue(4))
 		{
 			PED::SET_PED_CONFIG_FLAG(iVar7, 32, false);
 			PED::SET_PED_CONFIG_FLAG(iVar7, 250, false);
@@ -6586,7 +6586,7 @@ void func_444(int iParam0, int iParam1)//Position - 0x6E77D
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[iVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[iVar0] = __LIB_0__::func_407(iParam0);
@@ -7578,7 +7578,7 @@ void func_539(int iParam0, bool bParam1, bool bParam2)//Position - 0x7779F
 	if (bParam1)
 	{
 		HUD::DISPLAY_RADAR(false);
-		if (!__LIB_0__::func_39(14))
+		if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			HUD::THEFEED_PAUSE();
 		}
@@ -9248,7 +9248,7 @@ int func_616(int iParam0, int iParam1)//Position - 0x7E8C6
 	float fVar1;
 	if (ENTITY::DOES_ENTITY_EXIST(Local_122[iParam0 /*16*/][iParam1]))
 	{
-		if ((((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) && !__LIB_0__::func_193()) && !__LIB_0__::func_39(14)) && !HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE())
+		if ((((!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true)) && !__LIB_0__::func_193()) && !__LIB_0__::isGlobal_43052EqualsValue(14)) && !HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE())
 		{
 			Var0 = { Local_93[iParam0 /*46*/][iParam1 /*3*/] };
 			Var0.f_2 = (Var0.f_2 + 0.8f);
@@ -9374,7 +9374,7 @@ void func_629()//Position - 0x7EF77
 			{
 				if (!BitTest(uLocal_108[iLocal_102], bLocal_106))
 				{
-					if (((SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_93[iLocal_102 /*46*/][bLocal_106 /*3*/]) <= fLocal_51 && !__LIB_0__::func_39(13)) && !__LIB_0__::func_39(14)) && func_635())
+					if (((SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Local_93[iLocal_102 /*46*/][bLocal_106 /*3*/]) <= fLocal_51 && !__LIB_0__::isGlobal_43052EqualsValue(13)) && !__LIB_0__::isGlobal_43052EqualsValue(14)) && func_635())
 					{
 						if (Global_113386.f_10049.f_144 || !BitTest(Global_113386.f_10049.f_138[iLocal_102], bLocal_106))
 						{
@@ -9709,7 +9709,7 @@ void func_639()//Position - 0x7FAF4
 	{
 		__LIB_3__::func_422(&iLocal_82);
 	}
-	if (!__LIB_0__::func_39(14) && !HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE())
+	if (!__LIB_0__::isGlobal_43052EqualsValue(14) && !HUD::HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE())
 	{
 		STATS::STAT_ENABLE_STATS_TRACKING();
 	}

@@ -215,7 +215,7 @@ void __EntryFunction__()//Position - 0x0
 					func_77();
 					if (__LIB_0__::func_346())
 					{
-						if (!__LIB_0__::func_39(9) || Global_112096.f_19 == 4)
+						if (!__LIB_0__::isGlobal_43052EqualsValue(9) || Global_112096.f_19 == 4)
 						{
 							func_50();
 							if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
@@ -2812,7 +2812,7 @@ void func_106()//Position - 0x113EA
 			}
 		}
 	}
-	else if (((!Global_42586.f_426 || BitTest(iLocal_46, 1)) || ((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_1__::func_16()) && !__LIB_34__::func_659())) || Global_38410)
+	else if (((!Global_42586.f_426 || BitTest(iLocal_46, 1)) || ((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_34__::func_659())) || Global_38410)
 	{
 		if (__LIB_0__::func_3() == 2)
 		{

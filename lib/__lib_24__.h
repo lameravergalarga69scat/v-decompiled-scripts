@@ -5935,7 +5935,7 @@ void func_209(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 					}
 					if (Global_23150.f_5404[iVar1] == -1)
 					{
-						__LIB_0__::func_610(&(Global_23150.f_5355[iVar1 /*4*/]));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_23150.f_5355[iVar1 /*4*/]));
 					}
 					else
 					{
@@ -5979,7 +5979,7 @@ void func_209(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 				__LIB_0__::func_700(&Global_4539885);
 				if (Global_4539885.f_20 == -1)
 				{
-					__LIB_0__::func_610(&(Global_4539885.f_16));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4539885.f_16));
 				}
 				else
 				{
@@ -14145,14 +14145,14 @@ void func_363(var uParam0, var uParam1)//Position - 0x2D4052
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610("FM_NXT_RAT" /* GXT: Rating */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NXT_RAT" /* GXT: Rating */);
 		if (bVar15)
 		{
-			__LIB_0__::func_610("FM_NEXT_RAND_R" /* GXT: Rating ?% */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NEXT_RAND_R" /* GXT: Rating ?% */);
 		}
 		else if (iVar9 == -1)
 		{
-			__LIB_0__::func_610("FM_NXT_NOT" /* GXT: Not rated */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NXT_NOT" /* GXT: Not rated */);
 		}
 		else
 		{
@@ -14168,16 +14168,16 @@ void func_363(var uParam0, var uParam1)//Position - 0x2D4052
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610("FM_NXT_CRE" /* GXT: Created by */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NXT_CRE" /* GXT: Created by */);
 		if (MISC::IS_STRING_NULL_OR_EMPTY(&Var2))
 		{
-			__LIB_0__::func_610("HUD_THUM_ROCK" /* GXT: Rockstar */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HUD_THUM_ROCK" /* GXT: Rockstar */);
 		}
 		else
 		{
 			__LIB_0__::func_700(&Var2);
 		}
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bVar13);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam1->f_106, "SET_DETAILS_ITEM");
@@ -14187,10 +14187,10 @@ void func_363(var uParam0, var uParam1)//Position - 0x2D4052
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610("FM_NXT_PLY" /* GXT: Players */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NXT_PLY" /* GXT: Players */);
 		if (bVar15)
 		{
-			__LIB_0__::func_610("FM_NEXT_RAND_P" /* GXT: ?/? */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NEXT_RAND_P" /* GXT: ?/? */);
 		}
 		else
 		{
@@ -14207,14 +14207,14 @@ void func_363(var uParam0, var uParam1)//Position - 0x2D4052
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610("FM_NXT_TYP" /* GXT: Type */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NXT_TYP" /* GXT: Type */);
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sVar8))
 		{
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		}
 		else
 		{
-			__LIB_0__::func_610(sVar8);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar8);
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_23__::func_664(iVar3, iVar10, iVar11, 0));
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(__LIB_22__::func_29(bVar14));
@@ -14227,8 +14227,8 @@ void func_363(var uParam0, var uParam1)//Position - 0x2D4052
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610("FM_NXT_ARA" /* GXT: Area */);
-		__LIB_0__::func_610(sVar7);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NXT_ARA" /* GXT: Area */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar7);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 }
@@ -15178,7 +15178,7 @@ void func_383(var uParam0)//Position - 0x15D1FC
 		__LIB_1__::func_330(&(uParam0->f_1), 8);
 		HUD::GET_HUD_COLOUR(18, &iVar0, &iVar1, &iVar2, &uVar3);
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_MESSAGE");
-		__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);

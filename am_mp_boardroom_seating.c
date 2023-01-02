@@ -18476,8 +18476,8 @@ int func_4737(var uParam0, int* iParam1, int* iParam2, var uParam3)//Position - 
 				if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iParam2->f_7))
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_TEXT");
-					__LIB_0__::func_610("MPTV_CETTL" /* GXT: CRIMINAL ESCAPED */);
-					__LIB_0__::func_610("MPTV_CESTTL" /* GXT: Police have lost the trail */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CETTL" /* GXT: CRIMINAL ESCAPED */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CESTTL" /* GXT: Police have lost the trail */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				iParam2->f_5 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", false);
@@ -18712,32 +18712,32 @@ int func_4737(var uParam0, int* iParam1, int* iParam2, var uParam3)//Position - 
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_LOCATION");
 							if (iParam2->f_27 == 3)
 							{
-								__LIB_0__::func_610("MPTV_CCTV3" /* GXT: GARAGE 22 - 06 - 84 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV3" /* GXT: GARAGE 22 - 06 - 84 */);
 							}
 							else if (iParam2->f_27 == 1)
 							{
 								if (__LIB_1__::func_597(uParam3->f_31))
 								{
-									__LIB_0__::func_610("MPTV_CCTV7" /* GXT: ROOF 04 - 11 - 87 */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV7" /* GXT: ROOF 04 - 11 - 87 */);
 								}
 								else
 								{
-									__LIB_0__::func_610("MPTV_CCTV6" /* GXT: GARAGE DOOR 04 - 11 - 87 */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV6" /* GXT: GARAGE DOOR 04 - 11 - 87 */);
 								}
 							}
 							else
 							{
-								__LIB_0__::func_610("MPTV_CCTV0" /* GXT: MAIN DOOR 04 - 11 - 87 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV0" /* GXT: MAIN DOOR 04 - 11 - 87 */);
 							}
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_DETAILS");
 							if (iParam2->f_27 == 3)
 							{
-								__LIB_0__::func_610("MPTV_CCTV4" /* GXT: 38 : 06 : 35    5N/0BR2 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV4" /* GXT: 38 : 06 : 35    5N/0BR2 */);
 							}
 							else
 							{
-								__LIB_0__::func_610("MPTV_CCTV1" /* GXT: 38 : 06 : 35    5N/0BR2 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV1" /* GXT: 38 : 06 : 35    5N/0BR2 */);
 							}
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_TIME");

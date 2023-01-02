@@ -736,7 +736,7 @@ int func_176(int iParam0)//Position - 0x5BE1
 			{
 				return 0;
 			}
-			if ((__LIB_0__::func_983() || __LIB_1__::func_16()) || __LIB_5__::func_133())
+			if ((__LIB_0__::func_983() || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_5__::getGlobal_2714762_f_692())
 			{
 				return 0;
 			}
@@ -1464,7 +1464,7 @@ void func_239(int iParam0, int iParam1, char* sParam2)//Position - 0x7928
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "UPDATE_FINALE_PLAYER_ROLE");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -10986,7 +10986,7 @@ void func_805()//Position - 0x2060E
 {
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && __LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1))
 	{
-		if ((!__LIB_0__::func_983() && !__LIB_1__::func_16()) && !__LIB_5__::func_133())
+		if ((!__LIB_0__::func_983() && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_5__::getGlobal_2714762_f_692())
 		{
 			if (func_812())
 			{

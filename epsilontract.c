@@ -107,7 +107,7 @@ void func_1()//Position - 0xCE
 {
 	int iVar0;
 	int iVar1;
-	if ((__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && !__LIB_0__::func_39(14)) && !CAM::IS_SCREEN_FADED_OUT())
+	if ((__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && !__LIB_0__::isGlobal_43052EqualsValue(14)) && !CAM::IS_SCREEN_FADED_OUT())
 	{
 		if (iLocal_41 < 10)
 		{

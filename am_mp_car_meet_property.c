@@ -35340,7 +35340,7 @@ void func_5565()//Position - 0x1DD690
 				switch (Global_23150.f_6130)
 				{
 					case 0:
-						if ((!__LIB_1__::func_800() && func_5641() >= 0) && !BitTest(Global_1836751, 11))
+						if ((!__LIB_1__::setGlobal_1575016_10() && func_5641() >= 0) && !BitTest(Global_1836751, 11))
 						{
 							if (!Local_135.f_1659.f_5)
 							{
@@ -35358,7 +35358,7 @@ void func_5565()//Position - 0x1DD690
 						}
 						break;
 					case 1:
-						if ((!__LIB_1__::func_800() && func_5639() >= 0) && !BitTest(Global_1836751, 12))
+						if ((!__LIB_1__::setGlobal_1575016_10() && func_5639() >= 0) && !BitTest(Global_1836751, 12))
 						{
 							if (__LIB_13__::func_415())
 							{
@@ -35609,7 +35609,7 @@ void func_5645()//Position - 0x1DF463
 	switch (Global_23150.f_6130)
 	{
 		case 0:
-			if (__LIB_1__::func_800())
+			if (__LIB_1__::setGlobal_1575016_10())
 			{
 				__LIB_1__::func_789("RO_SOLO_U" /* GXT: Street and Pursuit Race Series aren't available in a Solo Session. */, 0, 0);
 			}
@@ -35631,7 +35631,7 @@ void func_5645()//Position - 0x1DF463
 			}
 			break;
 		case 1:
-			if (__LIB_1__::func_800())
+			if (__LIB_1__::setGlobal_1575016_10())
 			{
 				__LIB_1__::func_789("RO_SOLO_U" /* GXT: Street and Pursuit Race Series aren't available in a Solo Session. */, 0, 0);
 			}
@@ -35674,7 +35674,7 @@ void func_5646()//Position - 0x1DF584
 	{
 		__LIB_3__::func_566(1, __LIB_3__::func_770(), __LIB_3__::func_770());
 	}
-	if ((__LIB_1__::func_800() || func_5641() == -1) || BitTest(Global_1836751, 11))
+	if ((__LIB_1__::setGlobal_1575016_10() || func_5641() == -1) || BitTest(Global_1836751, 11))
 	{
 		__LIB_8__::func_233(0, "RO_STREET" /* GXT: Street Race Series */, 0, 0, 0, 0, 0);
 	}
@@ -35682,7 +35682,7 @@ void func_5646()//Position - 0x1DF584
 	{
 		__LIB_8__::func_233(0, "RO_STREET" /* GXT: Street Race Series */, 0, 1, 0, 0, 0);
 	}
-	if (((__LIB_1__::func_800() || func_5639() == -1) || !__LIB_13__::func_415()) || BitTest(Global_1836751, 12))
+	if (((__LIB_1__::setGlobal_1575016_10() || func_5639() == -1) || !__LIB_13__::func_415()) || BitTest(Global_1836751, 12))
 	{
 		__LIB_8__::func_233(1, "RO_PURSUIT" /* GXT: Pursuit Series */, 0, 0, 0, 0, 0);
 	}
@@ -48847,24 +48847,24 @@ void func_6259(var uParam0, var* uParam1, var uParam2, var uParam3, var uParam4,
 													}
 													else
 													{
-														__LIB_0__::func_610("CMRC_COMINGSOON" /* GXT: COMING SOON */);
+														__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CMRC_COMINGSOON" /* GXT: COMING SOON */);
 													}
 												}
 												else
 												{
-													__LIB_0__::func_610("");
+													__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 												}
 											}
 											else
 											{
-												__LIB_0__::func_610("");
+												__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 											}
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&cVar4);
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&Var3);
-											__LIB_0__::func_610("FMMC_VEHST_0" /* GXT: Top Speed */);
-											__LIB_0__::func_610("FMMC_VEHST_1" /* GXT: Acceleration */);
-											__LIB_0__::func_610("FMMC_VEHST_2" /* GXT: Braking */);
-											__LIB_0__::func_610("FMMC_VEHST_3" /* GXT: Traction */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_0" /* GXT: Top Speed */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_1" /* GXT: Acceleration */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_2" /* GXT: Braking */);
+											__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_3" /* GXT: Traction */);
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND((*uParam3[iVar1 /*6*/])[0]));
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND((*uParam3[iVar1 /*6*/])[1]));
 											GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND((*uParam3[iVar1 /*6*/])[2]));
@@ -48954,20 +48954,20 @@ void func_6265(int iParam0)//Position - 0x23485E
 	int iVar1;
 	if (!STREAMING::IS_MODEL_VALID(iParam0))
 	{
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	}
 	iVar0 = __LIB_1__::func_186(iParam0);
 	iVar1 = __LIB_5__::func_713(iVar0);
 	switch (iVar1)
 	{
 		case 10:
-			__LIB_0__::func_610("LEGEND_WEB" /* GXT: LEGENDARYMOTORSPORT.NET */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LEGEND_WEB" /* GXT: LEGENDARYMOTORSPORT.NET */);
 			break;
 		case 16:
-			__LIB_0__::func_610("SOUTHERN_WEB" /* GXT: SOUTHERNSANANDREASSUPERAUTOS.COM */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SOUTHERN_WEB" /* GXT: SOUTHERNSANANDREASSUPERAUTOS.COM */);
 			break;
 		case 12:
-			__LIB_0__::func_610("WARSTOCK_WEB" /* GXT: WARSTOCK-CACHE-AND-CARRY.COM */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("WARSTOCK_WEB" /* GXT: WARSTOCK-CACHE-AND-CARRY.COM */);
 			break;
 	}
 }

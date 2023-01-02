@@ -10559,7 +10559,7 @@ void func_1618(var uParam0, int iParam1)//Position - 0x75B85
 																GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar15);
 																if (iVar25 == 0 && HUD::DOES_TEXT_LABEL_EXIST(&(Global_1837216[bVar24 /*16*/])))
 																{
-																	__LIB_0__::func_610(&(Global_1837216[bVar24 /*16*/]));
+																	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1837216[bVar24 /*16*/]));
 																}
 																else
 																{
@@ -10800,7 +10800,7 @@ void func_1783(var uParam0, bool bParam1, int iParam2)//Position - 0x7B6B3
 		{
 			__LIB_10__::func_909(uParam0, __LIB_10__::func_925(&(uParam0->f_47), iVar0, iVar1));
 			__LIB_11__::func_781(&(uParam0->f_1), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), 1);
-			if ((iParam2 && !__LIB_5__::func_133()) && __LIB_10__::func_388() != 2)
+			if ((iParam2 && !__LIB_5__::getGlobal_2714762_f_692()) && __LIB_10__::func_388() != 2)
 			{
 				CAM::DO_SCREEN_FADE_OUT(0);
 			}

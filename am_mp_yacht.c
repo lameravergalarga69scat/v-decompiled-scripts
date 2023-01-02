@@ -16285,7 +16285,7 @@ void func_969()//Position - 0x90931
 						}
 					}
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bLocal_645);
-					__LIB_0__::func_610("");
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(iLocal_655, true);
 					iLocal_651 = 2;
@@ -16327,7 +16327,7 @@ void func_969()//Position - 0x90931
 					iLocal_675 = __LIB_26__::func_366(iLocal_548);
 					StringCopy(&Local_657, "FLAG_CNTRY_", 16);
 					StringIntConCat(&Local_657, iLocal_675, 16);
-					__LIB_0__::func_610(&Local_657);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_657);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT(iLocal_656, true);
 					iLocal_651 = 3;

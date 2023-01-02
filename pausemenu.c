@@ -52,7 +52,7 @@ void func_2(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, ch
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		}
-		__LIB_0__::func_610(sParam5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 }

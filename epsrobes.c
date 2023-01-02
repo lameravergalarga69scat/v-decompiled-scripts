@@ -394,7 +394,7 @@ void func_1()//Position - 0xDF
 				{
 					iLocal_222 = 4;
 				}
-				else if (!__LIB_0__::func_39(14))
+				else if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 				{
 					func_41();
 					iLocal_223 = __LIB_11__::func_762();
@@ -417,7 +417,7 @@ void func_1()//Position - 0xDF
 				}
 				if (iLocal_48)
 				{
-					if ((PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !__LIB_0__::func_39(14))
+					if ((PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !__LIB_0__::isGlobal_43052EqualsValue(14))
 					{
 						iVar0 = (10 - (Global_113386.f_10049.f_105 / 24));
 						iVar1 = (10 - iVar0);

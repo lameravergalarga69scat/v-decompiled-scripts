@@ -396,7 +396,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 				if (Global_96287 == 4)
 				{
-					if ((__LIB_0__::func_39(0) || __LIB_0__::func_39(3)) || __LIB_0__::func_39(2))
+					if ((__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(3)) || __LIB_0__::isGlobal_43052EqualsValue(2))
 					{
 						__LIB_38__::func_63(Global_96288, 5, Global_96289);
 					}
@@ -4650,7 +4650,7 @@ void func_418(int iParam0, int iParam1)//Position - 0x2B4C4
 	iVar4 = Global_96297[iParam0 /*2*/];
 	if (iVar4 == 0)
 	{
-		if (!__LIB_0__::func_39(17))
+		if (!__LIB_0__::isGlobal_43052EqualsValue(17))
 		{
 			if (func_466(iVar0))
 			{

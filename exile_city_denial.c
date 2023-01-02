@@ -242,7 +242,7 @@ void __EntryFunction__()//Position - 0x0
 					}
 					if (iVar1 == 0 && !bVar4)
 					{
-						if ((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(3))
+						if ((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(3))
 						{
 							if (MISC::GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL(11) < 256)
 							{
@@ -345,13 +345,13 @@ void __EntryFunction__()//Position - 0x0
 		{
 			SYSTEM::WAIT(10000);
 		}
-		if (__LIB_0__::func_540(12) && !__LIB_0__::func_39(12))
+		if (__LIB_0__::func_540(12) && !__LIB_0__::isGlobal_43052EqualsValue(12))
 		{
 			if (bLocal_29)
 			{
 				func_20();
 			}
-			while (__LIB_0__::func_39(0) || __LIB_0__::func_39(4))
+			while (__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(4))
 			{
 				SYSTEM::WAIT(8000);
 			}

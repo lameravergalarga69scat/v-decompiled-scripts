@@ -51,7 +51,7 @@ void __EntryFunction__()//Position - 0x0
 	Global_20463 = 0;
 	func_18();
 	Global_20266.f_1 = 7;
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_91(Global_20247, "SET_HEADER", "CELL_4" /* GXT: Sidetasks */, 0, 0, 0, 0);
 	while (true)
 	{
@@ -93,7 +93,7 @@ void __EntryFunction__()//Position - 0x0
 				Global_22671 = 0;
 				Global_20266.f_1 = 7;
 				func_18();
-				__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
+				__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
 				__LIB_13__::func_91(Global_20247, "SET_HEADER", "CELL_4" /* GXT: Sidetasks */, 0, 0, 0, 0);
 			}
 		}
@@ -171,8 +171,8 @@ void func_11()//Position - 0x4FC
 	{
 		iLocal_21 = iLocal_18[iLocal_20];
 		Global_22671 = 1;
-		__LIB_2__::func_845(Global_20247, "SET_DATA_SLOT", 15f, 0f, -1f, -1f, -1f, "CELL_287" /* GXT: Send Photo(s) */, "CELL_280" /* GXT: Take Photo */, "CELL_285" /* GXT: Move */, "CELL_284" /* GXT: Zoom */, 0);
-		__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 15f, -1082130432, -1082130432, -1082130432, -1082130432);
+		__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT", 15f, 0f, -1f, -1f, -1f, "CELL_287" /* GXT: Send Photo(s) */, "CELL_280" /* GXT: Take Photo */, "CELL_285" /* GXT: Move */, "CELL_284" /* GXT: Zoom */, 0);
+		__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 15f, -1082130432, -1082130432, -1082130432, -1082130432);
 		__LIB_13__::func_91(Global_20247, "SET_HEADER", "CELL_4" /* GXT: Sidetasks */, 0, 0, 0, 0);
 		Global_20266.f_1 = 8;
 		Global_22671 = 1;
@@ -311,6 +311,6 @@ void func_18()//Position - 0x8FD
 		}
 		iVar1++;
 	}
-	__LIB_2__::func_845(Global_20247, "SET_DATA_SLOT", 14f, 0f, 25f, -1f, -1f, "CELL_287" /* GXT: Send Photo(s) */, "CELL_280" /* GXT: Take Photo */, 0, 0, 0);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT", 14f, 0f, 25f, -1f, -1f, "CELL_287" /* GXT: Send Photo(s) */, "CELL_280" /* GXT: Take Photo */, 0, 0, 0);
 }
 

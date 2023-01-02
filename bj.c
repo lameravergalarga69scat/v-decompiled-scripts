@@ -2354,7 +2354,7 @@ int func_3(int iParam0, var uParam1, char* sParam2, char* sParam3, bool bParam4,
 			HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(6);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-			__LIB_0__::func_610(sParam3);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(100);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
@@ -2721,7 +2721,7 @@ void func_95(int* iParam0)//Position - 0x6EA3
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar1);
 					__LIB_0__::func_700(iParam0->f_12[iVar2 + 4]);
 					__LIB_0__::func_700(iParam0->f_12[iVar2]);
-					__LIB_0__::func_610(iParam0->f_21[iVar2]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_21[iVar2]);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -2729,7 +2729,7 @@ void func_95(int* iParam0)//Position - 0x6EA3
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar1);
 					__LIB_0__::func_700(iParam0->f_12[iVar2]);
-					__LIB_0__::func_610(iParam0->f_21[iVar2]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_21[iVar2]);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				fVar1 = (fVar1 + 1f);

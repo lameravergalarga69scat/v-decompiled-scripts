@@ -601,7 +601,7 @@ int func_9()//Position - 0x84B
 	{
 		return 0;
 	}
-	if (__LIB_1__::func_16())
+	if (__LIB_1__::getGlobal_2714762_f_691())
 	{
 		return 0;
 	}
@@ -609,7 +609,7 @@ int func_9()//Position - 0x84B
 	{
 		return 0;
 	}
-	if (__LIB_5__::func_133())
+	if (__LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}

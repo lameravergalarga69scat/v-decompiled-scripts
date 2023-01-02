@@ -200,7 +200,7 @@ int func_15(int iParam0)//Position - 0x91BDC
 	return 0;
 }
 
-bool func_16()//Position - 0x920AF
+bool getGlobal_2714762_f_691()//Position - 0x920AF
 {
 	return Global_2714762.f_691;
 }
@@ -14932,7 +14932,7 @@ void func_538(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 					}
 					else
 					{
-						__LIB_0__::func_610(&(uParam2->f_1[bVar0 /*57*/].f_32));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam2->f_1[bVar0 /*57*/].f_32));
 					}
 					if (MISC::IS_PC_VERSION())
 					{
@@ -14983,7 +14983,7 @@ void func_538(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x
 					}
 					else
 					{
-						__LIB_0__::func_610(&(uParam2->f_1[bVar0 /*57*/].f_32));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam2->f_1[bVar0 /*57*/].f_32));
 					}
 					if (MISC::IS_PC_VERSION())
 					{
@@ -20644,7 +20644,7 @@ int func_799()//Position - 0x19BDE
 	return Global_1892703[PLAYER::PLAYER_ID() /*599*/].f_10.f_302;
 }
 
-bool func_800()//Position - 0x1A01B
+bool setGlobal_1575016_10()//Position - 0x1A01B
 {
 	return Global_1575016 == 10;
 }
@@ -29184,7 +29184,7 @@ void func_997(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_TITLE");
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 		{
-			__LIB_0__::func_610(sParam1);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		}
 		else
 		{
@@ -29193,7 +29193,7 @@ void func_997(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		}
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		if (iParam3 != -1)
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
@@ -29209,7 +29209,7 @@ void func_998(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_TITLE");
 		if (MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 		{
-			__LIB_0__::func_610(sParam1);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		}
 		else if (__LIB_1__::func_592(PLAYER::PLAYER_ID()) == 133)
 		{
@@ -29225,7 +29225,7 @@ void func_998(int* iParam0, char* sParam1, char* sParam2, int iParam3)//Position
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 		}
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		if (iParam3 != -1)
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);

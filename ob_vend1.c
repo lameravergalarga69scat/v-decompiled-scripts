@@ -125,7 +125,7 @@ void func_1(int iParam0)//Position - 0xA3
 			__LIB_38__::func_468();
 		}
 	}
-	if (__LIB_0__::func_39(13) || __LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(13) || __LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		__LIB_38__::func_468();
 	}

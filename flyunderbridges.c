@@ -95,7 +95,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if ((__LIB_0__::func_39(13) || __LIB_0__::func_39(14)) || __LIB_0__::func_2(0))
+	if ((__LIB_0__::isGlobal_43052EqualsValue(13) || __LIB_0__::isGlobal_43052EqualsValue(14)) || __LIB_0__::func_2(0))
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -352,22 +352,22 @@ void func_17()//Position - 0xA32
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_30, "SHOW_BRIDGES_KNIVES_PROGRESS");
 					if (bLocal_38)
 					{
-						__LIB_0__::func_610("FU_KNIFE" /* GXT: Knife Flight~s~ */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FU_KNIFE" /* GXT: Knife Flight~s~ */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(15);
 					}
 					else
 					{
-						__LIB_0__::func_610("FU_TITLE" /* GXT: Under the Bridge~s~ */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FU_TITLE" /* GXT: Under the Bridge~s~ */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(50);
 					}
-					__LIB_0__::func_610("FU_PASS" /* GXT: Success! */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FU_PASS" /* GXT: Success! */);
 					if (bLocal_38)
 					{
-						__LIB_0__::func_610("FU_CHALL_KN" /* GXT: Flights completed */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FU_CHALL_KN" /* GXT: Flights completed */);
 					}
 					else
 					{
-						__LIB_0__::func_610("FU_CHALLENGE" /* GXT: Bridges flown under */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FU_CHALLENGE" /* GXT: Bridges flown under */);
 					}
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_30());
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();

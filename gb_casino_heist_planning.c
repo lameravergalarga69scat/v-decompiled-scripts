@@ -3205,11 +3205,11 @@ int func_491(var uParam0)//Position - 0x13ECA
 	{
 		return 0;
 	}
-	if (__LIB_1__::func_16())
+	if (__LIB_1__::getGlobal_2714762_f_691())
 	{
 		return 0;
 	}
-	if (__LIB_5__::func_133())
+	if (__LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}
@@ -6495,16 +6495,16 @@ void func_781(var uParam0, bool bParam1)//Position - 0x1FFF7
 void func_782(int iParam0, char* sParam1, char* sParam2, int iParam3, int iParam4, int iParam5, char* sParam6, char* sParam7, char* sParam8, char* sParam9, char* sParam10)//Position - 0x20023
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_HEADINGS");
-	__LIB_0__::func_610(sParam1);
-	__LIB_0__::func_610(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam5);
-	__LIB_0__::func_610(sParam6);
-	__LIB_0__::func_610(sParam7);
-	__LIB_0__::func_610(sParam8);
-	__LIB_0__::func_610(sParam9);
-	__LIB_0__::func_610(sParam10);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam6);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam7);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam8);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam9);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam10);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -6663,7 +6663,7 @@ void func_792(var uParam0, bool bParam1)//Position - 0x203DC
 void func_793(int iParam0, char* sParam1, bool bParam2)//Position - 0x20406
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "ADD_OPTIONAL_LIST_ITEM");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -6729,7 +6729,7 @@ void func_798(var uParam0, bool bParam1)//Position - 0x204E7
 void func_799(int iParam0, char* sParam1, bool bParam2)//Position - 0x20511
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "ADD_TODO_LIST_ITEM");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -6807,7 +6807,7 @@ void func_804(var uParam0, bool bParam1)//Position - 0x2063B
 void func_805(int iParam0, char* sParam1)//Position - 0x20667
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_LAUNCH_BUTTON_LABEL");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -9860,7 +9860,7 @@ int func_927()//Position - 0x25440
 	{
 		return 1;
 	}
-	if (__LIB_1__::func_16() && __LIB_1__::func_212() == 1)
+	if (__LIB_1__::getGlobal_2714762_f_691() && __LIB_1__::func_212() == 1)
 	{
 		return 1;
 	}
@@ -9879,7 +9879,7 @@ int func_928(var uParam0)//Position - 0x2547B
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && __LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1))
 	{
-		if ((!__LIB_0__::func_983() && !__LIB_1__::func_16()) && !__LIB_5__::func_133())
+		if ((!__LIB_0__::func_983() && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_5__::getGlobal_2714762_f_692())
 		{
 			if (!__LIB_4__::func_63(joaat("Main_RM")))
 			{
@@ -12851,7 +12851,7 @@ var func_1040(var uParam0)//Position - 0x2975F
 void func_1041(int iParam0, char* sParam1, int iParam2)//Position - 0x29772
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_INSIDE_MAN");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -12975,7 +12975,7 @@ void func_1047(int iParam0, int iParam1, int iParam2, char* sParam3)//Position -
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_MISSION");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -13182,8 +13182,8 @@ void func_1050(var uParam0, bool bParam1)//Position - 0x29CC2
 void func_1051(int iParam0, char* sParam1, char* sParam2)//Position - 0x29CEC
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_HEADINGS");
-	__LIB_0__::func_610(sParam1);
-	__LIB_0__::func_610(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -13362,10 +13362,10 @@ void func_1064(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "ADD_APPROACH");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam5);
-	__LIB_0__::func_610(sParam6);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam6);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -13628,8 +13628,8 @@ void func_1077(int iParam0, int iParam1, char* sParam2, char* sParam3, int iPara
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_CREW_MEMBER");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(sParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam5);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam6);
@@ -16166,7 +16166,7 @@ void func_1194(var uParam0, bool bParam1)//Position - 0x2DAA7
 void func_1195(int iParam0, char* sParam1)//Position - 0x2DACB
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_TARGET_TYPE");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 

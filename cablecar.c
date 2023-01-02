@@ -1308,7 +1308,7 @@ void func_42(var uParam0, bool bParam1)//Position - 0x220B
 			TASK::TASK_GO_STRAIGHT_TO_COORD_RELATIVE_TO_ENTITY(__LIB_15__::func_804(), PLAYER::PLAYER_PED_ID(), 1f, 2f, 0f, 1f, 20000);
 			bVar0 = true;
 		}
-		if (__LIB_0__::func_39(6))
+		if (__LIB_0__::isGlobal_43052EqualsValue(6))
 		{
 			if (bVar0)
 			{
@@ -2706,7 +2706,7 @@ void func_263(var uParam0)//Position - 0x24734
 	{
 		return;
 	}
-	if (__LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		return;
 	}
@@ -2754,7 +2754,7 @@ void func_263(var uParam0)//Position - 0x24734
 			*uParam0 = 2;
 			iLocal_235 = -1;
 			iLocal_234 = MISC::GET_GAME_TIMER();
-			if (__LIB_0__::func_39(6))
+			if (__LIB_0__::isGlobal_43052EqualsValue(6))
 			{
 				__LIB_16__::func_752(iLocal_231, 1);
 			}

@@ -797,7 +797,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (RECORDING::IS_REPLAY_RECORDING())
 			{
-				if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+				if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 				{
 					if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 115.93143f, -1290.4828f, 27.94359f) < (70f * 70f))
 					{
@@ -932,7 +932,7 @@ void __EntryFunction__()//Position - 0x0
 					PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 240, true);
 					__LIB_14__::func_622(94, 0, 0);
 				}
-				else if (!__LIB_0__::func_39(6) && !__LIB_0__::func_39(7))
+				else if (!__LIB_0__::isGlobal_43052EqualsValue(6) && !__LIB_0__::isGlobal_43052EqualsValue(7))
 				{
 					__LIB_14__::func_622(94, 1, 0);
 				}
@@ -1116,7 +1116,7 @@ void func_21(char* sParam0, char* sParam1, bool bParam2, int iParam3)//Position 
 	{
 		return;
 	}
-	if ((iParam3 == 0 && (__LIB_0__::func_39(15) || __LIB_0__::func_39(6))) && !Global_112025)
+	if ((iParam3 == 0 && (__LIB_0__::isGlobal_43052EqualsValue(15) || __LIB_0__::isGlobal_43052EqualsValue(6))) && !Global_112025)
 	{
 		if (!__LIB_13__::func_101(sParam0))
 		{
@@ -8615,7 +8615,7 @@ void func_677()//Position - 0x6F5FC
 
 int func_679()//Position - 0x6F6AE
 {
-	if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+	if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 	{
 		return 1;
 	}
@@ -13919,7 +13919,7 @@ void func_1076(var uParam0)//Position - 0x7F8ED
 	}
 	if (!__LIB_39__::func_515())
 	{
-		if (!__LIB_0__::func_39(6) && !__LIB_0__::func_39(7))
+		if (!__LIB_0__::isGlobal_43052EqualsValue(6) && !__LIB_0__::isGlobal_43052EqualsValue(7))
 		{
 			__LIB_14__::func_622(94, 1, 0);
 		}
@@ -13994,7 +13994,7 @@ void func_1076(var uParam0)//Position - 0x7F8ED
 	__LIB_39__::func_485(iLocal_120);
 	__LIB_0__::func_671(0);
 	func_1085();
-	if (__LIB_39__::func_646() && !__LIB_0__::func_39(14))
+	if (__LIB_39__::func_646() && !__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), true, 0);
 	}

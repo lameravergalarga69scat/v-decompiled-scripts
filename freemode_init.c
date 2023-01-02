@@ -533,7 +533,7 @@ int func_42(int iParam0)//Position - 0x1D26
 void func_53()//Position - 0x226A
 {
 	__LIB_29__::func_753();
-	if (((!__LIB_1__::func_16() && !__LIB_30__::func_347()) && !__LIB_10__::func_343()) && !__LIB_10__::func_320())
+	if (((!__LIB_1__::getGlobal_2714762_f_691() && !__LIB_30__::func_347()) && !__LIB_10__::func_343()) && !__LIB_10__::func_320())
 	{
 		MISC::SET_INSTANCE_PRIORITY_MODE(1);
 	}
@@ -555,7 +555,7 @@ void func_53()//Position - 0x226A
 	func_162();
 	func_155();
 	func_137();
-	__LIB_43__::func_501(0);
+	__LIB_43__::Initialise_MP_Joblist_Update(0);
 	__LIB_34__::func_671();
 	func_64();
 	func_54();

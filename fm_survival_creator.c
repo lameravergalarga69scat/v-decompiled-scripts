@@ -46952,7 +46952,7 @@ void func_4316(var uParam0, int iParam1, int iParam2, int iParam3, char* sParam4
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam6);
 		if (iParam7 != -1)
@@ -46968,14 +46968,14 @@ void func_4317(var uParam0, char* sParam1, char* sParam2, int iParam3, char* sPa
 {
 	if (GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_TITLE"))
 	{
-		__LIB_0__::func_610(sParam1);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 		if (bParam6)
 		{
 			__LIB_0__::func_700(sParam2);
 		}
 		else
 		{
-			__LIB_0__::func_610(sParam2);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 		}
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sParam4);

@@ -379,7 +379,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (iVar1 != 2)
 					{
-						if ((!MISC::IS_MINIGAME_IN_PROGRESS() && !bVar0) && !__LIB_0__::func_39(5))
+						if ((!MISC::IS_MINIGAME_IN_PROGRESS() && !bVar0) && !__LIB_0__::isGlobal_43052EqualsValue(5))
 						{
 							func_73();
 							if (__LIB_39__::func_779())

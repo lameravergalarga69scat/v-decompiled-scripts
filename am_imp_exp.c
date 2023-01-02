@@ -5091,7 +5091,7 @@ int func_522()//Position - 0x1649C
 	{
 		return 0;
 	}
-	if (__LIB_1__::func_16())
+	if (__LIB_1__::getGlobal_2714762_f_691())
 	{
 		return 0;
 	}

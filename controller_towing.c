@@ -759,7 +759,7 @@ void func_146(var uParam0, int iParam1)//Position - 0x9A0F
 		{
 			if (PAD::IS_CONTROL_JUST_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/) || PAD::IS_DISABLED_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/))
 			{
-				if ((((((!__LIB_0__::func_75() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !__LIB_0__::func_540(0)) && !__LIB_0__::func_39(6)) && !__LIB_0__::func_39(7)) && !PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0) && __LIB_0__::func_683() == 1)
+				if ((((((!__LIB_0__::func_75() && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && !__LIB_0__::func_540(0)) && !__LIB_0__::isGlobal_43052EqualsValue(6)) && !__LIB_0__::isGlobal_43052EqualsValue(7)) && !PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) > 0) && __LIB_0__::func_683() == 1)
 				{
 					__LIB_0__::func_222(&uLocal_80, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 					__LIB_0__::func_222(&uLocal_80, 4, 0, "TOWDISPATCH", 0, 1);
@@ -956,7 +956,7 @@ int func_150(var uParam0, bool bParam1, bool bParam2)//Position - 0x9D93
 
 int func_152()//Position - 0x9E9A
 {
-	if (!__LIB_0__::func_39(0))
+	if (!__LIB_0__::isGlobal_43052EqualsValue(0))
 	{
 		if (Global_113386.f_9085_FLOW_STRUCT_isGameflowActive)
 		{

@@ -117,7 +117,7 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 	int iVar0;
 	bool bVar1;
 	struct<3> Var2;
-	if (!__LIB_0__::func_39(14) && !CAM::IS_SCREEN_FADED_OUT())
+	if (!__LIB_0__::isGlobal_43052EqualsValue(14) && !CAM::IS_SCREEN_FADED_OUT())
 	{
 		PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID());
 		Var2 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };

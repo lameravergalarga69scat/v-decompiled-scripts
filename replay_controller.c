@@ -158,7 +158,7 @@ void __EntryFunction__()//Position - 0x0
 					case 11:
 						break;
 					case 13:
-						if (!(((((__LIB_0__::func_39(0) || __LIB_0__::func_39(3)) || __LIB_0__::func_39(2)) || __LIB_0__::func_39(4)) || __LIB_0__::func_39(9)) || __LIB_0__::func_39(10)))
+						if (!(((((__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(3)) || __LIB_0__::isGlobal_43052EqualsValue(2)) || __LIB_0__::isGlobal_43052EqualsValue(4)) || __LIB_0__::isGlobal_43052EqualsValue(9)) || __LIB_0__::isGlobal_43052EqualsValue(10)))
 						{
 							func_807();
 						}
@@ -3098,7 +3098,7 @@ void func_547(int iParam0, int iParam1)//Position - 0x3DE05
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[iVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[iVar0] = __LIB_0__::func_407(iParam0);
@@ -7395,11 +7395,11 @@ void func_751(char* sParam0, int iParam1, int iParam2)//Position - 0x8331D
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_100441.f_16, "SHOW_SHARD_CENTERED_MP_MESSAGE_LARGE");
 			if (Global_100441.f_11 == 5 || func_280())
 			{
-				__LIB_0__::func_610("REPLAY_TMG" /* GXT: ~r~FAILED~s~ */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("REPLAY_TMG" /* GXT: ~r~FAILED~s~ */);
 			}
 			else
 			{
-				__LIB_0__::func_610("REPLAY_T" /* GXT: ~r~MISSION FAILED~s~ */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("REPLAY_T" /* GXT: ~r~MISSION FAILED~s~ */);
 			}
 			func_753(sParam0);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -7479,11 +7479,11 @@ void func_753(char* sParam0)//Position - 0x83593
 {
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 	{
-		__LIB_0__::func_610(sParam0);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	}
 	else if (MISC::IS_STRING_NULL_OR_EMPTY(&Global_78555))
 	{
-		__LIB_0__::func_610(&Global_78551);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Global_78551);
 	}
 	else
 	{
@@ -7646,7 +7646,7 @@ void func_761(int iParam0)//Position - 0x837C4
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_100441.f_17, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iLocal_42);
 	__LIB_0__::func_700(sVar0);
-	__LIB_0__::func_610(sVar1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar1);
 	if (MISC::IS_PC_VERSION())
 	{
 		if (iVar2 == 363)

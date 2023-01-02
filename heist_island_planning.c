@@ -1123,11 +1123,11 @@ int func_113(var uParam0)//Position - 0x26AC
 	{
 		return 0;
 	}
-	if (__LIB_1__::func_16())
+	if (__LIB_1__::getGlobal_2714762_f_691())
 	{
 		return 0;
 	}
-	if (__LIB_5__::func_133())
+	if (__LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}
@@ -4567,7 +4567,7 @@ int func_531()//Position - 0x110C6
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_157) && __LIB_0__::func_156(iLocal_158, 1, 1))
 	{
-		if ((!__LIB_0__::func_983() && !__LIB_1__::func_16()) && !__LIB_5__::func_133())
+		if ((!__LIB_0__::func_983() && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_5__::getGlobal_2714762_f_692())
 		{
 			if ((INTERIOR::GET_ROOM_KEY_FROM_ENTITY(iLocal_157) != joaat("Rm_Command") && INTERIOR::GET_ROOM_KEY_FROM_ENTITY(iLocal_157) != joaat("Rm_Stair1")) && INTERIOR::GET_ROOM_KEY_FROM_ENTITY(iLocal_157) != joaat("Rm_Room2"))
 			{
@@ -5709,9 +5709,9 @@ void func_577(int iParam0, struct<9> Param1, bool bParam2)//Position - 0x1278E
 	}
 	else
 	{
-		__LIB_0__::func_610(Param1.f_3);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(Param1.f_3);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(Param1.f_4);
-		__LIB_0__::func_610(Param1.f_5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(Param1.f_5);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(Param1.f_6);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Param1.f_7);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(Param1.f_8);
@@ -7208,7 +7208,7 @@ void func_611(int iParam0, bool bParam1, char* sParam2)//Position - 0x14C66
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_LAUNCH_BUTTON");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam1);
-	__LIB_0__::func_610(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -7269,10 +7269,10 @@ void func_614(var uParam0, int iParam1)//Position - 0x14D18
 void func_615(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sParam4)//Position - 0x14D7F
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SHOW_OVERLAY");
-	__LIB_0__::func_610(sParam1);
-	__LIB_0__::func_610(sParam2);
-	__LIB_0__::func_610(sParam3);
-	__LIB_0__::func_610(sParam4);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -8607,11 +8607,11 @@ int func_866()//Position - 0x1E9F6
 void func_867(int iParam0, char* sParam1, bool bParam2, char* sParam3, bool bParam4, char* sParam5, bool bParam6)//Position - 0x1EA0A
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_TABS");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam2);
-	__LIB_0__::func_610(sParam3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam4);
-	__LIB_0__::func_610(sParam5);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam6);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -8667,7 +8667,7 @@ void func_870(int iParam0, bool bParam1)//Position - 0x1EAD8
 void func_873(int iParam0, char* sParam1)//Position - 0x1EB32
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_FINALE_LIST_TITLE");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -8708,8 +8708,8 @@ void func_877(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
-	__LIB_0__::func_610(sParam4);
-	__LIB_0__::func_610(sParam5);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -9447,12 +9447,12 @@ void func_935(int iParam0, struct<14> Param1)//Position - 0x20F54
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Param1.f_1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Param1.f_2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Param1.f_3);
-	__LIB_0__::func_610(Param1.f_4);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(Param1.f_4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Param1.f_5);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Param1.f_6);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Param1.f_7);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(Param1.f_8);
-	__LIB_0__::func_610(Param1.f_9);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(Param1.f_9);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(Param1.f_10);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(Param1.f_11);
 	if (Param1.f_12 != -2)

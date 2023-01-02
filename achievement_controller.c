@@ -137,7 +137,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 		}
 		iLocal_66 = Global_32209;
-		if (!__LIB_0__::func_39(14))
+		if (!__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			if (!PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(24))
 			{
@@ -6064,7 +6064,7 @@ void func_108(var uParam0)//Position - 0xFA22
 		__LIB_0__::func_148(uParam0, 0);
 		return;
 	}
-	if (__LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		fVar0 = 10f;
 	}
@@ -6119,7 +6119,7 @@ int func_111(int iParam0)//Position - 0xFB12
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_39(14) && !__LIB_0__::func_146(iParam0))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14) && !__LIB_0__::func_146(iParam0))
 	{
 		return 0;
 	}

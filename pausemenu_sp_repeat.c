@@ -303,7 +303,7 @@ int func_8()//Position - 0x476
 {
 	if (__LIB_13__::func_94())
 	{
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			return 5;
 		}
@@ -501,11 +501,11 @@ void func_29(bool bParam0, int iParam1)//Position - 0xCE3
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((3 - iVar2));
-	__LIB_0__::func_610(sVar0);
-	__LIB_0__::func_610(sVar1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-	__LIB_0__::func_610("");
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -599,8 +599,8 @@ void func_46(int iParam0)//Position - 0x1637
 	func_77(2);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_COLUMN_TITLE");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	__LIB_0__::func_610("MISSTA" /* GXT: Mission Stats */);
-	__LIB_0__::func_610(&Local_28);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MISSTA" /* GXT: Mission Stats */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_28);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar1 = -333;
 	iVar2 = -333;
@@ -678,7 +678,7 @@ float func_48(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)/
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar0);
-		__LIB_0__::func_610("MTPHPER");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MTPHPER");
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
 	else
@@ -690,13 +690,13 @@ float func_48(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)/
 		switch (__LIB_38__::func_563(iVar1))
 		{
 			case 109:
-				__LIB_0__::func_610("MTPHPER_G");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MTPHPER_G");
 				break;
 			case 108:
-				__LIB_0__::func_610("MTPHPER_S");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MTPHPER_S");
 				break;
 			case 107:
-				__LIB_0__::func_610("MTPHPER_B");
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MTPHPER_B");
 				break;
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -882,7 +882,7 @@ void func_54(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_610(sParam3);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1670,7 +1670,7 @@ void func_56(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_610(sParam3);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1706,7 +1706,7 @@ void func_57(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1737,7 +1737,7 @@ void func_58(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1764,7 +1764,7 @@ void func_59(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4)/
 	}
 	else
 	{
-		__LIB_0__::func_610(sParam2);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1798,7 +1798,7 @@ void func_60(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_610(sParam3);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1827,7 +1827,7 @@ void func_61(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	}
 	else
 	{
-		__LIB_0__::func_610(sParam3);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -1881,7 +1881,7 @@ void func_81()//Position - 0x5470
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -2010,7 +2010,7 @@ void func_84(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, c
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		}
-		__LIB_0__::func_610(sParam5);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam6);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}

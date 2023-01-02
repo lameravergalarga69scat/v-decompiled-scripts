@@ -125,7 +125,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			iLocal_47 = 2;
 		}
-		if (!__LIB_0__::func_2(0) && !__LIB_0__::func_39(14))
+		if (!__LIB_0__::func_2(0) && !__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			if (iLocal_47 == 0)
 			{
@@ -613,10 +613,10 @@ void func_107()//Position - 0x1ACF4
 				break;
 			case 3:
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_57, "SHOW_BRIDGES_KNIVES_PROGRESS");
-				__LIB_0__::func_610("PM_TITLE" /* GXT: Mosaic Photographed~s~ */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PM_TITLE" /* GXT: Mosaic Photographed~s~ */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(50);
-				__LIB_0__::func_610("PM_PASS" /* GXT: Success! */);
-				__LIB_0__::func_610("PM_CHALLENGE" /* GXT: monkey mosaics photographed */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PM_PASS" /* GXT: Success! */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PM_CHALLENGE" /* GXT: monkey mosaics photographed */);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_93());
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				iLocal_60 = MISC::GET_GAME_TIMER() + 7500;

@@ -105,7 +105,7 @@ void __EntryFunction__()//Position - 0x0
 			iVar2++;
 		}
 		func_80();
-		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_0__::func_39(14))
+		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			func_68();
 			iVar3 = 16;

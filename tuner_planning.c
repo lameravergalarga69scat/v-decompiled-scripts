@@ -646,15 +646,15 @@ void func_2(var uParam0)//Position - 0x187
 void func_3(var uParam0, var uParam1)//Position - 0x266
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_711, "SHOW_MAIN_SCREEN");
-	__LIB_0__::func_610(uParam1->f_11);
-	__LIB_0__::func_610(uParam1->f_12);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(uParam1->f_11);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(uParam1->f_12);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam1->f_13);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(uParam1->f_14[0]);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(uParam1->f_14[1]);
-	__LIB_0__::func_610((*uParam1)[0 /*5*/]);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((*uParam1)[0 /*5*/]);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING((uParam1[0 /*5*/])->f_2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((uParam1[0 /*5*/])->f_3);
-	__LIB_0__::func_610((*uParam1)[1 /*5*/]);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((*uParam1)[1 /*5*/]);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING((uParam1[1 /*5*/])->f_2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((uParam1[1 /*5*/])->f_3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(uParam1->f_17.f_2);
@@ -662,10 +662,10 @@ void func_3(var uParam0, var uParam1)//Position - 0x266
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL((uParam1[0 /*5*/])->f_4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL((uParam1[1 /*5*/])->f_4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(uParam1->f_17.f_4);
-	__LIB_0__::func_610(uParam1->f_17);
-	__LIB_0__::func_610((uParam1[0 /*5*/])->f_1);
-	__LIB_0__::func_610((uParam1[1 /*5*/])->f_1);
-	__LIB_0__::func_610(uParam1->f_17.f_1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(uParam1->f_17);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[0 /*5*/])->f_1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[1 /*5*/])->f_1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(uParam1->f_17.f_1);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	if (iLocal_273 != 1)
 	{
@@ -1462,11 +1462,11 @@ int func_93(var uParam0)//Position - 0x1EBC
 	{
 		return 0;
 	}
-	if (__LIB_1__::func_16())
+	if (__LIB_1__::getGlobal_2714762_f_691())
 	{
 		return 0;
 	}
-	if (__LIB_5__::func_133())
+	if (__LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}
@@ -3392,7 +3392,7 @@ int func_439()//Position - 0xD1B7
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_275) && __LIB_0__::func_156(iLocal_276, 1, 1))
 	{
-		if ((!__LIB_0__::func_983() && !__LIB_1__::func_16()) && !__LIB_5__::func_133())
+		if ((!__LIB_0__::func_983() && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_5__::getGlobal_2714762_f_692())
 		{
 			if (!__LIB_0__::func_883(iLocal_276))
 			{
@@ -4132,16 +4132,16 @@ void func_668(var uParam0, var uParam1)//Position - 0x16848
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_711, "SHOW_SELECTION_SCREEN");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING((*uParam1)[0 /*6*/]);
-	__LIB_0__::func_610((uParam1[0 /*6*/])->f_1);
-	__LIB_0__::func_610((uParam1[0 /*6*/])->f_2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[0 /*6*/])->f_1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[0 /*6*/])->f_2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((uParam1[0 /*6*/])->f_3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING((*uParam1)[1 /*6*/]);
-	__LIB_0__::func_610((uParam1[1 /*6*/])->f_1);
-	__LIB_0__::func_610((uParam1[1 /*6*/])->f_2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[1 /*6*/])->f_1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[1 /*6*/])->f_2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((uParam1[1 /*6*/])->f_3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING((*uParam1)[2 /*6*/]);
-	__LIB_0__::func_610((uParam1[2 /*6*/])->f_1);
-	__LIB_0__::func_610((uParam1[2 /*6*/])->f_2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[2 /*6*/])->f_1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING((uParam1[2 /*6*/])->f_2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((uParam1[2 /*6*/])->f_3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam1->f_19);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam1->f_20);

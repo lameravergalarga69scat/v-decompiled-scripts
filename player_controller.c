@@ -2996,7 +2996,7 @@ void func_92()//Position - 0x22494
 			iLocal_194 = 0;
 		}
 	}
-	if (((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && (MISC::GET_GAME_TIMER() - iLocal_192) > 10000) && !__LIB_31__::func_996(1)) && !__LIB_0__::func_39(13))
+	if (((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && (MISC::GET_GAME_TIMER() - iLocal_192) > 10000) && !__LIB_31__::func_996(1)) && !__LIB_0__::isGlobal_43052EqualsValue(13))
 	{
 		if (!func_143())
 		{
@@ -3714,15 +3714,15 @@ int func_143()//Position - 0x2B562
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_39(0))
+	if (__LIB_0__::isGlobal_43052EqualsValue(0))
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_39(3))
+	if (__LIB_0__::isGlobal_43052EqualsValue(3))
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_39(4))
+	if (__LIB_0__::isGlobal_43052EqualsValue(4))
 	{
 		return 0;
 	}
@@ -3993,7 +3993,7 @@ void func_168(int* iParam0)//Position - 0x2CF4C
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam0->f_14) || ENTITY::DOES_ENTITY_EXIST(iParam0->f_13))
 		{
-			if (!__LIB_0__::func_39(13) || !__LIB_2__::func_82() == __LIB_38__::func_688())
+			if (!__LIB_0__::isGlobal_43052EqualsValue(13) || !__LIB_2__::func_82() == __LIB_38__::func_688())
 			{
 				func_228(iParam0, 1);
 			}
@@ -4526,7 +4526,7 @@ bool func_231(var uParam0)//Position - 0x2FE1D
 {
 	var uVar0;
 	*uParam0 = *uParam0;
-	return ((((BitTest(Global_113386.f_10016.f_25, 7) && !BitTest(Global_113386.f_10016.f_25, 8)) && __LIB_0__::func_39(13)) && __LIB_2__::func_82() == __LIB_38__::func_688()) && !func_232(&uVar0));
+	return ((((BitTest(Global_113386.f_10016.f_25, 7) && !BitTest(Global_113386.f_10016.f_25, 8)) && __LIB_0__::isGlobal_43052EqualsValue(13)) && __LIB_2__::func_82() == __LIB_38__::func_688()) && !func_232(&uVar0));
 }
 
 int func_232(var uParam0)//Position - 0x2FE6D
@@ -5417,7 +5417,7 @@ void func_267()//Position - 0x3305B
 			}
 		}
 	}
-	if (((((Global_113386.f_20118.f_130[iVar7 /*41*/].f_36 && Global_113386.f_20118.f_130[iVar7 /*41*/].f_35) && !Global_113386.f_20118.f_130[iVar7 /*41*/].f_40) && !__LIB_0__::func_39(0)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(2))
+	if (((((Global_113386.f_20118.f_130[iVar7 /*41*/].f_36 && Global_113386.f_20118.f_130[iVar7 /*41*/].f_35) && !Global_113386.f_20118.f_130[iVar7 /*41*/].f_40) && !__LIB_0__::isGlobal_43052EqualsValue(0)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(2))
 	{
 		iLocal_184 = Global_113386.f_20118.f_130[iVar7 /*41*/];
 		iLocal_185 = 1;
@@ -5430,7 +5430,7 @@ void func_267()//Position - 0x3305B
 	}
 	else if (iLocal_185)
 	{
-		if ((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(2))
+		if ((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(2))
 		{
 			StringCopy(&Var19, "SOCIAL_CARAPP1" /* GXT: Your Los Santos Customs order has been processed for your ~a~. */, 16);
 			if (bLocal_186)
@@ -7719,7 +7719,7 @@ void func_396(int iParam0, int iParam1)//Position - 0x4002D
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[iVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[iVar0] = __LIB_0__::func_407(iParam0);
@@ -13700,7 +13700,7 @@ void func_680()//Position - 0x889BE
 	if (HUD::DOES_BLIP_EXIST(iVar0))
 	{
 		iVar1 = Global_113386.f_2363.f_539.f_4321;
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar1 = __LIB_0__::func_216(PLAYER::PLAYER_PED_ID());
 		}

@@ -404,15 +404,15 @@ int func_4()//Position - 0x473
 			{
 				return 1;
 			}
-			if (__LIB_0__::func_39(9))
+			if (__LIB_0__::isGlobal_43052EqualsValue(9))
 			{
 				return 1;
 			}
-			if (__LIB_0__::func_39(10))
+			if (__LIB_0__::isGlobal_43052EqualsValue(10))
 			{
 				return 1;
 			}
-			if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+			if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 			{
 				return 1;
 			}
@@ -424,7 +424,7 @@ int func_4()//Position - 0x473
 			{
 				return 1;
 			}
-			if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !__LIB_0__::func_39(15))
+			if (HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !__LIB_0__::isGlobal_43052EqualsValue(15))
 			{
 				return 1;
 			}
@@ -483,7 +483,7 @@ int func_4()//Position - 0x473
 			{
 				return 1;
 			}
-			if (__LIB_38__::func_682(iVar0) == 5 && __LIB_0__::func_39(15))
+			if (__LIB_38__::func_682(iVar0) == 5 && __LIB_0__::isGlobal_43052EqualsValue(15))
 			{
 				return 1;
 			}
@@ -514,7 +514,7 @@ int func_4()//Position - 0x473
 			{
 				return 1;
 			}
-			if (__LIB_0__::func_39(13) || __LIB_0__::func_39(14))
+			if (__LIB_0__::isGlobal_43052EqualsValue(13) || __LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 				return 1;
 			}
@@ -1151,7 +1151,7 @@ void func_39(int iParam0, int iParam1)//Position - 0x20B0
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[iVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[iVar0] = __LIB_0__::func_407(iParam0);
@@ -6156,7 +6156,7 @@ void func_428()//Position - 0x6CD19
 			}
 			else if (Local_67.f_55 == 2)
 			{
-				if ((((((__LIB_13__::func_94() && !__LIB_0__::func_39(6)) && !__LIB_0__::func_39(7)) && !__LIB_0__::func_39(10)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(5)) && GRAPHICS::DOES_LATEST_BRIEF_STRING_EXIST(2))
+				if ((((((__LIB_13__::func_94() && !__LIB_0__::isGlobal_43052EqualsValue(6)) && !__LIB_0__::isGlobal_43052EqualsValue(7)) && !__LIB_0__::isGlobal_43052EqualsValue(10)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(5)) && GRAPHICS::DOES_LATEST_BRIEF_STRING_EXIST(2))
 				{
 					__LIB_1__::func_789("PIM_THOBJ" /* GXT: Select to view your objective. */, 0, 0);
 				}
@@ -6259,7 +6259,7 @@ int func_429(int iParam0, bool bParam1, int iParam2)//Position - 0x6CFA0
 			return 2;
 		}
 	}
-	if (__LIB_13__::func_94() && !__LIB_0__::func_39(14))
+	if (__LIB_13__::func_94() && !__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		return 3;
 	}
@@ -7183,7 +7183,7 @@ void func_468()//Position - 0x722CF
 		{
 			if (__LIB_16__::func_603(Global_91229[Global_97374[iVar9 /*17*/].f_5 /*34*/].f_11, iVar10) && __LIB_15__::func_276(Global_97374[iVar9 /*17*/].f_9))
 			{
-				if (__LIB_0__::func_39(15) || __LIB_0__::func_39(5))
+				if (__LIB_0__::isGlobal_43052EqualsValue(15) || __LIB_0__::isGlobal_43052EqualsValue(5))
 				{
 					iLocal_125++;
 					iVar8[iVar9] = iLocal_125;
@@ -7376,7 +7376,7 @@ void func_468()//Position - 0x722CF
 			bLocal_95 = false;
 		}
 	}
-	if ((((((__LIB_13__::func_94() && !__LIB_0__::func_39(6)) && !__LIB_0__::func_39(7)) && !__LIB_0__::func_39(10)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(5)) && GRAPHICS::DOES_LATEST_BRIEF_STRING_EXIST(2))
+	if ((((((__LIB_13__::func_94() && !__LIB_0__::isGlobal_43052EqualsValue(6)) && !__LIB_0__::isGlobal_43052EqualsValue(7)) && !__LIB_0__::isGlobal_43052EqualsValue(10)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(5)) && GRAPHICS::DOES_LATEST_BRIEF_STRING_EXIST(2))
 	{
 		__LIB_3__::func_572(2, "PIM_TOBJ" /* GXT: Objective */, 0, 1, 0, 0, 0);
 		if (Local_67.f_55 == 2)

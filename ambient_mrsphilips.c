@@ -286,7 +286,7 @@ void func_166(bool bParam0)//Position - 0xB891
 
 void func_170()//Position - 0xB981
 {
-	if (!__LIB_0__::func_39(4))
+	if (!__LIB_0__::isGlobal_43052EqualsValue(4))
 	{
 		if (__LIB_0__::func_720(36))
 		{

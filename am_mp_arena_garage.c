@@ -4341,7 +4341,7 @@ void func_245(int iParam0)//Position - 0x1C102
 					{
 						iVar0 = 1;
 					}
-					if (__LIB_1__::func_800() || iVar0)
+					if (__LIB_1__::setGlobal_1575016_10() || iVar0)
 					{
 						if (((CUTSCENE::GET_CUTSCENE_TOTAL_DURATION() - CUTSCENE::GET_CUTSCENE_TIME()) <= 600 && !CAM::IS_SCREEN_FADED_OUT()) && !CAM::IS_SCREEN_FADING_OUT())
 						{
@@ -4483,7 +4483,7 @@ int func_253(int iParam0)//Position - 0x1C934
 			{
 				iVar0 = 1;
 			}
-			if (__LIB_1__::func_800() || iVar0)
+			if (__LIB_1__::setGlobal_1575016_10() || iVar0)
 			{
 				MISC::SET_BIT(&Local_225, 21);
 				MISC::SET_BIT(&(Local_642[PLAYER::PLAYER_ID() /*10*/]), 6);
@@ -26885,7 +26885,7 @@ void func_5087(var uParam0, int iParam1, int iParam2, struct<3> Param3, var uPar
 		Var1 = { 13.7424f, 0f, 145.7582f };
 		fVar2 = 65.2994f;
 		bVar3 = true;
-		if (!__LIB_5__::func_133())
+		if (!__LIB_5__::getGlobal_2714762_f_692())
 		{
 			iVar5 = 0;
 		}
@@ -28328,9 +28328,9 @@ void func_5300(int iParam0, var uParam1)//Position - 0x1AE804
 	func_5301(iParam0, &sVar0);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam1->f_3, "SET_TEXTURES");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(&sVar0);
-	__LIB_0__::func_610("ACW_NOTE_1" /* GXT: Trap? */);
-	__LIB_0__::func_610("ACW_NOTE_2" /* GXT: Gun Tower? */);
-	__LIB_0__::func_610("ACW_NOTE_3" /* GXT: Key Info */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACW_NOTE_1" /* GXT: Trap? */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACW_NOTE_2" /* GXT: Gun Tower? */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACW_NOTE_3" /* GXT: Key Info */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -28561,10 +28561,10 @@ void func_5316(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam8);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam9);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam10);
-	__LIB_0__::func_610(&Var9);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var9);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING("");
-	__LIB_0__::func_610(sVar7);
-	__LIB_0__::func_610(sVar8);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar7);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar8);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -46901,13 +46901,13 @@ void func_6167()//Position - 0x1FD79D
 									HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(VEHICLE::GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(ENTITY::GET_ENTITY_MODEL(iVar4)));
 									GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 								}
-								__LIB_0__::func_610(sVar9);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar9);
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&cVar8);
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(&sVar7);
-								__LIB_0__::func_610("FMMC_VEHST_0" /* GXT: Top Speed */);
-								__LIB_0__::func_610("FMMC_VEHST_1" /* GXT: Acceleration */);
-								__LIB_0__::func_610("FMMC_VEHST_2" /* GXT: Braking */);
-								__LIB_0__::func_610("FMMC_VEHST_3" /* GXT: Traction */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_0" /* GXT: Top Speed */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_1" /* GXT: Acceleration */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_2" /* GXT: Braking */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FMMC_VEHST_3" /* GXT: Traction */);
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(Local_3048[bVar3 /*6*/][0]));
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(Local_3048[bVar3 /*6*/][1]));
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(Local_3048[bVar3 /*6*/][2]));

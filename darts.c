@@ -5487,7 +5487,7 @@ void func_417(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
 	{
-		__LIB_0__::func_610(sParam2);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	}
 	if (bParam6)
 	{

@@ -2370,7 +2370,7 @@ void func_177()//Position - 0x5990
 void func_178()//Position - 0x59BE
 {
 	int iVar0;
-	if (!__LIB_0__::func_39(0) && !__LIB_0__::func_39(3))
+	if (!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(3))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Local_43.f_1, false))
 		{

@@ -4619,7 +4619,7 @@ void func_180()//Position - 0xBF51
 		{
 			WEAPON::REMOVE_WEAPON_FROM_PED(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_BALL"));
 		}
-		if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && !__LIB_0__::func_39(0))
+		if (__LIB_0__::func_121(PLAYER::PLAYER_PED_ID()) && !__LIB_0__::isGlobal_43052EqualsValue(0))
 		{
 			PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 32, true);
 		}
@@ -4787,7 +4787,7 @@ int func_188()//Position - 0xC5F5
 	{
 		return 0;
 	}
-	if (__LIB_0__::func_39(6) || __LIB_0__::func_39(2))
+	if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(2))
 	{
 		return 0;
 	}

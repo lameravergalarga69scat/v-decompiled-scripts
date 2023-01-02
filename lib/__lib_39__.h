@@ -3127,7 +3127,7 @@ void func_95(int iParam0)//Position - 0x6B01
 		{
 			iVar3 = 0;
 		}
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar3 = 0;
 		}
@@ -7616,7 +7616,7 @@ bool func_242()//Position - 0x1B0033
 
 int func_243()//Position - 0x1B0053
 {
-	if (__LIB_1__::func_16())
+	if (__LIB_1__::getGlobal_2714762_f_691())
 	{
 		__LIB_2__::func_235();
 	}
@@ -12723,7 +12723,7 @@ int func_404(var uParam0, var uParam1, struct<3> Param2)//Position - 0xD9D
 	}
 	if (OBJECT::DOES_PICKUP_EXIST((uParam1[iVar0 /*11*/])->f_1))
 	{
-		if ((SYSTEM::VDIST2(Param2, OBJECT::GET_PICKUP_COORDS((uParam1[iVar0 /*11*/])->f_1)) > (60f * 60f) || __LIB_0__::func_39(13)) || __LIB_0__::func_39(14))
+		if ((SYSTEM::VDIST2(Param2, OBJECT::GET_PICKUP_COORDS((uParam1[iVar0 /*11*/])->f_1)) > (60f * 60f) || __LIB_0__::isGlobal_43052EqualsValue(13)) || __LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			__LIB_0__::func_733(&((uParam1[iVar0 /*11*/])->f_1));
 			(uParam1[iVar0 /*11*/])->f_1 = 0;
@@ -14490,7 +14490,7 @@ void func_464(int iParam0)//Position - 0x19D49
 		{
 			iVar3 = 0;
 		}
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar3 = 0;
 		}
@@ -14900,7 +14900,7 @@ int func_470(int iParam0, int iParam1, int iParam2)//Position - 0x14DC
 {
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			return 100;
 		}
@@ -15520,7 +15520,7 @@ void func_503(int iParam0)//Position - 0x7B64E
 		{
 			iVar3 = 0;
 		}
-		if (__LIB_0__::func_39(14))
+		if (__LIB_0__::isGlobal_43052EqualsValue(14))
 		{
 			iVar3 = 0;
 		}
@@ -23066,7 +23066,7 @@ int func_772(int iParam0, bool bParam1)//Position - 0x2AE0
 
 int func_773()//Position - 0xC105
 {
-	if (__LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{

@@ -26807,7 +26807,7 @@ void func_182()//Position - 0x1ED41
 	__LIB_16__::func_734(&(Global_1835013.f_280));
 	StringCopy(&(Global_1835013.f_349), "", 24);
 	StringCopy(&(Global_1835013.f_355), "", 24);
-	__LIB_0__::func_946(&(Global_1835013.f_361));
+	__LIB_0__::resetParamF1ToF12ToZero(&(Global_1835013.f_361));
 	Global_1835013.f_374 = -1;
 	Global_1835388 = 0;
 	Global_1835389 = 0;
@@ -30488,7 +30488,7 @@ int func_355(var uParam0, bool bParam1, var uParam2, bool bParam3, int iParam4, 
 			__LIB_1__::func_330(&(uParam0->f_1), 8);
 			HUD::GET_HUD_COLOUR(18, &iVar6, &iVar7, &iVar8, &uVar9);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_MESSAGE");
-			__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar8);
@@ -32455,7 +32455,7 @@ int func_417(var uParam0, var uParam1, char* sParam2, char* sParam3, var uParam4
 			HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(6);
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(sParam2);
 			GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-			__LIB_0__::func_610(sParam3);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam3);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(100);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
@@ -32635,7 +32635,7 @@ int func_419(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(0f);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(SYSTEM::TO_FLOAT(iParam0->f_78));
-				__LIB_0__::func_610(iParam0->f_77);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_77);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				fVar1 = __LIB_0__::func_373(bParam4, __LIB_0__::func_373(__LIB_0__::func_703(iParam0->f_1, 32), 1f, 0f), -1f);
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "DRAW_INSTRUCTIONAL_BUTTONS");
@@ -32680,7 +32680,7 @@ int func_419(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam
 					{
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(SYSTEM::TO_FLOAT(iParam0->f_11[iVar4 + 3]));
 					}
-					__LIB_0__::func_610(iParam0->f_2[iVar3]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_2[iVar3]);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					fVar2 = (fVar2 + 1f);
 				}
@@ -32721,7 +32721,7 @@ int func_419(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fVar6);
 				if (!MISC::IS_STRING_NULL_OR_EMPTY(iParam0->f_44[iVar8]))
 				{
-					__LIB_0__::func_610(iParam0->f_44[iVar8]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_44[iVar8]);
 				}
 				if (iParam0->f_11[iVar8] != 9999)
 				{
@@ -32729,7 +32729,7 @@ int func_419(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam
 				}
 				if (!MISC::IS_STRING_NULL_OR_EMPTY(iParam0->f_44[iVar8 + 1]))
 				{
-					__LIB_0__::func_610(iParam0->f_44[iVar8 + 1]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_44[iVar8 + 1]);
 				}
 				if (iParam0->f_11[iVar8 + 1] != -1)
 				{
@@ -32737,7 +32737,7 @@ int func_419(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam
 				}
 				if (!MISC::IS_STRING_NULL_OR_EMPTY(iParam0->f_44[iVar8 + 2]))
 				{
-					__LIB_0__::func_610(iParam0->f_44[iVar8 + 2]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_44[iVar8 + 2]);
 				}
 				if (iParam0->f_11[iVar8 + 2] != -1)
 				{
@@ -32745,7 +32745,7 @@ int func_419(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam
 				}
 				if (!MISC::IS_STRING_NULL_OR_EMPTY(iParam0->f_44[iVar8 + 3]))
 				{
-					__LIB_0__::func_610(iParam0->f_44[iVar8 + 3]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_44[iVar8 + 3]);
 				}
 				if (iParam0->f_11[iVar8 + 3] != -1)
 				{
@@ -32753,7 +32753,7 @@ int func_419(int* iParam0, float fParam1, int iParam2, bool bParam3, bool bParam
 				}
 				if (!__LIB_2__::func_525(iParam0->f_2[iVar7]))
 				{
-					__LIB_0__::func_610(iParam0->f_2[iVar7]);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(iParam0->f_2[iVar7]);
 				}
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				fVar6 = (fVar6 + 1f);
@@ -59199,7 +59199,7 @@ void func_1088(var uParam0)//Position - 0x55B78
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
-		__LIB_0__::func_946(&(Global_1839633[iVar0 /*13*/]));
+		__LIB_0__::resetParamF1ToF12ToZero(&(Global_1839633[iVar0 /*13*/]));
 		StringCopy(&(Global_1839633.f_157[iVar0 /*4*/]), "", 16);
 		iVar0++;
 	}

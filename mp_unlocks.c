@@ -367,25 +367,25 @@ void func_17(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		if (iParam5 == 1)
 		{
 			if (iParam6 == 0)
 			{
-				__LIB_0__::func_610("PM_UJOB_YES" /* GXT: Yes */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PM_UJOB_YES" /* GXT: Yes */);
 			}
 			else
 			{
-				__LIB_0__::func_610("PM_UCON_ULK" /* GXT: Unlocked */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PM_UCON_ULK" /* GXT: Unlocked */);
 			}
 		}
 		else if (iParam6 == 0)
 		{
-			__LIB_0__::func_610("PM_UJOB_NO" /* GXT: No */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PM_UJOB_NO" /* GXT: No */);
 		}
 		else
 		{
-			__LIB_0__::func_610("PM_UCON_LCK" /* GXT: Locked */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PM_UCON_LCK" /* GXT: Locked */);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	}
@@ -556,7 +556,7 @@ void func_38(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-		__LIB_0__::func_610(sParam4);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
 		GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam6);
 		HUD::ADD_TEXT_COMPONENT_INTEGER(iParam7);

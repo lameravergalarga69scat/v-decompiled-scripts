@@ -13658,7 +13658,7 @@ void func_246(var uParam0, bool bParam1, int iParam2)//Position - 0x5728B
 		{
 			__LIB_10__::func_909(uParam0, __LIB_10__::func_925(&(uParam0->f_47), iVar0, iVar1));
 			__LIB_11__::func_781(&(uParam0->f_1), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), 1);
-			if ((iParam2 && !__LIB_5__::func_133()) && __LIB_10__::func_388() != 2)
+			if ((iParam2 && !__LIB_5__::getGlobal_2714762_f_692()) && __LIB_10__::func_388() != 2)
 			{
 				CAM::DO_SCREEN_FADE_OUT(0);
 			}
@@ -18104,7 +18104,7 @@ int func_334(int* iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4,
 						__LIB_1__::func_330(&(iParam0->f_1), 8);
 						HUD::GET_HUD_COLOUR(18, &iVar5, &iVar6, &iVar7, &uVar8);
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_MESSAGE");
-						__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
@@ -18168,7 +18168,7 @@ int func_334(int* iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4,
 			__LIB_1__::func_330(&(iParam0->f_1), 8);
 			HUD::GET_HUD_COLOUR(18, &iVar11, &iVar12, &iVar13, &uVar14);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_MESSAGE");
-			__LIB_0__::func_610("CNTDWN_GO" /* GXT: Go! */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CNTDWN_GO" /* GXT: Go! */);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar11);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar12);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar13);
@@ -25428,9 +25428,9 @@ void func_590(int iParam0, bool bParam1, float fParam2, float fParam3, char* sPa
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam3);
-	__LIB_0__::func_610(sParam4);
-	__LIB_0__::func_610(sParam5);
-	__LIB_0__::func_610(sParam6);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam4);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam5);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam6);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -26160,17 +26160,17 @@ void func_620(var uParam0, int iParam1, char* sParam2, int iParam3, float fParam
 	iParam3 += 2;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SET_SWING_DISPLAY");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
-	__LIB_0__::func_610(sParam2);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam2);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam3);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("GOLF_WIND_PLUS");
 	HUD::ADD_TEXT_COMPONENT_INTEGER(iParam5);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam4);
-	__LIB_0__::func_610(sParam6);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam6);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
-	__LIB_0__::func_610(sParam8);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam8);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(bParam12);
-	__LIB_0__::func_610("GOLF_SPIN");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("GOLF_SPIN");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam9);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(fParam10);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("SHOT_NUM");
@@ -26274,7 +26274,7 @@ void func_625(int iParam0, char* sParam1, float fParam2, float fParam3)//Positio
 	}
 	fParam2 = (fParam2 * fParam3);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_STRENGTH");
-	__LIB_0__::func_610(sParam1);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam1);
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("STRENGTH_PER");
 	HUD::ADD_TEXT_COMPONENT_INTEGER(SYSTEM::CEIL(fParam2));
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
@@ -27822,38 +27822,38 @@ void func_684(int* iParam0, int iParam1)//Position - 0x9C28A
 void func_685(int* iParam0)//Position - 0x9C29D
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "COURSE_PAR");
-	__LIB_0__::func_610("PAR_5");
-	__LIB_0__::func_610("PAR_4");
-	__LIB_0__::func_610("PAR_3");
-	__LIB_0__::func_610("PAR_4");
-	__LIB_0__::func_610("PAR_4");
-	__LIB_0__::func_610("PAR_3");
-	__LIB_0__::func_610("PAR_4");
-	__LIB_0__::func_610("PAR_5");
-	__LIB_0__::func_610("PAR_4");
-	__LIB_0__::func_610("PAR_TOTAL");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_5");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_4");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_3");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_4");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_4");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_3");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_4");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_5");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_4");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_TOTAL");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
 void func_686(int* iParam0)//Position - 0x9C310
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*iParam0, "SET_SCOREBOARD_TITLE");
-	__LIB_0__::func_610("TITLE_STANDING");
-	__LIB_0__::func_610("HOLE_ALLCAPS");
-	__LIB_0__::func_610("PAR_ALLCAPS");
-	__LIB_0__::func_610("SCORE_ALLCAPS");
-	__LIB_0__::func_610("SCORE_HOLEINONE");
-	__LIB_0__::func_610("SCORE_BELOW_PAR");
-	__LIB_0__::func_610("SCORE_ABOVE_PAR");
-	__LIB_0__::func_610("HOLE_1");
-	__LIB_0__::func_610("HOLE_2");
-	__LIB_0__::func_610("HOLE_3");
-	__LIB_0__::func_610("HOLE_4");
-	__LIB_0__::func_610("HOLE_5");
-	__LIB_0__::func_610("HOLE_6");
-	__LIB_0__::func_610("HOLE_7");
-	__LIB_0__::func_610("HOLE_8");
-	__LIB_0__::func_610("HOLE_9");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TITLE_STANDING");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_ALLCAPS");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PAR_ALLCAPS");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SCORE_ALLCAPS");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SCORE_HOLEINONE");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SCORE_BELOW_PAR");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SCORE_ABOVE_PAR");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_1");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_2");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_3");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_4");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_5");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_6");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_7");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_8");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HOLE_9");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -43374,82 +43374,82 @@ bool func_938(int iParam0, int iParam1)//Position - 0x18EE
 void func_939(var uParam0)//Position - 0x1905
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_413, "SET_LABELS");
-	__LIB_0__::func_610("H_CRW_NAME" /* GXT: Name */);
-	__LIB_0__::func_610("H_CRW_TYPE" /* GXT: Expertise */);
-	__LIB_0__::func_610("H_CRW_SKILLS" /* GXT: Skills */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_CRW_NAME" /* GXT: Name */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_CRW_TYPE" /* GXT: Expertise */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_CRW_SKILLS" /* GXT: Skills */);
 	switch (*uParam0)
 	{
 		case 0:
-			__LIB_0__::func_610("H_LBL_JWL" /* GXT: JEWEL STORE */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_JWL" /* GXT: JEWEL STORE */);
 			break;
 		case 1:
-			__LIB_0__::func_610("H_LBL_DOC" /* GXT: LS PORT */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_DOC" /* GXT: LS PORT */);
 			break;
 		case 2:
-			__LIB_0__::func_610("H_LBL_RUR" /* GXT: PALETO */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_RUR" /* GXT: PALETO */);
 			break;
 		case 3:
-			__LIB_0__::func_610("H_LBL_AGN" /* GXT: BUREAU */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_AGN" /* GXT: BUREAU */);
 			break;
 		case 4:
-			__LIB_0__::func_610("H_LBL_FA" /* GXT: BIG SCORE A */);
-			__LIB_0__::func_610("H_LBL_FB" /* GXT: BIG SCORE B */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_FA" /* GXT: BIG SCORE A */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_FB" /* GXT: BIG SCORE B */);
 			break;
 	}
 	if (*uParam0 != 1)
 	{
-		__LIB_0__::func_610("H_LBL_CRW" /* GXT: CREW */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_CRW" /* GXT: CREW */);
 	}
-	__LIB_0__::func_610("H_LBL_TODO" /* GXT: TODO */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_TODO" /* GXT: TODO */);
 	if (*uParam0 != 2)
 	{
-		__LIB_0__::func_610("H_LBL_APP" /* GXT: APPROACH */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_APP" /* GXT: APPROACH */);
 	}
 	switch (*uParam0)
 	{
 		case 0:
-			__LIB_0__::func_610("H_LBL_J1" /* GXT: CCTV */);
-			__LIB_0__::func_610("H_LBL_J2" /* GXT: VENT */);
-			__LIB_0__::func_610("H_LBL_J3" /* GXT: ALARM */);
-			__LIB_0__::func_610("H_LBL_J4" /* GXT: TUNNEL */);
-			__LIB_0__::func_610("HC_J_IMPACT" /* GXT: LOUD */);
-			__LIB_0__::func_610("HC_J_STEALTH" /* GXT: SMART */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_J1" /* GXT: CCTV */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_J2" /* GXT: VENT */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_J3" /* GXT: ALARM */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_J4" /* GXT: TUNNEL */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_J_IMPACT" /* GXT: LOUD */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_J_STEALTH" /* GXT: SMART */);
 			break;
 		case 1:
-			__LIB_0__::func_610("HC_D_BLOW_UP" /* GXT: FREIGHTER */);
-			__LIB_0__::func_610("HC_D_DEEP_SEA" /* GXT: OFFSHORE */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_D_BLOW_UP" /* GXT: FREIGHTER */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_D_DEEP_SEA" /* GXT: OFFSHORE */);
 			break;
 		case 2:
-			__LIB_0__::func_610("H_LBL_R1" /* GXT: plan A */);
-			__LIB_0__::func_610("H_LBL_R2" /* GXT: plan B? */);
-			__LIB_0__::func_610("H_LBL_R3" /* GXT: 67 secs */);
-			__LIB_0__::func_610("H_LBL_R4" /* GXT: 8+ Cops */);
-			__LIB_0__::func_610("H_LBL_R5" /* GXT: 4 Cars */);
-			__LIB_0__::func_610("H_LBL_R6" /* GXT: Banker's wife */);
-			__LIB_0__::func_610("H_LBL_R7" /* GXT: $$$ */);
-			__LIB_0__::func_610("H_LBL_R8" /* GXT: Need military grade hardware */);
-			__LIB_0__::func_610("H_LBL_R9" /* GXT: 8/10 Smash it! */);
-			__LIB_0__::func_610("H_LBL_R10" /* GXT: Military Hardware Route */);
-			__LIB_0__::func_610("H_LBL_R11" /* GXT: Every 2 or 3hrs */);
-			__LIB_0__::func_610("H_LBL_R12" /* GXT: BOAT */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R1" /* GXT: plan A */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R2" /* GXT: plan B? */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R3" /* GXT: 67 secs */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R4" /* GXT: 8+ Cops */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R5" /* GXT: 4 Cars */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R6" /* GXT: Banker's wife */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R7" /* GXT: $$$ */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R8" /* GXT: Need military grade hardware */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R9" /* GXT: 8/10 Smash it! */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R10" /* GXT: Military Hardware Route */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R11" /* GXT: Every 2 or 3hrs */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_R12" /* GXT: BOAT */);
 			break;
 		case 3:
-			__LIB_0__::func_610("H_LBL_A1" /* GXT: Davis fire station */);
-			__LIB_0__::func_610("H_LBL_A2" /* GXT: floor 53 */);
-			__LIB_0__::func_610("H_LBL_A3" /* GXT: Bomb */);
-			__LIB_0__::func_610("H_LBL_A4" /* GXT: Drive 10 */);
-			__LIB_0__::func_610("H_LBL_A5" /* GXT: 83QSL722 */);
-			__LIB_0__::func_610("HC_A_FIRETRUCK" /* GXT: FIRE CREW */);
-			__LIB_0__::func_610("HC_A_HELICOPTER" /* GXT: ROOF ENTRY */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_A1" /* GXT: Davis fire station */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_A2" /* GXT: floor 53 */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_A3" /* GXT: Bomb */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_A4" /* GXT: Drive 10 */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_A5" /* GXT: 83QSL722 */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_A_FIRETRUCK" /* GXT: FIRE CREW */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_A_HELICOPTER" /* GXT: ROOF ENTRY */);
 			break;
 		case 4:
-			__LIB_0__::func_610("H_LBL_F1" /* GXT: DROP-OFF */);
-			__LIB_0__::func_610("H_LBL_F2" /* GXT: HOLE */);
-			__LIB_0__::func_610("H_LBL_F3" /* GXT: SECURITY */);
-			__LIB_0__::func_610("H_LBL_F4" /* GXT: GETAWAY */);
-			__LIB_0__::func_610("H_LBL_F5" /* GXT: TUNNEL AMBUSH */);
-			__LIB_0__::func_610("HC_F_TRAFFCONT" /* GXT: SUBTLE */);
-			__LIB_0__::func_610("HC_F_HELI" /* GXT: OBVIOUS */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_F1" /* GXT: DROP-OFF */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_F2" /* GXT: HOLE */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_F3" /* GXT: SECURITY */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_F4" /* GXT: GETAWAY */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("H_LBL_F5" /* GXT: TUNNEL AMBUSH */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_F_TRAFFCONT" /* GXT: SUBTLE */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HC_F_HELI" /* GXT: OBVIOUS */);
 			break;
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -44022,12 +44022,12 @@ void func_965(var uParam0)//Position - 0x44C
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					__LIB_0__::func_700(sVar2);
-					__LIB_0__::func_610("PB_H_ZOOM" /* GXT: Zoom */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_ZOOM" /* GXT: Zoom */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					__LIB_0__::func_700(sVar3);
-					__LIB_0__::func_610("PB_H_LOOK" /* GXT: Look Around */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -44037,17 +44037,17 @@ void func_965(var uParam0)//Position - 0x44C
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					__LIB_0__::func_700(sVar2);
-					__LIB_0__::func_610("PB_H_ZOOM" /* GXT: Zoom */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_ZOOM" /* GXT: Zoom */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					__LIB_0__::func_700(sVar3);
-					__LIB_0__::func_610("PB_H_LOOK" /* GXT: Look Around */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					__LIB_0__::func_700(sVar5);
-					__LIB_0__::func_610("PB_H_EXIT" /* GXT: Exit */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_EXIT" /* GXT: Exit */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
@@ -44072,17 +44072,17 @@ void func_965(var uParam0)//Position - 0x44C
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					__LIB_0__::func_700(sVar0);
-					__LIB_0__::func_610("PB_H_SELCT" /* GXT: Browse */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					__LIB_0__::func_700(sVar3);
-					__LIB_0__::func_610("PB_H_LOOK" /* GXT: Look Around */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					__LIB_0__::func_700(sVar4);
-					__LIB_0__::func_610("PB_H_TRIG" /* GXT: Select */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_TRIG" /* GXT: Select */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -44090,22 +44090,22 @@ void func_965(var uParam0)//Position - 0x44C
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 					__LIB_0__::func_700(sVar0);
-					__LIB_0__::func_610("PB_H_SELCT" /* GXT: Browse */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					__LIB_0__::func_700(sVar3);
-					__LIB_0__::func_610("PB_H_LOOK" /* GXT: Look Around */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					__LIB_0__::func_700(sVar5);
-					__LIB_0__::func_610("PB_H_UNDO" /* GXT: Back */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_UNDO" /* GXT: Back */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					__LIB_0__::func_700(sVar4);
-					__LIB_0__::func_610("PB_H_TRIG" /* GXT: Select */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_TRIG" /* GXT: Select */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
@@ -44123,12 +44123,12 @@ void func_965(var uParam0)//Position - 0x44C
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					__LIB_0__::func_700(sVar1);
-					__LIB_0__::func_610("PB_H_SELCT" /* GXT: Browse */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					__LIB_0__::func_700(sVar3);
-					__LIB_0__::func_610("PB_H_LOOK" /* GXT: Look Around */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				else
@@ -44138,17 +44138,17 @@ void func_965(var uParam0)//Position - 0x44C
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 					__LIB_0__::func_700(sVar1);
-					__LIB_0__::func_610("PB_H_SELCT" /* GXT: Browse */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_SELCT" /* GXT: Browse */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 					__LIB_0__::func_700(sVar3);
-					__LIB_0__::func_610("PB_H_LOOK" /* GXT: Look Around */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_LOOK" /* GXT: Look Around */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					__LIB_0__::func_700(sVar4);
-					__LIB_0__::func_610("PB_H_TRIG" /* GXT: Select */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_TRIG" /* GXT: Select */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
@@ -44164,22 +44164,22 @@ void func_965(var uParam0)//Position - 0x44C
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 				__LIB_0__::func_700(sVar2);
-				__LIB_0__::func_610("PB_H_ZOOM" /* GXT: Zoom */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_ZOOM" /* GXT: Zoom */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
 				__LIB_0__::func_700(sVar3);
-				__LIB_0__::func_610("PB_H_LOOK" /* GXT: Look Around */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_LOOK" /* GXT: Look Around */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 				__LIB_0__::func_700(sVar5);
-				__LIB_0__::func_610("PB_H_UNDO" /* GXT: Back */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_UNDO" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 				__LIB_0__::func_700(sVar4);
-				__LIB_0__::func_610("PB_H_CONF" /* GXT: Confirm */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("PB_H_CONF" /* GXT: Confirm */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_414, "DRAW_INSTRUCTIONAL_BUTTONS");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
@@ -44830,7 +44830,7 @@ void func_983(var uParam0)//Position - 0x21EFE
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_415 + 1);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
-			__LIB_0__::func_610(&(uParam0->f_1.f_211[iVar2 /*4*/]));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_1.f_211[iVar2 /*4*/]));
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			iVar1++;
 		}

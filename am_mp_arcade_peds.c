@@ -2091,7 +2091,7 @@ int func_78(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 0x
 	{
 		return 0;
 	}
-	if ((__LIB_0__::func_983() || __LIB_1__::func_16()) || __LIB_5__::func_133())
+	if ((__LIB_0__::func_983() || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}

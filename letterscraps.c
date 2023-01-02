@@ -149,7 +149,7 @@ void func_1()//Position - 0xF8
 								SYSTEM::WAIT(0);
 							}
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_55, "SET_LETTER_TEXT");
-							__LIB_0__::func_610(sLocal_57[0]);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sLocal_57[0]);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(true);
 							__LIB_0__::func_366(1);
@@ -178,7 +178,7 @@ void func_1()//Position - 0xF8
 						{
 							iLocal_56++;
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_55, "SET_LETTER_TEXT");
-							__LIB_0__::func_610(sLocal_57[iLocal_56]);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sLocal_57[iLocal_56]);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 						}
 						iLocal_58 = 1;
@@ -189,7 +189,7 @@ void func_1()//Position - 0xF8
 						{
 							iLocal_56 = (iLocal_56 - 1);
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_55, "SET_LETTER_TEXT");
-							__LIB_0__::func_610(sLocal_57[iLocal_56]);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sLocal_57[iLocal_56]);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 						}
 						iLocal_58 = 1;
@@ -241,7 +241,7 @@ void func_21()//Position - 0x712
 			iLocal_60 = 1;
 			break;
 		case 1:
-			if (!__LIB_0__::func_39(14) && !CAM::IS_SCREEN_FADED_OUT())
+			if (!__LIB_0__::isGlobal_43052EqualsValue(14) && !CAM::IS_SCREEN_FADED_OUT())
 			{
 				if (func_23(&Local_44, &Local_50) || uLocal_59)
 				{

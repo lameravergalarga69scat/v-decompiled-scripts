@@ -1503,7 +1503,7 @@ void func_21(var uParam0, var uParam1, struct<3> Param2, int iParam3, int iParam
 	}
 	if (bParam5)
 	{
-		if (__LIB_1__::func_800())
+		if (__LIB_1__::setGlobal_1575016_10())
 		{
 			__LIB_37__::func_440(iVar0, 1, 0, 0);
 			return;
@@ -1942,7 +1942,7 @@ int func_177(int iParam0, struct<3> Param1, struct<30> Param2, struct<5> Param3,
 		Global_1573860[5 /*4*/].f_3 = iVar5;
 	}
 	Global_1573885++;
-	if (__LIB_5__::func_133())
+	if (__LIB_5__::getGlobal_2714762_f_692())
 	{
 		Var7 = { __LIB_18__::func_169() };
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(&Var7))

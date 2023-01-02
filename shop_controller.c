@@ -451,7 +451,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else
 			{
-				bLocal_129 = (__LIB_0__::func_39(0) || __LIB_0__::func_39(3));
+				bLocal_129 = (__LIB_0__::isGlobal_43052EqualsValue(0) || __LIB_0__::isGlobal_43052EqualsValue(3));
 			}
 		}
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
@@ -2355,7 +2355,7 @@ int func_142(int iParam0, var uParam1)//Position - 0x83A2
 				func_147(iParam0, "not allowed to change clothes on mission");
 				return 0;
 			}
-			if ((__LIB_0__::func_39(11) || __LIB_0__::func_39(9)) || __LIB_0__::func_39(14))
+			if ((__LIB_0__::isGlobal_43052EqualsValue(11) || __LIB_0__::isGlobal_43052EqualsValue(9)) || __LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 				MISC::SET_BIT(&(Global_100493.f_1393[iParam0]), 13);
 				func_147(iParam0, "on rampage or minigame");
@@ -15914,7 +15914,7 @@ void func_1055()//Position - 0xB3D44
 			else
 			{
 				bVar22 = true;
-				if (((((((((((((((((HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() || __LIB_0__::func_75()) || CAM::IS_SCREEN_FADED_OUT()) || __LIB_0__::func_193()) || __LIB_1__::func_381()) || HUD::IS_PAUSE_MENU_ACTIVE()) || __LIB_3__::func_462(PLAYER::PLAYER_ID())) || !__LIB_0__::func_893()) || __LIB_2__::func_285()) || __LIB_1__::func_16()) || __LIB_0__::func_983()) || NETWORK::NETWORK_IS_IN_MP_CUTSCENE()) || __LIB_1__::func_15(PLAYER::PLAYER_ID())) || !__LIB_1__::func_693(PLAYER::PLAYER_ID(), 1, 1)) || __LIB_1__::func_515()) || NETWORK::NETWORK_IS_ACTIVITY_SESSION()) || __LIB_0__::func_77(0)) || __LIB_1__::func_100())
+				if (((((((((((((((((HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() || __LIB_0__::func_75()) || CAM::IS_SCREEN_FADED_OUT()) || __LIB_0__::func_193()) || __LIB_1__::func_381()) || HUD::IS_PAUSE_MENU_ACTIVE()) || __LIB_3__::func_462(PLAYER::PLAYER_ID())) || !__LIB_0__::func_893()) || __LIB_2__::func_285()) || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_0__::func_983()) || NETWORK::NETWORK_IS_IN_MP_CUTSCENE()) || __LIB_1__::func_15(PLAYER::PLAYER_ID())) || !__LIB_1__::func_693(PLAYER::PLAYER_ID(), 1, 1)) || __LIB_1__::func_515()) || NETWORK::NETWORK_IS_ACTIVITY_SESSION()) || __LIB_0__::func_77(0)) || __LIB_1__::func_100())
 				{
 					bVar22 = false;
 				}
@@ -21355,7 +21355,7 @@ void func_1344()//Position - 0xC84D3
 		}
 		else if (iLocal_109 == 1)
 		{
-			if ((((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_1__::func_16()) && !__LIB_34__::func_659()) || !__LIB_0__::func_855(PLAYER::PLAYER_ID())) || __LIB_0__::func_3() != 0)
+			if ((((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_34__::func_659()) || !__LIB_0__::func_855(PLAYER::PLAYER_ID())) || __LIB_0__::func_3() != 0)
 			{
 				iLocal_109 = 2;
 			}

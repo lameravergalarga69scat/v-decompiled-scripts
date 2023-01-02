@@ -16715,8 +16715,8 @@ void func_835(var uParam0, char* sParam1)//Position - 0xF4DAC
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_1210.f_3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_1210.f_4);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_1210.f_5);
-	__LIB_0__::func_610("CLB_RNKA" /* GXT: TIER */);
-	__LIB_0__::func_610("CLB_RNKB" /* GXT: UP */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CLB_RNKA" /* GXT: TIER */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CLB_RNKB" /* GXT: UP */);
 }
 
 void func_836(var uParam0, var uParam1)//Position - 0xF4E0C

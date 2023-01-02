@@ -41818,7 +41818,7 @@ void func_5586(var uParam0, int iParam1, int iParam2, struct<3> Param3, var uPar
 		Var1 = { 13.7424f, 0f, 145.7582f };
 		fVar2 = 65.2994f;
 		bVar3 = true;
-		if (!__LIB_5__::func_133())
+		if (!__LIB_5__::getGlobal_2714762_f_692())
 		{
 			iVar5 = 0;
 		}

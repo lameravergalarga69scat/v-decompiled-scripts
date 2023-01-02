@@ -282,7 +282,7 @@ int func_4(struct<6> Param0, struct<16> Param1, int iParam2, struct<13> Param3, 
 	}
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (__LIB_1__::func_800())
+		if (__LIB_1__::setGlobal_1575016_10())
 		{
 			__LIB_17__::func_49(iParam2);
 			return 0;
@@ -717,7 +717,7 @@ int func_134(var* uParam0)//Position - 0x3655
 	{
 		return 0;
 	}
-	if (__LIB_13__::func_94() && !__LIB_0__::func_39(12))
+	if (__LIB_13__::func_94() && !__LIB_0__::isGlobal_43052EqualsValue(12))
 	{
 		return 0;
 	}

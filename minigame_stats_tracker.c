@@ -121,7 +121,7 @@ void __EntryFunction__()//Position - 0x0
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						if (!MISC::IS_STRING_NULL(ScriptParam_50.f_9[iVar0 /*7*/].f_5))
 						{
-							__LIB_0__::func_610(ScriptParam_50.f_9[iVar0 /*7*/].f_5);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(ScriptParam_50.f_9[iVar0 /*7*/].f_5);
 						}
 					}
 					else if (ScriptParam_50.f_9[iVar0 /*7*/].f_2 == 8)
@@ -158,11 +158,11 @@ void __EntryFunction__()//Position - 0x0
 						}
 						if (!MISC::IS_STRING_NULL(ScriptParam_50.f_9[iVar0 /*7*/].f_5))
 						{
-							__LIB_0__::func_610(ScriptParam_50.f_9[iVar0 /*7*/].f_5);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(ScriptParam_50.f_9[iVar0 /*7*/].f_5);
 						}
 						if (!MISC::IS_STRING_NULL(ScriptParam_50.f_9[iVar0 /*7*/].f_6))
 						{
-							__LIB_0__::func_610(ScriptParam_50.f_9[iVar0 /*7*/].f_6);
+							__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(ScriptParam_50.f_9[iVar0 /*7*/].f_6);
 						}
 					}
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -174,13 +174,13 @@ void __EntryFunction__()//Position - 0x0
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(ScriptParam_50.f_5);
 					if (!MISC::IS_STRING_NULL(ScriptParam_50.f_5.f_3))
 					{
-						__LIB_0__::func_610(ScriptParam_50.f_5.f_3);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(ScriptParam_50.f_5.f_3);
 					}
 					else
 					{
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(ScriptParam_50.f_5.f_1);
 					}
-					__LIB_0__::func_610(ScriptParam_50.f_5.f_2);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(ScriptParam_50.f_5.f_2);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_46, "DRAW_MENU_LIST");

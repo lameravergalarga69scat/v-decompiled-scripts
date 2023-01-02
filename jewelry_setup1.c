@@ -9379,7 +9379,7 @@ void func_545()//Position - 0x7A897
 						__LIB_0__::func_325();
 					}
 					SYSTEM::SETTIMERB(0);
-					__LIB_2__::func_829(iLocal_156, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(2), -1082130432, -1082130432, -1082130432, -1082130432);
+					__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(iLocal_156, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(2), -1082130432, -1082130432, -1082130432, -1082130432);
 					__LIB_16__::func_287(iLocal_156, "CLOSE_THEN_OPEN_SHUTTER");
 					AUDIO::PLAY_SOUND_FRONTEND(iLocal_93, "Camera_Shoot", "Phone_SoundSet_Glasses_Cam", true);
 					iLocal_98 = MISC::GET_GAME_TIMER();

@@ -26626,7 +26626,7 @@ int func_1615(bool bParam0, bool bParam1, int iParam2, bool bParam3)//Position -
 	{
 		return 0;
 	}
-	if (__LIB_1__::func_16())
+	if (__LIB_1__::getGlobal_2714762_f_691())
 	{
 		return 0;
 	}

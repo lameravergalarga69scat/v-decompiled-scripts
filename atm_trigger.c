@@ -616,7 +616,7 @@ void __EntryFunction__()//Position - 0x0
 		func_99();
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	if (__LIB_0__::func_39(13) || __LIB_0__::func_39(14))
+	if (__LIB_0__::isGlobal_43052EqualsValue(13) || __LIB_0__::isGlobal_43052EqualsValue(14))
 	{
 		func_99();
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -674,7 +674,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID()) == iVar1 && !PED::IS_PED_JUMPING(PLAYER::PLAYER_PED_ID()))
 			{
-				if (!__LIB_0__::func_39(15))
+				if (!__LIB_0__::isGlobal_43052EqualsValue(15))
 				{
 					if (!Global_113386.f_20564.f_100)
 					{
@@ -1725,19 +1725,19 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 		case 0:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_SER" /* GXT: Choose a service. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_SER" /* GXT: Choose a service. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("MPATM_DIDM" /* GXT: Deposit */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_DIDM" /* GXT: Deposit */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("MPATM_WITM" /* GXT: Withdraw */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_WITM" /* GXT: Withdraw */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
-			__LIB_0__::func_610("MPATM_LOG" /* GXT: Transaction Log */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_LOG" /* GXT: Transaction Log */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MENU");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1750,7 +1750,7 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			if (func_29(iParam1) > 13)
 			{
@@ -1763,7 +1763,7 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 		case 4:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_PEND" /* GXT: Transaction Pending */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PEND" /* GXT: Transaction Pending */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1777,7 +1777,7 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 		case 8:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_PEND" /* GXT: Transaction Pending */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PEND" /* GXT: Transaction Pending */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1801,11 +1801,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-				__LIB_0__::func_610("MO_YES" /* GXT: Yes */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_YES" /* GXT: Yes */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-				__LIB_0__::func_610("MO_NO" /* GXT: No */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_NO" /* GXT: No */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1814,11 +1814,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610("MPATM_NODO" /* GXT: You currently have insufficient dollars to make a deposit. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_NODO" /* GXT: You currently have insufficient dollars to make a deposit. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-				__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1835,11 +1835,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-				__LIB_0__::func_610("MO_YES" /* GXT: Yes */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_YES" /* GXT: Yes */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-				__LIB_0__::func_610("MO_NO" /* GXT: No */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_NO" /* GXT: No */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1848,11 +1848,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610("MPATM_NODO2" /* GXT: You currently have fewer dollars in your account than the minimum withdrawal amount. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_NODO2" /* GXT: You currently have fewer dollars in your account than the minimum withdrawal amount. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-				__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1863,11 +1863,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610("MPATM_NODO" /* GXT: You currently have insufficient dollars to make a deposit. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_NODO" /* GXT: You currently have insufficient dollars to make a deposit. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-				__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1876,7 +1876,7 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610("MPATM_DITMT" /* GXT: Select the amount you wish to deposit into this account. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_DITMT" /* GXT: Select the amount you wish to deposit into this account. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				if (MONEY::NETWORK_GET_VC_WALLET_BALANCE(-1) >= func_21(0, 1))
 				{
@@ -1907,7 +1907,7 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
-				__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				if (MONEY::NETWORK_GET_VC_WALLET_BALANCE(-1) >= func_21(3, 1))
 				{
@@ -1949,11 +1949,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("MO_YES" /* GXT: Yes */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_YES" /* GXT: Yes */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("MO_NO" /* GXT: No */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_NO" /* GXT: No */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1963,11 +1963,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610("MPATM_NODO2" /* GXT: You currently have fewer dollars in your account than the minimum withdrawal amount. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_NODO2" /* GXT: You currently have fewer dollars in your account than the minimum withdrawal amount. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-				__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -1976,7 +1976,7 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610("MPATM_WITMT" /* GXT: Select the amount you wish to withdraw from this account. */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_WITMT" /* GXT: Select the amount you wish to withdraw from this account. */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				if (MONEY::NETWORK_GET_VC_BANK_BALANCE() >= func_21(0, 0))
 				{
@@ -2007,7 +2007,7 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 				}
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(4);
-				__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				if (MONEY::NETWORK_GET_VC_BANK_BALANCE() >= func_21(3, 0))
 				{
@@ -2049,11 +2049,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("MO_YES" /* GXT: Yes */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_YES" /* GXT: Yes */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-			__LIB_0__::func_610("MO_NO" /* GXT: No */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MO_NO" /* GXT: No */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -2061,11 +2061,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 		case 10:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_ERR" /* GXT: A network error occurred and your transaction could not be completed. */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_ERR" /* GXT: A network error occurred and your transaction could not be completed. */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -2073,11 +2073,11 @@ void func_26(int iParam0, int iParam1, var uParam2)//Position - 0x2676
 		case 11:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("MPATM_TRANCOM" /* GXT: Transaction Complete */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_TRANCOM" /* GXT: Transaction Complete */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("MPATM_BACK" /* GXT: Back */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_BACK" /* GXT: Back */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam1, "DISPLAY_MESSAGE");
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -2154,10 +2154,10 @@ int func_29(int iParam0)//Position - 0x2FE8
 			switch (Global_2359296[__LIB_0__::func_155() /*5567*/].f_5390.f_115[iVar1])
 			{
 				case 0:
-					__LIB_0__::func_610("MPATM_PLCHLDR_WDR" /* GXT: Cash Withdrawn */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_WDR" /* GXT: Cash Withdrawn */);
 					break;
 				case 1:
-					__LIB_0__::func_610("MPATM_PLCHLDR_CAD" /* GXT: Cash Deposited */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_CAD" /* GXT: Cash Deposited */);
 					break;
 				case 2:
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_CRF" /* GXT: Cash Deposited by: ~a~ */);
@@ -2170,7 +2170,7 @@ int func_29(int iParam0)//Position - 0x2FE8
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 					break;
 				case 4:
-					__LIB_0__::func_610("MPATM_PLCHLDR_BRT" /* GXT: Virtual Currency Bought */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_BRT" /* GXT: Virtual Currency Bought */);
 					break;
 				case 5:
 					if (Global_2359296[__LIB_0__::func_155() /*5567*/].f_5390.f_132[iVar1] != 0)
@@ -2179,43 +2179,43 @@ int func_29(int iParam0)//Position - 0x2FE8
 						switch (iVar4)
 						{
 							case joaat("MONEY_SPENT_CONTACT_SERVICE"):
-								__LIB_0__::func_610("MONEY_SPENT_CONTACT_SERVICE" /* GXT: Spent on contact services */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_CONTACT_SERVICE" /* GXT: Spent on contact services */);
 								break;
 							case joaat("MONEY_SPENT_PROPERTY_UTIL"):
-								__LIB_0__::func_610("MONEY_SPENT_PROPERTY_UTIL" /* GXT: Spent on property & utilities */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_PROPERTY_UTIL" /* GXT: Spent on property & utilities */);
 								break;
 							case joaat("MONEY_SPENT_JOB_ACTIVITY"):
-								__LIB_0__::func_610("MONEY_SPENT_JOB_ACTIVITY" /* GXT: Spent on Job & Activity entry fees */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_JOB_ACTIVITY" /* GXT: Spent on Job & Activity entry fees */);
 								break;
 							case joaat("MONEY_SPENT_BETTING"):
-								__LIB_0__::func_610("MONEY_SPENT_BETTING" /* GXT: Spent on betting */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_BETTING" /* GXT: Spent on betting */);
 								break;
 							case joaat("MONEY_SPENT_STYLE_ENT"):
-								__LIB_0__::func_610("MONEY_SPENT_STYLE_ENT" /* GXT: Spent on style & entertainment */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_STYLE_ENT" /* GXT: Spent on style & entertainment */);
 								break;
 							case joaat("MONEY_SPENT_HEALTHCARE"):
-								__LIB_0__::func_610("MONEY_SPENT_HEALTHCARE" /* GXT: Spent on healthcare & bail */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_HEALTHCARE" /* GXT: Spent on healthcare & bail */);
 								break;
 							case joaat("MONEY_SPENT_FROM_DEBUG"):
-								__LIB_0__::func_610("MONEY_SPENT_FROM_DEBUG");
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_FROM_DEBUG");
 								break;
 							case joaat("MONEY_SPENT_DROPPED_STOLEN"):
-								__LIB_0__::func_610("MONEY_SPENT_DROPPED_STOLEN" /* GXT: Dropped or stolen */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_DROPPED_STOLEN" /* GXT: Dropped or stolen */);
 								break;
 							case joaat("MONEY_SPENT_VEH_MAINTENANCE"):
-								__LIB_0__::func_610("MONEY_SPENT_VEH_MAINTENANCE" /* GXT: Spent on vehicles & maintenance */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_VEH_MAINTENANCE" /* GXT: Spent on vehicles & maintenance */);
 								break;
 							case joaat("MONEY_SPENT_HOLDUPS"):
-								__LIB_0__::func_610("MONEY_SPENT_HOLDUPS");
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_HOLDUPS");
 								break;
 							case joaat("MONEY_SPENT_PASSIVEMODE"):
-								__LIB_0__::func_610("MONEY_SPENT_PASSIVEMODE" /* GXT: Spent on contact services */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_SPENT_PASSIVEMODE" /* GXT: Spent on contact services */);
 								break;
 						}
 					}
 					else
 					{
-						__LIB_0__::func_610("MPATM_PLCHLDR_PRCH" /* GXT: Purchase */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_PRCH" /* GXT: Purchase */);
 					}
 					break;
 				case 6:
@@ -2225,43 +2225,43 @@ int func_29(int iParam0)//Position - 0x2FE8
 						switch (iVar5)
 						{
 							case joaat("MONEY_EARN_JOBS"):
-								__LIB_0__::func_610("MONEY_EARN_JOBS" /* GXT: Earned from Jobs */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_JOBS" /* GXT: Earned from Jobs */);
 								break;
 							case joaat("MONEY_EARN_SELLING_VEH"):
-								__LIB_0__::func_610("MONEY_EARN_SELLING_VEH" /* GXT: Earned from selling vehicles */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_SELLING_VEH" /* GXT: Earned from selling vehicles */);
 								break;
 							case joaat("MONEY_EARN_BETTING"):
-								__LIB_0__::func_610("MONEY_EARN_BETTING" /* GXT: Earned from betting */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_BETTING" /* GXT: Earned from betting */);
 								break;
 							case joaat("MONEY_EARN_GOOD_SPORT"):
-								__LIB_0__::func_610("MONEY_EARN_GOOD_SPORT" /* GXT: Earned from Good Sport reward */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_GOOD_SPORT" /* GXT: Earned from Good Sport reward */);
 								break;
 							case joaat("MONEY_EARN_PICKED_UP"):
-								__LIB_0__::func_610("MONEY_EARN_PICKED_UP" /* GXT: Picked up */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_PICKED_UP" /* GXT: Picked up */);
 								break;
 							case joaat("MONEY_EARN_SHARED"):
-								__LIB_0__::func_610("MONEY_EARN_SHARED" /* GXT: Received from others */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_SHARED" /* GXT: Received from others */);
 								break;
 							case joaat("MONEY_EARN_JOBSHARED"):
-								__LIB_0__::func_610("MONEY_EARN_JOBSHARED" /* GXT: Job cash shared by others */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_JOBSHARED" /* GXT: Job cash shared by others */);
 								break;
 							case joaat("MONEY_EARN_ROCKSTAR_AWARD"):
-								__LIB_0__::func_610("MONEY_EARN_ROCKSTAR_AWARD" /* GXT: Received from Rockstar */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_ROCKSTAR_AWARD" /* GXT: Received from Rockstar */);
 								break;
 							case joaat("MONEY_EARN_REFUND"):
-								__LIB_0__::func_610("MONEY_EARN_REFUND" /* GXT: Cash refunded */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_REFUND" /* GXT: Cash refunded */);
 								break;
 							case joaat("MONEY_EARN_FROM_JOB_BONUS"):
-								__LIB_0__::func_610("MONEY_EARN_JOB_BONUS" /* GXT: Cash earned as a Job Bonus */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_JOB_BONUS" /* GXT: Cash earned as a Job Bonus */);
 								break;
 							case joaat("MONEY_EARN_FROM_HEIST_JOB"):
-								__LIB_0__::func_610("MONEY_EARN_HEIST_JOB" /* GXT: Cash earned on Heist */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MONEY_EARN_HEIST_JOB" /* GXT: Cash earned on Heist */);
 								break;
 						}
 					}
 					else
 					{
-						__LIB_0__::func_610("MPATM_PLCHLDR_REF" /* GXT: Refund */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_PLCHLDR_REF" /* GXT: Refund */);
 					}
 					break;
 			}
@@ -2293,37 +2293,37 @@ void func_32(int iParam0)//Position - 0x33EA
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-	__LIB_0__::func_610("W_BA_LGOF" /* GXT: Log off */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("W_BA_LGOF" /* GXT: Log off */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	switch (iVar0)
 	{
 		case 0:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("ACCNA_MIKE" /* GXT: Michael De Santa */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACCNA_MIKE" /* GXT: Michael De Santa */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 2:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("ACCNA_TREVOR" /* GXT: Trevor Philips */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACCNA_TREVOR" /* GXT: Trevor Philips */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 		case 1:
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-			__LIB_0__::func_610("ACCNA_FRANKLIN" /* GXT: Franklin Clinton */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("ACCNA_FRANKLIN" /* GXT: Franklin Clinton */);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			break;
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);
-	__LIB_0__::func_610("W_BA_ATL" /* GXT: Account Transactions */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("W_BA_ATL" /* GXT: Account Transactions */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT(SYSTEM::TO_FLOAT(Global_60328_SPN_TOTAL_CASH[iVar0]));
-	__LIB_0__::func_610("W_BA_BAL" /* GXT: Balance */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("W_BA_BAL" /* GXT: Balance */);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	iVar1 = 4;
 	iVar2 = 0;
@@ -2353,7 +2353,7 @@ void func_32(int iParam0)//Position - 0x33EA
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_113386.f_20564.f_233[iVar0 /*69*/].f_2[iVar5 /*6*/].f_2);
-			__LIB_0__::func_610(__LIB_14__::func_618(Global_113386.f_20564.f_233[iVar0 /*69*/].f_2[iVar5 /*6*/].f_1));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_14__::func_618(Global_113386.f_20564.f_233[iVar0 /*69*/].f_2[iVar5 /*6*/].f_1));
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			iVar5 = (iVar5 - 1);
 			iVar1++;
@@ -2429,7 +2429,7 @@ void func_53(bool bParam0, bool bParam1)//Position - 0x4277
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_529, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 		__LIB_0__::func_700(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/, true));
-		__LIB_0__::func_610("MPATM_SELECT" /* GXT: Select */);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_SELECT" /* GXT: Select */);
 		if (MISC::IS_PC_VERSION())
 		{
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -2453,7 +2453,7 @@ void func_53(bool bParam0, bool bParam1)//Position - 0x4277
 			{
 				__LIB_0__::func_700(PAD::GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 7, true));
 			}
-			__LIB_0__::func_610("MPATM_NAV" /* GXT: Scroll */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_NAV" /* GXT: Scroll */);
 			if (MISC::IS_PC_VERSION())
 			{
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
@@ -2466,7 +2466,7 @@ void func_53(bool bParam0, bool bParam1)//Position - 0x4277
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_529, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 	__LIB_0__::func_700(PAD::GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/, true));
-	__LIB_0__::func_610("MPATM_EXIT" /* GXT: Exit */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPATM_EXIT" /* GXT: Exit */);
 	if (MISC::IS_PC_VERSION())
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);

@@ -3832,7 +3832,7 @@ void func_309(int iParam0, int iParam1)//Position - 0x29358
 			}
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("clothes_shop_sp") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("lester1")) == 0 && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael4")) == 0))
 			{
-				if (iParam1 || ((((((!__LIB_0__::func_39(0) && !__LIB_0__::func_39(1)) && !__LIB_0__::func_39(2)) && !__LIB_0__::func_39(3)) && !__LIB_0__::func_39(4)) && !__LIB_0__::func_39(9)) && !__LIB_0__::func_39(10)))
+				if (iParam1 || ((((((!__LIB_0__::isGlobal_43052EqualsValue(0) && !__LIB_0__::isGlobal_43052EqualsValue(1)) && !__LIB_0__::isGlobal_43052EqualsValue(2)) && !__LIB_0__::isGlobal_43052EqualsValue(3)) && !__LIB_0__::isGlobal_43052EqualsValue(4)) && !__LIB_0__::isGlobal_43052EqualsValue(9)) && !__LIB_0__::isGlobal_43052EqualsValue(10)))
 				{
 					Global_113386.f_2363.f_539[bVar0 /*65*/] = { Var2 };
 					Global_113386.f_2363.f_539.f_2391[bVar0] = __LIB_0__::func_407(iParam0);
@@ -10135,11 +10135,11 @@ void func_695()//Position - 0x7866F
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 		if (CLOCK::GET_CLOCK_HOURS() >= 0 && CLOCK::GET_CLOCK_HOURS() < 12)
 		{
-			__LIB_0__::func_610("LSH_TIMEAM" /* GXT: ~s~AM */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LSH_TIMEAM" /* GXT: ~s~AM */);
 		}
 		else
 		{
-			__LIB_0__::func_610("LSH_TIMEPM" /* GXT: ~s~PM */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LSH_TIMEPM" /* GXT: ~s~PM */);
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_1467, 255, 255, 255, 255, 0);
@@ -10172,10 +10172,10 @@ void func_695()//Position - 0x7866F
 					WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(PLAYER::PLAYER_PED_ID(), false, true, true, false);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(PLAYER::PLAYER_PED_ID(), false, false);
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_1467, "SET_DETAILS");
-					__LIB_0__::func_610("LSH_CAMDETAILS" /* GXT: ~s~CAM: 02 */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LSH_CAMDETAILS" /* GXT: ~s~CAM: 02 */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_1467, "SET_LOCATION");
-					__LIB_0__::func_610("LSH_CAMLOCALE" /* GXT: ~s~FRONT DOOR */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("LSH_CAMLOCALE" /* GXT: ~s~FRONT DOOR */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 					CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 					__LIB_0__::func_532(1, 1, 1, 0, 0, 0, 0);

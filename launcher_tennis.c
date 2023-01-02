@@ -319,7 +319,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (iLocal_78 != 263)
 						{
-							if (__LIB_0__::func_39(6) && !__LIB_15__::func_276(iLocal_78))
+							if (__LIB_0__::isGlobal_43052EqualsValue(6) && !__LIB_15__::func_276(iLocal_78))
 							{
 							}
 							else
@@ -480,7 +480,7 @@ void __EntryFunction__()//Position - 0x0
 						bVar0 = false;
 						if (__LIB_0__::func_703(uLocal_67, 1))
 						{
-							if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+							if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 							{
 								iVar3 = 1;
 								bVar0 = true;
@@ -809,7 +809,7 @@ void func_131(int iParam0)//Position - 0x1B7BA
 
 int func_132()//Position - 0x1B7FD
 {
-	if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+	if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 	{
 		return 1;
 	}
@@ -818,7 +818,7 @@ int func_132()//Position - 0x1B7FD
 
 int func_149()//Position - 0x1BC26
 {
-	if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+	if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 		{
@@ -914,7 +914,7 @@ int func_168(int iParam0)//Position - 0x1C880
 			return 1;
 			break;
 		case 1:
-			if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+			if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 			{
 				return 1;
 			}
@@ -1146,7 +1146,7 @@ void func_184()//Position - 0x1CE37
 			fLocal_89 = 5f;
 			break;
 	}
-	if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+	if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 	{
 		iLocal_76 = 0;
 	}

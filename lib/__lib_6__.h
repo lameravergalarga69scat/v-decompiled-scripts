@@ -9956,7 +9956,7 @@ void func_236()//Position - 0x1FC027
 
 int func_237()//Position - 0x1FC03B
 {
-	if (__LIB_1__::func_800())
+	if (__LIB_1__::setGlobal_1575016_10())
 	{
 		return 1;
 	}
@@ -17564,7 +17564,7 @@ void func_405(int* iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 					}
 					if (Global_23150.f_5404[iVar1] == -1)
 					{
-						__LIB_0__::func_610(&(Global_23150.f_5355[iVar1 /*4*/]));
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_23150.f_5355[iVar1 /*4*/]));
 					}
 					else
 					{
@@ -17608,7 +17608,7 @@ void func_405(int* iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				__LIB_0__::func_700(&Global_4539885);
 				if (Global_4539885.f_20 == -1)
 				{
-					__LIB_0__::func_610(&(Global_4539885.f_16));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4539885.f_16));
 				}
 				else
 				{

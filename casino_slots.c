@@ -1459,7 +1459,7 @@ int func_49(int iParam0, int iParam1)//Position - 0x24CB
 void func_50(char* sParam0)//Position - 0x2546
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Local_254.f_0, "SET_MESSAGE");
-	__LIB_0__::func_610(sParam0);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -3040,7 +3040,7 @@ int func_198(int iParam0)//Position - 0x8494
 		StringCopy(&Var0, "SLOTS_ENTERB" /* GXT: You can't play this Slot machine at this time. */, 24);
 		bVar1 = true;
 	}
-	if ((((__LIB_1__::func_16() || __LIB_1__::func_648()) || __LIB_0__::func_626()) || CAM::IS_SCREEN_FADED_OUT()) || CAM::IS_SCREEN_FADING_OUT())
+	if ((((__LIB_1__::getGlobal_2714762_f_691() || __LIB_1__::func_648()) || __LIB_0__::func_626()) || CAM::IS_SCREEN_FADED_OUT()) || CAM::IS_SCREEN_FADING_OUT())
 	{
 		bVar1 = true;
 		MISC::SET_BIT(&uLocal_217, 6);
@@ -4008,7 +4008,7 @@ int func_311()//Position - 0xFFE4
 	struct<3> Var5;
 	float fVar6;
 	int iVar7;
-	if ((((((((((((((((__LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1) && __LIB_4__::func_850(PLAYER::PLAYER_PED_ID()) <= 9) && !Global_2667225.f_2681) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && !BitTest(Global_1946250.f_4, 2)) && !__LIB_0__::func_877()) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !HUD::IS_STORE_PENDING_NETWORK_SHUTDOWN_TO_OPEN()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !__LIB_0__::func_104(1)) && !__LIB_3__::func_558()) && !__LIB_1__::func_16()) && !__LIB_0__::func_626()) && !CAM::IS_SCREEN_FADED_OUT()) && !CAM::IS_SCREEN_FADING_OUT()) && !Global_2725439.f_12) && Global_1946244 != 33)
+	if ((((((((((((((((__LIB_0__::func_156(PLAYER::PLAYER_ID(), 1, 1) && __LIB_4__::func_850(PLAYER::PLAYER_PED_ID()) <= 9) && !Global_2667225.f_2681) && !PED::IS_PED_RAGDOLL(PLAYER::PLAYER_PED_ID())) && !BitTest(Global_1946250.f_4, 2)) && !__LIB_0__::func_877()) && !NETWORK::IS_COMMERCE_STORE_OPEN()) && !HUD::IS_STORE_PENDING_NETWORK_SHUTDOWN_TO_OPEN()) && !STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS()) && !__LIB_0__::func_104(1)) && !__LIB_3__::func_558()) && !__LIB_1__::getGlobal_2714762_f_691()) && !__LIB_0__::func_626()) && !CAM::IS_SCREEN_FADED_OUT()) && !CAM::IS_SCREEN_FADING_OUT()) && !Global_2725439.f_12) && Global_1946244 != 33)
 	{
 		if (iLocal_262 < 0)
 		{

@@ -322,7 +322,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (iLocal_77 != 263)
 						{
-							if (__LIB_0__::func_39(6) && !__LIB_15__::func_276(iLocal_77))
+							if (__LIB_0__::isGlobal_43052EqualsValue(6) && !__LIB_15__::func_276(iLocal_77))
 							{
 							}
 							else
@@ -476,7 +476,7 @@ void __EntryFunction__()//Position - 0x0
 						bVar0 = false;
 						if (__LIB_0__::func_703(uLocal_66, 1))
 						{
-							if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+							if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 							{
 								iVar4 = 1;
 								bVar0 = true;
@@ -735,7 +735,7 @@ int func_72(int iParam0)//Position - 0x221E
 			return 1;
 			break;
 		case 1:
-			if (__LIB_0__::func_39(6) || __LIB_0__::func_39(7))
+			if (__LIB_0__::isGlobal_43052EqualsValue(6) || __LIB_0__::isGlobal_43052EqualsValue(7))
 			{
 				return 1;
 			}

@@ -2395,7 +2395,7 @@ void func_102(int* iParam0, var uParam1, int* iParam2, var uParam3)//Position - 
 			{
 				func_149(iParam0, uParam1, iParam2, uParam3, 0);
 			}
-			if ((__LIB_5__::func_133() == 1 || __LIB_1__::func_16() == 1) || __LIB_3__::func_366())
+			if ((__LIB_5__::getGlobal_2714762_f_692() == 1 || __LIB_1__::getGlobal_2714762_f_691() == 1) || __LIB_3__::func_366())
 			{
 				__LIB_10__::func_773(iParam0, 2, 0);
 			}
@@ -47421,8 +47421,8 @@ int func_6096(var uParam0, int* iParam1, int* iParam2, var uParam3)//Position - 
 				if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iParam2->f_7))
 				{
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_TEXT");
-					__LIB_0__::func_610("MPTV_CETTL" /* GXT: CRIMINAL ESCAPED */);
-					__LIB_0__::func_610("MPTV_CESTTL" /* GXT: Police have lost the trail */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CETTL" /* GXT: CRIMINAL ESCAPED */);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CESTTL" /* GXT: Police have lost the trail */);
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				}
 				iParam2->f_5 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", false);
@@ -47657,32 +47657,32 @@ int func_6096(var uParam0, int* iParam1, int* iParam2, var uParam3)//Position - 
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_LOCATION");
 							if (iParam2->f_27 == 3)
 							{
-								__LIB_0__::func_610("MPTV_CCTV3" /* GXT: GARAGE 22 - 06 - 84 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV3" /* GXT: GARAGE 22 - 06 - 84 */);
 							}
 							else if (iParam2->f_27 == 1)
 							{
 								if (__LIB_1__::func_597(uParam3->f_31))
 								{
-									__LIB_0__::func_610("MPTV_CCTV7" /* GXT: ROOF 04 - 11 - 87 */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV7" /* GXT: ROOF 04 - 11 - 87 */);
 								}
 								else
 								{
-									__LIB_0__::func_610("MPTV_CCTV6" /* GXT: GARAGE DOOR 04 - 11 - 87 */);
+									__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV6" /* GXT: GARAGE DOOR 04 - 11 - 87 */);
 								}
 							}
 							else
 							{
-								__LIB_0__::func_610("MPTV_CCTV0" /* GXT: MAIN DOOR 04 - 11 - 87 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV0" /* GXT: MAIN DOOR 04 - 11 - 87 */);
 							}
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_DETAILS");
 							if (iParam2->f_27 == 3)
 							{
-								__LIB_0__::func_610("MPTV_CCTV4" /* GXT: 38 : 06 : 35    5N/0BR2 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV4" /* GXT: 38 : 06 : 35    5N/0BR2 */);
 							}
 							else
 							{
-								__LIB_0__::func_610("MPTV_CCTV1" /* GXT: 38 : 06 : 35    5N/0BR2 */);
+								__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MPTV_CCTV1" /* GXT: 38 : 06 : 35    5N/0BR2 */);
 							}
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam2->f_7, "SET_TIME");
@@ -50362,7 +50362,7 @@ void func_6301(var uParam0, int iParam1)//Position - 0x1F5285
 																GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar15);
 																if (iVar25 == 0 && HUD::DOES_TEXT_LABEL_EXIST(&(Global_1837216[bVar24 /*16*/])))
 																{
-																	__LIB_0__::func_610(&(Global_1837216[bVar24 /*16*/]));
+																	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(Global_1837216[bVar24 /*16*/]));
 																}
 																else
 																{
@@ -50846,7 +50846,7 @@ void func_6455(var uParam0, bool bParam1, int iParam2)//Position - 0x1FB21E
 		{
 			__LIB_10__::func_909(uParam0, __LIB_10__::func_925(&(uParam0->f_47), iVar0, iVar1));
 			__LIB_11__::func_781(&(uParam0->f_1), CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), 1);
-			if ((iParam2 && !__LIB_5__::func_133()) && __LIB_10__::func_388() != 2)
+			if ((iParam2 && !__LIB_5__::getGlobal_2714762_f_692()) && __LIB_10__::func_388() != 2)
 			{
 				CAM::DO_SCREEN_FADE_OUT(0);
 			}
@@ -56680,7 +56680,7 @@ void func_6749(var uParam0, int* iParam1, int* iParam2, var uParam3, int iParam4
 					}
 					bVar0 = true;
 					MISC::SET_BIT(iParam2, 11);
-					if ((__LIB_0__::func_983() && !__LIB_5__::func_133()) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION())
+					if ((__LIB_0__::func_983() && !__LIB_5__::getGlobal_2714762_f_692()) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 					{
 						AUDIO::START_AUDIO_SCENE("DLC_MPHEIST_LOBBY_FADE_IN_RADIO_SCENE");
 					}

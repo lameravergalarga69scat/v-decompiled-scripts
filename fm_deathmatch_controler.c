@@ -40852,7 +40852,7 @@ void func_4362(var uParam0, var uParam1, var uParam2)//Position - 0x18ABA8
 		}
 		if (__LIB_18__::func_266(uParam0))
 		{
-			if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_0__::func_39(14))
+			if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && __LIB_0__::isGlobal_43052EqualsValue(14))
 			{
 				iVar0 = ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID());
 				if ((((iVar0 == joaat("Player_Zero") || iVar0 == joaat("Player_One")) || iVar0 == joaat("Player_Two")) || iVar0 == joaat("MP_F_Freemode_01")) || iVar0 == joaat("MP_M_Freemode_01"))
@@ -85582,7 +85582,7 @@ int func_9471(var uParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 		bVar1 = __LIB_22__::func_21(uParam0);
 		if (!Global_1575058 && !bVar1)
 		{
-			if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || __LIB_1__::func_16()) || __LIB_5__::func_133()) || __LIB_18__::func_363())
+			if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_5__::getGlobal_2714762_f_692()) || __LIB_18__::func_363())
 			{
 				if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 				{
@@ -87145,7 +87145,7 @@ void func_9627(var uParam0, var uParam1, bool bParam2)//Position - 0x2E992E
 				}
 				else
 				{
-					__LIB_0__::func_610(sVar3);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(sVar3);
 				}
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("");
@@ -87234,7 +87234,7 @@ void func_9627(var uParam0, var uParam1, bool bParam2)//Position - 0x2E992E
 				{
 					if (bVar0 == 0)
 					{
-						__LIB_0__::func_610("FM_NXT_RNDM" /* GXT: Random */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("FM_NXT_RNDM" /* GXT: Random */);
 						bVar6 = true;
 						fVar17 = 1f;
 						fVar16 = 1f;

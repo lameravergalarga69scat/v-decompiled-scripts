@@ -192,7 +192,7 @@ int func_13(int iParam0)//Position - 0x4DD842
 	struct<10> Var0;
 	var uVar1;
 	var uVar2;
-	if (!__LIB_5__::func_133())
+	if (!__LIB_5__::getGlobal_2714762_f_692())
 	{
 		return 0;
 	}
@@ -1663,7 +1663,7 @@ int func_70()//Position - 0x4EDB66
 	return Global_1937518.f_3;
 }
 
-void func_71()//Position - 0x4EDC9F
+void initGlobal_2656879()//Position - 0x4EDC9F
 {
 	struct<35> Var0;
 	Var0.f_18 = -1;
@@ -19966,7 +19966,7 @@ int func_855(bool bParam0)//Position - 0x36B9A9
 
 int func_856(int iParam0)//Position - 0x36F181
 {
-	if ((((((((((((__LIB_0__::func_75() || CAM::IS_SCREEN_FADED_OUT()) || __LIB_0__::func_193()) || __LIB_1__::func_381()) || HUD::IS_PAUSE_MENU_ACTIVE()) || __LIB_3__::func_462(PLAYER::PLAYER_ID())) || !__LIB_0__::func_893()) || __LIB_2__::func_285()) || __LIB_1__::func_16()) || __LIB_0__::func_983()) || !__LIB_1__::func_693(PLAYER::PLAYER_ID(), 1, 1)) || __LIB_1__::func_515()) || HUD::IS_RADAR_HIDDEN())
+	if ((((((((((((__LIB_0__::func_75() || CAM::IS_SCREEN_FADED_OUT()) || __LIB_0__::func_193()) || __LIB_1__::func_381()) || HUD::IS_PAUSE_MENU_ACTIVE()) || __LIB_3__::func_462(PLAYER::PLAYER_ID())) || !__LIB_0__::func_893()) || __LIB_2__::func_285()) || __LIB_1__::getGlobal_2714762_f_691()) || __LIB_0__::func_983()) || !__LIB_1__::func_693(PLAYER::PLAYER_ID(), 1, 1)) || __LIB_1__::func_515()) || HUD::IS_RADAR_HIDDEN())
 	{
 		return 0;
 	}
@@ -20352,7 +20352,7 @@ void func_875()//Position - 0x3BAD83
 		{
 			if (!MISC::IS_PC_VERSION())
 			{
-				__LIB_2__::func_845(Global_20247, "SET_SOFT_KEYS", 1f, 1f, 8f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
+				__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_SOFT_KEYS", 1f, 1f, 8f, -1f, -1f, "CELL_201" /* GXT: CALL */, 0, 0, 0, 0);
 				MISC::SET_BIT(&(Global_2815059.f_1795), 15);
 			}
 		}
@@ -20375,7 +20375,7 @@ int func_876(int iParam0, int iParam1)//Position - 0x3BCB4C
 
 int func_877()//Position - 0x3BEC4C
 {
-	if ((NETWORK::NETWORK_IS_ACTIVITY_SESSION() && ((__LIB_1__::func_16() || __LIB_5__::func_133()) || (__LIB_0__::func_983() && __LIB_1__::func_19() <= 21))) && __LIB_1__::func_675())
+	if ((NETWORK::NETWORK_IS_ACTIVITY_SESSION() && ((__LIB_1__::getGlobal_2714762_f_691() || __LIB_5__::getGlobal_2714762_f_692()) || (__LIB_0__::func_983() && __LIB_1__::func_19() <= 21))) && __LIB_1__::func_675())
 	{
 		return 1;
 	}
@@ -20658,7 +20658,7 @@ int func_890()//Position - 0x40C2D8
 			{
 				if (PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
 				{
-					if ((!__LIB_0__::func_194(8, -1) && !__LIB_5__::func_133()) && !__LIB_0__::func_629())
+					if ((!__LIB_0__::func_194(8, -1) && !__LIB_5__::getGlobal_2714762_f_692()) && !__LIB_0__::func_629())
 					{
 						return 1;
 					}
@@ -22017,7 +22017,7 @@ void func_950(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	}
 	iVar0 = Global_1659366[iParam0 /*11*/].f_2;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iVar0, "SET_MISSION_NAME");
-	__LIB_0__::func_610(__LIB_18__::func_341(iParam1, -1));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(__LIB_18__::func_341(iParam1, -1));
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iVar0, "SET_PLAYERS_NEEDED");
 	HUD::SET_COLOUR_OF_NEXT_TEXT_COMPONENT(iParam3);
@@ -22613,7 +22613,7 @@ void func_976(var uParam0)//Position - 0x5748F2
 			__LIB_26__::func_520(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(__LIB_1__::func_4()), &cVar0);
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(uParam0->f_47.f_1471, "ADD_TICKER_TEXT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("SPEC_CRWT" /* GXT: Currently Watching */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("SPEC_CRWT" /* GXT: Currently Watching */);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 			__LIB_0__::func_700(PLAYER::GET_PLAYER_NAME(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(__LIB_1__::func_4())));
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(2);

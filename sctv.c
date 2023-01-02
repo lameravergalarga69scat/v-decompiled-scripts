@@ -21831,7 +21831,7 @@ bool func_5418()//Position - 0x1B07D6
 
 void func_5419()//Position - 0x1B07E2
 {
-	if (__LIB_1__::func_16() && !__LIB_0__::func_893())
+	if (__LIB_1__::getGlobal_2714762_f_691() && !__LIB_0__::func_893())
 	{
 		return;
 	}

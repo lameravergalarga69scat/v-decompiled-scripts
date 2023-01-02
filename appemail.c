@@ -150,7 +150,7 @@ void __EntryFunction__()//Position - 0x0
 					iLocal_53 = 1;
 					func_66(Global_20247, iLocal_51);
 					__LIB_13__::func_91(Global_20247, "SET_HEADER", "EM_INBOX", 0, 0, 0, 0);
-					__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 8f, -1082130432, -1082130432, -1082130432, -1082130432);
+					__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 8f, -1082130432, -1082130432, -1082130432, -1082130432);
 				}
 				else
 				{
@@ -170,7 +170,7 @@ void __EntryFunction__()//Position - 0x0
 								iLocal_67 = 0;
 								fLocal_66 = 0f;
 							}
-							__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", 8f, -1082130432, -1082130432, -1082130432, -1082130432);
+							__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", 8f, -1082130432, -1082130432, -1082130432, -1082130432);
 							iVar0 = func_66(Global_20247, iLocal_51);
 							__LIB_13__::func_91(Global_20247, "SET_HEADER", "EM_INBOX", 0, 0, 0, 0);
 							iLocal_55 = 0;
@@ -184,13 +184,13 @@ void __EntryFunction__()//Position - 0x0
 							}
 							func_77(1);
 							func_75(0);
-							__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 8f, fLocal_66, -1082130432, -1082130432, -1082130432);
+							__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 8f, fLocal_66, -1082130432, -1082130432, -1082130432);
 						}
 						else
 						{
-							__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
+							__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
 							SYSTEM::WAIT(0);
-							__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
+							__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
 							SYSTEM::WAIT(0);
 							func_77(1);
 							func_63();
@@ -241,17 +241,17 @@ void __EntryFunction__()//Position - 0x0
 									}
 									func_75(0);
 								}
-								__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
+								__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
 							}
 							else
 							{
-								__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
+								__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
 								SYSTEM::WAIT(0);
-								__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
+								__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 21f, -1082130432, -1082130432, -1082130432, -1082130432);
 								SYSTEM::WAIT(0);
-								__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
+								__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
 								func_40(Global_20247, iLocal_51, iLocal_56);
-								__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
+								__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
 							}
 						}
 						iLocal_54 = 0;
@@ -963,11 +963,11 @@ void func_40(int iParam0, int iParam1, int iParam2)//Position - 0x3209
 			GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610("");
-			__LIB_0__::func_610("");
-			__LIB_0__::func_610("EM_RESPONSE_NEW" /* GXT: Response: */);
-			__LIB_0__::func_610(&Var10);
-			__LIB_0__::func_610(func_42(Global_44257[iVar8 /*12*/].f_2));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("EM_RESPONSE_NEW" /* GXT: Response: */);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var10);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_42(Global_44257[iVar8 /*12*/].f_2));
 			func_41(iVar8, Global_44257[iVar8 /*12*/].f_2);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			iVar6++;
@@ -1553,11 +1553,11 @@ void func_56(int iParam0, int iParam1, int iParam2)//Position - 0x4261
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-		__LIB_0__::func_610(func_59(Global_44257[iVar6 /*12*/].f_3));
-		__LIB_0__::func_610(func_59(Global_44257[iVar6 /*12*/].f_2));
-		__LIB_0__::func_610(&Var7);
-		__LIB_0__::func_610(&Var8);
-		__LIB_0__::func_610(func_42(Global_44257[iVar6 /*12*/].f_2));
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iVar6 /*12*/].f_3));
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iVar6 /*12*/].f_2));
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var7);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var8);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_42(Global_44257[iVar6 /*12*/].f_2));
 		func_41(iVar6, Global_44257[iVar6 /*12*/].f_2);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		if (Global_44257[iVar6 /*12*/].f_4 == 0)
@@ -1587,11 +1587,11 @@ void func_56(int iParam0, int iParam1, int iParam2)//Position - 0x4261
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar11 + 1);
-				__LIB_0__::func_610(func_59(iVar12));
-				__LIB_0__::func_610(func_59(Global_44257[iVar6 /*12*/].f_2));
-				__LIB_0__::func_610(&Var7);
-				__LIB_0__::func_610(&Var8);
-				__LIB_0__::func_610(func_42(Global_44257[iVar6 /*12*/].f_2));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(iVar12));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iVar6 /*12*/].f_2));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var7);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var8);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_42(Global_44257[iVar6 /*12*/].f_2));
 				func_41(iVar6, Global_44257[iVar6 /*12*/].f_2);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				iVar10 = (iVar10 - 1);
@@ -1645,9 +1645,9 @@ void func_56(int iParam0, int iParam1, int iParam2)//Position - 0x4261
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610(func_59(Global_44257[iVar15 /*12*/].f_3));
-				__LIB_0__::func_610(func_59(Global_44257[iVar15 /*12*/].f_2));
-				__LIB_0__::func_610(&Var17);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iVar15 /*12*/].f_3));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iVar15 /*12*/].f_2));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var17);
 				if (Global_53557[iVar13 /*203*/].f_10[iVar3 /*48*/].f_6 > 0)
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&Var18);
@@ -1662,9 +1662,9 @@ void func_56(int iParam0, int iParam1, int iParam2)//Position - 0x4261
 				}
 				else
 				{
-					__LIB_0__::func_610(&Var18);
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var18);
 				}
-				__LIB_0__::func_610(func_42(Global_44257[iVar15 /*12*/].f_2));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_42(Global_44257[iVar15 /*12*/].f_2));
 				func_41(iVar15, Global_44257[iVar15 /*12*/].f_2);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
@@ -1706,12 +1706,12 @@ int func_57(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x46
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(9);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
-	__LIB_0__::func_610(func_59(Global_44257[iParam3 /*12*/].f_3));
-	__LIB_0__::func_610(func_59(Global_44257[iParam3 /*12*/].f_2));
-	__LIB_0__::func_610(&Var3);
-	__LIB_0__::func_610(&Var4);
-	__LIB_0__::func_610(func_42(Global_44257[iParam3 /*12*/].f_2));
-	__LIB_0__::func_610("");
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iParam3 /*12*/].f_3));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iParam3 /*12*/].f_2));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var3);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var4);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_42(Global_44257[iParam3 /*12*/].f_2));
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -2215,8 +2215,8 @@ int func_66(int iParam0, int iParam1)//Position - 0x4FC3
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
 			GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-			__LIB_0__::func_610(func_59(Global_44257[iVar6 /*12*/].f_2));
-			__LIB_0__::func_610(&sVar8);
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iVar6 /*12*/].f_2));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&sVar8);
 			GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 		}
 		else
@@ -2262,8 +2262,8 @@ int func_66(int iParam0, int iParam1)//Position - 0x4FC3
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar13);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				__LIB_0__::func_610(func_59(Global_44257[iVar14 /*12*/].f_2));
-				__LIB_0__::func_610(&Var15);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(func_59(Global_44257[iVar14 /*12*/].f_2));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Var15);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 		}

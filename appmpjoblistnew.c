@@ -739,7 +739,7 @@ int func_79(var uParam0, char* sParam1, int* iParam2, int iParam3, bool bParam4,
 		MISC::SET_BIT(iParam2, 2);
 		return 1;
 	}
-	if ((__LIB_5__::func_133() && __LIB_18__::func_37()) || __LIB_18__::func_36())
+	if ((__LIB_5__::getGlobal_2714762_f_692() && __LIB_18__::func_37()) || __LIB_18__::func_36())
 	{
 		if (!BitTest(*iParam2, 2))
 		{
@@ -1943,7 +1943,7 @@ void func_551()//Position - 0x55B49
 	bool bVar9;
 	char cVar10[32];
 	char* sVar11;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	StringCopy(&cVar0, "", 16);
 	iVar1 = 0;
 	StringCopy(&cVar2, "", 64);
@@ -2018,10 +2018,10 @@ void func_551()//Position - 0x55B49
 	}
 	else
 	{
-		__LIB_0__::func_610(&Local_201);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_201);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420(&Local_198);
 	__LIB_13__::func_478(1, "", 1, "", 1, "", &iLocal_209);
 }
@@ -2170,7 +2170,7 @@ void func_611()//Position - 0x5837A
 	bool bVar16;
 	bool bVar17;
 	int iVar18;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	StringCopy(&cVar0, "", 16);
 	iVar1 = 0;
 	StringCopy(&cVar2, "", 64);
@@ -2336,7 +2336,7 @@ void func_611()//Position - 0x5837A
 	}
 	else
 	{
-		__LIB_0__::func_610(&Local_201);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_201);
 	}
 	if (Global_2653243[func_55() /*75*/].f_2 == 212 && __LIB_1__::func_375(1))
 	{
@@ -2348,7 +2348,7 @@ void func_611()//Position - 0x5837A
 		func_612(Global_2653243[func_55() /*75*/].f_2, Global_2653243[func_55() /*75*/].f_3, Global_2653243[func_55() /*75*/].f_64, Global_2653243[func_55() /*75*/].f_65);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420(&Local_198);
 	__LIB_13__::func_478(13, &Local_168, 1, "", 4, &Local_156, &iLocal_209);
 	iLocal_155 = 5;
@@ -2520,7 +2520,7 @@ void func_643()//Position - 0x593C7
 	char cVar5[16];
 	struct<16> Var6[8];
 	int iVar7;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	StringCopy(&cVar0, "", 16);
 	iVar1 = 0;
 	StringCopy(&cVar2, "", 64);
@@ -2594,10 +2594,10 @@ void func_643()//Position - 0x593C7
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&cVar0);
 	}
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610(&Local_201);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_201);
 	func_612(Global_2653243[func_55() /*75*/].f_2, Global_2653243[func_55() /*75*/].f_3, Global_2653243[func_55() /*75*/].f_64, Global_2653243[func_55() /*75*/].f_65);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420(&Local_198);
 	__LIB_13__::func_478(13, &Local_168, 12, &Local_171, 4, &Local_156, &iLocal_209);
 	func_644();
@@ -2869,7 +2869,7 @@ int func_665(var uParam0)//Position - 0x59C7F
 		Var11 = { Global_2653243[func_55() /*75*/].f_25 };
 	}
 	func_5250(iVar0, Var1, iVar9, uVar10, Var11, uParam0, &(Var7.f_3), Global_1659414, iVar4, iVar2);
-	__LIB_13__::func_472();
+	__LIB_13__::initGlobal_2656938_and_Global_2656952();
 	if (bVar3)
 	{
 		if (iVar9 == 0)
@@ -27777,7 +27777,7 @@ void func_5250(int iParam0, struct<3> Param1, var uParam2, var uParam3, struct<1
 		Global_2656879.f_20 = 1;
 		return;
 	}
-	__LIB_29__::func_71();
+	__LIB_29__::initGlobal_2656879();
 	Global_2656879 = 1;
 	Global_2656879.f_1 = iParam0;
 	Global_2656879.f_18 = uParam2;
@@ -28264,7 +28264,7 @@ void func_5347()//Position - 0x1D8302
 	bool bVar28;
 	int iVar29;
 	int iVar30;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	StringCopy(&cVar0, "", 16);
 	iVar1 = 0;
 	StringCopy(&cVar2, "", 64);
@@ -28515,11 +28515,11 @@ void func_5347()//Position - 0x1D8302
 	}
 	else
 	{
-		__LIB_0__::func_610(&Local_201);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_201);
 	}
 	func_612(Global_2653243[func_55() /*75*/].f_2, Global_2653243[func_55() /*75*/].f_3, Global_2653243[func_55() /*75*/].f_64, Global_2653243[func_55() /*75*/].f_65);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420(&Local_198);
 	__LIB_13__::func_478(13, &Local_168, 12, &Local_171, 4, &Local_156, &iLocal_209);
 	func_644();
@@ -28647,11 +28647,11 @@ void func_5362()//Position - 0x1D8F5A
 		func_5364();
 		return;
 	}
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	iVar0 = 72;
 	iVar1 = Global_2653243[func_55() /*75*/].f_2;
-	__LIB_2__::func_845(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(7), SYSTEM::TO_FLOAT(0), -1f, -1f, -1f, &(Global_1998[iVar0 /*29*/].f_3), __LIB_18__::func_341(iVar1, PLAYER::GET_PLAYER_TEAM(PLAYER::PLAYER_ID())), &(Global_1998[iVar0 /*29*/].f_7), 0, 0);
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(7), SYSTEM::TO_FLOAT(0), -1f, -1f, -1f, &(Global_1998[iVar0 /*29*/].f_3), __LIB_18__::func_341(iVar1, PLAYER::GET_PLAYER_TEAM(PLAYER::PLAYER_ID())), &(Global_1998[iVar0 /*29*/].f_7), 0, 0);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 }
 
 void func_5364()//Position - 0x1D921F
@@ -28666,7 +28666,7 @@ void func_5364()//Position - 0x1D921F
 	struct<3> Var7;
 	bool bVar8;
 	bool bVar9;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	StringCopy(&cVar0, "", 64);
 	StringCopy(&cVar1, "", 16);
 	StringCopy(&cVar2, "", 24);
@@ -28742,9 +28742,9 @@ void func_5364()//Position - 0x1D921F
 	}
 	HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&cVar1);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-	__LIB_0__::func_610(&Local_201);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_201);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 }
 
 void func_5365()//Position - 0x1D9422
@@ -28764,7 +28764,7 @@ void func_5365()//Position - 0x1D9422
 	bool bVar12;
 	bool bVar13;
 	int iVar14;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	StringCopy(&cVar0, "", 64);
 	StringCopy(&cVar1, "", 16);
 	StringCopy(&cVar2, "", 24);
@@ -28889,11 +28889,11 @@ void func_5365()//Position - 0x1D9422
 	}
 	else
 	{
-		__LIB_0__::func_610(&Local_201);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_201);
 	}
 	func_612(Global_2653243[func_55() /*75*/].f_2, Global_2653243[func_55() /*75*/].f_3, Global_2653243[func_55() /*75*/].f_64, Global_2653243[func_55() /*75*/].f_65);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 }
 
 char* func_5366()//Position - 0x1D96ED
@@ -29018,7 +29018,7 @@ void func_5380()//Position - 0x1D9ADB
 	int iVar0;
 	struct<4> Var1;
 	char cVar2[64];
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(7);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
@@ -29033,7 +29033,7 @@ void func_5380()//Position - 0x1D9ADB
 	StringCopy(&cVar2, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(__LIB_29__::func_957(iVar0)), 64);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(&cVar2);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_478(13, &Local_159, 1, "", 14, &Local_162, &iLocal_209);
 	__LIB_13__::func_420(&Local_180);
 }
@@ -29658,9 +29658,9 @@ void func_5424()//Position - 0x1DB03C
 
 void func_5425()//Position - 0x1DB051
 {
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(13), -1082130432, -1082130432, -1082130432, -1082130432);
-	__LIB_2__::func_845(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_186, 0, 0, 0, 0);
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(13), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(13), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_186, 0, 0, 0, 0);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(13), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_478(13, &Local_159, 1, "", 14, &Local_162, &iLocal_209);
 }
 
@@ -29969,7 +29969,7 @@ void func_5434()//Position - 0x1DB7D7
 	{
 		Global_20266.f_1 = 8;
 	}
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	bVar0 = false;
 	iVar3 = __LIB_31__::func_707(iLocal_204, 1);
 	iVar4 = Global_1888478.f_7[iVar3 /*8*/].f_2;
@@ -29986,7 +29986,7 @@ void func_5434()//Position - 0x1DB7D7
 	}
 	else
 	{
-		__LIB_0__::func_610("");
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 	}
 	if (Global_1888478.f_7[iVar3 /*8*/] == 0)
 	{
@@ -30010,7 +30010,7 @@ void func_5434()//Position - 0x1DB7D7
 			}
 			if (iVar8 == 0)
 			{
-				__LIB_0__::func_610("MC_APP_BODY_TA" /* GXT: ~HUD_COLOUR_WHITE~Wants to recruit you for a Motorcycle Club.~s~ */);
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MC_APP_BODY_TA" /* GXT: ~HUD_COLOUR_WHITE~Wants to recruit you for a Motorcycle Club.~s~ */);
 			}
 			else
 			{
@@ -30092,12 +30092,12 @@ void func_5434()//Position - 0x1DB7D7
 	}
 	else
 	{
-		__LIB_0__::func_610(&Local_201);
+		__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&Local_201);
 	}
 	iVar15 = func_617(iVar3);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar15);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420(&Local_198);
 	__LIB_13__::func_478(13, &Local_168, 12, &Local_171, 4, &Local_156, &iLocal_209);
 	iLocal_155 = 14;
@@ -30116,7 +30116,7 @@ void func_5440()//Position - 0x1DBCC2
 	int iVar1;
 	var uVar2;
 	char* sVar3;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	StringCopy(&cVar0, "", 16);
 	iVar1 = 0;
 	MemCopy(&uVar2, {__LIB_0__::func_167(Global_1659442.f_2)}, 16);
@@ -30134,7 +30134,7 @@ void func_5440()//Position - 0x1DBCC2
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING(sVar3);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(7), -1082130432, -1082130432, -1082130432, -1082130432);
 	__LIB_13__::func_420(&Local_198);
 	__LIB_13__::func_478(13, &Local_168, 1, "", 4, &Local_156, &iLocal_209);
 	iLocal_155 = 6;
@@ -30216,7 +30216,7 @@ void func_5444(bool bParam0, bool bParam1, bool bParam2)//Position - 0x1DBE56
 		}
 	}
 	func_5445();
-	__LIB_2__::func_829(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(20), SYSTEM::TO_FLOAT(iVar0), -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(20), SYSTEM::TO_FLOAT(iVar0), -1082130432, -1082130432, -1082130432);
 	if (__LIB_0__::func_3() == 0 || !NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		__LIB_13__::func_420(&Local_177);
@@ -30269,7 +30269,7 @@ void func_5445()//Position - 0x1DBF89
 	iVar4 = 0;
 	bVar5 = false;
 	iVar6 = 0;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(20), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(20), -1082130432, -1082130432, -1082130432, -1082130432);
 	iVar6 = 0;
 	while (iVar6 < 12)
 	{
@@ -30300,7 +30300,7 @@ void func_5445()//Position - 0x1DBF89
 		}
 		if (bVar5)
 		{
-			__LIB_2__::func_845(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(20), SYSTEM::TO_FLOAT(iVar4), -1f, -1f, -1f, &Var0, &cVar1, 0, 0, 0);
+			__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(20), SYSTEM::TO_FLOAT(iVar4), -1f, -1f, -1f, &Var0, &cVar1, 0, 0, 0);
 			iVar4++;
 		}
 		iVar6++;
@@ -30318,8 +30318,8 @@ void func_5446()//Position - 0x1DC0D8
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(20);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-	__LIB_0__::func_610("CELL_240" /* GXT: No Jobs */);
-	__LIB_0__::func_610("CELL_241" /* GXT: available to join. */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CELL_240" /* GXT: No Jobs */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("CELL_241" /* GXT: available to join. */);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
 	bVar0 = NETWORK::NETWORK_IS_GAME_IN_PROGRESS();
@@ -30335,7 +30335,7 @@ void func_5447()//Position - 0x1DC123
 	iLocal_205 = 0;
 	iVar0 = 0;
 	iVar1 = 0;
-	__LIB_2__::func_829(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(20), -1082130432, -1082130432, -1082130432, -1082130432);
+	__LIB_2__::concatAndDo_SCALEFORM_MOVIE_METHOD(Global_20247, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(20), -1082130432, -1082130432, -1082130432, -1082130432);
 	if (__LIB_29__::func_61())
 	{
 		func_5470();
@@ -31329,7 +31329,7 @@ int func_5469(int iParam0, int iParam1)//Position - 0x1DDB13
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	Var0 = { __LIB_13__::func_458(Global_1888478.f_7[iParam0 /*8*/].f_2) };
 	__LIB_0__::func_700(&Var0);
-	__LIB_0__::func_610("MC_APP_BODY_T" /* GXT: Wants to recruit you for a Motorcycle Club. */);
+	__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("MC_APP_BODY_T" /* GXT: Wants to recruit you for a Motorcycle Club. */);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
 	iVar1 = func_617(iParam0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);

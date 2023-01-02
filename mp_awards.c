@@ -2102,7 +2102,7 @@ void func_16(var uParam0, int iParam1)//Position - 0x3E22
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 				if (uParam0->f_424)
 				{
-					__LIB_0__::func_610(&(uParam0->f_20[iVar0 /*16*/]));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_20[iVar0 /*16*/]));
 				}
 				else
 				{
@@ -2237,15 +2237,15 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
-					__LIB_0__::func_610(&(uParam0->f_14[iVar0 /*8*/]));
-					__LIB_0__::func_610(&(uParam0->f_111[iVar0 /*8*/]));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_14[iVar0 /*8*/]));
+					__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_111[iVar0 /*8*/]));
 					__LIB_0__::func_700(&(uParam0->f_331[iVar0 /*8*/]));
 					__LIB_0__::func_700(&(uParam0->f_234[iVar0 /*8*/]));
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(uParam0->f_428[iVar0]);
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
 					if (__LIB_1__::func_76(&Var3))
 					{
-						__LIB_0__::func_610("HUD_AWDPROG_S" /* GXT: Progress */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HUD_AWDPROG_S" /* GXT: Progress */);
 					}
 					else
 					{
@@ -2255,7 +2255,7 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					}
 					if (uParam0->f_221[iVar0] >= uParam0->f_208[iVar0])
 					{
-						__LIB_0__::func_610("TR_COMPLETE" /* GXT: Completed */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("TR_COMPLETE" /* GXT: Completed */);
 					}
 					else
 					{
@@ -2266,7 +2266,7 @@ void func_29(var uParam0, int iParam1)//Position - 0x4057
 					}
 					if (iVar2 >= 0)
 					{
-						__LIB_0__::func_610("HUD_AWDAWARD" /* GXT: Award */);
+						__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("HUD_AWDAWARD" /* GXT: Award */);
 						GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 					}
 					GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
@@ -2321,19 +2321,19 @@ void func_33(var uParam0, int iParam1)//Position - 0x42A5
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND("SET_DESCRIPTION");
 		if (uParam0->f_456 < 0)
 		{
-			__LIB_0__::func_610("");
-			__LIB_0__::func_610("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING("");
 		}
 		else if (uParam0->f_456 < 12)
 		{
-			__LIB_0__::func_610(&(uParam0->f_14[uParam0->f_456 /*8*/]));
+			__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_14[uParam0->f_456 /*8*/]));
 			if (uParam0->f_208[uParam0->f_456] > -1)
 			{
 				func_34(&(uParam0->f_111[uParam0->f_456 /*8*/]), uParam0->f_208[uParam0->f_456]);
 			}
 			else
 			{
-				__LIB_0__::func_610(&(uParam0->f_111[uParam0->f_456 /*8*/]));
+				__LIB_0__::do_TEXT_COMMAND_SCALEFORM_STRING(&(uParam0->f_111[uParam0->f_456 /*8*/]));
 			}
 		}
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();

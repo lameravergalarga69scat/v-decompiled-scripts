@@ -11083,7 +11083,7 @@ int func_218(int iParam0, float fParam1)//Position - 0x321E5
 
 void func_219()//Position - 0x340BC
 {
-	if (!__LIB_5__::func_133() && !__LIB_1__::func_117(68))
+	if (!__LIB_5__::getGlobal_2714762_f_692() && !__LIB_1__::func_117(68))
 	{
 		HUD::SUPPRESS_FRONTEND_RENDERING_THIS_FRAME();
 	}
